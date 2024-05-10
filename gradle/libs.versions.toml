@@ -1,0 +1,27 @@
+[versions]
+kotlin = "1.9.23"
+jvm = "17"
+gradle = "8.6"
+asm = "9.7"
+kotest = "5.9.0"
+guava = "33.2.0-jre"
+
+[libraries]
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
+asm = { module = "org.ow2.asm:asm", version.ref = "asm" }
+asm-commons = { module = "org.ow2.asm:asm-commons", version.ref = "asm" }
+asm-util = { module = "org.ow2.asm:asm-util", version.ref = "asm" }
+asm-tree = { module = "org.ow2.asm:asm-tree", version.ref = "asm" }
+kotest = { module = "io.kotest:kotest-runner-junit5", version.ref = "kotest" }
+kotest-assertions = { module = "io.kotest:kotest-assertions-core", version = "kotest" }
+kotest-property = { module = "io.kotest:kotest-property", version.ref = "kotest" }
+guava = { module = "com.google.guava:guava", version.ref = "guava" }
+
+[bundles]
+kotlin = ["kotlin-stdlib", "kotlin-reflect"]
+kotest = ["kotest", "kotest-assertions", "kotest-property"]
+asm = ["asm", "asm-commons", "asm-util", "asm-tree"]
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
