@@ -21,11 +21,45 @@ class ClassInfo(override val group: ClassGroup, override val node: ClassNode) : 
 
     val methods: List<MethodInfo> get() = node.methods.map { MethodInfo(this, it) }
     val fields: List<FieldInfo> get() = node.fields.map { FieldInfo(this, it) }
+    
+    val memberMethods get() = methods.filter { !it.isStatic }
+    val staticMethods get() = methods.filter { it.isStatic }
+    val constructors get() = methods.filter { it.isConstructor }
+    val staticInitializer get() = methods.firstOrNull { it.isInitializer }
+    
+    val memberFields get() = fields.filter { !it.isStatic }
+    val staticFields get() = fields.filter { it.isStatic }
 
     fun addMethod(method: MethodInfo) = node.methods.add(method.node)
     fun removeMethod(method: MethodInfo) = node.methods.remove(method.node)
     fun addField(field: FieldInfo) = node.fields.add(field.node)
     fun removeField(field: FieldInfo) = node.fields.remove(field.node)
+    
+    fun findMethod(name: String, desc: String) = methods.firstOrNull { it.name == name && it.desc == desc }
+    fun findMethod(def: MethodDef) = findMethod(def.name, def.desc)
+    fun findStaticMethod(name: String, desc: String) = staticMethods.filter { it.name == name && it.desc == desc }
+    fun findStaticMethod(def: MethodDef) = findStaticMethod(def.name, def.desc)
+    
+    fun findField(name: String, desc: String) = fields.firstOrNull { it.name == name && it.desc == desc }
+    fun findField(def: FieldDef) = findField(def.name, def.desc)
+    fun findStaticField(name: String, desc: String) = staticFields.filter { it.name == name && it.desc == desc }
+    fun findStaticField(def: FieldDef) = findStaticField(def.name, def.desc)
+
+    fun findSuperMethod(name: String, desc: String): MethodInfo? {
+        val ret = findMethod(name, desc)
+        if(ret != null) return ret
+        if(superClass != null) return superClass!!.findSuperMethod(name, desc)
+        return null
+    }
+    fun findSuperMethod(def: MethodDef) = findSuperMethod(def.name, def.desc)
+
+    fun findSuperField(name: String, desc: String): FieldInfo? {
+        val ret = findField(name, desc)
+        if(ret != null) return ret
+        if(superClass != null) return superClass!!.findSuperField(name, desc)
+        return null
+    }
+    fun findSuperField(def: FieldDef) = findSuperField(def.name, def.desc)
 
     fun clearHierarchy() {
         superClass = null
@@ -44,11 +78,6 @@ class ClassInfo(override val group: ClassGroup, override val node: ClassNode) : 
             itfCls.childClasses.add(this)
         }
     }
-
-    fun findMethod(name: String, desc: String) = methods.firstOrNull { it.name == name && it.desc == desc }
-    fun findMethod(def: MethodDef) = findMethod(def.name, def.desc)
-    fun findField(name: String, desc: String) = fields.firstOrNull { it.name == name && it.desc == desc }
-    fun findField(def: FieldDef) = findField(def.name, def.desc)
 
     override fun toString(): String {
         return name

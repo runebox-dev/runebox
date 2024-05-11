@@ -28,7 +28,7 @@ fun ClassNode.toByteArray(flags: Int = ClassWriter.COMPUTE_MAXS): ByteArray {
 }
 
 fun ClassNode.recomputeFrames(group: ClassGroup): ClassNode {
-    val writer = AsmClassWriter(group, ClassWriter.COMPUTE_FRAMES or ClassWriter.COMPUTE_MAXS)
+    val writer = ReflectionClassWriter(group, ClassWriter.COMPUTE_FRAMES or ClassWriter.COMPUTE_MAXS)
     val checker = CheckClassAdapter(writer, true)
     this.accept(checker)
     val bytes = writer.toByteArray()

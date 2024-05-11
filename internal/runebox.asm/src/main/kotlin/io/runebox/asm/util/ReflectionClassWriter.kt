@@ -4,13 +4,16 @@ import io.runebox.asm.ClassGroup
 import org.objectweb.asm.ClassWriter
 import java.net.URLClassLoader
 
-class AsmClassWriter(private val group: ClassGroup, flags: Int) : ClassWriter(flags) {
+class ReflectionClassWriter(private val group: ClassGroup, flags: Int) : ClassWriter(flags) {
 
     private val classLoader = URLClassLoader(group.inputArchives.map { it.file.toURI().toURL() }.toTypedArray(), ClassLoader.getSystemClassLoader())
+    private val klassCache = hashMapOf<String, Class<*>>()
 
     override fun getCommonSuperClass(type1: String, type2: String): String = try {
-        var cls1 = Class.forName(type1.jvmName, false, classLoader)
-        val cls2 = Class.forName(type2.jvmName, false, classLoader)
+        super.getCommonSuperClass(type1, type2)
+    } catch (e: Exception) {
+        var cls1 = klassCache.getOrPut(type1.jvmName) { Class.forName(type1.jvmName, false, classLoader) }
+        val cls2 = klassCache.getOrPut(type2.jvmName) { Class.forName(type2.jvmName, false, classLoader) }
         when {
             cls1.isAssignableFrom(cls2) -> type1
             cls2.isAssignableFrom(cls1) -> type2
@@ -22,7 +25,6 @@ class AsmClassWriter(private val group: ClassGroup, flags: Int) : ClassWriter(fl
                 cls1.name.asmName
             }
         }
-    } catch (e: Exception) {
         "java/lang/Object"
     }
 
