@@ -5,6 +5,7 @@ gradle = "8.6"
 asm = "9.7"
 kotest = "5.9.0"
 guava = "33.2.0-jre"
+jgrapht = "1.5.2"
 
 [libraries]
 kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
@@ -17,6 +18,7 @@ kotest = { module = "io.kotest:kotest-runner-junit5", version.ref = "kotest" }
 kotest-assertions = { module = "io.kotest:kotest-assertions-core", version = "kotest" }
 kotest-property = { module = "io.kotest:kotest-property", version.ref = "kotest" }
 guava = { module = "com.google.guava:guava", version.ref = "guava" }
+jgrapht = { module = "org.jgrapht:jgrapht-core", version.ref = "jgrapht" }
 
 [bundles]
 kotlin = ["kotlin-stdlib", "kotlin-reflect"]
