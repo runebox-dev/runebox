@@ -12,4 +12,8 @@ object TestClasses : HashSet<Class<*>>() {
             }
         }
     }
+
+    fun createClassGroup() = ClassGroup().also {
+        this.forEach { klass -> it.addClass(klass) }
+    }
 }

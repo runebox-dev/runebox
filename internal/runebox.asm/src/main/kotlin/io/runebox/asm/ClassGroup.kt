@@ -1,9 +1,11 @@
 package io.runebox.asm
 
 import io.runebox.asm.archive.Archive
-import io.runebox.asm.util.recomputeFrames
-import io.runebox.asm.util.toByteArray
-import io.runebox.asm.util.toClassNode
+import io.runebox.asm.type.FieldDef
+import io.runebox.asm.type.FieldRef
+import io.runebox.asm.type.MethodDef
+import io.runebox.asm.type.MethodRef
+import io.runebox.asm.util.*
 import java.util.*
 
 class ClassGroup {
@@ -86,5 +88,78 @@ class ClassGroup {
             resources.forEach { (name, bytes) -> entries[name] = bytes }
         }
         archive.write(entries)
+    }
+
+    fun createMethodHierarchySets(): DisjointSet<MethodRef> {
+        fun visitParentMethods(
+            cls: ClassInfo,
+            hierarchyMethodsMap: MutableMap<ClassInfo, Set<MethodDef>>,
+            disjointSet: DisjointSet<MethodRef>
+        ): Set<MethodDef> {
+            var hierarchyMethods = hierarchyMethodsMap[cls]
+            if(hierarchyMethods != null) return hierarchyMethods
+            hierarchyMethods = mutableSetOf()
+            for(parentCls in cls.parentClasses) {
+                val methodDefs = visitParentMethods(parentCls, hierarchyMethodsMap, disjointSet)
+                for(def in methodDefs) {
+                    val info = cls.findMethod(def)
+                    if(info != null && (info.isStatic || def.name == "<init>")) {
+                        continue
+                    }
+                    val set1 = disjointSet.add(MethodRef(cls.name, def))
+                    val set2 = disjointSet.add(MethodRef(parentCls.name, def))
+                    disjointSet.union(set1, set2)
+                    hierarchyMethods.add(def)
+                }
+            }
+            for(method in cls.methods) {
+                disjointSet.add(MethodRef(cls.name, method))
+                hierarchyMethods.add(method.def)
+            }
+
+            hierarchyMethodsMap[cls] = hierarchyMethods
+            return hierarchyMethods
+        }
+
+        val disjointSet = ForestDisjointSet<MethodRef>()
+        val hierarchyMethodsMap = mutableMapOf<ClassInfo, Set<MethodDef>>()
+        for(cls in allClasses) visitParentMethods(cls, hierarchyMethodsMap, disjointSet)
+        return disjointSet
+    }
+
+    fun createFieldHierarchySets(): DisjointSet<FieldRef> {
+        fun visitParentFields(
+            cls: ClassInfo,
+            hierarchyFieldsMap: MutableMap<ClassInfo, Set<FieldDef>>,
+            disjointSet: DisjointSet<FieldRef>
+        ): Set<FieldDef> {
+            hierarchyFieldsMap[cls]?.apply { return this }
+            val hierarchyFields = mutableSetOf<FieldDef>()
+            for(parentCls in cls.parentClasses) {
+                val fieldDefs = visitParentFields(parentCls, hierarchyFieldsMap, disjointSet)
+                for(def in fieldDefs) {
+                    val info = cls.findField(def)
+                    if(info != null) {
+                        continue
+                    }
+                    val set1 = disjointSet.add(FieldRef(cls.name, def))
+                    val set2 = disjointSet.add(FieldRef(parentCls.name, def))
+                    disjointSet.union(set1, set2)
+                    hierarchyFields.add(def)
+                }
+            }
+            for(field in cls.fields) {
+                disjointSet.add(FieldRef(cls.name, field))
+                hierarchyFields.add(field.def)
+            }
+
+            hierarchyFieldsMap[cls] = hierarchyFields
+            return hierarchyFields
+        }
+
+        val disjointSet = ForestDisjointSet<FieldRef>()
+        val hierarchyFieldsMap = mutableMapOf<ClassInfo, Set<FieldDef>>()
+        for(cls in allClasses) visitParentFields(cls, hierarchyFieldsMap, disjointSet)
+        return disjointSet
     }
 }

@@ -11,5 +11,7 @@ public abstract class Animal {
         return name;
     }
 
-    public abstract void makeSound();
+    public void makeSound() {
+        System.out.println("MakeSound");
+    }
 }

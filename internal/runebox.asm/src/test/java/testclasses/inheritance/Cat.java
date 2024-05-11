@@ -1,6 +1,6 @@
 package testclasses.inheritance;
 
-public class Cat extends Mammal {
+public class Cat extends Animal {
 
     public Cat(String name) {
         super(name);
@@ -13,7 +13,6 @@ public class Cat extends Mammal {
         System.out.println("Meow!");
     }
 
-    @Override
     public void move() {
         System.out.println("Pounces gracefully");
     }
