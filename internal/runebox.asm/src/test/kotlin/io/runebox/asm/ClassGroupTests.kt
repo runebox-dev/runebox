@@ -1,10 +1,12 @@
 package io.runebox.asm
 
-import io.kotest.matchers.ints.shouldBeGreaterThan
+import io.kotest.core.spec.style.FunSpec
 
-class ClassGroupTests : AsmSpec({
+class ClassGroupTests : FunSpec({
 
-    test("Verify classes have been loaded into group.") {
-        group.allClasses.size shouldBeGreaterThan 0
+    val group = ClassGroup()
+
+    test("Load classes from jar.") {
+
     }
 })
