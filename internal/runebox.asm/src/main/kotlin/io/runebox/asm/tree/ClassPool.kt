@@ -1,8 +1,11 @@
 package io.runebox.asm.tree
 
+import io.runebox.asm.MemberRef
 import io.runebox.asm.toByteArray
 import io.runebox.asm.toClassNode
 import org.objectweb.asm.tree.ClassNode
+import org.objectweb.asm.tree.FieldNode
+import org.objectweb.asm.tree.MethodNode
 import java.io.File
 import java.util.*
 import java.util.jar.JarEntry
@@ -89,4 +92,15 @@ class ClassPool {
             }
         }
     }
+
+    fun resolveMethod(owner: String, name: String, desc: String): MethodNode? {
+        return findClass(owner).findSuperMethod(name, desc)
+    }
+
+    fun resolveField(owner: String, name: String, desc: String): FieldNode? {
+        return findClass(owner).findSuperField(name, desc)
+    }
+
+    fun resolveMethod(ref: MemberRef) = resolveMethod(ref.owner, ref.name, ref.desc)
+    fun resolveField(ref: MemberRef) = resolveField(ref.owner, ref.name, ref.desc)
 }

@@ -1,5 +1,6 @@
 package io.runebox.asm.tree
 
+import io.runebox.asm.MemberDef
 import io.runebox.asm.util.field
 import org.objectweb.asm.tree.ClassNode
 import org.objectweb.asm.tree.FieldNode
@@ -39,3 +40,8 @@ fun ClassNode.findSuperField(name: String, desc: String): FieldNode? {
     if(f != null) return f
     return superClass?.findSuperField(name, desc)
 }
+
+fun ClassNode.findMethod(def: MemberDef) = findMethod(def.name, def.desc)
+fun ClassNode.findField(def: MemberDef) = findField(def.name, def.desc)
+fun ClassNode.findSuperMethod(def: MemberDef) = findSuperMethod(def.name, def.desc)
+fun ClassNode.findSuperField(def: MemberDef) = findSuperField(def.name, def.desc)
