@@ -30,15 +30,15 @@ class ClassHierarchy(val pool: ClassPool) {
 
     operator fun get(name: String) = nodes[name]
 
-    fun parents(name: String) = nodes[name]?.parents
-    fun allParents(name: String) = nodes[name]?.allParents
-    fun children(name: String) = nodes[name]?.children
-    fun allChildren(name: String) = nodes[name]?.allChildren
+    fun parents(name: String) = nodes[name]?.parents ?: emptySet()
+    fun allParents(name: String) = nodes[name]?.allParents ?: emptySet()
+    fun children(name: String) = nodes[name]?.children ?: emptySet()
+    fun allChildren(name: String) = nodes[name]?.allChildren ?: emptySet()
 
-    fun parents(cls: ClassNode) = nodes[cls.name]?.parents
-    fun allParents(cls: ClassNode) = nodes[cls.name]?.allParents
-    fun children(cls: ClassNode) = nodes[cls.name]?.children
-    fun allChildren(cls: ClassNode) = nodes[cls.name]?.allChildren
+    fun parents(cls: ClassNode) = nodes[cls.name]?.parents ?: emptySet()
+    fun allParents(cls: ClassNode) = nodes[cls.name]?.allParents ?: emptySet()
+    fun children(cls: ClassNode) = nodes[cls.name]?.children ?: emptySet()
+    fun allChildren(cls: ClassNode) = nodes[cls.name]?.allChildren ?: emptySet()
 
     class Node(val cls: ClassNode) {
         val parents = hashSetOf<Node>()

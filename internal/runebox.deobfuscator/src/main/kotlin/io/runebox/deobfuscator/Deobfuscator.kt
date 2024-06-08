@@ -2,6 +2,7 @@ package io.runebox.deobfuscator
 
 import io.runebox.asm.tree.ClassPool
 import io.runebox.asm.tree.isIgnored
+import io.runebox.deobfuscator.transformer.IdentifierRenamer
 import io.runebox.deobfuscator.transformer.DeadCodeRemover
 import io.runebox.deobfuscator.transformer.IllegalStateExceptionRemover
 import io.runebox.deobfuscator.transformer.RuntimeExceptionRemover
@@ -28,6 +29,7 @@ class Deobfuscator(
         register<RuntimeExceptionRemover>()
         register<DeadCodeRemover>()
         register<IllegalStateExceptionRemover>()
+        register<IdentifierRenamer>()
 
         /**
          * ===== REGISTER TRANSFORMERS - END =====

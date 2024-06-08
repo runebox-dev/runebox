@@ -1,6 +1,9 @@
 package io.runebox.asm.tree
 
 import io.runebox.asm.MemberRef
+import io.runebox.asm.remap.AsmRemapper
+import io.runebox.asm.remap.NameMappings
+import io.runebox.asm.remap.remap
 import io.runebox.asm.toByteArray
 import io.runebox.asm.toClassNode
 import org.objectweb.asm.tree.ClassNode
@@ -103,4 +106,9 @@ class ClassPool {
 
     fun resolveMethod(ref: MemberRef) = resolveMethod(ref.owner, ref.name, ref.desc)
     fun resolveField(ref: MemberRef) = resolveField(ref.owner, ref.name, ref.desc)
+
+    fun remap(mappings: NameMappings) {
+        val remapper = AsmRemapper(mappings)
+        for(cls in allClasses) cls.remap(remapper)
+    }
 }
