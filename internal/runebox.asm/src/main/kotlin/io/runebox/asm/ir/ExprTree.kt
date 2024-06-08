@@ -1,7 +1,9 @@
-package io.runebox.asm.expr
+package io.runebox.asm.ir
 
 import io.runebox.asm.StackOps.Companion.stackOps
 import io.runebox.asm.core.nextReal
+import io.runebox.asm.ir.expr.Expr
+import io.runebox.asm.util.F
 import io.runebox.asm.util.T
 import org.objectweb.asm.Opcodes.ATHROW
 import org.objectweb.asm.Opcodes.MONITOREXIT
@@ -34,7 +36,7 @@ class ExprTree(val method: MethodNode) : Expr(null, null, -1, -1) {
      */
     override fun collapse(): List<AbstractInsnNode> {
         val instructions = super.collapse()
-        val offset = (instructions.size > 1 && instructions[instructions.size - 2].type == LABEL) T 2 ?: 1
+        val offset = (instructions.size > 1 && instructions[instructions.size - 2].type == LABEL) T 2 F 1
         return mutableListOf<AbstractInsnNode>().also { it.addAll(instructions) }.dropLast(offset)
     }
 
@@ -121,5 +123,18 @@ class ExprTree(val method: MethodNode) : Expr(null, null, -1, -1) {
         }
 
         return expr
+    }
+
+    override fun accept(visitor: ExprVisitor) {
+        for(expr in this) {
+            accept(visitor, expr)
+        }
+    }
+
+    fun accept(visitor: ExprVisitor, expr: Expr) {
+        expr.accept(visitor)
+        for(child in expr) {
+            accept(visitor, expr)
+        }
     }
 }

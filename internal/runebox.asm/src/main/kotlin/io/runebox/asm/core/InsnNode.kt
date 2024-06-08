@@ -1,5 +1,6 @@
 package io.runebox.asm.core
 
+import io.runebox.asm.util.F
 import io.runebox.asm.util.T
 import io.runebox.asm.util.isDoubleOrLong
 import org.objectweb.asm.tree.AbstractInsnNode
@@ -14,8 +15,8 @@ val AbstractInsnNode.isDoubleOrLong: Boolean get() = when(this) {
 
 fun AbstractInsnNode.seek(next: Boolean, real: Boolean): AbstractInsnNode? {
     var instruction: AbstractInsnNode? = this
-    while(!(instruction == null || real T (instruction.opcode == -1) ?: (instruction.opcode != -1))) {
-        instruction = next T instruction.next ?: instruction.previous
+    while(!(instruction == null || real T (instruction.opcode == -1) F (instruction.opcode != -1))) {
+        instruction = next T instruction.next F instruction.previous
     }
     return instruction
 }

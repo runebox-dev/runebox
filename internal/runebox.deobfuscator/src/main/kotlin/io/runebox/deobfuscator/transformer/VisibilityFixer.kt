@@ -1,7 +1,7 @@
 package io.runebox.deobfuscator.transformer
 
 import io.runebox.asm.core.ClassPool
-import io.runebox.asm.expr.ExprTree
+import io.runebox.asm.ir.ExprTree
 import io.runebox.deobfuscator.Logger
 import io.runebox.deobfuscator.Transformer
 import org.objectweb.asm.Opcodes.*

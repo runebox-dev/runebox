@@ -1,5 +1,8 @@
-package io.runebox.asm.expr
+package io.runebox.asm.ir.expr
 
+import io.runebox.asm.ir.ExprTree
+import io.runebox.asm.ir.ExprVisitor
+import io.runebox.asm.ir.TryCatch
 import io.runebox.asm.util.collection.Tree
 import org.objectweb.asm.tree.AbstractInsnNode
 import org.objectweb.asm.util.Printer

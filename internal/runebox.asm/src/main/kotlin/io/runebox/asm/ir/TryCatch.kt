@@ -1,4 +1,4 @@
-package io.runebox.asm.expr
+package io.runebox.asm.ir
 
 /**
  * Represents a Try-Catch block in the code.

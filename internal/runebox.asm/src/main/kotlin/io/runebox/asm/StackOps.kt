@@ -3,6 +3,7 @@
 package io.runebox.asm
 
 import io.runebox.asm.core.isDoubleOrLong
+import io.runebox.asm.util.F
 import io.runebox.asm.util.T
 import io.runebox.asm.util.isDoubleOrLong
 import org.objectweb.asm.Opcodes.*
@@ -204,13 +205,13 @@ data class StackOps(val pops: Int, val pushes: Int) {
                 FIELD_INSN -> {
                     this is FieldInsnNode
                     when(opcode) {
-                        GETSTATIC -> pushes = isDoubleOrLong T 2 ?: 1
+                        GETSTATIC -> pushes = isDoubleOrLong T 2 F 1
                         GETFIELD -> {
                             pops = 1
-                            pushes = isDoubleOrLong T 2 ?: 1
+                            pushes = isDoubleOrLong T 2 F 1
                         }
-                        PUTSTATIC -> pops = isDoubleOrLong T 2 ?: 1
-                        PUTFIELD -> pops = isDoubleOrLong T 3 ?: 2
+                        PUTSTATIC -> pops = isDoubleOrLong T 2 F 1
+                        PUTFIELD -> pops = isDoubleOrLong T 3 F 2
                     }
                 }
                 METHOD_INSN -> {
@@ -224,7 +225,7 @@ data class StackOps(val pops: Int, val pushes: Int) {
                 }
                 LDC_INSN -> {
                     this as LdcInsnNode
-                    pushes = cst.isDoubleOrLong T 2 ?: 1
+                    pushes = cst.isDoubleOrLong T 2 F 1
                 }
                 MULTIANEWARRAY_INSN -> {
                     this as MultiANewArrayInsnNode

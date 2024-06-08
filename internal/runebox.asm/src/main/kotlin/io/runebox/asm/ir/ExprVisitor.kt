@@ -1,4 +1,6 @@
-package io.runebox.asm.expr
+package io.runebox.asm.ir
+
+import io.runebox.asm.ir.expr.Expr
 
 /**
  * Represents a visitor for expressions in an expression tree.
