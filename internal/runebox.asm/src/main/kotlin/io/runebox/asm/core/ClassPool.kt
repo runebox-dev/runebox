@@ -1,4 +1,4 @@
-package io.runebox.asm.tree
+package io.runebox.asm.core
 
 import io.runebox.asm.MemberRef
 import io.runebox.asm.remap.AsmRemapper

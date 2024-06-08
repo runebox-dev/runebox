@@ -1,9 +1,9 @@
 package io.runebox.asm
 
-import io.runebox.asm.tree.findField
-import io.runebox.asm.tree.findMethod
-import io.runebox.asm.tree.findSuperField
-import io.runebox.asm.tree.findSuperMethod
+import io.runebox.asm.core.findField
+import io.runebox.asm.core.findMethod
+import io.runebox.asm.core.findSuperField
+import io.runebox.asm.core.findSuperMethod
 import org.objectweb.asm.tree.*
 
 data class MemberDef(val name: String, val desc: String) {

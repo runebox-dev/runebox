@@ -1,4 +1,4 @@
-package io.runebox.asm.tree
+package io.runebox.asm.core
 
 import io.runebox.asm.MemberDef
 import io.runebox.asm.MemberRef

@@ -1,6 +1,6 @@
 package io.runebox.asm
 
-import io.runebox.asm.tree.*
+import io.runebox.asm.core.*
 import org.objectweb.asm.tree.*
 
 data class MemberRef(val owner: String, val name: String, val desc: String) : Comparable<MemberRef> {

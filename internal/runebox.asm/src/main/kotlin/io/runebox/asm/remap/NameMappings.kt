@@ -1,9 +1,9 @@
 package io.runebox.asm.remap
 
 import io.runebox.asm.MemberRef
-import io.runebox.asm.hierarchy.Hierarchy
-import io.runebox.asm.tree.ClassPool
-import io.runebox.asm.tree.toRef
+import io.runebox.asm.Hierarchy
+import io.runebox.asm.core.ClassPool
+import io.runebox.asm.core.toRef
 import org.objectweb.asm.tree.ClassNode
 import org.objectweb.asm.tree.FieldNode
 import org.objectweb.asm.tree.MethodNode

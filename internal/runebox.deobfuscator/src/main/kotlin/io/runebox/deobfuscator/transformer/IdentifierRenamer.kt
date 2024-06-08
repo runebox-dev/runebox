@@ -4,8 +4,8 @@ import io.runebox.asm.isAbstract
 import io.runebox.asm.isInterface
 import io.runebox.asm.isStatic
 import io.runebox.asm.remap.NameMappings
-import io.runebox.asm.tree.ClassPool
-import io.runebox.asm.tree.toRef
+import io.runebox.asm.core.ClassPool
+import io.runebox.asm.core.toRef
 import io.runebox.deobfuscator.Logger
 import io.runebox.deobfuscator.Transformer
 import io.runebox.deobfuscator.isObfuscatedName

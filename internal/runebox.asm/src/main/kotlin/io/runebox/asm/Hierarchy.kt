@@ -1,12 +1,11 @@
 @file:Suppress("DuplicatedCode")
 
-package io.runebox.asm.hierarchy
+package io.runebox.asm
 
-import io.runebox.asm.MemberRef
-import io.runebox.asm.tree.ClassPool
-import io.runebox.asm.tree.cls
-import io.runebox.asm.tree.toDef
-import io.runebox.asm.tree.toRef
+import io.runebox.asm.core.ClassPool
+import io.runebox.asm.core.cls
+import io.runebox.asm.core.toDef
+import io.runebox.asm.core.toRef
 import org.objectweb.asm.Opcodes.ACC_STATIC
 import org.objectweb.asm.Type
 import org.objectweb.asm.tree.ClassNode

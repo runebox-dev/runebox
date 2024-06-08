@@ -2,7 +2,7 @@ package io.runebox.asm
 
 import io.kotest.core.spec.style.FunSpec
 import io.kotest.matchers.ints.shouldBeGreaterThan
-import io.runebox.asm.tree.ClassPool
+import io.runebox.asm.core.ClassPool
 
 class ClassPoolTests : FunSpec( {
 

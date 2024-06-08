@@ -1,7 +1,7 @@
 package io.runebox.asm
 
 import com.google.common.reflect.ClassPath
-import io.runebox.asm.tree.ClassPool
+import io.runebox.asm.core.ClassPool
 
 fun testClassPool(pkg: String = "testclasses"): ClassPool {
     val pool = ClassPool()

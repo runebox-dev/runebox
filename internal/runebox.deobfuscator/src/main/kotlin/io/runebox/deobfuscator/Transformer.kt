@@ -1,6 +1,6 @@
 package io.runebox.deobfuscator
 
-import io.runebox.asm.tree.ClassPool
+import io.runebox.asm.core.ClassPool
 
 interface Transformer {
 

@@ -1,7 +1,7 @@
 package io.runebox.deobfuscator
 
-import io.runebox.asm.tree.ClassPool
-import io.runebox.asm.tree.isIgnored
+import io.runebox.asm.core.ClassPool
+import io.runebox.asm.core.isIgnored
 import io.runebox.deobfuscator.transformer.*
 import java.io.File
 import kotlin.reflect.full.createInstance
