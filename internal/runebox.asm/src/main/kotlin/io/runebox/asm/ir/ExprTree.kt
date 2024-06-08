@@ -1,8 +1,13 @@
 package io.runebox.asm.ir
 
+import hu.webarticum.treeprinter.SimpleTreeNode
+import hu.webarticum.treeprinter.decorator.BorderTreeNodeDecorator
+import hu.webarticum.treeprinter.printer.listing.ListingTreePrinter
 import io.runebox.asm.StackOps.Companion.stackOps
+import io.runebox.asm.core.cls
 import io.runebox.asm.core.nextReal
 import io.runebox.asm.ir.expr.Expr
+import io.runebox.asm.print
 import io.runebox.asm.util.F
 import io.runebox.asm.util.T
 import org.objectweb.asm.Opcodes.ATHROW
@@ -11,6 +16,7 @@ import org.objectweb.asm.tree.AbstractInsnNode
 import org.objectweb.asm.tree.AbstractInsnNode.LABEL
 import org.objectweb.asm.tree.MethodNode
 import java.util.*
+import kotlin.collections.ArrayDeque
 
 /**
  * Represents an expression tree for a given method.
@@ -37,7 +43,7 @@ class ExprTree(val method: MethodNode) : Expr(null, null, -1, -1) {
     override fun collapse(): List<AbstractInsnNode> {
         val instructions = super.collapse()
         val offset = (instructions.size > 1 && instructions[instructions.size - 2].type == LABEL) T 2 F 1
-        return mutableListOf<AbstractInsnNode>().also { it.addAll(instructions) }.dropLast(offset)
+        return mutableListOf<AbstractInsnNode>().also { it.addAll(instructions) }
     }
 
     /**
@@ -136,5 +142,35 @@ class ExprTree(val method: MethodNode) : Expr(null, null, -1, -1) {
         for(child in expr) {
             accept(visitor, expr)
         }
+    }
+
+    override fun toString(): String {
+        val str = StringBuilder()
+        for(child in this) {
+            str.append(child)
+            str.append("\n")
+        }
+        return str.toString().trim()
+    }
+
+
+    fun print() {
+        val queue = ArrayDeque<Pair<Expr, SimpleTreeNode>>()
+        val visited = hashSetOf<Expr>()
+
+        val proot = SimpleTreeNode("Method[${method.cls.name}.${method.name}${method.desc}]")
+
+
+        for(expr in this) {
+            val node = SimpleTreeNode("${method.instructions.indexOf(expr.instruction)}: [${expr::class.simpleName}] ${expr.instruction.print().trim()}")
+            proot.addChild(node)
+
+            for(child in expr) {
+                val cnode = SimpleTreeNode("${method.instructions.indexOf(expr.instruction)}: [${expr::class.simpleName}] ${expr.instruction.print().trim()}")
+                node.addChild(cnode)
+            }
+        }
+
+        ListingTreePrinter().print(BorderTreeNodeDecorator(proot))
     }
 }

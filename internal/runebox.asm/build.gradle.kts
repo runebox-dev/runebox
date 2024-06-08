@@ -7,4 +7,5 @@ dependencies {
     api(libs.bundles.asm)
     api(libs.guava)
     implementation(libs.jgrapht)
+    implementation(libs.treeprinter)
 }

@@ -3,9 +3,9 @@ package io.runebox.asm.ir.expr
 import io.runebox.asm.ir.ExprTree
 import io.runebox.asm.ir.ExprVisitor
 import io.runebox.asm.ir.TryCatch
+import io.runebox.asm.print
 import io.runebox.asm.util.collection.Tree
 import org.objectweb.asm.tree.AbstractInsnNode
-import org.objectweb.asm.util.Printer
 import kotlin.math.max
 
 /**
@@ -92,6 +92,7 @@ open class Expr private constructor() : Tree<Expr>() {
         internal set
 
     /**
+     *
      */
     var pushes = -1
         internal set
@@ -106,7 +107,7 @@ open class Expr private constructor() : Tree<Expr>() {
      */
     constructor(tree: ExprTree?, instruction: AbstractInsnNode?, pops: Int = -1, pushes: Int = -1) : this() {
         tree?.also { this.tree = it }
-        instruction?.also { this.instruction = it }
+        instruction?.also { this._instruction = it }
         this.pops = pops
         this.pushes = pushes.also { this.remaining = it }
     }
@@ -238,10 +239,11 @@ open class Expr private constructor() : Tree<Expr>() {
      */
     open fun toString(indent: Int): String {
         val str = StringBuilder()
-        str.append(Printer.OPCODES.getOrElse(instruction.opcode) { "UNKNOWN" })
+        str.append("[${this::class.java.simpleName}](")
+        str.append(instruction.print().trim())
+        str.append(")")
         for(child in this) {
-            str.append("\n")
-            str.append(" ".repeat(max(0, indent)))
+            str.append("\t".repeat(max(0, indent)))
             str.append(child.toString(indent + 1))
         }
         return str.toString()

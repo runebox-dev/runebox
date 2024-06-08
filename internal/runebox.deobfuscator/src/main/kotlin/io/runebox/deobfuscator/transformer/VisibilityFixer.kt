@@ -15,7 +15,8 @@ class VisibilityFixer : Transformer {
         for(cls in pool.classes) {
             for(method in cls.methods) {
                 val t = ExprTree(method)
-                println()
+                t.build()
+                t.print()
                 method.access = method.access.transformAccess(true)
             }
             for(field in cls.fields) {

@@ -6,6 +6,7 @@ asm = "9.7"
 kotest = "5.9.0"
 guava = "33.2.0-jre"
 jgrapht = "1.5.2"
+treeprinter = "3.2.0"
 
 [libraries]
 kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
@@ -19,6 +20,7 @@ kotest-assertions = { module = "io.kotest:kotest-assertions-core", version = "ko
 kotest-property = { module = "io.kotest:kotest-property", version.ref = "kotest" }
 guava = { module = "com.google.guava:guava", version.ref = "guava" }
 jgrapht = { module = "org.jgrapht:jgrapht-core", version.ref = "jgrapht" }
+treeprinter = { module = "hu.webarticum:tree-printer", version.ref = "treeprinter" }
 
 [bundles]
 kotlin = ["kotlin-stdlib", "kotlin-reflect"]
