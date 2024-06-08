@@ -1,9 +1,8 @@
 package io.runebox.asm.remap
 
 import io.runebox.asm.MemberRef
-import io.runebox.asm.hierarchy.ClassHierarchy
+import io.runebox.asm.hierarchy.Hierarchy
 import io.runebox.asm.tree.ClassPool
-import io.runebox.asm.tree.cls
 import io.runebox.asm.tree.toRef
 import org.objectweb.asm.tree.ClassNode
 import org.objectweb.asm.tree.FieldNode
@@ -15,7 +14,7 @@ class NameMappings(val pool: ClassPool) {
     val methods = TreeMap<MemberRef, String>()
     val fields = TreeMap<MemberRef, String>()
 
-    val hierarchy = ClassHierarchy(pool)
+    val hierarchy = Hierarchy(pool)
 
     fun renameClass(cls: ClassNode, newName: String) {
         if(classes.containsKey(cls.name)) return
@@ -23,29 +22,29 @@ class NameMappings(val pool: ClassPool) {
     }
 
     fun renameMethod(method: MethodNode, newName: String) {
-        val ref = method.toRef()
-        if(methods.containsKey(ref)) return
-        methods[ref] = newName
-        for(child in hierarchy.allChildren(method.cls).map { it.cls }) {
-            val cref = MemberRef(child.name, method)
+        val mref = method.toRef()
+        if(methods.containsKey(mref)) return
+        methods[mref] = newName
+        for(child in hierarchy.findChildClasses(mref.owner)) {
+            val cref = MemberRef(child.name, mref.toDef())
             methods[cref] = newName
         }
-        for(parent in hierarchy.allParents(method.cls).map { it.cls }) {
-            val pref = MemberRef(parent.name, method)
+        for(parent in hierarchy.findParentClasses(mref.owner)) {
+            val pref = MemberRef(parent.name, mref.toDef())
             methods[pref] = newName
         }
     }
 
     fun renameField(field: FieldNode, newName: String) {
-        val ref = field.toRef()
-        if(fields.containsKey(ref)) return
-        fields[ref] = newName
-        for(child in hierarchy.allChildren(field.cls).map { it.cls }) {
-            val cref = MemberRef(child.name, field)
+        val fref = field.toRef()
+        if(fields.containsKey(fref)) return
+        fields[fref] = newName
+        for(child in hierarchy.findChildClasses(fref.owner)) {
+            val cref = MemberRef(child.name, fref.toDef())
             fields[cref] = newName
         }
-        for(parent in hierarchy.allParents(field.cls).map { it.cls }) {
-            val pref = MemberRef(parent.name, field)
+        for(parent in hierarchy.findParentClasses(fref.owner)) {
+            val pref = MemberRef(parent.name, fref.toDef())
             fields[pref] = newName
         }
     }

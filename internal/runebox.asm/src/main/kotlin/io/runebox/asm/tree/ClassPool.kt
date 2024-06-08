@@ -6,6 +6,7 @@ import io.runebox.asm.remap.NameMappings
 import io.runebox.asm.remap.remap
 import io.runebox.asm.toByteArray
 import io.runebox.asm.toClassNode
+import org.objectweb.asm.ClassReader
 import org.objectweb.asm.tree.ClassNode
 import org.objectweb.asm.tree.FieldNode
 import org.objectweb.asm.tree.MethodNode
@@ -51,7 +52,7 @@ class ClassPool {
     fun findClass(name: String): ClassNode = classMap[name] ?: jvmClassMap.getOrPut(name) {
         val input = ClassLoader.getSystemClassLoader().getResourceAsStream("$name.class")
             ?: throw RuntimeException("Failed to find the class: $name in the runtime JVM classpath.")
-        val cls = input.readBytes().toClassNode()
+        val cls = input.readBytes().toClassNode(ClassReader.SKIP_CODE)
         cls.isJvm = true
         cls.init(this)
         jvmClassMap[cls.name] = cls
