@@ -1,6 +1,7 @@
 package io.runebox.deobfuscator.transformer
 
 import io.runebox.asm.core.ClassPool
+import io.runebox.asm.ir.ExprTree
 import io.runebox.deobfuscator.Logger
 import io.runebox.deobfuscator.Transformer
 import org.objectweb.asm.Opcodes.*
@@ -13,6 +14,9 @@ class VisibilityFixer : Transformer {
     override fun transform(pool: ClassPool) {
         for(cls in pool.classes) {
             for(method in cls.methods) {
+                val t = ExprTree(method)
+                t.build()
+                t.print()
                 method.access = method.access.transformAccess(true)
             }
             for(field in cls.fields) {

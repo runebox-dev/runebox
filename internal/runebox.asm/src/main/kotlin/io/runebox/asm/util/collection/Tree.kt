@@ -4,7 +4,7 @@ import java.util.*
 
 open class Tree<T : Tree<T>> : LinkedList<T>() {
 
-    var parent: T? = null
+    lateinit var parent: T
 
     @Suppress("UNCHECKED_CAST")
     override fun addFirst(t: T) {
