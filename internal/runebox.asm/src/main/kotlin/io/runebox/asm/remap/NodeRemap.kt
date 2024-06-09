@@ -1,5 +1,6 @@
 package io.runebox.asm.remap
 
+import org.objectweb.asm.Handle
 import org.objectweb.asm.tree.*
 
 fun ClassNode.remap(remapper: AsmRemapper) {
@@ -70,15 +71,35 @@ fun AbstractInsnNode.remap(remapper: AsmRemapper) {
             desc = remapper.mapMethodDesc(desc)
         }
         is InvokeDynamicInsnNode -> {
+            val origBsmArgs = bsmArgs
             name = remapper.mapInvokeDynamicMethodName(name, desc)
             desc = remapper.mapMethodDesc(desc)
+            bsm = remapper.mapValue(bsm) as Handle
+            for(i in bsmArgs.indices) {
+                bsmArgs[i] = remapper.mapValue(origBsmArgs[i])
+            }
         }
         is TypeInsnNode -> desc = remapper.mapType(desc)
         is LdcInsnNode -> cst = remapper.mapValue(cst)
         is MultiANewArrayInsnNode -> desc = remapper.mapType(desc)
+
     }
 }
 
 fun TryCatchBlockNode.remap(remapper: AsmRemapper) {
     type = remapper.mapType(type)
+}
+
+private fun remapFrameTypes(remapper: AsmRemapper, numTypes: Int, frameTypes: Array<Any>?): Array<Any>? {
+    if(frameTypes == null) return frameTypes
+    var remappedFrameTypes: Array<Any>? = null
+    for(i in 0 until numTypes) {
+        if(frameTypes[i] is String) {
+            if(remappedFrameTypes == null) {
+                remappedFrameTypes = Array(numTypes) { frameTypes[it] }
+            }
+            remappedFrameTypes[i] = remapper.mapType(frameTypes[i] as String)
+        }
+    }
+    return remappedFrameTypes ?: frameTypes
 }

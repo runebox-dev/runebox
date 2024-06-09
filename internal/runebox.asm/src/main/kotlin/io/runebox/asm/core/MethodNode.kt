@@ -15,3 +15,6 @@ val MethodNode.pool: ClassPool get() = cls.pool
 
 fun MethodNode.toDef() = MemberDef(this)
 fun MethodNode.toRef() = MemberRef(this)
+
+val MethodNode.isConstructor: Boolean get() = name == "<init>"
+val MethodNode.isInitializer: Boolean get() = name == "<clinit>"

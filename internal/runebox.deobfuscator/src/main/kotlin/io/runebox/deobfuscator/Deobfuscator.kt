@@ -27,7 +27,9 @@ class Deobfuscator(
         register<RuntimeExceptionRemover>()
         register<DeadCodeRemover>()
         register<IllegalStateExceptionRemover>()
-        register<IdentifierRenamer>()
+        register<ControlFlowNormalizer>()
+        register<RedundantGotoRemover>()
+        register<StackFrameTransformer>()
 
         /**
          * ===== REGISTER TRANSFORMERS - END =====

@@ -4,4 +4,5 @@ plugins {
 
 dependencies {
     implementation(project(":asm"))
+    implementation(libs.treeprinter)
 }
