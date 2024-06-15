@@ -33,6 +33,8 @@ class Deobfuscator(
         register<UnusedArgumentRemover>()
         register<StaticFieldOwnerFixer>()
         register<StaticMethodOwnerFixer>()
+        register<UnusedFieldRemover>()
+        register<UnusedMethodRemover>()
         register<StackFrameBuilder>()
 
         /**
