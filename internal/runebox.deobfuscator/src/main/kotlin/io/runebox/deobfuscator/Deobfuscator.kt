@@ -23,13 +23,14 @@ class Deobfuscator(
          * ===== REGISTER TRANSFORMERS - START =====
          */
 
+        register<UniqueRenamer>()
         register<VisibilityFixer>()
         register<RuntimeExceptionRemover>()
         register<DeadCodeRemover>()
         register<IllegalStateExceptionRemover>()
         register<ControlFlowNormalizer>()
         register<RedundantGotoRemover>()
-        register<StackFrameTransformer>()
+        register<StackFrameBuilder>()
 
         /**
          * ===== REGISTER TRANSFORMERS - END =====

@@ -9,13 +9,18 @@ class AsmClassWriter(private val pool: ClassPool, flags: Int = COMPUTE_FRAMES or
     private val classNames = pool.allClasses.associateBy { it.name }
 
     override fun getCommonSuperClass(type1: String, type2: String): String {
-        if(isAssignable(type1, type2)) return type2
-        if(isAssignable(type2, type1)) return type1
-        var cls = type1
-        do {
-            cls = checkNotNull(cls.superName)
-        } while(!isAssignable(type2, cls))
-        return cls
+        try {
+            return super.getCommonSuperClass(type1, type2)
+        } catch (e: Exception) {
+            if(pool.containsClass(type1) && pool.containsClass(type2)) {
+                val super1 = pool.findClass(type1).superName
+                val super2 = pool.findClass(type2).superName
+                if(super1 == super2) {
+                    return super1
+                }
+            }
+            return "java/lang/Object"
+        }
     }
 
     private fun isAssignable(from: String, to: String): Boolean {

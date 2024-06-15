@@ -1,6 +1,9 @@
 package io.runebox.asm
 
-import io.runebox.asm.core.*
+import io.runebox.asm.core.ClassPool
+import io.runebox.asm.core.cls
+import io.runebox.asm.core.findField
+import io.runebox.asm.core.findMethod
 import org.objectweb.asm.tree.*
 
 data class MemberRef(val owner: String, val name: String, val desc: String) : Comparable<MemberRef> {
@@ -18,8 +21,6 @@ data class MemberRef(val owner: String, val name: String, val desc: String) : Co
     fun toDef() = MemberDef(this)
     fun resolveMethod(pool: ClassPool) = pool.findClass(owner).findMethod(name, desc)
     fun resolveField(pool: ClassPool) = pool.findClass(owner).findField(name, desc)
-    fun resolveSuperMethod(pool: ClassPool) = pool.findClass(owner).findSuperMethod(name, desc)
-    fun resolveSuperField(pool: ClassPool) = pool.findClass(owner).findSuperField(name, desc)
 
     val isMethod get() = toDef().isMethod
     val isField get() = toDef().isField
