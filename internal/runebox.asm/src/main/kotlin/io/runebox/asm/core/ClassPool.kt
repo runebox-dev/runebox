@@ -38,10 +38,8 @@ class ClassPool {
     }
 
     fun updateClassName(cls: ClassNode, oldName: String) {
-        if(classMap.containsKey(oldName)) {
-            classMap.remove(oldName)
-            classMap[cls.name] = cls
-        }
+        classMap.remove(oldName)
+        classMap[cls.name] = cls
     }
 
     fun replaceClass(old: ClassNode, new: ClassNode) {

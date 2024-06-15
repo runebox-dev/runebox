@@ -23,13 +23,16 @@ class Deobfuscator(
          * ===== REGISTER TRANSFORMERS - START =====
          */
 
-        register<UniqueRenamer>()
         register<VisibilityFixer>()
         register<RuntimeExceptionRemover>()
         register<DeadCodeRemover>()
         register<IllegalStateExceptionRemover>()
         register<ControlFlowNormalizer>()
         register<RedundantGotoRemover>()
+        register<UniqueRenamer>()
+        register<UnusedArgumentRemover>()
+        register<StaticFieldOwnerFixer>()
+        register<StaticMethodOwnerFixer>()
         register<StackFrameBuilder>()
 
         /**
@@ -103,5 +106,5 @@ class Deobfuscator(
 }
 
 fun String.isObfuscatedName(): Boolean {
-    return this.length <= 2 || (this.length == 3 && this !in listOf("add", "get", "set", "put", "run", "abs"))
+    return (this.length <= 2 || (this.length == 3 && this !in listOf("add", "get", "set", "put", "run", "abs"))) || (listOf("class", "method", "field").any { this.startsWith(it) })
 }

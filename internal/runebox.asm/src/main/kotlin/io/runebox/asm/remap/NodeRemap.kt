@@ -1,5 +1,6 @@
 package io.runebox.asm.remap
 
+import io.runebox.asm.core.pool
 import org.objectweb.asm.tree.*
 
 fun ClassNode.remap(remapper: AsmRemapper) {
@@ -23,6 +24,8 @@ fun ClassNode.remap(remapper: AsmRemapper) {
 
     for(field in fields) field.remap(remapper, origName)
     for(method in methods) method.remap(remapper, origName)
+
+    pool.updateClassName(this, origName)
 }
 
 fun InnerClassNode.remap(remapper: AsmRemapper) {
