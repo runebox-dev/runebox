@@ -41,6 +41,15 @@ open class Expr(open val instruction: AbstractInsnNode, val index: Int, val size
         return false
     }
 
+    val instructions: List<AbstractInsnNode> get() {
+        val list = mutableListOf<AbstractInsnNode>()
+        for(child in children) {
+            list.addAll(child.instructions)
+        }
+        list.add(instruction)
+        return list
+    }
+
     override fun toString(): String {
         return "[${when(instruction) {
             is LabelNode -> "LABEL"

@@ -1,10 +1,10 @@
 package io.runebox.asm.expr
 
 import io.runebox.asm.core.isDoubleOrLong
-import io.runebox.asm.core.pops
+import io.runebox.asm.core.resolveSize
+import io.runebox.asm.expr.impl.*
 import org.objectweb.asm.Opcodes.*
-import org.objectweb.asm.tree.AbstractInsnNode
-import org.objectweb.asm.tree.MethodNode
+import org.objectweb.asm.tree.*
 import java.util.concurrent.atomic.AtomicInteger
 
 class ExprTree private constructor(private val exprs: ArrayDeque<Expr>) : Iterable<Expr> {
@@ -52,6 +52,16 @@ class ExprTree private constructor(private val exprs: ArrayDeque<Expr>) : Iterab
         visitor.visitEnd(this)
     }
 
+    val instructions: List<AbstractInsnNode> get() {
+        val list = mutableListOf<AbstractInsnNode>()
+        for(expr in this) {
+            list.addAll(expr.instructions)
+        }
+        return list
+    }
+
+    val insnList: InsnList get() = InsnList().also { instructions.forEach(it::add) }
+
     companion object {
         fun build(method: MethodNode) = build(method.instructions.toList())
         fun build(instructions: List<AbstractInsnNode>): ExprTree {
@@ -65,7 +75,7 @@ class ExprTree private constructor(private val exprs: ArrayDeque<Expr>) : Iterab
             val exprList = mutableListOf<Expr>()
             val stackIdx = AtomicInteger(0)
             for(insn in stack) {
-                val expr = createExpr(insn, stackIdx.getAndIncrement(), insn.pops)
+                val expr = createExpr(insn, stackIdx.getAndIncrement(), resolveSize(insn))
                 exprList.add(expr)
             }
 
@@ -127,7 +137,16 @@ class ExprTree private constructor(private val exprs: ArrayDeque<Expr>) : Iterab
         }
 
         private fun createExpr(insn: AbstractInsnNode, index: Int, size: Int): Expr {
-            return Expr(insn, index, size)
+            return when(insn.opcode) {
+                in ICONST_M1..SIPUSH -> ConstExpr(insn, index, size)
+                LDC -> LdcExpr(insn as LdcInsnNode, index, size)
+                in GETSTATIC..PUTFIELD -> FieldExpr(insn as FieldInsnNode, index, size)
+                in INVOKEVIRTUAL..INVOKEDYNAMIC -> MethodExpr(insn as MethodInsnNode, index, size)
+                in IFEQ..IFLE, in IFNULL..IFNONNULL -> BranchExpr(insn as JumpInsnNode, index, size)
+                in IF_ICMPEQ..IF_ACMPNE -> CompBranchExpr(insn as JumpInsnNode, index, size)
+                in IADD..LXOR -> MathExpr(insn, index, size)
+                else -> Expr(insn, index, size)
+            }
         }
     }
 }

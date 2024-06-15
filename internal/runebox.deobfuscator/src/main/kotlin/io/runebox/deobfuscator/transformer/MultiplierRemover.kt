@@ -1,5 +1,6 @@
 package io.runebox.deobfuscator.transformer
 
+import com.google.common.collect.HashMultiset
 import com.google.common.collect.MultimapBuilder
 import io.runebox.asm.core.*
 import io.runebox.deobfuscator.Logger
@@ -442,8 +443,8 @@ class MultiplierRemover : Transformer {
                     }
                 }
                 if (!value.isMul && !value.isAdd) return
-                val a = value.a
-                val b = value.b
+                val a = value.left
+                val b = value.right
                 var ldc: Valu? = null
                 var other: Valu? = null
                 if (a.isLdcInt) {
@@ -472,12 +473,12 @@ class MultiplierRemover : Transformer {
             private fun asFieldMul(value: Valu.Two): FieldMul? {
                 var ldc: Valu? = null
                 var get: Valu? = null
-                if (value.a.isLdcInt && value.b.isGetField) {
-                    ldc = value.a
-                    get = value.b
-                } else if (value.b.isLdcInt && value.a.isGetField) {
-                    ldc = value.b
-                    get = value.a
+                if (value.left.isLdcInt && value.right.isGetField) {
+                    ldc = value.left
+                    get = value.right
+                } else if (value.right.isLdcInt && value.left.isGetField) {
+                    ldc = value.right
+                    get = value.left
                 }
                 if (ldc != null && get != null) {
                     if (isMultiplier(ldc.ldcNum)) return FieldMul(get, ldc)
@@ -513,7 +514,7 @@ class MultiplierRemover : Transformer {
 
             override fun getSize() = v.size
 
-            class Two(value: SourceValue, val a: Valu, val b: Valu) : Valu(value)
+            class Two(value: SourceValue, val left: Valu, val right: Valu) : Valu(value)
         }
 
         private data class Mul(val dec: Boolean, val n: Number) {
@@ -586,11 +587,11 @@ class MultiplierRemover : Transformer {
                 if (pairs.isNotEmpty()) return pairs.single().decoder
                 val fs = distinct.filter { f -> distinct.all { isFactor(it, f) } }
                 if (fs.size == 1) return fs.single().decoder
-                if(fs.isEmpty()) {
-                    distinct.forEach { mul ->
-
-                    }
-                }
+                check(fs.size == 2 && fs.size == distinct.size)
+                val counts = HashMultiset.create(ms)
+                val maxCount = counts.entrySet().maxBy { it.count }!!.count
+                val maxs = counts.entrySet().filter { it.count == maxCount }
+                if(maxs.size == 1) return maxs.single().element.decoder
                 return fs.first { it.dec }.decoder
             }
 

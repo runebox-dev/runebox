@@ -43,6 +43,9 @@ class ClassPool {
     }
 
     fun replaceClass(old: ClassNode, new: ClassNode) {
+        new.jarIndex = old.jarIndex
+        new.isIgnored = old.isIgnored
+        new.isJvm = old.isJvm
         removeClass(old)
         addClass(new)
     }
