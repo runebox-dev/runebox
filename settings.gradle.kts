@@ -1,9 +1,12 @@
 rootProject.name = "runebox"
 
+module(":gamepack", title = "runescape")
+
 module(":asm", "internal/")
 module(":deobfuscator", "internal/")
+module(":decompiler", "internal/")
 
-fun module(name: String, directory: String = "") {
+fun module(name: String, directory: String = "", title: String = "runebox") {
     include(name)
-    project(name).projectDir = file(directory+"runebox."+name.substringAfter(":")+"/")
+    project(name).projectDir = file(directory+"$title."+name.substringAfter(":")+"/")
 }

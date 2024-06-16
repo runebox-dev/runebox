@@ -1,7 +1,3 @@
-@file:Suppress("DEPRECATION", "removal")
-
-package io.runebox.deobfuscator
-
 import java.applet.Applet
 import java.applet.AppletContext
 import java.applet.AppletStub
@@ -13,7 +9,7 @@ import java.net.URL
 import java.net.URLClassLoader
 import javax.swing.JFrame
 
-class TestClient(private val clientJar: File, private val vanillaClientJar: File? = null) {
+class TestClient() {
 
     private val params = hashMapOf<String, String>()
 
@@ -31,14 +27,18 @@ class TestClient(private val clientJar: File, private val vanillaClientJar: File
             }
         }
 
-        // Create Applet from client.class
-        val classLoader = if(vanillaClientJar != null) URLClassLoader(arrayOf(clientJar.toURI().toURL(), vanillaClientJar.toURI().toURL())) else URLClassLoader(arrayOf(clientJar.toURI().toURL()))
-        val mainClass = params["initial_class"]!!.replace(".class", "")
-        val applet = try {
-            classLoader.loadClass(mainClass).newInstance() as Applet
-        } catch (e: ClassNotFoundException) {
-            classLoader.loadClass(mainClass.replaceFirstChar { it.uppercaseChar() }).newInstance() as Applet
+        // Download the vanilla gamepack.jar from Jagex. We do this so that we can include the vanilla non modified classes in the
+        // classloader even though we dont run any of the vanilla classes. This prevent the reflection checks from breaking.
+        val tmpVanillaJar = File.createTempFile("tmp-gamepack.vanilla", "jar").also { it.deleteOnExit() }
+        URL("http://oldschool1.runescape.com/${params["initial_jar"]}").openConnection().getInputStream().use { input ->
+            tmpVanillaJar.outputStream().use { output ->
+                input.copyTo(output)
+            }
         }
+
+        // Create Applet from client.class
+        val classLoader = URLClassLoader(arrayOf(tmpVanillaJar.toURI().toURL()), TestClient::class.java.classLoader)
+        val applet = classLoader.loadClass("Client").newInstance() as Applet
 
         applet.background = Color.BLACK
         applet.layout = null
@@ -49,7 +49,7 @@ class TestClient(private val clientJar: File, private val vanillaClientJar: File
         applet.init()
 
         // Create JFrame window to display applet
-        val frame = JFrame("Test Client - ${clientJar.name}")
+        val frame = JFrame("Client [Revision: ${params["25"]}]")
         frame.defaultCloseOperation = JFrame.EXIT_ON_CLOSE
         frame.layout = GridLayout(1, 0)
         frame.add(applet)

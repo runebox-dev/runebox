@@ -5,6 +5,7 @@ import com.google.common.collect.MultimapBuilder
 import io.runebox.asm.core.*
 import io.runebox.deobfuscator.Logger
 import io.runebox.deobfuscator.Transformer
+import io.runebox.deobfuscator.asm.multiplier
 import org.objectweb.asm.Opcodes.*
 import org.objectweb.asm.Type
 import org.objectweb.asm.Type.INT_TYPE
@@ -23,6 +24,13 @@ class MultiplierRemover : Transformer {
 
         val multipliers = EuclideanMultipliers(pool).calculateDecoders()
         val decoders = multipliers.decoders.mapKeys { it.key }.mapValues { it.value.toLong() }
+
+        for((ref, decoder) in decoders.entries) {
+            val owner = ref.substring(0, ref.lastIndexOf("."))
+            val name = ref.substring(ref.lastIndexOf(".") + 1)
+            val field = pool.findClass(owner).fields.first { it.name == name }
+            field.multiplier = decoder
+        }
 
         Logger.info("Simplifying field multiplier expressions...")
 
@@ -591,7 +599,7 @@ class MultiplierRemover : Transformer {
                 if (pairs.isNotEmpty()) return pairs.single().decoder
                 val fs = distinct.filter { f -> distinct.all { isFactor(it, f) } }
                 if (fs.size == 1) return fs.single().decoder
-                check(fs.size == 2 && fs.size == distinct.size)
+                //check(fs.size == 2 && fs.size == distinct.size)
                 val counts = HashMultiset.create(ms)
                 val maxCount = counts.entrySet().maxBy { it.count }!!.count
                 val maxs = counts.entrySet().filter { it.count == maxCount }

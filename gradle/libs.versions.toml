@@ -1,12 +1,15 @@
 [versions]
 kotlin = "1.9.23"
-jvm = "17"
+jvm = "11"
 gradle = "8.6"
 asm = "9.7"
 kotest = "5.9.0"
 guava = "33.2.0-jre"
 jgrapht = "1.5.2"
 treeprinter = "3.2.0"
+fernflower = "1.0.1"
+bouncycastle = "1.64"
+json = "20220320"
 
 [libraries]
 kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
@@ -21,6 +24,9 @@ kotest-property = { module = "io.kotest:kotest-property", version.ref = "kotest"
 guava = { module = "com.google.guava:guava", version.ref = "guava" }
 jgrapht = { module = "org.jgrapht:jgrapht-core", version.ref = "jgrapht" }
 treeprinter = { module = "hu.webarticum:tree-printer", version.ref = "treeprinter" }
+fernflower = { module = "com.github.runebox:fernflower", version.ref = "fernflower" }
+bouncycastle = { module = "org.bouncycastle:bcprov-jdk15on", version.ref = "bouncycastle" }
+json = { module = "org.json:json", version.ref = "json" }
 
 [bundles]
 kotlin = ["kotlin-stdlib", "kotlin-reflect"]
