@@ -35,6 +35,18 @@ class ExprTree(val method: MethodNode) : Iterable<Expr> {
         expr.accept(visitor)
     }
 
+    operator fun get(index: Int) = exprs[index]
+
+    fun indexOf(expr: Expr) = exprs.indexOf(expr)
+
+    val instructions: List<AbstractInsnNode> get() {
+        val insns = mutableListOf<AbstractInsnNode>()
+        for(expr in this) {
+            insns.addAll(expr.collapse())
+        }
+        return insns
+    }
+
     private fun build() {
         val insns = method.instructions.toArray()
         exprs = LinkedList()
@@ -129,7 +141,20 @@ class ExprTree(val method: MethodNode) : Iterable<Expr> {
     }
 
     private fun createExpr(insn: AbstractInsnNode, opcode: Int, pops: Int, pushes: Int): Expr {
-        return Expr(insn, pops, pushes)
+        return when {
+            insn is LabelNode -> LabelExpr(insn, pops, pushes)
+            insn is LineNumberNode -> LineExpr(insn, pops, pushes)
+            opcode in ICONST_M1..LDC -> ConstExpr(insn, pops, pushes)
+            opcode == GOTO -> GotoExpr(insn as JumpInsnNode, pops, pushes)
+            opcode in GETSTATIC..PUTFIELD -> FieldExpr(insn as FieldInsnNode, pops, pushes)
+            insn is MethodInsnNode -> MethodExpr(insn, pops, pushes)
+            opcode in IFEQ..IFLE -> IfExpr(insn as JumpInsnNode, pops, pushes)
+            opcode in IF_ICMPEQ..IF_ACMPNE -> IfCmpExpr(insn as JumpInsnNode, pops, pushes)
+            opcode in IADD..LXOR -> MathExpr(insn, pops, pushes)
+            opcode in ILOAD..ALOAD -> VarLoadExpr(insn as VarInsnNode, pops, pushes)
+            opcode in ISTORE..ASTORE -> VarStoreExpr(insn as VarInsnNode, pops, pushes)
+            else -> Expr(insn, pops, pushes)
+        }
     }
 
     private val Char.isDoubleOrLong: Boolean get() = this == 'D' || this == 'J'

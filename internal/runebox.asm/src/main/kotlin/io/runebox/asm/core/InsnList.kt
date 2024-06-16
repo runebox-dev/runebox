@@ -1,5 +1,6 @@
 package io.runebox.asm.core
 
+import io.runebox.asm.expr.ExprTree
 import org.objectweb.asm.tree.AbstractInsnNode
 import org.objectweb.asm.tree.InsnList
 
