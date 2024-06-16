@@ -32,12 +32,16 @@ class Deobfuscator(
         register<UniqueRenamer>()
         register<UnusedArgumentRemover>()
         register<StaticFieldOwnerFixer>()
-        register<StaticMethodOwnerFixer>()
+        register<StaticMethodOrigClassMover>()
         register<UnusedFieldRemover>()
         register<UnusedMethodRemover>()
         register<ExprOrderNormalizer>()
         register<StackFrameBuilder>()
         register<MultiplierRemover>()
+        register<FieldSorter>()
+        register<MethodSorter>()
+        register<ErrorConstructorRemover>()
+        register<UnusedClassRemover>()
 
         /**
          * ===== REGISTER TRANSFORMERS - END =====

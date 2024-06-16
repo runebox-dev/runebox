@@ -14,7 +14,7 @@ import org.objectweb.asm.tree.MethodInsnNode
 import org.objectweb.asm.tree.MethodNode
 import java.util.*
 
-class StaticMethodOwnerFixer : Transformer {
+class StaticMethodOrigClassMover : Transformer {
 
     private var count = 0
 

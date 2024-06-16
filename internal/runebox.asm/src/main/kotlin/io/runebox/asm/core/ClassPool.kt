@@ -33,6 +33,11 @@ class ClassPool {
         classMap.remove(cls.name)
     }
 
+    fun removeClass(name: String) {
+        if(!classMap.containsKey(name)) return
+        classMap.remove(name)
+    }
+
     fun containsClass(name: String): Boolean {
         return classMap.containsKey(name)
     }
