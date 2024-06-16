@@ -2,12 +2,16 @@ package io.runebox.deobfuscator.transformer
 
 import io.runebox.asm.InsnMatcher
 import io.runebox.asm.core.ClassPool
+import io.runebox.asm.core.pushedInt
 import io.runebox.asm.isStatic
 import io.runebox.deobfuscator.Logger
 import io.runebox.deobfuscator.Transformer
-import org.objectweb.asm.Opcodes.GOTO
+import io.runebox.deobfuscator.asm.opaqueType
+import io.runebox.deobfuscator.asm.opaqueValue
+import org.objectweb.asm.Opcodes.*
 import org.objectweb.asm.Type
 import org.objectweb.asm.tree.*
+import org.objectweb.asm.util.Printer
 
 class IllegalStateExceptionRemover : Transformer {
 
@@ -36,6 +40,13 @@ class IllegalStateExceptionRemover : Transformer {
         return (Type.getArgumentsAndReturnSizes(desc) shr 2) - offset - 1
     }
 
+    private fun opaqueValue(number: Int, ifOpcode: Int): Int = when(ifOpcode) {
+        IF_ICMPEQ -> number
+        IF_ICMPGE, IF_ICMPGT -> number + 1
+        IF_ICMPLE, IF_ICMPLT, IF_ICMPNE -> number - 1
+        else -> throw RuntimeException("Could not calculate opaque value from opcode: ${Printer.OPCODES[ifOpcode]}.")
+    }
+
     private fun MethodNode.checkExceptionPattern(insns: List<AbstractInsnNode>): Boolean {
         val load = insns[0] as VarInsnNode
         val new = insns[3] as TypeInsnNode
@@ -49,6 +60,11 @@ class IllegalStateExceptionRemover : Transformer {
     }
 
     private fun MethodNode.removeInsns(insns: List<AbstractInsnNode>) {
+        val const = insns[1].pushedInt!!
+        val ifOpcode = insns[2].opcode
+        opaqueType = Type.getArgumentTypes(desc).last().descriptor
+        opaqueValue = opaqueValue(const, ifOpcode)
+
         val jump = insns[2] as JumpInsnNode
         val goto = JumpInsnNode(GOTO, jump.label)
         instructions.insert(insns.last(), goto)

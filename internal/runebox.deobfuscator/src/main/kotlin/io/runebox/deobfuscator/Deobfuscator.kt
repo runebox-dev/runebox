@@ -23,6 +23,8 @@ class Deobfuscator(
          * ===== REGISTER TRANSFORMERS - START =====
          */
 
+        register<StackFrameBuilder>()
+        register<ObfInfoInitializer>()
         register<VisibilityFixer>()
         register<RuntimeExceptionRemover>()
         register<DeadCodeRemover>()
@@ -36,12 +38,13 @@ class Deobfuscator(
         register<UnusedFieldRemover>()
         register<UnusedMethodRemover>()
         register<ExprOrderNormalizer>()
-        register<StackFrameBuilder>()
+        register<StaticFieldOrigClassMover>()
         register<MultiplierRemover>()
         register<FieldSorter>()
         register<MethodSorter>()
         register<ErrorConstructorRemover>()
         register<UnusedClassRemover>()
+        register<ObfInfoAnnotationAdder>()
 
         /**
          * ===== REGISTER TRANSFORMERS - END =====
