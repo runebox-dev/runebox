@@ -19,10 +19,12 @@ class MultiplierRemover : Transformer {
     private var count = 0
 
     override fun transform(pool: ClassPool) {
-        Logger.info("Calculating euclidean multiplier decoder values...")
+        Logger.info("Computing field multiplier encoder/decoders...")
 
         val multipliers = EuclideanMultipliers(pool).calculateDecoders()
         val decoders = multipliers.decoders.mapKeys { it.key }.mapValues { it.value.toLong() }
+
+        Logger.info("Simplifying field multiplier expressions...")
 
         pool.allClasses.forEach { c ->
             c.methods.forEach { m ->
@@ -32,6 +34,8 @@ class MultiplierRemover : Transformer {
                 m.maxStack -= 2
             }
         }
+
+        Logger.info("Cleaning up redundant math instructions.")
 
         pool.allClasses.forEach { c ->
             c.methods.forEach { m ->
@@ -59,7 +63,7 @@ class MultiplierRemover : Transformer {
             }
         }
 
-        Logger.info("Removed $count euclidean constant multipliers.")
+        Logger.info("Removed $count encrypted field multipliers.")
     }
 
     private fun MethodNode.cancelOutMultipliers(decoders: Map<String, Long>) {

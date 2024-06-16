@@ -28,5 +28,10 @@ var MethodNode.exprTree: ExprTree
         val insns = InsnList()
         val labelMap = LabelMap()
         v.instructions.forEach { insns.add(it.clone(labelMap)) }
+        tryCatchBlocks.forEach { tcb ->
+            tcb.start = tcb.start?.let { labelMap[it] }
+            tcb.end = tcb.end?.let { labelMap[it] }
+            tcb.handler = tcb.handler?.let { labelMap[it] }
+        }
         instructions = insns
     }

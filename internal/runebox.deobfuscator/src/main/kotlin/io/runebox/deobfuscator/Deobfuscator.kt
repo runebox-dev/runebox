@@ -23,7 +23,6 @@ class Deobfuscator(
          * ===== REGISTER TRANSFORMERS - START =====
          */
 
-        register<StackFrameBuilder>()
         register<VisibilityFixer>()
         register<RuntimeExceptionRemover>()
         register<DeadCodeRemover>()
@@ -36,7 +35,8 @@ class Deobfuscator(
         register<StaticMethodOwnerFixer>()
         register<UnusedFieldRemover>()
         register<UnusedMethodRemover>()
-        register<ExprOrderFixer>()
+        register<ExprOrderNormalizer>()
+        register<StackFrameBuilder>()
         register<MultiplierRemover>()
 
         /**

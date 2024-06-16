@@ -144,7 +144,7 @@ class ExprTree(val method: MethodNode) : Iterable<Expr> {
         return when {
             insn is LabelNode -> LabelExpr(insn, pops, pushes)
             insn is LineNumberNode -> LineExpr(insn, pops, pushes)
-            opcode in ICONST_M1..LDC -> ConstExpr(insn, pops, pushes)
+            opcode in ACONST_NULL..LDC -> ConstExpr(insn, pops, pushes)
             opcode == GOTO -> GotoExpr(insn as JumpInsnNode, pops, pushes)
             opcode in GETSTATIC..PUTFIELD -> FieldExpr(insn as FieldInsnNode, pops, pushes)
             insn is MethodInsnNode -> MethodExpr(insn, pops, pushes)
