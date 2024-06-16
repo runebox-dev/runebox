@@ -119,5 +119,5 @@ class Deobfuscator(
 }
 
 fun String.isObfuscatedName(): Boolean {
-    return (this.length <= 2 || (this.length == 3 && this !in listOf("add", "get", "set", "put", "run", "abs"))) || (listOf("class", "method", "field").any { this.startsWith(it) })
+    return (this.length <= 2 || (this.length == 3 && this !in listOf("add", "get", "set", "put", "run", "abs", "err", "out"))) || (listOf("class", "method", "field").any { this.startsWith(it) })
 }

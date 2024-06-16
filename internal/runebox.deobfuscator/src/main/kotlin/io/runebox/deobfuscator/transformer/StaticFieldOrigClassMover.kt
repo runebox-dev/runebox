@@ -44,6 +44,7 @@ class StaticFieldOrigClassMover : Transformer {
         val movedFields = hashSetOf<FieldNode>()
         fieldOwnerMap.forEach { (ref, newOwner) ->
             val field = ref.resolveField(pool) ?: error("Failed to resolve field: $ref.")
+            if(!field.name.isObfuscatedName()) return@forEach
             val newCls = pool.findClass(newOwner)
 
             val newField = FieldNode(field.access, field.name, field.desc, field.signature, field.value)

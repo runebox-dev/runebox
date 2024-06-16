@@ -31,13 +31,22 @@ class UnusedClassRemover : Transformer {
             if(cls.fields.isEmpty() && cls.methods.isEmpty()) emptyClasses.add(cls.name)
             if(cls.superName != null) referencedClasses.add(cls.superName)
             for(itf in cls.interfaces) referencedClasses.add(itf)
+            for(anno in (cls.visibleAnnotations ?: emptyList()).plus(cls.invisibleAnnotations ?: emptyList())) {
+                referencedClasses.add(anno.desc)
+            }
         }
         for(cls in pool.allClasses) {
             for(field in cls.fields) {
                 Type.getType(field.desc).addReference()
+                for(anno in (field.visibleAnnotations ?: emptyList()).plus(field.invisibleAnnotations ?: emptyList())) {
+                    referencedClasses.add(anno.desc)
+                }
             }
             for(method in cls.methods) {
                 Type.getType(method.desc).addReference()
+                for(anno in (method.visibleAnnotations ?: emptyList()).plus(method.invisibleAnnotations ?: emptyList())) {
+                    referencedClasses.add(anno.desc)
+                }
                 for(insn in method.instructions) {
                     when(insn) {
                         is LdcInsnNode -> if(insn.cst is Type) (insn.cst as Type).addReference()
@@ -48,7 +57,7 @@ class UnusedClassRemover : Transformer {
             }
         }
 
-        var changed = false
+        var changed: Boolean
         do {
             changed = false
             for(name in emptyClasses.subtract(referencedClasses)) {

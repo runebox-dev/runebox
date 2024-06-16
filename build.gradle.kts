@@ -1,5 +1,5 @@
+
 import org.gradle.accessors.dm.LibrariesForLibs
-import org.gradle.accessors.dm.LibrariesForLibs.PluginAccessors
 import org.jetbrains.kotlin.gradle.plugin.KotlinPluginWrapper
 import org.jetbrains.kotlin.gradle.plugin.mpp.pm20.util.archivesName
 
@@ -18,6 +18,7 @@ allprojects {
     repositories {
         mavenCentral()
         mavenLocal()
+        maven(url = "https://jitpack.io/")
     }
 
     plugins.withType<JavaPlugin> {

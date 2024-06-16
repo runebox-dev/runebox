@@ -599,7 +599,7 @@ class MultiplierRemover : Transformer {
                 if (pairs.isNotEmpty()) return pairs.single().decoder
                 val fs = distinct.filter { f -> distinct.all { isFactor(it, f) } }
                 if (fs.size == 1) return fs.single().decoder
-                check(fs.size == 2 && fs.size == distinct.size)
+                //check(fs.size == 2 && fs.size == distinct.size)
                 val counts = HashMultiset.create(ms)
                 val maxCount = counts.entrySet().maxBy { it.count }!!.count
                 val maxs = counts.entrySet().filter { it.count == maxCount }

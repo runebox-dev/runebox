@@ -10,6 +10,11 @@ fun ClassNode.remap(remapper: AsmRemapper) {
     superName = remapper.mapType(superName)
     interfaces = interfaces?.map(remapper::mapType)
 
+    for(anno in (visibleAnnotations ?: emptyList()).plus(invisibleAnnotations ?: emptyList())) {
+        anno.desc = remapper.mapDesc(anno.desc)
+        anno.values = anno.values?.map(remapper::mapValue) ?: emptyList()
+    }
+
     val origOuterClass = outerClass
     outerClass = remapper.mapType(origOuterClass)
 
@@ -39,6 +44,10 @@ fun FieldNode.remap(remapper: AsmRemapper, owner: String) {
     desc = remapper.mapDesc(desc)
     signature = remapper.mapSignature(signature, true)
     value = remapper.mapValue(value)
+    for(anno in (visibleAnnotations ?: emptyList()).plus(invisibleAnnotations ?: emptyList())) {
+        anno.desc = remapper.mapDesc(anno.desc)
+        anno.values = anno.values?.map(remapper::mapValue) ?: emptyList()
+    }
 }
 
 fun MethodNode.remap(remapper: AsmRemapper, owner: String) {
@@ -53,6 +62,11 @@ fun MethodNode.remap(remapper: AsmRemapper, owner: String) {
 
     for(tcb in tryCatchBlocks) {
         tcb.remap(remapper)
+    }
+
+    for(anno in (visibleAnnotations ?: emptyList()).plus(invisibleAnnotations ?: emptyList())) {
+        anno.desc = remapper.mapType(anno.desc)
+        anno.values = anno.values?.map(remapper::mapValue) ?: emptyList()
     }
 }
 

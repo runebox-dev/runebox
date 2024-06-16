@@ -9,6 +9,10 @@ import io.runebox.deobfuscator.asm.origOwner
 
 class ObfInfoInitializer : Transformer {
     override fun transform(pool: ClassPool) {
+        for(cls in pool.classes) {
+            cls.visibleAnnotations = emptyList()
+            cls.invisibleAnnotations = emptyList()
+        }
         for(cls in pool.allClasses) {
             cls.visibleAnnotations = cls.visibleAnnotations ?: emptyList()
             cls.invisibleAnnotations = cls.invisibleAnnotations ?: emptyList()
