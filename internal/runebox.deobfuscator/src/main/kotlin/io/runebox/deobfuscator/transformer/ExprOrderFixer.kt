@@ -11,7 +11,8 @@ class ExprOrderFixer : Transformer {
     override fun transform(pool: ClassPool) {
         for(cls in pool.classes) {
             for(method in cls.methods) {
-                val exprs = ExprTree.build(method)
+                val exprs = ExprTree(method)
+
                 println()
             }
         }

@@ -1,152 +1,155 @@
 package io.runebox.asm.expr
 
-import io.runebox.asm.core.isDoubleOrLong
-import io.runebox.asm.core.resolveSize
-import io.runebox.asm.expr.impl.*
+import hu.webarticum.treeprinter.SimpleTreeNode
+import hu.webarticum.treeprinter.decorator.BorderTreeNodeDecorator
+import hu.webarticum.treeprinter.printer.listing.ListingTreePrinter
+import io.runebox.asm.core.toRef
+import io.runebox.asm.print
+import io.runebox.asm.stackMetadata
 import org.objectweb.asm.Opcodes.*
+import org.objectweb.asm.Type
 import org.objectweb.asm.tree.*
-import java.util.concurrent.atomic.AtomicInteger
+import org.objectweb.asm.tree.AbstractInsnNode.*
+import java.util.*
 
-class ExprTree private constructor(private val exprs: ArrayDeque<Expr>) : Iterable<Expr> {
+class ExprTree(val method: MethodNode) : Iterable<Expr> {
+
+    private var exprs = LinkedList<Expr>()
+    private var ptr = -1
 
     init {
-        for(expr in exprs) expr.tree = this
+        build()
+        exprs.forEach { it.tree = this }
     }
 
     override fun iterator(): Iterator<Expr> {
         return exprs.iterator()
     }
 
-    fun add(expr: Expr) {
-        exprs.addLast(expr)
+    fun accept(visitor: ExprVisitor) {
+        for(expr in this) accept(visitor, expr)
     }
 
-    fun addFirst(expr: Expr) {
-        exprs.addFirst(expr)
+    fun accept(visitor: ExprVisitor, expr: Expr) {
+        for(child in expr) accept(visitor, child)
+        expr.accept(visitor)
     }
 
-    fun insert(target: Expr, expr: Expr) {
-        exprs.add(exprs.indexOf(target) + 1, expr)
-    }
+    private fun build() {
+        val insns = method.instructions.toArray()
+        exprs = LinkedList()
+        repeat(insns.size) { exprs.add(Expr(InsnNode(NOP))) }
 
-    fun insertBefore(target: Expr, expr: Expr) {
-        exprs.add(exprs.indexOf(target), expr)
-    }
-
-    fun remove(vararg exprs: Expr) {
-        for(expr in exprs) {
-            this.exprs.remove(expr)
-        }
-    }
-
-    private fun accept(visitor: ExprTreeVisitor, parent: Expr) {
-        visitor.visit(parent)
-        for(expr in parent) accept(visitor, expr)
-    }
-
-    fun accept(visitor: ExprTreeVisitor) {
-        visitor.visitStart(this)
-        for(expr in this) {
-            accept(visitor, expr)
-        }
-        visitor.visitEnd(this)
-    }
-
-    val instructions: List<AbstractInsnNode> get() {
-        val list = mutableListOf<AbstractInsnNode>()
-        for(expr in this) {
-            list.addAll(expr.instructions)
-        }
-        return list
-    }
-
-    val insnList: InsnList get() = InsnList().also { instructions.forEach(it::add) }
-
-    companion object {
-        fun build(method: MethodNode) = build(method.instructions.toList())
-        fun build(instructions: List<AbstractInsnNode>): ExprTree {
-            if(instructions.isEmpty()) return ExprTree(ArrayDeque())
-
-            val stack = mutableListOf<AbstractInsnNode>()
-            stack.addAll(instructions)
-            stack.reverse()
-
-
-            val exprList = mutableListOf<Expr>()
-            val stackIdx = AtomicInteger(0)
-            for(insn in stack) {
-                val expr = createExpr(insn, stackIdx.getAndIncrement(), resolveSize(insn))
-                exprList.add(expr)
-            }
-
-            val exprs = ArrayDeque<Expr>()
-            val idx = AtomicInteger(0)
-            var prev: Expr? = null
-            while(idx.get() < exprList.size) {
-                val startIdx = idx.get()
-                handleExpr(exprList, -1, idx)
-                idx.incrementAndGet()
-                val expr = exprList[startIdx]
-                if(prev != null) {
-                    expr.next = prev
-                    prev.previous = expr
-                }
-                exprs.addFirst(expr)
-                prev = expr
-            }
-
-            return ExprTree(exprs)
-        }
-
-        private fun handleExpr(exprList: MutableList<Expr>, parentIdx: Int, idx: AtomicInteger): Int {
-            val expr = if(idx.get() >= exprList.size) null else exprList[idx.get()]
+        for(i in insns.indices) {
+            val insn = insns[i]
+            val opcode = insn.opcode
+            val type = insn.type
             var pops = 0
-            if(expr != null) {
-                if(parentIdx != -1) {
-                    exprList[parentIdx].addChild(expr)
+            var pushes = 0
+            when(type) {
+                INSN, INT_INSN, VAR_INSN, TYPE_INSN, JUMP_INSN, TABLESWITCH_INSN, LOOKUPSWITCH_INSN -> {
+                    val stackMetadata = insn.stackMetadata
+                    pops = stackMetadata.pops
+                    pushes = stackMetadata.pushes
                 }
-                if(expr.opcode == GOTO) {
-                    if(expr.parent != null) {
-                        pops = expr.parent!!.size
-                    }
-                } else {
-                    if(expr.opcode == POP2 || expr.opcode == DUP_X1) {
-                        pops = 1
-                    } else if(expr.opcode in listOf(DUP2, DUP_X2, DUP2_X1, DUP2_X2)) {
-                        val isWide = exprList[idx.get() + 1].instruction.isDoubleOrLong
-                        pops = if(isWide) 1 else 2
-                    }
-                    var prev: Expr? = null
-                    var i = 0
-                    while(i < expr.size) {
-                        idx.incrementAndGet()
-                        val child = if(exprList.size > idx.get()) exprList[idx.get()] else null
-                        if(child != null && prev != null) {
-                            child.next = prev
-                            prev.previous = child
+                FIELD_INSN -> {
+                    val f = (insn as FieldInsnNode).desc[0]
+                    when(opcode) {
+                        GETSTATIC -> pushes = if(f.isDoubleOrLong) 2 else 1
+                        GETFIELD -> {
+                            pops = 1
+                            pushes = if(f.isDoubleOrLong) 2 else 1
                         }
-                        i += handleExpr(exprList, expr.index, idx)
-                        prev = child
-                        i++
+                        PUTSTATIC -> pops = if(f.isDoubleOrLong) 2 else 1
+                        PUTFIELD -> pops = if(f.isDoubleOrLong) 3 else 2
                     }
                 }
-            } else {
-                throw ArrayIndexOutOfBoundsException("Failed to fetch expr @ ${idx.get()}.")
+                METHOD_INSN -> {
+                    val args = Type.getArgumentsAndReturnSizes((insn as MethodInsnNode).desc)
+                    if(opcode == INVOKESTATIC || opcode == INVOKEDYNAMIC) {
+                        pops = (args shr 2) - 1
+                    } else {
+                        pops = args shr 2
+                    }
+                    pushes = args and 0x3
+                }
+                LDC_INSN -> {
+                    val cst = (insn as LdcInsnNode).cst
+                    pushes = if(cst is Long || cst is Double) 2 else 1
+                }
+                MULTIANEWARRAY_INSN -> {
+                    pops = (insn as MultiANewArrayInsnNode).dims
+                    pushes = 1
+                }
+                LABEL, FRAME, LINE, IINC_INSN -> { /* Nothing */ }
+                else -> throw RuntimeException()
             }
-            return pops
+
+            exprs[i] = createExpr(insn, opcode, pops, pushes)
         }
 
-        private fun createExpr(insn: AbstractInsnNode, index: Int, size: Int): Expr {
-            return when(insn.opcode) {
-                in ICONST_M1..SIPUSH -> ConstExpr(insn, index, size)
-                LDC -> LdcExpr(insn as LdcInsnNode, index, size)
-                in GETSTATIC..PUTFIELD -> FieldExpr(insn as FieldInsnNode, index, size)
-                in INVOKEVIRTUAL..INVOKEDYNAMIC -> MethodExpr(insn as MethodInsnNode, index, size)
-                in IFEQ..IFLE, in IFNULL..IFNONNULL -> BranchExpr(insn as JumpInsnNode, index, size)
-                in IF_ICMPEQ..IF_ACMPNE -> CompBranchExpr(insn as JumpInsnNode, index, size)
-                in IADD..LXOR -> MathExpr(insn, index, size)
-                else -> Expr(insn, index, size)
-            }
+        ptr = insns.size - 1
+
+        val exprList = LinkedList<Expr>()
+        var prev: Expr? = null
+        while(true) {
+            val next = seek() ?: break
+            next.next = prev
+            prev?.previous = next
+            prev = next
+            exprList.addFirst(next)
         }
+        exprs = exprList
+    }
+
+    private fun seek(): Expr? {
+        if(ptr < 0) return null
+
+        val expr = exprs[ptr--]
+        if(expr.pops == 0) return expr
+
+        var pops = expr.pops
+        while(pops != 0) {
+            val child = seek() ?: break
+            if(child.insn.opcode == MONITOREXIT && expr.insn.opcode == ATHROW) {
+                child.pushes = 1
+            }
+            expr.addChild(child)
+            val delta = pops - child.pushes
+            if(delta < 0) {
+                expr.pushes -= delta
+                child.pushes = 0
+                break
+            }
+            pops -= child.pushes
+            child.pushes = 0
+        }
+
+        return expr
+    }
+
+    private fun createExpr(insn: AbstractInsnNode, opcode: Int, pops: Int, pushes: Int): Expr {
+        return Expr(insn, pops, pushes)
+    }
+
+    private val Char.isDoubleOrLong: Boolean get() = this == 'D' || this == 'J'
+
+    fun prettyPrint() {
+        val root = SimpleTreeNode("ExprTree: [${method.toRef()}]")
+        for(expr in this) {
+            prettyPrintExpr(expr, root)
+        }
+        ListingTreePrinter().print(BorderTreeNodeDecorator(root))
+    }
+
+    private fun prettyPrintExpr(expr: Expr, node: SimpleTreeNode) {
+        val str = StringBuilder()
+        str.appendLine(expr.toString()+" : "+expr.insn.print().trim())
+        str.appendLine()
+        for(child in expr) {
+            str.appendLine(child.insn.print().trim())
+        }
+        val n = SimpleTreeNode(str.toString())
+        node.addChild(n)
     }
 }

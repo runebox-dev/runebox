@@ -6,5 +6,6 @@ plugins {
 dependencies {
     api(libs.bundles.asm)
     api(libs.guava)
+    api(libs.treeprinter)
     implementation(libs.jgrapht)
 }
