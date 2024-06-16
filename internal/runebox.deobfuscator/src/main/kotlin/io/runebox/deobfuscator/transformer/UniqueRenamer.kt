@@ -20,6 +20,8 @@ class UniqueRenamer : Transformer {
         mappings = NameMap(pool)
 
         Logger.info("Generating name mappings...")
+
+        mappings.mapClass(pool.findClass("client"), "Client")
         for(cls in pool.classes) {
             if(!cls.name.isObfuscatedName()) continue
             mappings.mapClass(cls, "class${++classCount}")
@@ -38,6 +40,7 @@ class UniqueRenamer : Transformer {
         }
 
         Logger.info("Applying name mappings...")
+
         val remapper = AsmRemapper(mappings)
         for(cls in pool.classes) {
             cls.remap(remapper)

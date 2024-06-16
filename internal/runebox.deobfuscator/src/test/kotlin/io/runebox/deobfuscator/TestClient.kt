@@ -13,7 +13,7 @@ import java.net.URL
 import java.net.URLClassLoader
 import javax.swing.JFrame
 
-class TestClient(private val clientJar: File) {
+class TestClient(private val clientJar: File, private val vanillaClientJar: File? = null) {
 
     private val params = hashMapOf<String, String>()
 
@@ -32,9 +32,13 @@ class TestClient(private val clientJar: File) {
         }
 
         // Create Applet from client.class
-        val classLoader = URLClassLoader(arrayOf(clientJar.toURI().toURL()))
+        val classLoader = if(vanillaClientJar != null) URLClassLoader(arrayOf(clientJar.toURI().toURL(), vanillaClientJar.toURI().toURL())) else URLClassLoader(arrayOf(clientJar.toURI().toURL()))
         val mainClass = params["initial_class"]!!.replace(".class", "")
-        val applet = classLoader.loadClass(mainClass).newInstance() as Applet
+        val applet = try {
+            classLoader.loadClass(mainClass).newInstance() as Applet
+        } catch (e: ClassNotFoundException) {
+            classLoader.loadClass(mainClass.replaceFirstChar { it.uppercaseChar() }).newInstance() as Applet
+        }
 
         applet.background = Color.BLACK
         applet.layout = null

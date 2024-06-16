@@ -40,11 +40,13 @@ class Deobfuscator(
         register<ExprOrderNormalizer>()
         register<StaticFieldOrigClassMover>()
         register<MultiplierRemover>()
+        register<CopyPropagationFixer>()
         register<FieldSorter>()
         register<MethodSorter>()
         register<ErrorConstructorRemover>()
         register<UnusedClassRemover>()
-        register<ObfInfoAnnotationAdder>()
+        register<GetPathErrorFixer>()
+        //register<ObfInfoAnnotationAdder>()
 
         /**
          * ===== REGISTER TRANSFORMERS - END =====
