@@ -2,8 +2,6 @@ package io.runebox.asm
 
 import io.runebox.asm.core.findField
 import io.runebox.asm.core.findMethod
-import io.runebox.asm.core.findSuperField
-import io.runebox.asm.core.findSuperMethod
 import org.objectweb.asm.tree.*
 
 data class MemberDef(val name: String, val desc: String) {
@@ -17,8 +15,6 @@ data class MemberDef(val name: String, val desc: String) {
     fun toRef(cls: ClassNode) = MemberRef(cls.name, name, desc)
     fun resolveMethod(cls: ClassNode) = cls.findMethod(name, desc)
     fun resolveField(cls: ClassNode) = cls.findField(name, desc)
-    fun resolveSuperMethod(cls: ClassNode) = cls.findSuperMethod(name, desc)
-    fun resolveSuperField(cls: ClassNode) = cls.findSuperField(name, desc)
 
     val isMethod get() = desc.startsWith("(")
     val isField get() = !isMethod

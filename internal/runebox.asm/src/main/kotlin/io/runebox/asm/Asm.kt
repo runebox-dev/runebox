@@ -1,5 +1,6 @@
 package io.runebox.asm
 
+import io.runebox.asm.core.pool
 import org.objectweb.asm.ClassReader
 import org.objectweb.asm.ClassWriter
 import org.objectweb.asm.Opcodes.*
@@ -20,8 +21,21 @@ fun ByteArray.toClassNode(flags: Int = ClassReader.SKIP_FRAMES): ClassNode {
     return node
 }
 
-fun ClassNode.toByteArray(flags: Int = ClassWriter.COMPUTE_MAXS): ByteArray {
-    val writer = ClassWriter(flags)
+fun ClassNode.toByteArray(flags: Int = ClassWriter.COMPUTE_FRAMES or ClassWriter.COMPUTE_MAXS): ByteArray {
+    val writer = AsmClassWriter(pool, flags)
     this.accept(writer)
     return writer.toByteArray()
+}
+
+fun ClassNode.computeStackFrames(): ClassNode {
+    val writer = AsmClassWriter(pool)
+    this.accept(writer)
+
+    val reader = ClassReader(writer.toByteArray())
+    val newCls = ClassNode()
+    reader.accept(newCls, ClassReader.SKIP_FRAMES)
+
+    pool.replaceClass(this, newCls)
+
+    return this
 }

@@ -1,15 +1,10 @@
 package io.runebox.asm.core
 
-import io.runebox.asm.MemberRef
-import io.runebox.asm.remap.AsmRemapper
-import io.runebox.asm.remap.NameMappings
-import io.runebox.asm.remap.remap
-import io.runebox.asm.toByteArray
-import io.runebox.asm.toClassNode
+import io.runebox.asm.*
+import io.runebox.asm.util.collection.DisjointSet
+import io.runebox.asm.util.collection.ForestDisjointSet
 import org.objectweb.asm.ClassReader
 import org.objectweb.asm.tree.ClassNode
-import org.objectweb.asm.tree.FieldNode
-import org.objectweb.asm.tree.MethodNode
 import java.io.File
 import java.util.*
 import java.util.jar.JarEntry
@@ -38,15 +33,26 @@ class ClassPool {
         classMap.remove(cls.name)
     }
 
+    fun removeClass(name: String) {
+        if(!classMap.containsKey(name)) return
+        classMap.remove(name)
+    }
+
     fun containsClass(name: String): Boolean {
         return classMap.containsKey(name)
     }
 
     fun updateClassName(cls: ClassNode, oldName: String) {
-        if(classMap.containsKey(oldName)) {
-            classMap.remove(oldName)
-            classMap[cls.name] = cls
-        }
+        classMap.remove(oldName)
+        classMap[cls.name] = cls
+    }
+
+    fun replaceClass(old: ClassNode, new: ClassNode) {
+        new.jarIndex = old.jarIndex
+        new.isIgnored = old.isIgnored
+        new.isJvm = old.isJvm
+        removeClass(old)
+        addClass(new)
     }
 
     fun findClass(name: String): ClassNode = classMap[name] ?: jvmClassMap.getOrPut(name) {
@@ -97,19 +103,59 @@ class ClassPool {
         }
     }
 
-    fun resolveMethod(owner: String, name: String, desc: String): MethodNode? {
-        return findClass(owner).findSuperMethod(name, desc)
+    fun createMethodHierarchy() = createMemberHierarchy(ClassNode::methodDefs, ClassNode::methodAccess)
+    fun createFieldHierarchy() = createMemberHierarchy(ClassNode::fieldDefs, ClassNode::fieldAccess)
+
+    private fun createMemberHierarchy(
+        getMembers: (ClassNode) -> List<MemberDef>,
+        getAccess: (ClassNode, MemberDef) -> Int?
+    ): DisjointSet<MemberRef> {
+        val disjointSet = ForestDisjointSet<MemberRef>()
+        val ancestorCache = mutableMapOf<ClassNode, Set<MemberDef>>()
+        for(cls in allClasses) {
+            visitMemberHierarchy(
+                cls,
+                getMembers,
+                getAccess,
+                disjointSet,
+                ancestorCache
+            )
+        }
+        return disjointSet
     }
 
-    fun resolveField(owner: String, name: String, desc: String): FieldNode? {
-        return findClass(owner).findSuperField(name, desc)
-    }
+    private fun visitMemberHierarchy(
+        cls: ClassNode,
+        getMembers: (ClassNode) -> List<MemberDef>,
+        getAccess: (ClassNode, MemberDef) -> Int?,
+        disjointSet: DisjointSet<MemberRef>,
+        ancestorCache: MutableMap<ClassNode, Set<MemberDef>>
+    ): Set<MemberDef> {
+        var ancestors = ancestorCache[cls]?.toMutableSet()
+        if(ancestors != null) return ancestors
 
-    fun resolveMethod(ref: MemberRef) = resolveMethod(ref.owner, ref.name, ref.desc)
-    fun resolveField(ref: MemberRef) = resolveField(ref.owner, ref.name, ref.desc)
+        ancestors = mutableSetOf()
 
-    fun remap(mappings: NameMappings) {
-        val remapper = AsmRemapper(mappings)
-        for(cls in allClasses) cls.remap(remapper)
+        for(parentCls in listOfNotNull(cls.superClass).plus(cls.interfaceClasses)) {
+            val members = visitMemberHierarchy(parentCls, getMembers, getAccess, disjointSet, ancestorCache)
+            for(member in members) {
+                val access = getAccess(cls, member)
+                if(access != null && (access.isStatic || member.name == "<init>" || member.isField)) continue
+
+                val set1 = disjointSet.add(MemberRef(cls.name, member))
+                val set2 = disjointSet.add(MemberRef(parentCls.name, member))
+                disjointSet.union(set1, set2)
+
+                ancestors.add(member)
+            }
+        }
+
+        for(member in getMembers(cls)) {
+            disjointSet.add(MemberRef(cls.name, member))
+            ancestors.add(member)
+        }
+
+        ancestorCache[cls] = ancestors
+        return ancestors
     }
 }
