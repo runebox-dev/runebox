@@ -1,0 +1,65 @@
+public final class Class565 {
+	public boolean[] field5462;
+	public boolean[] field5463;
+	public byte field5450;
+	public byte[] field5444;
+	public byte[] field5447;
+	public byte[] field5464;
+	public byte[] field5465;
+	public byte[] field5466;
+	public byte[] field5467;
+	public byte[][] field5469;
+	public int field5437;
+	public int field5443;
+	public int field5446;
+	public int field5448;
+	public int field5449;
+	public int field5451;
+	public int field5453;
+	public int field5454;
+	public int field5455;
+	public int field5456;
+	public int field5457;
+	public int field5459;
+	public int field5468;
+	public int field5473;
+	public int field5474;
+	public int[] field5452;
+	public int[] field5458;
+	public int[] field5460;
+	public int[] field5461;
+	public int[][] field5470;
+	public int[][] field5471;
+	public int[][] field5472;
+	public final int field5438;
+	public final int field5439;
+	public final int field5440;
+	public final int field5441;
+	public final int field5442;
+	public final int field5445;
+
+	public Class565() {
+		this.field5441 = 4096;
+		this.field5438 = 16;
+		this.field5440 = 258;
+		this.field5439 = 6;
+		this.field5445 = 50;
+		this.field5442 = 18002;
+		this.field5473 = 0;
+		this.field5443 = 0;
+		this.field5458 = new int[256];
+		this.field5460 = new int[257];
+		this.field5462 = new boolean[256];
+		this.field5463 = new boolean[16];
+		this.field5464 = new byte[256];
+		this.field5465 = new byte[4096];
+		this.field5452 = new int[16];
+		this.field5467 = new byte[18002];
+		this.field5466 = new byte[18002];
+		this.field5469 = new byte[6][258];
+		this.field5470 = new int[6][258];
+		this.field5471 = new int[6][258];
+		this.field5472 = new int[6][258];
+		this.field5461 = new int[6];
+	}
+}

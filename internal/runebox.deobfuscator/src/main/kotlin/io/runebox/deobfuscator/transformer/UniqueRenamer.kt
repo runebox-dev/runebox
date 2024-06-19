@@ -24,7 +24,7 @@ class UniqueRenamer : Transformer {
         mappings.mapClass(pool.findClass("client"), "Client")
         for(cls in pool.classes) {
             if(!cls.name.isObfuscatedName()) continue
-            mappings.mapClass(cls, "class${++classCount}")
+            mappings.mapClass(cls, "Class${++classCount}")
         }
         for(cls in pool.classes) {
             for(method in cls.methods) {
