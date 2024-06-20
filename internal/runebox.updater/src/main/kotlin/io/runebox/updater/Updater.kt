@@ -1,6 +1,7 @@
 package io.runebox.updater
 
-import io.runebox.updater.asm.ClassEnv
+import io.runebox.asm.core.ClassPool
+import io.runebox.updater.merge.MergeEngine
 import java.io.File
 
 object Updater {
@@ -8,20 +9,16 @@ object Updater {
     private lateinit var newJar: File
     private lateinit var outputJar: File
 
-    private lateinit var env: ClassEnv
-
-    private fun init() {
-        Logger.info("Initializing Updater.")
-
-        env = ClassEnv()
-        env.init(oldJar, newJar)
-    }
-
     fun run() {
-        init()
+        Logger.info("Starting Updater.")
+        val oldPool = ClassPool().also { it.loadJar(oldJar) }
+        val newPool = ClassPool().also { it.loadJar(newJar) }
 
-        Logger.info("Running Updater.")
+        Logger.info("Initializing engine.")
+        val engine = MergeEngine(oldPool, newPool)
+        engine.merge()
 
+        Logger.info("Finished Updater.")
     }
 
     @JvmStatic
