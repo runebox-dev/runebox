@@ -1,6 +1,7 @@
 package io.runebox.updater
 
 import io.runebox.asm.core.ClassPool
+import io.runebox.asm.core.isIgnored
 import io.runebox.updater.merge.MergeEngine
 import java.io.File
 
@@ -11,8 +12,14 @@ object Updater {
 
     fun run() {
         Logger.info("Starting Updater.")
-        val oldPool = ClassPool().also { it.loadJar(oldJar) }
-        val newPool = ClassPool().also { it.loadJar(newJar) }
+        val oldPool = ClassPool().also {
+            it.loadJar(oldJar)
+            it.classes.filter { it.name.startsWith("org/") }.forEach { c -> c.isIgnored = true }
+        }
+        val newPool = ClassPool().also {
+            it.loadJar(newJar)
+            it.classes.filter { it.name.startsWith("org/") }.forEach { c -> c.isIgnored = true }
+        }
 
         Logger.info("Initializing engine.")
         val engine = MergeEngine(oldPool, newPool)

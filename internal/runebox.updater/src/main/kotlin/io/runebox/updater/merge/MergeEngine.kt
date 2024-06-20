@@ -1,9 +1,9 @@
 package io.runebox.updater.merge
 
 import io.runebox.asm.core.ClassPool
+import io.runebox.asm.core.toRef
 import io.runebox.updater.Logger
-import io.runebox.updater.merge.operation.JumpOperation
-import io.runebox.updater.merge.operation.MatchStringConstants
+import io.runebox.updater.merge.operation.*
 import org.objectweb.asm.tree.ClassNode
 import org.objectweb.asm.tree.FieldNode
 import org.objectweb.asm.tree.MethodNode
@@ -25,22 +25,26 @@ class MergeEngine(
     private val pendingMethodMatches = hashMapOf<MethodNode, MethodMatch>()
     private val pendingFieldMatches = hashMapOf<FieldNode, FieldMatch>()
 
-    private var changesLastCycle = 0
+    var changes = 0
 
     private val operations = mutableListOf<MergeOperation>()
-    private fun jumpTo(index: Int, predicate: (MergeEngine) -> Boolean) = JumpOperation(index, predicate)
 
     init {
         operations.add(MatchStringConstants())
-        operations.add(jumpTo(1) {
-            val c = it.changesLastCycle
-            it.changesLastCycle = 0
-            c > 0
+        operations.add(MergeInitializers())
+        operations.add(MatchDiscreteMethods())
+        operations.add(MatchReferences())
+        operations.add(MergeMatchedClasses())
+        operations.add(VoteCollector())
+        operations.add(jumpTo(0) {
+            val c = it.changes
+            it.changes = 0
+            return@jumpTo c > 0
         })
     }
 
     fun merge() {
-        Logger.info("Merging...")
+        Logger.info("Matching...")
 
         var i = 0
         while(i < operations.size) {
@@ -48,14 +52,15 @@ class MergeEngine(
             if(op is JumpOperation) {
                 if(op.predicate(this)) {
                     i = op.target - 1
-                    continue
                 }
+                i++
+                continue
             }
             op.operate(this)
             i++
         }
     }
-    
+
     fun getPendingMatch(cls: ClassNode): ClassMatch {
         var match = classMatches[cls]
         if(match != null) return match
@@ -83,6 +88,7 @@ class MergeEngine(
         for(match in pendingClassMatches.values) {
             match.removeVote(entry.new!!)
         }
+        Logger.info("Matched Class: ${entry.old.name} -> ${entry.new!!.name}")
     }
     
     fun allClassMatches() = classMatches.values
@@ -115,6 +121,7 @@ class MergeEngine(
         for(match in pendingMethodMatches.values) {
             match.removeVote(entry.new!!)
         }
+        Logger.info("Matched Method: ${entry.old.toRef()} -> ${entry.new!!.toRef()}")
     }
 
     fun allMethodMatches() = methodMatches.values
@@ -147,10 +154,13 @@ class MergeEngine(
         for(match in pendingFieldMatches.values) {
             match.removeVote(entry.new!!)
         }
+        Logger.info("Matched Field: ${entry.old.toRef()} -> ${entry.new!!.toRef()}")
     }
 
     fun allFieldMatches() = fieldMatches.values
     fun getPendingFieldMatches() = pendingFieldMatches.values
 
-
+    companion object {
+        private fun jumpTo(index: Int, predicate: (MergeEngine) -> Boolean) = JumpOperation(index, predicate)
+    }
 }

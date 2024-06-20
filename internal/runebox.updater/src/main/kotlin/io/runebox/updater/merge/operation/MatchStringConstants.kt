@@ -11,7 +11,7 @@ import org.objectweb.asm.tree.LdcInsnNode
 class MatchStringConstants : MergeOperation {
     override fun operate(set: MergeEngine) {
         var walker = Walker()
-        for(cls in set.oldPool.allClasses) {
+        for(cls in set.oldPool.classes) {
             walker.cur = cls
             cls.memberMethods.forEach { walker.process(it.instructions) }
             cls.staticMethods.forEach { walker.process(it.instructions) }
@@ -19,7 +19,7 @@ class MatchStringConstants : MergeOperation {
         val oldUnique = walker.unique
 
         walker = Walker()
-        for(cls in set.newPool.allClasses) {
+        for(cls in set.newPool.classes) {
             walker.cur = cls
             cls.memberMethods.forEach { walker.process(it.instructions) }
             cls.staticMethods.forEach { walker.process(it.instructions) }
