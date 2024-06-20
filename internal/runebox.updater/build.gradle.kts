@@ -3,5 +3,6 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":asm"))
+    implementation(libs.bundles.asm)
+    implementation(libs.guava)
 }
