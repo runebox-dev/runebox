@@ -34,7 +34,7 @@ data class IdMethod(
 
 fun Mapper.Context.buildIdHierarchy(): List<IdClass> {
     val tclasses = ArrayList<IdClass>()
-    classes.forEach { k, v ->
+    classes.forEach { (k, v) ->
         val tfields = ArrayList<IdField>()
         val tmethods = ArrayList<IdMethod>()
         @Suppress("UNCHECKED_CAST")
