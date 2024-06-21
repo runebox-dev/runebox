@@ -1,0 +1,20 @@
+package io.runebox.updater.ir.stack.insn;
+
+/**
+ * Duplicate the upper value, but insert it one elements deeper.
+ *
+ * Example:
+ * - before: value, someOtherValue, ...
+ * - after: value, someOtherValue, value, ...
+ */
+public class DupX1Insn extends AbstractInstruction {
+    @Override
+    public int getPushCount() {
+        return 3;
+    }
+
+    @Override
+    public int getPopCount() {
+        return 2;
+    }
+}

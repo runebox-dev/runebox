@@ -1,0 +1,57 @@
+package io.runebox.updater.ir.ref.expr;
+
+import io.runebox.updater.ir.Path;
+import io.runebox.updater.ir.ref.Expression;
+import io.runebox.updater.ir.type.ObjectType;
+import io.runebox.updater.ir.type.Type;
+import io.runebox.updater.ir.util.RCell;
+
+import java.util.Objects;
+import java.util.Set;
+
+/**
+ * Create a new instance of a class.
+ *
+ * The constructor must be invoked to fully initialize that object.
+ */
+public class NewExpr implements Expression {
+    /**
+     * Name of the class whose instance should be created
+     */
+    private Path path;
+
+    public NewExpr(Path path) {
+        this.path = path;
+    }
+
+    public Path getPath() {
+        return path;
+    }
+
+    public void setPath(Path path) {
+        this.path = path;
+    }
+
+    @Override
+    public Type getType() {
+        return new ObjectType(path);
+    }
+
+    @Override
+    public Set<RCell<Expression>> getReadValueCells() {
+        return Set.of();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        NewExpr expr = (NewExpr) o;
+        return Objects.equals(path, expr.path);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(path);
+    }
+}

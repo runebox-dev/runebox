@@ -1,0 +1,24 @@
+package io.runebox.updater.ir.stack.insn;
+
+import io.runebox.updater.ir.util.RWCell;
+
+import java.util.List;
+
+/**
+ * Instruction that might jump to another locations in the code.
+ */
+public interface BranchInsn extends Instruction {
+    /**
+     * Get all instructions to which this instruction may branch.
+     *
+     * @return code locations where this instruction might branch.
+     */
+    List<Instruction> getBranchTargets();
+
+    /**
+     * Get cells of all instructions to which this instruction might branch.
+     *
+     * @return references to branch targets
+     */
+    List<RWCell<Instruction>> getBranchTargetCells();
+}
