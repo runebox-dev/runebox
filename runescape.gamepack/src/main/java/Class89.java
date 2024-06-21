@@ -2,7 +2,7 @@ import io.runebox.ObfInfo;
 
 @ObfInfo(name = "dk")
 public final class Class89 extends Class506 {
-	@ObfInfo(desc = "Ljava/lang/String;")
+	@ObfInfo(owner = "kx", name = "cu", desc = "Ljava/lang/String;")
 	public static String field3115;
 	@ObfInfo(name = "ah", desc = "I", intMultiplier = -1214778777)
 	public int field1185;
@@ -53,11 +53,6 @@ public final class Class89 extends Class506 {
 		}
 	}
 
-	@ObfInfo(name = "az", desc = "(I)[Lhc;")
-	public static Class185[] method2403() {
-		return new Class185[]{Class185.field1921, Class185.field1924, Class185.field1922};
-	}
-
 	@ObfInfo(name = "ax", desc = "(ZI)V", opaque = "-515367669")
 	public static void method2397(boolean var0) {
 		byte var2 = 0;
@@ -75,7 +70,7 @@ public final class Class89 extends Class506 {
 			field3115 = "";
 		}
 
-		Class76.method276();
+		Class19.method276();
 		Class76.method8882();
 	}
 }

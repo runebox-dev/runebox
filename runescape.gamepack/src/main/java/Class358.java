@@ -256,7 +256,7 @@ public class Class358 {
 						}
 					}
 
-					if (var12 >= 512 && !Class7.method109(var12 - 512).method4439(this.field3946)) {
+					if (var12 >= 512 && !Class232.method109(var12 - 512).method4439(this.field3946)) {
 						var10 = true;
 					}
 				}
@@ -292,7 +292,7 @@ public class Class358 {
 						}
 
 						if (var14 >= 512) {
-							Class232 var24 = Class7.method109(var14 - 512);
+							Class232 var24 = Class232.method109(var14 - 512);
 							var16 = var24.method4476(this.field3946);
 							if (var16 != null) {
 								if (this.field3958 != null) {
@@ -368,7 +368,7 @@ public class Class358 {
 					}
 				}
 
-				if (var4 >= 512 && !Class7.method109(var4 - 512).method4422(this.field3946)) {
+				if (var4 >= 512 && !Class232.method109(var4 - 512).method4422(this.field3946)) {
 					var2 = true;
 				}
 			}
@@ -395,7 +395,7 @@ public class Class358 {
 					}
 
 					if (var6 >= 512) {
-						Class236 var12 = Class7.method109(var6 - 512).method4423(this.field3946);
+						Class236 var12 = Class232.method109(var6 - 512).method4423(this.field3946);
 						if (var12 != null) {
 							var9[var4++] = var12;
 						}
@@ -439,24 +439,6 @@ public class Class358 {
 	@ObfInfo(name = "av", desc = "(I)V")
 	public void method7055() {
 		this.method7045(this.field3953, this.field3950, this.field3947, this.field3946, this.field3954);
-	}
-
-	@ObfInfo(name = "bw", desc = "(ILnb;IIIII[FI)Lnb;")
-	public static Class340 method7059(int var0, Class340 var1, int var2, int var3, int var4, int var5, int var6, float[] var7) {
-		Class340 var9 = new Class340();
-		var9.field3755 = var0;
-		var9.field3826 = var1.field3676;
-		var9.field3791 = var2;
-		var9.field3675 = true;
-		var9.field3682 = var3;
-		var9.field3683 = var4;
-		var9.field3778 = var5;
-		var9.field3685 = var6;
-		var9.field3686 = (int)((float)var1.field3692 * var7[0]);
-		var9.field3687 = (int)(var7[1] * (float)var1.field3736);
-		var9.field3728 = (int)((float)var1.field3692 * var7[2]);
-		var9.field3707 = (int)((float)var1.field3736 * var7[3]);
-		return var9;
 	}
 
 	@ObfInfo(name = "jb", desc = "(Ldt;Ldh;I)V", opaque = "137682114")

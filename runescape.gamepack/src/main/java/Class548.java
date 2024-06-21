@@ -10,15 +10,15 @@ import java.net.URL;
 
 @ObfInfo(name = "vb")
 public class Class548 extends RuntimeException {
-	@ObfInfo(desc = "I", intMultiplier = -2084016401)
+	@ObfInfo(owner = "uc", name = "aj", desc = "I", intMultiplier = -2084016401)
 	public static int field5223;
 	@ObfInfo(name = "az", desc = "I", intMultiplier = 1257272621)
 	public static int field5348;
 	@ObfInfo(name = "ak", desc = "Ljava/applet/Applet;")
 	public static Applet field5351;
-	@ObfInfo(desc = "Ljava/lang/String;")
+	@ObfInfo(owner = "gz", name = "al", desc = "Ljava/lang/String;")
 	public static String field1900;
-	@ObfInfo(desc = "Ljava/lang/String;")
+	@ObfInfo(owner = "gz", name = "ak", desc = "Ljava/lang/String;")
 	public static String field1908;
 	@ObfInfo(name = "aa", desc = "Ljava/lang/String;")
 	public String field5350;
@@ -30,7 +30,7 @@ public class Class548 extends RuntimeException {
 		this.field5349 = var1;
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/String;Ljava/lang/Throwable;)V")
+	@ObfInfo(owner = "sr", name = "ak", desc = "(Ljava/lang/String;Ljava/lang/Throwable;I)V", opaque = "902127395")
 	public static void method8904(String var0, Throwable var1) {
 		try {
 			String var3 = "";
@@ -64,7 +64,7 @@ public class Class548 extends RuntimeException {
 
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/Throwable;)Ljava/lang/String;")
+	@ObfInfo(owner = "fa", name = "aj", desc = "(Ljava/lang/Throwable;I)Ljava/lang/String;", opaque = "-2131269456")
 	public static String method3057(Throwable var0) throws IOException {
 		String var2;
 		if (var0 instanceof Class548) {

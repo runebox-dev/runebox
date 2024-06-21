@@ -21,7 +21,7 @@ public abstract class Class471 implements Comparator {
 		return this.field4921 == null ? 0 : this.field4921.compare(var1, var2);
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
+	@ObfInfo(name = "equals", desc = "(Ljava/lang/Object;)Z")
 	public boolean equals(Object var1) {
 		return super.equals(var1);
 	}

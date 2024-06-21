@@ -205,7 +205,7 @@ public class Class110 {
 		}
 
 		this.field1404 = false;
-		this.field1406 = Class327.method3047();
+		this.field1406 = Class130.method3047();
 	}
 
 	@ObfInfo(name = "ao", desc = "(B)V", opaque = "0")
@@ -297,7 +297,7 @@ public class Class110 {
 
 	@ObfInfo(name = "ah", desc = "(I)V", opaque = "-1273488440")
 	public void method2839() {
-		if (this.field1404 && this.field1406 < Class327.method3047() - 60000L) {
+		if (this.field1404 && this.field1406 < Class130.method3047() - 60000L) {
 			this.method2821();
 		}
 

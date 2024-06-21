@@ -89,7 +89,7 @@ public final class Class525 {
 		return var5;
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(name = "finalize", desc = "()V")
 	public void finalize() throws Throwable {
 		if (this.field5229 != null) {
 			System.out.println("");

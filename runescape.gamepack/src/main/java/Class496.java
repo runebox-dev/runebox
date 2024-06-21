@@ -8,7 +8,7 @@ import java.util.List;
 
 @ObfInfo(name = "tb")
 public class Class496 {
-	@ObfInfo(desc = "I", intMultiplier = -1258299179)
+	@ObfInfo(owner = "hy", name = "aj", desc = "I", intMultiplier = -1258299179)
 	public static int field2098;
 	@ObfInfo(name = "ao", desc = "Ltc;")
 	public static final Class497 field5028;
@@ -195,7 +195,7 @@ public class Class496 {
 
 	@ObfInfo(name = "al", desc = "(B)V")
 	public void method9173() {
-		Class301.method6030();
+		Class279.method6030();
 	}
 
 	@ObfInfo(name = "aj", desc = "(IIZIIIIS)V", opaque = "513")
@@ -247,8 +247,8 @@ public class Class496 {
 	@ObfInfo(name = "az", desc = "(IIZZB)V", opaque = "0")
 	public void method8993(int var1, int var2, boolean var3, boolean var4) {
 		long var6;
-		label38: {
-			var6 = Class327.method3047();
+		label37: {
+			var6 = Class130.method3047();
 			this.method8994(var1, var2, var4, var6);
 			if (!this.method8999() && (var4 || var3)) {
 				boolean var8 = Client.field665 != null;
@@ -265,7 +265,7 @@ public class Class496 {
 						int var10 = var2 - this.field5076;
 						this.method8997(this.field5056 - (int)((float)var9 / this.field5045), this.field5057 + (int)((float)var10 / this.field5045), false);
 					}
-					break label38;
+					break label37;
 				}
 			}
 
@@ -366,7 +366,7 @@ public class Class496 {
 	public final void method8997(int var1, int var2, boolean var3) {
 		this.field5040 = var1;
 		this.field5041 = var2;
-		Class327.method3047();
+		Class130.method3047();
 		if (var3) {
 			this.method8998();
 		}

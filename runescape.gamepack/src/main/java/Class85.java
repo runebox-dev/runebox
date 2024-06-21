@@ -2,9 +2,9 @@ import io.runebox.ObfInfo;
 
 @ObfInfo(name = "dg")
 public class Class85 implements Runnable {
-	@ObfInfo(desc = "I", intMultiplier = 755505003)
+	@ObfInfo(owner = "gg", name = "ah", desc = "I", intMultiplier = 755505003)
 	public static int field1806;
-	@ObfInfo(desc = "I", intMultiplier = -1194566833)
+	@ObfInfo(owner = "ap", name = "ac", desc = "I", intMultiplier = -1194566833)
 	public static int field83;
 	@ObfInfo(name = "ak", desc = "Z")
 	public boolean field1050;
@@ -28,7 +28,7 @@ public class Class85 implements Runnable {
 		this.field1051 = new long[500];
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(name = "run", desc = "()V")
 	public void run() {
 		for (; this.field1050; Class493.method8960(50L)) {
 			synchronized(this.field1047) {
@@ -41,17 +41,6 @@ public class Class85 implements Runnable {
 			}
 		}
 
-	}
-
-	@ObfInfo(name = "af", desc = "(IS)Lfz;", opaque = "1701")
-	public static Class156 method2304(int var0) {
-		Class156[] var2 = new Class156[]{Class156.field1733, Class156.field1744, Class156.field1731, Class156.field1732, Class156.field1746, Class156.field1734, Class156.field1735, Class156.field1741, Class156.field1737, Class156.field1738, Class156.field1730, Class156.field1739, Class156.field1729, Class156.field1748, Class156.field1743, Class156.field1736, Class156.field1745};
-		Class156 var3 = (Class156)Class62.method1112(var2, var0);
-		if (var3 == null) {
-			var3 = Class156.field1733;
-		}
-
-		return var3;
 	}
 
 	@ObfInfo(name = "bi", desc = "(ILdm;ZI)I", opaque = "27437585")

@@ -52,7 +52,7 @@ public class Class486 implements Runnable {
 		}
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(name = "run", desc = "()V")
 	public void run() {
 		do {
 			int var1;

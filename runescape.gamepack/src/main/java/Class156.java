@@ -78,4 +78,15 @@ public class Class156 implements Class393 {
 	public int method3313() {
 		return this.field1740;
 	}
+
+	@ObfInfo(owner = "dg", name = "af", desc = "(IS)Lfz;", opaque = "1701")
+	public static Class156 method2304(int var0) {
+		Class156[] var2 = new Class156[]{field1733, field1744, field1731, field1732, field1746, field1734, field1735, field1741, field1737, field1738, field1730, field1739, field1729, field1748, field1743, field1736, field1745};
+		Class156 var3 = (Class156)Class62.method1112(var2, var0);
+		if (var3 == null) {
+			var3 = field1733;
+		}
+
+		return var3;
+	}
 }

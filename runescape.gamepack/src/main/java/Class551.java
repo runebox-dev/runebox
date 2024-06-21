@@ -16,12 +16,12 @@ public class Class551 {
 		this.field5369 = var2;
 	}
 
-	@ObfInfo(desc = "()I")
+	@ObfInfo(name = "hashCode", desc = "()I")
 	public int hashCode() {
 		return super.hashCode();
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
+	@ObfInfo(name = "equals", desc = "(Ljava/lang/Object;)Z")
 	public boolean equals(Object var1) {
 		if (!(var1 instanceof Class551)) {
 			return false;

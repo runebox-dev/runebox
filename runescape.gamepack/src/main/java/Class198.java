@@ -8,4 +8,9 @@ public class Class198 extends Class507 {
 	static {
 		field2027 = new Class299(64);
 	}
+
+	@ObfInfo(owner = "fa", name = "ak", desc = "(I)V")
+	public static void method3061() {
+		field2027.method5995();
+	}
 }

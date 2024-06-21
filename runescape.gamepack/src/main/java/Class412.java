@@ -7,7 +7,7 @@ public final class Class412 {
 		Pattern.compile("^\\D*(\\d+)\\D*$");
 	}
 
-	@ObfInfo(desc = "([Ljava/lang/CharSequence;II)Ljava/lang/String;")
+	@ObfInfo(owner = "em", name = "ak", desc = "([Ljava/lang/CharSequence;III)Ljava/lang/String;", opaque = "286265600")
 	public static String method2925(CharSequence[] var0, int var1, int var2) {
 		if (var2 == 0) {
 			return "";
@@ -42,12 +42,12 @@ public final class Class412 {
 		}
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/CharSequence;)Z")
+	@ObfInfo(owner = "hp", name = "al", desc = "(Ljava/lang/CharSequence;I)Z")
 	public static boolean method3873(CharSequence var0) {
 		return method7421(var0, 10, true);
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/CharSequence;IZ)Z")
+	@ObfInfo(owner = "pf", name = "aj", desc = "(Ljava/lang/CharSequence;IZI)Z", opaque = "-1874922848")
 	public static boolean method7421(CharSequence var0, int var1, boolean var2) {
 		if (var1 >= 2 && var1 <= 36) {
 			boolean var4 = false;
@@ -104,73 +104,12 @@ public final class Class412 {
 		}
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/CharSequence;)I")
+	@ObfInfo(owner = "gd", name = "az", desc = "(Ljava/lang/CharSequence;I)I")
 	public static int method3402(CharSequence var0) {
-		return method5862(var0, 10, true);
+		return Class288.method5862(var0, 10, true);
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/CharSequence;IZ)I")
-	public static int method5862(CharSequence var0, int var1, boolean var2) {
-		if (var1 >= 2 && var1 <= 36) {
-			boolean var4 = false;
-			boolean var5 = false;
-			int var6 = 0;
-			int var7 = var0.length();
-
-			for (int var8 = 0; var8 < var7; ++var8) {
-				char var9 = var0.charAt(var8);
-				if (var8 == 0) {
-					if (var9 == '-') {
-						var4 = true;
-						continue;
-					}
-
-					if (var9 == '+' && var2) {
-						continue;
-					}
-				}
-
-				int var11;
-				if (var9 >= '0' && var9 <= '9') {
-					var11 = var9 - '0';
-				} else if (var9 >= 'A' && var9 <= 'Z') {
-					var11 = var9 - '7';
-				} else {
-					if (var9 < 'a' || var9 > 'z') {
-						throw new NumberFormatException();
-					}
-
-					var11 = var9 - 'W';
-				}
-
-				if (var11 >= var1) {
-					throw new NumberFormatException();
-				}
-
-				if (var4) {
-					var11 = -var11;
-				}
-
-				int var10 = var6 * var1 + var11;
-				if (var10 / var1 != var6) {
-					throw new NumberFormatException();
-				}
-
-				var6 = var10;
-				var5 = true;
-			}
-
-			if (!var5) {
-				throw new NumberFormatException();
-			} else {
-				return var6;
-			}
-		} else {
-			throw new IllegalArgumentException("" + var1);
-		}
-	}
-
-	@ObfInfo(desc = "(IZ)Ljava/lang/String;")
+	@ObfInfo(owner = "ek", name = "aa", desc = "(IZI)Ljava/lang/String;", opaque = "695243981")
 	public static String method2887(int var0, boolean var1) {
 		if (var1 && var0 >= 0) {
 			int var4 = var0;
@@ -214,7 +153,7 @@ public final class Class412 {
 		Class128.method2747(30, "", var1);
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/CharSequence;)I")
+	@ObfInfo(owner = "ne", name = "at", desc = "(Ljava/lang/CharSequence;B)I")
 	public static int method6666(CharSequence var0) {
 		int var2 = var0.length();
 		int var3 = 0;
@@ -226,17 +165,17 @@ public final class Class412 {
 		return var3;
 	}
 
-	@ObfInfo(desc = "(C)Z")
+	@ObfInfo(owner = "at", name = "ac", desc = "(CB)Z", opaque = "10")
 	public static boolean method293(char var0) {
 		return var0 >= '0' && var0 <= '9';
 	}
 
-	@ObfInfo(desc = "(C)Z")
+	@ObfInfo(owner = "dw", name = "ao", desc = "(CB)Z", opaque = "1")
 	public static boolean method2605(char var0) {
 		return var0 >= '0' && var0 <= '9' || var0 >= 'A' && var0 <= 'Z' || var0 >= 'a' && var0 <= 'z';
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/String;)Ljava/lang/String;")
+	@ObfInfo(owner = "oe", name = "av", desc = "(Ljava/lang/String;B)Ljava/lang/String;", opaque = "82")
 	public static String method7137(String var0) {
 		int var2 = var0.length();
 		char[] var3 = new char[var2];
@@ -277,7 +216,7 @@ public final class Class412 {
 		return new String(var3);
 	}
 
-	@ObfInfo(desc = "(CI)Ljava/lang/String;")
+	@ObfInfo(owner = "jh", name = "aq", desc = "(CII)Ljava/lang/String;", opaque = "497086263")
 	public static String method4673(char var0, int var1) {
 		char[] var3 = new char[var1];
 
@@ -288,12 +227,12 @@ public final class Class412 {
 		return new String(var3);
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/CharSequence;)Ljava/lang/String;")
+	@ObfInfo(owner = "fj", name = "ap", desc = "(Ljava/lang/CharSequence;I)Ljava/lang/String;")
 	public static String method3140(CharSequence var0) {
 		return method4673('*', var0.length());
 	}
 
-	@ObfInfo(desc = "(C)Z")
+	@ObfInfo(owner = "as", name = "ae", desc = "(CI)Z", opaque = "635952730")
 	public static boolean method289(char var0) {
 		if (var0 >= ' ' && var0 <= '~') {
 			return true;
@@ -304,7 +243,7 @@ public final class Class412 {
 		}
 	}
 
-	@ObfInfo(desc = "(I)I")
+	@ObfInfo(owner = "nt", name = "ax", desc = "(IB)I", opaque = "0")
 	public static int method7044(int var0) {
 		if (var0 > 0) {
 			return 1;

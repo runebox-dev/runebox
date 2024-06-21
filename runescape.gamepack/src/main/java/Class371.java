@@ -77,7 +77,7 @@ public class Class371 implements Class393 {
 		return this.field4020;
 	}
 
-	@ObfInfo(desc = "()[LClass371;")
+	@ObfInfo(owner = "eh", name = "az", desc = "(I)[Log;")
 	public static Class371[] method2873() {
 		return new Class371[]{field4028, field4017, field4023, field4032, field4015, field4030, field4024, field4025, field4022, field4014, field4027, field4029, field4018, field4016, field4013, field4012, field4019};
 	}

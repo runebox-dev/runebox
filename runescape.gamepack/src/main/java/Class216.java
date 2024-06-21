@@ -111,7 +111,7 @@ public class Class216 implements Class35 {
 	public boolean method723(char var1) {
 		if (this.field2183 == null) {
 			return false;
-		} else if (!Class540.method9865(var1)) {
+		} else if (!Class405.method9865(var1)) {
 			return false;
 		} else {
 			Class354 var3 = this.field2183.method6530();

@@ -526,7 +526,7 @@ public class Class225 extends Class507 {
 		return this.field2359 != null && var1 < this.field2359.length ? this.field2359[var1] : -1;
 	}
 
-	@ObfInfo(desc = "(I)LClass225;")
+	@ObfInfo(owner = "fr", name = "ak", desc = "(IB)Liq;", opaque = "1")
 	public static Class225 method3256(int var0) {
 		Class225 var2 = (Class225)field2316.method5993((long)var0);
 		if (var2 != null) {

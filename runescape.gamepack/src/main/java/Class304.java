@@ -566,14 +566,4 @@ public class Class304 {
 
 		this.field3226[7][3] = var2;
 	}
-
-	@ObfInfo(name = "ak", desc = "(Lor;B)V")
-	public static void method6072(Class382 var0) {
-		Class540.field5316 = var0;
-	}
-
-	@ObfInfo(name = "aj", desc = "(J)I")
-	public static int method6117(long var0) {
-		return (int)(var0 >>> 7 & 127L);
-	}
 }

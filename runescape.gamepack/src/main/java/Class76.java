@@ -15,35 +15,35 @@ import java.util.Locale;
 
 @ObfInfo(name = "cx")
 public class Class76 {
-	@ObfInfo(desc = "LClass105;")
+	@ObfInfo(owner = "am", name = "ao", desc = "Lea;")
 	public static Class105 field53;
-	@ObfInfo(desc = "LClass425;")
+	@ObfInfo(owner = "ni", name = "bb", desc = "Lqi;")
 	public static Class425 field3867;
-	@ObfInfo(desc = "LClass425;")
+	@ObfInfo(owner = "pz", name = "by", desc = "Lqi;")
 	public static Class425 field4664;
-	@ObfInfo(desc = "LClass549;")
+	@ObfInfo(owner = "hq", name = "ac", desc = "Lvc;")
 	public static Class549 field2037;
 	@ObfInfo(name = "ao", desc = "Lvc;")
 	public static Class549 field925;
-	@ObfInfo(desc = "[LClass549;")
+	@ObfInfo(owner = "bc", name = "do", desc = "[Lvc;")
 	public static Class549[] field150;
-	@ObfInfo(desc = "LClass557;")
+	@ObfInfo(owner = "du", name = "ah", desc = "Lvl;")
 	public static Class557 field1313;
-	@ObfInfo(desc = "LClass557;")
+	@ObfInfo(owner = "gg", name = "dw", desc = "Lvl;")
 	public static Class557 field1804;
-	@ObfInfo(desc = "LClass557;")
+	@ObfInfo(owner = "hp", name = "ae", desc = "Lvl;")
 	public static Class557 field2028;
-	@ObfInfo(desc = "LClass557;")
+	@ObfInfo(owner = "ia", name = "df", desc = "Lvl;")
 	public static Class557 field2116;
-	@ObfInfo(desc = "LClass557;")
+	@ObfInfo(owner = "iz", name = "ab", desc = "Lvl;")
 	public static Class557 field2504;
-	@ObfInfo(desc = "LClass557;")
+	@ObfInfo(owner = "nm", name = "ax", desc = "Lvl;")
 	public static Class557 field3890;
-	@ObfInfo(desc = "LClass557;")
+	@ObfInfo(owner = "nr", name = "dz", desc = "Lvl;")
 	public static Class557 field3930;
-	@ObfInfo(desc = "LClass557;")
+	@ObfInfo(owner = "pr", name = "aq", desc = "Lvl;")
 	public static Class557 field4636;
-	@ObfInfo(desc = "LClass557;")
+	@ObfInfo(owner = "qv", name = "at", desc = "Lvl;")
 	public static Class557 field4747;
 	@ObfInfo(name = "af", desc = "Lvl;")
 	public static Class557 field923;
@@ -51,17 +51,17 @@ public class Class76 {
 	public static Class557 field924;
 	@ObfInfo(name = "ap", desc = "Lvl;")
 	public static Class557 field926;
-	@ObfInfo(desc = "[LClass557;")
+	@ObfInfo(owner = "fj", name = "dd", desc = "[Lvl;")
 	public static Class557[] field1606;
-	@ObfInfo(desc = "[LClass557;")
+	@ObfInfo(owner = "op", name = "da", desc = "[Lvl;")
 	public static Class557[] field4465;
-	@ObfInfo(desc = "[LClass557;")
+	@ObfInfo(owner = "qo", name = "av", desc = "[Lvl;")
 	public static Class557[] field4707;
-	@ObfInfo(desc = "[LClass557;")
+	@ObfInfo(owner = "qr", name = "ds", desc = "[Lvl;")
 	public static Class557[] field4719;
 	@ObfInfo(name = "az", desc = "[Lvl;")
 	public static Class557[] field937;
-	@ObfInfo(desc = "[LClass64;")
+	@ObfInfo(owner = "ph", name = "af", desc = "[Lcl;")
 	public static Class64[] field4598;
 	@ObfInfo(name = "al", desc = "Z")
 	public static boolean field920;
@@ -73,9 +73,9 @@ public class Class76 {
 	public static boolean field944;
 	@ObfInfo(name = "cg", desc = "Z")
 	public static boolean field947;
-	@ObfInfo(desc = "I", intMultiplier = -2057094345)
+	@ObfInfo(owner = "ag", name = "an", desc = "I", intMultiplier = -2057094345)
 	public static int field36;
-	@ObfInfo(desc = "I", intMultiplier = 264957019)
+	@ObfInfo(owner = "tc", name = "cy", desc = "I", intMultiplier = 264957019)
 	public static int field5093;
 	@ObfInfo(name = "aj", desc = "I", intMultiplier = -684644281)
 	public static int field921;
@@ -99,9 +99,9 @@ public class Class76 {
 	public static int field953;
 	@ObfInfo(name = "ai", desc = "I", intMultiplier = -1270478887)
 	public static int field956;
-	@ObfInfo(desc = "I", intMultiplier = -628097453)
+	@ObfInfo(owner = "cy", name = "ct", desc = "I", intMultiplier = -628097453)
 	public static int field967;
-	@ObfInfo(desc = "Ljava/lang/String;")
+	@ObfInfo(owner = "fj", name = "ba", desc = "Ljava/lang/String;")
 	public static String field1605;
 	@ObfInfo(name = "cn", desc = "Ljava/lang/String;")
 	public static String field930;
@@ -172,7 +172,7 @@ public class Class76 {
 		field922 = new String[]{"logo_speedrunning"};
 	}
 
-	@ObfInfo(desc = "(LClass382;)I")
+	@ObfInfo(owner = "ks", name = "ak", desc = "(Lor;B)I", opaque = "-2")
 	public static int method5647(Class382 var0) {
 		int var2 = field954.length + field936.length;
 		String[] var3 = field922;
@@ -187,7 +187,7 @@ public class Class76 {
 		return var2;
 	}
 
-	@ObfInfo(desc = "(LClass382;LClass382;ZI)V")
+	@ObfInfo(owner = "mo", name = "al", desc = "(Lor;Lor;ZII)V", opaque = "1662465912")
 	public static void method6264(Class382 var0, Class382 var1, boolean var2, int var3) {
 		if (field920) {
 			if (var3 == 4) {
@@ -205,7 +205,7 @@ public class Class76 {
 			byte[] var5 = var0.method7271("title.jpg", "");
 			field2037 = Class46.method8418(var5);
 			field925 = field2037.method9919();
-			method2771(var1, Client.field675);
+			Class106.method2771(var1, Client.field675);
 			field923 = Class554.method8860(var1, "titlebox", "");
 			field924 = Class554.method8860(var1, "titlebutton", "");
 			field4747 = Class554.method8860(var1, "titlebutton_large", "");
@@ -234,12 +234,12 @@ public class Class76 {
 			if (!Client.field4851.method2614()) {
 				ArrayList var6 = new ArrayList();
 				var6.add(new Class357(Client.field2961, "scape main", "", 255, false));
-				Class70.method1940(var6, 0, 0, 0, 100, false);
+				Class332.method1940(var6, 0, 0, 0, 100, false);
 			} else {
 				Class380.method7208(0, 0);
 			}
 
-			Class39.method785();
+			Class332.method785();
 			Class374 var7 = Client.field69;
 			var7.method7166(false);
 			field920 = true;
@@ -252,12 +252,12 @@ public class Class76 {
 		}
 	}
 
-	@ObfInfo(desc = "(ZZ)LClass557;")
+	@ObfInfo(owner = "fo", name = "aj", desc = "(ZZI)Lvl;", opaque = "709857085")
 	public static Class557 method3223(boolean var0, boolean var1) {
 		return var0 ? (var1 ? field3890 : field2028) : (var1 ? field926 : field4636);
 	}
 
-	@ObfInfo(desc = "()Ljava/lang/String;")
+	@ObfInfo(owner = "ff", name = "az", desc = "(I)Ljava/lang/String;")
 	public static String method3091() {
 		String var1;
 		if (Client.field4851.method2612()) {
@@ -271,20 +271,7 @@ public class Class76 {
 		return var1;
 	}
 
-	@ObfInfo(desc = "()V")
-	public static void method276() {
-		if (field955 == null || field955.length() <= 0) {
-			if (Client.field4851.method2629() != null) {
-				field955 = Client.field4851.method2629();
-				Client.field540 = true;
-			} else {
-				Client.field540 = false;
-			}
-
-		}
-	}
-
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "fi", name = "aa", desc = "(B)V", opaque = "-1")
 	public static void method3136() {
 		if (field920) {
 			field923 = null;
@@ -309,21 +296,7 @@ public class Class76 {
 		}
 	}
 
-	@ObfInfo(desc = "(LClass382;I)V")
-	public static void method2771(Class382 var0, int var1) {
-		if ((var1 & Class534.field5294.method175()) != 0) {
-			field1313 = Class554.method8860(var0, "logo_deadman_mode", "");
-		} else if ((var1 & Class534.field5295.method175()) != 0) {
-			field1313 = Class554.method8860(var0, "logo_seasonal_mode", "");
-		} else if ((var1 & Class534.field5268.method175()) != 0) {
-			field1313 = Class554.method8860(var0, "logo_speedrunning", "");
-		} else {
-			field1313 = Class554.method8860(var0, "logo", "");
-		}
-
-	}
-
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "sq", name = "ab", desc = "(B)V", opaque = "2")
 	public static void method8882() {
 		if (Client.field540 && field955 != null && field955.length() > 0) {
 			field945 = 1;
@@ -333,7 +306,7 @@ public class Class76 {
 
 	}
 
-	@ObfInfo(desc = "(LClass31;LClass418;LClass418;)V")
+	@ObfInfo(owner = "am", name = "ac", desc = "(Lbe;Lqb;Lqb;I)V", opaque = "-1041767614")
 	public static void method155(Class31 var0, Class418 var1, Class418 var2) {
 		int var6;
 		int var28;
@@ -406,7 +379,7 @@ public class Class76 {
 						var33 = var55.method1139();
 						Client.field434 = var33;
 						var55.field467 = var33 ? "beta" : var55.field467;
-						method9252(var55);
+						Class502.method9252(var55);
 						field934 = false;
 						field2037.method9929(field921, 0);
 						field925.method9929(382 + field921, 0);
@@ -449,21 +422,21 @@ public class Class76 {
 				if (!Client.field4851.method2614()) {
 					ArrayList var4 = new ArrayList();
 					var4.add(new Class357(Client.field2961, "scape main", "", 255, false));
-					Class70.method1940(var4, 0, 0, 0, 100, false);
+					Class332.method1940(var4, 0, 0, 0, 100, false);
 				} else {
 					Class380.method7208(0, 0);
 				}
 
-				Class39.method785();
+				Class332.method785();
 			}
 
 			if (5 != Client.field555) {
 				if (-1L == field931) {
-					field931 = Class327.method3047() + 1000L;
+					field931 = Class130.method3047() + 1000L;
 				}
 
-				long var26 = Class327.method3047();
-				if (Client.method8271() && field919 == -1L) {
+				long var26 = Class130.method3047();
+				if (Class441.method8271() && field919 == -1L) {
 					field919 = var26;
 					if (field919 > field931) {
 						field931 = field919;
@@ -515,7 +488,7 @@ public class Class76 {
 						var34 = field36 - 80;
 						var35 = 291;
 						if (var6 == 1 && var28 >= var34 - 75 && var28 <= var34 + 75 && var29 >= var35 - 20 && var29 <= var35 + 20) {
-							Class40.method7134(Client.method8428("secure", true) + "m=account-creation/g=oldscape/create_account_funnel.ws", true, false);
+							Class40.method7134(Class452.method8428("secure", true) + "m=account-creation/g=oldscape/create_account_funnel.ws", true, false);
 						}
 
 						var34 = 80 + field36;
@@ -672,7 +645,7 @@ public class Class76 {
 																continue label1169;
 															}
 
-															Class98.method2499(var30.field2377);
+															method2499(var30.field2377);
 															if (85 == var30.field2389 && field955.length() > 0) {
 																field955 = field955.substring(0, field955.length() - 1);
 															}
@@ -727,7 +700,7 @@ public class Class76 {
 												break;
 											}
 
-											if (Class540.method9865(var30.field2377)) {
+											if (Class405.method9865(var30.field2377)) {
 												var42 = var30.field2377;
 												var37 = field946.indexOf(var42) != -1;
 												if (var37 && field938.length() < 20) {
@@ -748,7 +721,7 @@ public class Class76 {
 												continue label1205;
 											}
 
-											if (!Class540.method9865(var49.charAt(var48))) {
+											if (!Class405.method9865(var49.charAt(var48))) {
 												break;
 											}
 
@@ -919,7 +892,7 @@ public class Class76 {
 											if (field4664 != null) {
 												var13 = field4664.field4690 / 2;
 												if (var6 == 1 && var28 >= field4664.field4691 - var13 && var28 <= field4664.field4691 + var13 && var29 >= var35 - 15 && var29 < var35) {
-													Class40.method7134(Client.method8428("secure", true) + "m=weblogin/g=oldscape/cant_log_in", true, false);
+													Class40.method7134(Class452.method8428("secure", true) + "m=weblogin/g=oldscape/cant_log_in", true, false);
 												}
 											}
 
@@ -958,7 +931,7 @@ public class Class76 {
 													var35 = 231;
 													var13 = var35 + 40;
 													if (var6 == 1 && var28 >= var10 && var28 <= var34 && var29 >= var35 && var29 <= var13) {
-														field953 = method797(var10, var28);
+														field953 = Class40.method797(var10, var28);
 													}
 
 													var14 = field956 + 180 - 80;
@@ -1091,7 +1064,7 @@ public class Class76 {
 													var10 = field956 + 180 - 80;
 													var11 = 321;
 													if (var6 == 1 && var28 >= var10 - 75 && var28 <= var10 + 75 && var29 >= var11 - 20 && var29 <= var11 + 20) {
-														Class40.method7134(Client.method8428("secure", true) + "m=dob/set_dob.ws", true, false);
+														Class40.method7134(Class452.method8428("secure", true) + "m=dob/set_dob.ws", true, false);
 														method5778(Class378.field4404, Class378.field4405, Class378.field4406);
 														method4120(6);
 														return;
@@ -1206,7 +1179,7 @@ public class Class76 {
 												var10 = field956 + 180 - 80;
 												var11 = 321;
 												if (var6 == 1 && var28 >= var10 - 75 && var28 <= var10 + 75 && var29 >= var11 - 20 && var29 <= var11 + 20) {
-													Class40.method7134(Client.method8428("secure", true) + "m=dob/set_dob.ws", true, false);
+													Class40.method7134(Class452.method8428("secure", true) + "m=dob/set_dob.ws", true, false);
 													method5778(Class378.field4404, Class378.field4405, Class378.field4406);
 													method4120(6);
 													return;
@@ -1256,7 +1229,7 @@ public class Class76 {
 		}
 	}
 
-	@ObfInfo(desc = "()Ljava/util/Date;")
+	@ObfInfo(owner = "ge", name = "ao", desc = "(I)Ljava/util/Date;")
 	public static Date method3409() {
 		Calendar var1 = Calendar.getInstance();
 		var1.set(2, 0);
@@ -1265,13 +1238,13 @@ public class Class76 {
 		return var1.getTime();
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V")
+	@ObfInfo(owner = "lq", name = "ah", desc = "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;B)V")
 	public static void method6067(String var0, String var1, String var2) {
 		method4120(7);
 		method5778(var0, var1, var2);
 	}
 
-	@ObfInfo(desc = "()Ljava/util/Date;")
+	@ObfInfo(owner = "fp", name = "av", desc = "(I)Ljava/util/Date;", opaque = "1885671406")
 	public static Date method3231() throws ParseException {
 		SimpleDateFormat var1 = new SimpleDateFormat("ddMMyyyyHH", Locale.ENGLISH);
 		var1.setLenient(false);
@@ -1292,21 +1265,18 @@ public class Class76 {
 		return var1.parse(var2.toString());
 	}
 
-	@ObfInfo(desc = "(II)I")
-	public static int method797(int var0, int var1) {
-		for (int var3 = 0; var3 < 8; ++var3) {
-			if (var1 <= var0 + 30) {
-				return var3;
+	@ObfInfo(owner = "dt", name = "ap", desc = "(CB)Z", opaque = "13")
+	public static boolean method2499(char var0) {
+		for (int var2 = 0; var2 < field946.length(); ++var2) {
+			if (field946.charAt(var2) == var0) {
+				return true;
 			}
-
-			var0 += 30;
-			var0 += var3 != 1 && var3 != 3 ? 5 : 20;
 		}
 
-		return 0;
+		return false;
 	}
 
-	@ObfInfo(desc = "(Z)V")
+	@ObfInfo(owner = "lb", name = "ae", desc = "(ZB)V", opaque = "43")
 	public static void method5865(boolean var0) {
 		if (!Client.field2077.method1198() && !Client.field2077.method1291() && !Client.field2077.method1737()) {
 			field930 = Class378.field4356;
@@ -1317,14 +1287,14 @@ public class Class76 {
 				field938 = "";
 			}
 
-			method276();
+			Class19.method276();
 			method8882();
 		} else {
 			method4120(10);
 		}
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "rl", name = "ay", desc = "(I)V", opaque = "1722409036")
 	public static void method8440() {
 		field955 = field955.trim();
 		if (field955.length() == 0) {
@@ -1362,7 +1332,7 @@ public class Class76 {
 		}
 	}
 
-	@ObfInfo(desc = "(LClass418;LClass418;LClass418;)V")
+	@ObfInfo(owner = "eu", name = "au", desc = "(Lqb;Lqb;Lqb;S)V", opaque = "3001")
 	public static void method2996(Class418 var0, Class418 var1, Class418 var2) {
 		field921 = (Client.field182 - 765) / 2;
 		field956 = field921 + 202;
@@ -1715,13 +1685,13 @@ public class Class76 {
 						for (var7 = var27; var0.method8080(var7) > var26; var7 = var7.substring(1)) {
 						}
 
-						var0.method8017(Class436.method7992(var7) + (field945 == 0 & Client.field778 % 40 < 20 ? Class463.method8551(16776960) + Class113.field1425 : ""), field36 - 70, var25, 16777215, 0);
+						var0.method8017(Class436.method7992(var7) + (field945 == 0 & Client.field778 % 40 < 20 ? Class113.method8551(16776960) + Class113.field1425 : ""), field36 - 70, var25, 16777215, 0);
 						var25 += 15;
 
 						for (var8 = Class412.method3140(field938); var0.method8080(var8) > var26; var8 = var8.substring(1)) {
 						}
 
-						var0.method8017(Class378.field4355 + var8 + (1 == field945 & Client.field778 % 40 < 20 ? Class463.method8551(16776960) + Class113.field1425 : ""), field36 - 108, var25, 16777215, 0);
+						var0.method8017(Class378.field4355 + var8 + (1 == field945 & Client.field778 % 40 < 20 ? Class113.method8551(16776960) + Class113.field1425 : ""), field36 - 108, var25, 16777215, 0);
 						var25 += 15;
 						var24 = 277;
 						var29 = -117 + field36;
@@ -1782,7 +1752,7 @@ public class Class76 {
 						var27 = Class378.field4384;
 						var8 = Class89.field3115;
 						var7 = Class412.method4673('*', var8.length());
-						var0.method8017(var27 + var7 + (Client.field778 % 40 < 20 ? Class463.method8551(16776960) + Class113.field1425 : ""), field956 + 180 - 108, var25, 16777215, 0);
+						var0.method8017(var27 + var7 + (Client.field778 % 40 < 20 ? Class113.method8551(16776960) + Class113.field1425 : ""), field956 + 180 - 108, var25, 16777215, 0);
 						var25 -= 8;
 						var0.method8017(Class378.field4153, 180 + field956 - 9, var25, 16776960, 0);
 						var25 += 15;
@@ -1822,7 +1792,7 @@ public class Class76 {
 						for (var27 = method3091(); var0.method8080(var27) > var26; var27 = var27.substring(1)) {
 						}
 
-						var0.method8017(Class436.method7992(var27) + (Client.field778 % 40 < 20 ? Class463.method8551(16776960) + Class113.field1425 : ""), 180 + field956 - 34, var25, 16777215, 0);
+						var0.method8017(Class436.method7992(var27) + (Client.field778 % 40 < 20 ? Class113.method8551(16776960) + Class113.field1425 : ""), 180 + field956 - 34, var25, 16777215, 0);
 						var25 += 15;
 						var30 = field956 + 180 - 80;
 						short var31 = 321;
@@ -1859,7 +1829,7 @@ public class Class76 {
 							for (var28 = 0; var28 < 8; ++var28) {
 								field924.method10088(var5, var25, 30, 40);
 								boolean var32 = field953 == var28 & Client.field778 % 40 < 20;
-								var0.method8017((null == field940[var28] ? "" : field940[var28]) + (var32 ? Class463.method8551(16776960) + Class113.field1425 : ""), var5 + 10, var25 + 27, 16777215, 0);
+								var0.method8017((null == field940[var28] ? "" : field940[var28]) + (var32 ? Class113.method8551(16776960) + Class113.field1425 : ""), var5 + 10, var25 + 27, 16777215, 0);
 								if (var28 != 1 && var28 != 3) {
 									var5 += 35;
 								} else {
@@ -2076,40 +2046,14 @@ public class Class76 {
 		}
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V")
+	@ObfInfo(owner = "ky", name = "as", desc = "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V")
 	public static void method5778(String var0, String var1, String var2) {
 		field930 = var0;
 		field935 = var1;
 		field951 = var2;
 	}
 
-	@ObfInfo(desc = "(LClass64;)V")
-	public static void method9252(Class64 var0) {
-		if (var0.method1175() != Client.field528) {
-			Client.field528 = var0.method1175();
-			boolean var2 = var0.method1175();
-			if (Class79.field3252 != var2) {
-				Class232.field2454.method5995();
-				Class232.field2445.method5995();
-				Class232.field2440.method5995();
-				Class79.field3252 = var2;
-			}
-		}
-
-		if (Client.field675 != var0.field480) {
-			method2771(Client.field1793, var0.field480);
-		}
-
-		Client.field119 = var0.field476;
-		Client.field557 = var0.field473;
-		Client.field675 = var0.field480;
-		Client.field4509 = var0.field467;
-		Client.field429 = 0 == Client.field532 ? 43594 : 40000 + var0.field473;
-		Client.field3167 = 0 == Client.field532 ? 443 : 50000 + var0.field473;
-		Client.field3071 = Client.field429;
-	}
-
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "cv", name = "ad", desc = "(I)V", opaque = "-1772684215")
 	public static void method2088() {
 		if (Class64.method7411()) {
 			field934 = true;
@@ -2119,31 +2063,31 @@ public class Class76 {
 
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "ie", name = "ai", desc = "(I)V")
 	public static void method4065() {
 		method4120(24);
 		method5778(Class378.field4376, Class378.field4307, Class378.field4407);
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "lg", name = "an", desc = "(B)V")
 	public static void method5912() {
 		method4120(24);
 		method5778(Class378.field4379, Class378.field4249, Class378.field4381);
 	}
 
-	@ObfInfo(desc = "(I)V")
+	@ObfInfo(owner = "ii", name = "am", desc = "(II)V")
 	public static void method4120(int var0) {
 		if (var0 != field932) {
 			field932 = var0;
 		}
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/String;)V")
+	@ObfInfo(owner = "ew", name = "ar", desc = "(Ljava/lang/String;B)V")
 	public static void method3004(String var0) {
 		field941 = Class527.method3137(var0);
 	}
 
-	@ObfInfo(desc = "(ILjava/lang/String;)V")
+	@ObfInfo(owner = "ge", name = "ag", desc = "(ILjava/lang/String;I)V")
 	public static void method3406(int var0, String var1) {
 		field942 = var1;
 		field928 = var0;

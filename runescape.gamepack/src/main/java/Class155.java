@@ -6,7 +6,7 @@ public class Class155 implements Callable {
 	@ObfInfo(name = "ak", desc = "Lfm;")
 	public final Class143 field1728;
 	// $FF: synthetic field
-	@ObfInfo(desc = "Lfo;")
+	@ObfInfo(name = "this$0", desc = "Lfo;")
 	public final Class145 this$0;
 	@ObfInfo(name = "al", desc = "Lfr;")
 	public final Class148 field1725;
@@ -23,7 +23,7 @@ public class Class155 implements Callable {
 		this.field1727 = var5;
 	}
 
-	@ObfInfo(desc = "()Ljava/lang/Object;")
+	@ObfInfo(name = "call", desc = "()Ljava/lang/Object;")
 	public Object call() {
 		this.field1728.method3168();
 		Class143[][] var1;

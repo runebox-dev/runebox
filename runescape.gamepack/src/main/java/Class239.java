@@ -2,8 +2,6 @@ import io.runebox.ObfInfo;
 
 @ObfInfo(name = "je")
 public class Class239 {
-	@ObfInfo(desc = "LClass382;")
-	public static Class382 field2088;
 	@ObfInfo(name = "al", desc = "[Lfh;")
 	public Class138[] field2580;
 	@ObfInfo(name = "aj", desc = "I", intMultiplier = -2019764053)
@@ -69,22 +67,5 @@ public class Class239 {
 			++var7;
 		}
 
-	}
-
-	@ObfInfo(name = "al", desc = "(II)Lhw;", opaque = "-1459518751")
-	public static Class205 method4659(int var0) {
-		Class205 var2 = (Class205)Class205.field2084.method5993((long)var0);
-		if (var2 != null) {
-			return var2;
-		} else {
-			byte[] var3 = field2088.method7216(16, var0);
-			var2 = new Class205();
-			if (var3 != null) {
-				var2.method3942(new Class521(var3));
-			}
-
-			Class205.field2084.method5987(var2, (long)var0);
-			return var2;
-		}
 	}
 }

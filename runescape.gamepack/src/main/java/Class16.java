@@ -9,14 +9,14 @@ import org.bouncycastle.crypto.tls.TlsAuthentication;
 @ObfInfo(name = "ap")
 class Class16 extends DefaultTlsClient {
 	// $FF: synthetic field
-	@ObfInfo(desc = "Laq;")
+	@ObfInfo(name = "this$1", desc = "Laq;")
 	public final Class17 this$1;
 
 	public Class16(Class17 var1) {
 		this.this$1 = var1;
 	}
 
-	@ObfInfo(desc = "()Ljava/util/Hashtable;")
+	@ObfInfo(name = "getClientExtensions", desc = "()Ljava/util/Hashtable;")
 	public Hashtable getClientExtensions() throws IOException {
 		Hashtable var1 = super.getClientExtensions();
 		if (var1 == null) {
@@ -35,8 +35,25 @@ class Class16 extends DefaultTlsClient {
 		return var1;
 	}
 
-	@ObfInfo(desc = "()Lorg/bouncycastle/crypto/tls/TlsAuthentication;")
+	@ObfInfo(name = "getAuthentication", desc = "()Lorg/bouncycastle/crypto/tls/TlsAuthentication;")
 	public TlsAuthentication getAuthentication() throws IOException {
 		return new Class22(this);
+	}
+
+	@ObfInfo(name = "or", desc = "(Lnb;I)Lnb;", opaque = "-1042332838")
+	public static Class340 method193(Class340 var0) {
+		int var2 = Class344.method6213(Client.method3511(var0));
+		if (var2 == 0) {
+			return null;
+		} else {
+			for (int var3 = 0; var3 < var2; ++var3) {
+				var0 = Client.field25.method6718(var0.field3826);
+				if (var0 == null) {
+					return null;
+				}
+			}
+
+			return var0;
+		}
 	}
 }

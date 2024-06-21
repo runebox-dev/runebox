@@ -18,7 +18,7 @@ public class Class111 extends Class471 {
 		}
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/Object;Ljava/lang/Object;)I")
+	@ObfInfo(name = "compare", desc = "(Ljava/lang/Object;Ljava/lang/Object;)I")
 	public int compare(Object var1, Object var2) {
 		return this.method2863((Class483)var1, (Class483)var2);
 	}

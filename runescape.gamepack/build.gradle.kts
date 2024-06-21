@@ -3,9 +3,12 @@ plugins {
     java
 }
 
+val gamepack by configurations.creating
+configurations.implementation.get().extendsFrom(gamepack)
+
 dependencies {
-    implementation(libs.bouncycastle)
-    implementation(libs.json)
+    gamepack(libs.bouncycastle)
+    gamepack(libs.json)
 }
 
 tasks {
@@ -15,5 +18,12 @@ tasks {
         mainClass.set("GamepackTestKt")
         workingDir = rootProject.projectDir
         classpath = sourceSets["test"].runtimeClasspath
+    }
+
+    named("jar", Jar::class) {
+        archiveBaseName.set("gamepack.named.jar")
+        archiveClassifier.set("")
+        archiveVersion.set("")
+        from(gamepack.map { if(it.isDirectory) it else zipTree(it) })
     }
 }

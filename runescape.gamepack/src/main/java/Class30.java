@@ -1,11 +1,16 @@
 import io.runebox.ObfInfo;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 @ObfInfo(name = "bd")
 public class Class30 {
-	@ObfInfo(desc = "LClass382;")
-	public static Class382 field2238;
-	@ObfInfo(desc = "LClass382;")
-	public static Class382 field28;
+	@ObfInfo(owner = "ao", name = "ao", desc = "Lbm;")
+	public static Class39 field80;
+	@ObfInfo(owner = "ci", name = "aq", desc = "Lby;")
+	public static Class51 field450;
+	@ObfInfo(owner = "ig", name = "ab", desc = "Ljava/util/concurrent/ScheduledExecutorService;")
+	public static ScheduledExecutorService field2176;
 	@ObfInfo(name = "ae", desc = "Lba;")
 	public Class27 field156;
 	@ObfInfo(name = "bw", desc = "[Lba;")
@@ -41,7 +46,7 @@ public class Class30 {
 
 	public Class30() {
 		this.field157 = 32;
-		this.field173 = Class327.method3047();
+		this.field173 = Class130.method3047();
 		this.field158 = 0L;
 		this.field163 = 0;
 		this.field164 = 0;
@@ -61,7 +66,7 @@ public class Class30 {
 	@ObfInfo(name = "bi", desc = "(I)V", opaque = "507705628")
 	public final synchronized void method449() {
 		if (this.field159 != null) {
-			long var2 = Class327.method3047();
+			long var2 = Class130.method3047();
 
 			try {
 				if (this.field158 != 0L) {
@@ -159,30 +164,30 @@ public class Class30 {
 			this.method254();
 		} catch (Exception var3) {
 			this.method253();
-			this.field158 = Class327.method3047() + 2000L;
+			this.field158 = Class130.method3047() + 2000L;
 		}
 
 	}
 
 	@ObfInfo(name = "bw", desc = "(B)V", opaque = "1")
 	public final synchronized void method405() {
-		if (Class8.field80 != null) {
+		if (field80 != null) {
 			boolean var2 = true;
 
 			for (int var3 = 0; var3 < 2; ++var3) {
-				if (this == Class8.field80.field276[var3]) {
-					Class8.field80.field276[var3] = null;
+				if (this == field80.field276[var3]) {
+					field80.field276[var3] = null;
 				}
 
-				if (Class8.field80.field276[var3] != null) {
+				if (field80.field276[var3] != null) {
 					var2 = false;
 				}
 			}
 
 			if (var2) {
-				Class8.field2176.shutdownNow();
-				Class8.field2176 = null;
-				Class8.field80 = null;
+				field2176.shutdownNow();
+				field2176 = null;
+				field80 = null;
 			}
 		}
 
@@ -214,7 +219,7 @@ public class Class30 {
 		this.field169 -= var2;
 		if (this.field156 != null && this.field169 <= 0) {
 			this.field169 += Client.field1382 >> 4;
-			Class77.method2181(this.field156);
+			method2181(this.field156);
 			this.method408(this.field156, this.field156.method377());
 			int var4 = 0;
 			int var5 = 255;
@@ -313,7 +318,7 @@ public class Class30 {
 			this.field156.method381(var1, 0, var2);
 		}
 
-		this.field173 = Class327.method3047();
+		this.field173 = Class130.method3047();
 	}
 
 	@ObfInfo(name = "bu", desc = "(Lba;II)V", opaque = "-1196303285")
@@ -355,20 +360,64 @@ public class Class30 {
 	public void method254() throws Exception {
 	}
 
-	@ObfInfo(name = "az", desc = "(IB)Lco;")
-	public static Class67 method452(int var0) {
-		return (Class67)Class128.field1529.method9326((long)var0);
-	}
-
-	@ObfInfo(desc = "(LClass51;)V")
+	@ObfInfo(owner = "ht", name = "bs", desc = "(Lby;S)V")
 	public static void method3934(Class51 var0) {
-		Class8.field450 = var0;
+		field450 = var0;
 	}
 
-	@ObfInfo(name = "ak", desc = "(Lor;Lor;ZI)V")
-	public static void method462(Class382 var0, Class382 var1, boolean var2) {
-		field2238 = var0;
-		field28 = var1;
-		Class222.field2288 = var2;
+	@ObfInfo(owner = "ah", name = "bf", desc = "(Lgz;IIB)Lbd;", opaque = "56")
+	public static Class30 method126(Class182 var0, int var1, int var2) {
+		if (0 == Client.field1382) {
+			throw new IllegalStateException();
+		} else if (var1 >= 0 && var1 < 2) {
+			if (var2 < 256) {
+				var2 = 256;
+			}
+
+			try {
+				Class30 var4 = field450.method166();
+				var4.field159 = new int[256 * (Client.field1887 ? 2 : 1)];
+				var4.field160 = var2;
+				var4.method251();
+				var4.field167 = (var2 & -1024) + 1024;
+				if (var4.field167 > 16384) {
+					var4.field167 = 16384;
+				}
+
+				var4.method250(var4.field167);
+				if (Client.field2640 > 0 && field80 == null) {
+					field80 = new Class39();
+					field2176 = Executors.newScheduledThreadPool(1);
+					field2176.scheduleAtFixedRate(field80, 0L, 10L, TimeUnit.MILLISECONDS);
+				}
+
+				if (field80 != null) {
+					if (field80.field276[var1] != null) {
+						throw new IllegalArgumentException();
+					}
+
+					field80.field276[var1] = var4;
+				}
+
+				return var4;
+			} catch (Throwable var5) {
+				return new Class30();
+			}
+		} else {
+			throw new IllegalArgumentException();
+		}
+	}
+
+	@ObfInfo(owner = "cy", name = "bg", desc = "(Lba;B)V", opaque = "0")
+	public static void method2181(Class27 var0) {
+		var0.field136 = false;
+		if (var0.field138 != null) {
+			var0.field138.field390 = 0;
+		}
+
+		for (Class27 var2 = var0.method384(); var2 != null; var2 = var0.method379()) {
+			method2181(var2);
+		}
+
 	}
 }

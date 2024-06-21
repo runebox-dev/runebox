@@ -12,14 +12,14 @@ import org.bouncycastle.crypto.tls.TlsCredentials;
 @ObfInfo(name = "av")
 class Class22 implements TlsAuthentication {
 	// $FF: synthetic field
-	@ObfInfo(desc = "Lap;")
+	@ObfInfo(name = "this$2", desc = "Lap;")
 	public final Class16 this$2;
 
 	public Class22(Class16 var1) {
 		this.this$2 = var1;
 	}
 
-	@ObfInfo(desc = "(Lorg/bouncycastle/crypto/tls/Certificate;)V")
+	@ObfInfo(name = "notifyServerCertificate", desc = "(Lorg/bouncycastle/crypto/tls/Certificate;)V")
 	public void notifyServerCertificate(Certificate var1) throws IOException {
 		try {
 			CertificateFactory var2 = CertificateFactory.getInstance("X.509");
@@ -37,8 +37,29 @@ class Class22 implements TlsAuthentication {
 		}
 	}
 
-	@ObfInfo(desc = "(Lorg/bouncycastle/crypto/tls/CertificateRequest;)Lorg/bouncycastle/crypto/tls/TlsCredentials;")
+	@ObfInfo(name = "getClientCredentials", desc = "(Lorg/bouncycastle/crypto/tls/CertificateRequest;)Lorg/bouncycastle/crypto/tls/TlsCredentials;")
 	public TlsCredentials getClientCredentials(CertificateRequest var1) throws IOException {
 		return null;
+	}
+
+	@ObfInfo(name = "pc", desc = "(I)V", opaque = "-1205493336")
+	public static void method340() {
+		if (Client.field585 && Client.field107 != null) {
+			int var1 = Client.field107.field1080[0];
+			int var2 = Client.field107.field1127[0];
+			if (var1 < 0 || var2 < 0 || var1 >= 104 || var2 >= 104) {
+				return;
+			}
+
+			Client.field271 = Client.field107.field1065;
+			int var3 = Client.method790(Client.field3857, Client.field107.field1065, Client.field107.field1126, Client.field3857.field1300) - Client.field522;
+			if (var3 < Client.field2629) {
+				Client.field2629 = var3;
+			}
+
+			Client.field897 = Client.field107.field1126;
+			Client.field585 = false;
+		}
+
 	}
 }

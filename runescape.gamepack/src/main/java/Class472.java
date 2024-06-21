@@ -22,4 +22,12 @@ public class Class472 {
 	public String method8653() {
 		return this.field4923;
 	}
+
+	@ObfInfo(name = "az", desc = "(IZIZI)V", opaque = "-2061884702")
+	public static void method8652(int var0, boolean var1, int var2, boolean var3) {
+		if (Class76.field4598 != null) {
+			Class64.method3694(0, Class76.field4598.length - 1, var0, var1, var2, var3);
+		}
+
+	}
 }

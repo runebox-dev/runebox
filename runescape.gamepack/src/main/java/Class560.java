@@ -4,7 +4,7 @@ import io.runebox.ObfInfo;
 public final class Class560 {
 	@ObfInfo(name = "ab", desc = "Lvt;")
 	public static Class565 field5416;
-	@ObfInfo(desc = "[I")
+	@ObfInfo(owner = "tz", name = "ar", desc = "[I")
 	public static int[] field5211;
 
 	static {

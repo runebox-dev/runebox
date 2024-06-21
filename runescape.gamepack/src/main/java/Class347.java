@@ -17,12 +17,4 @@ public class Class347 {
 		Calendar.getInstance();
 		field3864 = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
 	}
-
-	@ObfInfo(name = "af", desc = "(IIII)I")
-	public static int method6695(int var0, int var1, int var2) {
-		int var4 = Class319.method5997(var2 - var1 + 1);
-		var4 <<= var1;
-		var0 |= var4;
-		return var0;
-	}
 }

@@ -20,7 +20,7 @@ public class Class172 extends Class190 {
 		this.field1856 = 256;
 		this.field1855 = 1;
 		this.field1857 = 0;
-		this.field1858 = Class327.method3047();
+		this.field1858 = Class130.method3047();
 
 		for (int var1 = 0; var1 < 10; ++var1) {
 			this.field1859[var1] = this.field1858;
@@ -42,7 +42,7 @@ public class Class172 extends Class190 {
 		int var5 = this.field1855;
 		this.field1856 = 300;
 		this.field1855 = 1;
-		this.field1858 = Class327.method3047();
+		this.field1858 = Class130.method3047();
 		if (0L == this.field1859[this.field1860]) {
 			this.field1856 = var4;
 			this.field1855 = var5;

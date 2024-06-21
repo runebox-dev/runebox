@@ -31,4 +31,9 @@ public class Class114 implements Class393 {
 	public int method175() {
 		return this.field1436;
 	}
+
+	@ObfInfo(owner = "di", name = "az", desc = "(B)[Lej;")
+	public static Class114[] method2385() {
+		return new Class114[]{field1438, field1434, field1431, field1432, field1433};
+	}
 }

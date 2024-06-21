@@ -21,7 +21,7 @@ public class Class381 {
 		this.field4471 = var6;
 	}
 
-	@ObfInfo(desc = "()[LClass381;")
+	@ObfInfo(owner = "ii", name = "ak", desc = "(I)[Loq;")
 	public static Class381[] method4119() {
 		return new Class381[]{field4469, field4468};
 	}

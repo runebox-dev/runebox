@@ -48,7 +48,7 @@ public class Class530 extends Class469 implements Class287 {
 		}
 	}
 
-	@ObfInfo(desc = "()Ljava/util/Iterator;")
+	@ObfInfo(name = "iterator", desc = "()Ljava/util/Iterator;")
 	public Iterator iterator() {
 		return new Class524(this);
 	}

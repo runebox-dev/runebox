@@ -79,7 +79,7 @@ public final class Class88 extends Class255 {
 		this.field1170 = false;
 		int var12 = Class224.method4163(this.field1168).field2301;
 		if (var12 != -1) {
-			this.field1163 = Class237.method4637(var12);
+			this.field1163 = Class211.method4637(var12);
 		} else {
 			this.field1163 = null;
 		}

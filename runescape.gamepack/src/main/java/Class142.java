@@ -7,7 +7,7 @@ public class Class142 extends Class149 {
 	@ObfInfo(name = "ak", desc = "I", intMultiplier = -1967818551)
 	public int field1618;
 	// $FF: synthetic field
-	@ObfInfo(desc = "Lfu;")
+	@ObfInfo(name = "this$0", desc = "Lfu;")
 	public final Class151 this$0;
 
 	public Class142(Class151 var1) {
@@ -24,18 +24,5 @@ public class Class142 extends Class149 {
 	@ObfInfo(name = "al", desc = "(Lgc;B)V")
 	public void method3067(Class159 var1) {
 		var1.method3337(this.field1618, this.field1621);
-	}
-
-	@ObfInfo(name = "oq", desc = "(Lnb;IIII)V", opaque = "-1592734627")
-	public static void method3145(Class340 var0, int var1, int var2, int var3) {
-		Class361 var5 = var0.method6512(Client.field25, false);
-		if (var5 != null) {
-			if (Client.field736 < 3) {
-				Client.field4958.method9961(var1, var2, var5.field3970, var5.field3968, 25, 25, Client.field572, 256, var5.field3967, var5.field3969);
-			} else {
-				Class561.method10164(var1, var2, 0, var5.field3967, var5.field3969);
-			}
-
-		}
 	}
 }

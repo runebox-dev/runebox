@@ -186,7 +186,7 @@ public class Class50 {
 			}
 
 			var5 = field344[this.field341 - 1];
-			int var6 = Class319.method3791(var5 - 1);
+			int var6 = Class192.method3791(var5 - 1);
 			var3.field794[0] = var1.method1109(var6);
 			var3.field794[1] = var1.method1109(var6);
 			int var7 = 2;

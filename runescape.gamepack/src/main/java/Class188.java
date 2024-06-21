@@ -2,7 +2,7 @@ import io.runebox.ObfInfo;
 
 @ObfInfo(name = "hf")
 public class Class188 {
-	@ObfInfo(desc = "(LClass515;ILjava/lang/String;)Ljava/lang/String;")
+	@ObfInfo(owner = "dv", name = "al", desc = "(Ltu;ILjava/lang/String;B)Ljava/lang/String;", opaque = "0")
 	public static String method2595(Class515 var0, int var1, String var2) {
 		if (var0 == null) {
 			return var2;
@@ -10,25 +10,5 @@ public class Class188 {
 			Class498 var4 = (Class498)var0.method9326((long)var1);
 			return var4 == null ? var2 : (String)var4.field5095;
 		}
-	}
-
-	@ObfInfo(name = "az", desc = "(I)V", opaque = "1234147850")
-	public static void method3696() {
-		Class525 var1 = null;
-
-		try {
-			var1 = Class179.method2980("", Client.field1497.field4550, true);
-			Class521 var2 = Client.field4851.method2608();
-			var1.method9668(var2.field5221, 0, var2.field5219);
-		} catch (Exception var4) {
-		}
-
-		try {
-			if (var1 != null) {
-				var1.method9669(true);
-			}
-		} catch (Exception var3) {
-		}
-
 	}
 }

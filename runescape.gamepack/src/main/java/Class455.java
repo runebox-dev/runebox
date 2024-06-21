@@ -4,7 +4,7 @@ import java.util.Comparator;
 @ObfInfo(name = "rm")
 class Class455 implements Comparator {
 	// $FF: synthetic field
-	@ObfInfo(desc = "Lry;")
+	@ObfInfo(name = "this$0", desc = "Lry;")
 	public final Class467 this$0;
 
 	public Class455(Class467 var1) {
@@ -20,12 +20,12 @@ class Class455 implements Comparator {
 		}
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/Object;Ljava/lang/Object;)I")
+	@ObfInfo(name = "compare", desc = "(Ljava/lang/Object;Ljava/lang/Object;)I")
 	public int compare(Object var1, Object var2) {
 		return this.method8441((Class458)var1, (Class458)var2);
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
+	@ObfInfo(name = "equals", desc = "(Ljava/lang/Object;)Z")
 	public boolean equals(Object var1) {
 		return super.equals(var1);
 	}

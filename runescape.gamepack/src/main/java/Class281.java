@@ -61,7 +61,7 @@ public class Class281 extends Class303 {
 		}
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
+	@ObfInfo(name = "equals", desc = "(Ljava/lang/Object;)Z")
 	public boolean equals(Object var1) {
 		if (!(var1 instanceof Class281)) {
 			return false;
@@ -75,7 +75,7 @@ public class Class281 extends Class303 {
 		}
 	}
 
-	@ObfInfo(desc = "()I")
+	@ObfInfo(name = "hashCode", desc = "()I")
 	public int hashCode() {
 		return super.field3223 | super.field3213 << 8 | this.field3102 << 16 | this.field3100 << 24;
 	}
@@ -98,24 +98,6 @@ public class Class281 extends Class303 {
 	@ObfInfo(name = "at", desc = "(B)I")
 	public int method5701() {
 		return this.field3100;
-	}
-
-	@ObfInfo(name = "al", desc = "(IS)Lii;", opaque = "8191")
-	public static Class217 method5716(int var0) {
-		Class217 var2 = (Class217)Class217.field2188.method5993((long)var0);
-		if (var2 != null) {
-			return var2;
-		} else {
-			byte[] var3 = Class84.field4601.method7216(11, var0);
-			var2 = new Class217();
-			if (var3 != null) {
-				var2.method4100(new Class521(var3));
-			}
-
-			var2.method4099();
-			Class217.field2188.method5987(var2, (long)var0);
-			return var2;
-		}
 	}
 
 	@ObfInfo(name = "pf", desc = "(IB)V")

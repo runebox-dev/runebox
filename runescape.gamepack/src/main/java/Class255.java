@@ -2,10 +2,6 @@ import io.runebox.ObfInfo;
 
 @ObfInfo(name = "ju")
 public abstract class Class255 extends Class507 {
-	@ObfInfo(desc = "[LClass200;")
-	public static Class200[] field2043;
-	@ObfInfo(desc = "LClass382;")
-	public static Class382 field2051;
 	@ObfInfo(name = "ev", desc = "I", intMultiplier = 2009823259)
 	public int field2696;
 
@@ -40,27 +36,5 @@ public abstract class Class255 extends Class507 {
 	@ObfInfo(name = "ah", desc = "(I)Lkb;")
 	public Class262 method1092() {
 		return null;
-	}
-
-	@ObfInfo(name = "ak", desc = "(Lor;Lor;B)Z", opaque = "74")
-	public static boolean method4891(Class382 var0, Class382 var1) {
-		field2051 = var1;
-		if (!var0.method7255()) {
-			return false;
-		} else {
-			Class496.field2098 = var0.method7237(35);
-			field2043 = new Class200[Class496.field2098];
-
-			for (int var3 = 0; var3 < Class496.field2098; ++var3) {
-				byte[] var4 = var0.method7216(35, var3);
-				field2043[var3] = new Class200(var3);
-				if (var4 != null) {
-					field2043[var3].method3890(new Class521(var4));
-					field2043[var3].method3892();
-				}
-			}
-
-			return true;
-		}
 	}
 }

@@ -21,7 +21,7 @@ public class Class553 {
 		this.field5370 = var1;
 	}
 
-	@ObfInfo(desc = "()[LClass553;")
+	@ObfInfo(owner = "ia", name = "ak", desc = "(B)[Lvh;")
 	public static Class553[] method3987() {
 		return new Class553[]{field5372, field5371, field5373};
 	}

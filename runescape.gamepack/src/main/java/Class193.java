@@ -4,6 +4,8 @@ import io.runebox.ObfInfo;
 public class Class193 extends Class507 {
 	@ObfInfo(name = "al", desc = "Llm;")
 	public static Class299 field1986;
+	@ObfInfo(name = "ak", desc = "Lor;")
+	public static Class382 field1988;
 	@ObfInfo(name = "aj", desc = "Z")
 	public boolean field1987;
 
@@ -35,13 +37,18 @@ public class Class193 extends Class507 {
 
 	}
 
-	@ObfInfo(desc = "(I)LClass193;")
+	@ObfInfo(owner = "ad", name = "ak", desc = "(Lor;S)V")
+	public static void method49(Class382 var0) {
+		field1988 = var0;
+	}
+
+	@ObfInfo(owner = "fb", name = "al", desc = "(II)Lhk;", opaque = "-242223001")
 	public static Class193 method3071(int var0) {
 		Class193 var2 = (Class193)field1986.method5993((long)var0);
 		if (var2 != null) {
 			return var2;
 		} else {
-			byte[] var3 = Class4.field1988.method7216(19, var0);
+			byte[] var3 = field1988.method7216(19, var0);
 			var2 = new Class193();
 			if (var3 != null) {
 				var2.method3796(new Class521(var3));
@@ -52,7 +59,7 @@ public class Class193 extends Class507 {
 		}
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "et", name = "af", desc = "(I)V")
 	public static void method2983() {
 		field1986.method5995();
 	}

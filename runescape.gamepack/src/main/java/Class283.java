@@ -57,4 +57,16 @@ public class Class283 extends Class305 {
 	public int method5731() {
 		return this.field3111;
 	}
+
+	@ObfInfo(name = "al", desc = "(II)Luy;", opaque = "-339552668")
+	public static Class545 method5727(int var0) {
+		int var2 = Class539.field5312[var0];
+		if (var2 == 1) {
+			return Class545.field5333;
+		} else if (var2 == 2) {
+			return Class545.field5337;
+		} else {
+			return var2 == 3 ? Class545.field5336 : null;
+		}
+	}
 }

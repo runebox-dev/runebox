@@ -12,17 +12,17 @@ public class Class546 {
 		field5345 = (int)(Math.pow(2.0D, 8.0D) - 1.0D);
 	}
 
-	@ObfInfo(desc = "(I)I")
+	@ObfInfo(owner = "nd", name = "ak", desc = "(II)I")
 	public static int method6654(int var0) {
 		return var0 >>> 12;
 	}
 
-	@ObfInfo(desc = "(I)I")
+	@ObfInfo(owner = "fm", name = "al", desc = "(II)I")
 	public static int method3178(int var0) {
 		return var0 >>> 4 & field5345;
 	}
 
-	@ObfInfo(desc = "(I)I")
+	@ObfInfo(owner = "fi", name = "aj", desc = "(II)I")
 	public static int method3130(int var0) {
 		return (var0 & field5343) - 1;
 	}

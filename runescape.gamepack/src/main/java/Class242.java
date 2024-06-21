@@ -18,8 +18,4 @@ public final class Class242 {
 	public int field2618;
 	@ObfInfo(name = "at", desc = "J", longMultiplier = -8933060122100064223L)
 	public long field2617;
-
-	@ObfInfo(name = "ak", desc = "(Lor;I)V")
-	public static void method4674(Class382 var0) {
-	}
 }

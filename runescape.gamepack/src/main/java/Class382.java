@@ -49,7 +49,7 @@ public abstract class Class382 {
 
 	@ObfInfo(name = "bc", desc = "([BI)V", opaque = "-500449151")
 	public void method7240(byte[] var1) {
-		this.field4486 = Class83.method2298(var1, var1.length);
+		this.field4486 = Class521.method2298(var1, var1.length);
 		Class521 var3 = new Class521(method3623(var1));
 		int var4 = var3.method9405();
 		if (var4 >= 5 && var4 <= 7) {
@@ -198,7 +198,7 @@ public abstract class Class382 {
 				}
 			}
 
-			byte[] var6 = Class362.method6692(this.field4484[var1][var2], false);
+			byte[] var6 = Class346.method6692(this.field4484[var1][var2], false);
 			if (this.field4481) {
 				this.field4484[var1][var2] = null;
 			}
@@ -293,7 +293,7 @@ public abstract class Class382 {
 				}
 			}
 
-			byte[] var5 = Class362.method6692(this.field4484[var1][var2], false);
+			byte[] var5 = Class346.method6692(this.field4484[var1][var2], false);
 			return var5;
 		} else {
 			return null;
@@ -380,9 +380,9 @@ public abstract class Class382 {
 			} else {
 				byte[] var22;
 				if (var2 == null || 0 == var2[0] && 0 == var2[1] && 0 == var2[2] && var2[3] == 0) {
-					var22 = Class362.method6692(this.field4483[var1], false);
+					var22 = Class346.method6692(this.field4483[var1], false);
 				} else {
-					var22 = Class362.method6692(this.field4483[var1], true);
+					var22 = Class346.method6692(this.field4483[var1], true);
 					Class521 var9 = new Class521(var22);
 					var9.method9429(var2, 5, var9.field5221.length);
 				}
@@ -544,7 +544,7 @@ public abstract class Class382 {
 		return this.method7222(var3);
 	}
 
-	@ObfInfo(desc = "([B)[B")
+	@ObfInfo(owner = "gw", name = "ct", desc = "([BI)[B", opaque = "1231289276")
 	public static byte[] method3623(byte[] var0) {
 		Class521 var2 = new Class521(var0);
 		int var3 = var2.method9405();

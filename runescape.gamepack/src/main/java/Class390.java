@@ -38,7 +38,7 @@ public class Class390 implements Class393 {
 		return this.field4551;
 	}
 
-	@ObfInfo(desc = "()[LClass390;")
+	@ObfInfo(owner = "nc", name = "az", desc = "(I)[Loz;")
 	public static Class390[] method6653() {
 		return new Class390[]{field4546, field4548, field4549, field4544, field4545, field4547};
 	}

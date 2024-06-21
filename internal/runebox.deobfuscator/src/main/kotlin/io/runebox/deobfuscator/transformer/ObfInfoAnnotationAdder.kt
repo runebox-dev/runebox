@@ -47,7 +47,7 @@ class ObfInfoAnnotationAdder : Transformer {
         if(isConstructor || isInitializer) return
         val anno = AnnotationNode("io/runebox/ObfInfo").apply {
             values = mutableListOf<Any>()
-            if(cls.origName != origOwner) values.add("owner", origOwner)
+            if(cls.origName.lowercase() != origOwner.lowercase()) values.add("owner", origOwner)
             if(name != origName || desc != origDesc) {
                 values.add("name", origName)
                 values.add("desc", origDesc)
@@ -62,7 +62,7 @@ class ObfInfoAnnotationAdder : Transformer {
     private fun FieldNode.addObfInfo() {
         val anno = AnnotationNode("io/runebox/ObfInfo").apply {
             values = mutableListOf<Any>()
-            if(cls.origName != origOwner) values.add("owner", origOwner)
+            if(cls.origName.lowercase() != origOwner.lowercase()) values.add("owner", origOwner)
             if(name != origName || desc != origDesc) {
                 values.add("name", origName)
                 values.add("desc", origDesc)

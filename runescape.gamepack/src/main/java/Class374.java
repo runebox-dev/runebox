@@ -79,7 +79,7 @@ public class Class374 {
 
 	@ObfInfo(name = "ak", desc = "(B)Z", opaque = "-1")
 	public boolean method7173() {
-		long var2 = Class327.method3047();
+		long var2 = Class130.method3047();
 		int var4 = (int)(var2 - this.field4074);
 		this.field4074 = var2;
 		if (var4 > 200) {
@@ -352,7 +352,7 @@ public class Class374 {
 						}
 
 						this.field4073 = 0;
-						this.field4074 = Class327.method3047();
+						this.field4074 = Class130.method3047();
 						return;
 					}
 
@@ -513,18 +513,18 @@ public class Class374 {
 					}
 				}
 			} else {
-				label84: {
+				label85: {
 					if (var4.field3950[0] >= 512) {
 						boolean var11;
 						if (var4.field3950[0] < 512) {
 							var11 = false;
 						} else {
-							Class232 var12 = Class7.method109(var4.field3950[0] - 512);
+							Class232 var12 = Class232.method109(var4.field3950[0] - 512);
 							var11 = Class229.field2411.field2414 != var12.field2465 && var12.field2466 != Class229.field2411.field2414;
 						}
 
 						if (!var11) {
-							break label84;
+							break label85;
 						}
 					}
 

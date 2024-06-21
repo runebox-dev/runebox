@@ -11,7 +11,7 @@ public class Class136 extends Class181 {
 	@ObfInfo(name = "az", desc = "Ljava/lang/String;")
 	public String field1569;
 	// $FF: synthetic field
-	@ObfInfo(desc = "Lgx;")
+	@ObfInfo(name = "this$0", desc = "Lgx;")
 	public final Class180 this$0;
 
 	public Class136(Class180 var1) {

@@ -7,7 +7,7 @@ public class Class161 {
 	@ObfInfo(name = "al", desc = "[F")
 	public float[] field1796;
 	// $FF: synthetic field
-	@ObfInfo(desc = "Lhj;")
+	@ObfInfo(name = "this$0", desc = "Lhj;")
 	public final Class192 this$0;
 
 	public Class161(Class192 var1) {

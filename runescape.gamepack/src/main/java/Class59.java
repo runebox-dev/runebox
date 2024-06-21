@@ -36,7 +36,7 @@ public final class Class59 extends Class255 {
 		int var8 = Class224.method4163(this.field445).field2301;
 		if (var8 != -1) {
 			this.field443 = false;
-			this.field440 = Class237.method4637(var8);
+			this.field440 = Class211.method4637(var8);
 		} else {
 			this.field443 = true;
 		}
@@ -79,15 +79,38 @@ public final class Class59 extends Class255 {
 		return var3 == null ? null : var3;
 	}
 
-	@ObfInfo(name = "az", desc = "(IIII)I")
-	public static int method1099(int var0, int var1, int var2) {
-		int var4 = Class319.method5997(var2 - var1 + 1);
-		var4 <<= var1;
-		return var0 & ~var4;
-	}
+	@ObfInfo(name = "ly", desc = "(Ldt;Ldk;I)V", opaque = "-1872905711")
+	public static void method1094(Class98 var0, Class89 var1) {
+		Class259 var3 = var0.field1283;
+		long var4 = 0L;
+		int var6 = -1;
+		int var7 = 0;
+		int var8 = 0;
+		if (var1.field1186 == 0) {
+			var4 = var3.method4951(var1.field1195, var1.field1187, var1.field1191);
+		}
 
-	@ObfInfo(name = "aj", desc = "(B)V")
-	public static void method1097() {
-		Class165.field1819.clear();
+		if (1 == var1.field1186) {
+			var4 = var3.method4952(var1.field1195, var1.field1187, var1.field1191);
+		}
+
+		if (var1.field1186 == 2) {
+			var4 = var3.method4953(var1.field1195, var1.field1187, var1.field1191);
+		}
+
+		if (3 == var1.field1186) {
+			var4 = var3.method4954(var1.field1195, var1.field1187, var1.field1191);
+		}
+
+		if (var4 != 0L) {
+			int var9 = var3.method5003(var1.field1195, var1.field1187, var1.field1191, var4);
+			var6 = Class274.method2942(var4);
+			var7 = var9 & 31;
+			var8 = var9 >> 6 & 3;
+		}
+
+		var1.field1189 = var6;
+		var1.field1196 = var7;
+		var1.field1190 = var8;
 	}
 }

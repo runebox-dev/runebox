@@ -5,7 +5,7 @@ public class Class153 extends Class181 {
 	@ObfInfo(name = "ak", desc = "I", intMultiplier = 982220485)
 	public int field1708;
 	// $FF: synthetic field
-	@ObfInfo(desc = "Lgx;")
+	@ObfInfo(name = "this$0", desc = "Lgx;")
 	public final Class180 this$0;
 
 	public Class153(Class180 var1) {
@@ -27,5 +27,24 @@ public class Class153 extends Class181 {
 	@ObfInfo(name = "al", desc = "(Lgo;I)V")
 	public void method3089(Class171 var1) {
 		var1.method3549(this.field1708);
+	}
+
+	@ObfInfo(name = "az", desc = "(BI)C", opaque = "906010203")
+	public static char method3288(byte var0) {
+		int var2 = var0 & 255;
+		if (var2 == 0) {
+			throw new IllegalArgumentException("" + Integer.toString(var2, 16));
+		} else {
+			if (var2 >= 128 && var2 < 160) {
+				char var3 = Class405.field4630[var2 - 128];
+				if (var3 == 0) {
+					var3 = '?';
+				}
+
+				var2 = var3;
+			}
+
+			return (char)var2;
+		}
 	}
 }

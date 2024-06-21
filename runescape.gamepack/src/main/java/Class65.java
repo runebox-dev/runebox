@@ -1,5 +1,4 @@
 import io.runebox.ObfInfo;
-import java.io.IOException;
 
 @ObfInfo(name = "cm")
 public class Class65 {
@@ -120,28 +119,61 @@ public class Class65 {
 		}
 	}
 
-	@ObfInfo(name = "af", desc = "(I)[B", opaque = "-618267210")
-	public static byte[] method1804() {
-		byte[] var1 = new byte[24];
+	@ObfInfo(name = "lc", desc = "(IIIIIIII)Z", opaque = "-944551946")
+	public static boolean method1805(int var0, int var1, int var2, int var3, int var4, int var5, int var6) {
+		Class259 var8 = Client.field4582.field1283;
+		int var10;
+		if (var5 == Class368.field4005.field4008) {
+			Class280 var9 = var8.method4947(var0, var1, var2);
+			if (var9 != null) {
+				var10 = Class274.method2942(var9.field3096);
+				if (var3 == Class373.field4047.field4068) {
+					var9.field3098 = new Class96(Client.field4582, var10, 2, var4 + 4, var0, var1, var2, var6, false, var9.field3098);
+					var9.field3097 = new Class96(Client.field4582, var10, 2, var4 + 1 & 3, var0, var1, var2, var6, false, var9.field3097);
+				} else {
+					var9.field3098 = new Class96(Client.field4582, var10, var3, var4, var0, var1, var2, var6, false, var9.field3098);
+				}
 
-		try {
-			Class179.field1886.method9736(0L);
-			Class179.field1886.method9710(var1);
+				return true;
+			}
+		} else if (var5 == Class368.field4004.field4008) {
+			Class270 var11 = var8.method4948(var0, var1, var2);
+			if (var11 != null) {
+				var10 = Class274.method2942(var11.field3009);
+				if (var3 != Class373.field4056.field4068 && Class373.field4054.field4068 != var3) {
+					if (var3 == Class373.field4052.field4068) {
+						var11.field3011 = new Class96(Client.field4582, var10, 4, var4 + 4, var0, var1, var2, var6, false, var11.field3011);
+					} else if (var3 == Class373.field4050.field4068) {
+						var11.field3011 = new Class96(Client.field4582, var10, 4, (var4 + 2 & 3) + 4, var0, var1, var2, var6, false, var11.field3011);
+					} else if (var3 == Class373.field4048.field4068) {
+						var11.field3011 = new Class96(Client.field4582, var10, 4, var4 + 4, var0, var1, var2, var6, false, var11.field3011);
+						var11.field3012 = new Class96(Client.field4582, var10, 4, 4 + (var4 + 2 & 3), var0, var1, var2, var6, false, var11.field3012);
+					}
+				} else {
+					var11.field3011 = new Class96(Client.field4582, var10, 4, var4, var0, var1, var2, var6, false, var11.field3011);
+				}
 
-			int var2;
-			for (var2 = 0; var2 < 24 && var1[var2] == 0; ++var2) {
+				return true;
+			}
+		} else if (Class368.field4006.field4008 == var5) {
+			Class266 var12 = var8.method4949(var0, var1, var2);
+			if (Class373.field4066.field4068 == var3) {
+				var3 = Class373.field4065.field4068;
 			}
 
-			if (var2 >= 24) {
-				throw new IOException();
+			if (var12 != null) {
+				var12.field2950 = new Class96(Client.field4582, Class274.method2942(var12.field2958), var3, var4, var0, var1, var2, var6, false, var12.field2950);
+				return true;
 			}
-		} catch (Exception var4) {
-			for (int var3 = 0; var3 < 24; ++var3) {
-				var1[var3] = -1;
+		} else if (var5 == Class368.field4007.field4008) {
+			Class247 var13 = var8.method4950(var0, var1, var2);
+			if (var13 != null) {
+				var13.field2651 = new Class96(Client.field4582, Class274.method2942(var13.field2652), 22, var4, var0, var1, var2, var6, false, var13.field2651);
+				return true;
 			}
 		}
 
-		return var1;
+		return false;
 	}
 
 	@ObfInfo(name = "lf", desc = "(Ldt;Luk;B)V", opaque = "-2")
@@ -167,7 +199,7 @@ public class Class65 {
 					byte var8 = var1.method9406();
 					byte var9 = var1.method9406();
 					var6.field4988 = var1.method9407();
-					Class256 var10 = Class285.method5753((byte)var1.method9405());
+					Class256 var10 = Class256.method5753((byte)var1.method9405());
 					int var12 = var6.field4988;
 					int var13 = var6.field4987;
 					int var14 = var12 - var13 & 2047;

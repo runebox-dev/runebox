@@ -61,7 +61,7 @@ public class Class457 extends Class479 {
 			var6 /= 37L;
 		}
 
-		String var11 = Class422.method3324(var6);
+		String var11 = Class157.method3324(var6);
 		if (var11 == null) {
 			var11 = "";
 		}
@@ -94,7 +94,7 @@ public class Class457 extends Class479 {
 			var6 /= 37L;
 		}
 
-		String var11 = Class422.method3324(var6);
+		String var11 = Class157.method3324(var6);
 		if (var11 == null) {
 			var11 = "";
 		}

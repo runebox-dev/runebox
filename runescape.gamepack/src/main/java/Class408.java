@@ -3,7 +3,7 @@ import java.util.HashMap;
 
 @ObfInfo(name = "pr")
 public class Class408 {
-	@ObfInfo(desc = "[I")
+	@ObfInfo(owner = "fd", name = "ac", desc = "[I")
 	public static int[] field1557;
 	@ObfInfo(name = "al", desc = "Lqi;")
 	public Class425 field4637;

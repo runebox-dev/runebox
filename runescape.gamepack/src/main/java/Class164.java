@@ -164,7 +164,7 @@ public class Class164 {
 							this.field1812 = 6;
 						}
 					} else if (this.field1816 == 2) {
-						Class184 var6 = Class395.method7419();
+						Class184 var6 = Class184.method7419();
 						var6.method3664(var5, this.field1816, var1);
 						this.field1807 = var6.method3674(this.field1814);
 						if (this.field1807 != null) {

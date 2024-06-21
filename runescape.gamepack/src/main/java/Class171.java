@@ -42,7 +42,7 @@ public class Class171 extends Class506 {
 				var2[var3] = ((Class140)this.field1854.get(var3)).field1601.method10261();
 			}
 
-			Class91.method2406(var2, this.field1849);
+			Class532.method2406(var2, this.field1849);
 		}
 
 		return this.field1849;

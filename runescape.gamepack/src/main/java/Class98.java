@@ -134,23 +134,4 @@ public class Class98 {
 		}
 
 	}
-
-	@ObfInfo(name = "aa", desc = "(I)V")
-	public static void method2508() {
-		Class128.field1533.clear();
-		Class128.field1529.method9328();
-		Class128.field1528.method7388();
-		Class128.field1531 = 0;
-	}
-
-	@ObfInfo(name = "ap", desc = "(CB)Z", opaque = "13")
-	public static boolean method2499(char var0) {
-		for (int var2 = 0; var2 < Class76.field946.length(); ++var2) {
-			if (Class76.field946.charAt(var2) == var0) {
-				return true;
-			}
-		}
-
-		return false;
-	}
 }

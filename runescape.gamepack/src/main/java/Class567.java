@@ -9,12 +9,12 @@ public class Class567 implements Comparable {
 
 	public Class567(String var1) {
 		this.field5478 = var1;
-		this.field5477 = Class527.method3754(var1, Class544.field5324);
+		this.field5477 = Class191.method3754(var1, Class544.field5324);
 	}
 
 	public Class567(String var1, Class544 var2) {
 		this.field5478 = var1;
-		this.field5477 = Class527.method3754(var1, var2);
+		this.field5477 = Class191.method3754(var1, var2);
 	}
 
 	@ObfInfo(name = "ak", desc = "(I)Ljava/lang/String;")
@@ -32,7 +32,7 @@ public class Class567 implements Comparable {
 		return this.field5477 != null;
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
+	@ObfInfo(name = "equals", desc = "(Ljava/lang/Object;)Z")
 	public boolean equals(Object var1) {
 		if (var1 instanceof Class567) {
 			Class567 var2 = (Class567)var1;
@@ -48,12 +48,12 @@ public class Class567 implements Comparable {
 		}
 	}
 
-	@ObfInfo(desc = "()I")
+	@ObfInfo(name = "hashCode", desc = "()I")
 	public int hashCode() {
 		return this.field5477 == null ? 0 : this.field5477.hashCode();
 	}
 
-	@ObfInfo(desc = "()Ljava/lang/String;")
+	@ObfInfo(name = "toString", desc = "()Ljava/lang/String;")
 	public String toString() {
 		return this.method10260();
 	}
@@ -67,7 +67,7 @@ public class Class567 implements Comparable {
 		}
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/Object;)I")
+	@ObfInfo(name = "compareTo", desc = "(Ljava/lang/Object;)I")
 	public int compareTo(Object var1) {
 		return this.method10275((Class567)var1);
 	}

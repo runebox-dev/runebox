@@ -46,7 +46,7 @@ public class Class282 extends Class303 {
 		}
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
+	@ObfInfo(name = "equals", desc = "(Ljava/lang/Object;)Z")
 	public boolean equals(Object var1) {
 		if (!(var1 instanceof Class282)) {
 			return false;
@@ -56,7 +56,7 @@ public class Class282 extends Class303 {
 		}
 	}
 
-	@ObfInfo(desc = "()I")
+	@ObfInfo(name = "hashCode", desc = "()I")
 	public int hashCode() {
 		return super.field3223 | super.field3213 << 8;
 	}

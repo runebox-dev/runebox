@@ -68,32 +68,29 @@ public class Class63 extends Class506 {
 		return this.field464.field151;
 	}
 
-	@ObfInfo(name = "ak", desc = "(II)Lob;", opaque = "521275722")
-	public static Class366 method1136(int var0) {
-		Class366[] var2 = new Class366[]{Class366.field3992, Class366.field3993, Class366.field3994, Class366.field3995};
+	@ObfInfo(name = "ir", desc = "(Ldt;I)V", opaque = "46472907")
+	public static void method1134(Class98 var0) {
+		int[] var2 = var0.field1288.field1393;
 
-		for (int var4 = 0; var4 < var2.length; ++var4) {
-			Class366 var5 = var2[var4];
-			if (var5.field3997 == var0) {
-				return var5;
+		int var3;
+		for (var3 = 0; var3 < var0.field1288.field1392; ++var3) {
+			Class83 var4 = var0.field1293[var2[var3]];
+			if (var4 != null && var4.field1069 > 0) {
+				--var4.field1069;
+				if (var4.field1069 == 0) {
+					var4.field1075 = null;
+				}
 			}
 		}
 
-		return null;
-	}
-
-	@ObfInfo(name = "ak", desc = "(IIII)Lvc;")
-	public static Class549 method1135(int var0, int var1, int var2) {
-		Class290 var4 = Class279.field3086;
-		long var5 = (long)(var2 << 16 | var0 << 8 | var1);
-		return (Class549)var4.method5885(var5);
-	}
-
-	@ObfInfo(name = "al", desc = "(I)V", opaque = "-789155837")
-	public static void method1133() {
-		if (Class33.field223 != null) {
-			synchronized(Class33.field223) {
-				Class33.field223 = null;
+		for (var3 = 0; var3 < var0.field1296; ++var3) {
+			int var6 = var0.field1297[var3];
+			Class100 var5 = var0.field1295[var6];
+			if (var5 != null && var5.field1069 > 0) {
+				--var5.field1069;
+				if (0 == var5.field1069) {
+					var5.field1075 = null;
+				}
 			}
 		}
 

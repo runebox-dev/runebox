@@ -271,13 +271,13 @@ public class Class218 extends Class507 {
 					if (var8 == null) {
 						var7 = null;
 					} else {
-						Class418 var9 = new Class418(var8, Class81.field5374, Class81.field5377, Class81.field5376, Class81.field5379, Class81.field1371, Class81.field1910);
-						Class81.field5374 = null;
-						Class81.field5377 = null;
-						Class81.field5376 = null;
-						Class81.field5379 = null;
-						Class81.field1371 = null;
-						Class81.field1910 = (byte[][])null;
+						Class418 var9 = new Class418(var8, Class554.field5374, Class554.field5377, Class554.field5376, Class554.field5379, Class554.field1371, Class554.field1910);
+						Class554.field5374 = null;
+						Class554.field5377 = null;
+						Class554.field5376 = null;
+						Class554.field5379 = null;
+						Class554.field1371 = null;
+						Class554.field1910 = (byte[][])null;
 						var7 = var9;
 					}
 
@@ -293,7 +293,7 @@ public class Class218 extends Class507 {
 		}
 	}
 
-	@ObfInfo(desc = "(I)LClass218;")
+	@ObfInfo(owner = "as", name = "ak", desc = "(IB)Lij;", opaque = "32")
 	public static Class218 method287(int var0) {
 		Class218 var2 = (Class218)field2192.method5993((long)var0);
 		if (var2 != null) {
@@ -310,7 +310,7 @@ public class Class218 extends Class507 {
 		}
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "gd", name = "ah", desc = "(I)V")
 	public static void method3403() {
 		field2192.method5995();
 		field2194.method5995();

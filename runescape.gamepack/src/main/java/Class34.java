@@ -20,9 +20,4 @@ public class Class34 extends Class506 {
 	public Field[] field245;
 	@ObfInfo(name = "at", desc = "[Ljava/lang/reflect/Method;")
 	public Method[] field250;
-
-	@ObfInfo(name = "ak", desc = "(I)V")
-	public static void method720() {
-		Class196.field2011.method5995();
-	}
 }

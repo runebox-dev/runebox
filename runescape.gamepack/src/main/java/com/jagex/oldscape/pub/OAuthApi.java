@@ -3,18 +3,18 @@ package com.jagex.oldscape.pub;
 import io.runebox.ObfInfo;
 
 public interface OAuthApi {
-	@ObfInfo(desc = "()Z")
+	@ObfInfo(name = "isOnLoginScreen", desc = "()Z")
 	boolean isOnLoginScreen();
 
-	@ObfInfo(desc = "()J")
+	@ObfInfo(name = "getAccountHash", desc = "()J")
 	long getAccountHash();
 
-	@ObfInfo(desc = "(I)V")
+	@ObfInfo(name = "setClient", desc = "(I)V")
 	void setClient(int var1);
 
-	@ObfInfo(desc = "(Lcom/jagex/oldscape/pub/OtlTokenRequester;)V")
+	@ObfInfo(name = "setOtlTokenRequester", desc = "(Lcom/jagex/oldscape/pub/OtlTokenRequester;)V")
 	void setOtlTokenRequester(OtlTokenRequester var1);
 
-	@ObfInfo(desc = "(Lcom/jagex/oldscape/pub/RefreshAccessTokenRequester;)V")
+	@ObfInfo(name = "setRefreshTokenRequester", desc = "(Lcom/jagex/oldscape/pub/RefreshAccessTokenRequester;)V")
 	void setRefreshTokenRequester(RefreshAccessTokenRequester var1);
 }

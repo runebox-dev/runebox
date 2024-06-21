@@ -251,9 +251,4 @@ public class Class286 {
 	public Class348 method5806() {
 		return new Class348(this.field3131);
 	}
-
-	@ObfInfo(name = "aj", desc = "(IB)I")
-	public static int method5861(int var0) {
-		return var0 + -512;
-	}
 }

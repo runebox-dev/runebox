@@ -18,43 +18,48 @@ public class Class319 {
 
 	}
 
-	@ObfInfo(desc = "(I)I")
+	@ObfInfo(owner = "ln", name = "al", desc = "(II)I")
 	public static int method5997(int var0) {
 		return field3393[var0];
 	}
 
-	@ObfInfo(desc = "(I)I")
-	public static int method3791(int var0) {
-		int var2 = 0;
-		if (var0 < 0 || var0 >= 65536) {
-			var0 >>>= 16;
-			var2 += 16;
-		}
-
-		if (var0 >= 256) {
-			var0 >>>= 8;
-			var2 += 8;
-		}
-
-		if (var0 >= 16) {
-			var0 >>>= 4;
-			var2 += 4;
-		}
-
-		if (var0 >= 4) {
-			var0 >>>= 2;
-			var2 += 2;
-		}
-
-		if (var0 >= 1) {
-			var0 >>>= 1;
-			++var2;
-		}
-
-		return var2 + var0;
+	@ObfInfo(owner = "cq", name = "aj", desc = "(IB)I")
+	public static int method1938(int var0) {
+		var0 = (var0 & 1431655765) + (var0 >>> 1 & 1431655765);
+		var0 = (var0 & 858993459) + (var0 >>> 2 & 858993459);
+		var0 = (var0 >>> 4) + var0 & 252645135;
+		var0 += var0 >>> 8;
+		var0 += var0 >>> 16;
+		return var0 & 255;
 	}
 
-	@ObfInfo(desc = "(II)I")
+	@ObfInfo(owner = "cg", name = "az", desc = "(IIII)I")
+	public static int method1099(int var0, int var1, int var2) {
+		int var4 = method5997(var2 - var1 + 1);
+		var4 <<= var1;
+		return var0 & ~var4;
+	}
+
+	@ObfInfo(owner = "ni", name = "af", desc = "(IIII)I")
+	public static int method6695(int var0, int var1, int var2) {
+		int var4 = method5997(var2 - var1 + 1);
+		var4 <<= var1;
+		var0 |= var4;
+		return var0;
+	}
+
+	@ObfInfo(owner = "rd", name = "ab", desc = "(III)I", opaque = "16777214")
+	public static int method8360(int var0, int var1) {
+		int var3;
+		for (var3 = 0; var1 > 0; --var1) {
+			var3 = var3 << 1 | var0 & 1;
+			var0 >>>= 1;
+		}
+
+		return var3;
+	}
+
+	@ObfInfo(owner = "dy", name = "ac", desc = "(IIB)I")
 	public static int method2738(int var0, int var1) {
 		int var3 = var0 >>> 31;
 		return (var3 + var0) / var1 - var3;

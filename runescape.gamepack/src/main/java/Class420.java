@@ -15,12 +15,12 @@ public class Class420 {
 		this.field4675 = new Class421(1.0F, 1.0F, 1.0F);
 	}
 
-	@ObfInfo(desc = "()Ljava/lang/String;")
+	@ObfInfo(name = "toString", desc = "()Ljava/lang/String;")
 	public String toString() {
 		return "[" + this.field4673.toString() + "|" + this.field4674.toString() + "|" + this.field4675.toString() + "]";
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
+	@ObfInfo(name = "equals", desc = "(Ljava/lang/Object;)Z")
 	public boolean equals(Object var1) {
 		if (var1 == null) {
 			return false;
@@ -34,7 +34,7 @@ public class Class420 {
 		}
 	}
 
-	@ObfInfo(desc = "()I")
+	@ObfInfo(name = "hashCode", desc = "()I")
 	public int hashCode() {
 		boolean var1 = true;
 		byte var2 = 1;

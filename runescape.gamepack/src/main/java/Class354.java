@@ -4,6 +4,7 @@ import java.awt.datatransfer.ClipboardOwner;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.StringSelection;
 import java.awt.datatransfer.Transferable;
+import java.util.Collections;
 
 @ObfInfo(name = "np")
 public class Class354 {
@@ -903,5 +904,30 @@ public class Class354 {
 		int var2 = this.field3907.method8152(this.field3922);
 		int var3 = this.field3907.method8153(this.field3902);
 		return new Class509(var2, var3);
+	}
+
+	@ObfInfo(name = "ak", desc = "([I[IB)V", opaque = "0")
+	public static void method7039(int[] var0, int[] var1) {
+		if (var0 != null && var1 != null) {
+			Class451.field144 = var0;
+			Class451.field4840 = new int[var0.length];
+			Class451.field1941 = new byte[var0.length][][];
+
+			for (int var3 = 0; var3 < Class451.field144.length; ++var3) {
+				Class451.field1941[var3] = new byte[var1[var3]][];
+				Class451.field4841.add(var0[var3]);
+			}
+
+			Collections.sort(Class451.field4841);
+		} else {
+			Class451.field144 = null;
+			Class451.field4840 = null;
+			Class451.field1941 = (byte[][][])null;
+			Class451.field4841.clear();
+			Class451.field4841.add(100);
+			Class451.field4841.add(5000);
+			Class451.field4841.add(10000);
+			Class451.field4841.add(30000);
+		}
 	}
 }

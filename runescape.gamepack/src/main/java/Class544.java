@@ -47,7 +47,7 @@ public class Class544 {
 		this.field5332 = var4;
 	}
 
-	@ObfInfo(desc = "()Ljava/lang/String;")
+	@ObfInfo(name = "toString", desc = "()Ljava/lang/String;")
 	public String toString() {
 		return this.field5332;
 	}

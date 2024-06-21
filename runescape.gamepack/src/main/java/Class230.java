@@ -137,7 +137,7 @@ public class Class230 extends Class507 {
 
 	}
 
-	@ObfInfo(desc = "(LClass382;)V")
+	@ObfInfo(owner = "ey", name = "ak", desc = "(Lor;I)V")
 	public static void method3042(Class382 var0) {
 		Class93.field2417 = var0;
 	}

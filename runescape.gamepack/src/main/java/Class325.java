@@ -6,10 +6,10 @@ import java.util.concurrent.atomic.AtomicBoolean;
 @ObfInfo(name = "mm")
 class Class325 implements Callable {
 	// $FF: synthetic field
-	@ObfInfo(desc = "Lmw;")
+	@ObfInfo(name = "this$0", desc = "Lmw;")
 	public final Class335 this$0;
 	// $FF: synthetic field
-	@ObfInfo(desc = "Ljava/util/concurrent/atomic/AtomicBoolean;")
+	@ObfInfo(name = "val$cancelled", desc = "Ljava/util/concurrent/atomic/AtomicBoolean;")
 	public final AtomicBoolean val$cancelled;
 
 	public Class325(Class335 var1, AtomicBoolean var2) {
@@ -17,7 +17,7 @@ class Class325 implements Callable {
 		this.val$cancelled = var2;
 	}
 
-	@ObfInfo(desc = "()Ljava/lang/Object;")
+	@ObfInfo(name = "call", desc = "()Ljava/lang/Object;")
 	public Object call() {
 		PriorityQueue var1 = this.this$0.field3506;
 

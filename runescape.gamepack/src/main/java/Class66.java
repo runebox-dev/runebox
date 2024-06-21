@@ -113,7 +113,7 @@ public class Class66 extends Class506 {
 		var2.method1102(this.field804[var1], 0);
 		this.field814 = new float[field828];
 		var2.method1104();
-		int var3 = var2.method1109(Class319.method3791(field812.length - 1));
+		int var3 = var2.method1109(Class192.method3791(field812.length - 1));
 		boolean var4 = field811[var3];
 		int var5 = var4 ? field828 : field805;
 		boolean var6 = false;
@@ -224,7 +224,7 @@ public class Class66 extends Class506 {
 				var23[var28 * 4 + 1] = (var30 - var32) * var33 + (var29 - var31) * var34;
 			}
 
-			var28 = Class319.method3791(var5 - 1);
+			var28 = Class192.method3791(var5 - 1);
 
 			int var49;
 			int var50;
@@ -465,10 +465,10 @@ public class Class66 extends Class506 {
 			}
 
 			int[] var16 = new int[var6];
-			int var11 = Class319.method3791(var6 - 1);
+			int var11 = Class192.method3791(var6 - 1);
 
 			for (int var12 = 0; var12 < var6; ++var12) {
-				var16[var12] = Class446.method8360(var12, var11);
+				var16[var12] = Class319.method8360(var12, var11);
 			}
 
 			if (var2 != 0) {

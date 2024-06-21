@@ -48,12 +48,7 @@ public class Class322 implements Class321 {
 		this.field3399 = var2;
 	}
 
-	@ObfInfo(name = "ak", desc = "(II)Ljava/lang/String;")
-	public static String method6223(int var0) {
-		return "<img=" + var0 + ">";
-	}
-
-	@ObfInfo(desc = "()[LClass322;")
+	@ObfInfo(owner = "fp", name = "ak", desc = "(I)[Lmj;")
 	public static Class322[] method3236() {
 		return new Class322[]{field3395, field3400, field3397, field3398, field3404, field3402, field3396, field3403};
 	}

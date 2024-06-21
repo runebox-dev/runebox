@@ -3,9 +3,7 @@ import java.util.zip.CRC32;
 
 @ObfInfo(name = "ot")
 public class Class384 extends Class382 {
-	@ObfInfo(desc = "LClass382;")
-	public static Class382 field2508;
-	@ObfInfo(desc = "Ljava/lang/Thread;")
+	@ObfInfo(owner = "om", name = "aa", desc = "Ljava/lang/Thread;")
 	public static Thread field4139;
 	@ObfInfo(name = "av", desc = "Ljava/util/zip/CRC32;")
 	public static CRC32 field4504;
@@ -365,10 +363,5 @@ public class Class384 extends Class382 {
 			var4 = var3 * 100 / var2;
 			return var4;
 		}
-	}
-
-	@ObfInfo(name = "ak", desc = "(Lor;B)V")
-	public static void method7366(Class382 var0) {
-		field2508 = var0;
 	}
 }

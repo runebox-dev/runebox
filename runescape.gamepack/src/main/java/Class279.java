@@ -45,7 +45,7 @@ public class Class279 {
 
 	@ObfInfo(name = "az", desc = "(IIII)V", opaque = "-637792939")
 	public void method5572(int var1, int var2, int var3) {
-		Class549 var5 = Class63.method1135(this.field3077, this.field3078, this.field3084);
+		Class549 var5 = method1135(this.field3077, this.field3078, this.field3084);
 		if (var5 != null) {
 			if (this.field3084 * 64 == var3) {
 				var5.method9929(var1, var2);
@@ -230,7 +230,7 @@ public class Class279 {
 	public void method5672(int var1, Class304 var2, Class557[] var3, Class382 var4, Class382 var5) {
 		this.field3084 = var1;
 		if (this.field3079 != null || !this.field3080.isEmpty()) {
-			if (Class63.method1135(this.field3077, this.field3078, var1) == null) {
+			if (method1135(this.field3077, this.field3078, var1) == null) {
 				boolean var7 = true;
 				var7 &= this.method5580(var4);
 				int var9;
@@ -728,10 +728,22 @@ public class Class279 {
 
 	}
 
-	@ObfInfo(desc = "(LClass549;III)V")
+	@ObfInfo(owner = "ck", name = "ak", desc = "(IIII)Lvc;")
+	public static Class549 method1135(int var0, int var1, int var2) {
+		Class290 var4 = field3086;
+		long var5 = (long)(var2 << 16 | var0 << 8 | var1);
+		return (Class549)var4.method5885(var5);
+	}
+
+	@ObfInfo(owner = "gi", name = "al", desc = "(Lvc;IIIB)V")
 	public static void method3503(Class549 var0, int var1, int var2, int var3) {
 		Class290 var5 = field3086;
 		long var7 = (long)(var3 << 16 | var1 << 8 | var2);
 		var5.method5891(var0, var7, 4 * var0.field5357.length);
+	}
+
+	@ObfInfo(owner = "lo", name = "aj", desc = "(I)V")
+	public static void method6030() {
+		field3086.method5890(5);
 	}
 }

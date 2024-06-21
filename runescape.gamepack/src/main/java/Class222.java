@@ -12,6 +12,10 @@ public class Class222 extends Class507 {
 	public static Class299 field2242;
 	@ObfInfo(name = "af", desc = "Llm;")
 	public static Class299 field2276;
+	@ObfInfo(name = "al", desc = "Lor;")
+	public static Class382 field2238;
+	@ObfInfo(owner = "af", name = "aj", desc = "Lor;")
+	public static Class382 field28;
 	@ObfInfo(name = "ak", desc = "Z")
 	public static boolean field2288;
 	@ObfInfo(name = "ck", desc = "Ltu;")
@@ -370,7 +374,7 @@ public class Class222 extends Class507 {
 		if (this.field2246 != null) {
 			for (int var5 = 0; var5 < this.field2246.length; ++var5) {
 				if (var1 == this.field2246[var5]) {
-					return Class30.field28.method7232(this.field2269[var5] & 65535, 0);
+					return field28.method7232(this.field2269[var5] & 65535, 0);
 				}
 			}
 
@@ -383,7 +387,7 @@ public class Class222 extends Class507 {
 			boolean var3 = true;
 
 			for (int var4 = 0; var4 < this.field2269.length; ++var4) {
-				var3 &= Class30.field28.method7232(this.field2269[var4] & 65535, 0);
+				var3 &= field28.method7232(this.field2269[var4] & 65535, 0);
 			}
 
 			return var3;
@@ -398,7 +402,7 @@ public class Class222 extends Class507 {
 			boolean var2 = true;
 
 			for (int var3 = 0; var3 < this.field2269.length; ++var3) {
-				var2 &= Class30.field28.method7232(this.field2269[var3] & 65535, 0);
+				var2 &= field28.method7232(this.field2269[var3] & 65535, 0);
 			}
 
 			return var2;
@@ -542,7 +546,7 @@ public class Class222 extends Class507 {
 
 				var4 = (Class236)field2276.method5993((long)var8);
 				if (var4 == null) {
-					var4 = Class236.method4594(Class30.field28, var8 & 65535, 0);
+					var4 = Class236.method4594(field28, var8 & 65535, 0);
 					if (var4 == null) {
 						return null;
 					}
@@ -584,7 +588,7 @@ public class Class222 extends Class507 {
 
 			var4 = (Class236)field2276.method5993((long)var6);
 			if (var4 == null) {
-				var4 = Class236.method4594(Class30.field28, var6 & 65535, 0);
+				var4 = Class236.method4594(field28, var6 & 65535, 0);
 				if (var4 == null) {
 					return null;
 				}
@@ -708,13 +712,20 @@ public class Class222 extends Class507 {
 		}
 	}
 
-	@ObfInfo(desc = "(I)LClass222;")
+	@ObfInfo(owner = "bd", name = "ak", desc = "(Lor;Lor;ZI)V")
+	public static void method462(Class382 var0, Class382 var1, boolean var2) {
+		field2238 = var0;
+		field28 = var1;
+		field2288 = var2;
+	}
+
+	@ObfInfo(owner = "ij", name = "al", desc = "(II)Lin;", opaque = "-963396313")
 	public static Class222 method4161(int var0) {
 		Class222 var2 = (Class222)field2239.method5993((long)var0);
 		if (var2 != null) {
 			return var2;
 		} else {
-			byte[] var3 = Class30.field2238.method7216(6, var0);
+			byte[] var3 = field2238.method7216(6, var0);
 			var2 = new Class222();
 			var2.field2244 = var0;
 			if (var3 != null) {

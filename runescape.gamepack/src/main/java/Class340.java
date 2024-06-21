@@ -1,5 +1,6 @@
 import io.runebox.ObfInfo;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 
@@ -889,13 +890,13 @@ public class Class340 extends Class506 {
 					if (var9 == null) {
 						var8 = null;
 					} else {
-						Class418 var10 = new Class418(var9, Class81.field5374, Class81.field5377, Class81.field5376, Class81.field5379, Class81.field1371, Class81.field1910);
-						Class81.field5374 = null;
-						Class81.field5377 = null;
-						Class81.field5376 = null;
-						Class81.field5379 = null;
-						Class81.field1371 = null;
-						Class81.field1910 = (byte[][])null;
+						Class418 var10 = new Class418(var9, Class554.field5374, Class554.field5377, Class554.field5376, Class554.field5379, Class554.field1371, Class554.field1910);
+						Class554.field5374 = null;
+						Class554.field5377 = null;
+						Class554.field5376 = null;
+						Class554.field5379 = null;
+						Class554.field1371 = null;
+						Class554.field1910 = (byte[][])null;
 						var8 = var10;
 					}
 
@@ -956,7 +957,7 @@ public class Class340 extends Class506 {
 					var13 = var5 != null ? var5.method7053() : null;
 					break;
 				case 4:
-					Class232 var16 = Class7.method109(var9);
+					Class232 var16 = Class232.method109(var9);
 					var13 = var16.method4417(10);
 					var14 += var16.field2490;
 					var15 += var16.field2491;
@@ -1264,7 +1265,7 @@ public class Class340 extends Class506 {
 		Class340 var9;
 		for (var7 = var3.iterator(); var7.hasNext(); this.field3745[var6++] = var9) {
 			Class161 var8 = (Class161)var7.next();
-			var9 = Class358.method7059(5, this, var6, 0, 0, 0, 0, var8.field1796);
+			var9 = method7059(5, this, var6, 0, 0, 0, 0, var8.field1796);
 			var9.field3714 = var8.field1797.method2744();
 			Class363 var10 = new Class363(var8.field1797);
 			var1.field3884.method8588(var9.field3714, var10);
@@ -1272,7 +1273,7 @@ public class Class340 extends Class506 {
 
 		for (var7 = var4.iterator(); var7.hasNext(); this.field3745[var6++] = var9) {
 			Class189 var11 = (Class189)var7.next();
-			var9 = Class358.method7059(4, this, var6, 0, 0, 0, 0, var11.field1944);
+			var9 = method7059(4, this, var6, 0, 0, 0, 0, var11.field1944);
 			var9.field3740 = var11.field1947;
 			var9.field3739 = (Integer)this.field3742.get(var11.field1948);
 			var9.field3743 = var11.field1946;
@@ -1378,9 +1379,38 @@ public class Class340 extends Class506 {
 		return var1.toString();
 	}
 
-	@ObfInfo(desc = "(LClass340;II)V")
+	@ObfInfo(owner = "nt", name = "bw", desc = "(ILnb;IIIII[FI)Lnb;")
+	public static Class340 method7059(int var0, Class340 var1, int var2, int var3, int var4, int var5, int var6, float[] var7) {
+		Class340 var9 = new Class340();
+		var9.field3755 = var0;
+		var9.field3826 = var1.field3676;
+		var9.field3791 = var2;
+		var9.field3675 = true;
+		var9.field3682 = var3;
+		var9.field3683 = var4;
+		var9.field3778 = var5;
+		var9.field3685 = var6;
+		var9.field3686 = (int)((float)var1.field3692 * var7[0]);
+		var9.field3687 = (int)(var7[1] * (float)var1.field3736);
+		var9.field3728 = (int)((float)var1.field3692 * var7[2]);
+		var9.field3707 = (int)((float)var1.field3736 * var7[3]);
+		return var9;
+	}
+
+	@ObfInfo(owner = "jp", name = "bd", desc = "(Lnb;III)V")
 	public static void method4772(Class340 var0, int var1, int var2) {
 		var0.field3764.field3947[var1] = var2;
 		var0.field3764.method7055();
+	}
+
+	@ObfInfo(owner = "co", name = "bm", desc = "(Lnb;Lnt;ZI)V")
+	public static void method1841(Class340 var0, Class358 var1, boolean var2) {
+		var0.field3792 = 7;
+		var0.field3764 = new Class358(var1);
+		if (!var2) {
+			var0.field3764.field3950 = Arrays.copyOf(var0.field3764.field3953, var0.field3764.field3953.length);
+			var0.field3764.method7055();
+		}
+
 	}
 }

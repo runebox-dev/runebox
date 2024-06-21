@@ -29,7 +29,7 @@ public class Class558 implements Class393 {
 		return this.field5403;
 	}
 
-	@ObfInfo(desc = "()[LClass558;")
+	@ObfInfo(owner = "om", name = "az", desc = "(B)[Lvm;")
 	public static Class558[] method7193() {
 		return new Class558[]{field5400, field5402, field5401};
 	}

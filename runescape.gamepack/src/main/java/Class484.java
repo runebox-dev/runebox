@@ -19,7 +19,7 @@ public abstract class Class484 implements Class297 {
 				return;
 			}
 
-			Class493 var4 = (Class493)Class62.method1112(Class70.method1939(), var3);
+			Class493 var4 = (Class493)Class62.method1112(Class493.method1939(), var3);
 			if (var4 != null) {
 				switch(var4.field5008) {
 				case 0:
@@ -33,7 +33,7 @@ public abstract class Class484 implements Class297 {
 					throw new IllegalStateException("Unrecognised VarTypeEncodingKey - " + var4);
 				case 3:
 					int var5 = var1.method9405();
-					this.field4962 = Class539.method5727(var5);
+					this.field4962 = Class283.method5727(var5);
 					if (this.field4962 == null) {
 						throw new IllegalStateException("Unknown ScriptVarType ID in VarType.decode: " + var5);
 					}

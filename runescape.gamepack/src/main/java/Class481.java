@@ -22,7 +22,7 @@ public abstract class Class481 {
 	@ObfInfo(name = "at", desc = "(B)V")
 	public abstract void method8631();
 
-	@ObfInfo(desc = "(Ljava/net/Socket;II)LClass481;")
+	@ObfInfo(owner = "fc", name = "ak", desc = "(Ljava/net/Socket;III)Lsm;")
 	public static Class481 method3074(Socket var0, int var1, int var2) throws IOException {
 		return new Class470(var0, var1, var2);
 	}

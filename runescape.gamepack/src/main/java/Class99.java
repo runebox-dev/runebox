@@ -70,27 +70,8 @@ public class Class99 implements Class393 {
 		return var3.toString();
 	}
 
-	@ObfInfo(desc = "()[LClass99;")
+	@ObfInfo(owner = "rf", name = "az", desc = "(I)[Ldu;")
 	public static Class99[] method8414() {
 		return new Class99[]{field1309, field1305, field1310, field1308, field1306};
-	}
-
-	@ObfInfo(name = "al", desc = "(J)V")
-	public static void method2511(long var0) {
-		try {
-			Thread.sleep(var0);
-		} catch (InterruptedException var3) {
-		}
-
-	}
-
-	@ObfInfo(name = "ab", desc = "(IS)I", opaque = "254")
-	public static int method2518(int var0) {
-		Class67 var2 = (Class67)Class128.field1529.method9326((long)var0);
-		if (var2 == null) {
-			return -1;
-		} else {
-			return Class128.field1528.field4560 == var2.field5172 ? -1 : ((Class67)var2.field5172).field833;
-		}
 	}
 }

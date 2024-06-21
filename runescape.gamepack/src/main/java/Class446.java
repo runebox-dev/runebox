@@ -38,13 +38,13 @@ public class Class446 {
 
 	@ObfInfo(name = "ak", desc = "(S)V")
 	public void method8354() {
-		this.field4798 = Class327.method3047();
+		this.field4798 = Class130.method3047();
 	}
 
 	@ObfInfo(name = "al", desc = "(I)V", opaque = "1241117452")
 	public void method8353() {
 		if (this.field4798 != -1L) {
-			this.field4806 = Class327.method3047() - this.field4798;
+			this.field4806 = Class130.method3047() - this.field4798;
 			this.field4798 = -1L;
 		}
 
@@ -52,14 +52,14 @@ public class Class446 {
 
 	@ObfInfo(name = "aj", desc = "(IB)V")
 	public void method8355(int var1) {
-		this.field4797 = Class327.method3047();
+		this.field4797 = Class130.method3047();
 		this.field4803 = var1;
 	}
 
 	@ObfInfo(name = "az", desc = "(S)V")
 	public void method8357() {
 		if (this.field4797 != -1L) {
-			this.field4800 = Class327.method3047() - this.field4797;
+			this.field4800 = Class130.method3047() - this.field4797;
 			this.field4797 = -1L;
 		}
 
@@ -111,16 +111,5 @@ public class Class446 {
 		var1.method9389(this.field4804);
 		var1.method9389(this.field4805);
 		var1.method9389(this.field4801);
-	}
-
-	@ObfInfo(name = "ab", desc = "(III)I", opaque = "16777214")
-	public static int method8360(int var0, int var1) {
-		int var3;
-		for (var3 = 0; var1 > 0; --var1) {
-			var3 = var3 << 1 | var0 & 1;
-			var0 >>>= 1;
-		}
-
-		return var3;
 	}
 }

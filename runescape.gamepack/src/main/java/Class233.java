@@ -9,7 +9,11 @@ public class Class233 extends Class507 {
 		field2501 = new Class299(64);
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "jh", name = "ak", desc = "(Lor;I)V")
+	public static void method4674(Class382 var0) {
+	}
+
+	@ObfInfo(owner = "ev", name = "al", desc = "(I)V")
 	public static void method2997() {
 		field2501.method5995();
 	}

@@ -4,19 +4,10 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.ProtocolException;
 import java.net.URL;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
 import javax.net.ssl.HttpsURLConnection;
 
 @ObfInfo(name = "ah")
 public class Class8 {
-	@ObfInfo(desc = "LClass39;")
-	public static Class39 field80;
-	@ObfInfo(desc = "LClass51;")
-	public static Class51 field450;
-	@ObfInfo(desc = "Ljava/util/concurrent/ScheduledExecutorService;")
-	public static ScheduledExecutorService field2176;
 	@ObfInfo(name = "az", desc = "Lsh;")
 	public Class476 field46;
 	@ObfInfo(name = "af", desc = "Z")
@@ -138,49 +129,6 @@ public class Class8 {
 		}
 
 		return var4;
-	}
-
-	@ObfInfo(name = "bf", desc = "(Lgz;IIB)Lbd;", opaque = "56")
-	public static Class30 method126(Class182 var0, int var1, int var2) {
-		if (0 == Client.field1382) {
-			throw new IllegalStateException();
-		} else if (var1 >= 0 && var1 < 2) {
-			if (var2 < 256) {
-				var2 = 256;
-			}
-
-			try {
-				Class30 var4 = field450.method166();
-				var4.field159 = new int[256 * (Client.field1887 ? 2 : 1)];
-				var4.field160 = var2;
-				var4.method251();
-				var4.field167 = (var2 & -1024) + 1024;
-				if (var4.field167 > 16384) {
-					var4.field167 = 16384;
-				}
-
-				var4.method250(var4.field167);
-				if (Client.field2640 > 0 && field80 == null) {
-					field80 = new Class39();
-					field2176 = Executors.newScheduledThreadPool(1);
-					field2176.scheduleAtFixedRate(field80, 0L, 10L, TimeUnit.MILLISECONDS);
-				}
-
-				if (field80 != null) {
-					if (field80.field276[var1] != null) {
-						throw new IllegalArgumentException();
-					}
-
-					field80.field276[var1] = var4;
-				}
-
-				return var4;
-			} catch (Throwable var5) {
-				return new Class30();
-			}
-		} else {
-			throw new IllegalArgumentException();
-		}
 	}
 
 	@ObfInfo(name = "ah", desc = "(Ljava/lang/String;I)Ljava/lang/String;", opaque = "-1828047230")

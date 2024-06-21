@@ -35,13 +35,4 @@ public final class Class266 {
 		this.field2958 = 0L;
 		this.field2946 = 0;
 	}
-
-	@ObfInfo(name = "av", desc = "(Ljava/lang/String;B)I", opaque = "2")
-	public static int method5324(String var0) {
-		if (var0.equals("centre")) {
-			return 1;
-		} else {
-			return !var0.equals("bottom") && !var0.equals("right") ? 0 : 2;
-		}
-	}
 }

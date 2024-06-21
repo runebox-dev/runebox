@@ -1220,7 +1220,7 @@ public class Class262 extends Class255 {
 							int var28 = Class274.field3024;
 							int var30 = Class274.field3025;
 							boolean var32 = Class274.method2732();
-							boolean var33 = var9 != 0L && !Class74.method2085(var9);
+							boolean var33 = var9 != 0L && !Class274.method2085(var9);
 							boolean var35 = false;
 							int var37;
 							int var38;
@@ -1372,7 +1372,7 @@ public class Class262 extends Class255 {
 
 		boolean var19 = Class274.method2732();
 		if (var19) {
-			boolean var20 = var6 != 0L && !Class74.method2085(var6);
+			boolean var20 = var6 != 0L && !Class274.method2085(var6);
 			var19 = var20;
 		}
 

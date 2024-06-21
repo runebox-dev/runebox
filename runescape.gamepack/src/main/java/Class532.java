@@ -2,7 +2,7 @@ import io.runebox.ObfInfo;
 
 @ObfInfo(name = "ul")
 public class Class532 {
-	@ObfInfo(desc = "([Ljava/lang/String;[SII)V")
+	@ObfInfo(owner = "ud", name = "ak", desc = "([Ljava/lang/String;[SIII)V", opaque = "-2096288876")
 	public static void method9665(String[] var0, short[] var1, int var2, int var3) {
 		if (var2 < var3) {
 			int var5 = (var3 + var2) / 2;
@@ -35,7 +35,12 @@ public class Class532 {
 
 	}
 
-	@ObfInfo(desc = "([Ljava/lang/String;[III)V")
+	@ObfInfo(owner = "dm", name = "al", desc = "([Ljava/lang/String;[II)V")
+	public static void method2406(String[] var0, int[] var1) {
+		method3940(var0, var1, 0, var0.length - 1);
+	}
+
+	@ObfInfo(owner = "hv", name = "aj", desc = "([Ljava/lang/String;[IIII)V", opaque = "-174075280")
 	public static void method3940(String[] var0, int[] var1, int var2, int var3) {
 		if (var2 < var3) {
 			int var5 = (var3 + var2) / 2;
@@ -68,7 +73,7 @@ public class Class532 {
 
 	}
 
-	@ObfInfo(desc = "([I[III)V")
+	@ObfInfo(owner = "ma", name = "az", desc = "([I[IIII)V", opaque = "1867182898")
 	public static void method6164(int[] var0, int[] var1, int var2, int var3) {
 		if (var2 < var3) {
 			int var5 = (var3 + var2) / 2;

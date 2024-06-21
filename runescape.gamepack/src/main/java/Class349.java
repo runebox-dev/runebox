@@ -4,7 +4,7 @@ import java.util.Map;
 
 @ObfInfo(name = "nk")
 public class Class349 {
-	@ObfInfo(desc = "[Z")
+	@ObfInfo(owner = "fw", name = "at", desc = "[Z")
 	public static boolean[] field1710;
 	@ObfInfo(name = "ao", desc = "Llm;")
 	public Class299 field3880;

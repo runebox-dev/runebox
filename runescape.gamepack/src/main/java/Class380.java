@@ -41,7 +41,7 @@ public class Class380 {
 
 			Class332.field3458.add(new Class441((Class447)null, var4));
 		} else {
-			Class87.method2354();
+			Class332.method2354();
 		}
 
 	}

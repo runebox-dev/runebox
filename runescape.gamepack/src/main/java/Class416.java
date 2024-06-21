@@ -87,32 +87,8 @@ public class Class416 {
 		var1[45] = 63;
 	}
 
-	@ObfInfo(desc = "([B)Ljava/lang/String;")
+	@ObfInfo(owner = "gu", name = "ak", desc = "([BI)Ljava/lang/String;")
 	public static String method3598(byte[] var0) {
-		return method3961(var0, 0, var0.length);
-	}
-
-	@ObfInfo(desc = "([BII)Ljava/lang/String;")
-	public static String method3961(byte[] var0, int var1, int var2) {
-		StringBuilder var4 = new StringBuilder();
-
-		for (int var5 = var1; var5 < var2 + var1; var5 += 3) {
-			int var6 = var0[var5] & 255;
-			var4.append(field4663[var6 >>> 2]);
-			if (var5 < var2 - 1) {
-				int var7 = var0[var5 + 1] & 255;
-				var4.append(field4663[(var6 & 3) << 4 | var7 >>> 4]);
-				if (var5 < var2 - 2) {
-					int var8 = var0[var5 + 2] & 255;
-					var4.append(field4663[(var7 & 15) << 2 | var8 >>> 6]).append(field4663[var8 & 63]);
-				} else {
-					var4.append(field4663[(var7 & 15) << 2]).append("=");
-				}
-			} else {
-				var4.append(field4663[(var6 & 3) << 4]).append("==");
-			}
-		}
-
-		return var4.toString();
+		return Class207.method3961(var0, 0, var0.length);
 	}
 }

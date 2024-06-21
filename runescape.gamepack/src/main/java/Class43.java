@@ -91,21 +91,4 @@ public class Class43 {
 		var5 |= var1 << 16;
 		return var3 ? (long)var5 ^ 4294967296L : (long)var5;
 	}
-
-	@ObfInfo(name = "aj", desc = "(Lua;II)Ljava/lang/String;", opaque = "1500452705")
-	public static String method828(Class521 var0, int var1) {
-		try {
-			int var3 = var0.method9419();
-			if (var3 > var1) {
-				var3 = var1;
-			}
-
-			byte[] var4 = new byte[var3];
-			var0.field5219 += Client.field3661.method6656(var0.field5221, var0.field5219, var4, 0, var3);
-			String var5 = Class405.method7119(var4, 0, var3);
-			return var5;
-		} catch (Exception var6) {
-			return "Cabbage";
-		}
-	}
 }

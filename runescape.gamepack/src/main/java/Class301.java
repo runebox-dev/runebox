@@ -85,11 +85,6 @@ public class Class301 implements Class298 {
 	public void method6019() {
 	}
 
-	@ObfInfo(name = "aj", desc = "(I)V")
-	public static void method6030() {
-		Class279.field3086.method5890(5);
-	}
-
 	@ObfInfo(name = "al", desc = "(Lfm;FZI)F", opaque = "-1067427797")
 	public static float method6024(Class143 var0, float var1, boolean var2) {
 		float var4 = 0.0F;
@@ -160,7 +155,7 @@ public class Class301 implements Class298 {
 					var12 += var5;
 				}
 
-				var4 = Class261.method5160(var0, var12);
+				var4 = Class130.method5160(var0, var12);
 				float var19;
 				if (var2 && var0.field1645 == Class141.field1611) {
 					var19 = var0.field1627[var0.method3162() - 1].field1473 - var0.field1627[0].field1473;

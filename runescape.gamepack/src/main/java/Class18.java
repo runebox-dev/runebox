@@ -31,7 +31,7 @@ public class Class18 extends Class30 {
 			this.field92.start();
 			this.field91 = var1;
 		} catch (LineUnavailableException var4) {
-			if (Class69.method1938(var1) != 1) {
+			if (Class319.method1938(var1) != 1) {
 				this.method250(Class248.method4765(var1));
 			} else {
 				this.field92 = null;

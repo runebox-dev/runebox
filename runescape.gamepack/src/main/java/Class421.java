@@ -36,7 +36,7 @@ public class Class421 {
 		return (float)Math.sqrt((double)(this.field4678 * this.field4678 + this.field4680 * this.field4680 + this.field4677 * this.field4677));
 	}
 
-	@ObfInfo(desc = "()Ljava/lang/String;")
+	@ObfInfo(name = "toString", desc = "()Ljava/lang/String;")
 	public String toString() {
 		return this.field4680 + ", " + this.field4677 + ", " + this.field4678;
 	}

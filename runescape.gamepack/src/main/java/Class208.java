@@ -82,7 +82,7 @@ public class Class208 extends Class507 {
 		return this.field2105;
 	}
 
-	@ObfInfo(desc = "(I)LClass208;")
+	@ObfInfo(owner = "an", name = "ak", desc = "(II)Lhz;", opaque = "-426729511")
 	public static Class208 method170(int var0) {
 		Class208 var2 = (Class208)field2101.method5993((long)var0);
 		if (var2 != null) {

@@ -107,7 +107,7 @@ public class Class224 extends Class507 {
 		} else {
 			Class262 var4;
 			if (-1 != this.field2301 && var1 != -1) {
-				var4 = Class237.method4637(this.field2301).method4001(var3, var1);
+				var4 = Class211.method4637(this.field2301).method4001(var3, var1);
 			} else {
 				var4 = var3.method5170(true);
 			}
@@ -166,7 +166,7 @@ public class Class224 extends Class507 {
 		return var2;
 	}
 
-	@ObfInfo(desc = "(I)LClass224;")
+	@ObfInfo(owner = "ik", name = "ak", desc = "(II)Lip;", opaque = "1440698018")
 	public static Class224 method4163(int var0) {
 		Class224 var2 = (Class224)field2297.method5993((long)var0);
 		if (var2 != null) {

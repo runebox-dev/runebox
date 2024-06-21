@@ -60,7 +60,7 @@ public class Class543 extends Class507 {
 				for (int var13 = 0; var13 < var11; ++var13) {
 					for (int var14 = 0; var14 < var7.length; ++var14) {
 						int var15 = var14 + var7.length * var13;
-						Class545 var16 = Class539.method5727(var7[var14]);
+						Class545 var16 = Class283.method5727(var7[var14]);
 						var12[var15] = var16.method9893(var1);
 					}
 				}
@@ -78,7 +78,7 @@ public class Class543 extends Class507 {
 	public void method9878() {
 	}
 
-	@ObfInfo(desc = "(I)LClass543;")
+	@ObfInfo(owner = "qk", name = "ak", desc = "(II)Luw;")
 	public static Class543 method7879(int var0) {
 		Class543 var2 = (Class543)field5318.method5993((long)var0);
 		if (var2 != null) {

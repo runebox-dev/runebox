@@ -2,8 +2,12 @@ import io.runebox.ObfInfo;
 
 @ObfInfo(name = "hr")
 public class Class200 extends Class507 {
+	@ObfInfo(name = "al", desc = "[Lhr;")
+	public static Class200[] field2043;
 	@ObfInfo(name = "az", desc = "Llm;")
 	public static Class299 field2044;
+	@ObfInfo(name = "ak", desc = "Lor;")
+	public static Class382 field2051;
 	@ObfInfo(name = "ad", desc = "Lhc;")
 	public Class185 field2049;
 	@ObfInfo(name = "ai", desc = "Lie;")
@@ -153,7 +157,7 @@ public class Class200 extends Class507 {
 				} else if (var2 == 28) {
 					var1.method9405();
 				} else if (var2 == 29) {
-					this.field2049 = (Class185)Class62.method1112(Class89.method2403(), var1.method9405());
+					this.field2049 = (Class185)Class62.method1112(Class185.method2403(), var1.method9405());
 				} else if (var2 == 30) {
 					this.field2059 = (Class213)Class62.method1112(Class213.method2875(), var1.method9405());
 				}
@@ -197,7 +201,7 @@ public class Class200 extends Class507 {
 			if (var3 != null) {
 				return var3;
 			} else {
-				var3 = Class554.method9868(Class255.field2051, var1, 0);
+				var3 = Class554.method9868(field2051, var1, 0);
 				if (var3 != null) {
 					field2044.method5987(var3, (long)var1);
 				}
@@ -212,8 +216,30 @@ public class Class200 extends Class507 {
 		return this.field2045;
 	}
 
+	@ObfInfo(owner = "ju", name = "ak", desc = "(Lor;Lor;B)Z", opaque = "74")
+	public static boolean method4891(Class382 var0, Class382 var1) {
+		field2051 = var1;
+		if (!var0.method7255()) {
+			return false;
+		} else {
+			Class496.field2098 = var0.method7237(35);
+			field2043 = new Class200[Class496.field2098];
+
+			for (int var3 = 0; var3 < Class496.field2098; ++var3) {
+				byte[] var4 = var0.method7216(35, var3);
+				field2043[var3] = new Class200(var3);
+				if (var4 != null) {
+					field2043[var3].method3890(new Class521(var4));
+					field2043[var3].method3892();
+				}
+			}
+
+			return true;
+		}
+	}
+
 	@ObfInfo(name = "al", desc = "(II)Lhr;", opaque = "842760438")
 	public static Class200 method3917(int var0) {
-		return var0 >= 0 && var0 < Class255.field2043.length && null != Class255.field2043[var0] ? Class255.field2043[var0] : new Class200(var0);
+		return var0 >= 0 && var0 < field2043.length && null != field2043[var0] ? field2043[var0] : new Class200(var0);
 	}
 }

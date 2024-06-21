@@ -30,6 +30,11 @@ public class Class113 {
 		field1421 = "</col>";
 	}
 
+	@ObfInfo(owner = "mj", name = "ak", desc = "(II)Ljava/lang/String;")
+	public static String method6223(int var0) {
+		return "<img=" + var0 + ">";
+	}
+
 	@ObfInfo(name = "al", desc = "(II)Lvh;", opaque = "-1988385472")
 	public static Class553 method2877(int var0) {
 		Class553[] var2 = Class553.method3987();
@@ -42,5 +47,10 @@ public class Class113 {
 		}
 
 		return null;
+	}
+
+	@ObfInfo(owner = "ru", name = "al", desc = "(II)Ljava/lang/String;")
+	public static String method8551(int var0) {
+		return "<col=" + Integer.toHexString(var0) + ">";
 	}
 }

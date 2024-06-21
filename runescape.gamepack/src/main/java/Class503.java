@@ -19,23 +19,18 @@ public class Class503 {
 
 	}
 
-	@ObfInfo(desc = "(II)I")
+	@ObfInfo(owner = "sg", name = "ak", desc = "(III)I")
 	public static int method8709(int var0, int var1) {
 		return (int)Math.round(Math.atan2((double)var0, (double)var1) * 2607.5945876176133D) & 16383;
 	}
 
-	@ObfInfo(desc = "(I)I")
+	@ObfInfo(owner = "ri", name = "al", desc = "(IB)I")
 	public static int method8425(int var0) {
 		return field5149[var0 & 16383];
 	}
 
-	@ObfInfo(desc = "(I)I")
+	@ObfInfo(owner = "sm", name = "aj", desc = "(II)I")
 	public static int method8816(int var0) {
 		return field5150[var0 & 16383];
-	}
-
-	@ObfInfo(name = "al", desc = "(IB)I")
-	public static int method9254(int var0) {
-		return Class41.field296[var0];
 	}
 }

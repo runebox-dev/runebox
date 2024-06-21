@@ -2,13 +2,13 @@ import io.runebox.ObfInfo;
 
 @ObfInfo(name = "do")
 public final class Class93 {
-	@ObfInfo(desc = "LClass382;")
+	@ObfInfo(owner = "iv", name = "ak", desc = "Lor;")
 	public static Class382 field2417;
-	@ObfInfo(desc = "[[[B")
+	@ObfInfo(owner = "hf", name = "aa", desc = "[[[B")
 	public static byte[][][] field1938;
-	@ObfInfo(desc = "[[[B")
+	@ObfInfo(owner = "jk", name = "az", desc = "[[[B")
 	public static byte[][][] field2637;
-	@ObfInfo(desc = "[[[B")
+	@ObfInfo(owner = "nx", name = "af", desc = "[[[B")
 	public static byte[][][] field3973;
 	@ObfInfo(name = "ak", desc = "I", intMultiplier = 426206599)
 	public static int field1241;
@@ -20,19 +20,19 @@ public final class Class93 {
 	public static int[] field1238;
 	@ObfInfo(name = "av", desc = "[I")
 	public static int[] field1239;
-	@ObfInfo(desc = "[I")
+	@ObfInfo(owner = "fk", name = "ah", desc = "[I")
 	public static int[] field1615;
-	@ObfInfo(desc = "[I")
+	@ObfInfo(owner = "hx", name = "ac", desc = "[I")
 	public static int[] field2094;
-	@ObfInfo(desc = "[I")
+	@ObfInfo(owner = "ii", name = "ab", desc = "[I")
 	public static int[] field2189;
-	@ObfInfo(desc = "[[I")
+	@ObfInfo(owner = "au", name = "at", desc = "[[I")
 	public static int[][] field108;
-	@ObfInfo(desc = "[[[I")
+	@ObfInfo(owner = "re", name = "aq", desc = "[[[I")
 	public static int[][][] field4809;
 	@ObfInfo(name = "aj", desc = "[[[S")
 	public static short[][][] field1237;
-	@ObfInfo(desc = "[[[S")
+	@ObfInfo(owner = "hd", name = "al", desc = "[[[S")
 	public static short[][][] field1926;
 	@ObfInfo(name = "au", desc = "[I")
 	public static final int[] field1236;
@@ -59,7 +59,7 @@ public final class Class93 {
 		field1247 = (int)(Math.random() * 33.0D) - 16;
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "pu", name = "ak", desc = "(I)V")
 	public static void method7690() {
 		field1241 = 99;
 		field1926 = new short[4][104][104];
@@ -76,7 +76,7 @@ public final class Class93 {
 		field1239 = new int[104];
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "eq", name = "al", desc = "(I)V")
 	public static void method2966() {
 		field1926 = (short[][][])null;
 		field1237 = (short[][][])null;
@@ -92,7 +92,7 @@ public final class Class93 {
 		field1239 = null;
 	}
 
-	@ObfInfo(desc = "(LClass98;IIII)V")
+	@ObfInfo(owner = "im", name = "aj", desc = "(Ldt;IIIIB)V", opaque = "0")
 	public static void method4167(Class98 var0, int var1, int var2, int var3, int var4) {
 		int[][][] var6 = var0.field1291;
 		int var7 = var0.field1298 - 1;
@@ -123,7 +123,7 @@ public final class Class93 {
 
 	}
 
-	@ObfInfo(desc = "(LClass98;[BIIII)V")
+	@ObfInfo(owner = "sz", name = "az", desc = "(Ldt;[BIIIII)V", opaque = "-1704799649")
 	public static void method8967(Class98 var0, byte[] var1, int var2, int var3, int var4, int var5) {
 		int var8;
 		int var9;
@@ -154,7 +154,7 @@ public final class Class93 {
 
 	}
 
-	@ObfInfo(desc = "(LClass98;[BIIIIIIIII)V")
+	@ObfInfo(owner = "ek", name = "af", desc = "(Ldt;[BIIIIIIIIII)V", opaque = "1158912261")
 	public static void method2888(Class98 var0, byte[] var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10) {
 		Class226[] var12 = var0.field1284;
 		int var14;
@@ -203,38 +203,7 @@ public final class Class93 {
 
 	}
 
-	@ObfInfo(desc = "([[[IIII)V")
-	public static void method4052(int[][][] var0, int var1, int var2, int var3) {
-		int var5;
-		for (var5 = 0; var5 < 8; ++var5) {
-			for (int var6 = 0; var6 < 8; ++var6) {
-				var0[var1][var5 + var2][var6 + var3] = 0;
-			}
-		}
-
-		if (var2 > 0) {
-			for (var5 = 1; var5 < 8; ++var5) {
-				var0[var1][var2][var5 + var3] = var0[var1][var2 - 1][var5 + var3];
-			}
-		}
-
-		if (var3 > 0) {
-			for (var5 = 1; var5 < 8; ++var5) {
-				var0[var1][var5 + var2][var3] = var0[var1][var5 + var2][var3 - 1];
-			}
-		}
-
-		if (var2 > 0 && var0[var1][var2 - 1][var3] != 0) {
-			var0[var1][var2][var3] = var0[var1][var2 - 1][var3];
-		} else if (var3 > 0 && 0 != var0[var1][var2][var3 - 1]) {
-			var0[var1][var2][var3] = var0[var1][var2][var3 - 1];
-		} else if (var2 > 0 && var3 > 0 && 0 != var0[var1][var2 - 1][var3 - 1]) {
-			var0[var1][var2][var3] = var0[var1][var2 - 1][var3 - 1];
-		}
-
-	}
-
-	@ObfInfo(desc = "(LClass98;LClass521;IIIIII)V")
+	@ObfInfo(owner = "fq", name = "at", desc = "(Ldt;Lua;IIIIIIB)V", opaque = "-1")
 	public static void method3245(Class98 var0, Class521 var1, int var2, int var3, int var4, int var5, int var6, int var7) {
 		int[][][] var9 = var0.field1291;
 		byte[][][] var10 = var0.field1292;
@@ -297,7 +266,7 @@ public final class Class93 {
 
 	}
 
-	@ObfInfo(desc = "([BII)Z")
+	@ObfInfo(owner = "sm", name = "ab", desc = "([BIII)Z", opaque = "-1620684213")
 	public static boolean method8829(byte[] var0, int var1, int var2) {
 		boolean var4 = true;
 		Class521 var5 = new Class521(var0);
@@ -347,52 +316,6 @@ public final class Class93 {
 				}
 
 				var5.method9405();
-			}
-		}
-	}
-
-	@ObfInfo(desc = "(LClass98;[BII)V")
-	public static void method3258(Class98 var0, byte[] var1, int var2, int var3) {
-		Class521 var5 = new Class521(var1);
-		int var6 = -1;
-
-		while (true) {
-			int var7 = var5.method9421();
-			if (var7 == 0) {
-				return;
-			}
-
-			var6 += var7;
-			int var8 = 0;
-
-			while (true) {
-				int var9 = var5.method9419();
-				if (var9 == 0) {
-					break;
-				}
-
-				var8 += var9 - 1;
-				int var10 = var8 & 63;
-				int var11 = var8 >> 6 & 63;
-				int var12 = var8 >> 12;
-				int var13 = var5.method9405();
-				int var14 = var13 >> 2;
-				int var15 = var13 & 3;
-				int var16 = var11 + var2;
-				int var17 = var10 + var3;
-				if (var16 > 0 && var17 > 0 && var16 < var0.field1291[0].length - 2 && var17 < var0.field1291[0][0].length - 2) {
-					int var18 = var12;
-					if (2 == (var0.field1292[1][var16][var17] & 2)) {
-						var18 = var12 - 1;
-					}
-
-					Class226 var19 = null;
-					if (var18 >= 0 && var0.field1284 != null) {
-						var19 = var0.field1284[var18];
-					}
-
-					method3110(var0, var12, var16, var17, var6, var15, var14, var19);
-				}
 			}
 		}
 	}
@@ -492,7 +415,7 @@ public final class Class93 {
 		}
 	}
 
-	@ObfInfo(desc = "(LClass98;IIIIIILClass226;)V")
+	@ObfInfo(owner = "fh", name = "ah", desc = "(Ldt;IIIIIILir;B)V", opaque = "0")
 	public static void method3110(Class98 var0, int var1, int var2, int var3, int var4, int var5, int var6, Class226 var7) {
 		if (!Client.field599 || 0 != (var0.field1292[0][var2][var3] & 2) || 0 == (var0.field1292[var1][var2][var3] & 16)) {
 			if (var1 < field1241) {
@@ -853,7 +776,7 @@ public final class Class93 {
 		}
 	}
 
-	@ObfInfo(desc = "(LClass98;)V")
+	@ObfInfo(owner = "uy", name = "av", desc = "(Ldt;I)V", opaque = "2124351975")
 	public static void method9902(Class98 var0) {
 		int var2 = var0.field1298;
 		int var3 = var0.field1282;
@@ -954,7 +877,7 @@ public final class Class93 {
 						var20 = (int)Class349.method6730(15);
 						var21 = field1926[var8][var19][var18] & var20;
 						if (var21 > 0) {
-							Class209 var57 = Class219.method4164(var21 - 1);
+							Class209 var57 = Class209.method4164(var21 - 1);
 							var10000 = field2189;
 							var10000[var18] += var57.field2113;
 							var10000 = field2094;
@@ -972,7 +895,7 @@ public final class Class93 {
 						var21 = (int)Class349.method6730(15);
 						var22 = field1926[var8][var20][var18] & var21;
 						if (var22 > 0) {
-							Class209 var59 = Class219.method4164(var22 - 1);
+							Class209 var59 = Class209.method4164(var22 - 1);
 							var10000 = field2189;
 							var10000[var18] -= var59.field2113;
 							var10000 = field2094;
@@ -1209,22 +1132,22 @@ public final class Class93 {
 								++var16;
 							}
 
-							label403:
+							label402:
 							while (var17 > 0) {
 								for (var19 = var15; var19 <= var16; ++var19) {
 									if ((field4809[var17 - 1][var56][var19] & var8) == 0) {
-										break label403;
+										break label402;
 									}
 								}
 
 								--var17;
 							}
 
-							label392:
+							label391:
 							while (var18 < var11) {
 								for (var19 = var15; var19 <= var16; ++var19) {
 									if ((field4809[var18 + 1][var56][var19] & var8) == 0) {
-										break label392;
+										break label391;
 									}
 								}
 
@@ -1259,22 +1182,22 @@ public final class Class93 {
 								++var16;
 							}
 
-							label456:
+							label455:
 							while (var17 > 0) {
 								for (var19 = var15; var19 <= var16; ++var19) {
 									if ((field4809[var17 - 1][var19][var55] & var9) == 0) {
-										break label456;
+										break label455;
 									}
 								}
 
 								--var17;
 							}
 
-							label445:
+							label444:
 							while (var18 < var11) {
 								for (var19 = var15; var19 <= var16; ++var19) {
 									if ((field4809[var18 + 1][var19][var55] & var9) == 0) {
-										break label445;
+										break label444;
 									}
 								}
 
@@ -1309,22 +1232,22 @@ public final class Class93 {
 								++var18;
 							}
 
-							label509:
+							label508:
 							while (var15 > 0) {
 								for (var19 = var17; var19 <= var18; ++var19) {
 									if (0 == (field4809[var54][var15 - 1][var19] & var10)) {
-										break label509;
+										break label508;
 									}
 								}
 
 								--var15;
 							}
 
-							label498:
+							label497:
 							while (var16 < var2) {
 								for (var19 = var17; var19 <= var18; ++var19) {
 									if (0 == (field4809[var54][var16 + 1][var19] & var10)) {
-										break label498;
+										break label497;
 									}
 								}
 
@@ -1350,7 +1273,7 @@ public final class Class93 {
 
 	}
 
-	@ObfInfo(desc = "(LClass98;III)I")
+	@ObfInfo(owner = "nk", name = "aq", desc = "(Ldt;IIIB)I", opaque = "-1")
 	public static int method6728(Class98 var0, int var1, int var2, int var3) {
 		if ((var0.field1292[var1][var2][var3] & 8) != 0) {
 			return 0;
@@ -1359,7 +1282,7 @@ public final class Class93 {
 		}
 	}
 
-	@ObfInfo(desc = "(II)I")
+	@ObfInfo(owner = "hg", name = "ap", desc = "(IIB)I", opaque = "-1")
 	public static int method3708(int var0, int var1) {
 		int var3 = method107(var0 + 45365, var1 + 91923, 4) - 128 + (method107(var0 + 10294, var1 + 37821, 2) - 128 >> 1) + (method107(var0, var1, 1) - 128 >> 2);
 		var3 = 35 + (int)((double)var3 * 0.3D);
@@ -1372,7 +1295,7 @@ public final class Class93 {
 		return var3;
 	}
 
-	@ObfInfo(desc = "(III)I")
+	@ObfInfo(owner = "ag", name = "ae", desc = "(IIII)I")
 	public static int method107(int var0, int var1, int var2) {
 		int var4 = var0 / var2;
 		int var5 = var0 & var2 - 1;
@@ -1391,7 +1314,7 @@ public final class Class93 {
 		return var16;
 	}
 
-	@ObfInfo(desc = "(II)I")
+	@ObfInfo(owner = "jm", name = "ax", desc = "(III)I")
 	public static int method4759(int var0, int var1) {
 		int var3 = method2971(var0 - 1, var1 - 1) + method2971(var0 + 1, var1 - 1) + method2971(var0 - 1, var1 + 1) + method2971(var0 + 1, var1 + 1);
 		int var4 = method2971(var0 - 1, var1) + method2971(var0 + 1, var1) + method2971(var0, var1 - 1) + method2971(var0, var1 + 1);
@@ -1399,7 +1322,7 @@ public final class Class93 {
 		return var5 / 4 + var4 / 8 + var3 / 16;
 	}
 
-	@ObfInfo(desc = "(II)I")
+	@ObfInfo(owner = "eq", name = "ay", desc = "(III)I")
 	public static int method2971(int var0, int var1) {
 		int var3 = var1 * 57 + var0;
 		var3 ^= var3 << 13;
@@ -1407,7 +1330,7 @@ public final class Class93 {
 		return var4 >> 19 & 255;
 	}
 
-	@ObfInfo(desc = "(II)I")
+	@ObfInfo(owner = "pv", name = "au", desc = "(III)I", opaque = "2011553859")
 	public static int method7706(int var0, int var1) {
 		if (var0 == -1) {
 			return 12345678;
@@ -1423,7 +1346,7 @@ public final class Class93 {
 		}
 	}
 
-	@ObfInfo(desc = "(II)I")
+	@ObfInfo(owner = "ah", name = "as", desc = "(IIS)I", opaque = "489")
 	public static int method114(int var0, int var1) {
 		if (var0 == -2) {
 			return 12345678;
@@ -1447,7 +1370,7 @@ public final class Class93 {
 		}
 	}
 
-	@ObfInfo(desc = "(III)I")
+	@ObfInfo(owner = "qc", name = "aw", desc = "(IIII)I", opaque = "286331154")
 	public static int method7796(int var0, int var1, int var2) {
 		if (var2 > 179) {
 			var1 /= 2;
@@ -1467,230 +1390,5 @@ public final class Class93 {
 
 		int var4 = var2 / 2 + (var0 / 4 << 10) + (var1 / 32 << 7);
 		return var4;
-	}
-
-	@ObfInfo(desc = "(LClass98;IIIIIIIILClass226;)V")
-	public static void method6307(Class98 var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, Class226 var9) {
-		Class222 var11 = Class222.method4161(var5);
-		int var12 = var8 >= 0 ? var8 : var11.field2260;
-		int var13;
-		int var14;
-		if (var6 != 1 && var6 != 3) {
-			var13 = var11.field2252;
-			var14 = var11.field2253;
-		} else {
-			var13 = var11.field2253;
-			var14 = var11.field2252;
-		}
-
-		int var15;
-		int var16;
-		if (var13 + var3 <= var0.field1298) {
-			var15 = var3 + (var13 >> 1);
-			var16 = (var13 + 1 >> 1) + var3;
-		} else {
-			var15 = var3;
-			var16 = var3 + 1;
-		}
-
-		int var17;
-		int var18;
-		if (var14 + var4 <= var0.field1282) {
-			var17 = var4 + (var14 >> 1);
-			var18 = var4 + (var14 + 1 >> 1);
-		} else {
-			var17 = var4;
-			var18 = var4 + 1;
-		}
-
-		int[][] var19 = var0.field1291[var2];
-		int var20 = var19[var16][var18] + var19[var15][var17] + var19[var16][var17] + var19[var15][var18] >> 2;
-		int var21 = (var13 << 6) + (var3 << 7);
-		int var22 = (var4 << 7) + (var14 << 6);
-		Class259 var23 = var0.field1283;
-		long var24 = Class274.method3872(var3, var4, 2, var11.field2254 == 0, var5, var0.field1287);
-		int var26 = var7 + (var6 << 6);
-		if (var11.field2287 == 1) {
-			var26 += 256;
-		}
-
-		Object var27;
-		if (var7 == 22) {
-			if (var12 == -1 && var11.field2278 == null) {
-				var27 = var11.method4194(22, var6, var19, var21, var20, var22);
-			} else {
-				var27 = new Class96(var0, var5, 22, var6, var2, var3, var4, var12, var11.field2265, (Class255)null);
-			}
-
-			var23.method5062(var1, var3, var4, var20, (Class255)var27, var24, var26);
-			if (var11.field2282 == 1 && var9 != null) {
-				var9.method4306(var3, var4);
-			}
-
-		} else if (var7 != 10 && var7 != 11) {
-			if (var7 >= 12) {
-				if (var12 == -1 && var11.field2278 == null) {
-					var27 = var11.method4194(var7, var6, var19, var21, var20, var22);
-				} else {
-					var27 = new Class96(var0, var5, var7, var6, var2, var3, var4, var12, var11.field2265, (Class255)null);
-				}
-
-				var23.method4935(var1, var3, var4, var20, 1, 1, (Class255)var27, 0, var24, var26);
-				if (var11.field2282 != 0 && var9 != null) {
-					var9.method4301(var3, var4, var13, var14, var11.field2255);
-				}
-
-			} else if (var7 == 0) {
-				if (var12 == -1 && var11.field2278 == null) {
-					var27 = var11.method4194(0, var6, var19, var21, var20, var22);
-				} else {
-					var27 = new Class96(var0, var5, 0, var6, var2, var3, var4, var12, var11.field2265, (Class255)null);
-				}
-
-				var23.method4933(var1, var3, var4, var20, (Class255)var27, (Class255)null, field1248[var6], 0, var24, var26);
-				if (0 != var11.field2282 && var9 != null) {
-					var9.method4303(var3, var4, var7, var6, var11.field2255);
-				}
-
-			} else if (var7 == 1) {
-				if (var12 == -1 && var11.field2278 == null) {
-					var27 = var11.method4194(1, var6, var19, var21, var20, var22);
-				} else {
-					var27 = new Class96(var0, var5, 1, var6, var2, var3, var4, var12, var11.field2265, (Class255)null);
-				}
-
-				var23.method4933(var1, var3, var4, var20, (Class255)var27, (Class255)null, field1236[var6], 0, var24, var26);
-				if (0 != var11.field2282 && var9 != null) {
-					var9.method4303(var3, var4, var7, var6, var11.field2255);
-				}
-
-			} else {
-				int var33;
-				if (var7 == 2) {
-					var33 = var6 + 1 & 3;
-					Object var29;
-					Object var35;
-					if (var12 == -1 && var11.field2278 == null) {
-						var35 = var11.method4194(2, var6 + 4, var19, var21, var20, var22);
-						var29 = var11.method4194(2, var33, var19, var21, var20, var22);
-					} else {
-						var35 = new Class96(var0, var5, 2, var6 + 4, var2, var3, var4, var12, var11.field2265, (Class255)null);
-						var29 = new Class96(var0, var5, 2, var33, var2, var3, var4, var12, var11.field2265, (Class255)null);
-					}
-
-					var23.method4933(var1, var3, var4, var20, (Class255)var35, (Class255)var29, field1248[var6], field1248[var33], var24, var26);
-					if (0 != var11.field2282 && var9 != null) {
-						var9.method4303(var3, var4, var7, var6, var11.field2255);
-					}
-
-				} else if (var7 == 3) {
-					if (var12 == -1 && var11.field2278 == null) {
-						var27 = var11.method4194(3, var6, var19, var21, var20, var22);
-					} else {
-						var27 = new Class96(var0, var5, 3, var6, var2, var3, var4, var12, var11.field2265, (Class255)null);
-					}
-
-					var23.method4933(var1, var3, var4, var20, (Class255)var27, (Class255)null, field1236[var6], 0, var24, var26);
-					if (var11.field2282 != 0 && var9 != null) {
-						var9.method4303(var3, var4, var7, var6, var11.field2255);
-					}
-
-				} else if (var7 == 9) {
-					if (var12 == -1 && var11.field2278 == null) {
-						var27 = var11.method4194(var7, var6, var19, var21, var20, var22);
-					} else {
-						var27 = new Class96(var0, var5, var7, var6, var2, var3, var4, var12, var11.field2265, (Class255)null);
-					}
-
-					var23.method4935(var1, var3, var4, var20, 1, 1, (Class255)var27, 0, var24, var26);
-					if (0 != var11.field2282 && var9 != null) {
-						var9.method4301(var3, var4, var13, var14, var11.field2255);
-					}
-
-				} else if (var7 == 4) {
-					if (var12 == -1 && var11.field2278 == null) {
-						var27 = var11.method4194(4, var6, var19, var21, var20, var22);
-					} else {
-						var27 = new Class96(var0, var5, 4, var6, var2, var3, var4, var12, var11.field2265, (Class255)null);
-					}
-
-					var23.method5123(var1, var3, var4, var20, (Class255)var27, (Class255)null, field1248[var6], 0, 0, 0, var24, var26);
-				} else {
-					long var28;
-					Object var30;
-					if (var7 == 5) {
-						var33 = 16;
-						var28 = var23.method4951(var1, var3, var4);
-						if (0L != var28) {
-							var33 = Class222.method4161(Class274.method2942(var28)).field2261;
-						}
-
-						if (var12 == -1 && var11.field2278 == null) {
-							var30 = var11.method4194(4, var6, var19, var21, var20, var22);
-						} else {
-							var30 = new Class96(var0, var5, 4, var6, var2, var3, var4, var12, var11.field2265, (Class255)null);
-						}
-
-						var23.method5123(var1, var3, var4, var20, (Class255)var30, (Class255)null, field1248[var6], 0, field1242[var6] * var33, var33 * field1243[var6], var24, var26);
-					} else if (var7 == 6) {
-						var33 = 8;
-						var28 = var23.method4951(var1, var3, var4);
-						if (var28 != 0L) {
-							var33 = Class222.method4161(Class274.method2942(var28)).field2261 / 2;
-						}
-
-						if (var12 == -1 && var11.field2278 == null) {
-							var30 = var11.method4194(4, var6 + 4, var19, var21, var20, var22);
-						} else {
-							var30 = new Class96(var0, var5, 4, var6 + 4, var2, var3, var4, var12, var11.field2265, (Class255)null);
-						}
-
-						var23.method5123(var1, var3, var4, var20, (Class255)var30, (Class255)null, 256, var6, var33 * field1244[var6], var33 * field1245[var6], var24, var26);
-					} else if (var7 == 7) {
-						int var34 = var6 + 2 & 3;
-						if (var12 == -1 && var11.field2278 == null) {
-							var27 = var11.method4194(4, var34 + 4, var19, var21, var20, var22);
-						} else {
-							var27 = new Class96(var0, var5, 4, var34 + 4, var2, var3, var4, var12, var11.field2265, (Class255)null);
-						}
-
-						var23.method5123(var1, var3, var4, var20, (Class255)var27, (Class255)null, 256, var34, 0, 0, var24, var26);
-					} else if (var7 == 8) {
-						var33 = 8;
-						var28 = var23.method4951(var1, var3, var4);
-						if (0L != var28) {
-							var33 = Class222.method4161(Class274.method2942(var28)).field2261 / 2;
-						}
-
-						int var32 = var6 + 2 & 3;
-						Object var31;
-						if (var12 == -1 && var11.field2278 == null) {
-							var30 = var11.method4194(4, var6 + 4, var19, var21, var20, var22);
-							var31 = var11.method4194(4, var32 + 4, var19, var21, var20, var22);
-						} else {
-							var30 = new Class96(var0, var5, 4, var6 + 4, var2, var3, var4, var12, var11.field2265, (Class255)null);
-							var31 = new Class96(var0, var5, 4, var32 + 4, var2, var3, var4, var12, var11.field2265, (Class255)null);
-						}
-
-						var23.method5123(var1, var3, var4, var20, (Class255)var30, (Class255)var31, 256, var6, var33 * field1244[var6], var33 * field1245[var6], var24, var26);
-					}
-				}
-			}
-		} else {
-			if (var12 == -1 && var11.field2278 == null) {
-				var27 = var11.method4194(10, var6, var19, var21, var20, var22);
-			} else {
-				var27 = new Class96(var0, var5, 10, var6, var2, var3, var4, var12, var11.field2265, (Class255)null);
-			}
-
-			if (var27 != null) {
-				var23.method4935(var1, var3, var4, var20, var13, var14, (Class255)var27, var7 == 11 ? 256 : 0, var24, var26);
-			}
-
-			if (0 != var11.field2282 && var9 != null) {
-				var9.method4301(var3, var4, var13, var14, var11.field2255);
-			}
-
-		}
 	}
 }

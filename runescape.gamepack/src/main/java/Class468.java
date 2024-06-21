@@ -70,12 +70,4 @@ public class Class468 extends Class447 {
 			return false;
 		}
 	}
-
-	@ObfInfo(name = "al", desc = "([BI)[B")
-	public static byte[] method8606(byte[] var0) {
-		int var2 = var0.length;
-		byte[] var3 = new byte[var2];
-		System.arraycopy(var0, 0, var3, 0, var2);
-		return var3;
-	}
 }

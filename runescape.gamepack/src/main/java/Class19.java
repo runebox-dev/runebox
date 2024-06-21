@@ -62,4 +62,17 @@ public class Class19 {
 			}
 		}
 	}
+
+	@ObfInfo(name = "af", desc = "(I)V", opaque = "1857648377")
+	public static void method276() {
+		if (Class76.field955 == null || Class76.field955.length() <= 0) {
+			if (Client.field4851.method2629() != null) {
+				Class76.field955 = Client.field4851.method2629();
+				Client.field540 = true;
+			} else {
+				Client.field540 = false;
+			}
+
+		}
+	}
 }

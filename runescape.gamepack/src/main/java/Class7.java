@@ -71,7 +71,7 @@ public class Class7 implements KeyListener, FocusListener {
 		this.field33.clear();
 	}
 
-	@ObfInfo(desc = "(Ljava/awt/event/KeyEvent;)V")
+	@ObfInfo(name = "keyPressed", desc = "(Ljava/awt/event/KeyEvent;)V")
 	public final synchronized void keyPressed(KeyEvent var1) {
 		int var2;
 		label26: {
@@ -79,7 +79,7 @@ public class Class7 implements KeyListener, FocusListener {
 			if (var2 >= 0) {
 				int var4 = Class41.field296.length;
 				if (var2 < var4) {
-					var2 = Class503.method9254(var2);
+					var2 = Class41.method9254(var2);
 					if (Class41.method6495(var2)) {
 						var2 = -1;
 					}
@@ -102,7 +102,7 @@ public class Class7 implements KeyListener, FocusListener {
 		var1.consume();
 	}
 
-	@ObfInfo(desc = "(Ljava/awt/event/KeyEvent;)V")
+	@ObfInfo(name = "keyReleased", desc = "(Ljava/awt/event/KeyEvent;)V")
 	public final synchronized void keyReleased(KeyEvent var1) {
 		int var2;
 		label18: {
@@ -110,7 +110,7 @@ public class Class7 implements KeyListener, FocusListener {
 			if (var2 >= 0) {
 				int var4 = Class41.field296.length;
 				if (var2 < var4) {
-					var2 = Class503.method9254(var2) & -129;
+					var2 = Class41.method9254(var2) & -129;
 					break label18;
 				}
 			}
@@ -126,10 +126,10 @@ public class Class7 implements KeyListener, FocusListener {
 		var1.consume();
 	}
 
-	@ObfInfo(desc = "(Ljava/awt/event/KeyEvent;)V")
+	@ObfInfo(name = "keyTyped", desc = "(Ljava/awt/event/KeyEvent;)V")
 	public final synchronized void keyTyped(KeyEvent var1) {
 		char var2 = var1.getKeyChar();
-		if (var2 != 0 && var2 != '\uffff' && Class57.method1082(var2)) {
+		if (var2 != 0 && var2 != '\uffff' && Class405.method1082(var2)) {
 			this.field34.add(new Class38(3, var2));
 		}
 
@@ -143,12 +143,12 @@ public class Class7 implements KeyListener, FocusListener {
 		this.field34 = var2;
 	}
 
-	@ObfInfo(desc = "(Ljava/awt/event/FocusEvent;)V")
+	@ObfInfo(name = "focusGained", desc = "(Ljava/awt/event/FocusEvent;)V")
 	public final synchronized void focusGained(FocusEvent var1) {
 		this.field34.add(new Class38(4, 1));
 	}
 
-	@ObfInfo(desc = "(Ljava/awt/event/FocusEvent;)V")
+	@ObfInfo(name = "focusLost", desc = "(Ljava/awt/event/FocusEvent;)V")
 	public final synchronized void focusLost(FocusEvent var1) {
 		for (int var2 = 0; var2 < 112; ++var2) {
 			if (this.field35[var2]) {
@@ -158,76 +158,6 @@ public class Class7 implements KeyListener, FocusListener {
 		}
 
 		this.field34.add(new Class38(4, 0));
-	}
-
-	@ObfInfo(name = "al", desc = "(IB)Lix;", opaque = "0")
-	public static Class232 method109(int var0) {
-		Class232 var2 = (Class232)Class232.field2454.method5993((long)var0);
-		if (var2 != null) {
-			return var2;
-		} else {
-			byte[] var3 = Class79.field2499.method7216(10, var0);
-			var2 = new Class232();
-			var2.field2447 = var0;
-			if (var3 != null) {
-				var2.method4435(new Class521(var3));
-			}
-
-			var2.method4411();
-			if (var2.field2486 != -1) {
-				var2.method4414(method109(var2.field2486), method109(var2.field2485));
-			}
-
-			if (-1 != var2.field2497) {
-				var2.method4415(method109(var2.field2497), method109(var2.field2496));
-			}
-
-			if (var2.field2453 != -1) {
-				var2.method4431(method109(var2.field2453), method109(var2.field2498));
-			}
-
-			if (!Class79.field3252 && var2.field2467) {
-				if (var2.field2486 == -1 && var2.field2497 == -1 && -1 == var2.field2453) {
-					var2.field2449 = var2.field2449 + Class378.field4194;
-				}
-
-				var2.field2446 = Class378.field4378;
-				var2.field2461 = false;
-
-				int var4;
-				for (var4 = 0; var4 < var2.field2469.length; ++var4) {
-					var2.field2469[var4] = null;
-				}
-
-				for (var4 = 0; var4 < var2.field2487.length; ++var4) {
-					if (var4 != 4) {
-						var2.field2487[var4] = null;
-					}
-				}
-
-				var2.field2450 = -2;
-				var2.field2492 = 0;
-				if (var2.field2458 != null) {
-					boolean var7 = false;
-
-					for (Class506 var5 = var2.field2458.method9329(); var5 != null; var5 = var2.field2458.method9327()) {
-						Class217 var6 = Class281.method5716((int)var5.field5170);
-						if (var6.field2184) {
-							var5.method9277();
-						} else {
-							var7 = true;
-						}
-					}
-
-					if (!var7) {
-						var2.field2458 = null;
-					}
-				}
-			}
-
-			Class232.field2454.method5987(var2, (long)var0);
-			return var2;
-		}
 	}
 
 	@ObfInfo(name = "mn", desc = "(Ljava/lang/String;Ljava/lang/String;IIIII)V")

@@ -85,7 +85,7 @@ public class Class64 {
 		return (Class534.field5270.method175() & this.field480) != 0;
 	}
 
-	@ObfInfo(desc = "()Z")
+	@ObfInfo(owner = "pd", name = "ak", desc = "(B)Z", opaque = "33")
 	public static boolean method7411() {
 		try {
 			if (Class76.field53 == null) {
@@ -108,7 +108,7 @@ public class Class64 {
 					var4.field475 = var2.method9535();
 				}
 
-				method5396(Class76.field4598, 0, Class76.field4598.length - 1, field472, field471);
+				Class270.method5396(Class76.field4598, 0, Class76.field4598.length - 1, field472, field471);
 				Class76.field53 = null;
 				return true;
 			}
@@ -120,7 +120,7 @@ public class Class64 {
 		return false;
 	}
 
-	@ObfInfo(desc = "(II)V")
+	@ObfInfo(owner = "je", name = "al", desc = "(IIB)V", opaque = "13")
 	public static void method4643(int var0, int var1) {
 		int[] var3 = new int[4];
 		int[] var4 = new int[4];
@@ -138,125 +138,10 @@ public class Class64 {
 
 		field472 = var3;
 		field471 = var4;
-		method5396(Class76.field4598, 0, Class76.field4598.length - 1, field472, field471);
+		Class270.method5396(Class76.field4598, 0, Class76.field4598.length - 1, field472, field471);
 	}
 
-	@ObfInfo(desc = "([LClass64;II[I[I)V")
-	public static void method5396(Class64[] var0, int var1, int var2, int[] var3, int[] var4) {
-		if (var1 < var2) {
-			int var6 = var1 - 1;
-			int var7 = var2 + 1;
-			int var8 = (var2 + var1) / 2;
-			Class64 var9 = var0[var8];
-			var0[var8] = var0[var1];
-			var0[var1] = var9;
-
-			while (var6 < var7) {
-				boolean var10 = true;
-
-				int var11;
-				int var12;
-				int var13;
-				do {
-					--var7;
-
-					for (var11 = 0; var11 < 4; ++var11) {
-						if (2 == var3[var11]) {
-							var12 = var0[var7].field478;
-							var13 = var9.field478;
-						} else if (var3[var11] == 1) {
-							var12 = var0[var7].field475;
-							var13 = var9.field475;
-							if (var12 == -1 && 1 == var4[var11]) {
-								var12 = 2001;
-							}
-
-							if (var13 == -1 && 1 == var4[var11]) {
-								var13 = 2001;
-							}
-						} else if (3 == var3[var11]) {
-							var12 = var0[var7].method1175() ? 1 : 0;
-							var13 = var9.method1175() ? 1 : 0;
-						} else {
-							var12 = var0[var7].field473;
-							var13 = var9.field473;
-						}
-
-						if (var13 != var12) {
-							if ((var4[var11] != 1 || var12 <= var13) && (0 != var4[var11] || var12 >= var13)) {
-								var10 = false;
-							}
-							break;
-						}
-
-						if (var11 == 3) {
-							var10 = false;
-						}
-					}
-				} while(var10);
-
-				var10 = true;
-
-				do {
-					++var6;
-
-					for (var11 = 0; var11 < 4; ++var11) {
-						if (2 == var3[var11]) {
-							var12 = var0[var6].field478;
-							var13 = var9.field478;
-						} else if (1 == var3[var11]) {
-							var12 = var0[var6].field475;
-							var13 = var9.field475;
-							if (var12 == -1 && 1 == var4[var11]) {
-								var12 = 2001;
-							}
-
-							if (var13 == -1 && 1 == var4[var11]) {
-								var13 = 2001;
-							}
-						} else if (var3[var11] == 3) {
-							var12 = var0[var6].method1175() ? 1 : 0;
-							var13 = var9.method1175() ? 1 : 0;
-						} else {
-							var12 = var0[var6].field473;
-							var13 = var9.field473;
-						}
-
-						if (var13 != var12) {
-							if ((1 != var4[var11] || var12 >= var13) && (0 != var4[var11] || var12 <= var13)) {
-								var10 = false;
-							}
-							break;
-						}
-
-						if (var11 == 3) {
-							var10 = false;
-						}
-					}
-				} while(var10);
-
-				if (var6 < var7) {
-					Class64 var14 = var0[var6];
-					var0[var6] = var0[var7];
-					var0[var7] = var14;
-				}
-			}
-
-			method5396(var0, var1, var7, var3, var4);
-			method5396(var0, var7 + 1, var2, var3, var4);
-		}
-
-	}
-
-	@ObfInfo(desc = "(IZIZ)V")
-	public static void method8652(int var0, boolean var1, int var2, boolean var3) {
-		if (Class76.field4598 != null) {
-			method3694(0, Class76.field4598.length - 1, var0, var1, var2, var3);
-		}
-
-	}
-
-	@ObfInfo(desc = "(IIIZIZ)V")
+	@ObfInfo(owner = "hd", name = "af", desc = "(IIIZIZI)V", opaque = "2129931306")
 	public static void method3694(int var0, int var1, int var2, boolean var3, int var4, boolean var5) {
 		if (var0 < var1) {
 			int var7 = (var1 + var0) / 2;
@@ -281,89 +166,27 @@ public class Class64 {
 
 	}
 
-	@ObfInfo(desc = "(LClass64;LClass64;IZIZ)I")
+	@ObfInfo(owner = "gu", name = "aa", desc = "(Lcl;Lcl;IZIZI)I", opaque = "-247330494")
 	public static int method3596(Class64 var0, Class64 var1, int var2, boolean var3, int var4, boolean var5) {
-		int var7 = method4904(var0, var1, var2, var3);
+		int var7 = Class256.method4904(var0, var1, var2, var3);
 		if (var7 != 0) {
 			return var3 ? -var7 : var7;
 		} else if (var4 == -1) {
 			return 0;
 		} else {
-			int var8 = method4904(var0, var1, var4, var5);
+			int var8 = Class256.method4904(var0, var1, var4, var5);
 			return var5 ? -var8 : var8;
 		}
 	}
 
-	@ObfInfo(desc = "(LClass64;LClass64;IZ)I")
-	public static int method4904(Class64 var0, Class64 var1, int var2, boolean var3) {
-		if (var2 == 1) {
-			int var5 = var0.field475;
-			int var6 = var1.field475;
-			if (!var3) {
-				if (var5 == -1) {
-					var5 = 2001;
-				}
-
-				if (var6 == -1) {
-					var6 = 2001;
-				}
-			}
-
-			return var5 - var6;
-		} else if (var2 == 2) {
-			return var0.field482 - var1.field482;
-		} else if (var2 == 3) {
-			if (var0.field477.equals("-")) {
-				if (var1.field477.equals("-")) {
-					return 0;
-				} else {
-					return var3 ? -1 : 1;
-				}
-			} else if (var1.field477.equals("-")) {
-				return var3 ? 1 : -1;
-			} else {
-				return var0.field477.compareTo(var1.field477);
-			}
-		} else if (var2 == 4) {
-			return var0.method1142() ? (var1.method1142() ? 0 : 1) : (var1.method1142() ? -1 : 0);
-		} else if (var2 == 5) {
-			return var0.method1155() ? (var1.method1155() ? 0 : 1) : (var1.method1155() ? -1 : 0);
-		} else if (var2 == 6) {
-			return var0.method1147() ? (var1.method1147() ? 0 : 1) : (var1.method1147() ? -1 : 0);
-		} else if (var2 == 7) {
-			return var0.method1175() ? (var1.method1175() ? 0 : 1) : (var1.method1175() ? -1 : 0);
-		} else {
-			return var0.field473 - var1.field473;
-		}
-	}
-
-	@ObfInfo(desc = "()LClass64;")
+	@ObfInfo(owner = "iy", name = "ab", desc = "(I)Lcl;")
 	public static Class64 method4486() {
 		field470 = 0;
 		return method3086();
 	}
 
-	@ObfInfo(desc = "()LClass64;")
+	@ObfInfo(owner = "fe", name = "ac", desc = "(I)Lcl;")
 	public static Class64 method3086() {
 		return field470 < field469 ? Class76.field4598[++field470 - 1] : null;
-	}
-
-	@ObfInfo(name = "ay", desc = "(Lua;B)Lik;", opaque = "-4")
-	public static Class219 method1191(Class521 var0) {
-		if (var0 != null) {
-			boolean var2 = false;
-			boolean var3 = false;
-			boolean var4 = false;
-			boolean var5 = false;
-			int var6 = var0.method9407();
-			int var7 = var0.method9405();
-			int var8 = var0.method9405();
-			int var9 = var0.method9405();
-			if (var6 >= 1 && var7 >= 1 && var8 >= 0 && var9 >= 0) {
-				return new Class219(var6, var7, var8, var9);
-			}
-		}
-
-		return null;
 	}
 }

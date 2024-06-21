@@ -13,11 +13,11 @@ import java.util.concurrent.Future;
 
 @ObfInfo(name = "client")
 public final class Client extends Class31 implements Class456, OAuthApi, Class330 {
-	@ObfInfo(desc = "LClass102;")
+	@ObfInfo(owner = "rm", name = "vz", desc = "Ldx;")
 	public static Class102 field4851;
-	@ObfInfo(desc = "LClass106;")
+	@ObfInfo(owner = "md", name = "ip", desc = "Leb;")
 	public static Class106 field3381;
-	@ObfInfo(desc = "LClass110;")
+	@ObfInfo(owner = "lv", name = "qy", desc = "Lef;")
 	public static Class110 field3250;
 	@ObfInfo(name = "ej", desc = "Lej;")
 	public static Class114 field516;
@@ -25,37 +25,37 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 	public static Class114 field517;
 	@ObfInfo(name = "ff", desc = "Lft;")
 	public static Class150 field526;
-	@ObfInfo(desc = "LClass159;")
+	@ObfInfo(owner = "ho", name = "sp", desc = "Lgc;")
 	public static Class159 field2020;
 	@ObfInfo(name = "sl", desc = "[Lgc;")
 	public static Class159[] field670;
-	@ObfInfo(desc = "LClass171;")
+	@ObfInfo(owner = "pl", name = "sx", desc = "Lgo;")
 	public static Class171 field4619;
 	@ObfInfo(name = "sd", desc = "[Lgo;")
 	public static Class171[] field684;
-	@ObfInfo(desc = "LClass173;")
+	@ObfInfo(owner = "bq", name = "rr", desc = "Lgq;")
 	public static Class173 field309;
-	@ObfInfo(desc = "LClass182;")
+	@ObfInfo(owner = "be", name = "ak", desc = "Lgz;")
 	public static Class182 field209;
-	@ObfInfo(desc = "LClass187;")
+	@ObfInfo(owner = "gy", name = "er", desc = "Lhe;")
 	public static Class187 field1898;
-	@ObfInfo(desc = "LClass187;")
+	@ObfInfo(owner = "qh", name = "io", desc = "Lhe;")
 	public static Class187 field4686;
 	@ObfInfo(name = "sr", desc = "Lih;")
 	public static Class216 field510;
 	@ObfInfo(name = "se", desc = "Lis;")
 	public static Class227 field721;
-	@ObfInfo(desc = "LClass244;")
+	@ObfInfo(owner = "hh", name = "mz", desc = "Ljj;")
 	public static Class244 field1955;
 	@ObfInfo(name = "wt", desc = "Llm;")
 	public static Class299 field647;
 	@ObfInfo(name = "wb", desc = "Llm;")
 	public static Class299 field779;
-	@ObfInfo(desc = "LClass30;")
+	@ObfInfo(owner = "fe", name = "tt", desc = "Lbd;")
 	public static Class30 field1565;
-	@ObfInfo(desc = "LClass340;")
+	@ObfInfo(owner = "ib", name = "ou", desc = "Lnb;")
 	public static Class340 field2118;
-	@ObfInfo(desc = "LClass340;")
+	@ObfInfo(owner = "bg", name = "ox", desc = "Lnb;")
 	public static Class340 field230;
 	@ObfInfo(name = "pf", desc = "Lnb;")
 	public static Class340 field533;
@@ -67,109 +67,109 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 	public static Class340 field666;
 	@ObfInfo(name = "ps", desc = "Lnb;")
 	public static Class340 field669;
-	@ObfInfo(desc = "[LClass340;")
+	@ObfInfo(owner = "hd", name = "qf", desc = "[Lnb;")
 	public static Class340[] field1925;
-	@ObfInfo(desc = "LClass342;")
+	@ObfInfo(owner = "na", name = "ak", desc = "Lnd;")
 	public static Class342 field3661;
-	@ObfInfo(desc = "LClass349;")
+	@ObfInfo(owner = "ae", name = "eh", desc = "Lnk;")
 	public static Class349 field25;
 	@ObfInfo(name = "vh", desc = "Lnt;")
 	public static Class358 field771;
-	@ObfInfo(desc = "LClass365;")
+	@ObfInfo(owner = "gj", name = "ve", desc = "Loa;")
 	public static Class365 field1829;
-	@ObfInfo(desc = "LClass366;")
+	@ObfInfo(owner = "iv", name = "cn", desc = "Lob;")
 	public static Class366 field2428;
-	@ObfInfo(desc = "LClass37;")
+	@ObfInfo(owner = "nz", name = "ty", desc = "Lbk;")
 	public static Class37 field3984;
-	@ObfInfo(desc = "LClass374;")
+	@ObfInfo(owner = "ao", name = "wj", desc = "Loj;")
 	public static Class374 field69;
-	@ObfInfo(desc = "LClass382;")
+	@ObfInfo(owner = "fp", name = "aj", desc = "Lor;")
 	public static Class382 field1661;
-	@ObfInfo(desc = "LClass382;")
+	@ObfInfo(owner = "gf", name = "al", desc = "Lor;")
 	public static Class382 field1802;
-	@ObfInfo(desc = "LClass382;")
+	@ObfInfo(owner = "hf", name = "ak", desc = "Lor;")
 	public static Class382 field1937;
-	@ObfInfo(desc = "LClass382;")
+	@ObfInfo(owner = "hl", name = "ak", desc = "Lor;")
 	public static Class382 field1997;
-	@ObfInfo(desc = "LClass382;")
+	@ObfInfo(owner = "hl", name = "al", desc = "Lor;")
 	public static Class382 field1998;
-	@ObfInfo(desc = "LClass382;")
+	@ObfInfo(owner = "ho", name = "ak", desc = "Lor;")
 	public static Class382 field2012;
-	@ObfInfo(desc = "LClass382;")
+	@ObfInfo(owner = "hq", name = "ak", desc = "Lor;")
 	public static Class382 field2039;
-	@ObfInfo(desc = "LClass382;")
+	@ObfInfo(owner = "hz", name = "ak", desc = "Lor;")
 	public static Class382 field2102;
-	@ObfInfo(desc = "LClass382;")
+	@ObfInfo(owner = "ia", name = "ak", desc = "Lor;")
 	public static Class382 field2111;
-	@ObfInfo(desc = "LClass382;")
+	@ObfInfo(owner = "ic", name = "aa", desc = "Lor;")
 	public static Class382 field2123;
-	@ObfInfo(desc = "LClass382;")
+	@ObfInfo(owner = "ic", name = "af", desc = "Lor;")
 	public static Class382 field2127;
-	@ObfInfo(desc = "LClass382;")
+	@ObfInfo(owner = "ic", name = "at", desc = "Lor;")
 	public static Class382 field2131;
-	@ObfInfo(desc = "LClass382;")
+	@ObfInfo(owner = "ij", name = "aj", desc = "Lor;")
 	public static Class382 field2191;
-	@ObfInfo(desc = "LClass382;")
+	@ObfInfo(owner = "ij", name = "ak", desc = "Lor;")
 	public static Class382 field2200;
-	@ObfInfo(desc = "LClass382;")
+	@ObfInfo(owner = "ip", name = "al", desc = "Lor;")
 	public static Class382 field2313;
-	@ObfInfo(desc = "LClass382;")
+	@ObfInfo(owner = "iq", name = "al", desc = "Lor;")
 	public static Class382 field2315;
-	@ObfInfo(desc = "LClass382;")
+	@ObfInfo(owner = "bt", name = "aj", desc = "Lor;")
 	public static Class382 field319;
-	@ObfInfo(desc = "LClass382;")
+	@ObfInfo(owner = "ma", name = "al", desc = "Lor;")
 	public static Class382 field3267;
-	@ObfInfo(desc = "LClass382;")
+	@ObfInfo(owner = "mt", name = "al", desc = "Lor;")
 	public static Class382 field3463;
-	@ObfInfo(desc = "LClass382;")
+	@ObfInfo(owner = "ph", name = "ak", desc = "Lor;")
 	public static Class382 field4596;
-	@ObfInfo(desc = "LClass382;")
+	@ObfInfo(owner = "uw", name = "ak", desc = "Lor;")
 	public static Class382 field5319;
-	@ObfInfo(desc = "LClass384;")
+	@ObfInfo(owner = "dp", name = "fb", desc = "Lot;")
 	public static Class384 field1255;
-	@ObfInfo(desc = "LClass384;")
+	@ObfInfo(owner = "dr", name = "fp", desc = "Lot;")
 	public static Class384 field1275;
-	@ObfInfo(desc = "LClass384;")
+	@ObfInfo(owner = "ad", name = "fm", desc = "Lot;")
 	public static Class384 field13;
-	@ObfInfo(desc = "LClass384;")
+	@ObfInfo(owner = "ef", name = "fk", desc = "Lot;")
 	public static Class384 field1410;
-	@ObfInfo(desc = "LClass384;")
+	@ObfInfo(owner = "ei", name = "fe", desc = "Lot;")
 	public static Class384 field1430;
-	@ObfInfo(desc = "LClass384;")
+	@ObfInfo(owner = "fc", name = "fr", desc = "Lot;")
 	public static Class384 field1556;
-	@ObfInfo(desc = "LClass384;")
+	@ObfInfo(owner = "fm", name = "fx", desc = "Lot;")
 	public static Class384 field1647;
-	@ObfInfo(desc = "LClass384;")
+	@ObfInfo(owner = "fo", name = "fv", desc = "Lot;")
 	public static Class384 field1660;
-	@ObfInfo(desc = "LClass384;")
+	@ObfInfo(owner = "fz", name = "eo", desc = "Lot;")
 	public static Class384 field1750;
-	@ObfInfo(desc = "LClass384;")
+	@ObfInfo(owner = "gd", name = "fy", desc = "Lot;")
 	public static Class384 field1793;
-	@ObfInfo(desc = "LClass384;")
+	@ObfInfo(owner = "kf", name = "fh", desc = "Lot;")
 	public static Class384 field2961;
-	@ObfInfo(desc = "LClass384;")
+	@ObfInfo(owner = "kg", name = "ez", desc = "Lot;")
 	public static Class384 field2971;
-	@ObfInfo(desc = "LClass384;")
+	@ObfInfo(owner = "kl", name = "eq", desc = "Lot;")
 	public static Class384 field3018;
-	@ObfInfo(desc = "LClass384;")
+	@ObfInfo(owner = "ks", name = "ek", desc = "Lot;")
 	public static Class384 field3083;
-	@ObfInfo(desc = "LClass384;")
+	@ObfInfo(owner = "ma", name = "fc", desc = "Lot;")
 	public static Class384 field3269;
-	@ObfInfo(desc = "LClass384;")
+	@ObfInfo(owner = "mc", name = "ft", desc = "Lot;")
 	public static Class384 field3371;
-	@ObfInfo(desc = "LClass384;")
+	@ObfInfo(owner = "me", name = "eg", desc = "Lot;")
 	public static Class384 field3386;
-	@ObfInfo(desc = "LClass384;")
+	@ObfInfo(owner = "mg", name = "fa", desc = "Lot;")
 	public static Class384 field3392;
-	@ObfInfo(desc = "LClass384;")
+	@ObfInfo(owner = "my", name = "fz", desc = "Lot;")
 	public static Class384 field3528;
-	@ObfInfo(desc = "LClass384;")
+	@ObfInfo(owner = "ca", name = "ee", desc = "Lot;")
 	public static Class384 field386;
-	@ObfInfo(desc = "LClass384;")
+	@ObfInfo(owner = "ck", name = "fo", desc = "Lot;")
 	public static Class384 field463;
-	@ObfInfo(desc = "LClass384;")
+	@ObfInfo(owner = "qy", name = "fg", desc = "Lot;")
 	public static Class384 field4783;
-	@ObfInfo(desc = "LClass390;")
+	@ObfInfo(owner = "es", name = "cp", desc = "Loz;")
 	public static Class390 field1497;
 	@ObfInfo(name = "vb", desc = "[Lpg;")
 	public static Class397[] field531;
@@ -181,37 +181,37 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 	public static Class401 field697;
 	@ObfInfo(name = "ri", desc = "Lpk;")
 	public static Class401 field699;
-	@ObfInfo(desc = "LClass402;")
+	@ObfInfo(owner = "ht", name = "ci", desc = "Lpl;")
 	public static Class402 field2071;
-	@ObfInfo(desc = "LClass408;")
+	@ObfInfo(owner = "cd", name = "wf", desc = "Lpr;")
 	public static Class408 field422;
-	@ObfInfo(desc = "LClass418;")
+	@ObfInfo(owner = "ki", name = "ii", desc = "Lqb;")
 	public static Class418 field3003;
-	@ObfInfo(desc = "LClass418;")
+	@ObfInfo(owner = "ky", name = "il", desc = "Lqb;")
 	public static Class418 field3127;
-	@ObfInfo(desc = "LClass418;")
+	@ObfInfo(owner = "vf", name = "iy", desc = "Lqb;")
 	public static Class418 field5366;
 	@ObfInfo(name = "tu", desc = "[Lbp;")
 	public static Class42[] field744;
 	@ObfInfo(name = "ig", desc = "Lrd;")
 	public static Class446 field551;
-	@ObfInfo(desc = "LClass457;")
+	@ObfInfo(owner = "eh", name = "sa", desc = "Lro;")
 	public static Class457 field1420;
 	@ObfInfo(name = "ws", desc = "Lry;")
 	public static Class467 field777;
-	@ObfInfo(desc = "LClass474;")
+	@ObfInfo(owner = "ma", name = "wl", desc = "Lsf;")
 	public static Class474 field3266;
-	@ObfInfo(desc = "LClass481;")
+	@ObfInfo(owner = "ck", name = "ew", desc = "Lsm;")
 	public static Class481 field465;
-	@ObfInfo(desc = "LClass481;")
+	@ObfInfo(owner = "rt", name = "ib", desc = "Lsm;")
 	public static Class481 field4879;
-	@ObfInfo(desc = "LClass487;")
+	@ObfInfo(owner = "ki", name = "fs", desc = "Lss;")
 	public static Class487 field2997;
-	@ObfInfo(desc = "LClass494;")
+	@ObfInfo(owner = "bg", name = "qn", desc = "Lsz;")
 	public static Class494 field242;
-	@ObfInfo(desc = "LClass496;")
+	@ObfInfo(owner = "at", name = "wm", desc = "Ltb;")
 	public static Class496 field104;
-	@ObfInfo(desc = "LClass500;")
+	@ObfInfo(owner = "nu", name = "vv", desc = "Ltf;")
 	public static Class500 field3963;
 	@ObfInfo(name = "vn", desc = "Ltn;")
 	public static Class508 field774;
@@ -225,97 +225,97 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 	public static Class519 field750;
 	@ObfInfo(name = "ut", desc = "Lty;")
 	public static Class519 field751;
-	@ObfInfo(desc = "LClass520;")
+	@ObfInfo(owner = "oz", name = "ia", desc = "Ltz;")
 	public static Class520 field4552;
-	@ObfInfo(desc = "[LClass528;")
+	@ObfInfo(owner = "cv", name = "ae", desc = "[Luh;")
 	public static Class528[] field910;
-	@ObfInfo(desc = "LClass53;")
+	@ObfInfo(owner = "do", name = "fj", desc = "Lca;")
 	public static Class53 field1249;
-	@ObfInfo(desc = "LClass530;")
+	@ObfInfo(owner = "jz", name = "qj", desc = "Luj;")
 	public static Class530 field2814;
-	@ObfInfo(desc = "LClass530;")
+	@ObfInfo(owner = "cf", name = "qu", desc = "Luj;")
 	public static Class530 field431;
-	@ObfInfo(desc = "LClass544;")
+	@ObfInfo(owner = "ji", name = "cd", desc = "Lux;")
 	public static Class544 field2627;
-	@ObfInfo(desc = "LClass549;")
+	@ObfInfo(owner = "au", name = "jc", desc = "Lvc;")
 	public static Class549 field106;
-	@ObfInfo(desc = "LClass549;")
+	@ObfInfo(owner = "dy", name = "td", desc = "Lvc;")
 	public static Class549 field1359;
-	@ObfInfo(desc = "LClass549;")
+	@ObfInfo(owner = "sn", name = "ju", desc = "Lvc;")
 	public static Class549 field4958;
-	@ObfInfo(desc = "[LClass549;")
+	@ObfInfo(owner = "ef", name = "ke", desc = "[Lvc;")
 	public static Class549[] field1413;
-	@ObfInfo(desc = "[LClass549;")
+	@ObfInfo(owner = "ic", name = "kb", desc = "[Lvc;")
 	public static Class549[] field2153;
-	@ObfInfo(desc = "[LClass549;")
+	@ObfInfo(owner = "jv", name = "kd", desc = "[Lvc;")
 	public static Class549[] field2709;
-	@ObfInfo(desc = "[LClass549;")
+	@ObfInfo(owner = "af", name = "jf", desc = "[Lvc;")
 	public static Class549[] field29;
-	@ObfInfo(desc = "[LClass549;")
+	@ObfInfo(owner = "oh", name = "kl", desc = "[Lvc;")
 	public static Class549[] field4039;
 	@ObfInfo(name = "tk", desc = "[Lvc;")
 	public static Class549[] field575;
-	@ObfInfo(desc = "[LClass549;")
+	@ObfInfo(owner = "ao", name = "jj", desc = "[Lvc;")
 	public static Class549[] field76;
-	@ObfInfo(desc = "LClass553;")
+	@ObfInfo(owner = "tb", name = "so", desc = "Lvh;")
 	public static Class553 field5081;
 	@ObfInfo(name = "fi", desc = "Lvj;")
 	public static Class555 field527;
-	@ObfInfo(desc = "[LClass557;")
+	@ObfInfo(owner = "ea", name = "kn", desc = "[Lvl;")
 	public static Class557[] field1374;
-	@ObfInfo(desc = "[LClass557;")
+	@ObfInfo(owner = "ae", name = "jl", desc = "[Lvl;")
 	public static Class557[] field23;
-	@ObfInfo(desc = "[LClass557;")
+	@ObfInfo(owner = "bt", name = "km", desc = "[Lvl;")
 	public static Class557[] field317;
-	@ObfInfo(desc = "[LClass557;")
+	@ObfInfo(owner = "qt", name = "ah", desc = "[Lvl;")
 	public static Class557[] field4733;
-	@ObfInfo(desc = "LClass56;")
+	@ObfInfo(owner = "dp", name = "tx", desc = "Lcd;")
 	public static Class56 field1251;
-	@ObfInfo(desc = "LClass569;")
+	@ObfInfo(owner = "lu", name = "bp", desc = "Lvx;")
 	public static Class569 field3241;
 	@ObfInfo(name = "wg", desc = "Lce;")
 	public static Class57 field776;
 	@ObfInfo(name = "rs", desc = "Lvy;")
 	public static Class570 field695;
-	@ObfInfo(desc = "LClass62;")
+	@ObfInfo(owner = "kr", name = "oz", desc = "Lcj;")
 	public static Class62 field3069;
-	@ObfInfo(desc = "LClass69;")
+	@ObfInfo(owner = "bl", name = "vy", desc = "Lcq;")
 	public static Class69 field274;
-	@ObfInfo(desc = "LClass78;")
+	@ObfInfo(owner = "ct", name = "mt", desc = "Lcz;")
 	public static Class78 field894;
-	@ObfInfo(desc = "LClass83;")
+	@ObfInfo(owner = "au", name = "ms", desc = "Lde;")
 	public static Class83 field107;
-	@ObfInfo(desc = "LClass85;")
+	@ObfInfo(owner = "co", name = "du", desc = "Ldg;")
 	public static Class85 field830;
-	@ObfInfo(desc = "LClass87;")
+	@ObfInfo(owner = "jt", name = "ay", desc = "Ldi;")
 	public static Class87 field2695;
 	@ObfInfo(name = "ey", desc = "Ldn;")
 	public static Class92 field519;
 	@ObfInfo(name = "hy", desc = "Ldq;")
 	public static Class95 field619;
-	@ObfInfo(desc = "LClass98;")
+	@ObfInfo(owner = "bt", name = "jy", desc = "Ldt;")
 	public static Class98 field316;
-	@ObfInfo(desc = "LClass98;")
+	@ObfInfo(owner = "nf", name = "jd", desc = "Ldt;")
 	public static Class98 field3857;
-	@ObfInfo(desc = "LClass98;")
+	@ObfInfo(owner = "pe", name = "jn", desc = "Ldt;")
 	public static Class98 field4582;
-	@ObfInfo(desc = "LClient;")
+	@ObfInfo(owner = "ht", name = "bb", desc = "Lclient;")
 	public static Client field2077;
-	@ObfInfo(desc = "Z")
+	@ObfInfo(owner = "en", name = "en", desc = "Z")
 	public static boolean field1468;
-	@ObfInfo(desc = "Z")
+	@ObfInfo(owner = "gw", name = "aa", desc = "Z")
 	public static boolean field1887;
-	@ObfInfo(desc = "Z")
+	@ObfInfo(owner = "jr", name = "sh", desc = "Z")
 	public static boolean field2680;
-	@ObfInfo(desc = "Z")
+	@ObfInfo(owner = "kx", name = "su", desc = "Z")
 	public static boolean field3112;
-	@ObfInfo(desc = "Z")
+	@ObfInfo(owner = "nx", name = "da", desc = "Z")
 	public static boolean field3974;
-	@ObfInfo(desc = "Z")
+	@ObfInfo(owner = "cg", name = "dd", desc = "Z")
 	public static boolean field434;
 	@ObfInfo(name = "dm", desc = "Z")
 	public static boolean field485;
-	@ObfInfo(desc = "Z")
+	@ObfInfo(owner = "ru", name = "bm", desc = "Z")
 	public static boolean field4885;
 	@ObfInfo(name = "nu", desc = "Z")
 	public static boolean field494;
@@ -333,7 +333,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 	public static boolean field509;
 	@ObfInfo(name = "ev", desc = "Z")
 	public static boolean field518;
-	@ObfInfo(desc = "Z")
+	@ObfInfo(owner = "ud", name = "fl", desc = "Z")
 	public static boolean field5226;
 	@ObfInfo(name = "cs", desc = "Z")
 	public static boolean field528;
@@ -405,125 +405,125 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 	public static boolean[] field715;
 	@ObfInfo(name = "hk", desc = "[B")
 	public static byte[] field545;
-	@ObfInfo(desc = "[[B")
+	@ObfInfo(owner = "fa", name = "ji", desc = "[[B")
 	public static byte[][] field1549;
-	@ObfInfo(desc = "[[B")
+	@ObfInfo(owner = "fz", name = "jm", desc = "[[B")
 	public static byte[][] field1749;
-	@ObfInfo(desc = "[[B")
+	@ObfInfo(owner = "nw", name = "jb", desc = "[[B")
 	public static byte[][] field3972;
-	@ObfInfo(desc = "[[B")
+	@ObfInfo(owner = "th", name = "jv", desc = "[[B")
 	public static byte[][] field5146;
-	@ObfInfo(desc = "I", intMultiplier = 926924483)
+	@ObfInfo(owner = "au", name = "uz", desc = "I", intMultiplier = 926924483)
 	public static int field110;
-	@ObfInfo(desc = "I", intMultiplier = -2049286697)
+	@ObfInfo(owner = "dh", name = "kr", desc = "I", intMultiplier = -2049286697)
 	public static int field1105;
-	@ObfInfo(desc = "I", intMultiplier = -1372916459)
+	@ObfInfo(owner = "aw", name = "je", desc = "I", intMultiplier = -1372916459)
 	public static int field121;
-	@ObfInfo(desc = "I", intMultiplier = 246565167)
+	@ObfInfo(owner = "dm", name = "cm", desc = "I", intMultiplier = 246565167)
 	public static int field1215;
-	@ObfInfo(desc = "I", intMultiplier = 786316707)
+	@ObfInfo(owner = "ec", name = "af", desc = "I", intMultiplier = 786316707)
 	public static int field1382;
-	@ObfInfo(desc = "I", intMultiplier = -464348323)
+	@ObfInfo(owner = "ef", name = "uo", desc = "I", intMultiplier = -464348323)
 	public static int field1408;
-	@ObfInfo(desc = "I", intMultiplier = 592748769)
+	@ObfInfo(owner = "ef", name = "od", desc = "I", intMultiplier = 592748769)
 	public static int field1414;
-	@ObfInfo(desc = "I", intMultiplier = 1565926211)
+	@ObfInfo(owner = "eg", name = "gn", desc = "I", intMultiplier = 1565926211)
 	public static int field1415;
-	@ObfInfo(desc = "I", intMultiplier = 981078451)
+	@ObfInfo(owner = "bc", name = "uu", desc = "I", intMultiplier = 981078451)
 	public static int field148;
-	@ObfInfo(desc = "I", intMultiplier = -1360015913)
+	@ObfInfo(owner = "ep", name = "gm", desc = "I", intMultiplier = -1360015913)
 	public static int field1481;
-	@ObfInfo(desc = "I", intMultiplier = -939137475)
+	@ObfInfo(owner = "ew", name = "us", desc = "I", intMultiplier = -939137475)
 	public static int field1523;
-	@ObfInfo(desc = "I", intMultiplier = -1566429995)
+	@ObfInfo(owner = "ew", name = "wd", desc = "I", intMultiplier = -1566429995)
 	public static int field1524;
-	@ObfInfo(desc = "I", intMultiplier = -1141587141)
+	@ObfInfo(owner = "ew", name = "ug", desc = "I", intMultiplier = -1141587141)
 	public static int field1526;
-	@ObfInfo(desc = "I", intMultiplier = 983493133)
+	@ObfInfo(owner = "ey", name = "kq", desc = "I", intMultiplier = 983493133)
 	public static int field1538;
-	@ObfInfo(desc = "I", intMultiplier = 1642842793)
+	@ObfInfo(owner = "fh", name = "mx", desc = "I", intMultiplier = 1642842793)
 	public static int field1589;
-	@ObfInfo(desc = "I", intMultiplier = 601850613)
+	@ObfInfo(owner = "bd", name = "mw", desc = "I", intMultiplier = 601850613)
 	public static int field172;
-	@ObfInfo(desc = "I", intMultiplier = 219921597)
+	@ObfInfo(owner = "ga", name = "cr", desc = "I", intMultiplier = 219921597)
 	public static int field1751;
-	@ObfInfo(desc = "I", intMultiplier = 406002563)
+	@ObfInfo(owner = "gb", name = "kv", desc = "I", intMultiplier = 406002563)
 	public static int field1760;
-	@ObfInfo(desc = "I", intMultiplier = 154647647)
+	@ObfInfo(owner = "gf", name = "ny", desc = "I", intMultiplier = 154647647)
 	public static int field1800;
-	@ObfInfo(desc = "I", intMultiplier = -1021134085)
+	@ObfInfo(owner = "be", name = "ai", desc = "I", intMultiplier = -1021134085)
 	public static int field182;
-	@ObfInfo(desc = "I", intMultiplier = -1064170701)
+	@ObfInfo(owner = "gt", name = "wv", desc = "I", intMultiplier = -1064170701)
 	public static int field1870;
-	@ObfInfo(desc = "I", intMultiplier = -731788477)
+	@ObfInfo(owner = "gt", name = "ac", desc = "I", intMultiplier = -731788477)
 	public static int field1874;
-	@ObfInfo(desc = "I", intMultiplier = 552008661)
+	@ObfInfo(owner = "hm", name = "qd", desc = "I", intMultiplier = 552008661)
 	public static int field2007;
-	@ObfInfo(desc = "I", intMultiplier = 1143781377)
+	@ObfInfo(owner = "hp", name = "kw", desc = "I", intMultiplier = 1143781377)
 	public static int field2029;
-	@ObfInfo(desc = "I", intMultiplier = 922606951)
+	@ObfInfo(owner = "hw", name = "al", desc = "I", intMultiplier = 922606951)
 	public static int field2083;
-	@ObfInfo(desc = "I", intMultiplier = -148860909)
+	@ObfInfo(owner = "af", name = "iz", desc = "I", intMultiplier = -148860909)
 	public static int field26;
-	@ObfInfo(desc = "I", intMultiplier = -940011597)
+	@ObfInfo(owner = "jj", name = "lb", desc = "I", intMultiplier = -940011597)
 	public static int field2629;
-	@ObfInfo(desc = "I", intMultiplier = 1852051081)
+	@ObfInfo(owner = "jk", name = "ac", desc = "I", intMultiplier = 1852051081)
 	public static int field2640;
-	@ObfInfo(desc = "I", intMultiplier = 549714043)
+	@ObfInfo(owner = "af", name = "qi", desc = "I", intMultiplier = 549714043)
 	public static int field27;
-	@ObfInfo(desc = "I", intMultiplier = 1550817359)
+	@ObfInfo(owner = "bl", name = "li", desc = "I", intMultiplier = 1550817359)
 	public static int field271;
-	@ObfInfo(desc = "I", intMultiplier = -1619357703)
+	@ObfInfo(owner = "jz", name = "un", desc = "I", intMultiplier = -1619357703)
 	public static int field2816;
-	@ObfInfo(desc = "I", intMultiplier = 1294966735)
+	@ObfInfo(owner = "bn", name = "ul", desc = "I", intMultiplier = 1294966735)
 	public static int field283;
-	@ObfInfo(desc = "I", intMultiplier = -896049715)
+	@ObfInfo(owner = "jz", name = "ph", desc = "I", intMultiplier = -896049715)
 	public static int field2838;
-	@ObfInfo(desc = "I", intMultiplier = -974194965)
+	@ObfInfo(owner = "kf", name = "uy", desc = "I", intMultiplier = -974194965)
 	public static int field2960;
-	@ObfInfo(desc = "I", intMultiplier = -479904269)
+	@ObfInfo(owner = "kh", name = "uf", desc = "I", intMultiplier = -479904269)
 	public static int field2982;
-	@ObfInfo(desc = "I", intMultiplier = -298360831)
+	@ObfInfo(owner = "kr", name = "gc", desc = "I", intMultiplier = -298360831)
 	public static int field3071;
-	@ObfInfo(desc = "I", intMultiplier = -1507170361)
+	@ObfInfo(owner = "kr", name = "nt", desc = "I", intMultiplier = -1507170361)
 	public static int field3072;
-	@ObfInfo(desc = "I", intMultiplier = 1529251047)
+	@ObfInfo(owner = "ks", name = "ix", desc = "I", intMultiplier = 1529251047)
 	public static int field3090;
-	@ObfInfo(desc = "I", intMultiplier = -1654126509)
+	@ObfInfo(owner = "lc", name = "af", desc = "I", intMultiplier = -1654126509)
 	public static int field3152;
-	@ObfInfo(desc = "I", intMultiplier = 1892474103)
+	@ObfInfo(owner = "lg", name = "gt", desc = "I", intMultiplier = 1892474103)
 	public static int field3167;
-	@ObfInfo(desc = "I", intMultiplier = -871116551)
+	@ObfInfo(owner = "md", name = "gs", desc = "I", intMultiplier = -871116551)
 	public static int field3372;
-	@ObfInfo(desc = "I", intMultiplier = 44592861)
+	@ObfInfo(owner = "mp", name = "ja", desc = "I", intMultiplier = 44592861)
 	public static int field3436;
-	@ObfInfo(desc = "I", intMultiplier = -1119110507)
+	@ObfInfo(owner = "mq", name = "ui", desc = "I", intMultiplier = -1119110507)
 	public static int field3440;
-	@ObfInfo(desc = "I", intMultiplier = 888602669)
+	@ObfInfo(owner = "nd", name = "ue", desc = "I", intMultiplier = 888602669)
 	public static int field3830;
-	@ObfInfo(desc = "I", intMultiplier = -408496447)
+	@ObfInfo(owner = "nm", name = "up", desc = "I", intMultiplier = -408496447)
 	public static int field3887;
-	@ObfInfo(desc = "I", intMultiplier = -1994887817)
+	@ObfInfo(owner = "nt", name = "kf", desc = "I", intMultiplier = -1994887817)
 	public static int field3960;
-	@ObfInfo(desc = "I", intMultiplier = 1480863765)
+	@ObfInfo(owner = "nu", name = "uw", desc = "I", intMultiplier = 1480863765)
 	public static int field3961;
-	@ObfInfo(desc = "I", intMultiplier = -302371735)
+	@ObfInfo(owner = "om", name = "np", desc = "I", intMultiplier = -302371735)
 	public static int field4141;
-	@ObfInfo(desc = "I", intMultiplier = -1001500755)
+	@ObfInfo(owner = "cf", name = "gf", desc = "I", intMultiplier = -1001500755)
 	public static int field429;
-	@ObfInfo(desc = "I", intMultiplier = 2024379245)
+	@ObfInfo(owner = "on", name = "ov", desc = "I", intMultiplier = 2024379245)
 	public static int field4348;
-	@ObfInfo(desc = "I", intMultiplier = -140212947)
+	@ObfInfo(owner = "pf", name = "ok", desc = "I", intMultiplier = -140212947)
 	public static int field4587;
-	@ObfInfo(desc = "I", intMultiplier = 1729222907)
+	@ObfInfo(owner = "pv", name = "cj", desc = "I", intMultiplier = 1729222907)
 	public static int field4650;
-	@ObfInfo(desc = "I", intMultiplier = 135729133)
+	@ObfInfo(owner = "qj", name = "ic", desc = "I", intMultiplier = 135729133)
 	public static int field4694;
-	@ObfInfo(desc = "I", intMultiplier = -898106349)
+	@ObfInfo(owner = "qp", name = "aj", desc = "I", intMultiplier = -898106349)
 	public static int field4711;
 	@ObfInfo(name = "kp", desc = "I", intMultiplier = 1152384791)
 	public static int field484;
-	@ObfInfo(desc = "I", intMultiplier = -1657033645)
+	@ObfInfo(owner = "rm", name = "ux", desc = "I", intMultiplier = -1657033645)
 	public static int field4853;
 	@ObfInfo(name = "mv", desc = "I", intMultiplier = 213058995)
 	public static int field486;
@@ -539,13 +539,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 	public static int field492;
 	@ObfInfo(name = "fu", desc = "I", intMultiplier = -860219627)
 	public static int field493;
-	@ObfInfo(desc = "I", intMultiplier = 1281330719)
+	@ObfInfo(owner = "sj", name = "nn", desc = "I", intMultiplier = 1281330719)
 	public static int field4947;
 	@ObfInfo(name = "sg", desc = "I", intMultiplier = 570791161)
 	public static int field500;
 	@ObfInfo(name = "dw", desc = "I", intMultiplier = 967009251)
 	public static int field501;
-	@ObfInfo(desc = "I", intMultiplier = -190120109)
+	@ObfInfo(owner = "sz", name = "iv", desc = "I", intMultiplier = -190120109)
 	public static int field5013;
 	@ObfInfo(name = "de", desc = "I", intMultiplier = -1333263023)
 	public static int field504;
@@ -563,7 +563,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 	public static int field522;
 	@ObfInfo(name = "fq", desc = "I", intMultiplier = 1649979411)
 	public static int field524;
-	@ObfInfo(desc = "I", intMultiplier = 46472907)
+	@ObfInfo(owner = "um", name = "an", desc = "I", intMultiplier = 46472907)
 	public static int field5261;
 	@ObfInfo(name = "ml", desc = "I", intMultiplier = -1894011999)
 	public static int field530;
@@ -635,7 +635,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 	public static int field596;
 	@ObfInfo(name = "si", desc = "I", intMultiplier = -1130289429)
 	public static int field597;
-	@ObfInfo(desc = "I", intMultiplier = 1521460135)
+	@ObfInfo(owner = "an", name = "gj", desc = "I", intMultiplier = 1521460135)
 	public static int field60;
 	@ObfInfo(name = "mb", desc = "I", intMultiplier = -1679902223)
 	public static int field600;
@@ -799,25 +799,25 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 	public static int field785;
 	@ObfInfo(name = "wr", desc = "I", intMultiplier = -1819816953)
 	public static int field786;
-	@ObfInfo(desc = "I", intMultiplier = -763033945)
+	@ObfInfo(owner = "cu", name = "lq", desc = "I", intMultiplier = -763033945)
 	public static int field897;
-	@ObfInfo(desc = "I", intMultiplier = 143254167)
+	@ObfInfo(owner = "cu", name = "uq", desc = "I", intMultiplier = 143254167)
 	public static int field904;
-	@ObfInfo(desc = "[I")
+	@ObfInfo(owner = "bc", name = "jq", desc = "[I")
 	public static int[] field149;
-	@ObfInfo(desc = "[I")
+	@ObfInfo(owner = "ey", name = "jr", desc = "[I")
 	public static int[] field1536;
-	@ObfInfo(desc = "[I")
+	@ObfInfo(owner = "fl", name = "jt", desc = "[I")
 	public static int[] field1622;
-	@ObfInfo(desc = "[I")
+	@ObfInfo(owner = "gt", name = "id", desc = "[I")
 	public static int[] field1875;
 	@ObfInfo(name = "nj", desc = "[I")
 	public static int[] field495;
 	@ObfInfo(name = "to", desc = "[I")
 	public static int[] field511;
-	@ObfInfo(desc = "[I")
+	@ObfInfo(owner = "tk", name = "at", desc = "[I")
 	public static int[] field5165;
-	@ObfInfo(desc = "[I")
+	@ObfInfo(owner = "ts", name = "jx", desc = "[I")
 	public static int[] field5187;
 	@ObfInfo(name = "lz", desc = "[I")
 	public static int[] field520;
@@ -905,11 +905,11 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 	public static int[] field788;
 	@ObfInfo(name = "xf", desc = "[I")
 	public static int[] field789;
-	@ObfInfo(desc = "[I")
+	@ObfInfo(owner = "cy", name = "hv", desc = "[I")
 	public static int[] field970;
-	@ObfInfo(desc = "[[I")
+	@ObfInfo(owner = "au", name = "jp", desc = "[[I")
 	public static int[][] field112;
-	@ObfInfo(desc = "[[I")
+	@ObfInfo(owner = "tp", name = "jh", desc = "[[I")
 	public static int[][] field5183;
 	@ObfInfo(name = "ld", desc = "[[I")
 	public static int[][] field745;
@@ -917,23 +917,23 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 	public static int[][][] field559;
 	@ObfInfo(name = "js", desc = "[[[I")
 	public static int[][][] field567;
-	@ObfInfo(desc = "Ljava/lang/String;")
+	@ObfInfo(owner = "av", name = "fw", desc = "Ljava/lang/String;")
 	public static String field119;
-	@ObfInfo(desc = "Ljava/lang/String;")
+	@ObfInfo(owner = "aw", name = "gy", desc = "Ljava/lang/String;")
 	public static String field125;
-	@ObfInfo(desc = "Ljava/lang/String;")
+	@ObfInfo(owner = "im", name = "gx", desc = "Ljava/lang/String;")
 	public static String field2233;
-	@ObfInfo(desc = "Ljava/lang/String;")
+	@ObfInfo(owner = "jn", name = "cc", desc = "Ljava/lang/String;")
 	public static String field2657;
-	@ObfInfo(desc = "Ljava/lang/String;")
+	@ObfInfo(owner = "mk", name = "gq", desc = "Ljava/lang/String;")
 	public static String field3409;
-	@ObfInfo(desc = "Ljava/lang/String;")
+	@ObfInfo(owner = "ah", name = "ga", desc = "Ljava/lang/String;")
 	public static String field42;
-	@ObfInfo(desc = "Ljava/lang/String;")
+	@ObfInfo(owner = "ou", name = "gp", desc = "Ljava/lang/String;")
 	public static String field4509;
-	@ObfInfo(desc = "Ljava/lang/String;")
+	@ObfInfo(owner = "ou", name = "gi", desc = "Ljava/lang/String;")
 	public static String field4510;
-	@ObfInfo(desc = "Ljava/lang/String;")
+	@ObfInfo(owner = "qs", name = "cb", desc = "Ljava/lang/String;")
 	public static String field4720;
 	@ObfInfo(name = "st", desc = "Ljava/lang/String;")
 	public static String field483;
@@ -943,7 +943,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 	public static String field578;
 	@ObfInfo(name = "oc", desc = "Ljava/lang/String;")
 	public static String field651;
-	@ObfInfo(desc = "Ljava/lang/String;")
+	@ObfInfo(owner = "ct", name = "gg", desc = "Ljava/lang/String;")
 	public static String field874;
 	@ObfInfo(name = "of", desc = "[Ljava/lang/String;")
 	public static String[] field636;
@@ -953,7 +953,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 	public static String[] field652;
 	@ObfInfo(name = "nr", desc = "[Ljava/lang/String;")
 	public static String[] field679;
-	@ObfInfo(desc = "Ljava/security/SecureRandom;")
+	@ObfInfo(owner = "am", name = "hx", desc = "Ljava/security/SecureRandom;")
 	public static SecureRandom field54;
 	@ObfInfo(name = "wz", desc = "Ljava/util/ArrayList;")
 	public static ArrayList field713;
@@ -961,11 +961,11 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 	public static HashMap field552;
 	@ObfInfo(name = "wc", desc = "Ljava/util/List;")
 	public static List field782;
-	@ObfInfo(desc = "J", longMultiplier = -1017482725618925639L)
+	@ObfInfo(owner = "fr", name = "et", desc = "J", longMultiplier = -1017482725618925639L)
 	public static long field1681;
-	@ObfInfo(desc = "J", longMultiplier = -3325043838573669699L)
+	@ObfInfo(owner = "hk", name = "wy", desc = "J", longMultiplier = -3325043838573669699L)
 	public static long field1985;
-	@ObfInfo(desc = "J", longMultiplier = -5228586345600098271L)
+	@ObfInfo(owner = "ml", name = "hc", desc = "J", longMultiplier = -5228586345600098271L)
 	public static long field3415;
 	@ObfInfo(name = "dg", desc = "J", longMultiplier = 8540685319604864889L)
 	public static long field502;
@@ -997,15 +997,15 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 	public static short field762;
 	@ObfInfo(name = "vm", desc = "S")
 	public static short field765;
-	@ObfInfo(desc = "[S")
+	@ObfInfo(owner = "bd", name = "ah", desc = "[S")
 	public static short[] field170;
-	@ObfInfo(desc = "[S")
+	@ObfInfo(owner = "bm", name = "we", desc = "[S")
 	public static short[] field277;
-	@ObfInfo(desc = "[S")
+	@ObfInfo(owner = "ce", name = "aq", desc = "[S")
 	public static short[] field423;
-	@ObfInfo(desc = "[[S")
+	@ObfInfo(owner = "ir", name = "ap", desc = "[[S")
 	public static short[][] field2374;
-	@ObfInfo(desc = "[[S")
+	@ObfInfo(owner = "qh", name = "av", desc = "[[S")
 	public static short[][] field4687;
 	@ObfInfo(name = "iq", desc = "Lel;")
 	public static final Class116 field548;
@@ -1119,7 +1119,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 			}
 		}
 
-		String var0 = Class416.method3961(var7, 0, var7.length);
+		String var0 = Class207.method3961(var7, 0, var7.length);
 		field539 = var0;
 		field540 = false;
 		field619 = new Class95();
@@ -1379,7 +1379,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 	public final void method503() {
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(name = "init", desc = "()V")
 	public final void init() {
 		if (this.method481()) {
 			for (int var1 = 0; var1 <= 28; ++var1) {
@@ -1405,7 +1405,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 						field2071 = Class402.method7514(Integer.parseInt(var2));
 						break;
 					case 7:
-						field2428 = Class63.method1136(Integer.parseInt(var2));
+						field2428 = Class366.method1136(Integer.parseInt(var2));
 						break;
 					case 8:
 						if (var2.equalsIgnoreCase(Class113.field1429)) {
@@ -1474,7 +1474,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 			}
 
 			try {
-				Class90.method2405("oldschool", field4509, var5, var6, 23);
+				Class179.method2405("oldschool", field4509, var5, var6, 23);
 			} catch (Exception var4) {
 				Class548.method8904((String)null, var4);
 			}
@@ -1502,7 +1502,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(name = "finalize", desc = "()V")
 	public void finalize() throws Throwable {
 		Class332.field3459.remove(this);
 		super.finalize();
@@ -1513,12 +1513,12 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		return this.field534 == 1;
 	}
 
-	@ObfInfo(desc = "(I)V")
+	@ObfInfo(name = "setClient", desc = "(I)V")
 	public void setClient(int var1) {
 		this.field534 = var1;
 	}
 
-	@ObfInfo(desc = "(Lcom/jagex/oldscape/pub/OtlTokenRequester;)V")
+	@ObfInfo(name = "setOtlTokenRequester", desc = "(Lcom/jagex/oldscape/pub/OtlTokenRequester;)V")
 	public void setOtlTokenRequester(OtlTokenRequester var1) {
 		if (var1 != null) {
 			this.field610 = var1;
@@ -1526,19 +1526,19 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "(Lcom/jagex/oldscape/pub/RefreshAccessTokenRequester;)V")
+	@ObfInfo(name = "setRefreshTokenRequester", desc = "(Lcom/jagex/oldscape/pub/RefreshAccessTokenRequester;)V")
 	public void setRefreshTokenRequester(RefreshAccessTokenRequester var1) {
 		if (var1 != null) {
 			this.field603 = var1;
 		}
 	}
 
-	@ObfInfo(desc = "()Z")
+	@ObfInfo(name = "isOnLoginScreen", desc = "()Z")
 	public boolean isOnLoginScreen() {
 		return 10 == field555;
 	}
 
-	@ObfInfo(desc = "()J")
+	@ObfInfo(name = "getAccountHash", desc = "()J")
 	public long getAccountHash() {
 		return this.field544;
 	}
@@ -1613,7 +1613,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	@ObfInfo(name = "bk", desc = "(S)V", opaque = "133")
 	public final void method493() {
-		Class451.method7039(new int[]{20, 260, 10000}, new int[]{1000, 100, 500});
+		Class354.method7039(new int[]{20, 260, 10000}, new int[]{1000, 100, 500});
 		field434 = Class541.method5694(field675, Class534.field5281);
 		field429 = 0 == field532 ? 43594 : 40000 + field557;
 		field3167 = field532 == 0 ? 443 : field557 + 50000;
@@ -1630,7 +1630,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		this.method473(field721, 1);
 		this.method468();
 		field3266 = new Class474(255, Class179.field1885, Class179.field1890, 500000);
-		field4851 = Class402.method7532();
+		field4851 = Class102.method7532();
 		String var3 = Class545.field5340;
 		Class40.field282 = this;
 		if (var3 != null) {
@@ -1640,7 +1640,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		method3259(field4851.method2695());
 		field274 = new Class69(field2627);
 		this.field529 = new Class5("tokenRequest", 1, 1);
-		Class332.method3887(this);
+		Class199.method3887(this);
 		field728.method4868();
 	}
 
@@ -1682,7 +1682,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 				if (var3) {
 					Class332.field3458.clear();
-					Class87.method2354();
+					Class332.method2354();
 				}
 
 				if (var4 && field737 && field1565 != null) {
@@ -1692,7 +1692,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				method4066();
 				field721.method4339();
 				this.method472();
-				Class399.method7462();
+				Class33.method7462();
 				if (field309 != null) {
 					int var7 = field309.method134();
 					field694 = var7;
@@ -1744,7 +1744,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	@ObfInfo(name = "br", desc = "(ZI)V", opaque = "-516888372")
 	public final void method495(boolean var1) {
-		if ((field555 == 10 || field555 == 20 || 30 == field555) && field536 != 0L && Class327.method3047() > field536) {
+		if ((field555 == 10 || field555 == 20 || 30 == field555) && field536 != 0L && Class130.method3047() > field536) {
 			method3259(method9643());
 		}
 
@@ -1822,7 +1822,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 		field830 = null;
 		field548.method2901();
-		Class63.method1133();
+		Class33.method1133();
 		field309 = null;
 		if (field1565 != null) {
 			field1565.method405();
@@ -1892,7 +1892,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 						var2.method9590(222);
 						field465.method8626(var2.field5221, 0, 5);
 						++field615;
-						field1681 = Class327.method3047();
+						field1681 = Class130.method3047();
 					}
 
 					if (3 == field615) {
@@ -1904,7 +1904,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 							}
 
 							++field615;
-						} else if (Class327.method3047() - field1681 > 30000L) {
+						} else if (Class130.method3047() - field1681 > 30000L) {
 							this.method1210(-2);
 							return;
 						}
@@ -2393,7 +2393,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				Class20 var32 = var34[var3.method9405()];
 
 				try {
-					Class26 var30 = Class6.method7379(var32);
+					Class26 var30 = Class387.method7379(var32);
 					this.field543 = new Class2(var3, var30);
 					method788(Class53.field369);
 				} catch (Exception var15) {
@@ -2502,7 +2502,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 						field4851.method2628((String)null);
 					}
 
-					Class188.method3696();
+					Class102.method3696();
 					field626 = var2.method8623();
 					field663 = var2.method8623() == 1;
 					field646 = var2.method8623();
@@ -2868,7 +2868,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 							var21 = Class316.method3908(Class315.field3359, field548.field1446);
 							var21.field3374.method9389(0);
 							var22 = var21.field3374.field5219;
-							long var24 = Class327.method3047();
+							long var24 = Class130.method3047();
 
 							for (var6 = 0; var6 < field721.field2380; ++var6) {
 								long var30 = var24 - field726;
@@ -2959,11 +2959,11 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 							for (var7 = 1; var7 < 103; ++var7) {
 								for (var8 = 1; var8 < 103; ++var8) {
 									if (0 == (field3857.field1292[var2][var8][var7] & 24)) {
-										method675(var2, var8, var7, var5, var6);
+										Class32.method675(var2, var8, var7, var5, var6);
 									}
 
 									if (var2 < 3 && 0 != (field3857.field1292[var2 + 1][var8][var7] & 8)) {
-										method675(var2 + 1, var8, var7, var5, var6);
+										Class32.method675(var2 + 1, var8, var7, var5, var6);
 									}
 								}
 							}
@@ -3008,11 +3008,11 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 						for (var5 = 0; var5 < var22; ++var5) {
 							Class83 var32 = var26.field1293[var27[var5]];
 							if (var32 != null) {
-								Class57.method1081(var26, var32, 1);
+								method1081(var26, var32, 1);
 							}
 						}
 
-						method4409(field3857);
+						Class231.method4409(field3857);
 						Class98 var28 = field3857;
 
 						for (var4 = 0; var4 < var28.field1286; ++var4) {
@@ -3023,7 +3023,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 							}
 						}
 
-						method1134(field3857);
+						Class63.method1134(field3857);
 
 						for (var4 = 0; var4 < field3857.field1286; ++var4) {
 							Class488 var34 = field3857.field1299[field3857.field1302[var4]];
@@ -3036,12 +3036,12 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 								for (var9 = 0; var9 < var7; ++var9) {
 									Class83 var41 = var36.field1293[var38[var9]];
 									if (var41 != null) {
-										Class57.method1081(var36, var41, 1);
+										method1081(var36, var41, 1);
 									}
 								}
 
-								method4409(var34.field4995);
-								method1134(var34.field4995);
+								Class231.method4409(var34.field4995);
+								Class63.method1134(var34.field4995);
 							}
 						}
 
@@ -3219,7 +3219,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 																	method7420();
 																	if (field752) {
-																		method3052();
+																		Class130.method3052();
 																	} else if (field496) {
 																		if (!field746) {
 																			var8 = 64 + field904 * 128;
@@ -3365,7 +3365,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	@ObfInfo(name = "as", desc = "(I)V", opaque = "-1709856685")
 	public final void method538() {
-		field536 = Class327.method3047() + 500L;
+		field536 = Class130.method3047() + 500L;
 		this.method1215();
 		if (field740 != -1) {
 			this.method1762(true);
@@ -3462,7 +3462,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					}
 
 					if (field629 > 2) {
-						var6 = var6 + Class463.method8551(16777215) + " " + '/' + " " + (field629 - 2) + Class378.field4380;
+						var6 = var6 + Class113.method8551(16777215) + " " + '/' + " " + (field629 - 2) + Class378.field4380;
 					}
 
 					field3003.method8006(var6, var2 + 4, var3 + 15, 16777215, 0, field778 / 1000);
@@ -3774,7 +3774,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					var84 = var4.method9438() == 1;
 					var24 = var4.method9555();
 					var53 = field25.method6718(var24);
-					Class67.method1841(var53, field107.field1029, var84);
+					Class340.method1841(var53, field107.field1029, var84);
 					Class317.method6187(var53);
 					var1.field1449 = null;
 					return true;
@@ -3928,7 +3928,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					Class100 var81 = field4582.field1295[var23];
 					if (var81 != null) {
 						if (var24 == var81.field1074 && var24 != -1) {
-							var9 = Class237.method4637(var24).field2152;
+							var9 = Class211.method4637(var24).field2152;
 							if (var9 == 1) {
 								var81.field1101 = 0;
 								var81.field1102 = 0;
@@ -3937,7 +3937,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 							} else if (var9 == 2) {
 								var81.field1090 = 0;
 							}
-						} else if (var24 == -1 || -1 == var81.field1074 || Class237.method4637(var24).field2128 >= Class237.method4637(var81.field1074).field2128) {
+						} else if (var24 == -1 || -1 == var81.field1074 || Class211.method4637(var24).field2128 >= Class211.method4637(var81.field1074).field2128) {
 							var81.field1074 = var24;
 							var81.field1101 = 0;
 							var81.field1102 = 0;
@@ -3963,7 +3963,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				if (var1.field1449 == Class338.field3647) {
 					var84 = var4.method9405() == 1;
 					if (var84) {
-						field1985 = Class327.method3047() - var4.method9411();
+						field1985 = Class130.method3047() - var4.method9411();
 						field1829 = new Class365(var4, true);
 					} else {
 						field1829 = null;
@@ -3992,7 +3992,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 							return true;
 						}
 
-						var77 = Class7.method109(var7).method4419(var23);
+						var77 = Class232.method109(var7).method4419(var23);
 						var45.field3792 = 4;
 						var45.field3722 = var7;
 						var45.field3729 = var77.field2456;
@@ -4002,7 +4002,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					} else {
 						var45.field3810 = var7;
 						var45.field3811 = var23;
-						var77 = Class7.method109(var7).method4419(var23);
+						var77 = Class232.method109(var7).method4419(var23);
 						var45.field3729 = var77.field2456;
 						var45.field3814 = var77.field2480;
 						var45.field3731 = var77.field2457;
@@ -4262,7 +4262,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				}
 
 				if (Class338.field3609 == var1.field1449) {
-					method3871(Class326.field3425);
+					Class197.method3871(Class326.field3425);
 					var1.field1449 = null;
 					return true;
 				}
@@ -4314,14 +4314,14 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				}
 
 				if (Class338.field3556 == var1.field1449) {
-					method3871(Class326.field3426);
+					Class197.method3871(Class326.field3426);
 					var1.field1449 = null;
 					return true;
 				}
 
 				if (var1.field1449 == Class338.field3572) {
 					for (var23 = 0; var23 < field2083; ++var23) {
-						Class205 var88 = Class239.method4659(var23);
+						Class205 var88 = Class205.method4659(var23);
 						if (var88 != null) {
 							Class351.field3888[var23] = 0;
 							Class351.field3889[var23] = 0;
@@ -4396,7 +4396,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				}
 
 				if (Class338.field3596 == var1.field1449) {
-					method3871(Class326.field3421);
+					Class197.method3871(Class326.field3421);
 					var1.field1449 = null;
 					return true;
 				}
@@ -4550,7 +4550,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					for (var23 = 0; var23 < Class351.field3889.length; ++var23) {
 						if (Class351.field3888[var23] != Class351.field3889[var23]) {
 							Class351.field3889[var23] = Class351.field3888[var23];
-							method3138(var23);
+							Class140.method3138(var23);
 							field678[++field719 - 1 & 31] = var23;
 						}
 					}
@@ -4560,7 +4560,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				}
 
 				long var57;
-				String var73;
+				String var72;
 				long var79;
 				if (var1.field1449 == Class338.field3552) {
 					var69 = var4.method9415();
@@ -4584,7 +4584,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					if (!var60 && field608 == 0) {
 						field730[field720] = var59;
 						field720 = (field720 + 1) % 100;
-						var73 = Class436.method7992(Class412.method7137(Class339.method6268(var4)));
+						var72 = Class436.method7992(Class412.method7137(Class339.method6268(var4)));
 						byte var76;
 						if (var62.field4031) {
 							var76 = 7;
@@ -4593,9 +4593,9 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 						}
 
 						if (var62.field4026 != -1) {
-							Class128.method2747(var76, Class322.method6223(var62.field4026) + var69, var73);
+							Class128.method2747(var76, Class113.method6223(var62.field4026) + var69, var72);
 						} else {
-							Class128.method2747(var76, var69, var73);
+							Class128.method2747(var76, var69, var72);
 						}
 					}
 
@@ -4725,9 +4725,9 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					if (!var51) {
 						field730[field720] = var32;
 						field720 = (1 + field720) % 100;
-						var73 = Class339.method6268(var4);
+						var72 = Class339.method6268(var4);
 						var74 = var26 >= 0 ? 43 : 46;
-						Class505.method9272(var74, "", var73, var55.field1851);
+						Class505.method9272(var74, "", var72, var55.field1851);
 					}
 
 					var1.field1449 = null;
@@ -4808,7 +4808,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 						Class351.field3889[var24] = var26;
 					}
 
-					method3138(var24);
+					Class140.method3138(var24);
 					field678[++field719 - 1 & 31] = var24;
 					var1.field1449 = null;
 					return true;
@@ -4871,7 +4871,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				String var72;
+				String var73;
 				if (Class338.field3581 == var1.field1449) {
 					var69 = var4.method9415();
 					var79 = var4.method9411();
@@ -4895,11 +4895,11 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					if (!var66 && field608 == 0) {
 						field730[field720] = var52;
 						field720 = (1 + field720) % 100;
-						var72 = Class436.method7992(Class412.method7137(Class339.method6268(var4)));
+						var73 = Class436.method7992(Class412.method7137(Class339.method6268(var4)));
 						if (var50.field4026 != -1) {
-							Class505.method9272(9, Class322.method6223(var50.field4026) + var69, var72, Class422.method3324(var79));
+							Class505.method9272(9, Class113.method6223(var50.field4026) + var69, var73, Class157.method3324(var79));
 						} else {
-							Class505.method9272(9, var69, var72, Class422.method3324(var79));
+							Class505.method9272(9, var69, var73, Class157.method3324(var79));
 						}
 					}
 
@@ -4908,7 +4908,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				}
 
 				if (var1.field1449 == Class338.field3637) {
-					method3871(Class326.field3428);
+					Class197.method3871(Class326.field3428);
 					var1.field1449 = null;
 					return true;
 				}
@@ -5045,7 +5045,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					}
 
 					var24 = var4.method9611();
-					Class32.method674(var23, var24);
+					method674(var23, var24);
 					var1.field1449 = null;
 					return true;
 				}
@@ -5082,7 +5082,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				}
 
 				if (Class338.field3639 == var1.field1449) {
-					Class108.method2812(var4, var1.field1444);
+					Class47.method2812(var4, var1.field1444);
 					var1.field1449 = null;
 					return true;
 				}
@@ -5112,7 +5112,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				}
 
 				if (var1.field1449 == Class338.field3575) {
-					method3871(Class326.field3418);
+					Class197.method3871(Class326.field3418);
 					var1.field1449 = null;
 					return true;
 				}
@@ -5191,7 +5191,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				}
 
 				if (var1.field1449 == Class338.field3567) {
-					method3871(Class326.field3420);
+					Class197.method3871(Class326.field3420);
 					var1.field1449 = null;
 					return true;
 				}
@@ -5210,7 +5210,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				}
 
 				if (var1.field1449 == Class338.field3537) {
-					method3871(Class326.field3423);
+					Class197.method3871(Class326.field3423);
 					var1.field1449 = null;
 					return true;
 				}
@@ -5342,12 +5342,12 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					if (!var14) {
 						field730[field720] = var47;
 						field720 = (1 + field720) % 100;
-						var72 = Class436.method7992(Class339.method6268(var4));
+						var73 = Class436.method7992(Class339.method6268(var4));
 						var17 = var26 >= 0 ? 41 : 44;
 						if (var41.field4026 != -1) {
-							Class505.method9272(var17, Class322.method6223(var41.field4026) + var6, var72, var15.field1851);
+							Class505.method9272(var17, Class113.method6223(var41.field4026) + var6, var73, var15.field1851);
 						} else {
-							Class505.method9272(var17, var6, var72, var15.field1851);
+							Class505.method9272(var17, var6, var73, var15.field1851);
 						}
 					}
 
@@ -5458,8 +5458,8 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 					while (var4.field5219 < var1.field1444) {
 						var23 = var4.method9405();
-						Class326 var35 = Class41.method806()[var23];
-						method3871(var35);
+						Class326 var35 = Class326.method806()[var23];
+						Class197.method3871(var35);
 					}
 
 					var1.field1449 = null;
@@ -5474,7 +5474,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 				if (Class338.field3598 == var1.field1449) {
 					field274.field850.method8556(var4, var1.field1444);
-					method2220();
+					Class79.method2220();
 					field687 = field677;
 					var1.field1449 = null;
 					return true;
@@ -5537,7 +5537,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				}
 
 				if (var1.field1449 == Class338.field3562) {
-					method3871(Class326.field3430);
+					Class197.method3871(Class326.field3430);
 					var1.field1449 = null;
 					return true;
 				}
@@ -5573,7 +5573,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				}
 
 				if (Class338.field3560 == var1.field1449) {
-					method3871(Class326.field3431);
+					Class197.method3871(Class326.field3431);
 					var1.field1449 = null;
 					return true;
 				}
@@ -5664,7 +5664,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				}
 
 				if (var1.field1449 == Class338.field3652) {
-					method3871(Class326.field3422);
+					Class197.method3871(Class326.field3422);
 					var1.field1449 = null;
 					return true;
 				}
@@ -5706,7 +5706,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					Class118.method2945(45);
 					var3.method8631();
 					var3 = null;
-					Class76.method9252(var25);
+					Class502.method9252(var25);
 					var1.field1449 = null;
 					return false;
 				}
@@ -5765,7 +5765,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 						Class351.field3889[var23] = var24;
 					}
 
-					method3138(var23);
+					Class140.method3138(var23);
 					field678[++field719 - 1 & 31] = var23;
 					var1.field1449 = null;
 					return true;
@@ -5792,7 +5792,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	@ObfInfo(name = "la", desc = "(I)V", opaque = "-601701584")
 	public final void method1220() {
-		method5996();
+		Class300.method5996();
 		if (field665 == null) {
 			int var2 = Class33.field237;
 			int var3;
@@ -6012,7 +6012,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 						Class72.method7210(var9);
 					}
 
-					if (field669 != null && method193(field665) != null) {
+					if (field669 != null && Class16.method193(field665) != null) {
 						Class316 var10 = Class316.method3908(Class315.field3285, field548.field1446);
 						var10.field3374.method9556(field665.field3676);
 						var10.field3374.method9443(field665.field3791);
@@ -6062,22 +6062,22 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		field548.method2897(var3);
 	}
 
-	@ObfInfo(desc = "()LClass500;")
+	@ObfInfo(owner = "eo", name = "gp", desc = "(B)Ltf;")
 	public static Class500 method2951() {
 		return field3963;
 	}
 
-	@ObfInfo(desc = "()LClass496;")
+	@ObfInfo(owner = "fx", name = "hm", desc = "(B)Ltb;")
 	public static Class496 method3301() {
 		return field104;
 	}
 
-	@ObfInfo(desc = "()LClass227;")
+	@ObfInfo(owner = "ot", name = "hq", desc = "(B)Lis;")
 	public static Class227 method7365() {
 		return field721;
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "ad", name = "hu", desc = "(I)V", opaque = "1594620822")
 	public static void method54() {
 		field498 = true;
 		if (field3250 != null && field3250.method2848()) {
@@ -6112,9 +6112,9 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 		field104 = null;
 		Class380.method7208(0, 0);
-		Class39.method785();
+		Class332.method785();
 		field737 = false;
-		Class77.method3246();
+		Class147.method3246();
 		if (field1565 != null) {
 			field1565.method405();
 		}
@@ -6129,7 +6129,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		Class179.field1885 = null;
 		Class179.field1890 = null;
 		field910 = null;
-		Class59.method1097();
+		Class165.method1097();
 		field3266 = null;
 		field713.clear();
 		field786 = 0;
@@ -6137,7 +6137,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		field3381 = new Class120(field2077.field767, 222);
 
 		try {
-			Class90.method2405("oldschool", field4509, field2428.field3996, 0, 23);
+			Class179.method2405("oldschool", field4509, field2428.field3996, 0, 23);
 		} catch (IOException var2) {
 			throw new RuntimeException(var2);
 		}
@@ -6149,7 +6149,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		Class118.method2945(0);
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "fo", name = "hy", desc = "(I)V")
 	public static void method3205() {
 		field4958 = null;
 		field106 = null;
@@ -6164,47 +6164,14 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		field317 = null;
 	}
 
-	@ObfInfo(desc = "(LClass384;Ljava/lang/String;)V")
+	@ObfInfo(owner = "fw", name = "hr", desc = "(Lot;Ljava/lang/String;B)V")
 	public static void method3290(Class384 var0, String var1) {
 		Class82 var3 = new Class82(var0, var1);
 		field713.add(var3);
 		field786 += var3.field1001;
 	}
 
-	@ObfInfo(desc = "()Z")
-	public static boolean method8271() {
-		if (field713 != null && field785 < field713.size()) {
-			while (field785 < field713.size()) {
-				Class82 var1 = (Class82)field713.get(field785);
-				if (!var1.method2245()) {
-					return false;
-				}
-
-				++field785;
-			}
-
-			return true;
-		} else {
-			return true;
-		}
-	}
-
-	@ObfInfo(desc = "()I")
-	public static int method3051() {
-		if (field713 != null && field785 < field713.size()) {
-			int var1 = 0;
-
-			for (int var2 = 0; var2 <= field785; ++var2) {
-				var1 += ((Class82)field713.get(var2)).field999;
-			}
-
-			return var1 * 10000 / field786;
-		} else {
-			return 10000;
-		}
-	}
-
-	@ObfInfo(desc = "(II)V")
+	@ObfInfo(owner = "ci", name = "hl", desc = "(IIB)V", opaque = "0")
 	public static void method1101(int var0, int var1) {
 		int[] var3 = new int[9];
 
@@ -6227,7 +6194,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		field3857.field1283.method4975(var3, 500, 800, var0 * 334 / var1, 334);
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "bh", name = "hf", desc = "(I)V", opaque = "-2122145353")
 	public static void method718() {
 		if (Class92.field1218 == field519) {
 			field1750 = method2740(Class375.field4103.field4121, false, true, true, false);
@@ -6276,7 +6243,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					field1887 = var36;
 					field2640 = 2;
 					ArrayList var21 = new ArrayList(3);
-					field1565 = Class8.method126(field209, 0, 2048);
+					field1565 = Class30.method126(field209, 0, 2048);
 					field3984 = new Class37();
 					Class37 var24 = new Class37();
 					var24.method743(field3984);
@@ -6412,13 +6379,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 									field2012 = var20;
 									field1802 = var22;
 									field4711 = field2012.method7237(3);
-									Class30.method462(field3018, field1410, field599);
+									Class222.method462(field3018, field1410, field599);
 									var25 = field3018;
 									var26 = field1410;
 									field2315 = var25;
 									field319 = var26;
-									Class384.method7366(field3018);
-									Class79.method2219(field3018, field1410, field528, field5366);
+									Class234.method7366(field3018);
+									Class232.method2219(field3018, field1410, field528, field5366);
 									var6 = field3018;
 									Class384 var7 = field3083;
 									Class384 var8 = field3386;
@@ -6436,10 +6403,10 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 									field2039 = var11;
 									Class384 var12 = field3018;
 									field2102 = var12;
-									Class4.method49(field3018);
-									Class242.method4674(field3018);
-									Class84.method2299(field3018);
-									Class304.method6072(field3018);
+									Class193.method49(field3018);
+									Class233.method4674(field3018);
+									Class217.method2299(field3018);
+									Class540.method6072(field3018);
 									Class384 var13 = field3018;
 									field5319 = var13;
 									field2814 = new Class530(field1497, 54, field2071, field3018);
@@ -6455,7 +6422,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 									Class384 var18 = field1793;
 									field1997 = var17;
 									field1998 = var18;
-									Class255.method4891(field3018, field1793);
+									Class200.method4891(field3018, field1793);
 									Class76.method3406(50, Class378.field4288);
 									method2970(Class92.field1226);
 								}
@@ -6658,14 +6625,14 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "(LClass92;)V")
+	@ObfInfo(owner = "eq", name = "hs", desc = "(Ldn;I)V", opaque = "1619567264")
 	public static void method2970(Class92 var0) {
 		if (field519 != var0) {
 			field519 = var0;
 		}
 	}
 
-	@ObfInfo(desc = "(IZZZZ)LClass384;")
+	@ObfInfo(owner = "dz", name = "hz", desc = "(IZZZZI)Lot;", opaque = "1978969648")
 	public static Class384 method2740(int var0, boolean var1, boolean var2, boolean var3, boolean var4) {
 		Class474 var6 = null;
 		if (Class179.field1885 != null) {
@@ -6675,7 +6642,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		return new Class384(var6, field3266, field69, var0, var1, var2, var3, var4, false);
 	}
 
-	@ObfInfo(desc = "(IZZZZZ)LClass384;")
+	@ObfInfo(owner = "cy", name = "hn", desc = "(IZZZZZI)Lot;", opaque = "-1456841350")
 	public static Class384 method2185(int var0, boolean var1, boolean var2, boolean var3, boolean var4, boolean var5) {
 		Class474 var7 = null;
 		if (Class179.field1885 != null) {
@@ -6685,7 +6652,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		return new Class384(var7, field3266, field69, var0, var1, var2, var3, var4, var5);
 	}
 
-	@ObfInfo(desc = "(LClass316;)V")
+	@ObfInfo(owner = "ny", name = "hc", desc = "(Lmd;I)V")
 	public static void method7121(Class316 var0) {
 		var0.field3374.method9590(0);
 		var0.field3374.method9590(field1647.field4486);
@@ -6710,7 +6677,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		var0.field3374.method9556(field1430.field4486);
 	}
 
-	@ObfInfo(desc = "(LClass316;)V")
+	@ObfInfo(owner = "hx", name = "io", desc = "(Lmd;I)V")
 	public static void method3957(Class316 var0) {
 		var0.field3374.method9459(field1793.field4486);
 		var0.field3374.method9458(field1660.field4486);
@@ -6721,7 +6688,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		var0.field3374.method9459(field1556.field4486);
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "rj", name = "iq", desc = "(B)V", opaque = "10")
 	public static void method8429() {
 		field502 = -1L;
 		if (field830 != null) {
@@ -6745,7 +6712,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		field742 = 0;
 		method6662();
 		Class33.field241 = 0;
-		Class98.method2508();
+		Class128.method2508();
 		field702 = 0;
 		field648 = false;
 		field650 = 0;
@@ -6768,7 +6735,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 			Class351.method4380();
 		} else {
 			for (var1 = 0; var1 < field2083; ++var1) {
-				Class205 var2 = Class239.method4659(var1);
+				Class205 var2 = Class205.method4659(var1);
 				if (var2 != null) {
 					Class351.field3888[var1] = 0;
 					Class351.field3889[var1] = 0;
@@ -6828,7 +6795,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		field1829 = null;
 	}
 
-	@ObfInfo(desc = "(I)V")
+	@ObfInfo(owner = "ib", name = "ib", desc = "(II)V", opaque = "1512426424")
 	public static void method3995(int var0) {
 		int var2 = Class76.field932;
 		if (var0 == -3) {
@@ -6973,7 +6940,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "ho", name = "ie", desc = "(B)V")
 	public static void method3869() {
 		field548.method2901();
 		method191();
@@ -6981,16 +6948,16 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		field510.method4070();
 		System.gc();
 		Class380.method7208(0, 0);
-		Class39.method785();
+		Class332.method785();
 		field737 = false;
-		Class77.method3246();
+		Class147.method3246();
 		Class118.method2945(10);
 		field501 = 0;
 		Class191.method3562().method3722();
 		Class191.method3562().method3725();
 	}
 
-	@ObfInfo(desc = "(I)V")
+	@ObfInfo(owner = "sq", name = "if", desc = "(IB)V")
 	public static void method8883(int var0) {
 		method3869();
 		switch(var0) {
@@ -7003,26 +6970,26 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "()J")
+	@ObfInfo(owner = "dc", name = "ig", desc = "(B)J")
 	public static long method2242() {
 		return field612;
 	}
 
-	@ObfInfo(desc = "()J")
+	@ObfInfo(owner = "fa", name = "ip", desc = "(I)J")
 	public static long method3062() {
 		return field613;
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "ap", name = "ia", desc = "(I)V", opaque = "709224351")
 	public static void method191() {
-		Class212.method4057();
-		Class34.method720();
+		Class201.method4057();
+		Class196.method720();
 		Class206.field2090.method5995();
 		Class46.method857();
 		Class540.method3407();
 		Class208.field2101.method5995();
 		Class230.field2422.method5995();
-		Class206.method3959();
+		Class209.method3959();
 		Class194.field1992.method5995();
 		Class194.field1993.method5995();
 		Class218.method3403();
@@ -7031,18 +6998,18 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		Class199.method2750();
 		Class248.method4766();
 		Class200.field2044.method5995();
-		Class39.method3061();
+		Class198.method3061();
 		Class225.field2316.method5995();
 		Class225.field2317.method5995();
 		Class232.field2454.method5995();
 		Class232.field2445.method5995();
 		Class232.field2440.method5995();
 		Class29.method399();
-		Class258.method4923();
+		Class211.method4923();
 		Class224.field2297.method5995();
 		Class224.field2298.method5995();
 		Class234.field2505.method5995();
-		Class308.method6158();
+		Class228.method6158();
 		if (field2814 != null) {
 			field2814.method9750();
 		}
@@ -7054,9 +7021,9 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		Class210.field2119.method5995();
 		Class214.field2168.method5995();
 		Class193.method2983();
-		Class274.method5517();
+		Class186.method5517();
 		Class203.field2078.method5995();
-		Class149.method3266();
+		Class204.method3266();
 		Class39.method789();
 		Class205.field2084.method5995();
 		Class233.method2997();
@@ -7165,14 +7132,14 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "dz", name = "iy", desc = "(I)V")
 	public static void method2739() {
 		field2012 = null;
 		field1802 = null;
 		field4711 = 0;
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "mc", name = "it", desc = "(I)V", opaque = "1804148680")
 	public static void method6176() {
 		if (field549 > 0) {
 			method3869();
@@ -7184,7 +7151,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "(Z)V")
+	@ObfInfo(owner = "ls", name = "il", desc = "(ZI)V", opaque = "-73929866")
 	public static void method6138(boolean var0) {
 		if (var0) {
 			field526 = Class76.field944 ? Class150.field1687 : Class150.field1689;
@@ -7194,7 +7161,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "if", name = "iz", desc = "(I)V", opaque = "2024737063")
 	public static void method4066() {
 		if (field1565 != null) {
 			field1565.method449();
@@ -7202,7 +7169,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "bf", name = "ij", desc = "(B)V", opaque = "1")
 	public static void method676() {
 		for (int var1 = 0; var1 < field650; ++var1) {
 			int var10002 = field741[var1]--;
@@ -7290,7 +7257,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(LClass211;IIILClass86;)V")
+	@ObfInfo(owner = "do", name = "ik", desc = "(Lic;IIILdh;I)V", opaque = "238803980")
 	public static void method2455(Class211 var0, int var1, int var2, int var3, Class86 var4) {
 		if (field650 < 50) {
 			if (var0.field2140 != null && var1 < var0.field2140.length && var0.field2140[var1] != null) {
@@ -7324,43 +7291,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "(LClass211;IIILClass86;)V")
-	public static void method794(Class211 var0, int var1, int var2, int var3, Class86 var4) {
-		if (field650 < 50) {
-			if (var0.field2134 != null && var0.field2134.containsKey(var1)) {
-				Class219 var6 = (Class219)var0.field2134.get(var1);
-				if (var6 != null) {
-					int var7 = var6.field2216 & 31;
-					if ((var7 <= 0 || field4851.method2657() != 0) && (var7 != 0 || field4851.method2704() != 0)) {
-						boolean var11 = field107 == var4;
-						if (var6 != null) {
-							if (var6.field2216 == 0) {
-								if (!var11) {
-									return;
-								}
-
-								field511[field650] = 0;
-							} else {
-								int var12 = (var2 - 64) / 128;
-								int var13 = (var3 - 64) / 128;
-								field511[field650] = (var13 << 8) + (var12 << 16) + var6.field2216;
-							}
-
-							field739[field650] = var6.field2217;
-							field563[field650] = var6.field2214;
-							field741[field650] = 0;
-							field744[field650] = null;
-							field743[field650] = var6.field2218;
-							++field650;
-						}
-
-					}
-				}
-			}
-		}
-	}
-
-	@ObfInfo(desc = "(III)V")
+	@ObfInfo(owner = "rv", name = "ix", desc = "(IIII)V", opaque = "-1999950484")
 	public static void method8553(int var0, int var1, int var2) {
 		if (field4851.method2704() != 0 && var1 != 0 && field650 < 50) {
 			field739[field650] = var0;
@@ -7374,7 +7305,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(I)V")
+	@ObfInfo(owner = "ag", name = "iv", desc = "(IB)V", opaque = "-1")
 	public static void method110(int var0) {
 		if (var0 == -1 && !field737) {
 			Class380.method7208(0, 0);
@@ -7395,14 +7326,14 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					Class332.field3456.addAll(var4);
 					Class332.method3185(0, 100, 100, 0);
 				} else {
-					Class70.method1940(var4, 0, 100, 100, 0, false);
+					Class332.method1940(var4, 0, 100, 100, 0, false);
 				}
 			}
 		}
 
 	}
 
-	@ObfInfo(desc = "(Ljava/util/ArrayList;IIII)V")
+	@ObfInfo(owner = "am", name = "ic", desc = "(Ljava/util/ArrayList;IIIII)V", opaque = "-458578502")
 	public static void method160(ArrayList var0, int var1, int var2, int var3, int var4) {
 		if (!var0.isEmpty()) {
 			int var6 = (Integer)var0.get(0);
@@ -7429,7 +7360,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 						Class332.field3456.addAll(var10);
 						Class332.method3185(var1, var2, var3, var4);
 					} else {
-						Class70.method1940(var10, var1, var2, var3, var4, false);
+						Class332.method1940(var10, var1, var2, var3, var4, false);
 					}
 				}
 			}
@@ -7437,7 +7368,18 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "bf", name = "iu", desc = "(III)V", opaque = "507394209")
+	public static void method674(int var0, int var1) {
+		if (field4851.method2637() != 0 && var0 != -1) {
+			ArrayList var3 = new ArrayList();
+			var3.add(new Class357(field3528, var0, 0, field4851.method2637(), false));
+			Class332.method1940(var3, 0, 0, 0, 0, true);
+			field737 = true;
+		}
+
+	}
+
+	@ObfInfo(owner = "jv", name = "iw", desc = "(B)V", opaque = "0")
 	public static void method4908() {
 		if (field3112) {
 			if (field1420 != null) {
@@ -7454,7 +7396,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(LClass340;II)V")
+	@ObfInfo(owner = "an", name = "is", desc = "(Lnb;III)V", opaque = "-1339869163")
 	public static void method168(Class340 var0, int var1, int var2) {
 		if (field736 == 0 || field736 == 3) {
 			if (!field628 && (Class33.field237 == 1 || !field1468 && Class33.field237 == 4)) {
@@ -7499,35 +7441,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "(LClass98;)V")
-	public static void method1134(Class98 var0) {
-		int[] var2 = var0.field1288.field1393;
-
-		int var3;
-		for (var3 = 0; var3 < var0.field1288.field1392; ++var3) {
-			Class83 var4 = var0.field1293[var2[var3]];
-			if (var4 != null && var4.field1069 > 0) {
-				--var4.field1069;
-				if (var4.field1069 == 0) {
-					var4.field1075 = null;
-				}
-			}
-		}
-
-		for (var3 = 0; var3 < var0.field1296; ++var3) {
-			int var6 = var0.field1297[var3];
-			Class100 var5 = var0.field1295[var6];
-			if (var5 != null && var5.field1069 > 0) {
-				--var5.field1069;
-				if (0 == var5.field1069) {
-					var5.field1075 = null;
-				}
-			}
-		}
-
-	}
-
-	@ObfInfo(desc = "(Ljava/lang/String;)V")
+	@ObfInfo(owner = "dc", name = "im", desc = "(Ljava/lang/String;I)V", opaque = "310369199")
 	public static void method2236(String var0) {
 		if (var0.equalsIgnoreCase("toggleroof")) {
 			field4851.method2609(!field4851.method2701());
@@ -7607,38 +7521,12 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		field548.method2897(var6);
 	}
 
-	@ObfInfo(desc = "(I)I")
+	@ObfInfo(owner = "ap", name = "jx", desc = "(II)I", opaque = "-398680228")
 	public static int method192(int var0) {
 		return Math.abs(var0 - field2029) > 1024 ? (var0 < field2029 ? 1 : -1) * 2048 + var0 : var0;
 	}
 
-	@ObfInfo(desc = "()V")
-	public static void method3052() {
-		method2513(field3961, field110, field283);
-		Class318.method6188(field148, field2816);
-		if (field3961 == field3960 && field110 == field1760 && field283 == field1538 && field148 == field1105 && field2029 == field2816) {
-			field752 = false;
-			field496 = false;
-			field746 = false;
-			field747 = false;
-			field3440 = 0;
-			field2982 = 0;
-			field1523 = 0;
-			field1408 = 0;
-			field2960 = 0;
-			field3830 = 0;
-			field1526 = 0;
-			field904 = 0;
-			field3887 = 0;
-			field4853 = 0;
-			field749 = null;
-			field751 = null;
-			field750 = null;
-		}
-
-	}
-
-	@ObfInfo(desc = "(III)V")
+	@ObfInfo(owner = "du", name = "ji", desc = "(IIII)V", opaque = "-1327802497")
 	public static void method2513(int var0, int var1, int var2) {
 		if (field3960 < var0) {
 			field3960 += (var0 - field3960) * field3830 / 1000 + field1526;
@@ -7684,7 +7572,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "pe", name = "jr", desc = "(S)V", opaque = "2801")
 	public static void method7420() {
 		int var1;
 		int var2;
@@ -7747,7 +7635,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 			field2629 = method790(field3857, var1, var2, var3) - field522;
 		} else if (field577 == 1) {
-			method340();
+			Class22.method340();
 			short var12 = -1;
 			if (field721.method4342(33)) {
 				var12 = 0;
@@ -7863,26 +7751,241 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(LClass98;)V")
-	public static void method4409(Class98 var0) {
-		for (int var2 = 0; var2 < var0.field1296; ++var2) {
-			int var3 = var0.field1297[var2];
-			Class100 var4 = var0.field1295[var3];
-			if (var4 != null) {
-				Class57.method1081(var0, var4, var4.field1314.field2320);
+	@ObfInfo(owner = "ce", name = "jq", desc = "(Ldt;Ldh;IB)V", opaque = "0")
+	public static void method1081(Class98 var0, Class86 var1, int var2) {
+		int var5;
+		int var6;
+		int var8;
+		Class211 var12;
+		if (var1.field1111 >= field778) {
+			int var4 = Math.max(1, var1.field1111 - field778);
+			var5 = var1.field1059 * 64 + var1.field1107 * 128;
+			var6 = var1.field1059 * 64 + var1.field1109 * 128;
+			var1.field1065 += (var5 - var1.field1065) / var4;
+			var1.field1126 += (var6 - var1.field1126) / var4;
+			var1.field1129 = 0;
+			var1.field1133 = var1.field1113;
+		} else if (var1.field1112 >= field778) {
+			boolean var11 = field778 == var1.field1112 || -1 == var1.field1074 || var1.field1103 != 0;
+			if (!var11) {
+				var12 = Class211.method4637(var1.field1074);
+				if (var12 != null && !var12.method4038()) {
+					var11 = 1 + var1.field1102 > var12.field2139[var1.field1101];
+				} else {
+					var11 = true;
+				}
 			}
+
+			if (var11) {
+				var5 = var1.field1112 - var1.field1111;
+				var6 = field778 - var1.field1111;
+				int var7 = var1.field1107 * 128 + var1.field1059 * 64;
+				var8 = var1.field1109 * 128 + var1.field1059 * 64;
+				int var9 = var1.field1059 * 64 + var1.field1108 * 128;
+				int var10 = var1.field1059 * 64 + var1.field1110 * 128;
+				var1.field1065 = (var7 * (var5 - var6) + var9 * var6) / var5;
+				var1.field1126 = (var10 * var6 + (var5 - var6) * var8) / var5;
+			}
+
+			var1.field1129 = 0;
+			var1.field1133 = var1.field1113;
+			var1.field1060 = var1.field1133;
+		} else {
+			method3707(var1);
+		}
+
+		if (var1.field1065 < 128 || var1.field1126 < 128 || var1.field1065 >= 13184 || var1.field1126 >= 13184) {
+			var1.field1074 = -1;
+			var1.field1111 = 0;
+			var1.field1112 = 0;
+			var1.method2314();
+			var1.field1065 = var1.field1080[0] * 128 + var1.field1059 * 64;
+			var1.field1126 = var1.field1127[0] * 128 + var1.field1059 * 64;
+			var1.method2307();
+		}
+
+		if (field107 == var1 && (var1.field1065 < 1536 || var1.field1126 < 1536 || var1.field1065 >= 11776 || var1.field1126 >= 11776)) {
+			var1.field1074 = -1;
+			var1.field1111 = 0;
+			var1.field1112 = 0;
+			var1.method2314();
+			var1.field1065 = var1.field1059 * 64 + var1.field1080[0] * 128;
+			var1.field1126 = var1.field1059 * 64 + var1.field1127[0] * 128;
+			var1.method2307();
+		}
+
+		Class358.method7092(var0, var1);
+		var1.field1058 = false;
+		if (var1.field1096 != -1) {
+			Class211 var13 = Class211.method4637(var1.field1096);
+			if (var13 != null) {
+				if (!var13.method4038() && var13.field2142 != null) {
+					++var1.field1098;
+					if (var1.field1122 < var13.field2142.length && var1.field1098 > var13.field2139[var1.field1122]) {
+						var1.field1098 = 1;
+						++var1.field1122;
+						method2455(var13, var1.field1122, var1.field1065, var1.field1126, var1);
+					}
+
+					if (var1.field1122 >= var13.field2142.length) {
+						if (var13.field2143 > 0) {
+							var1.field1122 -= var13.field2143;
+							if (var13.field2149) {
+								++var1.field1099;
+							}
+
+							if (var1.field1122 < 0 || var1.field1122 >= var13.field2142.length || var13.field2149 && var1.field1099 >= var13.field2145) {
+								var1.field1098 = 0;
+								var1.field1122 = 0;
+								var1.field1099 = 0;
+							}
+						} else {
+							var1.field1098 = 0;
+							var1.field1122 = 0;
+						}
+
+						method2455(var13, var1.field1122, var1.field1065, var1.field1126, var1);
+					}
+				} else if (var13.method4038()) {
+					++var1.field1122;
+					var5 = var13.method4005();
+					if (var1.field1122 < var5) {
+						Class40.method794(var13, var1.field1122, var1.field1065, var1.field1126, var1);
+					} else {
+						if (var13.field2143 > 0) {
+							var1.field1122 -= var13.field2143;
+							if (var13.field2149) {
+								++var1.field1099;
+							}
+
+							if (var1.field1122 < 0 || var1.field1122 >= var5 || var13.field2149 && var1.field1099 >= var13.field2145) {
+								var1.field1122 = 0;
+								var1.field1098 = 0;
+								var1.field1099 = 0;
+							}
+						} else {
+							var1.field1098 = 0;
+							var1.field1122 = 0;
+						}
+
+						Class40.method794(var13, var1.field1122, var1.field1065, var1.field1126, var1);
+					}
+				} else {
+					var1.field1096 = -1;
+				}
+			} else {
+				var1.field1096 = -1;
+			}
+		}
+
+		Class495 var14 = new Class495(var1.method2313());
+
+		for (Class485 var15 = (Class485)var14.method8982(); var15 != null; var15 = (Class485)var14.next()) {
+			if (var15.field4964 != -1 && field778 >= var15.field4966) {
+				var6 = Class224.method4163(var15.field4964).field2301;
+				if (var6 == -1) {
+					var15.method9277();
+					--var1.field1106;
+				} else {
+					var15.field4965 = Math.max(var15.field4965, 0);
+					Class211 var16 = Class211.method4637(var6);
+					if (var16.field2142 != null && !var16.method4038()) {
+						++var15.field4963;
+						if (var15.field4965 < var16.field2142.length && var15.field4963 > var16.field2139[var15.field4965]) {
+							var15.field4963 = 1;
+							++var15.field4965;
+							method2455(var16, var15.field4965, var1.field1065, var1.field1126, var1);
+						}
+
+						if (var15.field4965 >= var16.field2142.length) {
+							var15.method9277();
+							--var1.field1106;
+						}
+					} else if (var16.method4038()) {
+						++var15.field4965;
+						var8 = var16.method4005();
+						if (var15.field4965 < var8) {
+							Class40.method794(var16, var15.field4965, var1.field1065, var1.field1126, var1);
+						} else {
+							var15.method9277();
+							--var1.field1106;
+						}
+					} else {
+						var15.method9277();
+						--var1.field1106;
+					}
+				}
+			}
+		}
+
+		if (-1 != var1.field1074 && var1.field1103 <= 1) {
+			var12 = Class211.method4637(var1.field1074);
+			if (var12.field2150 == 1 && var1.field1077 > 0 && var1.field1111 <= field778 && var1.field1112 < field778) {
+				var1.field1103 = 1;
+				return;
+			}
+		}
+
+		if (var1.field1074 != -1 && var1.field1103 == 0) {
+			var12 = Class211.method4637(var1.field1074);
+			if (var12 == null) {
+				var1.field1074 = -1;
+			} else if (!var12.method4038() && var12.field2142 != null) {
+				++var1.field1102;
+				if (var1.field1101 < var12.field2142.length && var1.field1102 > var12.field2139[var1.field1101]) {
+					var1.field1102 = 1;
+					++var1.field1101;
+					method2455(var12, var1.field1101, var1.field1065, var1.field1126, var1);
+				}
+
+				if (var1.field1101 >= var12.field2142.length) {
+					var1.field1101 -= var12.field2143;
+					++var1.field1090;
+					if (var1.field1090 >= var12.field2145) {
+						var1.field1074 = -1;
+					} else if (var1.field1101 >= 0 && var1.field1101 < var12.field2142.length) {
+						method2455(var12, var1.field1101, var1.field1065, var1.field1126, var1);
+					} else {
+						var1.field1074 = -1;
+					}
+				}
+
+				var1.field1058 = var12.field2144;
+			} else if (var12.method4038()) {
+				++var1.field1101;
+				var6 = var12.method4005();
+				if (var1.field1101 < var6) {
+					Class40.method794(var12, var1.field1101, var1.field1065, var1.field1126, var1);
+				} else {
+					var1.field1101 -= var12.field2143;
+					++var1.field1090;
+					if (var1.field1090 >= var12.field2145) {
+						var1.field1074 = -1;
+					} else if (var1.field1101 >= 0 && var1.field1101 < var6) {
+						Class40.method794(var12, var1.field1101, var1.field1065, var1.field1126, var1);
+					} else {
+						var1.field1074 = -1;
+					}
+				}
+			} else {
+				var1.field1074 = -1;
+			}
+		}
+
+		if (var1.field1103 > 0) {
+			--var1.field1103;
 		}
 
 	}
 
-	@ObfInfo(desc = "(LClass86;)V")
+	@ObfInfo(owner = "hg", name = "jh", desc = "(Ldh;I)V", opaque = "-1194566834")
 	public static void method3707(Class86 var0) {
 		var0.field1096 = var0.field1061;
 		if (var0.field1125 == 0) {
 			var0.field1129 = 0;
 		} else {
 			if (var0.field1074 != -1 && var0.field1103 == 0) {
-				Class211 var2 = Class237.method4637(var0.field1074);
+				Class211 var2 = Class211.method4637(var0.field1074);
 				if (var0.field1077 > 0 && 0 == var2.field2150) {
 					++var0.field1129;
 					return;
@@ -8052,10 +8155,10 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "(LClass83;II)V")
+	@ObfInfo(owner = "gs", name = "jm", desc = "(Lde;III)V", opaque = "1919227015")
 	public static void method3578(Class83 var0, int var1, int var2) {
 		if (var1 == var0.field1074 && var1 != -1) {
-			int var4 = Class237.method4637(var1).field2152;
+			int var4 = Class211.method4637(var1).field2152;
 			if (var4 == 1) {
 				var0.field1101 = 0;
 				var0.field1102 = 0;
@@ -8066,7 +8169,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 			if (var4 == 2) {
 				var0.field1090 = 0;
 			}
-		} else if (var1 == -1 || var0.field1074 == -1 || Class237.method4637(var1).field2128 >= Class237.method4637(var0.field1074).field2128) {
+		} else if (var1 == -1 || var0.field1074 == -1 || Class211.method4637(var1).field2128 >= Class211.method4637(var0.field1074).field2128) {
 			var0.field1074 = var1;
 			var0.field1101 = 0;
 			var0.field1102 = 0;
@@ -8077,12 +8180,12 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "()I")
+	@ObfInfo(owner = "uc", name = "jw", desc = "(I)I", opaque = "1649543160")
 	public static int method9643() {
 		return field712 ? 2 : 1;
 	}
 
-	@ObfInfo(desc = "(I)V")
+	@ObfInfo(owner = "fs", name = "jd", desc = "(IB)V", opaque = "0")
 	public static void method3259(int var0) {
 		field536 = 0L;
 		if (var0 >= 2) {
@@ -8107,7 +8210,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/String;Z)V")
+	@ObfInfo(owner = "rw", name = "jg", desc = "(Ljava/lang/String;ZS)V", opaque = "3052")
 	public static void method8554(String var0, boolean var1) {
 		if (field621) {
 			byte var3 = 4;
@@ -8132,7 +8235,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "(IIII)V")
+	@ObfInfo(owner = "jc", name = "je", desc = "(IIIII)V", opaque = "1134802599")
 	public static void method4636(int var0, int var1, int var2, int var3) {
 		++field600;
 		field3857.field1283.field2730 = field778;
@@ -8497,15 +8600,15 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				var30 = var47.field1295[var47.field1297[var29 - var27]];
 			}
 
-			method397(var47, (Class86)var30, var29, var0, var1, var2, var3);
+			Class29.method397(var47, (Class86)var30, var29, var0, var1, var2, var3);
 		}
 
 		if (field680 && var26 != -1) {
-			method397(var47, field107, var26, var0, var1, var2, var3);
+			Class29.method397(var47, field107, var26, var0, var1, var2, var3);
 		}
 
 		if (var49) {
-			method397(var47, var47.field1293[field622], var25, var0, var1, var2, var3);
+			Class29.method397(var47, var47.field1293[field622], var25, var0, var1, var2, var3);
 		}
 
 		for (var29 = 0; var29 < field589; ++var29) {
@@ -8653,7 +8756,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(IIIIZ)V")
+	@ObfInfo(owner = "mw", name = "ja", desc = "(IIIIZI)V", opaque = "-936154492")
 	public static void method6444(int var0, int var1, int var2, int var3, boolean var4) {
 		if (var2 < 1) {
 			var2 = 1;
@@ -8722,7 +8825,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		field769 = var3;
 	}
 
-	@ObfInfo(desc = "(LClass98;)V")
+	@ObfInfo(owner = "cv", name = "jn", desc = "(Ldt;I)V", opaque = "-1284123860")
 	public static void method2089(Class98 var0) {
 		if (field680) {
 			method7830(var0, field646, false);
@@ -8730,7 +8833,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(LClass98;)V")
+	@ObfInfo(owner = "ib", name = "jy", desc = "(Ldt;I)V")
 	public static void method3994(Class98 var0) {
 		if (field622 >= 0 && null != var0.field1293[field622]) {
 			method7830(var0, field622, false);
@@ -8738,7 +8841,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(LClass98;IZ)V")
+	@ObfInfo(owner = "qg", name = "jk", desc = "(Ldt;IZI)V", opaque = "1430833460")
 	public static void method7830(Class98 var0, int var1, boolean var2) {
 		Class83 var4 = var0.field1293[var1];
 		if (var4 != null && var4.method2264() && !var4.field1015) {
@@ -8774,7 +8877,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(LClass98;Z)V")
+	@ObfInfo(owner = "ab", name = "jo", desc = "(Ldt;ZB)V", opaque = "-1")
 	public static void method32(Class98 var0, boolean var1) {
 		for (int var3 = 0; var3 < var0.field1296; ++var3) {
 			Class100 var4 = var0.field1295[var0.field1297[var3]];
@@ -8799,7 +8902,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(LClass98;)V")
+	@ObfInfo(owner = "gr", name = "ju", desc = "(Ldt;I)V", opaque = "-1250339843")
 	public static void method3574(Class98 var0) {
 		for (Class88 var2 = (Class88)var0.field1303.method7482(); var2 != null; var2 = (Class88)var0.field1303.method7490()) {
 			if (var0.field1300 == var2.field1183 && field778 <= var2.field1165) {
@@ -8861,7 +8964,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(LClass98;)V")
+	@ObfInfo(owner = "jv", name = "jc", desc = "(Ldt;B)V", opaque = "29")
 	public static void method4910(Class98 var0) {
 		for (Class59 var2 = (Class59)var0.field1304.method7482(); var2 != null; var2 = (Class59)var0.field1304.method7490()) {
 			if (var2.field436 == var0.field1300 && !var2.field443) {
@@ -8880,7 +8983,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "()I")
+	@ObfInfo(owner = "qu", name = "jl", desc = "(B)I")
 	public static int method8098() {
 		if (field4851.method2701()) {
 			return field3857.field1300;
@@ -8890,7 +8993,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "(LClass98;II)V")
+	@ObfInfo(owner = "mn", name = "jf", desc = "(Ldt;III)V", opaque = "-1485751769")
 	public static void method6257(Class98 var0, int var1, int var2) {
 		if (2 == field742) {
 			method1110(var0, (field727 - var0.field1289 << 7) + field514, field492 + (field512 - var0.field1285 << 7), field513 * 2);
@@ -8901,12 +9004,12 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "()LClass401;")
+	@ObfInfo(owner = "bc", name = "jj", desc = "(B)Lpk;")
 	public static Class401 method398() {
 		return field696;
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "ny", name = "kl", desc = "(I)V", opaque = "-1243600329")
 	public static void method7120() {
 		for (Class231 var1 = (Class231)field699.method7482(); var1 != null; var1 = (Class231)field699.method7490()) {
 			var1.method9277();
@@ -8914,7 +9017,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(LClass231;)V")
+	@ObfInfo(owner = "uy", name = "ke", desc = "(Liw;I)V", opaque = "-433578414")
 	public static void method9901(Class231 var0) {
 		if (var0 != null && var0.field2435 != null) {
 			if (var0.field2435.field3791 >= 0) {
@@ -8967,643 +9070,17 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "()Z")
+	@ObfInfo(owner = "rh", name = "kd", desc = "(B)Z")
 	public static boolean method8419() {
 		return 0 != (field530 & 1);
 	}
 
-	@ObfInfo(desc = "()Z")
+	@ObfInfo(owner = "pl", name = "kb", desc = "(I)Z", opaque = "424252440")
 	public static boolean method7533() {
 		return (field530 & 8) != 0;
 	}
 
-	@ObfInfo(desc = "(LClass98;LClass86;IIIII)V")
-	public static void method397(Class98 var0, Class86 var1, int var2, int var3, int var4, int var5, int var6) {
-		if (var1 != null && var1.method2264()) {
-			if (var1 instanceof Class100) {
-				Class225 var8 = ((Class100)var1).field1314;
-				if (var8.field2351 != null) {
-					var8 = var8.method4249();
-				}
-
-				if (var8 == null) {
-					return;
-				}
-			}
-
-			int var77 = var0.field1288.field1392;
-			int[] var9 = var0.field1288.field1393;
-			boolean var10 = var2 < var77;
-			int var11 = -2;
-			if (var1.field1075 != null && (!var10 || !var1.field1078 && (field716 == 4 || !var1.field1072 && (field716 == 0 || 3 == field716 || 1 == field716 && ((Class83)var1).method2250())))) {
-				method1053(var0, var1, var1.field1130);
-				if (field601 > -1 && field589 < field590) {
-					field520[field589] = field3003.method8080(var1.field1075) / 2;
-					field593[field589] = field3003.field4730;
-					field591[field589] = field601;
-					field592[field589] = field486 - var11;
-					field606[field589] = var1.field1104;
-					field700[field589] = var1.field1081;
-					field598[field589] = var1.field1069;
-					field745[field589] = var1.field1062;
-					field652[field589] = var1.field1075;
-					++field589;
-					var11 += 12;
-				}
-			}
-
-			int var17;
-			int var24;
-			int var25;
-			if (!var1.field1100.method7625()) {
-				method1053(var0, var1, 15 + var1.field1130);
-
-				for (Class94 var12 = (Class94)var1.field1100.method7600(); var12 != null; var12 = (Class94)var1.field1100.method7637()) {
-					Class103 var13 = var12.method2475(field778);
-					if (var13 == null) {
-						if (var12.method2473()) {
-							var12.method9277();
-						}
-					} else {
-						Class194 var14 = var12.field1253;
-						Class549 var15 = var14.method3817();
-						Class549 var16 = var14.method3816();
-						int var18 = 0;
-						if (var15 != null && var16 != null) {
-							if (var14.field2005 * 2 < var16.field5353) {
-								var18 = var14.field2005;
-							}
-
-							var17 = var16.field5353 - var18 * 2;
-						} else {
-							var17 = var14.field2004;
-						}
-
-						int var19 = 255;
-						boolean var20 = true;
-						int var21 = field778 - var13.field1360;
-						int var22 = var13.field1357 * var17 / var14.field2004;
-						int var23;
-						int var98;
-						if (var13.field1362 > var21) {
-							var23 = 0 == var14.field2003 ? 0 : var21 / var14.field2003 * var14.field2003;
-							var24 = var17 * var13.field1356 / var14.field2004;
-							var98 = var24 + var23 * (var22 - var24) / var13.field1362;
-						} else {
-							var98 = var22;
-							var23 = var13.field1362 + var14.field1991 - var21;
-							if (var14.field1999 >= 0) {
-								var19 = (var23 << 8) / (var14.field1991 - var14.field1999);
-							}
-						}
-
-						if (var13.field1357 > 0 && var98 < 1) {
-							var98 = 1;
-						}
-
-						if (var15 != null && var16 != null) {
-							if (var98 == var17) {
-								var98 += var18 * 2;
-							} else {
-								var98 += var18;
-							}
-
-							var23 = var15.field5354;
-							var11 += var23;
-							var24 = field601 + var3 - (var17 >> 1);
-							var25 = var4 + field486 - var11;
-							var24 -= var18;
-							if (var19 >= 0 && var19 < 255) {
-								var15.method9937(var24, var25, var19);
-								Class561.method10153(var24, var25, var24 + var98, var25 + var23);
-								var16.method9937(var24, var25, var19);
-							} else {
-								var15.method10023(var24, var25);
-								Class561.method10153(var24, var25, var24 + var98, var25 + var23);
-								var16.method10023(var24, var25);
-							}
-
-							Class561.method10144(var3, var4, var5 + var3, var6 + var4);
-							var11 += 2;
-						} else {
-							var11 += 5;
-							if (field601 > -1) {
-								var23 = field601 + var3 - (var17 >> 1);
-								var24 = var4 + field486 - var11;
-								Class561.method10152(var23, var24, var98, 5, 65280);
-								Class561.method10152(var23 + var98, var24, var17 - var98, 5, 16711680);
-							}
-
-							var11 += 2;
-						}
-					}
-				}
-			}
-
-			if (var11 == -2) {
-				var11 += 7;
-			}
-
-			if (var10 && var1.field1115 == field778) {
-				Class83 var79 = (Class83)var1;
-				boolean var78;
-				if (0 == field530) {
-					var78 = false;
-				} else if (field107 != var79) {
-					boolean var84 = 0 != (field530 & 4);
-					boolean var88 = var84 || method8419() && var79.method2250();
-					if (!var88) {
-						boolean var90 = (field530 & 2) != 0;
-						var88 = var90 && var79.method2253();
-					}
-
-					var78 = var88;
-				} else {
-					var78 = method7533();
-				}
-
-				if (var78) {
-					Class83 var85 = (Class83)var1;
-					if (var10) {
-						method1053(var0, var1, 15 + var1.field1130);
-						Class436 var91 = (Class436)field552.get(Class497.field5084);
-						var11 += 4;
-						var91.method7996(var85.field1025.method10260(), field601 + var3, field486 + var4 - var11, 16777215, 0);
-						var11 += 18;
-					}
-				}
-			}
-
-			if (var10) {
-				Class83 var81 = (Class83)var1;
-				if (var81.field1015) {
-					return;
-				}
-
-				if (var81.field1009 != -1 || -1 != var81.field1010) {
-					method1053(var0, var1, var1.field1130 + 15);
-					if (field601 > -1) {
-						if (var81.field1009 != -1) {
-							var11 += 25;
-							field29[var81.field1009].method10023(field601 + var3 - 12, var4 + field486 - var11);
-						}
-
-						if (var81.field1010 != -1) {
-							var11 += 25;
-							field76[var81.field1010].method10023(field601 + var3 - 12, var4 + field486 - var11);
-						}
-					}
-				}
-
-				if (var2 >= 0 && field742 == 10 && var9[var2] == field775) {
-					method1053(var0, var1, 15 + var1.field1130);
-					if (field601 > -1) {
-						var11 += field4039[1].field5354;
-						field4039[1].method10023(field601 + var3 - 12, field486 + var4 - var11);
-					}
-				}
-			} else {
-				Class100 var83 = (Class100)var1;
-				int[] var80 = var83.method2530();
-				short[] var87 = var83.method2531();
-				if (var87 != null && var80 != null) {
-					for (int var92 = 0; var92 < var87.length; ++var92) {
-						if (var87[var92] >= 0 && var80[var92] >= 0) {
-							long var93 = (long)var80[var92] << 8 | (long)var87[var92];
-							Class549 var96 = (Class549)field777.method8583(var93);
-							if (var96 == null) {
-								Class549[] var97 = Class554.method6029(field1793, var80[var92], 0);
-								if (var97 != null && var87[var92] < var97.length) {
-									var96 = var97[var87[var92]];
-									field777.method8588(var93, var96);
-								}
-							}
-
-							if (var96 != null) {
-								method1053(var0, var1, 15 + var1.field1130);
-								if (field601 > -1) {
-									var96.method10023(var3 + field601 - (var96.field5353 >> 1), field486 + (var4 - var96.field5354) - 4);
-								}
-							}
-						}
-					}
-				}
-
-				if (1 == field742 && field568 == var0.field1297[var2 - var77] && field778 % 20 < 10) {
-					method1053(var0, var1, 15 + var1.field1130);
-					if (field601 > -1) {
-						field4039[0].method10023(field601 + var3 - 12, var4 + field486 - 28);
-					}
-				}
-			}
-
-			for (int var86 = 0; var86 < 4; ++var86) {
-				int var82 = var1.field1086[var86];
-				int var89 = var1.field1084[var86];
-				Class218 var95 = null;
-				int var94 = 0;
-				if (var89 >= 0) {
-					if (var82 <= field778) {
-						continue;
-					}
-
-					var95 = Class218.method287(var1.field1084[var86]);
-					var94 = var95.field2206;
-					if (var95 != null && var95.field2211 != null) {
-						var95 = var95.method4152();
-						if (var95 == null) {
-							var1.field1086[var86] = -1;
-							continue;
-						}
-					}
-				} else if (var82 < 0) {
-					continue;
-				}
-
-				var17 = var1.field1087[var86];
-				Class218 var100 = null;
-				if (var17 >= 0) {
-					var100 = Class218.method287(var17);
-					if (var100 != null && var100.field2211 != null) {
-						var100 = var100.method4152();
-					}
-				}
-
-				if (var82 - var94 <= field778) {
-					if (var95 == null) {
-						var1.field1086[var86] = -1;
-					} else {
-						method1053(var0, var1, var1.field1130 / 2);
-						if (field601 > -1) {
-							boolean var99 = true;
-							if (var86 == 1) {
-								field486 -= 20;
-							}
-
-							if (var86 == 2) {
-								field601 -= 15;
-								field486 -= 10;
-							}
-
-							if (var86 == 3) {
-								field601 += 15;
-								field486 -= 10;
-							}
-
-							Class549 var103 = null;
-							Class549 var101 = null;
-							Class549 var102 = null;
-							Class549 var104 = null;
-							var24 = 0;
-							var25 = 0;
-							int var26 = 0;
-							int var27 = 0;
-							int var28 = 0;
-							int var29 = 0;
-							int var30 = 0;
-							int var31 = 0;
-							Class549 var32 = null;
-							Class549 var33 = null;
-							Class549 var34 = null;
-							Class549 var35 = null;
-							int var36 = 0;
-							int var37 = 0;
-							int var38 = 0;
-							int var39 = 0;
-							int var40 = 0;
-							int var41 = 0;
-							int var42 = 0;
-							int var43 = 0;
-							int var44 = 0;
-							var103 = var95.method4125();
-							int var45;
-							if (var103 != null) {
-								var24 = var103.field5353;
-								var45 = var103.field5354;
-								if (var45 > var44) {
-									var44 = var45;
-								}
-
-								var28 = var103.field5363;
-							}
-
-							var101 = var95.method4124();
-							if (var101 != null) {
-								var25 = var101.field5353;
-								var45 = var101.field5354;
-								if (var45 > var44) {
-									var44 = var45;
-								}
-
-								var29 = var101.field5363;
-							}
-
-							var102 = var95.method4127();
-							if (var102 != null) {
-								var26 = var102.field5353;
-								var45 = var102.field5354;
-								if (var45 > var44) {
-									var44 = var45;
-								}
-
-								var30 = var102.field5363;
-							}
-
-							var104 = var95.method4128();
-							if (var104 != null) {
-								var27 = var104.field5353;
-								var45 = var104.field5354;
-								if (var45 > var44) {
-									var44 = var45;
-								}
-
-								var31 = var104.field5363;
-							}
-
-							if (var100 != null) {
-								var32 = var100.method4125();
-								if (var32 != null) {
-									var36 = var32.field5353;
-									var45 = var32.field5354;
-									if (var45 > var44) {
-										var44 = var45;
-									}
-
-									var40 = var32.field5363;
-								}
-
-								var33 = var100.method4124();
-								if (var33 != null) {
-									var37 = var33.field5353;
-									var45 = var33.field5354;
-									if (var45 > var44) {
-										var44 = var45;
-									}
-
-									var41 = var33.field5363;
-								}
-
-								var34 = var100.method4127();
-								if (var34 != null) {
-									var38 = var34.field5353;
-									var45 = var34.field5354;
-									if (var45 > var44) {
-										var44 = var45;
-									}
-
-									var42 = var34.field5363;
-								}
-
-								var35 = var100.method4128();
-								if (var35 != null) {
-									var39 = var35.field5353;
-									var45 = var35.field5354;
-									if (var45 > var44) {
-										var44 = var45;
-									}
-
-									var43 = var35.field5363;
-								}
-							}
-
-							Class418 var105 = var95.method4135();
-							if (var105 == null) {
-								var105 = field5366;
-							}
-
-							Class418 var46;
-							if (var100 != null) {
-								var46 = var100.method4135();
-								if (var46 == null) {
-									var46 = field5366;
-								}
-							} else {
-								var46 = field5366;
-							}
-
-							String var47 = null;
-							String var48 = null;
-							boolean var49 = false;
-							int var50 = 0;
-							var47 = var95.method4151(var1.field1085[var86]);
-							int var106 = var105.method8080(var47);
-							if (var100 != null) {
-								var48 = var100.method4151(var1.field1097[var86]);
-								var50 = var46.method8080(var48);
-							}
-
-							int var51 = 0;
-							int var52 = 0;
-							if (var25 > 0) {
-								if (var102 == null && var104 == null) {
-									var51 = 1;
-								} else {
-									var51 = 1 + var106 / var25;
-								}
-							}
-
-							if (var100 != null && var37 > 0) {
-								if (var34 == null && var35 == null) {
-									var52 = 1;
-								} else {
-									var52 = var50 / var37 + 1;
-								}
-							}
-
-							int var53 = 0;
-							int var54 = var53;
-							if (var24 > 0) {
-								var53 += var24;
-							}
-
-							var53 += 2;
-							int var55 = var53;
-							if (var26 > 0) {
-								var53 += var26;
-							}
-
-							int var56 = var53;
-							int var57 = var53;
-							int var58;
-							if (var25 > 0) {
-								var58 = var51 * var25;
-								var53 += var58;
-								var57 += (var58 - var106) / 2;
-							} else {
-								var53 += var106;
-							}
-
-							var58 = var53;
-							if (var27 > 0) {
-								var53 += var27;
-							}
-
-							int var59 = 0;
-							int var60 = 0;
-							int var61 = 0;
-							int var62 = 0;
-							int var63 = 0;
-							int var64;
-							if (var100 != null) {
-								var53 += 2;
-								var59 = var53;
-								if (var36 > 0) {
-									var53 += var36;
-								}
-
-								var53 += 2;
-								var60 = var53;
-								if (var38 > 0) {
-									var53 += var38;
-								}
-
-								var61 = var53;
-								var63 = var53;
-								if (var37 > 0) {
-									var64 = var52 * var37;
-									var53 += var64;
-									var63 += (var64 - var50) / 2;
-								} else {
-									var53 += var50;
-								}
-
-								var62 = var53;
-								if (var39 > 0) {
-									var53 += var39;
-								}
-							}
-
-							var64 = var1.field1086[var86] - field778;
-							int var65 = var95.field2205 - var95.field2205 * var64 / var95.field2206;
-							int var66 = var95.field2190 * var64 / var95.field2206 + -var95.field2190;
-							int var67 = var65 + (var3 + field601 - (var53 >> 1));
-							int var68 = var66 + (field486 + var4 - 12);
-							int var69 = var68;
-							int var70 = var68 + var44;
-							int var71 = var68 + 15 + var95.field2210;
-							int var72 = var71 - var105.field4732;
-							int var73 = var105.field4734 + var71;
-							if (var72 < var68) {
-								var69 = var72;
-							}
-
-							if (var73 > var70) {
-								var70 = var73;
-							}
-
-							int var74 = 0;
-							int var75;
-							int var76;
-							if (var100 != null) {
-								var74 = var100.field2210 + var68 + 15;
-								var75 = var74 - var46.field4732;
-								var76 = var46.field4734 + var74;
-								if (var75 < var69) {
-									;
-								}
-
-								if (var76 > var70) {
-									;
-								}
-							}
-
-							var75 = 255;
-							if (var95.field2204 >= 0) {
-								var75 = (var64 << 8) / (var95.field2206 - var95.field2204);
-							}
-
-							if (var75 >= 0 && var75 < 255) {
-								if (var103 != null) {
-									var103.method9937(var67 + var54 - var28, var68, var75);
-								}
-
-								if (var102 != null) {
-									var102.method9937(var67 + var55 - var30, var68, var75);
-								}
-
-								if (var101 != null) {
-									for (var76 = 0; var76 < var51; ++var76) {
-										var101.method9937(var76 * var25 + (var67 + var56 - var29), var68, var75);
-									}
-								}
-
-								if (var104 != null) {
-									var104.method9937(var67 + var58 - var31, var68, var75);
-								}
-
-								var105.method7994(var47, var67 + var57, var71, var95.field2212, 0, var75);
-								if (var100 != null) {
-									if (var32 != null) {
-										var32.method9937(var67 + var59 - var40, var68, var75);
-									}
-
-									if (var34 != null) {
-										var34.method9937(var67 + var60 - var42, var68, var75);
-									}
-
-									if (var33 != null) {
-										for (var76 = 0; var76 < var52; ++var76) {
-											var33.method9937(var76 * var37 + (var67 + var61 - var41), var68, var75);
-										}
-									}
-
-									if (var35 != null) {
-										var35.method9937(var67 + var62 - var43, var68, var75);
-									}
-
-									var46.method7994(var48, var67 + var63, var74, var100.field2212, 0, var75);
-								}
-							} else {
-								if (var103 != null) {
-									var103.method10023(var67 + var54 - var28, var68);
-								}
-
-								if (var102 != null) {
-									var102.method10023(var67 + var55 - var30, var68);
-								}
-
-								if (var101 != null) {
-									for (var76 = 0; var76 < var51; ++var76) {
-										var101.method10023(var76 * var25 + (var67 + var56 - var29), var68);
-									}
-								}
-
-								if (var104 != null) {
-									var104.method10023(var67 + var58 - var31, var68);
-								}
-
-								var105.method8017(var47, var67 + var57, var71, var95.field2212 | -16777216, 0);
-								if (var100 != null) {
-									if (var32 != null) {
-										var32.method10023(var67 + var59 - var40, var68);
-									}
-
-									if (var34 != null) {
-										var34.method10023(var67 + var60 - var42, var68);
-									}
-
-									if (var33 != null) {
-										for (var76 = 0; var76 < var52; ++var76) {
-											var33.method10023(var76 * var37 + (var67 + var61 - var41), var68);
-										}
-									}
-
-									if (var35 != null) {
-										var35.method10023(var67 + var62 - var43, var68);
-									}
-
-									var46.method8017(var48, var67 + var63, var74, var100.field2212 | -16777216, 0);
-								}
-							}
-						}
-					}
-				}
-			}
-
-		}
-	}
-
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "oo", name = "km", desc = "(B)V", opaque = "0")
 	public static void method7207() {
 		field608 = 0;
 		int var1 = (field107.field1065 >> 7) + field3857.field1289;
@@ -9622,12 +9099,12 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(LClass98;LClass86;I)V")
+	@ObfInfo(owner = "ca", name = "kg", desc = "(Ldt;Ldh;IB)V")
 	public static void method1053(Class98 var0, Class86 var1, int var2) {
 		method1110(var0, var1.field1065, var1.field1126, var2);
 	}
 
-	@ObfInfo(desc = "(LClass98;III)V")
+	@ObfInfo(owner = "cj", name = "ko", desc = "(Ldt;IIIB)V", opaque = "2")
 	public static void method1110(Class98 var0, int var1, int var2, int var3) {
 		if (var1 >= 128 && var2 >= 128 && var1 <= 13056 && var2 <= 13056) {
 			int var5 = method790(var0, var1, var2, var0.field1300) - var3;
@@ -9657,7 +9134,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "(LClass98;III)I")
+	@ObfInfo(owner = "bm", name = "kp", desc = "(Ldt;IIIB)I", opaque = "5")
 	public static int method790(Class98 var0, int var1, int var2, int var3) {
 		int var5 = var1 >> 7;
 		int var6 = var2 >> 7;
@@ -9677,7 +9154,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "(ZLClass531;)V")
+	@ObfInfo(owner = "qx", name = "kk", desc = "(ZLuk;I)V", opaque = "-1290878348")
 	public static void method8270(boolean var0, Class531 var1) {
 		field560 = var0;
 		int var3;
@@ -9789,7 +9266,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(IIZ)V")
+	@ObfInfo(owner = "pg", name = "ka", desc = "(IIZI)V", opaque = "2044378456")
 	public static void method7452(int var0, int var1, boolean var2) {
 		if (!var2 || field5013 != var0 || var1 != field4694) {
 			field5013 = var0;
@@ -9918,7 +9395,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "(Z)V")
+	@ObfInfo(owner = "ah", name = "kt", desc = "(ZB)V", opaque = "64")
 	public static void method129(boolean var0) {
 		method4066();
 		++field548.field1443;
@@ -9938,7 +9415,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "ky", name = "kc", desc = "(B)V", opaque = "1")
 	public static void method5783() {
 		method129(false);
 		field553 = 0;
@@ -10011,7 +9488,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				method4066();
 				Class93.method7690();
 				var2 = field1549.length;
-				Class77.method3246();
+				Class147.method3246();
 				method129(true);
 				int var18;
 				if (!field560) {
@@ -10044,7 +9521,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 							var5 = (field690[var16] >> 8) * 64 - field3857.field1289;
 							var18 = (field690[var16] & 255) * 64 - field3857.field1285;
 							method4066();
-							Class93.method3258(field3857, var17, var5, var18);
+							Class148.method3258(field3857, var17, var5, var18);
 						}
 					}
 				}
@@ -10082,7 +9559,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 								}
 
 								if (!var19) {
-									Class93.method4052(field3857.field1291, var16, var4 * 8, var5 * 8);
+									Class211.method4052(field3857.field1291, var16, var4 * 8, var5 * 8);
 								}
 							}
 						}
@@ -10150,7 +9627,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				}
 
 				method4066();
-				method8309();
+				Class444.method8309();
 				Class222.field2276.method5995();
 				Class316 var20;
 				if (field2077.method502()) {
@@ -10185,7 +9662,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "(LClass98;)V")
+	@ObfInfo(owner = "fx", name = "kj", desc = "(Ldt;I)V", opaque = "1819707388")
 	public static void method3293(Class98 var0) {
 		int var2 = var0.field1298 / 8;
 		int var3 = var0.field1282 / 8;
@@ -10233,7 +9710,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 				method4066();
 				Class93.method7690();
-				Class77.method3246();
+				Class147.method3246();
 				method129(true);
 
 				int var9;
@@ -10269,7 +9746,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 							}
 
 							if (!var20) {
-								Class93.method4052(var0.field1291, var5, var18 * 8, var19 * 8);
+								Class211.method4052(var0.field1291, var5, var18 * 8, var19 * 8);
 							}
 						}
 					}
@@ -10322,391 +9799,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "(IIIII)V")
-	public static void method675(int var0, int var1, int var2, int var3, int var4) {
-		Class259 var6 = field3857.field1283;
-		long var7 = var6.method4951(var0, var1, var2);
-		int var9;
-		int var10;
-		int var11;
-		int var12;
-		int var15;
-		int var16;
-		if (var7 != 0L) {
-			var9 = var6.method5003(var0, var1, var2, var7);
-			var10 = var9 >> 6 & 3;
-			var11 = var9 & 31;
-			var12 = var3;
-			boolean var13 = var7 != 0L && !Class74.method2085(var7);
-			if (var13) {
-				var12 = var4;
-			}
-
-			int[] var14 = field1359.field5357;
-			var15 = var1 * 4 + 24624 + 2048 * (103 - var2);
-			var16 = Class274.method2942(var7);
-			Class222 var17 = Class222.method4161(var16);
-			if (var17.field2266 != -1) {
-				Class557 var18 = field23[var17.field2266];
-				if (var18 != null) {
-					int var19 = (var17.field2252 * 4 - var18.field5392) / 2;
-					int var20 = (var17.field2253 * 4 - var18.field5395) / 2;
-					var18.method10086(var19 + 48 + var1 * 4, var20 + 48 + (104 - var2 - var17.field2253) * 4);
-				}
-			} else {
-				if (var11 == 0 || var11 == 2) {
-					if (var10 == 0) {
-						var14[var15] = var12;
-						var14[var15 + 512] = var12;
-						var14[var15 + 1024] = var12;
-						var14[var15 + 1536] = var12;
-					} else if (var10 == 1) {
-						var14[var15] = var12;
-						var14[var15 + 1] = var12;
-						var14[var15 + 2] = var12;
-						var14[var15 + 3] = var12;
-					} else if (var10 == 2) {
-						var14[var15 + 3] = var12;
-						var14[512 + var15 + 3] = var12;
-						var14[1024 + var15 + 3] = var12;
-						var14[var15 + 3 + 1536] = var12;
-					} else if (var10 == 3) {
-						var14[var15 + 1536] = var12;
-						var14[1 + var15 + 1536] = var12;
-						var14[2 + var15 + 1536] = var12;
-						var14[3 + var15 + 1536] = var12;
-					}
-				}
-
-				if (var11 == 3) {
-					if (var10 == 0) {
-						var14[var15] = var12;
-					} else if (var10 == 1) {
-						var14[var15 + 3] = var12;
-					} else if (var10 == 2) {
-						var14[var15 + 3 + 1536] = var12;
-					} else if (var10 == 3) {
-						var14[var15 + 1536] = var12;
-					}
-				}
-
-				if (var11 == 2) {
-					if (var10 == 3) {
-						var14[var15] = var12;
-						var14[var15 + 512] = var12;
-						var14[var15 + 1024] = var12;
-						var14[var15 + 1536] = var12;
-					} else if (var10 == 0) {
-						var14[var15] = var12;
-						var14[var15 + 1] = var12;
-						var14[var15 + 2] = var12;
-						var14[var15 + 3] = var12;
-					} else if (var10 == 1) {
-						var14[var15 + 3] = var12;
-						var14[512 + var15 + 3] = var12;
-						var14[1024 + var15 + 3] = var12;
-						var14[1536 + var15 + 3] = var12;
-					} else if (var10 == 2) {
-						var14[var15 + 1536] = var12;
-						var14[var15 + 1536 + 1] = var12;
-						var14[var15 + 1536 + 2] = var12;
-						var14[3 + var15 + 1536] = var12;
-					}
-				}
-			}
-		}
-
-		var7 = var6.method4953(var0, var1, var2);
-		if (var7 != 0L) {
-			var9 = var6.method5003(var0, var1, var2, var7);
-			var10 = var9 >> 6 & 3;
-			var11 = var9 & 31;
-			var12 = Class274.method2942(var7);
-			Class222 var23 = Class222.method4161(var12);
-			if (-1 != var23.field2266) {
-				Class557 var25 = field23[var23.field2266];
-				if (var25 != null) {
-					var15 = (var23.field2252 * 4 - var25.field5392) / 2;
-					var16 = (var23.field2253 * 4 - var25.field5395) / 2;
-					var25.method10086(var15 + var1 * 4 + 48, 48 + 4 * (104 - var2 - var23.field2253) + var16);
-				}
-			} else if (var11 == 9) {
-				int var26 = 15658734;
-				boolean var27 = 0L != var7 && !Class74.method2085(var7);
-				if (var27) {
-					var26 = 15597568;
-				}
-
-				int[] var28 = field1359.field5357;
-				int var29 = 2048 * (103 - var2) + var1 * 4 + 24624;
-				if (var10 != 0 && var10 != 2) {
-					var28[var29] = var26;
-					var28[var29 + 512 + 1] = var26;
-					var28[2 + var29 + 1024] = var26;
-					var28[var29 + 1536 + 3] = var26;
-				} else {
-					var28[var29 + 1536] = var26;
-					var28[1 + var29 + 1024] = var26;
-					var28[var29 + 512 + 2] = var26;
-					var28[var29 + 3] = var26;
-				}
-			}
-		}
-
-		var7 = var6.method4954(var0, var1, var2);
-		if (var7 != 0L) {
-			var9 = Class274.method2942(var7);
-			Class222 var21 = Class222.method4161(var9);
-			if (-1 != var21.field2266) {
-				Class557 var22 = field23[var21.field2266];
-				if (var22 != null) {
-					var12 = (var21.field2252 * 4 - var22.field5392) / 2;
-					int var24 = (var21.field2253 * 4 - var22.field5395) / 2;
-					var22.method10086(var12 + 48 + var1 * 4, 48 + (104 - var2 - var21.field2253) * 4 + var24);
-				}
-			}
-		}
-
-	}
-
-	@ObfInfo(desc = "(LClass326;)V")
-	public static void method3871(Class326 var0) {
-		Class531 var2 = field548.field1447;
-		int var4;
-		int var5;
-		int var7;
-		int var8;
-		int var9;
-		int var10;
-		int var11;
-		int var20;
-		int var21;
-		if (Class326.field3427 == var0) {
-			var20 = var2.method9437();
-			var4 = (var20 >> 4 & 7) + field121;
-			var5 = field3436 + (var20 & 7);
-			var21 = var2.method9522() & 31;
-			var7 = var2.method9405();
-			var8 = var2.method9437();
-			var9 = var2.method9522();
-			var10 = var2.method9445();
-			if (var4 >= 0 && var5 >= 0 && var4 < field4582.field1298 && var5 < field4582.field1282) {
-				var11 = var21 + 1;
-				if (field107.field1080[0] >= var4 - var11 && field107.field1080[0] <= var11 + var4 && field107.field1127[0] >= var5 - var11 && field107.field1127[0] <= var11 + var5 && field4851.method2657() != 0 && var9 > 0 && field650 < 50) {
-					field739[field650] = var10;
-					field744[field650] = null;
-					field511[field650] = var21 + (var4 << 16) + (var5 << 8);
-					field563[field650] = var9;
-					field741[field650] = var8;
-					field743[field650] = var7;
-					++field650;
-				}
-			}
-
-		} else {
-			int var13;
-			int var14;
-			int var15;
-			int var16;
-			if (Class326.field3425 == var0) {
-				byte var3 = var2.method9439();
-				var4 = var2.method9446();
-				var5 = var2.method9446();
-				byte var6 = var2.method9440();
-				var7 = var2.method9446();
-				var8 = var2.method9405();
-				var9 = var8 >> 2;
-				var10 = var8 & 3;
-				var11 = field562[var9];
-				byte var12 = var2.method9574();
-				var13 = var2.method9522();
-				var14 = (var13 >> 4 & 7) + field121;
-				var15 = (var13 & 7) + field3436;
-				var16 = var2.method9505();
-				byte var17 = var2.method9439();
-				Class83 var18;
-				if (var16 == field646) {
-					var18 = field107;
-				} else {
-					var18 = field4582.field1293[var16];
-				}
-
-				if (var18 != null) {
-					int var19 = -1 == field711 ? field4582.field1300 : field711;
-					method3300(var19, var14, var15, var9, var10, var11, var4, var7, var5, var6, var12, var3, var17, var18);
-				}
-			}
-
-			int var27;
-			if (Class326.field3418 == var0) {
-				var20 = var2.method9405();
-				var4 = var2.method9522();
-				var5 = (var4 >> 4 & 7) + field121;
-				var21 = field3436 + (var4 & 7);
-				var7 = var2.method9522();
-				var8 = var7 >> 2;
-				var9 = var7 & 3;
-				var10 = field562[var8];
-				var11 = var2.method9446();
-				if (var5 >= 0 && var21 >= 0 && var5 < field4582.field1298 && var21 < field4582.field1282) {
-					var27 = field711 == -1 ? field4582.field1300 : field711;
-					method3582(field4582, var27, var5, var21, var10, var11, var8, var9, var20, 0, -1);
-				}
-
-			} else if (Class326.field3421 == var0) {
-				var20 = var2.method9407();
-				var4 = var2.method9522();
-				var5 = (var4 >> 4 & 7) + field121;
-				var21 = field3436 + (var4 & 7);
-				var7 = var2.method9437();
-				var8 = var7 >> 2;
-				var9 = var7 & 3;
-				var10 = field562[var8];
-				if (var5 >= 0 && var21 >= 0 && var5 < 103 && var21 < 103) {
-					var11 = field711 == -1 ? field4582.field1300 : field711;
-					Class89 var28 = method3404(field4582, var11, var5, var21, var10);
-					if (var28 != null) {
-						Class222 var29 = Class222.method4161(var28.field1188);
-						if (var29.field2277) {
-							var28.field1185 = var20;
-							return;
-						}
-					}
-
-					boolean var30 = method1805(var11, var5, var21, var8, var9, var10, var20);
-					if (var30) {
-						return;
-					}
-
-					if (var28 != null) {
-						var28.field1185 = var20;
-					}
-				}
-
-			} else if (Class326.field3422 == var0) {
-				var20 = var2.method9445();
-				var4 = var2.method9407();
-				var5 = var2.method9455();
-				var21 = var2.method9438();
-				var7 = var2.method9438() * 4;
-				byte var23 = var2.method9440();
-				var9 = var2.method9455();
-				var10 = var2.method9437();
-				var11 = field121 + (var10 >> 4 & 7);
-				var27 = (var10 & 7) + field3436;
-				var13 = var2.method9437() * 4;
-				var14 = var2.method9407();
-				var15 = var2.method9407();
-				byte var31 = var2.method9406();
-				var8 = var11 + var23;
-				var16 = var31 + var27;
-				if (var11 >= 0 && var27 >= 0 && var11 < field4582.field1298 && var27 < field4582.field1282 && var8 >= 0 && var16 >= 0 && var8 < field4582.field1298 && var16 < field4582.field1282 && var4 != 65535) {
-					int var32 = -1 == field711 ? field4582.field1300 : field711;
-					method6160(var32, var11, var27, var8, var16, var5, var4, var7, var13, var15, var14, var21, var20, var9);
-				}
-
-			} else if (Class326.field3426 == var0) {
-				var20 = var2.method9438();
-				var4 = (var20 >> 4 & 7) + field121;
-				var5 = field3436 + (var20 & 7);
-				var21 = var2.method9462();
-				var7 = var2.method9505();
-				var8 = var2.method9462();
-				if (var4 >= 0 && var5 >= 0 && var4 < field4582.field1298 && var5 < field4582.field1282) {
-					var9 = -1 == field711 ? field4582.field1300 : field711;
-					method3098(var9, var4, var5, var7, var8, var21);
-				}
-
-			} else {
-				if (Class326.field3430 == var0) {
-					var20 = var2.method9407();
-					var4 = var2.method9437();
-					var5 = var2.method9522();
-					var21 = field121 + (var5 >> 4 & 7);
-					var7 = (var5 & 7) + field3436;
-					var8 = field4582.field1300;
-					if (var21 >= 0 && var7 >= 0 && var21 < field4582.field1298 && var7 < field4582.field1282) {
-						Class401 var25 = field4582.field1301[var8][var21][var7];
-						if (var25 != null) {
-							for (Class117 var26 = (Class117)var25.method7482(); var26 != null; var26 = (Class117)var25.method7490()) {
-								if ((var20 & 32767) == var26.field1465) {
-									var26.method2919(var4);
-									break;
-								}
-							}
-						}
-
-						if (var21 >= 0 && var7 >= 0 && var21 < field4582.field1298 && var7 < field4582.field1282) {
-							var10 = -1 == field711 ? field4582.field1300 : field711;
-							method3064(var10, var21, var7, var20, var4);
-						}
-
-						return;
-					}
-				}
-
-				if (Class326.field3420 == var0) {
-					var20 = var2.method9407();
-					var4 = var2.method9446();
-					var5 = var2.method9460();
-					var21 = var2.method9446();
-					var7 = var2.method9405();
-					boolean var22 = var2.method9405() == 1;
-					var9 = var2.method9438();
-					var10 = field121 + (var9 >> 4 & 7);
-					var11 = (var9 & 7) + field3436;
-					var27 = var2.method9438();
-					if (var10 >= 0 && var11 >= 0 && var10 < field4582.field1298 && var11 < field4582.field1282) {
-						var13 = -1 == field711 ? field4582.field1300 : field711;
-						method5998(var13, var10, var11, var21, var5, var27, var20, var4, var7, var22);
-					}
-
-				} else if (Class326.field3423 == var0) {
-					var20 = var2.method9437();
-					var4 = var20 >> 2;
-					var5 = var20 & 3;
-					var21 = field562[var4];
-					var7 = var2.method9405();
-					var8 = (var7 >> 4 & 7) + field121;
-					var9 = field3436 + (var7 & 7);
-					if (var8 >= 0 && var9 >= 0 && var8 < field4582.field1298 && var9 < field4582.field1282) {
-						var10 = -1 == field711 ? field4582.field1300 : field711;
-						method3582(field4582, var10, var8, var9, var21, -1, var4, var5, 31, 0, -1);
-					}
-
-				} else if (Class326.field3431 == var0) {
-					var20 = var2.method9438();
-					var4 = (var20 >> 4 & 7) + field121;
-					var5 = (var20 & 7) + field3436;
-					var21 = var2.method9445();
-					var7 = var2.method9438();
-					var8 = var2.method9407();
-					if (var4 >= 0 && var5 >= 0 && var4 < field4582.field1298 && var5 < field4582.field1282) {
-						var4 = var4 * 128 + 64;
-						var5 = var5 * 128 + 64;
-						var9 = field711 == -1 ? field4582.field1300 : field711;
-						Class59 var24 = new Class59(var21, var9, var4, var5, method790(field4582, var4, var5, var9) - var7, var8, field778);
-						field4582.field1304.method7477(var24);
-					}
-
-				} else if (Class326.field3428 == var0) {
-					var20 = var2.method9438();
-					var4 = field121 + (var20 >> 4 & 7);
-					var5 = (var20 & 7) + field3436;
-					var21 = var2.method9462();
-					var7 = var2.method9505();
-					var8 = field4582.field1300;
-					if (var4 >= 0 && var5 >= 0 && var4 < 104 && var5 < 104) {
-						var9 = -1 == field711 ? var8 : field711;
-						method6708(var9, var4, var5, var7, var21);
-					}
-
-				}
-			}
-		}
-	}
-
-	@ObfInfo(desc = "(IIIII)V")
+	@ObfInfo(owner = "fa", name = "ky", desc = "(IIIIII)V", opaque = "529388836")
 	public static void method3064(int var0, int var1, int var2, int var3, int var4) {
 		Class401 var6 = field4582.field1301[var0][var1][var2];
 		if (var6 != null) {
@@ -10720,74 +9813,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(IIIIII)V")
-	public static void method3098(int var0, int var1, int var2, int var3, int var4, int var5) {
-		Class401 var7 = field4582.field1301[var0][var1][var2];
-		if (var7 != null) {
-			for (Class117 var8 = (Class117)var7.method7482(); var8 != null; var8 = (Class117)var7.method7490()) {
-				if (var8.field1465 == (var3 & 32767) && var4 == var8.field1458) {
-					var8.field1458 = var5;
-					break;
-				}
-			}
-
-			method7123(var0, var1, var2);
-		}
-
-	}
-
-	@ObfInfo(desc = "(IIIIIIIIIIIIILClass83;)V")
-	public static void method3300(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12, Class83 var13) {
-		Class222 var15 = Class222.method4161(var6);
-		int var16;
-		int var17;
-		if (var4 != 1 && var4 != 3) {
-			var16 = var15.field2252;
-			var17 = var15.field2253;
-		} else {
-			var16 = var15.field2253;
-			var17 = var15.field2252;
-		}
-
-		int var18 = var1 + (var16 >> 1);
-		int var19 = var1 + (var16 + 1 >> 1);
-		int var20 = (var17 >> 1) + var2;
-		int var21 = (var17 + 1 >> 1) + var2;
-		int[][] var22 = field4582.field1291[var0];
-		int var23 = var22[var19][var20] + var22[var18][var20] + var22[var18][var21] + var22[var19][var21] >> 2;
-		int var24 = (var1 << 7) + (var16 << 6);
-		int var25 = (var17 << 6) + (var2 << 7);
-		Class262 var26 = var15.method4194(var3, var4, var22, var24, var23, var25);
-		if (var26 != null) {
-			method3582(field4582, var0, var1, var2, var5, -1, 0, 0, 31, var7 + 1, var8 + 1);
-			var13.field1016 = var7 + field778;
-			var13.field1017 = field778 + var8;
-			var13.field1031 = var26;
-			var13.field1018 = var16 * 64 + var1 * 128;
-			var13.field1027 = var2 * 128 + var17 * 64;
-			var13.field1019 = var23;
-			int var27;
-			if (var9 > var11) {
-				var27 = var9;
-				var9 = var11;
-				var11 = var27;
-			}
-
-			if (var10 > var12) {
-				var27 = var10;
-				var10 = var12;
-				var12 = var27;
-			}
-
-			var13.field1022 = var9 + var1;
-			var13.field1024 = var11 + var1;
-			var13.field1028 = var10 + var2;
-			var13.field1013 = var12 + var2;
-		}
-
-	}
-
-	@ObfInfo(desc = "(IIIIIIIIIIIIII)V")
+	@ObfInfo(owner = "lw", name = "ki", desc = "(IIIIIIIIIIIIIII)V")
 	public static void method6160(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12, int var13) {
 		var1 = 64 + var1 * 128;
 		var2 = 64 + var2 * 128;
@@ -10798,7 +9824,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		field4582.field1303.method7477(var15);
 	}
 
-	@ObfInfo(desc = "(IIIII)V")
+	@ObfInfo(owner = "nj", name = "ku", desc = "(IIIIII)V", opaque = "310369198")
 	public static void method6708(int var0, int var1, int var2, int var3, int var4) {
 		Class401 var6 = field4582.field1301[var0][var1][var2];
 		if (var6 != null) {
@@ -10818,7 +9844,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(IIIIIIIIIZ)V")
+	@ObfInfo(owner = "ln", name = "kh", desc = "(IIIIIIIIIZB)V", opaque = "80")
 	public static void method5998(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, boolean var9) {
 		Class117 var11 = new Class117();
 		var11.field1465 = var3;
@@ -10836,69 +9862,12 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		method7123(var0, var1, var2);
 	}
 
-	@ObfInfo(desc = "(IIIIII)Z")
+	@ObfInfo(owner = "tc", name = "kx", desc = "(IIIIIII)Z")
 	public static boolean method9204(int var0, int var1, int var2, int var3, int var4, int var5) {
-		return method1805(field4582.field1300, var0, var1, var2, var3, var4, var5);
+		return Class65.method1805(field4582.field1300, var0, var1, var2, var3, var4, var5);
 	}
 
-	@ObfInfo(desc = "(IIIIIII)Z")
-	public static boolean method1805(int var0, int var1, int var2, int var3, int var4, int var5, int var6) {
-		Class259 var8 = field4582.field1283;
-		int var10;
-		if (var5 == Class368.field4005.field4008) {
-			Class280 var9 = var8.method4947(var0, var1, var2);
-			if (var9 != null) {
-				var10 = Class274.method2942(var9.field3096);
-				if (var3 == Class373.field4047.field4068) {
-					var9.field3098 = new Class96(field4582, var10, 2, var4 + 4, var0, var1, var2, var6, false, var9.field3098);
-					var9.field3097 = new Class96(field4582, var10, 2, var4 + 1 & 3, var0, var1, var2, var6, false, var9.field3097);
-				} else {
-					var9.field3098 = new Class96(field4582, var10, var3, var4, var0, var1, var2, var6, false, var9.field3098);
-				}
-
-				return true;
-			}
-		} else if (var5 == Class368.field4004.field4008) {
-			Class270 var11 = var8.method4948(var0, var1, var2);
-			if (var11 != null) {
-				var10 = Class274.method2942(var11.field3009);
-				if (var3 != Class373.field4056.field4068 && Class373.field4054.field4068 != var3) {
-					if (var3 == Class373.field4052.field4068) {
-						var11.field3011 = new Class96(field4582, var10, 4, var4 + 4, var0, var1, var2, var6, false, var11.field3011);
-					} else if (var3 == Class373.field4050.field4068) {
-						var11.field3011 = new Class96(field4582, var10, 4, (var4 + 2 & 3) + 4, var0, var1, var2, var6, false, var11.field3011);
-					} else if (var3 == Class373.field4048.field4068) {
-						var11.field3011 = new Class96(field4582, var10, 4, var4 + 4, var0, var1, var2, var6, false, var11.field3011);
-						var11.field3012 = new Class96(field4582, var10, 4, 4 + (var4 + 2 & 3), var0, var1, var2, var6, false, var11.field3012);
-					}
-				} else {
-					var11.field3011 = new Class96(field4582, var10, 4, var4, var0, var1, var2, var6, false, var11.field3011);
-				}
-
-				return true;
-			}
-		} else if (Class368.field4006.field4008 == var5) {
-			Class266 var12 = var8.method4949(var0, var1, var2);
-			if (Class373.field4066.field4068 == var3) {
-				var3 = Class373.field4065.field4068;
-			}
-
-			if (var12 != null) {
-				var12.field2950 = new Class96(field4582, Class274.method2942(var12.field2958), var3, var4, var0, var1, var2, var6, false, var12.field2950);
-				return true;
-			}
-		} else if (var5 == Class368.field4007.field4008) {
-			Class247 var13 = var8.method4950(var0, var1, var2);
-			if (var13 != null) {
-				var13.field2651 = new Class96(field4582, Class274.method2942(var13.field2652), 22, var4, var0, var1, var2, var6, false, var13.field2651);
-				return true;
-			}
-		}
-
-		return false;
-	}
-
-	@ObfInfo(desc = "(LClass98;IIIIIIIIII)V")
+	@ObfInfo(owner = "gs", name = "li", desc = "(Ldt;IIIIIIIIIII)V", opaque = "-275262227")
 	public static void method3582(Class98 var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10) {
 		Class401 var12 = var0.field1294;
 		Class89 var13 = null;
@@ -10917,7 +9886,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 			var13.field1187 = var2;
 			var13.field1191 = var3;
 			var13.field1185 = -1;
-			method1094(var0, var13);
+			Class59.method1094(var0, var13);
 			var12.method7477(var13);
 		}
 
@@ -10929,7 +9898,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		var13.method2398(var8);
 	}
 
-	@ObfInfo(desc = "(LClass98;IIII)LClass89;")
+	@ObfInfo(owner = "gd", name = "lb", desc = "(Ldt;IIIII)Ldk;", opaque = "1246085363")
 	public static Class89 method3404(Class98 var0, int var1, int var2, int var3, int var4) {
 		for (Class89 var6 = (Class89)var0.field1294.method7482(); var6 != null; var6 = (Class89)var0.field1294.method7490()) {
 			if (var1 == var6.field1195 && var6.field1187 == var2 && var6.field1191 == var3 && var6.field1186 == var4) {
@@ -10940,55 +9909,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		return null;
 	}
 
-	@ObfInfo(desc = "()V")
-	public static void method8309() {
-		for (Class89 var1 = (Class89)field3857.field1294.method7482(); var1 != null; var1 = (Class89)field3857.field1294.method7490()) {
-			if (-1 == var1.field1198) {
-				var1.field1197 = 0;
-				method1094(field3857, var1);
-			} else {
-				var1.method9277();
-			}
-		}
-
-	}
-
-	@ObfInfo(desc = "(LClass98;LClass89;)V")
-	public static void method1094(Class98 var0, Class89 var1) {
-		Class259 var3 = var0.field1283;
-		long var4 = 0L;
-		int var6 = -1;
-		int var7 = 0;
-		int var8 = 0;
-		if (var1.field1186 == 0) {
-			var4 = var3.method4951(var1.field1195, var1.field1187, var1.field1191);
-		}
-
-		if (1 == var1.field1186) {
-			var4 = var3.method4952(var1.field1195, var1.field1187, var1.field1191);
-		}
-
-		if (var1.field1186 == 2) {
-			var4 = var3.method4953(var1.field1195, var1.field1187, var1.field1191);
-		}
-
-		if (3 == var1.field1186) {
-			var4 = var3.method4954(var1.field1195, var1.field1187, var1.field1191);
-		}
-
-		if (var4 != 0L) {
-			int var9 = var3.method5003(var1.field1195, var1.field1187, var1.field1191, var4);
-			var6 = Class274.method2942(var4);
-			var7 = var9 & 31;
-			var8 = var9 >> 6 & 3;
-		}
-
-		var1.field1189 = var6;
-		var1.field1196 = var7;
-		var1.field1190 = var8;
-	}
-
-	@ObfInfo(desc = "(LClass98;)V")
+	@ObfInfo(owner = "dh", name = "le", desc = "(Ldt;I)V", opaque = "-747158696")
 	public static void method2351(Class98 var0) {
 		for (Class89 var2 = (Class89)var0.field1294.method7482(); var2 != null; var2 = (Class89)var0.field1294.method7490()) {
 			if (var2.field1198 > 0) {
@@ -11018,7 +9939,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					}
 				}
 
-				method1071(var0, var2.field1195, var2.field1186, var2.field1187, var2.field1191, var2.field1189, var2.field1190, var2.field1196, var2.field1185);
+				Class57.method1071(var0, var2.field1195, var2.field1186, var2.field1187, var2.field1191, var2.field1189, var2.field1190, var2.field1196, var2.field1185);
 				var2.method9277();
 			} else {
 				if (var2.field1197 > 0) {
@@ -11044,7 +9965,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 						}
 					}
 
-					method1071(var0, var2.field1195, var2.field1186, var2.field1187, var2.field1191, var2.field1188, var2.field1193, var2.field1192, var2.field1185);
+					Class57.method1071(var0, var2.field1195, var2.field1186, var2.field1187, var2.field1191, var2.field1188, var2.field1193, var2.field1192, var2.field1185);
 					var2.field1197 = -1;
 					if (var2.field1188 == var2.field1189 && var2.field1189 == -1) {
 						var2.method9277();
@@ -11057,145 +9978,17 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(LClass98;IIIIIIII)V")
-	public static void method1071(Class98 var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
-		Class259 var10 = var0.field1283;
-		if (var3 >= 1 && var4 >= 1 && var3 <= var0.field1298 - 1 && var4 <= var0.field1282 - 1) {
-			if (field599 && var1 != var0.field1300) {
-				return;
-			}
-
-			long var11 = 0L;
-			boolean var13 = true;
-			boolean var14 = false;
-			boolean var15 = false;
-			if (var2 == 0) {
-				var11 = var10.method4951(var1, var3, var4);
-			}
-
-			if (var2 == 1) {
-				var11 = var10.method4952(var1, var3, var4);
-			}
-
-			if (var2 == 2) {
-				var11 = var10.method4953(var1, var3, var4);
-			}
-
-			if (var2 == 3) {
-				var11 = var10.method4954(var1, var3, var4);
-			}
-
-			int var16;
-			Class222 var17;
-			if (var11 != 0L) {
-				var16 = var10.method5003(var1, var3, var4, var11);
-				int var28 = Class274.method2942(var11);
-				int var29 = var16 & 31;
-				int var30 = var16 >> 6 & 3;
-				var17 = Class222.method4161(var28);
-				if (var17 != null && var17.method4210()) {
-					int var20 = var17.field2252;
-					int var21 = var17.field2253;
-					if (var30 == 1 || var30 == 3) {
-						var20 = var17.field2253;
-						var21 = var17.field2252;
-					}
-
-					int var22 = (var20 + var3) * 128;
-					int var23 = (var21 + var4) * 128;
-					int var18 = var3 * 128;
-					int var19 = var4 * 128;
-					int var24 = var17.field2245;
-					int var25 = var17.field2273 * 128;
-					int var26 = var17.field2283 * 128;
-					if (var17.field2278 != null) {
-						Class222 var27 = var17.method4181();
-						if (var27 != null) {
-							var24 = var27.field2245;
-							var25 = var27.field2273 * 128;
-							var26 = var27.field2283 * 128;
-						}
-					}
-
-					Class77 var10000 = (Class77)null;
-
-					for (Class77 var31 = (Class77)Class77.field976.method7482(); var31 != null; var31 = (Class77)Class77.field976.method7490()) {
-						if (var1 == var31.field974 && var18 == var31.field973 && var31.field961 == var19 && var22 == var31.field962 && var23 == var31.field963 && var31.field966 == var24 && var31.field960 == var25 && var31.field959 == var26) {
-							if (var31.field958 != null) {
-								field3984.method755(var31.field958);
-								var31.field958 = null;
-							}
-
-							if (var31.field972 != null) {
-								field3984.method755(var31.field972);
-								var31.field972 = null;
-							}
-
-							var31.method9277();
-							break;
-						}
-
-						var10000 = (Class77)null;
-					}
-				}
-
-				if (var2 == 0) {
-					var10.method5074(var1, var3, var4);
-					if (var17.field2282 != 0) {
-						var0.field1284[var1].method4324(var3, var4, var29, var30, var17.field2255);
-					}
-				}
-
-				if (var2 == 1) {
-					var10.method4943(var1, var3, var4);
-				}
-
-				if (var2 == 2) {
-					var10.method5033(var1, var3, var4);
-					if (var3 + var17.field2252 > var0.field1298 - 1 || var17.field2252 + var4 > var0.field1282 - 1 || var3 + var17.field2253 > var0.field1298 - 1 || var4 + var17.field2253 > var0.field1282 - 1) {
-						return;
-					}
-
-					if (var17.field2282 != 0) {
-						var0.field1284[var1].method4308(var3, var4, var17.field2252, var17.field2253, var30, var17.field2255);
-					}
-				}
-
-				if (var2 == 3) {
-					var10.method4945(var1, var3, var4);
-					if (1 == var17.field2282) {
-						var0.field1284[var1].method4316(var3, var4);
-					}
-				}
-			}
-
-			if (var5 >= 0) {
-				var16 = var1;
-				if (var1 < 3 && (var0.field1292[1][var3][var4] & 2) == 2) {
-					var16 = var1 + 1;
-				}
-
-				Class93.method6307(var0, var1, var16, var3, var4, var5, var6, var7, var8, var0.field1284[var1]);
-				var17 = Class222.method4161(var5);
-				if (var17 != null && var17.method4210()) {
-					Class77.method846(var16, var3, var4, var17, var6);
-				}
-			}
-		}
-
-	}
-
-	@ObfInfo(desc = "(LClass98;II)V")
+	@ObfInfo(owner = "kr", name = "lh", desc = "(Ldt;IIB)V")
 	public static void method5568(Class98 var0, int var1, int var2) {
 		method3416(var0, var0.field1300, var1, var2);
 	}
 
-	@ObfInfo(desc = "(III)V")
+	@ObfInfo(owner = "nz", name = "lg", desc = "(IIII)V")
 	public static void method7123(int var0, int var1, int var2) {
 		method3416(field4582, var0, var1, var2);
 	}
 
-	@ObfInfo(desc = "(LClass98;III)V")
+	@ObfInfo(owner = "gg", name = "ln", desc = "(Ldt;IIIS)V", opaque = "188")
 	public static void method3416(Class98 var0, int var1, int var2, int var3) {
 		Class401 var5 = var0.field1301[var1][var2][var3];
 		if (var5 == null) {
@@ -11206,7 +9999,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 			Class117 var9;
 			for (var9 = (Class117)var5.method7482(); var9 != null; var9 = (Class117)var5.method7490()) {
-				Class232 var10 = Class7.method109(var9.field1465);
+				Class232 var10 = Class232.method109(var9.field1465);
 				long var11 = (long)var10.field2464;
 				if (var10.field2462 == 1) {
 					var11 *= var9.field1458 < Integer.MAX_VALUE ? (long)(1 + var9.field1458) : (long)var9.field1458;
@@ -11243,7 +10036,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "(LClass98;LClass531;)V")
+	@ObfInfo(owner = "qj", name = "lo", desc = "(Ldt;Luk;B)V", opaque = "4")
 	public static void method7873(Class98 var0, Class531 var1) {
 		int var3 = var1.method9407();
 		Class488 var4 = var0.field1299[var3];
@@ -11325,7 +10118,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		method3293(var5);
 	}
 
-	@ObfInfo(desc = "(LClass98;ZLClass531;)V")
+	@ObfInfo(owner = "dx", name = "ls", desc = "(Ldt;ZLuk;I)V", opaque = "-1173900364")
 	public static void method2648(Class98 var0, boolean var1, Class531 var2) {
 		field616 = 0;
 		field546 = 0;
@@ -11422,7 +10215,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 					var9 = var2.method9405();
 					if (var8 == var16.field1074 && var8 != -1) {
-						var10 = Class237.method4637(var8).field2152;
+						var10 = Class211.method4637(var8).field2152;
 						if (var10 == 1) {
 							var16.field1101 = 0;
 							var16.field1102 = 0;
@@ -11433,7 +10226,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 						if (var10 == 2) {
 							var16.field1090 = 0;
 						}
-					} else if (var8 == -1 || var16.field1074 == -1 || Class237.method4637(var8).field2128 >= Class237.method4637(var16.field1074).field2128) {
+					} else if (var8 == -1 || var16.field1074 == -1 || Class211.method4637(var8).field2128 >= Class211.method4637(var16.field1074).field2128) {
 						var16.field1074 = var8;
 						var16.field1101 = 0;
 						var16.field1102 = 0;
@@ -11736,7 +10529,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "(LClass98;ZLClass531;)V")
+	@ObfInfo(owner = "fw", name = "lv", desc = "(Ldt;ZLuk;I)V", opaque = "-885213632")
 	public static void method3282(Class98 var0, boolean var1, Class531 var2) {
 		while (true) {
 			byte var4 = 16;
@@ -11816,7 +10609,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "(LClass100;)V")
+	@ObfInfo(owner = "af", name = "ll", desc = "(Ldv;B)V")
 	public static void method71(Class100 var0) {
 		var0.field1059 = var0.field1314.field2320;
 		var0.field1089 = var0.field1314.field2332;
@@ -11837,7 +10630,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		var0.field1079 = var0.field1314.field2324;
 	}
 
-	@ObfInfo(desc = "(LClass98;LClass83;IILClass256;)V")
+	@ObfInfo(owner = "fo", name = "lt", desc = "(Ldt;Lde;IILjv;I)V", opaque = "-1348256196")
 	public static void method3225(Class98 var0, Class83 var1, int var2, int var3, Class256 var4) {
 		int var6 = var1.field1080[0];
 		int var7 = var1.field1127[0];
@@ -11862,13 +10655,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "nd", name = "lr", desc = "(S)V")
 	public static void method6662() {
 		field629 = 0;
 		field628 = false;
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "bg", name = "lw", desc = "(S)V")
 	public static void method717() {
 		method6662();
 		field635[0] = -1;
@@ -11879,22 +10672,12 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		field629 = 1;
 	}
 
-	@ObfInfo(desc = "()Z")
+	@ObfInfo(owner = "fu", name = "lk", desc = "(S)Z")
 	public static boolean method3273() {
 		return field628;
 	}
 
-	@ObfInfo(desc = "(IIII)V")
-	public static void abs(int var0, int var1, int var2, int var3) {
-		for (int var4 = 0; var4 < field701; ++var4) {
-			if (field708[var4] + field722[var4] > var0 && field722[var4] < var2 + var0 && field707[var4] + field757[var4] > var1 && field707[var4] < var3 + var1) {
-				field614[var4] = true;
-			}
-		}
-
-	}
-
-	@ObfInfo(desc = "(IIII)V")
+	@ObfInfo(owner = "sa", name = "lx", desc = "(IIIII)V", opaque = "-473293718")
 	public static void method8613(int var0, int var1, int var2, int var3) {
 		for (int var5 = 0; var5 < field701; ++var5) {
 			if (field708[var5] + field722[var5] > var0 && field722[var5] < var2 + var0 && field707[var5] + field757[var5] > var1 && field707[var5] < var3 + var1) {
@@ -11904,7 +10687,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(I)V")
+	@ObfInfo(owner = "fb", name = "lj", desc = "(II)V")
 	public static void method3065(int var0) {
 		if (var0 >= 0) {
 			int var2 = field630[var0];
@@ -11919,7 +10702,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "(LClass62;II)V")
+	@ObfInfo(owner = "fy", name = "lm", desc = "(Lcj;III)V", opaque = "-789558975")
 	public static void method3306(Class62 var0, int var1, int var2) {
 		if (var0 != null) {
 			method2917(var0.field459, var0.field452, var0.field453, var0.field455, var0.field456, var0.field457, var0.field458, var0.field454, var1, var2);
@@ -11927,7 +10710,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(IIIIIILjava/lang/String;Ljava/lang/String;II)V")
+	@ObfInfo(owner = "el", name = "mb", desc = "(IIIIIILjava/lang/String;Ljava/lang/String;IIB)V", opaque = "0")
 	public static void method2917(int var0, int var1, int var2, int var3, int var4, int var5, String var6, String var7, int var8, int var9) {
 		Class98 var11 = null;
 		if (var5 >= 0 && null != field3857.field1299[var5]) {
@@ -12054,7 +10837,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					var23 = var24.field3717[0][1];
 					if (var24.field3804[0] != Class351.field3889[var23]) {
 						Class351.field3889[var23] = var24.field3804[0];
-						method3138(var23);
+						Class140.method3138(var23);
 					}
 				}
 			}
@@ -12192,7 +10975,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 			}
 
 			if (var2 == 26) {
-				method2188();
+				Class77.method2188();
 			}
 
 			if (var2 == 13) {
@@ -12345,7 +11128,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				if (var24 != null && var24.field3717 != null && 5 == var24.field3717[0][0]) {
 					var23 = var24.field3717[0][1];
 					Class351.field3889[var23] = 1 - Class351.field3889[var23];
-					method3138(var23);
+					Class140.method3138(var23);
 				}
 			}
 
@@ -12432,15 +11215,15 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					method2176();
 					method7191(var1, var0, Class344.method3653(method3511(var19)), var4);
 					field702 = 0;
-					field651 = method2931(var19);
+					field651 = Class118.method2931(var19);
 					if (field651 == null) {
 						field651 = Class378.field4152;
 					}
 
 					if (var19.field3675) {
-						field578 = var19.field3785 + Class463.method8551(16777215);
+						field578 = var19.field3785 + Class113.method8551(16777215);
 					} else {
-						field578 = Class463.method8551(65280) + var19.field3710 + Class463.method8551(16777215);
+						field578 = Class113.method8551(65280) + var19.field3710 + Class113.method8551(16777215);
 					}
 				}
 
@@ -12638,7 +11421,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "(ILjava/lang/String;)V")
+	@ObfInfo(owner = "db", name = "mh", desc = "(ILjava/lang/String;I)V", opaque = "1756721827")
 	public static void method2223(int var0, String var1) {
 		int var3 = field107.field1007.field1288.field1392;
 		int[] var4 = field107.field1007.field1288.field1393;
@@ -12682,7 +11465,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(IIII)V")
+	@ObfInfo(owner = "ol", name = "mv", desc = "(IIIII)V", opaque = "1569611752")
 	public static void method7191(int var0, int var1, int var2, int var3) {
 		Class340 var5 = field25.method6721(var0, var1);
 		if (var5 != null && var5.field3688 != null) {
@@ -12700,7 +11483,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		Class317.method6187(var5);
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "cy", name = "mq", desc = "(I)V", opaque = "1165354324")
 	public static void method2176() {
 		if (field648) {
 			Class340 var1 = field25.method6721(field4348, field595);
@@ -12717,7 +11500,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "(II)V")
+	@ObfInfo(owner = "bq", name = "mf", desc = "(III)V")
 	public static void method844(int var0, int var1) {
 		Class316 var3 = Class316.method3908(Class315.field3321, field548.field1446);
 		var3.field3374.method9459(var0);
@@ -12725,7 +11508,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		field548.method2897(var3);
 	}
 
-	@ObfInfo(desc = "(IIIILjava/lang/String;)V")
+	@ObfInfo(owner = "nv", name = "mi", desc = "(IIIILjava/lang/String;I)V", opaque = "580704416")
 	public static void method7098(int var0, int var1, int var2, int var3, String var4) {
 		Class340 var6 = field25.method6721(var1, var2);
 		if (var6 != null) {
@@ -12831,50 +11614,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "()V")
-	public static void method5996() {
-		boolean var1 = false;
-
-		while (!var1) {
-			var1 = true;
-
-			for (int var2 = 0; var2 < field629 - 1; ++var2) {
-				if (field632[var2] < 1000 && field632[var2 + 1] > 1000) {
-					String var3 = field637[var2];
-					field637[var2] = field637[var2 + 1];
-					field637[var2 + 1] = var3;
-					String var4 = field636[var2];
-					field636[var2] = field636[var2 + 1];
-					field636[var2 + 1] = var4;
-					int var5 = field632[var2];
-					field632[var2] = field632[var2 + 1];
-					field632[var2 + 1] = var5;
-					var5 = field630[var2];
-					field630[var2] = field630[var2 + 1];
-					field630[var2 + 1] = var5;
-					var5 = field631[var2];
-					field631[var2] = field631[var2 + 1];
-					field631[var2 + 1] = var5;
-					var5 = field633[var2];
-					field633[var2] = field633[var2 + 1];
-					field633[var2 + 1] = var5;
-					var5 = field634[var2];
-					field634[var2] = field634[var2 + 1];
-					field634[var2 + 1] = var5;
-					var5 = field635[var2];
-					field635[var2] = field635[var2 + 1];
-					field635[var2 + 1] = var5;
-					boolean var6 = field638[var2];
-					field638[var2] = field638[var2 + 1];
-					field638[var2 + 1] = var6;
-					var1 = false;
-				}
-			}
-		}
-
-	}
-
-	@ObfInfo(desc = "(Ljava/lang/String;Ljava/lang/String;IIIIIZI)V")
+	@ObfInfo(owner = "hx", name = "md", desc = "(Ljava/lang/String;Ljava/lang/String;IIIIIZIB)V", opaque = "33")
 	public static void method3958(String var0, String var1, int var2, int var3, int var4, int var5, int var6, boolean var7, int var8) {
 		if (!field628) {
 			if (field629 < 500) {
@@ -12893,12 +11633,12 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "()I")
+	@ObfInfo(owner = "gy", name = "mz", desc = "(I)I")
 	public static int method3634() {
 		return field629 - 1;
 	}
 
-	@ObfInfo(desc = "(IIII)V")
+	@ObfInfo(owner = "fn", name = "mj", desc = "(IIIII)V", opaque = "634074387")
 	public static void method3186(int var0, int var1, int var2, int var3) {
 		if (0 == field702 && !field648) {
 			Class7.method93(Class378.field4315, "", 23, 0, var0 - var2, var1 - var3);
@@ -12916,10 +11656,10 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				long var17 = Class274.field3027[var10];
 				int var16 = (int)(var17 >>> 0 & 127L);
 				int var15 = var16;
-				int var32 = Class304.method6117(Class274.field3027[var10]);
+				int var32 = Class274.method6117(Class274.field3027[var10]);
 				int var19 = Class274.method3001(Class274.field3027[var10]);
 				int var21 = Class274.method2942(Class274.field3027[var10]);
-				int var23 = Class293.method5913(var10);
+				int var23 = Class274.method5913(var10);
 				if (var23 == 2047) {
 					var23 = -1;
 				}
@@ -12954,10 +11694,10 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 						}
 
 						if (field702 == 1) {
-							method3958(Class378.field4310, field503 + " " + Class113.field1424 + " " + Class463.method8551(65535) + var26.field2247, 1, var21, var15, var32, -1, false, var23);
+							method3958(Class378.field4310, field503 + " " + Class113.field1424 + " " + Class113.method8551(65535) + var26.field2247, 1, var21, var15, var32, -1, false, var23);
 						} else if (field648) {
 							if (4 == (field4587 & 4)) {
-								method3958(field651, field578 + " " + Class113.field1424 + " " + Class463.method8551(65535) + var26.field2247, 2, var21, var15, var32, -1, false, var23);
+								method3958(field651, field578 + " " + Class113.field1424 + " " + Class113.method8551(65535) + var26.field2247, 2, var21, var15, var32, -1, false, var23);
 							}
 						} else {
 							String[] var37 = var26.field2264;
@@ -12985,12 +11725,12 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 											var30 = 1001;
 										}
 
-										method3958(var37[var29], Class463.method8551(65535) + var26.field2247, var30, var21, var15, var32, -1, false, var23);
+										method3958(var37[var29], Class113.method8551(65535) + var26.field2247, var30, var21, var15, var32, -1, false, var23);
 									}
 								}
 							}
 
-							method3958(Class378.field4311, Class463.method8551(65535) + var26.field2247, 1002, var26.field2244, var15, var32, -1, false, var23);
+							method3958(Class378.field4311, Class113.method8551(65535) + var26.field2247, 1002, var26.field2244, var15, var32, -1, false, var23);
 						}
 					}
 
@@ -13008,7 +11748,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 							for (var36 = 0; var36 < var24.field1296; ++var36) {
 								var38 = var24.field1295[var24.field1297[var36]];
 								if (var38 != null && var38 != var33 && 1 == var38.field1314.field2320 && var38.field1065 == var33.field1065 && var33.field1126 == var38.field1126) {
-									method72(var38, var24.field1297[var36], var15, var32, var23);
+									Class6.method72(var38, var24.field1297[var36], var15, var32, var23);
 								}
 							}
 
@@ -13018,12 +11758,12 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 							for (var29 = 0; var29 < var36; ++var29) {
 								var43 = var24.field1293[var39[var29]];
 								if (var43 != null && var33.field1065 == var43.field1065 && var43.field1126 == var33.field1126) {
-									method805(var43, var39[var29], var15, var32, var23);
+									Class41.method805(var43, var39[var29], var15, var32, var23);
 								}
 							}
 						}
 
-						method72(var33, var21, var15, var32, var23);
+						Class6.method72(var33, var21, var15, var32, var23);
 					}
 
 					if (var19 == 0) {
@@ -13036,7 +11776,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 							for (var36 = 0; var36 < var24.field1296; ++var36) {
 								var38 = var24.field1295[var24.field1297[var36]];
 								if (var38 != null && var38.field1314.field2320 == 1 && var38.field1065 == var34.field1065 && var38.field1126 == var34.field1126) {
-									method72(var38, var24.field1297[var36], var15, var32, var23);
+									Class6.method72(var38, var24.field1297[var36], var15, var32, var23);
 								}
 							}
 
@@ -13046,13 +11786,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 							for (var29 = 0; var29 < var36; ++var29) {
 								var43 = var24.field1293[var39[var29]];
 								if (var43 != null && var43 != var34 && var34.field1065 == var43.field1065 && var34.field1126 == var43.field1126) {
-									method805(var43, var39[var29], var15, var32, var23);
+									Class41.method805(var43, var39[var29], var15, var32, var23);
 								}
 							}
 						}
 
 						if (field622 != var21) {
-							method805(var34, var21, var15, var32, var23);
+							Class41.method805(var34, var21, var15, var32, var23);
 						} else {
 							var5 = var11;
 							var7 = var23;
@@ -13063,12 +11803,12 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 						Class401 var35 = var24.field1301[var25][var15][var32];
 						if (var35 != null) {
 							for (Class117 var40 = (Class117)var35.method7483(); var40 != null; var40 = (Class117)var35.method7504()) {
-								Class232 var41 = Class7.method109(var40.field1465);
+								Class232 var41 = Class232.method109(var40.field1465);
 								if (field702 == 1) {
-									method3958(Class378.field4310, field503 + " " + Class113.field1424 + " " + Class463.method8551(16748608) + var41.field2449, 16, var40.field1465, var15, var32, -1, false, var23);
+									method3958(Class378.field4310, field503 + " " + Class113.field1424 + " " + Class113.method8551(16748608) + var41.field2449, 16, var40.field1465, var15, var32, -1, false, var23);
 								} else if (field648) {
 									if ((field4587 & 1) == 1) {
-										method3958(field651, field578 + " " + Class113.field1424 + " " + Class463.method8551(16748608) + var41.field2449, 17, var40.field1465, var15, var32, -1, false, var23);
+										method3958(field651, field578 + " " + Class113.field1424 + " " + Class113.method8551(16748608) + var41.field2449, 17, var40.field1465, var15, var32, -1, false, var23);
 									}
 								} else {
 									String[] var42 = var41.field2469;
@@ -13097,14 +11837,14 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 													var31 = 22;
 												}
 
-												method3958(var42[var44], Class463.method8551(16748608) + var41.field2449, var31, var40.field1465, var15, var32, -1, false, var23);
+												method3958(var42[var44], Class113.method8551(16748608) + var41.field2449, var31, var40.field1465, var15, var32, -1, false, var23);
 											} else if (var44 == 2) {
-												method3958(Class378.field4145, Class463.method8551(16748608) + var41.field2449, 20, var40.field1465, var15, var32, -1, false, var23);
+												method3958(Class378.field4145, Class113.method8551(16748608) + var41.field2449, 20, var40.field1465, var15, var32, -1, false, var23);
 											}
 										}
 									}
 
-									method3958(Class378.field4311, Class463.method8551(16748608) + var41.field2449, 1004, var40.field1465, var15, var32, -1, false, var23);
+									method3958(Class378.field4311, Class113.method8551(16748608) + var41.field2449, 1004, var40.field1465, var15, var32, -1, false, var23);
 								}
 							}
 						}
@@ -13115,207 +11855,36 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 		if (-1L != var5) {
 			var10 = (int)(var5 >>> 0 & 127L);
-			int var12 = Class304.method6117(var5);
+			int var12 = Class274.method6117(var5);
 			Class83 var13 = field3857.field1293[field622];
-			method805(var13, field622, var10, var12, var7);
+			Class41.method805(var13, field622, var10, var12, var7);
 		}
 
 	}
 
-	@ObfInfo(desc = "(LClass100;IIII)V")
-	public static void method72(Class100 var0, int var1, int var2, int var3, int var4) {
-		Class225 var6 = var0.field1314;
-		if (field629 < 400) {
-			if (var6.field2351 != null) {
-				var6 = var6.method4249();
-			}
-
-			if (var6 != null) {
-				if (var6.field2354) {
-					if (!var6.field2356 || var1 == field662) {
-						String var7 = var0.method2525();
-						int var8;
-						if (0 != var6.field2319 && var0.field1131 != 0) {
-							var8 = var0.field1131 != -1 ? var0.field1131 : var6.field2319;
-							var7 = var7 + method6269(var8, field107.field1020) + " " + Class113.field1423 + Class378.field4316 + var8 + Class113.field1428;
-						}
-
-						if (var6.field2344 && field639) {
-							method3958(Class378.field4311, Class463.method8551(16776960) + var7, 1003, var1, var2, var3, -1, false, var4);
-						}
-
-						if (1 == field702) {
-							method3958(Class378.field4310, field503 + " " + Class113.field1424 + " " + Class463.method8551(16776960) + var7, 7, var1, var2, var3, -1, false, var4);
-						} else if (field648) {
-							if ((field4587 & 2) == 2) {
-								method3958(field651, field578 + " " + Class113.field1424 + " " + Class463.method8551(16776960) + var7, 8, var1, var2, var3, -1, false, var4);
-							}
-						} else {
-							var8 = var6.field2344 && field639 ? 2000 : 0;
-							String[] var9 = var6.field2342;
-							int var10;
-							int var11;
-							if (var9 != null) {
-								for (var10 = 4; var10 >= 0; --var10) {
-									if (var0.method2562(var10) && null != var9[var10] && !var9[var10].equalsIgnoreCase(Class378.field4201)) {
-										var11 = 0;
-										if (var10 == 0) {
-											var11 = var8 + 9;
-										}
-
-										if (var10 == 1) {
-											var11 = var8 + 10;
-										}
-
-										if (var10 == 2) {
-											var11 = var8 + 11;
-										}
-
-										if (var10 == 3) {
-											var11 = var8 + 12;
-										}
-
-										if (var10 == 4) {
-											var11 = var8 + 13;
-										}
-
-										method3958(var9[var10], Class463.method8551(16776960) + var7, var11, var1, var2, var3, -1, false, var4);
-									}
-								}
-							}
-
-							if (var9 != null) {
-								for (var10 = 4; var10 >= 0; --var10) {
-									if (var0.method2562(var10) && var9[var10] != null && var9[var10].equalsIgnoreCase(Class378.field4201)) {
-										short var12 = 0;
-										if (field517 != Class114.field1434) {
-											if (Class114.field1432 == field517 || Class114.field1431 == field517 && var6.field2319 > field107.field1020) {
-												var12 = 2000;
-											}
-
-											var11 = 0;
-											if (var10 == 0) {
-												var11 = var12 + 9;
-											}
-
-											if (var10 == 1) {
-												var11 = var12 + 10;
-											}
-
-											if (var10 == 2) {
-												var11 = var12 + 11;
-											}
-
-											if (var10 == 3) {
-												var11 = var12 + 12;
-											}
-
-											if (var10 == 4) {
-												var11 = var12 + 13;
-											}
-
-											method3958(var9[var10], Class463.method8551(16776960) + var7, var11, var1, var2, var3, -1, false, var4);
-										}
-									}
-								}
-							}
-
-							if (!var6.field2344 || !field639) {
-								method3958(Class378.field4311, Class463.method8551(16776960) + var7, 1003, var1, var2, var3, -1, false, var4);
-							}
-						}
-
-					}
-				}
-			}
-		}
-	}
-
-	@ObfInfo(desc = "(LClass83;IIII)V")
-	public static void method805(Class83 var0, int var1, int var2, int var3, int var4) {
-		if (field646 != var0.field1030) {
-			if (field629 < 400) {
-				String var6;
-				if (var0.field1014 == 0) {
-					var6 = var0.field1012[0] + var0.field1025 + var0.field1012[1] + method6269(var0.field1020, field107.field1020) + " " + Class113.field1423 + Class378.field4316 + var0.field1020 + Class113.field1428 + var0.field1012[2];
-				} else {
-					var6 = var0.field1012[0] + var0.field1025 + var0.field1012[1] + " " + Class113.field1423 + Class378.field4317 + var0.field1014 + Class113.field1428 + var0.field1012[2];
-				}
-
-				int var7;
-				if (1 == field702) {
-					method3958(Class378.field4310, field503 + " " + Class113.field1424 + " " + Class463.method8551(16777215) + var6, 14, var1, var2, var3, -1, false, var4);
-				} else if (field648) {
-					if ((field4587 & 8) == 8) {
-						method3958(field651, field578 + " " + Class113.field1424 + " " + Class463.method8551(16777215) + var6, 15, var1, var2, var3, -1, false, var4);
-					}
-				} else {
-					for (var7 = 7; var7 >= 0; --var7) {
-						if (field679[var7] != null) {
-							short var8 = 0;
-							if (field679[var7].equalsIgnoreCase(Class378.field4201)) {
-								if (Class114.field1434 == field516) {
-									continue;
-								}
-
-								if (Class114.field1432 == field516 || Class114.field1431 == field516 && var0.field1020 > field107.field1020) {
-									var8 = 2000;
-								}
-
-								if (0 != field107.field1037 && var0.field1037 != 0) {
-									if (var0.field1037 == field107.field1037) {
-										var8 = 2000;
-									} else {
-										var8 = 0;
-									}
-								} else if (field516 == Class114.field1438 && var0.method2293()) {
-									var8 = 2000;
-								}
-							} else if (field602[var7]) {
-								var8 = 2000;
-							}
-
-							boolean var9 = false;
-							int var10 = var8 + field618[var7];
-							method3958(field679[var7], Class463.method8551(16777215) + var6, var10, var1, var2, var3, -1, false, var4);
-						}
-					}
-				}
-
-				for (var7 = 0; var7 < field629; ++var7) {
-					if (field632[var7] == 23) {
-						field637[var7] = Class463.method8551(16777215) + var6;
-						break;
-					}
-				}
-
-			}
-		}
-	}
-
-	@ObfInfo(desc = "(II)Ljava/lang/String;")
+	@ObfInfo(owner = "mq", name = "mo", desc = "(IIB)Ljava/lang/String;", opaque = "1")
 	public static String method6269(int var0, int var1) {
 		int var3 = var1 - var0;
 		if (var3 < -9) {
-			return Class463.method8551(16711680);
+			return Class113.method8551(16711680);
 		} else if (var3 < -6) {
-			return Class463.method8551(16723968);
+			return Class113.method8551(16723968);
 		} else if (var3 < -3) {
-			return Class463.method8551(16740352);
+			return Class113.method8551(16740352);
 		} else if (var3 < 0) {
-			return Class463.method8551(16756736);
+			return Class113.method8551(16756736);
 		} else if (var3 > 9) {
-			return Class463.method8551(65280);
+			return Class113.method8551(65280);
 		} else if (var3 > 6) {
-			return Class463.method8551(4259584);
+			return Class113.method8551(4259584);
 		} else if (var3 > 3) {
-			return Class463.method8551(8453888);
+			return Class113.method8551(8453888);
 		} else {
-			return var3 > 0 ? Class463.method8551(12648192) : Class463.method8551(16776960);
+			return var3 > 0 ? Class113.method8551(12648192) : Class113.method8551(16776960);
 		}
 	}
 
-	@ObfInfo(desc = "(IIIIIIII)V")
+	@ObfInfo(owner = "oo", name = "mk", desc = "(IIIIIIIIB)V", opaque = "0")
 	public static void method7206(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
 		if (field25.method6720(var0)) {
 			field1925 = null;
@@ -13337,7 +11906,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "([LClass340;IIIIIIII)V")
+	@ObfInfo(owner = "of", name = "mg", desc = "([Lnb;IIIIIIIII)V", opaque = "-697314448")
 	public static void method7138(Class340[] var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
 		Class561.method10144(var2, var3, var4, var5);
 		Class253.method4851();
@@ -13478,7 +12047,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 							}
 
 							if (var11.field3681 == 1339) {
-								Class142.method3145(var11, var13, var14, var12);
+								method3145(var11, var13, var14, var12);
 								Class561.method10144(var2, var3, var4, var5);
 								continue;
 							}
@@ -13543,7 +12112,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 							if (1 != var11.field3755) {
 								if (3 == var11.field3755) {
-									if (method4780(var11)) {
+									if (Class252.method4780(var11)) {
 										var20 = var11.field3703;
 										if (field230 == var11 && var11.field3787 != 0) {
 											var20 = var11.field3787;
@@ -13583,7 +12152,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 										}
 									} else {
 										String var44 = var11.field3740;
-										if (method4780(var11)) {
+										if (Class252.method4780(var11)) {
 											var21 = var11.field3703;
 											if (field230 == var11 && var11.field3787 != 0) {
 												var21 = var11.field3787;
@@ -13600,14 +12169,14 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 										}
 
 										if (var11.field3675 && -1 != var11.field3810) {
-											Class232 var45 = Class7.method109(var11.field3810);
+											Class232 var45 = Class232.method109(var11.field3810);
 											var44 = var45.field2449;
 											if (var44 == null) {
 												var44 = Class378.field4152;
 											}
 
 											if ((1 == var45.field2462 || 1 != var11.field3811) && var11.field3811 != -1) {
-												var44 = Class463.method8551(16748608) + var44 + Class113.field1421 + " " + 'x' + method4392(var11.field3811);
+												var44 = Class113.method8551(16748608) + var44 + Class113.field1421 + " " + 'x' + method4392(var11.field3811);
 											}
 										}
 
@@ -13629,7 +12198,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 									if (var11.field3755 == 5) {
 										Class549 var32;
 										if (!var11.field3675) {
-											var32 = var11.method6588(field25, method4780(var11), field3381);
+											var32 = var11.method6588(field25, Class252.method4780(var11), field3381);
 											if (var32 != null) {
 												var32.method10023(var13, var14);
 											} else if (Class340.field3674) {
@@ -13684,7 +12253,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 									} else {
 										int var27;
 										if (var11.field3755 == 6) {
-											boolean var31 = method4780(var11);
+											boolean var31 = Class252.method4780(var11);
 											if (var31) {
 												var21 = var11.field3726;
 											} else {
@@ -13694,7 +12263,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 											Class262 var37 = null;
 											var23 = 0;
 											if (-1 != var11.field3810) {
-												Class232 var38 = Class7.method109(var11.field3810);
+												Class232 var38 = Class232.method109(var11.field3810);
 												if (var38 != null) {
 													var38 = var38.method4419(var11.field3811);
 													var37 = var38.method4418(1);
@@ -13712,7 +12281,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 													var37 = field107.method1092();
 												}
 											} else if (7 == var11.field3792) {
-												var37 = var11.field3764.method7086((Class211)null, -1, Class237.method4637(field107.field1061), field107.field1122);
+												var37 = var11.field3764.method7086((Class211)null, -1, Class211.method4637(field107.field1061), field107.field1122);
 											} else {
 												Class223 var39 = null;
 												if (6 == var11.field3792) {
@@ -13739,7 +12308,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 												Class211 var43 = null;
 												var26 = -1;
 												if (var21 != -1) {
-													var43 = Class237.method4637(var21);
+													var43 = Class211.method4637(var21);
 													var26 = var11.field3812;
 												}
 
@@ -13874,7 +12443,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(IIIIII)V")
+	@ObfInfo(owner = "cj", name = "ms", desc = "(IIIIIII)V", opaque = "504095188")
 	public static void method1111(int var0, int var1, int var2, int var3, int var4, int var5) {
 		int var7 = var2 - var0;
 		int var8 = var3 - var1;
@@ -13915,7 +12484,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/String;LClass340;)Ljava/lang/String;")
+	@ObfInfo(owner = "tw", name = "mt", desc = "(Ljava/lang/String;Lnb;B)Ljava/lang/String;", opaque = "2")
 	public static String method9354(String var0, Class340 var1) {
 		if (var0.indexOf("%") != -1) {
 			for (int var3 = 1; var3 <= 5; ++var3) {
@@ -13942,7 +12511,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		return var0;
 	}
 
-	@ObfInfo(desc = "(I)Ljava/lang/String;")
+	@ObfInfo(owner = "iu", name = "mw", desc = "(II)Ljava/lang/String;", opaque = "1961222206")
 	public static String method4392(int var0) {
 		String var2 = Integer.toString(var0);
 
@@ -13951,13 +12520,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 
 		if (var2.length() > 9) {
-			return " " + Class463.method8551(65408) + var2.substring(0, var2.length() - 8) + Class378.field4321 + " " + Class113.field1423 + var2 + Class113.field1428 + Class113.field1421;
+			return " " + Class113.method8551(65408) + var2.substring(0, var2.length() - 8) + Class378.field4321 + " " + Class113.field1423 + var2 + Class113.field1428 + Class113.field1421;
 		} else {
-			return var2.length() > 6 ? " " + Class463.method8551(16777215) + var2.substring(0, var2.length() - 4) + Class378.field4323 + " " + Class113.field1423 + var2 + Class113.field1428 + Class113.field1421 : " " + Class463.method8551(16776960) + var2 + Class113.field1421;
+			return var2.length() > 6 ? " " + Class113.method8551(16777215) + var2.substring(0, var2.length() - 4) + Class378.field4323 + " " + Class113.field1423 + var2 + Class113.field1428 + Class113.field1421 : " " + Class113.method8551(16776960) + var2 + Class113.field1421;
 		}
 	}
 
-	@ObfInfo(desc = "([LClass340;LClass340;Z)V")
+	@ObfInfo(owner = "fl", name = "my", desc = "([Lnb;Lnb;ZB)V", opaque = "-2")
 	public static void method3152(Class340[] var0, Class340 var1, boolean var2) {
 		int var4 = 0 != var1.field3800 ? var1.field3800 : var1.field3692;
 		int var5 = var1.field3701 != 0 ? var1.field3701 : var1.field3736;
@@ -13976,14 +12545,14 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(IIIZ)V")
+	@ObfInfo(owner = "da", name = "mu", desc = "(IIIZI)V")
 	public static void method2209(int var0, int var1, int var2, boolean var3) {
 		if (field25.method6720(var0)) {
 			method4162(field25.field3877[var0], -1, var1, var2, var3);
 		}
 	}
 
-	@ObfInfo(desc = "([LClass340;IIIZ)V")
+	@ObfInfo(owner = "ij", name = "mr", desc = "([Lnb;IIIZI)V", opaque = "-2085879982")
 	public static void method4162(Class340[] var0, int var1, int var2, int var3, boolean var4) {
 		for (int var6 = 0; var6 < var0.length; ++var6) {
 			Class340 var7 = var0[var6];
@@ -14014,7 +12583,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(LClass340;IIZ)V")
+	@ObfInfo(owner = "ny", name = "mm", desc = "(Lnb;IIZI)V", opaque = "-1696669473")
 	public static void method7116(Class340 var0, int var1, int var2, boolean var3) {
 		int var5 = var0.field3692;
 		int var6 = var0.field3736;
@@ -14059,7 +12628,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(LClass340;II)V")
+	@ObfInfo(owner = "ab", name = "ml", desc = "(Lnb;IIB)V", opaque = "0")
 	public static void method27(Class340 var0, int var1, int var2) {
 		if (var0.field3682 == 0) {
 			var0.field3705 = var0.field3686;
@@ -14091,7 +12660,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(LClass340;IIIIII)V")
+	@ObfInfo(owner = "an", name = "no", desc = "(Lnb;IIIIIII)V", opaque = "198415184")
 	public static void method167(Class340 var0, int var1, int var2, int var3, int var4, int var5, int var6) {
 		if (field569) {
 			field570 = 32;
@@ -14132,7 +12701,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(IIIII)V")
+	@ObfInfo(owner = "jj", name = "ne", desc = "(IIIIII)V", opaque = "-1490857097")
 	public static void method4745(int var0, int var1, int var2, int var3, int var4) {
 		field1374[0].method10086(var0, var1);
 		field1374[1].method10086(var0, var3 + var1 - 16);
@@ -14154,36 +12723,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		Class561.method10200(var0 + 1, var6 + var1 + 14 + var7, 15, field484);
 	}
 
-	@ObfInfo(desc = "(LClass340;)Z")
-	public static boolean method4780(Class340 var0) {
-		if (var0.field3803 == null) {
-			return false;
-		} else {
-			for (int var2 = 0; var2 < var0.field3803.length; ++var2) {
-				int var3 = method9206(var0, var2);
-				int var4 = var0.field3804[var2];
-				if (2 == var0.field3803[var2]) {
-					if (var3 >= var4) {
-						return false;
-					}
-				} else if (3 == var0.field3803[var2]) {
-					if (var3 <= var4) {
-						return false;
-					}
-				} else if (4 == var0.field3803[var2]) {
-					if (var4 == var3) {
-						return false;
-					}
-				} else if (var4 != var3) {
-					return false;
-				}
-			}
-
-			return true;
-		}
-	}
-
-	@ObfInfo(desc = "(LClass340;I)I")
+	@ObfInfo(owner = "tc", name = "ns", desc = "(Lnb;IB)I", opaque = "0")
 	public static int method9206(Class340 var0, int var1) {
 		if (var0.field3717 != null && var1 < var0.field3717.length) {
 			try {
@@ -14221,7 +12761,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 						var10 += var3[var5++];
 						var11 = field25.method6718(var10);
 						var12 = var3[var5++];
-						if (var12 != -1 && (!Class7.method109(var12).field2467 || field528)) {
+						if (var12 != -1 && (!Class232.method109(var12).field2467 || field528)) {
 							for (var13 = 0; var13 < var11.field3808.length; ++var13) {
 								if (var12 + 1 == var11.field3808[var13]) {
 									var8 += var11.field3669[var13];
@@ -14259,7 +12799,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 						var10 += var3[var5++];
 						var11 = field25.method6718(var10);
 						var12 = var3[var5++];
-						if (var12 != -1 && (!Class7.method109(var12).field2467 || field528)) {
+						if (var12 != -1 && (!Class232.method109(var12).field2467 || field528)) {
 							for (var13 = 0; var13 < var11.field3808.length; ++var13) {
 								if (var11.field3808[var13] == var12 + 1) {
 									var8 = 999999999;
@@ -14342,7 +12882,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "(LClass340;)V")
+	@ObfInfo(owner = "an", name = "nr", desc = "(Lnb;I)V", opaque = "-520457283")
 	public static void method169(Class340 var0) {
 		String var2;
 		int var3;
@@ -14357,9 +12897,9 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		int var5;
 		String var11;
 		if (var0.field3788 == 2 && !field648) {
-			var2 = method2931(var0);
+			var2 = Class118.method2931(var0);
 			if (var2 != null) {
-				var11 = Class463.method8551(65280) + var0.field3710;
+				var11 = Class113.method8551(65280) + var0.field3710;
 				var4 = var0.field3676;
 				var5 = var0.field3810;
 				method3958(var2, var11, 25, 0, -1, var4, var5, false, -1);
@@ -14413,7 +12953,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					}
 				}
 
-				var2 = method2931(var0);
+				var2 = Class118.method2931(var0);
 				if (var2 != null) {
 					var11 = var0.field3785;
 					var4 = var0.field3791;
@@ -14447,24 +12987,24 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(Z)V")
+	@ObfInfo(owner = "hj", name = "nq", desc = "(ZI)V")
 	public static void method3793(boolean var0) {
 		field640 = var0;
 	}
 
-	@ObfInfo(desc = "()Z")
+	@ObfInfo(owner = "qm", name = "nw", desc = "(I)Z")
 	public static boolean method7960() {
 		return field640;
 	}
 
-	@ObfInfo(desc = "(IIIIIII)V")
+	@ObfInfo(owner = "hc", name = "nm", desc = "(IIIIIIII)V")
 	public static void method3689(int var0, int var1, int var2, int var3, int var4, int var5, int var6) {
 		if (field25.method6720(var0)) {
 			method6161(field25.field3877[var0], -1, var1, var2, var3, var4, var5, var6);
 		}
 	}
 
-	@ObfInfo(desc = "([LClass340;IIIIIII)V")
+	@ObfInfo(owner = "lx", name = "nj", desc = "([Lnb;IIIIIIIB)V", opaque = "1")
 	public static void method6161(Class340[] var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
 		for (int var9 = 0; var9 < var0.length; ++var9) {
 			Class340 var10 = var0[var9];
@@ -14653,12 +13193,12 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 									} else if (var21 == 10) {
 										method2176();
 										method7191(var10.field3676, var10.field3791, Class344.method3653(method3511(var10)), var10.field3810);
-										field651 = method2931(var10);
+										field651 = Class118.method2931(var10);
 										if (field651 == null) {
 											field651 = Class378.field4152;
 										}
 
-										field578 = var10.field3785 + Class463.method8551(16777215);
+										field578 = var10.field3785 + Class113.method8551(16777215);
 									}
 
 									var24 = var10.field3697[var21];
@@ -14843,7 +13383,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 								int var38;
 								if (var10.field3827 != null && field719 > var10.field3786) {
 									if (var10.field3781 != null && field719 - var10.field3786 <= 32) {
-										label722:
+										label720:
 										for (var38 = var10.field3786; var38 < field719; ++var38) {
 											var24 = field678[var38 & 31];
 
@@ -14853,7 +13393,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 													var37.field1325 = var10;
 													var37.field1333 = var10.field3827;
 													field696.method7477(var37);
-													break label722;
+													break label720;
 												}
 											}
 										}
@@ -14869,7 +13409,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 								if (var10.field3779 != null && field681 > var10.field3690) {
 									if (var10.field3780 != null && field681 - var10.field3690 <= 32) {
-										label698:
+										label696:
 										for (var38 = var10.field3690; var38 < field681; ++var38) {
 											var24 = field755[var38 & 31];
 
@@ -14879,7 +13419,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 													var37.field1325 = var10;
 													var37.field1333 = var10.field3779;
 													field696.method7477(var37);
-													break label698;
+													break label696;
 												}
 											}
 										}
@@ -14895,7 +13435,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 								if (var10.field3715 != null && field683 > var10.field3671) {
 									if (var10.field3782 != null && field683 - var10.field3671 <= 32) {
-										label674:
+										label672:
 										for (var38 = var10.field3671; var38 < field683; ++var38) {
 											var24 = field682[var38 & 31];
 
@@ -14905,7 +13445,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 													var37.field1325 = var10;
 													var37.field1333 = var10.field3715;
 													field696.method7477(var37);
-													break label674;
+													break label672;
 												}
 											}
 										}
@@ -15073,7 +13613,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(I)Z")
+	@ObfInfo(owner = "ha", name = "nl", desc = "(II)Z", opaque = "1071137861")
 	public static boolean method3661(int var0) {
 		for (int var2 = 0; var2 < field723; ++var2) {
 			if (field725[var2] == var0) {
@@ -15084,14 +13624,14 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		return false;
 	}
 
-	@ObfInfo(desc = "(II)V")
+	@ObfInfo(owner = "ep", name = "nk", desc = "(III)V", opaque = "254301199")
 	public static void method2961(int var0, int var1) {
 		if (field25.method6720(var0)) {
 			method2734(field25.field3877[var0], var1);
 		}
 	}
 
-	@ObfInfo(desc = "([LClass340;I)V")
+	@ObfInfo(owner = "dx", name = "nz", desc = "([Lnb;II)V", opaque = "774896882")
 	public static void method2734(Class340[] var0, int var1) {
 		for (int var3 = 0; var3 < var0.length; ++var3) {
 			Class340 var4 = var0[var3];
@@ -15133,18 +13673,18 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(LClass340;II)V")
+	@ObfInfo(owner = "du", name = "nu", desc = "(Lnb;III)V", opaque = "-1366895040")
 	public static void method2517(Class340 var0, int var1, int var2) {
 		if (field665 == null && !field628) {
 			if (var0 != null) {
-				Class340 var5 = method193(var0);
+				Class340 var5 = Class16.method193(var0);
 				if (var5 == null) {
 					var5 = var0.field3759;
 				}
 
 				if (var5 != null) {
 					field665 = var0;
-					var5 = method193(var0);
+					var5 = Class16.method193(var0);
 					if (var5 == null) {
 						var5 = var0.field3759;
 					}
@@ -15166,7 +13706,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "(I)V")
+	@ObfInfo(owner = "cf", name = "ny", desc = "(II)V")
 	public static void method1089(int var0) {
 		field3069 = new Class62();
 		field3069.field459 = field630[var0];
@@ -15179,13 +13719,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		field3069.field457 = field635[var0];
 	}
 
-	@ObfInfo(desc = "(II)V")
+	@ObfInfo(owner = "hg", name = "nn", desc = "(III)V")
 	public static void method3706(int var0, int var1) {
 		method3306(field3069, var0, var1);
 		field3069 = null;
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "di", name = "np", desc = "(I)V", opaque = "-1362359720")
 	public static void method2384() {
 		for (Class104 var1 = (Class104)field654.method9363(); var1 != null; var1 = (Class104)field654.method9364()) {
 			int var2 = var1.field1366;
@@ -15213,7 +13753,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(I)V")
+	@ObfInfo(owner = "gz", name = "nh", desc = "(II)V", opaque = "203134411")
 	public static void method3641(int var0) {
 		if (field25.method6720(var0)) {
 			Class340[] var2 = field25.field3877[var0];
@@ -15229,14 +13769,14 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "(I)V")
+	@ObfInfo(owner = "fa", name = "nb", desc = "(IB)V")
 	public static void method3063(int var0) {
 		if (field25.method6720(var0)) {
 			method6310(field25.field3877[var0], -1);
 		}
 	}
 
-	@ObfInfo(desc = "([LClass340;I)V")
+	@ObfInfo(owner = "mv", name = "nf", desc = "([Lnb;IB)V", opaque = "-2")
 	public static void method6310(Class340[] var0, int var1) {
 		for (int var3 = 0; var3 < var0.length; ++var3) {
 			Class340 var4 = var0[var3];
@@ -15260,7 +13800,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				if (6 == var4.field3755) {
 					int var6;
 					if (var4.field3725 != -1 || -1 != var4.field3726) {
-						boolean var9 = method4780(var4);
+						boolean var9 = Class252.method4780(var4);
 						if (var9) {
 							var6 = var4.field3726;
 						} else {
@@ -15268,7 +13808,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 						}
 
 						if (var6 != -1) {
-							Class211 var7 = Class237.method4637(var6);
+							Class211 var7 = Class211.method4637(var6);
 							if (!var7.method4038()) {
 								for (var4.field3813 += field564; var4.field3813 > var7.field2139[var4.field3812]; Class317.method6187(var4)) {
 									var4.field3813 -= var7.field2139[var4.field3812];
@@ -15310,7 +13850,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(I)V")
+	@ObfInfo(owner = "hx", name = "nd", desc = "(II)V", opaque = "1541825141")
 	public static void method3956(int var0) {
 		var0 = Math.max(Math.min(var0, 100), 0);
 		var0 = 100 - var0;
@@ -15325,13 +13865,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		field4851.method2620((double)var2);
 	}
 
-	@ObfInfo(desc = "()I")
+	@ObfInfo(owner = "bg", name = "na", desc = "(I)I")
 	public static int method715() {
 		float var1 = 200.0F * ((float)field4851.method2621() - 0.5F);
 		return 100 - Math.round(var1);
 	}
 
-	@ObfInfo(desc = "(I)V")
+	@ObfInfo(owner = "nj", name = "nx", desc = "(II)V", opaque = "1104055563")
 	public static void method6714(int var0) {
 		var0 = Math.min(Math.max(var0, 0), 255);
 		if (field4851.method2637() != var0) {
@@ -15371,7 +13911,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(I)V")
+	@ObfInfo(owner = "bn", name = "ni", desc = "(IB)V")
 	public static void method795(int var0) {
 		var0 = Math.min(Math.max(var0, 0), 127);
 		field4851.method2624(var0);
@@ -15383,187 +13923,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		field4851.method2626(var0);
 	}
 
-	@ObfInfo(desc = "(I)V")
-	public static void method3138(int var0) {
-		method2384();
-		Class77.method3919();
-		int var2 = Class239.method4659(var0).field2085;
-		if (var2 != 0) {
-			int var3 = Class351.field3889[var0];
-			if (var2 == 1) {
-				if (var3 == 1) {
-					Class253.method4784(0.9D);
-					((Class244)Class253.field2688.field3043).method4716(0.9D);
-					if (field104 != null) {
-						field104.method9134();
-					}
-
-					Class232.method3345();
-					field4851.method2620(0.9D);
-				}
-
-				if (var3 == 2) {
-					Class253.method4784(0.8D);
-					((Class244)Class253.field2688.field3043).method4716(0.8D);
-					if (field104 != null) {
-						field104.method9134();
-					}
-
-					Class232.method3345();
-					field4851.method2620(0.8D);
-				}
-
-				if (var3 == 3) {
-					Class253.method4784(0.7D);
-					((Class244)Class253.field2688.field3043).method4716(0.7D);
-					if (field104 != null) {
-						field104.method9134();
-					}
-
-					Class232.method3345();
-					field4851.method2620(0.7D);
-				}
-
-				if (var3 == 4) {
-					Class253.method4784(0.6D);
-					((Class244)Class253.field2688.field3043).method4716(0.6D);
-					if (field104 != null) {
-						field104.method9134();
-					}
-
-					Class232.method3345();
-					field4851.method2620(0.6D);
-				}
-			}
-
-			if (var2 == 3) {
-				if (var3 == 0) {
-					method6714(255);
-				}
-
-				if (var3 == 1) {
-					method6714(192);
-				}
-
-				if (var3 == 2) {
-					method6714(128);
-				}
-
-				if (var3 == 3) {
-					method6714(64);
-				}
-
-				if (var3 == 4) {
-					method6714(0);
-				}
-			}
-
-			if (var2 == 4) {
-				if (var3 == 0) {
-					method795(127);
-				}
-
-				if (var3 == 1) {
-					method795(96);
-				}
-
-				if (var3 == 2) {
-					method795(64);
-				}
-
-				if (var3 == 3) {
-					method795(32);
-				}
-
-				if (var3 == 4) {
-					method795(0);
-				}
-			}
-
-			if (var2 == 5) {
-				field494 = var3 == 1;
-			}
-
-			if (var2 == 6) {
-				field488 = var3;
-			}
-
-			if (var2 == 9) {
-			}
-
-			if (var2 == 10) {
-				if (var3 == 0) {
-					method1773(127);
-				}
-
-				if (var3 == 1) {
-					method1773(96);
-				}
-
-				if (var3 == 2) {
-					method1773(64);
-				}
-
-				if (var3 == 3) {
-					method1773(32);
-				}
-
-				if (var3 == 4) {
-					method1773(0);
-				}
-			}
-
-			if (var2 == 17) {
-				field662 = var3 & 65535;
-			}
-
-			if (var2 == 18) {
-				field516 = (Class114)Class62.method1112(Class87.method2385(), var3);
-				if (field516 == null) {
-					field516 = Class114.field1431;
-				}
-			}
-
-			if (var2 == 19) {
-				if (var3 == -1) {
-					field622 = -1;
-				} else {
-					field622 = var3 & 2047;
-				}
-			}
-
-			if (var2 == 22) {
-				Class114[] var4 = new Class114[]{Class114.field1438, Class114.field1434, Class114.field1431, Class114.field1432, Class114.field1433};
-				field517 = (Class114)Class62.method1112(var4, var3);
-				if (field517 == null) {
-					field517 = Class114.field1431;
-				}
-			}
-
-		}
-	}
-
-	@ObfInfo(desc = "()V")
-	public static void method2188() {
-		Class316 var1 = Class316.method3908(Class315.field3326, field548.field1446);
-		field548.method2897(var1);
-		Class72.field890 = true;
-
-		for (Class104 var2 = (Class104)field654.method9363(); var2 != null; var2 = (Class104)field654.method9364()) {
-			if (0 == var2.field1364 || var2.field1364 == 3) {
-				method716(var2, true);
-			}
-		}
-
-		if (field533 != null) {
-			Class317.method6187(field533);
-			field533 = null;
-		}
-
-		Class72.field890 = false;
-	}
-
-	@ObfInfo(desc = "(III)LClass104;")
+	@ObfInfo(owner = "kr", name = "op", desc = "(IIIB)Ldz;", opaque = "17")
 	public static Class104 method5559(int var0, int var1, int var2) {
 		Class104 var4 = new Class104();
 		var4.field1366 = var1;
@@ -15586,7 +13946,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		return var4;
 	}
 
-	@ObfInfo(desc = "(LClass104;Z)V")
+	@ObfInfo(owner = "bg", name = "ol", desc = "(Ldz;ZI)V", opaque = "-959959630")
 	public static void method716(Class104 var0, boolean var1) {
 		int var3 = var0.field1366;
 		int var4 = (int)var0.field5170;
@@ -15607,7 +13967,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(LClass340;)Z")
+	@ObfInfo(owner = "pf", name = "oh", desc = "(Lnb;S)Z", opaque = "255")
 	public static boolean method7433(Class340 var0) {
 		int var2 = var0.field3681;
 		if (var2 == 205) {
@@ -15647,7 +14007,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "(LClass340;III)V")
+	@ObfInfo(owner = "gu", name = "oe", desc = "(Lnb;IIIB)V", opaque = "8")
 	public static void method3593(Class340 var0, int var1, int var2, int var3) {
 		method4066();
 		Class361 var5 = var0.method6512(field25, false);
@@ -15762,7 +14122,20 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "(IIIILClass549;LClass361;)V")
+	@ObfInfo(owner = "fl", name = "oq", desc = "(Lnb;IIII)V", opaque = "-1592734627")
+	public static void method3145(Class340 var0, int var1, int var2, int var3) {
+		Class361 var5 = var0.method6512(field25, false);
+		if (var5 != null) {
+			if (field736 < 3) {
+				field4958.method9961(var1, var2, var5.field3970, var5.field3968, 25, 25, field572, 256, var5.field3967, var5.field3969);
+			} else {
+				Class561.method10164(var1, var2, 0, var5.field3967, var5.field3969);
+			}
+
+		}
+	}
+
+	@ObfInfo(owner = "dq", name = "ob", desc = "(IIIILvc;Lnw;I)V", opaque = "-1021134086")
 	public static void method2489(int var0, int var1, int var2, int var3, Class549 var4, Class361 var5) {
 		int var7 = var2 * var2 + var3 * var3;
 		if (var7 > 4225 && var7 < 90000) {
@@ -15783,7 +14156,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(IIIILClass549;LClass361;)V")
+	@ObfInfo(owner = "dn", name = "oz", desc = "(IIIILvc;Lnw;I)V", opaque = "206054039")
 	public static void method2418(int var0, int var1, int var2, int var3, Class549 var4, Class361 var5) {
 		if (var4 != null) {
 			int var7 = field572 & 2047;
@@ -15803,7 +14176,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "dn", name = "ox", desc = "(B)V", opaque = "0")
 	public static void method2419() {
 		for (int var1 = 0; var1 < field3857.field1288.field1392; ++var1) {
 			Class83 var2 = field3857.field1293[field3857.field1288.field1393[var1]];
@@ -15823,22 +14196,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "()V")
-	public static void method2220() {
-		Iterator var1 = Class128.field1529.iterator();
-
-		while (var1.hasNext()) {
-			Class67 var2 = (Class67)var1.next();
-			var2.method1834();
-		}
-
-		if (field1420 != null) {
-			field1420.method8479();
-		}
-
-	}
-
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "sv", name = "oy", desc = "(S)V", opaque = "16255")
 	public static void method8938() {
 		for (int var1 = 0; var1 < field3857.field1288.field1392; ++var1) {
 			Class83 var2 = field3857.field1293[field3857.field1288.field1393[var1]];
@@ -15847,13 +14205,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "oa", name = "on", desc = "(B)V")
 	public static void method7124() {
 		field689 = field677;
 		field2680 = true;
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/String;)V")
+	@ObfInfo(owner = "ck", name = "ow", desc = "(Ljava/lang/String;I)V", opaque = "-450354972")
 	public static void method1124(String var0) {
 		if (field1420 != null) {
 			Class316 var2 = Class316.method3908(Class315.field3320, field548.field1446);
@@ -15863,14 +14221,14 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "fu", name = "og", desc = "(I)V")
 	public static void method3270() {
 		Class316 var1 = Class316.method3908(Class315.field3344, field548.field1446);
 		var1.field3374.method9388(0);
 		field548.method2897(var1);
 	}
 
-	@ObfInfo(desc = "(II)V")
+	@ObfInfo(owner = "do", name = "ov", desc = "(IIB)V", opaque = "2")
 	public static void method2452(int var0, int var1) {
 		Class171 var3 = var0 >= 0 ? field684[var0] : field4619;
 		if (var3 != null && var1 >= 0 && var1 < var3.method3536()) {
@@ -15887,7 +14245,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "(II)V")
+	@ObfInfo(owner = "jo", name = "om", desc = "(IIB)V", opaque = "0")
 	public static void method4767(int var0, int var1) {
 		if (field684[var0] != null) {
 			if (var1 >= 0 && var1 < field684[var0].method3536()) {
@@ -15904,7 +14262,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "(IIZ)V")
+	@ObfInfo(owner = "ec", name = "ot", desc = "(IIZI)V", opaque = "915792532")
 	public static void method2778(int var0, int var1, boolean var2) {
 		if (null != field684[var0]) {
 			if (var1 >= 0 && var1 < field684[var0].method3536()) {
@@ -15920,7 +14278,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "(I)V")
+	@ObfInfo(owner = "od", name = "ok", desc = "(II)V", opaque = "2083108268")
 	public static void method7135(int var0) {
 		for (Class516 var2 = (Class516)field507.method9363(); var2 != null; var2 = (Class516)field507.method9364()) {
 			if ((long)var0 == (var2.field5170 >> 48 & 65535L)) {
@@ -15930,68 +14288,18 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(LClass340;)I")
+	@ObfInfo(owner = "gj", name = "oc", desc = "(Lnb;I)I")
 	public static int method3511(Class340 var0) {
 		Class516 var2 = (Class516)field507.method9361((long)var0.field3791 + ((long)var0.field3676 << 32));
 		return var2 != null ? var2.field5199 : var0.field3679;
 	}
 
-	@ObfInfo(desc = "(LClass340;)LClass340;")
-	public static Class340 method193(Class340 var0) {
-		int var2 = Class344.method6213(method3511(var0));
-		if (var2 == 0) {
-			return null;
-		} else {
-			for (int var3 = 0; var3 < var2; ++var3) {
-				var0 = field25.method6718(var0.field3826);
-				if (var0 == null) {
-					return null;
-				}
-			}
-
-			return var0;
-		}
-	}
-
-	@ObfInfo(desc = "(LClass340;)Z")
+	@ObfInfo(owner = "na", name = "oj", desc = "(Lnb;B)Z")
 	public static boolean method6493(Class340 var0) {
 		return var0.field3775;
 	}
 
-	@ObfInfo(desc = "(LClass340;)Ljava/lang/String;")
-	public static String method2931(Class340 var0) {
-		if (Class344.method3653(method3511(var0)) == 0) {
-			return null;
-		} else {
-			return var0.field3763 != null && var0.field3763.trim().length() != 0 ? var0.field3763 : null;
-		}
-	}
-
-	@ObfInfo(desc = "(Ljava/lang/String;Z)Ljava/lang/String;")
-	public static String method8428(String var0, boolean var1) {
-		String var3 = var1 ? "https://" : "http://";
-		if (1 == field532) {
-			var0 = var0 + "-wtrc";
-		} else if (2 == field532) {
-			var0 = var0 + "-wtqa";
-		} else if (3 == field532) {
-			var0 = var0 + "-wtwip";
-		} else if (5 == field532) {
-			var0 = var0 + "-wti";
-		} else if (field532 == 4) {
-			var0 = "local";
-		}
-
-		String var4 = "";
-		if (field4720 != null) {
-			var4 = "/p=" + field4720;
-		}
-
-		String var5 = "runescape.com";
-		return var3 + var0 + "." + var5 + "/l=" + field2071 + "/a=" + field1751 + var4 + "/";
-	}
-
-	@ObfInfo(desc = "(Ljava/lang/String;)V")
+	@ObfInfo(owner = "ex", name = "pu", desc = "(Ljava/lang/String;I)V", opaque = "931829718")
 	public static void method3033(String var0) {
 		field4720 = var0;
 
@@ -16004,7 +14312,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				var4 = var4 + "; Expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0";
 			} else {
 				String var5 = var4 + "; Expires=";
-				long var7 = Class327.method3047() + 94608000000L;
+				long var7 = Class130.method3047() + 94608000000L;
 				Class347.field3864.setTime(new Date(var7));
 				int var9 = Class347.field3864.get(7);
 				int var10 = Class347.field3864.get(5);
@@ -16024,14 +14332,14 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/String;Z)V")
+	@ObfInfo(owner = "ls", name = "pp", desc = "(Ljava/lang/String;ZB)V", opaque = "10")
 	public static void method6146(String var0, boolean var1) {
 		var0 = var0.toLowerCase();
 		short[] var3 = new short[16];
 		int var4 = 0;
 
 		for (int var5 = 0; var5 < field1874; ++var5) {
-			Class232 var6 = Class7.method109(var5);
+			Class232 var6 = Class232.method109(var5);
 			if ((!var1 || var6.field2461) && -1 == var6.field2486 && var6.field2449.toLowerCase().indexOf(var0) != -1) {
 				if (var4 >= 250) {
 					field1870 = -1;
@@ -16059,14 +14367,14 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		String[] var9 = new String[field1870];
 
 		for (int var10 = 0; var10 < field1870; ++var10) {
-			var9[var10] = Class7.method109(var3[var10]).field2449;
+			var9[var10] = Class232.method109(var3[var10]).field2449;
 		}
 
 		short[] var11 = field277;
 		Class532.method9665(var9, var11, 0, var9.length - 1);
 	}
 
-	@ObfInfo(desc = "(LClass521;I)V")
+	@ObfInfo(owner = "dm", name = "pd", desc = "(Lua;II)V", opaque = "1782054918")
 	public static void method2417(Class521 var0, int var1) {
 		byte[] var3 = var0.field5221;
 		if (field545 == null) {
@@ -16077,23 +14385,23 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		Class179.method2751(var0, var1);
 	}
 
-	@ObfInfo(desc = "(LClass521;)V")
+	@ObfInfo(owner = "dg", name = "pt", desc = "(Lua;B)V", opaque = "0")
 	public static void method2301(Class521 var0) {
 		if (field545 != null) {
 			var0.method9548(field545, 0, field545.length);
 		} else {
-			byte[] var2 = Class65.method1804();
+			byte[] var2 = Class179.method1804();
 			var0.method9548(var2, 0, var2.length);
 		}
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "ka", name = "pr", desc = "(I)V")
 	public static void method5162() {
 		field548.method2897(Class316.method3908(Class315.field3311, field548.field1446));
 		field577 = 0;
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "en", name = "pa", desc = "(B)V")
 	public static void method2944() {
 		if (1 == field577) {
 			field585 = true;
@@ -16101,34 +14409,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "()V")
-	public static void method340() {
-		if (field585 && field107 != null) {
-			int var1 = field107.field1080[0];
-			int var2 = field107.field1127[0];
-			if (var1 < 0 || var2 < 0 || var1 >= 104 || var2 >= 104) {
-				return;
-			}
-
-			field271 = field107.field1065;
-			int var3 = method790(field3857, field107.field1065, field107.field1126, field3857.field1300) - field522;
-			if (var3 < field2629) {
-				field2629 = var3;
-			}
-
-			field897 = field107.field1126;
-			field585 = false;
-		}
-
-	}
-
-	@ObfInfo(desc = "(Ljava/lang/String;)Ljava/lang/String;")
+	@ObfInfo(owner = "fi", name = "py", desc = "(Ljava/lang/String;I)Ljava/lang/String;", opaque = "1316147536")
 	public static String method3135(String var0) {
 		Class371[] var2 = Class371.method2873();
 
 		for (int var3 = 0; var3 < var2.length; ++var3) {
 			Class371 var4 = var2[var3];
-			if (-1 != var4.field4026 && var0.startsWith(Class322.method6223(var4.field4026))) {
+			if (-1 != var4.field4026 && var0.startsWith(Class113.method6223(var4.field4026))) {
 				var0 = var0.substring(Integer.toString(var4.field4026).length() + 6);
 				break;
 			}
@@ -16137,7 +14424,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		return var0;
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "ha", name = "pl", desc = "(I)V", opaque = "-792015884")
 	public static void method3662() {
 		if (field422 != null) {
 			field781 = field778;
@@ -16152,29 +14439,29 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
-	@ObfInfo(desc = "()Z")
+	@ObfInfo(owner = "aw", name = "pe", desc = "(B)Z", opaque = "0")
 	public static boolean method348() {
 		return field4851.method2631() >= field489;
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "nb", name = "pn", desc = "(I)V")
 	public static void method6645() {
 		field4851.method2630(field489);
 	}
 
-	@ObfInfo(desc = "(LClass53;)V")
+	@ObfInfo(owner = "bm", name = "px", desc = "(Lca;I)V")
 	public static void method788(Class53 var0) {
 		if (field1249 != var0) {
 			field1249 = var0;
 		}
 	}
 
-	@ObfInfo(desc = "(Z)V")
+	@ObfInfo(owner = "an", name = "pk", desc = "(ZI)V")
 	public static void method171(boolean var0) {
 		field494 = var0;
 	}
 
-	@ObfInfo(desc = "(I)LClass533;")
+	@ObfInfo(owner = "bh", name = "pw", desc = "(II)Lum;")
 	public static Class533 method719(int var0) {
 		Class533 var2 = (Class533)field647.method5993((long)var0);
 		if (var2 == null) {
@@ -16185,7 +14472,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		return var2;
 	}
 
-	@ObfInfo(desc = "(I)LClass533;")
+	@ObfInfo(owner = "ho", name = "ps", desc = "(IB)Lum;", opaque = "-96")
 	public static Class533 method3870(int var0) {
 		Class533 var2 = (Class533)field779.method5993((long)var0);
 		if (var2 == null) {
@@ -16195,17 +14482,17 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		return var2;
 	}
 
-	@ObfInfo(desc = "()Ljava/awt/datatransfer/Clipboard;")
+	@ObfInfo(owner = "ha", name = "pq", desc = "(B)Ljava/awt/datatransfer/Clipboard;")
 	public static Clipboard method3663() {
 		return field2077.method470();
 	}
 
-	@ObfInfo(desc = "(I)V")
+	@ObfInfo(owner = "rf", name = "pj", desc = "(II)V", opaque = "-317850099")
 	public static void method8410(int var0) {
-		Class211 var2 = Class237.method4637(var0);
+		Class211 var2 = Class211.method4637(var0);
 		if (var2.method4038()) {
 			int var4 = var2.field2133;
-			Class145 var5 = Class94.method2478(var4);
+			Class145 var5 = Class211.method2478(var4);
 			int var3;
 			if (var5 == null) {
 				var3 = 2;
@@ -16220,11 +14507,11 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "tk", name = "pb", desc = "(I)V", opaque = "-2123431865")
 	public static void method9271() {
 		for (int var1 = 0; var1 < field782.size(); ++var1) {
 			int var3 = (Integer)field782.get(var1);
-			Class145 var4 = Class94.method2478(var3);
+			Class145 var4 = Class211.method2478(var3);
 			int var2;
 			if (var4 == null) {
 				var2 = 2;

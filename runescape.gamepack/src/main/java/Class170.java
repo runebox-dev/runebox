@@ -5,7 +5,7 @@ public class Class170 extends Class149 {
 	@ObfInfo(name = "ak", desc = "I", intMultiplier = 748264935)
 	public int field1844;
 	// $FF: synthetic field
-	@ObfInfo(desc = "Lfu;")
+	@ObfInfo(name = "this$0", desc = "Lfu;")
 	public final Class151 this$0;
 
 	public Class170(Class151 var1) {

@@ -36,12 +36,17 @@ public class Class493 implements Class393 {
 	public static void method8960(long var0) {
 		if (var0 > 0L) {
 			if (var0 % 10L == 0L) {
-				Class99.method2511(var0 - 1L);
-				Class99.method2511(1L);
+				Class323.method2511(var0 - 1L);
+				Class323.method2511(1L);
 			} else {
-				Class99.method2511(var0);
+				Class323.method2511(var0);
 			}
 
 		}
+	}
+
+	@ObfInfo(owner = "cr", name = "az", desc = "(B)[Lsy;")
+	public static Class493[] method1939() {
+		return new Class493[]{field5005, field5007, field5006, field5010};
 	}
 }

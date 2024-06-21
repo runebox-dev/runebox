@@ -11,7 +11,7 @@ public final class Class311 {
 	@ObfInfo(name = "al", desc = "I", intMultiplier = -398680227)
 	public int field3265;
 	// $FF: synthetic field
-	@ObfInfo(desc = "Lki;")
+	@ObfInfo(name = "this$0", desc = "Lki;")
 	public final Class269 this$0;
 
 	public Class311(Class269 var1) {

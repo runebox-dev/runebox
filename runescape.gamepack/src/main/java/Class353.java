@@ -189,7 +189,7 @@ public class Class353 extends Class506 {
 		var61[9] = 128;
 		var60[9] = 128;
 
-		label267:
+		label266:
 		for (int var63 = 0; var63 < var2; ++var63) {
 			var51.method9590(1297379947);
 			var51.field5219 += 4;
@@ -213,7 +213,7 @@ public class Class353 extends Class506 {
 						var51.method9388(47);
 						var51.method9388(0);
 						var51.method9400(var51.field5219 - var64);
-						continue label267;
+						continue label266;
 					}
 
 					if (var68 == 23) {

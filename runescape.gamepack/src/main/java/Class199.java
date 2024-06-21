@@ -35,7 +35,32 @@ public class Class199 extends Class507 {
 
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "cy", name = "ak", desc = "(IB)Lhq;", opaque = "7")
+	public static Class199 method2189(int var0) {
+		Class199 var2 = (Class199)field2034.method5993((long)var0);
+		if (var2 != null) {
+			return var2;
+		} else {
+			byte[] var3 = Client.field2039.method7216(5, var0);
+			var2 = new Class199();
+			if (var3 != null) {
+				var2.method3877(new Class521(var3));
+			}
+
+			field2034.method5987(var2, (long)var0);
+			return var2;
+		}
+	}
+
+	@ObfInfo(name = "ak", desc = "(Lmr;I)V", opaque = "-1194566834")
+	public static void method3887(Class330 var0) {
+		if (!Class332.field3459.contains(var0)) {
+			Class332.field3459.add(var0);
+		}
+
+	}
+
+	@ObfInfo(owner = "ea", name = "az", desc = "(I)V")
 	public static void method2750() {
 		field2034.method5995();
 	}

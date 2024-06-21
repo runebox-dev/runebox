@@ -29,7 +29,7 @@ public class Class213 implements Class393 {
 		return this.field2156;
 	}
 
-	@ObfInfo(desc = "()[LClass213;")
+	@ObfInfo(owner = "eh", name = "az", desc = "(I)[Lie;")
 	public static Class213[] method2875() {
 		return new Class213[]{field2157, field2158, field2160};
 	}

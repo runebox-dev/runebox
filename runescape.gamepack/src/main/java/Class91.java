@@ -32,7 +32,7 @@ public class Class91 extends Class507 {
 		return new Class515[var1];
 	}
 
-	@ObfInfo(desc = "(I)LClass91;")
+	@ObfInfo(owner = "gz", name = "ak", desc = "(II)Ldm;", opaque = "-1734966590")
 	public static Class91 method3660(int var0) {
 		Class91 var2 = (Class91)field1206.method5993((long)var0);
 		if (var2 != null) {
@@ -49,31 +49,55 @@ public class Class91 extends Class507 {
 		}
 	}
 
-	@ObfInfo(desc = "(III)LClass91;")
+	@ObfInfo(owner = "ae", name = "al", desc = "(IIII)Ldm;", opaque = "2019892851")
 	public static Class91 method67(int var0, int var1, int var2) {
 		int var4 = Class385.method5325(var1, var0);
-		Class91 var5 = Class77.method2190(var4, var0);
+		Class91 var5 = method2190(var4, var0);
 		if (var5 != null) {
 			return var5;
 		} else {
 			var4 = Class385.method3504(var2, var0);
-			var5 = Class77.method2190(var4, var0);
+			var5 = method2190(var4, var0);
 			if (var5 != null) {
 				return var5;
 			} else {
-				var4 = Class286.method5861(var0);
-				var5 = Class77.method2190(var4, var0);
+				var4 = Class385.method5861(var0);
+				var5 = method2190(var4, var0);
 				return var5 != null ? var5 : null;
 			}
 		}
 	}
 
-	@ObfInfo(name = "al", desc = "([Ljava/lang/String;[II)V")
-	public static void method2406(String[] var0, int[] var1) {
-		Class532.method3940(var0, var1, 0, var0.length - 1);
+	@ObfInfo(owner = "cy", name = "aj", desc = "(IIB)Ldm;", opaque = "1")
+	public static Class91 method2190(int var0, int var1) {
+		Class91 var3 = (Class91)field1206.method5993((long)(var0 << 16));
+		if (var3 != null) {
+			return var3;
+		} else {
+			String var4 = String.valueOf(var0);
+			int var5 = Client.field4783.method7233(var4);
+			if (var5 == -1) {
+				return null;
+			} else {
+				byte[] var6 = Client.field4783.method7221(var5);
+				if (var6 != null) {
+					if (var6.length <= 1) {
+						return null;
+					}
+
+					var3 = method2359(var6);
+					if (var3 != null) {
+						field1206.method5987(var3, (long)(var0 << 16));
+						return var3;
+					}
+				}
+
+				return null;
+			}
+		}
 	}
 
-	@ObfInfo(desc = "([B)LClass91;")
+	@ObfInfo(owner = "di", name = "az", desc = "([BI)Ldm;", opaque = "-426015453")
 	public static Class91 method2359(byte[] var0) {
 		Class91 var2 = new Class91();
 		Class521 var3 = new Class521(var0);

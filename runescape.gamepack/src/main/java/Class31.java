@@ -29,7 +29,7 @@ import java.util.Iterator;
 
 @ObfInfo(name = "be")
 public abstract class Class31 extends Applet implements Runnable, FocusListener, WindowListener {
-	@ObfInfo(desc = "LClass190;")
+	@ObfInfo(owner = "vm", name = "ah", desc = "Lhh;")
 	public static Class190 field5405;
 	@ObfInfo(name = "al", desc = "Lbe;")
 	public static Class31 field176;
@@ -37,7 +37,7 @@ public abstract class Class31 extends Applet implements Runnable, FocusListener,
 	public static Class7 field208;
 	@ObfInfo(name = "af", desc = "Z")
 	public static boolean field179;
-	@ObfInfo(desc = "I", intMultiplier = -1673014015)
+	@ObfInfo(owner = "av", name = "ax", desc = "I", intMultiplier = -1673014015)
 	public static int field115;
 	@ObfInfo(name = "aj", desc = "I", intMultiplier = 1393456911)
 	public static int field177;
@@ -49,17 +49,17 @@ public abstract class Class31 extends Applet implements Runnable, FocusListener,
 	public static int field187;
 	@ObfInfo(name = "be", desc = "I", intMultiplier = -905930227)
 	public static int field200;
-	@ObfInfo(desc = "I", intMultiplier = 1840190059)
+	@ObfInfo(owner = "pg", name = "ap", desc = "I", intMultiplier = 1840190059)
 	public static int field4594;
-	@ObfInfo(desc = "I", intMultiplier = -2003525899)
+	@ObfInfo(owner = "sm", name = "at", desc = "I", intMultiplier = -2003525899)
 	public static int field4955;
-	@ObfInfo(desc = "Ljava/awt/Font;")
+	@ObfInfo(owner = "an", name = "bi", desc = "Ljava/awt/Font;")
 	public static Font field59;
-	@ObfInfo(desc = "Ljava/awt/FontMetrics;")
+	@ObfInfo(owner = "lc", name = "bf", desc = "Ljava/awt/FontMetrics;")
 	public static FontMetrics field3153;
-	@ObfInfo(desc = "Ljava/awt/Image;")
+	@ObfInfo(owner = "ah", name = "bl", desc = "Ljava/awt/Image;")
 	public static Image field48;
-	@ObfInfo(desc = "Ljava/lang/management/GarbageCollectorMXBean;")
+	@ObfInfo(owner = "gh", name = "bj", desc = "Ljava/lang/management/GarbageCollectorMXBean;")
 	public static GarbageCollectorMXBean field1818;
 	@ObfInfo(name = "az", desc = "J", longMultiplier = 1448799417003195815L)
 	public static long field178;
@@ -149,7 +149,7 @@ public abstract class Class31 extends Applet implements Runnable, FocusListener,
 		Class30.method3934(new Class14());
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(name = "init", desc = "()V")
 	public abstract void init();
 
 	@ObfInfo(name = "bp", desc = "(B)V")
@@ -411,7 +411,7 @@ public abstract class Class31 extends Applet implements Runnable, FocusListener,
 		}
 
 		this.field202 = false;
-		this.field193 = Class327.method3047();
+		this.field193 = Class130.method3047();
 	}
 
 	@ObfInfo(name = "am", desc = "(ZI)V", opaque = "1081150660")
@@ -451,7 +451,7 @@ public abstract class Class31 extends Applet implements Runnable, FocusListener,
 		}
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(name = "run", desc = "()V")
 	public void run() {
 		try {
 			if (Class548.field1908 != null) {
@@ -492,7 +492,7 @@ public abstract class Class31 extends Applet implements Runnable, FocusListener,
 
 			field5405 = (Class190)var7;
 
-			while (field178 == 0L || Class327.method3047() < field178) {
+			while (field178 == 0L || Class130.method3047() < field178) {
 				field4955 = field5405.method3557(field181, field186);
 
 				for (int var8 = 0; var8 < field4955; ++var8) {
@@ -512,7 +512,7 @@ public abstract class Class31 extends Applet implements Runnable, FocusListener,
 
 	@ObfInfo(name = "ag", desc = "(B)V")
 	public void method482() {
-		long var2 = Class327.method3047();
+		long var2 = Class130.method3047();
 		long var4 = field191[field115];
 		field191[field115] = var2;
 		field115 = field115 + 1 & 31;
@@ -534,7 +534,7 @@ public abstract class Class31 extends Applet implements Runnable, FocusListener,
 	@ObfInfo(name = "bl", desc = "(I)V", opaque = "193156459")
 	public void method558() {
 		Container var2 = this.method635();
-		long var3 = Class327.method3047();
+		long var3 = Class130.method3047();
 		long var5 = field185[field4594];
 		field185[field4594] = var3;
 		field4594 = 1 + field4594 & 31;
@@ -617,39 +617,39 @@ public abstract class Class31 extends Applet implements Runnable, FocusListener,
 		}
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(name = "start", desc = "()V")
 	public final void start() {
 		if (field176 == this && !field179) {
 			field178 = 0L;
 		}
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(name = "stop", desc = "()V")
 	public final void stop() {
 		if (field176 == this && !field179) {
-			field178 = Class327.method3047() + 4000L;
+			field178 = Class130.method3047() + 4000L;
 		}
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(name = "destroy", desc = "()V")
 	public final void destroy() {
 		if (field176 == this && !field179) {
-			field178 = Class327.method3047();
+			field178 = Class130.method3047();
 			Class493.method8960(5000L);
 			this.method487();
 		}
 	}
 
-	@ObfInfo(desc = "(Ljava/awt/Graphics;)V")
+	@ObfInfo(name = "update", desc = "(Ljava/awt/Graphics;)V")
 	public final void update(Graphics var1) {
 		this.paint(var1);
 	}
 
-	@ObfInfo(desc = "(Ljava/awt/Graphics;)V")
+	@ObfInfo(name = "paint", desc = "(Ljava/awt/Graphics;)V")
 	public final synchronized void paint(Graphics var1) {
 		if (field176 == this && !field179) {
 			this.field199 = true;
-			if (Class327.method3047() - this.field193 > 1000L) {
+			if (Class130.method3047() - this.field193 > 1000L) {
 				Rectangle var2 = var1.getClipBounds();
 				if (var2 == null || var2.width >= Client.field182 && var2.height >= Client.field5261) {
 					this.field202 = true;
@@ -659,43 +659,43 @@ public abstract class Class31 extends Applet implements Runnable, FocusListener,
 		}
 	}
 
-	@ObfInfo(desc = "(Ljava/awt/event/FocusEvent;)V")
+	@ObfInfo(name = "focusGained", desc = "(Ljava/awt/event/FocusEvent;)V")
 	public final void focusGained(FocusEvent var1) {
 		field207 = true;
 		this.field199 = true;
 	}
 
-	@ObfInfo(desc = "(Ljava/awt/event/FocusEvent;)V")
+	@ObfInfo(name = "focusLost", desc = "(Ljava/awt/event/FocusEvent;)V")
 	public final void focusLost(FocusEvent var1) {
 		field207 = false;
 	}
 
-	@ObfInfo(desc = "(Ljava/awt/event/WindowEvent;)V")
+	@ObfInfo(name = "windowActivated", desc = "(Ljava/awt/event/WindowEvent;)V")
 	public final void windowActivated(WindowEvent var1) {
 	}
 
-	@ObfInfo(desc = "(Ljava/awt/event/WindowEvent;)V")
+	@ObfInfo(name = "windowClosed", desc = "(Ljava/awt/event/WindowEvent;)V")
 	public final void windowClosed(WindowEvent var1) {
 	}
 
-	@ObfInfo(desc = "(Ljava/awt/event/WindowEvent;)V")
+	@ObfInfo(name = "windowClosing", desc = "(Ljava/awt/event/WindowEvent;)V")
 	public final void windowClosing(WindowEvent var1) {
 		this.destroy();
 	}
 
-	@ObfInfo(desc = "(Ljava/awt/event/WindowEvent;)V")
+	@ObfInfo(name = "windowDeactivated", desc = "(Ljava/awt/event/WindowEvent;)V")
 	public final void windowDeactivated(WindowEvent var1) {
 	}
 
-	@ObfInfo(desc = "(Ljava/awt/event/WindowEvent;)V")
+	@ObfInfo(name = "windowDeiconified", desc = "(Ljava/awt/event/WindowEvent;)V")
 	public final void windowDeiconified(WindowEvent var1) {
 	}
 
-	@ObfInfo(desc = "(Ljava/awt/event/WindowEvent;)V")
+	@ObfInfo(name = "windowIconified", desc = "(Ljava/awt/event/WindowEvent;)V")
 	public final void windowIconified(WindowEvent var1) {
 	}
 
-	@ObfInfo(desc = "(Ljava/awt/event/WindowEvent;)V")
+	@ObfInfo(name = "windowOpened", desc = "(Ljava/awt/event/WindowEvent;)V")
 	public final void windowOpened(WindowEvent var1) {
 	}
 
@@ -795,7 +795,7 @@ public abstract class Class31 extends Applet implements Runnable, FocusListener,
 		return this.field205 != null;
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "am", name = "bh", desc = "(I)V", opaque = "-959472704")
 	public static void method164() {
 		field5405.method3556();
 
@@ -811,7 +811,7 @@ public abstract class Class31 extends Applet implements Runnable, FocusListener,
 		field4955 = 0;
 	}
 
-	@ObfInfo(desc = "()I")
+	@ObfInfo(owner = "hk", name = "bz", desc = "(B)I", opaque = "-1")
 	public static int method3811() {
 		int var1 = 0;
 		if (field1818 == null || !field1818.isValid()) {
@@ -831,7 +831,7 @@ public abstract class Class31 extends Applet implements Runnable, FocusListener,
 		}
 
 		if (field1818 != null) {
-			long var11 = Class327.method3047();
+			long var11 = Class130.method3047();
 			long var4 = field1818.getCollectionTime();
 			if (-1L != field197) {
 				long var6 = var4 - field197;

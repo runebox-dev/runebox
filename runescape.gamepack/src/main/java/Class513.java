@@ -2,6 +2,8 @@ import io.runebox.ObfInfo;
 
 @ObfInfo(name = "ts")
 public class Class513 implements Class508 {
+	@ObfInfo(owner = "cx", name = "ad", desc = "Ljava/lang/String;")
+	public static String field957;
 	@ObfInfo(name = "af", desc = "I", intMultiplier = 1621279449)
 	public int field5190;
 	@ObfInfo(name = "az", desc = "I", intMultiplier = 799455447)
@@ -12,11 +14,11 @@ public class Class513 implements Class508 {
 	@ObfInfo(name = "ak", desc = "(I)Ltf;", opaque = "-449002327")
 	public Class500 method9284() {
 		byte var2;
-		if (Class90.field957.startsWith("win")) {
+		if (field957.startsWith("win")) {
 			var2 = 1;
-		} else if (Class90.field957.startsWith("mac")) {
+		} else if (field957.startsWith("mac")) {
 			var2 = 2;
-		} else if (Class90.field957.startsWith("linux")) {
+		} else if (field957.startsWith("linux")) {
 			var2 = 3;
 		} else {
 			var2 = 4;

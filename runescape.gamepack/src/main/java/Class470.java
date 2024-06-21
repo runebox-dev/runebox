@@ -58,7 +58,7 @@ public class Class470 extends Class481 {
 		this.field4917.method8660();
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(name = "finalize", desc = "()V")
 	public void finalize() {
 		this.method8631();
 	}

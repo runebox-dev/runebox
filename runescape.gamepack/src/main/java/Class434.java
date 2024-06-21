@@ -18,12 +18,12 @@ public class Class434 implements Iterator {
 		this.field4716 = var1;
 	}
 
-	@ObfInfo(desc = "()Z")
+	@ObfInfo(name = "hasNext", desc = "()Z")
 	public boolean hasNext() {
 		return this.field4717 < this.field4716.field4669;
 	}
 
-	@ObfInfo(desc = "()Ljava/lang/Object;")
+	@ObfInfo(name = "next", desc = "()Ljava/lang/Object;")
 	public Object next() {
 		if (this.field4716.field4670 != this.field4718) {
 			throw new ConcurrentModificationException();
@@ -36,7 +36,7 @@ public class Class434 implements Iterator {
 		}
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(name = "remove", desc = "()V")
 	public void remove() {
 		throw new UnsupportedOperationException();
 	}

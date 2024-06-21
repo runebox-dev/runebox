@@ -1,9 +1,8 @@
 import io.runebox.ObfInfo;
-import java.util.Iterator;
 
 @ObfInfo(name = "di")
 public class Class87 {
-	@ObfInfo(desc = "I")
+	@ObfInfo(owner = "vp", name = "ar", desc = "I")
 	public static int field5423;
 	@ObfInfo(name = "ak", desc = "[Lvl;")
 	public Class557[] field1150;
@@ -404,37 +403,5 @@ public class Class87 {
 			}
 		}
 
-	}
-
-	@ObfInfo(name = "ac", desc = "(B)V", opaque = "1")
-	public static void method2354() {
-		Iterator var1 = Class332.field3455.iterator();
-
-		while (var1.hasNext()) {
-			Class357 var2 = (Class357)var1.next();
-			if (var2 != null) {
-				var2.field3940.method6319();
-				var2.field3940.method6313();
-				var2.field3940.method6400(0);
-				var2.field3940.field3509 = 0;
-				Class332.method4921(var2.field3937, var2.field3933);
-			}
-		}
-
-		Class332.field3455.clear();
-	}
-
-	@ObfInfo(name = "aq", desc = "(II)Ljava/lang/String;")
-	public static String method2383(int var0) {
-		if (var0 < 100000) {
-			return "<col=ffff00>" + var0 + "</col>";
-		} else {
-			return var0 < 10000000 ? "<col=ffffff>" + var0 / 1000 + Class378.field4202 + "</col>" : "<col=00ff80>" + var0 / 1000000 + Class378.field4322 + "</col>";
-		}
-	}
-
-	@ObfInfo(name = "az", desc = "(B)[Lej;")
-	public static Class114[] method2385() {
-		return new Class114[]{Class114.field1438, Class114.field1434, Class114.field1431, Class114.field1432, Class114.field1433};
 	}
 }

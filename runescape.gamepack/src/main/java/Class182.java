@@ -49,7 +49,7 @@ public class Class182 implements Runnable {
 
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(name = "run", desc = "()V")
 	public final void run() {
 		while (true) {
 			Class187 var1;

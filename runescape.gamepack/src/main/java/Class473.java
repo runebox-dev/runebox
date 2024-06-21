@@ -31,7 +31,7 @@ public class Class473 implements Runnable {
 		this.field4927.start();
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(name = "run", desc = "()V")
 	public void run() {
 		while (true) {
 			int var1;

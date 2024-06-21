@@ -12,12 +12,12 @@ public final class Class13 extends Canvas {
 		this.field56 = var1;
 	}
 
-	@ObfInfo(desc = "(Ljava/awt/Graphics;)V")
+	@ObfInfo(name = "update", desc = "(Ljava/awt/Graphics;)V")
 	public final void update(Graphics var1) {
 		this.field56.update(var1);
 	}
 
-	@ObfInfo(desc = "(Ljava/awt/Graphics;)V")
+	@ObfInfo(name = "paint", desc = "(Ljava/awt/Graphics;)V")
 	public final void paint(Graphics var1) {
 		this.field56.paint(var1);
 	}

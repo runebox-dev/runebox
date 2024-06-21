@@ -40,15 +40,7 @@ public class Class332 {
 		field3457 = 0;
 	}
 
-	@ObfInfo(desc = "(LClass330;)V")
-	public static void method3887(Class330 var0) {
-		if (!field3459.contains(var0)) {
-			field3459.add(var0);
-		}
-
-	}
-
-	@ObfInfo(desc = "(II)V")
+	@ObfInfo(owner = "jx", name = "al", desc = "(IIB)V", opaque = "5")
 	public static void method4921(int var0, int var1) {
 		Iterator var3 = field3459.iterator();
 
@@ -59,7 +51,58 @@ public class Class332 {
 
 	}
 
-	@ObfInfo(desc = "(IIII)V")
+	@ObfInfo(owner = "cr", name = "aj", desc = "(Ljava/util/ArrayList;IIIIZB)V", opaque = "5")
+	public static void method1940(ArrayList var0, int var1, int var2, int var3, int var4, boolean var5) {
+		if (!var0.isEmpty()) {
+			field3453.clear();
+			field3458.clear();
+			method3151(var5);
+			if (!var5) {
+				field3456.clear();
+			}
+
+			Iterator var7 = var0.iterator();
+
+			while (var7.hasNext()) {
+				Class357 var8 = (Class357)var7.next();
+				if (var8.field3937 != -1 && -1 != var8.field3933) {
+					if (!var5) {
+						field3456.add(var8);
+					}
+
+					field3453.add(var8);
+				}
+			}
+
+			if (!field3453.isEmpty()) {
+				method3185(var1, var2, var3, var4);
+				field3458.add(new Class424((Class447)null));
+				field3458.add(new Class468((Class447)null, Client.field4596, Client.field3463, Client.field1661));
+				ArrayList var13 = new ArrayList();
+				var13.add(new Class437(new Class460((Class447)null, 0, true, field3457)));
+				if (!field3455.isEmpty()) {
+					ArrayList var14 = new ArrayList();
+					var14.add(new Class426(new Class461((Class447)null, var13), field3462));
+					ArrayList var10 = new ArrayList();
+					Iterator var11 = field3455.iterator();
+
+					while (var11.hasNext()) {
+						Class357 var12 = (Class357)var11.next();
+						var10.add(var12);
+					}
+
+					var14.add(new Class426(new Class430(new Class441((Class447)null, var10), 0, false, field3461), field3460));
+					field3458.add(new Class461((Class447)null, var14));
+				} else {
+					field3458.add(new Class426((Class447)null, field3462));
+					field3458.add(new Class461((Class447)null, var13));
+				}
+
+			}
+		}
+	}
+
+	@ObfInfo(owner = "ia", name = "af", desc = "(IIIII)V", opaque = "59705338")
 	public static void method3992(int var0, int var1, int var2, int var3) {
 		if (field3455.size() > 1 && field3455.get(0) != null && ((Class357)field3455.get(0)).field3940.method6320() && field3455.get(1) != null && ((Class357)field3455.get(1)).field3940.method6320()) {
 			method3185(var0, var1, var2, var3);
@@ -77,7 +120,12 @@ public class Class332 {
 
 	}
 
-	@ObfInfo(desc = "(LClass382;I)V")
+	@ObfInfo(owner = "bm", name = "aa", desc = "(I)V")
+	public static void method785() {
+		field3456.clear();
+	}
+
+	@ObfInfo(owner = "lh", name = "at", desc = "(Lor;II)V", opaque = "760045931")
 	public static void method5915(Class382 var0, int var1) {
 		if (!field3456.isEmpty()) {
 			ArrayList var3 = new ArrayList();
@@ -95,11 +143,11 @@ public class Class332 {
 				var3.add(var5);
 			}
 
-			Class70.method1940(var3, field3460, field3461, field3462, field3457, false);
+			method1940(var3, field3460, field3461, field3462, field3457, false);
 		}
 	}
 
-	@ObfInfo(desc = "(IIII)V")
+	@ObfInfo(owner = "fn", name = "ab", desc = "(IIIII)V")
 	public static void method3185(int var0, int var1, int var2, int var3) {
 		field3460 = var0;
 		field3461 = var1;
@@ -107,10 +155,28 @@ public class Class332 {
 		field3457 = var3;
 	}
 
-	@ObfInfo(desc = "(Z)V")
+	@ObfInfo(owner = "di", name = "ac", desc = "(B)V", opaque = "1")
+	public static void method2354() {
+		Iterator var1 = field3455.iterator();
+
+		while (var1.hasNext()) {
+			Class357 var2 = (Class357)var1.next();
+			if (var2 != null) {
+				var2.field3940.method6319();
+				var2.field3940.method6313();
+				var2.field3940.method6400(0);
+				var2.field3940.field3509 = 0;
+				method4921(var2.field3937, var2.field3933);
+			}
+		}
+
+		field3455.clear();
+	}
+
+	@ObfInfo(owner = "fl", name = "ao", desc = "(ZB)V", opaque = "5")
 	public static void method3151(boolean var0) {
 		if (var0) {
-			Class87.method2354();
+			method2354();
 		} else {
 			for (int var2 = 0; var2 < field3455.size(); ++var2) {
 				Class357 var3 = (Class357)field3455.get(var2);

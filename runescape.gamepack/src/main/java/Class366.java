@@ -26,4 +26,18 @@ public class Class366 {
 		this.field3996 = var1;
 		this.field3997 = var2;
 	}
+
+	@ObfInfo(owner = "ck", name = "ak", desc = "(II)Lob;", opaque = "521275722")
+	public static Class366 method1136(int var0) {
+		Class366[] var2 = new Class366[]{field3992, field3993, field3994, field3995};
+
+		for (int var4 = 0; var4 < var2.length; ++var4) {
+			Class366 var5 = var2[var4];
+			if (var5.field3997 == var0) {
+				return var5;
+			}
+		}
+
+		return null;
+	}
 }

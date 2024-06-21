@@ -18,6 +18,11 @@ public class Class201 extends Class507 {
 		field2068 = new Class299(64);
 	}
 
+	@ObfInfo(owner = "id", name = "ak", desc = "(I)V")
+	public static void method4057() {
+		field2068.method5995();
+	}
+
 	@ObfInfo(name = "ak", desc = "(Luk;I)V", opaque = "-2047148320")
 	public static void method3922(Class531 var0) {
 		Class34 var2 = (Class34)Class47.field323.method7600();
@@ -111,5 +116,15 @@ public class Class201 extends Class507 {
 			var0.method9431(var3);
 			var2.method9277();
 		}
+	}
+
+	@ObfInfo(name = "al", desc = "(I)V", opaque = "364949411")
+	public static void method3919() {
+		for (Class77 var1 = (Class77)Class77.field976.method7482(); var1 != null; var1 = (Class77)Class77.field976.method7490()) {
+			if (var1.field965 != null) {
+				var1.method2177();
+			}
+		}
+
 	}
 }

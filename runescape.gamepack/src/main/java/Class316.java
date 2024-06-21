@@ -27,12 +27,12 @@ public class Class316 extends Class506 {
 		}
 	}
 
-	@ObfInfo(desc = "()LClass316;")
+	@ObfInfo(owner = "lw", name = "ak", desc = "(S)Lmd;", opaque = "1023")
 	public static Class316 method6159() {
 		return field3377 == 0 ? new Class316() : field3375[--field3377];
 	}
 
-	@ObfInfo(desc = "(LClass315;LClass563;)LClass316;")
+	@ObfInfo(owner = "hr", name = "al", desc = "(Lmc;Lvr;I)Lmd;", opaque = "-1576354579")
 	public static Class316 method3908(Class315 var0, Class563 var1) {
 		Class316 var3 = method6159();
 		var3.field3379 = var0;

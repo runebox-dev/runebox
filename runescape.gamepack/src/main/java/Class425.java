@@ -1,10 +1,7 @@
 import io.runebox.ObfInfo;
-import java.io.File;
 
 @ObfInfo(name = "qi")
 public class Class425 {
-	@ObfInfo(desc = "Ljava/io/File;")
-	public static File field3389;
 	@ObfInfo(name = "az", desc = "I", intMultiplier = -171794869)
 	public int field4688;
 	@ObfInfo(name = "al", desc = "I", intMultiplier = 649036843)
@@ -40,7 +37,7 @@ public class Class425 {
 		return var1 >= this.field4691 && var1 < this.field4690 + this.field4691 && var2 >= this.field4689 && var2 < this.field4689 + this.field4688;
 	}
 
-	@ObfInfo(desc = "()Ljava/lang/String;")
+	@ObfInfo(name = "toString", desc = "()Ljava/lang/String;")
 	public String toString() {
 		return null;
 	}
@@ -97,15 +94,5 @@ public class Class425 {
 	@ObfInfo(name = "ab", desc = "(I)I")
 	public int method7847() {
 		return this.field4689 + this.field4688;
-	}
-
-	@ObfInfo(name = "ak", desc = "(Ljava/io/File;I)V", opaque = "1162380090")
-	public static void method7866(File var0) {
-		field3389 = var0;
-		if (!field3389.exists()) {
-			throw new RuntimeException("");
-		} else {
-			Class165.field1822 = true;
-		}
 	}
 }

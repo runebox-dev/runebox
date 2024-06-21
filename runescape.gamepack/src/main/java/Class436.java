@@ -661,13 +661,13 @@ public abstract class Class436 extends Class561 {
 			String var3;
 			if (var1.startsWith("col=")) {
 				var3 = var1.substring(4);
-				var2 = Class412.method5862(var3, 16, true);
+				var2 = Class288.method5862(var3, 16, true);
 				field4739 = var2;
 			} else if (var1.equals("/col")) {
 				field4739 = field4723;
 			} else if (var1.startsWith("str=")) {
 				var3 = var1.substring(4);
-				var2 = Class412.method5862(var3, 16, true);
+				var2 = Class288.method5862(var3, 16, true);
 				field4735 = var2;
 			} else if (var1.equals("str")) {
 				field4735 = 8388608;
@@ -675,7 +675,7 @@ public abstract class Class436 extends Class561 {
 				field4735 = -1;
 			} else if (var1.startsWith("u=")) {
 				var3 = var1.substring(2);
-				var2 = Class412.method5862(var3, 16, true);
+				var2 = Class288.method5862(var3, 16, true);
 				field4731 = var2;
 			} else if (var1.equals("u")) {
 				field4731 = 0;
@@ -683,7 +683,7 @@ public abstract class Class436 extends Class561 {
 				field4731 = -1;
 			} else if (var1.startsWith("shad=")) {
 				var3 = var1.substring(5);
-				var2 = Class412.method5862(var3, 16, true);
+				var2 = Class288.method5862(var3, 16, true);
 				field4738 = var2;
 			} else if (var1.equals("shad")) {
 				field4738 = 0;

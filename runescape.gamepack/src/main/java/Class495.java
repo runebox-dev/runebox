@@ -31,7 +31,7 @@ public class Class495 implements Iterator {
 		return (Class506)this.next();
 	}
 
-	@ObfInfo(desc = "()Ljava/lang/Object;")
+	@ObfInfo(name = "next", desc = "()Ljava/lang/Object;")
 	public Object next() {
 		Class506 var1;
 		if (this.field5019 != this.field5017.field5198[this.field5018 - 1]) {
@@ -54,7 +54,7 @@ public class Class495 implements Iterator {
 		}
 	}
 
-	@ObfInfo(desc = "()Z")
+	@ObfInfo(name = "hasNext", desc = "()Z")
 	public boolean hasNext() {
 		if (this.field5019 != this.field5017.field5198[this.field5018 - 1]) {
 			return true;
@@ -72,7 +72,7 @@ public class Class495 implements Iterator {
 		}
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(name = "remove", desc = "()V")
 	public void remove() {
 		if (this.field5016 == null) {
 			throw new IllegalStateException();

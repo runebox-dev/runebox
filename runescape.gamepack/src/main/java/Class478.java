@@ -15,7 +15,7 @@ public class Class478 extends Class475 {
 		return this.method8725((Class478)var1);
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/Object;)I")
+	@ObfInfo(name = "compareTo", desc = "(Ljava/lang/Object;)I")
 	public int compareTo(Object var1) {
 		return this.method8725((Class478)var1);
 	}

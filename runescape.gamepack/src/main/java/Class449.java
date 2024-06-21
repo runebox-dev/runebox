@@ -11,7 +11,7 @@ public class Class449 {
 	@ObfInfo(name = "az", desc = "I", intMultiplier = -791721597)
 	public int field4818;
 
-	@ObfInfo(desc = "()Ljava/lang/String;")
+	@ObfInfo(name = "toString", desc = "()Ljava/lang/String;")
 	public String toString() {
 		boolean var1 = true;
 		int var2 = 10 - Integer.toString(this.field4817).length();

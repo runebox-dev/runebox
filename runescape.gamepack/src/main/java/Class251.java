@@ -8,12 +8,12 @@ public class Class251 implements Comparator {
 		return var1.method4166() - var2.method4166();
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/Object;Ljava/lang/Object;)I")
+	@ObfInfo(name = "compare", desc = "(Ljava/lang/Object;Ljava/lang/Object;)I")
 	public int compare(Object var1, Object var2) {
 		return this.method4773((Class221)var1, (Class221)var2);
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
+	@ObfInfo(name = "equals", desc = "(Ljava/lang/Object;)Z")
 	public boolean equals(Object var1) {
 		return super.equals(var1);
 	}

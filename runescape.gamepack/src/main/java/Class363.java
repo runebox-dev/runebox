@@ -34,4 +34,28 @@ public class Class363 {
 
 		return this.field3977;
 	}
+
+	@ObfInfo(name = "aa", desc = "([BIII)Ljava/lang/String;", opaque = "215407839")
+	public static String method7119(byte[] var0, int var1, int var2) {
+		char[] var4 = new char[var2];
+		int var5 = 0;
+
+		for (int var6 = 0; var6 < var2; ++var6) {
+			int var7 = var0[var6 + var1] & 255;
+			if (var7 != 0) {
+				if (var7 >= 128 && var7 < 160) {
+					char var8 = Class405.field4630[var7 - 128];
+					if (var8 == 0) {
+						var8 = '?';
+					}
+
+					var7 = var8;
+				}
+
+				var4[var5++] = (char)var7;
+			}
+		}
+
+		return new String(var4, 0, var5);
+	}
 }

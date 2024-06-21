@@ -11,7 +11,7 @@ public class Class46 {
 		ImageIO.setUseCache(false);
 	}
 
-	@ObfInfo(desc = "([B)LClass549;")
+	@ObfInfo(owner = "rh", name = "ak", desc = "([BI)Lvc;")
 	public static Class549 method8418(byte[] var0) {
 		BufferedImage var2 = null;
 

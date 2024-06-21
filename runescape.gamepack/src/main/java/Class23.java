@@ -5,7 +5,7 @@ import java.util.concurrent.Callable;
 @ObfInfo(name = "aw")
 public class Class23 implements Callable {
 	// $FF: synthetic field
-	@ObfInfo(desc = "Lae;")
+	@ObfInfo(name = "this$0", desc = "Lae;")
 	public final Class5 this$0;
 	@ObfInfo(name = "ak", desc = "Lah;")
 	public final Class8 field123;
@@ -15,7 +15,7 @@ public class Class23 implements Callable {
 		this.field123 = var2;
 	}
 
-	@ObfInfo(desc = "()Ljava/lang/Object;")
+	@ObfInfo(name = "call", desc = "()Ljava/lang/Object;")
 	public Object call() throws Exception {
 		try {
 			while (this.field123.method128()) {

@@ -8,6 +8,12 @@ public class Class232 extends Class507 {
 	public static Class299 field2445;
 	@ObfInfo(name = "ao", desc = "Llm;")
 	public static Class299 field2454;
+	@ObfInfo(name = "at", desc = "Lor;")
+	public static Class382 field2443;
+	@ObfInfo(name = "aa", desc = "Lor;")
+	public static Class382 field2499;
+	@ObfInfo(owner = "it", name = "aq", desc = "Lqb;")
+	public static Class418 field2398;
 	@ObfInfo(name = "cb", desc = "Ltu;")
 	public Class515 field2458;
 	@ObfInfo(name = "cr", desc = "Z")
@@ -420,11 +426,11 @@ public class Class232 extends Class507 {
 			}
 
 			if (var3 != -1) {
-				return Class7.method109(var3).method4417(1);
+				return method109(var3).method4417(1);
 			}
 		}
 
-		Class236 var5 = Class236.method4594(Class79.field2443, this.field2448, 0);
+		Class236 var5 = Class236.method4594(field2443, this.field2448, 0);
 		if (var5 == null) {
 			return null;
 		} else {
@@ -460,7 +466,7 @@ public class Class232 extends Class507 {
 			}
 
 			if (var3 != -1) {
-				return Class7.method109(var3).method4418(1);
+				return method109(var3).method4418(1);
 			}
 		}
 
@@ -468,7 +474,7 @@ public class Class232 extends Class507 {
 		if (var6 != null) {
 			return var6;
 		} else {
-			Class236 var7 = Class236.method4594(Class79.field2443, this.field2448, 0);
+			Class236 var7 = Class236.method4594(field2443, this.field2448, 0);
 			if (var7 == null) {
 				return null;
 			} else {
@@ -509,7 +515,7 @@ public class Class232 extends Class507 {
 			}
 
 			if (var3 != -1) {
-				return Class7.method109(var3);
+				return method109(var3);
 			}
 		}
 
@@ -531,15 +537,15 @@ public class Class232 extends Class507 {
 			return true;
 		} else {
 			boolean var6 = true;
-			if (!Class79.field2443.method7232(var3, 0)) {
+			if (!field2443.method7232(var3, 0)) {
 				var6 = false;
 			}
 
-			if (var4 != -1 && !Class79.field2443.method7232(var4, 0)) {
+			if (var4 != -1 && !field2443.method7232(var4, 0)) {
 				var6 = false;
 			}
 
-			if (var5 != -1 && !Class79.field2443.method7232(var5, 0)) {
+			if (var5 != -1 && !field2443.method7232(var5, 0)) {
 				var6 = false;
 			}
 
@@ -561,11 +567,11 @@ public class Class232 extends Class507 {
 		if (var3 == -1) {
 			return null;
 		} else {
-			Class236 var6 = Class236.method4594(Class79.field2443, var3, 0);
+			Class236 var6 = Class236.method4594(field2443, var3, 0);
 			if (var4 != -1) {
-				Class236 var7 = Class236.method4594(Class79.field2443, var4, 0);
+				Class236 var7 = Class236.method4594(field2443, var4, 0);
 				if (var5 != -1) {
-					Class236 var8 = Class236.method4594(Class79.field2443, var5, 0);
+					Class236 var8 = Class236.method4594(field2443, var5, 0);
 					Class236[] var9 = new Class236[]{var6, var7, var8};
 					var6 = new Class236(var9, 3);
 				} else {
@@ -612,11 +618,11 @@ public class Class232 extends Class507 {
 			return true;
 		} else {
 			boolean var5 = true;
-			if (!Class79.field2443.method7232(var3, 0)) {
+			if (!field2443.method7232(var3, 0)) {
 				var5 = false;
 			}
 
-			if (var4 != -1 && !Class79.field2443.method7232(var4, 0)) {
+			if (var4 != -1 && !field2443.method7232(var4, 0)) {
 				var5 = false;
 			}
 
@@ -636,9 +642,9 @@ public class Class232 extends Class507 {
 		if (var3 == -1) {
 			return null;
 		} else {
-			Class236 var5 = Class236.method4594(Class79.field2443, var3, 0);
+			Class236 var5 = Class236.method4594(field2443, var3, 0);
 			if (var4 != -1) {
-				Class236 var6 = Class236.method4594(Class79.field2443, var4, 0);
+				Class236 var6 = Class236.method4594(field2443, var4, 0);
 				Class236[] var7 = new Class236[]{var5, var6};
 				var5 = new Class236(var7, 2);
 			}
@@ -706,7 +712,86 @@ public class Class232 extends Class507 {
 		return this.field2470 != null;
 	}
 
-	@ObfInfo(desc = "(IIIIIZ)LClass549;")
+	@ObfInfo(owner = "da", name = "ak", desc = "(Lor;Lor;ZLqb;B)V")
+	public static void method2219(Class382 var0, Class382 var1, boolean var2, Class418 var3) {
+		field2499 = var0;
+		field2443 = var1;
+		Class502.field3252 = var2;
+		Client.field1874 = field2499.method7237(10);
+		field2398 = var3;
+	}
+
+	@ObfInfo(owner = "ag", name = "al", desc = "(IB)Lix;", opaque = "0")
+	public static Class232 method109(int var0) {
+		Class232 var2 = (Class232)field2454.method5993((long)var0);
+		if (var2 != null) {
+			return var2;
+		} else {
+			byte[] var3 = field2499.method7216(10, var0);
+			var2 = new Class232();
+			var2.field2447 = var0;
+			if (var3 != null) {
+				var2.method4435(new Class521(var3));
+			}
+
+			var2.method4411();
+			if (var2.field2486 != -1) {
+				var2.method4414(method109(var2.field2486), method109(var2.field2485));
+			}
+
+			if (-1 != var2.field2497) {
+				var2.method4415(method109(var2.field2497), method109(var2.field2496));
+			}
+
+			if (var2.field2453 != -1) {
+				var2.method4431(method109(var2.field2453), method109(var2.field2498));
+			}
+
+			if (!Class502.field3252 && var2.field2467) {
+				if (var2.field2486 == -1 && var2.field2497 == -1 && -1 == var2.field2453) {
+					var2.field2449 = var2.field2449 + Class378.field4194;
+				}
+
+				var2.field2446 = Class378.field4378;
+				var2.field2461 = false;
+
+				int var4;
+				for (var4 = 0; var4 < var2.field2469.length; ++var4) {
+					var2.field2469[var4] = null;
+				}
+
+				for (var4 = 0; var4 < var2.field2487.length; ++var4) {
+					if (var4 != 4) {
+						var2.field2487[var4] = null;
+					}
+				}
+
+				var2.field2450 = -2;
+				var2.field2492 = 0;
+				if (var2.field2458 != null) {
+					boolean var7 = false;
+
+					for (Class506 var5 = var2.field2458.method9329(); var5 != null; var5 = var2.field2458.method9327()) {
+						Class217 var6 = Class217.method5716((int)var5.field5170);
+						if (var6.field2184) {
+							var5.method9277();
+						} else {
+							var7 = true;
+						}
+					}
+
+					if (!var7) {
+						var2.field2458 = null;
+					}
+				}
+			}
+
+			field2454.method5987(var2, (long)var0);
+			return var2;
+		}
+	}
+
+	@ObfInfo(owner = "ge", name = "av", desc = "(IIIIIZB)Lvc;", opaque = "0")
 	public static Class549 method3405(int var0, int var1, int var2, int var3, int var4, boolean var5) {
 		if (var1 == -1) {
 			var4 = 0;
@@ -723,7 +808,7 @@ public class Class232 extends Class507 {
 			}
 		}
 
-		Class232 var10 = Class7.method109(var0);
+		Class232 var10 = method109(var0);
 		if (var1 > 1 && var10.field2483 != null) {
 			int var11 = -1;
 
@@ -734,7 +819,7 @@ public class Class232 extends Class507 {
 			}
 
 			if (var11 != -1) {
-				var10 = Class7.method109(var11);
+				var10 = method109(var11);
 			}
 		}
 
@@ -809,7 +894,7 @@ public class Class232 extends Class507 {
 			}
 
 			if (var4 == 1 || var4 == 2 && 1 == var10.field2462) {
-				Class79.field2398.method8017(Class87.method2383(var1), 0, 9, 16776960, 1);
+				field2398.method8017(method2383(var1), 0, 9, 16776960, 1);
 			}
 
 			if (!var5) {
@@ -824,7 +909,16 @@ public class Class232 extends Class507 {
 		}
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "di", name = "aq", desc = "(II)Ljava/lang/String;")
+	public static String method2383(int var0) {
+		if (var0 < 100000) {
+			return "<col=ffff00>" + var0 + "</col>";
+		} else {
+			return var0 < 10000000 ? "<col=ffffff>" + var0 / 1000 + Class378.field4202 + "</col>" : "<col=00ff80>" + var0 / 1000000 + Class378.field4322 + "</col>";
+		}
+	}
+
+	@ObfInfo(owner = "gc", name = "ad", desc = "(B)V")
 	public static void method3345() {
 		field2440.method5995();
 	}

@@ -2,7 +2,7 @@ import io.runebox.ObfInfo;
 
 @ObfInfo(name = "de")
 public final class Class83 extends Class86 {
-	@ObfInfo(desc = "Ljava/lang/String;")
+	@ObfInfo(owner = "vu", name = "al", desc = "Ljava/lang/String;")
 	public static String field5475;
 	@ObfInfo(name = "ae", desc = "Lkb;")
 	public Class262 field1031;
@@ -115,7 +115,7 @@ public final class Class83 extends Class86 {
 				}
 
 				if (var6[var7] >= 512) {
-					var10 = Class7.method109(var6[var7] - 512).field2492;
+					var10 = Class232.method109(var6[var7] - 512).field2492;
 					if (var10 != 0) {
 						this.field1037 = var10;
 					}
@@ -339,8 +339,8 @@ public final class Class83 extends Class86 {
 		if (this.field1029 == null) {
 			return null;
 		} else {
-			Class211 var2 = super.field1074 != -1 && 0 == super.field1103 ? Class237.method4637(super.field1074) : null;
-			Class211 var3 = super.field1096 != -1 && !this.field1026 && (super.field1096 != super.field1061 || var2 == null) ? Class237.method4637(super.field1096) : null;
+			Class211 var2 = super.field1074 != -1 && 0 == super.field1103 ? Class211.method4637(super.field1074) : null;
+			Class211 var3 = super.field1096 != -1 && !this.field1026 && (super.field1096 != super.field1061 || var2 == null) ? Class211.method4637(super.field1096) : null;
 			Class262 var4 = this.field1029.method7086(var2, super.field1101, var3, super.field1122);
 			if (var4 == null) {
 				return null;
@@ -406,7 +406,7 @@ public final class Class83 extends Class86 {
 
 	@ObfInfo(name = "am", desc = "(Ldt;IILjv;B)V", opaque = "4")
 	public final void method2261(Class98 var1, int var2, int var3, Class256 var4) {
-		if (-1 != super.field1074 && Class237.method4637(super.field1074).field2141 == 1) {
+		if (-1 != super.field1074 && Class211.method4637(super.field1074).field2141 == 1) {
 			super.field1074 = -1;
 		}
 
@@ -461,36 +461,9 @@ public final class Class83 extends Class86 {
 		return this.field1029 != null;
 	}
 
-	@ObfInfo(name = "bq", desc = "([BIB)I")
-	public static int method2298(byte[] var0, int var1) {
-		int var4 = -1;
-
-		for (int var5 = 0; var5 < var1; ++var5) {
-			var4 = var4 >>> 8 ^ Class521.field5220[(var4 ^ var0[var5]) & 255];
-		}
-
-		var4 = ~var4;
-		return var4;
-	}
-
-	@ObfInfo(name = "aj", desc = "(CB)C", opaque = "1")
-	public static char method2297(char var0) {
-		if (var0 == 198) {
-			return 'E';
-		} else if (var0 == 230) {
-			return 'e';
-		} else if (var0 == 223) {
-			return 's';
-		} else if (var0 == 338) {
-			return 'E';
-		} else {
-			return (char)(var0 == 339 ? 'e' : '\u0000');
-		}
-	}
-
 	@ObfInfo(name = "bv", desc = "(Lnb;IB)V", opaque = "1")
 	public static void method2274(Class340 var0, int var1) {
-		Class232 var3 = Class7.method109(var1);
+		Class232 var3 = Class232.method109(var1);
 		var0.field3764.field3950[var3.field2468] = var1 + 512;
 		if (-1 != var3.field2465) {
 			var0.field3764.field3950[var3.field2465] = 0;

@@ -42,6 +42,11 @@ public class Class326 {
 	public Class326(int var1) {
 	}
 
+	@ObfInfo(owner = "bo", name = "ak", desc = "(I)[Lmn;")
+	public static Class326[] method806() {
+		return new Class326[]{field3428, field3418, field3420, field3421, field3422, field3423, field3430, field3427, field3426, field3431, field3425};
+	}
+
 	@ObfInfo(name = "ak", desc = "(IB)V")
 	public static void method6262(int var0) {
 		Class442.field4789 = var0;

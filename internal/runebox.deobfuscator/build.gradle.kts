@@ -14,7 +14,7 @@ dependencies {
 }
 
 tasks {
-    register("downloadLatestGamepack", JavaExec::class) {
+    register("downloadGamepack", JavaExec::class) {
         dependsOn(named("jar"))
         group = "revision"
         mainClass.set("io.runebox.deobfuscator.GamepackDownloader")

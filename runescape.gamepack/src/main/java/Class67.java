@@ -1,5 +1,4 @@
 import io.runebox.ObfInfo;
-import java.util.Arrays;
 
 @ObfInfo(name = "co")
 public class Class67 extends Class507 {
@@ -86,17 +85,6 @@ public class Class67 extends Class507 {
 			this.field834 = new Class567(Client.method3135(this.field840), Client.field2627);
 		} else {
 			this.field834 = null;
-		}
-
-	}
-
-	@ObfInfo(name = "bm", desc = "(Lnb;Lnt;ZI)V")
-	public static void method1841(Class340 var0, Class358 var1, boolean var2) {
-		var0.field3792 = 7;
-		var0.field3764 = new Class358(var1);
-		if (!var2) {
-			var0.field3764.field3950 = Arrays.copyOf(var0.field3764.field3953, var0.field3764.field3953.length);
-			var0.field3764.method7055();
 		}
 
 	}

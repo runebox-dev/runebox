@@ -53,4 +53,22 @@ public class Class441 extends Class447 {
 			return true;
 		}
 	}
+
+	@ObfInfo(name = "hk", desc = "(I)Z", opaque = "-1886345089")
+	public static boolean method8271() {
+		if (Client.field713 != null && Client.field785 < Client.field713.size()) {
+			while (Client.field785 < Client.field713.size()) {
+				Class82 var1 = (Class82)Client.field713.get(Client.field785);
+				if (!var1.method2245()) {
+					return false;
+				}
+
+				++Client.field785;
+			}
+
+			return true;
+		} else {
+			return true;
+		}
+	}
 }

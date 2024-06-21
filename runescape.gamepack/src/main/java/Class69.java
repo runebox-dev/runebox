@@ -38,7 +38,7 @@ public class Class69 {
 	@ObfInfo(name = "az", desc = "(I)V", opaque = "-1302371960")
 	public final void method1918() {
 		for (Class443 var2 = (Class443)this.field849.field4905.method7568(); var2 != null; var2 = (Class443)this.field849.field4905.method7570()) {
-			if ((long)var2.field4793 < Class327.method3047() / 1000L - 5L) {
+			if ((long)var2.field4793 < Class130.method3047() / 1000L - 5L) {
 				if (var2.field4794 > 0) {
 					Class128.method2747(5, "", var2.field4792 + Class378.field4308);
 				}
@@ -178,7 +178,7 @@ public class Class69 {
 					}
 				}
 
-				Client.method2220();
+				Class79.method2220();
 			}
 		}
 	}
@@ -189,17 +189,7 @@ public class Class69 {
 		return var3 != null && var3.method8861();
 	}
 
-	@ObfInfo(name = "aj", desc = "(IB)I")
-	public static int method1938(int var0) {
-		var0 = (var0 & 1431655765) + (var0 >>> 1 & 1431655765);
-		var0 = (var0 & 858993459) + (var0 >>> 2 & 858993459);
-		var0 = (var0 >>> 4) + var0 & 252645135;
-		var0 += var0 >>> 8;
-		var0 += var0 >>> 16;
-		return var0 & 255;
-	}
-
-	@ObfInfo(desc = "(Ljava/lang/String;)V")
+	@ObfInfo(owner = "hg", name = "ao", desc = "(Ljava/lang/String;I)V")
 	public static void method3705(String var0) {
 		StringBuilder var10000 = new StringBuilder();
 		Class378 var10001 = (Class378)null;
@@ -209,14 +199,14 @@ public class Class69 {
 		Class128.method2747(30, "", var2);
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "gb", name = "ah", desc = "(B)V")
 	public static void method3331() {
 		Class378 var10000 = (Class378)null;
 		String var1 = Class378.field4330;
 		Class128.method2747(30, "", var1);
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/String;)V")
+	@ObfInfo(owner = "jf", name = "ap", desc = "(Ljava/lang/String;I)V")
 	public static void method4661(String var0) {
 		StringBuilder var10000 = new StringBuilder();
 		Class378 var10001 = (Class378)null;
@@ -226,7 +216,7 @@ public class Class69 {
 		Class128.method2747(30, "", var2);
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/String;)V")
+	@ObfInfo(owner = "ht", name = "ae", desc = "(Ljava/lang/String;I)V")
 	public static void method3933(String var0) {
 		Class316 var2 = Class316.method3908(Class315.field3305, Client.field548.field1446);
 		var2.field3374.method9388(Class521.method7983(var0));
@@ -234,7 +224,7 @@ public class Class69 {
 		Client.field548.method2897(var2);
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/String;I)V")
+	@ObfInfo(owner = "iv", name = "as", desc = "(Ljava/lang/String;II)V")
 	public static void method4403(String var0, int var1) {
 		Class316 var3 = Class316.method3908(Class315.field3332, Client.field548.field1446);
 		var3.field3374.method9388(Class521.method7983(var0) + 1);

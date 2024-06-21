@@ -66,80 +66,7 @@ public final class Class77 extends Class506 {
 
 	}
 
-	@ObfInfo(name = "ak", desc = "(IB)Lhq;", opaque = "7")
-	public static Class199 method2189(int var0) {
-		Class199 var2 = (Class199)Class199.field2034.method5993((long)var0);
-		if (var2 != null) {
-			return var2;
-		} else {
-			byte[] var3 = Client.field2039.method7216(5, var0);
-			var2 = new Class199();
-			if (var3 != null) {
-				var2.method3877(new Class521(var3));
-			}
-
-			Class199.field2034.method5987(var2, (long)var0);
-			return var2;
-		}
-	}
-
-	@ObfInfo(desc = "()V")
-	public static void method3246() {
-		for (Class77 var1 = (Class77)field976.method7482(); var1 != null; var1 = (Class77)field976.method7490()) {
-			if (var1.field958 != null) {
-				Client.field3984.method755(var1.field958);
-				var1.field958 = null;
-			}
-
-			if (var1.field972 != null) {
-				Client.field3984.method755(var1.field972);
-				var1.field972 = null;
-			}
-		}
-
-		field976.method7476();
-	}
-
-	@ObfInfo(desc = "()V")
-	public static void method3919() {
-		for (Class77 var1 = (Class77)field976.method7482(); var1 != null; var1 = (Class77)field976.method7490()) {
-			if (var1.field965 != null) {
-				var1.method2177();
-			}
-		}
-
-	}
-
-	@ObfInfo(name = "aj", desc = "(IIB)Ldm;", opaque = "1")
-	public static Class91 method2190(int var0, int var1) {
-		Class91 var3 = (Class91)Class91.field1206.method5993((long)(var0 << 16));
-		if (var3 != null) {
-			return var3;
-		} else {
-			String var4 = String.valueOf(var0);
-			int var5 = Client.field4783.method7233(var4);
-			if (var5 == -1) {
-				return null;
-			} else {
-				byte[] var6 = Client.field4783.method7221(var5);
-				if (var6 != null) {
-					if (var6.length <= 1) {
-						return null;
-					}
-
-					var3 = Class91.method2359(var6);
-					if (var3 != null) {
-						Class91.field1206.method5987(var3, (long)(var0 << 16));
-						return var3;
-					}
-				}
-
-				return null;
-			}
-		}
-	}
-
-	@ObfInfo(desc = "(IIILClass222;I)V")
+	@ObfInfo(owner = "bq", name = "az", desc = "(IIILin;II)V", opaque = "-1996713989")
 	public static void method846(int var0, int var1, int var2, Class222 var3, int var4) {
 		Class77 var6 = new Class77();
 		var6.field974 = var0;
@@ -172,16 +99,23 @@ public final class Class77 extends Class506 {
 
 	}
 
-	@ObfInfo(name = "bg", desc = "(Lba;B)V", opaque = "0")
-	public static void method2181(Class27 var0) {
-		var0.field136 = false;
-		if (var0.field138 != null) {
-			var0.field138.field390 = 0;
+	@ObfInfo(name = "oi", desc = "(B)V", opaque = "6")
+	public static void method2188() {
+		Class316 var1 = Class316.method3908(Class315.field3326, Client.field548.field1446);
+		Client.field548.method2897(var1);
+		Class72.field890 = true;
+
+		for (Class104 var2 = (Class104)Client.field654.method9363(); var2 != null; var2 = (Class104)Client.field654.method9364()) {
+			if (0 == var2.field1364 || var2.field1364 == 3) {
+				Client.method716(var2, true);
+			}
 		}
 
-		for (Class27 var2 = var0.method384(); var2 != null; var2 = var0.method379()) {
-			method2181(var2);
+		if (Client.field533 != null) {
+			Class317.method6187(Client.field533);
+			Client.field533 = null;
 		}
 
+		Class72.field890 = false;
 	}
 }

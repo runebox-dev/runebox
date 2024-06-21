@@ -296,7 +296,7 @@ public final class Class474 {
 		}
 	}
 
-	@ObfInfo(desc = "()Ljava/lang/String;")
+	@ObfInfo(name = "toString", desc = "()Ljava/lang/String;")
 	public String toString() {
 		return "" + this.field4936;
 	}

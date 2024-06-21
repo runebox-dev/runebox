@@ -93,4 +93,13 @@ public class Class118 {
 			Client.field555 = var0;
 		}
 	}
+
+	@ObfInfo(name = "oa", desc = "(Lnb;I)Ljava/lang/String;", opaque = "-101011192")
+	public static String method2931(Class340 var0) {
+		if (Class344.method3653(Client.method3511(var0)) == 0) {
+			return null;
+		} else {
+			return var0.field3763 != null && var0.field3763.trim().length() != 0 ? var0.field3763 : null;
+		}
+	}
 }

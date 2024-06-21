@@ -3,7 +3,7 @@ import io.runebox.ObfInfo;
 @ObfInfo(name = "ev")
 final class Class126 implements Class350 {
 	// $FF: synthetic field
-	@ObfInfo(desc = "Lnb;")
+	@ObfInfo(name = "val$cc", desc = "Lnb;")
 	public final Class340 val$cc;
 
 	public Class126(Class340 var1) {

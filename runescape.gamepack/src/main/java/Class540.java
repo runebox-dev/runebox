@@ -57,7 +57,7 @@ public class Class540 extends Class507 {
 					for (int var14 = 0; var14 < var12; ++var14) {
 						for (int var15 = 0; var15 < var8.length; ++var15) {
 							int var16 = var14 * var8.length + var15;
-							Class545 var17 = Class539.method5727(var8[var15]);
+							Class545 var17 = Class283.method5727(var8[var15]);
 							var13[var16] = var17.method9893(var1);
 						}
 					}
@@ -73,7 +73,12 @@ public class Class540 extends Class507 {
 	public void method9851() {
 	}
 
-	@ObfInfo(desc = "(I)LClass540;")
+	@ObfInfo(owner = "lr", name = "ak", desc = "(Lor;B)V")
+	public static void method6072(Class382 var0) {
+		field5316 = var0;
+	}
+
+	@ObfInfo(owner = "hi", name = "al", desc = "(II)Lut;", opaque = "-1367335013")
 	public static Class540 method3721(int var0) {
 		Class540 var2 = (Class540)field5314.method5993((long)var0);
 		if (var2 != null) {
@@ -91,27 +96,7 @@ public class Class540 extends Class507 {
 		}
 	}
 
-	@ObfInfo(name = "aj", desc = "(CI)Z", opaque = "-150416972")
-	public static boolean method9865(char var0) {
-		if ((var0 < ' ' || var0 >= 127) && (var0 <= 127 || var0 >= 160) && (var0 <= 160 || var0 > 255)) {
-			if (var0 != 0) {
-				char[] var2 = Class405.field4630;
-
-				for (int var3 = 0; var3 < var2.length; ++var3) {
-					char var4 = var2[var3];
-					if (var4 == var0) {
-						return true;
-					}
-				}
-			}
-
-			return false;
-		} else {
-			return true;
-		}
-	}
-
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "ge", name = "aa", desc = "(B)V")
 	public static void method3407() {
 		field5314.method5995();
 	}

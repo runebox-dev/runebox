@@ -1,10 +1,17 @@
 import io.runebox.ObfInfo;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.Future;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
 @ObfInfo(name = "fo")
 public class Class145 extends Class507 {
+	@ObfInfo(name = "at", desc = "I", intMultiplier = 910389071)
+	public static int field1653;
+	@ObfInfo(owner = "bd", name = "ab", desc = "Ljava/util/concurrent/ThreadPoolExecutor;")
+	public static ThreadPoolExecutor field155;
 	@ObfInfo(name = "aj", desc = "[[Lfm;")
 	public Class143[][] field1651;
 	@ObfInfo(name = "al", desc = "[[Lfm;")
@@ -40,7 +47,7 @@ public class Class145 extends Class507 {
 
 		this.field1654 = new Class248(var8, var9);
 		this.field1659 = new ArrayList();
-		this.field1658 = Class337.field155.submit(new Class131(this, var6, var7));
+		this.field1658 = field155.submit(new Class131(this, var6, var7));
 	}
 
 	@ObfInfo(name = "al", desc = "(Lua;IS)V", opaque = "22049")
@@ -56,9 +63,9 @@ public class Class145 extends Class507 {
 		int var6;
 		int var8;
 		for (var6 = 0; var6 < var4; ++var6) {
-			Class148 var7 = Class292.method5906(var1.method9405());
+			Class148 var7 = Class148.method5906(var1.method9405());
 			var8 = var1.method9457();
-			Class156 var9 = Class85.method2304(var1.method9405());
+			Class156 var9 = Class156.method2304(var1.method9405());
 			Class143 var10 = new Class143();
 			var10.method3174(var1, var2);
 			var5[var6] = new Class155(this, var10, var7, var9, var8);
@@ -79,11 +86,11 @@ public class Class145 extends Class507 {
 			}
 		}
 
-		var6 = var4 / Class337.field1653;
-		int var13 = var4 % Class337.field1653;
+		var6 = var4 / field1653;
+		int var13 = var4 % field1653;
 		int var14 = 0;
 
-		for (int var15 = 0; var15 < Class337.field1653; ++var15) {
+		for (int var15 = 0; var15 < field1653; ++var15) {
 			var8 = var14;
 			var14 += var6;
 			if (var13 > 0) {
@@ -95,7 +102,7 @@ public class Class145 extends Class507 {
 				break;
 			}
 
-			this.field1659.add(Class337.field155.submit(new Class137(this, var8, var14, var5)));
+			this.field1659.add(field155.submit(new Class137(this, var8, var14, var5)));
 		}
 
 	}
@@ -278,5 +285,42 @@ public class Class145 extends Class507 {
 		var15.method7888(var7, var8, var9);
 		var1.method7935(var15);
 		var15.method7908();
+	}
+
+	@ObfInfo(owner = "my", name = "ak", desc = "(Lor;Lor;IZI)Lfo;", opaque = "-1743362675")
+	public static Class145 method6486(Class382 var0, Class382 var1, int var2, boolean var3) {
+		boolean var5 = true;
+		byte[] var6 = var0.method7224(var2 >> 16 & 65535, var2 & 65535);
+		if (var6 == null) {
+			var5 = false;
+			return null;
+		} else {
+			int var7 = (var6[1] & 255) << 8 | var6[2] & 255;
+			byte[] var8;
+			if (var3) {
+				var8 = var1.method7224(0, var7);
+			} else {
+				var8 = var1.method7224(var7, 0);
+			}
+
+			if (var8 == null) {
+				var5 = false;
+			}
+
+			if (!var5) {
+				return null;
+			} else {
+				if (field155 == null) {
+					field1653 = Runtime.getRuntime().availableProcessors();
+					field155 = new ThreadPoolExecutor(0, field1653, 0L, TimeUnit.MILLISECONDS, new ArrayBlockingQueue(100 + field1653 * 100), new Class133());
+				}
+
+				try {
+					return new Class145(var0, var1, var2, var3);
+				} catch (Exception var10) {
+					return null;
+				}
+			}
+		}
 	}
 }

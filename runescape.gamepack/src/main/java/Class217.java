@@ -4,6 +4,8 @@ import io.runebox.ObfInfo;
 public class Class217 extends Class507 {
 	@ObfInfo(name = "al", desc = "Llm;")
 	public static Class299 field2188;
+	@ObfInfo(owner = "pi", name = "ak", desc = "Lor;")
+	public static Class382 field4601;
 	@ObfInfo(name = "aa", desc = "Z")
 	public boolean field2184;
 	@ObfInfo(name = "aj", desc = "C")
@@ -40,7 +42,7 @@ public class Class217 extends Class507 {
 	@ObfInfo(name = "af", desc = "(Lua;IB)V", opaque = "0")
 	public void method4101(Class521 var1, int var2) {
 		if (var2 == 1) {
-			this.field2185 = Class405.method3288(var1.method9406());
+			this.field2185 = Class153.method3288(var1.method9406());
 		} else if (var2 == 2) {
 			this.field2186 = var1.method9410();
 		} else if (var2 == 4) {
@@ -54,5 +56,28 @@ public class Class217 extends Class507 {
 	@ObfInfo(name = "aa", desc = "(I)Z", opaque = "446925683")
 	public boolean method4117() {
 		return this.field2185 == 's';
+	}
+
+	@ObfInfo(owner = "df", name = "ak", desc = "(Lor;B)V")
+	public static void method2299(Class382 var0) {
+		field4601 = var0;
+	}
+
+	@ObfInfo(owner = "ku", name = "al", desc = "(IS)Lii;", opaque = "8191")
+	public static Class217 method5716(int var0) {
+		Class217 var2 = (Class217)field2188.method5993((long)var0);
+		if (var2 != null) {
+			return var2;
+		} else {
+			byte[] var3 = field4601.method7216(11, var0);
+			var2 = new Class217();
+			if (var3 != null) {
+				var2.method4100(new Class521(var3));
+			}
+
+			var2.method4099();
+			field2188.method5987(var2, (long)var0);
+			return var2;
+		}
 	}
 }

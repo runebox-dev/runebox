@@ -29,7 +29,7 @@ public class Class24 extends SSLSocketFactory {
 		this.field131 = new SecureRandom();
 	}
 
-	@ObfInfo(desc = "(Ljava/net/Socket;Ljava/lang/String;IZ)Ljava/net/Socket;")
+	@ObfInfo(name = "createSocket", desc = "(Ljava/net/Socket;Ljava/lang/String;IZ)Ljava/net/Socket;")
 	public Socket createSocket(Socket var1, String var2, int var3, boolean var4) throws IOException {
 		if (var1 == null) {
 			var1 = new Socket();
@@ -43,32 +43,32 @@ public class Class24 extends SSLSocketFactory {
 		return this.method368(var2, var5);
 	}
 
-	@ObfInfo(desc = "()[Ljava/lang/String;")
+	@ObfInfo(name = "getDefaultCipherSuites", desc = "()[Ljava/lang/String;")
 	public String[] getDefaultCipherSuites() {
 		return null;
 	}
 
-	@ObfInfo(desc = "()[Ljava/lang/String;")
+	@ObfInfo(name = "getSupportedCipherSuites", desc = "()[Ljava/lang/String;")
 	public String[] getSupportedCipherSuites() {
 		return null;
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/String;I)Ljava/net/Socket;")
+	@ObfInfo(name = "createSocket", desc = "(Ljava/lang/String;I)Ljava/net/Socket;")
 	public Socket createSocket(String var1, int var2) throws IOException, UnknownHostException {
 		return null;
 	}
 
-	@ObfInfo(desc = "(Ljava/net/InetAddress;I)Ljava/net/Socket;")
+	@ObfInfo(name = "createSocket", desc = "(Ljava/net/InetAddress;I)Ljava/net/Socket;")
 	public Socket createSocket(InetAddress var1, int var2) throws IOException {
 		return null;
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/String;ILjava/net/InetAddress;I)Ljava/net/Socket;")
+	@ObfInfo(name = "createSocket", desc = "(Ljava/lang/String;ILjava/net/InetAddress;I)Ljava/net/Socket;")
 	public Socket createSocket(String var1, int var2, InetAddress var3, int var4) throws IOException, UnknownHostException {
 		return null;
 	}
 
-	@ObfInfo(desc = "(Ljava/net/InetAddress;ILjava/net/InetAddress;I)Ljava/net/Socket;")
+	@ObfInfo(name = "createSocket", desc = "(Ljava/net/InetAddress;ILjava/net/InetAddress;I)Ljava/net/Socket;")
 	public Socket createSocket(InetAddress var1, int var2, InetAddress var3, int var4) throws IOException {
 		return null;
 	}

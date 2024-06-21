@@ -48,4 +48,14 @@ public abstract class Class469 extends Class310 implements Class552 {
 
 		return var5;
 	}
+
+	@ObfInfo(owner = "client", name = "abs", desc = "(IIII)V")
+	public static void abs(int var0, int var1, int var2, int var3) {
+		for (int var4 = 0; var4 < Client.field701; ++var4) {
+			if (Client.field708[var4] + Client.field722[var4] > var0 && Client.field722[var4] < var2 + var0 && Client.field707[var4] + Client.field757[var4] > var1 && Client.field707[var4] < var3 + var1) {
+				Client.field614[var4] = true;
+			}
+		}
+
+	}
 }

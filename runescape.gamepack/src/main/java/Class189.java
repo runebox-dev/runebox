@@ -13,7 +13,7 @@ public class Class189 {
 	@ObfInfo(name = "az", desc = "Ljava/lang/String;")
 	public String field1947;
 	// $FF: synthetic field
-	@ObfInfo(desc = "Lhj;")
+	@ObfInfo(name = "this$0", desc = "Lhj;")
 	public final Class192 this$0;
 
 	public Class189(Class192 var1) {

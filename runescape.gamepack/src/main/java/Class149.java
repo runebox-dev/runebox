@@ -7,9 +7,4 @@ public abstract class Class149 extends Class506 {
 
 	@ObfInfo(name = "al", desc = "(Lgc;B)V")
 	public abstract void method3067(Class159 var1);
-
-	@ObfInfo(name = "ak", desc = "(I)V")
-	public static void method3266() {
-		Class204.field2079.method5995();
-	}
 }

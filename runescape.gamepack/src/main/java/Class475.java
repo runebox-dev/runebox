@@ -37,7 +37,7 @@ public class Class475 implements Comparable {
 		return this.field4941.method10275(var1.field4941);
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/Object;)I")
+	@ObfInfo(name = "compareTo", desc = "(Ljava/lang/Object;)I")
 	public int compareTo(Object var1) {
 		return this.method8409((Class475)var1);
 	}

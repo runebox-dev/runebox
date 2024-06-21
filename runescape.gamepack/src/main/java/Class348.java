@@ -34,10 +34,10 @@ public class Class348 {
 
 	@ObfInfo(name = "ak", desc = "(B)I")
 	public int method6698() {
-		return Class58.method1085(this.field3870, this.field3869, this.field3868);
+		return method1085(this.field3870, this.field3869, this.field3868);
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
+	@ObfInfo(name = "equals", desc = "(Ljava/lang/Object;)Z")
 	public boolean equals(Object var1) {
 		if (var1 == this) {
 			return true;
@@ -57,12 +57,12 @@ public class Class348 {
 		}
 	}
 
-	@ObfInfo(desc = "()I")
+	@ObfInfo(name = "hashCode", desc = "()I")
 	public int hashCode() {
 		return this.method6698();
 	}
 
-	@ObfInfo(desc = "()Ljava/lang/String;")
+	@ObfInfo(name = "toString", desc = "()Ljava/lang/String;")
 	public String toString() {
 		return this.method6706(",");
 	}
@@ -70,5 +70,10 @@ public class Class348 {
 	@ObfInfo(name = "az", desc = "(Ljava/lang/String;I)Ljava/lang/String;")
 	public String method6706(String var1) {
 		return this.field3870 + var1 + (this.field3869 >> 6) + var1 + (this.field3868 >> 6) + var1 + (this.field3869 & 63) + var1 + (this.field3868 & 63);
+	}
+
+	@ObfInfo(owner = "cf", name = "al", desc = "(IIII)I")
+	public static int method1085(int var0, int var1, int var2) {
+		return var0 << 28 | var1 << 14 | var2;
 	}
 }

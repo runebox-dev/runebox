@@ -140,7 +140,7 @@ public class Class192 {
 					JSONObject var5 = var1.getJSONObject(var4);
 					Class161 var6 = new Class161(this);
 					var6.field1797 = var2.method2759(new URL(var5.getString("src")));
-					var6.field1796 = Class195.method3838(var5, "placement");
+					var6.field1796 = method3838(var5, "placement");
 					this.field1978.add(var6);
 				} catch (MalformedURLException var7) {
 				}
@@ -154,7 +154,7 @@ public class Class192 {
 		try {
 			Class161 var4 = new Class161(this);
 			var4.field1797 = var2.method2759(new URL(var1.getString("src")));
-			var4.field1796 = Class195.method3838(var1, "placement");
+			var4.field1796 = method3838(var1, "placement");
 			this.field1978.add(var4);
 		} catch (MalformedURLException var5) {
 		}
@@ -168,10 +168,10 @@ public class Class192 {
 				JSONObject var4 = var1.getJSONObject(var3);
 				Class189 var5 = new Class189(this);
 				var5.field1947 = var4.getString("text");
-				var5.field1946 = Class266.method5324(var4.getString("align_x"));
-				var5.field1952 = Class266.method5324(var4.getString("align_y"));
+				var5.field1946 = method5324(var4.getString("align_x"));
+				var5.field1952 = method5324(var4.getString("align_y"));
 				var5.field1948 = var4.getInt("font");
-				var5.field1944 = Class195.method3838(var4, "placement");
+				var5.field1944 = method3838(var4, "placement");
 				this.field1981.add(var5);
 			}
 
@@ -182,17 +182,17 @@ public class Class192 {
 	public void method3775(JSONObject var1) throws JSONException {
 		Class189 var3 = new Class189(this);
 		var3.field1947 = var1.optString("text");
-		var3.field1946 = Class266.method5324(var1.optString("align_x"));
-		var3.field1952 = Class266.method5324(var1.optString("align_y"));
+		var3.field1946 = method5324(var1.optString("align_x"));
+		var3.field1952 = method5324(var1.optString("align_y"));
 		var3.field1948 = var1.optInt("font");
-		var3.field1944 = Class195.method3838(var1, "placement");
+		var3.field1944 = method3838(var1, "placement");
 		this.field1981.add(var3);
 	}
 
 	@ObfInfo(name = "ac", desc = "(Lorg/json/JSONObject;I)V", opaque = "-1311565037")
 	public void method3765(JSONObject var1) throws JSONException {
 		if (var1 != null) {
-			this.field1979 = Class195.method3838(var1, "clickbounds");
+			this.field1979 = method3838(var1, "clickbounds");
 			this.field1980 = var1.getString("endpoint");
 			String[] var3 = JSONObject.getNames(var1);
 
@@ -243,5 +243,65 @@ public class Class192 {
 			}
 		}
 
+	}
+
+	@ObfInfo(name = "at", desc = "(II)I", opaque = "-829713781")
+	public static int method3791(int var0) {
+		int var2 = 0;
+		if (var0 < 0 || var0 >= 65536) {
+			var0 >>>= 16;
+			var2 += 16;
+		}
+
+		if (var0 >= 256) {
+			var0 >>>= 8;
+			var2 += 8;
+		}
+
+		if (var0 >= 16) {
+			var0 >>>= 4;
+			var2 += 4;
+		}
+
+		if (var0 >= 4) {
+			var0 >>>= 2;
+			var2 += 2;
+		}
+
+		if (var0 >= 1) {
+			var0 >>>= 1;
+			++var2;
+		}
+
+		return var2 + var0;
+	}
+
+	@ObfInfo(owner = "hm", name = "ah", desc = "(Lorg/json/JSONObject;Ljava/lang/String;B)[F")
+	public static float[] method3838(JSONObject var0, String var1) throws JSONException {
+		float[] var3 = new float[4];
+
+		try {
+			JSONArray var4 = var0.getJSONArray(var1);
+			var3[0] = (float)var4.optDouble(0, 0.0D);
+			var3[1] = (float)var4.optDouble(1, 0.0D);
+			var3[2] = (float)var4.optDouble(2, 1.0D);
+			var3[3] = (float)var4.optDouble(3, 1.0D);
+		} catch (JSONException var5) {
+			var3[0] = 0.0F;
+			var3[1] = 0.0F;
+			var3[2] = 1.0F;
+			var3[3] = 1.0F;
+		}
+
+		return var3;
+	}
+
+	@ObfInfo(owner = "kf", name = "av", desc = "(Ljava/lang/String;B)I", opaque = "2")
+	public static int method5324(String var0) {
+		if (var0.equals("centre")) {
+			return 1;
+		} else {
+			return !var0.equals("bottom") && !var0.equals("right") ? 0 : 2;
+		}
 	}
 }

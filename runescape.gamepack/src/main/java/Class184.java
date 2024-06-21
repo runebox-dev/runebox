@@ -68,7 +68,7 @@ public class Class184 {
 			}
 
 			this.field1916 = this.method3666();
-			Class327.method3047();
+			Class130.method3047();
 		}
 	}
 
@@ -105,5 +105,10 @@ public class Class184 {
 	@ObfInfo(name = "af", desc = "(Ljava/lang/String;I)Lhj;")
 	public Class192 method3674(String var1) {
 		return (Class192)this.field1916.get(var1);
+	}
+
+	@ObfInfo(owner = "pe", name = "ak", desc = "(I)Lhb;")
+	public static Class184 method7419() {
+		return field1918;
 	}
 }

@@ -26,9 +26,4 @@ public class Class308 {
 	public Class308(String var1) {
 		this.field3251 = var1;
 	}
-
-	@ObfInfo(name = "af", desc = "(B)V")
-	public static void method6158() {
-		Class228.field2393.method5995();
-	}
 }

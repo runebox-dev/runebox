@@ -22,7 +22,7 @@ public final class Class9 implements Class173, MouseWheelListener {
 		var1.removeMouseWheelListener(this);
 	}
 
-	@ObfInfo(desc = "(Ljava/awt/event/MouseWheelEvent;)V")
+	@ObfInfo(name = "mouseWheelMoved", desc = "(Ljava/awt/event/MouseWheelEvent;)V")
 	public synchronized void mouseWheelMoved(MouseWheelEvent var1) {
 		this.field49 += var1.getWheelRotation();
 	}

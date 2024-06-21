@@ -7,7 +7,7 @@ public final class Class428 {
 	public static Class428[] field4696;
 	@ObfInfo(name = "aj", desc = "I", intMultiplier = -1072253169)
 	public static int field4698;
-	@ObfInfo(desc = "I", intMultiplier = -1830068443)
+	@ObfInfo(owner = "ue", name = "az", desc = "I", intMultiplier = -1830068443)
 	public static int field5232;
 	@ObfInfo(name = "aa", desc = "Lql;")
 	public static final Class428 field4700;
@@ -382,7 +382,7 @@ public final class Class428 {
 		return this.field4699[10] * var3 + this.field4699[6] * var2 + this.field4699[2] * var1 + this.field4699[14];
 	}
 
-	@ObfInfo(desc = "()Ljava/lang/String;")
+	@ObfInfo(name = "toString", desc = "()Ljava/lang/String;")
 	public String toString() {
 		StringBuilder var1 = new StringBuilder();
 		this.method7883();
@@ -408,7 +408,7 @@ public final class Class428 {
 		return var1.toString();
 	}
 
-	@ObfInfo(desc = "()I")
+	@ObfInfo(name = "hashCode", desc = "()I")
 	public int hashCode() {
 		boolean var1 = true;
 		byte var2 = 1;
@@ -416,7 +416,7 @@ public final class Class428 {
 		return var3;
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
+	@ObfInfo(name = "equals", desc = "(Ljava/lang/Object;)Z")
 	public boolean equals(Object var1) {
 		if (!(var1 instanceof Class428)) {
 			return false;
@@ -445,7 +445,7 @@ public final class Class428 {
 		return var2;
 	}
 
-	@ObfInfo(desc = "(I)V")
+	@ObfInfo(owner = "ph", name = "ak", desc = "(IB)V")
 	public static void method7461(int var0) {
 		field4698 = var0;
 		field4696 = new Class428[var0];

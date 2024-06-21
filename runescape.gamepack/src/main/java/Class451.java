@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 
 @ObfInfo(name = "ri")
@@ -13,6 +12,8 @@ public class Class451 {
 	public static byte[][] field4837;
 	@ObfInfo(name = "ay", desc = "[[B")
 	public static byte[][] field4839;
+	@ObfInfo(owner = "hf", name = "aw", desc = "[[[B")
+	public static byte[][][] field1941;
 	@ObfInfo(name = "ab", desc = "I", intMultiplier = -1723254545)
 	public static int field4824;
 	@ObfInfo(name = "at", desc = "I", intMultiplier = 786106793)
@@ -29,6 +30,10 @@ public class Class451 {
 	public static int field4835;
 	@ObfInfo(name = "ah", desc = "I", intMultiplier = 2005412773)
 	public static int field4838;
+	@ObfInfo(owner = "bc", name = "au", desc = "[I")
+	public static int[] field144;
+	@ObfInfo(name = "as", desc = "[I")
+	public static int[] field4840;
 	@ObfInfo(name = "ad", desc = "Ljava/util/ArrayList;")
 	public static ArrayList field4841;
 	@ObfInfo(name = "af", desc = "Ljava/lang/Object;")
@@ -57,32 +62,63 @@ public class Class451 {
 		new HashMap();
 	}
 
-	@ObfInfo(desc = "([I[I)V")
-	public static void method7039(int[] var0, int[] var1) {
-		if (var0 != null && var1 != null) {
-			Class80.field144 = var0;
-			Class80.field4840 = new int[var0.length];
-			Class80.field1941 = new byte[var0.length][][];
-
-			for (int var3 = 0; var3 < Class80.field144.length; ++var3) {
-				Class80.field1941[var3] = new byte[var1[var3]][];
-				field4841.add(var0[var3]);
+	@ObfInfo(owner = "db", name = "al", desc = "(IZB)[B", opaque = "0")
+	public static byte[] method2233(int var0, boolean var1) {
+		synchronized(field4829) {
+			byte[] var8;
+			if ((var0 == 100 || var0 < 100 && var1) && field4828 > 0) {
+				var8 = field4836[--field4828];
+				field4836[field4828] = null;
+				return var8;
 			}
 
-			Collections.sort(field4841);
-		} else {
-			Class80.field144 = null;
-			Class80.field4840 = null;
-			Class80.field1941 = (byte[][][])null;
-			field4841.clear();
-			field4841.add(100);
-			field4841.add(5000);
-			field4841.add(10000);
-			field4841.add(30000);
+			if ((var0 == 5000 || var0 < 5000 && var1) && field4827 > 0) {
+				var8 = field4837[--field4827];
+				field4837[field4827] = null;
+				return var8;
+			}
+
+			if ((var0 == 10000 || var0 < 10000 && var1) && field4824 > 0) {
+				var8 = field4834[--field4824];
+				field4834[field4824] = null;
+				return var8;
+			}
+
+			if ((var0 == 30000 || var0 < 30000 && var1) && field4831 > 0) {
+				var8 = field4839[--field4831];
+				field4839[field4831] = null;
+				return var8;
+			}
+
+			int var4;
+			if (field1941 != null) {
+				for (var4 = 0; var4 < field144.length; ++var4) {
+					if ((field144[var4] == var0 || var0 < field144[var4] && var1) && field4840[var4] > 0) {
+						byte[] var5 = field1941[var4][--field4840[var4]];
+						field1941[var4][field4840[var4]] = null;
+						return var5;
+					}
+				}
+			}
+
+			if (var1 && field144 != null) {
+				for (var4 = 0; var4 < field144.length; ++var4) {
+					if (var0 <= field144[var4] && field4840[var4] < field1941[var4].length) {
+						return new byte[field144[var4]];
+					}
+				}
+			}
 		}
+
+		return new byte[var0];
 	}
 
-	@ObfInfo(desc = "([B)V")
+	@ObfInfo(owner = "ce", name = "aj", desc = "(IB)[B")
+	public static byte[] method1084(int var0) {
+		return method2233(var0, false);
+	}
+
+	@ObfInfo(owner = "hm", name = "az", desc = "([BB)V", opaque = "10")
 	public static void method3840(byte[] var0) {
 		synchronized(field4829) {
 			if (var0.length == 100 && field4828 < field4832) {
@@ -94,10 +130,10 @@ public class Class451 {
 			} else if (var0.length == 30000 && field4831 < field4835) {
 				field4839[++field4831 - 1] = var0;
 			} else {
-				if (Class80.field1941 != null) {
-					for (int var3 = 0; var3 < Class80.field144.length; ++var3) {
-						if (Class80.field144[var3] == var0.length && Class80.field4840[var3] < Class80.field1941[var3].length) {
-							Class80.field1941[var3][Class80.field4840[var3]++] = var0;
+				if (field1941 != null) {
+					for (int var3 = 0; var3 < field144.length; ++var3) {
+						if (field144[var3] == var0.length && field4840[var3] < field1941[var3].length) {
+							field1941[var3][field4840[var3]++] = var0;
 							return;
 						}
 					}
@@ -194,14 +230,14 @@ public class Class451 {
 						--Class85.field83;
 						var10 = Class72.field887[Class85.field83] - 1;
 						if (var10 >= 0 && var10 <= 9) {
-							Class96.method2493(var5, var10);
+							Class72.method2493(var5, var10);
 							return 1;
 						} else {
 							throw new RuntimeException();
 						}
 					} else if (var0 == 1355) {
 						var9 = 10;
-						Class96.method2493(var5, var9);
+						Class72.method2493(var5, var9);
 						return 1;
 					} else {
 						return 2;

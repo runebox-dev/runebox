@@ -49,12 +49,12 @@ public class Class521 extends Class506 {
 	}
 
 	public Class521(int var1) {
-		this.field5221 = Class57.method1084(var1);
+		this.field5221 = Class451.method1084(var1);
 		this.field5219 = 0;
 	}
 
 	public Class521(int var1, boolean var2) {
-		this.field5221 = Class80.method2233(var1, var2);
+		this.field5221 = Class451.method2233(var1, var2);
 	}
 
 	public Class521(byte[] var1) {
@@ -130,7 +130,7 @@ public class Class521 extends Class506 {
 		if (var3 >= 0) {
 			throw new IllegalArgumentException("");
 		} else {
-			this.field5219 += Class426.method7872(var1, 0, var1.length(), this.field5221, this.field5219);
+			this.field5219 += Class405.method7872(var1, 0, var1.length(), this.field5221, this.field5219);
 			this.field5221[++this.field5219 - 1] = 0;
 		}
 	}
@@ -142,7 +142,7 @@ public class Class521 extends Class506 {
 			throw new IllegalArgumentException("");
 		} else {
 			this.field5221[++this.field5219 - 1] = 0;
-			this.field5219 += Class426.method7872(var1, 0, var1.length(), this.field5221, this.field5219);
+			this.field5219 += Class405.method7872(var1, 0, var1.length(), this.field5221, this.field5219);
 			this.field5221[++this.field5219 - 1] = 0;
 		}
 	}
@@ -165,7 +165,7 @@ public class Class521 extends Class506 {
 
 		this.field5221[++this.field5219 - 1] = 0;
 		this.method9404(var5);
-		this.field5219 += Class522.method3085(this.field5221, this.field5219, var1);
+		this.field5219 += Class135.method3085(this.field5221, this.field5219, var1);
 	}
 
 	@ObfInfo(name = "cm", desc = "([BIIB)V")
@@ -318,7 +318,7 @@ public class Class521 extends Class506 {
 		}
 
 		int var3 = this.field5219 - var2 - 1;
-		return var3 == 0 ? "" : Class405.method7119(this.field5221, var2, var3);
+		return var3 == 0 ? "" : Class363.method7119(this.field5221, var2, var3);
 	}
 
 	@ObfInfo(name = "cx", desc = "(I)Ljava/lang/String;", opaque = "65537")
@@ -333,7 +333,7 @@ public class Class521 extends Class506 {
 			}
 
 			int var4 = this.field5219 - var3 - 1;
-			return var4 == 0 ? "" : Class405.method7119(this.field5221, var3, var4);
+			return var4 == 0 ? "" : Class363.method7119(this.field5221, var3, var4);
 		}
 	}
 
@@ -839,12 +839,24 @@ public class Class521 extends Class506 {
 
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/String;)I")
+	@ObfInfo(owner = "de", name = "bq", desc = "([BIB)I")
+	public static int method2298(byte[] var0, int var1) {
+		int var4 = -1;
+
+		for (int var5 = 0; var5 < var1; ++var5) {
+			var4 = var4 >>> 8 ^ field5220[(var4 ^ var0[var5]) & 255];
+		}
+
+		var4 = ~var4;
+		return var4;
+	}
+
+	@ObfInfo(owner = "qs", name = "cn", desc = "(Ljava/lang/String;I)I")
 	public static int method7983(String var0) {
 		return var0.length() + 1;
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/String;)I")
+	@ObfInfo(owner = "ne", name = "cp", desc = "(Ljava/lang/String;B)I")
 	public static int method6668(String var0) {
 		return var0.length() + 2;
 	}

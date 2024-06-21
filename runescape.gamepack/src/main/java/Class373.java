@@ -86,7 +86,7 @@ public class Class373 implements Class393 {
 		return this.field4068;
 	}
 
-	@ObfInfo(desc = "(I)Z")
+	@ObfInfo(owner = "jv", name = "az", desc = "(II)Z", opaque = "793456589")
 	public static boolean method4909(int var0) {
 		return var0 >= field4062.field4068 && var0 <= field4060.field4068 || var0 == field4049.field4068;
 	}

@@ -28,4 +28,14 @@ public class Class387 implements Class393 {
 	public int method175() {
 		return this.field4526;
 	}
+
+	@ObfInfo(name = "ak", desc = "(Lat;S)Laz;")
+	public static Class26 method7379(Class20 var0) {
+		switch(var0.field99) {
+		case 0:
+			return new Class11();
+		default:
+			throw new IllegalArgumentException();
+		}
+	}
 }

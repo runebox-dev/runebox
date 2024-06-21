@@ -12,12 +12,12 @@ public class Class509 {
 		this.field5175 = var2;
 	}
 
-	@ObfInfo(desc = "()Ljava/lang/String;")
+	@ObfInfo(name = "toString", desc = "()Ljava/lang/String;")
 	public String toString() {
 		return this.field5176 + ", " + this.field5175;
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
+	@ObfInfo(name = "equals", desc = "(Ljava/lang/Object;)Z")
 	public boolean equals(Object var1) {
 		if (var1 != null && var1 instanceof Class509) {
 			Class509 var2 = (Class509)var1;
@@ -43,7 +43,7 @@ public class Class509 {
 		}
 	}
 
-	@ObfInfo(desc = "()I")
+	@ObfInfo(name = "hashCode", desc = "()I")
 	public int hashCode() {
 		int var1 = 0;
 		if (this.field5176 != null) {

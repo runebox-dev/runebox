@@ -1,17 +1,10 @@
 import io.runebox.ObfInfo;
+import java.util.Iterator;
 
 @ObfInfo(name = "da")
 public class Class79 extends Class506 {
-	@ObfInfo(desc = "LClass382;")
-	public static Class382 field2443;
-	@ObfInfo(desc = "LClass382;")
-	public static Class382 field2499;
-	@ObfInfo(desc = "LClass418;")
-	public static Class418 field2398;
 	@ObfInfo(name = "ak", desc = "Ltx;")
 	public static Class518 field982;
-	@ObfInfo(desc = "Z")
-	public static boolean field3252;
 	@ObfInfo(name = "al", desc = "[I")
 	public int[] field980;
 	@ObfInfo(name = "aj", desc = "[I")
@@ -26,7 +19,7 @@ public class Class79 extends Class506 {
 		this.field981 = new int[]{0};
 	}
 
-	@ObfInfo(desc = "(II)I")
+	@ObfInfo(owner = "cj", name = "ak", desc = "(IIB)I", opaque = "-1")
 	public static int method1113(int var0, int var1) {
 		Class79 var3 = (Class79)field982.method9361((long)var0);
 		if (var3 == null) {
@@ -36,12 +29,7 @@ public class Class79 extends Class506 {
 		}
 	}
 
-	@ObfInfo(name = "ak", desc = "(IB)Z", opaque = "1")
-	public static boolean method2221(int var0) {
-		return var0 == 10 || var0 == 11 || var0 == 12 || var0 == 13 || var0 == 14 || var0 == 15 || var0 == 16 || var0 == 17;
-	}
-
-	@ObfInfo(desc = "(II)I")
+	@ObfInfo(owner = "fq", name = "al", desc = "(III)I", opaque = "-627086171")
 	public static int method3244(int var0, int var1) {
 		Class79 var3 = (Class79)field982.method9361((long)var0);
 		if (var3 == null) {
@@ -51,7 +39,7 @@ public class Class79 extends Class506 {
 		}
 	}
 
-	@ObfInfo(desc = "(II)I")
+	@ObfInfo(owner = "cx", name = "aj", desc = "(III)I", opaque = "-514019208")
 	public static int method2115(int var0, int var1) {
 		Class79 var3 = (Class79)field982.method9361((long)var0);
 		if (var3 == null) {
@@ -71,7 +59,7 @@ public class Class79 extends Class506 {
 		}
 	}
 
-	@ObfInfo(desc = "(IIII)V")
+	@ObfInfo(owner = "ix", name = "az", desc = "(IIIII)V", opaque = "-1323037164")
 	public static void method4478(int var0, int var1, int var2, int var3) {
 		Class79 var5 = (Class79)field982.method9361((long)var0);
 		if (var5 == null) {
@@ -102,7 +90,7 @@ public class Class79 extends Class506 {
 		var5.field981[var1] = var3;
 	}
 
-	@ObfInfo(desc = "(I)V")
+	@ObfInfo(owner = "ad", name = "af", desc = "(II)V", opaque = "-2025178871")
 	public static void method51(int var0) {
 		Class79 var2 = (Class79)field982.method9361((long)var0);
 		if (var2 != null) {
@@ -114,7 +102,7 @@ public class Class79 extends Class506 {
 		}
 	}
 
-	@ObfInfo(desc = "(I)V")
+	@ObfInfo(owner = "ro", name = "aa", desc = "(II)V", opaque = "-789628247")
 	public static void method8489(int var0) {
 		Class79 var2 = (Class79)field982.method9361((long)var0);
 		if (var2 != null) {
@@ -122,17 +110,23 @@ public class Class79 extends Class506 {
 		}
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "fn", name = "at", desc = "(B)V")
 	public static void method3179() {
 		field982 = new Class518(32);
 	}
 
-	@ObfInfo(name = "ak", desc = "(Lor;Lor;ZLqb;B)V")
-	public static void method2219(Class382 var0, Class382 var1, boolean var2, Class418 var3) {
-		field2499 = var0;
-		field2443 = var1;
-		field3252 = var2;
-		Client.field1874 = field2499.method7237(10);
-		field2398 = var3;
+	@ObfInfo(name = "ou", desc = "(I)V", opaque = "-1828875769")
+	public static void method2220() {
+		Iterator var1 = Class128.field1529.iterator();
+
+		while (var1.hasNext()) {
+			Class67 var2 = (Class67)var1.next();
+			var2.method1834();
+		}
+
+		if (Client.field1420 != null) {
+			Client.field1420.method8479();
+		}
+
 	}
 }

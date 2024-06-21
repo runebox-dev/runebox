@@ -1,4 +1,5 @@
 import io.runebox.ObfInfo;
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -162,7 +163,7 @@ public class Class102 {
 	@ObfInfo(name = "af", desc = "(ZB)V")
 	public void method2609(boolean var1) {
 		this.field1340 = var1;
-		Class188.method3696();
+		method3696();
 	}
 
 	@ObfInfo(name = "aa", desc = "(I)Z")
@@ -173,7 +174,7 @@ public class Class102 {
 	@ObfInfo(name = "at", desc = "(ZI)V")
 	public void method2618(boolean var1) {
 		this.field1341 = var1;
-		Class188.method3696();
+		method3696();
 	}
 
 	@ObfInfo(name = "ab", desc = "(I)Z")
@@ -184,7 +185,7 @@ public class Class102 {
 	@ObfInfo(name = "ac", desc = "(ZI)V")
 	public void method2723(boolean var1) {
 		this.field1342 = var1;
-		Class188.method3696();
+		method3696();
 	}
 
 	@ObfInfo(name = "ao", desc = "(I)Z")
@@ -195,7 +196,7 @@ public class Class102 {
 	@ObfInfo(name = "ah", desc = "(ZI)V")
 	public void method2733(boolean var1) {
 		this.field1343 = var1;
-		Class188.method3696();
+		method3696();
 	}
 
 	@ObfInfo(name = "av", desc = "(I)V", opaque = "665263981")
@@ -211,7 +212,7 @@ public class Class102 {
 	@ObfInfo(name = "ap", desc = "(II)V")
 	public void method2658(int var1) {
 		this.field1351 = var1;
-		Class188.method3696();
+		method3696();
 	}
 
 	@ObfInfo(name = "ae", desc = "(I)I")
@@ -222,7 +223,7 @@ public class Class102 {
 	@ObfInfo(name = "ax", desc = "(D)V")
 	public void method2620(double var1) {
 		this.field1347 = var1;
-		Class188.method3696();
+		method3696();
 	}
 
 	@ObfInfo(name = "ay", desc = "(I)D")
@@ -233,7 +234,7 @@ public class Class102 {
 	@ObfInfo(name = "au", desc = "(II)V")
 	public void method2622(int var1) {
 		this.field1346 = var1;
-		Class188.method3696();
+		method3696();
 	}
 
 	@ObfInfo(name = "as", desc = "(B)I")
@@ -244,7 +245,7 @@ public class Class102 {
 	@ObfInfo(name = "aw", desc = "(II)V")
 	public void method2624(int var1) {
 		this.field1350 = var1;
-		Class188.method3696();
+		method3696();
 	}
 
 	@ObfInfo(name = "ad", desc = "(S)I")
@@ -255,7 +256,7 @@ public class Class102 {
 	@ObfInfo(name = "ai", desc = "(II)V")
 	public void method2626(int var1) {
 		this.field1348 = var1;
-		Class188.method3696();
+		method3696();
 	}
 
 	@ObfInfo(name = "an", desc = "(I)I")
@@ -266,7 +267,7 @@ public class Class102 {
 	@ObfInfo(name = "am", desc = "(Ljava/lang/String;B)V")
 	public void method2628(String var1) {
 		this.field1338 = var1;
-		Class188.method3696();
+		method3696();
 	}
 
 	@ObfInfo(name = "ar", desc = "(I)Ljava/lang/String;")
@@ -277,7 +278,7 @@ public class Class102 {
 	@ObfInfo(name = "ag", desc = "(II)V")
 	public void method2630(int var1) {
 		this.field1349 = var1;
-		Class188.method3696();
+		method3696();
 	}
 
 	@ObfInfo(name = "bs", desc = "(I)I")
@@ -288,7 +289,7 @@ public class Class102 {
 	@ObfInfo(name = "bf", desc = "(IB)V")
 	public void method2706(int var1) {
 		this.field1345 = var1;
-		Class188.method3696();
+		method3696();
 	}
 
 	@ObfInfo(name = "bo", desc = "(I)I")
@@ -306,7 +307,7 @@ public class Class102 {
 		}
 
 		this.field1353.put(var4, var2);
-		Class188.method3696();
+		method3696();
 	}
 
 	@ObfInfo(name = "bt", desc = "(Ljava/lang/String;B)Z")
@@ -341,11 +342,62 @@ public class Class102 {
 			Client.field3857.field1283.method5045(Client.field4851.method2679());
 		}
 
-		Class188.method3696();
+		method3696();
 	}
 
 	@ObfInfo(name = "be", desc = "(B)I")
 	public int method2679() {
 		return this.field1352;
+	}
+
+	@ObfInfo(owner = "pl", name = "aj", desc = "(B)Ldx;", opaque = "19")
+	public static Class102 method7532() {
+		Class525 var1 = null;
+		Class102 var2 = new Class102();
+
+		try {
+			var1 = Class179.method2980("", Client.field1497.field4550, false);
+			byte[] var3 = new byte[(int)var1.method9674()];
+
+			int var5;
+			for (int var4 = 0; var4 < var3.length; var4 += var5) {
+				var5 = var1.method9682(var3, var4, var3.length - var4);
+				if (var5 == -1) {
+					throw new IOException();
+				}
+			}
+
+			var2 = new Class102(new Class521(var3));
+		} catch (Exception var7) {
+		}
+
+		try {
+			if (var1 != null) {
+				var1.method9672();
+			}
+		} catch (Exception var6) {
+		}
+
+		return var2;
+	}
+
+	@ObfInfo(owner = "hf", name = "az", desc = "(I)V", opaque = "1234147850")
+	public static void method3696() {
+		Class525 var1 = null;
+
+		try {
+			var1 = Class179.method2980("", Client.field1497.field4550, true);
+			Class521 var2 = Client.field4851.method2608();
+			var1.method9668(var2.field5221, 0, var2.field5219);
+		} catch (Exception var4) {
+		}
+
+		try {
+			if (var1 != null) {
+				var1.method9669(true);
+			}
+		} catch (Exception var3) {
+		}
+
 	}
 }

@@ -170,7 +170,7 @@ public class Class159 {
 				}
 			}
 
-			Class91.method2406(var2, this.field1777);
+			Class532.method2406(var2, this.field1777);
 		}
 
 		return this.field1777;

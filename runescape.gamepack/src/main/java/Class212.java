@@ -13,9 +13,4 @@ public class Class212 {
 	public int method4054() {
 		return this.field2155;
 	}
-
-	@ObfInfo(name = "ak", desc = "(I)V")
-	public static void method4057() {
-		Class201.field2068.method5995();
-	}
 }

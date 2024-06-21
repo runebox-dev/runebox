@@ -110,32 +110,32 @@ public class Class409 implements Iterable, Collection {
 		return var1;
 	}
 
-	@ObfInfo(desc = "()Ljava/util/Iterator;")
+	@ObfInfo(name = "iterator", desc = "()Ljava/util/Iterator;")
 	public Iterator iterator() {
 		return new Class413(this);
 	}
 
-	@ObfInfo(desc = "()I")
+	@ObfInfo(name = "size", desc = "()I")
 	public int size() {
 		return this.method7644();
 	}
 
-	@ObfInfo(desc = "()Z")
+	@ObfInfo(name = "isEmpty", desc = "()Z")
 	public boolean isEmpty() {
 		return this.method7625();
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
+	@ObfInfo(name = "contains", desc = "(Ljava/lang/Object;)Z")
 	public boolean contains(Object var1) {
 		throw new RuntimeException();
 	}
 
-	@ObfInfo(desc = "()[Ljava/lang/Object;")
+	@ObfInfo(name = "toArray", desc = "()[Ljava/lang/Object;")
 	public Object[] toArray() {
 		return this.method7605();
 	}
 
-	@ObfInfo(desc = "([Ljava/lang/Object;)[Ljava/lang/Object;")
+	@ObfInfo(name = "toArray", desc = "([Ljava/lang/Object;)[Ljava/lang/Object;")
 	public Object[] toArray(Object[] var1) {
 		int var2 = 0;
 
@@ -152,47 +152,47 @@ public class Class409 implements Iterable, Collection {
 		return true;
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
+	@ObfInfo(name = "remove", desc = "(Ljava/lang/Object;)Z")
 	public boolean remove(Object var1) {
 		throw new RuntimeException();
 	}
 
-	@ObfInfo(desc = "(Ljava/util/Collection;)Z")
+	@ObfInfo(name = "containsAll", desc = "(Ljava/util/Collection;)Z")
 	public boolean containsAll(Collection var1) {
 		throw new RuntimeException();
 	}
 
-	@ObfInfo(desc = "(Ljava/util/Collection;)Z")
+	@ObfInfo(name = "addAll", desc = "(Ljava/util/Collection;)Z")
 	public boolean addAll(Collection var1) {
 		throw new RuntimeException();
 	}
 
-	@ObfInfo(desc = "(Ljava/util/Collection;)Z")
+	@ObfInfo(name = "removeAll", desc = "(Ljava/util/Collection;)Z")
 	public boolean removeAll(Collection var1) {
 		throw new RuntimeException();
 	}
 
-	@ObfInfo(desc = "(Ljava/util/Collection;)Z")
+	@ObfInfo(name = "retainAll", desc = "(Ljava/util/Collection;)Z")
 	public boolean retainAll(Collection var1) {
 		throw new RuntimeException();
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(name = "clear", desc = "()V")
 	public void clear() {
 		this.method7596();
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
+	@ObfInfo(name = "add", desc = "(Ljava/lang/Object;)Z")
 	public boolean add(Object var1) {
 		return this.method7664((Class506)var1);
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
+	@ObfInfo(name = "equals", desc = "(Ljava/lang/Object;)Z")
 	public boolean equals(Object var1) {
 		return super.equals(var1);
 	}
 
-	@ObfInfo(desc = "()I")
+	@ObfInfo(name = "hashCode", desc = "()I")
 	public int hashCode() {
 		return super.hashCode();
 	}

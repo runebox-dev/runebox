@@ -5,7 +5,7 @@ public abstract class Class202 {
 	@ObfInfo(name = "az", desc = "Ljava/lang/String;")
 	public String field2072;
 	// $FF: synthetic field
-	@ObfInfo(desc = "Lhj;")
+	@ObfInfo(name = "this$0", desc = "Lhj;")
 	public final Class192 this$0;
 
 	public Class202(Class192 var1, String var2) {

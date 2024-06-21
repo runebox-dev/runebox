@@ -90,12 +90,12 @@ public class Class143 {
 		this.field1625 = new float[this.method3159() + 1];
 
 		for (int var2 = this.method3157(); var2 <= this.method3158(); ++var2) {
-			this.field1625[var2 - this.method3157()] = Class261.method5160(this, (float)var2);
+			this.field1625[var2 - this.method3157()] = Class130.method5160(this, (float)var2);
 		}
 
 		this.field1627 = null;
-		this.field1644 = Class261.method5160(this, (float)(this.method3157() - 1));
-		this.field1640 = Class261.method5160(this, (float)(this.method3158() + 1));
+		this.field1644 = Class130.method5160(this, (float)(this.method3157() - 1));
+		this.field1640 = Class130.method5160(this, (float)(this.method3158() + 1));
 	}
 
 	@ObfInfo(name = "aj", desc = "(II)F", opaque = "-11287499")

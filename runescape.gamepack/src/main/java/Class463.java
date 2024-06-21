@@ -22,9 +22,4 @@ public class Class463 {
 	public String method8548() {
 		return this.field4884;
 	}
-
-	@ObfInfo(name = "al", desc = "(II)Ljava/lang/String;")
-	public static String method8551(int var0) {
-		return "<col=" + Integer.toHexString(var0) + ">";
-	}
 }

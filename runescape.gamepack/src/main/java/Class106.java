@@ -29,7 +29,7 @@ public abstract class Class106 implements Runnable {
 	@ObfInfo(name = "ak", desc = "(Lea;B)V")
 	public abstract void method2773(Class105 var1) throws IOException;
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(name = "run", desc = "()V")
 	public void run() {
 		while (!this.field1376) {
 			try {
@@ -90,7 +90,7 @@ public abstract class Class106 implements Runnable {
 				var4.readFully(var5);
 			} else {
 				var5 = new byte[0];
-				byte[] var7 = Class57.method1084(5000);
+				byte[] var7 = Class451.method1084(5000);
 
 				for (int var8 = var4.read(var7); var8 > -1; var8 = var4.read(var7)) {
 					byte[] var9 = new byte[var5.length + var8];
@@ -139,6 +139,20 @@ public abstract class Class106 implements Runnable {
 
 			this.field1378.join();
 		} catch (InterruptedException var5) {
+		}
+
+	}
+
+	@ObfInfo(name = "at", desc = "(Lor;II)V", opaque = "-1555721052")
+	public static void method2771(Class382 var0, int var1) {
+		if ((var1 & Class534.field5294.method175()) != 0) {
+			Class76.field1313 = Class554.method8860(var0, "logo_deadman_mode", "");
+		} else if ((var1 & Class534.field5295.method175()) != 0) {
+			Class76.field1313 = Class554.method8860(var0, "logo_seasonal_mode", "");
+		} else if ((var1 & Class534.field5268.method175()) != 0) {
+			Class76.field1313 = Class554.method8860(var0, "logo_speedrunning", "");
+		} else {
+			Class76.field1313 = Class554.method8860(var0, "logo", "");
 		}
 
 	}

@@ -29,4 +29,111 @@ public final class Class270 {
 		this.field3009 = 0L;
 		this.field3014 = 0;
 	}
+
+	@ObfInfo(name = "aj", desc = "([Lcl;II[I[II)V", opaque = "2014877642")
+	public static void method5396(Class64[] var0, int var1, int var2, int[] var3, int[] var4) {
+		if (var1 < var2) {
+			int var6 = var1 - 1;
+			int var7 = var2 + 1;
+			int var8 = (var2 + var1) / 2;
+			Class64 var9 = var0[var8];
+			var0[var8] = var0[var1];
+			var0[var1] = var9;
+
+			while (var6 < var7) {
+				boolean var10 = true;
+
+				int var11;
+				int var12;
+				int var13;
+				do {
+					--var7;
+
+					for (var11 = 0; var11 < 4; ++var11) {
+						if (2 == var3[var11]) {
+							var12 = var0[var7].field478;
+							var13 = var9.field478;
+						} else if (var3[var11] == 1) {
+							var12 = var0[var7].field475;
+							var13 = var9.field475;
+							if (var12 == -1 && 1 == var4[var11]) {
+								var12 = 2001;
+							}
+
+							if (var13 == -1 && 1 == var4[var11]) {
+								var13 = 2001;
+							}
+						} else if (3 == var3[var11]) {
+							var12 = var0[var7].method1175() ? 1 : 0;
+							var13 = var9.method1175() ? 1 : 0;
+						} else {
+							var12 = var0[var7].field473;
+							var13 = var9.field473;
+						}
+
+						if (var13 != var12) {
+							if ((var4[var11] != 1 || var12 <= var13) && (0 != var4[var11] || var12 >= var13)) {
+								var10 = false;
+							}
+							break;
+						}
+
+						if (var11 == 3) {
+							var10 = false;
+						}
+					}
+				} while(var10);
+
+				var10 = true;
+
+				do {
+					++var6;
+
+					for (var11 = 0; var11 < 4; ++var11) {
+						if (2 == var3[var11]) {
+							var12 = var0[var6].field478;
+							var13 = var9.field478;
+						} else if (1 == var3[var11]) {
+							var12 = var0[var6].field475;
+							var13 = var9.field475;
+							if (var12 == -1 && 1 == var4[var11]) {
+								var12 = 2001;
+							}
+
+							if (var13 == -1 && 1 == var4[var11]) {
+								var13 = 2001;
+							}
+						} else if (var3[var11] == 3) {
+							var12 = var0[var6].method1175() ? 1 : 0;
+							var13 = var9.method1175() ? 1 : 0;
+						} else {
+							var12 = var0[var6].field473;
+							var13 = var9.field473;
+						}
+
+						if (var13 != var12) {
+							if ((1 != var4[var11] || var12 >= var13) && (0 != var4[var11] || var12 <= var13)) {
+								var10 = false;
+							}
+							break;
+						}
+
+						if (var11 == 3) {
+							var10 = false;
+						}
+					}
+				} while(var10);
+
+				if (var6 < var7) {
+					Class64 var14 = var0[var6];
+					var0[var6] = var0[var7];
+					var0[var7] = var14;
+				}
+			}
+
+			method5396(var0, var1, var7, var3, var4);
+			method5396(var0, var7 + 1, var2, var3, var4);
+		}
+
+	}
 }

@@ -119,4 +119,27 @@ public class Class209 extends Class507 {
 
 		this.field2113 = (int)(var13 * (double)this.field2115);
 	}
+
+	@ObfInfo(owner = "ik", name = "ak", desc = "(II)Lia;", opaque = "-1567988952")
+	public static Class209 method4164(int var0) {
+		Class209 var2 = (Class209)field2110.method5993((long)var0);
+		if (var2 != null) {
+			return var2;
+		} else {
+			byte[] var3 = Client.field2111.method7216(1, var0);
+			var2 = new Class209();
+			if (var3 != null) {
+				var2.method3977(new Class521(var3), var0);
+			}
+
+			var2.method3976();
+			field2110.method5987(var2, (long)var0);
+			return var2;
+		}
+	}
+
+	@ObfInfo(owner = "hx", name = "aa", desc = "(B)V")
+	public static void method3959() {
+		field2110.method5995();
+	}
 }

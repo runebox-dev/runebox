@@ -105,7 +105,7 @@ public final class Class100 extends Class86 {
 			--var5;
 		}
 
-		if (super.field1074 != -1 && Class237.method4637(super.field1074).field2141 == 1) {
+		if (super.field1074 != -1 && Class211.method4637(super.field1074).field2141 == 1) {
 			super.field1074 = -1;
 		}
 
@@ -126,7 +126,7 @@ public final class Class100 extends Class86 {
 
 	@ObfInfo(name = "au", desc = "(IIZI)V", opaque = "-1664480968")
 	public final void method2527(int var1, int var2, boolean var3) {
-		if (super.field1074 != -1 && Class237.method4637(super.field1074).field2141 == 1) {
+		if (super.field1074 != -1 && Class211.method4637(super.field1074).field2141 == 1) {
 			super.field1074 = -1;
 		}
 
@@ -165,8 +165,8 @@ public final class Class100 extends Class86 {
 		if (this.field1314 == null) {
 			return null;
 		} else {
-			Class211 var2 = -1 != super.field1074 && 0 == super.field1103 ? Class237.method4637(super.field1074) : null;
-			Class211 var3 = super.field1096 == -1 || super.field1061 == super.field1096 && var2 != null ? null : Class237.method4637(super.field1096);
+			Class211 var2 = -1 != super.field1074 && 0 == super.field1103 ? Class211.method4637(super.field1074) : null;
+			Class211 var3 = super.field1096 != -1 && (super.field1061 != super.field1096 || var2 == null) ? Class211.method4637(super.field1096) : null;
 			Class262 var4 = null;
 			if (this.field1318 != null && this.field1318.field2294) {
 				var4 = Client.field107.field1029.method7086(var2, super.field1101, var3, super.field1122);

@@ -8,12 +8,12 @@ public class Class345 implements Comparator {
 		return var1.field3524 - var2.field3524;
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/Object;Ljava/lang/Object;)I")
+	@ObfInfo(name = "compare", desc = "(Ljava/lang/Object;Ljava/lang/Object;)I")
 	public int compare(Object var1, Object var2) {
 		return this.method6681((Class337)var1, (Class337)var2);
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
+	@ObfInfo(name = "equals", desc = "(Ljava/lang/Object;)Z")
 	public boolean equals(Object var1) {
 		return super.equals(var1);
 	}

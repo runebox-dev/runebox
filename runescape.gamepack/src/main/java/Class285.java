@@ -96,18 +96,4 @@ public class Class285 implements Class298 {
 	@ObfInfo(name = "at", desc = "(B)V")
 	public void method5756() {
 	}
-
-	@ObfInfo(name = "az", desc = "(BI)Ljv;", opaque = "-109535211")
-	public static Class256 method5753(byte var0) {
-		Class256[] var2 = Class256.field2708;
-
-		for (int var3 = 0; var3 < var2.length; ++var3) {
-			Class256 var4 = var2[var3];
-			if (var4.field2707 == var0) {
-				return var4;
-			}
-		}
-
-		throw new RuntimeException("Could not find MoveSpeed with ID " + var0);
-	}
 }

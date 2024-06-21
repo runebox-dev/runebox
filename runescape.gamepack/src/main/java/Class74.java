@@ -19,10 +19,10 @@ public class Class74 {
 		field909 = new BigInteger("7237300117305667488707183861728052766358166655052137727439795191253340127955075499635575104901523446809299097934591732635674173519120047404024393881551683");
 	}
 
-	@ObfInfo(desc = "()J")
+	@ObfInfo(owner = "od", name = "ak", desc = "(I)J", opaque = "-1372916458")
 	public static long method7131() {
 		try {
-			URL var1 = new URL(Client.method8428("services", false) + "m=accountappeal/login.ws");
+			URL var1 = new URL(Class452.method8428("services", false) + "m=accountappeal/login.ws");
 			URLConnection var2 = var1.openConnection();
 			var2.setRequestProperty("connection", "close");
 			var2.setDoInput(true);
@@ -51,12 +51,7 @@ public class Class74 {
 		}
 	}
 
-	@ObfInfo(name = "af", desc = "(J)Z")
-	public static boolean method2085(long var0) {
-		return (int)(var0 >>> 16 & 1L) == 1;
-	}
-
-	@ObfInfo(desc = "(JLjava/lang/String;)I")
+	@ObfInfo(owner = "af", name = "al", desc = "(JLjava/lang/String;B)I", opaque = "1")
 	public static int method68(long var0, String var2) {
 		Random var4 = new Random();
 		Class521 var5 = new Class521(128);
@@ -110,7 +105,7 @@ public class Class74 {
 		String var11 = Class416.method3598(var10.field5221);
 
 		try {
-			URL var12 = new URL(Client.method8428("services", false) + "m=accountappeal/login.ws");
+			URL var12 = new URL(Class452.method8428("services", false) + "m=accountappeal/login.ws");
 			URLConnection var13 = var12.openConnection();
 			var13.setDoInput(true);
 			var13.setDoOutput(true);
@@ -162,7 +157,7 @@ public class Class74 {
 		}
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/String;)Z")
+	@ObfInfo(owner = "nw", name = "aj", desc = "(Ljava/lang/String;I)Z", opaque = "-2039118481")
 	public static boolean method7103(String var0) {
 		if (var0 == null) {
 			return false;

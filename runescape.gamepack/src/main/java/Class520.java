@@ -43,13 +43,13 @@ public class Class520 {
 						if (var15 == null) {
 							var14 = null;
 						} else {
-							Class418 var16 = new Class418(var15, Class81.field5374, Class81.field5377, Class81.field5376, Class81.field5379, Class81.field1371, Class81.field1910);
-							Class81.field5374 = null;
-							Class81.field5377 = null;
-							Class81.field5376 = null;
-							Class81.field5379 = null;
-							Class81.field1371 = null;
-							Class81.field1910 = (byte[][])null;
+							Class418 var16 = new Class418(var15, Class554.field5374, Class554.field5377, Class554.field5376, Class554.field5379, Class554.field1371, Class554.field1910);
+							Class554.field5374 = null;
+							Class554.field5377 = null;
+							Class554.field5376 = null;
+							Class554.field5379 = null;
+							Class554.field1371 = null;
+							Class554.field1910 = (byte[][])null;
 							var14 = var16;
 						}
 

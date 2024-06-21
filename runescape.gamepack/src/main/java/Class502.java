@@ -2,6 +2,8 @@ import io.runebox.ObfInfo;
 
 @ObfInfo(name = "th")
 public class Class502 {
+	@ObfInfo(owner = "lv", name = "ab", desc = "Z")
+	public static boolean field3252;
 	@ObfInfo(name = "aa", desc = "Lor;")
 	public Class382 field5143;
 	@ObfInfo(name = "ab", desc = "Z")
@@ -72,5 +74,31 @@ public class Class502 {
 	@ObfInfo(name = "az", desc = "(B)I")
 	public int method9240() {
 		return this.field5142;
+	}
+
+	@ObfInfo(name = "aw", desc = "(Lcl;I)V", opaque = "1763588078")
+	public static void method9252(Class64 var0) {
+		if (var0.method1175() != Client.field528) {
+			Client.field528 = var0.method1175();
+			boolean var2 = var0.method1175();
+			if (field3252 != var2) {
+				Class232.field2454.method5995();
+				Class232.field2445.method5995();
+				Class232.field2440.method5995();
+				field3252 = var2;
+			}
+		}
+
+		if (Client.field675 != var0.field480) {
+			Class106.method2771(Client.field1793, var0.field480);
+		}
+
+		Client.field119 = var0.field476;
+		Client.field557 = var0.field473;
+		Client.field675 = var0.field480;
+		Client.field4509 = var0.field467;
+		Client.field429 = 0 == Client.field532 ? 43594 : 40000 + var0.field473;
+		Client.field3167 = 0 == Client.field532 ? 443 : 50000 + var0.field473;
+		Client.field3071 = Client.field429;
 	}
 }

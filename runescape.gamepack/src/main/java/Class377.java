@@ -21,7 +21,7 @@ public class Class377 implements Runnable {
 		field4136 = new Object();
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(name = "run", desc = "()V")
 	public void run() {
 		try {
 			while (true) {
@@ -70,7 +70,7 @@ public class Class377 implements Runnable {
 		}
 	}
 
-	@ObfInfo(desc = "(ILClass474;LClass384;)V")
+	@ObfInfo(owner = "ni", name = "ak", desc = "(ILsf;Lot;B)V", opaque = "1")
 	public static void method6694(int var0, Class474 var1, Class384 var2) {
 		byte[] var4 = null;
 		synchronized(field4138) {
@@ -90,7 +90,7 @@ public class Class377 implements Runnable {
 		}
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "mn", name = "al", desc = "(B)V")
 	public static void method6261() {
 		synchronized(field4136) {
 			if (0 != field4134) {

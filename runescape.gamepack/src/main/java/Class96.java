@@ -32,7 +32,7 @@ public class Class96 extends Class255 {
 		this.field1268 = var6;
 		this.field1271 = var7;
 		if (var8 != -1) {
-			this.field1272 = Class237.method4637(var8);
+			this.field1272 = Class211.method4637(var8);
 			this.field1265 = 0;
 			this.field1270 = Client.field778 - 1;
 			if (0 == this.field1272.field2152 && var10 != null && var10 instanceof Class96) {
@@ -123,34 +123,6 @@ public class Class96 extends Class255 {
 			int var11 = (var3 << 6) + (this.field1268 << 7);
 			int var12 = (var4 << 6) + (this.field1271 << 7);
 			return var13.method4205(this.field1267, this.field1274, var9, var11, var10, var12, this.field1272, this.field1265);
-		}
-	}
-
-	@ObfInfo(name = "al", desc = "(III)V")
-	public static void method2494(int var0, int var1) {
-		Class228 var3 = Class33.method714(var0);
-		int var4 = var3.field2394;
-		int var5 = var3.field2395;
-		int var6 = var3.field2396;
-		int var7 = Class351.field3891[var6 - var5];
-		if (var1 < 0 || var1 > var7) {
-			var1 = 0;
-		}
-
-		var7 <<= var5;
-		Class351.field3889[var4] = Class351.field3889[var4] & ~var7 | var1 << var5 & var7;
-	}
-
-	@ObfInfo(name = "av", desc = "(Lnb;II)V", opaque = "-1992565034")
-	public static void method2493(Class340 var0, int var1) {
-		if (var0.field3753 == null) {
-			throw new RuntimeException();
-		} else {
-			if (var0.field3684 == null) {
-				var0.field3684 = new int[var0.field3753.length];
-			}
-
-			var0.field3684[var1] = Integer.MAX_VALUE;
 		}
 	}
 }

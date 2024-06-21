@@ -67,19 +67,4 @@ public class Class94 extends Class506 {
 	public boolean method2473() {
 		return this.field1254.method7625();
 	}
-
-	@ObfInfo(name = "ax", desc = "(II)Lfo;", opaque = "1510290443")
-	public static Class145 method2478(int var0) {
-		Class145 var2 = (Class145)Class211.field2132.method5993((long)var0);
-		if (var2 != null) {
-			return var2;
-		} else {
-			var2 = Class337.method6486(Client.field2123, Client.field2131, var0, false);
-			if (var2 != null) {
-				Class211.field2132.method5987(var2, (long)var0);
-			}
-
-			return var2;
-		}
-	}
 }

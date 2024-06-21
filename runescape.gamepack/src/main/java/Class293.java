@@ -17,9 +17,4 @@ public class Class293 {
 	public Class293(int var1) {
 		this.field3168 = var1;
 	}
-
-	@ObfInfo(name = "at", desc = "(II)I")
-	public static int method5913(int var0) {
-		return Class274.method4073(Class274.field3027[var0]);
-	}
 }

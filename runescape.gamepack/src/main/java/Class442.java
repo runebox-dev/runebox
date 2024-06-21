@@ -83,7 +83,7 @@ public final class Class442 {
 		this.method8280(this.field4786 * var1.field4788 + this.field4788 * var1.field4786 + var1.field4785 * this.field4790 - var1.field4790 * this.field4785, this.field4786 * var1.field4785 + (this.field4785 * var1.field4786 - var1.field4788 * this.field4790) + this.field4788 * var1.field4790, this.field4786 * var1.field4790 + (var1.field4788 * this.field4785 + this.field4790 * var1.field4786 - var1.field4785 * this.field4788), var1.field4786 * this.field4786 - var1.field4788 * this.field4788 - this.field4785 * var1.field4785 - this.field4790 * var1.field4790);
 	}
 
-	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
+	@ObfInfo(name = "equals", desc = "(Ljava/lang/Object;)Z")
 	public boolean equals(Object var1) {
 		if (!(var1 instanceof Class442)) {
 			return false;
@@ -93,7 +93,7 @@ public final class Class442 {
 		}
 	}
 
-	@ObfInfo(desc = "()I")
+	@ObfInfo(name = "hashCode", desc = "()I")
 	public int hashCode() {
 		boolean var1 = true;
 		float var2 = 1.0F;
@@ -104,12 +104,12 @@ public final class Class442 {
 		return (int)var2;
 	}
 
-	@ObfInfo(desc = "()Ljava/lang/String;")
+	@ObfInfo(name = "toString", desc = "()Ljava/lang/String;")
 	public String toString() {
 		return this.field4788 + "," + this.field4785 + "," + this.field4790 + "," + this.field4786;
 	}
 
-	@ObfInfo(desc = "()LClass442;")
+	@ObfInfo(owner = "eb", name = "al", desc = "(B)Lqz;", opaque = "2")
 	public static Class442 method2775() {
 		synchronized(field4791) {
 			if (field4787 == 0) {

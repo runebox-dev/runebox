@@ -37,6 +37,6 @@ public final class Class117 extends Class255 {
 
 	@ObfInfo(name = "ah", desc = "(I)Lkb;")
 	public final Class262 method1092() {
-		return Class7.method109(this.field1465).method4418(this.field1458);
+		return Class232.method109(this.field1465).method4418(this.field1458);
 	}
 }

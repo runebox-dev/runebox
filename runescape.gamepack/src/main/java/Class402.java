@@ -1,5 +1,4 @@
 import io.runebox.ObfInfo;
-import java.io.IOException;
 import java.util.Locale;
 
 @ObfInfo(name = "pl")
@@ -71,7 +70,7 @@ public class Class402 implements Class393 {
 		return this.field4618;
 	}
 
-	@ObfInfo(desc = "()Ljava/lang/String;")
+	@ObfInfo(name = "toString", desc = "()Ljava/lang/String;")
 	public String toString() {
 		return this.method7521().toLowerCase(Locale.ENGLISH);
 	}
@@ -89,36 +88,5 @@ public class Class402 implements Class393 {
 	@ObfInfo(name = "aa", desc = "(II)Lpl;", opaque = "-968330042")
 	public static Class402 method7514(int var0) {
 		return var0 >= 0 && var0 < field4617.length ? field4617[var0] : null;
-	}
-
-	@ObfInfo(name = "aj", desc = "(B)Ldx;", opaque = "19")
-	public static Class102 method7532() {
-		Class525 var1 = null;
-		Class102 var2 = new Class102();
-
-		try {
-			var1 = Class179.method2980("", Client.field1497.field4550, false);
-			byte[] var3 = new byte[(int)var1.method9674()];
-
-			int var5;
-			for (int var4 = 0; var4 < var3.length; var4 += var5) {
-				var5 = var1.method9682(var3, var4, var3.length - var4);
-				if (var5 == -1) {
-					throw new IOException();
-				}
-			}
-
-			var2 = new Class102(new Class521(var3));
-		} catch (Exception var7) {
-		}
-
-		try {
-			if (var1 != null) {
-				var1.method9672();
-			}
-		} catch (Exception var6) {
-		}
-
-		return var2;
 	}
 }

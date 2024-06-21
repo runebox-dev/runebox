@@ -28,4 +28,9 @@ public class Class185 implements Class393 {
 	public int method175() {
 		return this.field1920;
 	}
+
+	@ObfInfo(owner = "dk", name = "az", desc = "(I)[Lhc;")
+	public static Class185[] method2403() {
+		return new Class185[]{field1921, field1924, field1922};
+	}
 }

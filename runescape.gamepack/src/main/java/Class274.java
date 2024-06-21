@@ -6,7 +6,7 @@ public class Class274 {
 	public static boolean field3028;
 	@ObfInfo(name = "az", desc = "Z")
 	public static boolean field3033;
-	@ObfInfo(desc = "I", intMultiplier = -1608214613)
+	@ObfInfo(owner = "eq", name = "at", desc = "I", intMultiplier = -1608214613)
 	public static int field1489;
 	@ObfInfo(name = "ab", desc = "I", intMultiplier = -1637450235)
 	public static int field3023;
@@ -26,9 +26,9 @@ public class Class274 {
 	public static int field3032;
 	@ObfInfo(name = "ap", desc = "I", intMultiplier = 960707977)
 	public static int field3034;
-	@ObfInfo(desc = "I", intMultiplier = -285362375)
+	@ObfInfo(owner = "nw", name = "ac", desc = "I", intMultiplier = -285362375)
 	public static int field3971;
-	@ObfInfo(desc = "I", intMultiplier = -1008264913)
+	@ObfInfo(owner = "nz", name = "aa", desc = "I", intMultiplier = -1008264913)
 	public static int field3983;
 	@ObfInfo(name = "ae", desc = "[J")
 	public static long[] field3027;
@@ -42,37 +42,47 @@ public class Class274 {
 		field3027 = new long[1000];
 	}
 
-	@ObfInfo(name = "ak", desc = "(I)V")
-	public static void method5517() {
-		Class186.field1927.method5995();
-	}
-
 	@ObfInfo(name = "af", desc = "(II)Z", opaque = "474054299")
 	public static boolean method5518(int var0) {
 		return var0 >= Class373.field4065.field4068 && var0 <= Class373.field4066.field4068;
 	}
 
-	@ObfInfo(desc = "()I")
+	@ObfInfo(owner = "hk", name = "ak", desc = "(I)I")
 	public static int method3812() {
 		return field3034;
 	}
 
-	@ObfInfo(desc = "(J)I")
+	@ObfInfo(owner = "lr", name = "aj", desc = "(J)I")
+	public static int method6117(long var0) {
+		return (int)(var0 >>> 7 & 127L);
+	}
+
+	@ObfInfo(owner = "ev", name = "az", desc = "(J)I")
 	public static int method3001(long var0) {
 		return (int)(var0 >>> 14 & 3L);
 	}
 
-	@ObfInfo(desc = "(J)I")
+	@ObfInfo(owner = "cv", name = "af", desc = "(J)Z")
+	public static boolean method2085(long var0) {
+		return (int)(var0 >>> 16 & 1L) == 1;
+	}
+
+	@ObfInfo(owner = "en", name = "aa", desc = "(J)I")
 	public static int method2942(long var0) {
 		return (int)(var0 >>> 17 & 4294967295L);
 	}
 
-	@ObfInfo(desc = "(J)I")
+	@ObfInfo(owner = "lg", name = "at", desc = "(II)I")
+	public static int method5913(int var0) {
+		return method4073(field3027[var0]);
+	}
+
+	@ObfInfo(owner = "ih", name = "ab", desc = "(J)I")
 	public static int method4073(long var0) {
 		return (int)(var0 >>> 49 & 2047L);
 	}
 
-	@ObfInfo(desc = "(IIIZII)J")
+	@ObfInfo(owner = "ho", name = "ac", desc = "(IIIZIIB)J")
 	public static long method3872(int var0, int var1, int var2, boolean var3, int var4, int var5) {
 		long var7 = (long)((var0 & 127) << 0 | (var1 & 127) << 7 | (var2 & 3) << 14) | ((long)var4 & 4294967295L) << 17 | ((long)var5 & 2047L) << 49;
 		if (var3) {
@@ -82,7 +92,7 @@ public class Class274 {
 		return var7;
 	}
 
-	@ObfInfo(desc = "(II)V")
+	@ObfInfo(owner = "kl", name = "ao", desc = "(III)V")
 	public static void method5477(int var0, int var1) {
 		field3024 = var0;
 		field3025 = var1;
@@ -91,18 +101,18 @@ public class Class274 {
 		field3033 = false;
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(owner = "fx", name = "ah", desc = "(I)V")
 	public static void method3295() {
 		field3028 = false;
 		field3034 = 0;
 	}
 
-	@ObfInfo(desc = "()Z")
+	@ObfInfo(owner = "dx", name = "av", desc = "(B)Z")
 	public static boolean method2732() {
 		return field3028;
 	}
 
-	@ObfInfo(desc = "(IIII)V")
+	@ObfInfo(owner = "av", name = "aq", desc = "(IIIII)V", opaque = "846928200")
 	public static void method346(int var0, int var1, int var2, int var3) {
 		if (!field3033) {
 			byte var9 = 50;
@@ -132,7 +142,7 @@ public class Class274 {
 		}
 	}
 
-	@ObfInfo(desc = "(LClass262;IIIIIIII)Z")
+	@ObfInfo(owner = "gx", name = "ap", desc = "(Lkb;IIIIIIIIB)Z", opaque = "26")
 	public static boolean method3632(Class262 var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
 		if (!method2732()) {
 			return false;

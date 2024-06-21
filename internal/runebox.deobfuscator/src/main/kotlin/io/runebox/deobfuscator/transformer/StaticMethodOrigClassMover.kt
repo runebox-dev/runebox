@@ -1,92 +1,84 @@
 package io.runebox.deobfuscator.transformer
 
-import com.google.common.collect.Iterables
 import com.google.common.collect.TreeMultimap
-import io.runebox.asm.MemberRef
-import io.runebox.asm.core.*
+import io.runebox.asm.core.ClassPool
+import io.runebox.asm.core.cls
+import io.runebox.asm.core.init
+import io.runebox.asm.core.isInitializer
 import io.runebox.asm.isStatic
 import io.runebox.deobfuscator.Logger
 import io.runebox.deobfuscator.Transformer
-import org.objectweb.asm.Opcodes.INVOKESTATIC
-import org.objectweb.asm.tree.InsnList
-import org.objectweb.asm.tree.LineNumberNode
-import org.objectweb.asm.tree.MethodInsnNode
-import org.objectweb.asm.tree.MethodNode
+import io.runebox.deobfuscator.asm.copy
+import org.objectweb.asm.Type
+import org.objectweb.asm.tree.*
 import java.util.*
 
 class StaticMethodOrigClassMover : Transformer {
 
     private var count = 0
 
-    // class106.method2771() // used
-    // class76.method2123() // dup
+    private val duplicateMethodsMap = TreeMultimap.create<String, String>()
+    private val origMethodOwnersMap = TreeMap<String, String>()
 
     override fun transform(pool: ClassPool) {
-        val unusedStaticMethods = hashSetOf<MemberRef>()
-        val usedStaticMethods = hashSetOf<MemberRef>()
-        val dupMethodMap = TreeMultimap.create<String, MemberRef>()
-        val origMethodOwnerMap = TreeMap<MemberRef, String>()
-
-        for(method in pool.classes.flatMap { it.methods }) {
-            if(!method.access.isStatic) continue
-            if(method.isInitializer) continue
-            unusedStaticMethods.add(method.toRef())
-        }
-        for(method in pool.classes.flatMap { it.methods }) {
-            for(insn in method.instructions) {
-                if(insn !is MethodInsnNode || insn.opcode != INVOKESTATIC) continue
-                val ref = MemberRef(insn)
-                if(unusedStaticMethods.remove(ref)) {
-                    usedStaticMethods.add(ref)
+        pool.classes.forEach { cls ->
+            cls.methods.forEach methodLoop@ { method ->
+                if(method.access.isStatic && !method.isInitializer) {
+                    duplicateMethodsMap.put(method.fingerprint, "${cls.name}.${method.name}${method.desc}")
                 }
             }
         }
 
-        for(methodRef in usedStaticMethods.plus(unusedStaticMethods)) {
-            val method = methodRef.resolveMethod(pool) ?: continue
-            dupMethodMap.put(method.fingerprint, methodRef)
+        duplicateMethodsMap.asMap().entries.removeIf { it.value.size == 1 }
+        val duplicateMethods = duplicateMethodsMap.asMap().values.sortedBy { it.first() }
+
+        pool.classes.forEach { cls ->
+            for(method in cls.methods) {
+                val dups = duplicateMethods.firstOrNull { it.contains(method.id) } ?: continue
+                val classNames = dups.minus(method.id).map { it.split(".").first() }.distinct()
+                val realClassName = classNames.first()
+                if(cls.name == realClassName) continue
+                origMethodOwnersMap[method.id] = realClassName
+            }
         }
 
-        dupMethodMap.asMap().entries.removeIf { it.value.size == 1 }
-        for(entry in dupMethodMap.asMap().entries) {
-            val methods = entry.value
-            val ref = methods.first()
-            val origRef = methods.maxBy { it.owner }
-            if(ref.owner == origRef.owner) continue
-            origMethodOwnerMap[ref] = origRef.owner
-        }
-
+        val methodNameMap = pool.classes.flatMap { it.methods }.associateBy { it.id }
         val movedMethods = hashSetOf<MethodNode>()
-        origMethodOwnerMap.forEach { (src, orig) ->
-            val srcMethod = src.resolveMethod(pool) ?: error("Failed to resolve method $src.")
-            val origCls = pool.findClass(orig)
 
-            val exceptions = Iterables.toArray(srcMethod.exceptions, String::class.java)
-            val movedMethod = MethodNode(srcMethod.access, srcMethod.name, srcMethod.desc, srcMethod.signature, exceptions)
-            srcMethod.accept(movedMethod)
+        origMethodOwnersMap.forEach { (src, orig) ->
+            val srcMethod = methodNameMap[src] ?: return@forEach
+            val origCls = pool.classes.firstOrNull { it.name == orig } ?: return@forEach
+
+            val movedMethod = srcMethod.copy()
             origCls.methods.add(movedMethod)
+
             movedMethod.init(origCls)
+            placedMethods.add(movedMethod.id)
+
             movedMethods.add(movedMethod)
             count++
         }
 
-        for(cls in pool.allClasses) {
-            for(method in cls.methods) {
+        val movedMethodsNameMap = movedMethods.associateBy { it.id }
+        pool.classes.forEach { cls ->
+            cls.methods.forEach { method ->
                 val insns = method.instructions.iterator()
                 while(insns.hasNext()) {
                     val insn = insns.next()
                     if(insn !is MethodInsnNode) continue
-                    val ref = MemberRef(insn)
-                    if(origMethodOwnerMap.containsKey(ref)) {
-                        val origOwner = origMethodOwnerMap[ref] ?: continue
-                        insn.owner = origOwner
+                    val identifier = "${insn.owner}.${insn.name}${insn.desc}"
+                    if(origMethodOwnersMap.containsKey(identifier)) {
+                        val origCls = origMethodOwnersMap[identifier] ?: continue
+                        insn.owner = origCls
+                        count++
                     }
                 }
             }
         }
 
-        for(method in origMethodOwnerMap.keys.mapNotNull { it.resolveMethod(pool) }) {
+        origMethodOwnersMap.keys.mapNotNull { methodNameMap[it] }.forEach { method ->
             method.cls.methods.remove(method)
+            count++
         }
     }
 
@@ -94,16 +86,26 @@ class StaticMethodOrigClassMover : Transformer {
         Logger.info("Moved $count static methods to original class.")
     }
 
-    private val MethodNode.fingerprint: String get() {
-        return "$desc.${instructions.hash}"
+    private val MethodNode.id get() = "${cls.name}.$name$desc"
+
+    private val MethodNode.fingerprint: String get() = "${Type.getReturnType(desc)}.${(instructions.lineNumberRange ?: "*")}.${instructions.hash}"
+
+    private val InsnList.lineNumberRange: IntRange? get() {
+        val lineNumbers = iterator().asSequence().mapNotNull { it as? LineNumberNode }.mapNotNull { it.line }.toList()
+        if(lineNumbers.isEmpty()) return null
+        return lineNumbers.first()..lineNumbers.last()
     }
 
-    private val InsnList.lineNumbers: List<Int> get() {
-        val lineNumbers = iterator().asSequence().mapNotNull { it as? LineNumberNode }.map { it.line }.toList()
-        return lineNumbers.sorted()
-    }
+    private val InsnList.hash: Int get() = iterator().asSequence().mapNotNull {
+        when(it) {
+            is FieldInsnNode -> "${it.owner}.${it.name}:${it.opcode}"
+            is MethodInsnNode -> "${it.opcode}:${it.owner}.${it.name}"
+            is InsnNode -> it.opcode.toString()
+            else -> null
+        }
+    }.toSet().hashCode()
 
-    private val InsnList.hash: Int get() {
-        return lineNumbers.hashCode()
+    companion object {
+        internal val placedMethods = hashSetOf<String>()
     }
 }

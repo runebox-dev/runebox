@@ -880,7 +880,7 @@ public class Class561 extends Class507 {
 
 			for (int var1 = 0; var1 < var0; ++var1) {
 				if (var1 % Class87.field5423 < Class87.field5423 / 2 && field5421[var1] > 0.0F) {
-					int var2 = (int)(255.0F * Class300.method5999(field5421[var1]));
+					int var2 = (int)(255.0F * Class264.method5999(field5421[var1]));
 					field5418[var1] = var2 << 16 | var2 << 8 | var2;
 				}
 			}

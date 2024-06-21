@@ -9,7 +9,7 @@ public class Class39 implements Runnable {
 		this.field276 = new Class30[2];
 	}
 
-	@ObfInfo(desc = "()V")
+	@ObfInfo(name = "run", desc = "()V")
 	public void run() {
 		try {
 			for (int var1 = 0; var1 < 2; ++var1) {
@@ -24,18 +24,8 @@ public class Class39 implements Runnable {
 
 	}
 
-	@ObfInfo(desc = "()V")
-	public static void method3061() {
-		Class198.field2027.method5995();
-	}
-
 	@ObfInfo(name = "ak", desc = "(I)V")
 	public static void method789() {
 		Class220.field2220.method5995();
-	}
-
-	@ObfInfo(name = "aa", desc = "(I)V")
-	public static void method785() {
-		Class332.field3456.clear();
 	}
 }

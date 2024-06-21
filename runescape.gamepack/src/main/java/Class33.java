@@ -10,8 +10,6 @@ import java.awt.event.MouseMotionListener;
 public class Class33 implements MouseListener, MouseMotionListener, FocusListener {
 	@ObfInfo(name = "az", desc = "Lbg;")
 	public static Class33 field223;
-	@ObfInfo(desc = "LClass382;")
-	public static Class382 field2397;
 	@ObfInfo(name = "av", desc = "I", intMultiplier = -423215907)
 	public static int field220;
 	@ObfInfo(name = "ao", desc = "I", intMultiplier = 648460905)
@@ -78,13 +76,13 @@ public class Class33 implements MouseListener, MouseMotionListener, FocusListene
 		}
 	}
 
-	@ObfInfo(desc = "(Ljava/awt/event/MouseEvent;)V")
+	@ObfInfo(name = "mousePressed", desc = "(Ljava/awt/event/MouseEvent;)V")
 	public final synchronized void mousePressed(MouseEvent var1) {
 		if (field223 != null) {
 			field241 = 0;
 			field244 = var1.getX();
 			field234 = var1.getY();
-			field236 = Class327.method3047();
+			field236 = Class130.method3047();
 			field224 = this.method678(var1);
 			if (field224 != 0) {
 				field225 = field224;
@@ -97,7 +95,7 @@ public class Class33 implements MouseListener, MouseMotionListener, FocusListene
 
 	}
 
-	@ObfInfo(desc = "(Ljava/awt/event/MouseEvent;)V")
+	@ObfInfo(name = "mouseReleased", desc = "(Ljava/awt/event/MouseEvent;)V")
 	public final synchronized void mouseReleased(MouseEvent var1) {
 		if (field223 != null) {
 			field241 = 0;
@@ -110,7 +108,7 @@ public class Class33 implements MouseListener, MouseMotionListener, FocusListene
 
 	}
 
-	@ObfInfo(desc = "(Ljava/awt/event/MouseEvent;)V")
+	@ObfInfo(name = "mouseClicked", desc = "(Ljava/awt/event/MouseEvent;)V")
 	public final void mouseClicked(MouseEvent var1) {
 		if (var1.isPopupTrigger()) {
 			var1.consume();
@@ -118,12 +116,12 @@ public class Class33 implements MouseListener, MouseMotionListener, FocusListene
 
 	}
 
-	@ObfInfo(desc = "(Ljava/awt/event/MouseEvent;)V")
+	@ObfInfo(name = "mouseEntered", desc = "(Ljava/awt/event/MouseEvent;)V")
 	public final synchronized void mouseEntered(MouseEvent var1) {
 		this.mouseMoved(var1);
 	}
 
-	@ObfInfo(desc = "(Ljava/awt/event/MouseEvent;)V")
+	@ObfInfo(name = "mouseExited", desc = "(Ljava/awt/event/MouseEvent;)V")
 	public final synchronized void mouseExited(MouseEvent var1) {
 		if (field223 != null) {
 			field241 = 0;
@@ -134,12 +132,12 @@ public class Class33 implements MouseListener, MouseMotionListener, FocusListene
 
 	}
 
-	@ObfInfo(desc = "(Ljava/awt/event/MouseEvent;)V")
+	@ObfInfo(name = "mouseDragged", desc = "(Ljava/awt/event/MouseEvent;)V")
 	public final synchronized void mouseDragged(MouseEvent var1) {
 		this.mouseMoved(var1);
 	}
 
-	@ObfInfo(desc = "(Ljava/awt/event/MouseEvent;)V")
+	@ObfInfo(name = "mouseMoved", desc = "(Ljava/awt/event/MouseEvent;)V")
 	public final synchronized void mouseMoved(MouseEvent var1) {
 		if (field223 != null) {
 			field241 = 0;
@@ -150,11 +148,11 @@ public class Class33 implements MouseListener, MouseMotionListener, FocusListene
 
 	}
 
-	@ObfInfo(desc = "(Ljava/awt/event/FocusEvent;)V")
+	@ObfInfo(name = "focusGained", desc = "(Ljava/awt/event/FocusEvent;)V")
 	public final void focusGained(FocusEvent var1) {
 	}
 
-	@ObfInfo(desc = "(Ljava/awt/event/FocusEvent;)V")
+	@ObfInfo(name = "focusLost", desc = "(Ljava/awt/event/FocusEvent;)V")
 	public final synchronized void focusLost(FocusEvent var1) {
 		if (field223 != null) {
 			field225 = 0;
@@ -162,24 +160,7 @@ public class Class33 implements MouseListener, MouseMotionListener, FocusListene
 
 	}
 
-	@ObfInfo(name = "al", desc = "(II)Lit;", opaque = "1505481636")
-	public static Class228 method714(int var0) {
-		Class228 var2 = (Class228)Class228.field2393.method5993((long)var0);
-		if (var2 != null) {
-			return var2;
-		} else {
-			byte[] var3 = field2397.method7216(14, var0);
-			var2 = new Class228();
-			if (var3 != null) {
-				var2.method4389(new Class521(var3));
-			}
-
-			Class228.field2393.method5987(var2, (long)var0);
-			return var2;
-		}
-	}
-
-	@ObfInfo(desc = "(Ljava/awt/Component;)V")
+	@ObfInfo(owner = "jp", name = "ak", desc = "(Ljava/awt/Component;I)V")
 	public static void method4769(Component var0) {
 		var0.removeMouseListener(field223);
 		var0.removeMouseMotionListener(field223);
@@ -187,7 +168,32 @@ public class Class33 implements MouseListener, MouseMotionListener, FocusListene
 		field225 = 0;
 	}
 
-	@ObfInfo(desc = "()I")
+	@ObfInfo(owner = "ck", name = "al", desc = "(I)V", opaque = "-789155837")
+	public static void method1133() {
+		if (field223 != null) {
+			synchronized(field223) {
+				field223 = null;
+			}
+		}
+
+	}
+
+	@ObfInfo(owner = "pi", name = "aj", desc = "(B)V")
+	public static void method7462() {
+		synchronized(field223) {
+			field227 = field225;
+			field229 = field226;
+			field220 = field233;
+			field232 = field228;
+			field237 = field224;
+			field238 = field244;
+			field239 = field234;
+			field240 = field236;
+			field224 = 0;
+		}
+	}
+
+	@ObfInfo(owner = "ka", name = "az", desc = "(I)I")
 	public static int method5159() {
 		return ++field241 - 1;
 	}
