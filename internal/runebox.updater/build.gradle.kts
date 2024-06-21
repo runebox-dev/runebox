@@ -5,4 +5,6 @@ plugins {
 dependencies {
     implementation(libs.bundles.asm)
     implementation(libs.guava)
+    runtimeOnly(libs.bouncycastle)
+    runtimeOnly(libs.json)
 }

@@ -21,9 +21,8 @@ tasks {
     }
 
     named("jar", Jar::class) {
-        archiveBaseName.set("gamepack.named.jar")
+        archiveBaseName.set("gamepack.named")
         archiveClassifier.set("")
         archiveVersion.set("")
-        from(gamepack.map { if(it.isDirectory) it else zipTree(it) })
     }
 }
