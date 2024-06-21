@@ -1,14 +1,28 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "bv")
 public class Class48 {
+	@ObfInfo(name = "ao", desc = "I")
 	public int field326;
+	@ObfInfo(name = "az", desc = "I")
 	public int field329;
+	@ObfInfo(name = "af", desc = "I")
 	public int field330;
+	@ObfInfo(name = "ab", desc = "I")
 	public int field331;
+	@ObfInfo(name = "aa", desc = "I")
 	public int field332;
+	@ObfInfo(name = "ak", desc = "I")
 	public int field333;
+	@ObfInfo(name = "ac", desc = "I")
 	public int field334;
+	@ObfInfo(name = "at", desc = "I")
 	public int field335;
+	@ObfInfo(name = "ah", desc = "I")
 	public int field336;
+	@ObfInfo(name = "al", desc = "[I")
 	public int[] field327;
+	@ObfInfo(name = "aj", desc = "[I")
 	public int[] field328;
 
 	public Class48() {
@@ -21,6 +35,7 @@ public class Class48 {
 		this.field328[1] = 65535;
 	}
 
+	@ObfInfo(name = "ak", desc = "(Lua;)V")
 	public final void method864(Class521 var1) {
 		this.field332 = var1.method9405();
 		this.field329 = var1.method9410();
@@ -28,6 +43,7 @@ public class Class48 {
 		this.method866(var1);
 	}
 
+	@ObfInfo(name = "al", desc = "(Lua;)V")
 	public final void method866(Class521 var1) {
 		this.field333 = var1.method9405();
 		this.field327 = new int[this.field333];
@@ -40,6 +56,7 @@ public class Class48 {
 
 	}
 
+	@ObfInfo(name = "aj", desc = "()V")
 	public final void method865() {
 		this.field335 = 0;
 		this.field331 = 0;
@@ -48,6 +65,7 @@ public class Class48 {
 		this.field336 = 0;
 	}
 
+	@ObfInfo(name = "az", desc = "(I)I")
 	public final int method867(int var1) {
 		if (this.field336 >= this.field335) {
 			this.field326 = this.field328[this.field331++] << 15;

@@ -1,12 +1,24 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "mx")
 public class Class336 {
+	@ObfInfo(name = "ao", desc = "[B")
 	public static final byte[] field3519;
+	@ObfInfo(name = "ak", desc = "Lua;")
 	public Class521 field3517;
+	@ObfInfo(name = "al", desc = "I")
 	public int field3511;
+	@ObfInfo(name = "at", desc = "I")
 	public int field3516;
+	@ObfInfo(name = "aj", desc = "[I")
 	public int[] field3512;
+	@ObfInfo(name = "af", desc = "[I")
 	public int[] field3514;
+	@ObfInfo(name = "aa", desc = "[I")
 	public int[] field3515;
+	@ObfInfo(name = "az", desc = "[I")
 	public int[] field3522;
+	@ObfInfo(name = "ac", desc = "J")
 	public long field3518;
 
 	static {
@@ -17,6 +29,7 @@ public class Class336 {
 		this.field3517 = new Class521((byte[])null);
 	}
 
+	@ObfInfo(name = "ak", desc = "([B)V")
 	public void method6465(byte[] var1) {
 		this.field3517.field5221 = var1;
 		this.field3517.field5219 = 10;
@@ -50,6 +63,7 @@ public class Class336 {
 		this.field3515 = new int[var2];
 	}
 
+	@ObfInfo(name = "al", desc = "()V")
 	public void method6459() {
 		this.field3517.field5221 = null;
 		this.field3512 = null;
@@ -58,37 +72,45 @@ public class Class336 {
 		this.field3515 = null;
 	}
 
+	@ObfInfo(name = "aj", desc = "()Z")
 	public boolean method6448() {
 		return this.field3517.field5221 != null;
 	}
 
+	@ObfInfo(name = "az", desc = "()I")
 	public int method6449() {
 		return this.field3522.length;
 	}
 
+	@ObfInfo(name = "af", desc = "(I)V")
 	public void method6450(int var1) {
 		this.field3517.field5219 = this.field3522[var1];
 	}
 
+	@ObfInfo(name = "aa", desc = "(I)V")
 	public void method6451(int var1) {
 		this.field3522[var1] = this.field3517.field5219;
 	}
 
+	@ObfInfo(name = "at", desc = "()V")
 	public void method6473() {
 		this.field3517.field5219 = -1;
 	}
 
+	@ObfInfo(name = "ab", desc = "(I)V")
 	public void method6447(int var1) {
 		int var2 = this.field3517.method9424();
 		int[] var10000 = this.field3514;
 		var10000[var1] += var2;
 	}
 
+	@ObfInfo(name = "ac", desc = "(I)I")
 	public int method6453(int var1) {
 		int var2 = this.method6454(var1);
 		return var2;
 	}
 
+	@ObfInfo(name = "ao", desc = "(I)I")
 	public int method6454(int var1) {
 		byte var2 = this.field3517.field5221[this.field3517.field5219];
 		int var5;
@@ -119,6 +141,7 @@ public class Class336 {
 		}
 	}
 
+	@ObfInfo(name = "ah", desc = "(II)I")
 	public int method6472(int var1, int var2) {
 		int var4;
 		if (var2 == 255) {
@@ -158,10 +181,12 @@ public class Class336 {
 		}
 	}
 
+	@ObfInfo(name = "av", desc = "(I)J")
 	public long method6446(int var1) {
 		return this.field3518 + (long)var1 * (long)this.field3516;
 	}
 
+	@ObfInfo(name = "aq", desc = "()I")
 	public int method6457() {
 		int var1 = this.field3522.length;
 		int var2 = -1;
@@ -177,6 +202,7 @@ public class Class336 {
 		return var2;
 	}
 
+	@ObfInfo(name = "ap", desc = "()Z")
 	public boolean method6481() {
 		int var1 = this.field3522.length;
 
@@ -189,6 +215,7 @@ public class Class336 {
 		return true;
 	}
 
+	@ObfInfo(name = "ae", desc = "(J)V")
 	public void method6474(long var1) {
 		this.field3518 = var1;
 		int var3 = this.field3522.length;

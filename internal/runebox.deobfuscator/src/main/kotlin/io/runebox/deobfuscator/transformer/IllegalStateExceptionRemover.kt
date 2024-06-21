@@ -6,8 +6,7 @@ import io.runebox.asm.core.pushedInt
 import io.runebox.asm.isStatic
 import io.runebox.deobfuscator.Logger
 import io.runebox.deobfuscator.Transformer
-import io.runebox.deobfuscator.asm.opaqueType
-import io.runebox.deobfuscator.asm.opaqueValue
+import io.runebox.deobfuscator.asm.opaque
 import org.objectweb.asm.Opcodes.*
 import org.objectweb.asm.Type
 import org.objectweb.asm.tree.*
@@ -62,8 +61,7 @@ class IllegalStateExceptionRemover : Transformer {
     private fun MethodNode.removeInsns(insns: List<AbstractInsnNode>) {
         val const = insns[1].pushedInt!!
         val ifOpcode = insns[2].opcode
-        opaqueType = Type.getArgumentTypes(desc).last().descriptor
-        opaqueValue = opaqueValue(const, ifOpcode)
+        opaque = "${opaqueValue(const, ifOpcode)}"
 
         val jump = insns[2] as JumpInsnNode
         val goto = JumpInsnNode(GOTO, jump.label)

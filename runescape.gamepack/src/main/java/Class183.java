@@ -1,5 +1,10 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "ha")
 public class Class183 {
+	@ObfInfo(name = "az", desc = "[S")
 	public short[] field1909;
+	@ObfInfo(name = "aj", desc = "[S")
 	public short[] field1911;
 
 	public Class183(int var1) {

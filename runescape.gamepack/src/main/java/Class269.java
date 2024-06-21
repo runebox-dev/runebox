@@ -1,25 +1,43 @@
+import io.runebox.ObfInfo;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
+@ObfInfo(name = "ki")
 public final class Class269 {
+	@ObfInfo(name = "aa", desc = "[[Lks;")
 	public Class279[][] field2995;
+	@ObfInfo(name = "aj", desc = "Llt;")
 	public Class306 field2986;
+	@ObfInfo(name = "az", desc = "Lvc;")
 	public Class549 field2989;
+	@ObfInfo(name = "ab", desc = "[Lvl;")
 	public Class557[] field2993;
+	@ObfInfo(name = "al", desc = "Z")
 	public boolean field2987;
+	@ObfInfo(name = "ak", desc = "Z")
 	public boolean field2991;
+	@ObfInfo(name = "aq", desc = "I", intMultiplier = -155132435)
 	public int field2996;
+	@ObfInfo(name = "av", desc = "I", intMultiplier = -1327051579)
 	public int field2998;
+	@ObfInfo(name = "ap", desc = "I", intMultiplier = -1439239097)
 	public int field2999;
+	@ObfInfo(name = "ae", desc = "I", intMultiplier = 738540273)
 	public int field3000;
+	@ObfInfo(name = "ax", desc = "I", intMultiplier = 442127569)
 	public int field3001;
+	@ObfInfo(name = "af", desc = "Ljava/util/HashMap;")
 	public HashMap field2990;
+	@ObfInfo(name = "at", desc = "Ljava/util/HashMap;")
 	public HashMap field3002;
+	@ObfInfo(name = "ao", desc = "Lor;")
 	public final Class382 field2992;
+	@ObfInfo(name = "ac", desc = "Lor;")
 	public final Class382 field2994;
+	@ObfInfo(name = "ah", desc = "Ljava/util/HashMap;")
 	public final HashMap field2988;
 
 	public Class269(Class557[] var1, HashMap var2, Class382 var3, Class382 var4) {
@@ -33,6 +51,7 @@ public final class Class269 {
 		this.field2992 = var4;
 	}
 
+	@ObfInfo(name = "ak", desc = "(Lor;Ljava/lang/String;ZI)V", opaque = "-84597132")
 	public void method5362(Class382 var1, String var2, boolean var3) {
 		if (!this.field2987) {
 			this.field2991 = false;
@@ -100,10 +119,12 @@ public final class Class269 {
 		}
 	}
 
+	@ObfInfo(name = "al", desc = "(I)V")
 	public final void method5359() {
 		this.field2990 = null;
 	}
 
+	@ObfInfo(name = "aj", desc = "(IIIIIIIIB)V", opaque = "5")
 	public final void method5360(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
 		int[] var10 = Class561.field5418;
 		int var11 = Class87.field5423;
@@ -146,6 +167,7 @@ public final class Class269 {
 
 	}
 
+	@ObfInfo(name = "az", desc = "(IIIIIIIILjava/util/HashSet;Ljava/util/HashSet;IIZB)V", opaque = "125")
 	public final void method5393(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, HashSet var9, HashSet var10, int var11, int var12, boolean var13) {
 		Class311 var15 = this.method5364(var1, var2, var3, var4);
 		float var16 = this.method5369(var7 - var5, var3 - var1);
@@ -175,6 +197,7 @@ public final class Class269 {
 
 	}
 
+	@ObfInfo(name = "af", desc = "(IIIILjava/util/HashSet;III)V", opaque = "362467928")
 	public void method5361(int var1, int var2, int var3, int var4, HashSet var5, int var6, int var7) {
 		if (this.field2989 != null) {
 			this.field2989.method9947(var1, var2, var3, var4);
@@ -209,6 +232,7 @@ public final class Class269 {
 		}
 	}
 
+	@ObfInfo(name = "aa", desc = "(IIIIIIIIIII)Ljava/util/List;", opaque = "1794948610")
 	public List method5358(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10) {
 		LinkedList var12 = new LinkedList();
 		if (!this.field2991) {
@@ -233,6 +257,7 @@ public final class Class269 {
 		}
 	}
 
+	@ObfInfo(name = "at", desc = "(IIIII)Lly;", opaque = "-1009378092")
 	public Class311 method5364(int var1, int var2, int var3, int var4) {
 		Class311 var6 = new Class311(this);
 		int var7 = var1 + this.field2998;
@@ -270,19 +295,23 @@ public final class Class269 {
 		return var6;
 	}
 
+	@ObfInfo(name = "ab", desc = "(B)Z")
 	public boolean method5365() {
 		return this.field2991;
 	}
 
+	@ObfInfo(name = "ac", desc = "(I)I")
 	public int method5366() {
 		return this.field2986.method5787();
 	}
 
+	@ObfInfo(name = "ao", desc = "(B)Ljava/util/HashMap;")
 	public HashMap method5363() {
 		this.method5368();
 		return this.field2990;
 	}
 
+	@ObfInfo(name = "ah", desc = "(B)V", opaque = "1")
 	public void method5368() {
 		if (this.field2990 == null) {
 			this.field2990 = new HashMap();
@@ -314,6 +343,7 @@ public final class Class269 {
 
 	}
 
+	@ObfInfo(name = "av", desc = "(IIB)F", opaque = "6")
 	public float method5369(int var1, int var2) {
 		float var4 = (float)var1 / (float)var2;
 		if (var4 > 8.0F) {

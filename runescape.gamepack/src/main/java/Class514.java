@@ -1,19 +1,26 @@
+import io.runebox.ObfInfo;
 import java.io.File;
 import java.io.IOException;
 
+@ObfInfo(name = "tt")
 public abstract class Class514 extends Class499 {
+	@ObfInfo(desc = "Ljava/io/File;")
 	public static File field1883;
 
 	public Class514(int var1, int var2) {
 		super(var1, var2);
 	}
 
+	@ObfInfo(name = "ak", desc = "(B)I")
 	public abstract int method9228();
 
+	@ObfInfo(name = "al", desc = "(I)I")
 	public abstract int method9229();
 
+	@ObfInfo(name = "aj", desc = "(I)I")
 	public abstract int method9230();
 
+	@ObfInfo(name = "al", desc = "(Ljava/lang/String;Ljava/lang/String;IB)Ljava/io/File;", opaque = "2")
 	public static File method9324(String var0, String var1, int var2) {
 		String var4 = var2 == 0 ? "" : "" + var2;
 		field1883 = new File(Class90.field1336, "jagex_cl_" + var0 + "_" + var1 + var4 + ".dat");

@@ -1,9 +1,15 @@
+import io.runebox.ObfInfo;
 import java.util.Iterator;
 
+@ObfInfo(name = "ta")
 public class Class495 implements Iterator {
+	@ObfInfo(name = "az", desc = "Ltl;")
 	public Class506 field5016;
+	@ObfInfo(name = "al", desc = "Ltl;")
 	public Class506 field5019;
+	@ObfInfo(name = "ak", desc = "Ltu;")
 	public Class515 field5017;
+	@ObfInfo(name = "aj", desc = "I")
 	public int field5018;
 
 	public Class495(Class515 var1) {
@@ -12,17 +18,20 @@ public class Class495 implements Iterator {
 		this.method8969();
 	}
 
+	@ObfInfo(name = "ak", desc = "()V")
 	public void method8969() {
 		this.field5019 = this.field5017.field5198[0].field5169;
 		this.field5018 = 1;
 		this.field5016 = null;
 	}
 
+	@ObfInfo(name = "al", desc = "()Ltl;")
 	public Class506 method8982() {
 		this.method8969();
 		return (Class506)this.next();
 	}
 
+	@ObfInfo(desc = "()Ljava/lang/Object;")
 	public Object next() {
 		Class506 var1;
 		if (this.field5019 != this.field5017.field5198[this.field5018 - 1]) {
@@ -45,6 +54,7 @@ public class Class495 implements Iterator {
 		}
 	}
 
+	@ObfInfo(desc = "()Z")
 	public boolean hasNext() {
 		if (this.field5019 != this.field5017.field5198[this.field5018 - 1]) {
 			return true;
@@ -62,6 +72,7 @@ public class Class495 implements Iterator {
 		}
 	}
 
+	@ObfInfo(desc = "()V")
 	public void remove() {
 		if (this.field5016 == null) {
 			throw new IllegalStateException();

@@ -1,18 +1,36 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "iu")
 public class Class229 {
+	@ObfInfo(name = "ap", desc = "Liu;")
 	public static final Class229 field2400;
+	@ObfInfo(name = "al", desc = "Liu;")
 	public static final Class229 field2401;
+	@ObfInfo(name = "aa", desc = "Liu;")
 	public static final Class229 field2402;
+	@ObfInfo(name = "ak", desc = "Liu;")
 	public static final Class229 field2403;
+	@ObfInfo(name = "aq", desc = "Liu;")
 	public static final Class229 field2404;
+	@ObfInfo(name = "az", desc = "Liu;")
 	public static final Class229 field2405;
+	@ObfInfo(name = "at", desc = "Liu;")
 	public static final Class229 field2406;
+	@ObfInfo(name = "ab", desc = "Liu;")
 	public static final Class229 field2407;
+	@ObfInfo(name = "ac", desc = "Liu;")
 	public static final Class229 field2408;
+	@ObfInfo(name = "ao", desc = "Liu;")
 	public static final Class229 field2409;
+	@ObfInfo(name = "ah", desc = "Liu;")
 	public static final Class229 field2410;
+	@ObfInfo(name = "av", desc = "Liu;")
 	public static final Class229 field2411;
+	@ObfInfo(name = "af", desc = "Liu;")
 	public static final Class229 field2412;
+	@ObfInfo(name = "aj", desc = "Liu;")
 	public static final Class229 field2413;
+	@ObfInfo(name = "ae", desc = "I", intMultiplier = 1134406591)
 	public final int field2414;
 
 	static {

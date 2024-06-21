@@ -1,7 +1,14 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "bk")
 public class Class37 extends Class27 {
+	@ObfInfo(name = "al", desc = "Lpk;")
 	public Class401 field261;
+	@ObfInfo(name = "ak", desc = "Lpk;")
 	public Class401 field263;
+	@ObfInfo(name = "aj", desc = "I")
 	public int field260;
+	@ObfInfo(name = "az", desc = "I")
 	public int field262;
 
 	public Class37() {
@@ -11,14 +18,17 @@ public class Class37 extends Class27 {
 		this.field262 = -1;
 	}
 
+	@ObfInfo(name = "ak", desc = "(Lba;)V")
 	public final synchronized void method743(Class27 var1) {
 		this.field263.method7478(var1);
 	}
 
+	@ObfInfo(name = "al", desc = "(Lba;)V")
 	public final synchronized void method755(Class27 var1) {
 		var1.method9277();
 	}
 
+	@ObfInfo(name = "aj", desc = "()V")
 	public void method745() {
 		if (this.field260 > 0) {
 			for (Class68 var1 = (Class68)this.field261.method7482(); var1 != null; var1 = (Class68)this.field261.method7490()) {
@@ -31,6 +41,7 @@ public class Class37 extends Class27 {
 
 	}
 
+	@ObfInfo(name = "az", desc = "(Ltl;Lcp;)V")
 	public void method778(Class506 var1, Class68 var2) {
 		while (this.field261.field4605 != var1 && ((Class68)var1).field844 <= var2.field844) {
 			var1 = var1.field5169;
@@ -40,6 +51,7 @@ public class Class37 extends Class27 {
 		this.field262 = ((Class68)this.field261.field4605.field5169).field844;
 	}
 
+	@ObfInfo(name = "af", desc = "(Lcp;)V")
 	public void method758(Class68 var1) {
 		var1.method9277();
 		var1.method1866();
@@ -52,18 +64,22 @@ public class Class37 extends Class27 {
 
 	}
 
+	@ObfInfo(name = "aa", desc = "()Lba;")
 	public Class27 method384() {
 		return (Class27)this.field263.method7482();
 	}
 
+	@ObfInfo(name = "at", desc = "()Lba;")
 	public Class27 method379() {
 		return (Class27)this.field263.method7490();
 	}
 
+	@ObfInfo(name = "ab", desc = "()I")
 	public int method380() {
 		return 0;
 	}
 
+	@ObfInfo(name = "ac", desc = "([III)V")
 	public final synchronized void method381(int[] var1, int var2, int var3) {
 		do {
 			if (this.field262 < 0) {
@@ -98,6 +114,7 @@ public class Class37 extends Class27 {
 
 	}
 
+	@ObfInfo(name = "ao", desc = "([III)V")
 	public void method752(int[] var1, int var2, int var3) {
 		for (Class27 var4 = (Class27)this.field263.method7482(); var4 != null; var4 = (Class27)this.field263.method7490()) {
 			var4.method392(var1, var2, var3);
@@ -105,6 +122,7 @@ public class Class37 extends Class27 {
 
 	}
 
+	@ObfInfo(name = "ah", desc = "(I)V")
 	public final synchronized void method395(int var1) {
 		do {
 			if (this.field262 < 0) {
@@ -138,6 +156,7 @@ public class Class37 extends Class27 {
 
 	}
 
+	@ObfInfo(name = "av", desc = "(I)V")
 	public void method770(int var1) {
 		for (Class27 var2 = (Class27)this.field263.method7482(); var2 != null; var2 = (Class27)this.field263.method7490()) {
 			var2.method395(var1);

@@ -1,20 +1,36 @@
+import io.runebox.ObfInfo;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
+@ObfInfo(name = "ed")
 public class Class108 {
+	@ObfInfo(name = "af", desc = "[Ljv;")
 	public Class256[] field1390;
+	@ObfInfo(name = "ax", desc = "Lua;")
 	public Class521 field1401;
+	@ObfInfo(name = "aa", desc = "[Lua;")
 	public Class521[] field1391;
+	@ObfInfo(name = "aj", desc = "Ldt;")
 	public Class98 field1388;
+	@ObfInfo(name = "az", desc = "[B")
 	public byte[] field1389;
+	@ObfInfo(name = "at", desc = "I", intMultiplier = 205673623)
 	public int field1392;
+	@ObfInfo(name = "ap", desc = "I", intMultiplier = 730056931)
 	public int field1400;
+	@ObfInfo(name = "ac", desc = "I", intMultiplier = 972284945)
 	public int field1403;
+	@ObfInfo(name = "aq", desc = "[I")
 	public int[] field1386;
+	@ObfInfo(name = "ab", desc = "[I")
 	public int[] field1393;
+	@ObfInfo(name = "ao", desc = "[I")
 	public int[] field1395;
+	@ObfInfo(name = "ah", desc = "[I")
 	public int[] field1396;
+	@ObfInfo(name = "av", desc = "[I")
 	public int[] field1397;
+	@ObfInfo(name = "ae", desc = "[I")
 	public int[] field1399;
 
 	public Class108(Class98 var1) {
@@ -34,6 +50,7 @@ public class Class108 {
 		this.field1388 = var1;
 	}
 
+	@ObfInfo(name = "ak", desc = "(Luk;ZI)V", opaque = "-1467995520")
 	public final void method2785(Class531 var1, boolean var2) {
 		var1.method9765();
 		Class83 var4 = new Class83();
@@ -85,6 +102,7 @@ public class Class108 {
 		var1.method9799();
 	}
 
+	@ObfInfo(name = "al", desc = "(Luk;II)V", opaque = "-1497481566")
 	public final void method2786(Class531 var1, int var2) {
 		int var4 = var1.field5219;
 		this.field1400 = 0;
@@ -95,6 +113,7 @@ public class Class108 {
 		}
 	}
 
+	@ObfInfo(name = "aj", desc = "(Luk;I)V", opaque = "1233266211")
 	public final void method2787(Class531 var1) {
 		int var3 = 0;
 		var1.method9765();
@@ -227,6 +246,7 @@ public class Class108 {
 		}
 	}
 
+	@ObfInfo(name = "az", desc = "(Luk;S)I", opaque = "161")
 	public int method2788(Class531 var1) {
 		int var3 = var1.method9770(2);
 		int var4;
@@ -243,6 +263,7 @@ public class Class108 {
 		return var4;
 	}
 
+	@ObfInfo(name = "af", desc = "(Luk;II)V", opaque = "-2064418826")
 	public void method2789(Class531 var1, int var2) {
 		boolean var4 = var1.method9770(1) == 1;
 		if (var4) {
@@ -448,6 +469,7 @@ public class Class108 {
 		}
 	}
 
+	@ObfInfo(name = "aa", desc = "(Luk;II)Z", opaque = "-98352283")
 	public boolean method2790(Class531 var1, int var2) {
 		int var4 = var1.method9770(2);
 		int var5;
@@ -558,6 +580,7 @@ public class Class108 {
 		}
 	}
 
+	@ObfInfo(name = "at", desc = "(Luk;I)V", opaque = "-677771807")
 	public final void method2808(Class531 var1) {
 		for (int var3 = 0; var3 < this.field1400; ++var3) {
 			int var4 = this.field1399[var3];
@@ -576,6 +599,7 @@ public class Class108 {
 
 	}
 
+	@ObfInfo(name = "ab", desc = "(Luk;ILde;II)V", opaque = "1472280184")
 	public final void method2792(Class531 var1, int var2, Class83 var3, int var4) {
 		byte var6 = Class256.field2698.field2707;
 		int var7;
@@ -874,6 +898,7 @@ public class Class108 {
 
 	}
 
+	@ObfInfo(name = "al", desc = "(Lua;IS)V", opaque = "129")
 	public static void method2812(Class521 var0, int var1) {
 		Class34 var3 = new Class34();
 		var3.field246 = var0.method9405();

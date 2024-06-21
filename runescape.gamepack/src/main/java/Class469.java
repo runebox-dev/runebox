@@ -1,19 +1,26 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "sa")
 public abstract class Class469 extends Class310 implements Class552 {
 	public Class469(Class390 var1, Class402 var2, int var3) {
 		super(var1, var2, var3);
 	}
 
+	@ObfInfo(name = "ak", desc = "(IB)Lsp;")
 	public abstract Class484 method8608(int var1);
 
+	@ObfInfo(name = "al", desc = "(I)I")
 	public int method8609() {
 		return super.field3257;
 	}
 
+	@ObfInfo(name = "aj", desc = "(IB)Ljava/lang/Object;", opaque = "2")
 	public Object method8610(int var1) {
 		Class484 var3 = this.method8608(var1);
 		return var3 != null && var3.method8874() ? var3.method8880() : null;
 	}
 
+	@ObfInfo(name = "az", desc = "(Lua;I)Lvf;", opaque = "-1249756219")
 	public Class551 method8611(Class521 var1) {
 		int var3 = var1.method9407();
 		Class484 var4 = this.method8608(var3);

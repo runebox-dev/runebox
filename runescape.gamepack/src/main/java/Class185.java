@@ -1,8 +1,16 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "hc")
 public class Class185 implements Class393 {
+	@ObfInfo(name = "al", desc = "Lhc;")
 	public static final Class185 field1921;
+	@ObfInfo(name = "ak", desc = "Lhc;")
 	public static final Class185 field1922;
+	@ObfInfo(name = "aj", desc = "Lhc;")
 	public static final Class185 field1924;
+	@ObfInfo(name = "af", desc = "I", intMultiplier = 91144155)
 	public final int field1920;
+	@ObfInfo(name = "az", desc = "I", intMultiplier = -2096204705)
 	public final int field1923;
 
 	static {
@@ -16,6 +24,7 @@ public class Class185 implements Class393 {
 		this.field1920 = var2;
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)I")
 	public int method175() {
 		return this.field1920;
 	}

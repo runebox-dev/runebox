@@ -1,17 +1,28 @@
+import io.runebox.ObfInfo;
 import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
+@ObfInfo(name = "dl")
 public class Class90 {
+	@ObfInfo(desc = "I", intMultiplier = -1969802501)
 	public static int field1889;
+	@ObfInfo(desc = "I", intMultiplier = -1888550529)
 	public static int field2841;
+	@ObfInfo(desc = "Ljava/io/File;")
 	public static File field6;
+	@ObfInfo(desc = "Ljava/lang/String;")
 	public static String field1336;
+	@ObfInfo(desc = "Ljava/lang/String;")
 	public static String field1600;
+	@ObfInfo(desc = "Ljava/lang/String;")
 	public static String field957;
+	@ObfInfo(desc = "[Ljava/lang/String;")
 	public static String[] field1205;
+	@ObfInfo(desc = "[Ljava/lang/String;")
 	public static String[] field1753;
 
+	@ObfInfo(name = "ak", desc = "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;III)V", opaque = "220178351")
 	public static void method2405(String var0, String var1, String var2, int var3, int var4) throws IOException {
 		if (var1 != null && !var1.isEmpty()) {
 			var0 = var0 + "-" + var1;

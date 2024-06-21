@@ -1,3 +1,4 @@
+import io.runebox.ObfInfo;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -5,16 +6,27 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map.Entry;
 
+@ObfInfo(name = "ks")
 public class Class279 {
+	@ObfInfo(name = "af", desc = "Lld;")
 	public static Class290 field3086;
+	@ObfInfo(name = "ab", desc = "Lkv;")
 	public Class282 field3079;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = 1650592081)
 	public int field3077;
+	@ObfInfo(name = "at", desc = "I", intMultiplier = -853284869)
 	public int field3078;
+	@ObfInfo(name = "ah", desc = "I", intMultiplier = 238803981)
 	public int field3084;
+	@ObfInfo(name = "ao", desc = "I", intMultiplier = 161496925)
 	public int field3089;
+	@ObfInfo(name = "aq", desc = "Ljava/util/HashMap;")
 	public HashMap field3073;
+	@ObfInfo(name = "ac", desc = "Ljava/util/LinkedList;")
 	public LinkedList field3080;
+	@ObfInfo(name = "av", desc = "Ljava/util/List;")
 	public List field3082;
+	@ObfInfo(name = "ap", desc = "Ljava/util/HashMap;")
 	public final HashMap field3085;
 
 	static {
@@ -31,6 +43,7 @@ public class Class279 {
 		this.field3085 = var4;
 	}
 
+	@ObfInfo(name = "az", desc = "(IIII)V", opaque = "-637792939")
 	public void method5572(int var1, int var2, int var3) {
 		Class549 var5 = Class63.method1135(this.field3077, this.field3078, this.field3084);
 		if (var5 != null) {
@@ -43,12 +56,14 @@ public class Class279 {
 		}
 	}
 
+	@ObfInfo(name = "af", desc = "(Lkv;Ljava/util/List;I)V")
 	public void method5573(Class282 var1, List var2) {
 		this.field3073.clear();
 		this.field3079 = var1;
 		this.method5668(var2);
 	}
 
+	@ObfInfo(name = "aa", desc = "(Ljava/util/HashSet;Ljava/util/List;I)V", opaque = "-1580091428")
 	public void method5574(HashSet var1, List var2) {
 		this.field3073.clear();
 		Iterator var4 = var1.iterator();
@@ -63,6 +78,7 @@ public class Class279 {
 		this.method5668(var2);
 	}
 
+	@ObfInfo(name = "at", desc = "(IIIILlq;I)V", opaque = "1280153615")
 	public void method5680(int var1, int var2, int var3, int var4, Class303 var5) {
 		for (int var7 = var1; var7 < var3 + var1; ++var7) {
 			label74:
@@ -107,6 +123,7 @@ public class Class279 {
 
 	}
 
+	@ObfInfo(name = "ab", desc = "(Lin;IIILlq;I)V", opaque = "1179378433")
 	public void method5605(Class222 var1, int var2, int var3, int var4, Class303 var5) {
 		Class348 var7 = new Class348(var2, var3 + this.field3077 * 64, this.field3078 * 64 + var4);
 		Class348 var8 = null;
@@ -133,6 +150,7 @@ public class Class279 {
 
 	}
 
+	@ObfInfo(name = "ac", desc = "(I)V", opaque = "1564040984")
 	public void method5618() {
 		Iterator var2 = this.field3073.values().iterator();
 
@@ -145,6 +163,7 @@ public class Class279 {
 
 	}
 
+	@ObfInfo(name = "ao", desc = "(Ljava/util/List;B)V", opaque = "5")
 	public void method5668(List var1) {
 		Iterator var3 = var1.iterator();
 
@@ -158,6 +177,7 @@ public class Class279 {
 
 	}
 
+	@ObfInfo(name = "ah", desc = "(B)V", opaque = "39")
 	public void method5579() {
 		if (this.field3079 != null) {
 			this.field3079.method6055();
@@ -172,6 +192,7 @@ public class Class279 {
 
 	}
 
+	@ObfInfo(name = "av", desc = "(Lor;I)Z", opaque = "-1219312735")
 	public boolean method5580(Class382 var1) {
 		this.field3073.clear();
 		if (this.field3079 != null) {
@@ -205,6 +226,7 @@ public class Class279 {
 		}
 	}
 
+	@ObfInfo(name = "aq", desc = "(ILlr;[Lvl;Lor;Lor;I)V", opaque = "-312734968")
 	public void method5672(int var1, Class304 var2, Class557[] var3, Class382 var4, Class382 var5) {
 		this.field3084 = var1;
 		if (this.field3079 != null || !this.field3080.isEmpty()) {
@@ -243,6 +265,7 @@ public class Class279 {
 		}
 	}
 
+	@ObfInfo(name = "ap", desc = "(IIILjava/util/HashSet;I)V")
 	public void method5622(int var1, int var2, int var3, HashSet var4) {
 		if (var4 == null) {
 			var4 = new HashSet();
@@ -252,6 +275,7 @@ public class Class279 {
 		this.method5598(var1, var2, var4, var3);
 	}
 
+	@ObfInfo(name = "ae", desc = "(Ljava/util/HashSet;III)V", opaque = "210340220")
 	public void method5583(HashSet var1, int var2, int var3) {
 		Iterator var5 = this.field3073.values().iterator();
 
@@ -269,6 +293,7 @@ public class Class279 {
 		this.method5646(var1, var2, var3);
 	}
 
+	@ObfInfo(name = "ax", desc = "(Llr;[Lvl;Llu;I)V", opaque = "-806509244")
 	public void method5575(Class304 var1, Class557[] var2, Class307 var3) {
 		int var5;
 		int var6;
@@ -287,6 +312,7 @@ public class Class279 {
 
 	}
 
+	@ObfInfo(name = "ay", desc = "(Llr;[Lvl;Llu;B)V", opaque = "-1")
 	public void method5585(Class304 var1, Class557[] var2, Class307 var3) {
 		Iterator var5 = this.field3080.iterator();
 
@@ -318,11 +344,13 @@ public class Class279 {
 
 	}
 
+	@ObfInfo(name = "au", desc = "(IILlq;Llr;[Lvl;I)V")
 	public void method5628(int var1, int var2, Class303 var3, Class304 var4, Class557[] var5) {
 		this.method5591(var1, var2, var3);
 		this.method5584(var1, var2, var3, var5);
 	}
 
+	@ObfInfo(name = "as", desc = "(IILlq;Llr;Llu;I)V", opaque = "853504116")
 	public void method5587(int var1, int var2, Class303 var3, Class304 var4, Class307 var5) {
 		int var7 = var3.field3218[0][var1][var2] - 1;
 		int var8 = var3.field3219[0][var1][var2] - 1;
@@ -347,6 +375,7 @@ public class Class279 {
 		}
 	}
 
+	@ObfInfo(name = "aw", desc = "(IILlq;Llr;I)V", opaque = "-2101075638")
 	public void method5588(int var1, int var2, Class303 var3, Class304 var4) {
 		for (int var6 = 1; var6 < var3.field3215; ++var6) {
 			int var7 = var3.field3219[var6][var1][var2] - 1;
@@ -362,10 +391,12 @@ public class Class279 {
 
 	}
 
+	@ObfInfo(name = "ad", desc = "(IILlq;Llu;I)I", opaque = "-1374650638")
 	public int method5589(int var1, int var2, Class303 var3, Class307 var4) {
 		return var3.field3218[0][var1][var2] == 0 ? this.field3089 : var4.method6156(var1, var2);
 	}
 
+	@ObfInfo(name = "ai", desc = "(IILlq;[Lvl;I)V", opaque = "240269270")
 	public void method5584(int var1, int var2, Class303 var3, Class557[] var4) {
 		for (int var6 = 0; var6 < var3.field3215; ++var6) {
 			Class291[] var7 = var3.field3222[var6][var1][var2];
@@ -394,6 +425,7 @@ public class Class279 {
 
 	}
 
+	@ObfInfo(name = "an", desc = "(IILlq;B)V", opaque = "0")
 	public void method5591(int var1, int var2, Class303 var3) {
 		for (int var5 = 0; var5 < var3.field3215; ++var5) {
 			Class291[] var6 = var3.field3222[var5][var1][var2];
@@ -450,6 +482,7 @@ public class Class279 {
 
 	}
 
+	@ObfInfo(name = "am", desc = "(IILjava/util/HashSet;IB)V", opaque = "-1")
 	public void method5592(int var1, int var2, HashSet var3, int var4) {
 		float var6 = (float)var4 / 64.0F;
 		float var7 = var6 / 2.0F;
@@ -473,6 +506,7 @@ public class Class279 {
 
 	}
 
+	@ObfInfo(name = "ar", desc = "(Ljava/util/HashSet;III)V", opaque = "-1256046126")
 	public void method5646(HashSet var1, int var2, int var3) {
 		Iterator var5 = this.field3082.iterator();
 
@@ -488,6 +522,7 @@ public class Class279 {
 
 	}
 
+	@ObfInfo(name = "ag", desc = "(Lhr;IIIII)V", opaque = "1068601083")
 	public void method5594(Class200 var1, int var2, int var3, int var4, int var5) {
 		Class549 var7 = var1.method3893(false);
 		if (var7 != null) {
@@ -500,12 +535,14 @@ public class Class279 {
 		}
 	}
 
+	@ObfInfo(name = "bs", desc = "(Lls;IIFI)V")
 	public void method5595(Class305 var1, int var2, int var3, float var4) {
 		Class200 var6 = Class200.method3917(var1.method5728());
 		this.method5596(var6, var2, var3);
 		this.method5671(var1, var6, var2, var3, var4);
 	}
 
+	@ObfInfo(name = "bf", desc = "(Lhr;III)V", opaque = "1922972716")
 	public void method5596(Class200 var1, int var2, int var3) {
 		Class549 var5 = var1.method3893(false);
 		if (var5 != null) {
@@ -516,6 +553,7 @@ public class Class279 {
 
 	}
 
+	@ObfInfo(name = "bo", desc = "(Lls;Lhr;IIFI)V", opaque = "564365401")
 	public void method5671(Class305 var1, Class200 var2, int var3, int var4, float var5) {
 		Class294 var7 = var1.method5744();
 		if (var7 != null) {
@@ -526,6 +564,7 @@ public class Class279 {
 		}
 	}
 
+	@ObfInfo(name = "bi", desc = "(IILjava/util/HashSet;II)V", opaque = "-369124798")
 	public void method5598(int var1, int var2, HashSet var3, int var4) {
 		float var6 = (float)var4 / 64.0F;
 		Iterator var7 = this.field3082.iterator();
@@ -545,6 +584,7 @@ public class Class279 {
 
 	}
 
+	@ObfInfo(name = "bt", desc = "(Lvc;Lhc;B)I")
 	public int method5599(Class549 var1, Class185 var2) {
 		switch(var2.field1923) {
 		case 0:
@@ -556,6 +596,7 @@ public class Class279 {
 		}
 	}
 
+	@ObfInfo(name = "bn", desc = "(Lvc;Lie;S)I")
 	public int method5600(Class549 var1, Class213 var2) {
 		switch(var2.field2159) {
 		case 0:
@@ -567,11 +608,13 @@ public class Class279 {
 		}
 	}
 
+	@ObfInfo(name = "bw", desc = "(II)Llh;")
 	public Class294 method5601(int var1) {
 		Class200 var3 = Class200.method3917(var1);
 		return this.method5602(var3);
 	}
 
+	@ObfInfo(name = "bl", desc = "(Lhr;I)Llh;", opaque = "-17904260")
 	public Class294 method5602(Class200 var1) {
 		if (var1.field2048 != null && this.field3085 != null && this.field3085.get(Class278.field3063) != null) {
 			int var4 = var1.field2050;
@@ -623,6 +666,7 @@ public class Class279 {
 		}
 	}
 
+	@ObfInfo(name = "be", desc = "(IIIIIS)Ljava/util/List;", opaque = "243")
 	public List method5603(int var1, int var2, int var3, int var4, int var5) {
 		LinkedList var7 = new LinkedList();
 		if (var4 >= var1 && var5 >= var2) {
@@ -655,6 +699,7 @@ public class Class279 {
 		}
 	}
 
+	@ObfInfo(name = "bg", desc = "(B)Ljava/util/List;")
 	public List method5604() {
 		LinkedList var2 = new LinkedList();
 		var2.addAll(this.field3082);
@@ -662,6 +707,7 @@ public class Class279 {
 		return var2;
 	}
 
+	@ObfInfo(name = "bu", desc = "(IIIII)V", opaque = "92811760")
 	public void method5677(int var1, int var2, int var3, int var4) {
 		var3 %= 4;
 		if (var3 == 0) {
@@ -682,6 +728,7 @@ public class Class279 {
 
 	}
 
+	@ObfInfo(desc = "(LClass549;III)V")
 	public static void method3503(Class549 var0, int var1, int var2, int var3) {
 		Class290 var5 = field3086;
 		long var7 = (long)(var3 << 16 | var1 << 8 | var2);

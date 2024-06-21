@@ -1,5 +1,10 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "jk")
 public class Class245 extends Class272 {
+	@ObfInfo(name = "ak", desc = "Lql;")
 	public Class428 field2638;
+	@ObfInfo(name = "al", desc = "[F")
 	public float[] field2641;
 
 	public Class245(Class428 var1) {
@@ -7,10 +12,12 @@ public class Class245 extends Class272 {
 		this.field2638 = var1;
 	}
 
+	@ObfInfo(name = "ak", desc = "(Lju;IIIIJ)V")
 	public void method4663(Class255 var1, int var2, int var3, int var4, int var5, long var6) {
 		var1.method4893(var2, this.field2638, var3, var4, var5, var6);
 	}
 
+	@ObfInfo(name = "al", desc = "(Ljy;Lkg;IIIB)V")
 	public void method4662(Class259 var1, Class267 var2, int var3, int var4, int var5) {
 		int var7;
 		int var8 = var7 = var4 << 7;
@@ -43,6 +50,7 @@ public class Class245 extends Class272 {
 		this.method5463(var1, var2, var4, var5, var8, var12, var11, var7, var15, var16, var17, var18, var10, var9, var14, var13);
 	}
 
+	@ObfInfo(name = "aj", desc = "(Ljy;Lke;IIB)V", opaque = "7")
 	public void method4672(Class259 var1, Class265 var2, int var3, int var4) {
 		int var6 = var2.field2924.length;
 

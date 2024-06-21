@@ -1,20 +1,37 @@
+import io.runebox.ObfInfo;
 import java.util.LinkedList;
 
+@ObfInfo(name = "lq")
 public abstract class Class303 {
+	@ObfInfo(name = "ay", desc = "[[[[Lle;")
 	public Class291[][][][] field3222;
+	@ObfInfo(name = "au", desc = "Z")
 	public boolean field3220;
+	@ObfInfo(name = "as", desc = "Z")
 	public boolean field3224;
+	@ObfInfo(name = "ae", desc = "[[[B")
 	public byte[][][] field3210;
+	@ObfInfo(name = "ax", desc = "[[[B")
 	public byte[][][] field3221;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = -1488997983)
 	public int field3211;
+	@ObfInfo(name = "af", desc = "I", intMultiplier = 1633486645)
 	public int field3212;
+	@ObfInfo(name = "ab", desc = "I", intMultiplier = 1684796025)
 	public int field3213;
+	@ObfInfo(name = "ac", desc = "I", intMultiplier = -709164821)
 	public int field3214;
+	@ObfInfo(name = "ao", desc = "I", intMultiplier = 1482629101)
 	public int field3215;
+	@ObfInfo(name = "av", desc = "I", intMultiplier = 1204501527)
 	public int field3216;
+	@ObfInfo(name = "ah", desc = "I", intMultiplier = -530060089)
 	public int field3217;
+	@ObfInfo(name = "at", desc = "I", intMultiplier = -1860604541)
 	public int field3223;
+	@ObfInfo(name = "aq", desc = "[[[S")
 	public short[][][] field3218;
+	@ObfInfo(name = "ap", desc = "[[[S")
 	public short[][][] field3219;
 
 	public Class303() {
@@ -25,12 +42,15 @@ public abstract class Class303 {
 		this.field3224 = false;
 	}
 
+	@ObfInfo(name = "al", desc = "(Lua;I)V")
 	public abstract void method5697(Class521 var1);
 
+	@ObfInfo(name = "au", desc = "(I)Z", opaque = "-1565611332")
 	public boolean method6036() {
 		return this.field3220 && this.field3224;
 	}
 
+	@ObfInfo(name = "as", desc = "(Lor;I)V", opaque = "1917638524")
 	public void method6037(Class382 var1) {
 		if (!this.method6036()) {
 			byte[] var3 = var1.method7216(this.field3217, this.field3216);
@@ -43,6 +63,7 @@ public abstract class Class303 {
 		}
 	}
 
+	@ObfInfo(name = "aw", desc = "(I)V")
 	public void method6055() {
 		this.field3218 = (short[][][])null;
 		this.field3219 = (short[][][])null;
@@ -53,6 +74,7 @@ public abstract class Class303 {
 		this.field3224 = false;
 	}
 
+	@ObfInfo(name = "ad", desc = "(IILua;B)V", opaque = "1")
 	public void method6051(int var1, int var2, Class521 var3) {
 		int var5 = var3.method9405();
 		if (var5 != 0) {
@@ -65,6 +87,7 @@ public abstract class Class303 {
 		}
 	}
 
+	@ObfInfo(name = "ai", desc = "(IILua;II)V", opaque = "-1641729954")
 	public void method6045(int var1, int var2, Class521 var3, int var4) {
 		boolean var6 = 0 != (var4 & 2);
 		if (var6) {
@@ -74,6 +97,7 @@ public abstract class Class303 {
 		this.field3218[0][var1][var2] = (short)var3.method9407();
 	}
 
+	@ObfInfo(name = "an", desc = "(IILua;II)V", opaque = "-2105044676")
 	public void method6041(int var1, int var2, Class521 var3, int var4) {
 		int var6 = 1 + ((var4 & 24) >> 3);
 		boolean var7 = (var4 & 2) != 0;
@@ -113,10 +137,12 @@ public abstract class Class303 {
 
 	}
 
+	@ObfInfo(name = "am", desc = "(I)I")
 	public int method6035() {
 		return this.field3223;
 	}
 
+	@ObfInfo(name = "ar", desc = "(B)I")
 	public int method6039() {
 		return this.field3213;
 	}

@@ -1,10 +1,17 @@
+import io.runebox.ObfInfo;
 import java.util.Arrays;
 
+@ObfInfo(name = "ql")
 public final class Class428 {
+	@ObfInfo(name = "al", desc = "[Lql;")
 	public static Class428[] field4696;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = -1072253169)
 	public static int field4698;
+	@ObfInfo(desc = "I", intMultiplier = -1830068443)
 	public static int field5232;
+	@ObfInfo(name = "aa", desc = "Lql;")
 	public static final Class428 field4700;
+	@ObfInfo(name = "af", desc = "[F")
 	public float[] field4699;
 
 	static {
@@ -28,6 +35,7 @@ public final class Class428 {
 		this.method7881(var1, var2);
 	}
 
+	@ObfInfo(name = "al", desc = "(B)V")
 	public void method7908() {
 		synchronized(field4696) {
 			if (field5232 < field4698 - 1) {
@@ -37,6 +45,7 @@ public final class Class428 {
 		}
 	}
 
+	@ObfInfo(name = "aj", desc = "(Lua;ZI)V", opaque = "1413000688")
 	public void method7881(Class521 var1, boolean var2) {
 		if (var2) {
 			Class440 var4 = new Class440();
@@ -62,6 +71,7 @@ public final class Class428 {
 
 	}
 
+	@ObfInfo(name = "az", desc = "(B)[F", opaque = "1")
 	public float[] method7882() {
 		float[] var2 = new float[3];
 		if ((double)this.field4699[2] < 0.999D && (double)this.field4699[2] > -0.999D) {
@@ -78,6 +88,7 @@ public final class Class428 {
 		return var2;
 	}
 
+	@ObfInfo(name = "af", desc = "(B)[F", opaque = "0")
 	public float[] method7883() {
 		float[] var2 = new float[]{(float)(-Math.asin((double)this.field4699[6])), 0.0F, 0.0F};
 		double var3 = Math.cos((double)var2[0]);
@@ -105,6 +116,7 @@ public final class Class428 {
 		return var2;
 	}
 
+	@ObfInfo(name = "aa", desc = "(B)V")
 	public void method7921() {
 		this.field4699[0] = 1.0F;
 		this.field4699[1] = 0.0F;
@@ -124,6 +136,7 @@ public final class Class428 {
 		this.field4699[15] = 1.0F;
 	}
 
+	@ObfInfo(name = "at", desc = "(B)V")
 	public void method7892() {
 		this.field4699[0] = 0.0F;
 		this.field4699[1] = 0.0F;
@@ -143,14 +156,17 @@ public final class Class428 {
 		this.field4699[15] = 0.0F;
 	}
 
+	@ObfInfo(name = "ab", desc = "(Lql;B)V")
 	public void method7955(Class428 var1) {
 		System.arraycopy(var1.field4699, 0, this.field4699, 0, 16);
 	}
 
+	@ObfInfo(name = "ac", desc = "(FI)V")
 	public void method7887(float var1) {
 		this.method7888(var1, var1, var1);
 	}
 
+	@ObfInfo(name = "ao", desc = "(FFFS)V")
 	public void method7888(float var1, float var2, float var3) {
 		this.method7921();
 		this.field4699[0] = var1;
@@ -158,6 +174,7 @@ public final class Class428 {
 		this.field4699[10] = var3;
 	}
 
+	@ObfInfo(name = "ah", desc = "(Lql;B)V", opaque = "16")
 	public void method7889(Class428 var1) {
 		for (int var3 = 0; var3 < this.field4699.length; ++var3) {
 			float[] var10000 = this.field4699;
@@ -166,6 +183,7 @@ public final class Class428 {
 
 	}
 
+	@ObfInfo(name = "av", desc = "(Lql;I)V")
 	public void method7935(Class428 var1) {
 		float var3 = this.field4699[3] * var1.field4699[12] + var1.field4699[8] * this.field4699[2] + this.field4699[0] * var1.field4699[0] + var1.field4699[4] * this.field4699[1];
 		float var4 = this.field4699[2] * var1.field4699[9] + this.field4699[1] * var1.field4699[5] + this.field4699[0] * var1.field4699[1] + var1.field4699[13] * this.field4699[3];
@@ -201,6 +219,7 @@ public final class Class428 {
 		this.field4699[15] = var18;
 	}
 
+	@ObfInfo(name = "aq", desc = "(Lqd;I)V")
 	public void method7897(Class420 var1) {
 		float var3 = var1.field4673.field4786 * var1.field4673.field4786;
 		float var4 = var1.field4673.field4786 * var1.field4673.field4788;
@@ -232,6 +251,7 @@ public final class Class428 {
 		this.field4699[15] = 1.0F;
 	}
 
+	@ObfInfo(name = "ap", desc = "(Lqz;I)V")
 	public void method7884(Class442 var1) {
 		float var3 = var1.field4786 * var1.field4786;
 		float var4 = var1.field4788 * var1.field4786;
@@ -254,6 +274,7 @@ public final class Class428 {
 		this.field4699[10] = var3 + var12 - var10 - var7;
 	}
 
+	@ObfInfo(name = "ae", desc = "(Lqx;I)V")
 	public void method7956(Class440 var1) {
 		this.field4699[0] = var1.field4773;
 		this.field4699[1] = var1.field4781;
@@ -273,10 +294,12 @@ public final class Class428 {
 		this.field4699[15] = 1.0F;
 	}
 
+	@ObfInfo(name = "ax", desc = "(B)F")
 	public float method7894() {
 		return this.field4699[8] * this.field4699[5] * this.field4699[3] * this.field4699[14] + this.field4699[7] * this.field4699[2] * this.field4699[8] * this.field4699[13] + this.field4699[11] * this.field4699[2] * this.field4699[5] * this.field4699[12] + (this.field4699[12] * this.field4699[1] * this.field4699[7] * this.field4699[10] + (this.field4699[6] * this.field4699[0] * this.field4699[11] * this.field4699[13] + (this.field4699[0] * this.field4699[5] * this.field4699[10] * this.field4699[15] - this.field4699[5] * this.field4699[0] * this.field4699[11] * this.field4699[14] - this.field4699[15] * this.field4699[6] * this.field4699[0] * this.field4699[9]) + this.field4699[9] * this.field4699[0] * this.field4699[7] * this.field4699[14] - this.field4699[13] * this.field4699[7] * this.field4699[0] * this.field4699[10] - this.field4699[15] * this.field4699[4] * this.field4699[1] * this.field4699[10] + this.field4699[1] * this.field4699[4] * this.field4699[11] * this.field4699[14] + this.field4699[8] * this.field4699[1] * this.field4699[6] * this.field4699[15] - this.field4699[12] * this.field4699[11] * this.field4699[6] * this.field4699[1] - this.field4699[14] * this.field4699[7] * this.field4699[1] * this.field4699[8]) + this.field4699[9] * this.field4699[2] * this.field4699[4] * this.field4699[15] - this.field4699[11] * this.field4699[4] * this.field4699[2] * this.field4699[13] - this.field4699[15] * this.field4699[8] * this.field4699[5] * this.field4699[2]) - this.field4699[2] * this.field4699[7] * this.field4699[9] * this.field4699[12] - this.field4699[14] * this.field4699[3] * this.field4699[4] * this.field4699[9] + this.field4699[13] * this.field4699[3] * this.field4699[4] * this.field4699[10] - this.field4699[12] * this.field4699[3] * this.field4699[5] * this.field4699[10] - this.field4699[13] * this.field4699[8] * this.field4699[6] * this.field4699[3] + this.field4699[12] * this.field4699[9] * this.field4699[6] * this.field4699[3];
 	}
 
+	@ObfInfo(name = "ay", desc = "(I)V")
 	public void method7901() {
 		float var2 = 1.0F / this.method7894();
 		float var3 = (this.field4699[14] * this.field4699[7] * this.field4699[9] + this.field4699[13] * this.field4699[11] * this.field4699[6] + (this.field4699[10] * this.field4699[5] * this.field4699[15] - this.field4699[11] * this.field4699[5] * this.field4699[14] - this.field4699[15] * this.field4699[6] * this.field4699[9]) - this.field4699[13] * this.field4699[7] * this.field4699[10]) * var2;
@@ -313,6 +336,7 @@ public final class Class428 {
 		this.field4699[15] = var18;
 	}
 
+	@ObfInfo(name = "au", desc = "(FFFFI)V")
 	public void method7896(float var1, float var2, float var3, float var4) {
 		this.field4699[0] = var1;
 		this.field4699[1] = 0.0F;
@@ -332,6 +356,7 @@ public final class Class428 {
 		this.field4699[15] = var4;
 	}
 
+	@ObfInfo(name = "as", desc = "(FFF[FI)V", opaque = "141794880")
 	public void method7904(float var1, float var2, float var3, float[] var4) {
 		var4[0] = var1 * this.field4699[0] + var2 * this.field4699[4] + var3 * this.field4699[8] + this.field4699[12];
 		var4[1] = this.field4699[13] + var3 * this.field4699[9] + this.field4699[5] * var2 + var1 * this.field4699[1];
@@ -342,18 +367,22 @@ public final class Class428 {
 
 	}
 
+	@ObfInfo(name = "aw", desc = "(FFFI)F")
 	public float method7914(float var1, float var2, float var3) {
 		return var2 * this.field4699[4] + var1 * this.field4699[0] + var3 * this.field4699[8] + this.field4699[12];
 	}
 
+	@ObfInfo(name = "ad", desc = "(FFFI)F")
 	public float method7898(float var1, float var2, float var3) {
 		return this.field4699[13] + this.field4699[5] * var2 + var1 * this.field4699[1] + this.field4699[9] * var3;
 	}
 
+	@ObfInfo(name = "ai", desc = "(FFFB)F")
 	public float method7900(float var1, float var2, float var3) {
 		return this.field4699[10] * var3 + this.field4699[6] * var2 + this.field4699[2] * var1 + this.field4699[14];
 	}
 
+	@ObfInfo(desc = "()Ljava/lang/String;")
 	public String toString() {
 		StringBuilder var1 = new StringBuilder();
 		this.method7883();
@@ -379,6 +408,7 @@ public final class Class428 {
 		return var1.toString();
 	}
 
+	@ObfInfo(desc = "()I")
 	public int hashCode() {
 		boolean var1 = true;
 		byte var2 = 1;
@@ -386,6 +416,7 @@ public final class Class428 {
 		return var3;
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
 	public boolean equals(Object var1) {
 		if (!(var1 instanceof Class428)) {
 			return false;
@@ -402,6 +433,7 @@ public final class Class428 {
 		}
 	}
 
+	@ObfInfo(name = "an", desc = "(B)[F")
 	public float[] method7902() {
 		float[] var2 = new float[3];
 		Class421 var3 = new Class421(this.field4699[0], this.field4699[1], this.field4699[2]);
@@ -413,6 +445,7 @@ public final class Class428 {
 		return var2;
 	}
 
+	@ObfInfo(desc = "(I)V")
 	public static void method7461(int var0) {
 		field4698 = var0;
 		field4696 = new Class428[var0];

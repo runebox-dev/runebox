@@ -1,3 +1,4 @@
+import io.runebox.ObfInfo;
 import java.awt.Component;
 import java.awt.Graphics;
 import java.awt.Image;
@@ -10,8 +11,11 @@ import java.awt.image.Raster;
 import java.awt.image.WritableRaster;
 import java.util.Hashtable;
 
+@ObfInfo(name = "bw")
 public final class Class49 extends Class569 {
+	@ObfInfo(name = "ak", desc = "Ljava/awt/Component;")
 	public Component field337;
+	@ObfInfo(name = "al", desc = "Ljava/awt/Image;")
 	public Image field338;
 
 	public Class49(int var1, int var2, Component var3, boolean var4) {
@@ -30,18 +34,22 @@ public final class Class49 extends Class569 {
 		this.method10286();
 	}
 
+	@ObfInfo(name = "ak", desc = "(Ljava/awt/Component;I)V")
 	public final void method889(Component var1) {
 		this.field337 = var1;
 	}
 
+	@ObfInfo(name = "al", desc = "(III)V")
 	public final void method877(int var1, int var2) {
 		this.method879(this.field337.getGraphics(), var1, var2);
 	}
 
+	@ObfInfo(name = "aj", desc = "(IIIII)V")
 	public final void method875(int var1, int var2, int var3, int var4) {
 		this.method891(this.field337.getGraphics(), var1, var2, var3, var4);
 	}
 
+	@ObfInfo(name = "az", desc = "(Ljava/awt/Graphics;III)V")
 	public final void method879(Graphics var1, int var2, int var3) {
 		try {
 			var1.drawImage(this.field338, var2, var3, this.field337);
@@ -51,6 +59,7 @@ public final class Class49 extends Class569 {
 
 	}
 
+	@ObfInfo(name = "af", desc = "(Ljava/awt/Graphics;IIIIB)V")
 	public final void method891(Graphics var1, int var2, int var3, int var4, int var5) {
 		try {
 			Shape var7 = var1.getClip();

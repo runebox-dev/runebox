@@ -1,21 +1,37 @@
+import io.runebox.ObfInfo;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 
+@ObfInfo(name = "ri")
 public class Class451 {
+	@ObfInfo(name = "ax", desc = "[[B")
 	public static byte[][] field4834;
+	@ObfInfo(name = "ap", desc = "[[B")
 	public static byte[][] field4836;
+	@ObfInfo(name = "ae", desc = "[[B")
 	public static byte[][] field4837;
+	@ObfInfo(name = "ay", desc = "[[B")
 	public static byte[][] field4839;
+	@ObfInfo(name = "ab", desc = "I", intMultiplier = -1723254545)
 	public static int field4824;
+	@ObfInfo(name = "at", desc = "I", intMultiplier = 786106793)
 	public static int field4827;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = -547776667)
 	public static int field4828;
+	@ObfInfo(name = "ac", desc = "I", intMultiplier = 1165276261)
 	public static int field4831;
+	@ObfInfo(name = "ao", desc = "I", intMultiplier = -526274451)
 	public static int field4832;
+	@ObfInfo(name = "av", desc = "I", intMultiplier = -755903233)
 	public static int field4833;
+	@ObfInfo(name = "aq", desc = "I", intMultiplier = 123131129)
 	public static int field4835;
+	@ObfInfo(name = "ah", desc = "I", intMultiplier = 2005412773)
 	public static int field4838;
+	@ObfInfo(name = "ad", desc = "Ljava/util/ArrayList;")
 	public static ArrayList field4841;
+	@ObfInfo(name = "af", desc = "Ljava/lang/Object;")
 	public static final Object field4829;
 
 	static {
@@ -41,6 +57,7 @@ public class Class451 {
 		new HashMap();
 	}
 
+	@ObfInfo(desc = "([I[I)V")
 	public static void method7039(int[] var0, int[] var1) {
 		if (var0 != null && var1 != null) {
 			Class80.field144 = var0;
@@ -65,6 +82,7 @@ public class Class451 {
 		}
 	}
 
+	@ObfInfo(desc = "([B)V")
 	public static void method3840(byte[] var0) {
 		synchronized(field4829) {
 			if (var0.length == 100 && field4828 < field4832) {
@@ -89,6 +107,7 @@ public class Class451 {
 		}
 	}
 
+	@ObfInfo(name = "ac", desc = "(ILdm;ZB)I", opaque = "-1")
 	public static int method8420(int var0, Class91 var1, boolean var2) {
 		boolean var4 = true;
 		Class340 var5;

@@ -1,4 +1,8 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "ub")
 public final class Class522 {
+	@ObfInfo(desc = "([BILjava/lang/CharSequence;)I")
 	public static int method3085(byte[] var0, int var1, CharSequence var2) {
 		int var4 = var2.length();
 		int var5 = var1;

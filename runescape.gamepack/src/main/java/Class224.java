@@ -1,17 +1,34 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "ip")
 public class Class224 extends Class507 {
+	@ObfInfo(name = "aj", desc = "Llm;")
 	public static Class299 field2297;
+	@ObfInfo(name = "az", desc = "Llm;")
 	public static Class299 field2298;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = 831089047)
 	public int field2300;
+	@ObfInfo(name = "at", desc = "I", intMultiplier = 107112977)
 	public int field2301;
+	@ObfInfo(name = "ax", desc = "I", intMultiplier = 1931691159)
 	public int field2304;
+	@ObfInfo(name = "av", desc = "I", intMultiplier = -2123612661)
 	public int field2306;
+	@ObfInfo(name = "ap", desc = "I", intMultiplier = 800719853)
 	public int field2308;
+	@ObfInfo(name = "ae", desc = "I", intMultiplier = -2134366815)
 	public int field2309;
+	@ObfInfo(name = "af", desc = "I", intMultiplier = -880763715)
 	public int field2311;
+	@ObfInfo(name = "aq", desc = "I", intMultiplier = 2139694611)
 	public int field2312;
+	@ObfInfo(name = "ao", desc = "[S")
 	public short[] field2296;
+	@ObfInfo(name = "ab", desc = "[S")
 	public short[] field2302;
+	@ObfInfo(name = "ac", desc = "[S")
 	public short[] field2303;
+	@ObfInfo(name = "ah", desc = "[S")
 	public short[] field2305;
 
 	static {
@@ -28,6 +45,7 @@ public class Class224 extends Class507 {
 		this.field2304 = 0;
 	}
 
+	@ObfInfo(name = "al", desc = "(Lua;B)V", opaque = "-1")
 	public void method4224(Class521 var1) {
 		while (true) {
 			int var3 = var1.method9405();
@@ -39,6 +57,7 @@ public class Class224 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "aj", desc = "(Lua;IB)V", opaque = "4")
 	public void method4226(Class521 var1, int var2) {
 		if (var2 == 1) {
 			this.field2300 = var1.method9407();
@@ -80,6 +99,7 @@ public class Class224 extends Class507 {
 
 	}
 
+	@ObfInfo(name = "az", desc = "(IS)Lkb;", opaque = "1208")
 	public final Class262 method4227(int var1) {
 		Class262 var3 = this.method4228();
 		if (var3 == null) {
@@ -117,6 +137,7 @@ public class Class224 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "af", desc = "(I)Lkb;", opaque = "310369198")
 	public final Class262 method4228() {
 		Class262 var2 = (Class262)field2298.method5993((long)this.field2311);
 		if (var2 == null) {
@@ -145,6 +166,7 @@ public class Class224 extends Class507 {
 		return var2;
 	}
 
+	@ObfInfo(desc = "(I)LClass224;")
 	public static Class224 method4163(int var0) {
 		Class224 var2 = (Class224)field2297.method5993((long)var0);
 		if (var2 != null) {

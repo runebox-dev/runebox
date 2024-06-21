@@ -1,10 +1,17 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "kl")
 public abstract class Class272 {
+	@ObfInfo(name = "al", desc = "(Ljy;Lkg;IIIB)V")
 	public abstract void method4662(Class259 var1, Class267 var2, int var3, int var4, int var5);
 
+	@ObfInfo(name = "ak", desc = "(Lju;IIIIJ)V")
 	public abstract void method4663(Class255 var1, int var2, int var3, int var4, int var5, long var6);
 
+	@ObfInfo(name = "aj", desc = "(Ljy;Lke;IIB)V")
 	public abstract void method4672(Class259 var1, Class265 var2, int var3, int var4);
 
+	@ObfInfo(name = "av", desc = "(Ljy;Lkg;IIIIIIIIIIIIIII)V", opaque = "-1990979035")
 	public void method5463(Class259 var1, Class267 var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12, int var13, int var14, int var15, int var16) {
 		int var18 = Class253.method4805() + Class253.method4792() * var5 / var13;
 		int var19 = Class253.method4788() + Class253.method4792() * var9 / var13;
@@ -75,6 +82,7 @@ public abstract class Class272 {
 
 	}
 
+	@ObfInfo(name = "aq", desc = "(Ljy;Lke;IIB)V", opaque = "1")
 	public void method5472(Class259 var1, Class265 var2, int var3, int var4) {
 		Class253.field2688.field3049 = 0;
 		int var6 = var2.field2937.length;

@@ -1,5 +1,10 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "no")
 public class Class353 extends Class506 {
+	@ObfInfo(name = "ak", desc = "Ltx;")
 	public Class518 field3899;
+	@ObfInfo(name = "al", desc = "[B")
 	public byte[] field3900;
 
 	public Class353(Class521 var1) {
@@ -351,6 +356,7 @@ public class Class353 extends Class506 {
 
 	}
 
+	@ObfInfo(name = "ak", desc = "(Lor;II)Lno;")
 	public static Class353 method6747(Class382 var0, int var1, int var2) {
 		byte[] var3 = var0.method7216(var1, var2);
 		return var3 == null ? null : new Class353(new Class521(var3));

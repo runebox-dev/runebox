@@ -1,7 +1,14 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "vh")
 public class Class553 {
+	@ObfInfo(name = "al", desc = "Lvh;")
 	public static final Class553 field5371;
+	@ObfInfo(name = "ak", desc = "Lvh;")
 	public static final Class553 field5372;
+	@ObfInfo(name = "aj", desc = "Lvh;")
 	public static final Class553 field5373;
+	@ObfInfo(name = "az", desc = "I", intMultiplier = 1298431127)
 	public final int field5370;
 
 	static {
@@ -14,6 +21,7 @@ public class Class553 {
 		this.field5370 = var1;
 	}
 
+	@ObfInfo(desc = "()[LClass553;")
 	public static Class553[] method3987() {
 		return new Class553[]{field5372, field5371, field5373};
 	}

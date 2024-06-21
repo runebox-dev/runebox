@@ -1,4 +1,8 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "nu")
 public class Class359 {
+	@ObfInfo(desc = "(III)I")
 	public static int method5914(int var0, int var1, int var2) {
 		var2 &= 3;
 		if (var2 == 0) {

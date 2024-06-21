@@ -1,4 +1,8 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "ka")
 public class Class261 {
+	@ObfInfo(name = "ak", desc = "(Lfm;FI)F", opaque = "1105352009")
 	public static float method5160(Class143 var0, float var1) {
 		if (var0 != null && var0.method3162() != 0) {
 			if (var1 < (float)var0.field1627[0].field1476) {

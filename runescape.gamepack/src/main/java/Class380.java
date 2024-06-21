@@ -1,8 +1,12 @@
+import io.runebox.ObfInfo;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+@ObfInfo(name = "op")
 public class Class380 {
+	@ObfInfo(name = "aj", desc = "[I")
 	public static int[] field4466;
+	@ObfInfo(name = "al", desc = "[Z")
 	public static final boolean[] field4464;
 
 	static {
@@ -19,13 +23,12 @@ public class Class380 {
 
 	}
 
+	@ObfInfo(name = "az", desc = "(III)V", opaque = "472109482")
 	public static void method7208(int var0, int var1) {
 		Class332.method3185(var0, var1, 0, 0);
 		Class332.field3456.clear();
 		Class332.field3458.clear();
-		if (Class332.field3455.isEmpty() || var0 == 0 && var1 == 0) {
-			Class87.method2354();
-		} else {
+		if (!Class332.field3455.isEmpty() && (var0 != 0 || var1 != 0)) {
 			Class332.field3458.add(new Class426((Class447)null, Class332.field3460));
 			Class332.field3458.add(new Class430((Class447)null, 0, false, Class332.field3461));
 			ArrayList var4 = new ArrayList();
@@ -37,6 +40,8 @@ public class Class380 {
 			}
 
 			Class332.field3458.add(new Class441((Class447)null, var4));
+		} else {
+			Class87.method2354();
 		}
 
 	}

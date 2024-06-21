@@ -1,5 +1,10 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "ug")
 public class Class527 {
+	@ObfInfo(name = "aj", desc = "[C")
 	public static final char[] field5236;
+	@ObfInfo(name = "az", desc = "[C")
 	public static final char[] field5238;
 
 	static {
@@ -7,6 +12,7 @@ public class Class527 {
 		field5238 = new char[]{'[', ']', '#'};
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/CharSequence;LClass544;)Ljava/lang/String;")
 	public static String method3754(CharSequence var0, Class544 var1) {
 		if (var0 == null) {
 			return null;
@@ -63,7 +69,7 @@ public class Class527 {
 							char[] var10 = field5236;
 							int var11 = 0;
 
-							label104:
+							label105:
 							while (true) {
 								char var12;
 								if (var11 >= var10.length) {
@@ -73,7 +79,7 @@ public class Class527 {
 										var12 = var10[var11];
 										if (var12 == var8) {
 											var9 = true;
-											break label104;
+											break label105;
 										}
 									}
 
@@ -194,6 +200,7 @@ public class Class527 {
 		}
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/String;)Ljava/lang/String;")
 	public static String method3137(String var0) {
 		return var0 != null && !var0.isEmpty() && var0.charAt(0) != '#' ? var0 : "";
 	}

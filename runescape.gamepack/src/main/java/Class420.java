@@ -1,6 +1,12 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "qd")
 public class Class420 {
+	@ObfInfo(name = "al", desc = "Lqe;")
 	public Class421 field4674;
+	@ObfInfo(name = "aj", desc = "Lqe;")
 	public Class421 field4675;
+	@ObfInfo(name = "ak", desc = "Lqz;")
 	public Class442 field4673;
 
 	public Class420() {
@@ -9,10 +15,12 @@ public class Class420 {
 		this.field4675 = new Class421(1.0F, 1.0F, 1.0F);
 	}
 
+	@ObfInfo(desc = "()Ljava/lang/String;")
 	public String toString() {
 		return "[" + this.field4673.toString() + "|" + this.field4674.toString() + "|" + this.field4675.toString() + "]";
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
 	public boolean equals(Object var1) {
 		if (var1 == null) {
 			return false;
@@ -26,6 +34,7 @@ public class Class420 {
 		}
 	}
 
+	@ObfInfo(desc = "()I")
 	public int hashCode() {
 		boolean var1 = true;
 		byte var2 = 1;

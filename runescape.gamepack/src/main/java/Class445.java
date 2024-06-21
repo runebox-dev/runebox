@@ -1,6 +1,9 @@
+import io.runebox.ObfInfo;
 import java.util.Random;
 
+@ObfInfo(name = "rc")
 public class Class445 {
+	@ObfInfo(name = "ak", desc = "([BI[BII)V")
 	public static void method8311(byte[] var0, int var1, byte[] var2, int var3, int var4) {
 		if (var2 == var0) {
 			if (var3 == var1) {
@@ -47,6 +50,7 @@ public class Class445 {
 
 	}
 
+	@ObfInfo(name = "ao", desc = "([III)V")
 	public static void method8335(int[] var0, int var1, int var2) {
 		for (var2 = var2 + var1 - 7; var1 < var2; var0[var1++] = 0) {
 			var0[var1++] = 0;
@@ -63,6 +67,7 @@ public class Class445 {
 
 	}
 
+	@ObfInfo(name = "ah", desc = "([IIII)V")
 	public static void method8321(int[] var0, int var1, int var2, int var3) {
 		if (var2 == 0 && var3 == 0) {
 			var2 = (int)(Math.random() * 2.147483647E9D);

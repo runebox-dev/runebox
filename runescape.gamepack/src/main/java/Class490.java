@@ -1,9 +1,12 @@
+import io.runebox.ObfInfo;
 import java.io.UnsupportedEncodingException;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+@ObfInfo(name = "sv")
 public class Class490 implements Class476 {
+	@ObfInfo(name = "al", desc = "Lorg/json/JSONObject;")
 	public JSONObject field5000;
 
 	public Class490(JSONObject var1) {
@@ -18,15 +21,18 @@ public class Class490 implements Class476 {
 		this.method8951(var1);
 	}
 
+	@ObfInfo(name = "ak", desc = "(B)Lsd;")
 	public Class472 method8712() {
 		return Class472.field4924;
 	}
 
+	@ObfInfo(name = "ac", desc = "([BB)V")
 	public void method8951(byte[] var1) throws UnsupportedEncodingException {
 		String var3 = new String(var1, "UTF-8");
 		this.method8937(var3);
 	}
 
+	@ObfInfo(name = "ao", desc = "(Ljava/lang/String;I)V", opaque = "348441291")
 	public void method8937(String var1) throws UnsupportedEncodingException {
 		try {
 			if (var1.charAt(0) == '{') {
@@ -46,10 +52,12 @@ public class Class490 implements Class476 {
 		}
 	}
 
+	@ObfInfo(name = "ah", desc = "(I)Lorg/json/JSONObject;")
 	public JSONObject method8942() {
 		return this.field5000;
 	}
 
+	@ObfInfo(name = "al", desc = "(B)[B", opaque = "0")
 	public byte[] method8711() throws UnsupportedEncodingException {
 		return this.field5000 == null ? new byte[0] : this.field5000.toString().getBytes("UTF-8");
 	}

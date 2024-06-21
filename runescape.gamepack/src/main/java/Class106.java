@@ -1,3 +1,4 @@
+import io.runebox.ObfInfo;
 import java.io.DataInputStream;
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -6,10 +7,15 @@ import java.net.URLConnection;
 import java.util.LinkedList;
 import java.util.Queue;
 
+@ObfInfo(name = "eb")
 public abstract class Class106 implements Runnable {
+	@ObfInfo(name = "az", desc = "I", intMultiplier = -468765383)
 	public int field1377;
+	@ObfInfo(name = "aj", desc = "Ljava/util/Queue;")
 	public Queue field1379;
+	@ObfInfo(name = "ak", desc = "Ljava/lang/Thread;")
 	public final Thread field1378;
+	@ObfInfo(name = "al", desc = "Z")
 	public volatile boolean field1376;
 
 	public Class106(int var1) {
@@ -20,8 +26,10 @@ public abstract class Class106 implements Runnable {
 		this.field1377 = var1;
 	}
 
+	@ObfInfo(name = "ak", desc = "(Lea;B)V")
 	public abstract void method2773(Class105 var1) throws IOException;
 
+	@ObfInfo(desc = "()V")
 	public void run() {
 		while (!this.field1376) {
 			try {
@@ -45,6 +53,7 @@ public abstract class Class106 implements Runnable {
 
 	}
 
+	@ObfInfo(name = "al", desc = "(Ljava/net/URLConnection;I)I", opaque = "446466404")
 	public int method2756(URLConnection var1) {
 		int var3 = Class105.field1369;
 		if (var1 != null) {
@@ -59,6 +68,7 @@ public abstract class Class106 implements Runnable {
 		return var3;
 	}
 
+	@ObfInfo(name = "aj", desc = "(Ljava/net/URLConnection;B)V")
 	public void method2776(URLConnection var1) {
 		var1.setConnectTimeout(5000);
 		var1.setReadTimeout(5000);
@@ -67,6 +77,7 @@ public abstract class Class106 implements Runnable {
 		var1.setRequestProperty("User-Agent", "OldSchoolRuneScape/" + this.field1377);
 	}
 
+	@ObfInfo(name = "az", desc = "(Ljava/net/URLConnection;Lea;I)V", opaque = "-671951400")
 	public void method2763(URLConnection var1, Class105 var2) {
 		DataInputStream var4 = null;
 
@@ -107,6 +118,7 @@ public abstract class Class106 implements Runnable {
 
 	}
 
+	@ObfInfo(name = "af", desc = "(Ljava/net/URL;I)Lea;")
 	public Class105 method2759(URL var1) {
 		Class105 var3 = new Class105(var1);
 		synchronized(this) {
@@ -116,6 +128,7 @@ public abstract class Class106 implements Runnable {
 		}
 	}
 
+	@ObfInfo(name = "aa", desc = "(I)V")
 	public void method2757() {
 		this.field1376 = true;
 

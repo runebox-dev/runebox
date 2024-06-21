@@ -1,22 +1,41 @@
+import io.runebox.ObfInfo;
 import java.util.Iterator;
 
+@ObfInfo(name = "di")
 public class Class87 {
+	@ObfInfo(desc = "I")
 	public static int field5423;
+	@ObfInfo(name = "ak", desc = "[Lvl;")
 	public Class557[] field1150;
+	@ObfInfo(name = "aw", desc = "I", intMultiplier = 471289145)
 	public int field1135;
+	@ObfInfo(name = "ab", desc = "I", intMultiplier = -58568865)
 	public int field1136;
+	@ObfInfo(name = "aq", desc = "I", intMultiplier = -470519513)
 	public int field1145;
+	@ObfInfo(name = "ap", desc = "I", intMultiplier = 431953485)
 	public int field1146;
+	@ObfInfo(name = "as", desc = "I", intMultiplier = -592367857)
 	public int field1151;
+	@ObfInfo(name = "ad", desc = "I", intMultiplier = -1997778039)
 	public int field1152;
+	@ObfInfo(name = "ay", desc = "[I")
 	public int[] field1134;
+	@ObfInfo(name = "at", desc = "[I")
 	public int[] field1139;
+	@ObfInfo(name = "au", desc = "[I")
 	public int[] field1140;
+	@ObfInfo(name = "ac", desc = "[I")
 	public int[] field1141;
+	@ObfInfo(name = "ao", desc = "[I")
 	public int[] field1142;
+	@ObfInfo(name = "ah", desc = "[I")
 	public int[] field1143;
+	@ObfInfo(name = "av", desc = "[I")
 	public int[] field1144;
+	@ObfInfo(name = "ae", desc = "[I")
 	public int[] field1147;
+	@ObfInfo(name = "ax", desc = "[I")
 	public int[] field1148;
 
 	public Class87(Class557[] var1) {
@@ -31,6 +50,7 @@ public class Class87 {
 		this.method2371();
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)V", opaque = "-579665568")
 	public void method2371() {
 		this.field1142 = new int[256];
 
@@ -96,6 +116,7 @@ public class Class87 {
 		this.field1148 = new int[32768];
 	}
 
+	@ObfInfo(name = "al", desc = "(B)V")
 	public void method2356() {
 		this.field1142 = null;
 		this.field1143 = null;
@@ -109,6 +130,7 @@ public class Class87 {
 		this.field1135 = 0;
 	}
 
+	@ObfInfo(name = "aj", desc = "(IIB)V", opaque = "1")
 	public void method2366(int var1, int var2) {
 		if (this.field1147 == null) {
 			this.method2371();
@@ -131,6 +153,7 @@ public class Class87 {
 		this.method2358(var1);
 	}
 
+	@ObfInfo(name = "az", desc = "(II)V", opaque = "17895424")
 	public final void method2353(int var1) {
 		this.field1151 += var1 * 128;
 		int var3;
@@ -260,11 +283,13 @@ public class Class87 {
 
 	}
 
+	@ObfInfo(name = "af", desc = "(IIIB)I")
 	public final int method2357(int var1, int var2, int var3) {
 		int var5 = 256 - var3;
 		return (var3 * (var2 & 65280) + (var1 & 65280) * var5 & 16711680) + (var5 * (var1 & 16711935) + var3 * (var2 & 16711935) & -16711936) >> 8;
 	}
 
+	@ObfInfo(name = "aa", desc = "(IB)V", opaque = "5")
 	public final void method2358(int var1) {
 		int var3 = this.field1141.length;
 		if (this.field1145 > 0) {
@@ -280,6 +305,7 @@ public class Class87 {
 		this.method2360(var1);
 	}
 
+	@ObfInfo(name = "at", desc = "(I[IB)V", opaque = "7")
 	public final void method2365(int var1, int[] var2) {
 		int var4 = this.field1141.length;
 
@@ -295,6 +321,7 @@ public class Class87 {
 
 	}
 
+	@ObfInfo(name = "ab", desc = "(IB)V", opaque = "1")
 	public final void method2360(int var1) {
 		int var3 = 0;
 
@@ -334,6 +361,7 @@ public class Class87 {
 
 	}
 
+	@ObfInfo(name = "ac", desc = "(Lvl;I)V", opaque = "-127623269")
 	public final void method2367(Class557 var1) {
 		int var3;
 		for (var3 = 0; var3 < this.field1134.length; ++var3) {
@@ -378,6 +406,7 @@ public class Class87 {
 
 	}
 
+	@ObfInfo(name = "ac", desc = "(B)V", opaque = "1")
 	public static void method2354() {
 		Iterator var1 = Class332.field3455.iterator();
 
@@ -395,6 +424,7 @@ public class Class87 {
 		Class332.field3455.clear();
 	}
 
+	@ObfInfo(name = "aq", desc = "(II)Ljava/lang/String;")
 	public static String method2383(int var0) {
 		if (var0 < 100000) {
 			return "<col=ffff00>" + var0 + "</col>";
@@ -403,6 +433,7 @@ public class Class87 {
 		}
 	}
 
+	@ObfInfo(name = "az", desc = "(B)[Lej;")
 	public static Class114[] method2385() {
 		return new Class114[]{Class114.field1438, Class114.field1434, Class114.field1431, Class114.field1432, Class114.field1433};
 	}

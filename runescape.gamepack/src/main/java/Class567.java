@@ -1,5 +1,10 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "vv")
 public class Class567 implements Comparable {
+	@ObfInfo(name = "al", desc = "Ljava/lang/String;")
 	public String field5477;
+	@ObfInfo(name = "ak", desc = "Ljava/lang/String;")
 	public String field5478;
 
 	public Class567(String var1) {
@@ -12,18 +17,22 @@ public class Class567 implements Comparable {
 		this.field5477 = Class527.method3754(var1, var2);
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)Ljava/lang/String;")
 	public String method10260() {
 		return this.field5478;
 	}
 
+	@ObfInfo(name = "al", desc = "(B)Ljava/lang/String;")
 	public String method10261() {
 		return this.field5477;
 	}
 
+	@ObfInfo(name = "aa", desc = "(I)Z", opaque = "-1116740903")
 	public boolean method10262() {
 		return this.field5477 != null;
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
 	public boolean equals(Object var1) {
 		if (var1 instanceof Class567) {
 			Class567 var2 = (Class567)var1;
@@ -39,14 +48,17 @@ public class Class567 implements Comparable {
 		}
 	}
 
+	@ObfInfo(desc = "()I")
 	public int hashCode() {
 		return this.field5477 == null ? 0 : this.field5477.hashCode();
 	}
 
+	@ObfInfo(desc = "()Ljava/lang/String;")
 	public String toString() {
 		return this.method10260();
 	}
 
+	@ObfInfo(name = "at", desc = "(Lvv;I)I")
 	public int method10275(Class567 var1) {
 		if (this.field5477 == null) {
 			return var1.field5477 == null ? 0 : 1;
@@ -55,6 +67,7 @@ public class Class567 implements Comparable {
 		}
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/Object;)I")
 	public int compareTo(Object var1) {
 		return this.method10275((Class567)var1);
 	}

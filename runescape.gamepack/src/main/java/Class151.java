@@ -1,6 +1,12 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "fu")
 public class Class151 {
+	@ObfInfo(name = "aj", desc = "Lps;")
 	public Class409 field1700;
+	@ObfInfo(name = "al", desc = "I", intMultiplier = 1680514671)
 	public int field1695;
+	@ObfInfo(name = "ak", desc = "J", longMultiplier = -8184252867772202709L)
 	public long field1699;
 
 	public Class151(Class521 var1) {
@@ -9,6 +15,7 @@ public class Class151 {
 		this.method3271(var1);
 	}
 
+	@ObfInfo(name = "ak", desc = "(Lua;I)V", opaque = "-1888371039")
 	public void method3271(Class521 var1) {
 		this.field1699 = var1.method9411();
 		this.field1695 = var1.method9410();
@@ -57,6 +64,7 @@ public class Class151 {
 
 	}
 
+	@ObfInfo(name = "al", desc = "(Lgc;I)V", opaque = "143754529")
 	public void method3280(Class159 var1) {
 		if (this.field1699 == var1.field1787 && var1.field1766 == this.field1695) {
 			for (Class149 var3 = (Class149)this.field1700.method7600(); var3 != null; var3 = (Class149)this.field1700.method7637()) {

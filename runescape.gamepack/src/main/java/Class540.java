@@ -1,13 +1,21 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "ut")
 public class Class540 extends Class507 {
+	@ObfInfo(name = "al", desc = "Llm;")
 	public static Class299 field5314;
+	@ObfInfo(name = "ak", desc = "Lor;")
 	public static Class382 field5316;
+	@ObfInfo(name = "aj", desc = "[[I")
 	public int[][] field5315;
+	@ObfInfo(name = "az", desc = "[[Ljava/lang/Object;")
 	public Object[][] field5313;
 
 	static {
 		field5314 = new Class299(64);
 	}
 
+	@ObfInfo(name = "aj", desc = "(Lua;I)V", opaque = "209942218")
 	public void method9849(Class521 var1) {
 		while (true) {
 			int var3 = var1.method9405();
@@ -19,6 +27,7 @@ public class Class540 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "az", desc = "(Lua;II)V", opaque = "1779160877")
 	public void method9854(Class521 var1, int var2) {
 		if (var2 == 1) {
 			int var4 = var1.method9405();
@@ -60,9 +69,11 @@ public class Class540 extends Class507 {
 
 	}
 
+	@ObfInfo(name = "af", desc = "(I)V")
 	public void method9851() {
 	}
 
+	@ObfInfo(desc = "(I)LClass540;")
 	public static Class540 method3721(int var0) {
 		Class540 var2 = (Class540)field5314.method5993((long)var0);
 		if (var2 != null) {
@@ -80,6 +91,7 @@ public class Class540 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "aj", desc = "(CI)Z", opaque = "-150416972")
 	public static boolean method9865(char var0) {
 		if ((var0 < ' ' || var0 >= 127) && (var0 <= 127 || var0 >= 160) && (var0 <= 160 || var0 > 255)) {
 			if (var0 != 0) {
@@ -99,6 +111,7 @@ public class Class540 extends Class507 {
 		}
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method3407() {
 		field5314.method5995();
 	}

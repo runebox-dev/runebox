@@ -1,30 +1,57 @@
+import io.runebox.ObfInfo;
 import java.util.Random;
 
+@ObfInfo(name = "cc")
 public class Class55 {
+	@ObfInfo(name = "ag", desc = "[I")
 	public static int[] field391;
+	@ObfInfo(name = "au", desc = "[I")
 	public static int[] field398;
+	@ObfInfo(name = "ar", desc = "[I")
 	public static int[] field400;
+	@ObfInfo(name = "aw", desc = "[I")
 	public static int[] field407;
+	@ObfInfo(name = "as", desc = "[I")
 	public static int[] field409;
+	@ObfInfo(name = "ai", desc = "[I")
 	public static int[] field412;
+	@ObfInfo(name = "an", desc = "[I")
 	public static int[] field413;
+	@ObfInfo(name = "am", desc = "[I")
 	public static int[] field414;
+	@ObfInfo(name = "al", desc = "Lbv;")
 	public Class48 field392;
+	@ObfInfo(name = "aj", desc = "Lbv;")
 	public Class48 field393;
+	@ObfInfo(name = "az", desc = "Lbv;")
 	public Class48 field394;
+	@ObfInfo(name = "af", desc = "Lbv;")
 	public Class48 field395;
+	@ObfInfo(name = "aa", desc = "Lbv;")
 	public Class48 field396;
+	@ObfInfo(name = "at", desc = "Lbv;")
 	public Class48 field397;
+	@ObfInfo(name = "ae", desc = "Lbv;")
 	public Class48 field405;
+	@ObfInfo(name = "ak", desc = "Lbv;")
 	public Class48 field408;
+	@ObfInfo(name = "ab", desc = "Lbv;")
 	public Class48 field415;
+	@ObfInfo(name = "ap", desc = "Lcs;")
 	public Class71 field416;
+	@ObfInfo(name = "av", desc = "I")
 	public int field402;
+	@ObfInfo(name = "aq", desc = "I")
 	public int field403;
+	@ObfInfo(name = "ay", desc = "I")
 	public int field404;
+	@ObfInfo(name = "ax", desc = "I")
 	public int field406;
+	@ObfInfo(name = "ac", desc = "[I")
 	public int[] field399;
+	@ObfInfo(name = "ah", desc = "[I")
 	public int[] field401;
+	@ObfInfo(name = "ao", desc = "[I")
 	public int[] field410;
 
 	static {
@@ -60,6 +87,7 @@ public class Class55 {
 		this.field404 = 0;
 	}
 
+	@ObfInfo(name = "ak", desc = "(II)[I")
 	public final int[] method1058(int var1, int var2) {
 		Class445.method8335(field398, 0, var1);
 		if (var2 < 10) {
@@ -266,6 +294,7 @@ public class Class55 {
 		}
 	}
 
+	@ObfInfo(name = "al", desc = "(III)I")
 	public final int method1054(int var1, int var2, int var3) {
 		if (var3 == 1) {
 			return (var1 & 32767) < 16384 ? var2 : -var2;
@@ -278,6 +307,7 @@ public class Class55 {
 		}
 	}
 
+	@ObfInfo(name = "aj", desc = "(Lua;)V")
 	public final void method1057(Class521 var1) {
 		this.field408 = new Class48();
 		this.field408.method864(var1);

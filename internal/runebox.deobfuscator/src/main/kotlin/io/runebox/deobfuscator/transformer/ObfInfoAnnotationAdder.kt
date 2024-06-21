@@ -15,26 +15,9 @@ class ObfInfoAnnotationAdder : Transformer {
     override fun transform(pool: ClassPool) {
         pool.addObfInfoAnnotationClass()
         for(cls in pool.classes) {
-           if(cls.name != cls.origName) cls.addObfInfo()
-            for(method in cls.methods) {
-                if(method.isConstructor || method.isInitializer) continue
-                if(method.cls.name != method.origOwner
-                    || method.name != method.origName
-                    || method.desc != method.origDesc
-                    || (method.opaqueType != null && method.opaqueValue != null))
-                {
-                    method.addObfInfo()
-                }
-            }
-            for(field in cls.fields) {
-                if(field.cls.name != field.origOwner
-                    || field.name != field.origName
-                    || field.desc != field.origDesc
-                    || field.multiplier != null)
-                {
-                    field.addObfInfo()
-                }
-            }
+            cls.addObfInfo()
+            cls.methods.forEach { it.addObfInfo() }
+            cls.fields.forEach { it.addObfInfo() }
         }
     }
 
@@ -43,53 +26,57 @@ class ObfInfoAnnotationAdder : Transformer {
     }
 
     private fun ClassPool.addObfInfoAnnotationClass() {
-        val cls = ObfInfoAnnotationAdder::class.java.getResourceAsStream("/io/runebox/ObfInfo.class")!!.readBytes().let { it.toClassNode() }
+        val cls = ObfInfoAnnotationAdder::class.java.getResourceAsStream("/io/runebox/ObfInfo.class")!!.readBytes().toClassNode()
         cls.name = "io/runebox/ObfInfo"
         cls.isIgnored = true
-        cls.visibleAnnotations.clear()
         addClass(cls)
         Logger.info("Added 'io/runebox/ObfInfo' class to pool.")
     }
 
     private fun ClassNode.addObfInfo() {
-        val anno = AnnotationNode("io/runebox/ObfInfo").also {
-            it.values = listOf(
-                "origName", origName
-            )
+        val anno = AnnotationNode("io/runebox/ObfInfo").apply {
+            values = mutableListOf<Any>()
+            if(this@addObfInfo.name != origName) values.add("name", origName)
         }
+        if(anno.values.isEmpty()) return
+        visibleAnnotations = visibleAnnotations ?: mutableListOf()
         visibleAnnotations = visibleAnnotations.toTypedArray().copyOf().toMutableList().also { it.add(anno) }
     }
 
     private fun MethodNode.addObfInfo() {
-        val anno = AnnotationNode("io/runebox/ObfInfo").also {
-            val vals = mutableListOf<Any>(
-                "origOwner", origOwner,
-                "origName", origName,
-                "origDesc", origDesc,
-            )
-            if(opaqueType != null && opaqueValue != null) vals.addAll(listOf(
-                "opaqueType", opaqueType!!,
-                "opaqueValue", opaqueValue!!
-            ))
-            it.values = vals.toList()
+        if(isConstructor || isInitializer) return
+        val anno = AnnotationNode("io/runebox/ObfInfo").apply {
+            values = mutableListOf<Any>()
+            if(cls.origName != origOwner) values.add("owner", origOwner)
+            if(name != origName || desc != origDesc) {
+                values.add("name", origName)
+                values.add("desc", origDesc)
+            }
+            if(opaque.isNotBlank()) values.add("opaque", opaque)
         }
+        if(anno.values.isEmpty()) return
+        visibleAnnotations = visibleAnnotations ?: mutableListOf()
         visibleAnnotations = visibleAnnotations.toTypedArray().copyOf().toMutableList().also { it.add(anno) }
     }
 
     private fun FieldNode.addObfInfo() {
-        val anno = AnnotationNode("io/runebox/ObfInfo").also {
-            val vals = mutableListOf<Any>(
-                "origOwner", origOwner,
-                "origName", origName,
-                "origDesc", origDesc
-            )
-            if(multiplier != null) {
-                vals.addAll(listOf(
-                    "multiplier", multiplier!!
-                ))
+        val anno = AnnotationNode("io/runebox/ObfInfo").apply {
+            values = mutableListOf<Any>()
+            if(cls.origName != origOwner) values.add("owner", origOwner)
+            if(name != origName || desc != origDesc) {
+                values.add("name", origName)
+                values.add("desc", origDesc)
             }
-            it.values = vals.toList()
+            if(intMultiplier != 0) values.add("intMultiplier", intMultiplier)
+            if(longMultiplier != 0L) values.add("longMultiplier", longMultiplier)
         }
-        visibleAnnotations = (visibleAnnotations ?: emptyList()).toTypedArray().copyOf().toMutableList().also { it.add(anno) }
+        if(anno.values.isEmpty()) return
+        visibleAnnotations = visibleAnnotations ?: mutableListOf()
+        visibleAnnotations = visibleAnnotations.toTypedArray().copyOf().toMutableList().also { it.add(anno) }
+    }
+
+    private fun MutableList<Any>.add(key: String, value: Any) {
+        add(key)
+        add(value)
     }
 }

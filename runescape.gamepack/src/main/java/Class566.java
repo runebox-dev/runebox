@@ -1,6 +1,9 @@
+import io.runebox.ObfInfo;
 import java.util.zip.Inflater;
 
+@ObfInfo(name = "vu")
 public class Class566 {
+	@ObfInfo(name = "ak", desc = "Ljava/util/zip/Inflater;")
 	public Inflater field5476;
 
 	public Class566() {
@@ -10,6 +13,7 @@ public class Class566 {
 	public Class566(int var1, int var2, int var3) {
 	}
 
+	@ObfInfo(name = "ak", desc = "(Lua;[BB)V", opaque = "1")
 	public void method10256(Class521 var1, byte[] var2) {
 		if (31 == var1.field5221[var1.field5219] && var1.field5221[var1.field5219 + 1] == -117) {
 			if (this.field5476 == null) {

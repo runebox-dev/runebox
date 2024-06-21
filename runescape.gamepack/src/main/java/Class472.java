@@ -1,6 +1,12 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "sd")
 public class Class472 {
+	@ObfInfo(name = "al", desc = "Lsd;")
 	public static final Class472 field4922;
+	@ObfInfo(name = "ak", desc = "Lsd;")
 	public static final Class472 field4924;
+	@ObfInfo(name = "aj", desc = "Ljava/lang/String;")
 	public String field4923;
 
 	static {
@@ -12,6 +18,7 @@ public class Class472 {
 		this.field4923 = var1;
 	}
 
+	@ObfInfo(name = "ak", desc = "(B)Ljava/lang/String;")
 	public String method8653() {
 		return this.field4923;
 	}

@@ -1,10 +1,20 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "vp")
 public class Class561 extends Class507 {
+	@ObfInfo(name = "bs", desc = "[F")
 	public static float[] field5421;
+	@ObfInfo(name = "bi", desc = "I")
 	public static int field5419;
+	@ObfInfo(name = "ag", desc = "I")
 	public static int field5420;
+	@ObfInfo(name = "bo", desc = "I")
 	public static int field5422;
+	@ObfInfo(name = "bt", desc = "I")
 	public static int field5424;
+	@ObfInfo(name = "bn", desc = "I")
 	public static int field5425;
+	@ObfInfo(name = "am", desc = "[I")
 	public static int[] field5418;
 
 	static {
@@ -14,6 +24,7 @@ public class Class561 extends Class507 {
 		field5425 = 0;
 	}
 
+	@ObfInfo(name = "ed", desc = "([III[F)V")
 	public static void method10142(int[] var0, int var1, int var2, float[] var3) {
 		field5418 = var0;
 		Class87.field5423 = var1;
@@ -22,6 +33,7 @@ public class Class561 extends Class507 {
 		method10144(0, 0, var1, var2);
 	}
 
+	@ObfInfo(name = "es", desc = "()V")
 	public static void method10143() {
 		field5424 = 0;
 		field5422 = 0;
@@ -29,6 +41,7 @@ public class Class561 extends Class507 {
 		field5419 = field5420;
 	}
 
+	@ObfInfo(name = "ef", desc = "(IIII)V")
 	public static void method10144(int var0, int var1, int var2, int var3) {
 		if (var0 < 0) {
 			var0 = 0;
@@ -52,6 +65,7 @@ public class Class561 extends Class507 {
 		field5419 = var3;
 	}
 
+	@ObfInfo(name = "ex", desc = "(IIII)V")
 	public static void method10153(int var0, int var1, int var2, int var3) {
 		if (field5424 < var0) {
 			field5424 = var0;
@@ -71,6 +85,7 @@ public class Class561 extends Class507 {
 
 	}
 
+	@ObfInfo(name = "el", desc = "([I)V")
 	public static void method10195(int[] var0) {
 		var0[0] = field5424;
 		var0[1] = field5422;
@@ -78,6 +93,7 @@ public class Class561 extends Class507 {
 		var0[3] = field5419;
 	}
 
+	@ObfInfo(name = "eb", desc = "([I)V")
 	public static void method10147(int[] var0) {
 		field5424 = var0[0];
 		field5422 = var0[1];
@@ -85,6 +101,7 @@ public class Class561 extends Class507 {
 		field5419 = var0[3];
 	}
 
+	@ObfInfo(name = "ep", desc = "()V")
 	public static void method10160() {
 		int var0 = 0;
 
@@ -105,6 +122,7 @@ public class Class561 extends Class507 {
 		method10165();
 	}
 
+	@ObfInfo(name = "ea", desc = "(IIII)V")
 	public static void method10149(int var0, int var1, int var2, int var3) {
 		if (var2 == 0) {
 			method10163(var0, var1, var3);
@@ -198,6 +216,7 @@ public class Class561 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "ey", desc = "(IIIII)V")
 	public static void method10150(int var0, int var1, int var2, int var3, int var4) {
 		if (var4 != 0) {
 			if (var4 == 256) {
@@ -309,6 +328,7 @@ public class Class561 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "er", desc = "(IIIIII)V")
 	public static void method10151(int var0, int var1, int var2, int var3, int var4, int var5) {
 		if (var0 < field5424) {
 			var2 -= field5424 - var0;
@@ -345,6 +365,7 @@ public class Class561 extends Class507 {
 
 	}
 
+	@ObfInfo(name = "ew", desc = "(IIIII)V")
 	public static void method10152(int var0, int var1, int var2, int var3, int var4) {
 		if (var0 < field5424) {
 			var2 -= field5424 - var0;
@@ -377,6 +398,7 @@ public class Class561 extends Class507 {
 
 	}
 
+	@ObfInfo(name = "ec", desc = "(IIIIII)V")
 	public static void method10221(int var0, int var1, int var2, int var3, int var4, int var5) {
 		if (var2 > 0 && var3 > 0) {
 			int var6 = 0;
@@ -419,6 +441,7 @@ public class Class561 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "eu", desc = "(IIIIIIII)V")
 	public static void method10162(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
 		if (var2 > 0 && var3 > 0) {
 			int var8 = 0;
@@ -475,6 +498,7 @@ public class Class561 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "et", desc = "(IIIIII[BIZ)V")
 	public static void method10141(int var0, int var1, int var2, int var3, int var4, int var5, byte[] var6, int var7, boolean var8) {
 		if (var2 + var0 >= 0 && var3 + var1 >= 0) {
 			if (var0 < Class87.field5423 && var1 < field5420) {
@@ -550,6 +574,7 @@ public class Class561 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "ek", desc = "(IIIII)V")
 	public static void method10156(int var0, int var1, int var2, int var3, int var4) {
 		method10200(var0, var1, var2, var4);
 		method10200(var0, var3 + var1 - 1, var2, var4);
@@ -557,6 +582,7 @@ public class Class561 extends Class507 {
 		method10185(var2 + var0 - 1, var1, var3, var4);
 	}
 
+	@ObfInfo(name = "eg", desc = "(IIIIII)V")
 	public static void method10157(int var0, int var1, int var2, int var3, int var4, int var5) {
 		method10159(var0, var1, var2, var4, var5);
 		method10159(var0, var3 + var1 - 1, var2, var4, var5);
@@ -567,6 +593,7 @@ public class Class561 extends Class507 {
 
 	}
 
+	@ObfInfo(name = "eq", desc = "(IIII)V")
 	public static void method10200(int var0, int var1, int var2, int var3) {
 		if (var1 >= field5422 && var1 < field5419) {
 			if (var0 < field5424) {
@@ -587,6 +614,7 @@ public class Class561 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "ee", desc = "(IIIII)V")
 	public static void method10159(int var0, int var1, int var2, int var3, int var4) {
 		if (var1 >= field5422 && var1 < field5419) {
 			if (var0 < field5424) {
@@ -615,6 +643,7 @@ public class Class561 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "eo", desc = "(IIII)V")
 	public static void method10185(int var0, int var1, int var2, int var3) {
 		if (var0 >= field5424 && var0 < field5425) {
 			if (var1 < field5422) {
@@ -635,6 +664,7 @@ public class Class561 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "ez", desc = "(IIIII)V")
 	public static void method10161(int var0, int var1, int var2, int var3, int var4) {
 		if (var0 >= field5424 && var0 < field5425) {
 			if (var1 < field5422) {
@@ -664,6 +694,7 @@ public class Class561 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "fh", desc = "(IIIII)V")
 	public static void method10220(int var0, int var1, int var2, int var3, int var4) {
 		var2 -= var0;
 		var3 -= var1;
@@ -744,12 +775,14 @@ public class Class561 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "fk", desc = "(III)V")
 	public static void method10163(int var0, int var1, int var2) {
 		if (var0 >= field5424 && var1 >= field5422 && var0 < field5425 && var1 < field5419) {
 			field5418[var0 + Class87.field5423 * var1] = var2;
 		}
 	}
 
+	@ObfInfo(name = "fy", desc = "(III[I[I)V")
 	public static void method10164(int var0, int var1, int var2, int[] var3, int[] var4) {
 		int var5 = var0 + Class87.field5423 * var1;
 
@@ -765,6 +798,7 @@ public class Class561 extends Class507 {
 
 	}
 
+	@ObfInfo(name = "fm", desc = "()V")
 	public static void method10165() {
 		if (field5421 != null) {
 			int var0;
@@ -839,6 +873,7 @@ public class Class561 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "fr", desc = "()V")
 	public static void method10166() {
 		if (field5421 != null) {
 			int var0 = field5421.length;

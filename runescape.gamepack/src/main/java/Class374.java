@@ -1,31 +1,58 @@
+import io.runebox.ObfInfo;
 import java.io.IOException;
 import java.util.zip.CRC32;
 
+@ObfInfo(name = "oj")
 public class Class374 {
+	@ObfInfo(name = "as", desc = "Loc;")
 	public Class367 field4080;
+	@ObfInfo(name = "ag", desc = "[Lot;")
 	public Class384[] field4077;
+	@ObfInfo(name = "aq", desc = "Lpx;")
 	public Class414 field4079;
+	@ObfInfo(name = "aa", desc = "Lsm;")
 	public Class481 field4085;
+	@ObfInfo(name = "ac", desc = "Ltx;")
 	public Class518 field4072;
+	@ObfInfo(name = "ap", desc = "Ltx;")
 	public Class518 field4075;
+	@ObfInfo(name = "ah", desc = "Ltx;")
 	public Class518 field4091;
+	@ObfInfo(name = "ax", desc = "Ltx;")
 	public Class518 field4094;
+	@ObfInfo(name = "ad", desc = "Lua;")
 	public Class521 field4082;
+	@ObfInfo(name = "aw", desc = "Lua;")
 	public Class521 field4086;
+	@ObfInfo(name = "ar", desc = "Lua;")
 	public Class521 field4090;
+	@ObfInfo(name = "au", desc = "Z")
 	public boolean field4084;
+	@ObfInfo(name = "bo", desc = "B")
 	public byte field4070;
+	@ObfInfo(name = "at", desc = "I", intMultiplier = -483096973)
 	public int field4073;
+	@ObfInfo(name = "ao", desc = "I", intMultiplier = -1463847027)
 	public int field4076;
+	@ObfInfo(name = "av", desc = "I", intMultiplier = -800424895)
 	public int field4078;
+	@ObfInfo(name = "ae", desc = "I", intMultiplier = 718751813)
 	public int field4081;
+	@ObfInfo(name = "ay", desc = "I", intMultiplier = 229825985)
 	public int field4083;
+	@ObfInfo(name = "ai", desc = "I", intMultiplier = 2055313653)
 	public int field4088;
+	@ObfInfo(name = "bs", desc = "I", intMultiplier = 1159083227)
 	public int field4092;
+	@ObfInfo(name = "bf", desc = "I", intMultiplier = -542213403)
 	public int field4093;
+	@ObfInfo(name = "bi", desc = "I", intMultiplier = -1672950355)
 	public int field4095;
+	@ObfInfo(name = "bt", desc = "I", intMultiplier = -271424419)
 	public int field4096;
+	@ObfInfo(name = "am", desc = "Ljava/util/zip/CRC32;")
 	public CRC32 field4089;
+	@ObfInfo(name = "ab", desc = "J", longMultiplier = 6110918487643816679L)
 	public long field4074;
 
 	public Class374() {
@@ -50,6 +77,7 @@ public class Class374 {
 		this.field4096 = 0;
 	}
 
+	@ObfInfo(name = "ak", desc = "(B)Z", opaque = "-1")
 	public boolean method7173() {
 		long var2 = Class327.method3047();
 		int var4 = (int)(var2 - this.field4074);
@@ -260,6 +288,7 @@ public class Class374 {
 		}
 	}
 
+	@ObfInfo(name = "al", desc = "(ZI)V", opaque = "259254206")
 	public void method7166(boolean var1) {
 		if (this.field4085 != null) {
 			try {
@@ -280,6 +309,7 @@ public class Class374 {
 		}
 	}
 
+	@ObfInfo(name = "aj", desc = "(Lsm;ZI)V", opaque = "2035252496")
 	public void method7154(Class481 var1, boolean var2) {
 		if (this.field4085 != null) {
 			try {
@@ -339,6 +369,7 @@ public class Class374 {
 		}
 	}
 
+	@ObfInfo(name = "az", desc = "(Lot;II)V", opaque = "1570854359")
 	public void method7155(Class384 var1, int var2) {
 		if (var1.field4500 && !var1.field4506) {
 			if (var2 <= this.field4092) {
@@ -366,6 +397,7 @@ public class Class374 {
 		}
 	}
 
+	@ObfInfo(name = "af", desc = "(Lot;II)V", opaque = "-1902622701")
 	public void method7156(Class384 var1, int var2) {
 		this.field4090.field5219 = var2 * 8 + 5;
 		if (this.field4090.field5219 >= this.field4090.field5221.length) {
@@ -381,6 +413,7 @@ public class Class374 {
 		}
 	}
 
+	@ObfInfo(name = "aa", desc = "(Lot;IIIBZI)V", opaque = "15597569")
 	public void method7157(Class384 var1, int var2, int var3, int var4, byte var5, boolean var6) {
 		long var8 = (long)((var2 << 16) + var3);
 		Class367 var10 = (Class367)this.field4072.method9361(var8);
@@ -422,6 +455,7 @@ public class Class374 {
 		}
 	}
 
+	@ObfInfo(name = "at", desc = "(IIB)V", opaque = "5")
 	public void method7165(int var1, int var2) {
 		long var4 = (long)((var1 << 16) + var2);
 		Class367 var6 = (Class367)this.field4075.method9361(var4);
@@ -430,11 +464,13 @@ public class Class374 {
 		}
 	}
 
+	@ObfInfo(name = "ab", desc = "(IIB)I", opaque = "4")
 	public int method7159(int var1, int var2) {
 		long var4 = (long)((var1 << 16) + var2);
 		return this.field4080 != null && var4 == this.field4080.field5170 ? this.field4082.field5219 * 99 / (this.field4082.field5221.length - this.field4080.field4003) + 1 : 0;
 	}
 
+	@ObfInfo(name = "ac", desc = "(ZZB)I", opaque = "1")
 	public int method7161(boolean var1, boolean var2) {
 		int var4 = 0;
 		if (var1) {
@@ -448,6 +484,7 @@ public class Class374 {
 		return var4;
 	}
 
+	@ObfInfo(name = "ao", desc = "(I)V", opaque = "401139933")
 	public void method7176() {
 		if (this.field4085 != null) {
 			try {
@@ -460,6 +497,7 @@ public class Class374 {
 
 	}
 
+	@ObfInfo(name = "bx", desc = "(Lnb;IIB)V", opaque = "13")
 	public static void method7189(Class340 var0, int var1, int var2) {
 		Class358 var4 = var0.field3764;
 		boolean var5 = var4.field3946 != var2;

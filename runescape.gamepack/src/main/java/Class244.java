@@ -1,10 +1,20 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "jj")
 public class Class244 implements Class263 {
+	@ObfInfo(name = "ak", desc = "[Ljw;")
 	public Class257[] field2634;
+	@ObfInfo(name = "at", desc = "Lor;")
 	public Class382 field2635;
+	@ObfInfo(name = "al", desc = "Lpk;")
 	public Class401 field2630;
+	@ObfInfo(name = "af", desc = "D")
 	public double field2633;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = 560141227)
 	public int field2631;
+	@ObfInfo(name = "az", desc = "I", intMultiplier = -173568361)
 	public int field2632;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = 1600177769)
 	public int field2636;
 
 	public Class244(Class382 var1, Class382 var2, int var3, double var4, int var6) {
@@ -32,6 +42,7 @@ public class Class244 implements Class263 {
 
 	}
 
+	@ObfInfo(name = "ak", desc = "(B)I", opaque = "11")
 	public int method4715() {
 		if (this.field2634.length == 0) {
 			return 100;
@@ -63,11 +74,13 @@ public class Class244 implements Class263 {
 		}
 	}
 
+	@ObfInfo(name = "al", desc = "(D)V")
 	public void method4716(double var1) {
 		this.field2633 = var1;
 		this.method4741();
 	}
 
+	@ObfInfo(name = "aj", desc = "(IB)[I", opaque = "-1")
 	public int[] method4717(int var1) {
 		Class257 var3 = this.field2634[var1];
 		if (var3 != null) {
@@ -95,18 +108,22 @@ public class Class244 implements Class263 {
 		return null;
 	}
 
+	@ObfInfo(name = "az", desc = "(II)I")
 	public int method4718(int var1) {
 		return this.field2634[var1] != null ? this.field2634[var1].field2716 : 0;
 	}
 
+	@ObfInfo(name = "af", desc = "(II)Z")
 	public boolean method4719(int var1) {
 		return this.field2634[var1].field2719;
 	}
 
+	@ObfInfo(name = "aa", desc = "(II)Z", opaque = "660032096")
 	public boolean method4731(int var1) {
 		return this.field2631 == 64;
 	}
 
+	@ObfInfo(name = "at", desc = "(I)V", opaque = "-598476332")
 	public void method4741() {
 		for (int var2 = 0; var2 < this.field2634.length; ++var2) {
 			if (this.field2634[var2] != null) {
@@ -118,6 +135,7 @@ public class Class244 implements Class263 {
 		this.field2632 = this.field2636;
 	}
 
+	@ObfInfo(name = "ab", desc = "(II)V", opaque = "-89858524")
 	public void method4734(int var1) {
 		for (int var3 = 0; var3 < this.field2634.length; ++var3) {
 			Class257 var4 = this.field2634[var3];

@@ -1,6 +1,12 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "bq")
 public class Class43 {
+	@ObfInfo(name = "al", desc = "Lor;")
 	public Class382 field304;
+	@ObfInfo(name = "ak", desc = "Lor;")
 	public Class382 field307;
+	@ObfInfo(name = "aj", desc = "Ltx;")
 	public Class518 field310;
 
 	public Class43(Class382 var1, Class382 var2) {
@@ -10,6 +16,7 @@ public class Class43 {
 		this.field304 = var2;
 	}
 
+	@ObfInfo(name = "ak", desc = "(II[IB)Lbr;", opaque = "1")
 	public Class44 method823(int var1, int var2, int[] var3) {
 		long var5 = this.method825(var1, var2, false);
 		Class63 var7 = (Class63)this.field310.method9361(var5);
@@ -33,6 +40,7 @@ public class Class43 {
 		}
 	}
 
+	@ObfInfo(name = "al", desc = "(III)Lck;", opaque = "506101823")
 	public Class63 method833(int var1, int var2) {
 		long var4 = this.method825(var1, var2, true);
 		Class63 var6 = (Class63)this.field310.method9361(var4);
@@ -50,6 +58,7 @@ public class Class43 {
 		}
 	}
 
+	@ObfInfo(name = "aj", desc = "(I[IB)Lbr;", opaque = "-1")
 	public Class44 method842(int var1, int[] var2) {
 		if (this.field307.method7228() == 1) {
 			return this.method823(0, var1, var2);
@@ -60,6 +69,7 @@ public class Class43 {
 		}
 	}
 
+	@ObfInfo(name = "az", desc = "(IB)Lck;", opaque = "-1")
 	public Class63 method826(int var1) {
 		if (this.field304.method7228() == 1) {
 			return this.method833(0, var1);
@@ -70,16 +80,19 @@ public class Class43 {
 		}
 	}
 
+	@ObfInfo(name = "af", desc = "(II)Lbr;")
 	public Class44 method839(int var1) {
 		return this.method842(var1, (int[])null);
 	}
 
+	@ObfInfo(name = "aa", desc = "(IIZI)J", opaque = "-826539165")
 	public long method825(int var1, int var2, boolean var3) {
 		int var5 = var2 ^ (var1 << 4 & 65535 | var1 >> 12);
 		var5 |= var1 << 16;
 		return var3 ? (long)var5 ^ 4294967296L : (long)var5;
 	}
 
+	@ObfInfo(name = "aj", desc = "(Lua;II)Ljava/lang/String;", opaque = "1500452705")
 	public static String method828(Class521 var0, int var1) {
 		try {
 			int var3 = var0.method9419();

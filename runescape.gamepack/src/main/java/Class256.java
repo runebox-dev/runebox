@@ -1,15 +1,30 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "jv")
 public class Class256 implements Class393 {
+	@ObfInfo(name = "av", desc = "[Ljv;")
 	public static Class256[] field2708;
+	@ObfInfo(name = "ab", desc = "Ljv;")
 	public static final Class256 field2697;
+	@ObfInfo(name = "ak", desc = "Ljv;")
 	public static final Class256 field2698;
+	@ObfInfo(name = "al", desc = "Ljv;")
 	public static final Class256 field2699;
+	@ObfInfo(name = "aj", desc = "Ljv;")
 	public static final Class256 field2700;
+	@ObfInfo(name = "af", desc = "Ljv;")
 	public static final Class256 field2701;
+	@ObfInfo(name = "at", desc = "Ljv;")
 	public static final Class256 field2703;
+	@ObfInfo(name = "az", desc = "Ljv;")
 	public static final Class256 field2704;
+	@ObfInfo(name = "ac", desc = "Ljv;")
 	public static final Class256 field2705;
+	@ObfInfo(name = "aa", desc = "Ljv;")
 	public static final Class256 field2706;
+	@ObfInfo(name = "ao", desc = "B")
 	public final byte field2707;
+	@ObfInfo(name = "ah", desc = "F")
 	public final float field2702;
 
 	static {
@@ -42,6 +57,7 @@ public class Class256 implements Class393 {
 		this.field2702 = var2;
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)I")
 	public int method175() {
 		return this.field2707;
 	}

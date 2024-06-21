@@ -1,4 +1,8 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "jx")
 public class Class258 {
+	@ObfInfo(name = "aq", desc = "(II)Ljl;", opaque = "-15533869")
 	public static Class246 method4922(int var0) {
 		Class246 var2 = (Class246)Class211.field2148.method5993((long)var0);
 		if (var2 != null) {
@@ -41,6 +45,7 @@ public class Class258 {
 		}
 	}
 
+	@ObfInfo(name = "au", desc = "(I)V")
 	public static void method4923() {
 		Class211.field2129.method5995();
 		Class211.field2148.method5995();

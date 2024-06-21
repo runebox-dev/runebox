@@ -1,12 +1,24 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "js")
 public class Class253 {
+	@ObfInfo(name = "at", desc = "Lja;")
 	public static Class235 field2689;
+	@ObfInfo(name = "aa", desc = "Lkp;")
 	public static Class276 field2688;
+	@ObfInfo(name = "az", desc = "[I")
 	public static int[] field2683;
+	@ObfInfo(name = "ak", desc = "[I")
 	public static int[] field2684;
+	@ObfInfo(name = "aj", desc = "[I")
 	public static int[] field2685;
+	@ObfInfo(name = "af", desc = "[I")
 	public static int[] field2687;
+	@ObfInfo(name = "al", desc = "[I")
 	public static int[] field2691;
+	@ObfInfo(name = "ac", desc = "Lja;")
 	public static final Class235 field2686;
+	@ObfInfo(name = "ab", desc = "Lja;")
 	public static final Class235 field2690;
 
 	static {
@@ -36,6 +48,7 @@ public class Class253 {
 		field2689 = field2690;
 	}
 
+	@ObfInfo(name = "ak", desc = "(Z)V")
 	public static void method4801(boolean var0) {
 		if (var0 && Class561.field5421 != null) {
 			field2689 = field2686;
@@ -45,14 +58,17 @@ public class Class253 {
 
 	}
 
+	@ObfInfo(name = "al", desc = "(Lkc;)V")
 	public static void method4783(Class263 var0) {
 		field2688.field3043 = var0;
 	}
 
+	@ObfInfo(name = "aj", desc = "(D)V")
 	public static void method4784(double var0) {
 		method4785(var0, 0, 512);
 	}
 
+	@ObfInfo(name = "az", desc = "(DII)V")
 	public static void method4785(double var0, int var2, int var3) {
 		int var4 = var2 * 128;
 
@@ -130,6 +146,7 @@ public class Class253 {
 
 	}
 
+	@ObfInfo(name = "af", desc = "(ID)I")
 	public static int method4817(int var0, double var1) {
 		double var3 = (double)(var0 >> 16) / 256.0D;
 		double var5 = (double)(var0 >> 8 & 255) / 256.0D;
@@ -143,38 +160,47 @@ public class Class253 {
 		return (var9 << 16) + (var10 << 8) + var11;
 	}
 
+	@ObfInfo(name = "aa", desc = "()I")
 	public static int method4805() {
 		return field2688.field3048;
 	}
 
+	@ObfInfo(name = "at", desc = "()I")
 	public static int method4788() {
 		return field2688.field3050;
 	}
 
+	@ObfInfo(name = "ab", desc = "()I")
 	public static int method4840() {
 		return field2688.field3037;
 	}
 
+	@ObfInfo(name = "ac", desc = "()I")
 	public static int method4789() {
 		return field2688.field3054;
 	}
 
+	@ObfInfo(name = "ao", desc = "()I")
 	public static int method4790() {
 		return field2688.field3056;
 	}
 
+	@ObfInfo(name = "ah", desc = "()I")
 	public static int method4854() {
 		return field2688.field3055;
 	}
 
+	@ObfInfo(name = "av", desc = "()I")
 	public static int method4792() {
 		return field2688.field3042;
 	}
 
+	@ObfInfo(name = "aq", desc = "()I")
 	public static int method4863() {
 		return field2688.field3051;
 	}
 
+	@ObfInfo(name = "ap", desc = "([III[F)V")
 	public static void method4794(int[] var0, int var1, int var2, float[] var3) {
 		if (var3 == null && field2689 == field2686) {
 			field2689 = field2690;
@@ -183,10 +209,12 @@ public class Class253 {
 		field2689.method4512(var0, var1, var2, var3);
 	}
 
+	@ObfInfo(name = "ae", desc = "()V")
 	public static void method4851() {
 		method4796(Class561.field5424, Class561.field5422, Class561.field5425, Class561.field5419);
 	}
 
+	@ObfInfo(name = "ax", desc = "(IIII)V")
 	public static void method4796(int var0, int var1, int var2, int var3) {
 		field2688.field3051 = var2 - var0;
 		field2688.field3052 = var3 - var1;
@@ -204,10 +232,12 @@ public class Class253 {
 
 	}
 
+	@ObfInfo(name = "ay", desc = "()V")
 	public static void method4797() {
 		field2688.method5550();
 	}
 
+	@ObfInfo(name = "au", desc = "(II)V")
 	public static void method4798(int var0, int var1) {
 		int var2 = field2688.field3057[0];
 		int var3 = var2 / Class87.field5423;
@@ -215,30 +245,37 @@ public class Class253 {
 		field2688.method5549(var0, var4, var1, var3);
 	}
 
+	@ObfInfo(name = "as", desc = "(III)V")
 	public static void method4781(int var0, int var1, int var2) {
 		field2688.method5552(var0, var1, var2);
 	}
 
+	@ObfInfo(name = "aw", desc = "(IIIIIIFFFIII)V")
 	public static void method4800(int var0, int var1, int var2, int var3, int var4, int var5, float var6, float var7, float var8, int var9, int var10, int var11) {
 		field2689.method4524(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9, var10, var11);
 	}
 
+	@ObfInfo(name = "ad", desc = "(IIIIIIFFFI)V")
 	public static void method4831(int var0, int var1, int var2, int var3, int var4, int var5, float var6, float var7, float var8, int var9) {
 		field2689.method4518(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9);
 	}
 
+	@ObfInfo(name = "ai", desc = "(IIIIIIFFFIIIIIIIIIIIII)V")
 	public static void method4802(int var0, int var1, int var2, int var3, int var4, int var5, float var6, float var7, float var8, int var9, int var10, int var11, int var12, int var13, int var14, int var15, int var16, int var17, int var18, int var19, int var20, int var21) {
 		field2689.method4519(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9, var10, var11, var12, var13, var14, var15, var16, var17, var18, var19, var20, var21);
 	}
 
+	@ObfInfo(name = "an", desc = "(IIIIIIFFFIIIIIIIIIIIII)V")
 	public static void method4803(int var0, int var1, int var2, int var3, int var4, int var5, float var6, float var7, float var8, int var9, int var10, int var11, int var12, int var13, int var14, int var15, int var16, int var17, int var18, int var19, int var20, int var21) {
 		field2689.method4520(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9, var10, var11, var12, var13, var14, var15, var16, var17, var18, var19, var20, var21);
 	}
 
+	@ObfInfo(name = "am", desc = "(IIIIIIFFFIIIBBBB)V")
 	public static void method4804(int var0, int var1, int var2, int var3, int var4, int var5, float var6, float var7, float var8, int var9, int var10, int var11, byte var12, byte var13, byte var14, byte var15) {
 		field2689.method4515(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9, var10, var11, var12, var13, var14, var15);
 	}
 
+	@ObfInfo(name = "ar", desc = "(IIIIIIFFFIBBBB)V")
 	public static void method4842(int var0, int var1, int var2, int var3, int var4, int var5, float var6, float var7, float var8, int var9, byte var10, byte var11, byte var12, byte var13) {
 		field2689.method4516(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9, var10, var11, var12, var13);
 	}

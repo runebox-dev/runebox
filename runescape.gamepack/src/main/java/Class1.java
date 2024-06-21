@@ -1,19 +1,24 @@
+import io.runebox.ObfInfo;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+@ObfInfo(name = "aa")
 public class Class1 implements Class10 {
+	@ObfInfo(name = "ak", desc = "Ljava/security/MessageDigest;")
 	public final MessageDigest field2;
 
 	public Class1(Class3 var1) {
 		this.field2 = this.method1();
 	}
 
+	@ObfInfo(name = "ak", desc = "(ILjava/lang/String;J)Z")
 	public boolean method2(int var1, String var2, long var3) {
 		byte[] var5 = this.method9(var2, var3);
 		return method16(var5) >= var1;
 	}
 
+	@ObfInfo(name = "az", desc = "(Ljava/lang/String;J)[B")
 	public byte[] method9(String var1, long var2) {
 		StringBuilder var4 = new StringBuilder();
 		var4.append(var1).append(Long.toHexString(var2));
@@ -28,6 +33,7 @@ public class Class1 implements Class10 {
 		return this.field2.digest();
 	}
 
+	@ObfInfo(name = "af", desc = "()Ljava/security/MessageDigest;")
 	public MessageDigest method1() {
 		try {
 			return MessageDigest.getInstance("SHA-256");
@@ -37,6 +43,7 @@ public class Class1 implements Class10 {
 		}
 	}
 
+	@ObfInfo(name = "al", desc = "([B)I")
 	public static int method16(byte[] var0) {
 		int var1 = 0;
 
@@ -52,6 +59,7 @@ public class Class1 implements Class10 {
 		return var1;
 	}
 
+	@ObfInfo(name = "aj", desc = "(B)I")
 	public static int method4(byte var0) {
 		int var1 = 0;
 		if (var0 == 0) {

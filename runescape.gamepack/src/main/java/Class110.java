@@ -1,16 +1,23 @@
+import io.runebox.ObfInfo;
 import java.io.EOFException;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 
+@ObfInfo(name = "ef")
 public class Class110 {
+	@ObfInfo(name = "aa", desc = "Z")
 	public boolean field1404;
+	@ObfInfo(name = "aj", desc = "[Z")
 	public boolean[] field1411;
 	/** @deprecated */
 	@Deprecated
+	@ObfInfo(name = "af", desc = "[Ljava/lang/String;")
 	public String[] field1407;
+	@ObfInfo(name = "az", desc = "Ljava/util/Map;")
 	public Map field1409;
+	@ObfInfo(name = "at", desc = "J", longMultiplier = -8668677638035651351L)
 	public long field1406;
 
 	public Class110() {
@@ -34,6 +41,7 @@ public class Class110 {
 		this.method2823();
 	}
 
+	@ObfInfo(name = "ak", desc = "(IIB)V", opaque = "8")
 	public void method2814(int var1, int var2) {
 		this.field1409.put(var1, var2);
 		if (this.field1411[var1]) {
@@ -42,15 +50,18 @@ public class Class110 {
 
 	}
 
+	@ObfInfo(name = "al", desc = "(II)I", opaque = "-1193056385")
 	public int method2813(int var1) {
 		Object var3 = this.field1409.get(var1);
 		return var3 instanceof Integer ? (Integer)var3 : -1;
 	}
 
+	@ObfInfo(name = "aj", desc = "(ILjava/lang/String;I)V")
 	public void method2828(int var1, String var2) {
 		this.field1409.put(var1, var2);
 	}
 
+	@ObfInfo(name = "az", desc = "(II)Ljava/lang/String;", opaque = "-2091802094")
 	public String method2854(int var1) {
 		Object var3 = this.field1409.get(var1);
 		return var3 instanceof String ? (String)var3 : "";
@@ -58,16 +69,19 @@ public class Class110 {
 
 	/** @deprecated */
 	@Deprecated
+	@ObfInfo(name = "af", desc = "(ILjava/lang/String;I)V")
 	public void method2815(int var1, String var2) {
 		this.field1407[var1] = var2;
 	}
 
 	/** @deprecated */
 	@Deprecated
+	@ObfInfo(name = "aa", desc = "(II)Ljava/lang/String;")
 	public String method2819(int var1) {
 		return this.field1407[var1];
 	}
 
+	@ObfInfo(name = "at", desc = "(I)V", opaque = "-827452952")
 	public void method2820() {
 		int var2;
 		for (var2 = 0; var2 < this.field1411.length; ++var2) {
@@ -82,10 +96,12 @@ public class Class110 {
 
 	}
 
+	@ObfInfo(name = "ab", desc = "(ZB)Lue;")
 	public Class525 method2817(boolean var1) {
 		return Class179.method2980("2", Client.field1497.field4550, var1);
 	}
 
+	@ObfInfo(name = "ac", desc = "(I)V", opaque = "2114717116")
 	public void method2821() {
 		Class525 var2 = this.method2817(true);
 
@@ -192,10 +208,11 @@ public class Class110 {
 		this.field1406 = Class327.method3047();
 	}
 
+	@ObfInfo(name = "ao", desc = "(B)V", opaque = "0")
 	public void method2823() {
 		Class525 var2 = this.method2817(false);
 
-		label218: {
+		label220: {
 			try {
 				byte[] var3 = new byte[(int)var2.method9674()];
 
@@ -208,12 +225,12 @@ public class Class110 {
 				}
 
 				Class521 var25 = new Class521(var3);
-				if (var25.field5221.length - var25.field5219 < 1) {
-					return;
-				}
+				if (var25.field5221.length - var25.field5219 >= 1) {
+					int var6 = var25.method9405();
+					if (var6 < 0 || var6 > 2) {
+						return;
+					}
 
-				int var6 = var25.method9405();
-				if (var6 >= 0 && var6 <= 2) {
 					int var7;
 					int var8;
 					int var9;
@@ -224,7 +241,7 @@ public class Class110 {
 
 						while (true) {
 							if (var8 >= var7) {
-								break label218;
+								break label220;
 							}
 
 							var9 = var25.method9407();
@@ -253,7 +270,7 @@ public class Class110 {
 
 						while (true) {
 							if (var9 >= var8) {
-								break label218;
+								break label220;
 							}
 
 							var25.method9407();
@@ -263,7 +280,7 @@ public class Class110 {
 					}
 				}
 			} catch (Exception var23) {
-				break label218;
+				break label220;
 			} finally {
 				try {
 					var2.method9672();
@@ -278,6 +295,7 @@ public class Class110 {
 		this.field1404 = false;
 	}
 
+	@ObfInfo(name = "ah", desc = "(I)V", opaque = "-1273488440")
 	public void method2839() {
 		if (this.field1404 && this.field1406 < Class327.method3047() - 60000L) {
 			this.method2821();
@@ -285,6 +303,7 @@ public class Class110 {
 
 	}
 
+	@ObfInfo(name = "av", desc = "(I)Z")
 	public boolean method2848() {
 		return this.field1404;
 	}

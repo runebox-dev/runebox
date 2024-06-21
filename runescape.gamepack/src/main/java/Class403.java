@@ -1,8 +1,16 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "pm")
 public class Class403 {
+	@ObfInfo(name = "af", desc = "Ljava/lang/String;")
 	public String field4620;
+	@ObfInfo(name = "az", desc = "Ljava/lang/String;")
 	public String field4623;
+	@ObfInfo(name = "aj", desc = "Lpg;")
 	public final Class397 field4622;
+	@ObfInfo(name = "ak", desc = "I", intMultiplier = -1304800329)
 	public final int field4624;
+	@ObfInfo(name = "al", desc = "J", longMultiplier = 5932765989518071691L)
 	public final long field4621;
 
 	public Class403(Class521 var1, byte var2, int var3) {
@@ -22,10 +30,12 @@ public class Class403 {
 		this.field4622.field4589 = var3;
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)Ljava/lang/String;")
 	public String method7540() {
 		return this.field4623;
 	}
 
+	@ObfInfo(name = "al", desc = "(I)Ljava/lang/String;")
 	public String method7535() {
 		return this.field4620;
 	}

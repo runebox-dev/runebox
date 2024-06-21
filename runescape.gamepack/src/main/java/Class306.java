@@ -1,12 +1,18 @@
+import io.runebox.ObfInfo;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 
+@ObfInfo(name = "lt")
 public class Class306 extends Class286 {
+	@ObfInfo(name = "ae", desc = "Ljava/util/HashSet;")
 	public HashSet field3238;
+	@ObfInfo(name = "ap", desc = "Ljava/util/HashSet;")
 	public HashSet field3240;
+	@ObfInfo(name = "ax", desc = "Ljava/util/List;")
 	public List field3239;
 
+	@ObfInfo(name = "cx", desc = "(Lua;Lua;IZS)V", opaque = "172")
 	public void method6147(Class521 var1, Class521 var2, int var3, boolean var4) {
 		this.method5835(var1, var3);
 		int var6 = var2.method9407();
@@ -43,6 +49,7 @@ public class Class306 extends Class286 {
 		this.method6149(var2, var4);
 	}
 
+	@ObfInfo(name = "dj", desc = "(Lua;ZI)V", opaque = "-1760184320")
 	public void method6149(Class521 var1, boolean var2) {
 		this.field3239 = new LinkedList();
 		int var4 = var1.method9407();

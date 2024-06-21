@@ -1,10 +1,20 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "vc")
 public final class Class549 extends Class561 {
+	@ObfInfo(name = "al", desc = "I")
 	public int field5353;
+	@ObfInfo(name = "aj", desc = "I")
 	public int field5354;
+	@ObfInfo(name = "at", desc = "I")
 	public int field5358;
+	@ObfInfo(name = "aa", desc = "I")
 	public int field5361;
+	@ObfInfo(name = "af", desc = "I")
 	public int field5362;
+	@ObfInfo(name = "az", desc = "I")
 	public int field5363;
+	@ObfInfo(name = "ak", desc = "[I")
 	public int[] field5357;
 
 	public Class549() {
@@ -22,6 +32,7 @@ public final class Class549 extends Class561 {
 		this.field5363 = 0;
 	}
 
+	@ObfInfo(name = "ak", desc = "()Lvc;")
 	public Class549 method9919() {
 		Class549 var1 = new Class549(this.field5353, this.field5354);
 		var1.field5361 = this.field5361;
@@ -38,6 +49,7 @@ public final class Class549 extends Class561 {
 		return var1;
 	}
 
+	@ObfInfo(name = "al", desc = "()Lvc;")
 	public Class549 method9952() {
 		Class549 var1 = new Class549(this.field5353, this.field5354);
 		var1.field5361 = this.field5361;
@@ -53,6 +65,7 @@ public final class Class549 extends Class561 {
 		return var1;
 	}
 
+	@ObfInfo(name = "aj", desc = "()Lvc;")
 	public Class549 method9921() {
 		Class549 var1 = new Class549(this.field5361, this.field5358);
 
@@ -65,10 +78,12 @@ public final class Class549 extends Class561 {
 		return var1;
 	}
 
+	@ObfInfo(name = "az", desc = "()V")
 	public void method9922() {
 		method10142(this.field5357, this.field5353, this.field5354, (float[])null);
 	}
 
+	@ObfInfo(name = "af", desc = "()V")
 	public void method9923() {
 		if (this.field5353 != this.field5361 || this.field5354 != this.field5358) {
 			int[] var1 = new int[this.field5361 * this.field5358];
@@ -87,6 +102,7 @@ public final class Class549 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "aa", desc = "(I)V")
 	public void method10012(int var1) {
 		if (this.field5353 != this.field5361 || this.field5354 != this.field5358) {
 			int var2 = var1;
@@ -127,6 +143,7 @@ public final class Class549 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "at", desc = "()V")
 	public void method9925() {
 		int[] var1 = new int[this.field5353 * this.field5354];
 		int var2 = 0;
@@ -141,6 +158,7 @@ public final class Class549 extends Class561 {
 		this.field5363 = this.field5361 - this.field5353 - this.field5363;
 	}
 
+	@ObfInfo(name = "ab", desc = "()V")
 	public void method9926() {
 		int[] var1 = new int[this.field5353 * this.field5354];
 		int var2 = 0;
@@ -155,6 +173,7 @@ public final class Class549 extends Class561 {
 		this.field5362 = this.field5358 - this.field5354 - this.field5362;
 	}
 
+	@ObfInfo(name = "ac", desc = "(I)V")
 	public void method9920(int var1) {
 		int[] var2 = new int[this.field5353 * this.field5354];
 		int var3 = 0;
@@ -181,6 +200,7 @@ public final class Class549 extends Class561 {
 		this.field5357 = var2;
 	}
 
+	@ObfInfo(name = "ao", desc = "(I)V")
 	public void method9928(int var1) {
 		for (int var2 = this.field5354 - 1; var2 > 0; --var2) {
 			int var3 = this.field5353 * var2;
@@ -194,6 +214,7 @@ public final class Class549 extends Class561 {
 
 	}
 
+	@ObfInfo(name = "ah", desc = "(II)V")
 	public void method9929(int var1, int var2) {
 		var1 += this.field5363;
 		var2 += this.field5362;
@@ -238,6 +259,7 @@ public final class Class549 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "aq", desc = "(II)V")
 	public void method10023(int var1, int var2) {
 		var1 += this.field5363;
 		var2 += this.field5362;
@@ -282,6 +304,7 @@ public final class Class549 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "ae", desc = "(IIII)V")
 	public void method9947(int var1, int var2, int var3, int var4) {
 		if (var3 > 0 && var4 > 0) {
 			int var5 = this.field5353;
@@ -345,6 +368,7 @@ public final class Class549 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "ay", desc = "(IIII)V")
 	public void method9951(int var1, int var2, int var3, int var4) {
 		if (var3 == 256) {
 			this.method10023(var1, var2);
@@ -393,6 +417,7 @@ public final class Class549 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "as", desc = "(III)V")
 	public void method9937(int var1, int var2, int var3) {
 		var1 += this.field5363;
 		var2 += this.field5362;
@@ -437,6 +462,7 @@ public final class Class549 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "ad", desc = "(IIIII)V")
 	public void method9939(int var1, int var2, int var3, int var4, int var5) {
 		if (var3 > 0 && var4 > 0) {
 			int var6 = this.field5353;
@@ -500,6 +526,7 @@ public final class Class549 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "an", desc = "(III)V")
 	public void method9941(int var1, int var2, int var3) {
 		var1 += this.field5363;
 		var2 += this.field5362;
@@ -549,6 +576,7 @@ public final class Class549 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "ag", desc = "(IIIII)V")
 	public void method9944(int var1, int var2, int var3, int var4, int var5) {
 		if (var3 > 0 && var4 > 0) {
 			int var6 = this.field5353;
@@ -617,6 +645,7 @@ public final class Class549 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "bo", desc = "(IIIIII[I[I)V")
 	public void method9975(int var1, int var2, int var3, int var4, int var5, int var6, int[] var7, int[] var8) {
 		int var9 = var2 < 0 ? -var2 : 0;
 		int var10 = this.field5354 + var2 <= var6 ? this.field5354 : var6 - var2;
@@ -664,6 +693,7 @@ public final class Class549 extends Class561 {
 
 	}
 
+	@ObfInfo(name = "bi", desc = "(IIIIIIII[I[I)V")
 	public void method9961(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int[] var9, int[] var10) {
 		try {
 			int var11 = -var3 / 2;
@@ -697,6 +727,7 @@ public final class Class549 extends Class561 {
 
 	}
 
+	@ObfInfo(name = "bt", desc = "(IIIIIIDI)V")
 	public void method10030(int var1, int var2, int var3, int var4, int var5, int var6, double var7, int var9) {
 		try {
 			int var10 = -var3 / 2;
@@ -735,10 +766,12 @@ public final class Class549 extends Class561 {
 
 	}
 
+	@ObfInfo(name = "bn", desc = "(IIII)V")
 	public void method9950(int var1, int var2, int var3, int var4) {
 		this.method10007(this.field5361 << 3, this.field5358 << 3, var1 << 4, var2 << 4, var3, var4);
 	}
 
+	@ObfInfo(name = "bw", desc = "(IIIIII)V")
 	public void method10007(int var1, int var2, int var3, int var4, int var5, int var6) {
 		if (var6 != 0) {
 			var1 -= this.field5363 << 4;
@@ -1203,6 +1236,7 @@ public final class Class549 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "bl", desc = "(IIII)V")
 	public void method9918(int var1, int var2, int var3, int var4) {
 		if (var3 <= this.field5361 && var4 <= this.field5358) {
 			int var5 = var1 + this.field5363 * var3 / this.field5361;
@@ -1324,6 +1358,7 @@ public final class Class549 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "av", desc = "([I[IIIIIII)V")
 	public static void method9930(int[] var0, int[] var1, int var2, int var3, int var4, int var5, int var6, int var7) {
 		for (int var8 = -var5; var8 < 0; ++var8) {
 			int var9;
@@ -1342,6 +1377,7 @@ public final class Class549 extends Class561 {
 
 	}
 
+	@ObfInfo(name = "ap", desc = "([I[IIIIIIII)V")
 	public static void method9932(int[] var0, int[] var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
 		int var9 = -(var5 >> 2);
 		var5 = -(var5 & 3);
@@ -1393,6 +1429,7 @@ public final class Class549 extends Class561 {
 
 	}
 
+	@ObfInfo(name = "ax", desc = "([I[IIIIIIIIIII)V")
 	public static void method9972(int[] var0, int[] var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11) {
 		int var12 = var3;
 
@@ -1417,6 +1454,7 @@ public final class Class549 extends Class561 {
 
 	}
 
+	@ObfInfo(name = "au", desc = "([I[IIIIIIIIII)V")
 	public static void method9936(int[] var0, int[] var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10) {
 		int var11 = 256 - var9;
 		int var12 = (var10 & 16711935) * var11 & -16711936;
@@ -1441,6 +1479,7 @@ public final class Class549 extends Class561 {
 
 	}
 
+	@ObfInfo(name = "aw", desc = "([I[IIIIIIIII)V")
 	public static void method9938(int[] var0, int[] var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
 		int var10 = 256 - var9;
 
@@ -1461,6 +1500,7 @@ public final class Class549 extends Class561 {
 
 	}
 
+	@ObfInfo(name = "ai", desc = "([I[IIIIIIIIIIII)V")
 	public static void method9940(int[] var0, int[] var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12) {
 		int var13 = 256 - var12;
 		int var14 = var3;
@@ -1487,6 +1527,7 @@ public final class Class549 extends Class561 {
 
 	}
 
+	@ObfInfo(name = "am", desc = "(III[I[IIIIIIIII)V")
 	public static void method10032(int var0, int var1, int var2, int[] var3, int[] var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12) {
 		for (var8 = -var10; var8 < 0; ++var8) {
 			for (var6 = -var9; var6 < 0; ++var6) {
@@ -1508,6 +1549,7 @@ public final class Class549 extends Class561 {
 
 	}
 
+	@ObfInfo(name = "ar", desc = "(III[I[IIIIIIIIII)V")
 	public static void method9943(int var0, int var1, int var2, int[] var3, int[] var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12, int var13) {
 		for (var8 = -var10; var8 < 0; ++var8) {
 			for (var6 = -var9; var6 < 0; ++var6) {
@@ -1531,6 +1573,7 @@ public final class Class549 extends Class561 {
 
 	}
 
+	@ObfInfo(name = "bs", desc = "(IIII[I[IIIIIIIIIII)V")
 	public static void method9945(int var0, int var1, int var2, int var3, int[] var4, int[] var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12, int var13, int var14, int var15) {
 		for (int var16 = var3; var8 < 0; ++var8) {
 			var7 = (var9 >> 16) * var15;
@@ -1557,6 +1600,7 @@ public final class Class549 extends Class561 {
 
 	}
 
+	@ObfInfo(name = "bf", desc = "(IIII[I[IIIIIIIIIIII)V")
 	public static void method9946(int var0, int var1, int var2, int var3, int[] var4, int[] var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12, int var13, int var14, int var15, int var16) {
 		for (int var17 = var3; var8 < 0; ++var8) {
 			var7 = (var9 >> 16) * var15;

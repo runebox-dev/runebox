@@ -1,14 +1,24 @@
+import io.runebox.ObfInfo;
 import java.io.IOException;
 import java.io.OutputStream;
 
+@ObfInfo(name = "sr")
 public class Class486 implements Runnable {
+	@ObfInfo(name = "ab", desc = "Z")
 	public boolean field4971;
+	@ObfInfo(name = "az", desc = "[B")
 	public byte[] field4968;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = -1075813443)
 	public int field4969;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = -1983328937)
 	public int field4970;
+	@ObfInfo(name = "af", desc = "I", intMultiplier = -2082251661)
 	public int field4972;
+	@ObfInfo(name = "at", desc = "Ljava/io/IOException;")
 	public IOException field4974;
+	@ObfInfo(name = "al", desc = "Ljava/io/OutputStream;")
 	public OutputStream field4973;
+	@ObfInfo(name = "ak", desc = "Ljava/lang/Thread;")
 	public Thread field4975;
 
 	public Class486(OutputStream var1, int var2) {
@@ -22,6 +32,7 @@ public class Class486 implements Runnable {
 		this.field4975.start();
 	}
 
+	@ObfInfo(name = "ak", desc = "(B)Z", opaque = "79")
 	public boolean method8886() {
 		if (this.field4971) {
 			try {
@@ -41,6 +52,7 @@ public class Class486 implements Runnable {
 		}
 	}
 
+	@ObfInfo(desc = "()V")
 	public void run() {
 		do {
 			int var1;
@@ -101,6 +113,7 @@ public class Class486 implements Runnable {
 
 	}
 
+	@ObfInfo(name = "al", desc = "([BIII)V", opaque = "-2147483641")
 	public void method8887(byte[] var1, int var2, int var3) throws IOException {
 		if (var3 >= 0 && var2 >= 0 && var3 + var2 <= var1.length) {
 			synchronized(this) {
@@ -135,6 +148,7 @@ public class Class486 implements Runnable {
 		}
 	}
 
+	@ObfInfo(name = "aj", desc = "(I)V")
 	public void method8898() {
 		synchronized(this) {
 			this.field4971 = true;

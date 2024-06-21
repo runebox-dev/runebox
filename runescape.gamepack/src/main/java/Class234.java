@@ -1,14 +1,21 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "iz")
 public class Class234 extends Class507 {
+	@ObfInfo(name = "al", desc = "Llm;")
 	public static Class299 field2505;
+	@ObfInfo(name = "aj", desc = "Ltu;")
 	public Class515 field2506;
 
 	static {
 		field2505 = new Class299(64);
 	}
 
+	@ObfInfo(name = "aj", desc = "(I)V")
 	public void method4488() {
 	}
 
+	@ObfInfo(name = "az", desc = "(Lua;I)V", opaque = "64719232")
 	public void method4489(Class521 var1) {
 		while (true) {
 			int var3 = var1.method9405();
@@ -20,6 +27,7 @@ public class Class234 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "af", desc = "(Lua;IB)V", opaque = "-1")
 	public void method4490(Class521 var1, int var2) {
 		if (var2 == 249) {
 			this.field2506 = Class95.method2487(var1, this.field2506);
@@ -27,6 +35,7 @@ public class Class234 extends Class507 {
 
 	}
 
+	@ObfInfo(name = "aa", desc = "(III)I", opaque = "1962444475")
 	public int method4491(int var1, int var2) {
 		Class515 var5 = this.field2506;
 		int var4;
@@ -44,10 +53,12 @@ public class Class234 extends Class507 {
 		return var4;
 	}
 
+	@ObfInfo(name = "at", desc = "(ILjava/lang/String;I)Ljava/lang/String;")
 	public String method4492(int var1, String var2) {
 		return Class188.method2595(this.field2506, var1, var2);
 	}
 
+	@ObfInfo(desc = "(I)LClass234;")
 	public static Class234 method2604(int var0) {
 		Class234 var2 = (Class234)field2505.method5993((long)var0);
 		if (var2 != null) {

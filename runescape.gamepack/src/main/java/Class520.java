@@ -1,8 +1,13 @@
+import io.runebox.ObfInfo;
 import java.util.HashMap;
 
+@ObfInfo(name = "tz")
 public class Class520 {
+	@ObfInfo(name = "al", desc = "Lor;")
 	public Class382 field5212;
+	@ObfInfo(name = "ak", desc = "Lor;")
 	public Class382 field5214;
+	@ObfInfo(name = "aj", desc = "Ljava/util/HashMap;")
 	public HashMap field5213;
 
 	public Class520(Class382 var1, Class382 var2) {
@@ -11,6 +16,7 @@ public class Class520 {
 		this.field5213 = new HashMap();
 	}
 
+	@ObfInfo(name = "ak", desc = "([Ltc;I)Ljava/util/HashMap;", opaque = "-411117179")
 	public HashMap method9383(Class497[] var1) {
 		HashMap var3 = new HashMap();
 

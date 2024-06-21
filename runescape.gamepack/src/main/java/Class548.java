@@ -1,3 +1,4 @@
+import io.runebox.ObfInfo;
 import java.applet.Applet;
 import java.io.BufferedReader;
 import java.io.DataInputStream;
@@ -7,13 +8,21 @@ import java.io.StringReader;
 import java.io.StringWriter;
 import java.net.URL;
 
+@ObfInfo(name = "vb")
 public class Class548 extends RuntimeException {
+	@ObfInfo(desc = "I", intMultiplier = -2084016401)
 	public static int field5223;
+	@ObfInfo(name = "az", desc = "I", intMultiplier = 1257272621)
 	public static int field5348;
+	@ObfInfo(name = "ak", desc = "Ljava/applet/Applet;")
 	public static Applet field5351;
+	@ObfInfo(desc = "Ljava/lang/String;")
 	public static String field1900;
+	@ObfInfo(desc = "Ljava/lang/String;")
 	public static String field1908;
+	@ObfInfo(name = "aa", desc = "Ljava/lang/String;")
 	public String field5350;
+	@ObfInfo(name = "at", desc = "Ljava/lang/Throwable;")
 	public Throwable field5349;
 
 	public Class548(Throwable var1, String var2) {
@@ -21,6 +30,7 @@ public class Class548 extends RuntimeException {
 		this.field5349 = var1;
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/String;Ljava/lang/Throwable;)V")
 	public static void method8904(String var0, Throwable var1) {
 		try {
 			String var3 = "";
@@ -54,6 +64,7 @@ public class Class548 extends RuntimeException {
 
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/Throwable;)Ljava/lang/String;")
 	public static String method3057(Throwable var0) throws IOException {
 		String var2;
 		if (var0 instanceof Class548) {

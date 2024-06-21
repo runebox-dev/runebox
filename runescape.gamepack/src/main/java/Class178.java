@@ -1,14 +1,20 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "gv")
 public class Class178 extends Class190 {
+	@ObfInfo(name = "ak", desc = "J", longMultiplier = -3882657576872920681L)
 	public long field1879;
 
 	public Class178() {
 		this.field1879 = System.nanoTime();
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)V")
 	public void method3556() {
 		this.field1879 = System.nanoTime();
 	}
 
+	@ObfInfo(name = "al", desc = "(IIB)I", opaque = "127")
 	public int method3557(int var1, int var2) {
 		long var4 = 1000000L * (long)var2;
 		long var6 = this.field1879 - System.nanoTime();

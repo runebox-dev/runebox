@@ -1,8 +1,13 @@
+import io.runebox.ObfInfo;
 import java.util.Arrays;
 
+@ObfInfo(name = "nm")
 public class Class351 {
+	@ObfInfo(name = "aj", desc = "[I")
 	public static int[] field3888;
+	@ObfInfo(name = "az", desc = "[I")
 	public static int[] field3889;
+	@ObfInfo(name = "ak", desc = "[I")
 	public static int[] field3891;
 
 	static {
@@ -18,6 +23,7 @@ public class Class351 {
 		field3889 = new int[5000];
 	}
 
+	@ObfInfo(desc = "(I)I")
 	public static int method6175(int var0) {
 		Class228 var2 = Class33.method714(var0);
 		int var3 = var2.field2394;
@@ -27,6 +33,7 @@ public class Class351 {
 		return field3889[var3] >> var4 & var6;
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method4380() {
 		Arrays.fill(field3888, 0);
 		Arrays.fill(field3889, 0);

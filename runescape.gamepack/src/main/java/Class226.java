@@ -1,8 +1,16 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "ir")
 public class Class226 {
+	@ObfInfo(name = "bg", desc = "I", intMultiplier = 462939225)
 	public int field2362;
+	@ObfInfo(name = "bu", desc = "I", intMultiplier = -907414625)
 	public int field2364;
+	@ObfInfo(name = "be", desc = "I", intMultiplier = 431710865)
 	public int field2369;
+	@ObfInfo(name = "bh", desc = "I", intMultiplier = 1122138315)
 	public int field2372;
+	@ObfInfo(name = "bk", desc = "[[I")
 	public int[][] field2363;
 
 	public Class226(int var1, int var2) {
@@ -14,6 +22,7 @@ public class Class226 {
 		this.method4302();
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)V", opaque = "1687727593")
 	public void method4302() {
 		for (int var2 = 0; var2 < this.field2364; ++var2) {
 			for (int var3 = 0; var3 < this.field2372; ++var3) {
@@ -27,6 +36,7 @@ public class Class226 {
 
 	}
 
+	@ObfInfo(name = "al", desc = "(IIIIZB)V", opaque = "-1")
 	public void method4303(int var1, int var2, int var3, int var4, boolean var5) {
 		var1 -= this.field2369;
 		var2 -= this.field2362;
@@ -174,6 +184,7 @@ public class Class226 {
 
 	}
 
+	@ObfInfo(name = "aj", desc = "(IIIIZI)V", opaque = "1970370370")
 	public void method4301(int var1, int var2, int var3, int var4, boolean var5) {
 		int var7 = 256;
 		if (var5) {
@@ -195,6 +206,7 @@ public class Class226 {
 
 	}
 
+	@ObfInfo(name = "az", desc = "(III)V")
 	public void method4305(int var1, int var2) {
 		var1 -= this.field2369;
 		var2 -= this.field2362;
@@ -202,6 +214,7 @@ public class Class226 {
 		var10000[var2] |= 2097152;
 	}
 
+	@ObfInfo(name = "af", desc = "(III)V")
 	public void method4306(int var1, int var2) {
 		var1 -= this.field2369;
 		var2 -= this.field2362;
@@ -209,11 +222,13 @@ public class Class226 {
 		var10000[var2] |= 262144;
 	}
 
+	@ObfInfo(name = "aa", desc = "(IIII)V")
 	public void method4307(int var1, int var2, int var3) {
 		int[] var10000 = this.field2363[var1];
 		var10000[var2] |= var3;
 	}
 
+	@ObfInfo(name = "at", desc = "(IIIIZI)V", opaque = "761211736")
 	public void method4324(int var1, int var2, int var3, int var4, boolean var5) {
 		var1 -= this.field2369;
 		var2 -= this.field2362;
@@ -361,6 +376,7 @@ public class Class226 {
 
 	}
 
+	@ObfInfo(name = "ab", desc = "(IIIIIZI)V", opaque = "1270669828")
 	public void method4308(int var1, int var2, int var3, int var4, int var5, boolean var6) {
 		int var8 = 33554688;
 		if (var6) {
@@ -388,11 +404,13 @@ public class Class226 {
 
 	}
 
+	@ObfInfo(name = "ac", desc = "(IIIB)V")
 	public void method4309(int var1, int var2, int var3) {
 		int[] var10000 = this.field2363[var1];
 		var10000[var2] &= ~var3;
 	}
 
+	@ObfInfo(name = "ao", desc = "(III)V")
 	public void method4316(int var1, int var2) {
 		var1 -= this.field2369;
 		var2 -= this.field2362;

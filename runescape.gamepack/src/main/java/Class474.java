@@ -1,11 +1,18 @@
+import io.runebox.ObfInfo;
 import java.io.EOFException;
 import java.io.IOException;
 
+@ObfInfo(name = "sf")
 public final class Class474 {
+	@ObfInfo(name = "ak", desc = "[B")
 	public static byte[] field4935;
+	@ObfInfo(name = "aj", desc = "Luh;")
 	public Class528 field4934;
+	@ObfInfo(name = "al", desc = "Luh;")
 	public Class528 field4937;
+	@ObfInfo(name = "af", desc = "I", intMultiplier = 1885671407)
 	public int field4933;
+	@ObfInfo(name = "az", desc = "I", intMultiplier = 478580771)
 	public int field4936;
 
 	static {
@@ -22,6 +29,7 @@ public final class Class474 {
 		this.field4933 = var4;
 	}
 
+	@ObfInfo(name = "ak", desc = "(II)[B", opaque = "15658733")
 	public byte[] method8676(int var1) {
 		synchronized(this.field4937) {
 			Object var10000;
@@ -116,6 +124,7 @@ public final class Class474 {
 		}
 	}
 
+	@ObfInfo(name = "al", desc = "(I[BII)Z", opaque = "1483944991")
 	public boolean method8684(int var1, byte[] var2, int var3) {
 		synchronized(this.field4937) {
 			if (var3 >= 0 && var3 <= this.field4933) {
@@ -131,6 +140,7 @@ public final class Class474 {
 		}
 	}
 
+	@ObfInfo(name = "aj", desc = "(I[BIZI)Z", opaque = "2085119404")
 	public boolean method8678(int var1, byte[] var2, int var3, boolean var4) {
 		synchronized(this.field4937) {
 			try {
@@ -286,6 +296,7 @@ public final class Class474 {
 		}
 	}
 
+	@ObfInfo(desc = "()Ljava/lang/String;")
 	public String toString() {
 		return "" + this.field4936;
 	}

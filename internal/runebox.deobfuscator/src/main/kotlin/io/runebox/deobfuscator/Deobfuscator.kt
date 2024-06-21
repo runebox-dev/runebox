@@ -47,7 +47,7 @@ class Deobfuscator(
         register<UnusedClassRemover>()
         register<GetPathErrorFixer>()
         register<GetWindowErrorFixer>()
-        //register<ObfInfoAnnotationAdder>()
+        register<ObfInfoAnnotationAdder>()
 
         /**
          * ===== REGISTER TRANSFORMERS - END =====

@@ -1,25 +1,50 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "do")
 public final class Class93 {
+	@ObfInfo(desc = "LClass382;")
 	public static Class382 field2417;
+	@ObfInfo(desc = "[[[B")
 	public static byte[][][] field1938;
+	@ObfInfo(desc = "[[[B")
 	public static byte[][][] field2637;
+	@ObfInfo(desc = "[[[B")
 	public static byte[][][] field3973;
+	@ObfInfo(name = "ak", desc = "I", intMultiplier = 426206599)
 	public static int field1241;
+	@ObfInfo(name = "an", desc = "I", intMultiplier = 1511509861)
 	public static int field1246;
+	@ObfInfo(name = "am", desc = "I", intMultiplier = -1397851693)
 	public static int field1247;
+	@ObfInfo(name = "ao", desc = "[I")
 	public static int[] field1238;
+	@ObfInfo(name = "av", desc = "[I")
 	public static int[] field1239;
+	@ObfInfo(desc = "[I")
 	public static int[] field1615;
+	@ObfInfo(desc = "[I")
 	public static int[] field2094;
+	@ObfInfo(desc = "[I")
 	public static int[] field2189;
+	@ObfInfo(desc = "[[I")
 	public static int[][] field108;
+	@ObfInfo(desc = "[[[I")
 	public static int[][][] field4809;
+	@ObfInfo(name = "aj", desc = "[[[S")
 	public static short[][][] field1237;
+	@ObfInfo(desc = "[[[S")
 	public static short[][][] field1926;
+	@ObfInfo(name = "au", desc = "[I")
 	public static final int[] field1236;
+	@ObfInfo(name = "as", desc = "[I")
 	public static final int[] field1242;
+	@ObfInfo(name = "aw", desc = "[I")
 	public static final int[] field1243;
+	@ObfInfo(name = "ad", desc = "[I")
 	public static final int[] field1244;
+	@ObfInfo(name = "ai", desc = "[I")
 	public static final int[] field1245;
+	@ObfInfo(name = "ay", desc = "[I")
 	public static final int[] field1248;
 
 	static {
@@ -34,6 +59,7 @@ public final class Class93 {
 		field1247 = (int)(Math.random() * 33.0D) - 16;
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method7690() {
 		field1241 = 99;
 		field1926 = new short[4][104][104];
@@ -50,6 +76,7 @@ public final class Class93 {
 		field1239 = new int[104];
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method2966() {
 		field1926 = (short[][][])null;
 		field1237 = (short[][][])null;
@@ -65,6 +92,7 @@ public final class Class93 {
 		field1239 = null;
 	}
 
+	@ObfInfo(desc = "(LClass98;IIII)V")
 	public static void method4167(Class98 var0, int var1, int var2, int var3, int var4) {
 		int[][][] var6 = var0.field1291;
 		int var7 = var0.field1298 - 1;
@@ -95,6 +123,7 @@ public final class Class93 {
 
 	}
 
+	@ObfInfo(desc = "(LClass98;[BIIII)V")
 	public static void method8967(Class98 var0, byte[] var1, int var2, int var3, int var4, int var5) {
 		int var8;
 		int var9;
@@ -125,6 +154,7 @@ public final class Class93 {
 
 	}
 
+	@ObfInfo(desc = "(LClass98;[BIIIIIIIII)V")
 	public static void method2888(Class98 var0, byte[] var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10) {
 		Class226[] var12 = var0.field1284;
 		int var14;
@@ -173,6 +203,7 @@ public final class Class93 {
 
 	}
 
+	@ObfInfo(desc = "([[[IIII)V")
 	public static void method4052(int[][][] var0, int var1, int var2, int var3) {
 		int var5;
 		for (var5 = 0; var5 < 8; ++var5) {
@@ -203,6 +234,7 @@ public final class Class93 {
 
 	}
 
+	@ObfInfo(desc = "(LClass98;LClass521;IIIIII)V")
 	public static void method3245(Class98 var0, Class521 var1, int var2, int var3, int var4, int var5, int var6, int var7) {
 		int[][][] var9 = var0.field1291;
 		byte[][][] var10 = var0.field1292;
@@ -265,6 +297,7 @@ public final class Class93 {
 
 	}
 
+	@ObfInfo(desc = "([BII)Z")
 	public static boolean method8829(byte[] var0, int var1, int var2) {
 		boolean var4 = true;
 		Class521 var5 = new Class521(var0);
@@ -318,6 +351,7 @@ public final class Class93 {
 		}
 	}
 
+	@ObfInfo(desc = "(LClass98;[BII)V")
 	public static void method3258(Class98 var0, byte[] var1, int var2, int var3) {
 		Class521 var5 = new Class521(var1);
 		int var6 = -1;
@@ -363,6 +397,7 @@ public final class Class93 {
 		}
 	}
 
+	@ObfInfo(name = "ao", desc = "(Ldt;[BIIIIIII)V")
 	public static void method2432(Class98 var0, byte[] var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
 		Class521 var9 = new Class521(var1);
 		int var10 = -1;
@@ -457,6 +492,7 @@ public final class Class93 {
 		}
 	}
 
+	@ObfInfo(desc = "(LClass98;IIIIIILClass226;)V")
 	public static void method3110(Class98 var0, int var1, int var2, int var3, int var4, int var5, int var6, Class226 var7) {
 		if (!Client.field599 || 0 != (var0.field1292[0][var2][var3] & 2) || 0 == (var0.field1292[var1][var2][var3] & 16)) {
 			if (var1 < field1241) {
@@ -817,6 +853,7 @@ public final class Class93 {
 		}
 	}
 
+	@ObfInfo(desc = "(LClass98;)V")
 	public static void method9902(Class98 var0) {
 		int var2 = var0.field1298;
 		int var3 = var0.field1282;
@@ -1313,6 +1350,7 @@ public final class Class93 {
 
 	}
 
+	@ObfInfo(desc = "(LClass98;III)I")
 	public static int method6728(Class98 var0, int var1, int var2, int var3) {
 		if ((var0.field1292[var1][var2][var3] & 8) != 0) {
 			return 0;
@@ -1321,6 +1359,7 @@ public final class Class93 {
 		}
 	}
 
+	@ObfInfo(desc = "(II)I")
 	public static int method3708(int var0, int var1) {
 		int var3 = method107(var0 + 45365, var1 + 91923, 4) - 128 + (method107(var0 + 10294, var1 + 37821, 2) - 128 >> 1) + (method107(var0, var1, 1) - 128 >> 2);
 		var3 = 35 + (int)((double)var3 * 0.3D);
@@ -1333,6 +1372,7 @@ public final class Class93 {
 		return var3;
 	}
 
+	@ObfInfo(desc = "(III)I")
 	public static int method107(int var0, int var1, int var2) {
 		int var4 = var0 / var2;
 		int var5 = var0 & var2 - 1;
@@ -1351,6 +1391,7 @@ public final class Class93 {
 		return var16;
 	}
 
+	@ObfInfo(desc = "(II)I")
 	public static int method4759(int var0, int var1) {
 		int var3 = method2971(var0 - 1, var1 - 1) + method2971(var0 + 1, var1 - 1) + method2971(var0 - 1, var1 + 1) + method2971(var0 + 1, var1 + 1);
 		int var4 = method2971(var0 - 1, var1) + method2971(var0 + 1, var1) + method2971(var0, var1 - 1) + method2971(var0, var1 + 1);
@@ -1358,6 +1399,7 @@ public final class Class93 {
 		return var5 / 4 + var4 / 8 + var3 / 16;
 	}
 
+	@ObfInfo(desc = "(II)I")
 	public static int method2971(int var0, int var1) {
 		int var3 = var1 * 57 + var0;
 		var3 ^= var3 << 13;
@@ -1365,6 +1407,7 @@ public final class Class93 {
 		return var4 >> 19 & 255;
 	}
 
+	@ObfInfo(desc = "(II)I")
 	public static int method7706(int var0, int var1) {
 		if (var0 == -1) {
 			return 12345678;
@@ -1380,6 +1423,7 @@ public final class Class93 {
 		}
 	}
 
+	@ObfInfo(desc = "(II)I")
 	public static int method114(int var0, int var1) {
 		if (var0 == -2) {
 			return 12345678;
@@ -1403,6 +1447,7 @@ public final class Class93 {
 		}
 	}
 
+	@ObfInfo(desc = "(III)I")
 	public static int method7796(int var0, int var1, int var2) {
 		if (var2 > 179) {
 			var1 /= 2;
@@ -1424,6 +1469,7 @@ public final class Class93 {
 		return var4;
 	}
 
+	@ObfInfo(desc = "(LClass98;IIIIIIIILClass226;)V")
 	public static void method6307(Class98 var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, Class226 var9) {
 		Class222 var11 = Class222.method4161(var5);
 		int var12 = var8 >= 0 ? var8 : var11.field2260;

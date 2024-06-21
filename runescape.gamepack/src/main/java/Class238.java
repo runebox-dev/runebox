@@ -1,14 +1,28 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "jd")
 public class Class238 {
+	@ObfInfo(name = "aj", desc = "[I")
 	public static int[] field2571;
+	@ObfInfo(name = "al", desc = "[I")
 	public static int[] field2572;
+	@ObfInfo(name = "az", desc = "[I")
 	public static int[] field2575;
+	@ObfInfo(name = "ak", desc = "[I")
 	public static int[] field2576;
+	@ObfInfo(name = "af", desc = "Ljn;")
 	public Class248 field2573;
+	@ObfInfo(name = "ah", desc = "Z")
 	public boolean field2579;
+	@ObfInfo(name = "aa", desc = "I")
 	public int field2574;
+	@ObfInfo(name = "at", desc = "[I")
 	public int[] field2569;
+	@ObfInfo(name = "ab", desc = "[I")
 	public int[] field2570;
+	@ObfInfo(name = "ac", desc = "[I")
 	public int[] field2577;
+	@ObfInfo(name = "ao", desc = "[I")
 	public int[] field2578;
 
 	static {

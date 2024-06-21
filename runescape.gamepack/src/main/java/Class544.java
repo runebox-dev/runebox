@@ -1,14 +1,28 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "ux")
 public class Class544 {
+	@ObfInfo(name = "aj", desc = "Lux;")
 	public static final Class544 field5322;
+	@ObfInfo(name = "ak", desc = "Lux;")
 	public static final Class544 field5324;
+	@ObfInfo(name = "az", desc = "Lux;")
 	public static final Class544 field5325;
+	@ObfInfo(name = "al", desc = "Lux;")
 	public static final Class544 field5326;
+	@ObfInfo(name = "aa", desc = "Lux;")
 	public static final Class544 field5327;
+	@ObfInfo(name = "at", desc = "Lux;")
 	public static final Class544 field5328;
+	@ObfInfo(name = "ab", desc = "Lux;")
 	public static final Class544 field5329;
+	@ObfInfo(name = "ac", desc = "Lux;")
 	public static final Class544 field5330;
+	@ObfInfo(name = "af", desc = "Lux;")
 	public static final Class544 field5331;
+	@ObfInfo(name = "ao", desc = "I", intMultiplier = 781445249)
 	public final int field5323;
+	@ObfInfo(name = "ah", desc = "Ljava/lang/String;")
 	public final String field5332;
 
 	static {
@@ -33,6 +47,7 @@ public class Class544 {
 		this.field5332 = var4;
 	}
 
+	@ObfInfo(desc = "()Ljava/lang/String;")
 	public String toString() {
 		return this.field5332;
 	}

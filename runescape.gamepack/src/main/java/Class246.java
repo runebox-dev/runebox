@@ -1,4 +1,8 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "jl")
 public class Class246 extends Class507 {
+	@ObfInfo(name = "ak", desc = "[Ljd;")
 	public Class238[] field2645;
 
 	public Class246(Class382 var1, Class382 var2, int var3, boolean var4) {
@@ -36,6 +40,7 @@ public class Class246 extends Class507 {
 
 	}
 
+	@ObfInfo(name = "ak", desc = "(IB)Z")
 	public boolean method4757(int var1) {
 		return this.field2645[var1].field2579;
 	}

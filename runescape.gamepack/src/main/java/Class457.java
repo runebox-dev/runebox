@@ -1,10 +1,20 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "ro")
 public class Class457 extends Class479 {
+	@ObfInfo(name = "aa", desc = "B")
 	public byte field4860;
+	@ObfInfo(name = "at", desc = "I", intMultiplier = 1584426961)
 	public int field4861;
+	@ObfInfo(name = "ab", desc = "I", intMultiplier = -1512347247)
 	public int field4862;
+	@ObfInfo(name = "af", desc = "Ljava/lang/String;")
 	public String field4855;
+	@ObfInfo(name = "az", desc = "Ljava/lang/String;")
 	public String field4858;
+	@ObfInfo(name = "aj", desc = "Lrn;")
 	public final Class456 field4857;
+	@ObfInfo(name = "al", desc = "Lux;")
 	public final Class544 field4856;
 
 	public Class457(Class544 var1, Class456 var2) {
@@ -16,14 +26,17 @@ public class Class457 extends Class479 {
 		this.field4857 = var2;
 	}
 
+	@ObfInfo(name = "ak", desc = "(B)Lsg;")
 	public Class475 method8483() {
 		return new Class482();
 	}
 
+	@ObfInfo(name = "al", desc = "(II)[Lsg;")
 	public Class475[] method8457(int var1) {
 		return new Class482[var1];
 	}
 
+	@ObfInfo(name = "aj", desc = "(Ljava/lang/String;I)V", opaque = "-185368692")
 	public final void method8458(String var1) {
 		long var6 = 0L;
 		int var8 = var1.length();
@@ -56,6 +69,7 @@ public class Class457 extends Class479 {
 		this.field4858 = var11;
 	}
 
+	@ObfInfo(name = "at", desc = "(Ljava/lang/String;S)V", opaque = "16383")
 	public final void method8459(String var1) {
 		long var6 = 0L;
 		int var8 = var1.length();
@@ -88,6 +102,7 @@ public class Class457 extends Class479 {
 		this.field4855 = var11;
 	}
 
+	@ObfInfo(name = "ah", desc = "(Lua;II)V", opaque = "755505003")
 	public final void method8460(Class521 var1, int var2) {
 		this.method8459(var1.method9415());
 		long var4 = var1.method9411();
@@ -148,6 +163,7 @@ public class Class457 extends Class479 {
 		}
 	}
 
+	@ObfInfo(name = "av", desc = "(Lua;I)V", opaque = "1485188490")
 	public final void method8461(Class521 var1) {
 		Class567 var3 = new Class567(var1.method9415(), this.field4856);
 		int var4 = var1.method9407();
@@ -185,6 +201,7 @@ public class Class457 extends Class479 {
 
 	}
 
+	@ObfInfo(name = "aq", desc = "(I)V", opaque = "888196496")
 	public final void method8478() {
 		for (int var2 = 0; var2 < this.method8761(); ++var2) {
 			((Class482)this.method8781(var2)).method8839();
@@ -192,6 +209,7 @@ public class Class457 extends Class479 {
 
 	}
 
+	@ObfInfo(name = "ap", desc = "(B)V", opaque = "0")
 	public final void method8479() {
 		for (int var2 = 0; var2 < this.method8761(); ++var2) {
 			((Class482)this.method8781(var2)).method8842();
@@ -199,6 +217,7 @@ public class Class457 extends Class479 {
 
 	}
 
+	@ObfInfo(name = "ae", desc = "(Lsn;B)V", opaque = "9")
 	public final void method8464(Class482 var1) {
 		if (var1.method8703().equals(this.field4857.method1226())) {
 			this.field4861 = var1.field4961;

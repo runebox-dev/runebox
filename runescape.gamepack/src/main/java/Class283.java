@@ -1,9 +1,18 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "kw")
 public class Class283 extends Class305 {
+	@ObfInfo(name = "az", desc = "Llh;")
 	public Class294 field3109;
+	@ObfInfo(name = "af", desc = "I", intMultiplier = -1038049103)
 	public int field3106;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = 1836164871)
 	public int field3108;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = 91279571)
 	public int field3111;
+	@ObfInfo(name = "al", desc = "Lks;")
 	public final Class279 field3110;
+	@ObfInfo(name = "ak", desc = "I", intMultiplier = -1428899307)
 	public final int field3107;
 
 	public Class283(Class348 var1, Class348 var2, int var3, Class279 var4) {
@@ -13,6 +22,7 @@ public class Class283 extends Class305 {
 		this.method5738();
 	}
 
+	@ObfInfo(name = "ak", desc = "(S)V", opaque = "202")
 	public void method5738() {
 		this.field3108 = Class222.method4161(this.field3107).method4181().field2272;
 		this.field3109 = this.field3110.method5602(Class200.method3917(this.field3108));
@@ -28,18 +38,22 @@ public class Class283 extends Class305 {
 
 	}
 
+	@ObfInfo(name = "al", desc = "(I)I")
 	public int method5728() {
 		return this.field3108;
 	}
 
+	@ObfInfo(name = "aj", desc = "(B)Llh;")
 	public Class294 method5744() {
 		return this.field3109;
 	}
 
+	@ObfInfo(name = "az", desc = "(I)I")
 	public int method5732() {
 		return this.field3106;
 	}
 
+	@ObfInfo(name = "af", desc = "(I)I")
 	public int method5731() {
 		return this.field3111;
 	}

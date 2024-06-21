@@ -1,21 +1,42 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "bd")
 public class Class30 {
+	@ObfInfo(desc = "LClass382;")
 	public static Class382 field2238;
+	@ObfInfo(desc = "LClass382;")
 	public static Class382 field28;
+	@ObfInfo(name = "ae", desc = "Lba;")
 	public Class27 field156;
+	@ObfInfo(name = "bw", desc = "[Lba;")
 	public Class27[] field171;
+	@ObfInfo(name = "bl", desc = "[Lba;")
 	public Class27[] field174;
+	@ObfInfo(name = "ag", desc = "Z")
 	public boolean field162;
+	@ObfInfo(name = "ax", desc = "I", intMultiplier = -927893663)
 	public int field157;
+	@ObfInfo(name = "as", desc = "I", intMultiplier = 779817765)
 	public int field160;
+	@ObfInfo(name = "aw", desc = "I", intMultiplier = -63177569)
 	public int field161;
+	@ObfInfo(name = "ai", desc = "I", intMultiplier = 1635881985)
 	public int field163;
+	@ObfInfo(name = "an", desc = "I", intMultiplier = -117889257)
 	public int field164;
+	@ObfInfo(name = "am", desc = "I", intMultiplier = 317305953)
 	public int field165;
+	@ObfInfo(name = "au", desc = "I", intMultiplier = -781092137)
 	public int field167;
+	@ObfInfo(name = "bn", desc = "I", intMultiplier = -1098020825)
 	public int field169;
+	@ObfInfo(name = "ap", desc = "[I")
 	public int[] field159;
+	@ObfInfo(name = "ad", desc = "J", longMultiplier = 3619051364314954007L)
 	public long field158;
+	@ObfInfo(name = "ar", desc = "J", longMultiplier = 3397901339844606541L)
 	public long field166;
+	@ObfInfo(name = "ay", desc = "J", longMultiplier = -6124916407686776029L)
 	public long field173;
 
 	public Class30() {
@@ -32,10 +53,12 @@ public class Class30 {
 		this.field174 = new Class27[8];
 	}
 
+	@ObfInfo(name = "bo", desc = "(Lba;I)V")
 	public final synchronized void method401(Class27 var1) {
 		this.field156 = var1;
 	}
 
+	@ObfInfo(name = "bi", desc = "(I)V", opaque = "507705628")
 	public final synchronized void method449() {
 		if (this.field159 != null) {
 			long var2 = Class327.method3047();
@@ -123,10 +146,12 @@ public class Class30 {
 		}
 	}
 
+	@ObfInfo(name = "bt", desc = "(I)V")
 	public final void method403() {
 		this.field162 = true;
 	}
 
+	@ObfInfo(name = "bn", desc = "(I)V")
 	public final synchronized void method432() {
 		this.field162 = true;
 
@@ -139,6 +164,7 @@ public class Class30 {
 
 	}
 
+	@ObfInfo(name = "bw", desc = "(B)V", opaque = "1")
 	public final synchronized void method405() {
 		if (Class8.field80 != null) {
 			boolean var2 = true;
@@ -164,6 +190,7 @@ public class Class30 {
 		this.field159 = null;
 	}
 
+	@ObfInfo(name = "bl", desc = "(II)V", opaque = "-1437166246")
 	public final void method406(int var1) {
 		this.field169 -= var1;
 		if (this.field169 < 0) {
@@ -176,6 +203,7 @@ public class Class30 {
 
 	}
 
+	@ObfInfo(name = "be", desc = "([II)V")
 	public final void method435(int[] var1, int var2) {
 		int var3 = var2;
 		if (Client.field1887) {
@@ -288,6 +316,7 @@ public class Class30 {
 		this.field173 = Class327.method3047();
 	}
 
+	@ObfInfo(name = "bu", desc = "(Lba;II)V", opaque = "-1196303285")
 	public final void method408(Class27 var1, int var2) {
 		int var4 = var2 >> 5;
 		Class27 var5 = this.field174[var4];
@@ -301,33 +330,42 @@ public class Class30 {
 		var1.field137 = var2;
 	}
 
+	@ObfInfo(name = "ak", desc = "(B)V")
 	public void method251() throws Exception {
 	}
 
+	@ObfInfo(name = "al", desc = "(IB)V")
 	public void method250(int var1) throws Exception {
 	}
 
+	@ObfInfo(name = "aj", desc = "(I)I")
 	public int method262() throws Exception {
 		return this.field167;
 	}
 
+	@ObfInfo(name = "az", desc = "()V")
 	public void method252() throws Exception {
 	}
 
+	@ObfInfo(name = "af", desc = "(I)V")
 	public void method253() {
 	}
 
+	@ObfInfo(name = "aa", desc = "(B)V")
 	public void method254() throws Exception {
 	}
 
+	@ObfInfo(name = "az", desc = "(IB)Lco;")
 	public static Class67 method452(int var0) {
 		return (Class67)Class128.field1529.method9326((long)var0);
 	}
 
+	@ObfInfo(desc = "(LClass51;)V")
 	public static void method3934(Class51 var0) {
 		Class8.field450 = var0;
 	}
 
+	@ObfInfo(name = "ak", desc = "(Lor;Lor;ZI)V")
 	public static void method462(Class382 var0, Class382 var1, boolean var2) {
 		field2238 = var0;
 		field28 = var1;

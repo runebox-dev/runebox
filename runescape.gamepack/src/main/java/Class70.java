@@ -1,20 +1,28 @@
+import io.runebox.ObfInfo;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+@ObfInfo(name = "cr")
 public class Class70 {
+	@ObfInfo(name = "ak", desc = "Ldm;")
 	public Class91 field854;
+	@ObfInfo(name = "al", desc = "I", intMultiplier = -1297096727)
 	public int field855;
+	@ObfInfo(name = "aj", desc = "[I")
 	public int[] field856;
+	@ObfInfo(name = "az", desc = "[Ljava/lang/String;")
 	public String[] field860;
 
 	public Class70() {
 		this.field855 = -1;
 	}
 
+	@ObfInfo(name = "az", desc = "(B)[Lsy;")
 	public static Class493[] method1939() {
 		return new Class493[]{Class493.field5005, Class493.field5007, Class493.field5006, Class493.field5010};
 	}
 
+	@ObfInfo(name = "aj", desc = "(Ljava/util/ArrayList;IIIIZB)V", opaque = "5")
 	public static void method1940(ArrayList var0, int var1, int var2, int var3, int var4, boolean var5) {
 		if (!var0.isEmpty()) {
 			Class332.field3453.clear();

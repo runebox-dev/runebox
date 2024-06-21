@@ -1,10 +1,17 @@
+import io.runebox.ObfInfo;
 import java.util.Iterator;
 
+@ObfInfo(name = "tu")
 public final class Class515 implements Iterable {
+	@ObfInfo(name = "aj", desc = "Ltl;")
 	public Class506 field5196;
+	@ObfInfo(name = "az", desc = "Ltl;")
 	public Class506 field5197;
+	@ObfInfo(name = "al", desc = "[Ltl;")
 	public Class506[] field5198;
+	@ObfInfo(name = "af", desc = "I")
 	public int field5194;
+	@ObfInfo(name = "ak", desc = "I")
 	public int field5195;
 
 	public Class515(int var1) {
@@ -20,6 +27,7 @@ public final class Class515 implements Iterable {
 
 	}
 
+	@ObfInfo(name = "ak", desc = "(J)Ltl;")
 	public Class506 method9326(long var1) {
 		Class506 var3 = this.field5198[(int)(var1 & (long)(this.field5195 - 1))];
 
@@ -35,6 +43,7 @@ public final class Class515 implements Iterable {
 		return null;
 	}
 
+	@ObfInfo(name = "al", desc = "(Ltl;J)V")
 	public void method9333(Class506 var1, long var2) {
 		if (var1.field5171 != null) {
 			var1.method9277();
@@ -48,6 +57,7 @@ public final class Class515 implements Iterable {
 		var1.field5170 = var2;
 	}
 
+	@ObfInfo(name = "aj", desc = "()V")
 	public void method9328() {
 		for (int var1 = 0; var1 < this.field5195; ++var1) {
 			Class506 var2 = this.field5198[var1];
@@ -66,11 +76,13 @@ public final class Class515 implements Iterable {
 		this.field5197 = null;
 	}
 
+	@ObfInfo(name = "az", desc = "()Ltl;")
 	public Class506 method9329() {
 		this.field5194 = 0;
 		return this.method9327();
 	}
 
+	@ObfInfo(name = "af", desc = "()Ltl;")
 	public Class506 method9327() {
 		Class506 var1;
 		if (this.field5194 > 0 && this.field5197 != this.field5198[this.field5194 - 1]) {
@@ -91,6 +103,7 @@ public final class Class515 implements Iterable {
 		}
 	}
 
+	@ObfInfo(desc = "()Ljava/util/Iterator;")
 	public Iterator iterator() {
 		return new Class495(this);
 	}

@@ -1,5 +1,10 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "vf")
 public class Class551 {
+	@ObfInfo(name = "al", desc = "Ljava/lang/Object;")
 	public Object field5369;
+	@ObfInfo(name = "ak", desc = "I", intMultiplier = 1978856885)
 	public final int field5367;
 
 	public Class551(int var1) {
@@ -11,10 +16,12 @@ public class Class551 {
 		this.field5369 = var2;
 	}
 
+	@ObfInfo(desc = "()I")
 	public int hashCode() {
 		return super.hashCode();
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
 	public boolean equals(Object var1) {
 		if (!(var1 instanceof Class551)) {
 			return false;

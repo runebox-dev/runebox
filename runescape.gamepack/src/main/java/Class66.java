@@ -1,35 +1,70 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "cn")
 public class Class66 extends Class506 {
+	@ObfInfo(name = "aq", desc = "[Lbb;")
 	public static Class28[] field810;
+	@ObfInfo(name = "av", desc = "[Lbj;")
 	public static Class36[] field803;
+	@ObfInfo(name = "ah", desc = "[Lbx;")
 	public static Class50[] field808;
+	@ObfInfo(name = "at", desc = "Lci;")
 	public static Class61 field818;
+	@ObfInfo(name = "ao", desc = "[Lcw;")
 	public static Class75[] field807;
+	@ObfInfo(name = "ax", desc = "Z")
 	public static boolean field806;
+	@ObfInfo(name = "ap", desc = "[Z")
 	public static boolean[] field811;
+	@ObfInfo(name = "am", desc = "[F")
 	public static float[] field809;
+	@ObfInfo(name = "ai", desc = "[F")
 	public static float[] field819;
+	@ObfInfo(name = "an", desc = "[F")
 	public static float[] field820;
+	@ObfInfo(name = "ar", desc = "[F")
 	public static float[] field822;
+	@ObfInfo(name = "ag", desc = "[F")
 	public static float[] field823;
+	@ObfInfo(name = "bs", desc = "[F")
 	public static float[] field824;
+	@ObfInfo(name = "ab", desc = "I")
 	public static int field805;
+	@ObfInfo(name = "ac", desc = "I")
 	public static int field828;
+	@ObfInfo(name = "ae", desc = "[I")
 	public static int[] field812;
+	@ObfInfo(name = "bo", desc = "[I")
 	public static int[] field813;
+	@ObfInfo(name = "bf", desc = "[I")
 	public static int[] field825;
+	@ObfInfo(name = "aa", desc = "Z")
 	public boolean field816;
+	@ObfInfo(name = "aw", desc = "Z")
 	public boolean field817;
+	@ObfInfo(name = "bi", desc = "[B")
 	public byte[] field827;
+	@ObfInfo(name = "ak", desc = "[[B")
 	public byte[][] field804;
+	@ObfInfo(name = "ad", desc = "[F")
 	public float[] field814;
+	@ObfInfo(name = "ay", desc = "[F")
 	public float[] field826;
+	@ObfInfo(name = "bt", desc = "I")
 	public int field798;
+	@ObfInfo(name = "al", desc = "I")
 	public int field799;
+	@ObfInfo(name = "aj", desc = "I")
 	public int field800;
+	@ObfInfo(name = "az", desc = "I")
 	public int field801;
+	@ObfInfo(name = "af", desc = "I")
 	public int field802;
+	@ObfInfo(name = "au", desc = "I")
 	public int field815;
+	@ObfInfo(name = "as", desc = "I")
 	public int field821;
+	@ObfInfo(name = "bn", desc = "I")
 	public int field829;
 
 	static {
@@ -41,6 +76,7 @@ public class Class66 extends Class506 {
 		this.method1808(var1);
 	}
 
+	@ObfInfo(name = "al", desc = "([B)V")
 	public void method1808(byte[] var1) {
 		Class521 var2 = new Class521(var1);
 		this.field799 = var2.method9410();
@@ -71,6 +107,7 @@ public class Class66 extends Class506 {
 
 	}
 
+	@ObfInfo(name = "az", desc = "(I)[F")
 	public float[] method1810(int var1) {
 		Class61 var2 = new Class61();
 		var2.method1102(this.field804[var1], 0);
@@ -327,6 +364,7 @@ public class Class66 extends Class506 {
 		return var44;
 	}
 
+	@ObfInfo(name = "at", desc = "([I)Lbr;")
 	public Class44 method1817(int[] var1) {
 		if (var1 != null && var1[0] <= 0) {
 			return null;
@@ -376,6 +414,7 @@ public class Class66 extends Class506 {
 		}
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)F")
 	public static float method1814(int var0) {
 		int var1 = var0 & 2097151;
 		int var2 = var0 & Integer.MIN_VALUE;
@@ -387,6 +426,7 @@ public class Class66 extends Class506 {
 		return (float)((double)var1 * Math.pow(2.0D, (double)(var3 - 788)));
 	}
 
+	@ObfInfo(name = "aj", desc = "([B)V")
 	public static void method1809(byte[] var0) {
 		Class61 var1 = field818;
 		var1.method1102(var0, 0);
@@ -491,6 +531,7 @@ public class Class66 extends Class506 {
 
 	}
 
+	@ObfInfo(name = "af", desc = "(Lor;)Z")
 	public static boolean method1811(Class382 var0) {
 		if (!field806) {
 			byte[] var1 = var0.method7216(0, 0);
@@ -505,6 +546,7 @@ public class Class66 extends Class506 {
 		return true;
 	}
 
+	@ObfInfo(name = "aa", desc = "(Lor;II)Lcn;")
 	public static Class66 method1818(Class382 var0, int var1, int var2) {
 		if (!method1811(var0)) {
 			var0.method7232(var1, var2);

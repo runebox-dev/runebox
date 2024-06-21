@@ -1,11 +1,17 @@
+import io.runebox.ObfInfo;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
+@ObfInfo(name = "my")
 public class Class337 {
+	@ObfInfo(desc = "I", intMultiplier = 910389071)
 	public static int field1653;
+	@ObfInfo(desc = "Ljava/util/concurrent/ThreadPoolExecutor;")
 	public static ThreadPoolExecutor field155;
+	@ObfInfo(name = "al", desc = "Lck;")
 	public Class63 field3525;
+	@ObfInfo(name = "ak", desc = "I", intMultiplier = 435230045)
 	public int field3524;
 
 	public Class337(int var1, Class63 var2) {
@@ -13,6 +19,7 @@ public class Class337 {
 		this.field3525 = var2;
 	}
 
+	@ObfInfo(name = "ak", desc = "(Lor;Lor;IZI)Lfo;", opaque = "-1743362675")
 	public static Class145 method6486(Class382 var0, Class382 var1, int var2, boolean var3) {
 		boolean var5 = true;
 		byte[] var6 = var0.method7224(var2 >> 16 & 65535, var2 & 65535);

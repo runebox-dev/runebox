@@ -1,7 +1,14 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "pz")
 public class Class416 {
+	@ObfInfo(name = "al", desc = "[C")
 	public static char[] field4659;
+	@ObfInfo(name = "aj", desc = "[C")
 	public static char[] field4660;
+	@ObfInfo(name = "ak", desc = "[C")
 	public static char[] field4663;
+	@ObfInfo(name = "az", desc = "[I")
 	public static int[] field4661;
 
 	static {
@@ -80,10 +87,12 @@ public class Class416 {
 		var1[45] = 63;
 	}
 
+	@ObfInfo(desc = "([B)Ljava/lang/String;")
 	public static String method3598(byte[] var0) {
 		return method3961(var0, 0, var0.length);
 	}
 
+	@ObfInfo(desc = "([BII)Ljava/lang/String;")
 	public static String method3961(byte[] var0, int var1, int var2) {
 		StringBuilder var4 = new StringBuilder();
 

@@ -1,9 +1,14 @@
+import io.runebox.ObfInfo;
 import java.util.Calendar;
 import java.util.TimeZone;
 
+@ObfInfo(name = "ni")
 public class Class347 {
+	@ObfInfo(name = "aj", desc = "Ljava/util/Calendar;")
 	public static Calendar field3864;
+	@ObfInfo(name = "al", desc = "[Ljava/lang/String;")
 	public static final String[] field3863;
+	@ObfInfo(name = "ak", desc = "[[Ljava/lang/String;")
 	public static final String[][] field3866;
 
 	static {
@@ -13,6 +18,7 @@ public class Class347 {
 		field3864 = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
 	}
 
+	@ObfInfo(name = "af", desc = "(IIII)I")
 	public static int method6695(int var0, int var1, int var2) {
 		int var4 = Class319.method5997(var2 - var1 + 1);
 		var4 <<= var1;

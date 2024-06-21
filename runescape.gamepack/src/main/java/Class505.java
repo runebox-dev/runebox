@@ -1,4 +1,8 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "tk")
 public class Class505 {
+	@ObfInfo(name = "aa", desc = "[I")
 	public static int[] field5166;
 
 	static {
@@ -11,6 +15,7 @@ public class Class505 {
 		method9266();
 	}
 
+	@ObfInfo(name = "al", desc = "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V", opaque = "-655791540")
 	public static void method9272(int var0, String var1, String var2, String var3) {
 		Class80 var5 = (Class80)Class128.field1533.get(var0);
 		if (var5 == null) {
@@ -24,6 +29,7 @@ public class Class505 {
 		Client.field686 = Client.field677;
 	}
 
+	@ObfInfo(name = "ak", desc = "(II)I", opaque = "-303194213")
 	public static int method9264(int var0) {
 		double var2 = (double)(var0 >> 10 & 31) / 31.0D;
 		double var4 = (double)(var0 >> 5 & 31) / 31.0D;
@@ -104,6 +110,7 @@ public class Class505 {
 		return (int)(var16 * 128.0D) + (var21 << 7);
 	}
 
+	@ObfInfo(name = "al", desc = "(I)V", opaque = "273354446")
 	public static void method9266() {
 		if (Client.field5165 == null) {
 			Client.field5165 = new int[65536];
@@ -179,6 +186,7 @@ public class Class505 {
 		}
 	}
 
+	@ObfInfo(name = "aj", desc = "(IB)I")
 	public static int method9269(int var0) {
 		return 255 - (var0 & 255);
 	}

@@ -1,7 +1,10 @@
+import io.runebox.ObfInfo;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+@ObfInfo(name = "qy")
 public class Class441 extends Class447 {
+	@ObfInfo(name = "ak", desc = "Ljava/util/ArrayList;")
 	public ArrayList field4784;
 
 	public Class441(Class447 var1, ArrayList var2) {
@@ -10,6 +13,7 @@ public class Class441 extends Class447 {
 		this.field4784 = var2;
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)Z", opaque = "709593494")
 	public boolean method7832() {
 		if (this.field4784.isEmpty()) {
 			return true;

@@ -1,14 +1,28 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "jw")
 public class Class257 extends Class506 {
+	@ObfInfo(name = "ae", desc = "[I")
 	public static int[] field2726;
+	@ObfInfo(name = "aa", desc = "Z")
 	public boolean field2719;
+	@ObfInfo(name = "ap", desc = "Z")
 	public boolean field2725;
+	@ObfInfo(name = "af", desc = "I")
 	public int field2716;
+	@ObfInfo(name = "ah", desc = "I")
 	public int field2722;
+	@ObfInfo(name = "av", desc = "I")
 	public int field2723;
+	@ObfInfo(name = "aq", desc = "[I")
 	public int[] field2712;
+	@ObfInfo(name = "ao", desc = "[I")
 	public int[] field2713;
+	@ObfInfo(name = "ab", desc = "[I")
 	public int[] field2714;
+	@ObfInfo(name = "at", desc = "[I")
 	public int[] field2718;
+	@ObfInfo(name = "ac", desc = "[I")
 	public int[] field2720;
 
 	public Class257(Class521 var1) {
@@ -54,6 +68,7 @@ public class Class257 extends Class506 {
 		}
 	}
 
+	@ObfInfo(name = "ak", desc = "(DILor;)Z")
 	public boolean method4912(double var1, int var3, Class382 var4) {
 		int var5;
 		for (var5 = 0; var5 < this.field2718.length; ++var5) {
@@ -145,10 +160,12 @@ public class Class257 extends Class506 {
 		return true;
 	}
 
+	@ObfInfo(name = "al", desc = "()V")
 	public void method4913() {
 		this.field2712 = null;
 	}
 
+	@ObfInfo(name = "aj", desc = "(I)V")
 	public void method4914(int var1) {
 		if (this.field2712 != null) {
 			short var2;

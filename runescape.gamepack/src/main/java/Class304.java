@@ -1,11 +1,17 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "lr")
 public class Class304 {
+	@ObfInfo(name = "al", desc = "[[[B")
 	public byte[][][] field3226;
+	@ObfInfo(name = "ak", desc = "I", intMultiplier = -411117179)
 	public int field3227;
 
 	public Class304(int var1) {
 		this.field3227 = var1;
 	}
 
+	@ObfInfo(name = "ak", desc = "(IIIIIIIIB)V", opaque = "2")
 	public void method6099(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
 		if (var7 != 0 && 0 != this.field3227 && this.field3226 != null) {
 			var8 = this.method6070(var8, var7);
@@ -14,6 +20,7 @@ public class Class304 {
 		}
 	}
 
+	@ObfInfo(name = "al", desc = "(IIB)I", opaque = "7")
 	public int method6070(int var1, int var2) {
 		if (var2 == 9) {
 			var1 = var1 + 1 & 3;
@@ -30,6 +37,7 @@ public class Class304 {
 		return var1;
 	}
 
+	@ObfInfo(name = "aj", desc = "(IB)I", opaque = "0")
 	public int method6071(int var1) {
 		if (var1 != 9 && var1 != 10) {
 			return var1 == 11 ? 8 : var1;
@@ -38,6 +46,7 @@ public class Class304 {
 		}
 	}
 
+	@ObfInfo(name = "az", desc = "(I)V", opaque = "-1188034264")
 	public void method6087() {
 		if (this.field3226 == null) {
 			this.field3226 = new byte[8][4][];
@@ -52,6 +61,7 @@ public class Class304 {
 		}
 	}
 
+	@ObfInfo(name = "af", desc = "(I)V", opaque = "-1316781830")
 	public void method6076() {
 		byte[] var2 = new byte[this.field3227 * this.field3227];
 		int var3 = 0;
@@ -113,6 +123,7 @@ public class Class304 {
 		this.field3226[0][3] = var2;
 	}
 
+	@ObfInfo(name = "aa", desc = "(I)V", opaque = "-508008600")
 	public void method6074() {
 		byte[] var2 = new byte[this.field3227 * this.field3227];
 		int var3 = 0;
@@ -178,6 +189,7 @@ public class Class304 {
 		this.field3226[1][3] = var2;
 	}
 
+	@ObfInfo(name = "at", desc = "(I)V", opaque = "-1331040164")
 	public void method6090() {
 		byte[] var2 = new byte[this.field3227 * this.field3227];
 		int var3 = 0;
@@ -239,6 +251,7 @@ public class Class304 {
 		this.field3226[2][3] = var2;
 	}
 
+	@ObfInfo(name = "ab", desc = "(I)V", opaque = "-248639236")
 	public void method6086() {
 		byte[] var2 = new byte[this.field3227 * this.field3227];
 		int var3 = 0;
@@ -300,6 +313,7 @@ public class Class304 {
 		this.field3226[3][3] = var2;
 	}
 
+	@ObfInfo(name = "ac", desc = "(I)V", opaque = "1452648307")
 	public void method6100() {
 		byte[] var2 = new byte[this.field3227 * this.field3227];
 		int var3 = 0;
@@ -361,6 +375,7 @@ public class Class304 {
 		this.field3226[4][3] = var2;
 	}
 
+	@ObfInfo(name = "ao", desc = "(S)V", opaque = "8211")
 	public void method6078() {
 		byte[] var2 = new byte[this.field3227 * this.field3227];
 		boolean var3 = false;
@@ -424,6 +439,7 @@ public class Class304 {
 		this.field3226[5][3] = var2;
 	}
 
+	@ObfInfo(name = "ah", desc = "(S)V", opaque = "254")
 	public void method6110() {
 		byte[] var2 = new byte[this.field3227 * this.field3227];
 		boolean var3 = false;
@@ -487,6 +503,7 @@ public class Class304 {
 		this.field3226[6][3] = var2;
 	}
 
+	@ObfInfo(name = "av", desc = "(I)V", opaque = "-2089863919")
 	public void method6080() {
 		byte[] var2 = new byte[this.field3227 * this.field3227];
 		boolean var3 = false;
@@ -550,10 +567,12 @@ public class Class304 {
 		this.field3226[7][3] = var2;
 	}
 
+	@ObfInfo(name = "ak", desc = "(Lor;B)V")
 	public static void method6072(Class382 var0) {
 		Class540.field5316 = var0;
 	}
 
+	@ObfInfo(name = "aj", desc = "(J)I")
 	public static int method6117(long var0) {
 		return (int)(var0 >>> 7 & 127L);
 	}

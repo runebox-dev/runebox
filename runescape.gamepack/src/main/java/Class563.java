@@ -1,9 +1,18 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "vr")
 public final class Class563 {
+	@ObfInfo(name = "az", desc = "I", intMultiplier = 549097399)
 	public int field5429;
+	@ObfInfo(name = "at", desc = "I", intMultiplier = -1366229673)
 	public int field5431;
+	@ObfInfo(name = "ac", desc = "I", intMultiplier = -615663247)
 	public int field5432;
+	@ObfInfo(name = "ab", desc = "I", intMultiplier = -929931061)
 	public int field5433;
+	@ObfInfo(name = "af", desc = "[I")
 	public int[] field5430;
+	@ObfInfo(name = "aa", desc = "[I")
 	public int[] field5434;
 
 	public Class563(int[] var1) {
@@ -17,6 +26,7 @@ public final class Class563 {
 		this.method10240();
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)I", opaque = "-43429038")
 	public final int method10239() {
 		if (0 == this.field5429) {
 			this.method10237();
@@ -26,6 +36,7 @@ public final class Class563 {
 		return this.field5430[--this.field5429];
 	}
 
+	@ObfInfo(name = "al", desc = "(I)I", opaque = "-1072099447")
 	public final int method10236() {
 		if (0 == this.field5429) {
 			this.method10237();
@@ -35,6 +46,7 @@ public final class Class563 {
 		return this.field5430[this.field5429 - 1];
 	}
 
+	@ObfInfo(name = "aj", desc = "(B)V", opaque = "1")
 	public final void method10237() {
 		this.field5433 += ++this.field5432;
 
@@ -60,6 +72,7 @@ public final class Class563 {
 
 	}
 
+	@ObfInfo(name = "az", desc = "(I)V", opaque = "65279")
 	public final void method10240() {
 		int var10 = -1640531527;
 		int var9 = -1640531527;

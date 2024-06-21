@@ -1,11 +1,22 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "ei")
 public class Class113 {
+	@ObfInfo(name = "ab", desc = "Ljava/lang/String;")
 	public static String field1421;
+	@ObfInfo(name = "al", desc = "Ljava/lang/String;")
 	public static String field1422;
+	@ObfInfo(name = "az", desc = "Ljava/lang/String;")
 	public static String field1423;
+	@ObfInfo(name = "aa", desc = "Ljava/lang/String;")
 	public static String field1424;
+	@ObfInfo(name = "aj", desc = "Ljava/lang/String;")
 	public static String field1425;
+	@ObfInfo(name = "at", desc = "Ljava/lang/String;")
 	public static String field1427;
+	@ObfInfo(name = "af", desc = "Ljava/lang/String;")
 	public static String field1428;
+	@ObfInfo(name = "ak", desc = "Ljava/lang/String;")
 	public static String field1429;
 
 	static {
@@ -19,6 +30,7 @@ public class Class113 {
 		field1421 = "</col>";
 	}
 
+	@ObfInfo(name = "al", desc = "(II)Lvh;", opaque = "-1988385472")
 	public static Class553 method2877(int var0) {
 		Class553[] var2 = Class553.method3987();
 

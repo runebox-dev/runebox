@@ -1,10 +1,20 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "tc")
 public class Class497 {
+	@ObfInfo(name = "aj", desc = "Ltc;")
 	public static final Class497 field5082;
+	@ObfInfo(name = "al", desc = "Ltc;")
 	public static final Class497 field5084;
+	@ObfInfo(name = "az", desc = "Ltc;")
 	public static final Class497 field5085;
+	@ObfInfo(name = "af", desc = "Ltc;")
 	public static final Class497 field5086;
+	@ObfInfo(name = "aa", desc = "Ltc;")
 	public static final Class497 field5087;
+	@ObfInfo(name = "ak", desc = "Ltc;")
 	public static final Class497 field5094;
+	@ObfInfo(name = "at", desc = "Ljava/lang/String;")
 	public String field5088;
 
 	static {
@@ -20,6 +30,7 @@ public class Class497 {
 		this.field5088 = var1;
 	}
 
+	@ObfInfo(name = "ak", desc = "(III)I", opaque = "-83376264")
 	public static int method9205(int var0, int var1) {
 		int var3;
 		for (var3 = 1; var1 > 1; var1 >>= 1) {

@@ -1,8 +1,13 @@
+import io.runebox.ObfInfo;
 import java.util.Iterator;
 
+@ObfInfo(name = "pj")
 public class Class400 implements Iterator {
+	@ObfInfo(name = "ak", desc = "Lpb;")
 	public Class392 field4604;
+	@ObfInfo(name = "al", desc = "Ltm;")
 	public Class507 field4602;
+	@ObfInfo(name = "aj", desc = "Ltm;")
 	public Class507 field4603;
 
 	public Class400(Class392 var1) {
@@ -12,6 +17,7 @@ public class Class400 implements Iterator {
 		this.field4603 = null;
 	}
 
+	@ObfInfo(desc = "()Ljava/lang/Object;")
 	public Object next() {
 		Class507 var1 = this.field4602;
 		if (this.field4604.field4560 == var1) {
@@ -25,10 +31,12 @@ public class Class400 implements Iterator {
 		return var1;
 	}
 
+	@ObfInfo(desc = "()Z")
 	public boolean hasNext() {
 		return this.field4602 != this.field4604.field4560;
 	}
 
+	@ObfInfo(desc = "()V")
 	public void remove() {
 		if (this.field4603 == null) {
 			throw new IllegalStateException();

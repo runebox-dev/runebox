@@ -1,9 +1,18 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "ob")
 public class Class366 {
+	@ObfInfo(name = "ak", desc = "Lob;")
 	public static final Class366 field3992;
+	@ObfInfo(name = "al", desc = "Lob;")
 	public static final Class366 field3993;
+	@ObfInfo(name = "aj", desc = "Lob;")
 	public static final Class366 field3994;
+	@ObfInfo(name = "az", desc = "Lob;")
 	public static final Class366 field3995;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = -405984643)
 	public final int field3997;
+	@ObfInfo(name = "af", desc = "Ljava/lang/String;")
 	public final String field3996;
 
 	static {

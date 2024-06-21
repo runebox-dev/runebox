@@ -1,19 +1,35 @@
+import io.runebox.ObfInfo;
 import java.util.Arrays;
 
+@ObfInfo(name = "nt")
 public class Class358 {
+	@ObfInfo(name = "au", desc = "Llm;")
 	public static Class299 field3956;
+	@ObfInfo(name = "as", desc = "Lry;")
 	public static Class467 field3949;
+	@ObfInfo(name = "aw", desc = "I", intMultiplier = 565502609)
 	public static int field3957;
+	@ObfInfo(name = "ae", desc = "[I")
 	public static final int[] field3955;
+	@ObfInfo(name = "ac", desc = "[Lha;")
 	public Class183[] field3958;
+	@ObfInfo(name = "ao", desc = "Z")
 	public boolean field3945;
+	@ObfInfo(name = "af", desc = "I", intMultiplier = 340358925)
 	public int field3946;
+	@ObfInfo(name = "az", desc = "I", intMultiplier = -1894865247)
 	public int field3948;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = 1800504253)
 	public int field3954;
+	@ObfInfo(name = "aj", desc = "[I")
 	public int[] field3947;
+	@ObfInfo(name = "al", desc = "[I")
 	public int[] field3950;
+	@ObfInfo(name = "ak", desc = "[I")
 	public int[] field3953;
+	@ObfInfo(name = "at", desc = "J", longMultiplier = -1246912684082648107L)
 	public long field3951;
+	@ObfInfo(name = "ab", desc = "J", longMultiplier = 8795388253495121875L)
 	public long field3952;
 
 	static {
@@ -40,6 +56,7 @@ public class Class358 {
 		this.method7076(var3, var2, var4, false, var5, var1.field3946, var1.field3954, var1.field3948);
 	}
 
+	@ObfInfo(name = "ak", desc = "([I[I[Lha;Z[IIIII)V")
 	public void method7076(int[] var1, int[] var2, Class183[] var3, boolean var4, int[] var5, int var6, int var7, int var8) {
 		this.field3958 = var3;
 		this.field3945 = var4;
@@ -47,6 +64,7 @@ public class Class358 {
 		this.method7045(var1, var2, var5, var6, var7);
 	}
 
+	@ObfInfo(name = "al", desc = "([I[I[IIII)V", opaque = "-1648659338")
 	public void method7045(int[] var1, int[] var2, int[] var3, int var4, int var5) {
 		if (var1 == null) {
 			var1 = this.method7046(var4);
@@ -64,6 +82,7 @@ public class Class358 {
 		this.method7072();
 	}
 
+	@ObfInfo(name = "aj", desc = "(II)[I", opaque = "969571369")
 	public int[] method7046(int var1) {
 		int[] var3 = new int[12];
 
@@ -80,6 +99,7 @@ public class Class358 {
 		return var3;
 	}
 
+	@ObfInfo(name = "az", desc = "(IZI)V", opaque = "174395092")
 	public void method7077(int var1, boolean var2) {
 		int var4 = this.field3950[field3955[var1]];
 		if (var4 != 0) {
@@ -107,6 +127,7 @@ public class Class358 {
 		}
 	}
 
+	@ObfInfo(name = "af", desc = "(IZI)V", opaque = "867227834")
 	public void method7048(int var1, boolean var2) {
 		int var4 = this.field3947[var1];
 		if (!var2) {
@@ -129,12 +150,14 @@ public class Class358 {
 		this.method7072();
 	}
 
+	@ObfInfo(name = "aa", desc = "(IB)V")
 	public void method7049(int var1) {
 		if (this.field3946 != var1) {
 			this.method7045((int[])null, (int[])null, this.field3947, var1, -1);
 		}
 	}
 
+	@ObfInfo(name = "at", desc = "(Lua;B)V", opaque = "1")
 	public void method7050(Class521 var1) {
 		var1.method9388(this.field3946);
 
@@ -154,6 +177,7 @@ public class Class358 {
 
 	}
 
+	@ObfInfo(name = "ab", desc = "(I)V", opaque = "-1734415086")
 	public void method7072() {
 		long var2 = this.field3951;
 		int var4 = this.field3950[5];
@@ -193,6 +217,7 @@ public class Class358 {
 
 	}
 
+	@ObfInfo(name = "ac", desc = "(Lic;ILic;IB)Lkb;", opaque = "2")
 	public Class262 method7086(Class211 var1, int var2, Class211 var3, int var4) {
 		if (-1 != this.field3954) {
 			return Class225.method3256(this.field3954).method4246(var1, var2, var3, var4, (Class223)null);
@@ -326,6 +351,7 @@ public class Class358 {
 		}
 	}
 
+	@ObfInfo(name = "ao", desc = "(I)Ljb;", opaque = "-503255243")
 	public Class236 method7053() {
 		if (-1 != this.field3954) {
 			return Class225.method3256(this.field3954).method4247((Class223)null);
@@ -393,6 +419,7 @@ public class Class358 {
 		}
 	}
 
+	@ObfInfo(name = "ah", desc = "(I)I", opaque = "2001122653")
 	public int method7054() {
 		long var2 = this.field3951;
 		if (this.field3954 != -1) {
@@ -409,10 +436,12 @@ public class Class358 {
 		return var4;
 	}
 
+	@ObfInfo(name = "av", desc = "(I)V")
 	public void method7055() {
 		this.method7045(this.field3953, this.field3950, this.field3947, this.field3946, this.field3954);
 	}
 
+	@ObfInfo(name = "bw", desc = "(ILnb;IIIII[FI)Lnb;")
 	public static Class340 method7059(int var0, Class340 var1, int var2, int var3, int var4, int var5, int var6, float[] var7) {
 		Class340 var9 = new Class340();
 		var9.field3755 = var0;
@@ -430,6 +459,7 @@ public class Class358 {
 		return var9;
 	}
 
+	@ObfInfo(name = "jb", desc = "(Ldt;Ldh;I)V", opaque = "137682114")
 	public static void method7092(Class98 var0, Class86 var1) {
 		int var4;
 		int var5;

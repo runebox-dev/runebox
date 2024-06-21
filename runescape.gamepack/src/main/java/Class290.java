@@ -1,8 +1,16 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "ld")
 public final class Class290 {
+	@ObfInfo(name = "af", desc = "Llp;")
 	public Class302 field3160;
+	@ObfInfo(name = "az", desc = "Lpb;")
 	public Class392 field3156;
+	@ObfInfo(name = "aj", desc = "Ltu;")
 	public Class515 field3158;
+	@ObfInfo(name = "al", desc = "I")
 	public int field3157;
+	@ObfInfo(name = "ak", desc = "I")
 	public int field3159;
 
 	public Class290(int var1) {
@@ -21,6 +29,7 @@ public final class Class290 {
 		this.field3158 = new Class515(var3);
 	}
 
+	@ObfInfo(name = "ak", desc = "(J)Ljava/lang/Object;")
 	public Object method5885(long var1) {
 		Class320 var3 = (Class320)this.field3158.method9326(var1);
 		if (var3 == null) {
@@ -50,11 +59,13 @@ public final class Class290 {
 		}
 	}
 
+	@ObfInfo(name = "al", desc = "(J)V")
 	public void method5887(long var1) {
 		Class320 var3 = (Class320)this.field3158.method9326(var1);
 		this.method5896(var3);
 	}
 
+	@ObfInfo(name = "aj", desc = "(Lmh;)V")
 	public void method5896(Class320 var1) {
 		if (var1 != null) {
 			var1.method9277();
@@ -64,10 +75,12 @@ public final class Class290 {
 
 	}
 
+	@ObfInfo(name = "az", desc = "(Ljava/lang/Object;J)V")
 	public void method5888(Object var1, long var2) {
 		this.method5891(var1, var2, 1);
 	}
 
+	@ObfInfo(name = "af", desc = "(Ljava/lang/Object;JI)V")
 	public void method5891(Object var1, long var2, int var4) {
 		if (var4 > this.field3159) {
 			throw new IllegalStateException();
@@ -97,6 +110,7 @@ public final class Class290 {
 		}
 	}
 
+	@ObfInfo(name = "aa", desc = "(I)V")
 	public void method5890(int var1) {
 		for (Class320 var2 = (Class320)this.field3156.method7392(); var2 != null; var2 = (Class320)this.field3156.method7394()) {
 			if (var2.method5947()) {
@@ -116,6 +130,7 @@ public final class Class290 {
 
 	}
 
+	@ObfInfo(name = "at", desc = "()V")
 	public void method5894() {
 		this.field3156.method7388();
 		this.field3158.method9328();

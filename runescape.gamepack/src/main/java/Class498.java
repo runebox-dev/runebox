@@ -1,4 +1,8 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "td")
 public class Class498 extends Class506 {
+	@ObfInfo(name = "ak", desc = "Ljava/lang/Object;")
 	public final Object field5095;
 
 	public Class498(Object var1) {

@@ -1,9 +1,18 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "gp")
 public class Class172 extends Class190 {
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = -1612662661)
 	public int field1855;
+	@ObfInfo(name = "al", desc = "I", intMultiplier = 229547495)
 	public int field1856;
+	@ObfInfo(name = "af", desc = "I", intMultiplier = 596736119)
 	public int field1857;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = -19734087)
 	public int field1860;
+	@ObfInfo(name = "az", desc = "J", longMultiplier = -1499200024151752591L)
 	public long field1858;
+	@ObfInfo(name = "ak", desc = "[J")
 	public long[] field1859;
 
 	public Class172() {
@@ -19,6 +28,7 @@ public class Class172 extends Class190 {
 
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)V", opaque = "1175633924")
 	public void method3556() {
 		for (int var2 = 0; var2 < 10; ++var2) {
 			this.field1859[var2] = 0L;
@@ -26,6 +36,7 @@ public class Class172 extends Class190 {
 
 	}
 
+	@ObfInfo(name = "al", desc = "(IIB)I", opaque = "127")
 	public int method3557(int var1, int var2) {
 		int var4 = this.field1856;
 		int var5 = this.field1855;

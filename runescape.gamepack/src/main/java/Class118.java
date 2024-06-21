@@ -1,7 +1,14 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "en")
 public class Class118 {
+	@ObfInfo(name = "al", desc = "I", intMultiplier = 462637913)
 	public int field1469;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = -1636216495)
 	public int field1470;
+	@ObfInfo(name = "ak", desc = "I", intMultiplier = -841998663)
 	public int field1471;
+	@ObfInfo(name = "az", desc = "I", intMultiplier = 1700021687)
 	public int field1472;
 
 	public Class118(int var1, int var2, int var3, int var4) {
@@ -11,22 +18,27 @@ public class Class118 {
 		this.field1472 = var4;
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)I")
 	public int method2929() {
 		return this.field1471;
 	}
 
+	@ObfInfo(name = "al", desc = "(I)I")
 	public int method2928() {
 		return this.field1469;
 	}
 
+	@ObfInfo(name = "aj", desc = "(I)I")
 	public int method2943() {
 		return this.field1470;
 	}
 
+	@ObfInfo(name = "az", desc = "(I)I")
 	public int method2930() {
 		return this.field1472;
 	}
 
+	@ObfInfo(name = "hx", desc = "(II)V", opaque = "-1438891682")
 	public static void method2945(int var0) {
 		if (var0 != Client.field555) {
 			if (Client.field555 == 30) {

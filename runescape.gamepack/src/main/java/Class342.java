@@ -1,6 +1,12 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "nd")
 public class Class342 {
+	@ObfInfo(name = "al", desc = "[B")
 	public byte[] field3831;
+	@ObfInfo(name = "ak", desc = "[I")
 	public int[] field3832;
+	@ObfInfo(name = "aj", desc = "[I")
 	public int[] field3835;
 
 	public Class342(byte[] var1) {
@@ -86,6 +92,7 @@ public class Class342 {
 
 	}
 
+	@ObfInfo(name = "ak", desc = "([BII[BIB)I", opaque = "-1")
 	public int method6663(byte[] var1, int var2, int var3, byte[] var4, int var5) {
 		int var7 = 0;
 		int var8 = var5 << 3;
@@ -131,6 +138,7 @@ public class Class342 {
 		return (var8 + 7 >> 3) - var5;
 	}
 
+	@ObfInfo(name = "al", desc = "([BI[BIII)I", opaque = "1197670675")
 	public int method6656(byte[] var1, int var2, byte[] var3, int var4, int var5) {
 		if (var5 == 0) {
 			return 0;

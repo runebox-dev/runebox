@@ -1,10 +1,13 @@
+import io.runebox.ObfInfo;
 import java.util.regex.Pattern;
 
+@ObfInfo(name = "pv")
 public final class Class412 {
 	static {
 		Pattern.compile("^\\D*(\\d+)\\D*$");
 	}
 
+	@ObfInfo(desc = "([Ljava/lang/CharSequence;II)Ljava/lang/String;")
 	public static String method2925(CharSequence[] var0, int var1, int var2) {
 		if (var2 == 0) {
 			return "";
@@ -39,10 +42,12 @@ public final class Class412 {
 		}
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/CharSequence;)Z")
 	public static boolean method3873(CharSequence var0) {
 		return method7421(var0, 10, true);
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/CharSequence;IZ)Z")
 	public static boolean method7421(CharSequence var0, int var1, boolean var2) {
 		if (var1 >= 2 && var1 <= 36) {
 			boolean var4 = false;
@@ -99,10 +104,12 @@ public final class Class412 {
 		}
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/CharSequence;)I")
 	public static int method3402(CharSequence var0) {
 		return method5862(var0, 10, true);
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/CharSequence;IZ)I")
 	public static int method5862(CharSequence var0, int var1, boolean var2) {
 		if (var1 >= 2 && var1 <= 36) {
 			boolean var4 = false;
@@ -163,6 +170,7 @@ public final class Class412 {
 		}
 	}
 
+	@ObfInfo(desc = "(IZ)Ljava/lang/String;")
 	public static String method2887(int var0, boolean var1) {
 		if (var1 && var0 >= 0) {
 			int var4 = var0;
@@ -199,12 +207,14 @@ public final class Class412 {
 		}
 	}
 
+	@ObfInfo(name = "ac", desc = "(B)V")
 	public static void method7730() {
 		Class378 var10000 = (Class378)null;
 		String var1 = Class378.field4326;
 		Class128.method2747(30, "", var1);
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/CharSequence;)I")
 	public static int method6666(CharSequence var0) {
 		int var2 = var0.length();
 		int var3 = 0;
@@ -216,14 +226,17 @@ public final class Class412 {
 		return var3;
 	}
 
+	@ObfInfo(desc = "(C)Z")
 	public static boolean method293(char var0) {
 		return var0 >= '0' && var0 <= '9';
 	}
 
+	@ObfInfo(desc = "(C)Z")
 	public static boolean method2605(char var0) {
 		return var0 >= '0' && var0 <= '9' || var0 >= 'A' && var0 <= 'Z' || var0 >= 'a' && var0 <= 'z';
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/String;)Ljava/lang/String;")
 	public static String method7137(String var0) {
 		int var2 = var0.length();
 		char[] var3 = new char[var2];
@@ -264,6 +277,7 @@ public final class Class412 {
 		return new String(var3);
 	}
 
+	@ObfInfo(desc = "(CI)Ljava/lang/String;")
 	public static String method4673(char var0, int var1) {
 		char[] var3 = new char[var1];
 
@@ -274,10 +288,12 @@ public final class Class412 {
 		return new String(var3);
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/CharSequence;)Ljava/lang/String;")
 	public static String method3140(CharSequence var0) {
 		return method4673('*', var0.length());
 	}
 
+	@ObfInfo(desc = "(C)Z")
 	public static boolean method289(char var0) {
 		if (var0 >= ' ' && var0 <= '~') {
 			return true;
@@ -288,6 +304,7 @@ public final class Class412 {
 		}
 	}
 
+	@ObfInfo(desc = "(I)I")
 	public static int method7044(int var0) {
 		if (var0 > 0) {
 			return 1;

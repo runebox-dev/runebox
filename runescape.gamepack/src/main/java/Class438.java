@@ -1,6 +1,12 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "qv")
 public class Class438 {
+	@ObfInfo(name = "ak", desc = "Lqw;")
 	public Class439 field4749;
+	@ObfInfo(name = "al", desc = "I", intMultiplier = -435297999)
 	public int field4746;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = -7168045)
 	public int field4748;
 
 	public Class438(Class439 var1, int var2, int var3) {
@@ -11,6 +17,7 @@ public class Class438 {
 		this.field4748 = var3;
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)Ljava/lang/String;", opaque = "1871585202")
 	public String method8113() {
 		if (this.method8101()) {
 			return "";
@@ -26,18 +33,22 @@ public class Class438 {
 		}
 	}
 
+	@ObfInfo(name = "al", desc = "(IB)Z", opaque = "-1")
 	public boolean method8100(int var1) {
 		return this.field4749.method8151() == 2 || this.field4749.method8151() == 1 && (!this.field4749.field4765 || var1 != this.field4748 - 1);
 	}
 
+	@ObfInfo(name = "aj", desc = "(I)Z", opaque = "1467235736")
 	public boolean method8101() {
 		return this.field4748 == this.field4746;
 	}
 
+	@ObfInfo(name = "az", desc = "(I)I")
 	public int method8102() {
 		return this.field4748 - this.field4746;
 	}
 
+	@ObfInfo(name = "af", desc = "(Lqo;I)Z", opaque = "833622859")
 	public boolean method8103(Class431 var1) {
 		if (2 == this.field4749.field4769) {
 			return true;
@@ -48,6 +59,7 @@ public class Class438 {
 		}
 	}
 
+	@ObfInfo(name = "aa", desc = "(B)I", opaque = "1")
 	public int method8104() {
 		if (this.method8101()) {
 			return 0;
@@ -68,6 +80,7 @@ public class Class438 {
 		}
 	}
 
+	@ObfInfo(name = "at", desc = "(I)Lto;", opaque = "1059061886")
 	public Class509 method8105() {
 		if (this.method8101()) {
 			return new Class509(0, 0);
@@ -77,6 +90,7 @@ public class Class438 {
 		}
 	}
 
+	@ObfInfo(name = "ab", desc = "(II)Lqo;", opaque = "-916203890")
 	public Class431 method8106(int var1) {
 		return var1 >= 0 && var1 < this.method8102() ? this.field4749.method8120(this.field4746 + var1) : null;
 	}

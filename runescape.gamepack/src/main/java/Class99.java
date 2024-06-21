@@ -1,10 +1,20 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "du")
 public class Class99 implements Class393 {
+	@ObfInfo(name = "ak", desc = "Ldu;")
 	public static final Class99 field1305;
+	@ObfInfo(name = "al", desc = "Ldu;")
 	public static final Class99 field1306;
+	@ObfInfo(name = "az", desc = "Ldu;")
 	public static final Class99 field1308;
+	@ObfInfo(name = "af", desc = "Ldu;")
 	public static final Class99 field1309;
+	@ObfInfo(name = "aj", desc = "Ldu;")
 	public static final Class99 field1310;
+	@ObfInfo(name = "at", desc = "I", intMultiplier = 1128902541)
 	public final int field1311;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = -1164261959)
 	public final int field1312;
 
 	static {
@@ -20,10 +30,12 @@ public class Class99 implements Class393 {
 		this.field1311 = var2;
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)I")
 	public int method175() {
 		return this.field1311;
 	}
 
+	@ObfInfo(name = "ak", desc = "(Ljava/lang/CharSequence;I)Ljava/lang/String;", opaque = "-1718530262")
 	public static String method2520(CharSequence var0) {
 		int var2 = var0.length();
 		StringBuilder var3 = new StringBuilder(var2);
@@ -58,10 +70,12 @@ public class Class99 implements Class393 {
 		return var3.toString();
 	}
 
+	@ObfInfo(desc = "()[LClass99;")
 	public static Class99[] method8414() {
 		return new Class99[]{field1309, field1305, field1310, field1308, field1306};
 	}
 
+	@ObfInfo(name = "al", desc = "(J)V")
 	public static void method2511(long var0) {
 		try {
 			Thread.sleep(var0);
@@ -70,6 +84,7 @@ public class Class99 implements Class393 {
 
 	}
 
+	@ObfInfo(name = "ab", desc = "(IS)I", opaque = "254")
 	public static int method2518(int var0) {
 		Class67 var2 = (Class67)Class128.field1529.method9326((long)var0);
 		if (var2 == null) {

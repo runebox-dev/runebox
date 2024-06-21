@@ -1,14 +1,28 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "fx")
 public class Class154 implements Class393 {
+	@ObfInfo(name = "ac", desc = "Lfx;")
 	public static final Class154 field1712;
+	@ObfInfo(name = "ak", desc = "Lfx;")
 	public static final Class154 field1713;
+	@ObfInfo(name = "aj", desc = "Lfx;")
 	public static final Class154 field1714;
+	@ObfInfo(name = "az", desc = "Lfx;")
 	public static final Class154 field1715;
+	@ObfInfo(name = "aa", desc = "Lfx;")
 	public static final Class154 field1717;
+	@ObfInfo(name = "at", desc = "Lfx;")
 	public static final Class154 field1718;
+	@ObfInfo(name = "af", desc = "Lfx;")
 	public static final Class154 field1719;
+	@ObfInfo(name = "ab", desc = "Lfx;")
 	public static final Class154 field1721;
+	@ObfInfo(name = "al", desc = "Lfx;")
 	public static final Class154 field1723;
+	@ObfInfo(name = "ah", desc = "I", intMultiplier = 1640782011)
 	public final int field1720;
+	@ObfInfo(name = "ao", desc = "I", intMultiplier = 2091009523)
 	public final int field1722;
 
 	static {
@@ -28,10 +42,12 @@ public class Class154 implements Class393 {
 		this.field1720 = var2;
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)I")
 	public int method175() {
 		return this.field1720;
 	}
 
+	@ObfInfo(desc = "()[LClass154;")
 	public static Class154[] method2594() {
 		return new Class154[]{field1713, field1723, field1714, field1715, field1719, field1717, field1718, field1721, field1712};
 	}

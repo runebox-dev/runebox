@@ -1,3 +1,4 @@
+import io.runebox.ObfInfo;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -5,10 +6,15 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.util.Map;
 
+@ObfInfo(name = "ad")
 public class Class4 {
+	@ObfInfo(desc = "LClass382;")
 	public static Class382 field1988;
+	@ObfInfo(name = "ak", desc = "I", intMultiplier = -993178463)
 	public final int field14;
+	@ObfInfo(name = "aj", desc = "Ljava/lang/String;")
 	public final String field15;
+	@ObfInfo(name = "al", desc = "Ljava/util/Map;")
 	public final Map field18;
 
 	public Class4(HttpURLConnection var1) throws IOException {
@@ -38,18 +44,22 @@ public class Class4 {
 		this.field15 = "";
 	}
 
+	@ObfInfo(name = "ak", desc = "(B)I")
 	public int method46() {
 		return this.field14;
 	}
 
+	@ObfInfo(name = "al", desc = "(B)Ljava/util/Map;")
 	public Map method47() {
 		return this.field18;
 	}
 
+	@ObfInfo(name = "aj", desc = "(I)Ljava/lang/String;")
 	public String method48() {
 		return this.field15;
 	}
 
+	@ObfInfo(name = "ak", desc = "(Lor;S)V")
 	public static void method49(Class382 var0) {
 		field1988 = var0;
 	}

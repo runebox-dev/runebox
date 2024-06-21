@@ -1,4 +1,8 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "mg")
 public class Class319 {
+	@ObfInfo(name = "ak", desc = "[I")
 	public static int[] field3393;
 
 	static {
@@ -14,10 +18,12 @@ public class Class319 {
 
 	}
 
+	@ObfInfo(desc = "(I)I")
 	public static int method5997(int var0) {
 		return field3393[var0];
 	}
 
+	@ObfInfo(desc = "(I)I")
 	public static int method3791(int var0) {
 		int var2 = 0;
 		if (var0 < 0 || var0 >= 65536) {
@@ -48,6 +54,7 @@ public class Class319 {
 		return var2 + var0;
 	}
 
+	@ObfInfo(desc = "(II)I")
 	public static int method2738(int var0, int var1) {
 		int var3 = var0 >>> 31;
 		return (var3 + var0) / var1 - var3;

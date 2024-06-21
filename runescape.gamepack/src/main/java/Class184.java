@@ -1,3 +1,4 @@
+import io.runebox.ObfInfo;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -7,9 +8,13 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+@ObfInfo(name = "hb")
 public class Class184 {
+	@ObfInfo(name = "az", desc = "Lhb;")
 	public static final Class184 field1918;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = 539899087)
 	public int field1917;
+	@ObfInfo(name = "al", desc = "Ljava/util/Map;")
 	public Map field1916;
 
 	static {
@@ -21,6 +26,7 @@ public class Class184 {
 		this.field1917 = 0;
 	}
 
+	@ObfInfo(name = "al", desc = "(Lorg/json/JSONObject;ILeb;I)V")
 	public void method3664(JSONObject var1, int var2, Class106 var3) {
 		this.field1916.clear();
 
@@ -38,6 +44,7 @@ public class Class184 {
 		}
 	}
 
+	@ObfInfo(name = "aj", desc = "(Lorg/json/JSONArray;ILeb;I)V", opaque = "-1407371092")
 	public void method3672(JSONArray var1, int var2, Class106 var3) throws JSONException {
 		if (var1 != null) {
 			for (int var5 = 0; var5 < var1.length(); ++var5) {
@@ -65,6 +72,7 @@ public class Class184 {
 		}
 	}
 
+	@ObfInfo(name = "az", desc = "(I)Ljava/util/Map;", opaque = "1030355894")
 	public Map method3666() {
 		HashMap var2 = new HashMap();
 		ArrayList var3 = new ArrayList();
@@ -94,6 +102,7 @@ public class Class184 {
 		return var2;
 	}
 
+	@ObfInfo(name = "af", desc = "(Ljava/lang/String;I)Lhj;")
 	public Class192 method3674(String var1) {
 		return (Class192)this.field1916.get(var1);
 	}

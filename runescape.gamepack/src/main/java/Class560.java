@@ -1,11 +1,17 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "vo")
 public final class Class560 {
+	@ObfInfo(name = "ab", desc = "Lvt;")
 	public static Class565 field5416;
+	@ObfInfo(desc = "[I")
 	public static int[] field5211;
 
 	static {
 		field5416 = new Class565();
 	}
 
+	@ObfInfo(name = "ak", desc = "([BI[BII)I")
 	public static int method10112(byte[] var0, int var1, byte[] var2, int var3, int var4) {
 		synchronized(field5416) {
 			field5416.field5447 = var2;
@@ -25,6 +31,7 @@ public final class Class560 {
 		}
 	}
 
+	@ObfInfo(name = "al", desc = "(Lvt;)V")
 	public static void method10113(Class565 var0) {
 		byte var2 = var0.field5450;
 		int var3 = var0.field5451;
@@ -147,6 +154,7 @@ public final class Class560 {
 		var0.field5448 = var10;
 	}
 
+	@ObfInfo(name = "aj", desc = "(Lvt;)V")
 	public static void method10114(Class565 var0) {
 		boolean var4 = false;
 		boolean var5 = false;
@@ -516,14 +524,17 @@ public final class Class560 {
 		}
 	}
 
+	@ObfInfo(name = "az", desc = "(Lvt;)B")
 	public static byte method10111(Class565 var0) {
 		return (byte)method10121(8, var0);
 	}
 
+	@ObfInfo(name = "af", desc = "(Lvt;)B")
 	public static byte method10130(Class565 var0) {
 		return (byte)method10121(1, var0);
 	}
 
+	@ObfInfo(name = "aa", desc = "(ILvt;)I")
 	public static int method10121(int var0, Class565 var1) {
 		while (var1.field5468 < var0) {
 			var1.field5437 = var1.field5437 << 8 | var1.field5447[var1.field5473] & 255;
@@ -539,6 +550,7 @@ public final class Class560 {
 		return var2;
 	}
 
+	@ObfInfo(name = "at", desc = "(Lvt;)V")
 	public static void method10118(Class565 var0) {
 		var0.field5456 = 0;
 
@@ -551,6 +563,7 @@ public final class Class560 {
 
 	}
 
+	@ObfInfo(name = "ab", desc = "([I[I[I[BIII)V")
 	public static void method10125(int[] var0, int[] var1, int[] var2, byte[] var3, int var4, int var5, int var6) {
 		int var7 = 0;
 
