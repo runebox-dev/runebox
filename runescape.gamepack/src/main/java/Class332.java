@@ -1,18 +1,30 @@
+import io.runebox.ObfInfo;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
+@ObfInfo(name = "mt")
 public class Class332 {
+	@ObfInfo(name = "aq", desc = "I", intMultiplier = -405285165)
 	public static int field3457;
+	@ObfInfo(name = "ao", desc = "I", intMultiplier = -1205264695)
 	public static int field3460;
+	@ObfInfo(name = "ah", desc = "I", intMultiplier = -442404381)
 	public static int field3461;
+	@ObfInfo(name = "av", desc = "I", intMultiplier = -889756167)
 	public static int field3462;
+	@ObfInfo(name = "az", desc = "Ljava/util/ArrayList;")
 	public static ArrayList field3454;
+	@ObfInfo(name = "aa", desc = "Ljava/util/ArrayList;")
 	public static ArrayList field3455;
+	@ObfInfo(name = "at", desc = "Ljava/util/ArrayList;")
 	public static ArrayList field3456;
+	@ObfInfo(name = "ab", desc = "Ljava/util/ArrayList;")
 	public static ArrayList field3458;
+	@ObfInfo(name = "af", desc = "Ljava/util/LinkedList;")
 	public static LinkedList field3453;
+	@ObfInfo(name = "ac", desc = "Ljava/util/List;")
 	public static final List field3459;
 
 	static {
@@ -28,6 +40,7 @@ public class Class332 {
 		field3457 = 0;
 	}
 
+	@ObfInfo(desc = "(LClass330;)V")
 	public static void method3887(Class330 var0) {
 		if (!field3459.contains(var0)) {
 			field3459.add(var0);
@@ -35,6 +48,7 @@ public class Class332 {
 
 	}
 
+	@ObfInfo(desc = "(II)V")
 	public static void method4921(int var0, int var1) {
 		Iterator var3 = field3459.iterator();
 
@@ -45,6 +59,7 @@ public class Class332 {
 
 	}
 
+	@ObfInfo(desc = "(IIII)V")
 	public static void method3992(int var0, int var1, int var2, int var3) {
 		if (field3455.size() > 1 && field3455.get(0) != null && ((Class357)field3455.get(0)).field3940.method6320() && field3455.get(1) != null && ((Class357)field3455.get(1)).field3940.method6320()) {
 			method3185(var0, var1, var2, var3);
@@ -62,6 +77,7 @@ public class Class332 {
 
 	}
 
+	@ObfInfo(desc = "(LClass382;I)V")
 	public static void method5915(Class382 var0, int var1) {
 		if (!field3456.isEmpty()) {
 			ArrayList var3 = new ArrayList();
@@ -83,6 +99,7 @@ public class Class332 {
 		}
 	}
 
+	@ObfInfo(desc = "(IIII)V")
 	public static void method3185(int var0, int var1, int var2, int var3) {
 		field3460 = var0;
 		field3461 = var1;
@@ -90,6 +107,7 @@ public class Class332 {
 		field3457 = var3;
 	}
 
+	@ObfInfo(desc = "(Z)V")
 	public static void method3151(boolean var0) {
 		if (var0) {
 			Class87.method2354();

@@ -1,4 +1,8 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "lf")
 public class Class292 {
+	@ObfInfo(desc = "(II)I")
 	public static int method4758(int var0, int var1) {
 		Class230 var4 = (Class230)Class230.field2422.method5993((long)var0);
 		Class230 var3;
@@ -38,6 +42,7 @@ public class Class292 {
 		}
 	}
 
+	@ObfInfo(name = "az", desc = "(II)Lfr;", opaque = "1257407705")
 	public static Class148 method5906(int var0) {
 		Class148[] var2 = new Class148[]{Class148.field1677, Class148.field1673, Class148.field1674, Class148.field1675, Class148.field1683, Class148.field1684};
 		Class148 var3 = (Class148)Class62.method1112(var2, var0);
@@ -48,6 +53,7 @@ public class Class292 {
 		return var3;
 	}
 
+	@ObfInfo(desc = "(II)I")
 	public static int method3139(int var0, int var1) {
 		if (var0 == -2) {
 			return 12345678;
@@ -72,6 +78,7 @@ public class Class292 {
 		}
 	}
 
+	@ObfInfo(desc = "(III)I")
 	public static int method3770(int var0, int var1, int var2) {
 		if (var2 > 179) {
 			var1 /= 2;

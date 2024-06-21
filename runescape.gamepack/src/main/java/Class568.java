@@ -1,4 +1,8 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "vw")
 public class Class568 {
+	@ObfInfo(name = "ak", desc = "[I")
 	public int[] field5479;
 
 	public Class568(int[] var1) {
@@ -23,6 +27,7 @@ public class Class568 {
 
 	}
 
+	@ObfInfo(name = "ak", desc = "(II)I", opaque = "-1595267691")
 	public int method10283(int var1) {
 		int var3 = (this.field5479.length >> 1) - 1;
 		int var4 = var1 & var3;

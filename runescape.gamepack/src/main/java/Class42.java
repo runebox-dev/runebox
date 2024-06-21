@@ -1,6 +1,12 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "bp")
 public class Class42 {
+	@ObfInfo(name = "al", desc = "[Lcc;")
 	public Class55[] field300;
+	@ObfInfo(name = "aj", desc = "I")
 	public int field299;
+	@ObfInfo(name = "az", desc = "I")
 	public int field302;
 
 	public Class42(Class521 var1) {
@@ -19,11 +25,13 @@ public class Class42 {
 		this.field302 = var1.method9407();
 	}
 
+	@ObfInfo(name = "al", desc = "()Lbr;")
 	public Class44 method808() {
 		byte[] var1 = this.method810();
 		return new Class44(22050, var1, this.field299 * 22050 / 1000, this.field302 * 22050 / 1000);
 	}
 
+	@ObfInfo(name = "aj", desc = "()I")
 	public final int method809() {
 		int var1 = 9999999;
 
@@ -57,6 +65,7 @@ public class Class42 {
 		}
 	}
 
+	@ObfInfo(name = "az", desc = "()[B")
 	public final byte[] method810() {
 		int var1 = 0;
 
@@ -94,6 +103,7 @@ public class Class42 {
 		}
 	}
 
+	@ObfInfo(name = "ak", desc = "(Lor;II)Lbp;")
 	public static Class42 method820(Class382 var0, int var1, int var2) {
 		byte[] var3 = var0.method7216(var1, var2);
 		return var3 == null ? null : new Class42(new Class521(var3));

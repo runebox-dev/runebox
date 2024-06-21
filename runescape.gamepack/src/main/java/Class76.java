@@ -1,3 +1,4 @@
+import io.runebox.ObfInfo;
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.DataFlavor;
@@ -12,66 +13,127 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
+@ObfInfo(name = "cx")
 public class Class76 {
+	@ObfInfo(desc = "LClass105;")
 	public static Class105 field53;
+	@ObfInfo(desc = "LClass425;")
 	public static Class425 field3867;
+	@ObfInfo(desc = "LClass425;")
 	public static Class425 field4664;
+	@ObfInfo(desc = "LClass549;")
 	public static Class549 field2037;
+	@ObfInfo(name = "ao", desc = "Lvc;")
 	public static Class549 field925;
+	@ObfInfo(desc = "[LClass549;")
 	public static Class549[] field150;
+	@ObfInfo(desc = "LClass557;")
 	public static Class557 field1313;
+	@ObfInfo(desc = "LClass557;")
 	public static Class557 field1804;
+	@ObfInfo(desc = "LClass557;")
 	public static Class557 field2028;
+	@ObfInfo(desc = "LClass557;")
 	public static Class557 field2116;
+	@ObfInfo(desc = "LClass557;")
 	public static Class557 field2504;
+	@ObfInfo(desc = "LClass557;")
 	public static Class557 field3890;
+	@ObfInfo(desc = "LClass557;")
 	public static Class557 field3930;
+	@ObfInfo(desc = "LClass557;")
 	public static Class557 field4636;
+	@ObfInfo(desc = "LClass557;")
 	public static Class557 field4747;
+	@ObfInfo(name = "af", desc = "Lvl;")
 	public static Class557 field923;
+	@ObfInfo(name = "aa", desc = "Lvl;")
 	public static Class557 field924;
+	@ObfInfo(name = "ap", desc = "Lvl;")
 	public static Class557 field926;
+	@ObfInfo(desc = "[LClass557;")
 	public static Class557[] field1606;
+	@ObfInfo(desc = "[LClass557;")
 	public static Class557[] field4465;
+	@ObfInfo(desc = "[LClass557;")
 	public static Class557[] field4707;
+	@ObfInfo(desc = "[LClass557;")
 	public static Class557[] field4719;
+	@ObfInfo(name = "az", desc = "[Lvl;")
 	public static Class557[] field937;
+	@ObfInfo(desc = "[LClass64;")
 	public static Class64[] field4598;
+	@ObfInfo(name = "al", desc = "Z")
 	public static boolean field920;
+	@ObfInfo(name = "db", desc = "Z")
 	public static boolean field934;
+	@ObfInfo(name = "cv", desc = "Z")
 	public static boolean field943;
+	@ObfInfo(name = "cx", desc = "Z")
 	public static boolean field944;
+	@ObfInfo(name = "cg", desc = "Z")
 	public static boolean field947;
+	@ObfInfo(desc = "I", intMultiplier = -2057094345)
 	public static int field36;
+	@ObfInfo(desc = "I", intMultiplier = 264957019)
 	public static int field5093;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = -684644281)
 	public static int field921;
+	@ObfInfo(name = "bq", desc = "I", intMultiplier = 13511489)
 	public static int field927;
+	@ObfInfo(name = "am", desc = "I", intMultiplier = -467769523)
 	public static int field928;
+	@ObfInfo(name = "bz", desc = "I", intMultiplier = 1661503897)
 	public static int field929;
+	@ObfInfo(name = "cw", desc = "I", intMultiplier = -79033559)
 	public static int field932;
+	@ObfInfo(name = "dc", desc = "I", intMultiplier = -801470097)
 	public static int field939;
+	@ObfInfo(name = "dj", desc = "I", intMultiplier = -355769989)
 	public static int field945;
+	@ObfInfo(name = "dg", desc = "I", intMultiplier = -1791818179)
 	public static int field949;
+	@ObfInfo(name = "du", desc = "I", intMultiplier = -651306129)
 	public static int field950;
+	@ObfInfo(name = "ci", desc = "I", intMultiplier = -1312520673)
 	public static int field953;
+	@ObfInfo(name = "ai", desc = "I", intMultiplier = -1270478887)
 	public static int field956;
+	@ObfInfo(desc = "I", intMultiplier = -628097453)
 	public static int field967;
+	@ObfInfo(desc = "Ljava/lang/String;")
 	public static String field1605;
+	@ObfInfo(name = "cn", desc = "Ljava/lang/String;")
 	public static String field930;
+	@ObfInfo(name = "ck", desc = "Ljava/lang/String;")
 	public static String field933;
+	@ObfInfo(name = "ch", desc = "Ljava/lang/String;")
 	public static String field935;
+	@ObfInfo(name = "cs", desc = "Ljava/lang/String;")
 	public static String field938;
+	@ObfInfo(name = "ce", desc = "Ljava/lang/String;")
 	public static String field941;
+	@ObfInfo(name = "ar", desc = "Ljava/lang/String;")
 	public static String field942;
+	@ObfInfo(name = "dq", desc = "Ljava/lang/String;")
 	public static String field946;
+	@ObfInfo(name = "cp", desc = "Ljava/lang/String;")
 	public static String field951;
+	@ObfInfo(name = "dm", desc = "Ljava/lang/String;")
 	public static String field952;
+	@ObfInfo(name = "cd", desc = "Ljava/lang/String;")
 	public static String field955;
+	@ObfInfo(name = "dy", desc = "[Ljava/lang/String;")
 	public static String[] field922;
+	@ObfInfo(name = "dh", desc = "[Ljava/lang/String;")
 	public static String[] field936;
+	@ObfInfo(name = "cc", desc = "[Ljava/lang/String;")
 	public static String[] field940;
+	@ObfInfo(name = "dk", desc = "[Ljava/lang/String;")
 	public static String[] field954;
+	@ObfInfo(name = "dl", desc = "J", longMultiplier = -8903805122193411189L)
 	public static long field919;
+	@ObfInfo(name = "dn", desc = "J", longMultiplier = -1064771094030866347L)
 	public static long field931;
 
 	static {
@@ -110,6 +172,7 @@ public class Class76 {
 		field922 = new String[]{"logo_speedrunning"};
 	}
 
+	@ObfInfo(desc = "(LClass382;)I")
 	public static int method5647(Class382 var0) {
 		int var2 = field954.length + field936.length;
 		String[] var3 = field922;
@@ -124,6 +187,7 @@ public class Class76 {
 		return var2;
 	}
 
+	@ObfInfo(desc = "(LClass382;LClass382;ZI)V")
 	public static void method6264(Class382 var0, Class382 var1, boolean var2, int var3) {
 		if (field920) {
 			if (var3 == 4) {
@@ -188,10 +252,12 @@ public class Class76 {
 		}
 	}
 
+	@ObfInfo(desc = "(ZZ)LClass557;")
 	public static Class557 method3223(boolean var0, boolean var1) {
 		return var0 ? (var1 ? field3890 : field2028) : (var1 ? field926 : field4636);
 	}
 
+	@ObfInfo(desc = "()Ljava/lang/String;")
 	public static String method3091() {
 		String var1;
 		if (Client.field4851.method2612()) {
@@ -205,6 +271,7 @@ public class Class76 {
 		return var1;
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method276() {
 		if (field955 == null || field955.length() <= 0) {
 			if (Client.field4851.method2629() != null) {
@@ -217,6 +284,7 @@ public class Class76 {
 		}
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method3136() {
 		if (field920) {
 			field923 = null;
@@ -241,6 +309,7 @@ public class Class76 {
 		}
 	}
 
+	@ObfInfo(desc = "(LClass382;I)V")
 	public static void method2771(Class382 var0, int var1) {
 		if ((var1 & Class534.field5294.method175()) != 0) {
 			field1313 = Class554.method8860(var0, "logo_deadman_mode", "");
@@ -254,6 +323,7 @@ public class Class76 {
 
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method8882() {
 		if (Client.field540 && field955 != null && field955.length() > 0) {
 			field945 = 1;
@@ -263,6 +333,7 @@ public class Class76 {
 
 	}
 
+	@ObfInfo(desc = "(LClass31;LClass418;LClass418;)V")
 	public static void method155(Class31 var0, Class418 var1, Class418 var2) {
 		int var6;
 		int var28;
@@ -1185,6 +1256,7 @@ public class Class76 {
 		}
 	}
 
+	@ObfInfo(desc = "()Ljava/util/Date;")
 	public static Date method3409() {
 		Calendar var1 = Calendar.getInstance();
 		var1.set(2, 0);
@@ -1193,11 +1265,13 @@ public class Class76 {
 		return var1.getTime();
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V")
 	public static void method6067(String var0, String var1, String var2) {
 		method4120(7);
 		method5778(var0, var1, var2);
 	}
 
+	@ObfInfo(desc = "()Ljava/util/Date;")
 	public static Date method3231() throws ParseException {
 		SimpleDateFormat var1 = new SimpleDateFormat("ddMMyyyyHH", Locale.ENGLISH);
 		var1.setLenient(false);
@@ -1218,6 +1292,7 @@ public class Class76 {
 		return var1.parse(var2.toString());
 	}
 
+	@ObfInfo(desc = "(II)I")
 	public static int method797(int var0, int var1) {
 		for (int var3 = 0; var3 < 8; ++var3) {
 			if (var1 <= var0 + 30) {
@@ -1231,6 +1306,7 @@ public class Class76 {
 		return 0;
 	}
 
+	@ObfInfo(desc = "(Z)V")
 	public static void method5865(boolean var0) {
 		if (!Client.field2077.method1198() && !Client.field2077.method1291() && !Client.field2077.method1737()) {
 			field930 = Class378.field4356;
@@ -1248,6 +1324,7 @@ public class Class76 {
 		}
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method8440() {
 		field955 = field955.trim();
 		if (field955.length() == 0) {
@@ -1285,6 +1362,7 @@ public class Class76 {
 		}
 	}
 
+	@ObfInfo(desc = "(LClass418;LClass418;LClass418;)V")
 	public static void method2996(Class418 var0, Class418 var1, Class418 var2) {
 		field921 = (Client.field182 - 765) / 2;
 		field956 = field921 + 202;
@@ -1998,12 +2076,14 @@ public class Class76 {
 		}
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V")
 	public static void method5778(String var0, String var1, String var2) {
 		field930 = var0;
 		field935 = var1;
 		field951 = var2;
 	}
 
+	@ObfInfo(desc = "(LClass64;)V")
 	public static void method9252(Class64 var0) {
 		if (var0.method1175() != Client.field528) {
 			Client.field528 = var0.method1175();
@@ -2029,6 +2109,7 @@ public class Class76 {
 		Client.field3071 = Client.field429;
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method2088() {
 		if (Class64.method7411()) {
 			field934 = true;
@@ -2038,26 +2119,31 @@ public class Class76 {
 
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method4065() {
 		method4120(24);
 		method5778(Class378.field4376, Class378.field4307, Class378.field4407);
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method5912() {
 		method4120(24);
 		method5778(Class378.field4379, Class378.field4249, Class378.field4381);
 	}
 
+	@ObfInfo(desc = "(I)V")
 	public static void method4120(int var0) {
 		if (var0 != field932) {
 			field932 = var0;
 		}
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/String;)V")
 	public static void method3004(String var0) {
 		field941 = Class527.method3137(var0);
 	}
 
+	@ObfInfo(desc = "(ILjava/lang/String;)V")
 	public static void method3406(int var0, String var1) {
 		field942 = var1;
 		field928 = var0;

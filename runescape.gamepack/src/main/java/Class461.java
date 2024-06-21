@@ -1,6 +1,9 @@
+import io.runebox.ObfInfo;
 import java.util.ArrayList;
 
+@ObfInfo(name = "rs")
 public class Class461 extends Class447 {
+	@ObfInfo(name = "ak", desc = "Ljava/util/ArrayList;")
 	public ArrayList field4873;
 
 	public Class461(Class447 var1, ArrayList var2) {
@@ -9,6 +12,7 @@ public class Class461 extends Class447 {
 		super.field4807 = "ConcurrentMidiTask";
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)Z", opaque = "709593494")
 	public boolean method7832() {
 		for (int var2 = 0; var2 < this.field4873.size(); ++var2) {
 			Class447 var3 = (Class447)this.field4873.get(var2);

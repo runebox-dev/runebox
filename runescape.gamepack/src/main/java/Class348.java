@@ -1,6 +1,12 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "nj")
 public class Class348 {
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = 1268210065)
 	public int field3868;
+	@ObfInfo(name = "al", desc = "I", intMultiplier = -10786693)
 	public int field3869;
+	@ObfInfo(name = "ak", desc = "I", intMultiplier = 1559901275)
 	public int field3870;
 
 	public Class348(int var1, int var2, int var3) {
@@ -26,10 +32,12 @@ public class Class348 {
 
 	}
 
+	@ObfInfo(name = "ak", desc = "(B)I")
 	public int method6698() {
 		return Class58.method1085(this.field3870, this.field3869, this.field3868);
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
 	public boolean equals(Object var1) {
 		if (var1 == this) {
 			return true;
@@ -38,6 +46,7 @@ public class Class348 {
 		}
 	}
 
+	@ObfInfo(name = "aj", desc = "(Lnj;B)Z", opaque = "0")
 	public boolean method6699(Class348 var1) {
 		if (this.field3870 != var1.field3870) {
 			return false;
@@ -48,14 +57,17 @@ public class Class348 {
 		}
 	}
 
+	@ObfInfo(desc = "()I")
 	public int hashCode() {
 		return this.method6698();
 	}
 
+	@ObfInfo(desc = "()Ljava/lang/String;")
 	public String toString() {
 		return this.method6706(",");
 	}
 
+	@ObfInfo(name = "az", desc = "(Ljava/lang/String;I)Ljava/lang/String;")
 	public String method6706(String var1) {
 		return this.field3870 + var1 + (this.field3869 >> 6) + var1 + (this.field3868 >> 6) + var1 + (this.field3869 & 63) + var1 + (this.field3868 & 63);
 	}

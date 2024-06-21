@@ -1,10 +1,14 @@
+import io.runebox.ObfInfo;
 import java.applet.Applet;
 import java.awt.Desktop;
 import java.awt.Desktop.Action;
 import java.net.URI;
 
+@ObfInfo(name = "bn")
 public class Class40 {
+	@ObfInfo(name = "ak", desc = "Ljava/applet/Applet;")
 	public static Applet field282;
+	@ObfInfo(name = "al", desc = "Ljava/lang/String;")
 	public static String field279;
 
 	static {
@@ -12,6 +16,7 @@ public class Class40 {
 		field279 = "";
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/String;ZZ)V")
 	public static void method7134(String var0, boolean var1, boolean var2) {
 		if (var1) {
 			if (!var2 && Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Action.BROWSE)) {

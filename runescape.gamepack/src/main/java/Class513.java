@@ -1,8 +1,15 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "ts")
 public class Class513 implements Class508 {
+	@ObfInfo(name = "af", desc = "I", intMultiplier = 1621279449)
 	public int field5190;
+	@ObfInfo(name = "az", desc = "I", intMultiplier = 799455447)
 	public int field5191;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = -915967751)
 	public int field5192;
 
+	@ObfInfo(name = "ak", desc = "(I)Ltf;", opaque = "-449002327")
 	public Class500 method9284() {
 		byte var2;
 		if (Class90.field957.startsWith("win")) {
@@ -137,6 +144,7 @@ public class Class513 implements Class508 {
 		return new Class500(var2, var7, var8, var9, this.field5191, this.field5190, this.field5192, false, var11, var12, var13, 0, var14, var15, var16, var17, 0, 0, 0, 0, var18, var19, var24, 0, "", "", var28);
 	}
 
+	@ObfInfo(name = "al", desc = "(Ljava/lang/String;I)V", opaque = "-54427549")
 	public void method9307(String var1) {
 		if (var1.startsWith("1.")) {
 			this.method9305(var1);
@@ -146,6 +154,7 @@ public class Class513 implements Class508 {
 
 	}
 
+	@ObfInfo(name = "aj", desc = "(Ljava/lang/String;I)V")
 	public void method9305(String var1) {
 		String[] var3 = var1.split("\\.");
 
@@ -159,6 +168,7 @@ public class Class513 implements Class508 {
 
 	}
 
+	@ObfInfo(name = "az", desc = "(Ljava/lang/String;B)V")
 	public void method9306(String var1) {
 		String[] var3 = var1.split("\\.");
 

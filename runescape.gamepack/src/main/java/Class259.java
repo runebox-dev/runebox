@@ -1,78 +1,153 @@
+import io.runebox.ObfInfo;
 import java.util.BitSet;
 
+@ObfInfo(name = "jy")
 public class Class259 extends Class255 {
+	@ObfInfo(name = "al", desc = "Z")
 	public static boolean field2782;
+	@ObfInfo(name = "bc", desc = "[I")
 	public static final int[] field2749;
+	@ObfInfo(name = "bj", desc = "[I")
 	public static final int[] field2774;
+	@ObfInfo(name = "bz", desc = "[I")
 	public static final int[] field2776;
+	@ObfInfo(name = "ba", desc = "[I")
 	public static final int[] field2777;
+	@ObfInfo(name = "bb", desc = "[I")
 	public static final int[] field2778;
+	@ObfInfo(name = "by", desc = "[I")
 	public static final int[] field2779;
+	@ObfInfo(name = "cw", desc = "[I")
 	public static final int[] field2780;
+	@ObfInfo(name = "bm", desc = "[Ljf;")
 	public Class240[] field2801;
+	@ObfInfo(name = "bd", desc = "[[Ljf;")
 	public Class240[][] field2770;
+	@ObfInfo(name = "ab", desc = "[[[Ljz;")
 	public Class260[][][] field2735;
+	@ObfInfo(name = "ah", desc = "[Lkf;")
 	public Class266[] field2738;
+	@ObfInfo(name = "bt", desc = "[Lkf;")
 	public Class266[] field2748;
+	@ObfInfo(name = "bq", desc = "Lpk;")
 	public Class401 field2773;
+	@ObfInfo(name = "bn", desc = "Z")
 	public boolean field2757;
+	@ObfInfo(name = "bh", desc = "Z")
 	public boolean field2765;
+	@ObfInfo(name = "br", desc = "I")
 	public int field2729;
+	@ObfInfo(name = "aj", desc = "I")
 	public int field2730;
+	@ObfInfo(name = "bf", desc = "I")
 	public int field2731;
+	@ObfInfo(name = "af", desc = "I")
 	public int field2732;
+	@ObfInfo(name = "aa", desc = "I")
 	public int field2733;
+	@ObfInfo(name = "an", desc = "I")
 	public int field2734;
+	@ObfInfo(name = "az", desc = "I")
 	public int field2736;
+	@ObfInfo(name = "au", desc = "I")
 	public int field2745;
+	@ObfInfo(name = "cc", desc = "I")
 	public int field2747;
+	@ObfInfo(name = "ad", desc = "I")
 	public int field2750;
+	@ObfInfo(name = "am", desc = "I")
 	public int field2751;
+	@ObfInfo(name = "ar", desc = "I")
 	public int field2752;
+	@ObfInfo(name = "ag", desc = "I")
 	public int field2753;
+	@ObfInfo(name = "bs", desc = "I")
 	public int field2754;
+	@ObfInfo(name = "ao", desc = "I")
 	public int field2756;
+	@ObfInfo(name = "bi", desc = "I")
 	public int field2758;
+	@ObfInfo(name = "ci", desc = "I")
 	public int field2759;
+	@ObfInfo(name = "bw", desc = "I")
 	public int field2760;
+	@ObfInfo(name = "bl", desc = "I")
 	public int field2761;
+	@ObfInfo(name = "be", desc = "I")
 	public int field2762;
+	@ObfInfo(name = "bg", desc = "I")
 	public int field2763;
+	@ObfInfo(name = "bu", desc = "I")
 	public int field2764;
+	@ObfInfo(name = "aw", desc = "I")
 	public int field2769;
+	@ObfInfo(name = "bv", desc = "I")
 	public int field2771;
+	@ObfInfo(name = "as", desc = "I")
 	public int field2775;
+	@ObfInfo(name = "cr", desc = "I")
 	public int field2781;
+	@ObfInfo(name = "ac", desc = "I")
 	public int field2786;
+	@ObfInfo(name = "cb", desc = "I")
 	public int field2788;
+	@ObfInfo(name = "bo", desc = "I")
 	public int field2789;
+	@ObfInfo(name = "cu", desc = "I")
 	public int field2790;
+	@ObfInfo(name = "ai", desc = "I")
 	public int field2791;
+	@ObfInfo(name = "cx", desc = "I")
 	public int field2805;
+	@ObfInfo(name = "dj", desc = "I")
 	public int field2806;
+	@ObfInfo(name = "dq", desc = "I")
 	public int field2807;
+	@ObfInfo(name = "dm", desc = "I")
 	public int field2808;
+	@ObfInfo(name = "dr", desc = "I")
 	public int field2809;
+	@ObfInfo(name = "db", desc = "I")
 	public int field2810;
+	@ObfInfo(name = "do", desc = "I")
 	public int field2811;
+	@ObfInfo(name = "bx", desc = "[I")
 	public int[] field2728;
+	@ObfInfo(name = "cm", desc = "[I")
 	public int[] field2787;
+	@ObfInfo(name = "cs", desc = "[[I")
 	public int[][] field2767;
+	@ObfInfo(name = "cd", desc = "[[I")
 	public int[][] field2785;
+	@ObfInfo(name = "av", desc = "[[[I")
 	public int[][][] field2739;
+	@ObfInfo(name = "at", desc = "[[[I")
 	public int[][][] field2755;
+	@ObfInfo(name = "cf", desc = "Ljava/util/BitSet;")
 	public BitSet field2793;
+	@ObfInfo(name = "ce", desc = "Ljava/util/BitSet;")
 	public BitSet field2794;
+	@ObfInfo(name = "cy", desc = "Ljava/util/BitSet;")
 	public BitSet field2799;
+	@ObfInfo(name = "ct", desc = "Ljava/util/BitSet;")
 	public BitSet field2800;
+	@ObfInfo(name = "ak", desc = "I")
 	public final int field2741;
+	@ObfInfo(name = "co", desc = "I")
 	public final int field2792;
+	@ObfInfo(name = "cz", desc = "I")
 	public final int field2795;
+	@ObfInfo(name = "ca", desc = "I")
 	public final int field2796;
+	@ObfInfo(name = "cl", desc = "I")
 	public final int field2797;
+	@ObfInfo(name = "cq", desc = "I")
 	public final int field2798;
+	@ObfInfo(name = "cv", desc = "I")
 	public final int field2802;
+	@ObfInfo(name = "cj", desc = "I")
 	public final int field2803;
+	@ObfInfo(name = "cg", desc = "I")
 	public final int field2804;
 
 	static {
@@ -150,6 +225,7 @@ public class Class259 extends Class255 {
 		this.method4925();
 	}
 
+	@ObfInfo(name = "ak", desc = "()V")
 	public void method4925() {
 		int var1;
 		int var2;
@@ -181,6 +257,7 @@ public class Class259 extends Class255 {
 
 	}
 
+	@ObfInfo(name = "al", desc = "(I)V")
 	public void method5131(int var1) {
 		this.field2786 = var1;
 
@@ -194,6 +271,7 @@ public class Class259 extends Class255 {
 
 	}
 
+	@ObfInfo(name = "aj", desc = "(II)V")
 	public void method4927(int var1, int var2) {
 		Class260 var3 = this.field2735[0][var1][var2];
 
@@ -219,6 +297,7 @@ public class Class259 extends Class255 {
 		this.field2735[3][var1][var2] = null;
 	}
 
+	@ObfInfo(name = "az", desc = "(IIIIIIII)V")
 	public void method5009(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
 		Class240 var9 = new Class240();
 		var9.field2592 = var3 / 128;
@@ -235,6 +314,7 @@ public class Class259 extends Class255 {
 		this.field2770[var1][this.field2728[var1]++] = var9;
 	}
 
+	@ObfInfo(name = "af", desc = "(IIII)V")
 	public void method4941(int var1, int var2, int var3, int var4) {
 		Class260 var5 = this.field2735[var1][var2][var3];
 		if (var5 != null) {
@@ -242,6 +322,7 @@ public class Class259 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "aa", desc = "(IIIIIIIIIIIIIIIIIIII)V")
 	public void method5031(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12, int var13, int var14, int var15, int var16, int var17, int var18, int var19, int var20) {
 		Class267 var21;
 		int var22;
@@ -278,6 +359,7 @@ public class Class259 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "at", desc = "(IIIILju;JI)V")
 	public void method5062(int var1, int var2, int var3, int var4, Class255 var5, long var6, int var8) {
 		if (var5 != null) {
 			Class247 var9 = new Class247();
@@ -295,6 +377,7 @@ public class Class259 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "ab", desc = "(IIIILju;JLju;Lju;)V")
 	public void method4932(int var1, int var2, int var3, int var4, Class255 var5, long var6, Class255 var8, Class255 var9) {
 		Class242 var10 = new Class242();
 		var10.field2614 = var5;
@@ -326,6 +409,7 @@ public class Class259 extends Class255 {
 		this.field2735[var1][var2][var3].field2821 = var10;
 	}
 
+	@ObfInfo(name = "ac", desc = "(IIIILju;Lju;IIJI)V")
 	public void method4933(int var1, int var2, int var3, int var4, Class255 var5, Class255 var6, int var7, int var8, long var9, int var11) {
 		if (var5 != null || var6 != null) {
 			Class280 var12 = new Class280();
@@ -349,6 +433,7 @@ public class Class259 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "ao", desc = "(IIIILju;Lju;IIIIJI)V")
 	public void method5123(int var1, int var2, int var3, int var4, Class255 var5, Class255 var6, int var7, int var8, int var9, int var10, long var11, int var13) {
 		if (var5 != null) {
 			Class270 var14 = new Class270();
@@ -374,6 +459,7 @@ public class Class259 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "aq", desc = "(IIIIIILju;IJI)Z")
 	public boolean method4935(int var1, int var2, int var3, int var4, int var5, int var6, Class255 var7, int var8, long var9, int var11) {
 		if (var7 == null) {
 			return true;
@@ -384,6 +470,7 @@ public class Class259 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "ap", desc = "(IIIIILju;IJZ)Z")
 	public boolean method5129(int var1, int var2, int var3, int var4, int var5, Class255 var6, int var7, long var8, boolean var10) {
 		if (var6 == null) {
 			return true;
@@ -418,10 +505,12 @@ public class Class259 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "ae", desc = "(IIIIILju;IJIIII)Z")
 	public boolean method4937(int var1, int var2, int var3, int var4, int var5, Class255 var6, int var7, long var8, int var10, int var11, int var12, int var13) {
 		return var6 == null ? true : this.method4938(var1, var10, var11, var12 - var10 + 1, var13 - var11 + 1, var2, var3, var4, var6, var7, true, var8, 0);
 	}
 
+	@ObfInfo(name = "ax", desc = "(IIIIIIIILju;IZJI)Z")
 	public boolean method4938(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, Class255 var9, int var10, boolean var11, long var12, int var14) {
 		int var16;
 		for (int var15 = var2; var15 < var4 + var2; ++var15) {
@@ -491,6 +580,7 @@ public class Class259 extends Class255 {
 		return true;
 	}
 
+	@ObfInfo(name = "ay", desc = "()V")
 	public void method4939() {
 		for (int var1 = 0; var1 < this.field2756; ++var1) {
 			Class266 var2 = this.field2738[var1];
@@ -501,6 +591,7 @@ public class Class259 extends Class255 {
 		this.field2756 = 0;
 	}
 
+	@ObfInfo(name = "au", desc = "(Lkf;)V")
 	public void method4940(Class266 var1) {
 		for (int var2 = var1.field2962; var2 <= var1.field2959; ++var2) {
 			for (int var3 = var1.field2954; var3 <= var1.field2956; ++var3) {
@@ -532,6 +623,7 @@ public class Class259 extends Class255 {
 
 	}
 
+	@ObfInfo(name = "as", desc = "(IIII)V")
 	public void method4960(int var1, int var2, int var3, int var4) {
 		Class260 var5 = this.field2735[var1][var2][var3];
 		if (var5 != null) {
@@ -543,6 +635,7 @@ public class Class259 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "aw", desc = "(III)V")
 	public void method5074(int var1, int var2, int var3) {
 		Class260 var4 = this.field2735[var1][var2][var3];
 		if (var4 != null) {
@@ -550,6 +643,7 @@ public class Class259 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "ad", desc = "(III)V")
 	public void method4943(int var1, int var2, int var3) {
 		Class260 var4 = this.field2735[var1][var2][var3];
 		if (var4 != null) {
@@ -557,6 +651,7 @@ public class Class259 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "ai", desc = "(III)V")
 	public void method5033(int var1, int var2, int var3) {
 		Class260 var4 = this.field2735[var1][var2][var3];
 		if (var4 != null) {
@@ -571,6 +666,7 @@ public class Class259 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "an", desc = "(III)V")
 	public void method4945(int var1, int var2, int var3) {
 		Class260 var4 = this.field2735[var1][var2][var3];
 		if (var4 != null) {
@@ -578,6 +674,7 @@ public class Class259 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "am", desc = "(III)V")
 	public void method4946(int var1, int var2, int var3) {
 		Class260 var4 = this.field2735[var1][var2][var3];
 		if (var4 != null) {
@@ -585,16 +682,19 @@ public class Class259 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "ar", desc = "(III)Lkt;")
 	public Class280 method4947(int var1, int var2, int var3) {
 		Class260 var4 = this.field2735[var1][var2][var3];
 		return var4 == null ? null : var4.field2818;
 	}
 
+	@ObfInfo(name = "ag", desc = "(III)Lkj;")
 	public Class270 method4948(int var1, int var2, int var3) {
 		Class260 var4 = this.field2735[var1][var2][var3];
 		return var4 == null ? null : var4.field2817;
 	}
 
+	@ObfInfo(name = "bs", desc = "(III)Lkf;")
 	public Class266 method4949(int var1, int var2, int var3) {
 		Class260 var4 = this.field2735[var1][var2][var3];
 		if (var4 == null) {
@@ -611,21 +711,25 @@ public class Class259 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "bf", desc = "(III)Ljm;")
 	public Class247 method4950(int var1, int var2, int var3) {
 		Class260 var4 = this.field2735[var1][var2][var3];
 		return var4 != null && var4.field2820 != null ? var4.field2820 : null;
 	}
 
+	@ObfInfo(name = "bo", desc = "(III)J")
 	public long method4951(int var1, int var2, int var3) {
 		Class260 var4 = this.field2735[var1][var2][var3];
 		return var4 != null && var4.field2818 != null ? var4.field2818.field3096 : 0L;
 	}
 
+	@ObfInfo(name = "bi", desc = "(III)J")
 	public long method4952(int var1, int var2, int var3) {
 		Class260 var4 = this.field2735[var1][var2][var3];
 		return var4 != null && var4.field2817 != null ? var4.field2817.field3009 : 0L;
 	}
 
+	@ObfInfo(name = "bt", desc = "(III)J")
 	public long method4953(int var1, int var2, int var3) {
 		Class260 var4 = this.field2735[var1][var2][var3];
 		if (var4 == null) {
@@ -642,11 +746,13 @@ public class Class259 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "bn", desc = "(III)J")
 	public long method4954(int var1, int var2, int var3) {
 		Class260 var4 = this.field2735[var1][var2][var3];
 		return var4 != null && var4.field2820 != null ? var4.field2820.field2652 : 0L;
 	}
 
+	@ObfInfo(name = "bw", desc = "(IIIJ)I")
 	public int method5003(int var1, int var2, int var3, long var4) {
 		Class260 var6 = this.field2735[var1][var2][var3];
 		if (var6 == null) {
@@ -668,6 +774,7 @@ public class Class259 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "bl", desc = "(III)V")
 	public void method4956(int var1, int var2, int var3) {
 		for (int var4 = 0; var4 < this.field2736; ++var4) {
 			for (int var5 = 0; var5 < this.field2732; ++var5) {
@@ -711,6 +818,7 @@ public class Class259 extends Class255 {
 
 	}
 
+	@ObfInfo(name = "be", desc = "(Ljb;III)V")
 	public void method4957(Class236 var1, int var2, int var3, int var4) {
 		int var6 = var3 + 1;
 		int var7 = var4 - 1;
@@ -733,6 +841,7 @@ public class Class259 extends Class255 {
 
 	}
 
+	@ObfInfo(name = "bg", desc = "(Ljb;IIIII)V")
 	public void method4958(Class236 var1, int var2, int var3, int var4, int var5, int var6) {
 		boolean var7 = true;
 		int var8 = var3;
@@ -785,14 +894,17 @@ public class Class259 extends Class255 {
 
 	}
 
+	@ObfInfo(name = "bu", desc = "(IIIIII)I")
 	public int method4959(int var1, int var2, int var3, int var4, int var5, int var6) {
 		return this.method4928(var1, var2, var3) - this.method4928(var4, var5, var6);
 	}
 
+	@ObfInfo(name = "bh", desc = "(III)I")
 	public int method4928(int var1, int var2, int var3) {
 		return (this.field2755[var1][var2][var3] + this.field2755[var1][var2 + 1][var3] + this.field2755[var1][var2][var3 + 1] + this.field2755[var1][var2 + 1][var3 + 1]) / 4;
 	}
 
+	@ObfInfo(name = "bk", desc = "([IIIIII)V")
 	public void method4961(int[] var1, int var2, int var3, int var4, int var5, int var6) {
 		Class260 var7 = this.field2735[var4][var5][var6];
 		if (var7 != null) {
@@ -856,6 +968,7 @@ public class Class259 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "bp", desc = "(I)V")
 	public void method5045(int var1) {
 		int var2 = Math.max(25, Math.min(var1, 90));
 		this.field2745 = var2;
@@ -866,56 +979,69 @@ public class Class259 extends Class255 {
 
 	}
 
+	@ObfInfo(name = "br", desc = "(Ljava/util/BitSet;IIII)Z")
 	public boolean method4963(BitSet var1, int var2, int var3, int var4, int var5) {
 		return var1.get(this.field2795 * var2 + this.field2796 * var3 + this.field2797 * var4 + var5);
 	}
 
+	@ObfInfo(name = "bx", desc = "(Ljava/util/BitSet;IIIIZ)Z")
 	public boolean method4964(BitSet var1, int var2, int var3, int var4, int var5, boolean var6) {
 		var1.set(this.field2795 * var2 + this.field2796 * var3 + this.field2797 * var4 + var5, var6);
 		return var6;
 	}
 
+	@ObfInfo(name = "bd", desc = "(IIII)Z")
 	public boolean method4965(int var1, int var2, int var3, int var4) {
 		return this.method4963(this.field2793, var1, var2, var3, var4);
 	}
 
+	@ObfInfo(name = "bv", desc = "(IIIIZ)Z")
 	public boolean method5016(int var1, int var2, int var3, int var4, boolean var5) {
 		return this.method4964(this.field2793, var1, var2, var3, var4, var5);
 	}
 
+	@ObfInfo(name = "bm", desc = "(IIII)Z")
 	public boolean method5115(int var1, int var2, int var3, int var4) {
 		return this.method4963(this.field2794, var1, var2, var3, var4);
 	}
 
+	@ObfInfo(name = "bq", desc = "(IIIIZ)Z")
 	public boolean method4968(int var1, int var2, int var3, int var4, boolean var5) {
 		return this.method4964(this.field2794, var1, var2, var3, var4, var5);
 	}
 
+	@ObfInfo(name = "bj", desc = "(Ljava/util/BitSet;IIII)Z")
 	public boolean method4969(BitSet var1, int var2, int var3, int var4, int var5) {
 		return var1.get(this.field2804 * var2 + this.field2802 * var3 + this.field2803 * var4 + var5);
 	}
 
+	@ObfInfo(name = "bc", desc = "(Ljava/util/BitSet;IIIIZ)Z")
 	public boolean method4970(BitSet var1, int var2, int var3, int var4, int var5, boolean var6) {
 		var1.set(this.field2804 * var2 + this.field2802 * var3 + this.field2803 * var4 + var5, var6);
 		return var6;
 	}
 
+	@ObfInfo(name = "bz", desc = "(IIII)Z")
 	public boolean method4971(int var1, int var2, int var3, int var4) {
 		return this.method4969(this.field2799, var1, var2, var3, var4);
 	}
 
+	@ObfInfo(name = "ba", desc = "(IIIIZ)Z")
 	public boolean method4972(int var1, int var2, int var3, int var4, boolean var5) {
 		return this.method4970(this.field2799, var1, var2, var3, var4, var5);
 	}
 
+	@ObfInfo(name = "bb", desc = "(IIII)Z")
 	public boolean method4973(int var1, int var2, int var3, int var4) {
 		return this.method4969(this.field2800, var1, var2, var3, var4);
 	}
 
+	@ObfInfo(name = "by", desc = "(IIIIZ)Z")
 	public boolean method4974(int var1, int var2, int var3, int var4, boolean var5) {
 		return this.method4970(this.field2800, var1, var2, var3, var4, var5);
 	}
 
+	@ObfInfo(name = "cw", desc = "([IIIII)V")
 	public void method4975(int[] var1, int var2, int var3, int var4, int var5) {
 		this.field2787 = var1;
 		this.field2759 = var2;
@@ -932,11 +1058,13 @@ public class Class259 extends Class255 {
 		this.field2800.set(0, this.field2800.size());
 	}
 
+	@ObfInfo(name = "ck", desc = "(II)V")
 	public void method4976(int var1, int var2) {
 		this.field2790 = var1;
 		this.field2805 = var2;
 	}
 
+	@ObfInfo(name = "cn", desc = "(II)Z")
 	public boolean method4977(int var1, int var2) {
 		if (!this.method5115(this.field2790, this.field2805, var1, var2)) {
 			return this.method4965(this.field2790, this.field2805, var1, var2);
@@ -976,6 +1104,7 @@ public class Class259 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "ch", desc = "(IIII)Z")
 	public boolean method4978(int var1, int var2, int var3, int var4) {
 		if (!this.method4973(var1, var2, var3, var4)) {
 			return this.method4971(var1, var2, var3, var4);
@@ -996,6 +1125,7 @@ public class Class259 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "cp", desc = "(IIIII)Z")
 	public boolean method4979(int var1, int var2, int var3, int var4, int var5) {
 		int[] var6 = Class253.field2683;
 		int[] var7 = Class253.field2687;
@@ -1016,6 +1146,7 @@ public class Class259 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "cd", desc = "(IIIZ)V")
 	public void method4980(int var1, int var2, int var3, boolean var4) {
 		if (!this.method5089() || var4) {
 			this.field2757 = true;
@@ -1028,19 +1159,23 @@ public class Class259 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "cs", desc = "()V")
 	public void method4981() {
 		this.field2765 = true;
 	}
 
+	@ObfInfo(name = "cm", desc = "()Z")
 	public boolean method5089() {
 		return this.field2765 && this.field2763 != -1;
 	}
 
+	@ObfInfo(name = "ci", desc = "()V")
 	public void method5060() {
 		this.field2763 = -1;
 		this.field2765 = false;
 	}
 
+	@ObfInfo(name = "cc", desc = "(IIIIII)V")
 	public void method4984(int var1, int var2, int var3, int var4, int var5, int var6) {
 		if (var1 < 0) {
 			var1 = 0;
@@ -1071,6 +1206,7 @@ public class Class259 extends Class255 {
 		this.method4985(var7);
 	}
 
+	@ObfInfo(name = "cb", desc = "(Lkl;)V")
 	public void method4985(Class272 var1) {
 		++this.field2750;
 		this.field2791 = this.field2753 - this.field2745;
@@ -1240,6 +1376,7 @@ public class Class259 extends Class255 {
 		this.field2757 = false;
 	}
 
+	@ObfInfo(name = "cr", desc = "(Lkl;Ljz;Z)V")
 	public void method4986(Class272 var1, Class260 var2, boolean var3) {
 		this.field2773.method7477(var2);
 
@@ -1762,6 +1899,7 @@ public class Class259 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "ce", desc = "()V")
 	public void method5112() {
 		int var1 = this.field2728[this.field2769];
 		Class240[] var2 = this.field2770[this.field2769];
@@ -1909,6 +2047,7 @@ public class Class259 extends Class255 {
 
 	}
 
+	@ObfInfo(name = "cz", desc = "(III)Z")
 	public boolean method4990(int var1, int var2, int var3) {
 		int var4 = this.field2739[var1][var2][var3];
 		if (var4 == -this.field2750) {
@@ -1928,6 +2067,7 @@ public class Class259 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "ca", desc = "(IIII)Z")
 	public boolean method4991(int var1, int var2, int var3, int var4) {
 		if (!this.method4990(var1, var2, var3)) {
 			return false;
@@ -2084,6 +2224,7 @@ public class Class259 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "cl", desc = "(IIII)Z")
 	public boolean method4992(int var1, int var2, int var3, int var4) {
 		if (!this.method4990(var1, var2, var3)) {
 			return false;
@@ -2094,6 +2235,7 @@ public class Class259 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "cq", desc = "(IIIIII)Z")
 	public boolean method4993(int var1, int var2, int var3, int var4, int var5, int var6) {
 		int var7;
 		int var8;
@@ -2137,6 +2279,7 @@ public class Class259 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "cy", desc = "(III)Z")
 	public boolean method4994(int var1, int var2, int var3) {
 		for (int var4 = 0; var4 < this.field2771; ++var4) {
 			Class240 var5 = this.field2801[var4];
@@ -2206,6 +2349,7 @@ public class Class259 extends Class255 {
 		return false;
 	}
 
+	@ObfInfo(name = "ef", desc = "(IIIIIIIIIJ)V")
 	public void method4892(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, long var10) {
 		Class440 var12 = new Class440();
 		var12.method8252((float)((double)(-var2) * 0.0030679615D));
@@ -2245,6 +2389,7 @@ public class Class259 extends Class255 {
 		this.method4985(var25);
 	}
 
+	@ObfInfo(name = "co", desc = "(II)I")
 	public static int method4987(int var0, int var1) {
 		var1 = var1 * (var0 & 127) >> 7;
 		if (var1 < 2) {
@@ -2256,6 +2401,7 @@ public class Class259 extends Class255 {
 		return (var0 & 65408) + var1;
 	}
 
+	@ObfInfo(name = "cf", desc = "(IIIIIIII)Z")
 	public static boolean method4988(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
 		if (var1 < var2 && var1 < var3 && var1 < var4) {
 			return false;

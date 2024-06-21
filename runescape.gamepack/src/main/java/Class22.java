@@ -1,3 +1,4 @@
+import io.runebox.ObfInfo;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.security.cert.CertificateException;
@@ -8,14 +9,17 @@ import org.bouncycastle.crypto.tls.CertificateRequest;
 import org.bouncycastle.crypto.tls.TlsAuthentication;
 import org.bouncycastle.crypto.tls.TlsCredentials;
 
+@ObfInfo(name = "av")
 class Class22 implements TlsAuthentication {
 	// $FF: synthetic field
+	@ObfInfo(desc = "Lap;")
 	public final Class16 this$2;
 
 	public Class22(Class16 var1) {
 		this.this$2 = var1;
 	}
 
+	@ObfInfo(desc = "(Lorg/bouncycastle/crypto/tls/Certificate;)V")
 	public void notifyServerCertificate(Certificate var1) throws IOException {
 		try {
 			CertificateFactory var2 = CertificateFactory.getInstance("X.509");
@@ -33,6 +37,7 @@ class Class22 implements TlsAuthentication {
 		}
 	}
 
+	@ObfInfo(desc = "(Lorg/bouncycastle/crypto/tls/CertificateRequest;)Lorg/bouncycastle/crypto/tls/TlsCredentials;")
 	public TlsCredentials getClientCredentials(CertificateRequest var1) throws IOException {
 		return null;
 	}

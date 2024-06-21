@@ -1,48 +1,96 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "iq")
 public class Class225 extends Class507 {
+	@ObfInfo(name = "az", desc = "Llm;")
 	public static Class299 field2316;
+	@ObfInfo(name = "af", desc = "Llm;")
 	public static Class299 field2317;
+	@ObfInfo(name = "bc", desc = "Ltu;")
 	public Class515 field2360;
+	@ObfInfo(name = "bt", desc = "Z")
 	public boolean field2343;
+	@ObfInfo(name = "bm", desc = "Z")
 	public boolean field2344;
+	@ObfInfo(name = "be", desc = "Z")
 	public boolean field2349;
+	@ObfInfo(name = "bx", desc = "Z")
 	public boolean field2354;
+	@ObfInfo(name = "bd", desc = "Z")
 	public boolean field2355;
+	@ObfInfo(name = "bv", desc = "Z")
 	public boolean field2356;
+	@ObfInfo(name = "aq", desc = "I", intMultiplier = 59190127)
 	public int field2314;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = -244805767)
 	public int field2318;
+	@ObfInfo(name = "bn", desc = "I", intMultiplier = -2065950307)
 	public int field2319;
+	@ObfInfo(name = "ab", desc = "I", intMultiplier = 1016297279)
 	public int field2320;
+	@ObfInfo(name = "av", desc = "I", intMultiplier = -1484904517)
 	public int field2321;
+	@ObfInfo(name = "ah", desc = "I", intMultiplier = 313198789)
 	public int field2323;
+	@ObfInfo(name = "ar", desc = "I", intMultiplier = -434528093)
 	public int field2324;
+	@ObfInfo(name = "bw", desc = "I", intMultiplier = -1845965057)
 	public int field2325;
+	@ObfInfo(name = "ap", desc = "I", intMultiplier = -795735663)
 	public int field2326;
+	@ObfInfo(name = "bl", desc = "I", intMultiplier = -1609108809)
 	public int field2327;
+	@ObfInfo(name = "ax", desc = "I", intMultiplier = 1751645485)
 	public int field2328;
+	@ObfInfo(name = "ay", desc = "I", intMultiplier = -598540973)
 	public int field2329;
+	@ObfInfo(name = "au", desc = "I", intMultiplier = -1920059097)
 	public int field2330;
+	@ObfInfo(name = "as", desc = "I", intMultiplier = -1452064117)
 	public int field2331;
+	@ObfInfo(name = "bh", desc = "I", intMultiplier = 1140381571)
 	public int field2332;
+	@ObfInfo(name = "ad", desc = "I", intMultiplier = 1419348581)
 	public int field2333;
+	@ObfInfo(name = "ai", desc = "I", intMultiplier = 472894765)
 	public int field2334;
+	@ObfInfo(name = "an", desc = "I", intMultiplier = -188150803)
 	public int field2335;
+	@ObfInfo(name = "am", desc = "I", intMultiplier = -1542668147)
 	public int field2336;
+	@ObfInfo(name = "br", desc = "I", intMultiplier = -1577258597)
 	public int field2338;
+	@ObfInfo(name = "bu", desc = "I", intMultiplier = -1374322227)
 	public int field2340;
+	@ObfInfo(name = "ae", desc = "I", intMultiplier = -276666815)
 	public int field2347;
+	@ObfInfo(name = "bg", desc = "I", intMultiplier = 398319189)
 	public int field2348;
+	@ObfInfo(name = "bp", desc = "I", intMultiplier = 1078074805)
 	public int field2352;
+	@ObfInfo(name = "aw", desc = "I", intMultiplier = 553056745)
 	public int field2361;
+	@ObfInfo(name = "ao", desc = "[I")
 	public int[] field2322;
+	@ObfInfo(name = "bk", desc = "[I")
 	public int[] field2351;
+	@ObfInfo(name = "ac", desc = "[I")
 	public int[] field2357;
+	@ObfInfo(name = "bq", desc = "[I")
 	public int[] field2358;
+	@ObfInfo(name = "at", desc = "Ljava/lang/String;")
 	public String field2337;
+	@ObfInfo(name = "bi", desc = "[Ljava/lang/String;")
 	public String[] field2342;
+	@ObfInfo(name = "bs", desc = "[S")
 	public short[] field2339;
+	@ObfInfo(name = "ag", desc = "[S")
 	public short[] field2345;
+	@ObfInfo(name = "bf", desc = "[S")
 	public short[] field2346;
+	@ObfInfo(name = "bo", desc = "[S")
 	public short[] field2350;
+	@ObfInfo(name = "bj", desc = "[S")
 	public short[] field2359;
 
 	static {
@@ -87,9 +135,11 @@ public class Class225 extends Class507 {
 		this.field2359 = null;
 	}
 
+	@ObfInfo(name = "al", desc = "(I)V")
 	public void method4243() {
 	}
 
+	@ObfInfo(name = "aj", desc = "(Lua;I)V")
 	public void method4244(Class521 var1) {
 		while (true) {
 			int var3 = var1.method9405();
@@ -101,6 +151,7 @@ public class Class225 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "az", desc = "(Lua;II)V", opaque = "310369198")
 	public void method4245(Class521 var1, int var2) {
 		int var4;
 		int var5;
@@ -259,6 +310,7 @@ public class Class225 extends Class507 {
 
 	}
 
+	@ObfInfo(name = "af", desc = "(Lic;ILic;ILio;B)Lkb;", opaque = "-1")
 	public final Class262 method4246(Class211 var1, int var2, Class211 var3, int var4, Class223 var5) {
 		if (this.field2351 != null) {
 			Class225 var12 = this.method4249();
@@ -299,6 +351,7 @@ public class Class225 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "aa", desc = "(Lio;I)Ljb;", opaque = "1875741279")
 	public final Class236 method4247(Class223 var1) {
 		if (this.field2351 != null) {
 			Class225 var3 = this.method4249();
@@ -308,6 +361,7 @@ public class Class225 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "at", desc = "([ILio;I)Ljb;", opaque = "821371396")
 	public Class236 method4300(int[] var1, Class223 var2) {
 		int[] var4 = var1;
 		if (var2 != null && var2.field2291 != null) {
@@ -373,6 +427,7 @@ public class Class225 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "ab", desc = "(I)Liq;", opaque = "1698243721")
 	public final Class225 method4249() {
 		int var2 = -1;
 		if (-1 != this.field2352) {
@@ -391,6 +446,7 @@ public class Class225 extends Class507 {
 		return var3 != -1 ? method3256(var3) : null;
 	}
 
+	@ObfInfo(name = "ac", desc = "(B)I", opaque = "-1")
 	public final int method4265() {
 		if (this.field2351 != null) {
 			Class225 var2 = this.method4249();
@@ -402,6 +458,7 @@ public class Class225 extends Class507 {
 		return -1;
 	}
 
+	@ObfInfo(name = "ao", desc = "(B)Z", opaque = "14")
 	public boolean method4251() {
 		if (this.field2351 == null) {
 			return true;
@@ -421,6 +478,7 @@ public class Class225 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "ah", desc = "(III)I", opaque = "-1925987720")
 	public int method4271(int var1, int var2) {
 		Class515 var5 = this.field2360;
 		int var4;
@@ -438,30 +496,37 @@ public class Class225 extends Class507 {
 		return var4;
 	}
 
+	@ObfInfo(name = "av", desc = "(ILjava/lang/String;I)Ljava/lang/String;")
 	public String method4253(int var1, String var2) {
 		return Class188.method2595(this.field2360, var1, var2);
 	}
 
+	@ObfInfo(name = "aq", desc = "(S)Z", opaque = "320")
 	public boolean method4262() {
 		return this.field2358 != null && this.field2359 != null;
 	}
 
+	@ObfInfo(name = "ap", desc = "(B)[I")
 	public int[] method4242() {
 		return this.field2358;
 	}
 
+	@ObfInfo(name = "ae", desc = "(IB)I", opaque = "2")
 	public int method4256(int var1) {
 		return this.field2358 != null && var1 < this.field2358.length ? this.field2358[var1] : -1;
 	}
 
+	@ObfInfo(name = "ax", desc = "(I)[S")
 	public short[] method4257() {
 		return this.field2359;
 	}
 
+	@ObfInfo(name = "ay", desc = "(II)S", opaque = "-1395756043")
 	public short method4258(int var1) {
 		return this.field2359 != null && var1 < this.field2359.length ? this.field2359[var1] : -1;
 	}
 
+	@ObfInfo(desc = "(I)LClass225;")
 	public static Class225 method3256(int var0) {
 		Class225 var2 = (Class225)field2316.method5993((long)var0);
 		if (var2 != null) {

@@ -1,3 +1,4 @@
+import io.runebox.ObfInfo;
 import java.io.InputStream;
 import java.io.OutputStreamWriter;
 import java.math.BigInteger;
@@ -6,8 +7,11 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.Random;
 
+@ObfInfo(name = "cv")
 public class Class74 {
+	@ObfInfo(name = "aa", desc = "Ljava/math/BigInteger;")
 	public static final BigInteger field909;
+	@ObfInfo(name = "af", desc = "Ljava/math/BigInteger;")
 	public static final BigInteger field911;
 
 	static {
@@ -15,6 +19,7 @@ public class Class74 {
 		field909 = new BigInteger("7237300117305667488707183861728052766358166655052137727439795191253340127955075499635575104901523446809299097934591732635674173519120047404024393881551683");
 	}
 
+	@ObfInfo(desc = "()J")
 	public static long method7131() {
 		try {
 			URL var1 = new URL(Client.method8428("services", false) + "m=accountappeal/login.ws");
@@ -46,10 +51,12 @@ public class Class74 {
 		}
 	}
 
+	@ObfInfo(name = "af", desc = "(J)Z")
 	public static boolean method2085(long var0) {
 		return (int)(var0 >>> 16 & 1L) == 1;
 	}
 
+	@ObfInfo(desc = "(JLjava/lang/String;)I")
 	public static int method68(long var0, String var2) {
 		Random var4 = new Random();
 		Class521 var5 = new Class521(128);
@@ -155,6 +162,7 @@ public class Class74 {
 		}
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/String;)Z")
 	public static boolean method7103(String var0) {
 		if (var0 == null) {
 			return false;

@@ -1,4 +1,8 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "ul")
 public class Class532 {
+	@ObfInfo(desc = "([Ljava/lang/String;[SII)V")
 	public static void method9665(String[] var0, short[] var1, int var2, int var3) {
 		if (var2 < var3) {
 			int var5 = (var3 + var2) / 2;
@@ -31,6 +35,7 @@ public class Class532 {
 
 	}
 
+	@ObfInfo(desc = "([Ljava/lang/String;[III)V")
 	public static void method3940(String[] var0, int[] var1, int var2, int var3) {
 		if (var2 < var3) {
 			int var5 = (var3 + var2) / 2;
@@ -63,6 +68,7 @@ public class Class532 {
 
 	}
 
+	@ObfInfo(desc = "([I[III)V")
 	public static void method6164(int[] var0, int[] var1, int var2, int var3) {
 		if (var2 < var3) {
 			int var5 = (var3 + var2) / 2;

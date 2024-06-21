@@ -1,12 +1,17 @@
+import io.runebox.ObfInfo;
 import java.io.EOFException;
 import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.io.SyncFailedException;
 
+@ObfInfo(name = "ue")
 public final class Class525 {
+	@ObfInfo(name = "ak", desc = "Ljava/io/RandomAccessFile;")
 	public RandomAccessFile field5229;
+	@ObfInfo(name = "aj", desc = "J", longMultiplier = 7464592388017412915L)
 	public long field5230;
+	@ObfInfo(name = "al", desc = "J", longMultiplier = -6654413090181825883L)
 	public final long field5231;
 
 	public Class525(File var1, String var2, long var3) throws IOException {
@@ -30,11 +35,13 @@ public final class Class525 {
 		this.field5229.seek(0L);
 	}
 
+	@ObfInfo(name = "ak", desc = "(J)V")
 	public final void method9667(long var1) throws IOException {
 		this.field5229.seek(var1);
 		this.field5230 = var1;
 	}
 
+	@ObfInfo(name = "al", desc = "([BIII)V")
 	public final void method9668(byte[] var1, int var2, int var3) throws IOException {
 		if (this.field5230 + (long)var3 > this.field5231) {
 			this.field5229.seek(this.field5231);
@@ -46,10 +53,12 @@ public final class Class525 {
 		}
 	}
 
+	@ObfInfo(name = "aj", desc = "(B)V")
 	public final void method9672() throws IOException {
 		this.method9669(false);
 	}
 
+	@ObfInfo(name = "az", desc = "(ZI)V", opaque = "-1046803903")
 	public final void method9669(boolean var1) throws IOException {
 		if (this.field5229 != null) {
 			if (var1) {
@@ -65,10 +74,12 @@ public final class Class525 {
 
 	}
 
+	@ObfInfo(name = "af", desc = "(I)J")
 	public final long method9674() throws IOException {
 		return this.field5229.length();
 	}
 
+	@ObfInfo(name = "aa", desc = "([BIIB)I", opaque = "4")
 	public final int method9682(byte[] var1, int var2, int var3) throws IOException {
 		int var5 = this.field5229.read(var1, var2, var3);
 		if (var5 > 0) {
@@ -78,6 +89,7 @@ public final class Class525 {
 		return var5;
 	}
 
+	@ObfInfo(desc = "()V")
 	public void finalize() throws Throwable {
 		if (this.field5229 != null) {
 			System.out.println("");

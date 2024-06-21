@@ -1,45 +1,90 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "jb")
 public class Class236 extends Class255 {
+	@ObfInfo(name = "bd", desc = "I")
 	public static int field2561;
+	@ObfInfo(name = "bx", desc = "[I")
 	public static int[] field2525;
+	@ObfInfo(name = "br", desc = "[I")
 	public static int[] field2559;
+	@ObfInfo(name = "bv", desc = "[I")
 	public static int[] field2562;
+	@ObfInfo(name = "bm", desc = "[I")
 	public static int[] field2563;
+	@ObfInfo(name = "bi", desc = "[Ljc;")
 	public Class237[] field2537;
+	@ObfInfo(name = "bn", desc = "[Lkm;")
 	public Class273[] field2550;
+	@ObfInfo(name = "bt", desc = "[Lkm;")
 	public Class273[] field2558;
+	@ObfInfo(name = "be", desc = "Z")
 	public boolean field2553;
+	@ObfInfo(name = "au", desc = "B")
 	public byte field2555;
+	@ObfInfo(name = "av", desc = "[B")
 	public byte[] field2530;
+	@ObfInfo(name = "ae", desc = "[B")
 	public byte[] field2533;
+	@ObfInfo(name = "aq", desc = "[B")
 	public byte[] field2536;
+	@ObfInfo(name = "aw", desc = "[B")
 	public byte[] field2538;
+	@ObfInfo(name = "ap", desc = "[B")
 	public byte[] field2548;
+	@ObfInfo(name = "bu", desc = "I")
 	public int field2519;
+	@ObfInfo(name = "az", desc = "I")
 	public int field2522;
+	@ObfInfo(name = "ab", desc = "I")
 	public int field2526;
+	@ObfInfo(name = "as", desc = "I")
 	public int field2527;
+	@ObfInfo(name = "bp", desc = "I")
 	public int field2541;
+	@ObfInfo(name = "bg", desc = "I")
 	public int field2554;
+	@ObfInfo(name = "bk", desc = "I")
 	public int field2557;
+	@ObfInfo(name = "bh", desc = "I")
 	public int field2560;
+	@ObfInfo(name = "af", desc = "[I")
 	public int[] field2523;
+	@ObfInfo(name = "aa", desc = "[I")
 	public int[] field2524;
+	@ObfInfo(name = "ao", desc = "[I")
 	public int[] field2528;
+	@ObfInfo(name = "ah", desc = "[I")
 	public int[] field2529;
+	@ObfInfo(name = "at", desc = "[I")
 	public int[] field2532;
+	@ObfInfo(name = "ac", desc = "[I")
 	public int[] field2542;
+	@ObfInfo(name = "ar", desc = "[I")
 	public int[] field2543;
+	@ObfInfo(name = "am", desc = "[I")
 	public int[] field2544;
+	@ObfInfo(name = "bs", desc = "[[I")
 	public int[][] field2545;
+	@ObfInfo(name = "bf", desc = "[[I")
 	public int[][] field2546;
+	@ObfInfo(name = "bo", desc = "[[I")
 	public int[][] field2547;
+	@ObfInfo(name = "ag", desc = "[[I")
 	public int[][] field2551;
+	@ObfInfo(name = "bl", desc = "S")
 	public short field2552;
+	@ObfInfo(name = "bw", desc = "S")
 	public short field2556;
+	@ObfInfo(name = "ax", desc = "[S")
 	public short[] field2534;
+	@ObfInfo(name = "ay", desc = "[S")
 	public short[] field2535;
+	@ObfInfo(name = "ad", desc = "[S")
 	public short[] field2539;
+	@ObfInfo(name = "ai", desc = "[S")
 	public short[] field2540;
+	@ObfInfo(name = "an", desc = "[S")
 	public short[] field2549;
 
 	static {
@@ -317,6 +362,7 @@ public class Class236 extends Class255 {
 		this.field2552 = var1.field2552;
 	}
 
+	@ObfInfo(name = "al", desc = "([B)V")
 	public void method4559(byte[] var1) {
 		Class521 var2 = new Class521(var1);
 		Class521 var3 = new Class521(var1);
@@ -639,6 +685,7 @@ public class Class236 extends Class255 {
 
 	}
 
+	@ObfInfo(name = "aj", desc = "([B)V")
 	public void method4560(byte[] var1) {
 		boolean var2 = false;
 		boolean var3 = false;
@@ -932,6 +979,7 @@ public class Class236 extends Class255 {
 
 	}
 
+	@ObfInfo(name = "az", desc = "([B)V")
 	public void method4568(byte[] var1) {
 		Class521 var2 = new Class521(var1);
 		Class521 var3 = new Class521(var1);
@@ -1237,6 +1285,7 @@ public class Class236 extends Class255 {
 
 	}
 
+	@ObfInfo(name = "af", desc = "([B)V")
 	public void method4562(byte[] var1) {
 		boolean var2 = false;
 		boolean var3 = false;
@@ -1513,6 +1562,7 @@ public class Class236 extends Class255 {
 
 	}
 
+	@ObfInfo(name = "aa", desc = "(Ljb;I)I")
 	public final int method4608(Class236 var1, int var2) {
 		int var3 = -1;
 		int var4 = var1.field2523[var2];
@@ -1545,6 +1595,7 @@ public class Class236 extends Class255 {
 		return var3;
 	}
 
+	@ObfInfo(name = "at", desc = "()Ljb;")
 	public Class236 method4565() {
 		Class236 var1 = new Class236();
 		if (this.field2530 != null) {
@@ -1585,6 +1636,7 @@ public class Class236 extends Class255 {
 		return var1;
 	}
 
+	@ObfInfo(name = "ab", desc = "([[IIIIZI)Ljb;")
 	public Class236 method4566(int[][] var1, int var2, int var3, int var4, boolean var5, int var6) {
 		this.method4579();
 		int var7 = this.field2519 + var2;
@@ -1681,6 +1733,7 @@ public class Class236 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "ac", desc = "()V")
 	public void method4574() {
 		int[] var1;
 		int var2;
@@ -1741,6 +1794,7 @@ public class Class236 extends Class255 {
 
 	}
 
+	@ObfInfo(name = "ao", desc = "()V")
 	public void method4582() {
 		for (int var1 = 0; var1 < this.field2522; ++var1) {
 			int var2 = this.field2523[var1];
@@ -1751,6 +1805,7 @@ public class Class236 extends Class255 {
 		this.method4578();
 	}
 
+	@ObfInfo(name = "aq", desc = "()V")
 	public void method4569() {
 		for (int var1 = 0; var1 < this.field2522; ++var1) {
 			this.field2523[var1] = -this.field2523[var1];
@@ -1760,6 +1815,7 @@ public class Class236 extends Class255 {
 		this.method4578();
 	}
 
+	@ObfInfo(name = "ap", desc = "()V")
 	public void method4570() {
 		for (int var1 = 0; var1 < this.field2522; ++var1) {
 			int var2 = this.field2532[var1];
@@ -1770,6 +1826,7 @@ public class Class236 extends Class255 {
 		this.method4578();
 	}
 
+	@ObfInfo(name = "ae", desc = "(I)V")
 	public void method4597(int var1) {
 		int var2 = field2562[var1];
 		int var3 = field2563[var1];
@@ -1783,6 +1840,7 @@ public class Class236 extends Class255 {
 		this.method4578();
 	}
 
+	@ObfInfo(name = "ax", desc = "(III)V")
 	public void method4558(int var1, int var2, int var3) {
 		for (int var4 = 0; var4 < this.field2522; ++var4) {
 			int[] var10000 = this.field2523;
@@ -1796,6 +1854,7 @@ public class Class236 extends Class255 {
 		this.method4578();
 	}
 
+	@ObfInfo(name = "ay", desc = "(SS)V")
 	public void method4573(short var1, short var2) {
 		for (int var3 = 0; var3 < this.field2526; ++var3) {
 			if (this.field2534[var3] == var1) {
@@ -1805,6 +1864,7 @@ public class Class236 extends Class255 {
 
 	}
 
+	@ObfInfo(name = "au", desc = "(SS)V")
 	public void method4600(short var1, short var2) {
 		if (this.field2535 != null) {
 			for (int var3 = 0; var3 < this.field2526; ++var3) {
@@ -1816,6 +1876,7 @@ public class Class236 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "as", desc = "()V")
 	public void method4575() {
 		int var1;
 		for (var1 = 0; var1 < this.field2522; ++var1) {
@@ -1831,6 +1892,7 @@ public class Class236 extends Class255 {
 		this.method4578();
 	}
 
+	@ObfInfo(name = "aw", desc = "(III)V")
 	public void method4576(int var1, int var2, int var3) {
 		for (int var4 = 0; var4 < this.field2522; ++var4) {
 			this.field2523[var4] = this.field2523[var4] * var1 / 128;
@@ -1841,6 +1903,7 @@ public class Class236 extends Class255 {
 		this.method4578();
 	}
 
+	@ObfInfo(name = "ad", desc = "()V")
 	public void method4563() {
 		if (this.field2558 == null) {
 			this.field2558 = new Class273[this.field2522];
@@ -1915,6 +1978,7 @@ public class Class236 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "ai", desc = "()V")
 	public void method4578() {
 		this.field2558 = null;
 		this.field2550 = null;
@@ -1922,6 +1986,7 @@ public class Class236 extends Class255 {
 		this.field2553 = false;
 	}
 
+	@ObfInfo(name = "an", desc = "()V")
 	public void method4579() {
 		if (!this.field2553) {
 			super.field2696 = 0;
@@ -1964,6 +2029,7 @@ public class Class236 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "ar", desc = "(IIIII)Lkb;")
 	public final Class262 method4572(int var1, int var2, int var3, int var4, int var5) {
 		this.method4563();
 		int var6 = (int)Math.sqrt((double)(var3 * var3 + var4 * var4 + var5 * var5));
@@ -2148,11 +2214,13 @@ public class Class236 extends Class255 {
 		return var8;
 	}
 
+	@ObfInfo(name = "ak", desc = "(Lor;II)Ljb;")
 	public static Class236 method4594(Class382 var0, int var1, int var2) {
 		byte[] var3 = var0.method7216(var1, var2);
 		return var3 == null ? null : new Class236(var3);
 	}
 
+	@ObfInfo(name = "am", desc = "(Ljb;Ljb;IIIZ)V")
 	public static void method4580(Class236 var0, Class236 var1, int var2, int var3, int var4, boolean var5) {
 		var0.method4579();
 		var0.method4563();
@@ -2237,6 +2305,7 @@ public class Class236 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "ag", desc = "(II)I")
 	public static int method4593(int var0, int var1) {
 		var1 = var1 * (var0 & 127) >> 7;
 		if (var1 < 2) {
@@ -2248,6 +2317,7 @@ public class Class236 extends Class255 {
 		return (var0 & 65408) + var1;
 	}
 
+	@ObfInfo(name = "bs", desc = "(I)I")
 	public static int method4612(int var0) {
 		if (var0 < 2) {
 			var0 = 2;

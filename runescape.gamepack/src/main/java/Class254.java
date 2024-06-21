@@ -1,16 +1,23 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "jt")
 public class Class254 {
+	@ObfInfo(name = "ak", desc = "[Lji;")
 	public Class243[] field2693;
 
+	@ObfInfo(name = "ak", desc = "(I)V")
 	public void method4868() {
 		this.field2693 = new Class243[1];
 		Class221 var2 = Class221.field2227;
 		this.field2693[0] = new Class243(var2.field2230, var2.field2234);
 	}
 
+	@ObfInfo(name = "al", desc = "(IIILjp;Lir;Z[I[II)I")
 	public int method4869(int var1, int var2, int var3, Class250 var4, Class226 var5, boolean var6, int[] var7, int[] var8) {
 		return this.method4870(var1, var2, var3, var4, var5, var6, var7, var8, this.field2693[0]);
 	}
 
+	@ObfInfo(name = "aj", desc = "(IIILjp;Lir;Z[I[ILji;B)I", opaque = "3")
 	public int method4870(int var1, int var2, int var3, Class250 var4, Class226 var5, boolean var6, int[] var7, int[] var8, Class243 var9) {
 		var9.method4676();
 		int var11 = var9.method4680();
@@ -128,6 +135,7 @@ public class Class254 {
 		}
 	}
 
+	@ObfInfo(name = "az", desc = "(IILjp;Lir;Lji;B)Z", opaque = "-1")
 	public final boolean method4871(int var1, int var2, Class250 var3, Class226 var4, Class243 var5) {
 		int var7 = var5.method4680();
 		int var8 = var5.method4689();
@@ -235,6 +243,7 @@ public class Class254 {
 		return false;
 	}
 
+	@ObfInfo(name = "af", desc = "(IILjp;Lir;Lji;I)Z", opaque = "-1949758562")
 	public final boolean method4872(int var1, int var2, Class250 var3, Class226 var4, Class243 var5) {
 		int var7 = var5.method4680();
 		int var8 = var5.method4689();
@@ -342,6 +351,7 @@ public class Class254 {
 		return false;
 	}
 
+	@ObfInfo(name = "aa", desc = "(IIILjp;Lir;Lji;I)Z", opaque = "-1270478888")
 	public final boolean method4874(int var1, int var2, int var3, Class250 var4, Class226 var5, Class243 var6) {
 		int var8 = var6.method4680();
 		int var9 = var6.method4689();

@@ -1,4 +1,8 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "kv")
 public class Class282 extends Class303 {
+	@ObfInfo(name = "ak", desc = "(Lua;I)V", opaque = "-341678494")
 	public void method5718(Class521 var1) {
 		int var3 = var1.method9405();
 		if (var3 != Class300.field3200.field3202) {
@@ -15,6 +19,7 @@ public class Class282 extends Class303 {
 		}
 	}
 
+	@ObfInfo(name = "al", desc = "(Lua;I)V", opaque = "-1130621028")
 	public void method5697(Class521 var1) {
 		super.field3215 = Math.min(super.field3215, 4);
 		super.field3218 = new short[1][64][64];
@@ -41,6 +46,7 @@ public class Class282 extends Class303 {
 		}
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
 	public boolean equals(Object var1) {
 		if (!(var1 instanceof Class282)) {
 			return false;
@@ -50,6 +56,7 @@ public class Class282 extends Class303 {
 		}
 	}
 
+	@ObfInfo(desc = "()I")
 	public int hashCode() {
 		return super.field3223 | super.field3213 << 8;
 	}

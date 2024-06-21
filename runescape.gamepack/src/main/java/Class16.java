@@ -1,3 +1,4 @@
+import io.runebox.ObfInfo;
 import java.io.ByteArrayOutputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -5,14 +6,17 @@ import java.util.Hashtable;
 import org.bouncycastle.crypto.tls.DefaultTlsClient;
 import org.bouncycastle.crypto.tls.TlsAuthentication;
 
+@ObfInfo(name = "ap")
 class Class16 extends DefaultTlsClient {
 	// $FF: synthetic field
+	@ObfInfo(desc = "Laq;")
 	public final Class17 this$1;
 
 	public Class16(Class17 var1) {
 		this.this$1 = var1;
 	}
 
+	@ObfInfo(desc = "()Ljava/util/Hashtable;")
 	public Hashtable getClientExtensions() throws IOException {
 		Hashtable var1 = super.getClientExtensions();
 		if (var1 == null) {
@@ -31,6 +35,7 @@ class Class16 extends DefaultTlsClient {
 		return var1;
 	}
 
+	@ObfInfo(desc = "()Lorg/bouncycastle/crypto/tls/TlsAuthentication;")
 	public TlsAuthentication getAuthentication() throws IOException {
 		return new Class22(this);
 	}

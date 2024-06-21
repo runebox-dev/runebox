@@ -1,26 +1,52 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "ke")
 public final class Class265 {
+	@ObfInfo(name = "au", desc = "[F")
 	public static float[] field2940;
+	@ObfInfo(name = "ax", desc = "[I")
 	public static int[] field2938;
+	@ObfInfo(name = "ay", desc = "[I")
 	public static int[] field2939;
+	@ObfInfo(name = "as", desc = "[I")
 	public static int[] field2941;
+	@ObfInfo(name = "aw", desc = "[I")
 	public static int[] field2942;
+	@ObfInfo(name = "ad", desc = "[I")
 	public static int[] field2943;
+	@ObfInfo(name = "ai", desc = "[[I")
 	public static final int[][] field2928;
+	@ObfInfo(name = "an", desc = "[[I")
 	public static final int[][] field2945;
+	@ObfInfo(name = "ah", desc = "Z")
 	public boolean field2935;
+	@ObfInfo(name = "aq", desc = "I")
 	public int field2923;
+	@ObfInfo(name = "ap", desc = "I")
 	public int field2933;
+	@ObfInfo(name = "av", desc = "I")
 	public int field2934;
+	@ObfInfo(name = "ae", desc = "I")
 	public int field2944;
+	@ObfInfo(name = "ak", desc = "[I")
 	public int[] field2924;
+	@ObfInfo(name = "aa", desc = "[I")
 	public int[] field2925;
+	@ObfInfo(name = "az", desc = "[I")
 	public int[] field2926;
+	@ObfInfo(name = "af", desc = "[I")
 	public int[] field2927;
+	@ObfInfo(name = "aj", desc = "[I")
 	public int[] field2929;
+	@ObfInfo(name = "ab", desc = "[I")
 	public int[] field2930;
+	@ObfInfo(name = "ac", desc = "[I")
 	public int[] field2931;
+	@ObfInfo(name = "ao", desc = "[I")
 	public int[] field2932;
+	@ObfInfo(name = "al", desc = "[I")
 	public int[] field2936;
+	@ObfInfo(name = "at", desc = "[I")
 	public int[] field2937;
 
 	static {

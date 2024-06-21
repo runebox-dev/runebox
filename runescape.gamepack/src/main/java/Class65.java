@@ -1,10 +1,17 @@
+import io.runebox.ObfInfo;
 import java.io.IOException;
 
+@ObfInfo(name = "cm")
 public class Class65 {
+	@ObfInfo(name = "ak", desc = "Lbx;")
 	public Class50 field795;
+	@ObfInfo(name = "al", desc = "Z")
 	public boolean field793;
+	@ObfInfo(name = "af", desc = "[Z")
 	public boolean[] field791;
+	@ObfInfo(name = "aj", desc = "[I")
 	public int[] field792;
+	@ObfInfo(name = "az", desc = "[I")
 	public int[] field794;
 
 	public Class65(Class50 var1, boolean var2, int[] var3, int[] var4, boolean[] var5) {
@@ -15,6 +22,7 @@ public class Class65 {
 		this.field791 = var5;
 	}
 
+	@ObfInfo(name = "ak", desc = "([FIB)V", opaque = "-5")
 	public void method1796(float[] var1, int var2) {
 		int var4 = this.field795.field339.length;
 		Class50 var10000 = this.field795;
@@ -78,10 +86,12 @@ public class Class65 {
 
 	}
 
+	@ObfInfo(name = "al", desc = "(B)Z")
 	public boolean method1797() {
 		return this.field793;
 	}
 
+	@ObfInfo(name = "aj", desc = "(III)V", opaque = "-1259464255")
 	public void method1798(int var1, int var2) {
 		if (var1 < var2) {
 			int var4 = var1;
@@ -110,6 +120,7 @@ public class Class65 {
 		}
 	}
 
+	@ObfInfo(name = "af", desc = "(I)[B", opaque = "-618267210")
 	public static byte[] method1804() {
 		byte[] var1 = new byte[24];
 
@@ -133,6 +144,7 @@ public class Class65 {
 		return var1;
 	}
 
+	@ObfInfo(name = "lf", desc = "(Ldt;Luk;B)V", opaque = "-2")
 	public static void method1806(Class98 var0, Class531 var1) {
 		int var3 = var1.method9405();
 		if (var3 < var0.field1286) {

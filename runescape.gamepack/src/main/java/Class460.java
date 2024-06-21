@@ -1,5 +1,10 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "rr")
 public class Class460 extends Class447 {
+	@ObfInfo(name = "ak", desc = "Lns;")
 	public Class357 field4871;
+	@ObfInfo(name = "al", desc = "I", intMultiplier = -482428221)
 	public int field4872;
 
 	public Class460(Class447 var1, int var2, boolean var3, int var4) {
@@ -18,6 +23,7 @@ public class Class460 extends Class447 {
 		}
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)Z", opaque = "709593494")
 	public boolean method7832() {
 		if (this.field4871 != null && this.field4871.field3940 != null) {
 			this.field4871.field3943 = true;

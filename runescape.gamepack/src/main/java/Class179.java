@@ -1,9 +1,14 @@
+import io.runebox.ObfInfo;
 import java.io.File;
 import java.io.IOException;
 
+@ObfInfo(name = "gw")
 public class Class179 {
+	@ObfInfo(name = "aq", desc = "Luh;")
 	public static Class528 field1885;
+	@ObfInfo(name = "av", desc = "Luh;")
 	public static Class528 field1886;
+	@ObfInfo(name = "ap", desc = "Luh;")
 	public static Class528 field1890;
 
 	static {
@@ -12,6 +17,7 @@ public class Class179 {
 		field1890 = null;
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/String;Ljava/lang/String;Z)LClass525;")
 	public static Class525 method2980(String var0, String var1, boolean var2) {
 		File var4 = new File(Class90.field6, "preferences" + var0 + ".dat");
 		if (var4.exists()) {
@@ -47,6 +53,7 @@ public class Class179 {
 		}
 	}
 
+	@ObfInfo(desc = "(LClass521;I)V")
 	public static void method2751(Class521 var0, int var1) {
 		if (field1886 != null) {
 			try {
@@ -58,6 +65,7 @@ public class Class179 {
 
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method3510() {
 		try {
 			field1885.method9707();

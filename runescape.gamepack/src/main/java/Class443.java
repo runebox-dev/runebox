@@ -1,6 +1,12 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "ra")
 public class Class443 extends Class511 {
+	@ObfInfo(name = "al", desc = "Lvv;")
 	public Class567 field4792;
+	@ObfInfo(name = "ak", desc = "I", intMultiplier = -152542295)
 	public int field4793;
+	@ObfInfo(name = "aj", desc = "S")
 	public short field4794;
 
 	public Class443(Class567 var1, int var2) {

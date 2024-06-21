@@ -1,27 +1,54 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "oi")
 public class Class373 implements Class393 {
+	@ObfInfo(name = "ah", desc = "Loi;")
 	public static final Class373 field4045;
+	@ObfInfo(name = "al", desc = "Loi;")
 	public static final Class373 field4046;
+	@ObfInfo(name = "aj", desc = "Loi;")
 	public static final Class373 field4047;
+	@ObfInfo(name = "ao", desc = "Loi;")
 	public static final Class373 field4048;
+	@ObfInfo(name = "af", desc = "Loi;")
 	public static final Class373 field4049;
+	@ObfInfo(name = "ac", desc = "Loi;")
 	public static final Class373 field4050;
+	@ObfInfo(name = "ax", desc = "Loi;")
 	public static final Class373 field4051;
+	@ObfInfo(name = "ab", desc = "Loi;")
 	public static final Class373 field4052;
+	@ObfInfo(name = "aq", desc = "Loi;")
 	public static final Class373 field4053;
+	@ObfInfo(name = "at", desc = "Loi;")
 	public static final Class373 field4054;
+	@ObfInfo(name = "av", desc = "Loi;")
 	public static final Class373 field4055;
+	@ObfInfo(name = "aa", desc = "Loi;")
 	public static final Class373 field4056;
+	@ObfInfo(name = "au", desc = "Loi;")
 	public static final Class373 field4057;
+	@ObfInfo(name = "ap", desc = "Loi;")
 	public static final Class373 field4058;
+	@ObfInfo(name = "ae", desc = "Loi;")
 	public static final Class373 field4059;
+	@ObfInfo(name = "az", desc = "Loi;")
 	public static final Class373 field4060;
+	@ObfInfo(name = "ay", desc = "Loi;")
 	public static final Class373 field4061;
+	@ObfInfo(name = "ak", desc = "Loi;")
 	public static final Class373 field4062;
+	@ObfInfo(name = "as", desc = "Loi;")
 	public static final Class373 field4063;
+	@ObfInfo(name = "aw", desc = "Loi;")
 	public static final Class373 field4064;
+	@ObfInfo(name = "ad", desc = "Loi;")
 	public static final Class373 field4065;
+	@ObfInfo(name = "ai", desc = "Loi;")
 	public static final Class373 field4066;
+	@ObfInfo(name = "an", desc = "Loi;")
 	public static final Class373 field4067;
+	@ObfInfo(name = "am", desc = "I", intMultiplier = -1516079251)
 	public final int field4068;
 
 	static {
@@ -54,10 +81,12 @@ public class Class373 implements Class393 {
 		this.field4068 = var1;
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)I")
 	public int method175() {
 		return this.field4068;
 	}
 
+	@ObfInfo(desc = "(I)Z")
 	public static boolean method4909(int var0) {
 		return var0 >= field4062.field4068 && var0 <= field4060.field4068 || var0 == field4049.field4068;
 	}

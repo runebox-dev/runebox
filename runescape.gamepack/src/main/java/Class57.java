@@ -1,8 +1,12 @@
+import io.runebox.ObfInfo;
 import java.util.Comparator;
 
+@ObfInfo(name = "ce")
 public class Class57 implements Comparator {
+	@ObfInfo(name = "ak", desc = "Z")
 	public boolean field426;
 
+	@ObfInfo(name = "ak", desc = "(Lpm;Lpm;B)I", opaque = "0")
 	public int method1072(Class403 var1, Class403 var2) {
 		if (var2.field4624 == var1.field4624) {
 			return 0;
@@ -21,14 +25,17 @@ public class Class57 implements Comparator {
 		}
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/Object;Ljava/lang/Object;)I")
 	public int compare(Object var1, Object var2) {
 		return this.method1072((Class403)var1, (Class403)var2);
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
 	public boolean equals(Object var1) {
 		return super.equals(var1);
 	}
 
+	@ObfInfo(name = "al", desc = "(CI)Z", opaque = "2131570085")
 	public static boolean method1082(char var0) {
 		if (var0 > 0 && var0 < 128 || var0 >= 160 && var0 <= 255) {
 			return true;
@@ -48,10 +55,12 @@ public class Class57 implements Comparator {
 		}
 	}
 
+	@ObfInfo(name = "aj", desc = "(IB)[B")
 	public static byte[] method1084(int var0) {
 		return Class80.method2233(var0, false);
 	}
 
+	@ObfInfo(name = "jq", desc = "(Ldt;Ldh;IB)V", opaque = "0")
 	public static void method1081(Class98 var0, Class86 var1, int var2) {
 		int var5;
 		int var6;

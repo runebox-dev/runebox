@@ -1,25 +1,45 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "cy")
 public final class Class77 extends Class506 {
+	@ObfInfo(name = "ak", desc = "Lpk;")
 	public static Class401 field976;
+	@ObfInfo(name = "ax", desc = "Lin;")
 	public Class222 field965;
+	@ObfInfo(name = "ao", desc = "Lbz;")
 	public Class52 field958;
+	@ObfInfo(name = "ae", desc = "Lbz;")
 	public Class52 field972;
+	@ObfInfo(name = "ab", desc = "I", intMultiplier = 1096256259)
 	public int field959;
+	@ObfInfo(name = "at", desc = "I", intMultiplier = -2046732581)
 	public int field960;
+	@ObfInfo(name = "az", desc = "I", intMultiplier = -2142850895)
 	public int field961;
+	@ObfInfo(name = "af", desc = "I", intMultiplier = -1066887777)
 	public int field962;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = -896933039)
 	public int field963;
+	@ObfInfo(name = "ac", desc = "I", intMultiplier = 844790461)
 	public int field966;
+	@ObfInfo(name = "ah", desc = "I", intMultiplier = 835726103)
 	public int field968;
+	@ObfInfo(name = "av", desc = "I", intMultiplier = 1986008745)
 	public int field969;
+	@ObfInfo(name = "ap", desc = "I", intMultiplier = -114126391)
 	public int field971;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = 56891629)
 	public int field973;
+	@ObfInfo(name = "al", desc = "I", intMultiplier = 1864766337)
 	public int field974;
+	@ObfInfo(name = "aq", desc = "[I")
 	public int[] field964;
 
 	static {
 		field976 = new Class401();
 	}
 
+	@ObfInfo(name = "aj", desc = "(I)V", opaque = "1381505609")
 	public void method2177() {
 		int var2 = this.field966;
 		Class222 var3 = this.field965.method4181();
@@ -46,6 +66,7 @@ public final class Class77 extends Class506 {
 
 	}
 
+	@ObfInfo(name = "ak", desc = "(IB)Lhq;", opaque = "7")
 	public static Class199 method2189(int var0) {
 		Class199 var2 = (Class199)Class199.field2034.method5993((long)var0);
 		if (var2 != null) {
@@ -62,6 +83,7 @@ public final class Class77 extends Class506 {
 		}
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method3246() {
 		for (Class77 var1 = (Class77)field976.method7482(); var1 != null; var1 = (Class77)field976.method7490()) {
 			if (var1.field958 != null) {
@@ -78,6 +100,7 @@ public final class Class77 extends Class506 {
 		field976.method7476();
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method3919() {
 		for (Class77 var1 = (Class77)field976.method7482(); var1 != null; var1 = (Class77)field976.method7490()) {
 			if (var1.field965 != null) {
@@ -87,6 +110,7 @@ public final class Class77 extends Class506 {
 
 	}
 
+	@ObfInfo(name = "aj", desc = "(IIB)Ldm;", opaque = "1")
 	public static Class91 method2190(int var0, int var1) {
 		Class91 var3 = (Class91)Class91.field1206.method5993((long)(var0 << 16));
 		if (var3 != null) {
@@ -115,6 +139,7 @@ public final class Class77 extends Class506 {
 		}
 	}
 
+	@ObfInfo(desc = "(IIILClass222;I)V")
 	public static void method846(int var0, int var1, int var2, Class222 var3, int var4) {
 		Class77 var6 = new Class77();
 		var6.field974 = var0;
@@ -147,6 +172,7 @@ public final class Class77 extends Class506 {
 
 	}
 
+	@ObfInfo(name = "bg", desc = "(Lba;B)V", opaque = "0")
 	public static void method2181(Class27 var0) {
 		var0.field136 = false;
 		if (var0.field138 != null) {

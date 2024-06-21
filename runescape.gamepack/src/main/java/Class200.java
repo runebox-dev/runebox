@@ -1,24 +1,48 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "hr")
 public class Class200 extends Class507 {
+	@ObfInfo(name = "az", desc = "Llm;")
 	public static Class299 field2044;
+	@ObfInfo(name = "ad", desc = "Lhc;")
 	public Class185 field2049;
+	@ObfInfo(name = "ai", desc = "Lie;")
 	public Class213 field2059;
+	@ObfInfo(name = "av", desc = "Z")
 	public boolean field2052;
+	@ObfInfo(name = "aq", desc = "Z")
 	public boolean field2056;
+	@ObfInfo(name = "am", desc = "[B")
 	public byte[] field2064;
+	@ObfInfo(name = "as", desc = "I", intMultiplier = 2037348525)
 	public int field2042;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = -5424259)
 	public int field2046;
+	@ObfInfo(name = "aw", desc = "I", intMultiplier = 1730248837)
 	public int field2047;
+	@ObfInfo(name = "ao", desc = "I", intMultiplier = 2092703349)
 	public int field2050;
+	@ObfInfo(name = "ac", desc = "I", intMultiplier = 1545215557)
 	public int field2053;
+	@ObfInfo(name = "ay", desc = "I", intMultiplier = -1902796859)
 	public int field2057;
+	@ObfInfo(name = "au", desc = "I", intMultiplier = -1963779555)
 	public int field2058;
+	@ObfInfo(name = "at", desc = "I", intMultiplier = -1445516927)
 	public int field2062;
+	@ObfInfo(name = "ar", desc = "I", intMultiplier = 1951731109)
 	public int field2065;
+	@ObfInfo(name = "ax", desc = "[I")
 	public int[] field2060;
+	@ObfInfo(name = "an", desc = "[I")
 	public int[] field2063;
+	@ObfInfo(name = "ab", desc = "Ljava/lang/String;")
 	public String field2048;
+	@ObfInfo(name = "ae", desc = "Ljava/lang/String;")
 	public String field2055;
+	@ObfInfo(name = "ap", desc = "[Ljava/lang/String;")
 	public String[] field2054;
+	@ObfInfo(name = "af", desc = "I", intMultiplier = -1903111453)
 	public final int field2045;
 
 	static {
@@ -42,6 +66,7 @@ public class Class200 extends Class507 {
 		this.field2045 = var1;
 	}
 
+	@ObfInfo(name = "aj", desc = "(Lua;I)V")
 	public void method3890(Class521 var1) {
 		while (true) {
 			int var3 = var1.method9405();
@@ -53,6 +78,7 @@ public class Class200 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "az", desc = "(Lua;IB)V", opaque = "62")
 	public void method3891(Class521 var1, int var2) {
 		if (var2 == 1) {
 			this.field2046 = var1.method9423();
@@ -136,6 +162,7 @@ public class Class200 extends Class507 {
 
 	}
 
+	@ObfInfo(name = "af", desc = "(I)V", opaque = "539563106")
 	public void method3892() {
 		if (this.field2060 != null) {
 			for (int var2 = 0; var2 < this.field2060.length; var2 += 2) {
@@ -155,11 +182,13 @@ public class Class200 extends Class507 {
 
 	}
 
+	@ObfInfo(name = "aa", desc = "(ZI)Lvc;", opaque = "-487522756")
 	public Class549 method3893(boolean var1) {
 		int var3 = var1 ? this.field2062 : this.field2046;
 		return this.method3894(var3);
 	}
 
+	@ObfInfo(name = "at", desc = "(II)Lvc;", opaque = "-1492918067")
 	public Class549 method3894(int var1) {
 		if (var1 < 0) {
 			return null;
@@ -178,10 +207,12 @@ public class Class200 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "ab", desc = "(I)I")
 	public int method3895() {
 		return this.field2045;
 	}
 
+	@ObfInfo(name = "al", desc = "(II)Lhr;", opaque = "842760438")
 	public static Class200 method3917(int var0) {
 		return var0 >= 0 && var0 < Class255.field2043.length && null != Class255.field2043[var0] ? Class255.field2043[var0] : new Class200(var0);
 	}

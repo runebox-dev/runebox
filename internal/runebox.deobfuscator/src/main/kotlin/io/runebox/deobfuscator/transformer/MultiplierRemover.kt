@@ -5,7 +5,8 @@ import com.google.common.collect.MultimapBuilder
 import io.runebox.asm.core.*
 import io.runebox.deobfuscator.Logger
 import io.runebox.deobfuscator.Transformer
-import io.runebox.deobfuscator.asm.multiplier
+import io.runebox.deobfuscator.asm.intMultiplier
+import io.runebox.deobfuscator.asm.longMultiplier
 import org.objectweb.asm.Opcodes.*
 import org.objectweb.asm.Type
 import org.objectweb.asm.Type.INT_TYPE
@@ -25,11 +26,12 @@ class MultiplierRemover : Transformer {
         val multipliers = EuclideanMultipliers(pool).calculateDecoders()
         val decoders = multipliers.decoders.mapKeys { it.key }.mapValues { it.value.toLong() }
 
-        for((ref, decoder) in decoders.entries) {
+        for((ref, decoder) in multipliers.decoders.entries) {
             val owner = ref.substring(0, ref.lastIndexOf("."))
             val name = ref.substring(ref.lastIndexOf(".") + 1)
             val field = pool.findClass(owner).fields.first { it.name == name }
-            field.multiplier = decoder
+            if(decoder is Int) field.intMultiplier = decoder.toInt()
+            else if(decoder is Long) field.longMultiplier = decoder.toLong()
         }
 
         Logger.info("Simplifying field multiplier expressions...")

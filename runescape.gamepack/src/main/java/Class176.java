@@ -1,22 +1,31 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "gt")
 public class Class176 extends Class149 {
+	@ObfInfo(name = "ak", desc = "I", intMultiplier = -1279428031)
 	public int field1873;
+	@ObfInfo(name = "al", desc = "Ljava/lang/String;")
 	public String field1871;
 	// $FF: synthetic field
+	@ObfInfo(desc = "Lfu;")
 	public final Class151 this$0;
 
 	public Class176(Class151 var1) {
 		this.this$0 = var1;
 	}
 
+	@ObfInfo(name = "ak", desc = "(Lua;I)V")
 	public void method3066(Class521 var1) {
 		this.field1873 = var1.method9410();
 		this.field1871 = var1.method9415();
 	}
 
+	@ObfInfo(name = "al", desc = "(Lgc;B)V")
 	public void method3067(Class159 var1) {
 		var1.method3351(this.field1873, this.field1871);
 	}
 
+	@ObfInfo(name = "oo", desc = "(Lnb;I)V", opaque = "704947035")
 	public static void method3589(Class340 var0) {
 		int var2 = var0.field3681;
 		if (var2 == 324) {

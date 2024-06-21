@@ -1,11 +1,14 @@
+import io.runebox.ObfInfo;
 import java.util.Iterator;
 
+@ObfInfo(name = "qh")
 public class Class424 extends Class447 {
 	public Class424(Class447 var1) {
 		super(var1);
 		super.field4807 = "AddRequestTask";
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)Z", opaque = "709593494")
 	public boolean method7832() {
 		while (!Class332.field3453.isEmpty()) {
 			Class357 var2 = (Class357)Class332.field3453.peek();
@@ -21,6 +24,7 @@ public class Class424 extends Class447 {
 		return true;
 	}
 
+	@ObfInfo(name = "al", desc = "(I)Lmw;", opaque = "-1043214319")
 	public Class335 method7833() {
 		Class335 var2 = null;
 		Iterator var3 = Class332.field3454.iterator();

@@ -1,12 +1,24 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "bx")
 public class Class50 {
+	@ObfInfo(name = "al", desc = "[F")
 	public static final float[] field340;
+	@ObfInfo(name = "ak", desc = "[I")
 	public static final int[] field344;
+	@ObfInfo(name = "az", desc = "I")
 	public int field341;
+	@ObfInfo(name = "aj", desc = "[I")
 	public int[] field339;
+	@ObfInfo(name = "aa", desc = "[I")
 	public int[] field342;
+	@ObfInfo(name = "af", desc = "[I")
 	public int[] field343;
+	@ObfInfo(name = "at", desc = "[I")
 	public int[] field345;
+	@ObfInfo(name = "ab", desc = "[I")
 	public int[] field346;
+	@ObfInfo(name = "ac", desc = "[[I")
 	public int[][] field347;
 
 	static {
@@ -81,6 +93,7 @@ public class Class50 {
 		}
 	}
 
+	@ObfInfo(name = "ak", desc = "([II)I")
 	public int method904(int[] var1, int var2) {
 		int var3 = var1[var2];
 		int var4 = -1;
@@ -97,6 +110,7 @@ public class Class50 {
 		return var4;
 	}
 
+	@ObfInfo(name = "al", desc = "([II)I")
 	public int method898(int[] var1, int var2) {
 		int var3 = var1[var2];
 		int var4 = -1;
@@ -113,6 +127,7 @@ public class Class50 {
 		return var4;
 	}
 
+	@ObfInfo(name = "aj", desc = "(IIIII)I")
 	public int method896(int var1, int var2, int var3, int var4, int var5) {
 		int var6 = var4 - var2;
 		int var7 = var3 - var1;
@@ -122,6 +137,7 @@ public class Class50 {
 		return var6 < 0 ? var2 - var10 : var10 + var2;
 	}
 
+	@ObfInfo(name = "az", desc = "(IIII[FI)V")
 	public void method897(int var1, int var2, int var3, int var4, float[] var5, int var6) {
 		int var7 = var4 - var2;
 		int var8 = var3 - var1;
@@ -150,6 +166,7 @@ public class Class50 {
 
 	}
 
+	@ObfInfo(name = "af", desc = "(Lci;)Lcm;")
 	public Class65 method894(Class61 var1) {
 		boolean var2 = var1.method1104() != 0;
 		if (!var2) {

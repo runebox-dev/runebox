@@ -1,11 +1,22 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "cs")
 public class Class71 {
+	@ObfInfo(name = "ab", desc = "F")
 	public static float field868;
+	@ObfInfo(name = "aa", desc = "[[F")
 	public static float[][] field869;
+	@ObfInfo(name = "ac", desc = "I")
 	public static int field870;
+	@ObfInfo(name = "at", desc = "[[I")
 	public static int[][] field867;
+	@ObfInfo(name = "ak", desc = "[I")
 	public int[] field861;
+	@ObfInfo(name = "af", desc = "[I")
 	public int[] field865;
+	@ObfInfo(name = "aj", desc = "[[[I")
 	public int[][][] field863;
+	@ObfInfo(name = "az", desc = "[[[I")
 	public int[][][] field864;
 
 	static {
@@ -20,18 +31,21 @@ public class Class71 {
 		this.field865 = new int[2];
 	}
 
+	@ObfInfo(name = "ak", desc = "(IIF)F")
 	public float method1941(int var1, int var2, float var3) {
 		float var4 = (float)this.field864[var1][0][var2] + var3 * (float)(this.field864[var1][1][var2] - this.field864[var1][0][var2]);
 		var4 *= 0.0015258789F;
 		return 1.0F - (float)Math.pow(10.0D, (double)(-var4 / 20.0F));
 	}
 
+	@ObfInfo(name = "aj", desc = "(IIF)F")
 	public float method1944(int var1, int var2, float var3) {
 		float var4 = (float)this.field863[var1][0][var2] + var3 * (float)(this.field863[var1][1][var2] - this.field863[var1][0][var2]);
 		var4 *= 1.2207031E-4F;
 		return method1943(var4);
 	}
 
+	@ObfInfo(name = "az", desc = "(IF)I")
 	public int method1945(int var1, float var2) {
 		float var3;
 		if (var1 == 0) {
@@ -83,6 +97,7 @@ public class Class71 {
 		}
 	}
 
+	@ObfInfo(name = "af", desc = "(Lua;Lbv;)V")
 	public final void method1946(Class521 var1, Class48 var2) {
 		int var3 = var1.method9405();
 		this.field861[0] = var3 >> 4;
@@ -124,6 +139,7 @@ public class Class71 {
 
 	}
 
+	@ObfInfo(name = "al", desc = "(F)F")
 	public static float method1943(float var0) {
 		float var1 = 32.703197F * (float)Math.pow(2.0D, (double)var0);
 		return var1 * 3.1415927F / 11025.0F;

@@ -1,18 +1,36 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "kn")
 public class Class274 {
+	@ObfInfo(name = "ak", desc = "Z")
 	public static boolean field3028;
+	@ObfInfo(name = "az", desc = "Z")
 	public static boolean field3033;
+	@ObfInfo(desc = "I", intMultiplier = -1608214613)
 	public static int field1489;
+	@ObfInfo(name = "ab", desc = "I", intMultiplier = -1637450235)
 	public static int field3023;
+	@ObfInfo(name = "al", desc = "I", intMultiplier = -2068561419)
 	public static int field3024;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = -291553027)
 	public static int field3025;
+	@ObfInfo(name = "af", desc = "I", intMultiplier = 1189565193)
 	public static int field3026;
+	@ObfInfo(name = "ao", desc = "I", intMultiplier = -801708007)
 	public static int field3029;
+	@ObfInfo(name = "ah", desc = "I", intMultiplier = 629882969)
 	public static int field3030;
+	@ObfInfo(name = "av", desc = "I", intMultiplier = -101648395)
 	public static int field3031;
+	@ObfInfo(name = "aq", desc = "I", intMultiplier = -369508143)
 	public static int field3032;
+	@ObfInfo(name = "ap", desc = "I", intMultiplier = 960707977)
 	public static int field3034;
+	@ObfInfo(desc = "I", intMultiplier = -285362375)
 	public static int field3971;
+	@ObfInfo(desc = "I", intMultiplier = -1008264913)
 	public static int field3983;
+	@ObfInfo(name = "ae", desc = "[J")
 	public static long[] field3027;
 
 	static {
@@ -24,30 +42,37 @@ public class Class274 {
 		field3027 = new long[1000];
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)V")
 	public static void method5517() {
 		Class186.field1927.method5995();
 	}
 
+	@ObfInfo(name = "af", desc = "(II)Z", opaque = "474054299")
 	public static boolean method5518(int var0) {
 		return var0 >= Class373.field4065.field4068 && var0 <= Class373.field4066.field4068;
 	}
 
+	@ObfInfo(desc = "()I")
 	public static int method3812() {
 		return field3034;
 	}
 
+	@ObfInfo(desc = "(J)I")
 	public static int method3001(long var0) {
 		return (int)(var0 >>> 14 & 3L);
 	}
 
+	@ObfInfo(desc = "(J)I")
 	public static int method2942(long var0) {
 		return (int)(var0 >>> 17 & 4294967295L);
 	}
 
+	@ObfInfo(desc = "(J)I")
 	public static int method4073(long var0) {
 		return (int)(var0 >>> 49 & 2047L);
 	}
 
+	@ObfInfo(desc = "(IIIZII)J")
 	public static long method3872(int var0, int var1, int var2, boolean var3, int var4, int var5) {
 		long var7 = (long)((var0 & 127) << 0 | (var1 & 127) << 7 | (var2 & 3) << 14) | ((long)var4 & 4294967295L) << 17 | ((long)var5 & 2047L) << 49;
 		if (var3) {
@@ -57,6 +82,7 @@ public class Class274 {
 		return var7;
 	}
 
+	@ObfInfo(desc = "(II)V")
 	public static void method5477(int var0, int var1) {
 		field3024 = var0;
 		field3025 = var1;
@@ -65,15 +91,18 @@ public class Class274 {
 		field3033 = false;
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method3295() {
 		field3028 = false;
 		field3034 = 0;
 	}
 
+	@ObfInfo(desc = "()Z")
 	public static boolean method2732() {
 		return field3028;
 	}
 
+	@ObfInfo(desc = "(IIII)V")
 	public static void method346(int var0, int var1, int var2, int var3) {
 		if (!field3033) {
 			byte var9 = 50;
@@ -103,6 +132,7 @@ public class Class274 {
 		}
 	}
 
+	@ObfInfo(desc = "(LClass262;IIIIIIII)Z")
 	public static boolean method3632(Class262 var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
 		if (!method2732()) {
 			return false;

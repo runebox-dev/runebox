@@ -1,3 +1,4 @@
+import io.runebox.ObfInfo;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -7,15 +8,25 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+@ObfInfo(name = "hj")
 public class Class192 {
+	@ObfInfo(name = "ab", desc = "[F")
 	public float[] field1979;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = -988627865)
 	public int field1976;
+	@ObfInfo(name = "al", desc = "Ljava/lang/String;")
 	public String field1975;
+	@ObfInfo(name = "at", desc = "Ljava/lang/String;")
 	public String field1980;
+	@ObfInfo(name = "az", desc = "Ljava/util/ArrayList;")
 	public ArrayList field1977;
+	@ObfInfo(name = "af", desc = "Ljava/util/ArrayList;")
 	public ArrayList field1978;
+	@ObfInfo(name = "aa", desc = "Ljava/util/ArrayList;")
 	public ArrayList field1981;
+	@ObfInfo(name = "ao", desc = "Ljava/util/Map;")
 	public Map field1983;
+	@ObfInfo(name = "ac", desc = "Ljava/util/Map;")
 	public Map field1984;
 
 	public Class192() {
@@ -29,14 +40,17 @@ public class Class192 {
 		this.field1983 = new HashMap();
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)Ljava/lang/String;")
 	public String method3768() {
 		return this.field1975;
 	}
 
+	@ObfInfo(name = "al", desc = "(B)I")
 	public int method3758() {
 		return this.field1976;
 	}
 
+	@ObfInfo(name = "aj", desc = "(I)V")
 	public void method3759() {
 		this.field1980 = null;
 		this.field1979[0] = 0.0F;
@@ -50,6 +64,7 @@ public class Class192 {
 		this.field1983.clear();
 	}
 
+	@ObfInfo(name = "az", desc = "(Lorg/json/JSONObject;ILeb;B)Z", opaque = "16")
 	public boolean method3760(JSONObject var1, int var2, Class106 var3) {
 		JSONObject var5 = var1;
 		if (var2 < 2) {
@@ -117,6 +132,7 @@ public class Class192 {
 		return true;
 	}
 
+	@ObfInfo(name = "af", desc = "(Lorg/json/JSONArray;Leb;I)V", opaque = "1588494880")
 	public void method3780(JSONArray var1, Class106 var2) throws JSONException {
 		if (var1 != null) {
 			for (int var4 = 0; var4 < var1.length(); ++var4) {
@@ -133,6 +149,7 @@ public class Class192 {
 		}
 	}
 
+	@ObfInfo(name = "aa", desc = "(Lorg/json/JSONObject;Leb;I)V")
 	public void method3762(JSONObject var1, Class106 var2) throws JSONException {
 		try {
 			Class161 var4 = new Class161(this);
@@ -144,6 +161,7 @@ public class Class192 {
 
 	}
 
+	@ObfInfo(name = "at", desc = "(Lorg/json/JSONArray;I)V", opaque = "-682908171")
 	public void method3757(JSONArray var1) throws JSONException {
 		if (var1 != null) {
 			for (int var3 = 0; var3 < var1.length(); ++var3) {
@@ -160,6 +178,7 @@ public class Class192 {
 		}
 	}
 
+	@ObfInfo(name = "ab", desc = "(Lorg/json/JSONObject;B)V")
 	public void method3775(JSONObject var1) throws JSONException {
 		Class189 var3 = new Class189(this);
 		var3.field1947 = var1.optString("text");
@@ -170,6 +189,7 @@ public class Class192 {
 		this.field1981.add(var3);
 	}
 
+	@ObfInfo(name = "ac", desc = "(Lorg/json/JSONObject;I)V", opaque = "-1311565037")
 	public void method3765(JSONObject var1) throws JSONException {
 		if (var1 != null) {
 			this.field1979 = Class195.method3838(var1, "clickbounds");
@@ -200,6 +220,7 @@ public class Class192 {
 		}
 	}
 
+	@ObfInfo(name = "ao", desc = "(Lorg/json/JSONObject;I)V", opaque = "819713535")
 	public void method3766(JSONObject var1) throws JSONException {
 		String[] var3 = JSONObject.getNames(var1);
 

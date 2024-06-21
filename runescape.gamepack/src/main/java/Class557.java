@@ -1,13 +1,25 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "vl")
 public final class Class557 extends Class561 {
+	@ObfInfo(name = "ak", desc = "[B")
 	public byte[] field5393;
+	@ObfInfo(name = "aj", desc = "I")
 	public int field5392;
+	@ObfInfo(name = "az", desc = "I")
 	public int field5395;
+	@ObfInfo(name = "at", desc = "I")
 	public int field5396;
+	@ObfInfo(name = "aa", desc = "I")
 	public int field5397;
+	@ObfInfo(name = "af", desc = "I")
 	public int field5398;
+	@ObfInfo(name = "ab", desc = "I")
 	public int field5399;
+	@ObfInfo(name = "al", desc = "[I")
 	public int[] field5394;
 
+	@ObfInfo(name = "ak", desc = "()V")
 	public void method10084() {
 		if (this.field5392 != this.field5396 || this.field5395 != this.field5399) {
 			byte[] var1 = new byte[this.field5396 * this.field5399];
@@ -27,6 +39,7 @@ public final class Class557 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "al", desc = "(III)V")
 	public void method10092(int var1, int var2, int var3) {
 		for (int var4 = 0; var4 < this.field5394.length; ++var4) {
 			int var5 = this.field5394[var4] >> 16 & 255;
@@ -58,6 +71,7 @@ public final class Class557 extends Class561 {
 
 	}
 
+	@ObfInfo(name = "aj", desc = "(II)V")
 	public void method10086(int var1, int var2) {
 		var1 += this.field5398;
 		var2 += this.field5397;
@@ -102,6 +116,7 @@ public final class Class557 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "af", desc = "(IIII)V")
 	public void method10088(int var1, int var2, int var3, int var4) {
 		int var5 = this.field5392;
 		int var6 = this.field5395;
@@ -163,6 +178,7 @@ public final class Class557 extends Class561 {
 		method10089(Class561.field5418, this.field5393, this.field5394, var7, var8, var13, var14, var3, var4, var11, var12, var5);
 	}
 
+	@ObfInfo(name = "az", desc = "([I[B[IIIIIII)V")
 	public static void method10087(int[] var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8) {
 		int var9 = -(var5 >> 2);
 		var5 = -(var5 & 3);
@@ -215,6 +231,7 @@ public final class Class557 extends Class561 {
 
 	}
 
+	@ObfInfo(name = "aa", desc = "([I[B[IIIIIIIIII)V")
 	public static void method10089(int[] var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11) {
 		int var12 = var3;
 

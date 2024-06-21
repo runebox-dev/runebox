@@ -1,16 +1,32 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "st")
 public class Class488 implements Class78 {
+	@ObfInfo(name = "aq", desc = "[Ljv;")
 	public Class256[] field4999;
+	@ObfInfo(name = "ac", desc = "Ldt;")
 	public Class98 field4995;
+	@ObfInfo(name = "ab", desc = "I", intMultiplier = 1069997611)
 	public int field4987;
+	@ObfInfo(name = "al", desc = "I", intMultiplier = 1752845815)
 	public int field4988;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = 860602333)
 	public int field4989;
+	@ObfInfo(name = "af", desc = "I", intMultiplier = 557794071)
 	public int field4991;
+	@ObfInfo(name = "az", desc = "I", intMultiplier = -1722351887)
 	public int field4992;
+	@ObfInfo(name = "at", desc = "I", intMultiplier = 937986921)
 	public int field4993;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = 781049511)
 	public int field4994;
+	@ObfInfo(name = "ak", desc = "I", intMultiplier = -80661597)
 	public int field4996;
+	@ObfInfo(name = "ao", desc = "I", intMultiplier = -79032087)
 	public int field4997;
+	@ObfInfo(name = "ah", desc = "[I")
 	public int[] field4990;
+	@ObfInfo(name = "av", desc = "[I")
 	public int[] field4998;
 
 	public Class488(int var1, int var2, int var3, int var4) {
@@ -29,22 +45,27 @@ public class Class488 implements Class78 {
 		this.field4995 = new Class98(var1, var2, var3, var4);
 	}
 
+	@ObfInfo(name = "ah", desc = "(B)V")
 	public void method8911() {
 		this.field4995.field1283.field2769 = this.field4995.field1300;
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)I")
 	public int method2199() {
 		return this.field4991;
 	}
 
+	@ObfInfo(name = "al", desc = "(I)I")
 	public int method2191() {
 		return this.field4993;
 	}
 
+	@ObfInfo(name = "aj", desc = "(B)I")
 	public int method2193() {
 		return this.field4996;
 	}
 
+	@ObfInfo(name = "av", desc = "(IILjv;I)V", opaque = "1216069720")
 	public final void method8912(int var1, int var2, Class256 var3) {
 		if (var1 >= 0 && var1 < 104 && var2 >= 0 && var2 < 104) {
 			if (this.field4990[0] >= 0 && this.field4990[0] < 104 && this.field4998[0] >= 0 && this.field4998[0] < 104) {
@@ -58,6 +79,7 @@ public class Class488 implements Class78 {
 
 	}
 
+	@ObfInfo(name = "aq", desc = "(III)V")
 	public void method8913(int var1, int var2) {
 		this.field4997 = 0;
 		this.field4990[0] = var1;
@@ -67,6 +89,7 @@ public class Class488 implements Class78 {
 		this.field4993 = var4 * 64 + this.field4998[0] * 128;
 	}
 
+	@ObfInfo(name = "ap", desc = "(IILjv;I)V", opaque = "1859947808")
 	public final void method8914(int var1, int var2, Class256 var3) {
 		if (this.field4997 < 9) {
 			++this.field4997;
@@ -83,6 +106,7 @@ public class Class488 implements Class78 {
 		this.field4999[0] = var3;
 	}
 
+	@ObfInfo(name = "ae", desc = "(I)V", opaque = "1169049148")
 	public final void method8908() {
 		int var2 = this.field4988 - this.field4987 & 2047;
 		if (var2 != 0) {

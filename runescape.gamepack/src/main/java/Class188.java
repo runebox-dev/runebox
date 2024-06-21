@@ -1,4 +1,8 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "hf")
 public class Class188 {
+	@ObfInfo(desc = "(LClass515;ILjava/lang/String;)Ljava/lang/String;")
 	public static String method2595(Class515 var0, int var1, String var2) {
 		if (var0 == null) {
 			return var2;
@@ -8,6 +12,7 @@ public class Class188 {
 		}
 	}
 
+	@ObfInfo(name = "az", desc = "(I)V", opaque = "1234147850")
 	public static void method3696() {
 		Class525 var1 = null;
 

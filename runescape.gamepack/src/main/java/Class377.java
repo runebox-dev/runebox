@@ -1,8 +1,16 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "om")
 public class Class377 implements Runnable {
+	@ObfInfo(name = "al", desc = "Lpk;")
 	public static Class401 field4135;
+	@ObfInfo(name = "az", desc = "Z")
 	public static boolean field4137;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = -1779711313)
 	public static int field4134;
+	@ObfInfo(name = "af", desc = "Ljava/lang/Object;")
 	public static Object field4136;
+	@ObfInfo(name = "ak", desc = "Lpk;")
 	public static final Class401 field4138;
 
 	static {
@@ -13,6 +21,7 @@ public class Class377 implements Runnable {
 		field4136 = new Object();
 	}
 
+	@ObfInfo(desc = "()V")
 	public void run() {
 		try {
 			while (true) {
@@ -61,6 +70,7 @@ public class Class377 implements Runnable {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass474;LClass384;)V")
 	public static void method6694(int var0, Class474 var1, Class384 var2) {
 		byte[] var4 = null;
 		synchronized(field4138) {
@@ -80,6 +90,7 @@ public class Class377 implements Runnable {
 		}
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method6261() {
 		synchronized(field4136) {
 			if (0 != field4134) {

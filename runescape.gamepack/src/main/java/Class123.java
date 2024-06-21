@@ -1,20 +1,40 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "es")
 public class Class123 {
+	@ObfInfo(name = "ak", desc = "Les;")
 	public static final Class123 field1494;
+	@ObfInfo(name = "aj", desc = "Les;")
 	public static final Class123 field1495;
+	@ObfInfo(name = "ab", desc = "Les;")
 	public static final Class123 field1496;
+	@ObfInfo(name = "aa", desc = "Les;")
 	public static final Class123 field1498;
+	@ObfInfo(name = "at", desc = "Les;")
 	public static final Class123 field1499;
+	@ObfInfo(name = "ac", desc = "Les;")
 	public static final Class123 field1500;
+	@ObfInfo(name = "av", desc = "Les;")
 	public static final Class123 field1501;
+	@ObfInfo(name = "ao", desc = "Les;")
 	public static final Class123 field1502;
+	@ObfInfo(name = "ah", desc = "Les;")
 	public static final Class123 field1503;
+	@ObfInfo(name = "az", desc = "Les;")
 	public static final Class123 field1504;
+	@ObfInfo(name = "aq", desc = "Les;")
 	public static final Class123 field1505;
+	@ObfInfo(name = "ap", desc = "Les;")
 	public static final Class123 field1506;
+	@ObfInfo(name = "ae", desc = "Les;")
 	public static final Class123 field1507;
+	@ObfInfo(name = "ax", desc = "Les;")
 	public static final Class123 field1508;
+	@ObfInfo(name = "af", desc = "Les;")
 	public static final Class123 field1509;
+	@ObfInfo(name = "al", desc = "Les;")
 	public static final Class123 field1511;
+	@ObfInfo(name = "ay", desc = "I", intMultiplier = -1967129303)
 	public int field1493;
 
 	static {

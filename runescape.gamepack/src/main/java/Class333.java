@@ -1,15 +1,26 @@
+import io.runebox.ObfInfo;
 import java.util.ArrayList;
 import java.util.BitSet;
 
+@ObfInfo(name = "mu")
 public class Class333 extends Class506 {
+	@ObfInfo(name = "at", desc = "[Lms;")
 	public Class331[] field3469;
+	@ObfInfo(name = "aj", desc = "[Lck;")
 	public Class63[] field3466;
+	@ObfInfo(name = "af", desc = "[B")
 	public byte[] field3468;
+	@ObfInfo(name = "ab", desc = "[B")
 	public byte[] field3471;
+	@ObfInfo(name = "aa", desc = "[B")
 	public byte[] field3473;
+	@ObfInfo(name = "ak", desc = "I", intMultiplier = 355822601)
 	public int field3465;
+	@ObfInfo(name = "ao", desc = "[I")
 	public int[] field3470;
+	@ObfInfo(name = "ac", desc = "Ljava/util/ArrayList;")
 	public ArrayList field3472;
+	@ObfInfo(name = "az", desc = "[S")
 	public short[] field3467;
 
 	public Class333(byte[] var1) {
@@ -457,6 +468,7 @@ public class Class333 extends Class506 {
 
 	}
 
+	@ObfInfo(name = "ak", desc = "(Lbq;Ljava/util/BitSet;I)Z", opaque = "-358503007")
 	public boolean method6302(Class43 var1, BitSet var2) {
 		boolean var4 = true;
 		int var5 = 0;
@@ -497,6 +509,7 @@ public class Class333 extends Class506 {
 		return var4;
 	}
 
+	@ObfInfo(name = "al", desc = "(I)V")
 	public void method6303() {
 		this.field3470 = null;
 	}

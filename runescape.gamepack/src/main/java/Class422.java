@@ -1,5 +1,10 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "qf")
 public final class Class422 {
+	@ObfInfo(name = "al", desc = "[J")
 	public static long[] field4682;
+	@ObfInfo(name = "ak", desc = "[C")
 	public static final char[] field4681;
 
 	static {
@@ -12,6 +17,7 @@ public final class Class422 {
 
 	}
 
+	@ObfInfo(desc = "(J)Ljava/lang/String;")
 	public static String method3324(long var0) {
 		if (var0 > 0L && var0 < 6582952005840035281L) {
 			if (var0 % 37L == 0L) {

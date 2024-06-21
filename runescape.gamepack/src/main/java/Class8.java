@@ -1,3 +1,4 @@
+import io.runebox.ObfInfo;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -8,16 +9,27 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import javax.net.ssl.HttpsURLConnection;
 
+@ObfInfo(name = "ah")
 public class Class8 {
+	@ObfInfo(desc = "LClass39;")
 	public static Class39 field80;
+	@ObfInfo(desc = "LClass51;")
 	public static Class51 field450;
+	@ObfInfo(desc = "Ljava/util/concurrent/ScheduledExecutorService;")
 	public static ScheduledExecutorService field2176;
+	@ObfInfo(name = "az", desc = "Lsh;")
 	public Class476 field46;
+	@ObfInfo(name = "af", desc = "Z")
 	public boolean field43;
+	@ObfInfo(name = "aa", desc = "Z")
 	public boolean field44;
+	@ObfInfo(name = "at", desc = "I", intMultiplier = 1512635903)
 	public int field45;
+	@ObfInfo(name = "aj", desc = "Lao;")
 	public final Class15 field40;
+	@ObfInfo(name = "al", desc = "Lrt;")
 	public final Class462 field39;
+	@ObfInfo(name = "ak", desc = "Ljavax/net/ssl/HttpsURLConnection;")
 	public final HttpsURLConnection field41;
 
 	public Class8(URL var1, Class15 var2, boolean var3) throws IOException {
@@ -41,10 +53,12 @@ public class Class8 {
 		}
 	}
 
+	@ObfInfo(name = "ak", desc = "(B)Lrt;")
 	public Class462 method112() {
 		return this.field39;
 	}
 
+	@ObfInfo(name = "al", desc = "(Lsh;I)V", opaque = "1144432187")
 	public void method125(Class476 var1) {
 		if (!this.field43) {
 			if (var1 == null) {
@@ -62,6 +76,7 @@ public class Class8 {
 		}
 	}
 
+	@ObfInfo(name = "aj", desc = "(B)V", opaque = "-1")
 	public void method113() throws ProtocolException {
 		if (!this.field43) {
 			this.field41.setRequestMethod(this.field40.method173());
@@ -91,6 +106,7 @@ public class Class8 {
 		}
 	}
 
+	@ObfInfo(name = "az", desc = "(I)Z", opaque = "812163548")
 	public boolean method128() throws IOException {
 		if (!this.field43) {
 			this.method113();
@@ -100,6 +116,7 @@ public class Class8 {
 		return this.field41.getResponseCode() == -1;
 	}
 
+	@ObfInfo(name = "af", desc = "(B)Lad;", opaque = "15")
 	public Class4 method115() {
 		try {
 			if (!this.field43 || this.field41.getResponseCode() == -1) {
@@ -123,6 +140,7 @@ public class Class8 {
 		return var4;
 	}
 
+	@ObfInfo(name = "bf", desc = "(Lgz;IIB)Lbd;", opaque = "56")
 	public static Class30 method126(Class182 var0, int var1, int var2) {
 		if (0 == Client.field1382) {
 			throw new IllegalStateException();
@@ -165,6 +183,7 @@ public class Class8 {
 		}
 	}
 
+	@ObfInfo(name = "ah", desc = "(Ljava/lang/String;I)Ljava/lang/String;", opaque = "-1828047230")
 	public static String method127(String var0) {
 		StringBuilder var2 = new StringBuilder(var0.length());
 		int var3 = 0;

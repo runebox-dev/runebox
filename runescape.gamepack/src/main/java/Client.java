@@ -1,541 +1,1051 @@
-import com.jagex.oldscape.pub.OAuthApi;
-import com.jagex.oldscape.pub.OtlTokenRequester;
-import com.jagex.oldscape.pub.OtlTokenResponse;
-import com.jagex.oldscape.pub.RefreshAccessTokenRequester;
-import com.jagex.oldscape.pub.RefreshAccessTokenResponse;
+import com.jagex.oldscape.pub.*;
+import io.runebox.ObfInfo;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.awt.datatransfer.Clipboard;
 import java.io.IOException;
 import java.net.Socket;
 import java.net.URL;
 import java.security.SecureRandom;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.Future;
-import netscape.javascript.JSObject;
-import org.json.JSONException;
-import org.json.JSONObject;
 
+@ObfInfo(name = "client")
 public final class Client extends Class31 implements Class456, OAuthApi, Class330 {
+	@ObfInfo(desc = "LClass102;")
 	public static Class102 field4851;
+	@ObfInfo(desc = "LClass106;")
 	public static Class106 field3381;
+	@ObfInfo(desc = "LClass110;")
 	public static Class110 field3250;
+	@ObfInfo(name = "ej", desc = "Lej;")
 	public static Class114 field516;
+	@ObfInfo(name = "em", desc = "Lej;")
 	public static Class114 field517;
+	@ObfInfo(name = "ff", desc = "Lft;")
 	public static Class150 field526;
+	@ObfInfo(desc = "LClass159;")
 	public static Class159 field2020;
+	@ObfInfo(name = "sl", desc = "[Lgc;")
 	public static Class159[] field670;
+	@ObfInfo(desc = "LClass171;")
 	public static Class171 field4619;
+	@ObfInfo(name = "sd", desc = "[Lgo;")
 	public static Class171[] field684;
+	@ObfInfo(desc = "LClass173;")
 	public static Class173 field309;
+	@ObfInfo(desc = "LClass182;")
 	public static Class182 field209;
+	@ObfInfo(desc = "LClass187;")
 	public static Class187 field1898;
+	@ObfInfo(desc = "LClass187;")
 	public static Class187 field4686;
+	@ObfInfo(name = "sr", desc = "Lih;")
 	public static Class216 field510;
+	@ObfInfo(name = "se", desc = "Lis;")
 	public static Class227 field721;
+	@ObfInfo(desc = "LClass244;")
 	public static Class244 field1955;
+	@ObfInfo(name = "wt", desc = "Llm;")
 	public static Class299 field647;
+	@ObfInfo(name = "wb", desc = "Llm;")
 	public static Class299 field779;
+	@ObfInfo(desc = "LClass30;")
 	public static Class30 field1565;
+	@ObfInfo(desc = "LClass340;")
 	public static Class340 field2118;
+	@ObfInfo(desc = "LClass340;")
 	public static Class340 field230;
+	@ObfInfo(name = "pf", desc = "Lnb;")
 	public static Class340 field533;
+	@ObfInfo(name = "pe", desc = "Lnb;")
 	public static Class340 field541;
+	@ObfInfo(name = "pn", desc = "Lnb;")
 	public static Class340 field665;
+	@ObfInfo(name = "px", desc = "Lnb;")
 	public static Class340 field666;
+	@ObfInfo(name = "ps", desc = "Lnb;")
 	public static Class340 field669;
+	@ObfInfo(desc = "[LClass340;")
 	public static Class340[] field1925;
+	@ObfInfo(desc = "LClass342;")
 	public static Class342 field3661;
+	@ObfInfo(desc = "LClass349;")
 	public static Class349 field25;
+	@ObfInfo(name = "vh", desc = "Lnt;")
 	public static Class358 field771;
+	@ObfInfo(desc = "LClass365;")
 	public static Class365 field1829;
+	@ObfInfo(desc = "LClass366;")
 	public static Class366 field2428;
+	@ObfInfo(desc = "LClass37;")
 	public static Class37 field3984;
+	@ObfInfo(desc = "LClass374;")
 	public static Class374 field69;
+	@ObfInfo(desc = "LClass382;")
 	public static Class382 field1661;
+	@ObfInfo(desc = "LClass382;")
 	public static Class382 field1802;
+	@ObfInfo(desc = "LClass382;")
 	public static Class382 field1937;
+	@ObfInfo(desc = "LClass382;")
 	public static Class382 field1997;
+	@ObfInfo(desc = "LClass382;")
 	public static Class382 field1998;
+	@ObfInfo(desc = "LClass382;")
 	public static Class382 field2012;
+	@ObfInfo(desc = "LClass382;")
 	public static Class382 field2039;
+	@ObfInfo(desc = "LClass382;")
 	public static Class382 field2102;
+	@ObfInfo(desc = "LClass382;")
 	public static Class382 field2111;
+	@ObfInfo(desc = "LClass382;")
 	public static Class382 field2123;
+	@ObfInfo(desc = "LClass382;")
 	public static Class382 field2127;
+	@ObfInfo(desc = "LClass382;")
 	public static Class382 field2131;
+	@ObfInfo(desc = "LClass382;")
 	public static Class382 field2191;
+	@ObfInfo(desc = "LClass382;")
 	public static Class382 field2200;
+	@ObfInfo(desc = "LClass382;")
 	public static Class382 field2313;
+	@ObfInfo(desc = "LClass382;")
 	public static Class382 field2315;
+	@ObfInfo(desc = "LClass382;")
 	public static Class382 field319;
+	@ObfInfo(desc = "LClass382;")
 	public static Class382 field3267;
+	@ObfInfo(desc = "LClass382;")
 	public static Class382 field3463;
+	@ObfInfo(desc = "LClass382;")
 	public static Class382 field4596;
+	@ObfInfo(desc = "LClass382;")
 	public static Class382 field5319;
+	@ObfInfo(desc = "LClass384;")
 	public static Class384 field1255;
+	@ObfInfo(desc = "LClass384;")
 	public static Class384 field1275;
+	@ObfInfo(desc = "LClass384;")
 	public static Class384 field13;
+	@ObfInfo(desc = "LClass384;")
 	public static Class384 field1410;
+	@ObfInfo(desc = "LClass384;")
 	public static Class384 field1430;
+	@ObfInfo(desc = "LClass384;")
 	public static Class384 field1556;
+	@ObfInfo(desc = "LClass384;")
 	public static Class384 field1647;
+	@ObfInfo(desc = "LClass384;")
 	public static Class384 field1660;
+	@ObfInfo(desc = "LClass384;")
 	public static Class384 field1750;
+	@ObfInfo(desc = "LClass384;")
 	public static Class384 field1793;
+	@ObfInfo(desc = "LClass384;")
 	public static Class384 field2961;
+	@ObfInfo(desc = "LClass384;")
 	public static Class384 field2971;
+	@ObfInfo(desc = "LClass384;")
 	public static Class384 field3018;
+	@ObfInfo(desc = "LClass384;")
 	public static Class384 field3083;
+	@ObfInfo(desc = "LClass384;")
 	public static Class384 field3269;
+	@ObfInfo(desc = "LClass384;")
 	public static Class384 field3371;
+	@ObfInfo(desc = "LClass384;")
 	public static Class384 field3386;
+	@ObfInfo(desc = "LClass384;")
 	public static Class384 field3392;
+	@ObfInfo(desc = "LClass384;")
 	public static Class384 field3528;
+	@ObfInfo(desc = "LClass384;")
 	public static Class384 field386;
+	@ObfInfo(desc = "LClass384;")
 	public static Class384 field463;
+	@ObfInfo(desc = "LClass384;")
 	public static Class384 field4783;
+	@ObfInfo(desc = "LClass390;")
 	public static Class390 field1497;
+	@ObfInfo(name = "vb", desc = "[Lpg;")
 	public static Class397[] field531;
+	@ObfInfo(name = "rg", desc = "Lpk;")
 	public static Class401 field523;
+	@ObfInfo(name = "rz", desc = "Lpk;")
 	public static Class401 field696;
+	@ObfInfo(name = "rc", desc = "Lpk;")
 	public static Class401 field697;
+	@ObfInfo(name = "ri", desc = "Lpk;")
 	public static Class401 field699;
+	@ObfInfo(desc = "LClass402;")
 	public static Class402 field2071;
+	@ObfInfo(desc = "LClass408;")
 	public static Class408 field422;
+	@ObfInfo(desc = "LClass418;")
 	public static Class418 field3003;
+	@ObfInfo(desc = "LClass418;")
 	public static Class418 field3127;
+	@ObfInfo(desc = "LClass418;")
 	public static Class418 field5366;
+	@ObfInfo(name = "tu", desc = "[Lbp;")
 	public static Class42[] field744;
+	@ObfInfo(name = "ig", desc = "Lrd;")
 	public static Class446 field551;
+	@ObfInfo(desc = "LClass457;")
 	public static Class457 field1420;
+	@ObfInfo(name = "ws", desc = "Lry;")
 	public static Class467 field777;
+	@ObfInfo(desc = "LClass474;")
 	public static Class474 field3266;
+	@ObfInfo(desc = "LClass481;")
 	public static Class481 field465;
+	@ObfInfo(desc = "LClass481;")
 	public static Class481 field4879;
+	@ObfInfo(desc = "LClass487;")
 	public static Class487 field2997;
+	@ObfInfo(desc = "LClass494;")
 	public static Class494 field242;
+	@ObfInfo(desc = "LClass496;")
 	public static Class496 field104;
+	@ObfInfo(desc = "LClass500;")
 	public static Class500 field3963;
+	@ObfInfo(name = "vn", desc = "Ltn;")
 	public static Class508 field774;
+	@ObfInfo(name = "uc", desc = "Ltt;")
 	public static Class514 field749;
+	@ObfInfo(name = "rj", desc = "Ltx;")
 	public static Class518 field507;
+	@ObfInfo(name = "oa", desc = "Ltx;")
 	public static Class518 field654;
+	@ObfInfo(name = "ub", desc = "Lty;")
 	public static Class519 field750;
+	@ObfInfo(name = "ut", desc = "Lty;")
 	public static Class519 field751;
+	@ObfInfo(desc = "LClass520;")
 	public static Class520 field4552;
+	@ObfInfo(desc = "[LClass528;")
 	public static Class528[] field910;
+	@ObfInfo(desc = "LClass53;")
 	public static Class53 field1249;
+	@ObfInfo(desc = "LClass530;")
 	public static Class530 field2814;
+	@ObfInfo(desc = "LClass530;")
 	public static Class530 field431;
+	@ObfInfo(desc = "LClass544;")
 	public static Class544 field2627;
+	@ObfInfo(desc = "LClass549;")
 	public static Class549 field106;
+	@ObfInfo(desc = "LClass549;")
 	public static Class549 field1359;
+	@ObfInfo(desc = "LClass549;")
 	public static Class549 field4958;
+	@ObfInfo(desc = "[LClass549;")
 	public static Class549[] field1413;
+	@ObfInfo(desc = "[LClass549;")
 	public static Class549[] field2153;
+	@ObfInfo(desc = "[LClass549;")
 	public static Class549[] field2709;
+	@ObfInfo(desc = "[LClass549;")
 	public static Class549[] field29;
+	@ObfInfo(desc = "[LClass549;")
 	public static Class549[] field4039;
+	@ObfInfo(name = "tk", desc = "[Lvc;")
 	public static Class549[] field575;
+	@ObfInfo(desc = "[LClass549;")
 	public static Class549[] field76;
+	@ObfInfo(desc = "LClass553;")
 	public static Class553 field5081;
+	@ObfInfo(name = "fi", desc = "Lvj;")
 	public static Class555 field527;
+	@ObfInfo(desc = "[LClass557;")
 	public static Class557[] field1374;
+	@ObfInfo(desc = "[LClass557;")
 	public static Class557[] field23;
+	@ObfInfo(desc = "[LClass557;")
 	public static Class557[] field317;
+	@ObfInfo(desc = "[LClass557;")
 	public static Class557[] field4733;
+	@ObfInfo(desc = "LClass56;")
 	public static Class56 field1251;
+	@ObfInfo(desc = "LClass569;")
 	public static Class569 field3241;
+	@ObfInfo(name = "wg", desc = "Lce;")
 	public static Class57 field776;
+	@ObfInfo(name = "rs", desc = "Lvy;")
 	public static Class570 field695;
+	@ObfInfo(desc = "LClass62;")
 	public static Class62 field3069;
+	@ObfInfo(desc = "LClass69;")
 	public static Class69 field274;
+	@ObfInfo(desc = "LClass78;")
 	public static Class78 field894;
+	@ObfInfo(desc = "LClass83;")
 	public static Class83 field107;
+	@ObfInfo(desc = "LClass85;")
 	public static Class85 field830;
+	@ObfInfo(desc = "LClass87;")
 	public static Class87 field2695;
+	@ObfInfo(name = "ey", desc = "Ldn;")
 	public static Class92 field519;
+	@ObfInfo(name = "hy", desc = "Ldq;")
 	public static Class95 field619;
+	@ObfInfo(desc = "LClass98;")
 	public static Class98 field316;
+	@ObfInfo(desc = "LClass98;")
 	public static Class98 field3857;
+	@ObfInfo(desc = "LClass98;")
 	public static Class98 field4582;
+	@ObfInfo(desc = "LClient;")
 	public static Client field2077;
+	@ObfInfo(desc = "Z")
 	public static boolean field1468;
+	@ObfInfo(desc = "Z")
 	public static boolean field1887;
+	@ObfInfo(desc = "Z")
 	public static boolean field2680;
+	@ObfInfo(desc = "Z")
 	public static boolean field3112;
+	@ObfInfo(desc = "Z")
 	public static boolean field3974;
+	@ObfInfo(desc = "Z")
 	public static boolean field434;
+	@ObfInfo(name = "dm", desc = "Z")
 	public static boolean field485;
+	@ObfInfo(desc = "Z")
 	public static boolean field4885;
+	@ObfInfo(name = "nu", desc = "Z")
 	public static boolean field494;
+	@ObfInfo(name = "uv", desc = "Z")
 	public static boolean field496;
+	@ObfInfo(name = "do", desc = "Z")
 	public static boolean field497;
+	@ObfInfo(name = "ds", desc = "Z")
 	public static boolean field498;
+	@ObfInfo(name = "df", desc = "Z")
 	public static boolean field499;
+	@ObfInfo(name = "dl", desc = "Z")
 	public static boolean field506;
+	@ObfInfo(name = "by", desc = "Z")
 	public static boolean field509;
+	@ObfInfo(name = "ev", desc = "Z")
 	public static boolean field518;
+	@ObfInfo(desc = "Z")
 	public static boolean field5226;
+	@ObfInfo(name = "cs", desc = "Z")
 	public static boolean field528;
+	@ObfInfo(name = "hu", desc = "Z")
 	public static boolean field540;
+	@ObfInfo(name = "if", desc = "Z")
 	public static boolean field550;
+	@ObfInfo(name = "jz", desc = "Z")
 	public static boolean field560;
+	@ObfInfo(name = "cz", desc = "Z")
 	public static boolean field565;
+	@ObfInfo(name = "ka", desc = "Z")
 	public static boolean field569;
+	@ObfInfo(name = "lo", desc = "Z")
 	public static boolean field585;
+	@ObfInfo(name = "lv", desc = "Z")
 	public static boolean field587;
+	@ObfInfo(name = "cm", desc = "Z")
 	public static boolean field599;
+	@ObfInfo(name = "mn", desc = "Z")
 	public static boolean field607;
+	@ObfInfo(name = "mj", desc = "Z")
 	public static boolean field621;
+	@ObfInfo(name = "nv", desc = "Z")
 	public static boolean field628;
+	@ObfInfo(name = "op", desc = "Z")
 	public static boolean field639;
+	@ObfInfo(name = "oh", desc = "Z")
 	public static boolean field640;
+	@ObfInfo(name = "oe", desc = "Z")
 	public static boolean field641;
+	@ObfInfo(name = "dr", desc = "Z")
 	public static boolean field642;
+	@ObfInfo(name = "og", desc = "Z")
 	public static boolean field648;
+	@ObfInfo(name = "pl", desc = "Z")
 	public static boolean field663;
+	@ObfInfo(name = "pi", desc = "Z")
 	public static boolean field673;
+	@ObfInfo(name = "pv", desc = "Z")
 	public static boolean field676;
+	@ObfInfo(name = "ma", desc = "Z")
 	public static boolean field680;
+	@ObfInfo(name = "pq", desc = "Z")
 	public static boolean field692;
+	@ObfInfo(name = "rw", desc = "Z")
 	public static boolean field712;
+	@ObfInfo(name = "tg", desc = "Z")
 	public static boolean field737;
+	@ObfInfo(name = "uh", desc = "Z")
 	public static boolean field746;
+	@ObfInfo(name = "ud", desc = "Z")
 	public static boolean field747;
+	@ObfInfo(name = "uj", desc = "Z")
 	public static boolean field748;
+	@ObfInfo(name = "um", desc = "Z")
 	public static boolean field752;
+	@ObfInfo(name = "ua", desc = "[Z")
 	public static boolean[] field556;
+	@ObfInfo(name = "nq", desc = "[Z")
 	public static boolean[] field602;
+	@ObfInfo(name = "rv", desc = "[Z")
 	public static boolean[] field614;
+	@ObfInfo(name = "oi", desc = "[Z")
 	public static boolean[] field638;
+	@ObfInfo(name = "rk", desc = "[Z")
 	public static boolean[] field704;
+	@ObfInfo(name = "ru", desc = "[Z")
 	public static boolean[] field715;
+	@ObfInfo(name = "hk", desc = "[B")
 	public static byte[] field545;
+	@ObfInfo(desc = "[[B")
 	public static byte[][] field1549;
+	@ObfInfo(desc = "[[B")
 	public static byte[][] field1749;
+	@ObfInfo(desc = "[[B")
 	public static byte[][] field3972;
+	@ObfInfo(desc = "[[B")
 	public static byte[][] field5146;
+	@ObfInfo(desc = "I", intMultiplier = 926924483)
 	public static int field110;
+	@ObfInfo(desc = "I", intMultiplier = -2049286697)
 	public static int field1105;
+	@ObfInfo(desc = "I", intMultiplier = -1372916459)
 	public static int field121;
+	@ObfInfo(desc = "I", intMultiplier = 246565167)
 	public static int field1215;
+	@ObfInfo(desc = "I", intMultiplier = 786316707)
 	public static int field1382;
+	@ObfInfo(desc = "I", intMultiplier = -464348323)
 	public static int field1408;
+	@ObfInfo(desc = "I", intMultiplier = 592748769)
 	public static int field1414;
+	@ObfInfo(desc = "I", intMultiplier = 1565926211)
 	public static int field1415;
+	@ObfInfo(desc = "I", intMultiplier = 981078451)
 	public static int field148;
+	@ObfInfo(desc = "I", intMultiplier = -1360015913)
 	public static int field1481;
+	@ObfInfo(desc = "I", intMultiplier = -939137475)
 	public static int field1523;
+	@ObfInfo(desc = "I", intMultiplier = -1566429995)
 	public static int field1524;
+	@ObfInfo(desc = "I", intMultiplier = -1141587141)
 	public static int field1526;
+	@ObfInfo(desc = "I", intMultiplier = 983493133)
 	public static int field1538;
+	@ObfInfo(desc = "I", intMultiplier = 1642842793)
 	public static int field1589;
+	@ObfInfo(desc = "I", intMultiplier = 601850613)
 	public static int field172;
+	@ObfInfo(desc = "I", intMultiplier = 219921597)
 	public static int field1751;
+	@ObfInfo(desc = "I", intMultiplier = 406002563)
 	public static int field1760;
+	@ObfInfo(desc = "I", intMultiplier = 154647647)
 	public static int field1800;
+	@ObfInfo(desc = "I", intMultiplier = -1021134085)
 	public static int field182;
+	@ObfInfo(desc = "I", intMultiplier = -1064170701)
 	public static int field1870;
+	@ObfInfo(desc = "I", intMultiplier = -731788477)
 	public static int field1874;
+	@ObfInfo(desc = "I", intMultiplier = 552008661)
 	public static int field2007;
+	@ObfInfo(desc = "I", intMultiplier = 1143781377)
 	public static int field2029;
+	@ObfInfo(desc = "I", intMultiplier = 922606951)
 	public static int field2083;
+	@ObfInfo(desc = "I", intMultiplier = -148860909)
 	public static int field26;
+	@ObfInfo(desc = "I", intMultiplier = -940011597)
 	public static int field2629;
+	@ObfInfo(desc = "I", intMultiplier = 1852051081)
 	public static int field2640;
+	@ObfInfo(desc = "I", intMultiplier = 549714043)
 	public static int field27;
+	@ObfInfo(desc = "I", intMultiplier = 1550817359)
 	public static int field271;
+	@ObfInfo(desc = "I", intMultiplier = -1619357703)
 	public static int field2816;
+	@ObfInfo(desc = "I", intMultiplier = 1294966735)
 	public static int field283;
+	@ObfInfo(desc = "I", intMultiplier = -896049715)
 	public static int field2838;
+	@ObfInfo(desc = "I", intMultiplier = -974194965)
 	public static int field2960;
+	@ObfInfo(desc = "I", intMultiplier = -479904269)
 	public static int field2982;
+	@ObfInfo(desc = "I", intMultiplier = -298360831)
 	public static int field3071;
+	@ObfInfo(desc = "I", intMultiplier = -1507170361)
 	public static int field3072;
+	@ObfInfo(desc = "I", intMultiplier = 1529251047)
 	public static int field3090;
+	@ObfInfo(desc = "I", intMultiplier = -1654126509)
 	public static int field3152;
+	@ObfInfo(desc = "I", intMultiplier = 1892474103)
 	public static int field3167;
+	@ObfInfo(desc = "I", intMultiplier = -871116551)
 	public static int field3372;
+	@ObfInfo(desc = "I", intMultiplier = 44592861)
 	public static int field3436;
+	@ObfInfo(desc = "I", intMultiplier = -1119110507)
 	public static int field3440;
+	@ObfInfo(desc = "I", intMultiplier = 888602669)
 	public static int field3830;
+	@ObfInfo(desc = "I", intMultiplier = -408496447)
 	public static int field3887;
+	@ObfInfo(desc = "I", intMultiplier = -1994887817)
 	public static int field3960;
+	@ObfInfo(desc = "I", intMultiplier = 1480863765)
 	public static int field3961;
+	@ObfInfo(desc = "I", intMultiplier = -302371735)
 	public static int field4141;
+	@ObfInfo(desc = "I", intMultiplier = -1001500755)
 	public static int field429;
+	@ObfInfo(desc = "I", intMultiplier = 2024379245)
 	public static int field4348;
+	@ObfInfo(desc = "I", intMultiplier = -140212947)
 	public static int field4587;
+	@ObfInfo(desc = "I", intMultiplier = 1729222907)
 	public static int field4650;
+	@ObfInfo(desc = "I", intMultiplier = 135729133)
 	public static int field4694;
+	@ObfInfo(desc = "I", intMultiplier = -898106349)
 	public static int field4711;
+	@ObfInfo(name = "kp", desc = "I", intMultiplier = 1152384791)
 	public static int field484;
+	@ObfInfo(desc = "I", intMultiplier = -1657033645)
 	public static int field4853;
+	@ObfInfo(name = "mv", desc = "I", intMultiplier = 213058995)
 	public static int field486;
+	@ObfInfo(name = "ot", desc = "I", intMultiplier = 412502351)
 	public static int field487;
+	@ObfInfo(name = "pg", desc = "I", intMultiplier = -206483657)
 	public static int field488;
+	@ObfInfo(name = "co", desc = "I", intMultiplier = 676583951)
 	public static int field489;
+	@ObfInfo(name = "ce", desc = "I", intMultiplier = -171150743)
 	public static int field491;
+	@ObfInfo(name = "ei", desc = "I", intMultiplier = -676672631)
 	public static int field492;
+	@ObfInfo(name = "fu", desc = "I", intMultiplier = -860219627)
 	public static int field493;
+	@ObfInfo(desc = "I", intMultiplier = 1281330719)
 	public static int field4947;
+	@ObfInfo(name = "sg", desc = "I", intMultiplier = 570791161)
 	public static int field500;
+	@ObfInfo(name = "dw", desc = "I", intMultiplier = 967009251)
 	public static int field501;
+	@ObfInfo(desc = "I", intMultiplier = -190120109)
 	public static int field5013;
+	@ObfInfo(name = "de", desc = "I", intMultiplier = -1333263023)
 	public static int field504;
+	@ObfInfo(name = "dt", desc = "I", intMultiplier = -1276653507)
 	public static int field512;
+	@ObfInfo(name = "dp", desc = "I", intMultiplier = -1616729973)
 	public static int field513;
+	@ObfInfo(name = "dv", desc = "I", intMultiplier = -2146539957)
 	public static int field514;
+	@ObfInfo(name = "ca", desc = "I", intMultiplier = 1811237787)
 	public static int field515;
+	@ObfInfo(name = "eu", desc = "I", intMultiplier = 535821113)
 	public static int field521;
+	@ObfInfo(name = "lc", desc = "I", intMultiplier = 1095700823)
 	public static int field522;
+	@ObfInfo(name = "fq", desc = "I", intMultiplier = 1649979411)
 	public static int field524;
+	@ObfInfo(desc = "I", intMultiplier = 46472907)
 	public static int field5261;
+	@ObfInfo(name = "ml", desc = "I", intMultiplier = -1894011999)
 	public static int field530;
+	@ObfInfo(name = "ch", desc = "I", intMultiplier = -995947895)
 	public static int field532;
+	@ObfInfo(name = "ir", desc = "I", intMultiplier = -1469562999)
 	public static int field542;
+	@ObfInfo(name = "hs", desc = "I", intMultiplier = -1444736081)
 	public static int field546;
+	@ObfInfo(name = "ie", desc = "I", intMultiplier = 58631603)
 	public static int field549;
+	@ObfInfo(name = "iu", desc = "I", intMultiplier = 504433759)
 	public static int field553;
+	@ObfInfo(name = "ih", desc = "I", intMultiplier = -840950563)
 	public static int field554;
+	@ObfInfo(name = "db", desc = "I", intMultiplier = -1485751769)
 	public static int field555;
+	@ObfInfo(name = "cw", desc = "I", intMultiplier = 2015442527)
 	public static int field557;
+	@ObfInfo(name = "rh", desc = "I", intMultiplier = -1774371555)
 	public static int field558;
+	@ObfInfo(name = "cf", desc = "I", intMultiplier = 753378011)
 	public static int field561;
+	@ObfInfo(name = "jo", desc = "I", intMultiplier = 700467845)
 	public static int field564;
+	@ObfInfo(name = "ko", desc = "I", intMultiplier = 1838715027)
 	public static int field566;
+	@ObfInfo(name = "dy", desc = "I", intMultiplier = 73668781)
 	public static int field568;
+	@ObfInfo(name = "kt", desc = "I", intMultiplier = 886127191)
 	public static int field570;
+	@ObfInfo(name = "ky", desc = "I", intMultiplier = 2080637623)
 	public static int field571;
+	@ObfInfo(name = "kz", desc = "I", intMultiplier = 171319421)
 	public static int field572;
+	@ObfInfo(name = "ll", desc = "I", intMultiplier = -323128913)
 	public static int field573;
+	@ObfInfo(name = "ki", desc = "I", intMultiplier = 886767377)
 	public static int field574;
+	@ObfInfo(name = "kh", desc = "I", intMultiplier = 1679308039)
 	public static int field576;
+	@ObfInfo(name = "kx", desc = "I", intMultiplier = -627689525)
 	public static int field577;
+	@ObfInfo(name = "ly", desc = "I", intMultiplier = 2012668925)
 	public static int field579;
+	@ObfInfo(name = "le", desc = "I", intMultiplier = -961913637)
 	public static int field580;
+	@ObfInfo(name = "lu", desc = "I", intMultiplier = -1846134361)
 	public static int field581;
+	@ObfInfo(name = "lg", desc = "I", intMultiplier = 1691905935)
 	public static int field582;
+	@ObfInfo(name = "ln", desc = "I", intMultiplier = 794263599)
 	public static int field583;
+	@ObfInfo(name = "fn", desc = "I", intMultiplier = -618272967)
 	public static int field584;
+	@ObfInfo(name = "ls", desc = "I", intMultiplier = 1451141151)
 	public static int field586;
+	@ObfInfo(name = "fd", desc = "I", intMultiplier = -1948376401)
 	public static int field588;
+	@ObfInfo(name = "lt", desc = "I", intMultiplier = 481094299)
 	public static int field589;
+	@ObfInfo(name = "lr", desc = "I", intMultiplier = 818089427)
 	public static int field590;
+	@ObfInfo(name = "tm", desc = "I", intMultiplier = -1468438125)
 	public static int field594;
+	@ObfInfo(name = "om", desc = "I", intMultiplier = 1091051327)
 	public static int field595;
+	@ObfInfo(name = "is", desc = "I", intMultiplier = -1952142175)
 	public static int field596;
+	@ObfInfo(name = "si", desc = "I", intMultiplier = -1130289429)
 	public static int field597;
+	@ObfInfo(desc = "I", intMultiplier = 1521460135)
 	public static int field60;
+	@ObfInfo(name = "mb", desc = "I", intMultiplier = -1679902223)
 	public static int field600;
+	@ObfInfo(name = "mh", desc = "I", intMultiplier = 1207558497)
 	public static int field601;
+	@ObfInfo(name = "mf", desc = "I", intMultiplier = -209186385)
 	public static int field604;
+	@ObfInfo(name = "mi", desc = "I", intMultiplier = -1792452175)
 	public static int field605;
+	@ObfInfo(name = "md", desc = "I", intMultiplier = -204153191)
 	public static int field608;
+	@ObfInfo(name = "qh", desc = "I", intMultiplier = 663610575)
 	public static int field609;
+	@ObfInfo(name = "mo", desc = "I", intMultiplier = -366864293)
 	public static int field611;
+	@ObfInfo(name = "ec", desc = "I", intMultiplier = -739090101)
 	public static int field615;
+	@ObfInfo(name = "no", desc = "I", intMultiplier = -1676534335)
 	public static int field616;
+	@ObfInfo(name = "kk", desc = "I", intMultiplier = -835672749)
 	public static int field620;
+	@ObfInfo(name = "nm", desc = "I", intMultiplier = 845393953)
 	public static int field622;
+	@ObfInfo(name = "ks", desc = "I", intMultiplier = 925056187)
 	public static int field623;
+	@ObfInfo(name = "pc", desc = "I", intMultiplier = 944647145)
 	public static int field626;
+	@ObfInfo(name = "nb", desc = "I", intMultiplier = 1214762271)
 	public static int field629;
+	@ObfInfo(name = "ob", desc = "I", intMultiplier = -1452246127)
 	public static int field643;
+	@ObfInfo(name = "pk", desc = "I", intMultiplier = 1935902859)
 	public static int field644;
+	@ObfInfo(name = "on", desc = "I", intMultiplier = 1852826997)
 	public static int field645;
+	@ObfInfo(name = "me", desc = "I", intMultiplier = 1560860713)
 	public static int field646;
+	@ObfInfo(name = "dk", desc = "I", intMultiplier = 184636729)
 	public static int field649;
+	@ObfInfo(name = "th", desc = "I", intMultiplier = -669537727)
 	public static int field650;
+	@ObfInfo(name = "pt", desc = "I", intMultiplier = -2058345993)
 	public static int field655;
+	@ObfInfo(name = "pm", desc = "I", intMultiplier = 1419726125)
 	public static int field656;
+	@ObfInfo(name = "iw", desc = "I", intMultiplier = -1696342819)
 	public static int field657;
+	@ObfInfo(name = "pr", desc = "I", intMultiplier = 576526631)
 	public static int field659;
+	@ObfInfo(name = "pa", desc = "I", intMultiplier = -1359640633)
 	public static int field660;
+	@ObfInfo(name = "oq", desc = "I", intMultiplier = -496775203)
 	public static int field661;
+	@ObfInfo(name = "py", desc = "I", intMultiplier = 655633371)
 	public static int field662;
+	@ObfInfo(name = "pw", desc = "I", intMultiplier = -601701583)
 	public static int field668;
+	@ObfInfo(name = "pj", desc = "I", intMultiplier = -405187715)
 	public static int field671;
+	@ObfInfo(name = "po", desc = "I", intMultiplier = -534982633)
 	public static int field674;
+	@ObfInfo(name = "ck", desc = "I", intMultiplier = -643724961)
 	public static int field675;
+	@ObfInfo(name = "qa", desc = "I", intMultiplier = -614524711)
 	public static int field677;
+	@ObfInfo(name = "qg", desc = "I", intMultiplier = -108515045)
 	public static int field681;
+	@ObfInfo(name = "qq", desc = "I", intMultiplier = 1605480393)
 	public static int field683;
+	@ObfInfo(name = "qc", desc = "I", intMultiplier = 1984437631)
 	public static int field685;
+	@ObfInfo(name = "qb", desc = "I", intMultiplier = -958874579)
 	public static int field686;
+	@ObfInfo(name = "qw", desc = "I", intMultiplier = -895902721)
 	public static int field687;
+	@ObfInfo(name = "qs", desc = "I", intMultiplier = 1772842415)
 	public static int field688;
+	@ObfInfo(name = "qo", desc = "I", intMultiplier = -1092809017)
 	public static int field689;
+	@ObfInfo(name = "qv", desc = "I", intMultiplier = 2045003501)
 	public static int field691;
+	@ObfInfo(name = "qk", desc = "I", intMultiplier = 1108853003)
 	public static int field693;
+	@ObfInfo(name = "re", desc = "I", intMultiplier = 457804249)
 	public static int field694;
+	@ObfInfo(name = "mq", desc = "I", intMultiplier = -1382789253)
 	public static int field698;
+	@ObfInfo(name = "rb", desc = "I", intMultiplier = -1213585137)
 	public static int field701;
+	@ObfInfo(name = "ow", desc = "I", intMultiplier = -1767500567)
 	public static int field702;
+	@ObfInfo(name = "qt", desc = "I", intMultiplier = -1253937119)
 	public static int field703;
+	@ObfInfo(name = "pz", desc = "I", intMultiplier = -103207115)
 	public static int field706;
+	@ObfInfo(name = "dc", desc = "I", intMultiplier = -1295160999)
 	public static int field709;
+	@ObfInfo(name = "ry", desc = "I", intMultiplier = 563385483)
 	public static int field710;
+	@ObfInfo(name = "jk", desc = "I", intMultiplier = 1850382471)
 	public static int field711;
+	@ObfInfo(name = "sc", desc = "I", intMultiplier = 1662378903)
 	public static int field714;
+	@ObfInfo(name = "sj", desc = "I", intMultiplier = -1613964547)
 	public static int field716;
+	@ObfInfo(name = "kg", desc = "I", intMultiplier = -819092385)
 	public static int field717;
+	@ObfInfo(name = "ql", desc = "I", intMultiplier = -1171404535)
 	public static int field719;
+	@ObfInfo(name = "sb", desc = "I", intMultiplier = 940483095)
 	public static int field720;
+	@ObfInfo(name = "sw", desc = "I", intMultiplier = -729682599)
 	public static int field723;
+	@ObfInfo(name = "dx", desc = "I", intMultiplier = -841060561)
 	public static int field727;
+	@ObfInfo(name = "sv", desc = "I", intMultiplier = 1325981057)
 	public static int field729;
+	@ObfInfo(name = "tw", desc = "I", intMultiplier = -1174915981)
 	public static int field733;
+	@ObfInfo(name = "tq", desc = "I", intMultiplier = 306981547)
 	public static int field734;
+	@ObfInfo(name = "mc", desc = "I", intMultiplier = -1072754781)
 	public static int field735;
+	@ObfInfo(name = "tn", desc = "I", intMultiplier = 1240587083)
 	public static int field736;
+	@ObfInfo(name = "oy", desc = "I", intMultiplier = 2127942889)
 	public static int field738;
+	@ObfInfo(name = "oj", desc = "I", intMultiplier = -1705433687)
 	public static int field740;
+	@ObfInfo(name = "dh", desc = "I", intMultiplier = -1765644963)
 	public static int field742;
+	@ObfInfo(name = "pb", desc = "I", intMultiplier = 715718325)
 	public static int field753;
+	@ObfInfo(name = "lf", desc = "I", intMultiplier = -1036129075)
 	public static int field763;
+	@ObfInfo(name = "vc", desc = "I", intMultiplier = 1122470769)
 	public static int field764;
+	@ObfInfo(name = "vl", desc = "I", intMultiplier = -248147819)
 	public static int field766;
+	@ObfInfo(name = "vi", desc = "I", intMultiplier = -1473664455)
 	public static int field768;
+	@ObfInfo(name = "vk", desc = "I", intMultiplier = -519264569)
 	public static int field769;
+	@ObfInfo(name = "vr", desc = "I", intMultiplier = 1752143465)
 	public static int field770;
+	@ObfInfo(name = "vu", desc = "I", intMultiplier = 1264861269)
 	public static int field772;
+	@ObfInfo(name = "vw", desc = "I", intMultiplier = 1840830891)
 	public static int field773;
+	@ObfInfo(name = "di", desc = "I", intMultiplier = 236353945)
 	public static int field775;
+	@ObfInfo(name = "dz", desc = "I", intMultiplier = -1456841351)
 	public static int field778;
+	@ObfInfo(name = "wk", desc = "I", intMultiplier = -130764561)
 	public static int field780;
+	@ObfInfo(name = "wh", desc = "I", intMultiplier = -1568752971)
 	public static int field781;
+	@ObfInfo(name = "ku", desc = "I", intMultiplier = -1020776691)
 	public static int field784;
+	@ObfInfo(name = "wi", desc = "I", intMultiplier = -539925881)
 	public static int field785;
+	@ObfInfo(name = "wr", desc = "I", intMultiplier = -1819816953)
 	public static int field786;
+	@ObfInfo(desc = "I", intMultiplier = -763033945)
 	public static int field897;
+	@ObfInfo(desc = "I", intMultiplier = 143254167)
 	public static int field904;
+	@ObfInfo(desc = "[I")
 	public static int[] field149;
+	@ObfInfo(desc = "[I")
 	public static int[] field1536;
+	@ObfInfo(desc = "[I")
 	public static int[] field1622;
+	@ObfInfo(desc = "[I")
 	public static int[] field1875;
+	@ObfInfo(name = "nj", desc = "[I")
 	public static int[] field495;
+	@ObfInfo(name = "to", desc = "[I")
 	public static int[] field511;
+	@ObfInfo(desc = "[I")
 	public static int[] field5165;
+	@ObfInfo(desc = "[I")
 	public static int[] field5187;
+	@ObfInfo(name = "lz", desc = "[I")
 	public static int[] field520;
+	@ObfInfo(name = "hz", desc = "[I")
 	public static int[] field547;
+	@ObfInfo(name = "tz", desc = "[I")
 	public static int[] field563;
+	@ObfInfo(name = "lw", desc = "[I")
 	public static int[] field591;
+	@ObfInfo(name = "lk", desc = "[I")
 	public static int[] field592;
+	@ObfInfo(name = "lx", desc = "[I")
 	public static int[] field593;
+	@ObfInfo(name = "lj", desc = "[I")
 	public static int[] field598;
+	@ObfInfo(name = "la", desc = "[I")
 	public static int[] field606;
+	@ObfInfo(name = "ne", desc = "[I")
 	public static int[] field617;
+	@ObfInfo(name = "nl", desc = "[I")
 	public static int[] field624;
+	@ObfInfo(name = "nk", desc = "[I")
 	public static int[] field625;
+	@ObfInfo(name = "nz", desc = "[I")
 	public static int[] field627;
+	@ObfInfo(name = "nf", desc = "[I")
 	public static int[] field630;
+	@ObfInfo(name = "nd", desc = "[I")
 	public static int[] field631;
+	@ObfInfo(name = "na", desc = "[I")
 	public static int[] field632;
+	@ObfInfo(name = "nx", desc = "[I")
 	public static int[] field633;
+	@ObfInfo(name = "ni", desc = "[I")
 	public static int[] field634;
+	@ObfInfo(name = "nc", desc = "[I")
 	public static int[] field635;
+	@ObfInfo(name = "qr", desc = "[I")
 	public static int[] field664;
+	@ObfInfo(name = "va", desc = "[I")
 	public static int[] field667;
+	@ObfInfo(name = "vt", desc = "[I")
 	public static int[] field672;
+	@ObfInfo(name = "qz", desc = "[I")
 	public static int[] field678;
+	@ObfInfo(name = "qm", desc = "[I")
 	public static int[] field682;
+	@ObfInfo(name = "im", desc = "[I")
 	public static int[] field690;
+	@ObfInfo(name = "lp", desc = "[I")
 	public static int[] field700;
+	@ObfInfo(name = "rl", desc = "[I")
 	public static int[] field707;
+	@ObfInfo(name = "rq", desc = "[I")
 	public static int[] field708;
+	@ObfInfo(name = "rt", desc = "[I")
 	public static int[] field722;
+	@ObfInfo(name = "ss", desc = "[I")
 	public static int[] field724;
+	@ObfInfo(name = "sy", desc = "[I")
 	public static int[] field725;
+	@ObfInfo(name = "ti", desc = "[I")
 	public static int[] field731;
+	@ObfInfo(name = "tj", desc = "[I")
 	public static int[] field732;
+	@ObfInfo(name = "tb", desc = "[I")
 	public static int[] field739;
+	@ObfInfo(name = "tc", desc = "[I")
 	public static int[] field741;
+	@ObfInfo(name = "ta", desc = "[I")
 	public static int[] field743;
+	@ObfInfo(name = "vs", desc = "[I")
 	public static int[] field754;
+	@ObfInfo(name = "qx", desc = "[I")
 	public static int[] field755;
+	@ObfInfo(name = "vo", desc = "[I")
 	public static int[] field756;
+	@ObfInfo(name = "rm", desc = "[I")
 	public static int[] field757;
+	@ObfInfo(name = "nw", desc = "[I")
 	public static int[] field761;
+	@ObfInfo(name = "sk", desc = "[I")
 	public static int[] field783;
+	@ObfInfo(name = "xq", desc = "[I")
 	public static int[] field788;
+	@ObfInfo(name = "xf", desc = "[I")
 	public static int[] field789;
+	@ObfInfo(desc = "[I")
 	public static int[] field970;
+	@ObfInfo(desc = "[[I")
 	public static int[][] field112;
+	@ObfInfo(desc = "[[I")
 	public static int[][] field5183;
+	@ObfInfo(name = "ld", desc = "[[I")
 	public static int[][] field745;
+	@ObfInfo(name = "jw", desc = "[[[I")
 	public static int[][][] field559;
+	@ObfInfo(name = "js", desc = "[[[I")
 	public static int[][][] field567;
+	@ObfInfo(desc = "Ljava/lang/String;")
 	public static String field119;
+	@ObfInfo(desc = "Ljava/lang/String;")
 	public static String field125;
+	@ObfInfo(desc = "Ljava/lang/String;")
 	public static String field2233;
+	@ObfInfo(desc = "Ljava/lang/String;")
 	public static String field2657;
+	@ObfInfo(desc = "Ljava/lang/String;")
 	public static String field3409;
+	@ObfInfo(desc = "Ljava/lang/String;")
 	public static String field42;
+	@ObfInfo(desc = "Ljava/lang/String;")
 	public static String field4509;
+	@ObfInfo(desc = "Ljava/lang/String;")
 	public static String field4510;
+	@ObfInfo(desc = "Ljava/lang/String;")
 	public static String field4720;
+	@ObfInfo(name = "st", desc = "Ljava/lang/String;")
 	public static String field483;
+	@ObfInfo(name = "it", desc = "Ljava/lang/String;")
 	public static String field503;
+	@ObfInfo(name = "or", desc = "Ljava/lang/String;")
 	public static String field578;
+	@ObfInfo(name = "oc", desc = "Ljava/lang/String;")
 	public static String field651;
+	@ObfInfo(desc = "Ljava/lang/String;")
 	public static String field874;
+	@ObfInfo(name = "of", desc = "[Ljava/lang/String;")
 	public static String[] field636;
+	@ObfInfo(name = "oo", desc = "[Ljava/lang/String;")
 	public static String[] field637;
+	@ObfInfo(name = "lm", desc = "[Ljava/lang/String;")
 	public static String[] field652;
+	@ObfInfo(name = "nr", desc = "[Ljava/lang/String;")
 	public static String[] field679;
+	@ObfInfo(desc = "Ljava/security/SecureRandom;")
 	public static SecureRandom field54;
+	@ObfInfo(name = "wz", desc = "Ljava/util/ArrayList;")
 	public static ArrayList field713;
+	@ObfInfo(name = "ij", desc = "Ljava/util/HashMap;")
 	public static HashMap field552;
+	@ObfInfo(name = "wc", desc = "Ljava/util/List;")
 	public static List field782;
+	@ObfInfo(desc = "J", longMultiplier = -1017482725618925639L)
 	public static long field1681;
+	@ObfInfo(desc = "J", longMultiplier = -3325043838573669699L)
 	public static long field1985;
+	@ObfInfo(desc = "J", longMultiplier = -5228586345600098271L)
 	public static long field3415;
+	@ObfInfo(name = "dg", desc = "J", longMultiplier = 8540685319604864889L)
 	public static long field502;
+	@ObfInfo(name = "dn", desc = "J", longMultiplier = -1981057678477566385L)
 	public static long field505;
+	@ObfInfo(name = "rp", desc = "J", longMultiplier = 4044768072575596341L)
 	public static long field536;
+	@ObfInfo(name = "mk", desc = "J", longMultiplier = 3453023163764971459L)
 	public static long field612;
+	@ObfInfo(name = "mg", desc = "J", longMultiplier = -2716180425969645215L)
 	public static long field613;
+	@ObfInfo(name = "sz", desc = "J", longMultiplier = 8080048737762926953L)
 	public static long field726;
+	@ObfInfo(name = "sm", desc = "[J")
 	public static long[] field730;
+	@ObfInfo(name = "vg", desc = "S")
 	public static short field508;
+	@ObfInfo(name = "vx", desc = "S")
 	public static short field653;
+	@ObfInfo(name = "vp", desc = "S")
 	public static short field718;
+	@ObfInfo(name = "vj", desc = "S")
 	public static short field758;
+	@ObfInfo(name = "vq", desc = "S")
 	public static short field759;
+	@ObfInfo(name = "vd", desc = "S")
 	public static short field760;
+	@ObfInfo(name = "vf", desc = "S")
 	public static short field762;
+	@ObfInfo(name = "vm", desc = "S")
 	public static short field765;
+	@ObfInfo(desc = "[S")
 	public static short[] field170;
+	@ObfInfo(desc = "[S")
 	public static short[] field277;
+	@ObfInfo(desc = "[S")
 	public static short[] field423;
+	@ObfInfo(desc = "[[S")
 	public static short[][] field2374;
+	@ObfInfo(desc = "[[S")
 	public static short[][] field4687;
+	@ObfInfo(name = "iq", desc = "Lel;")
 	public static final Class116 field548;
+	@ObfInfo(name = "wo", desc = "Ljt;")
 	public static final Class254 field728;
+	@ObfInfo(name = "xw", desc = "Lcf;")
 	public static final Class58 field787;
+	@ObfInfo(name = "jg", desc = "[I")
 	public static final int[] field562;
+	@ObfInfo(name = "ns", desc = "[I")
 	public static final int[] field618;
+	@ObfInfo(name = "gd", desc = "Ljava/lang/String;")
 	public static final String field538;
+	@ObfInfo(name = "gw", desc = "Ljava/lang/String;")
 	public static final String field539;
+	@ObfInfo(name = "gh", desc = "Las;")
 	public Class19 field535;
+	@ObfInfo(name = "gk", desc = "Las;")
 	public Class19 field705;
+	@ObfInfo(name = "hd", desc = "Lab;")
 	public Class2 field543;
+	@ObfInfo(name = "gl", desc = "Lae;")
 	public Class5 field529;
+	@ObfInfo(name = "hw", desc = "Lua;")
 	public Class521 field490;
+	@ObfInfo(name = "gv", desc = "Z")
 	public boolean field767;
+	@ObfInfo(name = "gr", desc = "Lcom/jagex/oldscape/pub/OtlTokenRequester;")
 	public OtlTokenRequester field610;
+	@ObfInfo(name = "ge", desc = "Lcom/jagex/oldscape/pub/RefreshAccessTokenRequester;")
 	public RefreshAccessTokenRequester field603;
+	@ObfInfo(name = "gu", desc = "I", intMultiplier = 779277509)
 	public int field534;
+	@ObfInfo(name = "go", desc = "Ljava/lang/String;")
 	public String field658;
+	@ObfInfo(name = "gb", desc = "Ljava/util/concurrent/Future;")
 	public Future field525;
+	@ObfInfo(name = "gz", desc = "Ljava/util/concurrent/Future;")
 	public Future field537;
+	@ObfInfo(name = "hr", desc = "J", longMultiplier = 4940111494881884911L)
 	public long field544;
 
 	static {
@@ -865,9 +1375,11 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		this.field544 = -1L;
 	}
 
+	@ObfInfo(name = "ba", desc = "(I)V")
 	public final void method503() {
 	}
 
+	@ObfInfo(desc = "()V")
 	public final void init() {
 		if (this.method481()) {
 			for (int var1 = 0; var1 <= 28; ++var1) {
@@ -990,19 +1502,23 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "()V")
 	public void finalize() throws Throwable {
 		Class332.field3459.remove(this);
 		super.finalize();
 	}
 
+	@ObfInfo(name = "he", desc = "(I)Z")
 	public boolean method1745() {
 		return this.field534 == 1;
 	}
 
+	@ObfInfo(desc = "(I)V")
 	public void setClient(int var1) {
 		this.field534 = var1;
 	}
 
+	@ObfInfo(desc = "(Lcom/jagex/oldscape/pub/OtlTokenRequester;)V")
 	public void setOtlTokenRequester(OtlTokenRequester var1) {
 		if (var1 != null) {
 			this.field610 = var1;
@@ -1010,32 +1526,39 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(Lcom/jagex/oldscape/pub/RefreshAccessTokenRequester;)V")
 	public void setRefreshTokenRequester(RefreshAccessTokenRequester var1) {
 		if (var1 != null) {
 			this.field603 = var1;
 		}
 	}
 
+	@ObfInfo(desc = "()Z")
 	public boolean isOnLoginScreen() {
 		return 10 == field555;
 	}
 
+	@ObfInfo(desc = "()J")
 	public long getAccountHash() {
 		return this.field544;
 	}
 
+	@ObfInfo(name = "hj", desc = "(I)Z", opaque = "-1558399709")
 	public boolean method1198() {
 		return field125 != null && !field125.trim().isEmpty() && field2233 != null && !field2233.trim().isEmpty();
 	}
 
+	@ObfInfo(name = "hg", desc = "(I)Z", opaque = "631452313")
 	public boolean method1737() {
 		return field42 != null && !field42.trim().isEmpty() && field874 != null && !field874.trim().isEmpty();
 	}
 
+	@ObfInfo(name = "hb", desc = "(I)Z", opaque = "-1494226453")
 	public boolean method1291() {
 		return this.field610 != null;
 	}
 
+	@ObfInfo(name = "ht", desc = "(Ljava/lang/String;B)V", opaque = "0")
 	public void method1201(String var1) throws IOException {
 		HashMap var3 = new HashMap();
 		var3.put("grant_type", "refresh_token");
@@ -1061,6 +1584,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(name = "hh", desc = "(Ljava/lang/String;I)V", opaque = "-1302873064")
 	public void method1202(String var1) throws IOException {
 		URL var3 = new URL(field3409 + "public/v1/games/YCfdbvr2pM1zUYMxJRexZY/play");
 		Class462 var4 = new Class462();
@@ -1075,6 +1599,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(name = "ha", desc = "(Ljava/lang/String;Ljava/lang/String;B)V")
 	public void method1203(String var1, String var2) throws IOException, JSONException {
 		URL var4 = new URL(field4510 + "game-session/v1/tokens");
 		Class8 var5 = new Class8(var4, Class15.field72, this.field767);
@@ -1086,6 +1611,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		this.field705 = this.field529.method57(var5);
 	}
 
+	@ObfInfo(name = "bk", desc = "(S)V", opaque = "133")
 	public final void method493() {
 		Class451.method7039(new int[]{20, 260, 10000}, new int[]{1000, 100, 500});
 		field434 = Class541.method5694(field675, Class534.field5281);
@@ -1118,6 +1644,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		field728.method4868();
 	}
 
+	@ObfInfo(name = "bp", desc = "(B)V", opaque = "0")
 	public final void method484() {
 		++field778;
 		this.method1488();
@@ -1215,6 +1742,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(name = "br", desc = "(ZI)V", opaque = "-516888372")
 	public final void method495(boolean var1) {
 		if ((field555 == 10 || field555 == 20 || 30 == field555) && field536 != 0L && Class327.method3047() > field536) {
 			method3259(method9643());
@@ -1282,6 +1810,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(name = "bx", desc = "(I)V", opaque = "-1172799332")
 	public final void method496() {
 		if (field3250 != null && field3250.method2848()) {
 			field3250.method2821();
@@ -1310,6 +1839,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		this.field529.method60();
 	}
 
+	@ObfInfo(name = "hv", desc = "(B)V", opaque = "2")
 	public void method1488() {
 		if (1000 != field555) {
 			boolean var2 = field69.method7173();
@@ -1320,6 +1850,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(name = "hw", desc = "(S)V", opaque = "151")
 	public void method1538() {
 		if (field69.field4095 >= 4) {
 			this.method499("js5crc");
@@ -1394,6 +1925,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(name = "hd", desc = "(II)V", opaque = "-1550318688")
 	public void method1210(int var1) {
 		field1898 = null;
 		field465 = null;
@@ -1426,6 +1958,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(name = "hp", desc = "(I)V", opaque = "2039123776")
 	public final void method1211() {
 		Class481 var2 = field548.method2900();
 		Class531 var3 = field548.field1447;
@@ -2138,6 +2671,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(name = "ii", desc = "(I)V", opaque = "-1882812901")
 	public final void method1436() {
 		if (field649 > 1) {
 			--field649;
@@ -2817,6 +3351,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(name = "ih", desc = "(III)V", opaque = "-717350458")
 	public void method1208(int var1, int var2) {
 		if (field548 != null && field548.field1446 != null) {
 			if (var1 > -1 && field4851.method2637() > 0 && !field737) {
@@ -2828,6 +3363,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(name = "as", desc = "(I)V", opaque = "-1709856685")
 	public final void method538() {
 		field536 = Class327.method3047() + 500L;
 		this.method1215();
@@ -2837,6 +3373,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(name = "jz", desc = "(I)V", opaque = "-487306652")
 	public void method1215() {
 		int var2 = field182;
 		int var3 = field5261;
@@ -2859,6 +3396,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(name = "js", desc = "(I)V", opaque = "736289381")
 	public final void method1372() {
 		if (-1 != field740) {
 			method3063(field740);
@@ -3054,6 +3592,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		field564 = 0;
 	}
 
+	@ObfInfo(name = "kv", desc = "(Lel;IB)Z", opaque = "3")
 	public boolean method1256(Class116 var1, int var2) {
 		if (var1.field1444 == 0) {
 			field1420 = null;
@@ -3071,6 +3610,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		return true;
 	}
 
+	@ObfInfo(name = "kq", desc = "(Lel;B)Z", opaque = "2")
 	public boolean method1244(Class116 var1) {
 		if (field1420 != null) {
 			field1420.method8461(var1.field1447);
@@ -3082,6 +3622,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		return true;
 	}
 
+	@ObfInfo(name = "kr", desc = "(Lel;I)Z", opaque = "-1141704173")
 	public final boolean method1219(Class116 var1) {
 		Class481 var3 = var1.method2900();
 		Class531 var4 = var1.field1447;
@@ -5249,6 +5790,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(name = "la", desc = "(I)V", opaque = "-601701584")
 	public final void method1220() {
 		method5996();
 		if (field665 == null) {
@@ -5305,6 +5847,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(name = "lp", desc = "(I)Z", opaque = "1645779678")
 	public final boolean method1221() {
 		int var2 = field629 - 1;
 		boolean var4 = field494 && field629 > 2;
@@ -5331,6 +5874,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		return var4 && !field638[var2];
 	}
 
+	@ObfInfo(name = "ld", desc = "(IIB)V", opaque = "15")
 	public final void method1222(int var1, int var2) {
 		int var4 = field3003.method8080(Class378.field4313);
 
@@ -5390,10 +5934,12 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		field628 = true;
 	}
 
+	@ObfInfo(name = "mx", desc = "(ZB)V")
 	public final void method1762(boolean var1) {
 		method2209(field740, field182, field5261, var1);
 	}
 
+	@ObfInfo(name = "ma", desc = "(Lnb;I)V", opaque = "1126291948")
 	public void method1224(Class340 var1) {
 		Class340 var3 = var1.field3826 == -1 ? null : field25.method6718(var1.field3826);
 		int var4;
@@ -5410,6 +5956,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		method27(var1, var4, var5);
 	}
 
+	@ObfInfo(name = "nv", desc = "(S)V", opaque = "255")
 	public final void method1225() {
 		Class317.method6187(field665);
 		++field2838;
@@ -5496,34 +6043,41 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(name = "pm", desc = "(I)Lvv;", opaque = "-1381930917")
 	public Class567 method1226() {
 		return field107 != null ? field107.field1025 : null;
 	}
 
+	@ObfInfo(name = "pi", desc = "(IB)V")
 	public void method1227(int var1) {
 		Class316 var3 = Class316.method3908(Class315.field3350, field548.field1446);
 		var3.field3374.method9388(var1);
 		field548.method2897(var3);
 	}
 
+	@ObfInfo(name = "po", desc = "(II)V")
 	public void method1228(int var1) {
 		Class316 var3 = Class316.method3908(Class315.field3346, field548.field1446);
 		var3.field3374.method9388(var1);
 		field548.method2897(var3);
 	}
 
+	@ObfInfo(desc = "()LClass500;")
 	public static Class500 method2951() {
 		return field3963;
 	}
 
+	@ObfInfo(desc = "()LClass496;")
 	public static Class496 method3301() {
 		return field104;
 	}
 
+	@ObfInfo(desc = "()LClass227;")
 	public static Class227 method7365() {
 		return field721;
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method54() {
 		field498 = true;
 		if (field3250 != null && field3250.method2848()) {
@@ -5595,6 +6149,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		Class118.method2945(0);
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method3205() {
 		field4958 = null;
 		field106 = null;
@@ -5609,12 +6164,14 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		field317 = null;
 	}
 
+	@ObfInfo(desc = "(LClass384;Ljava/lang/String;)V")
 	public static void method3290(Class384 var0, String var1) {
 		Class82 var3 = new Class82(var0, var1);
 		field713.add(var3);
 		field786 += var3.field1001;
 	}
 
+	@ObfInfo(desc = "()Z")
 	public static boolean method8271() {
 		if (field713 != null && field785 < field713.size()) {
 			while (field785 < field713.size()) {
@@ -5632,6 +6189,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "()I")
 	public static int method3051() {
 		if (field713 != null && field785 < field713.size()) {
 			int var1 = 0;
@@ -5646,6 +6204,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(II)V")
 	public static void method1101(int var0, int var1) {
 		int[] var3 = new int[9];
 
@@ -5668,6 +6227,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		field3857.field1283.method4975(var3, 500, 800, var0 * 334 / var1, 334);
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method718() {
 		if (Class92.field1218 == field519) {
 			field1750 = method2740(Class375.field4103.field4121, false, true, true, false);
@@ -6098,12 +6658,14 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(LClass92;)V")
 	public static void method2970(Class92 var0) {
 		if (field519 != var0) {
 			field519 = var0;
 		}
 	}
 
+	@ObfInfo(desc = "(IZZZZ)LClass384;")
 	public static Class384 method2740(int var0, boolean var1, boolean var2, boolean var3, boolean var4) {
 		Class474 var6 = null;
 		if (Class179.field1885 != null) {
@@ -6113,6 +6675,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		return new Class384(var6, field3266, field69, var0, var1, var2, var3, var4, false);
 	}
 
+	@ObfInfo(desc = "(IZZZZZ)LClass384;")
 	public static Class384 method2185(int var0, boolean var1, boolean var2, boolean var3, boolean var4, boolean var5) {
 		Class474 var7 = null;
 		if (Class179.field1885 != null) {
@@ -6122,6 +6685,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		return new Class384(var7, field3266, field69, var0, var1, var2, var3, var4, var5);
 	}
 
+	@ObfInfo(desc = "(LClass316;)V")
 	public static void method7121(Class316 var0) {
 		var0.field3374.method9590(0);
 		var0.field3374.method9590(field1647.field4486);
@@ -6146,6 +6710,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		var0.field3374.method9556(field1430.field4486);
 	}
 
+	@ObfInfo(desc = "(LClass316;)V")
 	public static void method3957(Class316 var0) {
 		var0.field3374.method9459(field1793.field4486);
 		var0.field3374.method9458(field1660.field4486);
@@ -6156,6 +6721,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		var0.field3374.method9459(field1556.field4486);
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method8429() {
 		field502 = -1L;
 		if (field830 != null) {
@@ -6262,6 +6828,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		field1829 = null;
 	}
 
+	@ObfInfo(desc = "(I)V")
 	public static void method3995(int var0) {
 		int var2 = Class76.field932;
 		if (var0 == -3) {
@@ -6406,6 +6973,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method3869() {
 		field548.method2901();
 		method191();
@@ -6422,6 +6990,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		Class191.method3562().method3725();
 	}
 
+	@ObfInfo(desc = "(I)V")
 	public static void method8883(int var0) {
 		method3869();
 		switch(var0) {
@@ -6434,14 +7003,17 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "()J")
 	public static long method2242() {
 		return field612;
 	}
 
+	@ObfInfo(desc = "()J")
 	public static long method3062() {
 		return field613;
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method191() {
 		Class212.method4057();
 		Class34.method720();
@@ -6593,12 +7165,14 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method2739() {
 		field2012 = null;
 		field1802 = null;
 		field4711 = 0;
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method6176() {
 		if (field549 > 0) {
 			method3869();
@@ -6610,6 +7184,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(Z)V")
 	public static void method6138(boolean var0) {
 		if (var0) {
 			field526 = Class76.field944 ? Class150.field1687 : Class150.field1689;
@@ -6619,6 +7194,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method4066() {
 		if (field1565 != null) {
 			field1565.method449();
@@ -6626,6 +7202,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method676() {
 		for (int var1 = 0; var1 < field650; ++var1) {
 			int var10002 = field741[var1]--;
@@ -6713,6 +7290,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(LClass211;IIILClass86;)V")
 	public static void method2455(Class211 var0, int var1, int var2, int var3, Class86 var4) {
 		if (field650 < 50) {
 			if (var0.field2140 != null && var1 < var0.field2140.length && var0.field2140[var1] != null) {
@@ -6746,6 +7324,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(LClass211;IIILClass86;)V")
 	public static void method794(Class211 var0, int var1, int var2, int var3, Class86 var4) {
 		if (field650 < 50) {
 			if (var0.field2134 != null && var0.field2134.containsKey(var1)) {
@@ -6781,6 +7360,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(III)V")
 	public static void method8553(int var0, int var1, int var2) {
 		if (field4851.method2704() != 0 && var1 != 0 && field650 < 50) {
 			field739[field650] = var0;
@@ -6794,6 +7374,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(I)V")
 	public static void method110(int var0) {
 		if (var0 == -1 && !field737) {
 			Class380.method7208(0, 0);
@@ -6821,6 +7402,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(Ljava/util/ArrayList;IIII)V")
 	public static void method160(ArrayList var0, int var1, int var2, int var3, int var4) {
 		if (!var0.isEmpty()) {
 			int var6 = (Integer)var0.get(0);
@@ -6855,6 +7437,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method4908() {
 		if (field3112) {
 			if (field1420 != null) {
@@ -6871,6 +7454,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(LClass340;II)V")
 	public static void method168(Class340 var0, int var1, int var2) {
 		if (field736 == 0 || field736 == 3) {
 			if (!field628 && (Class33.field237 == 1 || !field1468 && Class33.field237 == 4)) {
@@ -6915,6 +7499,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(LClass98;)V")
 	public static void method1134(Class98 var0) {
 		int[] var2 = var0.field1288.field1393;
 
@@ -6942,6 +7527,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/String;)V")
 	public static void method2236(String var0) {
 		if (var0.equalsIgnoreCase("toggleroof")) {
 			field4851.method2609(!field4851.method2701());
@@ -7021,10 +7607,12 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		field548.method2897(var6);
 	}
 
+	@ObfInfo(desc = "(I)I")
 	public static int method192(int var0) {
 		return Math.abs(var0 - field2029) > 1024 ? (var0 < field2029 ? 1 : -1) * 2048 + var0 : var0;
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method3052() {
 		method2513(field3961, field110, field283);
 		Class318.method6188(field148, field2816);
@@ -7050,6 +7638,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(III)V")
 	public static void method2513(int var0, int var1, int var2) {
 		if (field3960 < var0) {
 			field3960 += (var0 - field3960) * field3830 / 1000 + field1526;
@@ -7095,6 +7684,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method7420() {
 		int var1;
 		int var2;
@@ -7273,6 +7863,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(LClass98;)V")
 	public static void method4409(Class98 var0) {
 		for (int var2 = 0; var2 < var0.field1296; ++var2) {
 			int var3 = var0.field1297[var2];
@@ -7284,6 +7875,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(LClass86;)V")
 	public static void method3707(Class86 var0) {
 		var0.field1096 = var0.field1061;
 		if (var0.field1125 == 0) {
@@ -7460,6 +8052,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(LClass83;II)V")
 	public static void method3578(Class83 var0, int var1, int var2) {
 		if (var1 == var0.field1074 && var1 != -1) {
 			int var4 = Class237.method4637(var1).field2152;
@@ -7484,10 +8077,12 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "()I")
 	public static int method9643() {
 		return field712 ? 2 : 1;
 	}
 
+	@ObfInfo(desc = "(I)V")
 	public static void method3259(int var0) {
 		field536 = 0L;
 		if (var0 >= 2) {
@@ -7512,6 +8107,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/String;Z)V")
 	public static void method8554(String var0, boolean var1) {
 		if (field621) {
 			byte var3 = 4;
@@ -7536,6 +8132,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(IIII)V")
 	public static void method4636(int var0, int var1, int var2, int var3) {
 		++field600;
 		field3857.field1283.field2730 = field778;
@@ -8056,6 +8653,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(IIIIZ)V")
 	public static void method6444(int var0, int var1, int var2, int var3, boolean var4) {
 		if (var2 < 1) {
 			var2 = 1;
@@ -8124,6 +8722,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		field769 = var3;
 	}
 
+	@ObfInfo(desc = "(LClass98;)V")
 	public static void method2089(Class98 var0) {
 		if (field680) {
 			method7830(var0, field646, false);
@@ -8131,6 +8730,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(LClass98;)V")
 	public static void method3994(Class98 var0) {
 		if (field622 >= 0 && null != var0.field1293[field622]) {
 			method7830(var0, field622, false);
@@ -8138,6 +8738,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(LClass98;IZ)V")
 	public static void method7830(Class98 var0, int var1, boolean var2) {
 		Class83 var4 = var0.field1293[var1];
 		if (var4 != null && var4.method2264() && !var4.field1015) {
@@ -8173,6 +8774,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(LClass98;Z)V")
 	public static void method32(Class98 var0, boolean var1) {
 		for (int var3 = 0; var3 < var0.field1296; ++var3) {
 			Class100 var4 = var0.field1295[var0.field1297[var3]];
@@ -8197,6 +8799,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(LClass98;)V")
 	public static void method3574(Class98 var0) {
 		for (Class88 var2 = (Class88)var0.field1303.method7482(); var2 != null; var2 = (Class88)var0.field1303.method7490()) {
 			if (var0.field1300 == var2.field1183 && field778 <= var2.field1165) {
@@ -8258,6 +8861,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(LClass98;)V")
 	public static void method4910(Class98 var0) {
 		for (Class59 var2 = (Class59)var0.field1304.method7482(); var2 != null; var2 = (Class59)var0.field1304.method7490()) {
 			if (var2.field436 == var0.field1300 && !var2.field443) {
@@ -8276,6 +8880,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "()I")
 	public static int method8098() {
 		if (field4851.method2701()) {
 			return field3857.field1300;
@@ -8285,6 +8890,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(LClass98;II)V")
 	public static void method6257(Class98 var0, int var1, int var2) {
 		if (2 == field742) {
 			method1110(var0, (field727 - var0.field1289 << 7) + field514, field492 + (field512 - var0.field1285 << 7), field513 * 2);
@@ -8295,10 +8901,12 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "()LClass401;")
 	public static Class401 method398() {
 		return field696;
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method7120() {
 		for (Class231 var1 = (Class231)field699.method7482(); var1 != null; var1 = (Class231)field699.method7490()) {
 			var1.method9277();
@@ -8306,6 +8914,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(LClass231;)V")
 	public static void method9901(Class231 var0) {
 		if (var0 != null && var0.field2435 != null) {
 			if (var0.field2435.field3791 >= 0) {
@@ -8358,14 +8967,17 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "()Z")
 	public static boolean method8419() {
 		return 0 != (field530 & 1);
 	}
 
+	@ObfInfo(desc = "()Z")
 	public static boolean method7533() {
 		return (field530 & 8) != 0;
 	}
 
+	@ObfInfo(desc = "(LClass98;LClass86;IIIII)V")
 	public static void method397(Class98 var0, Class86 var1, int var2, int var3, int var4, int var5, int var6) {
 		if (var1 != null && var1.method2264()) {
 			if (var1 instanceof Class100) {
@@ -8991,6 +9603,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method7207() {
 		field608 = 0;
 		int var1 = (field107.field1065 >> 7) + field3857.field1289;
@@ -9009,10 +9622,12 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(LClass98;LClass86;I)V")
 	public static void method1053(Class98 var0, Class86 var1, int var2) {
 		method1110(var0, var1.field1065, var1.field1126, var2);
 	}
 
+	@ObfInfo(desc = "(LClass98;III)V")
 	public static void method1110(Class98 var0, int var1, int var2, int var3) {
 		if (var1 >= 128 && var2 >= 128 && var1 <= 13056 && var2 <= 13056) {
 			int var5 = method790(var0, var1, var2, var0.field1300) - var3;
@@ -9042,6 +9657,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(LClass98;III)I")
 	public static int method790(Class98 var0, int var1, int var2, int var3) {
 		int var5 = var1 >> 7;
 		int var6 = var2 >> 7;
@@ -9061,6 +9677,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(ZLClass531;)V")
 	public static void method8270(boolean var0, Class531 var1) {
 		field560 = var0;
 		int var3;
@@ -9172,6 +9789,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(IIZ)V")
 	public static void method7452(int var0, int var1, boolean var2) {
 		if (!var2 || field5013 != var0 || var1 != field4694) {
 			field5013 = var0;
@@ -9300,6 +9918,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(Z)V")
 	public static void method129(boolean var0) {
 		method4066();
 		++field548.field1443;
@@ -9319,6 +9938,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method5783() {
 		method129(false);
 		field553 = 0;
@@ -9565,6 +10185,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(LClass98;)V")
 	public static void method3293(Class98 var0) {
 		int var2 = var0.field1298 / 8;
 		int var3 = var0.field1282 / 8;
@@ -9701,6 +10322,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(IIIII)V")
 	public static void method675(int var0, int var1, int var2, int var3, int var4) {
 		Class259 var6 = field3857.field1283;
 		long var7 = var6.method4951(var0, var1, var2);
@@ -9847,6 +10469,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(LClass326;)V")
 	public static void method3871(Class326 var0) {
 		Class531 var2 = field548.field1447;
 		int var4;
@@ -10083,6 +10706,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(IIIII)V")
 	public static void method3064(int var0, int var1, int var2, int var3, int var4) {
 		Class401 var6 = field4582.field1301[var0][var1][var2];
 		if (var6 != null) {
@@ -10096,6 +10720,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(IIIIII)V")
 	public static void method3098(int var0, int var1, int var2, int var3, int var4, int var5) {
 		Class401 var7 = field4582.field1301[var0][var1][var2];
 		if (var7 != null) {
@@ -10111,6 +10736,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(IIIIIIIIIIIIILClass83;)V")
 	public static void method3300(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12, Class83 var13) {
 		Class222 var15 = Class222.method4161(var6);
 		int var16;
@@ -10161,6 +10787,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(IIIIIIIIIIIIII)V")
 	public static void method6160(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12, int var13) {
 		var1 = 64 + var1 * 128;
 		var2 = 64 + var2 * 128;
@@ -10171,6 +10798,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		field4582.field1303.method7477(var15);
 	}
 
+	@ObfInfo(desc = "(IIIII)V")
 	public static void method6708(int var0, int var1, int var2, int var3, int var4) {
 		Class401 var6 = field4582.field1301[var0][var1][var2];
 		if (var6 != null) {
@@ -10190,6 +10818,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(IIIIIIIIIZ)V")
 	public static void method5998(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, boolean var9) {
 		Class117 var11 = new Class117();
 		var11.field1465 = var3;
@@ -10207,10 +10836,12 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		method7123(var0, var1, var2);
 	}
 
+	@ObfInfo(desc = "(IIIIII)Z")
 	public static boolean method9204(int var0, int var1, int var2, int var3, int var4, int var5) {
 		return method1805(field4582.field1300, var0, var1, var2, var3, var4, var5);
 	}
 
+	@ObfInfo(desc = "(IIIIIII)Z")
 	public static boolean method1805(int var0, int var1, int var2, int var3, int var4, int var5, int var6) {
 		Class259 var8 = field4582.field1283;
 		int var10;
@@ -10267,6 +10898,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		return false;
 	}
 
+	@ObfInfo(desc = "(LClass98;IIIIIIIIII)V")
 	public static void method3582(Class98 var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10) {
 		Class401 var12 = var0.field1294;
 		Class89 var13 = null;
@@ -10297,6 +10929,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		var13.method2398(var8);
 	}
 
+	@ObfInfo(desc = "(LClass98;IIII)LClass89;")
 	public static Class89 method3404(Class98 var0, int var1, int var2, int var3, int var4) {
 		for (Class89 var6 = (Class89)var0.field1294.method7482(); var6 != null; var6 = (Class89)var0.field1294.method7490()) {
 			if (var1 == var6.field1195 && var6.field1187 == var2 && var6.field1191 == var3 && var6.field1186 == var4) {
@@ -10307,6 +10940,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		return null;
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method8309() {
 		for (Class89 var1 = (Class89)field3857.field1294.method7482(); var1 != null; var1 = (Class89)field3857.field1294.method7490()) {
 			if (-1 == var1.field1198) {
@@ -10319,6 +10953,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(LClass98;LClass89;)V")
 	public static void method1094(Class98 var0, Class89 var1) {
 		Class259 var3 = var0.field1283;
 		long var4 = 0L;
@@ -10353,6 +10988,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		var1.field1190 = var8;
 	}
 
+	@ObfInfo(desc = "(LClass98;)V")
 	public static void method2351(Class98 var0) {
 		for (Class89 var2 = (Class89)var0.field1294.method7482(); var2 != null; var2 = (Class89)var0.field1294.method7490()) {
 			if (var2.field1198 > 0) {
@@ -10421,6 +11057,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(LClass98;IIIIIIII)V")
 	public static void method1071(Class98 var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
 		Class259 var10 = var0.field1283;
 		if (var3 >= 1 && var4 >= 1 && var3 <= var0.field1298 - 1 && var4 <= var0.field1282 - 1) {
@@ -10548,14 +11185,17 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(LClass98;II)V")
 	public static void method5568(Class98 var0, int var1, int var2) {
 		method3416(var0, var0.field1300, var1, var2);
 	}
 
+	@ObfInfo(desc = "(III)V")
 	public static void method7123(int var0, int var1, int var2) {
 		method3416(field4582, var0, var1, var2);
 	}
 
+	@ObfInfo(desc = "(LClass98;III)V")
 	public static void method3416(Class98 var0, int var1, int var2, int var3) {
 		Class401 var5 = var0.field1301[var1][var2][var3];
 		if (var5 == null) {
@@ -10603,6 +11243,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(LClass98;LClass531;)V")
 	public static void method7873(Class98 var0, Class531 var1) {
 		int var3 = var1.method9407();
 		Class488 var4 = var0.field1299[var3];
@@ -10684,6 +11325,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		method3293(var5);
 	}
 
+	@ObfInfo(desc = "(LClass98;ZLClass531;)V")
 	public static void method2648(Class98 var0, boolean var1, Class531 var2) {
 		field616 = 0;
 		field546 = 0;
@@ -11094,6 +11736,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(LClass98;ZLClass531;)V")
 	public static void method3282(Class98 var0, boolean var1, Class531 var2) {
 		while (true) {
 			byte var4 = 16;
@@ -11173,6 +11816,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(LClass100;)V")
 	public static void method71(Class100 var0) {
 		var0.field1059 = var0.field1314.field2320;
 		var0.field1089 = var0.field1314.field2332;
@@ -11193,6 +11837,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		var0.field1079 = var0.field1314.field2324;
 	}
 
+	@ObfInfo(desc = "(LClass98;LClass83;IILClass256;)V")
 	public static void method3225(Class98 var0, Class83 var1, int var2, int var3, Class256 var4) {
 		int var6 = var1.field1080[0];
 		int var7 = var1.field1127[0];
@@ -11217,11 +11862,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method6662() {
 		field629 = 0;
 		field628 = false;
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method717() {
 		method6662();
 		field635[0] = -1;
@@ -11232,10 +11879,12 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		field629 = 1;
 	}
 
+	@ObfInfo(desc = "()Z")
 	public static boolean method3273() {
 		return field628;
 	}
 
+	@ObfInfo(desc = "(IIII)V")
 	public static void abs(int var0, int var1, int var2, int var3) {
 		for (int var4 = 0; var4 < field701; ++var4) {
 			if (field708[var4] + field722[var4] > var0 && field722[var4] < var2 + var0 && field707[var4] + field757[var4] > var1 && field707[var4] < var3 + var1) {
@@ -11245,6 +11894,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(IIII)V")
 	public static void method8613(int var0, int var1, int var2, int var3) {
 		for (int var5 = 0; var5 < field701; ++var5) {
 			if (field708[var5] + field722[var5] > var0 && field722[var5] < var2 + var0 && field707[var5] + field757[var5] > var1 && field707[var5] < var3 + var1) {
@@ -11254,6 +11904,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(I)V")
 	public static void method3065(int var0) {
 		if (var0 >= 0) {
 			int var2 = field630[var0];
@@ -11268,6 +11919,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(LClass62;II)V")
 	public static void method3306(Class62 var0, int var1, int var2) {
 		if (var0 != null) {
 			method2917(var0.field459, var0.field452, var0.field453, var0.field455, var0.field456, var0.field457, var0.field458, var0.field454, var1, var2);
@@ -11275,6 +11927,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(IIIIIILjava/lang/String;Ljava/lang/String;II)V")
 	public static void method2917(int var0, int var1, int var2, int var3, int var4, int var5, String var6, String var7, int var8, int var9) {
 		Class98 var11 = null;
 		if (var5 >= 0 && null != field3857.field1299[var5]) {
@@ -11985,6 +12638,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(ILjava/lang/String;)V")
 	public static void method2223(int var0, String var1) {
 		int var3 = field107.field1007.field1288.field1392;
 		int[] var4 = field107.field1007.field1288.field1393;
@@ -12028,6 +12682,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(IIII)V")
 	public static void method7191(int var0, int var1, int var2, int var3) {
 		Class340 var5 = field25.method6721(var0, var1);
 		if (var5 != null && var5.field3688 != null) {
@@ -12045,6 +12700,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		Class317.method6187(var5);
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method2176() {
 		if (field648) {
 			Class340 var1 = field25.method6721(field4348, field595);
@@ -12061,6 +12717,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(II)V")
 	public static void method844(int var0, int var1) {
 		Class316 var3 = Class316.method3908(Class315.field3321, field548.field1446);
 		var3.field3374.method9459(var0);
@@ -12068,6 +12725,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		field548.method2897(var3);
 	}
 
+	@ObfInfo(desc = "(IIIILjava/lang/String;)V")
 	public static void method7098(int var0, int var1, int var2, int var3, String var4) {
 		Class340 var6 = field25.method6721(var1, var2);
 		if (var6 != null) {
@@ -12173,6 +12831,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method5996() {
 		boolean var1 = false;
 
@@ -12215,6 +12874,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/String;Ljava/lang/String;IIIIIZI)V")
 	public static void method3958(String var0, String var1, int var2, int var3, int var4, int var5, int var6, boolean var7, int var8) {
 		if (!field628) {
 			if (field629 < 500) {
@@ -12233,10 +12893,12 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "()I")
 	public static int method3634() {
 		return field629 - 1;
 	}
 
+	@ObfInfo(desc = "(IIII)V")
 	public static void method3186(int var0, int var1, int var2, int var3) {
 		if (0 == field702 && !field648) {
 			Class7.method93(Class378.field4315, "", 23, 0, var0 - var2, var1 - var3);
@@ -12460,6 +13122,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(LClass100;IIII)V")
 	public static void method72(Class100 var0, int var1, int var2, int var3, int var4) {
 		Class225 var6 = var0.field1314;
 		if (field629 < 400) {
@@ -12568,6 +13231,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(LClass83;IIII)V")
 	public static void method805(Class83 var0, int var1, int var2, int var3, int var4) {
 		if (field646 != var0.field1030) {
 			if (field629 < 400) {
@@ -12629,6 +13293,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(II)Ljava/lang/String;")
 	public static String method6269(int var0, int var1) {
 		int var3 = var1 - var0;
 		if (var3 < -9) {
@@ -12650,6 +13315,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(IIIIIIII)V")
 	public static void method7206(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
 		if (field25.method6720(var0)) {
 			field1925 = null;
@@ -12671,6 +13337,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "([LClass340;IIIIIIII)V")
 	public static void method7138(Class340[] var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
 		Class561.method10144(var2, var3, var4, var5);
 		Class253.method4851();
@@ -13207,6 +13874,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(IIIIII)V")
 	public static void method1111(int var0, int var1, int var2, int var3, int var4, int var5) {
 		int var7 = var2 - var0;
 		int var8 = var3 - var1;
@@ -13247,6 +13915,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/String;LClass340;)Ljava/lang/String;")
 	public static String method9354(String var0, Class340 var1) {
 		if (var0.indexOf("%") != -1) {
 			for (int var3 = 1; var3 <= 5; ++var3) {
@@ -13273,6 +13942,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		return var0;
 	}
 
+	@ObfInfo(desc = "(I)Ljava/lang/String;")
 	public static String method4392(int var0) {
 		String var2 = Integer.toString(var0);
 
@@ -13287,6 +13957,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "([LClass340;LClass340;Z)V")
 	public static void method3152(Class340[] var0, Class340 var1, boolean var2) {
 		int var4 = 0 != var1.field3800 ? var1.field3800 : var1.field3692;
 		int var5 = var1.field3701 != 0 ? var1.field3701 : var1.field3736;
@@ -13305,12 +13976,14 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(IIIZ)V")
 	public static void method2209(int var0, int var1, int var2, boolean var3) {
 		if (field25.method6720(var0)) {
 			method4162(field25.field3877[var0], -1, var1, var2, var3);
 		}
 	}
 
+	@ObfInfo(desc = "([LClass340;IIIZ)V")
 	public static void method4162(Class340[] var0, int var1, int var2, int var3, boolean var4) {
 		for (int var6 = 0; var6 < var0.length; ++var6) {
 			Class340 var7 = var0[var6];
@@ -13341,6 +14014,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(LClass340;IIZ)V")
 	public static void method7116(Class340 var0, int var1, int var2, boolean var3) {
 		int var5 = var0.field3692;
 		int var6 = var0.field3736;
@@ -13385,6 +14059,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(LClass340;II)V")
 	public static void method27(Class340 var0, int var1, int var2) {
 		if (var0.field3682 == 0) {
 			var0.field3705 = var0.field3686;
@@ -13416,6 +14091,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(LClass340;IIIIII)V")
 	public static void method167(Class340 var0, int var1, int var2, int var3, int var4, int var5, int var6) {
 		if (field569) {
 			field570 = 32;
@@ -13456,6 +14132,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(IIIII)V")
 	public static void method4745(int var0, int var1, int var2, int var3, int var4) {
 		field1374[0].method10086(var0, var1);
 		field1374[1].method10086(var0, var3 + var1 - 16);
@@ -13477,6 +14154,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		Class561.method10200(var0 + 1, var6 + var1 + 14 + var7, 15, field484);
 	}
 
+	@ObfInfo(desc = "(LClass340;)Z")
 	public static boolean method4780(Class340 var0) {
 		if (var0.field3803 == null) {
 			return false;
@@ -13505,6 +14183,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(LClass340;I)I")
 	public static int method9206(Class340 var0, int var1) {
 		if (var0.field3717 != null && var1 < var0.field3717.length) {
 			try {
@@ -13663,6 +14342,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(LClass340;)V")
 	public static void method169(Class340 var0) {
 		String var2;
 		int var3;
@@ -13767,20 +14447,24 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(Z)V")
 	public static void method3793(boolean var0) {
 		field640 = var0;
 	}
 
+	@ObfInfo(desc = "()Z")
 	public static boolean method7960() {
 		return field640;
 	}
 
+	@ObfInfo(desc = "(IIIIIII)V")
 	public static void method3689(int var0, int var1, int var2, int var3, int var4, int var5, int var6) {
 		if (field25.method6720(var0)) {
 			method6161(field25.field3877[var0], -1, var1, var2, var3, var4, var5, var6);
 		}
 	}
 
+	@ObfInfo(desc = "([LClass340;IIIIIII)V")
 	public static void method6161(Class340[] var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
 		for (int var9 = 0; var9 < var0.length; ++var9) {
 			Class340 var10 = var0[var9];
@@ -14159,7 +14843,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 								int var38;
 								if (var10.field3827 != null && field719 > var10.field3786) {
 									if (var10.field3781 != null && field719 - var10.field3786 <= 32) {
-										label721:
+										label722:
 										for (var38 = var10.field3786; var38 < field719; ++var38) {
 											var24 = field678[var38 & 31];
 
@@ -14169,7 +14853,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 													var37.field1325 = var10;
 													var37.field1333 = var10.field3827;
 													field696.method7477(var37);
-													break label721;
+													break label722;
 												}
 											}
 										}
@@ -14185,7 +14869,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 								if (var10.field3779 != null && field681 > var10.field3690) {
 									if (var10.field3780 != null && field681 - var10.field3690 <= 32) {
-										label697:
+										label698:
 										for (var38 = var10.field3690; var38 < field681; ++var38) {
 											var24 = field755[var38 & 31];
 
@@ -14195,7 +14879,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 													var37.field1325 = var10;
 													var37.field1333 = var10.field3779;
 													field696.method7477(var37);
-													break label697;
+													break label698;
 												}
 											}
 										}
@@ -14211,7 +14895,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 								if (var10.field3715 != null && field683 > var10.field3671) {
 									if (var10.field3782 != null && field683 - var10.field3671 <= 32) {
-										label673:
+										label674:
 										for (var38 = var10.field3671; var38 < field683; ++var38) {
 											var24 = field682[var38 & 31];
 
@@ -14221,7 +14905,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 													var37.field1325 = var10;
 													var37.field1333 = var10.field3715;
 													field696.method7477(var37);
-													break label673;
+													break label674;
 												}
 											}
 										}
@@ -14389,6 +15073,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(I)Z")
 	public static boolean method3661(int var0) {
 		for (int var2 = 0; var2 < field723; ++var2) {
 			if (field725[var2] == var0) {
@@ -14399,12 +15084,14 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		return false;
 	}
 
+	@ObfInfo(desc = "(II)V")
 	public static void method2961(int var0, int var1) {
 		if (field25.method6720(var0)) {
 			method2734(field25.field3877[var0], var1);
 		}
 	}
 
+	@ObfInfo(desc = "([LClass340;I)V")
 	public static void method2734(Class340[] var0, int var1) {
 		for (int var3 = 0; var3 < var0.length; ++var3) {
 			Class340 var4 = var0[var3];
@@ -14446,6 +15133,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(LClass340;II)V")
 	public static void method2517(Class340 var0, int var1, int var2) {
 		if (field665 == null && !field628) {
 			if (var0 != null) {
@@ -14478,6 +15166,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(I)V")
 	public static void method1089(int var0) {
 		field3069 = new Class62();
 		field3069.field459 = field630[var0];
@@ -14490,11 +15179,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		field3069.field457 = field635[var0];
 	}
 
+	@ObfInfo(desc = "(II)V")
 	public static void method3706(int var0, int var1) {
 		method3306(field3069, var0, var1);
 		field3069 = null;
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method2384() {
 		for (Class104 var1 = (Class104)field654.method9363(); var1 != null; var1 = (Class104)field654.method9364()) {
 			int var2 = var1.field1366;
@@ -14522,6 +15213,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(I)V")
 	public static void method3641(int var0) {
 		if (field25.method6720(var0)) {
 			Class340[] var2 = field25.field3877[var0];
@@ -14537,12 +15229,14 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(I)V")
 	public static void method3063(int var0) {
 		if (field25.method6720(var0)) {
 			method6310(field25.field3877[var0], -1);
 		}
 	}
 
+	@ObfInfo(desc = "([LClass340;I)V")
 	public static void method6310(Class340[] var0, int var1) {
 		for (int var3 = 0; var3 < var0.length; ++var3) {
 			Class340 var4 = var0[var3];
@@ -14616,6 +15310,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(I)V")
 	public static void method3956(int var0) {
 		var0 = Math.max(Math.min(var0, 100), 0);
 		var0 = 100 - var0;
@@ -14630,11 +15325,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		field4851.method2620((double)var2);
 	}
 
+	@ObfInfo(desc = "()I")
 	public static int method715() {
 		float var1 = 200.0F * ((float)field4851.method2621() - 0.5F);
 		return 100 - Math.round(var1);
 	}
 
+	@ObfInfo(desc = "(I)V")
 	public static void method6714(int var0) {
 		var0 = Math.min(Math.max(var0, 0), 255);
 		if (field4851.method2637() != var0) {
@@ -14674,16 +15371,19 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(I)V")
 	public static void method795(int var0) {
 		var0 = Math.min(Math.max(var0, 0), 127);
 		field4851.method2624(var0);
 	}
 
+	@ObfInfo(name = "nc", desc = "(II)V")
 	public static void method1773(int var0) {
 		var0 = Math.min(Math.max(var0, 0), 127);
 		field4851.method2626(var0);
 	}
 
+	@ObfInfo(desc = "(I)V")
 	public static void method3138(int var0) {
 		method2384();
 		Class77.method3919();
@@ -14843,6 +15543,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method2188() {
 		Class316 var1 = Class316.method3908(Class315.field3326, field548.field1446);
 		field548.method2897(var1);
@@ -14862,6 +15563,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		Class72.field890 = false;
 	}
 
+	@ObfInfo(desc = "(III)LClass104;")
 	public static Class104 method5559(int var0, int var1, int var2) {
 		Class104 var4 = new Class104();
 		var4.field1366 = var1;
@@ -14884,6 +15586,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		return var4;
 	}
 
+	@ObfInfo(desc = "(LClass104;Z)V")
 	public static void method716(Class104 var0, boolean var1) {
 		int var3 = var0.field1366;
 		int var4 = (int)var0.field5170;
@@ -14904,6 +15607,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(LClass340;)Z")
 	public static boolean method7433(Class340 var0) {
 		int var2 = var0.field3681;
 		if (var2 == 205) {
@@ -14943,6 +15647,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(LClass340;III)V")
 	public static void method3593(Class340 var0, int var1, int var2, int var3) {
 		method4066();
 		Class361 var5 = var0.method6512(field25, false);
@@ -15057,6 +15762,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(IIIILClass549;LClass361;)V")
 	public static void method2489(int var0, int var1, int var2, int var3, Class549 var4, Class361 var5) {
 		int var7 = var2 * var2 + var3 * var3;
 		if (var7 > 4225 && var7 < 90000) {
@@ -15077,6 +15783,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(IIIILClass549;LClass361;)V")
 	public static void method2418(int var0, int var1, int var2, int var3, Class549 var4, Class361 var5) {
 		if (var4 != null) {
 			int var7 = field572 & 2047;
@@ -15096,6 +15803,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method2419() {
 		for (int var1 = 0; var1 < field3857.field1288.field1392; ++var1) {
 			Class83 var2 = field3857.field1293[field3857.field1288.field1393[var1]];
@@ -15115,6 +15823,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method2220() {
 		Iterator var1 = Class128.field1529.iterator();
 
@@ -15129,6 +15838,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method8938() {
 		for (int var1 = 0; var1 < field3857.field1288.field1392; ++var1) {
 			Class83 var2 = field3857.field1293[field3857.field1288.field1393[var1]];
@@ -15137,11 +15847,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method7124() {
 		field689 = field677;
 		field2680 = true;
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/String;)V")
 	public static void method1124(String var0) {
 		if (field1420 != null) {
 			Class316 var2 = Class316.method3908(Class315.field3320, field548.field1446);
@@ -15151,12 +15863,14 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method3270() {
 		Class316 var1 = Class316.method3908(Class315.field3344, field548.field1446);
 		var1.field3374.method9388(0);
 		field548.method2897(var1);
 	}
 
+	@ObfInfo(desc = "(II)V")
 	public static void method2452(int var0, int var1) {
 		Class171 var3 = var0 >= 0 ? field684[var0] : field4619;
 		if (var3 != null && var1 >= 0 && var1 < var3.method3536()) {
@@ -15173,6 +15887,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(II)V")
 	public static void method4767(int var0, int var1) {
 		if (field684[var0] != null) {
 			if (var1 >= 0 && var1 < field684[var0].method3536()) {
@@ -15189,6 +15904,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(IIZ)V")
 	public static void method2778(int var0, int var1, boolean var2) {
 		if (null != field684[var0]) {
 			if (var1 >= 0 && var1 < field684[var0].method3536()) {
@@ -15204,6 +15920,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(I)V")
 	public static void method7135(int var0) {
 		for (Class516 var2 = (Class516)field507.method9363(); var2 != null; var2 = (Class516)field507.method9364()) {
 			if ((long)var0 == (var2.field5170 >> 48 & 65535L)) {
@@ -15213,11 +15930,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(LClass340;)I")
 	public static int method3511(Class340 var0) {
 		Class516 var2 = (Class516)field507.method9361((long)var0.field3791 + ((long)var0.field3676 << 32));
 		return var2 != null ? var2.field5199 : var0.field3679;
 	}
 
+	@ObfInfo(desc = "(LClass340;)LClass340;")
 	public static Class340 method193(Class340 var0) {
 		int var2 = Class344.method6213(method3511(var0));
 		if (var2 == 0) {
@@ -15234,10 +15953,12 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(LClass340;)Z")
 	public static boolean method6493(Class340 var0) {
 		return var0.field3775;
 	}
 
+	@ObfInfo(desc = "(LClass340;)Ljava/lang/String;")
 	public static String method2931(Class340 var0) {
 		if (Class344.method3653(method3511(var0)) == 0) {
 			return null;
@@ -15246,6 +15967,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/String;Z)Ljava/lang/String;")
 	public static String method8428(String var0, boolean var1) {
 		String var3 = var1 ? "https://" : "http://";
 		if (1 == field532) {
@@ -15269,6 +15991,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		return var3 + var0 + "." + var5 + "/l=" + field2071 + "/a=" + field1751 + var4 + "/";
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/String;)V")
 	public static void method3033(String var0) {
 		field4720 = var0;
 
@@ -15301,6 +16024,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/String;Z)V")
 	public static void method6146(String var0, boolean var1) {
 		var0 = var0.toLowerCase();
 		short[] var3 = new short[16];
@@ -15342,6 +16066,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		Class532.method9665(var9, var11, 0, var9.length - 1);
 	}
 
+	@ObfInfo(desc = "(LClass521;I)V")
 	public static void method2417(Class521 var0, int var1) {
 		byte[] var3 = var0.field5221;
 		if (field545 == null) {
@@ -15352,6 +16077,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		Class179.method2751(var0, var1);
 	}
 
+	@ObfInfo(desc = "(LClass521;)V")
 	public static void method2301(Class521 var0) {
 		if (field545 != null) {
 			var0.method9548(field545, 0, field545.length);
@@ -15361,11 +16087,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method5162() {
 		field548.method2897(Class316.method3908(Class315.field3311, field548.field1446));
 		field577 = 0;
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method2944() {
 		if (1 == field577) {
 			field585 = true;
@@ -15373,6 +16101,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method340() {
 		if (field585 && field107 != null) {
 			int var1 = field107.field1080[0];
@@ -15393,6 +16122,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/String;)Ljava/lang/String;")
 	public static String method3135(String var0) {
 		Class371[] var2 = Class371.method2873();
 
@@ -15407,6 +16137,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		return var0;
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method3662() {
 		if (field422 != null) {
 			field781 = field778;
@@ -15421,24 +16152,29 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	}
 
+	@ObfInfo(desc = "()Z")
 	public static boolean method348() {
 		return field4851.method2631() >= field489;
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method6645() {
 		field4851.method2630(field489);
 	}
 
+	@ObfInfo(desc = "(LClass53;)V")
 	public static void method788(Class53 var0) {
 		if (field1249 != var0) {
 			field1249 = var0;
 		}
 	}
 
+	@ObfInfo(desc = "(Z)V")
 	public static void method171(boolean var0) {
 		field494 = var0;
 	}
 
+	@ObfInfo(desc = "(I)LClass533;")
 	public static Class533 method719(int var0) {
 		Class533 var2 = (Class533)field647.method5993((long)var0);
 		if (var2 == null) {
@@ -15449,6 +16185,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		return var2;
 	}
 
+	@ObfInfo(desc = "(I)LClass533;")
 	public static Class533 method3870(int var0) {
 		Class533 var2 = (Class533)field779.method5993((long)var0);
 		if (var2 == null) {
@@ -15458,10 +16195,12 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		return var2;
 	}
 
+	@ObfInfo(desc = "()Ljava/awt/datatransfer/Clipboard;")
 	public static Clipboard method3663() {
 		return field2077.method470();
 	}
 
+	@ObfInfo(desc = "(I)V")
 	public static void method8410(int var0) {
 		Class211 var2 = Class237.method4637(var0);
 		if (var2.method4038()) {
@@ -15481,6 +16220,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method9271() {
 		for (int var1 = 0; var1 < field782.size(); ++var1) {
 			int var3 = (Integer)field782.get(var1);

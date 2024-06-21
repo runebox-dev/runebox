@@ -1,3 +1,4 @@
+import io.runebox.ObfInfo;
 import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -5,14 +6,23 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import org.json.JSONObject;
 
+@ObfInfo(name = "gh")
 public class Class164 {
+	@ObfInfo(name = "ax", desc = "Lea;")
 	public Class105 field1808;
+	@ObfInfo(name = "ao", desc = "Lhi;")
 	public Class191 field1809;
+	@ObfInfo(name = "ah", desc = "Lhj;")
 	public Class192 field1807;
+	@ObfInfo(name = "av", desc = "I", intMultiplier = -1395176915)
 	public int field1812;
+	@ObfInfo(name = "ay", desc = "I", intMultiplier = 75678425)
 	public int field1816;
+	@ObfInfo(name = "ap", desc = "Ljava/lang/String;")
 	public String field1813;
+	@ObfInfo(name = "ae", desc = "Ljava/lang/String;")
 	public String field1814;
+	@ObfInfo(name = "aq", desc = "Ljava/lang/String;")
 	public String field1815;
 
 	public Class164() {
@@ -20,10 +30,12 @@ public class Class164 {
 		this.field1816 = 0;
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)Lhi;")
 	public Class191 method3426() {
 		return this.field1809;
 	}
 
+	@ObfInfo(name = "al", desc = "(Ljava/lang/String;Ljava/lang/String;Leb;S)Z", opaque = "11777")
 	public boolean method3427(String var1, String var2, Class106 var3) {
 		if (var1 != null && !var1.isEmpty()) {
 			if (var3 == null) {
@@ -52,12 +64,14 @@ public class Class164 {
 		}
 	}
 
+	@ObfInfo(name = "aj", desc = "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V")
 	public void method3428(String var1, String var2, String var3) {
 		this.field1809 = Class191.method3562();
 		this.field1813 = var1;
 		this.field1809.method3751(this.field1813, var2, var3);
 	}
 
+	@ObfInfo(name = "az", desc = "(Leb;B)V")
 	public void method3429(Class106 var1) {
 		switch(this.field1812) {
 		case 0:
@@ -72,46 +86,57 @@ public class Class164 {
 
 	}
 
+	@ObfInfo(name = "af", desc = "(I)I")
 	public int method3430() {
 		return this.field1812;
 	}
 
+	@ObfInfo(name = "aa", desc = "(Ljava/lang/String;I)I")
 	public int method3492(String var1) {
 		return this.field1807.field1984.containsKey(var1) ? (Integer)this.field1807.field1984.get(var1) : -1;
 	}
 
+	@ObfInfo(name = "at", desc = "(Ljava/lang/String;B)Ljava/lang/String;")
 	public String method3475(String var1) {
 		return (String)((String)(this.field1807.field1983.containsKey(var1) ? this.field1807.field1983.get(var1) : null));
 	}
 
+	@ObfInfo(name = "ab", desc = "(B)Ljava/util/ArrayList;")
 	public ArrayList method3433() {
 		return this.field1807.field1978;
 	}
 
+	@ObfInfo(name = "ac", desc = "(I)Ljava/util/ArrayList;")
 	public ArrayList method3483() {
 		return this.field1807.field1981;
 	}
 
+	@ObfInfo(name = "ao", desc = "(I)Ljava/util/ArrayList;")
 	public ArrayList method3435() {
 		return this.field1807.field1977;
 	}
 
+	@ObfInfo(name = "ah", desc = "(I)Ljava/lang/String;")
 	public String method3436() {
 		return this.field1807.field1980;
 	}
 
+	@ObfInfo(name = "av", desc = "(B)[F")
 	public float[] method3479() {
 		return this.field1807.field1979;
 	}
 
+	@ObfInfo(name = "aq", desc = "(I)Ljava/lang/String;")
 	public String method3438() {
 		return this.field1807.method3768();
 	}
 
+	@ObfInfo(name = "ap", desc = "(B)V")
 	public void method3488() {
 		this.field1808 = null;
 	}
 
+	@ObfInfo(name = "ae", desc = "(Leb;I)V", opaque = "1448265481")
 	public void method3440(Class106 var1) {
 		if (this.field1808 != null && this.field1808.method2742()) {
 			byte[] var3 = this.field1808.method2743();
@@ -164,6 +189,7 @@ public class Class164 {
 		}
 	}
 
+	@ObfInfo(name = "ax", desc = "(I)V", opaque = "-1219928552")
 	public void method3441() {
 		Iterator var2 = this.field1807.field1978.iterator();
 
@@ -193,6 +219,7 @@ public class Class164 {
 
 	}
 
+	@ObfInfo(name = "ay", desc = "(Ljava/lang/String;Leb;I)Z", opaque = "601166980")
 	public boolean method3468(String var1, Class106 var2) {
 		try {
 			JSONObject var4 = (new Class490(var1.getBytes())).method8942();

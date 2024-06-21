@@ -1,9 +1,18 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "cw")
 public class Class75 {
+	@ObfInfo(name = "af", desc = "[[F")
 	public float[][] field917;
+	@ObfInfo(name = "ak", desc = "I")
 	public int field913;
+	@ObfInfo(name = "al", desc = "I")
 	public int field914;
+	@ObfInfo(name = "aj", desc = "[I")
 	public int[] field915;
+	@ObfInfo(name = "az", desc = "[I")
 	public int[] field916;
+	@ObfInfo(name = "aa", desc = "[I")
 	public int[] field918;
 
 	public Class75() {
@@ -99,6 +108,7 @@ public class Class75 {
 
 	}
 
+	@ObfInfo(name = "al", desc = "()V")
 	public void method2092() {
 		int[] var1 = new int[this.field914];
 		int[] var2 = new int[33];
@@ -192,6 +202,7 @@ public class Class75 {
 
 	}
 
+	@ObfInfo(name = "aj", desc = "(Lci;)I")
 	public int method2107(Class61 var1) {
 		int var2;
 		for (var2 = 0; this.field918[var2] >= 0; var2 = var1.method1104() != 0 ? this.field918[var2] : var2 + 1) {
@@ -200,10 +211,12 @@ public class Class75 {
 		return ~this.field918[var2];
 	}
 
+	@ObfInfo(name = "az", desc = "(Lci;)[F")
 	public float[] method2101(Class61 var1) {
 		return this.field917[this.method2107(var1)];
 	}
 
+	@ObfInfo(name = "ak", desc = "(II)I")
 	public static int method2090(int var0, int var1) {
 		int var2;
 		for (var2 = (int)Math.pow((double)var0, 1.0D / (double)var1) + 1; Class497.method9205(var2, var1) > var0; --var2) {

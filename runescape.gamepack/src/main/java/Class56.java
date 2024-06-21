@@ -1,6 +1,12 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "cd")
 public class Class56 {
+	@ObfInfo(name = "af", desc = "I", intMultiplier = -1468640071)
 	public int field420;
+	@ObfInfo(name = "az", desc = "I", intMultiplier = 1676912385)
 	public int field421;
+	@ObfInfo(name = "aa", desc = "[[I")
 	public int[][] field417;
 
 	public Class56(int var1, int var2) {
@@ -52,6 +58,7 @@ public class Class56 {
 		}
 	}
 
+	@ObfInfo(name = "ak", desc = "([BB)[B", opaque = "61")
 	public byte[] method1068(byte[] var1) {
 		if (this.field417 != null) {
 			int var3 = 14 + (int)((long)this.field420 * (long)var1.length / (long)this.field421);
@@ -92,6 +99,7 @@ public class Class56 {
 		return var1;
 	}
 
+	@ObfInfo(name = "al", desc = "(IB)I")
 	public int method1063(int var1) {
 		if (this.field417 != null) {
 			var1 = (int)((long)this.field420 * (long)var1 / (long)this.field421);
@@ -100,6 +108,7 @@ public class Class56 {
 		return var1;
 	}
 
+	@ObfInfo(name = "aj", desc = "(IB)I", opaque = "-1")
 	public int method1067(int var1) {
 		if (this.field417 != null) {
 			var1 = (int)((long)this.field420 * (long)var1 / (long)this.field421) + 6;

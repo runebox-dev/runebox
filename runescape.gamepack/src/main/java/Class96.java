@@ -1,13 +1,26 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "dr")
 public class Class96 extends Class255 {
+	@ObfInfo(name = "ab", desc = "Lic;")
 	public Class211 field1272;
+	@ObfInfo(name = "ak", desc = "Ldt;")
 	public Class98 field1273;
+	@ObfInfo(name = "ac", desc = "I", intMultiplier = -440522477)
 	public int field1265;
+	@ObfInfo(name = "al", desc = "I", intMultiplier = -221657491)
 	public int field1266;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = 361896199)
 	public int field1267;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = -25327393)
 	public int field1268;
+	@ObfInfo(name = "af", desc = "I", intMultiplier = -415493371)
 	public int field1269;
+	@ObfInfo(name = "ao", desc = "I", intMultiplier = -212623117)
 	public int field1270;
+	@ObfInfo(name = "at", desc = "I", intMultiplier = 743991919)
 	public int field1271;
+	@ObfInfo(name = "az", desc = "I", intMultiplier = 2000434069)
 	public int field1274;
 
 	public Class96(Class98 var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, boolean var9, Class255 var10) {
@@ -43,6 +56,7 @@ public class Class96 extends Class255 {
 
 	}
 
+	@ObfInfo(name = "ah", desc = "(I)Lkb;", opaque = "102285859")
 	public final Class262 method1092() {
 		int var3;
 		if (this.field1272 != null) {
@@ -112,6 +126,7 @@ public class Class96 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "al", desc = "(III)V")
 	public static void method2494(int var0, int var1) {
 		Class228 var3 = Class33.method714(var0);
 		int var4 = var3.field2394;
@@ -126,6 +141,7 @@ public class Class96 extends Class255 {
 		Class351.field3889[var4] = Class351.field3889[var4] & ~var7 | var1 << var5 & var7;
 	}
 
+	@ObfInfo(name = "av", desc = "(Lnb;II)V", opaque = "-1992565034")
 	public static void method2493(Class340 var0, int var1) {
 		if (var0.field3753 == null) {
 			throw new RuntimeException();

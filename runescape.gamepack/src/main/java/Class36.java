@@ -1,10 +1,20 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "bj")
 public class Class36 {
+	@ObfInfo(name = "aa", desc = "I")
 	public int field253;
+	@ObfInfo(name = "al", desc = "I")
 	public int field254;
+	@ObfInfo(name = "aj", desc = "I")
 	public int field255;
+	@ObfInfo(name = "ak", desc = "I")
 	public int field256;
+	@ObfInfo(name = "af", desc = "I")
 	public int field257;
+	@ObfInfo(name = "az", desc = "I")
 	public int field258;
+	@ObfInfo(name = "at", desc = "[I")
 	public int[] field259;
 
 	public Class36() {
@@ -37,6 +47,7 @@ public class Class36 {
 
 	}
 
+	@ObfInfo(name = "ak", desc = "([FIZLci;)V")
 	public void method739(float[] var1, int var2, boolean var3, Class61 var4) {
 		int var5;
 		for (var5 = 0; var5 < var2; ++var5) {

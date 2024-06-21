@@ -1,3 +1,6 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "qb")
 public final class Class418 extends Class436 {
 	public Class418(byte[] var1, int[] var2, int[] var3, int[] var4, int[] var5, int[] var6, byte[][] var7) {
 		super(var1, var2, var3, var4, var5, var6, var7);
@@ -7,6 +10,7 @@ public final class Class418 extends Class436 {
 		super(var1);
 	}
 
+	@ObfInfo(name = "ak", desc = "([BIIIII)V")
 	public final void method7772(byte[] var1, int var2, int var3, int var4, int var5, int var6) {
 		int var7 = var2 + Class87.field5423 * var3;
 		int var8 = Class87.field5423 - var4;
@@ -47,6 +51,7 @@ public final class Class418 extends Class436 {
 		}
 	}
 
+	@ObfInfo(name = "al", desc = "([BIIIIII)V")
 	public final void method7775(byte[] var1, int var2, int var3, int var4, int var5, int var6, int var7) {
 		int var8 = var2 + Class87.field5423 * var3;
 		int var9 = Class87.field5423 - var4;

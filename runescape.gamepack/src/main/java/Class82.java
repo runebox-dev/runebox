@@ -1,6 +1,12 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "dd")
 public class Class82 {
+	@ObfInfo(name = "az", desc = "I", intMultiplier = -1502899557)
 	public int field999;
+	@ObfInfo(name = "al", desc = "Lot;")
 	public final Class384 field1000;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = 356148869)
 	public final int field1001;
 
 	public Class82(Class384 var1, String var2) {
@@ -9,6 +15,7 @@ public class Class82 {
 		this.field1001 = var1.method7228();
 	}
 
+	@ObfInfo(name = "ak", desc = "(S)Z", opaque = "2603")
 	public boolean method2245() {
 		this.field999 = 0;
 
@@ -21,6 +28,7 @@ public class Class82 {
 		return this.field999 >= this.field1001;
 	}
 
+	@ObfInfo(name = "al", desc = "(DDIB)[D", opaque = "1")
 	public static double[] method2248(double var0, double var2, int var4) {
 		int var6 = 1 + var4 * 2;
 		double[] var7 = new double[var6];
@@ -34,6 +42,7 @@ public class Class82 {
 		return var7;
 	}
 
+	@ObfInfo(name = "al", desc = "(CLpl;B)C", opaque = "5")
 	public static char method2247(char var0, Class402 var1) {
 		if (var0 >= 192 && var0 <= 255) {
 			if (var0 >= 192 && var0 <= 198) {

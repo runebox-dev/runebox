@@ -1,15 +1,25 @@
+import io.runebox.ObfInfo;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Future;
 
+@ObfInfo(name = "fo")
 public class Class145 extends Class507 {
+	@ObfInfo(name = "aj", desc = "[[Lfm;")
 	public Class143[][] field1651;
+	@ObfInfo(name = "al", desc = "[[Lfm;")
 	public Class143[][] field1657;
+	@ObfInfo(name = "az", desc = "Ljn;")
 	public Class248 field1654;
+	@ObfInfo(name = "aa", desc = "Z")
 	public boolean field1656;
+	@ObfInfo(name = "af", desc = "I", intMultiplier = -130218119)
 	public int field1652;
+	@ObfInfo(name = "ak", desc = "I", intMultiplier = 997175123)
 	public int field1655;
+	@ObfInfo(name = "ao", desc = "Ljava/util/List;")
 	public List field1659;
+	@ObfInfo(name = "ac", desc = "Ljava/util/concurrent/Future;")
 	public Future field1658;
 
 	public Class145(Class382 var1, Class382 var2, int var3, boolean var4) {
@@ -33,6 +43,7 @@ public class Class145 extends Class507 {
 		this.field1658 = Class337.field155.submit(new Class131(this, var6, var7));
 	}
 
+	@ObfInfo(name = "al", desc = "(Lua;IS)V", opaque = "22049")
 	public void method3189(Class521 var1, int var2) {
 		var1.method9407();
 		var1.method9407();
@@ -89,6 +100,7 @@ public class Class145 extends Class507 {
 
 	}
 
+	@ObfInfo(name = "aj", desc = "(I)Z", opaque = "-1182903109")
 	public boolean method3190() {
 		if (this.field1658 == null && this.field1659 == null) {
 			return true;
@@ -121,14 +133,17 @@ public class Class145 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "az", desc = "(B)I")
 	public int method3191() {
 		return this.field1652;
 	}
 
+	@ObfInfo(name = "af", desc = "(I)Z")
 	public boolean method3192() {
 		return this.field1656;
 	}
 
+	@ObfInfo(name = "aa", desc = "(ILfh;III)V", opaque = "333553969")
 	public void method3193(int var1, Class138 var2, int var3, int var4) {
 		Class428 var6;
 		synchronized(Class428.field4696) {
@@ -147,6 +162,7 @@ public class Class145 extends Class507 {
 		var6.method7908();
 	}
 
+	@ObfInfo(name = "at", desc = "(Lql;ILfh;II)V", opaque = "176351717")
 	public void method3215(Class428 var1, int var2, Class138 var3, int var4) {
 		float[] var6 = var3.method3108(this.field1652);
 		float var7 = var6[0];
@@ -198,6 +214,7 @@ public class Class145 extends Class507 {
 		var14.method7908();
 	}
 
+	@ObfInfo(name = "ab", desc = "(Lql;ILfh;IB)V", opaque = "0")
 	public void method3194(Class428 var1, int var2, Class138 var3, int var4) {
 		float[] var6 = var3.method3109(this.field1652);
 		float var7 = var6[0];
@@ -225,6 +242,7 @@ public class Class145 extends Class507 {
 		var1.field4699[14] = var9;
 	}
 
+	@ObfInfo(name = "ac", desc = "(Lql;ILfh;II)V", opaque = "-124019686")
 	public void method3195(Class428 var1, int var2, Class138 var3, int var4) {
 		float[] var6 = var3.method3105(this.field1652);
 		float var7 = var6[0];

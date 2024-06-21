@@ -1,4 +1,8 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "ph")
 public class Class398 {
+	@ObfInfo(desc = "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;LClass402;)I")
 	public static int method5569(CharSequence var0, CharSequence var1, Class402 var2) {
 		int var4 = var0.length();
 		int var5 = var1.length();
@@ -85,6 +89,7 @@ public class Class398 {
 		}
 	}
 
+	@ObfInfo(desc = "(CLClass402;)I")
 	public static int method6299(char var0, Class402 var1) {
 		int var3 = var0 << 4;
 		if (Character.isUpperCase(var0) || Character.isTitleCase(var0)) {

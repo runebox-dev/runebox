@@ -1,9 +1,17 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "rg")
 public class Class449 {
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = 424096415)
 	public int field4815;
+	@ObfInfo(name = "al", desc = "I", intMultiplier = 1351754127)
 	public int field4816;
+	@ObfInfo(name = "ak", desc = "I", intMultiplier = -2079157027)
 	public int field4817;
+	@ObfInfo(name = "az", desc = "I", intMultiplier = -791721597)
 	public int field4818;
 
+	@ObfInfo(desc = "()Ljava/lang/String;")
 	public String toString() {
 		boolean var1 = true;
 		int var2 = 10 - Integer.toString(this.field4817).length();

@@ -1,11 +1,14 @@
+import io.runebox.ObfInfo;
 import java.util.Iterator;
 
+@ObfInfo(name = "qu")
 public class Class437 extends Class447 {
 	public Class437(Class447 var1) {
 		super(var1);
 		super.field4807 = "StartSongTask";
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)Z", opaque = "709593494")
 	public boolean method7832() {
 		Iterator var2 = Class332.field3455.iterator();
 

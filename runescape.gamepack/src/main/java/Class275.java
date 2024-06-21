@@ -1,8 +1,12 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "ko")
 public class Class275 extends Class235 {
 	public Class275(Class276 var1) {
 		super(var1);
 	}
 
+	@ObfInfo(name = "aa", desc = "(IIIIIIFFFIII)V")
 	public void method4524(int var1, int var2, int var3, int var4, int var5, int var6, float var7, float var8, float var9, int var10, int var11, int var12) {
 		int var13 = var5 - var4;
 		int var14 = var2 - var1;
@@ -510,6 +514,7 @@ public class Class275 extends Class235 {
 		}
 	}
 
+	@ObfInfo(name = "bj", desc = "([IIIIIIII)V")
 	public final void method5521(int[] var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
 		if (super.field2516.field3039) {
 			if (var6 > super.field2516.field3051) {
@@ -618,6 +623,7 @@ public class Class275 extends Class235 {
 		}
 	}
 
+	@ObfInfo(name = "at", desc = "(IIIIIIFFFI)V")
 	public void method4518(int var1, int var2, int var3, int var4, int var5, int var6, float var7, float var8, float var9, int var10) {
 		int var11 = 0;
 		if (var2 != var1) {
@@ -1075,6 +1081,7 @@ public class Class275 extends Class235 {
 		}
 	}
 
+	@ObfInfo(name = "bc", desc = "([IIIIII)V")
 	public void method5519(int[] var1, int var2, int var3, int var4, int var5, int var6) {
 		if (super.field2516.field3039) {
 			if (var6 > super.field2516.field3051) {
@@ -1168,6 +1175,7 @@ public class Class275 extends Class235 {
 		}
 	}
 
+	@ObfInfo(name = "ab", desc = "(IIIIIIFFFIIIIIIIIIIIII)V")
 	public void method4519(int var1, int var2, int var3, int var4, int var5, int var6, float var7, float var8, float var9, int var10, int var11, int var12, int var13, int var14, int var15, int var16, int var17, int var18, int var19, int var20, int var21, int var22) {
 		int[] var23 = super.field2516.field3043.method4717(var22);
 		int var24;
@@ -1791,6 +1799,7 @@ public class Class275 extends Class235 {
 		}
 	}
 
+	@ObfInfo(name = "bz", desc = "([I[IIIIIIIIIIIIII)V")
 	public void method5548(int[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12, int var13, int var14, int var15) {
 		if (super.field2516.field3039) {
 			if (var7 > super.field2516.field3051) {
@@ -2210,6 +2219,7 @@ public class Class275 extends Class235 {
 		}
 	}
 
+	@ObfInfo(name = "ac", desc = "(IIIIIIFFFIIIIIIIIIIIII)V")
 	public void method4520(int var1, int var2, int var3, int var4, int var5, int var6, float var7, float var8, float var9, int var10, int var11, int var12, int var13, int var14, int var15, int var16, int var17, int var18, int var19, int var20, int var21, int var22) {
 		int[] var23 = super.field2516.field3043.method4717(var22);
 		int var24;
@@ -2834,6 +2844,7 @@ public class Class275 extends Class235 {
 		}
 	}
 
+	@ObfInfo(name = "ba", desc = "([I[IIIIIIIIIIIIII)V")
 	public void method5527(int[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12, int var13, int var14, int var15) {
 		if (super.field2516.field3039) {
 			if (var7 > super.field2516.field3051) {

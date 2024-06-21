@@ -1,8 +1,12 @@
+import io.runebox.ObfInfo;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+@ObfInfo(name = "ny")
 public class Class363 {
+	@ObfInfo(name = "ak", desc = "Lea;")
 	public Class105 field3976;
+	@ObfInfo(name = "al", desc = "Lvc;")
 	public Class549 field3977;
 
 	public Class363(String var1, Class106 var2) {
@@ -18,6 +22,7 @@ public class Class363 {
 		this.field3976 = var1;
 	}
 
+	@ObfInfo(name = "ak", desc = "(B)Lvc;", opaque = "5")
 	public Class549 method7117() {
 		if (this.field3977 == null && this.field3976 != null && this.field3976.method2742()) {
 			if (this.field3976.method2743() != null) {

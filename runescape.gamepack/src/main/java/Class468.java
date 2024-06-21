@@ -1,8 +1,13 @@
+import io.runebox.ObfInfo;
 import java.util.Iterator;
 
+@ObfInfo(name = "rz")
 public class Class468 extends Class447 {
+	@ObfInfo(name = "al", desc = "Lor;")
 	public Class382 field4913;
+	@ObfInfo(name = "ak", desc = "Lor;")
 	public Class382 field4914;
+	@ObfInfo(name = "ab", desc = "Lor;")
 	public Class382 field4915;
 
 	public Class468(Class447 var1, Class382 var2, Class382 var3, Class382 var4) {
@@ -13,6 +18,7 @@ public class Class468 extends Class447 {
 		super.field4807 = "LoadSongTask";
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)Z", opaque = "709593494")
 	public boolean method7832() {
 		int var2 = 0;
 		Iterator var3 = Class332.field3455.iterator();
@@ -65,6 +71,7 @@ public class Class468 extends Class447 {
 		}
 	}
 
+	@ObfInfo(name = "al", desc = "([BI)[B")
 	public static byte[] method8606(byte[] var0) {
 		int var2 = var0.length;
 		byte[] var3 = new byte[var2];

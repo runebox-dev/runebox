@@ -1,6 +1,12 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "ac")
 public class Class3 {
+	@ObfInfo(name = "al", desc = "I")
 	public final int field11;
+	@ObfInfo(name = "ak", desc = "I")
 	public final int field12;
+	@ObfInfo(name = "aj", desc = "Ljava/lang/String;")
 	public final String field10;
 
 	public Class3(int var1, int var2, String var3) {
@@ -13,10 +19,12 @@ public class Class3 {
 		this(var1.method9405(), var1.method9405(), var1.method9415());
 	}
 
+	@ObfInfo(name = "ak", desc = "()Ljava/lang/String;")
 	public String method38() {
 		return Integer.toHexString(this.field12) + Integer.toHexString(this.field11) + this.field10;
 	}
 
+	@ObfInfo(name = "al", desc = "()I")
 	public int method41() {
 		return this.field11;
 	}

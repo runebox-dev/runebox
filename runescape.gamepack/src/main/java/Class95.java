@@ -1,10 +1,14 @@
+import io.runebox.ObfInfo;
 import java.security.SecureRandom;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+@ObfInfo(name = "dq")
 public class Class95 {
+	@ObfInfo(name = "ak", desc = "Ljava/util/concurrent/ExecutorService;")
 	public ExecutorService field1263;
+	@ObfInfo(name = "al", desc = "Ljava/util/concurrent/Future;")
 	public Future field1258;
 
 	public Class95() {
@@ -12,15 +16,18 @@ public class Class95 {
 		this.field1258 = this.field1263.submit(new Class97());
 	}
 
+	@ObfInfo(name = "ak", desc = "(B)V")
 	public void method2480() {
 		this.field1263.shutdown();
 		this.field1263 = null;
 	}
 
+	@ObfInfo(name = "al", desc = "(I)Z")
 	public boolean method2481() {
 		return this.field1258.isDone();
 	}
 
+	@ObfInfo(name = "aj", desc = "(B)Ljava/security/SecureRandom;")
 	public SecureRandom method2490() {
 		try {
 			return (SecureRandom)this.field1258.get();
@@ -31,10 +38,12 @@ public class Class95 {
 		}
 	}
 
+	@ObfInfo(name = "az", desc = "(I)[Low;")
 	public static Class387[] method2485() {
 		return new Class387[]{Class387.field4523, Class387.field4522, Class387.field4525, Class387.field4524};
 	}
 
+	@ObfInfo(name = "ak", desc = "(Lua;Ltu;I)Ltu;", opaque = "-1206983756")
 	public static Class515 method2487(Class521 var0, Class515 var1) {
 		int var3 = var0.method9405();
 		int var4;
@@ -59,6 +68,7 @@ public class Class95 {
 		return var1;
 	}
 
+	@ObfInfo(name = "aj", desc = "(Ljava/lang/String;I)Ljava/lang/Class;", opaque = "-122815648")
 	public static Class method2488(String var0) throws ClassNotFoundException {
 		if (var0.equals("B")) {
 			return Byte.TYPE;

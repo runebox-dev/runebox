@@ -1,24 +1,48 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "og")
 public class Class371 implements Class393 {
+	@ObfInfo(name = "ap", desc = "Log;")
 	public static final Class371 field4012;
+	@ObfInfo(name = "al", desc = "Log;")
 	public static final Class371 field4013;
+	@ObfInfo(name = "aq", desc = "Log;")
 	public static final Class371 field4014;
+	@ObfInfo(name = "az", desc = "Log;")
 	public static final Class371 field4015;
+	@ObfInfo(name = "af", desc = "Log;")
 	public static final Class371 field4016;
+	@ObfInfo(name = "aa", desc = "Log;")
 	public static final Class371 field4017;
+	@ObfInfo(name = "ao", desc = "Log;")
 	public static final Class371 field4018;
+	@ObfInfo(name = "ab", desc = "Log;")
 	public static final Class371 field4019;
+	@ObfInfo(name = "ah", desc = "Log;")
 	public static final Class371 field4022;
+	@ObfInfo(name = "av", desc = "Log;")
 	public static final Class371 field4023;
+	@ObfInfo(name = "ae", desc = "Log;")
 	public static final Class371 field4024;
+	@ObfInfo(name = "at", desc = "Log;")
 	public static final Class371 field4025;
+	@ObfInfo(name = "ax", desc = "Log;")
 	public static final Class371 field4027;
+	@ObfInfo(name = "ac", desc = "Log;")
 	public static final Class371 field4028;
+	@ObfInfo(name = "ak", desc = "Log;")
 	public static final Class371 field4029;
+	@ObfInfo(name = "ay", desc = "Log;")
 	public static final Class371 field4030;
+	@ObfInfo(name = "aj", desc = "Log;")
 	public static final Class371 field4032;
+	@ObfInfo(name = "ad", desc = "Z")
 	public final boolean field4021;
+	@ObfInfo(name = "aw", desc = "Z")
 	public final boolean field4031;
+	@ObfInfo(name = "au", desc = "I", intMultiplier = 661917803)
 	public final int field4020;
+	@ObfInfo(name = "as", desc = "I", intMultiplier = 503536659)
 	public final int field4026;
 
 	static {
@@ -48,10 +72,12 @@ public class Class371 implements Class393 {
 		this.field4021 = var5;
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)I")
 	public int method175() {
 		return this.field4020;
 	}
 
+	@ObfInfo(desc = "()[LClass371;")
 	public static Class371[] method2873() {
 		return new Class371[]{field4028, field4017, field4023, field4032, field4015, field4030, field4024, field4025, field4022, field4014, field4027, field4029, field4018, field4016, field4013, field4012, field4019};
 	}

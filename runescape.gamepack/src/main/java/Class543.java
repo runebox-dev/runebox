@@ -1,7 +1,14 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "uw")
 public class Class543 extends Class507 {
+	@ObfInfo(name = "al", desc = "Llm;")
 	public static Class299 field5318;
+	@ObfInfo(name = "af", desc = "I", intMultiplier = 1661552683)
 	public int field5321;
+	@ObfInfo(name = "az", desc = "[[I")
 	public int[][] field5317;
+	@ObfInfo(name = "aj", desc = "[[Ljava/lang/Object;")
 	public Object[][] field5320;
 
 	static {
@@ -12,6 +19,7 @@ public class Class543 extends Class507 {
 		this.field5321 = -1;
 	}
 
+	@ObfInfo(name = "al", desc = "(Lua;B)V", opaque = "3")
 	public void method9875(Class521 var1) {
 		while (true) {
 			int var3 = var1.method9405();
@@ -23,10 +31,12 @@ public class Class543 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "aj", desc = "(II)[Ljava/lang/Object;")
 	public Object[] method9876(int var1) {
 		return this.field5320 == null ? null : this.field5320[var1];
 	}
 
+	@ObfInfo(name = "az", desc = "(Lua;IB)V", opaque = "-2")
 	public void method9877(Class521 var1, int var2) {
 		if (var2 == 3) {
 			int var4 = var1.method9405();
@@ -64,9 +74,11 @@ public class Class543 extends Class507 {
 
 	}
 
+	@ObfInfo(name = "af", desc = "(I)V")
 	public void method9878() {
 	}
 
+	@ObfInfo(desc = "(I)LClass543;")
 	public static Class543 method7879(int var0) {
 		Class543 var2 = (Class543)field5318.method5993((long)var0);
 		if (var2 != null) {

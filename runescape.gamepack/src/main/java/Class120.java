@@ -1,9 +1,12 @@
+import io.runebox.ObfInfo;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URLConnection;
 import javax.net.ssl.HttpsURLConnection;
 
+@ObfInfo(name = "ep")
 public class Class120 extends Class106 {
+	@ObfInfo(name = "af", desc = "Z")
 	public final boolean field1482;
 
 	public Class120(boolean var1, int var2) {
@@ -11,6 +14,7 @@ public class Class120 extends Class106 {
 		this.field1482 = var1;
 	}
 
+	@ObfInfo(name = "ak", desc = "(Lea;B)V", opaque = "0")
 	public void method2773(Class105 var1) throws IOException {
 		URLConnection var3 = null;
 		boolean var10 = false;
@@ -72,12 +76,14 @@ public class Class120 extends Class106 {
 
 	}
 
+	@ObfInfo(name = "as", desc = "(Lea;I)Ljava/net/URLConnection;")
 	public URLConnection method2954(Class105 var1) throws IOException {
 		URLConnection var3 = var1.field1375.openConnection();
 		this.method2776(var3);
 		return var3;
 	}
 
+	@ObfInfo(name = "aw", desc = "(Lea;B)Ljava/net/URLConnection;", opaque = "0")
 	public URLConnection method2955(Class105 var1) throws IOException {
 		HttpsURLConnection var3 = (HttpsURLConnection)var1.field1375.openConnection();
 		if (!this.field1482) {

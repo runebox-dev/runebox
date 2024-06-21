@@ -1,11 +1,16 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "ev")
 final class Class126 implements Class350 {
 	// $FF: synthetic field
+	@ObfInfo(desc = "Lnb;")
 	public final Class340 val$cc;
 
 	public Class126(Class340 var1) {
 		this.val$cc = var1;
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)V", opaque = "652965052")
 	public void method2874() {
 		if (this.val$cc != null && this.val$cc.method6533().field3895 != null) {
 			Class101 var2 = new Class101();

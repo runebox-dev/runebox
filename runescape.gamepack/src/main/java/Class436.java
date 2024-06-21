@@ -1,26 +1,49 @@
+import io.runebox.ObfInfo;
 import java.util.Random;
 
+@ObfInfo(name = "qt")
 public abstract class Class436 extends Class561 {
+	@ObfInfo(name = "ay", desc = "I")
 	public static int field4723;
+	@ObfInfo(name = "ap", desc = "I")
 	public static int field4731;
+	@ObfInfo(name = "aq", desc = "I")
 	public static int field4735;
+	@ObfInfo(name = "as", desc = "I")
 	public static int field4736;
+	@ObfInfo(name = "ae", desc = "I")
 	public static int field4737;
+	@ObfInfo(name = "ax", desc = "I")
 	public static int field4738;
+	@ObfInfo(name = "au", desc = "I")
 	public static int field4739;
+	@ObfInfo(name = "aw", desc = "I")
 	public static int field4742;
+	@ObfInfo(name = "ad", desc = "I")
 	public static int field4743;
+	@ObfInfo(name = "an", desc = "[Ljava/lang/String;")
 	public static String[] field4745;
+	@ObfInfo(name = "ai", desc = "Ljava/util/Random;")
 	public static Random field4740;
+	@ObfInfo(name = "av", desc = "[B")
 	public byte[] field4728;
+	@ObfInfo(name = "al", desc = "[[B")
 	public byte[][] field4724;
+	@ObfInfo(name = "ab", desc = "I")
 	public int field4730;
+	@ObfInfo(name = "ac", desc = "I")
 	public int field4732;
+	@ObfInfo(name = "ao", desc = "I")
 	public int field4734;
+	@ObfInfo(name = "aj", desc = "[I")
 	public int[] field4725;
+	@ObfInfo(name = "az", desc = "[I")
 	public int[] field4726;
+	@ObfInfo(name = "af", desc = "[I")
 	public int[] field4727;
+	@ObfInfo(name = "at", desc = "[I")
 	public int[] field4729;
+	@ObfInfo(name = "aa", desc = "[I")
 	public int[] field4741;
 
 	static {
@@ -69,10 +92,13 @@ public abstract class Class436 extends Class561 {
 		this.method7985(var1);
 	}
 
+	@ObfInfo(name = "ak", desc = "([BIIIII)V")
 	public abstract void method7772(byte[] var1, int var2, int var3, int var4, int var5, int var6);
 
+	@ObfInfo(name = "al", desc = "([BIIIIII)V")
 	public abstract void method7775(byte[] var1, int var2, int var3, int var4, int var5, int var6, int var7);
 
+	@ObfInfo(name = "at", desc = "([B)V")
 	public void method7985(byte[] var1) {
 		this.field4725 = new int[256];
 		int var2;
@@ -144,6 +170,7 @@ public abstract class Class436 extends Class561 {
 
 	}
 
+	@ObfInfo(name = "ac", desc = "(C)I")
 	public int method7987(char var1) {
 		if (var1 == 160) {
 			var1 = ' ';
@@ -152,6 +179,7 @@ public abstract class Class436 extends Class561 {
 		return this.field4725[Class405.method2753(var1) & 255];
 	}
 
+	@ObfInfo(name = "ao", desc = "(Ljava/lang/String;)I")
 	public int method8080(String var1) {
 		if (var1 == null) {
 			return 0;
@@ -206,6 +234,7 @@ public abstract class Class436 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "ah", desc = "(Ljava/lang/String;[I[Ljava/lang/String;)I")
 	public int method8088(String var1, int[] var2, String[] var3) {
 		if (var1 == null) {
 			return 0;
@@ -309,6 +338,7 @@ public abstract class Class436 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "av", desc = "(Ljava/lang/String;I)I")
 	public int method8073(String var1, int var2) {
 		int var3 = this.method8088(var1, new int[]{var2}, field4745);
 		int var4 = 0;
@@ -323,10 +353,12 @@ public abstract class Class436 extends Class561 {
 		return var4;
 	}
 
+	@ObfInfo(name = "aq", desc = "(Ljava/lang/String;I)I")
 	public int method7991(String var1, int var2) {
 		return this.method8088(var1, new int[]{var2}, field4745);
 	}
 
+	@ObfInfo(name = "ae", desc = "(IILjava/lang/String;II)Lqi;")
 	public Class425 method7990(int var1, int var2, String var3, int var4, int var5) {
 		if (var3 != null && var3.length() >= var2 + var1) {
 			int var6 = var4 - this.method8080(var3) / 2;
@@ -340,6 +372,7 @@ public abstract class Class436 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "ax", desc = "(Ljava/lang/String;IIII)V")
 	public void method8017(String var1, int var2, int var3, int var4, int var5) {
 		if (var1 != null) {
 			this.method8007(var4, var5);
@@ -347,6 +380,7 @@ public abstract class Class436 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "ay", desc = "(Ljava/lang/String;IIIII)V")
 	public void method7994(String var1, int var2, int var3, int var4, int var5, int var6) {
 		if (var1 != null) {
 			this.method8007(var4, var5);
@@ -355,6 +389,7 @@ public abstract class Class436 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "au", desc = "(Ljava/lang/String;IIII)V")
 	public void method7995(String var1, int var2, int var3, int var4, int var5) {
 		if (var1 != null) {
 			this.method8007(var4, var5);
@@ -362,6 +397,7 @@ public abstract class Class436 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "as", desc = "(Ljava/lang/String;IIII)V")
 	public void method7996(String var1, int var2, int var3, int var4, int var5) {
 		if (var1 != null) {
 			this.method8007(var4, var5);
@@ -369,10 +405,12 @@ public abstract class Class436 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "aw", desc = "(Ljava/lang/String;IIIIIIIII)I")
 	public int method8011(String var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10) {
 		return this.method7998(var1, var2, var3, var4, var5, var6, var7, 256, var8, var9, var10);
 	}
 
+	@ObfInfo(name = "ad", desc = "(Ljava/lang/String;IIIIIIIIII)I")
 	public int method7998(String var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11) {
 		if (var1 == null) {
 			return 0;
@@ -437,6 +475,7 @@ public abstract class Class436 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "ai", desc = "(Lqv;IIIII)Lto;")
 	public Class509 method7999(Class438 var1, int var2, int var3, int var4, int var5, int var6) {
 		if (!var1.method8101()) {
 			this.method8007(var4, var5);
@@ -476,6 +515,7 @@ public abstract class Class436 extends Class561 {
 		return var1.method8105();
 	}
 
+	@ObfInfo(name = "an", desc = "(Ljava/lang/String;IIIII[I)V")
 	public void method8060(String var1, int var2, int var3, int var4, int var5, int var6, int[] var7) {
 		if (var1 != null) {
 			this.method8007(var4, var5);
@@ -494,6 +534,7 @@ public abstract class Class436 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "am", desc = "(Ljava/lang/String;IIIII[I)V")
 	public void method8042(String var1, int var2, int var3, int var4, int var5, int var6, int[] var7) {
 		if (var1 != null) {
 			this.method8007(var4, var5);
@@ -514,6 +555,7 @@ public abstract class Class436 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "ar", desc = "(Ljava/lang/String;IIIIII[I)V")
 	public void method8002(String var1, int var2, int var3, int var4, int var5, int var6, int var7, int[] var8) {
 		if (var1 != null) {
 			this.method8007(var4, var5);
@@ -537,6 +579,7 @@ public abstract class Class436 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "ag", desc = "(Ljava/lang/String;IIII[I)V")
 	public void method8003(String var1, int var2, int var3, int var4, int var5, int[] var6) {
 		if (var1 != null) {
 			this.method8007(var4, var5);
@@ -549,6 +592,7 @@ public abstract class Class436 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "bs", desc = "(Ljava/lang/String;IIII[I)V")
 	public void method8004(String var1, int var2, int var3, int var4, int var5, int[] var6) {
 		if (var1 != null) {
 			this.method8007(var4, var5);
@@ -561,6 +605,7 @@ public abstract class Class436 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "bf", desc = "([II)[I")
 	public int[] method8005(int[] var1, int var2) {
 		if (var2 == 0) {
 			return null;
@@ -576,6 +621,7 @@ public abstract class Class436 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "bo", desc = "(Ljava/lang/String;IIIII)V")
 	public void method8006(String var1, int var2, int var3, int var4, int var5, int var6) {
 		if (var1 != null) {
 			this.method8007(var4, var5);
@@ -595,6 +641,7 @@ public abstract class Class436 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "bi", desc = "(II)V")
 	public void method8007(int var1, int var2) {
 		field4735 = -1;
 		field4731 = -1;
@@ -607,6 +654,7 @@ public abstract class Class436 extends Class561 {
 		field4743 = 0;
 	}
 
+	@ObfInfo(name = "bt", desc = "(Ljava/lang/String;)V")
 	public void method8008(String var1) {
 		try {
 			int var2;
@@ -649,6 +697,7 @@ public abstract class Class436 extends Class561 {
 
 	}
 
+	@ObfInfo(name = "bn", desc = "(Ljava/lang/String;I)V")
 	public void method8009(String var1, int var2) {
 		int var3 = 0;
 		boolean var4 = false;
@@ -670,6 +719,7 @@ public abstract class Class436 extends Class561 {
 
 	}
 
+	@ObfInfo(name = "bw", desc = "(Ljava/lang/String;II)V")
 	public void method8010(String var1, int var2, int var3) {
 		var3 -= this.field4730;
 		int var4 = -1;
@@ -757,6 +807,7 @@ public abstract class Class436 extends Class561 {
 
 	}
 
+	@ObfInfo(name = "bl", desc = "(Ljava/lang/String;II[I[I[I)V")
 	public void method7997(String var1, int var2, int var3, int[] var4, int[] var5, int[] var6) {
 		var3 -= this.field4730;
 		int var7 = -1;
@@ -880,6 +931,7 @@ public abstract class Class436 extends Class561 {
 
 	}
 
+	@ObfInfo(name = "ab", desc = "([[B[[B[I[I[III)I")
 	public static int method7986(byte[][] var0, byte[][] var1, int[] var2, int[] var3, int[] var4, int var5, int var6) {
 		int var7 = var2[var5];
 		int var8 = var7 + var4[var5];
@@ -915,6 +967,7 @@ public abstract class Class436 extends Class561 {
 		return -var13;
 	}
 
+	@ObfInfo(name = "ap", desc = "(Ljava/lang/String;)Ljava/lang/String;")
 	public static String method7992(String var0) {
 		int var1 = var0.length();
 		int var2 = 0;
@@ -942,6 +995,7 @@ public abstract class Class436 extends Class561 {
 		return var6.toString();
 	}
 
+	@ObfInfo(name = "be", desc = "([BIIIII)V")
 	public static void method8014(byte[] var0, int var1, int var2, int var3, int var4, int var5) {
 		int var6 = var1 + Class87.field5423 * var2;
 		int var7 = Class87.field5423 - var3;
@@ -982,6 +1036,7 @@ public abstract class Class436 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "bg", desc = "([I[BIIIIIII)V")
 	public static void method8031(int[] var0, byte[] var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
 		int var9 = -(var5 >> 2);
 		var5 = -(var5 & 3);
@@ -1028,6 +1083,7 @@ public abstract class Class436 extends Class561 {
 
 	}
 
+	@ObfInfo(name = "bu", desc = "([BIIIIII)V")
 	public static void method8016(byte[] var0, int var1, int var2, int var3, int var4, int var5, int var6) {
 		int var7 = var1 + Class87.field5423 * var2;
 		int var8 = Class87.field5423 - var3;
@@ -1068,6 +1124,7 @@ public abstract class Class436 extends Class561 {
 		}
 	}
 
+	@ObfInfo(name = "bh", desc = "([I[BIIIIIIII)V")
 	public static void method8062(int[] var0, byte[] var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
 		var2 = ((var2 & 16711935) * var9 & -16711936) + ((var2 & 65280) * var9 & 16711680) >> 8;
 		var9 = 256 - var9;

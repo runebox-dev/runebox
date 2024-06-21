@@ -1,11 +1,17 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "sp")
 public abstract class Class484 implements Class297 {
+	@ObfInfo(name = "ak", desc = "Luy;")
 	public Class545 field4962;
 
 	public Class484(int var1) {
 	}
 
+	@ObfInfo(name = "ak", desc = "(Lua;II)V")
 	public abstract void method8873(Class521 var1, int var2);
 
+	@ObfInfo(name = "aj", desc = "(Lua;I)V", opaque = "1871625683")
 	public void method8872(Class521 var1) {
 		while (true) {
 			int var3 = var1.method9405();
@@ -38,10 +44,12 @@ public abstract class Class484 implements Class297 {
 		}
 	}
 
+	@ObfInfo(name = "az", desc = "(S)Z", opaque = "155")
 	public boolean method8874() {
 		return this.field4962 != null;
 	}
 
+	@ObfInfo(name = "af", desc = "(I)Ljava/lang/Object;", opaque = "65535")
 	public Object method8880() {
 		if (Class545.field5333 == this.field4962) {
 			return 0;

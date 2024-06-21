@@ -1,6 +1,12 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "ih")
 public class Class216 implements Class35 {
+	@ObfInfo(name = "ak", desc = "Lnb;")
 	public Class340 field2183;
+	@ObfInfo(name = "aj", desc = "Z")
 	public boolean field2179;
+	@ObfInfo(name = "al", desc = "Z")
 	public boolean field2180;
 
 	public Class216() {
@@ -9,6 +15,7 @@ public class Class216 implements Class35 {
 		this.field2179 = false;
 	}
 
+	@ObfInfo(name = "as", desc = "(Lnb;I)V", opaque = "1198485950")
 	public void method4068(Class340 var1) {
 		if (var1 != null) {
 			if (this.field2183 != var1) {
@@ -33,10 +40,12 @@ public class Class216 implements Class35 {
 
 	}
 
+	@ObfInfo(name = "aw", desc = "(B)Lnb;")
 	public Class340 method4069() {
 		return this.field2183;
 	}
 
+	@ObfInfo(name = "ad", desc = "(I)V", opaque = "-694149925")
 	public void method4070() {
 		if (this.field2183 != null) {
 			Class352 var2 = this.field2183.method6533();
@@ -55,6 +64,7 @@ public class Class216 implements Class35 {
 		}
 	}
 
+	@ObfInfo(name = "ak", desc = "(II)Z", opaque = "1374510228")
 	public boolean method734(int var1) {
 		if (this.field2183 == null) {
 			return false;
@@ -83,6 +93,7 @@ public class Class216 implements Class35 {
 		}
 	}
 
+	@ObfInfo(name = "al", desc = "(II)Z")
 	public boolean method736(int var1) {
 		switch(var1) {
 		case 81:
@@ -96,6 +107,7 @@ public class Class216 implements Class35 {
 		}
 	}
 
+	@ObfInfo(name = "aj", desc = "(CI)Z", opaque = "206788056")
 	public boolean method723(char var1) {
 		if (this.field2183 == null) {
 			return false;
@@ -120,10 +132,12 @@ public class Class216 implements Class35 {
 		}
 	}
 
+	@ObfInfo(name = "az", desc = "(ZS)Z")
 	public boolean method737(boolean var1) {
 		return false;
 	}
 
+	@ObfInfo(name = "ai", desc = "(IB)Z", opaque = "104")
 	public boolean method4071(int var1) {
 		if (this.field2183 == null) {
 			return false;

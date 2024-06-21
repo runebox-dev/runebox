@@ -1,103 +1,206 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "mc")
 public class Class315 implements Class321 {
+	@ObfInfo(name = "cj", desc = "Lmc;")
 	public static final Class315 field3271;
+	@ObfInfo(name = "al", desc = "Lmc;")
 	public static final Class315 field3272;
+	@ObfInfo(name = "aj", desc = "Lmc;")
 	public static final Class315 field3273;
+	@ObfInfo(name = "az", desc = "Lmc;")
 	public static final Class315 field3274;
+	@ObfInfo(name = "bn", desc = "Lmc;")
 	public static final Class315 field3275;
+	@ObfInfo(name = "aa", desc = "Lmc;")
 	public static final Class315 field3276;
+	@ObfInfo(name = "at", desc = "Lmc;")
 	public static final Class315 field3277;
+	@ObfInfo(name = "ab", desc = "Lmc;")
 	public static final Class315 field3278;
+	@ObfInfo(name = "ac", desc = "Lmc;")
 	public static final Class315 field3279;
+	@ObfInfo(name = "ao", desc = "Lmc;")
 	public static final Class315 field3280;
+	@ObfInfo(name = "ah", desc = "Lmc;")
 	public static final Class315 field3281;
+	@ObfInfo(name = "av", desc = "Lmc;")
 	public static final Class315 field3282;
+	@ObfInfo(name = "aq", desc = "Lmc;")
 	public static final Class315 field3283;
+	@ObfInfo(name = "ai", desc = "Lmc;")
 	public static final Class315 field3284;
+	@ObfInfo(name = "ae", desc = "Lmc;")
 	public static final Class315 field3285;
+	@ObfInfo(name = "cl", desc = "Lmc;")
 	public static final Class315 field3286;
+	@ObfInfo(name = "ax", desc = "Lmc;")
 	public static final Class315 field3287;
+	@ObfInfo(name = "au", desc = "Lmc;")
 	public static final Class315 field3288;
+	@ObfInfo(name = "as", desc = "Lmc;")
 	public static final Class315 field3289;
+	@ObfInfo(name = "af", desc = "Lmc;")
 	public static final Class315 field3290;
+	@ObfInfo(name = "df", desc = "Lmc;")
 	public static final Class315 field3291;
+	@ObfInfo(name = "ay", desc = "Lmc;")
 	public static final Class315 field3293;
+	@ObfInfo(name = "am", desc = "Lmc;")
 	public static final Class315 field3294;
+	@ObfInfo(name = "ar", desc = "Lmc;")
 	public static final Class315 field3295;
+	@ObfInfo(name = "ag", desc = "Lmc;")
 	public static final Class315 field3296;
+	@ObfInfo(name = "bs", desc = "Lmc;")
 	public static final Class315 field3297;
+	@ObfInfo(name = "bf", desc = "Lmc;")
 	public static final Class315 field3298;
+	@ObfInfo(name = "bo", desc = "Lmc;")
 	public static final Class315 field3299;
+	@ObfInfo(name = "bi", desc = "Lmc;")
 	public static final Class315 field3300;
+	@ObfInfo(name = "bt", desc = "Lmc;")
 	public static final Class315 field3301;
+	@ObfInfo(name = "bd", desc = "Lmc;")
 	public static final Class315 field3302;
+	@ObfInfo(name = "bw", desc = "Lmc;")
 	public static final Class315 field3303;
+	@ObfInfo(name = "bl", desc = "Lmc;")
 	public static final Class315 field3304;
+	@ObfInfo(name = "ci", desc = "Lmc;")
 	public static final Class315 field3305;
+	@ObfInfo(name = "bg", desc = "Lmc;")
 	public static final Class315 field3306;
+	@ObfInfo(name = "bu", desc = "Lmc;")
 	public static final Class315 field3307;
+	@ObfInfo(name = "bh", desc = "Lmc;")
 	public static final Class315 field3308;
+	@ObfInfo(name = "cc", desc = "Lmc;")
 	public static final Class315 field3309;
+	@ObfInfo(name = "bp", desc = "Lmc;")
 	public static final Class315 field3310;
+	@ObfInfo(name = "br", desc = "Lmc;")
 	public static final Class315 field3311;
+	@ObfInfo(name = "bx", desc = "Lmc;")
 	public static final Class315 field3312;
+	@ObfInfo(name = "dm", desc = "Lmc;")
 	public static final Class315 field3313;
+	@ObfInfo(name = "bv", desc = "Lmc;")
 	public static final Class315 field3314;
+	@ObfInfo(name = "bm", desc = "Lmc;")
 	public static final Class315 field3315;
+	@ObfInfo(name = "bq", desc = "Lmc;")
 	public static final Class315 field3316;
+	@ObfInfo(name = "bj", desc = "Lmc;")
 	public static final Class315 field3317;
+	@ObfInfo(name = "dn", desc = "Lmc;")
 	public static final Class315 field3318;
+	@ObfInfo(name = "ca", desc = "Lmc;")
 	public static final Class315 field3319;
+	@ObfInfo(name = "ba", desc = "Lmc;")
 	public static final Class315 field3320;
+	@ObfInfo(name = "bb", desc = "Lmc;")
 	public static final Class315 field3321;
+	@ObfInfo(name = "by", desc = "Lmc;")
 	public static final Class315 field3322;
+	@ObfInfo(name = "cw", desc = "Lmc;")
 	public static final Class315 field3323;
+	@ObfInfo(name = "ad", desc = "Lmc;")
 	public static final Class315 field3324;
+	@ObfInfo(name = "bc", desc = "Lmc;")
 	public static final Class315 field3325;
+	@ObfInfo(name = "ch", desc = "Lmc;")
 	public static final Class315 field3326;
+	@ObfInfo(name = "cp", desc = "Lmc;")
 	public static final Class315 field3327;
+	@ObfInfo(name = "an", desc = "Lmc;")
 	public static final Class315 field3328;
+	@ObfInfo(name = "cs", desc = "Lmc;")
 	public static final Class315 field3329;
+	@ObfInfo(name = "cm", desc = "Lmc;")
 	public static final Class315 field3330;
+	@ObfInfo(name = "cd", desc = "Lmc;")
 	public static final Class315 field3331;
+	@ObfInfo(name = "be", desc = "Lmc;")
 	public static final Class315 field3332;
+	@ObfInfo(name = "cb", desc = "Lmc;")
 	public static final Class315 field3333;
+	@ObfInfo(name = "cv", desc = "Lmc;")
 	public static final Class315 field3334;
+	@ObfInfo(name = "co", desc = "Lmc;")
 	public static final Class315 field3335;
+	@ObfInfo(name = "bz", desc = "Lmc;")
 	public static final Class315 field3336;
+	@ObfInfo(name = "ce", desc = "Lmc;")
 	public static final Class315 field3337;
+	@ObfInfo(name = "cz", desc = "Lmc;")
 	public static final Class315 field3338;
+	@ObfInfo(name = "dc", desc = "Lmc;")
 	public static final Class315 field3339;
+	@ObfInfo(name = "dw", desc = "Lmc;")
 	public static final Class315 field3340;
+	@ObfInfo(name = "bk", desc = "Lmc;")
 	public static final Class315 field3341;
+	@ObfInfo(name = "cy", desc = "Lmc;")
 	public static final Class315 field3342;
+	@ObfInfo(name = "ct", desc = "Lmc;")
 	public static final Class315 field3343;
+	@ObfInfo(name = "cg", desc = "Lmc;")
 	public static final Class315 field3344;
+	@ObfInfo(name = "ap", desc = "Lmc;")
 	public static final Class315 field3345;
+	@ObfInfo(name = "dh", desc = "Lmc;")
 	public static final Class315 field3346;
+	@ObfInfo(name = "cu", desc = "Lmc;")
 	public static final Class315 field3347;
+	@ObfInfo(name = "cx", desc = "Lmc;")
 	public static final Class315 field3348;
+	@ObfInfo(name = "cr", desc = "Lmc;")
 	public static final Class315 field3349;
+	@ObfInfo(name = "dq", desc = "Lmc;")
 	public static final Class315 field3350;
+	@ObfInfo(name = "da", desc = "Lmc;")
 	public static final Class315 field3351;
+	@ObfInfo(name = "dr", desc = "Lmc;")
 	public static final Class315 field3352;
+	@ObfInfo(name = "db", desc = "Lmc;")
 	public static final Class315 field3353;
+	@ObfInfo(name = "do", desc = "Lmc;")
 	public static final Class315 field3354;
+	@ObfInfo(name = "ds", desc = "Lmc;")
 	public static final Class315 field3355;
+	@ObfInfo(name = "dd", desc = "Lmc;")
 	public static final Class315 field3356;
+	@ObfInfo(name = "cq", desc = "Lmc;")
 	public static final Class315 field3357;
+	@ObfInfo(name = "cf", desc = "Lmc;")
 	public static final Class315 field3358;
+	@ObfInfo(name = "dz", desc = "Lmc;")
 	public static final Class315 field3359;
+	@ObfInfo(name = "ck", desc = "Lmc;")
 	public static final Class315 field3360;
+	@ObfInfo(name = "dg", desc = "Lmc;")
 	public static final Class315 field3361;
+	@ObfInfo(name = "du", desc = "Lmc;")
 	public static final Class315 field3362;
+	@ObfInfo(name = "cn", desc = "Lmc;")
 	public static final Class315 field3363;
+	@ObfInfo(name = "de", desc = "Lmc;")
 	public static final Class315 field3364;
+	@ObfInfo(name = "aw", desc = "Lmc;")
 	public static final Class315 field3365;
+	@ObfInfo(name = "dl", desc = "Lmc;")
 	public static final Class315 field3366;
+	@ObfInfo(name = "dk", desc = "Lmc;")
 	public static final Class315 field3367;
+	@ObfInfo(name = "ak", desc = "Lmc;")
 	public static final Class315 field3368;
+	@ObfInfo(name = "dj", desc = "Lmc;")
 	public static final Class315 field3370;
+	@ObfInfo(name = "di", desc = "I", intMultiplier = 18151023)
 	public final int field3292;
+	@ObfInfo(name = "dy", desc = "I", intMultiplier = 162995023)
 	public final int field3369;
 
 	static {

@@ -7,6 +7,7 @@ import io.runebox.asm.core.init
 import io.runebox.asm.core.toRef
 import io.runebox.deobfuscator.Logger
 import io.runebox.deobfuscator.Transformer
+import io.runebox.deobfuscator.asm.copy
 import io.runebox.deobfuscator.isObfuscatedName
 import org.objectweb.asm.Opcodes.GETSTATIC
 import org.objectweb.asm.Opcodes.PUTSTATIC
@@ -47,7 +48,7 @@ class StaticFieldOrigClassMover : Transformer {
             if(!field.name.isObfuscatedName()) return@forEach
             val newCls = pool.findClass(newOwner)
 
-            val newField = FieldNode(field.access, field.name, field.desc, field.signature, field.value)
+            val newField = field.copy()
             newField.init(newCls)
             newCls.fields.add(newField)
             pool.findClass(ref.owner).fields.remove(field)

@@ -1,14 +1,28 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "iv")
 public class Class230 extends Class507 {
+	@ObfInfo(name = "al", desc = "Llm;")
 	public static Class299 field2422;
+	@ObfInfo(name = "af", desc = "Z")
 	public boolean field2420;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = -1508869635)
 	public int field2418;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = 448604885)
 	public int field2419;
+	@ObfInfo(name = "ab", desc = "I", intMultiplier = -258030593)
 	public int field2423;
+	@ObfInfo(name = "ac", desc = "I", intMultiplier = -216947469)
 	public int field2424;
+	@ObfInfo(name = "at", desc = "I", intMultiplier = -2000576281)
 	public int field2425;
+	@ObfInfo(name = "ah", desc = "I", intMultiplier = -983409521)
 	public int field2426;
+	@ObfInfo(name = "av", desc = "I", intMultiplier = 311593259)
 	public int field2427;
+	@ObfInfo(name = "az", desc = "I", intMultiplier = 348384781)
 	public int field2429;
+	@ObfInfo(name = "ao", desc = "I", intMultiplier = 776889423)
 	public int field2431;
 
 	static {
@@ -22,6 +36,7 @@ public class Class230 extends Class507 {
 		this.field2419 = -1;
 	}
 
+	@ObfInfo(name = "al", desc = "(I)V")
 	public void method4394() {
 		if (-1 != this.field2419) {
 			this.method4404(this.field2419);
@@ -33,6 +48,7 @@ public class Class230 extends Class507 {
 		this.method4404(this.field2418);
 	}
 
+	@ObfInfo(name = "aj", desc = "(Lua;IB)V")
 	public void method4393(Class521 var1, int var2) {
 		while (true) {
 			int var4 = var1.method9405();
@@ -44,6 +60,7 @@ public class Class230 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "az", desc = "(Lua;IIB)V", opaque = "36")
 	public void method4395(Class521 var1, int var2, int var3) {
 		if (var2 == 1) {
 			this.field2418 = var1.method9399();
@@ -58,6 +75,7 @@ public class Class230 extends Class507 {
 
 	}
 
+	@ObfInfo(name = "af", desc = "(II)V", opaque = "-1679585992")
 	public void method4404(int var1) {
 		double var3 = (double)(var1 >> 16 & 255) / 256.0D;
 		double var5 = (double)(var1 >> 8 & 255) / 256.0D;
@@ -119,6 +137,7 @@ public class Class230 extends Class507 {
 
 	}
 
+	@ObfInfo(desc = "(LClass382;)V")
 	public static void method3042(Class382 var0) {
 		Class93.field2417 = var0;
 	}

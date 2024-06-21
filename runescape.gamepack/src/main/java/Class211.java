@@ -1,30 +1,56 @@
+import io.runebox.ObfInfo;
 import java.util.HashMap;
 import java.util.Map;
 
+@ObfInfo(name = "ic")
 public class Class211 extends Class507 {
+	@ObfInfo(name = "ab", desc = "Llm;")
 	public static Class299 field2129;
+	@ObfInfo(name = "ao", desc = "Llm;")
 	public static Class299 field2132;
+	@ObfInfo(name = "ac", desc = "Llm;")
 	public static Class299 field2148;
+	@ObfInfo(name = "ak", desc = "Z")
 	public static boolean field2130;
+	@ObfInfo(name = "au", desc = "[Lik;")
 	public Class219[] field2140;
+	@ObfInfo(name = "ai", desc = "Z")
 	public boolean field2144;
+	@ObfInfo(name = "bs", desc = "Z")
 	public boolean field2149;
+	@ObfInfo(name = "ad", desc = "[Z")
 	public boolean[] field2137;
+	@ObfInfo(name = "an", desc = "I", intMultiplier = -1995770705)
 	public int field2128;
+	@ObfInfo(name = "ah", desc = "I", intMultiplier = -1594529517)
 	public int field2133;
+	@ObfInfo(name = "ap", desc = "I", intMultiplier = -460558267)
 	public int field2136;
+	@ObfInfo(name = "aq", desc = "I", intMultiplier = 946625509)
 	public int field2138;
+	@ObfInfo(name = "bo", desc = "I", intMultiplier = 1462179751)
 	public int field2141;
+	@ObfInfo(name = "as", desc = "I", intMultiplier = -351911437)
 	public int field2143;
+	@ObfInfo(name = "ag", desc = "I", intMultiplier = 1203416379)
 	public int field2145;
+	@ObfInfo(name = "am", desc = "I", intMultiplier = 612362347)
 	public int field2146;
+	@ObfInfo(name = "ar", desc = "I", intMultiplier = 440495917)
 	public int field2147;
+	@ObfInfo(name = "bf", desc = "I", intMultiplier = 709224351)
 	public int field2150;
+	@ObfInfo(name = "bi", desc = "I", intMultiplier = -1104871125)
 	public int field2152;
+	@ObfInfo(name = "ax", desc = "[I")
 	public int[] field2126;
+	@ObfInfo(name = "ay", desc = "[I")
 	public int[] field2139;
+	@ObfInfo(name = "ae", desc = "[I")
 	public int[] field2142;
+	@ObfInfo(name = "aw", desc = "[I")
 	public int[] field2151;
+	@ObfInfo(name = "av", desc = "Ljava/util/Map;")
 	public Map field2134;
 
 	static {
@@ -50,6 +76,7 @@ public class Class211 extends Class507 {
 		this.field2152 = 2;
 	}
 
+	@ObfInfo(name = "al", desc = "(Lua;B)V", opaque = "5")
 	public void method3997(Class521 var1) {
 		while (true) {
 			int var3 = var1.method9405();
@@ -61,6 +88,7 @@ public class Class211 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "aj", desc = "(Lua;IS)V", opaque = "352")
 	public void method4006(Class521 var1, int var2) {
 		int var4;
 		int var5;
@@ -157,6 +185,7 @@ public class Class211 extends Class507 {
 
 	}
 
+	@ObfInfo(name = "az", desc = "(I)V", opaque = "-1726184148")
 	public void method3998() {
 		if (-1 == this.field2150) {
 			if (this.field2151 == null && this.field2137 == null) {
@@ -176,6 +205,7 @@ public class Class211 extends Class507 {
 
 	}
 
+	@ObfInfo(name = "af", desc = "(Lkb;II)Lkb;", opaque = "919536438")
 	public Class262 method3999(Class262 var1, int var2) {
 		Class262 var5;
 		if (!this.method4038()) {
@@ -201,6 +231,7 @@ public class Class211 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "aa", desc = "(Lkb;III)Lkb;", opaque = "-253461195")
 	public Class262 method4000(Class262 var1, int var2, int var3) {
 		Class262 var6;
 		if (!this.method4038()) {
@@ -260,6 +291,7 @@ public class Class211 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "at", desc = "(Lkb;IB)Lkb;", opaque = "4")
 	public Class262 method4001(Class262 var1, int var2) {
 		Class262 var5;
 		if (!this.method4038()) {
@@ -285,6 +317,7 @@ public class Class211 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "ab", desc = "(Lkb;ILic;IB)Lkb;", opaque = "1")
 	public Class262 method4002(Class262 var1, int var2, Class211 var3, int var4) {
 		if (field2130 && !this.method4038() && !var3.method4038()) {
 			return this.method4042(var1, var2, var3, var4);
@@ -362,6 +395,7 @@ public class Class211 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "ac", desc = "(Lkb;ILic;II)Lkb;", opaque = "-1276132275")
 	public Class262 method4042(Class262 var1, int var2, Class211 var3, int var4) {
 		var2 = this.field2142[var2];
 		Class246 var6 = Class258.method4922(var2 >> 16);
@@ -385,6 +419,7 @@ public class Class211 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "ao", desc = "(Lkb;II)Lkb;", opaque = "-2113245634")
 	public Class262 method4004(Class262 var1, int var2) {
 		if (!this.method4038()) {
 			int var4 = this.field2142[var2];
@@ -418,18 +453,22 @@ public class Class211 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "ah", desc = "(B)Z", opaque = "2")
 	public boolean method4038() {
 		return this.field2133 >= 0;
 	}
 
+	@ObfInfo(name = "av", desc = "(B)I")
 	public int method4005() {
 		return this.field2136 - this.field2138;
 	}
 
+	@ObfInfo(name = "ap", desc = "(B)Lfo;", opaque = "0")
 	public Class145 method4007() {
 		return this.method4038() ? method2867(this.field2133) : null;
 	}
 
+	@ObfInfo(desc = "(I)LClass145;")
 	public static Class145 method2867(int var0) {
 		Class145 var3 = Class94.method2478(var0);
 		int var2;

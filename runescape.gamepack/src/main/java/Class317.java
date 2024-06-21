@@ -1,8 +1,11 @@
+import io.runebox.ObfInfo;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.TimeZone;
 
+@ObfInfo(name = "me")
 public final class Class317 {
+	@ObfInfo(name = "aj", desc = "Ljava/util/HashMap;")
 	public static final HashMap field3384;
 
 	static {
@@ -19,6 +22,7 @@ public final class Class317 {
 		Calendar.getInstance(var2);
 	}
 
+	@ObfInfo(name = "nt", desc = "(Lnb;I)V", opaque = "9637510")
 	public static void method6187(Class340 var0) {
 		if (var0 != null && var0.field3762 == Client.field558) {
 			Client.field614[var0.field3821] = true;

@@ -1,6 +1,12 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "ln")
 public class Class300 {
+	@ObfInfo(name = "ak", desc = "Lln;")
 	public static final Class300 field3200;
+	@ObfInfo(name = "al", desc = "Lln;")
 	public static final Class300 field3201;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = -938647203)
 	public final int field3202;
 
 	static {
@@ -12,6 +18,7 @@ public class Class300 {
 		this.field3202 = var1;
 	}
 
+	@ObfInfo(name = "az", desc = "(FB)F")
 	public static float method5999(float var0) {
 		float var2 = 75.0F;
 		float var3 = 10000.0F;

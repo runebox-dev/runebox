@@ -1,8 +1,16 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "br")
 public class Class44 extends Class54 {
+	@ObfInfo(name = "af", desc = "Z")
 	public boolean field315;
+	@ObfInfo(name = "al", desc = "[B")
 	public byte[] field314;
+	@ObfInfo(name = "aj", desc = "I")
 	public int field311;
+	@ObfInfo(name = "ak", desc = "I")
 	public int field312;
+	@ObfInfo(name = "az", desc = "I")
 	public int field313;
 
 	public Class44(int var1, byte[] var2, int var3, int var4) {
@@ -20,6 +28,7 @@ public class Class44 extends Class54 {
 		this.field315 = var5;
 	}
 
+	@ObfInfo(name = "ak", desc = "(Lcd;)Lbr;")
 	public Class44 method849(Class56 var1) {
 		this.field314 = var1.method1068(this.field314);
 		this.field312 = var1.method1063(this.field312);

@@ -1,11 +1,22 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "vj")
 public class Class555 implements Class393 {
+	@ObfInfo(name = "al", desc = "Lvj;")
 	public static final Class555 field5382;
+	@ObfInfo(name = "az", desc = "Lvj;")
 	public static final Class555 field5384;
+	@ObfInfo(name = "af", desc = "Lvj;")
 	public static final Class555 field5385;
+	@ObfInfo(name = "aa", desc = "Lvj;")
 	public static final Class555 field5386;
+	@ObfInfo(name = "aj", desc = "Lvj;")
 	public static final Class555 field5388;
+	@ObfInfo(name = "ak", desc = "Lvj;")
 	public static final Class555 field5389;
+	@ObfInfo(name = "ab", desc = "I", intMultiplier = -652509963)
 	public final int field5383;
+	@ObfInfo(name = "at", desc = "I", intMultiplier = -1018796563)
 	public final int field5387;
 
 	static {
@@ -22,10 +33,12 @@ public class Class555 implements Class393 {
 		this.field5383 = var2;
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)I")
 	public int method175() {
 		return this.field5383;
 	}
 
+	@ObfInfo(name = "az", desc = "(I)Z", opaque = "143509423")
 	public boolean method10080() {
 		return field5382 == this;
 	}

@@ -1,9 +1,18 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "pg")
 public class Class397 {
+	@ObfInfo(name = "ak", desc = "B")
 	public byte field4593;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = 467418017)
 	public int field4588;
+	@ObfInfo(name = "al", desc = "I", intMultiplier = -657879925)
 	public int field4589;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = -2070091891)
 	public int field4590;
+	@ObfInfo(name = "az", desc = "I", intMultiplier = 2010946641)
 	public int field4591;
+	@ObfInfo(name = "af", desc = "I", intMultiplier = 934961267)
 	public int field4592;
 
 	public Class397() {
@@ -55,22 +64,27 @@ public class Class397 {
 
 	}
 
+	@ObfInfo(name = "ak", desc = "(Ljava/lang/Integer;B)V")
 	public void method7440(Integer var1) {
 	}
 
+	@ObfInfo(name = "al", desc = "(B)I")
 	public int method7435() {
 		return this.field4593 & 7;
 	}
 
+	@ObfInfo(name = "aj", desc = "(I)I", opaque = "498731775")
 	public int method7436() {
 		return 8 == (this.field4593 & 8) ? 1 : 0;
 	}
 
+	@ObfInfo(name = "az", desc = "(IS)V")
 	public void method7438(int var1) {
 		this.field4593 &= -8;
 		this.field4593 = (byte)(this.field4593 | var1 & 7);
 	}
 
+	@ObfInfo(name = "af", desc = "(II)V", opaque = "1022938249")
 	public void method7443(int var1) {
 		this.field4593 &= -9;
 		if (var1 == 1) {

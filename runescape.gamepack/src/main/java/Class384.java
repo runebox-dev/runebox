@@ -1,20 +1,37 @@
+import io.runebox.ObfInfo;
 import java.util.zip.CRC32;
 
+@ObfInfo(name = "ot")
 public class Class384 extends Class382 {
+	@ObfInfo(desc = "LClass382;")
 	public static Class382 field2508;
+	@ObfInfo(desc = "Ljava/lang/Thread;")
 	public static Thread field4139;
+	@ObfInfo(name = "av", desc = "Ljava/util/zip/CRC32;")
 	public static CRC32 field4504;
+	@ObfInfo(name = "au", desc = "Loj;")
 	public Class374 field4507;
+	@ObfInfo(name = "at", desc = "Lsf;")
 	public Class474 field4496;
+	@ObfInfo(name = "aa", desc = "Lsf;")
 	public Class474 field4502;
+	@ObfInfo(name = "ao", desc = "Z")
 	public boolean field4499;
+	@ObfInfo(name = "ax", desc = "Z")
 	public boolean field4500;
+	@ObfInfo(name = "ay", desc = "Z")
 	public boolean field4506;
+	@ObfInfo(name = "ae", desc = "I", intMultiplier = 1082476167)
 	public int field4495;
+	@ObfInfo(name = "aq", desc = "I", intMultiplier = -102184105)
 	public int field4497;
+	@ObfInfo(name = "ap", desc = "I", intMultiplier = 586636185)
 	public int field4503;
+	@ObfInfo(name = "ab", desc = "I", intMultiplier = 1444760097)
 	public int field4505;
+	@ObfInfo(name = "ah", desc = "[Z")
 	public volatile boolean[] field4491;
+	@ObfInfo(name = "ac", desc = "I", intMultiplier = -72427953)
 	public volatile int field4498;
 
 	static {
@@ -38,10 +55,12 @@ public class Class384 extends Class382 {
 		this.field4507.method7155(this, this.field4505);
 	}
 
+	@ObfInfo(name = "ak", desc = "(B)Z", opaque = "10")
 	public boolean method7319() {
 		return 1 == this.field4498;
 	}
 
+	@ObfInfo(name = "al", desc = "(I)I", opaque = "12425274")
 	public int method7320() {
 		if (1 != this.field4498 && (!this.field4500 || this.field4498 != 2)) {
 			if (super.field4483 != null) {
@@ -59,10 +78,12 @@ public class Class384 extends Class382 {
 		}
 	}
 
+	@ObfInfo(name = "aj", desc = "(IB)V")
 	public void method7215(int var1) {
 		this.field4507.method7165(this.field4505, var1);
 	}
 
+	@ObfInfo(name = "az", desc = "(II)V", opaque = "-1538423243")
 	public void method7227(int var1) {
 		if (this.field4502 != null && this.field4491 != null && this.field4491[var1]) {
 			Class377.method6694(var1, this.field4502, this);
@@ -72,6 +93,7 @@ public class Class384 extends Class382 {
 
 	}
 
+	@ObfInfo(name = "af", desc = "(I)V")
 	public void method7323() {
 		this.field4498 = 2;
 		super.field4488 = new int[0];
@@ -83,6 +105,7 @@ public class Class384 extends Class382 {
 		super.field4484 = new Object[0][];
 	}
 
+	@ObfInfo(name = "aa", desc = "(IIB)V", opaque = "4")
 	public void method7346(int var1, int var2) {
 		this.field4497 = var1;
 		this.field4503 = var2;
@@ -94,6 +117,7 @@ public class Class384 extends Class382 {
 
 	}
 
+	@ObfInfo(name = "at", desc = "(I[BZZI)V", opaque = "-1803808672")
 	public void method7363(int var1, byte[] var2, boolean var3, boolean var4) {
 		if (var3) {
 			if (this.field4498 == 1) {
@@ -175,6 +199,7 @@ public class Class384 extends Class382 {
 
 	}
 
+	@ObfInfo(name = "ab", desc = "(Lsf;I[BZB)V", opaque = "0")
 	public void method7337(Class474 var1, int var2, byte[] var3, boolean var4) {
 		int var6;
 		if (this.field4496 == var1) {
@@ -253,6 +278,7 @@ public class Class384 extends Class382 {
 		}
 	}
 
+	@ObfInfo(name = "ac", desc = "(I)V", opaque = "1190166585")
 	public void method7326() {
 		this.field4491 = new boolean[super.field4483.length];
 
@@ -301,6 +327,7 @@ public class Class384 extends Class382 {
 		}
 	}
 
+	@ObfInfo(name = "ao", desc = "(IB)I", opaque = "1")
 	public int method7222(int var1) {
 		if (null != super.field4483[var1]) {
 			return 100;
@@ -309,14 +336,17 @@ public class Class384 extends Class382 {
 		}
 	}
 
+	@ObfInfo(name = "ah", desc = "(II)Z")
 	public boolean method7329(int var1) {
 		return this.field4491[var1];
 	}
 
+	@ObfInfo(name = "av", desc = "(II)Z", opaque = "-1225637432")
 	public boolean method7318(int var1) {
 		return this.method7226(var1) != null;
 	}
 
+	@ObfInfo(name = "aq", desc = "(I)I", opaque = "-1920969216")
 	public int method7331() {
 		int var2 = 0;
 		int var3 = 0;
@@ -337,6 +367,7 @@ public class Class384 extends Class382 {
 		}
 	}
 
+	@ObfInfo(name = "ak", desc = "(Lor;B)V")
 	public static void method7366(Class382 var0) {
 		field2508 = var0;
 	}

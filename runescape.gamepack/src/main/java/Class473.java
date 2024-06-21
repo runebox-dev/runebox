@@ -1,14 +1,23 @@
+import io.runebox.ObfInfo;
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStream;
 
+@ObfInfo(name = "se")
 public class Class473 implements Runnable {
+	@ObfInfo(name = "az", desc = "[B")
 	public byte[] field4928;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = -222659867)
 	public int field4925;
+	@ObfInfo(name = "af", desc = "I", intMultiplier = 1402659075)
 	public int field4929;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = -1209319713)
 	public int field4930;
+	@ObfInfo(name = "at", desc = "Ljava/io/IOException;")
 	public IOException field4931;
+	@ObfInfo(name = "al", desc = "Ljava/io/InputStream;")
 	public InputStream field4926;
+	@ObfInfo(name = "ak", desc = "Ljava/lang/Thread;")
 	public Thread field4927;
 
 	public Class473(InputStream var1, int var2) {
@@ -22,6 +31,7 @@ public class Class473 implements Runnable {
 		this.field4927.start();
 	}
 
+	@ObfInfo(desc = "()V")
 	public void run() {
 		while (true) {
 			int var1;
@@ -70,6 +80,7 @@ public class Class473 implements Runnable {
 		}
 	}
 
+	@ObfInfo(name = "ak", desc = "(II)Z", opaque = "1358412808")
 	public boolean method8670(int var1) throws IOException {
 		if (var1 == 0) {
 			return true;
@@ -98,6 +109,7 @@ public class Class473 implements Runnable {
 		}
 	}
 
+	@ObfInfo(name = "al", desc = "(I)I", opaque = "586789280")
 	public int method8657() throws IOException {
 		synchronized(this) {
 			int var3;
@@ -116,6 +128,7 @@ public class Class473 implements Runnable {
 		}
 	}
 
+	@ObfInfo(name = "aj", desc = "(I)I", opaque = "573658722")
 	public int method8656() throws IOException {
 		synchronized(this) {
 			if (this.field4930 == this.field4929) {
@@ -133,6 +146,7 @@ public class Class473 implements Runnable {
 		}
 	}
 
+	@ObfInfo(name = "az", desc = "([BIII)I", opaque = "-1285311469")
 	public int method8659(byte[] var1, int var2, int var3) throws IOException {
 		if (var3 >= 0 && var2 >= 0 && var3 + var2 <= var1.length) {
 			synchronized(this) {
@@ -168,6 +182,7 @@ public class Class473 implements Runnable {
 		}
 	}
 
+	@ObfInfo(name = "af", desc = "(I)V", opaque = "578463986")
 	public void method8660() {
 		synchronized(this) {
 			if (this.field4931 == null) {

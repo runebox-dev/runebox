@@ -1,18 +1,31 @@
+import io.runebox.ObfInfo;
 import java.io.File;
 import java.io.RandomAccessFile;
 import java.util.Arrays;
 
+@ObfInfo(name = "im")
 public class Class221 {
+	@ObfInfo(name = "aa", desc = "Lim;")
 	public static final Class221 field2225;
+	@ObfInfo(name = "ak", desc = "Lim;")
 	public static final Class221 field2226;
+	@ObfInfo(name = "aj", desc = "Lim;")
 	public static final Class221 field2227;
+	@ObfInfo(name = "az", desc = "Lim;")
 	public static final Class221 field2228;
+	@ObfInfo(name = "af", desc = "Lim;")
 	public static final Class221 field2229;
+	@ObfInfo(name = "al", desc = "Lim;")
 	public static final Class221 field2231;
+	@ObfInfo(name = "at", desc = "Lim;")
 	public static final Class221 field2236;
+	@ObfInfo(name = "ah", desc = "[Lim;")
 	public static final Class221[] field2235;
+	@ObfInfo(name = "ac", desc = "I", intMultiplier = -54152801)
 	public final int field2230;
+	@ObfInfo(name = "ab", desc = "I", intMultiplier = 1004792327)
 	public final int field2232;
+	@ObfInfo(name = "ao", desc = "I", intMultiplier = -620293915)
 	public final int field2234;
 
 	static {
@@ -34,10 +47,12 @@ public class Class221 {
 		this.field2234 = var3;
 	}
 
+	@ObfInfo(name = "ak", desc = "(B)I")
 	public int method4166() {
 		return this.field2230 * this.field2234;
 	}
 
+	@ObfInfo(name = "al", desc = "(Ljava/lang/String;I)Ljava/io/File;", opaque = "-2102894791")
 	public static File method4168(String var0) {
 		if (!Class165.field1822) {
 			throw new RuntimeException("");
@@ -78,6 +93,7 @@ public class Class221 {
 		}
 	}
 
+	@ObfInfo(name = "pg", desc = "(I)Z", opaque = "458391555")
 	public static boolean method4169() {
 		return Client.field626 >= 2;
 	}

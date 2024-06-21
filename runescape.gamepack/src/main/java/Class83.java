@@ -1,34 +1,68 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "de")
 public final class Class83 extends Class86 {
+	@ObfInfo(desc = "Ljava/lang/String;")
 	public static String field5475;
+	@ObfInfo(name = "ae", desc = "Lkb;")
 	public Class262 field1031;
+	@ObfInfo(name = "al", desc = "Lnt;")
 	public Class358 field1029;
+	@ObfInfo(name = "ag", desc = "Lsi;")
 	public Class477 field1008;
+	@ObfInfo(name = "bs", desc = "Lsi;")
 	public Class477 field1032;
+	@ObfInfo(name = "bf", desc = "Lsi;")
 	public Class477 field1033;
+	@ObfInfo(name = "ak", desc = "Lvv;")
 	public Class567 field1025;
+	@ObfInfo(name = "bn", desc = "Ldt;")
 	public Class98 field1007;
+	@ObfInfo(name = "ai", desc = "Z")
 	public boolean field1015;
+	@ObfInfo(name = "aw", desc = "Z")
 	public boolean field1026;
+	@ObfInfo(name = "bo", desc = "Z")
 	public boolean field1034;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = 1181672555)
 	public int field1009;
+	@ObfInfo(name = "az", desc = "I", intMultiplier = -1473193873)
 	public int field1010;
+	@ObfInfo(name = "as", desc = "I", intMultiplier = 1900830555)
 	public int field1013;
+	@ObfInfo(name = "ab", desc = "I", intMultiplier = 1346184075)
 	public int field1014;
+	@ObfInfo(name = "ao", desc = "I", intMultiplier = 1240607451)
 	public int field1016;
+	@ObfInfo(name = "ah", desc = "I", intMultiplier = -276492539)
 	public int field1017;
+	@ObfInfo(name = "av", desc = "I", intMultiplier = -945585951)
 	public int field1018;
+	@ObfInfo(name = "aq", desc = "I", intMultiplier = -59454839)
 	public int field1019;
+	@ObfInfo(name = "at", desc = "I", intMultiplier = -1989491569)
 	public int field1020;
+	@ObfInfo(name = "ac", desc = "I", intMultiplier = -364235779)
 	public int field1021;
+	@ObfInfo(name = "ax", desc = "I", intMultiplier = 1883337735)
 	public int field1022;
+	@ObfInfo(name = "am", desc = "I", intMultiplier = -1273931853)
 	public int field1023;
+	@ObfInfo(name = "au", desc = "I", intMultiplier = -1258225711)
 	public int field1024;
+	@ObfInfo(name = "ap", desc = "I", intMultiplier = -1258235987)
 	public int field1027;
+	@ObfInfo(name = "ay", desc = "I", intMultiplier = 1995509191)
 	public int field1028;
+	@ObfInfo(name = "ar", desc = "I", intMultiplier = -1451120567)
 	public int field1030;
+	@ObfInfo(name = "bi", desc = "I", intMultiplier = -393423257)
 	public int field1035;
+	@ObfInfo(name = "bt", desc = "I", intMultiplier = 1697985689)
 	public int field1036;
+	@ObfInfo(name = "ad", desc = "I", intMultiplier = -1205493335)
 	public int field1037;
+	@ObfInfo(name = "aa", desc = "[Ljava/lang/String;")
 	public String[] field1012;
 
 	public Class83() {
@@ -54,6 +88,7 @@ public final class Class83 extends Class86 {
 		this.field1007 = Client.field3857;
 	}
 
+	@ObfInfo(name = "aq", desc = "(Lua;I)V", opaque = "1827607702")
 	public final void method2270(Class521 var1) {
 		var1.field5219 = 0;
 		byte var3 = var1.method9406();
@@ -230,6 +265,7 @@ public final class Class83 extends Class86 {
 		this.field1029.method7076(var28, var6, var30, var31, var29, var3, var5, var27);
 	}
 
+	@ObfInfo(name = "ap", desc = "(I)Z", opaque = "-2142454980")
 	public boolean method2250() {
 		if (Class477.field4944 == this.field1008) {
 			this.method2252();
@@ -238,14 +274,17 @@ public final class Class83 extends Class86 {
 		return this.field1008 == Class477.field4943;
 	}
 
+	@ObfInfo(name = "ae", desc = "(I)V")
 	public void method2251() {
 		this.field1008 = Class477.field4944;
 	}
 
+	@ObfInfo(name = "ax", desc = "(B)V", opaque = "2")
 	public void method2252() {
 		this.field1008 = Client.field274.method1888(this.field1025) ? Class477.field4943 : Class477.field4942;
 	}
 
+	@ObfInfo(name = "ay", desc = "(B)Z", opaque = "0")
 	public boolean method2253() {
 		if (Class477.field4944 == this.field1032) {
 			this.method2255();
@@ -254,14 +293,17 @@ public final class Class83 extends Class86 {
 		return this.field1032 == Class477.field4943;
 	}
 
+	@ObfInfo(name = "au", desc = "(B)V")
 	public void method2254() {
 		this.field1032 = Class477.field4944;
 	}
 
+	@ObfInfo(name = "as", desc = "(B)V", opaque = "1")
 	public void method2255() {
 		this.field1032 = Client.field1420 != null && Client.field1420.method8731(this.field1025) ? Class477.field4943 : Class477.field4942;
 	}
 
+	@ObfInfo(name = "aw", desc = "(I)V", opaque = "1795902773")
 	public void method2256() {
 		for (int var2 = 0; var2 < 4; ++var2) {
 			if (null != Client.field670[var2] && Client.field670[var2].method3354(this.field1025.method10260()) != -1 && var2 != 2) {
@@ -273,10 +315,12 @@ public final class Class83 extends Class86 {
 		this.field1033 = Class477.field4942;
 	}
 
+	@ObfInfo(name = "ad", desc = "(I)V")
 	public void method2257() {
 		this.field1033 = Class477.field4944;
 	}
 
+	@ObfInfo(name = "ai", desc = "(I)Z")
 	public boolean method2293() {
 		if (Class477.field4944 == this.field1033) {
 			this.method2256();
@@ -285,10 +329,12 @@ public final class Class83 extends Class86 {
 		return this.field1033 == Class477.field4943;
 	}
 
+	@ObfInfo(name = "an", desc = "(B)I")
 	public int method2258() {
 		return this.field1029 != null && -1 != this.field1029.field3954 ? Class225.method3256(this.field1029.field3954).field2320 : 1;
 	}
 
+	@ObfInfo(name = "ah", desc = "(I)Lkb;", opaque = "102285859")
 	public final Class262 method1092() {
 		if (this.field1029 == null) {
 			return null;
@@ -358,6 +404,7 @@ public final class Class83 extends Class86 {
 		}
 	}
 
+	@ObfInfo(name = "am", desc = "(Ldt;IILjv;B)V", opaque = "4")
 	public final void method2261(Class98 var1, int var2, int var3, Class256 var4) {
 		if (-1 != super.field1074 && Class237.method4637(super.field1074).field2141 == 1) {
 			super.field1074 = -1;
@@ -380,6 +427,7 @@ public final class Class83 extends Class86 {
 
 	}
 
+	@ObfInfo(name = "ar", desc = "(III)V")
 	public void method2249(int var1, int var2) {
 		super.field1125 = 0;
 		super.field1077 = 0;
@@ -391,6 +439,7 @@ public final class Class83 extends Class86 {
 		super.field1126 = super.field1127[0] * 128 + var4 * 64;
 	}
 
+	@ObfInfo(name = "ag", desc = "(IILjv;I)V", opaque = "1482629100")
 	public final void method2263(int var1, int var2, Class256 var3) {
 		if (super.field1125 < 9) {
 			++super.field1125;
@@ -407,10 +456,12 @@ public final class Class83 extends Class86 {
 		super.field1128[0] = var3;
 	}
 
+	@ObfInfo(name = "bs", desc = "(I)Z", opaque = "1426949207")
 	public final boolean method2264() {
 		return this.field1029 != null;
 	}
 
+	@ObfInfo(name = "bq", desc = "([BIB)I")
 	public static int method2298(byte[] var0, int var1) {
 		int var4 = -1;
 
@@ -422,6 +473,7 @@ public final class Class83 extends Class86 {
 		return var4;
 	}
 
+	@ObfInfo(name = "aj", desc = "(CB)C", opaque = "1")
 	public static char method2297(char var0) {
 		if (var0 == 198) {
 			return 'E';
@@ -436,6 +488,7 @@ public final class Class83 extends Class86 {
 		}
 	}
 
+	@ObfInfo(name = "bv", desc = "(Lnb;IB)V", opaque = "1")
 	public static void method2274(Class340 var0, int var1) {
 		Class232 var3 = Class7.method109(var1);
 		var0.field3764.field3950[var3.field2468] = var1 + 512;

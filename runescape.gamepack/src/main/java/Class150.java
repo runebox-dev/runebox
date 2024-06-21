@@ -1,10 +1,20 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "ft")
 public class Class150 implements Class393 {
+	@ObfInfo(name = "aj", desc = "Lft;")
 	public static final Class150 field1686;
+	@ObfInfo(name = "al", desc = "Lft;")
 	public static final Class150 field1687;
+	@ObfInfo(name = "ak", desc = "Lft;")
 	public static final Class150 field1688;
+	@ObfInfo(name = "az", desc = "Lft;")
 	public static final Class150 field1689;
+	@ObfInfo(name = "af", desc = "Lft;")
 	public static final Class150 field1690;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = -510503497)
 	public final int field1691;
+	@ObfInfo(name = "at", desc = "I", intMultiplier = 1684075565)
 	public final int field1692;
 
 	static {
@@ -20,6 +30,7 @@ public class Class150 implements Class393 {
 		this.field1692 = var2;
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)I")
 	public int method175() {
 		return this.field1692;
 	}

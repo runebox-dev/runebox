@@ -1,10 +1,20 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "ig")
 public class Class215 {
+	@ObfInfo(name = "al", desc = "Lig;")
 	public static final Class215 field2170;
+	@ObfInfo(name = "ak", desc = "Lig;")
 	public static final Class215 field2171;
+	@ObfInfo(name = "aj", desc = "Lig;")
 	public static final Class215 field2172;
+	@ObfInfo(name = "az", desc = "Lig;")
 	public static final Class215 field2173;
+	@ObfInfo(name = "af", desc = "Lig;")
 	public static final Class215 field2174;
+	@ObfInfo(name = "aa", desc = "Lig;")
 	public static final Class215 field2175;
+	@ObfInfo(name = "at", desc = "Lig;")
 	public static final Class215 field2177;
 
 	static {

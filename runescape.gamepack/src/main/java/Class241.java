@@ -1,12 +1,24 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "jg")
 public class Class241 extends Class272 {
+	@ObfInfo(name = "ak", desc = "I", intMultiplier = -653944201)
 	public int field2601;
+	@ObfInfo(name = "al", desc = "I", intMultiplier = -1004642109)
 	public int field2602;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = -1404479995)
 	public int field2603;
+	@ObfInfo(name = "az", desc = "I", intMultiplier = 331009503)
 	public int field2604;
+	@ObfInfo(name = "ab", desc = "I", intMultiplier = -174075279)
 	public int field2605;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = 1392008033)
 	public int field2606;
+	@ObfInfo(name = "at", desc = "I", intMultiplier = 169206163)
 	public int field2607;
+	@ObfInfo(name = "af", desc = "I", intMultiplier = 490189557)
 	public int field2608;
+	@ObfInfo(name = "ac", desc = "I", intMultiplier = -1543758921)
 	public int field2609;
 
 	public Class241(int var1, int var2, int var3, int var4, int var5) {
@@ -21,10 +33,12 @@ public class Class241 extends Class272 {
 		this.field2609 = Class253.field2687[var5];
 	}
 
+	@ObfInfo(name = "ak", desc = "(Lju;IIIIJ)V")
 	public void method4663(Class255 var1, int var2, int var3, int var4, int var5, long var6) {
 		var1.method4892(var2, this.field2604, this.field2608, var3, var4, var5, this.field2601, this.field2602, this.field2603, var6);
 	}
 
+	@ObfInfo(name = "al", desc = "(Ljy;Lkg;IIIB)V", opaque = "13")
 	public void method4662(Class259 var1, Class267 var2, int var3, int var4, int var5) {
 		int var7;
 		int var8 = var7 = (var4 << 7) - this.field2601;
@@ -72,6 +86,7 @@ public class Class241 extends Class272 {
 		}
 	}
 
+	@ObfInfo(name = "aj", desc = "(Ljy;Lke;IIB)V", opaque = "7")
 	public void method4672(Class259 var1, Class265 var2, int var3, int var4) {
 		int var6 = var2.field2924.length;
 

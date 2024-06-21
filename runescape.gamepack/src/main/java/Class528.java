@@ -1,17 +1,30 @@
+import io.runebox.ObfInfo;
 import java.io.EOFException;
 import java.io.IOException;
 
+@ObfInfo(name = "uh")
 public class Class528 {
+	@ObfInfo(name = "al", desc = "Lue;")
 	public Class525 field5249;
+	@ObfInfo(name = "aa", desc = "[B")
 	public byte[] field5240;
+	@ObfInfo(name = "aj", desc = "[B")
 	public byte[] field5242;
+	@ObfInfo(name = "ab", desc = "I", intMultiplier = 1253438251)
 	public int field5241;
+	@ObfInfo(name = "af", desc = "I", intMultiplier = -1732989079)
 	public int field5244;
+	@ObfInfo(name = "az", desc = "J", longMultiplier = 899926142809865361L)
 	public long field5243;
+	@ObfInfo(name = "ac", desc = "J", longMultiplier = 6633076167208672283L)
 	public long field5245;
+	@ObfInfo(name = "at", desc = "J", longMultiplier = -7787186892209263085L)
 	public long field5246;
+	@ObfInfo(name = "ao", desc = "J", longMultiplier = -6408089809225312719L)
 	public long field5248;
+	@ObfInfo(name = "ah", desc = "J", longMultiplier = 2542749063148288171L)
 	public long field5250;
+	@ObfInfo(name = "av", desc = "J", longMultiplier = 7154794803375498677L)
 	public long field5251;
 
 	public Class528(Class525 var1, int var2, int var3) throws IOException {
@@ -25,11 +38,13 @@ public class Class528 {
 		this.field5245 = 0L;
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)V")
 	public void method9707() throws IOException {
 		this.method9739();
 		this.field5249.method9672();
 	}
 
+	@ObfInfo(name = "al", desc = "(J)V")
 	public void method9736(long var1) throws IOException {
 		if (var1 < 0L) {
 			throw new IOException("");
@@ -38,14 +53,17 @@ public class Class528 {
 		}
 	}
 
+	@ObfInfo(name = "aj", desc = "(I)J")
 	public long method9714() {
 		return this.field5250;
 	}
 
+	@ObfInfo(name = "az", desc = "([BB)V")
 	public void method9710(byte[] var1) throws IOException {
 		this.method9711(var1, 0, var1.length);
 	}
 
+	@ObfInfo(name = "af", desc = "([BIII)V", opaque = "1240372088")
 	public void method9711(byte[] var1, int var2, int var3) throws IOException {
 		try {
 			if (var3 + var2 > var1.length) {
@@ -146,6 +164,7 @@ public class Class528 {
 		}
 	}
 
+	@ObfInfo(name = "aa", desc = "(I)V", opaque = "538017042")
 	public void method9712() throws IOException {
 		this.field5244 = 0;
 		if (this.field5251 != this.field5245) {
@@ -170,6 +189,7 @@ public class Class528 {
 
 	}
 
+	@ObfInfo(name = "at", desc = "([BIIB)V", opaque = "1")
 	public void method9709(byte[] var1, int var2, int var3) throws IOException {
 		try {
 			if ((long)var3 + this.field5245 > this.field5250) {
@@ -242,6 +262,7 @@ public class Class528 {
 		}
 	}
 
+	@ObfInfo(name = "ab", desc = "(B)V", opaque = "0")
 	public void method9739() throws IOException {
 		if (-1L != this.field5246) {
 			if (this.field5246 != this.field5251) {

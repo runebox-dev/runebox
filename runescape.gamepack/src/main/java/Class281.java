@@ -1,9 +1,17 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "ku")
 public class Class281 extends Class303 {
+	@ObfInfo(name = "az", desc = "I", intMultiplier = -988032613)
 	public int field3100;
+	@ObfInfo(name = "ak", desc = "I", intMultiplier = 235439019)
 	public int field3101;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = 2059766783)
 	public int field3102;
+	@ObfInfo(name = "al", desc = "I", intMultiplier = 1698399857)
 	public int field3103;
 
+	@ObfInfo(name = "ak", desc = "(Lua;I)V", opaque = "1376822381")
 	public void method5696(Class521 var1) {
 		int var3 = var1.method9405();
 		if (var3 != Class300.field3201.field3202) {
@@ -24,6 +32,7 @@ public class Class281 extends Class303 {
 		}
 	}
 
+	@ObfInfo(name = "al", desc = "(Lua;I)V", opaque = "-1130621028")
 	public void method5697(Class521 var1) {
 		super.field3215 = Math.min(super.field3215, 4);
 		super.field3218 = new short[1][64][64];
@@ -52,6 +61,7 @@ public class Class281 extends Class303 {
 		}
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
 	public boolean equals(Object var1) {
 		if (!(var1 instanceof Class281)) {
 			return false;
@@ -65,26 +75,32 @@ public class Class281 extends Class303 {
 		}
 	}
 
+	@ObfInfo(desc = "()I")
 	public int hashCode() {
 		return super.field3223 | super.field3213 << 8 | this.field3102 << 16 | this.field3100 << 24;
 	}
 
+	@ObfInfo(name = "aj", desc = "(I)I")
 	public int method5699() {
 		return this.field3101;
 	}
 
+	@ObfInfo(name = "af", desc = "(I)I")
 	public int method5710() {
 		return this.field3103;
 	}
 
+	@ObfInfo(name = "aa", desc = "(I)I")
 	public int method5700() {
 		return this.field3102;
 	}
 
+	@ObfInfo(name = "at", desc = "(B)I")
 	public int method5701() {
 		return this.field3100;
 	}
 
+	@ObfInfo(name = "al", desc = "(IS)Lii;", opaque = "8191")
 	public static Class217 method5716(int var0) {
 		Class217 var2 = (Class217)Class217.field2188.method5993((long)var0);
 		if (var2 != null) {
@@ -102,6 +118,7 @@ public class Class281 extends Class303 {
 		}
 	}
 
+	@ObfInfo(name = "pf", desc = "(IB)V")
 	public static void method5712(int var0) {
 		Client.field577 = var0;
 	}

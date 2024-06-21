@@ -1,13 +1,20 @@
+import io.runebox.ObfInfo;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+@ObfInfo(name = "oa")
 public class Class365 {
+	@ObfInfo(name = "af", desc = "Ljava/util/Comparator;")
 	public static Comparator field3987;
+	@ObfInfo(name = "aj", desc = "Ljava/util/Comparator;")
 	public static Comparator field3988;
+	@ObfInfo(name = "az", desc = "Ljava/util/Comparator;")
 	public static Comparator field3989;
+	@ObfInfo(name = "al", desc = "Ljava/util/Comparator;")
 	public static Comparator field3990;
+	@ObfInfo(name = "ak", desc = "Ljava/util/List;")
 	public final List field3986;
 
 	static {
@@ -37,6 +44,7 @@ public class Class365 {
 
 	}
 
+	@ObfInfo(name = "ak", desc = "(Ljava/util/Comparator;ZB)V", opaque = "13")
 	public void method7125(Comparator var1, boolean var2) {
 		if (var2) {
 			Collections.sort(this.field3986, var1);

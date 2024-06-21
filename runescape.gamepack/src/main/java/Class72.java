@@ -1,3 +1,4 @@
+import io.runebox.ObfInfo;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -5,29 +6,53 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
+@ObfInfo(name = "ct")
 public class Class72 {
+	@ObfInfo(desc = "LClass159;")
 	public static Class159 field3527;
+	@ObfInfo(desc = "LClass171;")
 	public static Class171 field4874;
+	@ObfInfo(desc = "LClass309;")
 	public static Class309 field1483;
+	@ObfInfo(desc = "LClass340;")
 	public static Class340 field88;
+	@ObfInfo(name = "ae", desc = "Lnb;")
 	public static Class340 field892;
+	@ObfInfo(name = "aq", desc = "[Lcr;")
 	public static Class70[] field882;
+	@ObfInfo(name = "ai", desc = "Z")
 	public static boolean field886;
+	@ObfInfo(name = "an", desc = "Z")
 	public static boolean field890;
+	@ObfInfo(desc = "I", intMultiplier = 1484412449)
 	public static int field3177;
+	@ObfInfo(name = "av", desc = "I", intMultiplier = 359682213)
 	public static int field881;
+	@ObfInfo(name = "ar", desc = "I", intMultiplier = -322801345)
 	public static int field896;
+	@ObfInfo(name = "aa", desc = "[I")
 	public static int[] field877;
+	@ObfInfo(name = "az", desc = "[I")
 	public static int[] field878;
+	@ObfInfo(name = "ab", desc = "[I")
 	public static int[] field887;
+	@ObfInfo(name = "at", desc = "[[I")
 	public static int[][] field879;
+	@ObfInfo(desc = "[Ljava/lang/String;")
 	public static String[] field1537;
+	@ObfInfo(name = "ao", desc = "[Ljava/lang/String;")
 	public static String[] field880;
+	@ObfInfo(name = "am", desc = "Ljava/util/ArrayList;")
 	public static ArrayList field888;
+	@ObfInfo(name = "as", desc = "Ljava/util/Calendar;")
 	public static Calendar field884;
+	@ObfInfo(desc = "Ljava/util/Iterator;")
 	public static Iterator field3170;
+	@ObfInfo(desc = "Ljava/util/List;")
 	public static List field3176;
+	@ObfInfo(name = "bo", desc = "D")
 	public static final double field889;
+	@ObfInfo(name = "aw", desc = "[Ljava/lang/String;")
 	public static final String[] field885;
 
 	static {
@@ -46,10 +71,12 @@ public class Class72 {
 		field889 = Math.log(2.0D);
 	}
 
+	@ObfInfo(desc = "(LClass101;)V")
 	public static void method7210(Class101 var0) {
 		method3072(var0, 500000, 475000);
 	}
 
+	@ObfInfo(desc = "(LClass101;II)V")
 	public static void method3072(Class101 var0, int var1, int var2) {
 		Object[] var4 = var0.field1333;
 		Class91 var5;
@@ -68,6 +95,7 @@ public class Class72 {
 
 	}
 
+	@ObfInfo(desc = "(LClass101;LClass91;II)V")
 	public static void method4053(Class101 var0, Class91 var1, int var2, int var3) {
 		Object[] var5 = var0.field1333;
 		Class85.field83 = 0;
@@ -454,6 +482,7 @@ public class Class72 {
 
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method3709(int var0, Class91 var1, boolean var2) {
 		if (var0 < 1000) {
 			return method6443(var0, var1, var2);
@@ -556,6 +585,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method6443(int var0, Class91 var1, boolean var2) {
 		int var4;
 		int var5;
@@ -659,6 +689,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method7558(int var0, Class91 var1, boolean var2) {
 		int var4 = -1;
 		Class340 var5;
@@ -715,6 +746,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method6837(int var0, Class91 var1, boolean var2) {
 		int var5 = -1;
 		Class340 var4;
@@ -1144,6 +1176,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method804(int var0, Class91 var1, boolean var2) {
 		Class340 var4;
 		if (var0 >= 2000) {
@@ -1229,6 +1262,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(LClass340;I[B[B)V")
 	public static void method6717(Class340 var0, int var1, byte[] var2, byte[] var3) {
 		if (var0.field3753 == null) {
 			if (var2 == null) {
@@ -1258,6 +1292,7 @@ public class Class72 {
 		var0.field3735[var1] = var3;
 	}
 
+	@ObfInfo(desc = "(LClass340;III)V")
 	public static void method3690(Class340 var0, int var1, int var2, int var3) {
 		if (var0.field3697 == null) {
 			throw new RuntimeException();
@@ -1267,6 +1302,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method3419(int var0, Class91 var1, boolean var2) {
 		Class340 var4;
 		if (var0 >= 2000) {
@@ -1398,6 +1434,7 @@ public class Class72 {
 		return 1;
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method7764(int var0, Class91 var1, boolean var2) {
 		Class340 var4 = var2 ? field892 : field88;
 		if (var0 == 1500) {
@@ -1423,6 +1460,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method24(int var0, Class91 var1, boolean var2) {
 		Class340 var4 = var2 ? field892 : field88;
 		if (var0 == 1600) {
@@ -1570,6 +1608,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method8836(int var0, Class91 var1, boolean var2) {
 		Class340 var4 = var2 ? field892 : field88;
 		if (var0 == 1700) {
@@ -1596,6 +1635,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(LClass340;)I")
 	public static int method6300(Class340 var0) {
 		if (var0.field3755 != 11) {
 			field880[Class85.field1806 - 1] = "";
@@ -1607,6 +1647,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method6162(int var0, Class91 var1, boolean var2) {
 		Class340 var4 = var2 ? field892 : field88;
 		if (var0 == 1800) {
@@ -1637,6 +1678,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method2892(int var0, Class91 var1, boolean var2) {
 		Class340 var4;
 		if (var0 != 1927 && var0 != 2927) {
@@ -1688,6 +1730,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method3237(int var0, Class91 var1, boolean var2) {
 		Class340 var4 = Client.field25.method6718(field887[--Class85.field83]);
 		if (var0 == 2500) {
@@ -1713,6 +1756,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method2949(int var0, Class91 var1, boolean var2) {
 		Class340 var4 = Client.field25.method6718(field887[--Class85.field83]);
 		if (var0 == 2600) {
@@ -1852,6 +1896,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method7190(int var0, Class91 var1, boolean var2) {
 		Class340 var4;
 		if (var0 == 2700) {
@@ -1895,6 +1940,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method5161(int var0, Class91 var1, boolean var2) {
 		Class340 var4 = Client.field25.method6718(field887[--Class85.field83]);
 		if (var0 == 2800) {
@@ -1925,6 +1971,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method7531(int var0, Class91 var1, boolean var2) {
 		String var14;
 		if (var0 == 3100) {
@@ -2294,6 +2341,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method863(int var0, Class91 var1, boolean var2) {
 		if (var0 == 3200) {
 			Class85.field83 -= 3;
@@ -2627,6 +2675,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method3585(int var0, Class91 var1, boolean var2) {
 		if (var0 == 3300) {
 			field887[++Class85.field83 - 1] = Client.field778;
@@ -2771,6 +2820,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method6693(int var0, Class91 var1, boolean var2) {
 		int var4;
 		int var5;
@@ -2847,6 +2897,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method4760(int var0, Class91 var1, boolean var2) {
 		int var4;
 		if (var0 == 3500) {
@@ -2866,10 +2917,12 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method8552(int var0, Class91 var1, boolean var2) {
 		return 2;
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method3053(int var0, Class91 var1, boolean var2) {
 		if (var0 == 3800) {
 			if (Client.field2020 != null) {
@@ -3038,6 +3091,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method7202(int var0, Class91 var1, boolean var2) {
 		int var4;
 		if (var0 == 3903) {
@@ -3183,6 +3237,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method8961(int var0, Class91 var1, boolean var2) {
 		int var5;
 		int var10;
@@ -3410,6 +3465,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method7966(int var0, Class91 var1, boolean var2) {
 		String var4;
 		int var10;
@@ -3610,6 +3666,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method8962(int var0, Class91 var1, boolean var2) {
 		int var4;
 		if (var0 == 4200) {
@@ -3754,6 +3811,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method6271(int var0, Class91 var1, boolean var2) {
 		if (var0 == 5000) {
 			field887[++Class85.field83 - 1] = Client.field716;
@@ -3972,6 +4030,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method190(int var0, Class91 var1, boolean var2) {
 		if (var0 == 5306) {
 			field887[++Class85.field83 - 1] = Client.method9643();
@@ -4006,6 +4065,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method3624(int var0, Class91 var1, boolean var2) {
 		int var4;
 		if (var0 == 5504) {
@@ -4040,6 +4100,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method7380(int var0, Class91 var1, boolean var2) {
 		if (var0 == 5630) {
 			Client.field549 = 250;
@@ -4049,14 +4110,17 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(I)I")
 	public static int method1803(int var0) {
 		return (int)Math.pow(2.0D, (double)(7.0F + (float)var0 / 256.0F));
 	}
 
+	@ObfInfo(desc = "(I)I")
 	public static int method5782(int var0) {
 		return (int)((Math.log((double)var0) / field889 - 7.0D) * 256.0D);
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method6167(int var0, Class91 var1, boolean var2) {
 		if (var0 == 6200) {
 			Class85.field83 -= 2;
@@ -4147,6 +4211,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method3753(int var0, Class91 var1, boolean var2) {
 		if (var0 == 6500) {
 			field887[++Class85.field83 - 1] = Class64.method7411() ? 1 : 0;
@@ -4345,6 +4410,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method327(int var0, Class91 var1, boolean var2) {
 		int var4;
 		if (var0 == 6600) {
@@ -4697,6 +4763,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method69(int var0, Class91 var1, boolean var2) {
 		if (var0 == 6754) {
 			int var6 = field887[--Class85.field83];
@@ -4722,6 +4789,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method3257(int var0, Class91 var1, boolean var2) {
 		if (var0 == 6809) {
 			int var4 = field887[--Class85.field83];
@@ -4733,14 +4801,17 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method2947(int var0, Class91 var1, boolean var2) {
 		return 2;
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method7118(int var0, Class91 var1, boolean var2) {
 		return 2;
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method7378(int var0, Class91 var1, boolean var2) {
 		if (var0 == 7108) {
 			field887[++Class85.field83 - 1] = Client.method3273() ? 1 : 0;
@@ -4750,6 +4821,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method7139(int var0, Class91 var1, boolean var2) {
 		if (var0 == 7463) {
 			boolean var4 = field887[--Class85.field83] == 1;
@@ -4760,6 +4832,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method4223(int var0, Class91 var1, boolean var2) {
 		int var4;
 		Object var5;
@@ -4956,6 +5029,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass91;Z)I")
 	public static int method7810(int var0, Class91 var1, boolean var2) {
 		int var4;
 		int var5;
@@ -4982,6 +5056,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(I)V")
 	public static void method35(int var0) {
 		if (var0 != -1) {
 			if (Client.field25.method6720(var0)) {
@@ -5001,6 +5076,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(ILClass348;Z)V")
 	public static void method5323(int var0, Class348 var1, boolean var2) {
 		Class286 var4 = Client.method3301().method9019(var0);
 		int var5 = Client.field107.field1023;
@@ -5010,6 +5086,7 @@ public class Class72 {
 		Client.method3301().method9037(var4, var8, var1, var2);
 	}
 
+	@ObfInfo(desc = "(LClass545;)Ljava/lang/Object;")
 	public static Object method3094(Class545 var0) {
 		if (var0 == null) {
 			throw new IllegalStateException("popValueOfType() failure - null baseVarType");
@@ -5025,6 +5102,7 @@ public class Class72 {
 		}
 	}
 
+	@ObfInfo(desc = "(I)Ljava/lang/Object;")
 	public static Object method5884(int var0) {
 		return method3094((Class545)Class62.method1112(Class545.method9900(), var0));
 	}

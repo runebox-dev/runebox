@@ -1,8 +1,13 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "vi")
 public class Class554 {
+	@ObfInfo(desc = "(LClass382;II)[LClass557;")
 	public static Class557[] method7961(Class382 var0, int var1, int var2) {
 		return !method2876(var0, var1, var2) ? null : Class81.method2244();
 	}
 
+	@ObfInfo(desc = "(LClass382;II)LClass557;")
 	public static Class557 method7680(Class382 var0, int var1, int var2) {
 		if (!method2876(var0, var1, var2)) {
 			return null;
@@ -26,10 +31,12 @@ public class Class554 {
 		}
 	}
 
+	@ObfInfo(desc = "(LClass382;II)[LClass549;")
 	public static Class549[] method6029(Class382 var0, int var1, int var2) {
 		return !method2876(var0, var1, var2) ? null : method4391();
 	}
 
+	@ObfInfo(desc = "(LClass382;II)LClass549;")
 	public static Class549 method9868(Class382 var0, int var1, int var2) {
 		if (!method2876(var0, var1, var2)) {
 			return null;
@@ -59,6 +66,7 @@ public class Class554 {
 		}
 	}
 
+	@ObfInfo(desc = "(LClass382;Ljava/lang/String;Ljava/lang/String;)[LClass557;")
 	public static Class557[] method3837(Class382 var0, String var1, String var2) {
 		if (!var0.method7235(var1, var2)) {
 			return null;
@@ -69,6 +77,7 @@ public class Class554 {
 		}
 	}
 
+	@ObfInfo(desc = "(LClass382;Ljava/lang/String;Ljava/lang/String;)LClass557;")
 	public static Class557 method8860(Class382 var0, String var1, String var2) {
 		if (!var0.method7235(var1, var2)) {
 			return null;
@@ -79,6 +88,7 @@ public class Class554 {
 		}
 	}
 
+	@ObfInfo(desc = "(LClass382;I)LClass557;")
 	public static Class557 method3054(Class382 var0, int var1) {
 		if (!method7874(var0, var1)) {
 			return null;
@@ -102,6 +112,7 @@ public class Class554 {
 		}
 	}
 
+	@ObfInfo(desc = "()[LClass549;")
 	public static Class549[] method4391() {
 		Class549[] var1 = new Class549[Class81.field5378];
 
@@ -131,6 +142,7 @@ public class Class554 {
 		return var1;
 	}
 
+	@ObfInfo(desc = "(LClass382;II)Z")
 	public static boolean method2876(Class382 var0, int var1, int var2) {
 		byte[] var4 = var0.method7216(var1, var2);
 		if (var4 == null) {
@@ -141,6 +153,7 @@ public class Class554 {
 		}
 	}
 
+	@ObfInfo(desc = "(LClass382;I)Z")
 	public static boolean method7874(Class382 var0, int var1) {
 		byte[] var3 = var0.method7221(var1);
 		if (var3 == null) {
@@ -151,6 +164,7 @@ public class Class554 {
 		}
 	}
 
+	@ObfInfo(desc = "([B)V")
 	public static void method3794(byte[] var0) {
 		Class521 var2 = new Class521(var0);
 		var2.field5219 = var0.length - 2;

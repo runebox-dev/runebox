@@ -1,18 +1,36 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "bz")
 public class Class52 extends Class27 {
+	@ObfInfo(name = "ah", desc = "Z")
 	public boolean field358;
+	@ObfInfo(name = "aa", desc = "I")
 	public int field348;
+	@ObfInfo(name = "al", desc = "I")
 	public int field349;
+	@ObfInfo(name = "ap", desc = "I")
 	public int field350;
+	@ObfInfo(name = "at", desc = "I")
 	public int field351;
+	@ObfInfo(name = "af", desc = "I")
 	public int field352;
+	@ObfInfo(name = "ak", desc = "I")
 	public int field353;
+	@ObfInfo(name = "aj", desc = "I")
 	public int field354;
+	@ObfInfo(name = "ab", desc = "I")
 	public int field355;
+	@ObfInfo(name = "ac", desc = "I")
 	public int field356;
+	@ObfInfo(name = "ao", desc = "I")
 	public int field357;
+	@ObfInfo(name = "av", desc = "I")
 	public int field359;
+	@ObfInfo(name = "aq", desc = "I")
 	public int field360;
+	@ObfInfo(name = "ae", desc = "I")
 	public int field361;
+	@ObfInfo(name = "az", desc = "I")
 	public int field362;
 
 	public Class52(Class44 var1, int var2, int var3) {
@@ -39,6 +57,7 @@ public class Class52 extends Class27 {
 		this.method920();
 	}
 
+	@ObfInfo(name = "bp", desc = "()I")
 	public int method377() {
 		int var1 = this.field352 * 3 >> 6;
 		var1 = (var1 ^ var1 >> 31) + (var1 >>> 31);
@@ -51,24 +70,29 @@ public class Class52 extends Class27 {
 		return var1 > 255 ? 255 : var1;
 	}
 
+	@ObfInfo(name = "af", desc = "()V")
 	public void method920() {
 		this.field352 = this.field354;
 		this.field348 = method940(this.field354, this.field362);
 		this.field351 = method913(this.field354, this.field362);
 	}
 
+	@ObfInfo(name = "ao", desc = "(I)V")
 	public synchronized void method921(int var1) {
 		this.field355 = var1;
 	}
 
+	@ObfInfo(name = "av", desc = "(I)V")
 	public synchronized void method922(int var1) {
 		this.method1048(var1 << 6, this.method916());
 	}
 
+	@ObfInfo(name = "aq", desc = "(I)V")
 	public synchronized void method923(int var1) {
 		this.method1048(var1, this.method916());
 	}
 
+	@ObfInfo(name = "ap", desc = "(II)V")
 	public synchronized void method1048(int var1, int var2) {
 		this.field354 = var1;
 		this.field362 = var2;
@@ -76,14 +100,17 @@ public class Class52 extends Class27 {
 		this.method920();
 	}
 
+	@ObfInfo(name = "ae", desc = "()I")
 	public synchronized int method995() {
 		return this.field354 == Integer.MIN_VALUE ? 0 : this.field354;
 	}
 
+	@ObfInfo(name = "ax", desc = "()I")
 	public synchronized int method916() {
 		return this.field362 < 0 ? -1 : this.field362;
 	}
 
+	@ObfInfo(name = "ay", desc = "(I)V")
 	public synchronized void method927(int var1) {
 		int var2 = ((Class44)super.field138).field314.length << 8;
 		if (var1 < -1) {
@@ -97,6 +124,7 @@ public class Class52 extends Class27 {
 		this.field353 = var1;
 	}
 
+	@ObfInfo(name = "au", desc = "(Z)V")
 	public synchronized void method928(boolean var1) {
 		this.field349 = (this.field349 ^ this.field349 >> 31) + (this.field349 >>> 31);
 		if (var1) {
@@ -105,6 +133,7 @@ public class Class52 extends Class27 {
 
 	}
 
+	@ObfInfo(name = "as", desc = "()V")
 	public void method929() {
 		if (this.field359 != 0) {
 			if (this.field354 == Integer.MIN_VALUE) {
@@ -117,10 +146,12 @@ public class Class52 extends Class27 {
 
 	}
 
+	@ObfInfo(name = "aw", desc = "(II)V")
 	public synchronized void method930(int var1, int var2) {
 		this.method931(var1, var2, this.method916());
 	}
 
+	@ObfInfo(name = "ad", desc = "(III)V")
 	public synchronized void method931(int var1, int var2, int var3) {
 		if (var1 == 0) {
 			this.method1048(var2, var3);
@@ -165,6 +196,7 @@ public class Class52 extends Class27 {
 		}
 	}
 
+	@ObfInfo(name = "bn", desc = "(I)V")
 	public synchronized void method932(int var1) {
 		if (var1 == 0) {
 			this.method923(0);
@@ -208,6 +240,7 @@ public class Class52 extends Class27 {
 		}
 	}
 
+	@ObfInfo(name = "bw", desc = "(I)V")
 	public synchronized void method933(int var1) {
 		if (this.field349 < 0) {
 			this.field349 = -var1;
@@ -217,30 +250,37 @@ public class Class52 extends Class27 {
 
 	}
 
+	@ObfInfo(name = "bu", desc = "()I")
 	public synchronized int method934() {
 		return this.field349 < 0 ? -this.field349 : this.field349;
 	}
 
+	@ObfInfo(name = "bh", desc = "()Z")
 	public boolean method943() {
 		return this.field353 < 0 || this.field353 >= ((Class44)super.field138).field314.length << 8;
 	}
 
+	@ObfInfo(name = "bk", desc = "()Z")
 	public boolean method936() {
 		return this.field359 != 0;
 	}
 
+	@ObfInfo(name = "aa", desc = "()Lba;")
 	public Class27 method384() {
 		return null;
 	}
 
+	@ObfInfo(name = "at", desc = "()Lba;")
 	public Class27 method379() {
 		return null;
 	}
 
+	@ObfInfo(name = "ab", desc = "()I")
 	public int method380() {
 		return this.field354 == 0 && this.field359 == 0 ? 0 : 1;
 	}
 
+	@ObfInfo(name = "ac", desc = "([III)V")
 	public synchronized void method381(int[] var1, int var2, int var3) {
 		if (this.field354 == 0 && this.field359 == 0) {
 			this.method395(var3);
@@ -421,6 +461,7 @@ public class Class52 extends Class27 {
 		}
 	}
 
+	@ObfInfo(name = "ah", desc = "(I)V")
 	public synchronized void method395(int var1) {
 		if (this.field359 > 0) {
 			if (var1 >= this.field359) {
@@ -595,6 +636,7 @@ public class Class52 extends Class27 {
 		}
 	}
 
+	@ObfInfo(name = "br", desc = "([IIIII)I")
 	public int method942(int[] var1, int var2, int var3, int var4, int var5) {
 		while (true) {
 			if (this.field359 > 0) {
@@ -644,6 +686,7 @@ public class Class52 extends Class27 {
 		}
 	}
 
+	@ObfInfo(name = "bx", desc = "([IIIII)I")
 	public int method998(int[] var1, int var2, int var3, int var4, int var5) {
 		while (true) {
 			if (this.field359 > 0) {
@@ -693,6 +736,7 @@ public class Class52 extends Class27 {
 		}
 	}
 
+	@ObfInfo(name = "bd", desc = "()Z")
 	public boolean method944() {
 		int var1 = this.field354;
 		int var2;
@@ -761,22 +805,27 @@ public class Class52 extends Class27 {
 		}
 	}
 
+	@ObfInfo(name = "ak", desc = "(II)I")
 	public static int method940(int var0, int var1) {
 		return var1 < 0 ? var0 : (int)((double)var0 * Math.sqrt((double)(16384 - var1) * 1.220703125E-4D) + 0.5D);
 	}
 
+	@ObfInfo(name = "al", desc = "(II)I")
 	public static int method913(int var0, int var1) {
 		return var1 < 0 ? -var0 : (int)((double)var0 * Math.sqrt((double)var1 * 1.220703125E-4D) + 0.5D);
 	}
 
+	@ObfInfo(name = "aj", desc = "(Lbr;II)Lbz;")
 	public static Class52 method918(Class44 var0, int var1, int var2) {
 		return var0.field314 != null && var0.field314.length != 0 ? new Class52(var0, (int)((long)var0.field312 * 256L * (long)var1 / (long)(Client.field1382 * 100)), var2 << 6) : null;
 	}
 
+	@ObfInfo(name = "az", desc = "(Lbr;III)Lbz;")
 	public static Class52 method919(Class44 var0, int var1, int var2, int var3) {
 		return var0.field314 != null && var0.field314.length != 0 ? new Class52(var0, var1, var2, var3) : null;
 	}
 
+	@ObfInfo(name = "bv", desc = "([B[IIIIIIILbz;)I")
 	public static int method969(byte[] var0, int[] var1, int var2, int var3, int var4, int var5, int var6, int var7, Class52 var8) {
 		var2 >>= 8;
 		var7 >>= 8;
@@ -804,6 +853,7 @@ public class Class52 extends Class27 {
 		return var3;
 	}
 
+	@ObfInfo(name = "bm", desc = "(I[B[IIIIIIIILbz;)I")
 	public static int method946(int var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, Class52 var10) {
 		var3 >>= 8;
 		var9 >>= 8;
@@ -851,6 +901,7 @@ public class Class52 extends Class27 {
 		return var4 >> 1;
 	}
 
+	@ObfInfo(name = "bq", desc = "([B[IIIIIIILbz;)I")
 	public static int method947(byte[] var0, int[] var1, int var2, int var3, int var4, int var5, int var6, int var7, Class52 var8) {
 		var2 >>= 8;
 		var7 >>= 8;
@@ -878,6 +929,7 @@ public class Class52 extends Class27 {
 		return var3;
 	}
 
+	@ObfInfo(name = "bj", desc = "(I[B[IIIIIIIILbz;)I")
 	public static int method948(int var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, Class52 var10) {
 		var3 >>= 8;
 		var9 >>= 8;
@@ -925,6 +977,7 @@ public class Class52 extends Class27 {
 		return var4 >> 1;
 	}
 
+	@ObfInfo(name = "bc", desc = "(II[B[IIIIIIILbz;II)I")
 	public static int method949(int var0, int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, Class52 var10, int var11, int var12) {
 		if (var11 == 0 || (var7 = var5 + (var9 - var4 + var11 - 257) / var11) > var8) {
 			var7 = var8;
@@ -955,6 +1008,7 @@ public class Class52 extends Class27 {
 		return var5;
 	}
 
+	@ObfInfo(name = "bz", desc = "(II[B[IIIIIIIILbz;II)I")
 	public static int method982(int var0, int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, Class52 var11, int var12, int var13) {
 		if (var12 == 0 || (var8 = var5 + (var10 - var4 + var12 - 257) / var12) > var9) {
 			var8 = var9;
@@ -991,6 +1045,7 @@ public class Class52 extends Class27 {
 		return var5 >> 1;
 	}
 
+	@ObfInfo(name = "ba", desc = "(II[B[IIIIIIILbz;II)I")
 	public static int method1017(int var0, int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, Class52 var10, int var11, int var12) {
 		if (var11 == 0 || (var7 = var5 + (var9 + 256 - var4 + var11) / var11) > var8) {
 			var7 = var8;
@@ -1019,6 +1074,7 @@ public class Class52 extends Class27 {
 		return var5;
 	}
 
+	@ObfInfo(name = "bb", desc = "(II[B[IIIIIIIILbz;II)I")
 	public static int method952(int var0, int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, Class52 var11, int var12, int var13) {
 		if (var12 == 0 || (var8 = var5 + (var10 + 256 - var4 + var12) / var12) > var9) {
 			var8 = var9;
@@ -1053,6 +1109,7 @@ public class Class52 extends Class27 {
 		return var5 >> 1;
 	}
 
+	@ObfInfo(name = "by", desc = "([B[IIIIIIIILbz;)I")
 	public static int method953(byte[] var0, int[] var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, Class52 var9) {
 		var2 >>= 8;
 		var8 >>= 8;
@@ -1090,6 +1147,7 @@ public class Class52 extends Class27 {
 		return var3;
 	}
 
+	@ObfInfo(name = "cw", desc = "(I[B[IIIIIIIIIILbz;)I")
 	public static int method1018(int var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, Class52 var12) {
 		var3 >>= 8;
 		var11 >>= 8;
@@ -1152,6 +1210,7 @@ public class Class52 extends Class27 {
 		return var4 >> 1;
 	}
 
+	@ObfInfo(name = "ck", desc = "([B[IIIIIIIILbz;)I")
 	public static int method954(byte[] var0, int[] var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, Class52 var9) {
 		var2 >>= 8;
 		var8 >>= 8;
@@ -1189,6 +1248,7 @@ public class Class52 extends Class27 {
 		return var3;
 	}
 
+	@ObfInfo(name = "cn", desc = "(I[B[IIIIIIIIIILbz;)I")
 	public static int method955(int var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, Class52 var12) {
 		var3 >>= 8;
 		var11 >>= 8;
@@ -1251,6 +1311,7 @@ public class Class52 extends Class27 {
 		return var4 >> 1;
 	}
 
+	@ObfInfo(name = "ch", desc = "(II[B[IIIIIIIILbz;II)I")
 	public static int method956(int var0, int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, Class52 var11, int var12, int var13) {
 		var11.field348 -= var11.field350 * var5;
 		var11.field351 -= var11.field361 * var5;
@@ -1288,6 +1349,7 @@ public class Class52 extends Class27 {
 		return var5;
 	}
 
+	@ObfInfo(name = "cp", desc = "(II[B[IIIIIIIIIILbz;II)I")
 	public static int method957(int var0, int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12, Class52 var13, int var14, int var15) {
 		var13.field352 -= var13.field360 * var5;
 		if (var14 == 0 || (var10 = var5 + (var12 - var4 + var14 - 257) / var14) > var11) {
@@ -1333,6 +1395,7 @@ public class Class52 extends Class27 {
 		return var5;
 	}
 
+	@ObfInfo(name = "cd", desc = "(II[B[IIIIIIIILbz;II)I")
 	public static int method958(int var0, int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, Class52 var11, int var12, int var13) {
 		var11.field348 -= var11.field350 * var5;
 		var11.field351 -= var11.field361 * var5;
@@ -1368,6 +1431,7 @@ public class Class52 extends Class27 {
 		return var5;
 	}
 
+	@ObfInfo(name = "cs", desc = "(II[B[IIIIIIIIIILbz;II)I")
 	public static int method959(int var0, int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12, Class52 var13, int var14, int var15) {
 		var13.field352 -= var13.field360 * var5;
 		if (var14 == 0 || (var10 = var5 + (var12 + 256 - var4 + var14) / var14) > var11) {

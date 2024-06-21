@@ -1,11 +1,19 @@
+import io.runebox.ObfInfo;
 import java.util.HashMap;
 
+@ObfInfo(name = "pr")
 public class Class408 {
+	@ObfInfo(desc = "[I")
 	public static int[] field1557;
+	@ObfInfo(name = "al", desc = "Lqi;")
 	public Class425 field4637;
+	@ObfInfo(name = "af", desc = "I", intMultiplier = 182759609)
 	public int field4640;
+	@ObfInfo(name = "aj", desc = "[I")
 	public int[] field4638;
+	@ObfInfo(name = "az", desc = "[I")
 	public int[] field4639;
+	@ObfInfo(name = "ak", desc = "Ljava/util/HashMap;")
 	public final HashMap field4643;
 
 	public Class408() {
@@ -37,6 +45,7 @@ public class Class408 {
 
 	}
 
+	@ObfInfo(name = "ak", desc = "(II)V", opaque = "-16711937")
 	public void method7583(int var1) {
 		int var3 = 1 + var1 * 2;
 		double[] var4 = Class82.method2248(0.0D, (double)((float)var1 / 3.0F), var1);
@@ -57,6 +66,7 @@ public class Class408 {
 		this.field4643.put(var1, var12);
 	}
 
+	@ObfInfo(name = "al", desc = "(II)Lvc;", opaque = "1970065707")
 	public Class549 method7580(int var1) {
 		if (!this.field4643.containsKey(var1)) {
 			this.method7583(var1);
@@ -65,6 +75,7 @@ public class Class408 {
 		return (Class549)this.field4643.get(var1);
 	}
 
+	@ObfInfo(name = "aj", desc = "(III)V", opaque = "-473263065")
 	public final void method7581(int var1, int var2) {
 		if (this.field4640 < this.field4638.length) {
 			this.field4638[this.field4640] = var1;
@@ -73,10 +84,12 @@ public class Class408 {
 		}
 	}
 
+	@ObfInfo(name = "az", desc = "(B)V")
 	public final void method7594() {
 		this.field4640 = 0;
 	}
 
+	@ObfInfo(name = "af", desc = "(IILvc;FI)V", opaque = "-896621393")
 	public final void method7591(int var1, int var2, Class549 var3, float var4) {
 		int var6 = (int)(var4 * 18.0F);
 		Class549 var7 = this.method7580(var6);
@@ -123,6 +136,7 @@ public class Class408 {
 		System.nanoTime();
 	}
 
+	@ObfInfo(name = "aa", desc = "(Lvc;Lvc;Lqi;I)V", opaque = "-1144373910")
 	public void method7584(Class549 var1, Class549 var2, Class425 var3) {
 		if (var3.field4690 != 0 && var3.field4688 != 0) {
 			int var5 = 0;

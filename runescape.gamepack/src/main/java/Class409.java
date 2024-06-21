@@ -1,8 +1,12 @@
+import io.runebox.ObfInfo;
 import java.util.Collection;
 import java.util.Iterator;
 
+@ObfInfo(name = "ps")
 public class Class409 implements Iterable, Collection {
+	@ObfInfo(name = "ak", desc = "Ltl;")
 	public Class506 field4644;
+	@ObfInfo(name = "al", desc = "Ltl;")
 	public Class506 field4645;
 
 	public Class409() {
@@ -11,6 +15,7 @@ public class Class409 implements Iterable, Collection {
 		this.field4644.field5171 = this.field4644;
 	}
 
+	@ObfInfo(name = "ak", desc = "()V")
 	public void method7596() {
 		while (this.field4644.field5169 != this.field4644) {
 			this.field4644.field5169.method9277();
@@ -18,6 +23,7 @@ public class Class409 implements Iterable, Collection {
 
 	}
 
+	@ObfInfo(name = "al", desc = "(Ltl;)V")
 	public void method7597(Class506 var1) {
 		if (var1.field5171 != null) {
 			var1.method9277();
@@ -29,6 +35,7 @@ public class Class409 implements Iterable, Collection {
 		var1.field5169.field5171 = var1;
 	}
 
+	@ObfInfo(name = "aj", desc = "(Ltl;)V")
 	public void method7609(Class506 var1) {
 		if (var1.field5171 != null) {
 			var1.method9277();
@@ -40,10 +47,12 @@ public class Class409 implements Iterable, Collection {
 		var1.field5169.field5171 = var1;
 	}
 
+	@ObfInfo(name = "af", desc = "()Ltl;")
 	public Class506 method7600() {
 		return this.method7612((Class506)null);
 	}
 
+	@ObfInfo(name = "aa", desc = "(Ltl;)Ltl;")
 	public Class506 method7612(Class506 var1) {
 		Class506 var2;
 		if (var1 == null) {
@@ -61,6 +70,7 @@ public class Class409 implements Iterable, Collection {
 		}
 	}
 
+	@ObfInfo(name = "at", desc = "()Ltl;")
 	public Class506 method7637() {
 		Class506 var1 = this.field4645;
 		if (this.field4644 == var1) {
@@ -72,6 +82,7 @@ public class Class409 implements Iterable, Collection {
 		}
 	}
 
+	@ObfInfo(name = "ab", desc = "()I")
 	public int method7644() {
 		int var1 = 0;
 
@@ -82,10 +93,12 @@ public class Class409 implements Iterable, Collection {
 		return var1;
 	}
 
+	@ObfInfo(name = "ac", desc = "()Z")
 	public boolean method7625() {
 		return this.field4644.field5169 == this.field4644;
 	}
 
+	@ObfInfo(name = "ao", desc = "()[Ltl;")
 	public Class506[] method7605() {
 		Class506[] var1 = new Class506[this.method7644()];
 		int var2 = 0;
@@ -97,26 +110,32 @@ public class Class409 implements Iterable, Collection {
 		return var1;
 	}
 
+	@ObfInfo(desc = "()Ljava/util/Iterator;")
 	public Iterator iterator() {
 		return new Class413(this);
 	}
 
+	@ObfInfo(desc = "()I")
 	public int size() {
 		return this.method7644();
 	}
 
+	@ObfInfo(desc = "()Z")
 	public boolean isEmpty() {
 		return this.method7625();
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
 	public boolean contains(Object var1) {
 		throw new RuntimeException();
 	}
 
+	@ObfInfo(desc = "()[Ljava/lang/Object;")
 	public Object[] toArray() {
 		return this.method7605();
 	}
 
+	@ObfInfo(desc = "([Ljava/lang/Object;)[Ljava/lang/Object;")
 	public Object[] toArray(Object[] var1) {
 		int var2 = 0;
 
@@ -127,47 +146,58 @@ public class Class409 implements Iterable, Collection {
 		return var1;
 	}
 
+	@ObfInfo(name = "ah", desc = "(Ltl;)Z")
 	public boolean method7664(Class506 var1) {
 		this.method7597(var1);
 		return true;
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
 	public boolean remove(Object var1) {
 		throw new RuntimeException();
 	}
 
+	@ObfInfo(desc = "(Ljava/util/Collection;)Z")
 	public boolean containsAll(Collection var1) {
 		throw new RuntimeException();
 	}
 
+	@ObfInfo(desc = "(Ljava/util/Collection;)Z")
 	public boolean addAll(Collection var1) {
 		throw new RuntimeException();
 	}
 
+	@ObfInfo(desc = "(Ljava/util/Collection;)Z")
 	public boolean removeAll(Collection var1) {
 		throw new RuntimeException();
 	}
 
+	@ObfInfo(desc = "(Ljava/util/Collection;)Z")
 	public boolean retainAll(Collection var1) {
 		throw new RuntimeException();
 	}
 
+	@ObfInfo(desc = "()V")
 	public void clear() {
 		this.method7596();
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
 	public boolean add(Object var1) {
 		return this.method7664((Class506)var1);
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/Object;)Z")
 	public boolean equals(Object var1) {
 		return super.equals(var1);
 	}
 
+	@ObfInfo(desc = "()I")
 	public int hashCode() {
 		return super.hashCode();
 	}
 
+	@ObfInfo(name = "az", desc = "(Ltl;Ltl;)V")
 	public static void method7599(Class506 var0, Class506 var1) {
 		if (var0.field5171 != null) {
 			var0.method9277();

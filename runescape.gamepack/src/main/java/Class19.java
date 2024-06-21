@@ -1,7 +1,11 @@
+import io.runebox.ObfInfo;
 import java.util.concurrent.Future;
 
+@ObfInfo(name = "as")
 public class Class19 {
+	@ObfInfo(name = "al", desc = "Ljava/lang/String;")
 	public String field94;
+	@ObfInfo(name = "ak", desc = "Ljava/util/concurrent/Future;")
 	public Future field93;
 
 	public Class19(Future var1) {
@@ -12,6 +16,7 @@ public class Class19 {
 		this.method277(var1);
 	}
 
+	@ObfInfo(name = "ak", desc = "(Ljava/lang/String;I)V", opaque = "-1339869163")
 	public void method277(String var1) {
 		if (var1 == null) {
 			var1 = "";
@@ -25,18 +30,22 @@ public class Class19 {
 
 	}
 
+	@ObfInfo(name = "al", desc = "(I)Ljava/lang/String;")
 	public final String method281() {
 		return this.field94;
 	}
 
+	@ObfInfo(name = "aj", desc = "(I)Z", opaque = "137471638")
 	public boolean method278() {
 		return this.field94 != null || this.field93 == null;
 	}
 
+	@ObfInfo(name = "az", desc = "(S)Z")
 	public final boolean method279() {
 		return this.method278() ? true : this.field93.isDone();
 	}
 
+	@ObfInfo(name = "af", desc = "(I)Lad;", opaque = "32769")
 	public final Class4 method285() {
 		if (this.method278()) {
 			return new Class4(this.field94);

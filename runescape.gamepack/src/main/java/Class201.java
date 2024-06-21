@@ -1,3 +1,4 @@
+import io.runebox.ObfInfo;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InvalidClassException;
@@ -8,13 +9,16 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
+@ObfInfo(name = "hs")
 public class Class201 extends Class507 {
+	@ObfInfo(name = "ak", desc = "Llm;")
 	public static Class299 field2068;
 
 	static {
 		field2068 = new Class299(64);
 	}
 
+	@ObfInfo(name = "ak", desc = "(Luk;I)V", opaque = "-2047148320")
 	public static void method3922(Class531 var0) {
 		Class34 var2 = (Class34)Class47.field323.method7600();
 		if (var2 != null) {

@@ -1,135 +1,270 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "mz")
 public class Class338 {
+	@ObfInfo(name = "ea", desc = "Lmz;")
 	public static final Class338 field3529;
+	@ObfInfo(name = "al", desc = "Lmz;")
 	public static final Class338 field3530;
+	@ObfInfo(name = "aj", desc = "Lmz;")
 	public static final Class338 field3531;
+	@ObfInfo(name = "cz", desc = "Lmz;")
 	public static final Class338 field3532;
+	@ObfInfo(name = "af", desc = "Lmz;")
 	public static final Class338 field3533;
+	@ObfInfo(name = "cf", desc = "Lmz;")
 	public static final Class338 field3534;
+	@ObfInfo(name = "at", desc = "Lmz;")
 	public static final Class338 field3535;
+	@ObfInfo(name = "ac", desc = "Lmz;")
 	public static final Class338 field3537;
+	@ObfInfo(name = "ao", desc = "Lmz;")
 	public static final Class338 field3538;
+	@ObfInfo(name = "cw", desc = "Lmz;")
 	public static final Class338 field3539;
+	@ObfInfo(name = "av", desc = "Lmz;")
 	public static final Class338 field3540;
+	@ObfInfo(name = "aq", desc = "Lmz;")
 	public static final Class338 field3541;
+	@ObfInfo(name = "ap", desc = "Lmz;")
 	public static final Class338 field3542;
+	@ObfInfo(name = "ae", desc = "Lmz;")
 	public static final Class338 field3543;
+	@ObfInfo(name = "ax", desc = "Lmz;")
 	public static final Class338 field3544;
+	@ObfInfo(name = "ar", desc = "Lmz;")
 	public static final Class338 field3545;
+	@ObfInfo(name = "do", desc = "Lmz;")
 	public static final Class338 field3546;
+	@ObfInfo(name = "as", desc = "Lmz;")
 	public static final Class338 field3547;
+	@ObfInfo(name = "ex", desc = "Lmz;")
 	public static final Class338 field3548;
+	@ObfInfo(name = "ad", desc = "Lmz;")
 	public static final Class338 field3549;
+	@ObfInfo(name = "ai", desc = "Lmz;")
 	public static final Class338 field3550;
+	@ObfInfo(name = "cp", desc = "Lmz;")
 	public static final Class338 field3551;
+	@ObfInfo(name = "am", desc = "Lmz;")
 	public static final Class338 field3552;
+	@ObfInfo(name = "dk", desc = "Lmz;")
 	public static final Class338 field3553;
+	@ObfInfo(name = "ag", desc = "Lmz;")
 	public static final Class338 field3554;
+	@ObfInfo(name = "bf", desc = "Lmz;")
 	public static final Class338 field3556;
+	@ObfInfo(name = "bo", desc = "Lmz;")
 	public static final Class338 field3557;
+	@ObfInfo(name = "bi", desc = "Lmz;")
 	public static final Class338 field3558;
+	@ObfInfo(name = "bt", desc = "Lmz;")
 	public static final Class338 field3559;
+	@ObfInfo(name = "bn", desc = "Lmz;")
 	public static final Class338 field3560;
+	@ObfInfo(name = "bw", desc = "Lmz;")
 	public static final Class338 field3561;
+	@ObfInfo(name = "bl", desc = "Lmz;")
 	public static final Class338 field3562;
+	@ObfInfo(name = "be", desc = "Lmz;")
 	public static final Class338 field3563;
+	@ObfInfo(name = "ec", desc = "Lmz;")
 	public static final Class338 field3564;
+	@ObfInfo(name = "co", desc = "Lmz;")
 	public static final Class338 field3565;
+	@ObfInfo(name = "bh", desc = "Lmz;")
 	public static final Class338 field3566;
+	@ObfInfo(name = "bk", desc = "Lmz;")
 	public static final Class338 field3567;
+	@ObfInfo(name = "dg", desc = "Lmz;")
 	public static final Class338 field3568;
+	@ObfInfo(name = "br", desc = "Lmz;")
 	public static final Class338 field3569;
+	@ObfInfo(name = "bz", desc = "Lmz;")
 	public static final Class338 field3570;
+	@ObfInfo(name = "bd", desc = "Lmz;")
 	public static final Class338 field3571;
+	@ObfInfo(name = "cj", desc = "Lmz;")
 	public static final Class338 field3572;
+	@ObfInfo(name = "bm", desc = "Lmz;")
 	public static final Class338 field3573;
+	@ObfInfo(name = "bq", desc = "Lmz;")
 	public static final Class338 field3574;
+	@ObfInfo(name = "by", desc = "Lmz;")
 	public static final Class338 field3575;
+	@ObfInfo(name = "en", desc = "Lmz;")
 	public static final Class338 field3576;
+	@ObfInfo(name = "cg", desc = "Lmz;")
 	public static final Class338 field3577;
+	@ObfInfo(name = "ba", desc = "Lmz;")
 	public static final Class338 field3578;
+	@ObfInfo(name = "bb", desc = "Lmz;")
 	public static final Class338 field3579;
+	@ObfInfo(name = "ej", desc = "Lmz;")
 	public static final Class338 field3580;
+	@ObfInfo(name = "az", desc = "Lmz;")
 	public static final Class338 field3581;
+	@ObfInfo(name = "ck", desc = "Lmz;")
 	public static final Class338 field3582;
+	@ObfInfo(name = "cn", desc = "Lmz;")
 	public static final Class338 field3583;
+	@ObfInfo(name = "ch", desc = "Lmz;")
 	public static final Class338 field3584;
+	@ObfInfo(name = "bg", desc = "Lmz;")
 	public static final Class338 field3585;
+	@ObfInfo(name = "cd", desc = "Lmz;")
 	public static final Class338 field3586;
+	@ObfInfo(name = "cs", desc = "Lmz;")
 	public static final Class338 field3587;
+	@ObfInfo(name = "cm", desc = "Lmz;")
 	public static final Class338 field3588;
+	@ObfInfo(name = "ci", desc = "Lmz;")
 	public static final Class338 field3589;
+	@ObfInfo(name = "cc", desc = "Lmz;")
 	public static final Class338 field3590;
+	@ObfInfo(name = "cb", desc = "Lmz;")
 	public static final Class338 field3591;
+	@ObfInfo(name = "cy", desc = "Lmz;")
 	public static final Class338 field3592;
+	@ObfInfo(name = "au", desc = "Lmz;")
 	public static final Class338 field3593;
+	@ObfInfo(name = "bj", desc = "Lmz;")
 	public static final Class338 field3594;
+	@ObfInfo(name = "ce", desc = "Lmz;")
 	public static final Class338 field3595;
+	@ObfInfo(name = "ab", desc = "Lmz;")
 	public static final Class338 field3596;
+	@ObfInfo(name = "ca", desc = "Lmz;")
 	public static final Class338 field3597;
+	@ObfInfo(name = "cl", desc = "Lmz;")
 	public static final Class338 field3598;
+	@ObfInfo(name = "cq", desc = "Lmz;")
 	public static final Class338 field3599;
+	@ObfInfo(name = "dq", desc = "Lmz;")
 	public static final Class338 field3600;
+	@ObfInfo(name = "ct", desc = "Lmz;")
 	public static final Class338 field3601;
+	@ObfInfo(name = "an", desc = "Lmz;")
 	public static final Class338 field3602;
+	@ObfInfo(name = "cv", desc = "Lmz;")
 	public static final Class338 field3603;
+	@ObfInfo(name = "ah", desc = "Lmz;")
 	public static final Class338 field3604;
+	@ObfInfo(name = "cu", desc = "Lmz;")
 	public static final Class338 field3605;
+	@ObfInfo(name = "cx", desc = "Lmz;")
 	public static final Class338 field3606;
+	@ObfInfo(name = "du", desc = "Lmz;")
 	public static final Class338 field3607;
+	@ObfInfo(name = "bv", desc = "Lmz;")
 	public static final Class338 field3608;
+	@ObfInfo(name = "dm", desc = "Lmz;")
 	public static final Class338 field3609;
+	@ObfInfo(name = "ak", desc = "Lmz;")
 	public static final Class338 field3610;
+	@ObfInfo(name = "db", desc = "Lmz;")
 	public static final Class338 field3611;
+	@ObfInfo(name = "ei", desc = "Lmz;")
 	public static final Class338 field3612;
+	@ObfInfo(name = "ds", desc = "Lmz;")
 	public static final Class338 field3613;
+	@ObfInfo(name = "dd", desc = "Lmz;")
 	public static final Class338 field3614;
+	@ObfInfo(name = "dr", desc = "Lmz;")
 	public static final Class338 field3615;
+	@ObfInfo(name = "df", desc = "Lmz;")
 	public static final Class338 field3616;
+	@ObfInfo(name = "dz", desc = "Lmz;")
 	public static final Class338 field3617;
+	@ObfInfo(name = "dj", desc = "Lmz;")
 	public static final Class338 field3618;
+	@ObfInfo(name = "ez", desc = "Lmz;")
 	public static final Class338 field3619;
+	@ObfInfo(name = "de", desc = "Lmz;")
 	public static final Class338 field3620;
+	@ObfInfo(name = "dc", desc = "Lmz;")
 	public static final Class338 field3621;
+	@ObfInfo(name = "aw", desc = "Lmz;")
 	public static final Class338 field3622;
+	@ObfInfo(name = "dn", desc = "Lmz;")
 	public static final Class338 field3623;
+	@ObfInfo(name = "dl", desc = "Lmz;")
 	public static final Class338 field3624;
+	@ObfInfo(name = "dx", desc = "Lmz;")
 	public static final Class338 field3625;
+	@ObfInfo(name = "dh", desc = "Lmz;")
 	public static final Class338 field3626;
+	@ObfInfo(name = "dy", desc = "Lmz;")
 	public static final Class338 field3627;
+	@ObfInfo(name = "di", desc = "Lmz;")
 	public static final Class338 field3628;
+	@ObfInfo(name = "bu", desc = "Lmz;")
 	public static final Class338 field3629;
+	@ObfInfo(name = "dt", desc = "Lmz;")
 	public static final Class338 field3630;
+	@ObfInfo(name = "dw", desc = "Lmz;")
 	public static final Class338 field3631;
+	@ObfInfo(name = "cr", desc = "Lmz;")
 	public static final Class338 field3632;
+	@ObfInfo(name = "ed", desc = "Lmz;")
 	public static final Class338 field3633;
+	@ObfInfo(name = "bc", desc = "Lmz;")
 	public static final Class338 field3634;
+	@ObfInfo(name = "ay", desc = "Lmz;")
 	public static final Class338 field3635;
+	@ObfInfo(name = "em", desc = "Lmz;")
 	public static final Class338 field3636;
+	@ObfInfo(name = "eh", desc = "Lmz;")
 	public static final Class338 field3637;
+	@ObfInfo(name = "ev", desc = "Lmz;")
 	public static final Class338 field3638;
+	@ObfInfo(name = "ef", desc = "Lmz;")
 	public static final Class338 field3639;
+	@ObfInfo(name = "es", desc = "Lmz;")
 	public static final Class338 field3640;
+	@ObfInfo(name = "da", desc = "Lmz;")
 	public static final Class338 field3641;
+	@ObfInfo(name = "dp", desc = "Lmz;")
 	public static final Class338 field3642;
+	@ObfInfo(name = "el", desc = "Lmz;")
 	public static final Class338 field3643;
+	@ObfInfo(name = "eb", desc = "Lmz;")
 	public static final Class338 field3644;
+	@ObfInfo(name = "ep", desc = "Lmz;")
 	public static final Class338 field3645;
+	@ObfInfo(name = "bs", desc = "Lmz;")
 	public static final Class338 field3646;
+	@ObfInfo(name = "ey", desc = "Lmz;")
 	public static final Class338 field3647;
+	@ObfInfo(name = "aa", desc = "Lmz;")
 	public static final Class338 field3648;
+	@ObfInfo(name = "ew", desc = "Lmz;")
 	public static final Class338 field3649;
+	@ObfInfo(name = "ee", desc = "Lmz;")
 	public static final Class338 field3650;
+	@ObfInfo(name = "eu", desc = "Lmz;")
 	public static final Class338 field3651;
+	@ObfInfo(name = "et", desc = "Lmz;")
 	public static final Class338 field3652;
+	@ObfInfo(name = "ek", desc = "Lmz;")
 	public static final Class338 field3653;
+	@ObfInfo(name = "eg", desc = "Lmz;")
 	public static final Class338 field3654;
+	@ObfInfo(name = "eq", desc = "Lmz;")
 	public static final Class338 field3655;
+	@ObfInfo(name = "er", desc = "Lmz;")
 	public static final Class338 field3656;
+	@ObfInfo(name = "eo", desc = "Lmz;")
 	public static final Class338 field3657;
+	@ObfInfo(name = "dv", desc = "Lmz;")
 	public static final Class338 field3658;
+	@ObfInfo(name = "bp", desc = "Lmz;")
 	public static final Class338 field3659;
+	@ObfInfo(name = "bx", desc = "Lmz;")
 	public static final Class338 field3660;
+	@ObfInfo(name = "fk", desc = "I", intMultiplier = -893662655)
 	public final int field3536;
+	@ObfInfo(name = "fh", desc = "I", intMultiplier = -1721786867)
 	public final int field3555;
 
 	static {

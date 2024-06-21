@@ -1,10 +1,20 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "tg")
 public class Class501 extends Class514 {
+	@ObfInfo(name = "az", desc = "D")
 	public double field5133;
+	@ObfInfo(name = "aj", desc = "D")
 	public double field5135;
+	@ObfInfo(name = "at", desc = "D")
 	public double field5136;
+	@ObfInfo(name = "af", desc = "D")
 	public double field5137;
+	@ObfInfo(name = "aa", desc = "D")
 	public double field5139;
+	@ObfInfo(name = "al", desc = "I", intMultiplier = -1961828697)
 	public int field5134;
+	@ObfInfo(name = "ak", desc = "I", intMultiplier = 306022681)
 	public int field5138;
 
 	public Class501(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10) {
@@ -42,18 +52,21 @@ public class Class501 extends Class514 {
 		}
 	}
 
+	@ObfInfo(name = "ak", desc = "(B)I")
 	public int method9228() {
 		double var2 = this.method9209();
 		double var4 = this.field5139 + var2 * (this.field5136 - this.field5139);
 		return (int)Math.round(this.field5135 + this.field5137 * Math.cos(var4));
 	}
 
+	@ObfInfo(name = "al", desc = "(I)I")
 	public int method9229() {
 		double var2 = this.method9209();
 		double var4 = var2 * (this.field5136 - this.field5139) + this.field5139;
 		return (int)Math.round(this.field5133 + this.field5137 * Math.sin(var4));
 	}
 
+	@ObfInfo(name = "aj", desc = "(I)I")
 	public int method9230() {
 		double var2 = this.method9209();
 		return (int)Math.round(var2 * (double)(this.field5134 - this.field5138) + (double)this.field5138);

@@ -1,14 +1,23 @@
+import io.runebox.ObfInfo;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 
+@ObfInfo(name = "ry")
 public final class Class467 {
+	@ObfInfo(name = "aj", desc = "Lqc;")
 	public final Class419 field4908;
+	@ObfInfo(name = "az", desc = "Lqc;")
 	public final Class419 field4909;
+	@ObfInfo(name = "aa", desc = "Lrq;")
 	public final Class459 field4906;
+	@ObfInfo(name = "at", desc = "I", intMultiplier = -1362734891)
 	public final int field4912;
+	@ObfInfo(name = "ak", desc = "Ljava/util/Comparator;")
 	public final Comparator field4911;
+	@ObfInfo(name = "al", desc = "Ljava/util/Map;")
 	public final Map field4907;
+	@ObfInfo(name = "af", desc = "J", longMultiplier = -1528853799806805115L)
 	public final long field4910;
 
 	public Class467(int var1, Class459 var2) {
@@ -36,10 +45,12 @@ public final class Class467 {
 
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)Z", opaque = "335854974")
 	public boolean method8582() {
 		return -1 != this.field4912;
 	}
 
+	@ObfInfo(name = "al", desc = "(Ljava/lang/Object;I)Ljava/lang/Object;", opaque = "2107973378")
 	public Object method8583(Object var1) {
 		synchronized(this) {
 			if (this.field4910 != -1L) {
@@ -56,6 +67,7 @@ public final class Class467 {
 		}
 	}
 
+	@ObfInfo(name = "aj", desc = "(Ljava/lang/Object;Ljava/lang/Object;I)Ljava/lang/Object;", opaque = "1765908522")
 	public Object method8588(Object var1, Object var2) {
 		synchronized(this) {
 			if (-1L != this.field4910) {
@@ -84,6 +96,7 @@ public final class Class467 {
 		}
 	}
 
+	@ObfInfo(name = "az", desc = "(Lrp;ZI)V", opaque = "-636042309")
 	public void method8596(Class458 var1, boolean var2) {
 		if (!var2) {
 			this.field4908.remove(var1);
@@ -108,6 +121,7 @@ public final class Class467 {
 		this.field4908.add(var1);
 	}
 
+	@ObfInfo(name = "af", desc = "(I)V", opaque = "89876578")
 	public void method8586() {
 		if (-1L == this.field4910) {
 			throw new IllegalStateException("");
@@ -130,6 +144,7 @@ public final class Class467 {
 		}
 	}
 
+	@ObfInfo(name = "aa", desc = "(B)V", opaque = "-1")
 	public void method8591() {
 		synchronized(this) {
 			this.field4907.clear();

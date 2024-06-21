@@ -6,6 +6,8 @@ object Logger {
 
     var level = Level.ALL
 
+    fun log(message: String) { println(message) }
+
     fun trace(message: String) {
         println("[TRACE] - $message")
     }

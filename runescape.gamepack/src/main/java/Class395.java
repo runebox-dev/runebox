@@ -1,21 +1,38 @@
+import io.runebox.ObfInfo;
 import java.util.HashSet;
 import java.util.Set;
 
+@ObfInfo(name = "pe")
 public class Class395 implements Class393 {
+	@ObfInfo(name = "ak", desc = "Lpe;")
 	public static final Class395 field4567;
+	@ObfInfo(name = "aj", desc = "Lpe;")
 	public static final Class395 field4568;
+	@ObfInfo(name = "az", desc = "Lpe;")
 	public static final Class395 field4570;
+	@ObfInfo(name = "af", desc = "Lpe;")
 	public static final Class395 field4571;
+	@ObfInfo(name = "aa", desc = "Lpe;")
 	public static final Class395 field4572;
+	@ObfInfo(name = "at", desc = "Lpe;")
 	public static final Class395 field4573;
+	@ObfInfo(name = "ab", desc = "Lpe;")
 	public static final Class395 field4574;
+	@ObfInfo(name = "ac", desc = "Lpe;")
 	public static final Class395 field4575;
+	@ObfInfo(name = "ao", desc = "Lpe;")
 	public static final Class395 field4576;
+	@ObfInfo(name = "ah", desc = "Lpe;")
 	public static final Class395 field4577;
+	@ObfInfo(name = "av", desc = "Lpe;")
 	public static final Class395 field4578;
+	@ObfInfo(name = "aq", desc = "Lpe;")
 	public static final Class395 field4579;
+	@ObfInfo(name = "al", desc = "Lpe;")
 	public static final Class395 field4584;
+	@ObfInfo(name = "ap", desc = "I", intMultiplier = -478390221)
 	public final int field4580;
+	@ObfInfo(name = "ae", desc = "Ljava/util/Set;")
 	public final Set field4581;
 
 	static {
@@ -51,18 +68,22 @@ public class Class395 implements Class393 {
 
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)I")
 	public int method175() {
 		return this.field4580;
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)Lhb;")
 	public static Class184 method7419() {
 		return Class184.field1918;
 	}
 
+	@ObfInfo(name = "az", desc = "(B)[Lpe;")
 	public static Class395[] method7414() {
 		return new Class395[]{field4579, field4568, field4570, field4573, field4584, field4571, field4574, field4572, field4567, field4577, field4576, field4578, field4575};
 	}
 
+	@ObfInfo(name = "aj", desc = "(Lfm;FFFFFFFFI)V", opaque = "262168940")
 	public static void method7418(Class143 var0, float var1, float var2, float var3, float var4, float var5, float var6, float var7, float var8) {
 		if (var0 != null) {
 			float var10 = var4 - var1;

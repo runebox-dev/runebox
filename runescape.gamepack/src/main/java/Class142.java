@@ -1,7 +1,13 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "fl")
 public class Class142 extends Class149 {
+	@ObfInfo(name = "al", desc = "Z")
 	public boolean field1621;
+	@ObfInfo(name = "ak", desc = "I", intMultiplier = -1967818551)
 	public int field1618;
 	// $FF: synthetic field
+	@ObfInfo(desc = "Lfu;")
 	public final Class151 this$0;
 
 	public Class142(Class151 var1) {
@@ -9,15 +15,18 @@ public class Class142 extends Class149 {
 		this.field1618 = -1;
 	}
 
+	@ObfInfo(name = "ak", desc = "(Lua;I)V", opaque = "1549568484")
 	public void method3066(Class521 var1) {
 		this.field1618 = var1.method9407();
 		this.field1621 = var1.method9405() == 1;
 	}
 
+	@ObfInfo(name = "al", desc = "(Lgc;B)V")
 	public void method3067(Class159 var1) {
 		var1.method3337(this.field1618, this.field1621);
 	}
 
+	@ObfInfo(name = "oq", desc = "(Lnb;IIII)V", opaque = "-1592734627")
 	public static void method3145(Class340 var0, int var1, int var2, int var3) {
 		Class361 var5 = var0.method6512(Client.field25, false);
 		if (var5 != null) {

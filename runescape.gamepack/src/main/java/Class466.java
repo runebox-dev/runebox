@@ -1,6 +1,12 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "rx")
 public class Class466 extends Class479 {
+	@ObfInfo(name = "af", desc = "Lpq;")
 	public Class407 field4905;
+	@ObfInfo(name = "az", desc = "I", intMultiplier = -1936009871)
 	public int field4904;
+	@ObfInfo(name = "aj", desc = "Lux;")
 	public final Class544 field4903;
 
 	public Class466(Class544 var1) {
@@ -10,14 +16,17 @@ public class Class466 extends Class479 {
 		this.field4903 = var1;
 	}
 
+	@ObfInfo(name = "ak", desc = "(B)Lsg;")
 	public Class475 method8483() {
 		return new Class448();
 	}
 
+	@ObfInfo(name = "al", desc = "(II)[Lsg;")
 	public Class475[] method8457(int var1) {
 		return new Class448[var1];
 	}
 
+	@ObfInfo(name = "aj", desc = "(Lvv;ZB)Z", opaque = "9")
 	public boolean method8580(Class567 var1, boolean var2) {
 		Class448 var4 = (Class448)this.method8734(var1);
 		if (var4 == null) {
@@ -27,6 +36,7 @@ public class Class466 extends Class479 {
 		}
 	}
 
+	@ObfInfo(name = "at", desc = "(Lua;II)V", opaque = "859979755")
 	public void method8565(Class521 var1, int var2) {
 		while (true) {
 			if (var1.field5219 < var2) {

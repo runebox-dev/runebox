@@ -1,20 +1,40 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "or")
 public abstract class Class382 {
+	@ObfInfo(name = "bn", desc = "Lvu;")
 	public static Class566 field4485;
+	@ObfInfo(name = "bg", desc = "I", intMultiplier = -595094959)
 	public static int field4489;
+	@ObfInfo(name = "an", desc = "Lvw;")
 	public Class568 field4473;
+	@ObfInfo(name = "bo", desc = "[Lvw;")
 	public Class568[] field4482;
+	@ObfInfo(name = "bl", desc = "Z")
 	public boolean field4477;
+	@ObfInfo(name = "be", desc = "Z")
 	public boolean field4481;
+	@ObfInfo(name = "aw", desc = "I", intMultiplier = 1716278413)
 	public int field4474;
+	@ObfInfo(name = "bw", desc = "I", intMultiplier = -383538745)
 	public int field4486;
+	@ObfInfo(name = "ar", desc = "[I")
 	public int[] field4478;
+	@ObfInfo(name = "ag", desc = "[I")
 	public int[] field4479;
+	@ObfInfo(name = "ai", desc = "[I")
 	public int[] field4480;
+	@ObfInfo(name = "am", desc = "[I")
 	public int[] field4487;
+	@ObfInfo(name = "ad", desc = "[I")
 	public int[] field4488;
+	@ObfInfo(name = "bf", desc = "[[I")
 	public int[][] field4475;
+	@ObfInfo(name = "bs", desc = "[[I")
 	public int[][] field4476;
+	@ObfInfo(name = "bi", desc = "[Ljava/lang/Object;")
 	public Object[] field4483;
+	@ObfInfo(name = "bt", desc = "[[Ljava/lang/Object;")
 	public Object[][] field4484;
 
 	static {
@@ -27,6 +47,7 @@ public abstract class Class382 {
 		this.field4481 = var2;
 	}
 
+	@ObfInfo(name = "bc", desc = "([BI)V", opaque = "-500449151")
 	public void method7240(byte[] var1) {
 		this.field4486 = Class83.method2298(var1, var1.length);
 		Class521 var3 = new Class521(method3623(var1));
@@ -154,13 +175,16 @@ public abstract class Class382 {
 		}
 	}
 
+	@ObfInfo(name = "aj", desc = "(IB)V")
 	public void method7215(int var1) {
 	}
 
+	@ObfInfo(name = "bz", desc = "(III)[B")
 	public byte[] method7216(int var1, int var2) {
 		return this.method7298(var1, var2, (int[])null);
 	}
 
+	@ObfInfo(name = "ba", desc = "(II[II)[B", opaque = "342476184")
 	public byte[] method7298(int var1, int var2, int[] var3) {
 		if (var1 >= 0 && var1 < this.field4484.length && this.field4484[var1] != null && var2 >= 0 && var2 < this.field4484[var1].length) {
 			if (this.field4484[var1][var2] == null) {
@@ -185,6 +209,7 @@ public abstract class Class382 {
 		}
 	}
 
+	@ObfInfo(name = "bb", desc = "(III)Z", opaque = "-1994214319")
 	public boolean method7232(int var1, int var2) {
 		if (var1 >= 0 && var1 < this.field4484.length && null != this.field4484[var1] && var2 >= 0 && var2 < this.field4484[var1].length) {
 			if (this.field4484[var1][var2] != null) {
@@ -200,6 +225,7 @@ public abstract class Class382 {
 		}
 	}
 
+	@ObfInfo(name = "by", desc = "(IB)Z", opaque = "15")
 	public boolean method7219(int var1) {
 		if (this.field4484.length == 1) {
 			return this.method7232(0, var1);
@@ -210,6 +236,7 @@ public abstract class Class382 {
 		}
 	}
 
+	@ObfInfo(name = "cw", desc = "(IB)Z", opaque = "0")
 	public boolean method7220(int var1) {
 		if (this.field4483[var1] != null) {
 			return true;
@@ -219,6 +246,7 @@ public abstract class Class382 {
 		}
 	}
 
+	@ObfInfo(name = "ck", desc = "(I)Z", opaque = "994597738")
 	public boolean method7255() {
 		boolean var2 = true;
 
@@ -235,10 +263,12 @@ public abstract class Class382 {
 		return var2;
 	}
 
+	@ObfInfo(name = "ao", desc = "(IB)I", opaque = "1")
 	public int method7222(int var1) {
 		return null != this.field4483[var1] ? 100 : 0;
 	}
 
+	@ObfInfo(name = "cn", desc = "(IB)[B", opaque = "0")
 	public byte[] method7221(int var1) {
 		if (1 == this.field4484.length) {
 			return this.method7216(0, var1);
@@ -249,6 +279,7 @@ public abstract class Class382 {
 		}
 	}
 
+	@ObfInfo(name = "ch", desc = "(IIB)[B", opaque = "1")
 	public byte[] method7224(int var1, int var2) {
 		if (var1 >= 0 && var1 < this.field4484.length && this.field4484[var1] != null && var2 >= 0 && var2 < this.field4484[var1].length) {
 			if (this.field4484[var1][var2] == null) {
@@ -269,6 +300,7 @@ public abstract class Class382 {
 		}
 	}
 
+	@ObfInfo(name = "cp", desc = "(II)[B", opaque = "-167741726")
 	public byte[] method7225(int var1) {
 		if (1 == this.field4484.length) {
 			return this.method7224(0, var1);
@@ -279,21 +311,26 @@ public abstract class Class382 {
 		}
 	}
 
+	@ObfInfo(name = "az", desc = "(II)V")
 	public void method7227(int var1) {
 	}
 
+	@ObfInfo(name = "cd", desc = "(II)[I")
 	public int[] method7226(int var1) {
 		return var1 >= 0 && var1 < this.field4476.length ? this.field4476[var1] : null;
 	}
 
+	@ObfInfo(name = "cs", desc = "(II)I", opaque = "-409600127")
 	public int method7237(int var1) {
 		return this.field4484 != null && var1 < this.field4484.length && null != this.field4484[var1] ? this.field4484[var1].length : 0;
 	}
 
+	@ObfInfo(name = "cm", desc = "(I)I")
 	public int method7228() {
 		return this.field4484.length;
 	}
 
+	@ObfInfo(name = "ci", desc = "(I)V", opaque = "-39243931")
 	public void method7229() {
 		for (int var2 = 0; var2 < this.field4483.length; ++var2) {
 			this.field4483[var2] = null;
@@ -301,6 +338,7 @@ public abstract class Class382 {
 
 	}
 
+	@ObfInfo(name = "cc", desc = "(II)V", opaque = "-777953866")
 	public void method7230(int var1) {
 		for (int var3 = 0; var3 < this.field4484[var1].length; ++var3) {
 			this.field4484[var1][var3] = null;
@@ -308,6 +346,7 @@ public abstract class Class382 {
 
 	}
 
+	@ObfInfo(name = "cb", desc = "(I)V", opaque = "2011703751")
 	public void method7231() {
 		for (int var2 = 0; var2 < this.field4484.length; ++var2) {
 			if (null != this.field4484[var2]) {
@@ -319,6 +358,7 @@ public abstract class Class382 {
 
 	}
 
+	@ObfInfo(name = "cr", desc = "(I[II)Z", opaque = "13041198")
 	public boolean method7296(int var1, int[] var2) {
 		if (null == this.field4483[var1]) {
 			return false;
@@ -438,16 +478,19 @@ public abstract class Class382 {
 		}
 	}
 
+	@ObfInfo(name = "co", desc = "(Ljava/lang/String;B)I")
 	public int method7233(String var1) {
 		var1 = var1.toLowerCase();
 		return this.field4473.method10283(Class412.method6666(var1));
 	}
 
+	@ObfInfo(name = "cf", desc = "(ILjava/lang/String;I)I")
 	public int method7299(int var1, String var2) {
 		var2 = var2.toLowerCase();
 		return this.field4482[var1].method10283(Class412.method6666(var2));
 	}
 
+	@ObfInfo(name = "ce", desc = "(Ljava/lang/String;Ljava/lang/String;I)Z", opaque = "1189634521")
 	public boolean method7235(String var1, String var2) {
 		var1 = var1.toLowerCase();
 		var2 = var2.toLowerCase();
@@ -460,6 +503,7 @@ public abstract class Class382 {
 		}
 	}
 
+	@ObfInfo(name = "cz", desc = "(Ljava/lang/String;Ljava/lang/String;I)[B")
 	public byte[] method7271(String var1, String var2) {
 		var1 = var1.toLowerCase();
 		var2 = var2.toLowerCase();
@@ -468,6 +512,7 @@ public abstract class Class382 {
 		return this.method7216(var4, var5);
 	}
 
+	@ObfInfo(name = "ca", desc = "(Ljava/lang/String;Ljava/lang/String;I)Z")
 	public boolean method7253(String var1, String var2) {
 		var1 = var1.toLowerCase();
 		var2 = var2.toLowerCase();
@@ -476,12 +521,14 @@ public abstract class Class382 {
 		return this.method7232(var4, var5);
 	}
 
+	@ObfInfo(name = "cl", desc = "(Ljava/lang/String;I)Z")
 	public boolean method7238(String var1) {
 		var1 = var1.toLowerCase();
 		int var3 = this.field4473.method10283(Class412.method6666(var1));
 		return this.method7220(var3);
 	}
 
+	@ObfInfo(name = "cq", desc = "(Ljava/lang/String;I)V", opaque = "-789909862")
 	public void method7250(String var1) {
 		var1 = var1.toLowerCase();
 		int var3 = this.field4473.method10283(Class412.method6666(var1));
@@ -490,12 +537,14 @@ public abstract class Class382 {
 		}
 	}
 
+	@ObfInfo(name = "cy", desc = "(Ljava/lang/String;I)I")
 	public int method7239(String var1) {
 		var1 = var1.toLowerCase();
 		int var3 = this.field4473.method10283(Class412.method6666(var1));
 		return this.method7222(var3);
 	}
 
+	@ObfInfo(desc = "([B)[B")
 	public static byte[] method3623(byte[] var0) {
 		Class521 var2 = new Class521(var0);
 		int var3 = var2.method9405();

@@ -1,13 +1,26 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "cg")
 public final class Class59 extends Class255 {
+	@ObfInfo(name = "at", desc = "Lic;")
 	public Class211 field440;
+	@ObfInfo(name = "ao", desc = "Z")
 	public boolean field443;
+	@ObfInfo(name = "al", desc = "I", intMultiplier = -217494561)
 	public int field435;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = -107795739)
 	public int field436;
+	@ObfInfo(name = "az", desc = "I", intMultiplier = 1739675053)
 	public int field437;
+	@ObfInfo(name = "ab", desc = "I", intMultiplier = -1549919911)
 	public int field438;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = -1573445793)
 	public int field439;
+	@ObfInfo(name = "af", desc = "I", intMultiplier = 777941077)
 	public int field441;
+	@ObfInfo(name = "ac", desc = "I", intMultiplier = 1586287101)
 	public int field442;
+	@ObfInfo(name = "ak", desc = "I", intMultiplier = -61247699)
 	public int field445;
 
 	public Class59(int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
@@ -30,6 +43,7 @@ public final class Class59 extends Class255 {
 
 	}
 
+	@ObfInfo(name = "ak", desc = "(IB)V", opaque = "9")
 	public final void method1091(int var1) {
 		if (!this.field443) {
 			this.field442 += var1;
@@ -52,6 +66,7 @@ public final class Class59 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "ah", desc = "(I)Lkb;", opaque = "102285859")
 	public final Class262 method1092() {
 		Class224 var2 = Class224.method4163(this.field445);
 		Class262 var3;
@@ -64,12 +79,14 @@ public final class Class59 extends Class255 {
 		return var3 == null ? null : var3;
 	}
 
+	@ObfInfo(name = "az", desc = "(IIII)I")
 	public static int method1099(int var0, int var1, int var2) {
 		int var4 = Class319.method5997(var2 - var1 + 1);
 		var4 <<= var1;
 		return var0 & ~var4;
 	}
 
+	@ObfInfo(name = "aj", desc = "(B)V")
 	public static void method1097() {
 		Class165.field1819.clear();
 	}

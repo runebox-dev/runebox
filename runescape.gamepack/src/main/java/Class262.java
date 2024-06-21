@@ -1,79 +1,154 @@
+import io.runebox.ObfInfo;
 import java.util.Arrays;
 import java.util.HashMap;
 
+@ObfInfo(name = "kb")
 public class Class262 extends Class255 {
+	@ObfInfo(name = "aj", desc = "Lkb;")
 	public static Class262 field2844;
+	@ObfInfo(name = "ak", desc = "Lkb;")
 	public static Class262 field2885;
+	@ObfInfo(name = "af", desc = "Lql;")
 	public static Class428 field2846;
+	@ObfInfo(name = "aa", desc = "Lql;")
 	public static Class428 field2847;
+	@ObfInfo(name = "at", desc = "Lql;")
 	public static Class428 field2848;
+	@ObfInfo(name = "cr", desc = "Z")
 	public static boolean field2905;
+	@ObfInfo(name = "br", desc = "[Z")
 	public static boolean[] field2868;
+	@ObfInfo(name = "bp", desc = "[Z")
 	public static boolean[] field2881;
+	@ObfInfo(name = "az", desc = "[B")
 	public static byte[] field2845;
+	@ObfInfo(name = "al", desc = "[B")
 	public static byte[] field2876;
+	@ObfInfo(name = "ba", desc = "[C")
 	public static char[] field2891;
+	@ObfInfo(name = "bb", desc = "[[C")
 	public static char[][] field2892;
+	@ObfInfo(name = "bv", desc = "[F")
 	public static float[] field2887;
+	@ObfInfo(name = "cm", desc = "[F")
 	public static float[] field2901;
+	@ObfInfo(name = "cx", desc = "[F")
 	public static float[] field2919;
+	@ObfInfo(name = "cb", desc = "I")
 	public static int field2879;
+	@ObfInfo(name = "ci", desc = "I")
 	public static int field2902;
+	@ObfInfo(name = "cc", desc = "I")
 	public static int field2903;
+	@ObfInfo(name = "bx", desc = "[I")
 	public static int[] field2843;
+	@ObfInfo(name = "bc", desc = "[I")
 	public static int[] field2860;
+	@ObfInfo(name = "ch", desc = "[I")
 	public static int[] field2865;
+	@ObfInfo(name = "bj", desc = "[I")
 	public static int[] field2870;
+	@ObfInfo(name = "cl", desc = "[I")
 	public static int[] field2882;
+	@ObfInfo(name = "bd", desc = "[I")
 	public static int[] field2884;
+	@ObfInfo(name = "bm", desc = "[I")
 	public static int[] field2886;
+	@ObfInfo(name = "bq", desc = "[I")
 	public static int[] field2889;
+	@ObfInfo(name = "by", desc = "[I")
 	public static int[] field2893;
+	@ObfInfo(name = "ck", desc = "[I")
 	public static int[] field2895;
+	@ObfInfo(name = "cn", desc = "[I")
 	public static int[] field2896;
+	@ObfInfo(name = "cd", desc = "[I")
 	public static int[] field2899;
+	@ObfInfo(name = "cs", desc = "[I")
 	public static int[] field2900;
+	@ObfInfo(name = "cz", desc = "[I")
 	public static int[] field2909;
+	@ObfInfo(name = "ca", desc = "[I")
 	public static int[] field2910;
+	@ObfInfo(name = "ce", desc = "[I")
 	public static int[] field2913;
+	@ObfInfo(name = "cp", desc = "[I")
 	public static int[] field2918;
+	@ObfInfo(name = "cw", desc = "[[I")
 	public static int[][] field2894;
+	@ObfInfo(name = "cy", desc = "F")
 	public static final float field2851;
+	@ObfInfo(name = "bn", desc = "Z")
 	public boolean field2873;
+	@ObfInfo(name = "ct", desc = "B")
 	public byte field2842;
+	@ObfInfo(name = "an", desc = "B")
 	public byte field2890;
+	@ObfInfo(name = "cg", desc = "B")
 	public byte field2915;
+	@ObfInfo(name = "cv", desc = "B")
 	public byte field2916;
+	@ObfInfo(name = "cj", desc = "B")
 	public byte field2917;
+	@ObfInfo(name = "aw", desc = "[B")
 	public byte[] field2861;
+	@ObfInfo(name = "ad", desc = "[B")
 	public byte[] field2862;
+	@ObfInfo(name = "as", desc = "[B")
 	public byte[] field2864;
+	@ObfInfo(name = "ab", desc = "I")
 	public int field2849;
+	@ObfInfo(name = "av", desc = "I")
 	public int field2853;
+	@ObfInfo(name = "bw", desc = "I")
 	public int field2874;
+	@ObfInfo(name = "bl", desc = "I")
 	public int field2875;
+	@ObfInfo(name = "bg", desc = "I")
 	public int field2877;
+	@ObfInfo(name = "bu", desc = "I")
 	public int field2878;
+	@ObfInfo(name = "am", desc = "I")
 	public int field2904;
+	@ObfInfo(name = "be", desc = "I")
 	public int field2912;
+	@ObfInfo(name = "ac", desc = "[I")
 	public int[] field2850;
+	@ObfInfo(name = "ah", desc = "[I")
 	public int[] field2852;
+	@ObfInfo(name = "aq", desc = "[I")
 	public int[] field2854;
+	@ObfInfo(name = "ap", desc = "[I")
 	public int[] field2855;
+	@ObfInfo(name = "ae", desc = "[I")
 	public int[] field2856;
+	@ObfInfo(name = "ax", desc = "[I")
 	public int[] field2857;
+	@ObfInfo(name = "ay", desc = "[I")
 	public int[] field2858;
+	@ObfInfo(name = "au", desc = "[I")
 	public int[] field2859;
+	@ObfInfo(name = "ar", desc = "[I")
 	public int[] field2866;
+	@ObfInfo(name = "ao", desc = "[I")
 	public int[] field2907;
+	@ObfInfo(name = "bs", desc = "[I")
 	public int[] field2908;
+	@ObfInfo(name = "ag", desc = "[I")
 	public int[] field2911;
+	@ObfInfo(name = "bf", desc = "[[I")
 	public int[][] field2869;
+	@ObfInfo(name = "bi", desc = "[[I")
 	public int[][] field2871;
+	@ObfInfo(name = "bt", desc = "[[I")
 	public int[][] field2872;
+	@ObfInfo(name = "bo", desc = "[[I")
 	public int[][] field2898;
+	@ObfInfo(name = "bh", desc = "Ljava/util/HashMap;")
 	public HashMap field2888;
+	@ObfInfo(name = "cu", desc = "S")
 	public short field2867;
+	@ObfInfo(name = "ai", desc = "[S")
 	public short[] field2863;
 
 	static {
@@ -172,6 +247,7 @@ public class Class262 extends Class255 {
 		this.field2904 = 0;
 	}
 
+	@ObfInfo(name = "ak", desc = "(III)V")
 	public void method5165(int var1, int var2, int var3) {
 		this.field2850 = new int[var1];
 		this.field2907 = new int[var1];
@@ -190,6 +266,7 @@ public class Class262 extends Class255 {
 
 	}
 
+	@ObfInfo(name = "al", desc = "(Lkb;)V")
 	public void method5191(Class262 var1) {
 		int var2 = this.field2854.length;
 		if (this.field2864 == null && (var1.field2864 != null || this.field2890 != var1.field2890)) {
@@ -214,6 +291,7 @@ public class Class262 extends Class255 {
 
 	}
 
+	@ObfInfo(name = "aj", desc = "(Lkb;)V")
 	public void method5284(Class262 var1) {
 		if (var1 != null) {
 			this.method5191(var1);
@@ -266,6 +344,7 @@ public class Class262 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "az", desc = "([[IIIIZI)Lkb;")
 	public Class262 method5238(int[][] var1, int var2, int var3, int var4, boolean var5, int var6) {
 		this.method5173();
 		int var7 = var2 - this.field2912;
@@ -359,6 +438,7 @@ public class Class262 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "af", desc = "(Z)Lkb;")
 	public Class262 method5214(boolean var1) {
 		if (!var1 && field2876.length < this.field2853) {
 			field2876 = new byte[this.field2853 + 100];
@@ -367,6 +447,7 @@ public class Class262 extends Class255 {
 		return this.method5171(var1, field2885, field2876);
 	}
 
+	@ObfInfo(name = "aa", desc = "(Z)Lkb;")
 	public Class262 method5170(boolean var1) {
 		if (!var1 && field2845.length < this.field2853) {
 			field2845 = new byte[this.field2853 + 100];
@@ -375,6 +456,7 @@ public class Class262 extends Class255 {
 		return this.method5171(var1, field2844, field2845);
 	}
 
+	@ObfInfo(name = "at", desc = "(ZLkb;[B)Lkb;")
 	public Class262 method5171(boolean var1, Class262 var2, byte[] var3) {
 		var2.field2849 = this.field2849;
 		var2.field2853 = this.field2853;
@@ -430,6 +512,7 @@ public class Class262 extends Class255 {
 		return var2;
 	}
 
+	@ObfInfo(name = "ab", desc = "(I)V")
 	public void method5172(int var1) {
 		if (!this.field2888.containsKey(var1)) {
 			int var2 = 0;
@@ -492,6 +575,7 @@ public class Class262 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "ac", desc = "()V")
 	public void method5173() {
 		if (this.field2874 != 1) {
 			this.field2874 = 1;
@@ -523,6 +607,7 @@ public class Class262 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "ao", desc = "()V")
 	public void method5174() {
 		if (this.field2874 != 2) {
 			this.field2874 = 2;
@@ -544,16 +629,19 @@ public class Class262 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "aq", desc = "()I")
 	public int method5175() {
 		this.method5173();
 		return this.field2912;
 	}
 
+	@ObfInfo(name = "ap", desc = "()V")
 	public void method5176() {
 		this.field2874 = 0;
 		this.field2888.clear();
 	}
 
+	@ObfInfo(name = "ae", desc = "(Ljl;I)V", opaque = "-2")
 	public void method5177(Class246 var1, int var2) {
 		if (this.field2869 != null) {
 			Class238 var3 = var1.field2645[var2];
@@ -571,6 +659,7 @@ public class Class262 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "ax", desc = "(Lfo;I)V")
 	public void method5178(Class145 var1, int var2) {
 		Class248 var3 = var1.field1654;
 		Class239 var4 = var3.method4761();
@@ -586,6 +675,7 @@ public class Class262 extends Class255 {
 		this.method5176();
 	}
 
+	@ObfInfo(name = "ay", desc = "(Lfo;I)V")
 	public void method5179(Class145 var1, int var2) {
 		Class248 var3 = var1.field1654;
 
@@ -619,10 +709,12 @@ public class Class262 extends Class255 {
 
 	}
 
+	@ObfInfo(name = "au", desc = "(Lje;I)V")
 	public void method5180(Class239 var1, int var2) {
 		this.method5256(var1, var2);
 	}
 
+	@ObfInfo(name = "as", desc = "(Ljl;ILjl;I[I)V")
 	public void method5182(Class246 var1, int var2, Class246 var3, int var4, int[] var5) {
 		if (var2 != -1) {
 			if (var5 != null && var4 != -1) {
@@ -670,6 +762,7 @@ public class Class262 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "aw", desc = "(Ljn;Lfo;I[ZZZ)V")
 	public void method5268(Class248 var1, Class145 var2, int var3, boolean[] var4, boolean var5, boolean var6) {
 		Class239 var7 = var1.method4761();
 		if (var7 != null) {
@@ -685,6 +778,7 @@ public class Class262 extends Class255 {
 
 	}
 
+	@ObfInfo(name = "ad", desc = "(Ljl;I[IZ)V")
 	public void method5183(Class246 var1, int var2, int[] var3, boolean var4) {
 		if (var3 == null) {
 			this.method5177(var1, var2);
@@ -715,6 +809,7 @@ public class Class262 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "ai", desc = "(I[IIII)V")
 	public void method5184(int var1, int[] var2, int var3, int var4, int var5) {
 		int var6 = var2.length;
 		int var7;
@@ -881,6 +976,7 @@ public class Class262 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "an", desc = "()V")
 	public void method5243() {
 		for (int var1 = 0; var1 < this.field2849; ++var1) {
 			int var2 = this.field2850[var1];
@@ -891,6 +987,7 @@ public class Class262 extends Class255 {
 		this.method5176();
 	}
 
+	@ObfInfo(name = "am", desc = "()V")
 	public void method5181() {
 		for (int var1 = 0; var1 < this.field2849; ++var1) {
 			this.field2850[var1] = -this.field2850[var1];
@@ -900,6 +997,7 @@ public class Class262 extends Class255 {
 		this.method5176();
 	}
 
+	@ObfInfo(name = "ar", desc = "()V")
 	public void method5222() {
 		for (int var1 = 0; var1 < this.field2849; ++var1) {
 			int var2 = this.field2852[var1];
@@ -910,6 +1008,7 @@ public class Class262 extends Class255 {
 		this.method5176();
 	}
 
+	@ObfInfo(name = "ag", desc = "(I)V")
 	public void method5251(int var1) {
 		int var2 = field2913[var1];
 		int var3 = field2909[var1];
@@ -923,6 +1022,7 @@ public class Class262 extends Class255 {
 		this.method5176();
 	}
 
+	@ObfInfo(name = "bs", desc = "(III)V")
 	public void method5189(int var1, int var2, int var3) {
 		for (int var4 = 0; var4 < this.field2849; ++var4) {
 			int[] var10000 = this.field2850;
@@ -936,6 +1036,7 @@ public class Class262 extends Class255 {
 		this.method5176();
 	}
 
+	@ObfInfo(name = "bf", desc = "(III)V")
 	public void method5190(int var1, int var2, int var3) {
 		for (int var4 = 0; var4 < this.field2849; ++var4) {
 			this.field2850[var4] = this.field2850[var4] * var1 / 128;
@@ -946,6 +1047,7 @@ public class Class262 extends Class255 {
 		this.method5176();
 	}
 
+	@ObfInfo(name = "bo", desc = "(IIIIIII)V")
 	public final void method5288(int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
 		if (this.field2874 != 2 && this.field2874 != 1) {
 			this.method5174();
@@ -1009,6 +1111,7 @@ public class Class262 extends Class255 {
 
 	}
 
+	@ObfInfo(name = "bi", desc = "(IIIIIIII)V")
 	public final void method5192(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
 		if (this.field2874 != 2 && this.field2874 != 1) {
 			this.method5174();
@@ -1072,6 +1175,7 @@ public class Class262 extends Class255 {
 
 	}
 
+	@ObfInfo(name = "ef", desc = "(IIIIIIIIIJ)V")
 	public void method4892(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, long var10) {
 		int var12 = Class253.field2683[var2];
 		int var13 = Class253.field2687[var2];
@@ -1080,6 +1184,7 @@ public class Class262 extends Class255 {
 		this.method5194(var1, var12, var13, var14, var15, var4 - var7, var5 - var8, var6 - var9, var10);
 	}
 
+	@ObfInfo(name = "bt", desc = "(IIIIIIIIJ)V")
 	public void method5194(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, long var9) {
 		if (this.field2874 != 1) {
 			this.method5173();
@@ -1219,6 +1324,7 @@ public class Class262 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "jq", desc = "(ILql;IIIJ)V")
 	public void method4893(int var1, Class428 var2, int var3, int var4, int var5, long var6) {
 		if (this.field2874 != 1) {
 			this.method5173();
@@ -1277,6 +1383,7 @@ public class Class262 extends Class255 {
 
 	}
 
+	@ObfInfo(name = "bn", desc = "(ZZZJ)V")
 	public final void method5196(boolean var1, boolean var2, boolean var3, long var4) {
 		if (this.field2877 < 6000) {
 			int var6;
@@ -1531,6 +1638,7 @@ public class Class262 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "bw", desc = "(I)V")
 	public final void method5197(int var1) {
 		if (field2868[var1]) {
 			this.method5200(var1);
@@ -1549,10 +1657,12 @@ public class Class262 extends Class255 {
 		}
 	}
 
+	@ObfInfo(name = "bl", desc = "(I)Z")
 	public boolean method5198(int var1) {
 		return this.field2917 > 0 && var1 < this.field2867;
 	}
 
+	@ObfInfo(name = "be", desc = "(IIIIIIIFFFIII)V")
 	public final void method5199(int var1, int var2, int var3, int var4, int var5, int var6, int var7, float var8, float var9, float var10, int var11, int var12, int var13) {
 		if (this.field2863 != null && this.field2863[var1] != -1) {
 			int var15;
@@ -1589,6 +1699,7 @@ public class Class262 extends Class255 {
 
 	}
 
+	@ObfInfo(name = "bg", desc = "(I)V")
 	public final void method5200(int var1) {
 		int var2 = Class253.method4805();
 		int var3 = Class253.method4788();
@@ -1755,6 +1866,7 @@ public class Class262 extends Class255 {
 
 	}
 
+	@ObfInfo(name = "bu", desc = "(ILql;)V")
 	public void method5201(int var1, Class428 var2) {
 		float var3 = (float)this.field2850[var1];
 		float var4 = (float)(-this.field2907[var1]);
@@ -1765,6 +1877,7 @@ public class Class262 extends Class255 {
 		this.field2852[var1] = -((int)(var2.field4699[2] * var3 + var2.field4699[6] * var4 + var2.field4699[10] * var5 + var2.field4699[14] * var6));
 	}
 
+	@ObfInfo(name = "bh", desc = "(Lje;I)V")
 	public void method5256(Class239 var1, int var2) {
 		if (this.field2871 != null) {
 			for (int var3 = 0; var3 < this.field2849; ++var3) {

@@ -1,6 +1,12 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "ml")
 public class Class324 extends Class27 {
+	@ObfInfo(name = "ak", desc = "Lmw;")
 	public Class335 field3414;
+	@ObfInfo(name = "aj", desc = "Lbk;")
 	public Class37 field3412;
+	@ObfInfo(name = "al", desc = "Lpk;")
 	public Class401 field3413;
 
 	public Class324(Class335 var1) {
@@ -9,6 +15,7 @@ public class Class324 extends Class27 {
 		this.field3414 = var1;
 	}
 
+	@ObfInfo(name = "aa", desc = "()Lba;")
 	public Class27 method384() {
 		Class343 var1 = (Class343)this.field3413.method7482();
 		if (var1 == null) {
@@ -18,6 +25,7 @@ public class Class324 extends Class27 {
 		}
 	}
 
+	@ObfInfo(name = "at", desc = "()Lba;")
 	public Class27 method379() {
 		Class343 var1;
 		do {
@@ -30,10 +38,12 @@ public class Class324 extends Class27 {
 		return var1.field3845;
 	}
 
+	@ObfInfo(name = "ab", desc = "()I")
 	public int method380() {
 		return 0;
 	}
 
+	@ObfInfo(name = "ac", desc = "([III)V")
 	public void method381(int[] var1, int var2, int var3) {
 		this.field3412.method381(var1, var2, var3);
 
@@ -58,6 +68,7 @@ public class Class324 extends Class27 {
 
 	}
 
+	@ObfInfo(name = "ah", desc = "(I)V")
 	public void method395(int var1) {
 		this.field3412.method395(var1);
 
@@ -80,6 +91,7 @@ public class Class324 extends Class27 {
 
 	}
 
+	@ObfInfo(name = "ak", desc = "(Lne;[IIIIB)V", opaque = "2")
 	public void method6232(Class343 var1, int[] var2, int var3, int var4, int var5) {
 		if ((this.field3414.field3490[var1.field3840] & 4) != 0 && var1.field3850 < 0) {
 			int var7 = this.field3414.field3476[var1.field3840] / Client.field1382;
@@ -125,6 +137,7 @@ public class Class324 extends Class27 {
 		var1.field3845.method381(var2, var3, var4);
 	}
 
+	@ObfInfo(name = "al", desc = "(Lne;II)V", opaque = "1543266615")
 	public void method6235(Class343 var1, int var2) {
 		if ((this.field3414.field3490[var1.field3840] & 4) != 0 && var1.field3850 < 0) {
 			int var4 = this.field3414.field3476[var1.field3840] / Client.field1382;

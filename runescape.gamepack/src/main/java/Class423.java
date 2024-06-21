@@ -1,5 +1,10 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "qg")
 public class Class423 {
+	@ObfInfo(name = "ak", desc = "[F")
 	public float[] field4684;
+	@ObfInfo(name = "al", desc = "I", intMultiplier = 330454819)
 	public int field4685;
 
 	public Class423(float[] var1, int var2) {
@@ -7,6 +12,7 @@ public class Class423 {
 		this.field4685 = var2;
 	}
 
+	@ObfInfo(desc = "([FIFZFZ[F)I")
 	public static int method3939(float[] var0, int var1, float var2, boolean var3, float var4, boolean var5, float[] var6) {
 		float var8 = 0.0F;
 
@@ -210,6 +216,7 @@ public class Class423 {
 		}
 	}
 
+	@ObfInfo(desc = "([FIF)F")
 	public static float method6122(float[] var0, int var1, float var2) {
 		float var4 = var0[var1];
 

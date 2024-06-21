@@ -1,11 +1,22 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "dv")
 public final class Class100 extends Class86 {
+	@ObfInfo(name = "at", desc = "I", intMultiplier = -563542583)
 	public static int field1319;
+	@ObfInfo(name = "ac", desc = "I", intMultiplier = -556420941)
 	public static int field1321;
+	@ObfInfo(name = "ab", desc = "Lio;")
 	public Class223 field1315;
+	@ObfInfo(name = "aa", desc = "Lio;")
 	public Class223 field1318;
+	@ObfInfo(name = "ak", desc = "Liq;")
 	public Class225 field1314;
+	@ObfInfo(name = "af", desc = "Lvs;")
 	public Class564 field1317;
+	@ObfInfo(name = "az", desc = "I", intMultiplier = 1321693809)
 	public int field1316;
+	@ObfInfo(name = "al", desc = "Ljava/lang/String;")
 	public String field1320;
 
 	static {
@@ -18,14 +29,17 @@ public final class Class100 extends Class86 {
 		this.field1316 = 31;
 	}
 
+	@ObfInfo(name = "aq", desc = "(Ljava/lang/String;B)V", opaque = "7")
 	public void method2522(String var1) {
 		this.field1320 = var1 == null ? "" : var1;
 	}
 
+	@ObfInfo(name = "ap", desc = "(II)V")
 	public void method2547(int var1) {
 		this.field1316 = var1;
 	}
 
+	@ObfInfo(name = "ae", desc = "(II)Z", opaque = "-60609733")
 	public boolean method2562(int var1) {
 		if (var1 >= 0 && var1 <= 4) {
 			return 0 != (this.field1316 & 1 << var1);
@@ -34,6 +48,7 @@ public final class Class100 extends Class86 {
 		}
 	}
 
+	@ObfInfo(name = "ax", desc = "(I)Ljava/lang/String;", opaque = "1132429086")
 	public final String method2525() {
 		if (!this.field1320.isEmpty()) {
 			return this.field1320;
@@ -50,6 +65,7 @@ public final class Class100 extends Class86 {
 		}
 	}
 
+	@ObfInfo(name = "ay", desc = "(ILjv;I)V", opaque = "1051450811")
 	public final void method2526(int var1, Class256 var2) {
 		int var4 = super.field1080[0];
 		int var5 = super.field1127[0];
@@ -108,6 +124,7 @@ public final class Class100 extends Class86 {
 		super.field1128[0] = var2;
 	}
 
+	@ObfInfo(name = "au", desc = "(IIZI)V", opaque = "-1664480968")
 	public final void method2527(int var1, int var2, boolean var3) {
 		if (super.field1074 != -1 && Class237.method4637(super.field1074).field2141 == 1) {
 			super.field1074 = -1;
@@ -143,6 +160,7 @@ public final class Class100 extends Class86 {
 		super.field1126 = super.field1059 * 64 + 128 * super.field1127[0];
 	}
 
+	@ObfInfo(name = "ah", desc = "(I)Lkb;", opaque = "102285859")
 	public final Class262 method1092() {
 		if (this.field1314 == null) {
 			return null;
@@ -182,18 +200,22 @@ public final class Class100 extends Class86 {
 		}
 	}
 
+	@ObfInfo(name = "bs", desc = "(I)Z", opaque = "1426949207")
 	public final boolean method2264() {
 		return this.field1314 != null;
 	}
 
+	@ObfInfo(name = "as", desc = "(B)[I", opaque = "0")
 	public int[] method2530() {
 		return this.field1317 != null ? this.field1317.method10250() : this.field1314.method4242();
 	}
 
+	@ObfInfo(name = "aw", desc = "(I)[S", opaque = "1374196088")
 	public short[] method2531() {
 		return this.field1317 != null ? this.field1317.method10247() : this.field1314.method4257();
 	}
 
+	@ObfInfo(name = "ad", desc = "(IISI)V", opaque = "-641634173")
 	public void method2532(int var1, int var2, short var3) {
 		if (this.field1317 == null) {
 			this.field1317 = new Class564(this.field1314);
@@ -202,6 +224,7 @@ public final class Class100 extends Class86 {
 		this.field1317.method10248(var1, var2, var3);
 	}
 
+	@ObfInfo(name = "ai", desc = "([I[SI)V", opaque = "473152652")
 	public void method2533(int[] var1, short[] var2) {
 		if (this.field1317 == null) {
 			this.field1317 = new Class564(this.field1314);
@@ -210,26 +233,32 @@ public final class Class100 extends Class86 {
 		this.field1317.method10249(var1, var2);
 	}
 
+	@ObfInfo(name = "an", desc = "(I)V")
 	public void method2534() {
 		this.field1317 = null;
 	}
 
+	@ObfInfo(name = "am", desc = "(Lio;I)V")
 	public void method2561(Class223 var1) {
 		this.field1315 = var1;
 	}
 
+	@ObfInfo(name = "ar", desc = "(S)Lio;")
 	public Class223 method2536() {
 		return this.field1315;
 	}
 
+	@ObfInfo(name = "ag", desc = "(Lio;I)V")
 	public void method2537(Class223 var1) {
 		this.field1318 = var1;
 	}
 
+	@ObfInfo(name = "bf", desc = "(I)V")
 	public void method2538() {
 		this.field1315 = null;
 	}
 
+	@ObfInfo(name = "bo", desc = "(B)V")
 	public void method2557() {
 		this.field1318 = null;
 	}

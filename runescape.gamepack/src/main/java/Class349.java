@@ -1,20 +1,36 @@
+import io.runebox.ObfInfo;
 import java.util.HashMap;
 import java.util.Map;
 
+@ObfInfo(name = "nk")
 public class Class349 {
+	@ObfInfo(desc = "[Z")
 	public static boolean[] field1710;
+	@ObfInfo(name = "ao", desc = "Llm;")
 	public Class299 field3880;
+	@ObfInfo(name = "av", desc = "Llm;")
 	public Class299 field3881;
+	@ObfInfo(name = "ah", desc = "Llm;")
 	public Class299 field3883;
+	@ObfInfo(name = "ac", desc = "Llm;")
 	public Class299 field3886;
+	@ObfInfo(name = "aa", desc = "[[Lnb;")
 	public Class340[][] field3877;
+	@ObfInfo(name = "al", desc = "Lor;")
 	public Class382 field3873;
+	@ObfInfo(name = "az", desc = "Lor;")
 	public Class382 field3875;
+	@ObfInfo(name = "af", desc = "Lor;")
 	public Class382 field3876;
+	@ObfInfo(name = "aj", desc = "Lor;")
 	public Class382 field3879;
+	@ObfInfo(name = "ak", desc = "Lor;")
 	public Class382 field3882;
+	@ObfInfo(name = "ap", desc = "Lry;")
 	public Class467 field3872;
+	@ObfInfo(name = "aq", desc = "Lry;")
 	public Class467 field3884;
+	@ObfInfo(name = "ab", desc = "Ljava/util/Map;")
 	public Map field3878;
 
 	public Class349(Class382 var1, Class382 var2, Class382 var3, Class382 var4, Class382 var5) {
@@ -39,6 +55,7 @@ public class Class349 {
 		field1710 = new boolean[var6];
 	}
 
+	@ObfInfo(name = "ak", desc = "(IB)Lnb;", opaque = "17")
 	public Class340 method6718(int var1) {
 		int var3 = var1 >> 16;
 		int var4 = var1 & 65535;
@@ -52,6 +69,7 @@ public class Class349 {
 		return this.field3877[var3][var4];
 	}
 
+	@ObfInfo(name = "al", desc = "(III)Lnb;", opaque = "535501978")
 	public Class340 method6721(int var1, int var2) {
 		Class340 var4 = this.method6718(var1);
 		if (var2 == -1) {
@@ -61,6 +79,7 @@ public class Class349 {
 		}
 	}
 
+	@ObfInfo(name = "aj", desc = "(IB)Z", opaque = "5")
 	public boolean method6720(int var1) {
 		if (field1710[var1]) {
 			return true;
@@ -105,6 +124,7 @@ public class Class349 {
 		}
 	}
 
+	@ObfInfo(name = "az", desc = "(II)V", opaque = "-839691768")
 	public void method6722(int var1) {
 		if (var1 != -1) {
 			if (field1710[var1]) {
@@ -123,6 +143,7 @@ public class Class349 {
 		}
 	}
 
+	@ObfInfo(name = "af", desc = "(I)V")
 	public void method6732() {
 		this.field3886.method5995();
 		this.field3880.method5995();
@@ -130,6 +151,7 @@ public class Class349 {
 		this.field3881.method5995();
 	}
 
+	@ObfInfo(name = "ao", desc = "(IS)J")
 	public static long method6730(int var0) {
 		if (var0 > 63) {
 			throw new Class429("Cannot generate max unsigned value for more than 63 bits as this is greater than the boundaries of a java long. Value provided: %d", new Object[]{var0});

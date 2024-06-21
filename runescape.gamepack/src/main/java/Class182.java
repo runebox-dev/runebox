@@ -1,12 +1,18 @@
+import io.runebox.ObfInfo;
 import java.io.DataInputStream;
 import java.net.InetAddress;
 import java.net.Socket;
 import java.net.URL;
 
+@ObfInfo(name = "gz")
 public class Class182 implements Runnable {
+	@ObfInfo(name = "aj", desc = "Lhe;")
 	public Class187 field1901;
+	@ObfInfo(name = "az", desc = "Lhe;")
 	public Class187 field1902;
+	@ObfInfo(name = "aa", desc = "Z")
 	public boolean field1899;
+	@ObfInfo(name = "af", desc = "Ljava/lang/Thread;")
 	public Thread field1903;
 
 	public Class182() {
@@ -29,6 +35,7 @@ public class Class182 implements Runnable {
 		this.field1903.start();
 	}
 
+	@ObfInfo(name = "ak", desc = "(B)V")
 	public final void method3658() {
 		synchronized(this) {
 			this.field1899 = true;
@@ -42,6 +49,7 @@ public class Class182 implements Runnable {
 
 	}
 
+	@ObfInfo(desc = "()V")
 	public final void run() {
 		while (true) {
 			Class187 var1;
@@ -90,6 +98,7 @@ public class Class182 implements Runnable {
 		}
 	}
 
+	@ObfInfo(name = "al", desc = "(IIILjava/lang/Object;B)Lhe;", opaque = "3")
 	public final Class187 method3642(int var1, int var2, int var3, Object var4) {
 		Class187 var6 = new Class187();
 		var6.field1936 = var1;
@@ -108,10 +117,12 @@ public class Class182 implements Runnable {
 		}
 	}
 
+	@ObfInfo(name = "aj", desc = "(Ljava/lang/String;II)Lhe;")
 	public final Class187 method3657(String var1, int var2) {
 		return this.method3642(1, var2, 0, var1);
 	}
 
+	@ObfInfo(name = "az", desc = "(Ljava/lang/Runnable;II)Lhe;")
 	public final Class187 method3646(Runnable var1, int var2) {
 		return this.method3642(2, var2, 0, var1);
 	}

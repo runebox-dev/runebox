@@ -1,5 +1,10 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "bl")
 public class Class38 {
+	@ObfInfo(name = "at", desc = "I", intMultiplier = 1592180729)
 	public int field268;
+	@ObfInfo(name = "ab", desc = "I", intMultiplier = 2000861833)
 	public int field269;
 
 	public Class38(int var1, int var2) {
@@ -7,6 +12,7 @@ public class Class38 {
 		this.field269 = var2;
 	}
 
+	@ObfInfo(name = "ak", desc = "(Lbi;B)Z", opaque = "2")
 	public boolean method784(Class35 var1) {
 		if (var1 == null) {
 			return false;

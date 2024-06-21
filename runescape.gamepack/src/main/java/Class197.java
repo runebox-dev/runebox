@@ -1,12 +1,24 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "ho")
 public class Class197 extends Class507 {
+	@ObfInfo(name = "az", desc = "Llm;")
 	public static Class299 field2013;
+	@ObfInfo(name = "av", desc = "Z")
 	public boolean field2014;
+	@ObfInfo(name = "af", desc = "I", intMultiplier = -1514514101)
 	public int field2023;
+	@ObfInfo(name = "aa", desc = "[I")
 	public int[] field2015;
+	@ObfInfo(name = "ah", desc = "[I")
 	public int[] field2022;
+	@ObfInfo(name = "at", desc = "[S")
 	public short[] field2016;
+	@ObfInfo(name = "ab", desc = "[S")
 	public short[] field2017;
+	@ObfInfo(name = "ac", desc = "[S")
 	public short[] field2018;
+	@ObfInfo(name = "ao", desc = "[S")
 	public short[] field2019;
 
 	static {
@@ -19,6 +31,7 @@ public class Class197 extends Class507 {
 		this.field2014 = false;
 	}
 
+	@ObfInfo(name = "al", desc = "(Lua;I)V")
 	public void method3845(Class521 var1) {
 		while (true) {
 			int var3 = var1.method9405();
@@ -30,6 +43,7 @@ public class Class197 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "aj", desc = "(Lua;II)V", opaque = "-266758959")
 	public void method3855(Class521 var1, int var2) {
 		if (var2 == 1) {
 			this.field2023 = var1.method9405();
@@ -70,6 +84,7 @@ public class Class197 extends Class507 {
 
 	}
 
+	@ObfInfo(name = "az", desc = "(B)Z", opaque = "3")
 	public boolean method3847() {
 		if (this.field2015 == null) {
 			return true;
@@ -86,6 +101,7 @@ public class Class197 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "af", desc = "(I)Ljb;", opaque = "1605515774")
 	public Class236 method3848() {
 		if (this.field2015 == null) {
 			return null;
@@ -120,6 +136,7 @@ public class Class197 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "aa", desc = "(I)Z", opaque = "2026407683")
 	public boolean method3846() {
 		boolean var2 = true;
 
@@ -132,6 +149,7 @@ public class Class197 extends Class507 {
 		return var2;
 	}
 
+	@ObfInfo(name = "at", desc = "(I)Ljb;", opaque = "-938751037")
 	public Class236 method3850() {
 		Class236[] var2 = new Class236[5];
 		int var3 = 0;
@@ -159,6 +177,7 @@ public class Class197 extends Class507 {
 		return var6;
 	}
 
+	@ObfInfo(desc = "(I)LClass197;")
 	public static Class197 method3060(int var0) {
 		Class197 var2 = (Class197)field2013.method5993((long)var0);
 		if (var2 != null) {

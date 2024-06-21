@@ -1,3 +1,4 @@
+import io.runebox.ObfInfo;
 import java.util.Iterator;
 import java.util.PriorityQueue;
 import java.util.concurrent.LinkedBlockingQueue;
@@ -5,38 +6,71 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 
+@ObfInfo(name = "mw")
 public class Class335 extends Class27 {
+	@ObfInfo(name = "bh", desc = "Ljava/util/concurrent/ThreadPoolExecutor;")
 	public static ThreadPoolExecutor field3489;
+	@ObfInfo(name = "bu", desc = "Ljava/util/concurrent/atomic/AtomicBoolean;")
 	public static AtomicBoolean field3483;
+	@ObfInfo(name = "be", desc = "Lbd;")
 	public Class30 field3505;
+	@ObfInfo(name = "bl", desc = "Lml;")
 	public Class324 field3504;
+	@ObfInfo(name = "bf", desc = "Lmx;")
 	public Class336 field3498;
+	@ObfInfo(name = "ag", desc = "[[Lne;")
 	public Class343[][] field3496;
+	@ObfInfo(name = "bs", desc = "[[Lne;")
 	public Class343[][] field3497;
+	@ObfInfo(name = "ak", desc = "Ltx;")
 	public Class518 field3488;
+	@ObfInfo(name = "bo", desc = "Z")
 	public boolean field3507;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = 1429921871)
 	public int field3482;
+	@ObfInfo(name = "al", desc = "I", intMultiplier = 1920878651)
 	public int field3491;
+	@ObfInfo(name = "bt", desc = "I", intMultiplier = -1552418049)
 	public int field3492;
+	@ObfInfo(name = "bi", desc = "I", intMultiplier = -469107071)
 	public int field3500;
+	@ObfInfo(name = "bk", desc = "I", intMultiplier = -473293717)
 	public int field3509;
+	@ObfInfo(name = "ar", desc = "[I")
 	public int[] field3476;
+	@ObfInfo(name = "ai", desc = "[I")
 	public int[] field3478;
+	@ObfInfo(name = "az", desc = "[I")
 	public int[] field3479;
+	@ObfInfo(name = "af", desc = "[I")
 	public int[] field3480;
+	@ObfInfo(name = "aa", desc = "[I")
 	public int[] field3481;
+	@ObfInfo(name = "ac", desc = "[I")
 	public int[] field3484;
+	@ObfInfo(name = "ad", desc = "[I")
 	public int[] field3485;
+	@ObfInfo(name = "ah", desc = "[I")
 	public int[] field3486;
+	@ObfInfo(name = "av", desc = "[I")
 	public int[] field3487;
+	@ObfInfo(name = "aw", desc = "[I")
 	public int[] field3490;
+	@ObfInfo(name = "an", desc = "[I")
 	public int[] field3493;
+	@ObfInfo(name = "am", desc = "[I")
 	public int[] field3494;
+	@ObfInfo(name = "ao", desc = "[I")
 	public int[] field3499;
+	@ObfInfo(name = "ab", desc = "[I")
 	public int[] field3501;
+	@ObfInfo(name = "at", desc = "[I")
 	public int[] field3508;
+	@ObfInfo(name = "bg", desc = "Ljava/util/PriorityQueue;")
 	public PriorityQueue field3506;
+	@ObfInfo(name = "bn", desc = "J", longMultiplier = -3040115667621603143L)
 	public long field3502;
+	@ObfInfo(name = "bw", desc = "J", longMultiplier = -4832767796175148511L)
 	public long field3503;
 
 	static {
@@ -74,16 +108,19 @@ public class Class335 extends Class27 {
 		this.method6333();
 	}
 
+	@ObfInfo(name = "ak", desc = "(II)V")
 	public void method6400(int var1) {
 		synchronized(this.field3505) {
 			this.field3491 = var1;
 		}
 	}
 
+	@ObfInfo(name = "al", desc = "(B)I")
 	public int method6431() {
 		return this.field3491;
 	}
 
+	@ObfInfo(name = "aj", desc = "(Lno;Lor;Lbq;I)Z", opaque = "1596548192")
 	public boolean method6422(Class353 var1, Class382 var2, Class43 var3) {
 		synchronized(this.field3505) {
 			boolean var6 = true;
@@ -130,6 +167,7 @@ public class Class335 extends Class27 {
 		}
 	}
 
+	@ObfInfo(name = "az", desc = "(B)V", opaque = "0")
 	public void method6324() {
 		if (this.field3506 != null) {
 			if (field3483 != null) {
@@ -147,6 +185,7 @@ public class Class335 extends Class27 {
 		}
 	}
 
+	@ObfInfo(name = "af", desc = "(B)V", opaque = "-1")
 	public void method6316() {
 		synchronized(this.field3505) {
 			for (Class333 var3 = (Class333)this.field3488.method9363(); var3 != null; var3 = (Class333)this.field3488.method9364()) {
@@ -156,6 +195,7 @@ public class Class335 extends Class27 {
 		}
 	}
 
+	@ObfInfo(name = "ao", desc = "(I)V", opaque = "264957018")
 	public void method6313() {
 		synchronized(this.field3505) {
 			for (Class333 var3 = (Class333)this.field3488.method9363(); var3 != null; var3 = (Class333)this.field3488.method9364()) {
@@ -165,6 +205,7 @@ public class Class335 extends Class27 {
 		}
 	}
 
+	@ObfInfo(name = "av", desc = "(Lno;ZB)V", opaque = "1")
 	public void method6318(Class353 var1, boolean var2) {
 		synchronized(this.field3505) {
 			this.method6319();
@@ -185,6 +226,7 @@ public class Class335 extends Class27 {
 		}
 	}
 
+	@ObfInfo(name = "aq", desc = "(I)V")
 	public void method6319() {
 		synchronized(this.field3505) {
 			this.field3498.method6459();
@@ -192,30 +234,35 @@ public class Class335 extends Class27 {
 		}
 	}
 
+	@ObfInfo(name = "ap", desc = "(B)Z")
 	public boolean method6320() {
 		synchronized(this.field3505) {
 			return this.field3498.method6448();
 		}
 	}
 
+	@ObfInfo(name = "ae", desc = "(S)Z")
 	public boolean method6321() {
 		synchronized(this.field3505) {
 			return this.field3488.method9362() > 0;
 		}
 	}
 
+	@ObfInfo(name = "ax", desc = "(III)V")
 	public void method6322(int var1, int var2) {
 		synchronized(this.field3505) {
 			this.method6323(var1, var2);
 		}
 	}
 
+	@ObfInfo(name = "ay", desc = "(III)V")
 	public void method6323(int var1, int var2) {
 		this.field3508[var1] = var2;
 		this.field3484[var1] = var2 & -128;
 		this.method6419(var1, var2);
 	}
 
+	@ObfInfo(name = "au", desc = "(IIB)V", opaque = "0")
 	public void method6419(int var1, int var2) {
 		if (this.field3501[var1] != var2) {
 			this.field3501[var1] = var2;
@@ -227,6 +274,7 @@ public class Class335 extends Class27 {
 
 	}
 
+	@ObfInfo(name = "as", desc = "(IIII)V", opaque = "-280989961")
 	public void method6325(int var1, int var2, int var3) {
 		this.method6327(var1, var2, 64);
 		if (0 != (this.field3490[var1] & 2)) {
@@ -292,6 +340,7 @@ public class Class335 extends Class27 {
 		}
 	}
 
+	@ObfInfo(name = "aw", desc = "(Lne;ZB)V", opaque = "-1")
 	public void method6356(Class343 var1, boolean var2) {
 		int var4 = var1.field3847.field314.length;
 		int var5;
@@ -310,6 +359,7 @@ public class Class335 extends Class27 {
 		var1.field3845.method927(var5);
 	}
 
+	@ObfInfo(name = "ad", desc = "(IIII)V", opaque = "1265693380")
 	public void method6327(int var1, int var2, int var3) {
 		Class343 var5 = this.field3496[var1][var2];
 		if (var5 != null) {
@@ -328,16 +378,20 @@ public class Class335 extends Class27 {
 		}
 	}
 
+	@ObfInfo(name = "bn", desc = "(IIII)V")
 	public void method6392(int var1, int var2, int var3) {
 	}
 
+	@ObfInfo(name = "bw", desc = "(III)V")
 	public void method6329(int var1, int var2) {
 	}
 
+	@ObfInfo(name = "bu", desc = "(III)V")
 	public void method6433(int var1, int var2) {
 		this.field3499[var1] = var2;
 	}
 
+	@ObfInfo(name = "bh", desc = "(IB)V", opaque = "91")
 	public void method6330(int var1) {
 		for (Class343 var3 = (Class343)this.field3504.field3413.method7482(); var3 != null; var3 = (Class343)this.field3504.field3413.method7490()) {
 			if (var1 < 0 || var1 == var3.field3840) {
@@ -360,6 +414,7 @@ public class Class335 extends Class27 {
 
 	}
 
+	@ObfInfo(name = "bk", desc = "(IB)V", opaque = "13")
 	public void method6331(int var1) {
 		if (var1 >= 0) {
 			this.field3479[var1] = 12800;
@@ -383,6 +438,7 @@ public class Class335 extends Class27 {
 		}
 	}
 
+	@ObfInfo(name = "br", desc = "(II)V", opaque = "-1939272721")
 	public void method6332(int var1) {
 		for (Class343 var3 = (Class343)this.field3504.field3413.method7482(); var3 != null; var3 = (Class343)this.field3504.field3413.method7490()) {
 			if ((var1 < 0 || var3.field3840 == var1) && var3.field3850 < 0) {
@@ -393,6 +449,7 @@ public class Class335 extends Class27 {
 
 	}
 
+	@ObfInfo(name = "bx", desc = "(I)V", opaque = "-1104397490")
 	public void method6333() {
 		this.method6330(-1);
 		this.method6331(-1);
@@ -408,6 +465,7 @@ public class Class335 extends Class27 {
 
 	}
 
+	@ObfInfo(name = "bd", desc = "(II)V", opaque = "20957472")
 	public void method6367(int var1) {
 		if (0 != (this.field3490[var1] & 2)) {
 			for (Class343 var3 = (Class343)this.field3504.field3413.method7482(); var3 != null; var3 = (Class343)this.field3504.field3413.method7490()) {
@@ -419,6 +477,7 @@ public class Class335 extends Class27 {
 
 	}
 
+	@ObfInfo(name = "bv", desc = "(II)V", opaque = "-119796863")
 	public void method6335(int var1) {
 		if (0 != (this.field3490[var1] & 4)) {
 			for (Class343 var3 = (Class343)this.field3504.field3413.method7482(); var3 != null; var3 = (Class343)this.field3504.field3413.method7490()) {
@@ -430,6 +489,7 @@ public class Class335 extends Class27 {
 
 	}
 
+	@ObfInfo(name = "bm", desc = "(II)V", opaque = "-2016365982")
 	public void method6417(int var1) {
 		int var3 = var1 & 240;
 		int var4;
@@ -619,11 +679,13 @@ public class Class335 extends Class27 {
 		}
 	}
 
+	@ObfInfo(name = "bq", desc = "(III)V")
 	public void method6337(int var1, int var2) {
 		this.field3494[var1] = var2;
 		this.field3476[var1] = (int)(2097152.0D * Math.pow(2.0D, (double)var2 * 5.4931640625E-4D) + 0.5D);
 	}
 
+	@ObfInfo(name = "bj", desc = "(Lne;B)I", opaque = "64")
 	public int method6338(Class343 var1) {
 		int var3 = (var1.field3846 * var1.field3841 >> 12) + var1.field3853;
 		var3 += this.field3478[var1.field3840] * (this.field3499[var1.field3840] - 8192) >> 12;
@@ -645,6 +707,7 @@ public class Class335 extends Class27 {
 		return var5 < 1 ? 1 : var5;
 	}
 
+	@ObfInfo(name = "bc", desc = "(Lne;B)I", opaque = "1")
 	public int method6339(Class343 var1) {
 		Class331 var3 = var1.field3839;
 		int var4 = 4096 + this.field3479[var1.field3840] * this.field3481[var1.field3840] >> 13;
@@ -686,23 +749,28 @@ public class Class335 extends Class27 {
 		return var4;
 	}
 
+	@ObfInfo(name = "bz", desc = "(Lne;I)I", opaque = "1796105500")
 	public int method6340(Class343 var1) {
 		int var3 = this.field3480[var1.field3840];
 		return var3 < 8192 ? 32 + var1.field3843 * var3 >> 6 : 16384 - (32 + (16384 - var3) * (128 - var1.field3843) >> 6);
 	}
 
+	@ObfInfo(name = "aa", desc = "()Lba;")
 	public Class27 method384() {
 		return this.field3504;
 	}
 
+	@ObfInfo(name = "at", desc = "()Lba;")
 	public Class27 method379() {
 		return null;
 	}
 
+	@ObfInfo(name = "ab", desc = "()I")
 	public int method380() {
 		return 0;
 	}
 
+	@ObfInfo(name = "ac", desc = "([III)V")
 	public void method381(int[] var1, int var2, int var3) {
 		if (this.field3498.method6448()) {
 			int var4 = this.field3498.field3511 * this.field3482 / Client.field1382;
@@ -726,6 +794,7 @@ public class Class335 extends Class27 {
 		this.field3504.method381(var1, var2, var3);
 	}
 
+	@ObfInfo(name = "ah", desc = "(I)V")
 	public void method395(int var1) {
 		if (this.field3498.method6448()) {
 			int var2 = this.field3498.field3511 * this.field3482 / Client.field1382;
@@ -748,6 +817,7 @@ public class Class335 extends Class27 {
 		this.field3504.method395(var1);
 	}
 
+	@ObfInfo(name = "ba", desc = "(I)V", opaque = "-485260719")
 	public void method6376() {
 		int var2 = this.field3500;
 		int var3 = this.field3492;
@@ -789,6 +859,7 @@ public class Class335 extends Class27 {
 		this.field3503 = var4;
 	}
 
+	@ObfInfo(name = "bb", desc = "(Lne;B)Z", opaque = "-1")
 	public boolean method6347(Class343 var1) {
 		if (var1.field3845 == null) {
 			if (var1.field3850 >= 0) {
@@ -804,6 +875,7 @@ public class Class335 extends Class27 {
 		}
 	}
 
+	@ObfInfo(name = "by", desc = "(Lne;[IIII)Z", opaque = "-1519191575")
 	public boolean method6388(Class343 var1, int[] var2, int var3, int var4) {
 		var1.field3836 = Client.field1382 / 100;
 		if (var1.field3850 < 0 || var1.field3845 != null && !var1.field3845.method943()) {

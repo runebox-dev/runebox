@@ -1,23 +1,46 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "fz")
 public class Class156 implements Class393 {
+	@ObfInfo(name = "aq", desc = "Lfz;")
 	public static final Class156 field1729;
+	@ObfInfo(name = "ah", desc = "Lfz;")
 	public static final Class156 field1730;
+	@ObfInfo(name = "aj", desc = "Lfz;")
 	public static final Class156 field1731;
+	@ObfInfo(name = "az", desc = "Lfz;")
 	public static final Class156 field1732;
+	@ObfInfo(name = "ak", desc = "Lfz;")
 	public static final Class156 field1733;
+	@ObfInfo(name = "aa", desc = "Lfz;")
 	public static final Class156 field1734;
+	@ObfInfo(name = "at", desc = "Lfz;")
 	public static final Class156 field1735;
+	@ObfInfo(name = "ax", desc = "Lfz;")
 	public static final Class156 field1736;
+	@ObfInfo(name = "ac", desc = "Lfz;")
 	public static final Class156 field1737;
+	@ObfInfo(name = "ao", desc = "Lfz;")
 	public static final Class156 field1738;
+	@ObfInfo(name = "av", desc = "Lfz;")
 	public static final Class156 field1739;
+	@ObfInfo(name = "ab", desc = "Lfz;")
 	public static final Class156 field1741;
+	@ObfInfo(name = "ae", desc = "Lfz;")
 	public static final Class156 field1743;
+	@ObfInfo(name = "al", desc = "Lfz;")
 	public static final Class156 field1744;
+	@ObfInfo(name = "ay", desc = "Lfz;")
 	public static final Class156 field1745;
+	@ObfInfo(name = "af", desc = "Lfz;")
 	public static final Class156 field1746;
+	@ObfInfo(name = "ap", desc = "Lfz;")
 	public static final Class156 field1748;
+	@ObfInfo(name = "aw", desc = "I", intMultiplier = -236585989)
 	public final int field1740;
+	@ObfInfo(name = "au", desc = "I", intMultiplier = -758368109)
 	public final int field1742;
+	@ObfInfo(name = "as", desc = "I", intMultiplier = -131380607)
 	public final int field1747;
 
 	static {
@@ -46,10 +69,12 @@ public class Class156 implements Class393 {
 		this.field1740 = var4;
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)I")
 	public int method175() {
 		return this.field1747;
 	}
 
+	@ObfInfo(name = "az", desc = "(I)I")
 	public int method3313() {
 		return this.field1740;
 	}

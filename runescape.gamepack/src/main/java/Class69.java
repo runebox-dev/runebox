@@ -1,7 +1,14 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "cq")
 public class Class69 {
+	@ObfInfo(name = "at", desc = "I", intMultiplier = 930018943)
 	public int field851;
+	@ObfInfo(name = "aa", desc = "Lrw;")
 	public final Class465 field850;
+	@ObfInfo(name = "af", desc = "Lrx;")
 	public final Class466 field849;
+	@ObfInfo(name = "az", desc = "Lux;")
 	public final Class544 field852;
 
 	public Class69(Class544 var1) {
@@ -11,20 +18,24 @@ public class Class69 {
 		this.field850 = new Class465(var1);
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)Z", opaque = "-341039258")
 	public boolean method1872() {
 		return this.field851 == 2;
 	}
 
+	@ObfInfo(name = "al", desc = "(B)V")
 	public final void method1873() {
 		this.field851 = 1;
 	}
 
+	@ObfInfo(name = "aj", desc = "(Lua;II)V")
 	public final void method1881(Class521 var1, int var2) {
 		this.field849.method8565(var1, var2);
 		this.field851 = 2;
 		Client.method2419();
 	}
 
+	@ObfInfo(name = "az", desc = "(I)V", opaque = "-1302371960")
 	public final void method1918() {
 		for (Class443 var2 = (Class443)this.field849.field4905.method7568(); var2 != null; var2 = (Class443)this.field849.field4905.method7570()) {
 			if ((long)var2.field4793 < Class327.method3047() / 1000L - 5L) {
@@ -42,12 +53,14 @@ public class Class69 {
 
 	}
 
+	@ObfInfo(name = "af", desc = "(I)V")
 	public final void method1876() {
 		this.field851 = 0;
 		this.field849.method8730();
 		this.field850.method8730();
 	}
 
+	@ObfInfo(name = "aa", desc = "(Lvv;ZI)Z", opaque = "-980066431")
 	public final boolean method1893(Class567 var1, boolean var2) {
 		if (var1 == null) {
 			return false;
@@ -58,6 +71,7 @@ public class Class69 {
 		}
 	}
 
+	@ObfInfo(name = "at", desc = "(Lvv;B)Z", opaque = "2")
 	public final boolean method1878(Class567 var1) {
 		if (var1 == null) {
 			return false;
@@ -66,6 +80,7 @@ public class Class69 {
 		}
 	}
 
+	@ObfInfo(name = "ab", desc = "(Ljava/lang/String;I)V", opaque = "210559147")
 	public final void method1879(String var1) {
 		if (var1 != null) {
 			Class567 var3 = new Class567(var1, this.field852);
@@ -91,10 +106,12 @@ public class Class69 {
 		}
 	}
 
+	@ObfInfo(name = "av", desc = "(I)Z", opaque = "-1424658205")
 	public final boolean method1880() {
 		return this.field849.method8799() || this.field849.method8761() >= 200 && 1 != Client.field611;
 	}
 
+	@ObfInfo(name = "aq", desc = "(Ljava/lang/String;I)V", opaque = "-2095204540")
 	public final void method1921(String var1) {
 		if (var1 != null) {
 			Class567 var3 = new Class567(var1, this.field852);
@@ -123,10 +140,12 @@ public class Class69 {
 		}
 	}
 
+	@ObfInfo(name = "ax", desc = "(B)Z", opaque = "16")
 	public final boolean method1885() {
 		return this.field850.method8799() || this.field850.method8761() >= 100 && Client.field611 != 1;
 	}
 
+	@ObfInfo(name = "ay", desc = "(Ljava/lang/String;I)V", opaque = "276791875")
 	public final void method1933(String var1) {
 		if (var1 != null) {
 			Class567 var3 = new Class567(var1, this.field852);
@@ -144,6 +163,7 @@ public class Class69 {
 		}
 	}
 
+	@ObfInfo(name = "au", desc = "(Ljava/lang/String;ZI)V", opaque = "537678955")
 	public final void method1884(String var1, boolean var2) {
 		if (var1 != null) {
 			Class567 var4 = new Class567(var1, this.field852);
@@ -163,11 +183,13 @@ public class Class69 {
 		}
 	}
 
+	@ObfInfo(name = "aw", desc = "(Lvv;I)Z", opaque = "-558109799")
 	public final boolean method1888(Class567 var1) {
 		Class448 var3 = (Class448)this.field849.method8734(var1);
 		return var3 != null && var3.method8861();
 	}
 
+	@ObfInfo(name = "aj", desc = "(IB)I")
 	public static int method1938(int var0) {
 		var0 = (var0 & 1431655765) + (var0 >>> 1 & 1431655765);
 		var0 = (var0 & 858993459) + (var0 >>> 2 & 858993459);
@@ -177,6 +199,7 @@ public class Class69 {
 		return var0 & 255;
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/String;)V")
 	public static void method3705(String var0) {
 		StringBuilder var10000 = new StringBuilder();
 		Class378 var10001 = (Class378)null;
@@ -186,12 +209,14 @@ public class Class69 {
 		Class128.method2747(30, "", var2);
 	}
 
+	@ObfInfo(desc = "()V")
 	public static void method3331() {
 		Class378 var10000 = (Class378)null;
 		String var1 = Class378.field4330;
 		Class128.method2747(30, "", var1);
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/String;)V")
 	public static void method4661(String var0) {
 		StringBuilder var10000 = new StringBuilder();
 		Class378 var10001 = (Class378)null;
@@ -201,6 +226,7 @@ public class Class69 {
 		Class128.method2747(30, "", var2);
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/String;)V")
 	public static void method3933(String var0) {
 		Class316 var2 = Class316.method3908(Class315.field3305, Client.field548.field1446);
 		var2.field3374.method9388(Class521.method7983(var0));
@@ -208,6 +234,7 @@ public class Class69 {
 		Client.field548.method2897(var2);
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/String;I)V")
 	public static void method4403(String var0, int var1) {
 		Class316 var3 = Class316.method3908(Class315.field3332, Client.field548.field1446);
 		var3.field3374.method9388(Class521.method7983(var0) + 1);

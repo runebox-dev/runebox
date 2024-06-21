@@ -1,23 +1,38 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "dm")
 public class Class91 extends Class507 {
+	@ObfInfo(name = "ak", desc = "Llm;")
 	public static Class299 field1206;
+	@ObfInfo(name = "ao", desc = "[Ltu;")
 	public Class515[] field1214;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = 54182531)
 	public int field1210;
+	@ObfInfo(name = "at", desc = "I", intMultiplier = -972598111)
 	public int field1211;
+	@ObfInfo(name = "ab", desc = "I", intMultiplier = 296809297)
 	public int field1213;
+	@ObfInfo(name = "ac", desc = "I", intMultiplier = 1223292047)
 	public int field1216;
+	@ObfInfo(name = "aj", desc = "[I")
 	public int[] field1207;
+	@ObfInfo(name = "az", desc = "[I")
 	public int[] field1212;
+	@ObfInfo(name = "al", desc = "Ljava/lang/String;")
 	public String field1208;
+	@ObfInfo(name = "af", desc = "[Ljava/lang/String;")
 	public String[] field1209;
 
 	static {
 		field1206 = new Class299(128);
 	}
 
+	@ObfInfo(name = "af", desc = "(IB)[Ltu;")
 	public Class515[] method2407(int var1) {
 		return new Class515[var1];
 	}
 
+	@ObfInfo(desc = "(I)LClass91;")
 	public static Class91 method3660(int var0) {
 		Class91 var2 = (Class91)field1206.method5993((long)var0);
 		if (var2 != null) {
@@ -34,6 +49,7 @@ public class Class91 extends Class507 {
 		}
 	}
 
+	@ObfInfo(desc = "(III)LClass91;")
 	public static Class91 method67(int var0, int var1, int var2) {
 		int var4 = Class385.method5325(var1, var0);
 		Class91 var5 = Class77.method2190(var4, var0);
@@ -52,10 +68,12 @@ public class Class91 extends Class507 {
 		}
 	}
 
+	@ObfInfo(name = "al", desc = "([Ljava/lang/String;[II)V")
 	public static void method2406(String[] var0, int[] var1) {
 		Class532.method3940(var0, var1, 0, var0.length - 1);
 	}
 
+	@ObfInfo(desc = "([B)LClass91;")
 	public static Class91 method2359(byte[] var0) {
 		Class91 var2 = new Class91();
 		Class521 var3 = new Class521(var0);

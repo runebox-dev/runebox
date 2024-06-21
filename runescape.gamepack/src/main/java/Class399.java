@@ -1,4 +1,8 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "pi")
 public final class Class399 {
+	@ObfInfo(name = "aj", desc = "(B)V")
 	public static void method7462() {
 		synchronized(Class33.field223) {
 			Class33.field227 = Class33.field225;

@@ -1,3 +1,6 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "oy")
 public class Class389 {
 	static {
 		int var0 = 0;

@@ -1,8 +1,16 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "tx")
 public final class Class518 {
+	@ObfInfo(name = "aj", desc = "Ltl;")
 	public Class506 field5202;
+	@ObfInfo(name = "az", desc = "Ltl;")
 	public Class506 field5205;
+	@ObfInfo(name = "al", desc = "[Ltl;")
 	public Class506[] field5203;
+	@ObfInfo(name = "ak", desc = "I")
 	public int field5204;
+	@ObfInfo(name = "af", desc = "I")
 	public int field5206;
 
 	public Class518(int var1) {
@@ -18,6 +26,7 @@ public final class Class518 {
 
 	}
 
+	@ObfInfo(name = "ak", desc = "(J)Ltl;")
 	public Class506 method9361(long var1) {
 		Class506 var3 = this.field5203[(int)(var1 & (long)(this.field5204 - 1))];
 
@@ -33,6 +42,7 @@ public final class Class518 {
 		return null;
 	}
 
+	@ObfInfo(name = "al", desc = "()I")
 	public int method9362() {
 		int var1 = 0;
 
@@ -47,6 +57,7 @@ public final class Class518 {
 		return var1;
 	}
 
+	@ObfInfo(name = "aj", desc = "(Ltl;J)V")
 	public void method9360(Class506 var1, long var2) {
 		if (var1.field5171 != null) {
 			var1.method9277();
@@ -60,11 +71,13 @@ public final class Class518 {
 		var1.field5170 = var2;
 	}
 
+	@ObfInfo(name = "az", desc = "()Ltl;")
 	public Class506 method9363() {
 		this.field5206 = 0;
 		return this.method9364();
 	}
 
+	@ObfInfo(name = "af", desc = "()Ltl;")
 	public Class506 method9364() {
 		Class506 var1;
 		if (this.field5206 > 0 && this.field5205 != this.field5203[this.field5206 - 1]) {

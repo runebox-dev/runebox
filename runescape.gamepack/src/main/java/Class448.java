@@ -1,7 +1,13 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "rf")
 public class Class448 extends Class483 {
+	@ObfInfo(name = "al", desc = "Z")
 	public boolean field4813;
+	@ObfInfo(name = "ak", desc = "Z")
 	public boolean field4814;
 
+	@ObfInfo(name = "ak", desc = "(Lrf;B)I", opaque = "0")
 	public int method8405(Class448 var1) {
 		if (super.field4959 == Client.field557 && var1.field4959 != Client.field557) {
 			return -1;
@@ -24,10 +30,12 @@ public class Class448 extends Class483 {
 		}
 	}
 
+	@ObfInfo(name = "al", desc = "(Lsg;I)I")
 	public int method8409(Class475 var1) {
 		return this.method8405((Class448)var1);
 	}
 
+	@ObfInfo(desc = "(Ljava/lang/Object;)I")
 	public int compareTo(Object var1) {
 		return this.method8405((Class448)var1);
 	}

@@ -1,8 +1,16 @@
+import io.runebox.ObfInfo;
+
+@ObfInfo(name = "jn")
 public class Class248 extends Class506 {
+	@ObfInfo(name = "ao", desc = "Lje;")
 	public Class239 field2663;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = 215908835)
 	public int field2656;
+	@ObfInfo(name = "at", desc = "I", intMultiplier = 415648975)
 	public int field2660;
+	@ObfInfo(name = "ab", desc = "[I")
 	public int[] field2661;
+	@ObfInfo(name = "ac", desc = "[[I")
 	public int[][] field2662;
 
 	public Class248(int var1, byte[] var2) {
@@ -36,14 +44,17 @@ public class Class248 extends Class506 {
 
 	}
 
+	@ObfInfo(name = "ak", desc = "(I)I")
 	public int method4763() {
 		return this.field2660;
 	}
 
+	@ObfInfo(name = "al", desc = "(I)Lje;")
 	public Class239 method4761() {
 		return this.field2663;
 	}
 
+	@ObfInfo(name = "aa", desc = "(II)I")
 	public static int method4765(int var0) {
 		--var0;
 		var0 |= var0 >>> 1;
@@ -54,6 +65,7 @@ public class Class248 extends Class506 {
 		return var0 + 1;
 	}
 
+	@ObfInfo(name = "ae", desc = "(I)V")
 	public static void method4766() {
 		Class222.field2239.method5995();
 		Class222.field2276.method5995();
