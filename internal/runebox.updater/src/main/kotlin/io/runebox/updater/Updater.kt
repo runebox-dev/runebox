@@ -1,12 +1,6 @@
 package io.runebox.updater
 
 import io.runebox.updater.asm.tree.ClassGroup
-import io.runebox.updater.asm.tree.cls
-import io.runebox.updater.asm.tree.findMethod
-import io.runebox.updater.ir.conversion.Asm2Stack
-import io.runebox.updater.ir.conversion.Stack2Ref
-import io.runebox.updater.ir.textify.core.MethodTextifier
-import io.runebox.updater.ir.textify.ref.RefBodyTextifier
 import java.io.File
 
 class Updater(
@@ -19,12 +13,6 @@ class Updater(
 
         oldGroup.build()
         newGroup.build()
-
-        val init = oldGroup.getClass("Class521")!!.findMethod("method9556", "(I)V")!!
-        val irCls = Asm2Stack.convert(init.cls)
-        val irMethod = irCls.also { Stack2Ref.convert(it) }.let { it.methods.first { it.name == "method9556" } }
-        val str = MethodTextifier(RefBodyTextifier(), irCls).toString(irMethod)
-        println(str)
 
         println()
     }

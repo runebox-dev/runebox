@@ -18,7 +18,7 @@ class ClassGroup {
     fun addClass(cls: ClassNode) = classMap.put(cls.name, cls.also { it.init(this) })
     fun removeClass(cls: ClassNode) = classMap.remove(cls.name)
 
-    fun getClass(name: String) = classMap[name]
+    fun findClass(name: String) = classMap[name]
 
     fun read(file: File): ClassGroup {
         JarFile(file).use { jar ->

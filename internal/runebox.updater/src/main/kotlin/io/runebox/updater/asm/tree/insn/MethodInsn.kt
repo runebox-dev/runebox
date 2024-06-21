@@ -16,14 +16,14 @@ fun MethodInsnNode.resolve(group: ClassGroup) {
     when(opcode) {
         INVOKESPECIAL -> {
             targetMethod = null
-            val tc = group.getClass(owner) ?: return
+            val tc = group.findClass(owner) ?: return
             val tm = tc.findMethod(name, desc) ?: return
             targetMethod = tm
         }
 
         INVOKEINTERFACE -> {
             fun lookupMethods(): List<MethodNode>? {
-                val tc = group.getClass(owner) ?: return null
+                val tc = group.findClass(owner) ?: return null
                 val tm = tc.findMethod(name, desc) ?: return null
                 return tm.virtualMethods
             }
@@ -33,7 +33,7 @@ fun MethodInsnNode.resolve(group: ClassGroup) {
 
         INVOKEVIRTUAL -> {
             fun lookupMethod(): MethodNode? {
-                val tc = group.getClass(owner) ?: return null
+                val tc = group.findClass(owner) ?: return null
                 return tc.resolveMethod(name, desc)
             }
             fun lookupMethods(): List<MethodNode>? {
@@ -46,7 +46,7 @@ fun MethodInsnNode.resolve(group: ClassGroup) {
 
         INVOKESTATIC -> {
             fun lookupMethod(): MethodNode? {
-                val tc = group.getClass(owner) ?: return null
+                val tc = group.findClass(owner) ?: return null
                 val tm = tc.resolveMethod(name, desc) ?: return null
                 return tm
             }

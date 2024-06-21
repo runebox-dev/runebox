@@ -49,12 +49,12 @@ fun ClassNode.clearInheritance() {
 }
 
 fun ClassNode.buildInheritance() {
-    val superCls = group.getClass(superName)
+    val superCls = group.findClass(superName)
     if(superCls != null) {
         superClass = superCls
         superClass!!.childClasses.add(this)
     }
-    for(itfCls in interfaces.mapNotNull { group.getClass(it) }) {
+    for(itfCls in interfaces.mapNotNull { group.findClass(it) }) {
         interfaceClasses.add(itfCls)
         itfCls.childClasses.add(this)
     }
