@@ -10,6 +10,7 @@ treeprinter = "3.2.0"
 fernflower = "1.0.1"
 bouncycastle = "1.64"
 json = "20220320"
+ajavabeans = "1.0.4"
 
 [libraries]
 kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
@@ -27,6 +28,7 @@ treeprinter = { module = "hu.webarticum:tree-printer", version.ref = "treeprinte
 fernflower = { module = "com.github.runebox:fernflower", version.ref = "fernflower" }
 bouncycastle = { module = "org.bouncycastle:bcprov-jdk15on", version.ref = "bouncycastle" }
 json = { module = "org.json:json", version.ref = "json" }
+ajavabeans = { module = "com.github.demidenko05:a-javabeans", version.ref = "ajavabeans" }
 
 [bundles]
 kotlin = ["kotlin-stdlib", "kotlin-reflect"]

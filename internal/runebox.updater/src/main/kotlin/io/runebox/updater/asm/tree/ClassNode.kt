@@ -1,5 +1,6 @@
-package io.runebox.updater.asm.core
+package io.runebox.updater.asm.tree
 
+import io.runebox.updater.asm.ObfInfo
 import io.runebox.updater.util.field
 import io.runebox.updater.util.mutableListField
 import io.runebox.updater.util.nullField
@@ -9,6 +10,7 @@ import org.objectweb.asm.tree.MethodNode
 
 var ClassNode.group: ClassGroup by field()
 var ClassNode.isIgnored: Boolean by field { false }
+var ClassNode.obfInfo: ObfInfo? by nullField()
 
 fun ClassNode.init(group: ClassGroup) {
     this.group = group

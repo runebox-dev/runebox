@@ -1,6 +1,6 @@
 package io.runebox.updater
 
-import io.runebox.updater.asm.core.ClassGroup
+import io.runebox.updater.asm.tree.ClassGroup
 import java.io.File
 
 class Updater(
@@ -44,6 +44,7 @@ class Updater(
          */
         group.buildInheritance()
         group.resolveInstructions()
+        group.loadObfuscatedInfo()
 
         Logger.info("Loaded ${group.classes.size} classes. (${group.ignoredClasses.size} ignored)")
 

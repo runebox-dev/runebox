@@ -1,9 +1,9 @@
-package io.runebox.updater.asm.core.insn
+package io.runebox.updater.asm.tree.insn
 
-import io.runebox.updater.asm.core.ClassGroup
-import io.runebox.updater.asm.core.findMethod
-import io.runebox.updater.asm.core.resolveMethod
-import io.runebox.updater.asm.core.virtualMethods
+import io.runebox.updater.asm.tree.ClassGroup
+import io.runebox.updater.asm.tree.findMethod
+import io.runebox.updater.asm.tree.resolveMethod
+import io.runebox.updater.asm.tree.virtualMethods
 import io.runebox.updater.util.nullField
 import org.objectweb.asm.Opcodes.*
 import org.objectweb.asm.tree.MethodInsnNode

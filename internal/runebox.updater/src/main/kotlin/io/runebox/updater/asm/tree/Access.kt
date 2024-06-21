@@ -1,4 +1,4 @@
-package io.runebox.updater.asm.core
+package io.runebox.updater.asm.tree
 
 import org.objectweb.asm.tree.ClassNode
 import org.objectweb.asm.tree.FieldNode
