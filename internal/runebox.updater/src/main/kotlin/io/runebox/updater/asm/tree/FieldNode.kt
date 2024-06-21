@@ -8,5 +8,4 @@ var FieldNode.cls: ClassNode by field()
 
 fun FieldNode.init(cls: ClassNode) {
     this.cls = cls
-
 }

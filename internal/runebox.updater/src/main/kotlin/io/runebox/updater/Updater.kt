@@ -1,6 +1,8 @@
 package io.runebox.updater
 
 import io.runebox.updater.asm.tree.ClassGroup
+import io.runebox.updater.util.collection.IndexedDeque
+import org.objectweb.asm.tree.ClassNode
 import java.io.File
 
 class Updater(
@@ -24,6 +26,13 @@ class Updater(
             val outJar = File(args[2])
 
             val oldGroup = ClassGroup().read(oldJar)
+            oldGroup.buildInheritance()
+            oldGroup.resolveInstructions()
+            val t = IndexedDeque<ClassNode>()
+            t.addAll(oldGroup.classes)
+
+            println(t.get(3))
+
             println()
 
             val newGroup = ClassGroup().read(newJar)

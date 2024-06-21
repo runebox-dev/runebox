@@ -32,4 +32,22 @@ class ClassGroup {
         }
         return this
     }
+
+    fun build() {
+        buildInheritance()
+        resolveInstructions()
+    }
+
+    fun buildInheritance() {
+        for(cls in classes) cls.clearInheritance()
+        for(cls in classes) cls.buildInheritance()
+    }
+
+    fun resolveInstructions() {
+        for(cls in classes) {
+            for(method in cls.methods) {
+                method.instructions.resolveInstructions(this)
+            }
+        }
+    }
 }
