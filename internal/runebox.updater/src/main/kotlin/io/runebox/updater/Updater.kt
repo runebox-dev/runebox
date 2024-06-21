@@ -1,6 +1,8 @@
 package io.runebox.updater
 
 import io.runebox.updater.asm.tree.ClassGroup
+import io.runebox.updater.merge.MergeEngine
+import io.runebox.updater.merge.MergeEngine.Companion.jumpTo
 import java.io.File
 
 class Updater(
@@ -11,6 +13,8 @@ class Updater(
     private lateinit var oldGroup: ClassGroup
     private lateinit var newGroup: ClassGroup
 
+    private lateinit var engine: MergeEngine
+
     fun update() {
         Logger.info("Initializing RuneBox updater.")
 
@@ -19,6 +23,21 @@ class Updater(
 
         Logger.info("Starting RuneBox updater.")
 
+        /*
+         * Set up the mapping merge engine and the
+         * operations the engine will execute.
+         */
+        engine = MergeEngine(oldGroup, newGroup)
+
+        // Merge Operation Step Definitions
+        engine.addOperation(jumpTo(0) { e: MergeEngine ->
+            val ch = e.changesLastCycle
+            e.resetChanges()
+            return@jumpTo ch > 0
+        })
+
+        // Run the engine merging
+        engine.merge()
     }
 
     fun save(outputJar: File) {

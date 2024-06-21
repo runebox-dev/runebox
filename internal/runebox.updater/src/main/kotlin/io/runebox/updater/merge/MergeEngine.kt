@@ -1,10 +1,13 @@
 package io.runebox.updater.merge
 
+import io.runebox.updater.Logger
 import io.runebox.updater.asm.tree.ClassGroup
+import io.runebox.updater.merge.mapping.MappingsSet
 import io.runebox.updater.merge.match.AbstractMatch
 import io.runebox.updater.merge.match.ClassMatch
 import io.runebox.updater.merge.match.FieldMatch
 import io.runebox.updater.merge.match.MethodMatch
+import io.runebox.updater.merge.operation.JumpOperation
 import io.runebox.updater.util.collection.identityMapOf
 import org.objectweb.asm.tree.ClassNode
 import org.objectweb.asm.tree.FieldNode
@@ -14,19 +17,25 @@ class MergeEngine(
     val oldGroup: ClassGroup,
     val newGroup: ClassGroup
 ) {
-    object Match {
-        lateinit var Class: MatchesSet<ClassNode, ClassMatch> private set
-        lateinit var Method: MatchesSet<MethodNode, MethodMatch> private set
-        lateinit var Field: MatchesSet<FieldNode, FieldMatch> private set
+    val Class = MatchesSet<ClassNode, ClassMatch> { ClassMatch(it) }
+    val Method = MatchesSet<MethodNode, MethodMatch> { MethodMatch(it) }
+    val Field = MatchesSet<FieldNode, FieldMatch> { FieldMatch(it) }
 
-        private fun init() {
-            Class = MatchesSet { ClassMatch(it) }
-        }
+    var changesLastCycle: Int = 0
+        private set
 
-        init { init() }
-    }
+    fun incChanges() { changesLastCycle++ }
+    fun resetChanges() { changesLastCycle = 0 }
+
+    private val operations = mutableListOf<MergeOperation>()
+    fun addOperation(op: MergeOperation) { operations.add(op) }
+
+    val oldMappings = MappingsSet()
+    val newMappings = MappingsSet()
 
     fun merge() {
+        Logger.info("Running updater marger.")
+
 
     }
 
@@ -67,5 +76,10 @@ class MergeEngine(
                 match.removeVote(m.new!!)
             }
         }
+    }
+
+    companion object {
+        @JvmStatic
+        fun jumpTo(target: Int, predicate: (MergeEngine) -> Boolean) = JumpOperation(target, predicate)
     }
 }
