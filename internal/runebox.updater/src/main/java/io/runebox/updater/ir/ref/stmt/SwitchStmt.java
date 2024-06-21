@@ -85,13 +85,13 @@ public class SwitchStmt implements BranchStmt {
 
     @Override
     public Set<Statement> getBranchTargets() {
-        return Stream.concat(getBranchTargets().stream(), Stream.of(getDefaultTarget()))
+        return Stream.concat(getBranchTable().values().stream(), Stream.of(getDefaultTarget()))
                 .collect(Collectors.toUnmodifiableSet());
     }
 
     @Override
     public Set<RWCell<Statement>> getBranchTargetsCells() {
-        return Stream.concat(getBranchTargetsCells().stream(), Stream.of(getDefaultTargetCell()))
+        return Stream.concat(getBranchTableCells().stream(), Stream.of(getDefaultTargetCell()))
                 .collect(Collectors.toUnmodifiableSet());
     }
 

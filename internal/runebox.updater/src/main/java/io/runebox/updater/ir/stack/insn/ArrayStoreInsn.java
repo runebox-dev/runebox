@@ -18,9 +18,7 @@ public class ArrayStoreInsn extends AbstractTypeInsn {
 
     @Override
     protected boolean isTypeSupported(Type type) {
-        return type instanceof RefType ||
-                type instanceof IntType || type instanceof LongType ||
-                type instanceof FloatType || type instanceof DoubleType;
+        return true;
     }
 
     @Override

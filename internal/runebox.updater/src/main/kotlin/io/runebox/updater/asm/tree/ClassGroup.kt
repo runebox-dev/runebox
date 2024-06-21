@@ -3,13 +3,13 @@ package io.runebox.updater.asm.tree
 import io.runebox.updater.asm.toClassNode
 import org.objectweb.asm.tree.ClassNode
 import java.io.File
-import java.util.*
 import java.util.jar.JarFile
 
 class ClassGroup {
 
-    private val classMap: SortedMap<String, ClassNode> = TreeMap()
-    val classes: Set<ClassNode> get() = classMap.values.filterIsInstanceTo(mutableSetOf())
+    private val classMap = LinkedHashMap<String, ClassNode>()
+    val classes: Set<ClassNode> get() = classMap.values.filter{ !it.isIgnored }.filterIsInstanceTo(mutableSetOf())
+    val ignoredClasses: Set<ClassNode> get() = classMap.values.filter { it.isIgnored }.filterIsInstanceTo(mutableSetOf())
     val classNameMap: Map<String, ClassNode> get() = classMap
 
     operator fun contains(name: String) = classMap.containsKey(name)
@@ -24,13 +24,17 @@ class ClassGroup {
         JarFile(file).use { jar ->
             jar.entries().asSequence().forEach { entry ->
                 val name = entry.name
-                if(!name.startsWith("org/") && name.endsWith(".class")) {
+                if(name.endsWith(".class")) {
                     val cls = jar.getInputStream(entry).toClassNode()
                     addClass(cls)
                 }
             }
         }
         return this
+    }
+
+    fun ignore(predicate: (ClassNode) -> Boolean) {
+
     }
 
     fun build() {

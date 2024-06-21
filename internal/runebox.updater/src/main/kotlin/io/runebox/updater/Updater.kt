@@ -1,8 +1,12 @@
 package io.runebox.updater
 
 import io.runebox.updater.asm.tree.ClassGroup
-import io.runebox.updater.util.collection.IndexedDeque
-import org.objectweb.asm.tree.ClassNode
+import io.runebox.updater.asm.tree.cls
+import io.runebox.updater.asm.tree.findMethod
+import io.runebox.updater.ir.conversion.Asm2Stack
+import io.runebox.updater.ir.conversion.Stack2Ref
+import io.runebox.updater.ir.textify.core.MethodTextifier
+import io.runebox.updater.ir.textify.ref.RefBodyTextifier
 import java.io.File
 
 class Updater(
@@ -11,9 +15,18 @@ class Updater(
 ) {
 
     fun update() {
-        Logger.log("Preparing Updater...")
+        Logger.log("Starting RuneBox Updater...")
 
+        oldGroup.build()
+        newGroup.build()
 
+        val init = oldGroup.getClass("Class521")!!.findMethod("method9556", "(I)V")!!
+        val irCls = Asm2Stack.convert(init.cls)
+        val irMethod = irCls.also { Stack2Ref.convert(it) }.let { it.methods.first { it.name == "method9556" } }
+        val str = MethodTextifier(RefBodyTextifier(), irCls).toString(irMethod)
+        println(str)
+
+        println()
     }
 
     companion object {
@@ -26,17 +39,11 @@ class Updater(
             val outJar = File(args[2])
 
             val oldGroup = ClassGroup().read(oldJar)
-            oldGroup.buildInheritance()
-            oldGroup.resolveInstructions()
-            val t = IndexedDeque<ClassNode>()
-            t.addAll(oldGroup.classes)
-
-            println(t.get(3))
-
-            println()
-
             val newGroup = ClassGroup().read(newJar)
-            Updater(oldGroup, newGroup)
+
+            val updater = Updater(oldGroup, newGroup)
+            updater.update()
+
         }
     }
 }

@@ -3,9 +3,6 @@ package io.runebox.updater.ir.conversion;
 import io.runebox.updater.ir.Classfile;
 import io.runebox.updater.ir.Method;
 import io.runebox.updater.ir.conversion.stack2ref.BodyConverter;
-import io.runebox.updater.ir.conversion.stack2ref.processor.DirectReuseInliningPostProcessor;
-import io.runebox.updater.ir.conversion.stack2ref.processor.LocalPartitioningPostProcessor;
-import io.runebox.updater.ir.conversion.stack2ref.processor.LocalTypingPostProcessor;
 import io.runebox.updater.ir.conversion.stack2ref.processor.PostProcessor;
 import io.runebox.updater.ir.ref.RefBody;
 import io.runebox.updater.ir.stack.StackBody;
@@ -17,9 +14,9 @@ import java.util.Optional;
  */
 public class Stack2Ref {
     private static PostProcessor[] POST_PROCESSORS = {
-            new DirectReuseInliningPostProcessor(),
-            new LocalPartitioningPostProcessor(),
-            new LocalTypingPostProcessor()
+            //new DirectReuseInliningPostProcessor(),
+            //new LocalPartitioningPostProcessor(),
+            //new LocalTypingPostProcessor()
     };
 
     /**

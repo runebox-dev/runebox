@@ -8,6 +8,7 @@ import org.objectweb.asm.tree.FieldNode
 import org.objectweb.asm.tree.MethodNode
 
 var ClassNode.group: ClassGroup by field()
+var ClassNode.isIgnored: Boolean by field { false }
 
 fun ClassNode.init(group: ClassGroup) {
     this.group = group
