@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.io.SyncFailedException;
 
-@ObfInfo(name = "ue")
 public final class Class525 {
 	@ObfInfo(name = "ak", desc = "Ljava/io/RandomAccessFile;")
 	public RandomAccessFile field5229;
@@ -89,7 +88,6 @@ public final class Class525 {
 		return var5;
 	}
 
-	@ObfInfo(name = "finalize", desc = "()V")
 	public void finalize() throws Throwable {
 		if (this.field5229 != null) {
 			System.out.println("");

@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.util.Arrays;
 
-@ObfInfo(name = "is")
 public class Class227 implements Class35 {
 	@ObfInfo(name = "av", desc = "[Z")
 	public boolean[] field2383;

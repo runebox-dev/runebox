@@ -6,7 +6,6 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.datatransfer.Transferable;
 import java.util.Collections;
 
-@ObfInfo(name = "np")
 public class Class354 {
 	@ObfInfo(name = "bu", desc = "Lnl;")
 	public Class350 field3926;

@@ -2,7 +2,6 @@ import io.runebox.ObfInfo;
 import java.util.ArrayList;
 import java.util.BitSet;
 
-@ObfInfo(name = "mu")
 public class Class333 extends Class506 {
 	@ObfInfo(name = "at", desc = "[Lms;")
 	public Class331[] field3469;

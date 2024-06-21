@@ -2,7 +2,6 @@ import io.runebox.ObfInfo;
 import java.util.HashMap;
 import java.util.Map;
 
-@ObfInfo(name = "nk")
 public class Class349 {
 	@ObfInfo(owner = "fw", name = "at", desc = "[Z")
 	public static boolean[] field1710;

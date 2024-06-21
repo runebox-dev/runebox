@@ -1,4 +1,4 @@
-package io.runebox.updater.asm.tree
+package io.runebox.updater.asm.core
 
 import io.runebox.updater.asm.toClassNode
 import org.objectweb.asm.tree.ClassNode
@@ -17,6 +17,7 @@ class ClassGroup {
 
     fun addClass(cls: ClassNode) = classMap.put(cls.name, cls.also { it.init(this) })
     fun removeClass(cls: ClassNode) = classMap.remove(cls.name)
+    fun removeClass(name: String) = classMap.remove(name)
 
     fun findClass(name: String) = classMap[name]
 
@@ -33,9 +34,13 @@ class ClassGroup {
         return this
     }
 
-    fun ignore(predicate: (ClassNode) -> Boolean) {
-
+    fun ignoreClasses(predicate: (ClassNode) -> Boolean) {
+        for(cls in classes) { if(predicate(cls)) cls.isIgnored = true }
     }
+
+    fun ignoreBouncyCastle() = ignoreClasses { it.name.startsWith("org/bouncycastle/") }
+    fun ignoreJson() = ignoreClasses { it.name.startsWith("org/json/") }
+    fun ignoreAllDependencies() = ignoreClasses { it.name.startsWith("org/") }
 
     fun build() {
         buildInheritance()

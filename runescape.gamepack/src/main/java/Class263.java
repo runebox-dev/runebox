@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "kc")
 public interface Class263 {
 	@ObfInfo(name = "af", desc = "(II)Z")
 	boolean method4719(int var1);

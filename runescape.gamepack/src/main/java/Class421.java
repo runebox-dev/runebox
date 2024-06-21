@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "qe")
 public class Class421 {
 	@ObfInfo(name = "al", desc = "F")
 	public float field4677;
@@ -36,7 +35,6 @@ public class Class421 {
 		return (float)Math.sqrt((double)(this.field4678 * this.field4678 + this.field4680 * this.field4680 + this.field4677 * this.field4677));
 	}
 
-	@ObfInfo(name = "toString", desc = "()Ljava/lang/String;")
 	public String toString() {
 		return this.field4680 + ", " + this.field4677 + ", " + this.field4678;
 	}

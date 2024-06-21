@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "ph")
 public class Class398 {
 	@ObfInfo(owner = "kr", name = "ak", desc = "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lpl;I)I", opaque = "-2146005653")
 	public static int method5569(CharSequence var0, CharSequence var1, Class402 var2) {

@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "uo")
 final class Class535 implements Class529 {
 	public Class535() {
 	}

@@ -2,7 +2,6 @@ import io.runebox.ObfInfo;
 import java.util.Calendar;
 import java.util.TimeZone;
 
-@ObfInfo(name = "ni")
 public class Class347 {
 	@ObfInfo(name = "aj", desc = "Ljava/util/Calendar;")
 	public static Calendar field3864;

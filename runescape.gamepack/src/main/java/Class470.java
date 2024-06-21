@@ -2,7 +2,6 @@ import io.runebox.ObfInfo;
 import java.io.IOException;
 import java.net.Socket;
 
-@ObfInfo(name = "sb")
 public class Class470 extends Class481 {
 	@ObfInfo(name = "al", desc = "Lse;")
 	public Class473 field4917;
@@ -58,7 +57,6 @@ public class Class470 extends Class481 {
 		this.field4917.method8660();
 	}
 
-	@ObfInfo(name = "finalize", desc = "()V")
 	public void finalize() {
 		this.method8631();
 	}

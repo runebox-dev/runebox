@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.io.IOException;
 
-@ObfInfo(name = "el")
 public class Class116 {
 	@ObfInfo(name = "at", desc = "Lmz;")
 	public Class338 field1449;

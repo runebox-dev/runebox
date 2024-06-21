@@ -2,7 +2,6 @@ import io.runebox.ObfInfo;
 import java.io.IOException;
 import java.util.zip.CRC32;
 
-@ObfInfo(name = "oj")
 public class Class374 {
 	@ObfInfo(name = "as", desc = "Loc;")
 	public Class367 field4080;

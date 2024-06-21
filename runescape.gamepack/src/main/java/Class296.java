@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.lang.ref.SoftReference;
 
-@ObfInfo(name = "lj")
 public class Class296 extends Class320 {
 	@ObfInfo(name = "ak", desc = "Ljava/lang/ref/SoftReference;")
 	public SoftReference field3194;

@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "nj")
 public class Class348 {
 	@ObfInfo(name = "aj", desc = "I", intMultiplier = 1268210065)
 	public int field3868;
@@ -37,7 +36,6 @@ public class Class348 {
 		return method1085(this.field3870, this.field3869, this.field3868);
 	}
 
-	@ObfInfo(name = "equals", desc = "(Ljava/lang/Object;)Z")
 	public boolean equals(Object var1) {
 		if (var1 == this) {
 			return true;
@@ -57,12 +55,10 @@ public class Class348 {
 		}
 	}
 
-	@ObfInfo(name = "hashCode", desc = "()I")
 	public int hashCode() {
 		return this.method6698();
 	}
 
-	@ObfInfo(name = "toString", desc = "()Ljava/lang/String;")
 	public String toString() {
 		return this.method6706(",");
 	}

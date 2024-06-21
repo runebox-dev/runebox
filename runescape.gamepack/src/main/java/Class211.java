@@ -2,7 +2,6 @@ import io.runebox.ObfInfo;
 import java.util.HashMap;
 import java.util.Map;
 
-@ObfInfo(name = "ic")
 public class Class211 extends Class507 {
 	@ObfInfo(name = "ab", desc = "Llm;")
 	public static Class299 field2129;

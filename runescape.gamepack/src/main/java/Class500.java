@@ -3,7 +3,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-@ObfInfo(name = "tf")
 public class Class500 extends Class506 {
 	@ObfInfo(name = "bl", desc = "Z")
 	public boolean field5114;

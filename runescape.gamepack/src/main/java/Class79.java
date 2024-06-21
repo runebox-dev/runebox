@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.util.Iterator;
 
-@ObfInfo(name = "da")
 public class Class79 extends Class506 {
 	@ObfInfo(name = "ak", desc = "Ltx;")
 	public static Class518 field982;

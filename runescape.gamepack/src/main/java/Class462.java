@@ -8,7 +8,6 @@ import java.util.Map;
 import java.util.Map.Entry;
 import javax.net.ssl.HttpsURLConnection;
 
-@ObfInfo(name = "rt")
 public class Class462 {
 	@ObfInfo(name = "aa", desc = "Ljava/text/DecimalFormat;")
 	public final DecimalFormat field4880;

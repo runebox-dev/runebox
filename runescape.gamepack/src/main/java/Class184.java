@@ -8,7 +8,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-@ObfInfo(name = "hb")
 public class Class184 {
 	@ObfInfo(name = "az", desc = "Lhb;")
 	public static final Class184 field1918;

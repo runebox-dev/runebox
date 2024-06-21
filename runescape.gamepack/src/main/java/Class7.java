@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 
-@ObfInfo(name = "ag")
 public class Class7 implements KeyListener, FocusListener {
 	@ObfInfo(name = "az", desc = "[Lbi;")
 	public Class35[] field32;
@@ -71,7 +70,6 @@ public class Class7 implements KeyListener, FocusListener {
 		this.field33.clear();
 	}
 
-	@ObfInfo(name = "keyPressed", desc = "(Ljava/awt/event/KeyEvent;)V")
 	public final synchronized void keyPressed(KeyEvent var1) {
 		int var2;
 		label26: {
@@ -102,7 +100,6 @@ public class Class7 implements KeyListener, FocusListener {
 		var1.consume();
 	}
 
-	@ObfInfo(name = "keyReleased", desc = "(Ljava/awt/event/KeyEvent;)V")
 	public final synchronized void keyReleased(KeyEvent var1) {
 		int var2;
 		label18: {
@@ -126,7 +123,6 @@ public class Class7 implements KeyListener, FocusListener {
 		var1.consume();
 	}
 
-	@ObfInfo(name = "keyTyped", desc = "(Ljava/awt/event/KeyEvent;)V")
 	public final synchronized void keyTyped(KeyEvent var1) {
 		char var2 = var1.getKeyChar();
 		if (var2 != 0 && var2 != '\uffff' && Class405.method1082(var2)) {
@@ -143,12 +139,10 @@ public class Class7 implements KeyListener, FocusListener {
 		this.field34 = var2;
 	}
 
-	@ObfInfo(name = "focusGained", desc = "(Ljava/awt/event/FocusEvent;)V")
 	public final synchronized void focusGained(FocusEvent var1) {
 		this.field34.add(new Class38(4, 1));
 	}
 
-	@ObfInfo(name = "focusLost", desc = "(Ljava/awt/event/FocusEvent;)V")
 	public final synchronized void focusLost(FocusEvent var1) {
 		for (int var2 = 0; var2 < 112; ++var2) {
 			if (this.field35[var2]) {

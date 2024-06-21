@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.util.Comparator;
 
-@ObfInfo(name = "vd")
 public class Class550 implements Comparator {
 	@ObfInfo(name = "ak", desc = "Z")
 	public final boolean field5364;
@@ -15,12 +14,10 @@ public class Class550 implements Comparator {
 		return this.field5364 ? var1.method8703().method10275(var2.method8703()) : var2.method8703().method10275(var1.method8703());
 	}
 
-	@ObfInfo(name = "compare", desc = "(Ljava/lang/Object;Ljava/lang/Object;)I")
 	public int compare(Object var1, Object var2) {
 		return this.method10037((Class475)var1, (Class475)var2);
 	}
 
-	@ObfInfo(name = "equals", desc = "(Ljava/lang/Object;)Z")
 	public boolean equals(Object var1) {
 		return super.equals(var1);
 	}

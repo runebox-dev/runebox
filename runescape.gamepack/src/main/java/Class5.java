@@ -4,7 +4,6 @@ import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-@ObfInfo(name = "ae")
 public class Class5 {
 	@ObfInfo(name = "ak", desc = "I", intMultiplier = -476345029)
 	public final int field22;

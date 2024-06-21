@@ -6,7 +6,6 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 
-@ObfInfo(name = "bg")
 public class Class33 implements MouseListener, MouseMotionListener, FocusListener {
 	@ObfInfo(name = "az", desc = "Lbg;")
 	public static Class33 field223;
@@ -76,7 +75,6 @@ public class Class33 implements MouseListener, MouseMotionListener, FocusListene
 		}
 	}
 
-	@ObfInfo(name = "mousePressed", desc = "(Ljava/awt/event/MouseEvent;)V")
 	public final synchronized void mousePressed(MouseEvent var1) {
 		if (field223 != null) {
 			field241 = 0;
@@ -95,7 +93,6 @@ public class Class33 implements MouseListener, MouseMotionListener, FocusListene
 
 	}
 
-	@ObfInfo(name = "mouseReleased", desc = "(Ljava/awt/event/MouseEvent;)V")
 	public final synchronized void mouseReleased(MouseEvent var1) {
 		if (field223 != null) {
 			field241 = 0;
@@ -108,7 +105,6 @@ public class Class33 implements MouseListener, MouseMotionListener, FocusListene
 
 	}
 
-	@ObfInfo(name = "mouseClicked", desc = "(Ljava/awt/event/MouseEvent;)V")
 	public final void mouseClicked(MouseEvent var1) {
 		if (var1.isPopupTrigger()) {
 			var1.consume();
@@ -116,12 +112,10 @@ public class Class33 implements MouseListener, MouseMotionListener, FocusListene
 
 	}
 
-	@ObfInfo(name = "mouseEntered", desc = "(Ljava/awt/event/MouseEvent;)V")
 	public final synchronized void mouseEntered(MouseEvent var1) {
 		this.mouseMoved(var1);
 	}
 
-	@ObfInfo(name = "mouseExited", desc = "(Ljava/awt/event/MouseEvent;)V")
 	public final synchronized void mouseExited(MouseEvent var1) {
 		if (field223 != null) {
 			field241 = 0;
@@ -132,12 +126,10 @@ public class Class33 implements MouseListener, MouseMotionListener, FocusListene
 
 	}
 
-	@ObfInfo(name = "mouseDragged", desc = "(Ljava/awt/event/MouseEvent;)V")
 	public final synchronized void mouseDragged(MouseEvent var1) {
 		this.mouseMoved(var1);
 	}
 
-	@ObfInfo(name = "mouseMoved", desc = "(Ljava/awt/event/MouseEvent;)V")
 	public final synchronized void mouseMoved(MouseEvent var1) {
 		if (field223 != null) {
 			field241 = 0;
@@ -148,11 +140,9 @@ public class Class33 implements MouseListener, MouseMotionListener, FocusListene
 
 	}
 
-	@ObfInfo(name = "focusGained", desc = "(Ljava/awt/event/FocusEvent;)V")
 	public final void focusGained(FocusEvent var1) {
 	}
 
-	@ObfInfo(name = "focusLost", desc = "(Ljava/awt/event/FocusEvent;)V")
 	public final synchronized void focusLost(FocusEvent var1) {
 		if (field223 != null) {
 			field225 = 0;

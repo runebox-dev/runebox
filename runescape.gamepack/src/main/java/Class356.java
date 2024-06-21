@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.util.BitSet;
 
-@ObfInfo(name = "nr")
 public class Class356 extends Class506 {
 	@ObfInfo(name = "ak", desc = "I", intMultiplier = -1297812659)
 	public int field3929;

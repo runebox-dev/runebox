@@ -6,7 +6,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map.Entry;
 
-@ObfInfo(name = "ks")
 public class Class279 {
 	@ObfInfo(name = "af", desc = "Lld;")
 	public static Class290 field3086;

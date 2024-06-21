@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "te")
 public abstract class Class499 {
 	@ObfInfo(name = "ao", desc = "D")
 	public double field5096;

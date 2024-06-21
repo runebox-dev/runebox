@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "hg")
 public class Class189 {
 	@ObfInfo(name = "af", desc = "[F")
 	public float[] field1944;
@@ -13,7 +12,6 @@ public class Class189 {
 	@ObfInfo(name = "az", desc = "Ljava/lang/String;")
 	public String field1947;
 	// $FF: synthetic field
-	@ObfInfo(name = "this$0", desc = "Lhj;")
 	public final Class192 this$0;
 
 	public Class189(Class192 var1) {

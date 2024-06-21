@@ -3,7 +3,6 @@ import java.awt.Component;
 import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
 
-@ObfInfo(name = "ai")
 public final class Class9 implements Class173, MouseWheelListener {
 	@ObfInfo(name = "ak", desc = "I", intMultiplier = -163388389)
 	public int field49;
@@ -22,7 +21,6 @@ public final class Class9 implements Class173, MouseWheelListener {
 		var1.removeMouseWheelListener(this);
 	}
 
-	@ObfInfo(name = "mouseWheelMoved", desc = "(Ljava/awt/event/MouseWheelEvent;)V")
 	public synchronized void mouseWheelMoved(MouseWheelEvent var1) {
 		this.field49 += var1.getWheelRotation();
 	}

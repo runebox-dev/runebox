@@ -13,7 +13,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-@ObfInfo(name = "cx")
 public class Class76 {
 	@ObfInfo(owner = "am", name = "ao", desc = "Lea;")
 	public static Class105 field53;

@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "tx")
 public final class Class518 {
 	@ObfInfo(name = "aj", desc = "Ltl;")
 	public Class506 field5202;

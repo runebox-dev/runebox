@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "bm")
 public class Class39 implements Runnable {
 	@ObfInfo(name = "ak", desc = "[Lbd;")
 	public volatile Class30[] field276;
@@ -9,7 +8,6 @@ public class Class39 implements Runnable {
 		this.field276 = new Class30[2];
 	}
 
-	@ObfInfo(name = "run", desc = "()V")
 	public void run() {
 		try {
 			for (int var1 = 0; var1 < 2; ++var1) {

@@ -11,7 +11,6 @@ import java.awt.image.Raster;
 import java.awt.image.WritableRaster;
 import java.util.Hashtable;
 
-@ObfInfo(name = "bw")
 public final class Class49 extends Class569 {
 	@ObfInfo(name = "ak", desc = "Ljava/awt/Component;")
 	public Component field337;

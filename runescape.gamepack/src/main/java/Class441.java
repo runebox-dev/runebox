@@ -2,7 +2,6 @@ import io.runebox.ObfInfo;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-@ObfInfo(name = "qy")
 public class Class441 extends Class447 {
 	@ObfInfo(name = "ak", desc = "Ljava/util/ArrayList;")
 	public ArrayList field4784;

@@ -3,7 +3,6 @@ import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-@ObfInfo(name = "aa")
 public class Class1 implements Class10 {
 	@ObfInfo(name = "ak", desc = "Ljava/security/MessageDigest;")
 	public final MessageDigest field2;

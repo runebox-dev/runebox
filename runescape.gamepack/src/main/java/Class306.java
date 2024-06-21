@@ -3,7 +3,6 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 
-@ObfInfo(name = "lt")
 public class Class306 extends Class286 {
 	@ObfInfo(name = "ae", desc = "Ljava/util/HashSet;")
 	public HashSet field3238;

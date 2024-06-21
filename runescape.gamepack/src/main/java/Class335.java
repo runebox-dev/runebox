@@ -6,7 +6,6 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-@ObfInfo(name = "mw")
 public class Class335 extends Class27 {
 	@ObfInfo(name = "bh", desc = "Ljava/util/concurrent/ThreadPoolExecutor;")
 	public static ThreadPoolExecutor field3489;

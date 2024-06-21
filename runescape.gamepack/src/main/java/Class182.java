@@ -4,7 +4,6 @@ import java.net.InetAddress;
 import java.net.Socket;
 import java.net.URL;
 
-@ObfInfo(name = "gz")
 public class Class182 implements Runnable {
 	@ObfInfo(name = "aj", desc = "Lhe;")
 	public Class187 field1901;
@@ -49,7 +48,6 @@ public class Class182 implements Runnable {
 
 	}
 
-	@ObfInfo(name = "run", desc = "()V")
 	public final void run() {
 		while (true) {
 			Class187 var1;

@@ -5,6 +5,7 @@ import io.runebox.asm.toClassNode
 import io.runebox.deobfuscator.Logger
 import io.runebox.deobfuscator.Transformer
 import io.runebox.deobfuscator.asm.*
+import io.runebox.deobfuscator.isObfuscatedName
 import org.objectweb.asm.tree.AnnotationNode
 import org.objectweb.asm.tree.ClassNode
 import org.objectweb.asm.tree.FieldNode
@@ -34,6 +35,7 @@ class ObfInfoAnnotationAdder : Transformer {
     }
 
     private fun ClassNode.addObfInfo() {
+        if(!name.isObfuscatedName() && name != "Client") return
         val anno = AnnotationNode("io/runebox/ObfInfo").apply {
             values = mutableListOf<Any>()
             if(this@addObfInfo.name != origName) values.add("name", origName)
@@ -44,6 +46,7 @@ class ObfInfoAnnotationAdder : Transformer {
     }
 
     private fun MethodNode.addObfInfo() {
+        if(!name.isObfuscatedName()) return
         if(isConstructor || isInitializer) return
         val anno = AnnotationNode("io/runebox/ObfInfo").apply {
             values = mutableListOf<Any>()
@@ -60,6 +63,7 @@ class ObfInfoAnnotationAdder : Transformer {
     }
 
     private fun FieldNode.addObfInfo() {
+        if(!name.isObfuscatedName()) return
         val anno = AnnotationNode("io/runebox/ObfInfo").apply {
             values = mutableListOf<Any>()
             if(cls.origName.lowercase() != origOwner.lowercase()) values.add("owner", origOwner)

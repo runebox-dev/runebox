@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "uk")
 public class Class531 extends Class521 {
 	@ObfInfo(name = "al", desc = "[I")
 	public static final int[] field5255;

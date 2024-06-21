@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.util.zip.CRC32;
 
-@ObfInfo(name = "ot")
 public class Class384 extends Class382 {
 	@ObfInfo(owner = "om", name = "aa", desc = "Ljava/lang/Thread;")
 	public static Thread field4139;

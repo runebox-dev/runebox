@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.util.concurrent.locks.ReentrantLock;
 
-@ObfInfo(name = "bc")
 public class Class29 {
 	@ObfInfo(name = "al", desc = "Lbr;")
 	public Class44 field151;

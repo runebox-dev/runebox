@@ -5,7 +5,6 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 
-@ObfInfo(name = "ef")
 public class Class110 {
 	@ObfInfo(name = "aa", desc = "Z")
 	public boolean field1404;

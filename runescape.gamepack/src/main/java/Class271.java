@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "kk")
 public class Class271 extends Class235 {
 	public Class271(Class276 var1) {
 		super(var1);

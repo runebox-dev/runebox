@@ -5,7 +5,6 @@ import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.SourceDataLine;
 import javax.sound.sampled.DataLine.Info;
 
-@ObfInfo(name = "ar")
 public class Class18 extends Class30 {
 	@ObfInfo(name = "az", desc = "[B")
 	public byte[] field89;

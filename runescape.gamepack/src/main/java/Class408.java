@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.util.HashMap;
 
-@ObfInfo(name = "pr")
 public class Class408 {
 	@ObfInfo(owner = "fd", name = "ac", desc = "[I")
 	public static int[] field1557;

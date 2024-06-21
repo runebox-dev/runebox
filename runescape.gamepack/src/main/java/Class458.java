@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "rp")
 public final class Class458 implements Comparable {
 	@ObfInfo(name = "al", desc = "Ljava/lang/Object;")
 	public Object field4864;
@@ -25,7 +24,6 @@ public final class Class458 implements Comparable {
 		}
 	}
 
-	@ObfInfo(name = "equals", desc = "(Ljava/lang/Object;)Z")
 	public boolean equals(Object var1) {
 		if (var1 instanceof Class458) {
 			return this.field4864.equals(((Class458)var1).field4864);
@@ -34,12 +32,10 @@ public final class Class458 implements Comparable {
 		}
 	}
 
-	@ObfInfo(name = "hashCode", desc = "()I")
 	public int hashCode() {
 		return this.field4864.hashCode();
 	}
 
-	@ObfInfo(name = "compareTo", desc = "(Ljava/lang/Object;)I")
 	public int compareTo(Object var1) {
 		return this.method8490((Class458)var1);
 	}

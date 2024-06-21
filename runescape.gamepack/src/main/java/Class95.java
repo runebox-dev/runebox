@@ -4,7 +4,6 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-@ObfInfo(name = "dq")
 public class Class95 {
 	@ObfInfo(name = "ak", desc = "Ljava/util/concurrent/ExecutorService;")
 	public ExecutorService field1263;

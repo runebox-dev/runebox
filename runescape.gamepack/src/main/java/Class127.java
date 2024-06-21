@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "ew")
 public class Class127 extends Class471 {
 	@ObfInfo(name = "ak", desc = "Z")
 	public final boolean field1525;
@@ -18,7 +17,6 @@ public class Class127 extends Class471 {
 		}
 	}
 
-	@ObfInfo(name = "compare", desc = "(Ljava/lang/Object;Ljava/lang/Object;)I")
 	public int compare(Object var1, Object var2) {
 		return this.method3011((Class483)var1, (Class483)var2);
 	}

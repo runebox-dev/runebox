@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.util.Arrays;
 
-@ObfInfo(name = "nt")
 public class Class358 {
 	@ObfInfo(name = "au", desc = "Llm;")
 	public static Class299 field3956;

@@ -3,7 +3,6 @@ import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStream;
 
-@ObfInfo(name = "se")
 public class Class473 implements Runnable {
 	@ObfInfo(name = "az", desc = "[B")
 	public byte[] field4928;
@@ -31,7 +30,6 @@ public class Class473 implements Runnable {
 		this.field4927.start();
 	}
 
-	@ObfInfo(name = "run", desc = "()V")
 	public void run() {
 		while (true) {
 			int var1;

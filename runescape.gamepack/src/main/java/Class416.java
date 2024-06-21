@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "pz")
 public class Class416 {
 	@ObfInfo(name = "al", desc = "[C")
 	public static char[] field4659;

@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "nx")
 public abstract class Class362 {
 	@ObfInfo(name = "aj", desc = "(B)[B")
 	public abstract byte[] method6647();

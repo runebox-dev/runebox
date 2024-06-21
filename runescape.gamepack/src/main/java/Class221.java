@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.util.Arrays;
 
-@ObfInfo(name = "im")
 public class Class221 {
 	@ObfInfo(name = "aa", desc = "Lim;")
 	public static final Class221 field2225;

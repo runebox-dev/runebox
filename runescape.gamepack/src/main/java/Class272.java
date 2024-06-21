@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "kl")
 public abstract class Class272 {
 	@ObfInfo(name = "al", desc = "(Ljy;Lkg;IIIB)V")
 	public abstract void method4662(Class259 var1, Class267 var2, int var3, int var4, int var5);

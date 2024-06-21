@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "dg")
 public class Class85 implements Runnable {
 	@ObfInfo(owner = "gg", name = "ah", desc = "I", intMultiplier = 755505003)
 	public static int field1806;
@@ -28,7 +27,6 @@ public class Class85 implements Runnable {
 		this.field1051 = new long[500];
 	}
 
-	@ObfInfo(name = "run", desc = "()V")
 	public void run() {
 		for (; this.field1050; Class493.method8960(50L)) {
 			synchronized(this.field1047) {

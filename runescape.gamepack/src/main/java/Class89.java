@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "dk")
 public final class Class89 extends Class506 {
 	@ObfInfo(owner = "kx", name = "cu", desc = "Ljava/lang/String;")
 	public static String field3115;

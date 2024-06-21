@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "uv")
 public interface Class542 extends Iterable {
 	@ObfInfo(name = "ak", desc = "(II)I")
 	int method9838(int var1);

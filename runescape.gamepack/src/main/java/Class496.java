@@ -6,7 +6,6 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
-@ObfInfo(name = "tb")
 public class Class496 {
 	@ObfInfo(owner = "hy", name = "aj", desc = "I", intMultiplier = -1258299179)
 	public static int field2098;

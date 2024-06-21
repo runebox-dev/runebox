@@ -2,7 +2,6 @@ import io.runebox.ObfInfo;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-@ObfInfo(name = "ri")
 public class Class451 {
 	@ObfInfo(name = "ax", desc = "[[B")
 	public static byte[][] field4834;

@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.util.BitSet;
 
-@ObfInfo(name = "jy")
 public class Class259 extends Class255 {
 	@ObfInfo(name = "al", desc = "Z")
 	public static boolean field2782;

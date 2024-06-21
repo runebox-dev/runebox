@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-@ObfInfo(name = "uq")
 public class Class537 implements Class542 {
 	@ObfInfo(name = "ak", desc = "Ljava/util/Map;")
 	public Map field5304;
@@ -43,7 +42,6 @@ public class Class537 implements Class542 {
 
 	}
 
-	@ObfInfo(name = "iterator", desc = "()Ljava/util/Iterator;")
 	public Iterator iterator() {
 		return this.field5304 == null ? Collections.emptyList().iterator() : this.field5304.values().iterator();
 	}

@@ -7,7 +7,6 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.Random;
 
-@ObfInfo(name = "cv")
 public class Class74 {
 	@ObfInfo(name = "aa", desc = "Ljava/math/BigInteger;")
 	public static final BigInteger field909;

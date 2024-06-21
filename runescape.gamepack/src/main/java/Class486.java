@@ -2,7 +2,6 @@ import io.runebox.ObfInfo;
 import java.io.IOException;
 import java.io.OutputStream;
 
-@ObfInfo(name = "sr")
 public class Class486 implements Runnable {
 	@ObfInfo(name = "ab", desc = "Z")
 	public boolean field4971;
@@ -52,7 +51,6 @@ public class Class486 implements Runnable {
 		}
 	}
 
-	@ObfInfo(name = "run", desc = "()V")
 	public void run() {
 		do {
 			int var1;

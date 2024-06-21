@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "fe")
 public class Class135 implements Class109 {
 	@ObfInfo(name = "ak", desc = "([BILjava/lang/CharSequence;I)I", opaque = "-375968051")
 	public static int method3085(byte[] var0, int var1, CharSequence var2) {

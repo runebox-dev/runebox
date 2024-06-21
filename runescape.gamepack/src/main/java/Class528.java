@@ -2,7 +2,6 @@ import io.runebox.ObfInfo;
 import java.io.EOFException;
 import java.io.IOException;
 
-@ObfInfo(name = "uh")
 public class Class528 {
 	@ObfInfo(name = "al", desc = "Lue;")
 	public Class525 field5249;

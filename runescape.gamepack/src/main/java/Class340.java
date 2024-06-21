@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 
-@ObfInfo(name = "nb")
 public class Class340 extends Class506 {
 	@ObfInfo(name = "ag", desc = "Z")
 	public static boolean field3674;

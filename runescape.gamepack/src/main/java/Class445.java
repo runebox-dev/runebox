@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.util.Random;
 
-@ObfInfo(name = "rc")
 public class Class445 {
 	@ObfInfo(name = "ak", desc = "([BI[BII)V")
 	public static void method8311(byte[] var0, int var1, byte[] var2, int var3, int var4) {

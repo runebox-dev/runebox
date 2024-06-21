@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.util.concurrent.Future;
 
-@ObfInfo(name = "as")
 public class Class19 {
 	@ObfInfo(name = "al", desc = "Ljava/lang/String;")
 	public String field94;

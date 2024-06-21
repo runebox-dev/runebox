@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.util.zip.Inflater;
 
-@ObfInfo(name = "vu")
 public class Class566 {
 	@ObfInfo(name = "ak", desc = "Ljava/util/zip/Inflater;")
 	public Inflater field5476;

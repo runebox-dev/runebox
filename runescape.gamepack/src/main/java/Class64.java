@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.net.URL;
 
-@ObfInfo(name = "cl")
 public class Class64 {
 	@ObfInfo(name = "aa", desc = "I", intMultiplier = 2131264189)
 	public static int field469;

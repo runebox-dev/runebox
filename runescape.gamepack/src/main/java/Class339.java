@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "na")
 public class Class339 {
 	@ObfInfo(name = "ak", desc = "(DDD)I")
 	public static int method6490(double var0, double var2, double var4) {

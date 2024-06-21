@@ -3,7 +3,6 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.TimeZone;
 
-@ObfInfo(name = "me")
 public final class Class317 {
 	@ObfInfo(name = "aj", desc = "Ljava/util/HashMap;")
 	public static final HashMap field3384;

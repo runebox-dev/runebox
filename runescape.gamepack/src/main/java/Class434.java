@@ -3,7 +3,6 @@ import java.util.ConcurrentModificationException;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-@ObfInfo(name = "qr")
 public class Class434 implements Iterator {
 	@ObfInfo(name = "ak", desc = "Lqc;")
 	public Class419 field4716;
@@ -18,12 +17,10 @@ public class Class434 implements Iterator {
 		this.field4716 = var1;
 	}
 
-	@ObfInfo(name = "hasNext", desc = "()Z")
 	public boolean hasNext() {
 		return this.field4717 < this.field4716.field4669;
 	}
 
-	@ObfInfo(name = "next", desc = "()Ljava/lang/Object;")
 	public Object next() {
 		if (this.field4716.field4670 != this.field4718) {
 			throw new ConcurrentModificationException();
@@ -36,7 +33,6 @@ public class Class434 implements Iterator {
 		}
 	}
 
-	@ObfInfo(name = "remove", desc = "()V")
 	public void remove() {
 		throw new UnsupportedOperationException();
 	}

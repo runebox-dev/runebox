@@ -6,7 +6,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-@ObfInfo(name = "qc")
 public class Class419 extends AbstractQueue {
 	@ObfInfo(name = "ak", desc = "[Lqq;")
 	public Class433[] field4671;
@@ -36,12 +35,10 @@ public class Class419 extends AbstractQueue {
 		this.field4671 = (Class433[])((Class433[])Arrays.copyOf(this.field4671, var2));
 	}
 
-	@ObfInfo(name = "size", desc = "()I")
 	public int size() {
 		return this.field4669;
 	}
 
-	@ObfInfo(name = "offer", desc = "(Ljava/lang/Object;)Z")
 	public boolean offer(Object var1) {
 		if (this.field4668.containsKey(var1)) {
 			throw new IllegalArgumentException("");
@@ -66,12 +63,10 @@ public class Class419 extends AbstractQueue {
 		}
 	}
 
-	@ObfInfo(name = "peek", desc = "()Ljava/lang/Object;")
 	public Object peek() {
 		return 0 == this.field4669 ? null : this.field4671[0].field4714;
 	}
 
-	@ObfInfo(name = "poll", desc = "()Ljava/lang/Object;")
 	public Object poll() {
 		if (this.field4669 == 0) {
 			return null;
@@ -93,7 +88,6 @@ public class Class419 extends AbstractQueue {
 		}
 	}
 
-	@ObfInfo(name = "remove", desc = "(Ljava/lang/Object;)Z")
 	public boolean remove(Object var1) {
 		Class433 var2 = (Class433)this.field4668.remove(var1);
 		if (var2 == null) {
@@ -180,12 +174,10 @@ public class Class419 extends AbstractQueue {
 		this.field4671[var1].field4715 = var1;
 	}
 
-	@ObfInfo(name = "contains", desc = "(Ljava/lang/Object;)Z")
 	public boolean contains(Object var1) {
 		return this.field4668.containsKey(var1);
 	}
 
-	@ObfInfo(name = "toArray", desc = "()[Ljava/lang/Object;")
 	public Object[] toArray() {
 		Object[] var1 = super.toArray();
 		if (this.field4667 != null) {
@@ -197,7 +189,6 @@ public class Class419 extends AbstractQueue {
 		return var1;
 	}
 
-	@ObfInfo(name = "iterator", desc = "()Ljava/util/Iterator;")
 	public Iterator iterator() {
 		return new Class434(this);
 	}

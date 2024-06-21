@@ -3,7 +3,6 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
-@ObfInfo(name = "ct")
 public class Class72 {
 	@ObfInfo(owner = "my", name = "ax", desc = "Lgc;")
 	public static Class159 field3527;

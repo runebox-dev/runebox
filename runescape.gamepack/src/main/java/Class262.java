@@ -2,7 +2,6 @@ import io.runebox.ObfInfo;
 import java.util.Arrays;
 import java.util.HashMap;
 
-@ObfInfo(name = "kb")
 public class Class262 extends Class255 {
 	@ObfInfo(name = "aj", desc = "Lkb;")
 	public static Class262 field2844;

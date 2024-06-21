@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "dh")
 public abstract class Class86 extends Class255 implements Class78 {
 	@ObfInfo(name = "en", desc = "[Ljv;")
 	public Class256[] field1128;

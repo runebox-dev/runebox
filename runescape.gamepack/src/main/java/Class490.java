@@ -4,7 +4,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-@ObfInfo(name = "sv")
 public class Class490 implements Class476 {
 	@ObfInfo(name = "al", desc = "Lorg/json/JSONObject;")
 	public JSONObject field5000;

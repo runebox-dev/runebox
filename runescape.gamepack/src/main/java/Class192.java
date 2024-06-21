@@ -8,7 +8,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-@ObfInfo(name = "hj")
 public class Class192 {
 	@ObfInfo(name = "ab", desc = "[F")
 	public float[] field1979;

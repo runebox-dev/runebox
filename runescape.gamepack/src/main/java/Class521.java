@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.math.BigInteger;
 
-@ObfInfo(name = "ua")
 public class Class521 extends Class506 {
 	@ObfInfo(name = "ao", desc = "[I")
 	public static int[] field5220;

@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.util.LinkedList;
 
-@ObfInfo(name = "lq")
 public abstract class Class303 {
 	@ObfInfo(name = "ay", desc = "[[[[Lle;")
 	public Class291[][][][] field3222;

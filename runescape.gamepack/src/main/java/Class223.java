@@ -3,7 +3,6 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
-@ObfInfo(name = "io")
 public class Class223 {
 	@ObfInfo(owner = "lg", name = "wa", desc = "Ljava/util/Iterator;")
 	public static Iterator field3170;

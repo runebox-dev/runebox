@@ -1,6 +1,6 @@
-package io.runebox.updater.asm.tree
+package io.runebox.updater.asm.core
 
-import io.runebox.updater.asm.tree.insn.resolve
+import io.runebox.updater.asm.core.insn.resolve
 import org.objectweb.asm.tree.InsnList
 import org.objectweb.asm.tree.MethodInsnNode
 

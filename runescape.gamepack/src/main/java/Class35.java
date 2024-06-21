@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "bi")
 public interface Class35 {
 	@ObfInfo(name = "aj", desc = "(CI)Z")
 	boolean method723(char var1);

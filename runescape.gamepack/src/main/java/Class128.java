@@ -2,7 +2,6 @@ import io.runebox.ObfInfo;
 import java.util.HashMap;
 import java.util.Map;
 
-@ObfInfo(name = "ex")
 public class Class128 {
 	@ObfInfo(name = "az", desc = "I", intMultiplier = 1651905777)
 	public static int field1531;

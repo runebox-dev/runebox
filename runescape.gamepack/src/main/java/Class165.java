@@ -3,7 +3,6 @@ import java.io.File;
 import java.io.RandomAccessFile;
 import java.util.Hashtable;
 
-@ObfInfo(name = "gi")
 public class Class165 {
 	@ObfInfo(name = "ak", desc = "Z")
 	public static boolean field1822;

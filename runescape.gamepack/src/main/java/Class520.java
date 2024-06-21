@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.util.HashMap;
 
-@ObfInfo(name = "tz")
 public class Class520 {
 	@ObfInfo(name = "al", desc = "Lor;")
 	public Class382 field5212;

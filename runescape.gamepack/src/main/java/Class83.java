@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "de")
 public final class Class83 extends Class86 {
 	@ObfInfo(owner = "vu", name = "al", desc = "Ljava/lang/String;")
 	public static String field5475;
@@ -340,7 +339,7 @@ public final class Class83 extends Class86 {
 			return null;
 		} else {
 			Class211 var2 = super.field1074 != -1 && 0 == super.field1103 ? Class211.method4637(super.field1074) : null;
-			Class211 var3 = super.field1096 != -1 && !this.field1026 && (super.field1096 != super.field1061 || var2 == null) ? Class211.method4637(super.field1096) : null;
+			Class211 var3 = super.field1096 == -1 || this.field1026 || super.field1096 == super.field1061 && var2 != null ? null : Class211.method4637(super.field1096);
 			Class262 var4 = this.field1029.method7086(var2, super.field1101, var3, super.field1122);
 			if (var4 == null) {
 				return null;

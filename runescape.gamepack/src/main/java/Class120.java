@@ -4,7 +4,6 @@ import java.net.HttpURLConnection;
 import java.net.URLConnection;
 import javax.net.ssl.HttpsURLConnection;
 
-@ObfInfo(name = "ep")
 public class Class120 extends Class106 {
 	@ObfInfo(name = "af", desc = "Z")
 	public final boolean field1482;

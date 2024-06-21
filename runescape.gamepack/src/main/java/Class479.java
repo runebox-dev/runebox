@@ -3,7 +3,6 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashMap;
 
-@ObfInfo(name = "sk")
 public abstract class Class479 {
 	@ObfInfo(name = "ah", desc = "[Lsg;")
 	public Class475[] field4950;

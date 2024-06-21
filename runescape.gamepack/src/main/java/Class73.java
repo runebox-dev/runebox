@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.math.BigInteger;
 
-@ObfInfo(name = "cu")
 public class Class73 {
 	@ObfInfo(name = "ak", desc = "Ljava/math/BigInteger;")
 	public static final BigInteger field901;

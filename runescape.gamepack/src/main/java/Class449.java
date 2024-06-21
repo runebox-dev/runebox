@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "rg")
 public class Class449 {
 	@ObfInfo(name = "aj", desc = "I", intMultiplier = 424096415)
 	public int field4815;
@@ -11,7 +10,6 @@ public class Class449 {
 	@ObfInfo(name = "az", desc = "I", intMultiplier = -791721597)
 	public int field4818;
 
-	@ObfInfo(name = "toString", desc = "()Ljava/lang/String;")
 	public String toString() {
 		boolean var1 = true;
 		int var2 = 10 - Integer.toString(this.field4817).length();

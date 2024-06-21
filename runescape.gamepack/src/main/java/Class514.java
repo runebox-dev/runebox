@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "tt")
 public abstract class Class514 extends Class499 {
 	public Class514(int var1, int var2) {
 		super(var1, var2);

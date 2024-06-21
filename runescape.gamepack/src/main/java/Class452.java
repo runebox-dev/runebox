@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "rj")
 public class Class452 {
 	@ObfInfo(name = "os", desc = "(Ljava/lang/String;ZI)Ljava/lang/String;", opaque = "1225028476")
 	public static String method8428(String var0, boolean var1) {

@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.util.Random;
 
-@ObfInfo(name = "cc")
 public class Class55 {
 	@ObfInfo(name = "ag", desc = "[I")
 	public static int[] field391;

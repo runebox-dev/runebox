@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "qi")
 public class Class425 {
 	@ObfInfo(name = "az", desc = "I", intMultiplier = -171794869)
 	public int field4688;
@@ -37,7 +36,6 @@ public class Class425 {
 		return var1 >= this.field4691 && var1 < this.field4690 + this.field4691 && var2 >= this.field4689 && var2 < this.field4689 + this.field4688;
 	}
 
-	@ObfInfo(name = "toString", desc = "()Ljava/lang/String;")
 	public String toString() {
 		return null;
 	}

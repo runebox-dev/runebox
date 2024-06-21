@@ -1,4 +1,4 @@
-package io.runebox.updater.asm.tree
+package io.runebox.updater.asm.core
 
 import io.runebox.updater.util.field
 import io.runebox.updater.util.mutableListField
@@ -49,7 +49,7 @@ fun ClassNode.clearInheritance() {
 }
 
 fun ClassNode.buildInheritance() {
-    val superCls = group.findClass(superName)
+    val superCls = superName?.let { group.findClass(it) }
     if(superCls != null) {
         superClass = superCls
         superClass!!.childClasses.add(this)

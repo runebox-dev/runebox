@@ -1,10 +1,8 @@
 import io.runebox.ObfInfo;
 import java.util.concurrent.Callable;
 
-@ObfInfo(name = "al")
 public class Class12 implements Callable {
 	// $FF: synthetic field
-	@ObfInfo(name = "this$0", desc = "Lab;")
 	public final Class2 this$0;
 	@ObfInfo(name = "al", desc = "Laz;")
 	public final Class26 field50;
@@ -17,7 +15,6 @@ public class Class12 implements Callable {
 		this.field50 = var3;
 	}
 
-	@ObfInfo(name = "call", desc = "()Ljava/lang/Object;")
 	public Object call() {
 		return this.field50.method147(this.field51);
 	}

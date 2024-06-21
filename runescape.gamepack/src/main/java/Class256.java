@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "jv")
 public class Class256 implements Class393 {
 	@ObfInfo(name = "av", desc = "[Ljv;")
 	public static Class256[] field2708;

@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.util.Arrays;
 
-@ObfInfo(name = "ql")
 public final class Class428 {
 	@ObfInfo(name = "al", desc = "[Lql;")
 	public static Class428[] field4696;
@@ -382,7 +381,6 @@ public final class Class428 {
 		return this.field4699[10] * var3 + this.field4699[6] * var2 + this.field4699[2] * var1 + this.field4699[14];
 	}
 
-	@ObfInfo(name = "toString", desc = "()Ljava/lang/String;")
 	public String toString() {
 		StringBuilder var1 = new StringBuilder();
 		this.method7883();
@@ -408,7 +406,6 @@ public final class Class428 {
 		return var1.toString();
 	}
 
-	@ObfInfo(name = "hashCode", desc = "()I")
 	public int hashCode() {
 		boolean var1 = true;
 		byte var2 = 1;
@@ -416,7 +413,6 @@ public final class Class428 {
 		return var3;
 	}
 
-	@ObfInfo(name = "equals", desc = "(Ljava/lang/Object;)Z")
 	public boolean equals(Object var1) {
 		if (!(var1 instanceof Class428)) {
 			return false;

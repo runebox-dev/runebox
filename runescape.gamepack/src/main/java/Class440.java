@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "qx")
 public class Class440 {
 	@ObfInfo(name = "aj", desc = "F")
 	public float field4770;
@@ -112,7 +111,6 @@ public class Class440 {
 		this.field4771 += var3;
 	}
 
-	@ObfInfo(name = "toString", desc = "()Ljava/lang/String;")
 	public String toString() {
 		return this.field4773 + "," + this.field4772 + "," + this.field4776 + "," + this.field4779 + "\n" + this.field4781 + "," + this.field4774 + "," + this.field4777 + "," + this.field4780 + "\n" + this.field4770 + "," + this.field4775 + "," + this.field4778 + "," + this.field4771;
 	}

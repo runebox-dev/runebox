@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "su")
 public class Class489 extends Class484 {
 	public Class489(int var1) {
 		super(var1);

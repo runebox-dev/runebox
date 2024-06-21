@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "ke")
 public final class Class265 {
 	@ObfInfo(name = "au", desc = "[F")
 	public static float[] field2940;

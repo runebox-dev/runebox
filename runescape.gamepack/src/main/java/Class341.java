@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.nio.ByteBuffer;
 
-@ObfInfo(name = "nc")
 public class Class341 extends Class362 {
 	@ObfInfo(name = "ak", desc = "Ljava/nio/ByteBuffer;")
 	public ByteBuffer field3828;

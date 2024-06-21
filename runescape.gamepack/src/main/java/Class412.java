@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.util.regex.Pattern;
 
-@ObfInfo(name = "pv")
 public final class Class412 {
 	static {
 		Pattern.compile("^\\D*(\\d+)\\D*$");

@@ -5,7 +5,6 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 
-@ObfInfo(name = "bt")
 public class Class46 {
 	static {
 		ImageIO.setUseCache(false);

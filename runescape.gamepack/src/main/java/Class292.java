@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "lf")
 public class Class292 {
 	@ObfInfo(owner = "jl", name = "ak", desc = "(III)I", opaque = "1100923044")
 	public static int method4758(int var0, int var1) {

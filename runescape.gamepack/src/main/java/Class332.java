@@ -4,7 +4,6 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
-@ObfInfo(name = "mt")
 public class Class332 {
 	@ObfInfo(name = "aq", desc = "I", intMultiplier = -405285165)
 	public static int field3457;

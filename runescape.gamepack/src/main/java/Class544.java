@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "ux")
 public class Class544 {
 	@ObfInfo(name = "aj", desc = "Lux;")
 	public static final Class544 field5322;
@@ -47,7 +46,6 @@ public class Class544 {
 		this.field5332 = var4;
 	}
 
-	@ObfInfo(name = "toString", desc = "()Ljava/lang/String;")
 	public String toString() {
 		return this.field5332;
 	}

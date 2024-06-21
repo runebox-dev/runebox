@@ -3,7 +3,6 @@ import java.io.IOException;
 import java.net.URL;
 import org.json.JSONObject;
 
-@ObfInfo(name = "hi")
 public class Class191 {
 	@ObfInfo(name = "ay", desc = "Lhi;")
 	public static final Class191 field1957;

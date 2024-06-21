@@ -2,7 +2,6 @@ import io.runebox.ObfInfo;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-@ObfInfo(name = "kz")
 public class Class286 {
 	@ObfInfo(name = "at", desc = "Lnj;")
 	public Class348 field3131;

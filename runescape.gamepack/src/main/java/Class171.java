@@ -3,7 +3,6 @@ import java.util.ArrayList;
 import java.util.BitSet;
 import java.util.List;
 
-@ObfInfo(name = "go")
 public class Class171 extends Class506 {
 	@ObfInfo(name = "al", desc = "Z")
 	public boolean field1847;

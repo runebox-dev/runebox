@@ -5,7 +5,6 @@ import java.awt.Desktop.Action;
 import java.net.URI;
 import java.net.URL;
 
-@ObfInfo(name = "bn")
 public class Class40 {
 	@ObfInfo(name = "ak", desc = "Ljava/applet/Applet;")
 	public static Applet field282;

@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "ci")
 public class Class61 {
 	@ObfInfo(name = "ak", desc = "[B")
 	public byte[] field449;

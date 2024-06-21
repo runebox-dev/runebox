@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "sg")
 public class Class475 implements Comparable {
 	@ObfInfo(name = "az", desc = "Lvv;")
 	public Class567 field4940;
@@ -37,7 +36,6 @@ public class Class475 implements Comparable {
 		return this.field4941.method10275(var1.field4941);
 	}
 
-	@ObfInfo(name = "compareTo", desc = "(Ljava/lang/Object;)I")
 	public int compareTo(Object var1) {
 		return this.method8409((Class475)var1);
 	}

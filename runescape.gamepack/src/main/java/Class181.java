@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "gy")
 public abstract class Class181 extends Class506 {
 	@ObfInfo(name = "ak", desc = "(Lua;I)V")
 	public abstract void method3087(Class521 var1);

@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "gj")
 public class Class166 extends Class181 {
 	@ObfInfo(name = "al", desc = "B")
 	public byte field1825;
@@ -11,7 +10,6 @@ public class Class166 extends Class181 {
 	@ObfInfo(name = "az", desc = "Ljava/lang/String;")
 	public String field1826;
 	// $FF: synthetic field
-	@ObfInfo(name = "this$0", desc = "Lgx;")
 	public final Class180 this$0;
 
 	public Class166(Class180 var1) {

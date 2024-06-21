@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.util.Arrays;
 
-@ObfInfo(name = "nm")
 public class Class351 {
 	@ObfInfo(name = "aj", desc = "[I")
 	public static int[] field3888;

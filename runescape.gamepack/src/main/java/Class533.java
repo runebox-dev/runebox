@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@ObfInfo(name = "um")
 public class Class533 extends Class507 {
 	@ObfInfo(name = "az", desc = "[Luy;")
 	public Class545[] field5262;

@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "kv")
 public class Class282 extends Class303 {
 	@ObfInfo(name = "ak", desc = "(Lua;I)V", opaque = "-341678494")
 	public void method5718(Class521 var1) {
@@ -46,7 +45,6 @@ public class Class282 extends Class303 {
 		}
 	}
 
-	@ObfInfo(name = "equals", desc = "(Ljava/lang/Object;)Z")
 	public boolean equals(Object var1) {
 		if (!(var1 instanceof Class282)) {
 			return false;
@@ -56,7 +54,6 @@ public class Class282 extends Class303 {
 		}
 	}
 
-	@ObfInfo(name = "hashCode", desc = "()I")
 	public int hashCode() {
 		return super.field3223 | super.field3213 << 8;
 	}

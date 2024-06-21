@@ -5,7 +5,6 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
-@ObfInfo(name = "dx")
 public class Class102 {
 	@ObfInfo(name = "af", desc = "Z")
 	public boolean field1340;

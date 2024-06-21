@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.util.Iterator;
 
-@ObfInfo(name = "qh")
 public class Class424 extends Class447 {
 	public Class424(Class447 var1) {
 		super(var1);

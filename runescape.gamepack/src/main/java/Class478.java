@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "sj")
 public class Class478 extends Class475 {
 	@ObfInfo(name = "ak", desc = "I", intMultiplier = -1307489943)
 	public int field4948;
@@ -15,7 +14,6 @@ public class Class478 extends Class475 {
 		return this.method8725((Class478)var1);
 	}
 
-	@ObfInfo(name = "compareTo", desc = "(Ljava/lang/Object;)I")
 	public int compareTo(Object var1) {
 		return this.method8725((Class478)var1);
 	}

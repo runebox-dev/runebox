@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import org.json.JSONObject;
 
-@ObfInfo(name = "gh")
 public class Class164 {
 	@ObfInfo(name = "ax", desc = "Lea;")
 	public Class105 field1808;

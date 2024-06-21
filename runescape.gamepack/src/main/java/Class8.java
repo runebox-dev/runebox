@@ -6,7 +6,6 @@ import java.net.ProtocolException;
 import java.net.URL;
 import javax.net.ssl.HttpsURLConnection;
 
-@ObfInfo(name = "ah")
 public class Class8 {
 	@ObfInfo(name = "az", desc = "Lsh;")
 	public Class476 field46;

@@ -27,7 +27,6 @@ import java.lang.management.ManagementFactory;
 import java.net.URL;
 import java.util.Iterator;
 
-@ObfInfo(name = "be")
 public abstract class Class31 extends Applet implements Runnable, FocusListener, WindowListener {
 	@ObfInfo(owner = "vm", name = "ah", desc = "Lhh;")
 	public static Class190 field5405;
@@ -149,7 +148,6 @@ public abstract class Class31 extends Applet implements Runnable, FocusListener,
 		Class30.method3934(new Class14());
 	}
 
-	@ObfInfo(name = "init", desc = "()V")
 	public abstract void init();
 
 	@ObfInfo(name = "bp", desc = "(B)V")
@@ -451,7 +449,6 @@ public abstract class Class31 extends Applet implements Runnable, FocusListener,
 		}
 	}
 
-	@ObfInfo(name = "run", desc = "()V")
 	public void run() {
 		try {
 			if (Class548.field1908 != null) {
@@ -617,21 +614,18 @@ public abstract class Class31 extends Applet implements Runnable, FocusListener,
 		}
 	}
 
-	@ObfInfo(name = "start", desc = "()V")
 	public final void start() {
 		if (field176 == this && !field179) {
 			field178 = 0L;
 		}
 	}
 
-	@ObfInfo(name = "stop", desc = "()V")
 	public final void stop() {
 		if (field176 == this && !field179) {
 			field178 = Class130.method3047() + 4000L;
 		}
 	}
 
-	@ObfInfo(name = "destroy", desc = "()V")
 	public final void destroy() {
 		if (field176 == this && !field179) {
 			field178 = Class130.method3047();
@@ -640,12 +634,10 @@ public abstract class Class31 extends Applet implements Runnable, FocusListener,
 		}
 	}
 
-	@ObfInfo(name = "update", desc = "(Ljava/awt/Graphics;)V")
 	public final void update(Graphics var1) {
 		this.paint(var1);
 	}
 
-	@ObfInfo(name = "paint", desc = "(Ljava/awt/Graphics;)V")
 	public final synchronized void paint(Graphics var1) {
 		if (field176 == this && !field179) {
 			this.field199 = true;
@@ -659,43 +651,34 @@ public abstract class Class31 extends Applet implements Runnable, FocusListener,
 		}
 	}
 
-	@ObfInfo(name = "focusGained", desc = "(Ljava/awt/event/FocusEvent;)V")
 	public final void focusGained(FocusEvent var1) {
 		field207 = true;
 		this.field199 = true;
 	}
 
-	@ObfInfo(name = "focusLost", desc = "(Ljava/awt/event/FocusEvent;)V")
 	public final void focusLost(FocusEvent var1) {
 		field207 = false;
 	}
 
-	@ObfInfo(name = "windowActivated", desc = "(Ljava/awt/event/WindowEvent;)V")
 	public final void windowActivated(WindowEvent var1) {
 	}
 
-	@ObfInfo(name = "windowClosed", desc = "(Ljava/awt/event/WindowEvent;)V")
 	public final void windowClosed(WindowEvent var1) {
 	}
 
-	@ObfInfo(name = "windowClosing", desc = "(Ljava/awt/event/WindowEvent;)V")
 	public final void windowClosing(WindowEvent var1) {
 		this.destroy();
 	}
 
-	@ObfInfo(name = "windowDeactivated", desc = "(Ljava/awt/event/WindowEvent;)V")
 	public final void windowDeactivated(WindowEvent var1) {
 	}
 
-	@ObfInfo(name = "windowDeiconified", desc = "(Ljava/awt/event/WindowEvent;)V")
 	public final void windowDeiconified(WindowEvent var1) {
 	}
 
-	@ObfInfo(name = "windowIconified", desc = "(Ljava/awt/event/WindowEvent;)V")
 	public final void windowIconified(WindowEvent var1) {
 	}
 
-	@ObfInfo(name = "windowOpened", desc = "(Ljava/awt/event/WindowEvent;)V")
 	public final void windowOpened(WindowEvent var1) {
 	}
 

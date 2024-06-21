@@ -3,7 +3,6 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-@ObfInfo(name = "bd")
 public class Class30 {
 	@ObfInfo(owner = "ao", name = "ao", desc = "Lbm;")
 	public static Class39 field80;

@@ -2,7 +2,6 @@ import io.runebox.ObfInfo;
 import java.io.EOFException;
 import java.io.IOException;
 
-@ObfInfo(name = "sf")
 public final class Class474 {
 	@ObfInfo(name = "ak", desc = "[B")
 	public static byte[] field4935;
@@ -296,7 +295,6 @@ public final class Class474 {
 		}
 	}
 
-	@ObfInfo(name = "toString", desc = "()Ljava/lang/String;")
 	public String toString() {
 		return "" + this.field4936;
 	}

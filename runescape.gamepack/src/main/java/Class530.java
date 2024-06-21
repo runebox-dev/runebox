@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.util.Iterator;
 
-@ObfInfo(name = "uj")
 public class Class530 extends Class469 implements Class287 {
 	@ObfInfo(name = "aj", desc = "Lld;")
 	public final Class290 field5253;
@@ -48,7 +47,6 @@ public class Class530 extends Class469 implements Class287 {
 		}
 	}
 
-	@ObfInfo(name = "iterator", desc = "()Ljava/util/Iterator;")
 	public Iterator iterator() {
 		return new Class524(this);
 	}

@@ -8,7 +8,6 @@ import java.io.StringReader;
 import java.io.StringWriter;
 import java.net.URL;
 
-@ObfInfo(name = "vb")
 public class Class548 extends RuntimeException {
 	@ObfInfo(owner = "uc", name = "aj", desc = "I", intMultiplier = -2084016401)
 	public static int field5223;

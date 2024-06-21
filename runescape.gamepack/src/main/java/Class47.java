@@ -2,7 +2,6 @@ import io.runebox.ObfInfo;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-@ObfInfo(name = "bu")
 public class Class47 {
 	@ObfInfo(name = "ak", desc = "Lps;")
 	public static Class409 field323;

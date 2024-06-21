@@ -7,7 +7,6 @@ import java.net.URLConnection;
 import java.util.LinkedList;
 import java.util.Queue;
 
-@ObfInfo(name = "eb")
 public abstract class Class106 implements Runnable {
 	@ObfInfo(name = "az", desc = "I", intMultiplier = -468765383)
 	public int field1377;
@@ -29,7 +28,6 @@ public abstract class Class106 implements Runnable {
 	@ObfInfo(name = "ak", desc = "(Lea;B)V")
 	public abstract void method2773(Class105 var1) throws IOException;
 
-	@ObfInfo(name = "run", desc = "()V")
 	public void run() {
 		while (!this.field1376) {
 			try {

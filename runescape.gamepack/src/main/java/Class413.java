@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.util.Iterator;
 
-@ObfInfo(name = "pw")
 public class Class413 implements Iterator {
 	@ObfInfo(name = "ak", desc = "Lps;")
 	public Class409 field4652;
@@ -27,7 +26,6 @@ public class Class413 implements Iterator {
 		this.field4654 = null;
 	}
 
-	@ObfInfo(name = "next", desc = "()Ljava/lang/Object;")
 	public Object next() {
 		Class506 var1 = this.field4653;
 		if (this.field4652.field4644 == var1) {
@@ -41,12 +39,10 @@ public class Class413 implements Iterator {
 		return var1;
 	}
 
-	@ObfInfo(name = "hasNext", desc = "()Z")
 	public boolean hasNext() {
 		return this.field4653 != this.field4652.field4644 && this.field4653 != null;
 	}
 
-	@ObfInfo(name = "remove", desc = "()V")
 	public void remove() {
 		if (this.field4654 == null) {
 			throw new IllegalStateException();

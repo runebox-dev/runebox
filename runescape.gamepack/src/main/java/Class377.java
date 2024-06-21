@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "om")
 public class Class377 implements Runnable {
 	@ObfInfo(name = "al", desc = "Lpk;")
 	public static Class401 field4135;
@@ -21,7 +20,6 @@ public class Class377 implements Runnable {
 		field4136 = new Object();
 	}
 
-	@ObfInfo(name = "run", desc = "()V")
 	public void run() {
 		try {
 			while (true) {

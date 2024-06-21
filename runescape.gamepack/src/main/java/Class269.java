@@ -5,7 +5,6 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
-@ObfInfo(name = "ki")
 public final class Class269 {
 	@ObfInfo(name = "aa", desc = "[[Lks;")
 	public Class279[][] field2995;

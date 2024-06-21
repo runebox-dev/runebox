@@ -2,7 +2,6 @@ import io.runebox.ObfInfo;
 import java.util.HashSet;
 import java.util.Set;
 
-@ObfInfo(name = "pe")
 public class Class395 implements Class393 {
 	@ObfInfo(name = "ak", desc = "Lpe;")
 	public static final Class395 field4567;

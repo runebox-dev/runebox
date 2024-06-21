@@ -4,7 +4,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-@ObfInfo(name = "oa")
 public class Class365 {
 	@ObfInfo(name = "af", desc = "Ljava/util/Comparator;")
 	public static Comparator field3987;

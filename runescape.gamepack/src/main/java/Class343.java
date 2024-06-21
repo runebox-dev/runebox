@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "ne")
 public class Class343 extends Class506 {
 	@ObfInfo(name = "az", desc = "Lms;")
 	public Class331 field3839;

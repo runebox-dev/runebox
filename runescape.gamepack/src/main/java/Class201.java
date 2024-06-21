@@ -9,7 +9,6 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-@ObfInfo(name = "hs")
 public class Class201 extends Class507 {
 	@ObfInfo(name = "ak", desc = "Llm;")
 	public static Class299 field2068;

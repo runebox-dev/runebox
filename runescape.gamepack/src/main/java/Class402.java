@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.util.Locale;
 
-@ObfInfo(name = "pl")
 public class Class402 implements Class393 {
 	@ObfInfo(name = "al", desc = "Lpl;")
 	public static final Class402 field4608;
@@ -70,7 +69,6 @@ public class Class402 implements Class393 {
 		return this.field4618;
 	}
 
-	@ObfInfo(name = "toString", desc = "()Ljava/lang/String;")
 	public String toString() {
 		return this.method7521().toLowerCase(Locale.ENGLISH);
 	}

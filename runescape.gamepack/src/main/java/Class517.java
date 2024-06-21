@@ -5,7 +5,6 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 
-@ObfInfo(name = "tw")
 public class Class517 implements Class476 {
 	@ObfInfo(name = "ak", desc = "Ljava/util/Map;")
 	public final Map field5200;

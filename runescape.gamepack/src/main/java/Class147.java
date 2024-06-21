@@ -1,13 +1,11 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "fq")
 public class Class147 extends Class149 {
 	@ObfInfo(name = "al", desc = "B")
 	public byte field1668;
 	@ObfInfo(name = "ak", desc = "I", intMultiplier = 302747029)
 	public int field1666;
 	// $FF: synthetic field
-	@ObfInfo(name = "this$0", desc = "Lfu;")
 	public final Class151 this$0;
 
 	public Class147(Class151 var1) {

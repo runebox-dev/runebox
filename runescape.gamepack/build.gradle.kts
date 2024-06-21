@@ -20,9 +20,15 @@ tasks {
         classpath = sourceSets["test"].runtimeClasspath
     }
 
-    named("jar", Jar::class) {
+    register("jar.named", Jar::class) {
+        group = "build"
         archiveBaseName.set("gamepack.named")
         archiveClassifier.set("")
         archiveVersion.set("")
+        from(gamepack.map { if(it.isDirectory) it else zipTree(it) }) {
+            exclude("META-INF/*")
+        }
+        with(named("jar", Jar::class).get())
+
     }
 }

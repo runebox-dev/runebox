@@ -2,7 +2,6 @@ import io.runebox.ObfInfo;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-@ObfInfo(name = "bh")
 public class Class34 extends Class506 {
 	@ObfInfo(name = "ab", desc = "[[[B")
 	public byte[][][] field252;

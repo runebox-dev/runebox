@@ -6,7 +6,6 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.util.Map;
 
-@ObfInfo(name = "ad")
 public class Class4 {
 	@ObfInfo(name = "ak", desc = "I", intMultiplier = -993178463)
 	public final int field14;

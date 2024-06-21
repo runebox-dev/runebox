@@ -2,7 +2,6 @@ import io.runebox.ObfInfo;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-@ObfInfo(name = "ny")
 public class Class363 {
 	@ObfInfo(name = "ak", desc = "Lea;")
 	public Class105 field3976;

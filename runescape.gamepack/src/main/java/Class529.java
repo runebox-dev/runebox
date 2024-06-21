@@ -1,6 +1,5 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "ui")
 public interface Class529 {
 	@ObfInfo(name = "al", desc = "(Lua;B)Ljava/lang/Object;")
 	Object method9644(Class521 var1);

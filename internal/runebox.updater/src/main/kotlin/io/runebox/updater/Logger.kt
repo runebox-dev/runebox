@@ -17,7 +17,7 @@ object Logger {
     }
 
     fun info(message: String) {
-        println("[INFO] - $message")
+        println(message)
     }
 
     fun warning(message: String) {

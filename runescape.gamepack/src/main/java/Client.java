@@ -1,15 +1,24 @@
-import com.jagex.oldscape.pub.*;
+import com.jagex.oldscape.pub.OAuthApi;
+import com.jagex.oldscape.pub.OtlTokenRequester;
+import com.jagex.oldscape.pub.OtlTokenResponse;
+import com.jagex.oldscape.pub.RefreshAccessTokenRequester;
+import com.jagex.oldscape.pub.RefreshAccessTokenResponse;
 import io.runebox.ObfInfo;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.awt.datatransfer.Clipboard;
 import java.io.IOException;
 import java.net.Socket;
 import java.net.URL;
 import java.security.SecureRandom;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
 import java.util.concurrent.Future;
+import netscape.javascript.JSObject;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 @ObfInfo(name = "client")
 public final class Client extends Class31 implements Class456, OAuthApi, Class330 {
@@ -1379,7 +1388,6 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 	public final void method503() {
 	}
 
-	@ObfInfo(name = "init", desc = "()V")
 	public final void init() {
 		if (this.method481()) {
 			for (int var1 = 0; var1 <= 28; ++var1) {
@@ -1502,7 +1510,6 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(name = "finalize", desc = "()V")
 	public void finalize() throws Throwable {
 		Class332.field3459.remove(this);
 		super.finalize();
@@ -1513,12 +1520,10 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		return this.field534 == 1;
 	}
 
-	@ObfInfo(name = "setClient", desc = "(I)V")
 	public void setClient(int var1) {
 		this.field534 = var1;
 	}
 
-	@ObfInfo(name = "setOtlTokenRequester", desc = "(Lcom/jagex/oldscape/pub/OtlTokenRequester;)V")
 	public void setOtlTokenRequester(OtlTokenRequester var1) {
 		if (var1 != null) {
 			this.field610 = var1;
@@ -1526,19 +1531,16 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 	}
 
-	@ObfInfo(name = "setRefreshTokenRequester", desc = "(Lcom/jagex/oldscape/pub/RefreshAccessTokenRequester;)V")
 	public void setRefreshTokenRequester(RefreshAccessTokenRequester var1) {
 		if (var1 != null) {
 			this.field603 = var1;
 		}
 	}
 
-	@ObfInfo(name = "isOnLoginScreen", desc = "()Z")
 	public boolean isOnLoginScreen() {
 		return 10 == field555;
 	}
 
-	@ObfInfo(name = "getAccountHash", desc = "()J")
 	public long getAccountHash() {
 		return this.field544;
 	}
@@ -4560,7 +4562,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				}
 
 				long var57;
-				String var72;
+				String var73;
 				long var79;
 				if (var1.field1449 == Class338.field3552) {
 					var69 = var4.method9415();
@@ -4584,7 +4586,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					if (!var60 && field608 == 0) {
 						field730[field720] = var59;
 						field720 = (field720 + 1) % 100;
-						var72 = Class436.method7992(Class412.method7137(Class339.method6268(var4)));
+						var73 = Class436.method7992(Class412.method7137(Class339.method6268(var4)));
 						byte var76;
 						if (var62.field4031) {
 							var76 = 7;
@@ -4593,9 +4595,9 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 						}
 
 						if (var62.field4026 != -1) {
-							Class128.method2747(var76, Class113.method6223(var62.field4026) + var69, var72);
+							Class128.method2747(var76, Class113.method6223(var62.field4026) + var69, var73);
 						} else {
-							Class128.method2747(var76, var69, var72);
+							Class128.method2747(var76, var69, var73);
 						}
 					}
 
@@ -4725,9 +4727,9 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					if (!var51) {
 						field730[field720] = var32;
 						field720 = (1 + field720) % 100;
-						var72 = Class339.method6268(var4);
+						var73 = Class339.method6268(var4);
 						var74 = var26 >= 0 ? 43 : 46;
-						Class505.method9272(var74, "", var72, var55.field1851);
+						Class505.method9272(var74, "", var73, var55.field1851);
 					}
 
 					var1.field1449 = null;
@@ -4871,7 +4873,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				String var73;
+				String var72;
 				if (Class338.field3581 == var1.field1449) {
 					var69 = var4.method9415();
 					var79 = var4.method9411();
@@ -4895,11 +4897,11 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					if (!var66 && field608 == 0) {
 						field730[field720] = var52;
 						field720 = (1 + field720) % 100;
-						var73 = Class436.method7992(Class412.method7137(Class339.method6268(var4)));
+						var72 = Class436.method7992(Class412.method7137(Class339.method6268(var4)));
 						if (var50.field4026 != -1) {
-							Class505.method9272(9, Class113.method6223(var50.field4026) + var69, var73, Class157.method3324(var79));
+							Class505.method9272(9, Class113.method6223(var50.field4026) + var69, var72, Class157.method3324(var79));
 						} else {
-							Class505.method9272(9, var69, var73, Class157.method3324(var79));
+							Class505.method9272(9, var69, var72, Class157.method3324(var79));
 						}
 					}
 
@@ -5342,12 +5344,12 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					if (!var14) {
 						field730[field720] = var47;
 						field720 = (1 + field720) % 100;
-						var73 = Class436.method7992(Class339.method6268(var4));
+						var72 = Class436.method7992(Class339.method6268(var4));
 						var17 = var26 >= 0 ? 41 : 44;
 						if (var41.field4026 != -1) {
-							Class505.method9272(var17, Class113.method6223(var41.field4026) + var6, var73, var15.field1851);
+							Class505.method9272(var17, Class113.method6223(var41.field4026) + var6, var72, var15.field1851);
 						} else {
-							Class505.method9272(var17, var6, var73, var15.field1851);
+							Class505.method9272(var17, var6, var72, var15.field1851);
 						}
 					}
 

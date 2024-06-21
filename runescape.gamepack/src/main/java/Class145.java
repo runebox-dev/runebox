@@ -6,7 +6,6 @@ import java.util.concurrent.Future;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-@ObfInfo(name = "fo")
 public class Class145 extends Class507 {
 	@ObfInfo(name = "at", desc = "I", intMultiplier = 910389071)
 	public static int field1653;

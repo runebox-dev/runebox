@@ -2,7 +2,6 @@ import io.runebox.ObfInfo;
 import java.io.IOException;
 import java.net.Socket;
 
-@ObfInfo(name = "sm")
 public abstract class Class481 {
 	@ObfInfo(name = "al", desc = "(II)Z")
 	public abstract boolean method8621(int var1) throws IOException;

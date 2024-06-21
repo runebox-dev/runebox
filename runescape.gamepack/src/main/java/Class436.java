@@ -1,7 +1,6 @@
 import io.runebox.ObfInfo;
 import java.util.Random;
 
-@ObfInfo(name = "qt")
 public abstract class Class436 extends Class561 {
 	@ObfInfo(name = "ay", desc = "I")
 	public static int field4723;

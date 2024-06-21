@@ -3,7 +3,6 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 
-@ObfInfo(name = "ry")
 public final class Class467 {
 	@ObfInfo(name = "aj", desc = "Lqc;")
 	public final Class419 field4908;

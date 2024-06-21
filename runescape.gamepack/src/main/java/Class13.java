@@ -3,7 +3,6 @@ import java.awt.Canvas;
 import java.awt.Component;
 import java.awt.Graphics;
 
-@ObfInfo(name = "am")
 public final class Class13 extends Canvas {
 	@ObfInfo(name = "ak", desc = "Ljava/awt/Component;")
 	public Component field56;
@@ -12,12 +11,10 @@ public final class Class13 extends Canvas {
 		this.field56 = var1;
 	}
 
-	@ObfInfo(name = "update", desc = "(Ljava/awt/Graphics;)V")
 	public final void update(Graphics var1) {
 		this.field56.update(var1);
 	}
 
-	@ObfInfo(name = "paint", desc = "(Ljava/awt/Graphics;)V")
 	public final void paint(Graphics var1) {
 		this.field56.paint(var1);
 	}
