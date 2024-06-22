@@ -14,6 +14,8 @@ abstract class AbstractMatch<T : Any>(val old: T) {
             votes = hashMapOf()
         }
 
+    val voteDiff get() = highest - second
+
     open fun vote(n: T): Boolean {
         if(new != null) return new == n
         if(old::class != n::class) return false

@@ -17,8 +17,8 @@ tasks {
         workingDir = rootProject.projectDir
         classpath = sourceSets["main"].runtimeClasspath
         args = listOf(
-            project(":gamepack").tasks.named("jar.named", Jar::class).get().archiveFile.get().asFile.relativeTo(rootProject.projectDir).path,
-            "build/runebox/gamepack.deob.jar",
+            "runescape.gamepack/build/libs/gamepack.named.jar",
+            "build/runebox/gamepack221.deob.jar",
             "build/runebox/gamepack.updated.jar"
         )
     }

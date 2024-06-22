@@ -3,6 +3,8 @@ package io.runebox.updater
 import io.runebox.updater.asm.tree.ClassGroup
 import io.runebox.updater.merge.MergeEngine
 import io.runebox.updater.merge.MergeEngine.Companion.jumpTo
+import io.runebox.updater.merge.operation.MatchStringConstants
+import io.runebox.updater.merge.operation.VoteCollector
 import java.io.File
 
 class Updater(
@@ -16,12 +18,10 @@ class Updater(
     private lateinit var engine: MergeEngine
 
     fun update() {
-        Logger.info("Initializing RuneBox updater.")
+        Logger.info("RuneBox updater.")
 
         oldGroup = createGroup(oldJar)
         newGroup = createGroup(newJar)
-
-        Logger.info("Starting RuneBox updater.")
 
         /*
          * Set up the mapping merge engine and the
@@ -30,6 +30,8 @@ class Updater(
         engine = MergeEngine(oldGroup, newGroup)
 
         // Merge Operation Step Definitions
+        engine.addOperation(MatchStringConstants())
+        engine.addOperation(VoteCollector())
         engine.addOperation(jumpTo(0) { e: MergeEngine ->
             val ch = e.changesLastCycle
             e.resetChanges()

@@ -22,6 +22,11 @@ var ClassNode.superClass: ClassNode? by nullField()
 val ClassNode.interfaceClasses: MutableList<ClassNode> by mutableListField()
 val ClassNode.childClasses: MutableList<ClassNode> by mutableListField()
 
+val ClassNode.memberMethods get() = methods.filter { !it.isStatic }
+val ClassNode.staticMethods get() = methods.filter { it.isStatic }
+val ClassNode.memberFields get() = fields.filter { !it.isStatic }
+val ClassNode.staticFields get() = fields.filter { it.isStatic }
+
 fun ClassNode.findMethod(name: String, desc: String) = methods.firstOrNull { it.name == name && it.desc == desc }
 fun ClassNode.findField(name: String, desc: String) = fields.firstOrNull { it.name == name && it.desc == desc }
 fun ClassNode.findField(name: String) = fields.firstOrNull { it.name == name }

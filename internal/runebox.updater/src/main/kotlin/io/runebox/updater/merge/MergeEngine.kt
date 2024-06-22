@@ -34,9 +34,23 @@ class MergeEngine(
     val newMappings = MappingsSet()
 
     fun merge() {
-        Logger.info("Running updater marger.")
+        Logger.info("Starting merge matching...")
 
+        var i = 0
+        while(i < operations.size) {
+            val op = operations[i]
+            if(op is JumpOperation) {
+                if(op.predicate(this)) {
+                    i = op.target - 1
+                }
+                i++
+                continue
+            }
+            op.operate(this)
+            i++
+        }
 
+        Logger.info("Completed merge matching.")
     }
 
     class MatchesSet<Node : Any, Match : AbstractMatch<Node>>(
@@ -44,15 +58,18 @@ class MergeEngine(
     ) {
         val matches = identityMapOf<Node, Match>()
         val matchesInverse = identityMapOf<Node, Match>()
-        val pendingMatches = identityMapOf<Node, Match>()
+        private val _pendingMatches = identityMapOf<Node, Match>()
+
+        val allMatches get() = matches.values
+        val pendingMatches get() = _pendingMatches.values
 
         fun pendingMatch(node: Node): Match {
             var match = matches[node]
             if(match != null) return match
-            match = pendingMatches[node]
+            match = _pendingMatches[node]
             if(match == null) {
                 match = createMatch(node)
-                pendingMatches[node] = match
+                _pendingMatches[node] = match
             }
             return match
         }
@@ -69,10 +86,10 @@ class MergeEngine(
 
         fun markAsMatched(m: Match) {
             if(m.new == null) throw IllegalStateException("New type in match was null when trying to mark matched.")
-            pendingMatches.remove(m.old)
+            _pendingMatches.remove(m.old)
             matches[m.old] = m
             matchesInverse[m.new!!] = m
-            for(match in pendingMatches.values) {
+            for(match in _pendingMatches.values) {
                 match.removeVote(m.new!!)
             }
         }
