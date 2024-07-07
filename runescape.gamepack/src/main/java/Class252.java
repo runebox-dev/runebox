@@ -1,49 +1,46 @@
 import io.runebox.ObfInfo;
 
 @ObfInfo(name = "jr")
-public class Class252 extends Class268 {
-	@ObfInfo(name = "ad", desc = "Lkm;")
-	public final Class273 field2645;
-	@ObfInfo(name = "ag", desc = "I", intMultiplier = -1276537903)
-	public final int field2647;
-	@ObfInfo(name = "ak", desc = "I", intMultiplier = -903074913)
-	public final int field2648;
-	@ObfInfo(name = "aq", desc = "I", intMultiplier = -946439351)
-	public final int field2650;
+public class Class252 {
+	@ObfInfo(name = "al", desc = "Ljr;")
+	public static final Class252 field2678;
+	@ObfInfo(name = "ak", desc = "Ljr;")
+	public static final Class252 field2679;
 
-	public Class252(Class350 var1, Class350 var2, int var3, Class273 var4) {
-		super(var1, var2);
-		this.field2650 = var3;
-		this.field2645 = var4;
-		Class163 var5 = Class163.method3540(this.method4659());
-		Class553 var6 = var5.method3388(false);
-		if (var6 != null) {
-			this.field2647 = var6.field5421;
-			this.field2648 = var6.field5424;
+	static {
+		field2679 = new Class252(-1);
+		field2678 = new Class252(1);
+	}
+
+	public Class252(int var1) {
+	}
+
+	@ObfInfo(name = "ng", desc = "(Lnb;I)Z", opaque = "2330075")
+	public static boolean method4780(Class340 var0) {
+		if (var0.field3803 == null) {
+			return false;
 		} else {
-			this.field2647 = 0;
-			this.field2648 = 0;
+			for (int var2 = 0; var2 < var0.field3803.length; ++var2) {
+				int var3 = Client.method9206(var0, var2);
+				int var4 = var0.field3804[var2];
+				if (2 == var0.field3803[var2]) {
+					if (var3 >= var4) {
+						return false;
+					}
+				} else if (3 == var0.field3803[var2]) {
+					if (var3 <= var4) {
+						return false;
+					}
+				} else if (4 == var0.field3803[var2]) {
+					if (var4 == var3) {
+						return false;
+					}
+				} else if (var4 != var3) {
+					return false;
+				}
+			}
+
+			return true;
 		}
-
-	}
-
-	@ObfInfo(name = "ad", desc = "(B)I")
-	public int method4659() {
-		return this.field2650;
-	}
-
-	@ObfInfo(name = "ag", desc = "(I)Lkm;")
-	public Class273 method4660() {
-		return this.field2645;
-	}
-
-	@ObfInfo(name = "ak", desc = "(I)I")
-	public int method4661() {
-		return this.field2647;
-	}
-
-	@ObfInfo(name = "ap", desc = "(I)I")
-	public int method4674() {
-		return this.field2648;
 	}
 }

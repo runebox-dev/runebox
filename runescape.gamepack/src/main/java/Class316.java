@@ -1,49 +1,57 @@
 import io.runebox.ObfInfo;
 
 @ObfInfo(name = "md")
-public class Class316 {
-	@ObfInfo(name = "aq", desc = "Lmd;")
-	public static final Class316 field3311;
-	@ObfInfo(name = "ad", desc = "Lmd;")
-	public static final Class316 field3312;
-	@ObfInfo(name = "ag", desc = "Lmd;")
-	public static final Class316 field3313;
-	@ObfInfo(name = "aj", desc = "Lmd;")
-	public static final Class316 field3314;
-	@ObfInfo(name = "ap", desc = "Lmd;")
-	public static final Class316 field3315;
-	@ObfInfo(name = "ab", desc = "Lmd;")
-	public static final Class316 field3316;
-	@ObfInfo(name = "an", desc = "Lmd;")
-	public static final Class316 field3317;
-	@ObfInfo(name = "av", desc = "Lmd;")
-	public static final Class316 field3318;
-	@ObfInfo(name = "ak", desc = "Lmd;")
-	public static final Class316 field3319;
-	@ObfInfo(name = "ai", desc = "Lmd;")
-	public static final Class316 field3320;
-	@ObfInfo(name = "ae", desc = "Lmd;")
-	public static final Class316 field3321;
+public class Class316 extends Class506 {
+	@ObfInfo(name = "af", desc = "[Lmd;")
+	public static Class316[] field3375;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = 1720291611)
+	public static int field3377;
+	@ObfInfo(name = "ak", desc = "Lmc;")
+	public Class315 field3379;
+	@ObfInfo(name = "aj", desc = "Luk;")
+	public Class531 field3374;
+	@ObfInfo(name = "al", desc = "I", intMultiplier = 674199947)
+	public int field3373;
+	@ObfInfo(name = "az", desc = "I", intMultiplier = -1414122657)
+	public int field3376;
 
 	static {
-		field3311 = new Class316(2);
-		field3312 = new Class316(7);
-		field3313 = new Class316(14);
-		field3319 = new Class316(14);
-		field3315 = new Class316(4);
-		field3317 = new Class316(4);
-		field3314 = new Class316(5);
-		field3318 = new Class316(6);
-		field3316 = new Class316(11);
-		field3320 = new Class316(20);
-		field3321 = new Class316(7);
+		field3375 = new Class316[300];
+		field3377 = 0;
 	}
 
-	public Class316(int var1) {
+	@ObfInfo(name = "aj", desc = "(S)V")
+	public void method6185() {
+		if (field3377 < field3375.length) {
+			field3375[++field3377 - 1] = this;
+		}
 	}
 
-	@ObfInfo(owner = "as", name = "aq", desc = "(B)[Lmd;")
-	public static Class316[] method266() {
-		return new Class316[]{field3311, field3312, field3313, field3319, field3315, field3317, field3314, field3318, field3316, field3320, field3321};
+	@ObfInfo(owner = "lw", name = "ak", desc = "(S)Lmd;", opaque = "1023")
+	public static Class316 method6159() {
+		return field3377 == 0 ? new Class316() : field3375[--field3377];
+	}
+
+	@ObfInfo(owner = "hr", name = "al", desc = "(Lmc;Lvr;I)Lmd;", opaque = "-1576354579")
+	public static Class316 method3908(Class315 var0, Class563 var1) {
+		Class316 var3 = method6159();
+		var3.field3379 = var0;
+		var3.field3373 = var0.field3292;
+		if (var3.field3373 == -1) {
+			var3.field3374 = new Class531(260);
+		} else if (-2 == var3.field3373) {
+			var3.field3374 = new Class531(10000);
+		} else if (var3.field3373 <= 18) {
+			var3.field3374 = new Class531(20);
+		} else if (var3.field3373 <= 98) {
+			var3.field3374 = new Class531(100);
+		} else {
+			var3.field3374 = new Class531(260);
+		}
+
+		var3.field3374.method9777(var1);
+		var3.field3374.method9760(var3.field3379.field3369);
+		var3.field3376 = 0;
+		return var3;
 	}
 }

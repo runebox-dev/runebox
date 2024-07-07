@@ -1,231 +1,111 @@
 import io.runebox.ObfInfo;
-import java.awt.Component;
-import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-import java.awt.event.MouseMotionListener;
 
 @ObfInfo(name = "bp")
-public class Class42 implements MouseListener, MouseMotionListener, FocusListener {
-	@ObfInfo(name = "ak", desc = "Lbp;")
-	public static Class42 field213;
-	@ObfInfo(name = "ai", desc = "I", intMultiplier = 896400541)
-	public static int field219;
-	@ObfInfo(name = "au", desc = "I", intMultiplier = -167698723)
-	public static int field221;
-	@ObfInfo(name = "aa", desc = "I", intMultiplier = -1849530853)
-	public static int field222;
-	@ObfInfo(name = "ay", desc = "I", intMultiplier = 265354951)
-	public static int field227;
-	@ObfInfo(name = "ao", desc = "I", intMultiplier = -1073372179)
-	public static int field230;
-	@ObfInfo(name = "ae", desc = "I", intMultiplier = 480166059)
-	public static int field231;
-	@ObfInfo(name = "ah", desc = "J", longMultiplier = -8141281389356617939L)
-	public static long field211;
-	@ObfInfo(name = "as", desc = "J", longMultiplier = 1298699014946310789L)
-	public static long field217;
-	@ObfInfo(name = "ap", desc = "I", intMultiplier = -1541374105)
-	public static volatile int field214;
-	@ObfInfo(name = "aj", desc = "I", intMultiplier = -578754821)
-	public static volatile int field216;
-	@ObfInfo(name = "az", desc = "I", intMultiplier = -787839099)
-	public static volatile int field223;
-	@ObfInfo(name = "ax", desc = "I", intMultiplier = 1568545757)
-	public static volatile int field224;
-	@ObfInfo(name = "ac", desc = "I", intMultiplier = 318864607)
-	public static volatile int field225;
-	@ObfInfo(name = "an", desc = "I", intMultiplier = 1872761615)
-	public static volatile int field228;
-	@ObfInfo(name = "av", desc = "I", intMultiplier = -784218957)
-	public static volatile int field229;
-	@ObfInfo(name = "ab", desc = "J", longMultiplier = 3306884089864589761L)
-	public static volatile long field218;
-	@ObfInfo(name = "al", desc = "J", longMultiplier = 6035223071582812827L)
-	public static volatile long field226;
+public class Class42 {
+	@ObfInfo(name = "al", desc = "[Lcc;")
+	public Class55[] field300;
+	@ObfInfo(name = "aj", desc = "I")
+	public int field299;
+	@ObfInfo(name = "az", desc = "I")
+	public int field302;
 
-	static {
-		field213 = new Class42();
-		field214 = 0;
-		field228 = 0;
-		field216 = -1;
-		field229 = -1;
-		field218 = -1L;
-		field219 = 0;
-		field231 = 0;
-		field221 = 0;
-		field211 = 0L;
-		field223 = 0;
-		field224 = 0;
-		field225 = 0;
-		field226 = 0L;
-		field227 = 0;
-		field230 = 0;
-		field222 = 0;
-		field217 = 0L;
+	public Class42(Class521 var1) {
+		this.field300 = new Class55[10];
+
+		for (int var2 = 0; var2 < 10; ++var2) {
+			int var3 = var1.method9405();
+			if (var3 != 0) {
+				--var1.field5219;
+				this.field300[var2] = new Class55();
+				this.field300[var2].method1057(var1);
+			}
+		}
+
+		this.field299 = var1.method9407();
+		this.field302 = var1.method9407();
 	}
 
-	@ObfInfo(name = "an", desc = "(Ljava/awt/event/MouseEvent;B)I", opaque = "3")
-	public final int method599(MouseEvent var1) {
-		int var3 = var1.getButton();
-		if (!var1.isAltDown() && var3 != 2) {
-			return !var1.isMetaDown() && var3 != 3 ? 1 : 2;
+	@ObfInfo(name = "al", desc = "()Lbr;")
+	public Class44 method808() {
+		byte[] var1 = this.method810();
+		return new Class44(22050, var1, this.field299 * 22050 / 1000, this.field302 * 22050 / 1000);
+	}
+
+	@ObfInfo(name = "aj", desc = "()I")
+	public final int method809() {
+		int var1 = 9999999;
+
+		int var2;
+		for (var2 = 0; var2 < 10; ++var2) {
+			if (this.field300[var2] != null && this.field300[var2].field404 / 20 < var1) {
+				var1 = this.field300[var2].field404 / 20;
+			}
+		}
+
+		if (this.field299 < this.field302 && this.field299 / 20 < var1) {
+			var1 = this.field299 / 20;
+		}
+
+		if (var1 != 9999999 && var1 != 0) {
+			for (var2 = 0; var2 < 10; ++var2) {
+				if (this.field300[var2] != null) {
+					Class55 var10000 = this.field300[var2];
+					var10000.field404 -= var1 * 20;
+				}
+			}
+
+			if (this.field299 < this.field302) {
+				this.field299 -= var1 * 20;
+				this.field302 -= var1 * 20;
+			}
+
+			return var1;
 		} else {
-			return 4;
+			return 0;
 		}
 	}
 
-	public final synchronized void mousePressed(MouseEvent var1) {
-		if (field213 != null) {
-			field214 = 0;
-			field224 = var1.getX();
-			field225 = var1.getY();
-			field226 = Class329.method4953();
-			field223 = this.method599(var1);
-			if (field223 != 0) {
-				field228 = field223;
+	@ObfInfo(name = "az", desc = "()[B")
+	public final byte[] method810() {
+		int var1 = 0;
+
+		int var2;
+		for (var2 = 0; var2 < 10; ++var2) {
+			if (this.field300[var2] != null && this.field300[var2].field406 + this.field300[var2].field404 > var1) {
+				var1 = this.field300[var2].field406 + this.field300[var2].field404;
 			}
 		}
 
-		if (var1.isPopupTrigger()) {
-			var1.consume();
-		}
+		if (var1 == 0) {
+			return new byte[0];
+		} else {
+			var2 = var1 * 22050 / 1000;
+			byte[] var3 = new byte[var2];
 
-	}
+			for (int var4 = 0; var4 < 10; ++var4) {
+				if (this.field300[var4] != null) {
+					int var5 = this.field300[var4].field406 * 22050 / 1000;
+					int var6 = this.field300[var4].field404 * 22050 / 1000;
+					int[] var7 = this.field300[var4].method1058(var5, this.field300[var4].field406);
 
-	public final synchronized void mouseReleased(MouseEvent var1) {
-		if (field213 != null) {
-			field214 = 0;
-			field228 = 0;
-		}
+					for (int var8 = 0; var8 < var5; ++var8) {
+						int var9 = var3[var8 + var6] + (var7[var8] >> 8);
+						if ((var9 + 128 & -256) != 0) {
+							var9 = var9 >> 31 ^ 127;
+						}
 
-		if (var1.isPopupTrigger()) {
-			var1.consume();
-		}
-
-	}
-
-	public final void mouseClicked(MouseEvent var1) {
-		if (var1.isPopupTrigger()) {
-			var1.consume();
-		}
-
-	}
-
-	public final synchronized void mouseEntered(MouseEvent var1) {
-		this.mouseMoved(var1);
-	}
-
-	public final synchronized void mouseExited(MouseEvent var1) {
-		if (field213 != null) {
-			field214 = 0;
-			field216 = -1;
-			field229 = -1;
-			field218 = var1.getWhen();
-		}
-
-	}
-
-	public final synchronized void mouseDragged(MouseEvent var1) {
-		this.mouseMoved(var1);
-	}
-
-	public final synchronized void mouseMoved(MouseEvent var1) {
-		if (field213 != null) {
-			field214 = 0;
-			field216 = var1.getX();
-			field229 = var1.getY();
-			field218 = var1.getWhen();
-		}
-
-	}
-
-	public final void focusGained(FocusEvent var1) {
-	}
-
-	public final synchronized void focusLost(FocusEvent var1) {
-		if (field213 != null) {
-			field228 = 0;
-		}
-
-	}
-
-	@ObfInfo(owner = "qq", name = "aq", desc = "(Ljava/awt/Component;I)V")
-	public static void method8063(Component var0) {
-		var0.addMouseListener(field213);
-		var0.addMouseMotionListener(field213);
-		var0.addFocusListener(field213);
-	}
-
-	@ObfInfo(owner = "bd", name = "ad", desc = "(Ljava/awt/Component;B)V")
-	public static void method432(Component var0) {
-		var0.removeMouseListener(field213);
-		var0.removeMouseMotionListener(field213);
-		var0.removeFocusListener(field213);
-		field228 = 0;
-	}
-
-	@ObfInfo(owner = "fy", name = "ag", desc = "(I)V")
-	public static void method3327() {
-		if (field213 != null) {
-			synchronized(field213) {
-				field213 = null;
-			}
-		}
-
-	}
-
-	@ObfInfo(owner = "fa", name = "ak", desc = "(B)V")
-	public static void method3061() {
-		synchronized(field213) {
-			field219 = field228;
-			field231 = field216;
-			field221 = field229;
-			field211 = field218;
-			field227 = field223;
-			field230 = field224;
-			field222 = field225;
-			field217 = field226;
-			field223 = 0;
-		}
-	}
-
-	@ObfInfo(owner = "ao", name = "ap", desc = "(S)I")
-	public static int method207() {
-		return ++field214 - 1;
-	}
-
-	@ObfInfo(name = "nl", desc = "(Lnx;III)V", opaque = "-1454606441")
-	public static void method596(Class362 var0, int var1, int var2) {
-		if (Client.field761 == null && !Client.field672) {
-			if (var0 != null) {
-				Class362 var5 = Class55.method1148(var0);
-				if (var5 == null) {
-					var5 = var0.field3895;
-				}
-
-				if (var5 != null) {
-					Client.field761 = var0;
-					var5 = Class55.method1148(var0);
-					if (var5 == null) {
-						var5 = var0.field3895;
+						var3[var8 + var6] = (byte)var9;
 					}
-
-					Client.field710 = var5;
-					Client.field653 = var1;
-					Client.field725 = var2;
-					Client.field5084 = 0;
-					Client.field720 = false;
-					int var7 = Client.field602 - 1;
-					if (var7 != -1) {
-						Class160.method3363(var7);
-					}
-
-					return;
 				}
 			}
 
+			return var3;
 		}
+	}
+
+	@ObfInfo(name = "ak", desc = "(Lor;II)Lbp;")
+	public static Class42 method820(Class382 var0, int var1, int var2) {
+		byte[] var3 = var0.method7216(var1, var2);
+		return var3 == null ? null : new Class42(new Class521(var3));
 	}
 }

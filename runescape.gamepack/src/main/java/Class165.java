@@ -1,59 +1,75 @@
 import io.runebox.ObfInfo;
+import java.io.File;
+import java.io.RandomAccessFile;
+import java.util.Hashtable;
 
 @ObfInfo(name = "gi")
 public class Class165 {
-	@ObfInfo(name = "ag", desc = "Lpi;")
-	public Class399 field1802;
-	@ObfInfo(name = "ad", desc = "J", longMultiplier = 7504978253578014429L)
-	public long field1801;
-	@ObfInfo(name = "aq", desc = "J", longMultiplier = -2954807226888514321L)
-	public long field1804;
+	@ObfInfo(name = "ak", desc = "Z")
+	public static boolean field1822;
+	@ObfInfo(owner = "mg", name = "al", desc = "Ljava/io/File;")
+	public static File field3389;
+	@ObfInfo(name = "aj", desc = "Ljava/util/Hashtable;")
+	public static Hashtable field1819;
 
-	public Class165(Class562 var1) {
-		this.field1801 = -1L;
-		this.field1802 = new Class399();
-		this.method3416(var1);
+	static {
+		field1822 = false;
+		field1819 = new Hashtable(16);
 	}
 
-	@ObfInfo(name = "aq", desc = "(Lvp;I)V", opaque = "1548073121")
-	public void method3416(Class562 var1) {
-		this.field1804 = var1.method9833();
-		this.field1801 = var1.method9833();
-
-		for (int var3 = var1.method9902(); var3 != 0; var3 = var1.method9902()) {
-			Object var4;
-			if (var3 == 1) {
-				var4 = new Class161(this);
-			} else if (var3 == 4) {
-				var4 = new Class168(this);
-			} else if (var3 == 3) {
-				var4 = new Class140(this);
-			} else if (var3 == 2) {
-				var4 = new Class155(this);
-			} else {
-				if (var3 != 5) {
-					throw new RuntimeException("");
-				}
-
-				var4 = new Class174(this);
-			}
-
-			((Class157)var4).method3152(var1);
-			this.field1802.method7449((Class520)var4);
-		}
-
-	}
-
-	@ObfInfo(name = "ad", desc = "(Lgj;I)V", opaque = "1710439935")
-	public void method3417(Class166 var1) {
-		if (var1.field5234 == this.field1804 && var1.field1810 == this.field1801) {
-			for (Class157 var3 = (Class157)this.field1802.method7401(); var3 != null; var3 = (Class157)this.field1802.method7403()) {
-				var3.method3149(var1);
-			}
-
-			++var1.field1810;
-		} else {
+	@ObfInfo(owner = "qi", name = "ak", desc = "(Ljava/io/File;I)V", opaque = "1162380090")
+	public static void method7866(File var0) {
+		field3389 = var0;
+		if (!field3389.exists()) {
 			throw new RuntimeException("");
+		} else {
+			field1822 = true;
 		}
+	}
+
+	@ObfInfo(owner = "im", name = "al", desc = "(Ljava/lang/String;I)Ljava/io/File;", opaque = "-2102894791")
+	public static File method4168(String var0) {
+		if (!field1822) {
+			throw new RuntimeException("");
+		} else {
+			File var2 = (File)field1819.get(var0);
+			if (var2 != null) {
+				return var2;
+			} else {
+				File var3 = new File(field3389, var0);
+				RandomAccessFile var4 = null;
+
+				try {
+					File var5 = new File(var3.getParent());
+					if (!var5.exists()) {
+						throw new RuntimeException("");
+					} else {
+						var4 = new RandomAccessFile(var3, "rw");
+						int var6 = var4.read();
+						var4.seek(0L);
+						var4.write(var6);
+						var4.seek(0L);
+						var4.close();
+						field1819.put(var0, var3);
+						return var3;
+					}
+				} catch (Exception var8) {
+					try {
+						if (var4 != null) {
+							var4.close();
+							var4 = null;
+						}
+					} catch (Exception var7) {
+					}
+
+					throw new RuntimeException();
+				}
+			}
+		}
+	}
+
+	@ObfInfo(owner = "cg", name = "aj", desc = "(B)V")
+	public static void method1097() {
+		field1819.clear();
 	}
 }

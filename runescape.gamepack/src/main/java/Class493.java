@@ -1,72 +1,52 @@
 import io.runebox.ObfInfo;
 
 @ObfInfo(name = "sy")
-public class Class493 {
-	@ObfInfo(name = "ap", desc = "I", intMultiplier = 1340799213)
-	public int field5027;
-	@ObfInfo(name = "ad", desc = "I", intMultiplier = 1708643547)
-	public int field5028;
-	@ObfInfo(name = "ag", desc = "I", intMultiplier = 982727179)
-	public int field5029;
-	@ObfInfo(name = "ak", desc = "I", intMultiplier = 271674167)
-	public int field5030;
-	@ObfInfo(name = "ab", desc = "I", intMultiplier = 1448669761)
-	public int field5031;
-	@ObfInfo(name = "an", desc = "I", intMultiplier = 1940473067)
-	public int field5032;
-	@ObfInfo(name = "aj", desc = "I", intMultiplier = -161342641)
-	public int field5033;
-	@ObfInfo(name = "av", desc = "I", intMultiplier = 956929989)
-	public int field5034;
-	@ObfInfo(name = "ai", desc = "I", intMultiplier = 1408313799)
-	public int field5035;
-	@ObfInfo(name = "aq", desc = "I", intMultiplier = -1250608515)
-	public int field5036;
-	@ObfInfo(name = "ae", desc = "I", intMultiplier = -1621222091)
-	public int field5037;
+public class Class493 implements Class393 {
+	@ObfInfo(name = "al", desc = "Lsy;")
+	public static final Class493 field5005;
+	@ObfInfo(name = "aj", desc = "Lsy;")
+	public static final Class493 field5006;
+	@ObfInfo(name = "az", desc = "Lsy;")
+	public static final Class493 field5007;
+	@ObfInfo(name = "ak", desc = "Lsy;")
+	public static final Class493 field5010;
+	@ObfInfo(name = "af", desc = "I", intMultiplier = 243373763)
+	public final int field5008;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = 1721427903)
+	public final int field5009;
 
-	public Class493() {
-		this.field5036 = -1;
-		this.field5028 = -1;
-		this.field5029 = -1;
-		this.field5030 = -1;
-		this.field5027 = -1;
-		this.field5032 = -1;
-		this.field5033 = -1;
-		this.field5034 = -1;
-		this.field5031 = -1;
-		this.field5035 = -1;
-		this.field5037 = -1;
+	static {
+		field5010 = new Class493(3, 1);
+		field5005 = new Class493(0, 2);
+		field5006 = new Class493(2, 3);
+		field5007 = new Class493(1, 10);
 	}
 
-	@ObfInfo(name = "aq", desc = "(Lok;B)V", opaque = "1")
-	public void method8831(Class375 var1) {
-		byte[] var3 = var1.method7139(Class491.field5020.field5021);
-		Class562 var4 = new Class562(var3);
+	public Class493(int var1, int var2) {
+		this.field5008 = var1;
+		this.field5009 = var2;
+	}
 
-		while (true) {
-			int var5 = var4.method9902();
-			if (var5 == 0) {
-				return;
+	@ObfInfo(name = "ak", desc = "(I)I")
+	public int method175() {
+		return this.field5009;
+	}
+
+	@ObfInfo(name = "ak", desc = "(J)V")
+	public static void method8960(long var0) {
+		if (var0 > 0L) {
+			if (var0 % 10L == 0L) {
+				Class323.method2511(var0 - 1L);
+				Class323.method2511(1L);
+			} else {
+				Class323.method2511(var0);
 			}
 
-			switch(var5) {
-			case 1:
-				var4.method9830();
-				break;
-			case 2:
-				this.field5036 = var4.method9871();
-				this.field5028 = var4.method9871();
-				this.field5029 = var4.method9871();
-				this.field5030 = var4.method9871();
-				this.field5027 = var4.method9871();
-				this.field5032 = var4.method9871();
-				this.field5033 = var4.method9871();
-				this.field5034 = var4.method9871();
-				this.field5031 = var4.method9871();
-				this.field5035 = var4.method9871();
-				this.field5037 = var4.method9871();
-			}
 		}
+	}
+
+	@ObfInfo(owner = "cr", name = "az", desc = "(B)[Lsy;")
+	public static Class493[] method1939() {
+		return new Class493[]{field5005, field5007, field5006, field5010};
 	}
 }

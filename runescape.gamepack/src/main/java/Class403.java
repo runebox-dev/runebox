@@ -2,41 +2,41 @@ import io.runebox.ObfInfo;
 
 @ObfInfo(name = "pm")
 public class Class403 {
-	@ObfInfo(name = "ap", desc = "Ljava/lang/String;")
-	public String field4647;
-	@ObfInfo(name = "ak", desc = "Ljava/lang/String;")
-	public String field4651;
-	@ObfInfo(name = "ag", desc = "Lps;")
-	public final Class409 field4649;
-	@ObfInfo(name = "aq", desc = "I", intMultiplier = 1025438511)
-	public final int field4650;
-	@ObfInfo(name = "ad", desc = "J", longMultiplier = 1501500222647193011L)
-	public final long field4648;
+	@ObfInfo(name = "af", desc = "Ljava/lang/String;")
+	public String field4620;
+	@ObfInfo(name = "az", desc = "Ljava/lang/String;")
+	public String field4623;
+	@ObfInfo(name = "aj", desc = "Lpg;")
+	public final Class397 field4622;
+	@ObfInfo(name = "ak", desc = "I", intMultiplier = -1304800329)
+	public final int field4624;
+	@ObfInfo(name = "al", desc = "J", longMultiplier = 5932765989518071691L)
+	public final long field4621;
 
-	public Class403(Class562 var1, byte var2, int var3) {
-		this.field4651 = var1.method9837();
-		this.field4647 = var1.method9837();
-		this.field4650 = var1.method9997();
-		this.field4648 = var1.method9833();
-		int var4 = var1.method9832();
-		int var5 = var1.method9832();
-		this.field4649 = new Class409();
-		this.field4649.method7542(2);
-		this.field4649.method7545(var2);
-		this.field4649.field4662 = var4;
-		this.field4649.field4661 = var5;
-		this.field4649.field4664 = 0;
-		this.field4649.field4665 = 0;
-		this.field4649.field4663 = var3;
+	public Class403(Class521 var1, byte var2, int var3) {
+		this.field4623 = var1.method9415();
+		this.field4620 = var1.method9415();
+		this.field4624 = var1.method9407();
+		this.field4621 = var1.method9411();
+		int var4 = var1.method9410();
+		int var5 = var1.method9410();
+		this.field4622 = new Class397();
+		this.field4622.method7438(2);
+		this.field4622.method7443(var2);
+		this.field4622.field4590 = var4;
+		this.field4622.field4591 = var5;
+		this.field4622.field4592 = 0;
+		this.field4622.field4588 = 0;
+		this.field4622.field4589 = var3;
 	}
 
-	@ObfInfo(name = "aq", desc = "(I)Ljava/lang/String;")
-	public String method7478() {
-		return this.field4651;
+	@ObfInfo(name = "ak", desc = "(I)Ljava/lang/String;")
+	public String method7540() {
+		return this.field4623;
 	}
 
-	@ObfInfo(name = "ad", desc = "(I)Ljava/lang/String;")
-	public String method7479() {
-		return this.field4647;
+	@ObfInfo(name = "al", desc = "(I)Ljava/lang/String;")
+	public String method7535() {
+		return this.field4620;
 	}
 }

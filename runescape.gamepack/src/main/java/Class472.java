@@ -1,52 +1,33 @@
 import io.runebox.ObfInfo;
 
 @ObfInfo(name = "sd")
-public class Class472 extends Class476 {
-	@ObfInfo(name = "ad", desc = "Lsv;")
-	public Class490 field4957;
-	@ObfInfo(name = "aq", desc = "Lsv;")
-	public Class490 field4960;
+public class Class472 {
+	@ObfInfo(name = "al", desc = "Lsd;")
+	public static final Class472 field4922;
+	@ObfInfo(name = "ak", desc = "Lsd;")
+	public static final Class472 field4924;
+	@ObfInfo(name = "aj", desc = "Ljava/lang/String;")
+	public String field4923;
 
-	public Class472() {
-		this.field4960 = Class490.field5014;
-		this.field4957 = Class490.field5014;
+	static {
+		field4924 = new Class472("application/json");
+		field4922 = new Class472("text/plain");
 	}
 
-	@ObfInfo(name = "aq", desc = "(B)V")
-	public void method8621() {
-		this.field4960 = Class490.field5014;
+	public Class472(String var1) {
+		this.field4923 = var1;
 	}
 
-	@ObfInfo(name = "ak", desc = "(B)Z", opaque = "1")
-	public final boolean method8619() {
-		if (Class490.field5014 == this.field4960) {
-			this.method8620();
+	@ObfInfo(name = "ak", desc = "(B)Ljava/lang/String;")
+	public String method8653() {
+		return this.field4923;
+	}
+
+	@ObfInfo(name = "az", desc = "(IZIZI)V", opaque = "-2061884702")
+	public static void method8652(int var0, boolean var1, int var2, boolean var3) {
+		if (Class76.field4598 != null) {
+			Class64.method3694(0, Class76.field4598.length - 1, var0, var1, var2, var3);
 		}
 
-		return Class490.field5015 == this.field4960;
-	}
-
-	@ObfInfo(name = "ap", desc = "(B)V", opaque = "0")
-	public void method8620() {
-		this.field4960 = Client.field1585.field465.method8555(super.field4983) ? Class490.field5015 : Class490.field5016;
-	}
-
-	@ObfInfo(name = "an", desc = "(I)V")
-	public void method8637() {
-		this.field4957 = Class490.field5014;
-	}
-
-	@ObfInfo(name = "ai", desc = "(S)Z", opaque = "248")
-	public final boolean method8622() {
-		if (Class490.field5014 == this.field4957) {
-			this.method8639();
-		}
-
-		return Class490.field5015 == this.field4957;
-	}
-
-	@ObfInfo(name = "ae", desc = "(I)V", opaque = "197382137")
-	public void method8639() {
-		this.field4957 = Client.field1585.field463.method8555(super.field4983) ? Class490.field5015 : Class490.field5016;
 	}
 }

@@ -1,48 +1,11 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "vm")
+@ObfInfo(name = "vn")
 public class Class559 {
-	@ObfInfo(name = "aq", desc = "[I")
-	public int[] field5450;
+	@ObfInfo(name = "ak", desc = "[I")
+	public static final int[] field5407;
 
-	public Class559(int[] var1) {
-		int var2;
-		for (var2 = 1; var2 <= var1.length + (var1.length >> 1); var2 <<= 1) {
-		}
-
-		this.field5450 = new int[var2 + var2];
-
-		int var3;
-		for (var3 = 0; var3 < var2 + var2; ++var3) {
-			this.field5450[var3] = -1;
-		}
-
-		int var4;
-		for (var3 = 0; var3 < var1.length; this.field5450[var4 + var4 + 1] = var3++) {
-			for (var4 = var1[var3] & var2 - 1; this.field5450[var4 + var4 + 1] != -1; var4 = var4 + 1 & var2 - 1) {
-			}
-
-			this.field5450[var4 + var4] = var1[var3];
-		}
-
-	}
-
-	@ObfInfo(name = "aq", desc = "(IB)I", opaque = "32")
-	public int method9771(int var1) {
-		int var3 = (this.field5450.length >> 1) - 1;
-		int var4 = var1 & var3;
-
-		while (true) {
-			int var5 = this.field5450[1 + var4 + var4];
-			if (var5 == -1) {
-				return -1;
-			}
-
-			if (var1 == this.field5450[var4 + var4]) {
-				return var5;
-			}
-
-			var4 = var4 + 1 & var3;
-		}
+	static {
+		field5407 = new int[]{16777215, 14942979, 16747520, 16772352, 32806, 2375822, 7547266, 16720268, 11884176, 5261772, 10724259, 13970688, 15693351, 16577588, 494960, 2208255, 10178454, 16756679, 13722276, 8105443, 16751190, 2543274, 7591918, 10246609, 10021057, 11894492, 2894892, 9699842, 6371605, 13680896, 4882723, 14504, 8388736, 14025328, 10682978, 4004472};
 	}
 }

@@ -22,13 +22,21 @@ class GetWindowErrorFixer : Transformer {
                 val insns = method.instructions.iterator()
                 while(insns.hasNext()) {
                     val insn = insns.next()
-                    if(insn.isPattern()) {
+                    if(insn.isCallPattern()) {
                         insns.remove()
                         repeat(4) {
                             insns.next()
                             insns.remove()
                         }
                         insns.add(InsnNode(ACONST_NULL))
+                        count++
+                    }
+                    else if(insn.isEvalPattern()) {
+                        insns.remove()
+                        repeat(4) {
+                            insns.next()
+                            insns.remove()
+                        }
                         count++
                     }
                 }
@@ -40,7 +48,7 @@ class GetWindowErrorFixer : Transformer {
         Logger.info("Fixed $count 'getWindow' JSObject calls.")
     }
 
-    private fun AbstractInsnNode.isPattern(): Boolean {
+    private fun AbstractInsnNode.isCallPattern(): Boolean {
         val i0 = this
         if(i0 !is VarInsnNode) return false
         val i1 = i0.next
@@ -49,6 +57,18 @@ class GetWindowErrorFixer : Transformer {
         val i4 = i1.next.next.next
         if(i4 !is MethodInsnNode) return false
         if(i4.owner != "netscape/javascript/JSObject" || i4.name != "call") return false
+        return true
+    }
+
+    private fun AbstractInsnNode.isEvalPattern(): Boolean {
+        val i0 = this
+        if(i0 !is VarInsnNode) return false
+        val i1 = i0.next
+        if(i1 !is MethodInsnNode) return false
+        if(i1.owner != "netscape/javascript/JSObject" || i1.name != "getWindow" || i1.desc != "(Ljava/applet/Applet;)Lnetscape/javascript/JSObject;") return false
+        val i4 = i1.next.next
+        if(i4 !is MethodInsnNode) return false
+        if(i4.owner != "netscape/javascript/JSObject" || i4.name != "eval") return false
         return true
     }
 }

@@ -31,12 +31,15 @@ tasks {
         with(named("jar", Jar::class).get())
     }
 
-    register("rev-update [runescape]") {
+    register("rev-update [runebox]") {
         group = "runebox"
-        project(":deobfuscator").tasks.named("downloadGamepack", JavaExec::class).get().exec()
-        project(":deobfuscator").tasks.named("deobfuscate", JavaExec::class).get().exec()
-        project(":updater").tasks.named("updateGamepack", JavaExec::class).get().exec()
-        project(":decompiler").tasks.named("decompileUpdated", JavaExec::class).get().exec()
-        project(":decompiler").tasks.named("copyDecompSources", JavaExec::class).get().exec()
+        doLast {
+            project(":deobfuscator").tasks.named("downloadGamepack", JavaExec::class).get().exec()
+            project(":deobfuscator").tasks.named("deobfuscate", JavaExec::class).get().exec()
+            project(":updater").tasks.named("updateGamepack", JavaExec::class).get().exec()
+            project(":decompiler").tasks.named("decompileUpdated", JavaExec::class).get().exec()
+        }
+        finalizedBy(project(":decompiler").tasks.named("copyDecompSources", Copy::class).get())
+        finalizedBy(rootProject.tasks.build.get())
     }
 }

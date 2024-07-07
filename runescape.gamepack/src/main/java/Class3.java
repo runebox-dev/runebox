@@ -1,82 +1,31 @@
 import io.runebox.ObfInfo;
-import java.io.IOException;
-import java.net.InetAddress;
-import java.net.InetSocketAddress;
-import java.net.Socket;
-import java.net.UnknownHostException;
-import java.security.SecureRandom;
-import java.security.Security;
-import javax.net.ssl.SSLSocket;
-import javax.net.ssl.SSLSocketFactory;
-import org.bouncycastle.crypto.tls.TlsClientProtocol;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 @ObfInfo(name = "ac")
-public class Class3 extends SSLSocketFactory {
-	@ObfInfo(name = "ad", desc = "Lac;")
-	public static Class3 field10;
-	@ObfInfo(name = "aq", desc = "Ljava/security/SecureRandom;")
-	public SecureRandom field9;
+public class Class3 {
+	@ObfInfo(name = "al", desc = "I")
+	public final int field11;
+	@ObfInfo(name = "ak", desc = "I")
+	public final int field12;
+	@ObfInfo(name = "aj", desc = "Ljava/lang/String;")
+	public final String field10;
 
-	static {
-		if (Security.getProvider("BC") == null) {
-			Security.addProvider(new BouncyCastleProvider());
-		}
-
+	public Class3(int var1, int var2, String var3) {
+		this.field12 = var1;
+		this.field11 = var2;
+		this.field10 = var3;
 	}
 
-	public Class3() {
-		this.field9 = new SecureRandom();
+	public Class3(Class521 var1) {
+		this(var1.method9405(), var1.method9405(), var1.method9415());
 	}
 
-	public Socket createSocket(Socket var1, String var2, int var3, boolean var4) throws IOException {
-		if (var1 == null) {
-			var1 = new Socket();
-		}
-
-		if (!var1.isConnected()) {
-			var1.connect(new InetSocketAddress(var2, var3));
-		}
-
-		TlsClientProtocol var5 = new TlsClientProtocol(var1.getInputStream(), var1.getOutputStream(), this.field9);
-		return this.method15(var2, var5);
+	@ObfInfo(name = "ak", desc = "()Ljava/lang/String;")
+	public String method38() {
+		return Integer.toHexString(this.field12) + Integer.toHexString(this.field11) + this.field10;
 	}
 
-	public String[] getDefaultCipherSuites() {
-		return null;
-	}
-
-	public String[] getSupportedCipherSuites() {
-		return null;
-	}
-
-	public Socket createSocket(String var1, int var2) throws IOException, UnknownHostException {
-		return null;
-	}
-
-	public Socket createSocket(InetAddress var1, int var2) throws IOException {
-		return null;
-	}
-
-	public Socket createSocket(String var1, int var2, InetAddress var3, int var4) throws IOException, UnknownHostException {
-		return null;
-	}
-
-	public Socket createSocket(InetAddress var1, int var2, InetAddress var3, int var4) throws IOException {
-		return null;
-	}
-
-	@ObfInfo(name = "ad", desc = "(Ljava/lang/String;Lorg/bouncycastle/crypto/tls/TlsClientProtocol;I)Ljavax/net/ssl/SSLSocket;")
-	public SSLSocket method15(String var1, TlsClientProtocol var2) {
-		return new Class8(this, var2, var1);
-	}
-
-	@ObfInfo(name = "aq", desc = "(B)Lac;", opaque = "2")
-	public static Class3 method33() {
-		if (field10 == null) {
-			field10 = new Class3();
-		}
-
-		return field10;
+	@ObfInfo(name = "al", desc = "()I")
+	public int method41() {
+		return this.field11;
 	}
 }

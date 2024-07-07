@@ -1,94 +1,56 @@
 import io.runebox.ObfInfo;
+import java.util.Iterator;
 
 @ObfInfo(name = "qh")
-public final class Class424 extends Class442 {
-	public Class424(byte[] var1, int[] var2, int[] var3, int[] var4, int[] var5, int[] var6, byte[][] var7) {
-		super(var1, var2, var3, var4, var5, var6, var7);
-	}
-
-	public Class424(byte[] var1) {
+public class Class424 extends Class447 {
+	public Class424(Class447 var1) {
 		super(var1);
+		super.field4807 = "AddRequestTask";
 	}
 
-	@ObfInfo(name = "aq", desc = "([BIIIII)V")
-	public final void method7813(byte[] var1, int var2, int var3, int var4, int var5, int var6) {
-		int var7 = var2 + Class88.field5502 * var3;
-		int var8 = Class88.field5502 - var4;
-		int var9 = 0;
-		int var10 = 0;
-		int var11;
-		if (var3 < Class569.field5505) {
-			var11 = Class569.field5505 - var3;
-			var5 -= var11;
-			var3 = Class569.field5505;
-			var10 += var11 * var4;
-			var7 += Class88.field5502 * var11;
+	@ObfInfo(name = "ak", desc = "(I)Z", opaque = "709593494")
+	public boolean method7832() {
+		while (!Class332.field3453.isEmpty()) {
+			Class357 var2 = (Class357)Class332.field3453.peek();
+			if (var2 == null) {
+				Class332.field3453.pop();
+			} else {
+				var2.field3940 = this.method7833();
+				Class332.field3455.add(var2);
+				Class332.field3453.pop();
+			}
 		}
 
-		if (var5 + var3 > Class569.field5507) {
-			var5 -= var5 + var3 - Class569.field5507;
-		}
-
-		if (var2 < Class569.field5508) {
-			var11 = Class569.field5508 - var2;
-			var4 -= var11;
-			var2 = Class569.field5508;
-			var10 += var11;
-			var7 += var11;
-			var9 += var11;
-			var8 += var11;
-		}
-
-		if (var4 + var2 > Class569.field5509) {
-			var11 = var4 + var2 - Class569.field5509;
-			var4 -= var11;
-			var9 += var11;
-			var8 += var11;
-		}
-
-		if (var4 > 0 && var5 > 0) {
-			method8236(Class569.field5504, var1, var6, var10, var7, var4, var5, var8, var9);
-		}
+		return true;
 	}
 
-	@ObfInfo(name = "ad", desc = "([BIIIIII)V")
-	public final void method7811(byte[] var1, int var2, int var3, int var4, int var5, int var6, int var7) {
-		int var8 = var2 + Class88.field5502 * var3;
-		int var9 = Class88.field5502 - var4;
-		int var10 = 0;
-		int var11 = 0;
-		int var12;
-		if (var3 < Class569.field5505) {
-			var12 = Class569.field5505 - var3;
-			var5 -= var12;
-			var3 = Class569.field5505;
-			var11 += var12 * var4;
-			var8 += Class88.field5502 * var12;
-		}
+	@ObfInfo(name = "al", desc = "(I)Lmw;", opaque = "-1043214319")
+	public Class335 method7833() {
+		Class335 var2 = null;
+		Iterator var3 = Class332.field3454.iterator();
 
-		if (var5 + var3 > Class569.field5507) {
-			var5 -= var5 + var3 - Class569.field5507;
-		}
+		while (true) {
+			Class335 var4;
+			do {
+				do {
+					if (!var3.hasNext()) {
+						if (var2 != null) {
+							++var2.field3509;
+							if (var2.method6431() == 0 && var2.method6320()) {
+								var2.method6319();
+								var2.method6313();
+								var2.method6400(0);
+							}
+						}
 
-		if (var2 < Class569.field5508) {
-			var12 = Class569.field5508 - var2;
-			var4 -= var12;
-			var2 = Class569.field5508;
-			var11 += var12;
-			var8 += var12;
-			var10 += var12;
-			var9 += var12;
-		}
+						return var2;
+					}
 
-		if (var4 + var2 > Class569.field5509) {
-			var12 = var4 + var2 - Class569.field5509;
-			var4 -= var12;
-			var10 += var12;
-			var9 += var12;
-		}
+					var4 = (Class335)var3.next();
+				} while(var4 == null);
+			} while(var2 != null && var2.field3509 <= var4.field3509 && (var4.method6431() != 0 || !var4.method6320()));
 
-		if (var4 > 0 && var5 > 0) {
-			method8202(Class569.field5504, var1, var6, var11, var8, var4, var5, var9, var10, var7);
+			var2 = var4;
 		}
 	}
 }

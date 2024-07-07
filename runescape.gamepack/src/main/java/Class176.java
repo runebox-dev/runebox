@@ -1,59 +1,66 @@
 import io.runebox.ObfInfo;
 
 @ObfInfo(name = "gt")
-public class Class176 extends Class516 {
-	@ObfInfo(name = "ag", desc = "Lmo;")
-	public static Class327 field1882;
-	@ObfInfo(name = "ak", desc = "I", intMultiplier = -1052630067)
-	public int field1885;
+public class Class176 extends Class149 {
+	@ObfInfo(name = "ak", desc = "I", intMultiplier = -1279428031)
+	public int field1873;
+	@ObfInfo(name = "al", desc = "Ljava/lang/String;")
+	public String field1871;
+	// $FF: synthetic field
+	public final Class151 this$0;
 
-	static {
-		field1882 = new Class327(64);
+	public Class176(Class151 var1) {
+		this.this$0 = var1;
 	}
 
-	public Class176() {
-		this.field1885 = 0;
+	@ObfInfo(name = "ak", desc = "(Lua;I)V")
+	public void method3066(Class521 var1) {
+		this.field1873 = var1.method9410();
+		this.field1871 = var1.method9415();
 	}
 
-	@ObfInfo(name = "ad", desc = "(Lvp;I)V", opaque = "-567087272")
-	public void method3580(Class562 var1) {
-		while (true) {
-			int var3 = var1.method9902();
-			if (var3 == 0) {
-				return;
+	@ObfInfo(name = "al", desc = "(Lgc;B)V")
+	public void method3067(Class159 var1) {
+		var1.method3351(this.field1873, this.field1871);
+	}
+
+	@ObfInfo(name = "oo", desc = "(Lnb;I)V", opaque = "704947035")
+	public static void method3589(Class340 var0) {
+		int var2 = var0.field3681;
+		if (var2 == 324) {
+			if (-1 == Client.field772) {
+				Client.field772 = var0.field3712;
+				Client.field773 = var0.field3713;
 			}
 
-			this.method3581(var1, var3);
-		}
-	}
-
-	@ObfInfo(name = "ag", desc = "(Lvp;IB)V")
-	public void method3581(Class562 var1, int var2) {
-		if (var2 == 5) {
-			this.field1885 = var1.method9997();
-		}
-
-	}
-
-	@ObfInfo(owner = "ib", name = "aq", desc = "(IB)Lgt;", opaque = "1")
-	public static Class176 method4047(int var0) {
-		Class176 var2 = (Class176)field1882.method6327((long)var0);
-		if (var2 != null) {
-			return var2;
-		} else {
-			byte[] var3 = Client.field1887.method7132(16, var0);
-			var2 = new Class176();
-			if (var3 != null) {
-				var2.method3580(new Class562(var3));
+			if (Client.field771.field3946 == 1) {
+				var0.field3712 = Client.field772;
+			} else {
+				var0.field3712 = Client.field773;
 			}
 
-			field1882.method6330(var2, (long)var0);
-			return var2;
-		}
-	}
+		} else if (var2 == 325) {
+			if (Client.field772 == -1) {
+				Client.field772 = var0.field3712;
+				Client.field773 = var0.field3713;
+			}
 
-	@ObfInfo(owner = "dt", name = "ak", desc = "(B)V")
-	public static void method2636() {
-		field1882.method6332();
+			if (Client.field771.field3946 == 1) {
+				var0.field3712 = Client.field773;
+			} else {
+				var0.field3712 = Client.field772;
+			}
+
+		} else if (var2 == 327) {
+			var0.field3729 = 150;
+			var0.field3814 = (int)(Math.sin((double)Client.field778 / 40.0D) * 256.0D) & 2047;
+			var0.field3792 = 5;
+			var0.field3722 = 0;
+		} else if (var2 == 328) {
+			var0.field3729 = 150;
+			var0.field3814 = (int)(Math.sin((double)Client.field778 / 40.0D) * 256.0D) & 2047;
+			var0.field3792 = 5;
+			var0.field3722 = 1;
+		}
 	}
 }

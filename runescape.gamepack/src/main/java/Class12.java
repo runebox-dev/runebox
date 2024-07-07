@@ -1,27 +1,22 @@
 import io.runebox.ObfInfo;
-import java.util.concurrent.ThreadFactory;
-import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.Callable;
 
 @ObfInfo(name = "al")
-public class Class12 implements ThreadFactory {
+public class Class12 implements Callable {
 	// $FF: synthetic field
-	public final Class24 this$0;
-	@ObfInfo(name = "aq", desc = "Ljava/lang/ThreadGroup;")
-	public final ThreadGroup field62;
-	@ObfInfo(name = "ad", desc = "Ljava/util/concurrent/atomic/AtomicInteger;")
-	public final AtomicInteger field59;
+	public final Class2 this$0;
+	@ObfInfo(name = "al", desc = "Laz;")
+	public final Class26 field50;
+	@ObfInfo(name = "ak", desc = "Lua;")
+	public final Class521 field51;
 
-	public Class12(Class24 var1) {
+	public Class12(Class2 var1, Class521 var2, Class26 var3) {
 		this.this$0 = var1;
-		this.field59 = new AtomicInteger(1);
-		SecurityManager var2 = System.getSecurityManager();
-		this.field62 = var2 != null ? var2.getThreadGroup() : Thread.currentThread().getThreadGroup();
+		this.field51 = var2;
+		this.field50 = var3;
 	}
 
-	public Thread newThread(Runnable var1) {
-		Thread var2 = new Thread(this.field62, var1, this.this$0.field115 + "-rest-request-" + this.field59.getAndIncrement(), 0L);
-		var2.setDaemon(true);
-		var2.setPriority(5);
-		return var2;
+	public Object call() {
+		return this.field50.method147(this.field51);
 	}
 }

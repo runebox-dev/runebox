@@ -1,64 +1,56 @@
 import io.runebox.ObfInfo;
+import java.util.Arrays;
 
 @ObfInfo(name = "nm")
 public class Class351 {
-	@ObfInfo(name = "ae", desc = "Lmc;")
-	public Class315 field3761;
-	@ObfInfo(name = "au", desc = "Lbh;")
-	public Class34 field3762;
-	@ObfInfo(name = "ah", desc = "Lnz;")
-	public Class364 field3751;
-	@ObfInfo(name = "aq", desc = "Lok;")
-	public Class375 field3756;
-	@ObfInfo(name = "aj", desc = "Z")
-	public boolean field3757;
-	@ObfInfo(name = "av", desc = "Z")
-	public boolean field3758;
-	@ObfInfo(name = "an", desc = "Z")
-	public boolean field3759;
-	@ObfInfo(name = "ai", desc = "Z")
-	public boolean field3760;
-	@ObfInfo(name = "ab", desc = "Z")
-	public boolean field3763;
-	@ObfInfo(name = "ap", desc = "F")
-	public float field3752;
-	@ObfInfo(name = "ag", desc = "I", intMultiplier = 821498491)
-	public int field3753;
-	@ObfInfo(name = "ak", desc = "I", intMultiplier = 562187867)
-	public int field3754;
-	@ObfInfo(name = "ad", desc = "I", intMultiplier = 1234485003)
-	public int field3764;
+	@ObfInfo(name = "aj", desc = "[I")
+	public static int[] field3888;
+	@ObfInfo(name = "az", desc = "[I")
+	public static int[] field3889;
+	@ObfInfo(name = "ak", desc = "[I")
+	public static int[] field3891;
 
-	public Class351(Class375 var1, String var2, String var3, int var4, boolean var5) {
-		this.field3764 = -1;
-		this.field3753 = -1;
-		this.field3754 = 0;
-		this.field3752 = 0.0F;
-		this.field3759 = false;
-		this.field3763 = false;
-		this.field3760 = false;
-		this.field3764 = var1.method7150(var2);
-		this.field3753 = var1.method7209(this.field3764, var3);
-		this.method6542(var1, this.field3764, this.field3753, var4, var5);
+	static {
+		field3891 = new int[32];
+		int var0 = 2;
+
+		for (int var1 = 0; var1 < 32; ++var1) {
+			field3891[var1] = var0 - 1;
+			var0 += var0;
+		}
+
+		field3888 = new int[5000];
+		field3889 = new int[5000];
 	}
 
-	public Class351(Class375 var1, int var2, int var3, int var4, boolean var5) {
-		this.field3764 = -1;
-		this.field3753 = -1;
-		this.field3754 = 0;
-		this.field3752 = 0.0F;
-		this.field3759 = false;
-		this.field3763 = false;
-		this.field3760 = false;
-		this.method6542(var1, var2, var3, var4, var5);
+	@ObfInfo(owner = "mc", name = "ak", desc = "(IB)I")
+	public static int method6175(int var0) {
+		Class228 var2 = Class228.method714(var0);
+		int var3 = var2.field2394;
+		int var4 = var2.field2395;
+		int var5 = var2.field2396;
+		int var6 = field3891[var5 - var4];
+		return field3889[var3] >> var4 & var6;
 	}
 
-	@ObfInfo(name = "aq", desc = "(Lok;IIIZS)V")
-	public void method6542(Class375 var1, int var2, int var3, int var4, boolean var5) {
-		this.field3756 = var1;
-		this.field3764 = var2;
-		this.field3753 = var3;
-		this.field3754 = var4;
-		this.field3759 = var5;
+	@ObfInfo(owner = "dr", name = "al", desc = "(III)V")
+	public static void method2494(int var0, int var1) {
+		Class228 var3 = Class228.method714(var0);
+		int var4 = var3.field2394;
+		int var5 = var3.field2395;
+		int var6 = var3.field2396;
+		int var7 = field3891[var6 - var5];
+		if (var1 < 0 || var1 > var7) {
+			var1 = 0;
+		}
+
+		var7 <<= var5;
+		field3889[var4] = field3889[var4] & ~var7 | var1 << var5 & var7;
+	}
+
+	@ObfInfo(owner = "it", name = "aj", desc = "(I)V")
+	public static void method4380() {
+		Arrays.fill(field3888, 0);
+		Arrays.fill(field3889, 0);
 	}
 }

@@ -1,283 +1,158 @@
 import io.runebox.ObfInfo;
-import java.io.EOFException;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Map.Entry;
+import java.io.DataInputStream;
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLConnection;
+import java.util.LinkedList;
+import java.util.Queue;
 
 @ObfInfo(name = "eb")
-public class Class106 {
-	@ObfInfo(name = "an", desc = "Z")
-	public boolean field1365;
-	@ObfInfo(name = "ag", desc = "[Z")
-	public boolean[] field1367;
-	/** @deprecated */
-	@Deprecated
-	@ObfInfo(name = "ap", desc = "[Ljava/lang/String;")
-	public String[] field1364;
-	@ObfInfo(name = "ak", desc = "Ljava/util/Map;")
-	public Map field1363;
-	@ObfInfo(name = "aj", desc = "J", longMultiplier = 8608497769085740539L)
-	public long field1366;
+public abstract class Class106 implements Runnable {
+	@ObfInfo(name = "az", desc = "I", intMultiplier = -468765383)
+	public int field1377;
+	@ObfInfo(name = "aj", desc = "Ljava/util/Queue;")
+	public Queue field1379;
+	@ObfInfo(name = "ak", desc = "Ljava/lang/Thread;")
+	public final Thread field1378;
+	@ObfInfo(name = "al", desc = "Z")
+	public volatile boolean field1376;
 
-	public Class106() {
-		this.field1365 = false;
-		int var1 = Client.field857.method7144(19);
-		this.field1363 = new HashMap();
-		this.field1367 = new boolean[var1];
+	public Class106(int var1) {
+		this.field1379 = new LinkedList();
+		this.field1378 = new Thread(this);
+		this.field1378.setPriority(1);
+		this.field1378.start();
+		this.field1377 = var1;
+	}
 
-		int var2;
-		for (var2 = 0; var2 < var1; ++var2) {
-			Class200 var4 = (Class200)Class200.field2203.method6327((long)var2);
-			Class200 var3;
-			if (var4 != null) {
-				var3 = var4;
-			} else {
-				byte[] var5 = Client.field3658.method7132(19, var2);
-				var4 = new Class200();
-				if (var5 != null) {
-					var4.method3979(new Class562(var5));
+	@ObfInfo(name = "ak", desc = "(Lea;B)V")
+	public abstract void method2773(Class105 var1) throws IOException;
+
+	public void run() {
+		while (!this.field1376) {
+			try {
+				Class105 var1;
+				synchronized(this) {
+					var1 = (Class105)this.field1379.poll();
+					if (var1 == null) {
+						try {
+							this.wait();
+						} catch (InterruptedException var5) {
+						}
+						continue;
+					}
 				}
 
-				Class200.field2203.method6330(var4, (long)var2);
-				var3 = var4;
-			}
-
-			this.field1367[var2] = var3.field2202;
-		}
-
-		var2 = 0;
-		if (Client.field857.method7295(15)) {
-			var2 = Client.field857.method7144(15);
-		}
-
-		this.field1364 = new String[var2];
-		this.method2809();
-	}
-
-	@ObfInfo(name = "aq", desc = "(IIB)V")
-	public void method2800(int var1, int var2) {
-		this.field1363.put(var1, var2);
-		if (this.field1367[var1]) {
-			this.field1365 = true;
-		}
-
-	}
-
-	@ObfInfo(name = "ad", desc = "(IB)I", opaque = "101")
-	public int method2841(int var1) {
-		Object var3 = this.field1363.get(var1);
-		return var3 instanceof Integer ? (Integer)var3 : -1;
-	}
-
-	@ObfInfo(name = "ag", desc = "(ILjava/lang/String;I)V")
-	public void method2802(int var1, String var2) {
-		this.field1363.put(var1, var2);
-	}
-
-	@ObfInfo(name = "ak", desc = "(II)Ljava/lang/String;", opaque = "-1141305685")
-	public String method2820(int var1) {
-		Object var3 = this.field1363.get(var1);
-		return var3 instanceof String ? (String)var3 : "";
-	}
-
-	/** @deprecated */
-	@Deprecated
-	@ObfInfo(name = "ap", desc = "(ILjava/lang/String;I)V")
-	public void method2804(int var1, String var2) {
-		this.field1364[var1] = var2;
-	}
-
-	/** @deprecated */
-	@Deprecated
-	@ObfInfo(name = "an", desc = "(IB)Ljava/lang/String;")
-	public String method2805(int var1) {
-		return this.field1364[var1];
-	}
-
-	@ObfInfo(name = "aj", desc = "(I)V", opaque = "-337642526")
-	public void method2806() {
-		int var2;
-		for (var2 = 0; var2 < this.field1367.length; ++var2) {
-			if (!this.field1367[var2]) {
-				this.field1363.remove(var2);
+				this.method2773(var1);
+			} catch (Exception var7) {
+				Class548.method8904((String)null, var7);
 			}
 		}
 
-		for (var2 = 0; var2 < this.field1364.length; ++var2) {
-			this.field1364[var2] = null;
+	}
+
+	@ObfInfo(name = "al", desc = "(Ljava/net/URLConnection;I)I", opaque = "446466404")
+	public int method2756(URLConnection var1) {
+		int var3 = Class105.field1369;
+		if (var1 != null) {
+			try {
+				if (var1 instanceof HttpURLConnection) {
+					var3 = ((HttpURLConnection)var1).getResponseCode();
+				}
+			} catch (IOException var5) {
+			}
 		}
 
+		return var3;
 	}
 
-	@ObfInfo(name = "av", desc = "(ZI)Lus;")
-	public Class539 method2834(boolean var1) {
-		return Class211.method2856("2", Client.field1425.field4406, var1);
+	@ObfInfo(name = "aj", desc = "(Ljava/net/URLConnection;B)V")
+	public void method2776(URLConnection var1) {
+		var1.setConnectTimeout(5000);
+		var1.setReadTimeout(5000);
+		var1.setUseCaches(false);
+		var1.setRequestProperty("Connection", "close");
+		var1.setRequestProperty("User-Agent", "OldSchoolRuneScape/" + this.field1377);
 	}
 
-	@ObfInfo(name = "ab", desc = "(I)V", opaque = "-836265128")
-	public void method2808() {
-		Class539 var2 = this.method2834(true);
+	@ObfInfo(name = "az", desc = "(Ljava/net/URLConnection;Lea;I)V", opaque = "-671951400")
+	public void method2763(URLConnection var1, Class105 var2) {
+		DataInputStream var4 = null;
 
 		try {
-			int var3 = 3;
-			int var4 = 0;
-			Iterator var5 = this.field1363.entrySet().iterator();
+			int var6 = var1.getContentLength();
+			var4 = new DataInputStream(var1.getInputStream());
+			byte[] var5;
+			if (var6 >= 0) {
+				var5 = new byte[var6];
+				var4.readFully(var5);
+			} else {
+				var5 = new byte[0];
+				byte[] var7 = Class451.method1084(5000);
 
-			while (var5.hasNext()) {
-				Entry var6 = (Entry)var5.next();
-				int var7 = (Integer)var6.getKey();
-				if (this.field1367[var7]) {
-					Object var8 = var6.getValue();
-					var3 += 3;
-					if (var8 instanceof Integer) {
-						var3 += 4;
-					} else if (var8 instanceof String) {
-						var3 += Class562.method2698((String)var8);
-					}
-
-					++var4;
-				}
-			}
-
-			Class562 var25 = new Class562(var3);
-			var25.method9809(2);
-			var25.method9810(var4);
-			Iterator var26 = this.field1363.entrySet().iterator();
-
-			label143:
-			while (true) {
-				Entry var27;
-				int var28;
-				do {
-					if (!var26.hasNext()) {
-						var2.method9486(var25.field5472, 0, var25.field5471);
-						break label143;
-					}
-
-					var27 = (Entry)var26.next();
-					var28 = (Integer)var27.getKey();
-				} while(!this.field1367[var28]);
-
-				var25.method9810(var28);
-				Object var9 = var27.getValue();
-				Class var11 = var9.getClass();
-				Class525[] var12 = Class525.method9304();
-				int var13 = 0;
-
-				Class525 var10;
-				while (true) {
-					if (var13 >= var12.length) {
-						var10 = null;
-						break;
-					}
-
-					Class525 var14 = var12[var13];
-					if (var14.field5251 == var11) {
-						var10 = var14;
-						break;
-					}
-
-					++var13;
+				for (int var8 = var4.read(var7); var8 > -1; var8 = var4.read(var7)) {
+					byte[] var9 = new byte[var5.length + var8];
+					System.arraycopy(var5, 0, var9, 0, var5.length);
+					System.arraycopy(var7, 0, var9, var5.length, var8);
+					var5 = var9;
 				}
 
-				var25.method9809(var10.field5248);
-				Class525.method9296(var9, var25);
+				Class451.method3840(var7);
 			}
-		} catch (Exception var23) {
+
+			var2.field1373 = var5;
+		} catch (IOException var15) {
+			var2.field1373 = null;
 		} finally {
-			try {
-				var2.method9481();
-			} catch (Exception var22) {
-			}
-
+			var2.field1372 = this.method2756(var1);
 		}
 
-		this.field1365 = false;
-		this.field1366 = Class329.method4953();
+		if (var4 != null) {
+			try {
+				var4.close();
+			} catch (IOException var14) {
+			}
+		}
+
 	}
 
-	@ObfInfo(name = "ai", desc = "(B)V", opaque = "1")
-	public void method2809() {
-		Class539 var2 = this.method2834(false);
+	@ObfInfo(name = "af", desc = "(Ljava/net/URL;I)Lea;")
+	public Class105 method2759(URL var1) {
+		Class105 var3 = new Class105(var1);
+		synchronized(this) {
+			this.field1379.add(var3);
+			this.notify();
+			return var3;
+		}
+	}
+
+	@ObfInfo(name = "aa", desc = "(I)V")
+	public void method2757() {
+		this.field1376 = true;
 
 		try {
-			byte[] var3 = new byte[(int)var2.method9483()];
-
-			int var5;
-			for (int var4 = 0; var4 < var3.length; var4 += var5) {
-				var5 = var2.method9499(var3, var4, var3.length - var4);
-				if (var5 == -1) {
-					throw new EOFException();
-				}
+			synchronized(this) {
+				this.notify();
 			}
 
-			Class562 var25 = new Class562(var3);
-			if (var25.field5472.length - var25.field5471 < 1) {
-				return;
-			}
-
-			int var6 = var25.method9902();
-			if (var6 < 0 || var6 > 2) {
-				return;
-			}
-
-			int var7;
-			int var8;
-			int var9;
-			int var10;
-			if (var6 >= 2) {
-				var7 = var25.method9997();
-
-				for (var8 = 0; var8 < var7; ++var8) {
-					var9 = var25.method9997();
-					var10 = var25.method9902();
-					Class525 var11 = (Class525)Class406.method4071(Class525.method9304(), var10);
-					Object var12 = var11.method9298(var25);
-					if (var9 >= 0 && var9 < this.field1367.length && this.field1367[var9]) {
-						this.field1363.put(var9, var12);
-					}
-				}
-			} else {
-				var7 = var25.method9997();
-
-				for (var8 = 0; var8 < var7; ++var8) {
-					var9 = var25.method9997();
-					var10 = var25.method9832();
-					if (var9 >= 0 && var9 < this.field1367.length && this.field1367[var9]) {
-						this.field1363.put(var9, var10);
-					}
-				}
-
-				var8 = var25.method9997();
-
-				for (var9 = 0; var9 < var8; ++var9) {
-					var25.method9997();
-					var25.method9837();
-				}
-			}
-		} catch (Exception var23) {
-		} finally {
-			try {
-				var2.method9481();
-			} catch (Exception var22) {
-			}
-
-		}
-
-		this.field1365 = false;
-	}
-
-	@ObfInfo(name = "ae", desc = "(I)V", opaque = "1313184529")
-	public void method2810() {
-		if (this.field1365 && this.field1366 < Class329.method4953() - 60000L) {
-			this.method2808();
+			this.field1378.join();
+		} catch (InterruptedException var5) {
 		}
 
 	}
 
-	@ObfInfo(name = "au", desc = "(B)Z")
-	public boolean method2811() {
-		return this.field1365;
+	@ObfInfo(name = "at", desc = "(Lor;II)V", opaque = "-1555721052")
+	public static void method2771(Class382 var0, int var1) {
+		if ((var1 & Class534.field5294.method175()) != 0) {
+			Class76.field1313 = Class554.method8860(var0, "logo_deadman_mode", "");
+		} else if ((var1 & Class534.field5295.method175()) != 0) {
+			Class76.field1313 = Class554.method8860(var0, "logo_seasonal_mode", "");
+		} else if ((var1 & Class534.field5268.method175()) != 0) {
+			Class76.field1313 = Class554.method8860(var0, "logo_speedrunning", "");
+		} else {
+			Class76.field1313 = Class554.method8860(var0, "logo", "");
+		}
+
 	}
 }

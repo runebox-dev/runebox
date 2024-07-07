@@ -1,71 +1,36 @@
 import io.runebox.ObfInfo;
 
 @ObfInfo(name = "hc")
-public class Class185 extends Class516 {
-	@ObfInfo(name = "ad", desc = "Lmo;")
-	public static Class327 field1989;
-	@ObfInfo(name = "an", desc = "[I")
-	public static final int[] field1993;
-	@ObfInfo(name = "ak", desc = "I", intMultiplier = -957731269)
-	public int field1991;
-	@ObfInfo(name = "ap", desc = "I", intMultiplier = -989672663)
-	public int field1992;
-	@ObfInfo(name = "ag", desc = "I", intMultiplier = -403599393)
-	public int field1995;
+public class Class185 implements Class393 {
+	@ObfInfo(name = "al", desc = "Lhc;")
+	public static final Class185 field1921;
+	@ObfInfo(name = "ak", desc = "Lhc;")
+	public static final Class185 field1922;
+	@ObfInfo(name = "aj", desc = "Lhc;")
+	public static final Class185 field1924;
+	@ObfInfo(name = "af", desc = "I", intMultiplier = 91144155)
+	public final int field1920;
+	@ObfInfo(name = "az", desc = "I", intMultiplier = -2096204705)
+	public final int field1923;
 
 	static {
-		field1989 = new Class327(64);
-		field1993 = new int[32];
-		int var0 = 2;
-
-		for (int var1 = 0; var1 < 32; ++var1) {
-			field1993[var1] = var0 - 1;
-			var0 += var0;
-		}
-
+		field1922 = new Class185(2, 0);
+		field1921 = new Class185(0, 1);
+		field1924 = new Class185(1, 2);
 	}
 
-	@ObfInfo(name = "ad", desc = "(Lvp;B)V", opaque = "1")
-	public void method3711(Class562 var1) {
-		while (true) {
-			int var3 = var1.method9902();
-			if (var3 == 0) {
-				return;
-			}
-
-			this.method3710(var1, var3);
-		}
+	public Class185(int var1, int var2) {
+		this.field1923 = var1;
+		this.field1920 = var2;
 	}
 
-	@ObfInfo(name = "ag", desc = "(Lvp;II)V", opaque = "-1485306621")
-	public void method3710(Class562 var1, int var2) {
-		if (var2 == 1) {
-			this.field1995 = var1.method9997();
-			this.field1991 = var1.method9902();
-			this.field1992 = var1.method9902();
-		}
-
+	@ObfInfo(name = "ak", desc = "(I)I")
+	public int method175() {
+		return this.field1920;
 	}
 
-	@ObfInfo(owner = "dk", name = "aq", desc = "(II)Lhc;", opaque = "-860239590")
-	public static Class185 method2408(int var0) {
-		Class185 var2 = (Class185)field1989.method6327((long)var0);
-		if (var2 != null) {
-			return var2;
-		} else {
-			byte[] var3 = Client.field1990.method7132(14, var0);
-			var2 = new Class185();
-			if (var3 != null) {
-				var2.method3711(new Class562(var3));
-			}
-
-			field1989.method6330(var2, (long)var0);
-			return var2;
-		}
-	}
-
-	@ObfInfo(owner = "fk", name = "ak", desc = "(B)V")
-	public static void method3164() {
-		field1989.method6332();
+	@ObfInfo(owner = "dk", name = "az", desc = "(I)[Lhc;")
+	public static Class185[] method2403() {
+		return new Class185[]{field1921, field1924, field1922};
 	}
 }

@@ -1,47 +1,95 @@
 import io.runebox.ObfInfo;
 
 @ObfInfo(name = "lb")
-public class Class288 {
-	@ObfInfo(name = "aj", desc = "(Lcw;Lcw;IZI)I", opaque = "-254289583")
-	public static int method5697(Class75 var0, Class75 var1, int var2, boolean var3) {
-		if (var2 == 1) {
-			int var5 = var0.field904;
-			int var6 = var1.field904;
-			if (!var3) {
-				if (var5 == -1) {
-					var5 = 2001;
+public class Class288 implements Class393 {
+	@ObfInfo(name = "al", desc = "Llb;")
+	public static final Class288 field3143;
+	@ObfInfo(name = "ak", desc = "Llb;")
+	public static final Class288 field3144;
+	@ObfInfo(name = "az", desc = "Llb;")
+	public static final Class288 field3145;
+	@ObfInfo(name = "aj", desc = "Llb;")
+	public static final Class288 field3147;
+	@ObfInfo(name = "aa", desc = "B")
+	public final byte field3148;
+	@ObfInfo(name = "af", desc = "I", intMultiplier = 323961761)
+	public final int field3142;
+
+	static {
+		field3144 = new Class288(3, (byte)0);
+		field3143 = new Class288(0, (byte)1);
+		field3147 = new Class288(1, (byte)2);
+		field3145 = new Class288(2, (byte)3);
+	}
+
+	public Class288(int var1, byte var2) {
+		this.field3142 = var1;
+		this.field3148 = var2;
+	}
+
+	@ObfInfo(name = "ak", desc = "(I)I")
+	public int method175() {
+		return this.field3148;
+	}
+
+	@ObfInfo(name = "af", desc = "(Ljava/lang/CharSequence;IZB)I", opaque = "4")
+	public static int method5862(CharSequence var0, int var1, boolean var2) {
+		if (var1 >= 2 && var1 <= 36) {
+			boolean var4 = false;
+			boolean var5 = false;
+			int var6 = 0;
+			int var7 = var0.length();
+
+			for (int var8 = 0; var8 < var7; ++var8) {
+				char var9 = var0.charAt(var8);
+				if (var8 == 0) {
+					if (var9 == '-') {
+						var4 = true;
+						continue;
+					}
+
+					if (var9 == '+' && var2) {
+						continue;
+					}
 				}
 
-				if (var6 == -1) {
-					var6 = 2001;
-				}
-			}
-
-			return var5 - var6;
-		} else if (var2 == 2) {
-			return var0.field907 - var1.field907;
-		} else if (var2 == 3) {
-			if (var0.field906.equals("-")) {
-				if (var1.field906.equals("-")) {
-					return 0;
+				int var11;
+				if (var9 >= '0' && var9 <= '9') {
+					var11 = var9 - '0';
+				} else if (var9 >= 'A' && var9 <= 'Z') {
+					var11 = var9 - '7';
 				} else {
-					return var3 ? -1 : 1;
+					if (var9 < 'a' || var9 > 'z') {
+						throw new NumberFormatException();
+					}
+
+					var11 = var9 - 'W';
 				}
-			} else if (var1.field906.equals("-")) {
-				return var3 ? 1 : -1;
-			} else {
-				return var0.field906.compareTo(var1.field906);
+
+				if (var11 >= var1) {
+					throw new NumberFormatException();
+				}
+
+				if (var4) {
+					var11 = -var11;
+				}
+
+				int var10 = var6 * var1 + var11;
+				if (var10 / var1 != var6) {
+					throw new NumberFormatException();
+				}
+
+				var6 = var10;
+				var5 = true;
 			}
-		} else if (var2 == 4) {
-			return var0.method2187() ? (var1.method2187() ? 0 : 1) : (var1.method2187() ? -1 : 0);
-		} else if (var2 == 5) {
-			return var0.method2159() ? (var1.method2159() ? 0 : 1) : (var1.method2159() ? -1 : 0);
-		} else if (var2 == 6) {
-			return var0.method2160() ? (var1.method2160() ? 0 : 1) : (var1.method2160() ? -1 : 0);
-		} else if (var2 == 7) {
-			return var0.method2157() ? (var1.method2157() ? 0 : 1) : (var1.method2157() ? -1 : 0);
+
+			if (!var5) {
+				throw new NumberFormatException();
+			} else {
+				return var6;
+			}
 		} else {
-			return var0.field902 - var1.field902;
+			throw new IllegalArgumentException("" + var1);
 		}
 	}
 }

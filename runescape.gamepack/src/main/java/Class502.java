@@ -1,109 +1,104 @@
 import io.runebox.ObfInfo;
-import java.util.Iterator;
 
 @ObfInfo(name = "th")
-public final class Class502 implements Iterable {
-	@ObfInfo(name = "ak", desc = "Ltz;")
-	public Class520 field5073;
-	@ObfInfo(name = "ag", desc = "Ltz;")
-	public Class520 field5075;
-	@ObfInfo(name = "ad", desc = "[Ltz;")
-	public Class520[] field5074;
-	@ObfInfo(name = "aq", desc = "I")
-	public int field5076;
-	@ObfInfo(name = "ap", desc = "I")
-	public int field5077;
+public class Class502 {
+	@ObfInfo(owner = "lv", name = "ab", desc = "Z")
+	public static boolean field3252;
+	@ObfInfo(name = "aa", desc = "Lor;")
+	public Class382 field5143;
+	@ObfInfo(name = "ab", desc = "Z")
+	public boolean field5144;
+	@ObfInfo(name = "at", desc = "I", intMultiplier = 795081315)
+	public int field5142;
+	@ObfInfo(name = "af", desc = "Ljava/lang/String;")
+	public String field5140;
 
-	public Class502(int var1) {
-		this.field5077 = 0;
-		this.field5076 = var1;
-		this.field5074 = new Class520[var1];
-
-		for (int var2 = 0; var2 < var1; ++var2) {
-			Class520 var3 = this.field5074[var2] = new Class520();
-			var3.field5235 = var3;
-			var3.field5233 = var3;
-		}
-
+	public Class502(Class382 var1) {
+		this.field5142 = 0;
+		this.field5144 = false;
+		this.field5143 = var1;
 	}
 
-	@ObfInfo(name = "aq", desc = "(J)Ltz;")
-	public Class520 method8901(long var1) {
-		Class520 var3 = this.field5074[(int)(var1 & (long)(this.field5076 - 1))];
-
-		for (this.field5075 = var3.field5235; this.field5075 != var3; this.field5075 = this.field5075.field5235) {
-			if (this.field5075.field5234 == var1) {
-				Class520 var4 = this.field5075;
-				this.field5075 = this.field5075.field5235;
-				return var4;
+	@ObfInfo(name = "ak", desc = "(Ljava/lang/String;I)V", opaque = "-1841669823")
+	public void method9236(String var1) {
+		if (var1 != null && !var1.isEmpty()) {
+			if (this.field5140 != var1) {
+				this.field5140 = var1;
+				this.field5142 = 0;
+				this.field5144 = false;
+				this.method9237();
 			}
 		}
-
-		this.field5075 = null;
-		return null;
 	}
 
-	@ObfInfo(name = "ad", desc = "(Ltz;J)V")
-	public void method8902(Class520 var1, long var2) {
-		if (var1.field5233 != null) {
-			var1.method9267();
-		}
-
-		Class520 var4 = this.field5074[(int)(var2 & (long)(this.field5076 - 1))];
-		var1.field5233 = var4.field5233;
-		var1.field5235 = var4;
-		var1.field5233.field5235 = var1;
-		var1.field5235.field5233 = var1;
-		var1.field5234 = var2;
-	}
-
-	@ObfInfo(name = "ag", desc = "()V")
-	public void method8903() {
-		for (int var1 = 0; var1 < this.field5076; ++var1) {
-			Class520 var2 = this.field5074[var1];
-
-			while (true) {
-				Class520 var3 = var2.field5235;
-				if (var3 == var2) {
-					break;
-				}
-
-				var3.method9267();
-			}
-		}
-
-		this.field5075 = null;
-		this.field5073 = null;
-	}
-
-	@ObfInfo(name = "ak", desc = "()Ltz;")
-	public Class520 method8900() {
-		this.field5077 = 0;
-		return this.method8905();
-	}
-
-	@ObfInfo(name = "ap", desc = "()Ltz;")
-	public Class520 method8905() {
-		Class520 var1;
-		if (this.field5077 > 0 && this.field5073 != this.field5074[this.field5077 - 1]) {
-			var1 = this.field5073;
-			this.field5073 = var1.field5235;
-			return var1;
+	@ObfInfo(name = "al", desc = "(I)I", opaque = "-379504320")
+	public int method9237() {
+		if (this.field5140 == null) {
+			this.field5142 = 100;
+			this.field5144 = true;
 		} else {
-			do {
-				if (this.field5077 >= this.field5076) {
-					return null;
+			if (this.field5142 < 33) {
+				if (!this.field5143.method7253(Class308.field3246.field3251, this.field5140)) {
+					return this.field5142;
 				}
 
-				var1 = this.field5074[this.field5077++].field5235;
-			} while(var1 == this.field5074[this.field5077 - 1]);
+				this.field5142 = 33;
+			}
 
-			this.field5073 = var1.field5235;
-			return var1;
+			if (33 == this.field5142) {
+				if (this.field5143.method7235(Class308.field3247.field3251, this.field5140) && !this.field5143.method7253(Class308.field3247.field3251, this.field5140)) {
+					return this.field5142;
+				}
+
+				this.field5142 = 66;
+			}
+
+			if (this.field5142 == 66) {
+				if (!this.field5143.method7253(this.field5140, Class308.field3245.field3251)) {
+					return this.field5142;
+				}
+
+				this.field5142 = 100;
+				this.field5144 = true;
+			}
 		}
+
+		return this.field5142;
 	}
 
-	public Iterator iterator() {
-		return new Class509(this);
+	@ObfInfo(name = "aj", desc = "(I)Z")
+	public boolean method9239() {
+		return this.field5144;
+	}
+
+	@ObfInfo(name = "az", desc = "(B)I")
+	public int method9240() {
+		return this.field5142;
+	}
+
+	@ObfInfo(name = "aw", desc = "(Lcl;I)V", opaque = "1763588078")
+	public static void method9252(Class64 var0) {
+		if (var0.method1175() != Client.field528) {
+			Client.field528 = var0.method1175();
+			boolean var2 = var0.method1175();
+			if (field3252 != var2) {
+				Class232.field2454.method5995();
+				Class232.field2445.method5995();
+				Class232.field2440.method5995();
+				field3252 = var2;
+			}
+		}
+
+		if (Client.field675 != var0.field480) {
+			Class106.method2771(Client.field1793, var0.field480);
+		}
+
+		Client.field119 = var0.field476;
+		Client.field557 = var0.field473;
+		Client.field675 = var0.field480;
+		Client.field4509 = var0.field467;
+		Client.field429 = 0 == Client.field532 ? 43594 : 40000 + var0.field473;
+		Client.field3167 = 0 == Client.field532 ? 443 : 50000 + var0.field473;
+		Client.field3071 = Client.field429;
 	}
 }

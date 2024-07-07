@@ -2,32 +2,27 @@ import io.runebox.ObfInfo;
 
 @ObfInfo(name = "oq")
 public class Class381 {
-	@ObfInfo(owner = "ia", name = "aq", desc = "(Lvp;Ljava/lang/String;I)I")
-	public static int method4044(Class562 var0, String var1) {
-		int var3 = var0.field5471;
-		byte[] var4 = Class201.method3996(var1);
-		var0.method9824(var4.length);
-		var0.field5471 += Client.field4507.method7222(var4, 0, var4.length, var0.field5472, var0.field5471);
-		return var0.field5471 - var3;
+	@ObfInfo(name = "al", desc = "Loq;")
+	public static final Class381 field4468;
+	@ObfInfo(name = "ak", desc = "Loq;")
+	public static final Class381 field4469;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = 684695629)
+	public final int field4470;
+	@ObfInfo(name = "az", desc = "I", intMultiplier = -153254801)
+	public final int field4471;
+
+	static {
+		field4469 = new Class381(51, 27, 800, 0, 16, 16);
+		field4468 = new Class381(25, 28, 800, 656, 40, 40);
 	}
 
-	@ObfInfo(owner = "hf", name = "ad", desc = "(Lvp;I)Ljava/lang/String;", opaque = "-1338309998")
-	public static String method3835(Class562 var0) {
-		String var2;
-		try {
-			int var3 = var0.method9842();
-			if (var3 > 32767) {
-				var3 = 32767;
-			}
+	public Class381(int var1, int var2, int var3, int var4, int var5, int var6) {
+		this.field4470 = var5;
+		this.field4471 = var6;
+	}
 
-			byte[] var4 = new byte[var3];
-			var0.field5471 += Client.field4507.method7223(var0.field5472, var0.field5471, var4, 0, var3);
-			String var5 = Class411.method5589(var4, 0, var3);
-			var2 = var5;
-		} catch (Exception var6) {
-			var2 = "Cabbage";
-		}
-
-		return var2;
+	@ObfInfo(owner = "ii", name = "ak", desc = "(I)[Loq;")
+	public static Class381[] method4119() {
+		return new Class381[]{field4469, field4468};
 	}
 }

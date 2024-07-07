@@ -1,150 +1,72 @@
 import io.runebox.ObfInfo;
 
 @ObfInfo(name = "kw")
-public class Class283 implements Class264 {
-	@ObfInfo(name = "ap", desc = "I", intMultiplier = 407425227)
-	public int field2977;
-	@ObfInfo(name = "aq", desc = "I", intMultiplier = 502415749)
-	public int field2978;
-	@ObfInfo(name = "ag", desc = "I", intMultiplier = 1715220047)
-	public int field2979;
-	@ObfInfo(name = "ak", desc = "I", intMultiplier = 1345453013)
-	public int field2980;
-	@ObfInfo(name = "ad", desc = "I", intMultiplier = 1809402251)
-	public int field2981;
-	@ObfInfo(name = "an", desc = "I", intMultiplier = -1317582751)
-	public int field2982;
+public class Class283 extends Class305 {
+	@ObfInfo(name = "az", desc = "Llh;")
+	public Class294 field3109;
+	@ObfInfo(name = "af", desc = "I", intMultiplier = -1038049103)
+	public int field3106;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = 1836164871)
+	public int field3108;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = 91279571)
+	public int field3111;
+	@ObfInfo(name = "al", desc = "Lks;")
+	public final Class279 field3110;
+	@ObfInfo(name = "ak", desc = "I", intMultiplier = -1428899307)
+	public final int field3107;
 
-	@ObfInfo(name = "aq", desc = "(Ljm;I)V", opaque = "1568670940")
-	public void method4458(Class247 var1) {
-		if (var1.field2607 > this.field2977) {
-			var1.field2607 = this.field2977;
-		}
-
-		if (var1.field2603 < this.field2977) {
-			var1.field2603 = this.field2977;
-		}
-
-		if (var1.field2608 > this.field2982) {
-			var1.field2608 = this.field2982;
-		}
-
-		if (var1.field2609 < this.field2982) {
-			var1.field2609 = this.field2982;
-		}
-
+	public Class283(Class348 var1, Class348 var2, int var3, Class279 var4) {
+		super(var1, var2);
+		this.field3107 = var3;
+		this.field3110 = var4;
+		this.method5738();
 	}
 
-	@ObfInfo(name = "ad", desc = "(IIIB)Z", opaque = "-1")
-	public boolean method4459(int var1, int var2, int var3) {
-		if (var1 >= this.field2978 && var1 < this.field2981 + this.field2978) {
-			return var2 >> 6 == this.field2979 && this.field2980 == var3 >> 6;
+	@ObfInfo(name = "ak", desc = "(S)V", opaque = "202")
+	public void method5738() {
+		this.field3108 = Class222.method4161(this.field3107).method4181().field2272;
+		this.field3109 = this.field3110.method5602(Class200.method3917(this.field3108));
+		Class200 var2 = Class200.method3917(this.method5728());
+		Class549 var3 = var2.method3893(false);
+		if (var3 != null) {
+			this.field3106 = var3.field5353;
+			this.field3111 = var3.field5354;
 		} else {
-			return false;
+			this.field3106 = 0;
+			this.field3111 = 0;
 		}
+
 	}
 
-	@ObfInfo(name = "ag", desc = "(III)Z", opaque = "-889269986")
-	public boolean method4480(int var1, int var2) {
-		return var1 >> 6 == this.field2977 && var2 >> 6 == this.field2982;
+	@ObfInfo(name = "al", desc = "(I)I")
+	public int method5728() {
+		return this.field3108;
 	}
 
-	@ObfInfo(name = "ak", desc = "(IIIB)[I", opaque = "7")
-	public int[] method4461(int var1, int var2, int var3) {
-		if (!this.method4459(var1, var2, var3)) {
-			return null;
+	@ObfInfo(name = "aj", desc = "(B)Llh;")
+	public Class294 method5744() {
+		return this.field3109;
+	}
+
+	@ObfInfo(name = "az", desc = "(I)I")
+	public int method5732() {
+		return this.field3106;
+	}
+
+	@ObfInfo(name = "af", desc = "(I)I")
+	public int method5731() {
+		return this.field3111;
+	}
+
+	@ObfInfo(name = "al", desc = "(II)Luy;", opaque = "-339552668")
+	public static Class545 method5727(int var0) {
+		int var2 = Class539.field5312[var0];
+		if (var2 == 1) {
+			return Class545.field5333;
+		} else if (var2 == 2) {
+			return Class545.field5337;
 		} else {
-			int[] var5 = new int[]{var2 + (this.field2977 * 64 - this.field2979 * 64), var3 + (this.field2982 * 64 - this.field2980 * 64)};
-			return var5;
+			return var2 == 3 ? Class545.field5336 : null;
 		}
-	}
-
-	@ObfInfo(name = "ap", desc = "(III)Lnl;", opaque = "796740285")
-	public Class350 method4462(int var1, int var2) {
-		if (!this.method4480(var1, var2)) {
-			return null;
-		} else {
-			int var4 = this.field2979 * 64 - this.field2977 * 64 + var1;
-			int var5 = var2 + (this.field2980 * 64 - this.field2982 * 64);
-			return new Class350(this.field2978, var4, var5);
-		}
-	}
-
-	@ObfInfo(name = "an", desc = "(Lvp;I)V")
-	public void method4463(Class562 var1) {
-		this.field2978 = var1.method9902();
-		this.field2981 = var1.method9902();
-		this.field2979 = var1.method9997();
-		this.field2980 = var1.method9997();
-		this.field2977 = var1.method9997();
-		this.field2982 = var1.method9997();
-		this.method5608();
-	}
-
-	@ObfInfo(name = "aj", desc = "(S)V")
-	public void method5608() {
-	}
-
-	@ObfInfo(name = "aj", desc = "(Lde;Lvp;IIIIIII)V", opaque = "1618953960")
-	public static void method5628(Class83 var0, Class562 var1, int var2, int var3, int var4, int var5, int var6, int var7) {
-		int[][][] var9 = var0.field1025;
-		byte[][][] var10 = var0.field1023;
-		int var11;
-		if (var2 >= 0 && var2 < 4 && var3 >= 0 && var3 < var9[0].length - 1 && var4 >= 0 && var4 < var9[0][0].length - 1) {
-			var10[var2][var3][var4] = 0;
-
-			while (true) {
-				var11 = var1.method9997();
-				if (var11 == 0) {
-					if (var2 == 0) {
-						var9[0][var3][var4] = -Class97.method3351(var5 + 932731, var6 + 556238) * 8;
-					} else {
-						var9[var2][var3][var4] = var9[var2 - 1][var3][var4] - 240;
-					}
-					break;
-				}
-
-				if (var11 == 1) {
-					int var12 = var1.method9902();
-					if (var12 == 1) {
-						var12 = 0;
-					}
-
-					if (var2 == 0) {
-						var9[0][var3][var4] = 8 * -var12;
-					} else {
-						var9[var2][var3][var4] = var9[var2 - 1][var3][var4] - var12 * 8;
-					}
-					break;
-				}
-
-				if (var11 <= 49) {
-					Class97.field1187[var2][var3][var4] = (short)var1.method9829();
-					Class97.field1188[var2][var3][var4] = (byte)((var11 - 2) / 4);
-					Class97.field3989[var2][var3][var4] = (byte)(var7 + (var11 - 2) & 3);
-				} else if (var11 <= 81) {
-					var10[var2][var3][var4] = (byte)(var11 - 49);
-				} else {
-					Class97.field1186[var2][var3][var4] = (short)(var11 - 81);
-				}
-			}
-		} else {
-			while (true) {
-				var11 = var1.method9997();
-				if (var11 == 0) {
-					break;
-				}
-
-				if (var11 == 1) {
-					var1.method9902();
-					break;
-				}
-
-				if (var11 <= 49) {
-					var1.method9829();
-				}
-			}
-		}
-
 	}
 }

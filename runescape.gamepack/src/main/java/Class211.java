@@ -1,379 +1,616 @@
 import io.runebox.ObfInfo;
-import java.io.File;
-import java.io.IOException;
-import java.io.RandomAccessFile;
+import java.util.HashMap;
+import java.util.Map;
 
 @ObfInfo(name = "ic")
-public class Class211 {
-	@ObfInfo(name = "au", desc = "Luf;")
-	public static Class526 field2285;
-	@ObfInfo(name = "ah", desc = "Luf;")
-	public static Class526 field2286;
-	@ObfInfo(name = "az", desc = "Luf;")
-	public static Class526 field2287;
-	@ObfInfo(name = "ac", desc = "I", intMultiplier = -191524709)
-	public static int field2288;
-	@ObfInfo(owner = "al", name = "an", desc = "I", intMultiplier = 37968869)
-	public static int field63;
-	@ObfInfo(name = "ak", desc = "Ljava/io/File;")
-	public static File field2282;
-	@ObfInfo(owner = "iu", name = "ap", desc = "Ljava/io/File;")
-	public static File field2467;
-	@ObfInfo(name = "aw", desc = "Ljava/lang/String;")
-	public static String field2280;
-	@ObfInfo(owner = "cz", name = "at", desc = "Ljava/lang/String;")
-	public static String field950;
-	@ObfInfo(owner = "dp", name = "ay", desc = "[Ljava/lang/String;")
-	public static String[] field1154;
-	@ObfInfo(owner = "fs", name = "al", desc = "[Ljava/lang/String;")
-	public static String[] field1683;
+public class Class211 extends Class507 {
+	@ObfInfo(name = "ab", desc = "Llm;")
+	public static Class299 field2129;
+	@ObfInfo(name = "ao", desc = "Llm;")
+	public static Class299 field2132;
+	@ObfInfo(name = "ac", desc = "Llm;")
+	public static Class299 field2148;
+	@ObfInfo(name = "ak", desc = "Z")
+	public static boolean field2130;
+	@ObfInfo(name = "au", desc = "[Lik;")
+	public Class219[] field2140;
+	@ObfInfo(name = "ai", desc = "Z")
+	public boolean field2144;
+	@ObfInfo(name = "bs", desc = "Z")
+	public boolean field2149;
+	@ObfInfo(name = "ad", desc = "[Z")
+	public boolean[] field2137;
+	@ObfInfo(name = "an", desc = "I", intMultiplier = -1995770705)
+	public int field2128;
+	@ObfInfo(name = "ah", desc = "I", intMultiplier = -1594529517)
+	public int field2133;
+	@ObfInfo(name = "ap", desc = "I", intMultiplier = -460558267)
+	public int field2136;
+	@ObfInfo(name = "aq", desc = "I", intMultiplier = 946625509)
+	public int field2138;
+	@ObfInfo(name = "bo", desc = "I", intMultiplier = 1462179751)
+	public int field2141;
+	@ObfInfo(name = "as", desc = "I", intMultiplier = -351911437)
+	public int field2143;
+	@ObfInfo(name = "ag", desc = "I", intMultiplier = 1203416379)
+	public int field2145;
+	@ObfInfo(name = "am", desc = "I", intMultiplier = 612362347)
+	public int field2146;
+	@ObfInfo(name = "ar", desc = "I", intMultiplier = 440495917)
+	public int field2147;
+	@ObfInfo(name = "bf", desc = "I", intMultiplier = 709224351)
+	public int field2150;
+	@ObfInfo(name = "bi", desc = "I", intMultiplier = -1104871125)
+	public int field2152;
+	@ObfInfo(name = "ax", desc = "[I")
+	public int[] field2126;
+	@ObfInfo(name = "ay", desc = "[I")
+	public int[] field2139;
+	@ObfInfo(name = "ae", desc = "[I")
+	public int[] field2142;
+	@ObfInfo(name = "aw", desc = "[I")
+	public int[] field2151;
+	@ObfInfo(name = "av", desc = "Ljava/util/Map;")
+	public Map field2134;
 
 	static {
-		field2285 = null;
-		field2286 = null;
-		field2287 = null;
+		field2130 = false;
+		field2129 = new Class299(64);
+		field2148 = new Class299(100);
+		field2132 = new Class299(100);
 	}
 
-	@ObfInfo(owner = "iw", name = "aq", desc = "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIB)V", opaque = "3")
-	public static void method4429(String var0, String var1, String var2, int var3, int var4) throws IOException {
-		if (var1 != null && !var1.isEmpty()) {
-			var0 = var0 + "-" + var1;
+	public Class211() {
+		this.field2133 = -1;
+		this.field2138 = 0;
+		this.field2136 = 0;
+		this.field2143 = -1;
+		this.field2144 = false;
+		this.field2128 = 5;
+		this.field2146 = -1;
+		this.field2147 = -1;
+		this.field2145 = 99;
+		this.field2149 = false;
+		this.field2150 = -1;
+		this.field2141 = -1;
+		this.field2152 = 2;
+	}
+
+	@ObfInfo(name = "al", desc = "(Lua;B)V", opaque = "5")
+	public void method3997(Class521 var1) {
+		while (true) {
+			int var3 = var1.method9405();
+			if (var3 == 0) {
+				return;
+			}
+
+			this.method4006(var1, var3);
 		}
+	}
 
-		field63 = var4;
-		field2288 = var3;
+	@ObfInfo(name = "aj", desc = "(Lua;IS)V", opaque = "352")
+	public void method4006(Class521 var1, int var2) {
+		int var4;
+		int var5;
+		if (var2 == 1) {
+			var4 = var1.method9407();
+			this.field2139 = new int[var4];
 
-		try {
-			field2280 = System.getProperty("os.name");
-		} catch (Exception var14) {
-			field2280 = "Unknown";
-		}
+			for (var5 = 0; var5 < var4; ++var5) {
+				this.field2139[var5] = var1.method9407();
+			}
 
-		Class495.field1084 = field2280.toLowerCase();
-		field950 = null;
+			this.field2142 = new int[var4];
 
-		try {
-			field950 = System.getProperty("jagex.userhome");
-		} catch (Exception var13) {
-		}
+			for (var5 = 0; var5 < var4; ++var5) {
+				this.field2142[var5] = var1.method9407();
+			}
 
-		if (field950 == null) {
-			try {
-				field950 = System.getProperty("user.home");
-			} catch (Exception var12) {
+			for (var5 = 0; var5 < var4; ++var5) {
+				this.field2142[var5] += var1.method9407() << 16;
+			}
+		} else if (var2 == 2) {
+			this.field2143 = var1.method9407();
+		} else if (var2 == 3) {
+			var4 = var1.method9405();
+			this.field2151 = new int[var4 + 1];
+
+			for (var5 = 0; var5 < var4; ++var5) {
+				this.field2151[var5] = var1.method9405();
+			}
+
+			this.field2151[var4] = 9999999;
+		} else if (var2 == 4) {
+			this.field2144 = true;
+		} else if (var2 == 5) {
+			this.field2128 = var1.method9405();
+		} else if (var2 == 6) {
+			this.field2146 = var1.method9407();
+		} else if (var2 == 7) {
+			this.field2147 = var1.method9407();
+		} else if (var2 == 8) {
+			this.field2145 = var1.method9405();
+			this.field2149 = true;
+		} else if (var2 == 9) {
+			this.field2150 = var1.method9405();
+		} else if (var2 == 10) {
+			this.field2141 = var1.method9405();
+		} else if (var2 == 11) {
+			this.field2152 = var1.method9405();
+		} else if (var2 == 12) {
+			var4 = var1.method9405();
+			this.field2126 = new int[var4];
+
+			for (var5 = 0; var5 < var4; ++var5) {
+				this.field2126[var5] = var1.method9407();
+			}
+
+			for (var5 = 0; var5 < var4; ++var5) {
+				this.field2126[var5] += var1.method9407() << 16;
+			}
+		} else if (var2 == 13) {
+			var4 = var1.method9405();
+			this.field2140 = new Class219[var4];
+
+			for (var5 = 0; var5 < var4; ++var5) {
+				this.field2140[var5] = method1191(var1);
+			}
+		} else if (var2 == 14) {
+			this.field2133 = var1.method9410();
+		} else if (var2 == 15) {
+			var4 = var1.method9407();
+			this.field2134 = new HashMap();
+
+			for (var5 = 0; var5 < var4; ++var5) {
+				int var6 = var1.method9407();
+				Class219 var7 = method1191(var1);
+				this.field2134.put(var6, var7);
+			}
+		} else if (var2 == 16) {
+			this.field2138 = var1.method9407();
+			this.field2136 = var1.method9407();
+		} else if (var2 == 17) {
+			this.field2137 = new boolean[256];
+
+			for (var4 = 0; var4 < this.field2137.length; ++var4) {
+				this.field2137[var4] = false;
+			}
+
+			var4 = var1.method9405();
+
+			for (var5 = 0; var5 < var4; ++var5) {
+				this.field2137[var1.method9405()] = true;
 			}
 		}
 
-		if (field950 != null) {
-			field950 = field950 + "/";
-		}
+	}
 
-		try {
-			if (Class495.field1084.startsWith("win")) {
-				if (field950 == null) {
-					field950 = System.getenv("USERPROFILE");
-				}
-			} else if (field950 == null) {
-				field950 = System.getenv("HOME");
-			}
-
-			if (field950 != null) {
-				field950 = field950 + "/";
-			}
-		} catch (Exception var11) {
-		}
-
-		if (field950 == null) {
-			field950 = "~/";
-		}
-
-		field1683 = new String[]{"c:/rscache/", "/rscache/", "c:/windows/", "c:/winnt/", "c:/", field950, "/tmp/", ""};
-		field1154 = new String[]{".jagex_cache_" + field2288, ".file_store_" + field2288};
-		int var6 = 0;
-
-		label131:
-		while (var6 < 4) {
-			field2467 = method572(var0, var2, var6);
-			if (!field2467.exists()) {
-				field2467.mkdirs();
-			}
-
-			File[] var7 = field2467.listFiles();
-			if (var7 == null) {
-				break;
-			}
-
-			int var9 = 0;
-
-			while (true) {
-				if (var9 >= var7.length) {
-					break label131;
-				}
-
-				File var10 = var7[var9];
-				if (!method3373(var10, false)) {
-					++var6;
-					break;
-				}
-
-				++var9;
-			}
-		}
-
-		Class216.method2875(field2467);
-
-		try {
-			File var16 = new File(field950, "random.dat");
-			int var8;
-			if (var16.exists()) {
-				field2285 = new Class526(new Class539(var16, "rw", 25L), 24, 0);
+	@ObfInfo(name = "az", desc = "(I)V", opaque = "-1726184148")
+	public void method3998() {
+		if (-1 == this.field2150) {
+			if (this.field2151 == null && this.field2137 == null) {
+				this.field2150 = 0;
 			} else {
-				label113:
-				for (int var17 = 0; var17 < field1154.length; ++var17) {
-					for (var8 = 0; var8 < field1683.length; ++var8) {
-						File var19 = new File(field1683[var8] + field1154[var17] + File.separatorChar + "random.dat");
-						if (var19.exists()) {
-							field2285 = new Class526(new Class539(var19, "rw", 25L), 24, 0);
-							break label113;
-						}
-					}
-				}
+				this.field2150 = 2;
 			}
-
-			if (field2285 == null) {
-				RandomAccessFile var18 = new RandomAccessFile(var16, "rw");
-				var8 = var18.read();
-				var18.seek(0L);
-				var18.write(var8);
-				var18.seek(0L);
-				var18.close();
-				field2285 = new Class526(new Class539(var16, "rw", 25L), 24, 0);
-			}
-		} catch (IOException var15) {
 		}
 
-		field2286 = new Class526(new Class539(Class216.method4467("main_file_cache.dat2"), "rw", 1048576000L), 5200, 0);
-		field2287 = new Class526(new Class539(Class216.method4467("main_file_cache.idx255"), "rw", 1048576L), 6000, 0);
-		Client.field1750 = new Class526[field63];
-
-		for (var6 = 0; var6 < field63; ++var6) {
-			Client.field1750[var6] = new Class526(new Class539(Class216.method4467("main_file_cache.idx" + var6), "rw", 1048576L), 6000, 0);
+		if (this.field2141 == -1) {
+			if (this.field2151 == null && this.field2137 == null) {
+				this.field2141 = 0;
+			} else {
+				this.field2141 = 2;
+			}
 		}
 
 	}
 
-	@ObfInfo(owner = "bn", name = "ad", desc = "(Ljava/lang/String;Ljava/lang/String;IB)Ljava/io/File;", opaque = "1")
-	public static File method572(String var0, String var1, int var2) {
-		String var4 = var2 == 0 ? "" : "" + var2;
-		field2282 = new File(field950, "jagex_cl_" + var0 + "_" + var1 + var4 + ".dat");
-		String var5 = null;
-		String var6 = null;
-		boolean var7 = false;
-		File var20;
-		if (field2282.exists()) {
-			try {
-				Class539 var8 = new Class539(field2282, "rw", 10000L);
+	@ObfInfo(name = "af", desc = "(Lkb;II)Lkb;", opaque = "919536438")
+	public Class262 method3999(Class262 var1, int var2) {
+		Class262 var5;
+		if (!this.method4038()) {
+			var2 = this.field2142[var2];
+			Class246 var6 = method4922(var2 >> 16);
+			var2 &= 65535;
+			if (var6 == null) {
+				return var1.method5214(true);
+			} else {
+				var5 = var1.method5214(!var6.method4757(var2));
+				var5.method5177(var6, var2);
+				return var5;
+			}
+		} else {
+			Class145 var4 = method2867(this.field2133);
+			if (var4 == null) {
+				return var1.method5214(true);
+			} else {
+				var5 = var1.method5214(!var4.method3192());
+				var5.method5178(var4, var2);
+				return var5;
+			}
+		}
+	}
 
-				Class562 var9;
-				int var10;
-				for (var9 = new Class562((int)var8.method9483()); var9.field5471 < var9.field5472.length; var9.field5471 += var10) {
-					var10 = var8.method9499(var9.field5472, var9.field5471, var9.field5472.length - var9.field5471);
-					if (var10 == -1) {
-						throw new IOException();
-					}
+	@ObfInfo(name = "aa", desc = "(Lkb;III)Lkb;", opaque = "-253461195")
+	public Class262 method4000(Class262 var1, int var2, int var3) {
+		Class262 var6;
+		if (!this.method4038()) {
+			var2 = this.field2142[var2];
+			Class246 var7 = method4922(var2 >> 16);
+			var2 &= 65535;
+			if (var7 == null) {
+				return var1.method5214(true);
+			} else {
+				var6 = var1.method5214(!var7.method4757(var2));
+				var3 &= 3;
+				if (var3 == 1) {
+					var6.method5222();
+				} else if (var3 == 2) {
+					var6.method5181();
+				} else if (var3 == 3) {
+					var6.method5243();
 				}
 
-				var9.field5471 = 0;
-				var10 = var9.method9902();
-				if (var10 < 1 || var10 > 3) {
-					throw new IOException("" + var10);
+				var6.method5177(var7, var2);
+				if (var3 == 1) {
+					var6.method5243();
+				} else if (var3 == 2) {
+					var6.method5181();
+				} else if (var3 == 3) {
+					var6.method5222();
 				}
 
-				int var11 = 0;
-				if (var10 > 1) {
-					var11 = var9.method9902();
+				return var6;
+			}
+		} else {
+			Class145 var5 = method2867(this.field2133);
+			if (var5 == null) {
+				return var1.method5214(true);
+			} else {
+				var6 = var1.method5214(!var5.method3192());
+				var3 &= 3;
+				if (var3 == 1) {
+					var6.method5222();
+				} else if (var3 == 2) {
+					var6.method5181();
+				} else if (var3 == 3) {
+					var6.method5243();
 				}
 
-				if (var10 <= 2) {
-					var5 = var9.method9980();
-					if (var11 == 1) {
-						var6 = var9.method9980();
-					}
+				var6.method5178(var5, var2);
+				if (var3 == 1) {
+					var6.method5243();
+				} else if (var3 == 2) {
+					var6.method5181();
+				} else if (var3 == 3) {
+					var6.method5222();
+				}
+
+				return var6;
+			}
+		}
+	}
+
+	@ObfInfo(name = "at", desc = "(Lkb;IB)Lkb;", opaque = "4")
+	public Class262 method4001(Class262 var1, int var2) {
+		Class262 var5;
+		if (!this.method4038()) {
+			var2 = this.field2142[var2];
+			Class246 var6 = method4922(var2 >> 16);
+			var2 &= 65535;
+			if (var6 == null) {
+				return var1.method5170(true);
+			} else {
+				var5 = var1.method5170(!var6.method4757(var2));
+				var5.method5177(var6, var2);
+				return var5;
+			}
+		} else {
+			Class145 var4 = method2867(this.field2133);
+			if (var4 == null) {
+				return var1.method5170(true);
+			} else {
+				var5 = var1.method5170(!var4.method3192());
+				var5.method5178(var4, var2);
+				return var5;
+			}
+		}
+	}
+
+	@ObfInfo(name = "ab", desc = "(Lkb;ILic;IB)Lkb;", opaque = "1")
+	public Class262 method4002(Class262 var1, int var2, Class211 var3, int var4) {
+		if (field2130 && !this.method4038() && !var3.method4038()) {
+			return this.method4042(var1, var2, var3, var4);
+		} else {
+			Class262 var6 = var1.method5214(false);
+			boolean var7 = false;
+			Class246 var8 = null;
+			Class248 var9 = null;
+			Class145 var10;
+			if (this.method4038()) {
+				var10 = this.method4007();
+				if (var10 == null) {
+					return var6;
+				}
+
+				if (var3.method4038() && this.field2137 == null) {
+					var6.method5178(var10, var2);
+					return var6;
+				}
+
+				var9 = var10.field1654;
+				var6.method5268(var9, var10, var2, this.field2137, false, !var3.method4038());
+			} else {
+				var2 = this.field2142[var2];
+				var8 = method4922(var2 >> 16);
+				var2 &= 65535;
+				if (var8 == null) {
+					return var3.method3999(var1, var4);
+				}
+
+				if (!var3.method4038() && (this.field2151 == null || var4 == -1)) {
+					var6.method5177(var8, var2);
+					return var6;
+				}
+
+				if (this.field2151 == null || var4 == -1) {
+					var6.method5177(var8, var2);
+					return var6;
+				}
+
+				var7 = var3.method4038();
+				if (!var7) {
+					var6.method5183(var8, var2, this.field2151, false);
+				}
+			}
+
+			if (var3.method4038()) {
+				var10 = var3.method4007();
+				if (var10 == null) {
+					return var6;
+				}
+
+				if (var9 == null) {
+					var9 = var10.field1654;
+				}
+
+				var6.method5268(var9, var10, var4, this.field2137, true, true);
+			} else {
+				var4 = var3.field2142[var4];
+				Class246 var11 = method4922(var4 >> 16);
+				var4 &= 65535;
+				if (var11 == null) {
+					return this.method3999(var1, var2);
+				}
+
+				var6.method5183(var11, var4, this.field2151, true);
+			}
+
+			if (var7 && var8 != null) {
+				var6.method5183(var8, var2, this.field2151, false);
+			}
+
+			var6.method5176();
+			return var6;
+		}
+	}
+
+	@ObfInfo(name = "ac", desc = "(Lkb;ILic;II)Lkb;", opaque = "-1276132275")
+	public Class262 method4042(Class262 var1, int var2, Class211 var3, int var4) {
+		var2 = this.field2142[var2];
+		Class246 var6 = method4922(var2 >> 16);
+		var2 &= 65535;
+		if (var6 == null) {
+			return var3.method3999(var1, var4);
+		} else {
+			var4 = var3.field2142[var4];
+			Class246 var7 = method4922(var4 >> 16);
+			var4 &= 65535;
+			Class262 var8;
+			if (var7 == null) {
+				var8 = var1.method5214(!var6.method4757(var2));
+				var8.method5177(var6, var2);
+				return var8;
+			} else {
+				var8 = var1.method5214(!var6.method4757(var2) & !var7.method4757(var4));
+				var8.method5182(var6, var2, var7, var4, this.field2151);
+				return var8;
+			}
+		}
+	}
+
+	@ObfInfo(name = "ao", desc = "(Lkb;II)Lkb;", opaque = "-2113245634")
+	public Class262 method4004(Class262 var1, int var2) {
+		if (!this.method4038()) {
+			int var4 = this.field2142[var2];
+			Class246 var5 = method4922(var4 >> 16);
+			var4 &= 65535;
+			if (var5 == null) {
+				return var1.method5214(true);
+			} else {
+				Class246 var6 = null;
+				int var7 = 0;
+				if (this.field2126 != null && var2 < this.field2126.length) {
+					var7 = this.field2126[var2];
+					var6 = method4922(var7 >> 16);
+					var7 &= 65535;
+				}
+
+				Class262 var8;
+				if (var6 != null && var7 != 65535) {
+					var8 = var1.method5214(!var5.method4757(var4) & !var6.method4757(var7));
+					var8.method5177(var5, var4);
+					var8.method5177(var6, var7);
+					return var8;
 				} else {
-					var5 = var9.method9839();
-					if (var11 == 1) {
-						var6 = var9.method9839();
+					var8 = var1.method5214(!var5.method4757(var4));
+					var8.method5177(var5, var4);
+					return var8;
+				}
+			}
+		} else {
+			return this.method3999(var1, var2);
+		}
+	}
+
+	@ObfInfo(name = "ah", desc = "(B)Z", opaque = "2")
+	public boolean method4038() {
+		return this.field2133 >= 0;
+	}
+
+	@ObfInfo(name = "av", desc = "(B)I")
+	public int method4005() {
+		return this.field2136 - this.field2138;
+	}
+
+	@ObfInfo(name = "ap", desc = "(B)Lfo;", opaque = "0")
+	public Class145 method4007() {
+		return this.method4038() ? method2867(this.field2133) : null;
+	}
+
+	@ObfInfo(owner = "jc", name = "ak", desc = "(IS)Lic;", opaque = "127")
+	public static Class211 method4637(int var0) {
+		Class211 var2 = (Class211)field2129.method5993((long)var0);
+		if (var2 != null) {
+			return var2;
+		} else {
+			byte[] var3 = Client.field2127.method7216(12, var0);
+			var2 = new Class211();
+			if (var3 != null) {
+				var2.method3997(new Class521(var3));
+			}
+
+			var2.method3998();
+			field2129.method5987(var2, (long)var0);
+			return var2;
+		}
+	}
+
+	@ObfInfo(name = "aa", desc = "([[[IIIII)V", opaque = "-1193239731")
+	public static void method4052(int[][][] var0, int var1, int var2, int var3) {
+		int var5;
+		for (var5 = 0; var5 < 8; ++var5) {
+			for (int var6 = 0; var6 < 8; ++var6) {
+				var0[var1][var5 + var2][var6 + var3] = 0;
+			}
+		}
+
+		if (var2 > 0) {
+			for (var5 = 1; var5 < 8; ++var5) {
+				var0[var1][var2][var5 + var3] = var0[var1][var2 - 1][var5 + var3];
+			}
+		}
+
+		if (var3 > 0) {
+			for (var5 = 1; var5 < 8; ++var5) {
+				var0[var1][var5 + var2][var3] = var0[var1][var5 + var2][var3 - 1];
+			}
+		}
+
+		if (var2 > 0 && var0[var1][var2 - 1][var3] != 0) {
+			var0[var1][var2][var3] = var0[var1][var2 - 1][var3];
+		} else if (var3 > 0 && 0 != var0[var1][var2][var3 - 1]) {
+			var0[var1][var2][var3] = var0[var1][var2][var3 - 1];
+		} else if (var2 > 0 && var3 > 0 && 0 != var0[var1][var2 - 1][var3 - 1]) {
+			var0[var1][var2][var3] = var0[var1][var2 - 1][var3 - 1];
+		}
+
+	}
+
+	@ObfInfo(owner = "jx", name = "aq", desc = "(II)Ljl;", opaque = "-15533869")
+	public static Class246 method4922(int var0) {
+		Class246 var2 = (Class246)field2148.method5993((long)var0);
+		if (var2 != null) {
+			return var2;
+		} else {
+			Class382 var4 = Client.field2123;
+			Class382 var5 = Client.field2131;
+			boolean var6 = true;
+			int[] var7 = var4.method7226(var0);
+
+			for (int var8 = 0; var8 < var7.length; ++var8) {
+				byte[] var9 = var4.method7224(var0, var7[var8]);
+				if (var9 == null) {
+					var6 = false;
+				} else {
+					int var10 = (var9[0] & 255) << 8 | var9[1] & 255;
+					byte[] var11 = var5.method7224(var10, 0);
+					if (var11 == null) {
+						var6 = false;
 					}
 				}
-
-				var8.method9481();
-			} catch (IOException var17) {
-				var17.printStackTrace();
 			}
 
-			if (var5 != null) {
-				var20 = new File(var5);
-				if (!var20.exists()) {
-					var5 = null;
+			Class246 var3;
+			if (!var6) {
+				var3 = null;
+			} else {
+				try {
+					var3 = new Class246(var4, var5, var0, false);
+				} catch (Exception var12) {
+					var3 = null;
 				}
 			}
 
-			if (var5 != null) {
-				var20 = new File(var5, "test.dat");
-				if (!method3373(var20, true)) {
-					var5 = null;
-				}
-			}
-		}
-
-		if (var5 == null && var2 == 0) {
-			label103:
-			for (int var18 = 0; var18 < field1154.length; ++var18) {
-				for (int var21 = 0; var21 < field1683.length; ++var21) {
-					File var22 = new File(field1683[var21] + field1154[var18] + File.separatorChar + var0 + File.separatorChar);
-					if (var22.exists() && method3373(new File(var22, "test.dat"), true)) {
-						var5 = var22.toString();
-						var7 = true;
-						break label103;
-					}
-				}
-			}
-		}
-
-		if (var5 == null) {
-			var5 = field950 + File.separatorChar + "jagexcache" + var4 + File.separatorChar + var0 + File.separatorChar + var1 + File.separatorChar;
-			var7 = true;
-		}
-
-		if (var6 != null) {
-			File var19 = new File(var6);
-			var20 = new File(var5);
-
-			try {
-				File[] var23 = var19.listFiles();
-
-				for (int var12 = 0; var12 < var23.length; ++var12) {
-					File var13 = var23[var12];
-					File var14 = new File(var20, var13.getName());
-					boolean var15 = var13.renameTo(var14);
-					if (!var15) {
-						throw new IOException();
-					}
-				}
-			} catch (Exception var16) {
-				var16.printStackTrace();
+			if (var3 != null) {
+				field2148.method5987(var3, (long)var0);
 			}
 
-			var7 = true;
-		}
-
-		if (var7) {
-			method4422(new File(var5), (File)null);
-		}
-
-		return new File(var5);
-	}
-
-	@ObfInfo(owner = "it", name = "ag", desc = "(Ljava/io/File;Ljava/io/File;I)V", opaque = "11316396")
-	public static void method4422(File var0, File var1) {
-		try {
-			Class539 var3 = new Class539(field2282, "rw", 10000L);
-			Class562 var4 = new Class562(500);
-			var4.method9809(3);
-			var4.method9809(var1 != null ? 1 : 0);
-			var4.method9818(var0.getPath());
-			if (var1 != null) {
-				var4.method9818("");
-			}
-
-			var3.method9486(var4.field5472, 0, var4.field5471);
-			var3.method9481();
-		} catch (IOException var5) {
-			var5.printStackTrace();
-		}
-
-	}
-
-	@ObfInfo(owner = "ge", name = "ak", desc = "(Ljava/io/File;ZI)Z", opaque = "-1409257065")
-	public static boolean method3373(File var0, boolean var1) {
-		try {
-			RandomAccessFile var3 = new RandomAccessFile(var0, "rw");
-			int var4 = var3.read();
-			var3.seek(0L);
-			var3.write(var4);
-			var3.seek(0L);
-			var3.close();
-			if (var1) {
-				var0.delete();
-			}
-
-			return true;
-		} catch (Exception var5) {
-			return false;
+			return var3;
 		}
 	}
 
-	@ObfInfo(owner = "ed", name = "ap", desc = "(Ljava/lang/String;Ljava/lang/String;ZI)Lus;", opaque = "1511539322")
-	public static Class539 method2856(String var0, String var1, boolean var2) {
-		File var4 = new File(field2467, "preferences" + var0 + ".dat");
-		if (var4.exists()) {
-			try {
-				Class539 var11 = new Class539(var4, "rw", 10000L);
-				return var11;
-			} catch (IOException var10) {
+	@ObfInfo(owner = "eg", name = "ae", desc = "(II)Lfo;", opaque = "786316708")
+	public static Class145 method2867(int var0) {
+		Class145 var3 = method2478(var0);
+		int var2;
+		if (var3 == null) {
+			var2 = 2;
+		} else {
+			var2 = var3.method3190() ? 0 : 1;
+		}
+
+		return var2 != 0 ? null : method2478(var0);
+	}
+
+	@ObfInfo(owner = "dp", name = "ax", desc = "(II)Lfo;", opaque = "1510290443")
+	public static Class145 method2478(int var0) {
+		Class145 var2 = (Class145)field2132.method5993((long)var0);
+		if (var2 != null) {
+			return var2;
+		} else {
+			var2 = Class145.method6486(Client.field2123, Client.field2131, var0, false);
+			if (var2 != null) {
+				field2132.method5987(var2, (long)var0);
 			}
-		}
 
-		String var5 = "";
-		if (field2288 == 33) {
-			var5 = "_rc";
-		} else if (field2288 == 34) {
-			var5 = "_wip";
-		}
-
-		File var6 = new File(field950, "jagex_" + var1 + "_preferences" + var0 + var5 + ".dat");
-		Class539 var7;
-		if (!var2 && var6.exists()) {
-			try {
-				var7 = new Class539(var6, "rw", 10000L);
-				return var7;
-			} catch (IOException var9) {
-			}
-		}
-
-		try {
-			var7 = new Class539(var4, "rw", 10000L);
-			return var7;
-		} catch (IOException var8) {
-			throw new RuntimeException();
+			return var2;
 		}
 	}
 
-	@ObfInfo(owner = "ii", name = "an", desc = "(Lvp;II)V", opaque = "1208496715")
-	public static void method4175(Class562 var0, int var1) {
-		if (field2285 != null) {
-			try {
-				field2285.method9313(0L);
-				field2285.method9336(var0.field5472, var1, 24);
-			} catch (Exception var4) {
+	@ObfInfo(owner = "cl", name = "ay", desc = "(Lua;B)Lik;", opaque = "-4")
+	public static Class219 method1191(Class521 var0) {
+		if (var0 != null) {
+			boolean var2 = false;
+			boolean var3 = false;
+			boolean var4 = false;
+			boolean var5 = false;
+			int var6 = var0.method9407();
+			int var7 = var0.method9405();
+			int var8 = var0.method9405();
+			int var9 = var0.method9405();
+			if (var6 >= 1 && var7 >= 1 && var8 >= 0 && var9 >= 0) {
+				return new Class219(var6, var7, var8, var9);
 			}
 		}
 
+		return null;
 	}
 
-	@ObfInfo(owner = "di", name = "aj", desc = "(I)V", opaque = "10021972")
-	public static void method2369() {
-		try {
-			field2286.method9312();
-
-			for (int var1 = 0; var1 < field63; ++var1) {
-				Client.field1750[var1].method9312();
-			}
-
-			field2287.method9312();
-			field2285.method9312();
-		} catch (Exception var2) {
-		}
-
+	@ObfInfo(owner = "jx", name = "au", desc = "(I)V")
+	public static void method4923() {
+		field2129.method5995();
+		field2148.method5995();
+		field2132.method5995();
 	}
 }

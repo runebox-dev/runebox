@@ -2,10 +2,15 @@ import io.runebox.ObfInfo;
 
 @ObfInfo(name = "nu")
 public class Class359 {
-	@ObfInfo(name = "ag", desc = "I", intMultiplier = -309459477)
-	public int field3788;
-	@ObfInfo(name = "ad", desc = "I", intMultiplier = -624927999)
-	public int field3789;
-	@ObfInfo(name = "aq", desc = "I", intMultiplier = 1896478877)
-	public int field3790;
+	@ObfInfo(owner = "lh", name = "ak", desc = "(IIII)I", opaque = "2002446543")
+	public static int method5914(int var0, int var1, int var2) {
+		var2 &= 3;
+		if (var2 == 0) {
+			return var1;
+		} else if (var2 == 1) {
+			return 7 - var0;
+		} else {
+			return var2 == 2 ? 7 - var1 : var0;
+		}
+	}
 }

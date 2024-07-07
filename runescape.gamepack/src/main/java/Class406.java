@@ -1,21 +1,21 @@
 import io.runebox.ObfInfo;
-import java.util.HashMap;
+import java.util.Comparator;
 
 @ObfInfo(name = "pp")
-public class Class406 {
-	static {
-		new HashMap();
+final class Class406 implements Comparator {
+	public Class406() {
 	}
 
-	@ObfInfo(owner = "id", name = "aq", desc = "([Lpc;II)Lpc;", opaque = "-1635336265")
-	public static Class393 method4071(Class393[] var0, int var1) {
-		for (int var4 = 0; var4 < var0.length; ++var4) {
-			Class393 var5 = var0[var4];
-			if (var5.method129() == var1) {
-				return var5;
-			}
-		}
+	@ObfInfo(name = "ak", desc = "(Lpm;Lpm;I)I", opaque = "-2117844026")
+	public int method7561(Class403 var1, Class403 var2) {
+		return var1.field4621 < var2.field4621 ? -1 : (var2.field4621 == var1.field4621 ? 0 : 1);
+	}
 
-		return null;
+	public int compare(Object var1, Object var2) {
+		return this.method7561((Class403)var1, (Class403)var2);
+	}
+
+	public boolean equals(Object var1) {
+		return super.equals(var1);
 	}
 }

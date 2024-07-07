@@ -2,23 +2,24 @@ import io.runebox.ObfInfo;
 
 @ObfInfo(name = "hg")
 public class Class189 {
-	@ObfInfo(name = "ad", desc = "I", intMultiplier = -363435057)
-	public int field2084;
-	@ObfInfo(name = "ag", desc = "I", intMultiplier = -1233321151)
-	public int field2085;
-	@ObfInfo(name = "ak", desc = "I", intMultiplier = -1599145757)
-	public int field2086;
-	@ObfInfo(name = "aq", desc = "I", intMultiplier = 443044167)
-	public int field2087;
+	@ObfInfo(name = "af", desc = "[F")
+	public float[] field1944;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = -1876496563)
+	public int field1946;
+	@ObfInfo(name = "ab", desc = "I", intMultiplier = -248673039)
+	public int field1948;
+	@ObfInfo(name = "at", desc = "I", intMultiplier = -1293730893)
+	public int field1952;
+	@ObfInfo(name = "az", desc = "Ljava/lang/String;")
+	public String field1947;
+	// $FF: synthetic field
+	public final Class192 this$0;
 
-	public Class189(int var1, int var2, int var3, int var4) {
-		this.field2087 = 0;
-		this.field2084 = 0;
-		this.field2085 = 0;
-		this.field2086 = 0;
-		this.field2087 = var1;
-		this.field2084 = var2;
-		this.field2085 = var3;
-		this.field2086 = var4;
+	public Class189(Class192 var1) {
+		this.this$0 = var1;
+		this.field1944 = new float[4];
+		this.field1946 = 1;
+		this.field1952 = 1;
+		this.field1948 = 0;
 	}
 }

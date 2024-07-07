@@ -1,20 +1,40 @@
 import io.runebox.ObfInfo;
+import java.util.ConcurrentModificationException;
+import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 @ObfInfo(name = "qr")
-public class Class434 extends Class457 {
-	public Class434(Class457 var1) {
-		super(var1);
-		super.field4890 = "SwapSongTask";
+public class Class434 implements Iterator {
+	@ObfInfo(name = "ak", desc = "Lqc;")
+	public Class419 field4716;
+	@ObfInfo(name = "al", desc = "I", intMultiplier = 258225695)
+	public int field4717;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = 1135055625)
+	public int field4718;
+
+	public Class434(Class419 var1) {
+		this.field4717 = 0;
+		this.field4718 = this.field4716.field4670;
+		this.field4716 = var1;
 	}
 
-	@ObfInfo(name = "aq", desc = "(S)Z", opaque = "254")
-	public boolean method7710() {
-		if (Class323.field3464.size() > 1 && Class323.field3464.get(0) != null && ((Class351)Class323.field3464.get(0)).field3761.method6097() && Class323.field3464.get(1) != null && ((Class351)Class323.field3464.get(1)).field3761.method6097()) {
-			Class351 var2 = (Class351)Class323.field3464.get(0);
-			Class323.field3464.set(0, Class323.field3464.get(1));
-			Class323.field3464.set(1, var2);
-		}
+	public boolean hasNext() {
+		return this.field4717 < this.field4716.field4669;
+	}
 
-		return true;
+	public Object next() {
+		if (this.field4716.field4670 != this.field4718) {
+			throw new ConcurrentModificationException();
+		} else if (this.field4717 < this.field4716.field4669) {
+			Object var1 = this.field4716.field4671[this.field4717].field4714;
+			++this.field4717;
+			return var1;
+		} else {
+			throw new NoSuchElementException();
+		}
+	}
+
+	public void remove() {
+		throw new UnsupportedOperationException();
 	}
 }

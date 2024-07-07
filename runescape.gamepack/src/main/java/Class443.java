@@ -1,26 +1,17 @@
 import io.runebox.ObfInfo;
-import java.util.Comparator;
-import java.util.Map.Entry;
 
 @ObfInfo(name = "ra")
-class Class443 implements Comparator {
-	// $FF: synthetic field
-	public final Class465 this$0;
+public class Class443 extends Class511 {
+	@ObfInfo(name = "al", desc = "Lvv;")
+	public Class567 field4792;
+	@ObfInfo(name = "ak", desc = "I", intMultiplier = -152542295)
+	public int field4793;
+	@ObfInfo(name = "aj", desc = "S")
+	public short field4794;
 
-	public Class443(Class465 var1) {
-		this.this$0 = var1;
-	}
-
-	@ObfInfo(name = "aq", desc = "(Ljava/util/Map$Entry;Ljava/util/Map$Entry;B)I")
-	public int method8252(Entry var1, Entry var2) {
-		return ((Float)var2.getValue()).compareTo((Float)var1.getValue());
-	}
-
-	public int compare(Object var1, Object var2) {
-		return this.method8252((Entry)var1, (Entry)var2);
-	}
-
-	public boolean equals(Object var1) {
-		return super.equals(var1);
+	public Class443(Class567 var1, int var2) {
+		this.field4793 = (int)(Class130.method3047() / 1000L);
+		this.field4792 = var1;
+		this.field4794 = (short)var2;
 	}
 }
