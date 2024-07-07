@@ -1,104 +1,96 @@
 import io.runebox.ObfInfo;
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URLConnection;
+import javax.net.ssl.HttpsURLConnection;
 
-public class Class118 {
-	@ObfInfo(name = "al", desc = "I", intMultiplier = 462637913)
-	public int field1469;
-	@ObfInfo(name = "aj", desc = "I", intMultiplier = -1636216495)
-	public int field1470;
-	@ObfInfo(name = "ak", desc = "I", intMultiplier = -841998663)
-	public int field1471;
-	@ObfInfo(name = "az", desc = "I", intMultiplier = 1700021687)
-	public int field1472;
+@ObfInfo(name = "en")
+public class Class118 extends Class105 {
+	@ObfInfo(name = "ap", desc = "Z")
+	public final boolean field1437;
 
-	public Class118(int var1, int var2, int var3, int var4) {
-		this.field1471 = var1;
-		this.field1469 = var2;
-		this.field1470 = var3;
-		this.field1472 = var4;
+	public Class118(boolean var1, int var2) {
+		super(var2);
+		this.field1437 = var1;
 	}
 
-	@ObfInfo(name = "ak", desc = "(I)I")
-	public int method2929() {
-		return this.field1471;
-	}
+	@ObfInfo(name = "aq", desc = "(Lez;I)V", opaque = "1635944784")
+	public void method2777(Class130 var1) throws IOException {
+		URLConnection var3 = null;
+		boolean var10 = false;
 
-	@ObfInfo(name = "al", desc = "(I)I")
-	public int method2928() {
-		return this.field1469;
-	}
+		label124: {
+			HttpURLConnection var13;
+			label125: {
+				try {
+					var10 = true;
+					String var4 = var1.field1523.getProtocol();
+					if (var4.equals("http")) {
+						var3 = this.method2954(var1);
+					} else {
+						if (!var4.equals("https")) {
+							var1.field1522 = Class130.field1525;
+							var10 = false;
+							break label124;
+						}
 
-	@ObfInfo(name = "aj", desc = "(I)I")
-	public int method2943() {
-		return this.field1470;
-	}
+						var3 = this.method2951(var1);
+					}
 
-	@ObfInfo(name = "az", desc = "(I)I")
-	public int method2930() {
-		return this.field1472;
-	}
+					this.method2778(var3, var1);
+					var10 = false;
+					break label125;
+				} catch (IOException var11) {
+					var1.field1522 = Class130.field1525;
+					var10 = false;
+				} finally {
+					if (var10) {
+						if (var3 != null && var3 instanceof HttpURLConnection) {
+							HttpURLConnection var7 = (HttpURLConnection)var3;
+							var7.disconnect();
+						}
 
-	@ObfInfo(name = "hx", desc = "(II)V", opaque = "-1438891682")
-	public static void method2945(int var0) {
-		if (var0 != Client.field555) {
-			if (Client.field555 == 30) {
-				Client.field510.method4070();
-			}
-
-			if (0 == Client.field555) {
-				Client.field2077.method612();
-			}
-
-			if (var0 == 20 || var0 == 40 || var0 == 45 || var0 == 50) {
-				Client.method788(Class53.field363);
-				Client.field493 = 0;
-				Client.field524 = 0;
-				Client.field551.method8355(var0);
-				if (var0 != 20) {
-					Client.method6138(false);
+					}
 				}
-			}
 
-			if (var0 != 20 && var0 != 40 && Client.field4879 != null) {
-				Client.field4879.method8631();
-				Client.field4879 = null;
-			}
-
-			if (25 == Client.field555) {
-				Client.field542 = 0;
-				Client.field553 = 0;
-				Client.field554 = 1;
-				Client.field657 = 0;
-				Client.field596 = 1;
-			}
-
-			int var2;
-			if (var0 != 5 && var0 != 10) {
-				if (var0 == 20) {
-					var2 = Client.field555 == 11 ? 4 : 0;
-					Class76.method6264(Client.field1556, Client.field1793, false, var2);
-				} else if (var0 == 11) {
-					Class76.method6264(Client.field1556, Client.field1793, false, 4);
-				} else if (var0 == 50) {
-					Class76.method5778("", "Updating date of birth...", "");
-					Class76.method6264(Client.field1556, Client.field1793, false, 7);
-				} else if (var0 != 0) {
-					Class76.method3136();
+				if (var3 != null && var3 instanceof HttpURLConnection) {
+					var13 = (HttpURLConnection)var3;
+					var13.disconnect();
 				}
-			} else {
-				var2 = Client.method348() ? 0 : 12;
-				Class76.method6264(Client.field1556, Client.field1793, true, var2);
+
+				return;
 			}
 
-			Client.field555 = var0;
+			if (var3 != null && var3 instanceof HttpURLConnection) {
+				var13 = (HttpURLConnection)var3;
+				var13.disconnect();
+			}
+
+			return;
 		}
+
+		if (var3 != null && var3 instanceof HttpURLConnection) {
+			HttpURLConnection var5 = (HttpURLConnection)var3;
+			var5.disconnect();
+		}
+
 	}
 
-	@ObfInfo(name = "oa", desc = "(Lnb;I)Ljava/lang/String;", opaque = "-101011192")
-	public static String method2931(Class340 var0) {
-		if (Class344.method3653(Client.method3511(var0)) == 0) {
-			return null;
-		} else {
-			return var0.field3763 != null && var0.field3763.trim().length() != 0 ? var0.field3763 : null;
+	@ObfInfo(name = "aa", desc = "(Lez;B)Ljava/net/URLConnection;")
+	public URLConnection method2954(Class130 var1) throws IOException {
+		URLConnection var3 = var1.field1523.openConnection();
+		this.method2776(var3);
+		return var3;
+	}
+
+	@ObfInfo(name = "as", desc = "(Lez;B)Ljava/net/URLConnection;", opaque = "0")
+	public URLConnection method2951(Class130 var1) throws IOException {
+		HttpsURLConnection var3 = (HttpsURLConnection)var1.field1523.openConnection();
+		if (!this.field1437) {
+			var3.setSSLSocketFactory(Class3.method33());
 		}
+
+		this.method2776(var3);
+		return var3;
 	}
 }

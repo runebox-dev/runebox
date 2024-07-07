@@ -1,74 +1,61 @@
 import io.runebox.ObfInfo;
 
-public class Class248 extends Class506 {
-	@ObfInfo(name = "ao", desc = "Lje;")
-	public Class239 field2663;
-	@ObfInfo(name = "aa", desc = "I", intMultiplier = 215908835)
-	public int field2656;
-	@ObfInfo(name = "at", desc = "I", intMultiplier = 415648975)
-	public int field2660;
-	@ObfInfo(name = "ab", desc = "[I")
-	public int[] field2661;
-	@ObfInfo(name = "ac", desc = "[[I")
-	public int[][] field2662;
-
-	public Class248(int var1, byte[] var2) {
-		this.field2656 = var1;
-		Class521 var3 = new Class521(var2);
-		this.field2660 = var3.method9405();
-		this.field2661 = new int[this.field2660];
-		this.field2662 = new int[this.field2660][];
-
-		int var4;
-		for (var4 = 0; var4 < this.field2660; ++var4) {
-			this.field2661[var4] = var3.method9405();
+@ObfInfo(name = "jn")
+public class Class248 extends Class245 {
+	@ObfInfo(name = "aq", desc = "(Lvp;B)V", opaque = "5")
+	public void method4832(Class562 var1) {
+		int var3 = var1.method9902();
+		if (var3 != Class265.field2731.field2728) {
+			throw new IllegalStateException("");
+		} else {
+			super.field2570 = var1.method9902();
+			super.field2578 = var1.method9902();
+			super.field2580 = var1.method9997();
+			super.field2572 = var1.method9997();
+			super.field2568 = var1.method9997();
+			super.field2569 = var1.method9997();
+			super.field2581 = var1.method9871();
+			super.field2573 = var1.method9871();
 		}
+	}
 
-		for (var4 = 0; var4 < this.field2660; ++var4) {
-			this.field2662[var4] = new int[var3.method9405()];
-		}
+	@ObfInfo(name = "ad", desc = "(Lvp;B)V", opaque = "-1")
+	public void method4699(Class562 var1) {
+		super.field2578 = Math.min(super.field2578, 4);
+		super.field2571 = new short[1][64][64];
+		super.field2575 = new short[super.field2578][64][64];
+		super.field2576 = new byte[super.field2578][64][64];
+		super.field2577 = new byte[super.field2578][64][64];
+		super.field2566 = new Class259[super.field2578][64][64][];
+		int var3 = var1.method9902();
+		if (Class267.field2745.field2742 != var3) {
+			throw new IllegalStateException("");
+		} else {
+			int var4 = var1.method9902();
+			int var5 = var1.method9902();
+			if (var4 == super.field2568 && super.field2569 == var5) {
+				for (int var6 = 0; var6 < 64; ++var6) {
+					for (int var7 = 0; var7 < 64; ++var7) {
+						this.method4696(var6, var7, var1);
+					}
+				}
 
-		for (var4 = 0; var4 < this.field2660; ++var4) {
-			for (int var5 = 0; var5 < this.field2662[var4].length; ++var5) {
-				this.field2662[var4][var5] = var3.method9405();
+			} else {
+				throw new IllegalStateException("");
 			}
 		}
+	}
 
-		if (var3.field5219 < var3.field5221.length) {
-			var4 = var3.method9407();
-			if (var4 > 0) {
-				this.field2663 = new Class239(var3, var4);
-			}
+	public boolean equals(Object var1) {
+		if (!(var1 instanceof Class248)) {
+			return false;
+		} else {
+			Class248 var2 = (Class248)var1;
+			return super.field2568 == var2.field2568 && var2.field2569 == super.field2569;
 		}
-
 	}
 
-	@ObfInfo(name = "ak", desc = "(I)I")
-	public int method4763() {
-		return this.field2660;
-	}
-
-	@ObfInfo(name = "al", desc = "(I)Lje;")
-	public Class239 method4761() {
-		return this.field2663;
-	}
-
-	@ObfInfo(name = "aa", desc = "(II)I")
-	public static int method4765(int var0) {
-		--var0;
-		var0 |= var0 >>> 1;
-		var0 |= var0 >>> 2;
-		var0 |= var0 >>> 4;
-		var0 |= var0 >>> 8;
-		var0 |= var0 >>> 16;
-		return var0 + 1;
-	}
-
-	@ObfInfo(name = "ae", desc = "(I)V")
-	public static void method4766() {
-		Class222.field2239.method5995();
-		Class222.field2276.method5995();
-		Class222.field2241.method5995();
-		Class222.field2242.method5995();
+	public int hashCode() {
+		return super.field2568 | super.field2569 << 8;
 	}
 }

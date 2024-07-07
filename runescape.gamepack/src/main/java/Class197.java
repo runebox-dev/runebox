@@ -1,434 +1,729 @@
 import io.runebox.ObfInfo;
 
-public class Class197 extends Class507 {
-	@ObfInfo(name = "az", desc = "Llm;")
-	public static Class299 field2013;
-	@ObfInfo(name = "av", desc = "Z")
-	public boolean field2014;
-	@ObfInfo(name = "af", desc = "I", intMultiplier = -1514514101)
-	public int field2023;
-	@ObfInfo(name = "aa", desc = "[I")
-	public int[] field2015;
-	@ObfInfo(name = "ah", desc = "[I")
-	public int[] field2022;
-	@ObfInfo(name = "at", desc = "[S")
-	public short[] field2016;
-	@ObfInfo(name = "ab", desc = "[S")
-	public short[] field2017;
+@ObfInfo(name = "ho")
+public class Class197 extends Class516 {
+	@ObfInfo(name = "av", desc = "[Lkr;")
+	public static Class278[] field2131;
+	@ObfInfo(name = "ap", desc = "Lmo;")
+	public static Class327 field2128;
+	@ObfInfo(name = "an", desc = "Lmo;")
+	public static Class327 field2129;
+	@ObfInfo(name = "ak", desc = "Lmo;")
+	public static Class327 field2142;
+	@ObfInfo(name = "aj", desc = "Lmo;")
+	public static Class327 field2163;
+	@ObfInfo(name = "aq", desc = "Z")
+	public static boolean field2157;
+	@ObfInfo(name = "cv", desc = "Lth;")
+	public Class502 field2150;
+	@ObfInfo(name = "af", desc = "Z")
+	public boolean field2133;
+	@ObfInfo(name = "bw", desc = "Z")
+	public boolean field2134;
+	@ObfInfo(name = "aa", desc = "Z")
+	public boolean field2143;
+	@ObfInfo(name = "at", desc = "Z")
+	public boolean field2146;
+	@ObfInfo(name = "bi", desc = "Z")
+	public boolean field2152;
+	@ObfInfo(name = "ba", desc = "Z")
+	public boolean field2156;
+	@ObfInfo(name = "bf", desc = "Z")
+	public boolean field2160;
+	@ObfInfo(name = "bl", desc = "Z")
+	public boolean field2164;
+	@ObfInfo(name = "cf", desc = "Z")
+	public boolean field2176;
+	@ObfInfo(name = "bj", desc = "I", intMultiplier = -984713745)
+	public int field2124;
+	@ObfInfo(name = "ao", desc = "I", intMultiplier = -1991980265)
+	public int field2126;
+	@ObfInfo(name = "bo", desc = "I", intMultiplier = -1499221133)
+	public int field2130;
+	@ObfInfo(name = "ab", desc = "I", intMultiplier = 1778792619)
+	public int field2132;
+	@ObfInfo(name = "bu", desc = "I", intMultiplier = 1981686791)
+	public int field2138;
+	@ObfInfo(name = "al", desc = "I", intMultiplier = 1939931417)
+	public int field2140;
+	@ObfInfo(name = "ay", desc = "I", intMultiplier = -1608175373)
+	public int field2141;
+	@ObfInfo(name = "as", desc = "I", intMultiplier = 1219976399)
+	public int field2144;
+	@ObfInfo(name = "aw", desc = "I", intMultiplier = 1975017005)
+	public int field2145;
+	@ObfInfo(name = "bt", desc = "I", intMultiplier = 162663989)
+	public int field2147;
+	@ObfInfo(name = "am", desc = "I", intMultiplier = -1386147655)
+	public int field2148;
+	@ObfInfo(name = "ar", desc = "I", intMultiplier = 90758133)
+	public int field2149;
+	@ObfInfo(name = "bm", desc = "I", intMultiplier = 1446305355)
+	public int field2153;
+	@ObfInfo(name = "bn", desc = "I", intMultiplier = -808370635)
+	public int field2154;
+	@ObfInfo(name = "bx", desc = "I", intMultiplier = 1696671669)
+	public int field2155;
+	@ObfInfo(name = "bs", desc = "I", intMultiplier = 1434702943)
+	public int field2158;
+	@ObfInfo(name = "bp", desc = "I", intMultiplier = 765533771)
+	public int field2159;
+	@ObfInfo(name = "bb", desc = "I", intMultiplier = -437553519)
+	public int field2161;
+	@ObfInfo(name = "by", desc = "I", intMultiplier = -1338309999)
+	public int field2162;
+	@ObfInfo(name = "bc", desc = "I", intMultiplier = -114673113)
+	public int field2165;
+	@ObfInfo(name = "bh", desc = "I", intMultiplier = 328856131)
+	public int field2169;
+	@ObfInfo(name = "bq", desc = "I", intMultiplier = -530920875)
+	public int field2170;
+	@ObfInfo(name = "bd", desc = "I", intMultiplier = 984082845)
+	public int field2171;
+	@ObfInfo(name = "bz", desc = "I", intMultiplier = -2017268985)
+	public int field2172;
+	@ObfInfo(name = "bk", desc = "I", intMultiplier = 269635639)
+	public int field2173;
+	@ObfInfo(name = "bg", desc = "I", intMultiplier = -1454400289)
+	public int field2177;
+	@ObfInfo(name = "ai", desc = "[I")
+	public int[] field2127;
+	@ObfInfo(name = "bv", desc = "[I")
+	public int[] field2166;
+	@ObfInfo(name = "ae", desc = "[I")
+	public int[] field2167;
+	@ObfInfo(name = "br", desc = "[I")
+	public int[] field2174;
+	@ObfInfo(name = "au", desc = "Ljava/lang/String;")
+	public String field2175;
+	@ObfInfo(name = "be", desc = "[Ljava/lang/String;")
+	public String[] field2168;
+	@ObfInfo(name = "ax", desc = "[S")
+	public short[] field2135;
+	@ObfInfo(name = "ah", desc = "[S")
+	public short[] field2136;
+	@ObfInfo(name = "az", desc = "[S")
+	public short[] field2137;
 	@ObfInfo(name = "ac", desc = "[S")
-	public short[] field2018;
-	@ObfInfo(name = "ao", desc = "[S")
-	public short[] field2019;
+	public short[] field2151;
 
 	static {
-		field2013 = new Class299(64);
+		field2157 = false;
+		field2142 = new Class327(4096);
+		field2128 = new Class327(500);
+		field2129 = new Class327(30);
+		field2163 = new Class327(30);
+		field2131 = new Class278[4];
 	}
 
 	public Class197() {
-		this.field2023 = -1;
-		this.field2022 = new int[]{-1, -1, -1, -1, -1};
-		this.field2014 = false;
+		this.field2175 = Class367.field4306;
+		this.field2140 = 1;
+		this.field2141 = 1;
+		this.field2126 = 2;
+		this.field2143 = true;
+		this.field2144 = -1;
+		this.field2145 = -1;
+		this.field2146 = false;
+		this.field2133 = false;
+		this.field2148 = -1;
+		this.field2149 = 16;
+		this.field2147 = 0;
+		this.field2124 = 0;
+		this.field2168 = new String[5];
+		this.field2153 = -1;
+		this.field2130 = -1;
+		this.field2152 = false;
+		this.field2156 = true;
+		this.field2177 = 128;
+		this.field2158 = 128;
+		this.field2159 = 128;
+		this.field2155 = 0;
+		this.field2138 = 0;
+		this.field2162 = 0;
+		this.field2134 = false;
+		this.field2164 = false;
+		this.field2165 = -1;
+		this.field2161 = -1;
+		this.field2154 = -1;
+		this.field2169 = -1;
+		this.field2170 = 0;
+		this.field2171 = 0;
+		this.field2172 = 0;
+		this.field2173 = 0;
+		this.field2160 = true;
+		this.field2176 = false;
 	}
 
-	@ObfInfo(name = "al", desc = "(Lua;I)V")
-	public void method3845(Class521 var1) {
+	@ObfInfo(name = "ad", desc = "(I)V", opaque = "106774653")
+	public void method3926() {
+		if (-1 == this.field2144) {
+			this.field2144 = 0;
+			if (this.field2127 != null && (this.field2167 == null || 10 == this.field2167[0])) {
+				this.field2144 = 1;
+			}
+
+			for (int var2 = 0; var2 < 5; ++var2) {
+				if (null != this.field2168[var2]) {
+					this.field2144 = 1;
+				}
+			}
+		}
+
+		if (-1 == this.field2165) {
+			this.field2165 = 0 != this.field2126 ? 1 : 0;
+		}
+
+	}
+
+	@ObfInfo(name = "ag", desc = "(Lvp;I)V", opaque = "-584635196")
+	public void method3898(Class562 var1) {
 		while (true) {
-			int var3 = var1.method9405();
+			int var3 = var1.method9902();
 			if (var3 == 0) {
 				return;
 			}
 
-			this.method3855(var1, var3);
+			this.method3928(var1, var3);
 		}
 	}
 
-	@ObfInfo(name = "aj", desc = "(Lua;II)V", opaque = "-266758959")
-	public void method3855(Class521 var1, int var2) {
+	@ObfInfo(name = "ak", desc = "(Lvp;II)V", opaque = "2127787697")
+	public void method3928(Class562 var1, int var2) {
+		int var4;
+		int var5;
 		if (var2 == 1) {
-			this.field2023 = var1.method9405();
-		} else {
-			int var4;
-			int var5;
-			if (var2 == 2) {
-				var4 = var1.method9405();
-				this.field2015 = new int[var4];
+			var4 = var1.method9902();
+			if (var4 > 0) {
+				if (this.field2127 != null && !field2157) {
+					var1.field5471 += var4 * 3;
+				} else {
+					this.field2167 = new int[var4];
+					this.field2127 = new int[var4];
 
-				for (var5 = 0; var5 < var4; ++var5) {
-					this.field2015[var5] = var1.method9407();
+					for (var5 = 0; var5 < var4; ++var5) {
+						this.field2127[var5] = var1.method9997();
+						this.field2167[var5] = var1.method9902();
+					}
 				}
-			} else if (var2 == 3) {
-				this.field2014 = true;
-			} else if (var2 == 40) {
-				var4 = var1.method9405();
-				this.field2016 = new short[var4];
-				this.field2017 = new short[var4];
-
-				for (var5 = 0; var5 < var4; ++var5) {
-					this.field2016[var5] = (short)var1.method9407();
-					this.field2017[var5] = (short)var1.method9407();
-				}
-			} else if (var2 == 41) {
-				var4 = var1.method9405();
-				this.field2018 = new short[var4];
-				this.field2019 = new short[var4];
-
-				for (var5 = 0; var5 < var4; ++var5) {
-					this.field2018[var5] = (short)var1.method9407();
-					this.field2019[var5] = (short)var1.method9407();
-				}
-			} else if (var2 >= 60 && var2 < 70) {
-				this.field2022[var2 - 60] = var1.method9407();
 			}
+		} else if (var2 == 2) {
+			this.field2175 = var1.method9837();
+		} else if (var2 == 5) {
+			var4 = var1.method9902();
+			if (var4 > 0) {
+				if (this.field2127 != null && !field2157) {
+					var1.field5471 += var4 * 2;
+				} else {
+					this.field2167 = null;
+					this.field2127 = new int[var4];
+
+					for (var5 = 0; var5 < var4; ++var5) {
+						this.field2127[var5] = var1.method9997();
+					}
+				}
+			}
+		} else if (var2 == 14) {
+			this.field2140 = var1.method9902();
+		} else if (var2 == 15) {
+			this.field2141 = var1.method9902();
+		} else if (var2 == 17) {
+			this.field2126 = 0;
+			this.field2143 = false;
+		} else if (var2 == 18) {
+			this.field2143 = false;
+		} else if (var2 == 19) {
+			this.field2144 = var1.method9902();
+		} else if (var2 == 21) {
+			this.field2145 = 0;
+		} else if (var2 == 22) {
+			this.field2146 = true;
+		} else if (var2 == 23) {
+			this.field2133 = true;
+		} else if (var2 == 24) {
+			this.field2148 = var1.method9997();
+			if (65535 == this.field2148) {
+				this.field2148 = -1;
+			}
+		} else if (var2 == 27) {
+			this.field2126 = 1;
+		} else if (var2 == 28) {
+			this.field2149 = var1.method9902();
+		} else if (var2 == 29) {
+			this.field2147 = var1.method9955();
+		} else if (var2 == 39) {
+			this.field2124 = var1.method9955() * 25;
+		} else if (var2 >= 30 && var2 < 35) {
+			this.field2168[var2 - 30] = var1.method9837();
+			if (this.field2168[var2 - 30].equalsIgnoreCase(Class367.field4300)) {
+				this.field2168[var2 - 30] = null;
+			}
+		} else if (var2 == 40) {
+			var4 = var1.method9902();
+			this.field2136 = new short[var4];
+			this.field2137 = new short[var4];
+
+			for (var5 = 0; var5 < var4; ++var5) {
+				this.field2136[var5] = (short)var1.method9997();
+				this.field2137[var5] = (short)var1.method9997();
+			}
+		} else if (var2 == 41) {
+			var4 = var1.method9902();
+			this.field2135 = new short[var4];
+			this.field2151 = new short[var4];
+
+			for (var5 = 0; var5 < var4; ++var5) {
+				this.field2135[var5] = (short)var1.method9997();
+				this.field2151[var5] = (short)var1.method9997();
+			}
+		} else if (var2 == 61) {
+			var1.method9997();
+		} else if (var2 == 62) {
+			this.field2152 = true;
+		} else if (var2 == 64) {
+			this.field2156 = false;
+		} else if (var2 == 65) {
+			this.field2177 = var1.method9997();
+		} else if (var2 == 66) {
+			this.field2158 = var1.method9997();
+		} else if (var2 == 67) {
+			this.field2159 = var1.method9997();
+		} else if (var2 == 68) {
+			this.field2130 = var1.method9997();
+		} else if (var2 == 69) {
+			var1.method9902();
+		} else if (var2 == 70) {
+			this.field2155 = var1.method9829();
+		} else if (var2 == 71) {
+			this.field2138 = var1.method9829();
+		} else if (var2 == 72) {
+			this.field2162 = var1.method9829();
+		} else if (var2 == 73) {
+			this.field2134 = true;
+		} else if (var2 == 74) {
+			this.field2164 = true;
+		} else if (var2 == 75) {
+			this.field2165 = var1.method9902();
+		} else if (var2 != 77 && var2 != 92) {
+			if (var2 == 78) {
+				this.field2169 = var1.method9997();
+				this.field2170 = var1.method9902();
+				this.field2171 = var1.method9902();
+			} else if (var2 == 79) {
+				this.field2172 = var1.method9997();
+				this.field2173 = var1.method9997();
+				this.field2170 = var1.method9902();
+				this.field2171 = var1.method9902();
+				var4 = var1.method9902();
+				this.field2174 = new int[var4];
+
+				for (var5 = 0; var5 < var4; ++var5) {
+					this.field2174[var5] = var1.method9997();
+				}
+			} else if (var2 == 81) {
+				var1.method9902();
+			} else if (var2 == 82) {
+				this.field2153 = var1.method9997();
+			} else if (var2 == 89) {
+				this.field2160 = false;
+			} else if (var2 == 90) {
+				this.field2176 = true;
+			} else if (var2 == 249) {
+				this.field2150 = Class113.method2910(var1, this.field2150);
+			}
+		} else {
+			this.field2161 = var1.method9997();
+			if (this.field2161 == 65535) {
+				this.field2161 = -1;
+			}
+
+			this.field2154 = var1.method9997();
+			if (65535 == this.field2154) {
+				this.field2154 = -1;
+			}
+
+			var4 = -1;
+			if (var2 == 92) {
+				var4 = var1.method9997();
+				if (var4 == 65535) {
+					var4 = -1;
+				}
+			}
+
+			var5 = var1.method9902();
+			this.field2166 = new int[var5 + 2];
+
+			for (int var6 = 0; var6 <= var5; ++var6) {
+				this.field2166[var6] = var1.method9997();
+				if (65535 == this.field2166[var6]) {
+					this.field2166[var6] = -1;
+				}
+			}
+
+			this.field2166[var5 + 1] = var4;
 		}
 
 	}
 
-	@ObfInfo(name = "az", desc = "(B)Z", opaque = "3")
-	public boolean method3847() {
-		if (this.field2015 == null) {
+	@ObfInfo(name = "ap", desc = "(II)Z", opaque = "-1728200290")
+	public final boolean method3900(int var1) {
+		if (this.field2167 != null) {
+			for (int var5 = 0; var5 < this.field2167.length; ++var5) {
+				if (this.field2167[var5] == var1) {
+					return Client.field2139.method7134(this.field2127[var5] & 65535, 0);
+				}
+			}
+
+			return true;
+		} else if (this.field2127 == null) {
+			return true;
+		} else if (var1 != 10) {
+			return true;
+		} else {
+			boolean var3 = true;
+
+			for (int var4 = 0; var4 < this.field2127.length; ++var4) {
+				var3 &= Client.field2139.method7134(this.field2127[var4] & 65535, 0);
+			}
+
+			return var3;
+		}
+	}
+
+	@ObfInfo(name = "an", desc = "(B)Z", opaque = "23")
+	public final boolean method3901() {
+		if (this.field2127 == null) {
 			return true;
 		} else {
 			boolean var2 = true;
 
-			for (int var3 = 0; var3 < this.field2015.length; ++var3) {
-				if (!Client.field1802.method7232(this.field2015[var3], 0)) {
-					var2 = false;
-				}
+			for (int var3 = 0; var3 < this.field2127.length; ++var3) {
+				var2 &= Client.field2139.method7134(this.field2127[var3] & 65535, 0);
 			}
 
 			return var2;
 		}
 	}
 
-	@ObfInfo(name = "af", desc = "(I)Ljb;", opaque = "1605515774")
-	public Class236 method3848() {
-		if (this.field2015 == null) {
-			return null;
+	@ObfInfo(name = "aj", desc = "(II[[IIIIB)Lkt;", opaque = "112")
+	public final Class280 method3902(int var1, int var2, int[][] var3, int var4, int var5, int var6) {
+		long var8;
+		if (this.field2167 == null) {
+			var8 = (long)((this.field2132 << 10) + var2);
 		} else {
-			Class236[] var2 = new Class236[this.field2015.length];
+			var8 = (long)(var2 + (var1 << 3) + (this.field2132 << 10));
+		}
 
-			for (int var3 = 0; var3 < this.field2015.length; ++var3) {
-				var2[var3] = Class236.method4594(Client.field1802, this.field2015[var3], 0);
+		Object var10 = (Class280)field2129.method6327(var8);
+		if (var10 == null) {
+			Class278 var11 = this.method3938(var1, var2);
+			if (var11 == null) {
+				return null;
 			}
 
-			Class236 var5;
-			if (var2.length == 1) {
-				var5 = var2[0];
+			if (!this.field2146) {
+				var10 = var11.method5517(64 + this.field2147, 768 + this.field2124, -50, -10, -50);
 			} else {
-				var5 = new Class236(var2, var2.length);
+				var11.field2942 = (short)(64 + this.field2147);
+				var11.field2943 = (short)(768 + this.field2124);
+				var11.method5521();
+				var10 = var11;
 			}
 
-			int var4;
-			if (this.field2016 != null) {
-				for (var4 = 0; var4 < this.field2016.length; ++var4) {
-					var5.method4573(this.field2016[var4], this.field2017[var4]);
+			field2129.method6330((Class516)var10, var8);
+		}
+
+		if (this.field2146) {
+			var10 = ((Class278)var10).method5509();
+		}
+
+		if (this.field2145 >= 0) {
+			if (var10 instanceof Class308) {
+				var10 = ((Class308)var10).method5860(var3, var4, var5, var6, true, this.field2145);
+			} else if (var10 instanceof Class278) {
+				var10 = ((Class278)var10).method5510(var3, var4, var5, var6, true, this.field2145);
+			}
+		}
+
+		return (Class280)var10;
+	}
+
+	@ObfInfo(name = "av", desc = "(II[[IIIII)Llv;", opaque = "556036916")
+	public final Class308 method3945(int var1, int var2, int[][] var3, int var4, int var5, int var6) {
+		long var8;
+		if (this.field2167 == null) {
+			var8 = (long)((this.field2132 << 10) + var2);
+		} else {
+			var8 = (long)(var2 + (var1 << 3) + (this.field2132 << 10));
+		}
+
+		Class308 var10 = (Class308)field2163.method6327(var8);
+		if (var10 == null) {
+			Class278 var11 = this.method3938(var1, var2);
+			if (var11 == null) {
+				return null;
+			}
+
+			var10 = var11.method5517(64 + this.field2147, this.field2124 + 768, -50, -10, -50);
+			field2163.method6330(var10, var8);
+		}
+
+		if (this.field2145 >= 0) {
+			var10 = var10.method5860(var3, var4, var5, var6, true, this.field2145);
+		}
+
+		return var10;
+	}
+
+	@ObfInfo(name = "ab", desc = "(II[[IIIILii;IB)Llv;", opaque = "4")
+	public final Class308 method3904(int var1, int var2, int[][] var3, int var4, int var5, int var6, Class217 var7, int var8) {
+		long var10;
+		if (this.field2167 == null) {
+			var10 = (long)((this.field2132 << 10) + var2);
+		} else {
+			var10 = (long)((var1 << 3) + (this.field2132 << 10) + var2);
+		}
+
+		Class308 var12 = (Class308)field2163.method6327(var10);
+		if (var12 == null) {
+			Class278 var13 = this.method3938(var1, var2);
+			if (var13 == null) {
+				return null;
+			}
+
+			var12 = var13.method5517(this.field2147 + 64, this.field2124 + 768, -50, -10, -50);
+			field2163.method6330(var12, var10);
+		}
+
+		if (var7 == null && -1 == this.field2145) {
+			return var12;
+		} else {
+			if (var7 != null) {
+				var12 = var7.method4136(var12, var8, var2);
+			} else {
+				var12 = var12.method5933(true);
+			}
+
+			if (this.field2145 >= 0) {
+				var12 = var12.method5860(var3, var4, var5, var6, false, this.field2145);
+			}
+
+			return var12;
+		}
+	}
+
+	@ObfInfo(name = "ai", desc = "(III)Lkr;", opaque = "-172298183")
+	public final Class278 method3938(int var1, int var2) {
+		Class278 var4 = null;
+		boolean var5;
+		int var6;
+		int var8;
+		if (this.field2167 == null) {
+			if (var1 != 10) {
+				return null;
+			}
+
+			if (this.field2127 == null) {
+				return null;
+			}
+
+			var5 = this.field2152;
+			if (var1 == 2 && var2 > 3) {
+				var5 = !var5;
+			}
+
+			var6 = this.field2127.length;
+
+			for (int var7 = 0; var7 < var6; ++var7) {
+				var8 = this.field2127[var7];
+				if (var5) {
+					var8 += 65536;
+				}
+
+				var4 = (Class278)field2128.method6327((long)var8);
+				if (var4 == null) {
+					var4 = Class278.method5522(Client.field2139, var8 & 65535, 0);
+					if (var4 == null) {
+						return null;
+					}
+
+					if (var5) {
+						var4.method5519();
+					}
+
+					field2128.method6330(var4, (long)var8);
+				}
+
+				if (var6 > 1) {
+					field2131[var7] = var4;
 				}
 			}
 
-			if (this.field2018 != null) {
-				for (var4 = 0; var4 < this.field2018.length; ++var4) {
-					var5.method4600(this.field2018[var4], this.field2019[var4]);
+			if (var6 > 1) {
+				var4 = new Class278(field2131, var6);
+			}
+		} else {
+			int var9 = -1;
+
+			for (var6 = 0; var6 < this.field2167.length; ++var6) {
+				if (this.field2167[var6] == var1) {
+					var9 = var6;
+					break;
 				}
 			}
 
-			return var5;
+			if (var9 == -1) {
+				return null;
+			}
+
+			var6 = this.field2127[var9];
+			boolean var10 = this.field2152 ^ var2 > 3;
+			if (var10) {
+				var6 += 65536;
+			}
+
+			var4 = (Class278)field2128.method6327((long)var6);
+			if (var4 == null) {
+				var4 = Class278.method5522(Client.field2139, var6 & 65535, 0);
+				if (var4 == null) {
+					return null;
+				}
+
+				if (var10) {
+					var4.method5519();
+				}
+
+				field2128.method6330(var4, (long)var6);
+			}
+		}
+
+		if (this.field2177 == 128 && this.field2158 == 128 && this.field2159 == 128) {
+			var5 = false;
+		} else {
+			var5 = true;
+		}
+
+		boolean var11;
+		if (0 == this.field2155 && this.field2138 == 0 && 0 == this.field2162) {
+			var11 = false;
+		} else {
+			var11 = true;
+		}
+
+		Class278 var12 = new Class278(var4, var2 == 0 && !var5 && !var11, this.field2136 == null, this.field2135 == null, true);
+		if (var1 == 4 && var2 > 3) {
+			var12.method5515(256);
+			var12.method5544(45, 0, -45);
+		}
+
+		var2 &= 3;
+		if (var2 == 1) {
+			var12.method5512();
+		} else if (var2 == 2) {
+			var12.method5507();
+		} else if (var2 == 3) {
+			var12.method5514();
+		}
+
+		if (this.field2136 != null) {
+			for (var8 = 0; var8 < this.field2136.length; ++var8) {
+				var12.method5567(this.field2136[var8], this.field2137[var8]);
+			}
+		}
+
+		if (this.field2135 != null) {
+			for (var8 = 0; var8 < this.field2135.length; ++var8) {
+				var12.method5576(this.field2135[var8], this.field2151[var8]);
+			}
+		}
+
+		if (var5) {
+			var12.method5513(this.field2177, this.field2158, this.field2159);
+		}
+
+		if (var11) {
+			var12.method5544(this.field2155, this.field2138, this.field2162);
+		}
+
+		return var12;
+	}
+
+	@ObfInfo(name = "ae", desc = "(I)Lho;", opaque = "1767325763")
+	public final Class197 method3905() {
+		int var2 = -1;
+		if (-1 != this.field2161) {
+			var2 = Class353.method3359(this.field2161);
+		} else if (this.field2154 != -1) {
+			var2 = Class353.field3769[this.field2154];
+		}
+
+		int var3;
+		if (var2 >= 0 && var2 < this.field2166.length - 1) {
+			var3 = this.field2166[var2];
+		} else {
+			var3 = this.field2166[this.field2166.length - 1];
+		}
+
+		return var3 != -1 ? method61(var3) : null;
+	}
+
+	@ObfInfo(name = "au", desc = "(III)I")
+	public int method3941(int var1, int var2) {
+		return Class208.method4938(this.field2150, var1, var2);
+	}
+
+	@ObfInfo(name = "ah", desc = "(ILjava/lang/String;I)Ljava/lang/String;")
+	public String method3907(int var1, String var2) {
+		return Class208.method2917(this.field2150, var1, var2);
+	}
+
+	@ObfInfo(name = "ax", desc = "(I)Z", opaque = "-1289302290")
+	public boolean method3908() {
+		if (this.field2166 == null) {
+			return this.field2169 != -1 || this.field2174 != null;
+		} else {
+			for (int var2 = 0; var2 < this.field2166.length; ++var2) {
+				if (this.field2166[var2] != -1) {
+					Class197 var3 = method61(this.field2166[var2]);
+					if (var3.field2169 != -1 || var3.field2174 != null) {
+						return true;
+					}
+				}
+			}
+
+			return false;
 		}
 	}
 
-	@ObfInfo(name = "aa", desc = "(I)Z", opaque = "2026407683")
-	public boolean method3846() {
-		boolean var2 = true;
-
-		for (int var3 = 0; var3 < 5; ++var3) {
-			if (this.field2022[var3] != -1 && !Client.field1802.method7232(this.field2022[var3], 0)) {
-				var2 = false;
-			}
-		}
-
-		return var2;
-	}
-
-	@ObfInfo(name = "at", desc = "(I)Ljb;", opaque = "-938751037")
-	public Class236 method3850() {
-		Class236[] var2 = new Class236[5];
-		int var3 = 0;
-
-		for (int var4 = 0; var4 < 5; ++var4) {
-			if (this.field2022[var4] != -1) {
-				var2[var3++] = Class236.method4594(Client.field1802, this.field2022[var4], 0);
-			}
-		}
-
-		Class236 var6 = new Class236(var2, var3);
-		int var5;
-		if (this.field2016 != null) {
-			for (var5 = 0; var5 < this.field2016.length; ++var5) {
-				var6.method4573(this.field2016[var5], this.field2017[var5]);
-			}
-		}
-
-		if (this.field2018 != null) {
-			for (var5 = 0; var5 < this.field2018.length; ++var5) {
-				var6.method4600(this.field2018[var5], this.field2019[var5]);
-			}
-		}
-
-		return var6;
-	}
-
-	@ObfInfo(owner = "fa", name = "ak", desc = "(IB)Lho;", opaque = "-33")
-	public static Class197 method3060(int var0) {
-		Class197 var2 = (Class197)field2013.method5993((long)var0);
+	@ObfInfo(owner = "ae", name = "aq", desc = "(II)Lho;", opaque = "1957697738")
+	public static Class197 method61(int var0) {
+		Class197 var2 = (Class197)field2142.method6327((long)var0);
 		if (var2 != null) {
 			return var2;
-		} else if (Client.field2012 == null) {
-			return null;
 		} else {
-			byte[] var3 = Client.field2012.method7216(3, var0);
+			byte[] var3 = Client.field2125.method7132(6, var0);
 			var2 = new Class197();
+			var2.field2132 = var0;
 			if (var3 != null) {
-				var2.method3845(new Class521(var3));
+				var2.method3898(new Class562(var3));
 			}
 
-			field2013.method5987(var2, (long)var0);
+			var2.method3926();
+			if (var2.field2164) {
+				var2.field2126 = 0;
+				var2.field2143 = false;
+			}
+
+			field2142.method6330(var2, (long)var0);
 			return var2;
 		}
 	}
 
-	@ObfInfo(name = "kw", desc = "(Lmn;I)V", opaque = "-386968604")
-	public static void method3871(Class326 var0) {
-		Class531 var2 = Client.field548.field1447;
-		int var4;
-		int var5;
-		int var7;
-		int var8;
-		int var9;
-		int var10;
-		int var11;
-		int var20;
-		int var21;
-		if (Class326.field3427 == var0) {
-			var20 = var2.method9437();
-			var4 = (var20 >> 4 & 7) + Client.field121;
-			var5 = Client.field3436 + (var20 & 7);
-			var21 = var2.method9522() & 31;
-			var7 = var2.method9405();
-			var8 = var2.method9437();
-			var9 = var2.method9522();
-			var10 = var2.method9445();
-			if (var4 >= 0 && var5 >= 0 && var4 < Client.field4582.field1298 && var5 < Client.field4582.field1282) {
-				var11 = var21 + 1;
-				if (Client.field107.field1080[0] >= var4 - var11 && Client.field107.field1080[0] <= var11 + var4 && Client.field107.field1127[0] >= var5 - var11 && Client.field107.field1127[0] <= var11 + var5 && Client.field4851.method2657() != 0 && var9 > 0 && Client.field650 < 50) {
-					Client.field739[Client.field650] = var10;
-					Client.field744[Client.field650] = null;
-					Client.field511[Client.field650] = var21 + (var4 << 16) + (var5 << 8);
-					Client.field563[Client.field650] = var9;
-					Client.field741[Client.field650] = var8;
-					Client.field743[Client.field650] = var7;
-					++Client.field650;
-				}
-			}
-
-		} else {
-			int var13;
-			int var14;
-			int var15;
-			int var16;
-			if (Class326.field3425 == var0) {
-				byte var3 = var2.method9439();
-				var4 = var2.method9446();
-				var5 = var2.method9446();
-				byte var6 = var2.method9440();
-				var7 = var2.method9446();
-				var8 = var2.method9405();
-				var9 = var8 >> 2;
-				var10 = var8 & 3;
-				var11 = Client.field562[var9];
-				byte var12 = var2.method9574();
-				var13 = var2.method9522();
-				var14 = (var13 >> 4 & 7) + Client.field121;
-				var15 = (var13 & 7) + Client.field3436;
-				var16 = var2.method9505();
-				byte var17 = var2.method9439();
-				Class83 var18;
-				if (var16 == Client.field646) {
-					var18 = Client.field107;
-				} else {
-					var18 = Client.field4582.field1293[var16];
-				}
-
-				if (var18 != null) {
-					int var19 = -1 == Client.field711 ? Client.field4582.field1300 : Client.field711;
-					Class154.method3300(var19, var14, var15, var9, var10, var11, var4, var7, var5, var6, var12, var3, var17, var18);
-				}
-			}
-
-			int var27;
-			if (Class326.field3418 == var0) {
-				var20 = var2.method9405();
-				var4 = var2.method9522();
-				var5 = (var4 >> 4 & 7) + Client.field121;
-				var21 = Client.field3436 + (var4 & 7);
-				var7 = var2.method9522();
-				var8 = var7 >> 2;
-				var9 = var7 & 3;
-				var10 = Client.field562[var8];
-				var11 = var2.method9446();
-				if (var5 >= 0 && var21 >= 0 && var5 < Client.field4582.field1298 && var21 < Client.field4582.field1282) {
-					var27 = Client.field711 == -1 ? Client.field4582.field1300 : Client.field711;
-					Client.method3582(Client.field4582, var27, var5, var21, var10, var11, var8, var9, var20, 0, -1);
-				}
-
-			} else if (Class326.field3421 == var0) {
-				var20 = var2.method9407();
-				var4 = var2.method9522();
-				var5 = (var4 >> 4 & 7) + Client.field121;
-				var21 = Client.field3436 + (var4 & 7);
-				var7 = var2.method9437();
-				var8 = var7 >> 2;
-				var9 = var7 & 3;
-				var10 = Client.field562[var8];
-				if (var5 >= 0 && var21 >= 0 && var5 < 103 && var21 < 103) {
-					var11 = Client.field711 == -1 ? Client.field4582.field1300 : Client.field711;
-					Class89 var28 = Client.method3404(Client.field4582, var11, var5, var21, var10);
-					if (var28 != null) {
-						Class222 var29 = Class222.method4161(var28.field1188);
-						if (var29.field2277) {
-							var28.field1185 = var20;
-							return;
-						}
-					}
-
-					boolean var30 = Class65.method1805(var11, var5, var21, var8, var9, var10, var20);
-					if (var30) {
-						return;
-					}
-
-					if (var28 != null) {
-						var28.field1185 = var20;
-					}
-				}
-
-			} else if (Class326.field3422 == var0) {
-				var20 = var2.method9445();
-				var4 = var2.method9407();
-				var5 = var2.method9455();
-				var21 = var2.method9438();
-				var7 = var2.method9438() * 4;
-				byte var23 = var2.method9440();
-				var9 = var2.method9455();
-				var10 = var2.method9437();
-				var11 = Client.field121 + (var10 >> 4 & 7);
-				var27 = (var10 & 7) + Client.field3436;
-				var13 = var2.method9437() * 4;
-				var14 = var2.method9407();
-				var15 = var2.method9407();
-				byte var31 = var2.method9406();
-				var8 = var11 + var23;
-				var16 = var31 + var27;
-				if (var11 >= 0 && var27 >= 0 && var11 < Client.field4582.field1298 && var27 < Client.field4582.field1282 && var8 >= 0 && var16 >= 0 && var8 < Client.field4582.field1298 && var16 < Client.field4582.field1282 && var4 != 65535) {
-					int var32 = -1 == Client.field711 ? Client.field4582.field1300 : Client.field711;
-					Client.method6160(var32, var11, var27, var8, var16, var5, var4, var7, var13, var15, var14, var21, var20, var9);
-				}
-
-			} else if (Class326.field3426 == var0) {
-				var20 = var2.method9438();
-				var4 = (var20 >> 4 & 7) + Client.field121;
-				var5 = Client.field3436 + (var20 & 7);
-				var21 = var2.method9462();
-				var7 = var2.method9505();
-				var8 = var2.method9462();
-				if (var4 >= 0 && var5 >= 0 && var4 < Client.field4582.field1298 && var5 < Client.field4582.field1282) {
-					var9 = -1 == Client.field711 ? Client.field4582.field1300 : Client.field711;
-					Class137.method3098(var9, var4, var5, var7, var8, var21);
-				}
-
-			} else {
-				if (Class326.field3430 == var0) {
-					var20 = var2.method9407();
-					var4 = var2.method9437();
-					var5 = var2.method9522();
-					var21 = Client.field121 + (var5 >> 4 & 7);
-					var7 = (var5 & 7) + Client.field3436;
-					var8 = Client.field4582.field1300;
-					if (var21 >= 0 && var7 >= 0 && var21 < Client.field4582.field1298 && var7 < Client.field4582.field1282) {
-						Class401 var25 = Client.field4582.field1301[var8][var21][var7];
-						if (var25 != null) {
-							for (Class117 var26 = (Class117)var25.method7482(); var26 != null; var26 = (Class117)var25.method7490()) {
-								if ((var20 & 32767) == var26.field1465) {
-									var26.method2919(var4);
-									break;
-								}
-							}
-						}
-
-						if (var21 >= 0 && var7 >= 0 && var21 < Client.field4582.field1298 && var7 < Client.field4582.field1282) {
-							var10 = -1 == Client.field711 ? Client.field4582.field1300 : Client.field711;
-							Client.method3064(var10, var21, var7, var20, var4);
-						}
-
-						return;
-					}
-				}
-
-				if (Class326.field3420 == var0) {
-					var20 = var2.method9407();
-					var4 = var2.method9446();
-					var5 = var2.method9460();
-					var21 = var2.method9446();
-					var7 = var2.method9405();
-					boolean var22 = var2.method9405() == 1;
-					var9 = var2.method9438();
-					var10 = Client.field121 + (var9 >> 4 & 7);
-					var11 = (var9 & 7) + Client.field3436;
-					var27 = var2.method9438();
-					if (var10 >= 0 && var11 >= 0 && var10 < Client.field4582.field1298 && var11 < Client.field4582.field1282) {
-						var13 = -1 == Client.field711 ? Client.field4582.field1300 : Client.field711;
-						Client.method5998(var13, var10, var11, var21, var5, var27, var20, var4, var7, var22);
-					}
-
-				} else if (Class326.field3423 == var0) {
-					var20 = var2.method9437();
-					var4 = var20 >> 2;
-					var5 = var20 & 3;
-					var21 = Client.field562[var4];
-					var7 = var2.method9405();
-					var8 = (var7 >> 4 & 7) + Client.field121;
-					var9 = Client.field3436 + (var7 & 7);
-					if (var8 >= 0 && var9 >= 0 && var8 < Client.field4582.field1298 && var9 < Client.field4582.field1282) {
-						var10 = -1 == Client.field711 ? Client.field4582.field1300 : Client.field711;
-						Client.method3582(Client.field4582, var10, var8, var9, var21, -1, var4, var5, 31, 0, -1);
-					}
-
-				} else if (Class326.field3431 == var0) {
-					var20 = var2.method9438();
-					var4 = (var20 >> 4 & 7) + Client.field121;
-					var5 = (var20 & 7) + Client.field3436;
-					var21 = var2.method9445();
-					var7 = var2.method9438();
-					var8 = var2.method9407();
-					if (var4 >= 0 && var5 >= 0 && var4 < Client.field4582.field1298 && var5 < Client.field4582.field1282) {
-						var4 = var4 * 128 + 64;
-						var5 = var5 * 128 + 64;
-						var9 = Client.field711 == -1 ? Client.field4582.field1300 : Client.field711;
-						Class59 var24 = new Class59(var21, var9, var4, var5, Client.method790(Client.field4582, var4, var5, var9) - var7, var8, Client.field778);
-						Client.field4582.field1304.method7477(var24);
-					}
-
-				} else if (Class326.field3428 == var0) {
-					var20 = var2.method9438();
-					var4 = Client.field121 + (var20 >> 4 & 7);
-					var5 = (var20 & 7) + Client.field3436;
-					var21 = var2.method9462();
-					var7 = var2.method9505();
-					var8 = Client.field4582.field1300;
-					if (var4 >= 0 && var5 >= 0 && var4 < 104 && var5 < 104) {
-						var9 = -1 == Client.field711 ? var8 : Client.field711;
-						Client.method6708(var9, var4, var5, var7, var21);
-					}
-
-				}
-			}
-		}
+	@ObfInfo(owner = "si", name = "az", desc = "(I)V")
+	public static void method8689() {
+		field2142.method6332();
+		field2128.method6332();
+		field2129.method6332();
+		field2163.method6332();
 	}
 }

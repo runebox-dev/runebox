@@ -1,112 +1,105 @@
 import io.runebox.ObfInfo;
+import java.awt.Canvas;
+import java.awt.Component;
+import java.awt.Graphics;
 
-public final class Class6 {
-	@ObfInfo(name = "mp", desc = "(Ldv;IIIII)V", opaque = "-384431621")
-	public static void method72(Class100 var0, int var1, int var2, int var3, int var4) {
-		Class225 var6 = var0.field1314;
-		if (Client.field629 < 400) {
-			if (var6.field2351 != null) {
-				var6 = var6.method4249();
+@ObfInfo(name = "af")
+public final class Class6 extends Canvas {
+	@ObfInfo(name = "aq", desc = "Ljava/awt/Component;")
+	public Component field31;
+
+	public Class6(Component var1) {
+		this.field31 = var1;
+	}
+
+	public final void update(Graphics var1) {
+		this.field31.update(var1);
+	}
+
+	public final void paint(Graphics var1) {
+		this.field31.paint(var1);
+	}
+
+	@ObfInfo(name = "ju", desc = "(Ldb;IIB)V", opaque = "0")
+	public static void method71(Class80 var0, int var1, int var2) {
+		if (var0.field1273 == var1 && var1 != -1) {
+			int var4 = Class344.method6474(var1).field2370;
+			if (var4 == 1) {
+				var0.field1274 = 0;
+				var0.field1275 = 0;
+				var0.field1276 = var2;
+				var0.field1252 = 0;
 			}
 
-			if (var6 != null) {
-				if (var6.field2354) {
-					if (!var6.field2356 || var1 == Client.field662) {
-						String var7 = var0.method2525();
-						int var8;
-						if (0 != var6.field2319 && var0.field1131 != 0) {
-							var8 = var0.field1131 != -1 ? var0.field1131 : var6.field2319;
-							var7 = var7 + Client.method6269(var8, Client.field107.field1020) + " " + Class113.field1423 + Class378.field4316 + var8 + Class113.field1428;
-						}
-
-						if (var6.field2344 && Client.field639) {
-							Client.method3958(Class378.field4311, Class113.method8551(16776960) + var7, 1003, var1, var2, var3, -1, false, var4);
-						}
-
-						if (1 == Client.field702) {
-							Client.method3958(Class378.field4310, Client.field503 + " " + Class113.field1424 + " " + Class113.method8551(16776960) + var7, 7, var1, var2, var3, -1, false, var4);
-						} else if (Client.field648) {
-							if ((Client.field4587 & 2) == 2) {
-								Client.method3958(Client.field651, Client.field578 + " " + Class113.field1424 + " " + Class113.method8551(16776960) + var7, 8, var1, var2, var3, -1, false, var4);
-							}
-						} else {
-							var8 = var6.field2344 && Client.field639 ? 2000 : 0;
-							String[] var9 = var6.field2342;
-							int var10;
-							int var11;
-							if (var9 != null) {
-								for (var10 = 4; var10 >= 0; --var10) {
-									if (var0.method2562(var10) && null != var9[var10] && !var9[var10].equalsIgnoreCase(Class378.field4201)) {
-										var11 = 0;
-										if (var10 == 0) {
-											var11 = var8 + 9;
-										}
-
-										if (var10 == 1) {
-											var11 = var8 + 10;
-										}
-
-										if (var10 == 2) {
-											var11 = var8 + 11;
-										}
-
-										if (var10 == 3) {
-											var11 = var8 + 12;
-										}
-
-										if (var10 == 4) {
-											var11 = var8 + 13;
-										}
-
-										Client.method3958(var9[var10], Class113.method8551(16776960) + var7, var11, var1, var2, var3, -1, false, var4);
-									}
-								}
-							}
-
-							if (var9 != null) {
-								for (var10 = 4; var10 >= 0; --var10) {
-									if (var0.method2562(var10) && var9[var10] != null && var9[var10].equalsIgnoreCase(Class378.field4201)) {
-										short var12 = 0;
-										if (Client.field517 != Class114.field1434) {
-											if (Class114.field1432 == Client.field517 || Class114.field1431 == Client.field517 && var6.field2319 > Client.field107.field1020) {
-												var12 = 2000;
-											}
-
-											var11 = 0;
-											if (var10 == 0) {
-												var11 = var12 + 9;
-											}
-
-											if (var10 == 1) {
-												var11 = var12 + 10;
-											}
-
-											if (var10 == 2) {
-												var11 = var12 + 11;
-											}
-
-											if (var10 == 3) {
-												var11 = var12 + 12;
-											}
-
-											if (var10 == 4) {
-												var11 = var12 + 13;
-											}
-
-											Client.method3958(var9[var10], Class113.method8551(16776960) + var7, var11, var1, var2, var3, -1, false, var4);
-										}
-									}
-								}
-							}
-
-							if (!var6.field2344 || !Client.field639) {
-								Client.method3958(Class378.field4311, Class113.method8551(16776960) + var7, 1003, var1, var2, var3, -1, false, var4);
-							}
-						}
-
-					}
-				}
+			if (var4 == 2) {
+				var0.field1252 = 0;
 			}
+		} else if (var1 == -1 || var0.field1273 == -1 || Class344.method6474(var1).field2363 >= Class344.method6474(var0.field1273).field2363) {
+			var0.field1273 = var1;
+			var0.field1274 = 0;
+			var0.field1275 = 0;
+			var0.field1276 = var2;
+			var0.field1252 = 0;
+			var0.field1303 = var0.field1267;
 		}
+
+	}
+
+	@ObfInfo(name = "ks", desc = "(IIIIIIII)V", opaque = "1210346411")
+	public static void method70(int var0, int var1, int var2, int var3, int var4, int var5, int var6) {
+		int var9 = var6 - 334;
+		if (var9 < 0) {
+			var9 = 0;
+		} else if (var9 > 100) {
+			var9 = 100;
+		}
+
+		int var10 = Client.field675 + (Client.field805 - Client.field675) * var9 / 100;
+		int var8 = var10 * var5 / 256;
+		var9 = 2048 - var3 & 2047;
+		var10 = 2048 - var4 & 2047;
+		int var11 = 0;
+		int var12 = 0;
+		int var13 = var8;
+		int var14;
+		int var15;
+		int var16;
+		if (var9 != 0) {
+			var14 = Class274.field2804[var9];
+			var15 = Class274.field2805[var9];
+			var16 = var15 * var12 - var14 * var8 >> 16;
+			var13 = var15 * var8 + var14 * var12 >> 16;
+			var12 = var16;
+		}
+
+		if (var10 != 0) {
+			var14 = Class274.field2804[var10];
+			var15 = Class274.field2805[var10];
+			var16 = var14 * var13 + var15 * var11 >> 16;
+			var13 = var15 * var13 - var14 * var11 >> 16;
+			var11 = var16;
+		}
+
+		if (Client.field792) {
+			Client.field2665 = var0 - var11;
+			Client.field407 = var1 - var12;
+			Client.field1551 = var2 - var13;
+			Client.field3667 = var3;
+			Client.field2691 = var4;
+		} else {
+			Client.field144 = var0 - var11;
+			Client.field3664 = var1 - var12;
+			Client.field850 = var2 - var13;
+			Client.field4606 = var3;
+			Client.field3333 = var4;
+		}
+
+		if (Client.field620 == 1 && Client.field705 >= 2 && Client.field541 % 50 == 0 && (Client.field4526 >> 7 != Client.field170.field1266 >> 7 || Client.field170.field1229 >> 7 != Client.field3275 >> 7)) {
+			var14 = Client.field170.field982;
+			var15 = Client.field5093.field1019 + (Client.field4526 >> 7);
+			var16 = Client.field5093.field1021 + (Client.field3275 >> 7);
+			Client.method2715(var15, var16, var14, true);
+		}
+
 	}
 }

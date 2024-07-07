@@ -4,6 +4,7 @@ import io.runebox.asm.computeStackFrames
 import io.runebox.asm.core.ClassPool
 import io.runebox.deobfuscator.Logger
 import io.runebox.deobfuscator.Transformer
+import io.runebox.deobfuscator.asm.origName
 
 class StackFrameBuilder : Transformer {
 
@@ -11,7 +12,9 @@ class StackFrameBuilder : Transformer {
 
     override fun transform(pool: ClassPool) {
         for(cls in pool.classes) {
+            val oldOrigName = cls.origName
             cls.computeStackFrames()
+            cls.origName = oldOrigName
             count++
         }
     }

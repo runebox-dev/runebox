@@ -1,129 +1,87 @@
 import io.runebox.ObfInfo;
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InvalidClassException;
-import java.io.ObjectInputStream;
-import java.io.OptionalDataException;
-import java.io.StreamCorruptedException;
-import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 
-public class Class201 extends Class507 {
-	@ObfInfo(name = "ak", desc = "Llm;")
-	public static Class299 field2068;
+@ObfInfo(name = "hs")
+public class Class201 extends Class516 {
+	@ObfInfo(name = "aq", desc = "Lmo;")
+	public static Class327 field2204;
 
 	static {
-		field2068 = new Class299(64);
+		field2204 = new Class327(64);
 	}
 
-	@ObfInfo(owner = "id", name = "ak", desc = "(I)V")
-	public static void method4057() {
-		field2068.method5995();
+	@ObfInfo(owner = "ew", name = "aq", desc = "(I)V")
+	public static void method3032() {
+		field2204.method6332();
 	}
 
-	@ObfInfo(name = "ak", desc = "(Luk;I)V", opaque = "-2047148320")
-	public static void method3922(Class531 var0) {
-		Class34 var2 = (Class34)Class47.field323.method7600();
-		if (var2 != null) {
-			int var3 = var0.field5219;
-			var0.method9590(var2.field251);
+	@ObfInfo(name = "an", desc = "(Ljava/lang/CharSequence;I)[B", opaque = "-1689451251")
+	public static byte[] method3996(CharSequence var0) {
+		int var2 = var0.length();
+		byte[] var3 = new byte[var2];
 
-			for (int var4 = 0; var4 < var2.field246; ++var4) {
-				if (var2.field248[var4] != 0) {
-					var0.method9388(var2.field248[var4]);
-				} else {
-					try {
-						int var5 = var2.field247[var4];
-						Field var6;
-						int var7;
-						if (var5 == 0) {
-							var6 = var2.field245[var4];
-							var7 = var6.getInt((Object)null);
-							var0.method9388(0);
-							var0.method9590(var7);
-						} else if (var5 == 1) {
-							var6 = var2.field245[var4];
-							var6.setInt((Object)null, var2.field249[var4]);
-							var0.method9388(0);
-						} else if (var5 == 2) {
-							var6 = var2.field245[var4];
-							var7 = var6.getModifiers();
-							var0.method9388(0);
-							var0.method9590(var7);
-						}
-
-						Method var23;
-						if (var5 != 3) {
-							if (var5 == 4) {
-								var23 = var2.field250[var4];
-								var7 = var23.getModifiers();
-								var0.method9388(0);
-								var0.method9590(var7);
-							}
-						} else {
-							var23 = var2.field250[var4];
-							byte[][] var24 = var2.field252[var4];
-							Object[] var8 = new Object[var24.length];
-
-							for (int var9 = 0; var9 < var24.length; ++var9) {
-								ObjectInputStream var10 = new ObjectInputStream(new ByteArrayInputStream(var24[var9]));
-								var8[var9] = var10.readObject();
-							}
-
-							Object var25 = var23.invoke((Object)null, var8);
-							if (var25 == null) {
-								var0.method9388(0);
-							} else if (var25 instanceof Number) {
-								var0.method9388(1);
-								var0.method9393(((Number)var25).longValue());
-							} else if (var25 instanceof String) {
-								var0.method9388(2);
-								var0.method9473((String)var25);
-							} else {
-								var0.method9388(4);
-							}
-						}
-					} catch (ClassNotFoundException var11) {
-						var0.method9388(-10);
-					} catch (InvalidClassException var12) {
-						var0.method9388(-11);
-					} catch (StreamCorruptedException var13) {
-						var0.method9388(-12);
-					} catch (OptionalDataException var14) {
-						var0.method9388(-13);
-					} catch (IllegalAccessException var15) {
-						var0.method9388(-14);
-					} catch (IllegalArgumentException var16) {
-						var0.method9388(-15);
-					} catch (InvocationTargetException var17) {
-						var0.method9388(-16);
-					} catch (SecurityException var18) {
-						var0.method9388(-17);
-					} catch (IOException var19) {
-						var0.method9388(-18);
-					} catch (NullPointerException var20) {
-						var0.method9388(-19);
-					} catch (Exception var21) {
-						var0.method9388(-20);
-					} catch (Throwable var22) {
-						var0.method9388(-21);
-					}
-				}
-			}
-
-			var0.method9431(var3);
-			var2.method9277();
-		}
-	}
-
-	@ObfInfo(name = "al", desc = "(I)V", opaque = "364949411")
-	public static void method3919() {
-		for (Class77 var1 = (Class77)Class77.field976.method7482(); var1 != null; var1 = (Class77)Class77.field976.method7490()) {
-			if (var1.field965 != null) {
-				var1.method2177();
+		for (int var4 = 0; var4 < var2; ++var4) {
+			char var5 = var0.charAt(var4);
+			if (var5 > 0 && var5 < 128 || var5 >= 160 && var5 <= 255) {
+				var3[var4] = (byte)var5;
+			} else if (var5 == 8364) {
+				var3[var4] = -128;
+			} else if (var5 == 8218) {
+				var3[var4] = -126;
+			} else if (var5 == 402) {
+				var3[var4] = -125;
+			} else if (var5 == 8222) {
+				var3[var4] = -124;
+			} else if (var5 == 8230) {
+				var3[var4] = -123;
+			} else if (var5 == 8224) {
+				var3[var4] = -122;
+			} else if (var5 == 8225) {
+				var3[var4] = -121;
+			} else if (var5 == 710) {
+				var3[var4] = -120;
+			} else if (var5 == 8240) {
+				var3[var4] = -119;
+			} else if (var5 == 352) {
+				var3[var4] = -118;
+			} else if (var5 == 8249) {
+				var3[var4] = -117;
+			} else if (var5 == 338) {
+				var3[var4] = -116;
+			} else if (var5 == 381) {
+				var3[var4] = -114;
+			} else if (var5 == 8216) {
+				var3[var4] = -111;
+			} else if (var5 == 8217) {
+				var3[var4] = -110;
+			} else if (var5 == 8220) {
+				var3[var4] = -109;
+			} else if (var5 == 8221) {
+				var3[var4] = -108;
+			} else if (var5 == 8226) {
+				var3[var4] = -107;
+			} else if (var5 == 8211) {
+				var3[var4] = -106;
+			} else if (var5 == 8212) {
+				var3[var4] = -105;
+			} else if (var5 == 732) {
+				var3[var4] = -104;
+			} else if (var5 == 8482) {
+				var3[var4] = -103;
+			} else if (var5 == 353) {
+				var3[var4] = -102;
+			} else if (var5 == 8250) {
+				var3[var4] = -101;
+			} else if (var5 == 339) {
+				var3[var4] = -100;
+			} else if (var5 == 382) {
+				var3[var4] = -98;
+			} else if (var5 == 376) {
+				var3[var4] = -97;
+			} else {
+				var3[var4] = 63;
 			}
 		}
 
+		return var3;
 	}
 }

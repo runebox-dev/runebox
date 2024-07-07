@@ -36,6 +36,10 @@ class ExprOrderNormalizer : Transformer {
                                     expr.swap()
                                     count++
                                 }
+                                if(!(expr.right as FieldExpr).isStatic && (expr.left as FieldExpr).isStatic) {
+                                    expr.swap()
+                                    count++
+                                }
                             }
                         }
                     }

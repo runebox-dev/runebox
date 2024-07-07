@@ -1,41 +1,24 @@
 import io.runebox.ObfInfo;
 
-public final class Class117 extends Class255 {
-	@ObfInfo(name = "aa", desc = "Z")
-	public boolean field1460;
-	@ObfInfo(name = "al", desc = "I", intMultiplier = 1911170797)
-	public int field1458;
-	@ObfInfo(name = "aj", desc = "I", intMultiplier = 419336507)
-	public int field1459;
-	@ObfInfo(name = "af", desc = "I", intMultiplier = -1547995727)
-	public int field1461;
-	@ObfInfo(name = "ab", desc = "I", intMultiplier = 238010175)
-	public int field1463;
-	@ObfInfo(name = "az", desc = "I", intMultiplier = 359021447)
-	public int field1464;
-	@ObfInfo(name = "ak", desc = "I", intMultiplier = -2113245633)
-	public int field1465;
+@ObfInfo(name = "em")
+public class Class117 extends Class475 {
+	@ObfInfo(name = "aq", desc = "Z")
+	public final boolean field1434;
 
-	public Class117() {
-		this.field1463 = 31;
+	public Class117(boolean var1) {
+		this.field1434 = var1;
 	}
 
-	@ObfInfo(name = "ak", desc = "(II)V")
-	public void method2919(int var1) {
-		this.field1463 = var1;
-	}
-
-	@ObfInfo(name = "al", desc = "(IB)Z", opaque = "2")
-	public boolean method2921(int var1) {
-		if (var1 >= 0 && var1 <= 4) {
-			return (this.field1463 & 1 << var1) != 0;
+	@ObfInfo(name = "aq", desc = "(Lsh;Lsh;I)I", opaque = "396253425")
+	public int method2943(Class476 var1, Class476 var2) {
+		if (var1.field4971 != 0 && var2.field4971 != 0) {
+			return this.field1434 ? var1.field4970 - var2.field4970 : var2.field4970 - var1.field4970;
 		} else {
-			return true;
+			return this.method8667(var1, var2);
 		}
 	}
 
-	@ObfInfo(name = "ah", desc = "(I)Lkb;")
-	public final Class262 method1092() {
-		return Class232.method109(this.field1465).method4418(this.field1458);
+	public int compare(Object var1, Object var2) {
+		return this.method2943((Class476)var1, (Class476)var2);
 	}
 }

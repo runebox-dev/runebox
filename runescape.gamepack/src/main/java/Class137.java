@@ -1,44 +1,37 @@
 import io.runebox.ObfInfo;
 import java.util.concurrent.Callable;
 
-class Class137 implements Callable {
+@ObfInfo(name = "fg")
+public class Class137 implements Callable {
+	@ObfInfo(name = "ag", desc = "Lfb;")
+	public final Class132 field1601;
+	@ObfInfo(name = "aq", desc = "Lfd;")
+	public final Class134 field1602;
+	@ObfInfo(name = "ad", desc = "Lfi;")
+	public final Class139 field1605;
 	// $FF: synthetic field
-	public final Class145 this$0;
-	// $FF: synthetic field
-	public final Class155[] val$curveLoadJobs;
-	// $FF: synthetic field
-	public final int val$workEnd;
-	// $FF: synthetic field
-	public final int val$workStart;
+	public final Class150 this$0;
+	@ObfInfo(name = "ak", desc = "I", intMultiplier = -13995373)
+	public final int field1600;
 
-	public Class137(Class145 var1, int var2, int var3, Class155[] var4) {
+	public Class137(Class150 var1, Class134 var2, Class139 var3, Class132 var4, int var5) {
 		this.this$0 = var1;
-		this.val$workStart = var2;
-		this.val$workEnd = var3;
-		this.val$curveLoadJobs = var4;
+		this.field1602 = var2;
+		this.field1605 = var3;
+		this.field1601 = var4;
+		this.field1600 = var5;
 	}
 
 	public Object call() {
-		for (int var1 = this.val$workStart; var1 < this.val$workEnd; ++var1) {
-			this.val$curveLoadJobs[var1].call();
+		this.field1602.method3090();
+		Class134[][] var1;
+		if (Class139.field1617 == this.field1605) {
+			var1 = this.this$0.field1687;
+		} else {
+			var1 = this.this$0.field1691;
 		}
 
+		var1[this.field1600][this.field1601.method3066()] = this.field1602;
 		return null;
-	}
-
-	@ObfInfo(name = "kz", desc = "(IIIIIII)V", opaque = "-1926631438")
-	public static void method3098(int var0, int var1, int var2, int var3, int var4, int var5) {
-		Class401 var7 = Client.field4582.field1301[var0][var1][var2];
-		if (var7 != null) {
-			for (Class117 var8 = (Class117)var7.method7482(); var8 != null; var8 = (Class117)var7.method7490()) {
-				if (var8.field1465 == (var3 & 32767) && var4 == var8.field1458) {
-					var8.field1458 = var5;
-					break;
-				}
-			}
-
-			Client.method7123(var0, var1, var2);
-		}
-
 	}
 }

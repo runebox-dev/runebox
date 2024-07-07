@@ -1,6 +1,11 @@
 import io.runebox.ObfInfo;
 
-public interface Class508 {
-	@ObfInfo(name = "ak", desc = "(I)Ltf;")
-	Class500 method9284();
+@ObfInfo(name = "tn")
+public class Class508 extends Class520 {
+	@ObfInfo(name = "aq", desc = "I")
+	public int field5094;
+
+	public Class508(int var1) {
+		this.field5094 = var1;
+	}
 }

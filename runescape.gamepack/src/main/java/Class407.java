@@ -1,50 +1,21 @@
 import io.runebox.ObfInfo;
 
-public class Class407 {
-	@ObfInfo(name = "al", desc = "Ltq;")
-	public Class511 field4634;
-	@ObfInfo(name = "ak", desc = "Ltq;")
-	public Class511 field4635;
+@ObfInfo(name = "pq")
+public final class Class407 {
+	@ObfInfo(owner = "gn", name = "aq", desc = "(Ljava/lang/CharSequence;B)[B", opaque = "0")
+	public static byte[] method3539(CharSequence var0) {
+		int var2 = var0.length();
+		byte[] var3 = new byte[var2];
 
-	public Class407() {
-		this.field4635 = new Class511();
-		this.field4635.field5185 = this.field4635;
-		this.field4635.field5184 = this.field4635;
-	}
-
-	@ObfInfo(name = "ak", desc = "(Ltq;)V")
-	public void method7577(Class511 var1) {
-		if (var1.field5184 != null) {
-			var1.method9301();
+		for (int var4 = 0; var4 < var2; ++var4) {
+			char var5 = var0.charAt(var4);
+			if (var5 > 127) {
+				var3[var4] = 63;
+			} else {
+				var3[var4] = (byte)var5;
+			}
 		}
 
-		var1.field5184 = this.field4635.field5184;
-		var1.field5185 = this.field4635;
-		var1.field5184.field5185 = var1;
-		var1.field5185.field5184 = var1;
-	}
-
-	@ObfInfo(name = "al", desc = "()Ltq;")
-	public Class511 method7568() {
-		Class511 var1 = this.field4635.field5185;
-		if (this.field4635 == var1) {
-			this.field4634 = null;
-			return null;
-		} else {
-			this.field4634 = var1.field5185;
-			return var1;
-		}
-	}
-
-	@ObfInfo(name = "aj", desc = "()Ltq;")
-	public Class511 method7570() {
-		Class511 var1 = this.field4634;
-		if (this.field4635 == var1) {
-			this.field4634 = null;
-			return null;
-		} else {
-			this.field4634 = var1.field5185;
-			return var1;
-		}
+		return var3;
 	}
 }

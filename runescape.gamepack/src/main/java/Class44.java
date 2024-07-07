@@ -1,46 +1,37 @@
 import io.runebox.ObfInfo;
 
-public class Class44 extends Class54 {
-	@ObfInfo(name = "af", desc = "Z")
-	public boolean field315;
-	@ObfInfo(name = "al", desc = "[B")
-	public byte[] field314;
-	@ObfInfo(name = "aj", desc = "I")
-	public int field311;
-	@ObfInfo(name = "ak", desc = "I")
-	public int field312;
-	@ObfInfo(name = "az", desc = "I")
-	public int field313;
+@ObfInfo(name = "br")
+public class Class44 {
+	@ObfInfo(name = "ad", desc = "I")
+	public int field241;
+	@ObfInfo(name = "aq", desc = "I")
+	public int field243;
+	@ObfInfo(name = "ak", desc = "[I")
+	public int[] field240;
+	@ObfInfo(name = "ag", desc = "[I")
+	public int[] field242;
 
-	public Class44(int var1, byte[] var2, int var3, int var4) {
-		this.field312 = var1;
-		this.field314 = var2;
-		this.field311 = var3;
-		this.field313 = var4;
-	}
-
-	public Class44(int var1, byte[] var2, int var3, int var4, boolean var5) {
-		this.field312 = var1;
-		this.field314 = var2;
-		this.field311 = var3;
-		this.field313 = var4;
-		this.field315 = var5;
-	}
-
-	@ObfInfo(name = "ak", desc = "(Lcd;)Lbr;")
-	public Class44 method849(Class56 var1) {
-		this.field314 = var1.method1068(this.field314);
-		this.field312 = var1.method1063(this.field312);
-		if (this.field311 == this.field313) {
-			this.field311 = this.field313 = var1.method1067(this.field311);
-		} else {
-			this.field311 = var1.method1067(this.field311);
-			this.field313 = var1.method1067(this.field313);
-			if (this.field311 == this.field313) {
-				--this.field311;
-			}
+	public Class44() {
+		Class67 var1 = Class64.field498;
+		var1.method1942(16);
+		this.field243 = var1.method1930() != 0 ? var1.method1942(4) + 1 : 1;
+		if (var1.method1930() != 0) {
+			var1.method1942(8);
 		}
 
-		return this;
+		var1.method1942(2);
+		if (this.field243 > 1) {
+			this.field241 = var1.method1942(4);
+		}
+
+		this.field242 = new int[this.field243];
+		this.field240 = new int[this.field243];
+
+		for (int var2 = 0; var2 < this.field243; ++var2) {
+			var1.method1942(8);
+			this.field242[var2] = var1.method1942(8);
+			this.field240[var2] = var1.method1942(8);
+		}
+
 	}
 }

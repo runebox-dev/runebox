@@ -1,19 +1,16 @@
 import io.runebox.ObfInfo;
 
-public class Class427 extends Class447 {
-	public Class427(Class447 var1) {
-		super(var1);
-		super.field4807 = "SwapSongTask";
+@ObfInfo(name = "qk")
+public class Class427 {
+	@ObfInfo(name = "aq", desc = "I", intMultiplier = -986469315)
+	public int field4715;
+
+	public Class427(int var1, boolean var2) {
+		this.field4715 = var1;
 	}
 
-	@ObfInfo(name = "ak", desc = "(I)Z", opaque = "709593494")
-	public boolean method7832() {
-		if (Class332.field3455.size() > 1 && Class332.field3455.get(0) != null && ((Class357)Class332.field3455.get(0)).field3940.method6320() && Class332.field3455.get(1) != null && ((Class357)Class332.field3455.get(1)).field3940.method6320()) {
-			Class357 var2 = (Class357)Class332.field3455.get(0);
-			Class332.field3455.set(0, Class332.field3455.get(1));
-			Class332.field3455.set(1, var2);
-		}
-
-		return true;
+	@ObfInfo(name = "aq", desc = "(I)I")
+	public int method7867() {
+		return this.field4715;
 	}
 }

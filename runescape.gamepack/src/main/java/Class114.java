@@ -1,38 +1,22 @@
 import io.runebox.ObfInfo;
 
-public class Class114 implements Class393 {
-	@ObfInfo(name = "ak", desc = "Lej;")
-	public static final Class114 field1431;
-	@ObfInfo(name = "al", desc = "Lej;")
-	public static final Class114 field1432;
-	@ObfInfo(name = "aj", desc = "Lej;")
-	public static final Class114 field1433;
-	@ObfInfo(name = "az", desc = "Lej;")
-	public static final Class114 field1434;
-	@ObfInfo(name = "af", desc = "Lej;")
-	public static final Class114 field1438;
-	@ObfInfo(name = "aa", desc = "I", intMultiplier = 1536688327)
-	public final int field1436;
+@ObfInfo(name = "ej")
+final class Class114 implements Class348 {
+	// $FF: synthetic field
+	public final Class362 val$cc;
 
-	static {
-		field1431 = new Class114(0);
-		field1432 = new Class114(1);
-		field1433 = new Class114(2);
-		field1434 = new Class114(3);
-		field1438 = new Class114(4);
+	public Class114(Class362 var1) {
+		this.val$cc = var1;
 	}
 
-	public Class114(int var1) {
-		this.field1436 = var1;
-	}
+	@ObfInfo(name = "aq", desc = "(I)V", opaque = "2053770825")
+	public void method2915() {
+		if (this.val$cc != null && this.val$cc.method6657().field3711 != null) {
+			Class99 var2 = new Class99();
+			var2.method2642(this.val$cc);
+			var2.method2640(this.val$cc.method6657().field3711);
+			Client.method6545().method7506(var2);
+		}
 
-	@ObfInfo(name = "ak", desc = "(I)I")
-	public int method175() {
-		return this.field1436;
-	}
-
-	@ObfInfo(owner = "di", name = "az", desc = "(B)[Lej;")
-	public static Class114[] method2385() {
-		return new Class114[]{field1438, field1434, field1431, field1432, field1433};
 	}
 }

@@ -4,6 +4,8 @@ import io.runebox.asm.*
 import io.runebox.asm.util.collection.DisjointSet
 import io.runebox.asm.util.collection.ForestDisjointSet
 import org.objectweb.asm.ClassReader
+import org.objectweb.asm.Opcodes.ACC_SUPER
+import org.objectweb.asm.Opcodes.V1_1
 import org.objectweb.asm.tree.ClassNode
 import java.io.File
 import java.util.*
@@ -57,11 +59,27 @@ class ClassPool {
 
     fun findClass(name: String): ClassNode = classMap[name] ?: jvmClassMap.getOrPut(name) {
         val input = (this::class.java.getResourceAsStream("$name.class") ?: this.javaClass.getResourceAsStream("$name.class") ?: ClassLoader.getPlatformClassLoader().getResourceAsStream("$name.class") ?: ClassLoader.getSystemClassLoader().getResourceAsStream("$name.class"))
-            ?: throw RuntimeException("Failed to find the class: $name in the runtime JVM classpath.")
-        val cls = input.readBytes().toClassNode(ClassReader.SKIP_CODE)
-        cls.isJvm = true
-        cls.init(this)
-        jvmClassMap[cls.name] = cls
+        val cls: ClassNode
+        if(input == null) {
+            val cn = ClassNode().apply {
+                version = V1_1
+                access = ACC_SUPER
+                this.name = name
+                this.superName = "java/lang/Object"
+                this.interfaces = mutableListOf()
+            }
+            cls = cn
+            cls.isJvm = true
+            cls.isIgnored = true
+            cls.init(this)
+            jvmClassMap[cls.name] = cls
+        } else {
+            cls = input.readBytes().toClassNode(ClassReader.SKIP_CODE)
+            cls.isJvm = true
+            cls.init(this)
+            jvmClassMap[cls.name] = cls
+        }
+
         return cls
     }
 
@@ -104,7 +122,7 @@ class ClassPool {
     }
 
     fun loadHierarchy() {
-        for(cls in allClasses) {
+        for(cls in classes) {
             cls.superClass
             cls.interfaceClasses
         }

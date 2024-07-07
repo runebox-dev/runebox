@@ -1,121 +1,173 @@
 import io.runebox.ObfInfo;
+import java.util.Arrays;
 
+@ObfInfo(name = "bj")
 public class Class36 {
-	@ObfInfo(name = "aa", desc = "I")
-	public int field253;
-	@ObfInfo(name = "al", desc = "I")
-	public int field254;
-	@ObfInfo(name = "aj", desc = "I")
-	public int field255;
-	@ObfInfo(name = "ak", desc = "I")
-	public int field256;
-	@ObfInfo(name = "af", desc = "I")
-	public int field257;
-	@ObfInfo(name = "az", desc = "I")
-	public int field258;
-	@ObfInfo(name = "at", desc = "[I")
-	public int[] field259;
+	@ObfInfo(name = "aj", desc = "[I")
+	public int[] field184;
+	@ObfInfo(name = "av", desc = "[I")
+	public int[] field190;
 
 	public Class36() {
-		Class61 var1 = Class66.field818;
-		this.field256 = var1.method1109(16);
-		this.field254 = var1.method1109(24);
-		this.field255 = var1.method1109(24);
-		this.field258 = var1.method1109(24) + 1;
-		this.field257 = var1.method1109(6) + 1;
-		this.field253 = var1.method1109(8);
-		int[] var2 = new int[this.field257];
+		this.field184 = new int[112];
+		this.field190 = new int[192];
+		Arrays.fill(this.field184, 3);
+		Arrays.fill(this.field190, 3);
+	}
 
-		int var3;
-		for (var3 = 0; var3 < this.field257; ++var3) {
-			int var4 = 0;
-			int var5 = var1.method1109(3);
-			boolean var6 = var1.method1104() != 0;
-			if (var6) {
-				var4 = var1.method1109(5);
-			}
-
-			var2[var3] = var4 << 3 | var5;
-		}
-
-		this.field259 = new int[this.field257 * 8];
-
-		for (var3 = 0; var3 < this.field257 * 8; ++var3) {
-			this.field259[var3] = (var2[var3 >> 3] & 1 << (var3 & 7)) != 0 ? var1.method1109(8) : -1;
+	@ObfInfo(name = "aq", desc = "(III)V", opaque = "-57596643")
+	public void method485(int var1, int var2) {
+		if (this.method493(var1) && this.method495(var2)) {
+			this.field184[var1] = var2;
 		}
 
 	}
 
-	@ObfInfo(name = "ak", desc = "([FIZLci;)V")
-	public void method739(float[] var1, int var2, boolean var3, Class61 var4) {
-		int var5;
-		for (var5 = 0; var5 < var2; ++var5) {
-			var1[var5] = 0.0F;
+	@ObfInfo(name = "ad", desc = "(CII)V", opaque = "272043811")
+	public void method486(char var1, int var2) {
+		if (this.method494(var1) && this.method495(var2)) {
+			this.field190[var1] = var2;
 		}
 
-		if (!var3) {
-			var5 = Class66.field807[this.field253].field913;
-			int var6 = this.field255 - this.field254;
-			int var7 = var6 / this.field258;
-			int[] var8 = new int[var7];
+	}
 
-			for (int var9 = 0; var9 < 8; ++var9) {
-				int var10 = 0;
+	@ObfInfo(name = "ag", desc = "(II)I", opaque = "805610764")
+	public int method497(int var1) {
+		return this.method493(var1) ? this.field184[var1] : 0;
+	}
 
-				while (var10 < var7) {
+	@ObfInfo(name = "ak", desc = "(CI)I")
+	public int method488(char var1) {
+		return this.method494(var1) ? this.field190[var1] : 0;
+	}
+
+	@ObfInfo(name = "ap", desc = "(IB)Z", opaque = "13")
+	public boolean method489(int var1) {
+		return this.method493(var1) && (this.field184[var1] == 1 || this.field184[var1] == 3);
+	}
+
+	@ObfInfo(name = "an", desc = "(CI)Z", opaque = "65534")
+	public boolean method490(char var1) {
+		return this.method494(var1) && (1 == this.field190[var1] || this.field190[var1] == 3);
+	}
+
+	@ObfInfo(name = "aj", desc = "(II)Z")
+	public boolean method491(int var1) {
+		return this.method493(var1) && (this.field184[var1] == 2 || this.field184[var1] == 3);
+	}
+
+	@ObfInfo(name = "av", desc = "(CI)Z", opaque = "-437534663")
+	public boolean method492(char var1) {
+		return this.method494(var1) && (this.field190[var1] == 2 || this.field190[var1] == 3);
+	}
+
+	@ObfInfo(name = "ab", desc = "(II)Z", opaque = "-1985885170")
+	public boolean method493(int var1) {
+		if (var1 >= 0 && var1 < 112) {
+			return true;
+		} else {
+			System.out.println("Invalid keycode: " + var1);
+			return false;
+		}
+	}
+
+	@ObfInfo(name = "ai", desc = "(CB)Z", opaque = "0")
+	public boolean method494(char var1) {
+		if (var1 >= 0 && var1 < 192) {
+			return true;
+		} else {
+			System.out.println("Invalid keychar: " + var1);
+			return false;
+		}
+	}
+
+	@ObfInfo(name = "ae", desc = "(II)Z", opaque = "2074913606")
+	public boolean method495(int var1) {
+		if (var1 >= 0 && var1 < 4) {
+			return true;
+		} else {
+			System.out.println("Invalid mode: " + var1);
+			return false;
+		}
+	}
+
+	@ObfInfo(name = "lj", desc = "(Lde;ZLug;I)V", opaque = "2145892279")
+	public static void method523(Class83 var0, boolean var1, Class527 var2) {
+		while (true) {
+			byte var4 = 16;
+			int var5 = 1 << var4;
+			if (var2.method9342(Client.field678.field1485) >= var4 + 12) {
+				int var6 = var2.method9347(var4);
+				if (var6 != var5 - 1) {
+					boolean var7 = false;
+					if (var0.field1013[var6] == null) {
+						var0.field1013[var6] = new Class102();
+						var7 = true;
+					}
+
+					Class102 var8 = var0.field1013[var6];
+					var0.field1028[++var0.field1027 - 1] = var6;
+					var8.field1278 = Client.field541;
+					boolean var12 = var2.method9347(1) == 1;
+					if (var12) {
+						var2.method9347(32);
+					}
+
+					int var10;
+					if (var1) {
+						var10 = var2.method9347(8);
+						if (var10 > 127) {
+							var10 -= 256;
+						}
+					} else {
+						var10 = var2.method9347(5);
+						if (var10 > 15) {
+							var10 -= 32;
+						}
+					}
+
 					int var11;
-					int var12;
-					if (var9 == 0) {
-						var11 = Class66.field807[this.field253].method2107(var4);
-
-						for (var12 = var5 - 1; var12 >= 0; --var12) {
-							if (var12 + var10 < var7) {
-								var8[var12 + var10] = var11 % this.field257;
-							}
-
-							var11 /= this.field257;
+					if (var1) {
+						var11 = var2.method9347(8);
+						if (var11 > 127) {
+							var11 -= 256;
+						}
+					} else {
+						var11 = var2.method9347(5);
+						if (var11 > 15) {
+							var11 -= 32;
 						}
 					}
 
-					for (var11 = 0; var11 < var5; ++var11) {
-						var12 = var8[var10];
-						int var13 = this.field259[var12 * 8 + var9];
-						if (var13 >= 0) {
-							int var14 = this.field254 + this.field258 * var10;
-							Class75 var15 = Class66.field807[var13];
-							int var16;
-							if (this.field256 == 0) {
-								var16 = this.field258 / var15.field913;
-
-								for (int var20 = 0; var20 < var16; ++var20) {
-									float[] var21 = var15.method2101(var4);
-
-									for (int var19 = 0; var19 < var15.field913; ++var19) {
-										var1[var20 + var14 + var19 * var16] += var21[var19];
-									}
-								}
-							} else {
-								var16 = 0;
-
-								while (var16 < this.field258) {
-									float[] var17 = var15.method2101(var4);
-
-									for (int var18 = 0; var18 < var15.field913; ++var18) {
-										var1[var16 + var14] += var17[var18];
-										++var16;
-									}
-								}
-							}
-						}
-
-						++var10;
-						if (var10 >= var7) {
-							break;
-						}
+					int var13 = var2.method9347(1);
+					if (var13 == 1) {
+						Client.field591[++Client.field590 - 1] = var6;
 					}
+
+					int var14 = Client.field729[var2.method9347(3)];
+					if (var7) {
+						var8.field1295 = var8.field1230 = var14;
+					}
+
+					int var9 = var2.method9347(1);
+					var8.field1309 = Class184.method2222(var2.method9347(14));
+					Client.method8727(var8);
+					if (0 == var8.field1297) {
+						var8.field1230 = 0;
+					}
+
+					if (Client.field534 >= 222) {
+						var8.method2706(var10 + Client.field146, Client.field4 + var11, var9 == 1);
+						continue;
+					}
+
+					var8.method2706(Client.field170.field1242[0] + var10, Client.field170.field1284[0] + var11, var9 == 1);
+					continue;
 				}
 			}
 
+			var2.method9348();
+			return;
 		}
 	}
 }

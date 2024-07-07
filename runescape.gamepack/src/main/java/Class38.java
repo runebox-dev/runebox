@@ -1,33 +1,47 @@
 import io.runebox.ObfInfo;
 
-public class Class38 {
-	@ObfInfo(name = "at", desc = "I", intMultiplier = 1592180729)
-	public int field268;
-	@ObfInfo(name = "ab", desc = "I", intMultiplier = 2000861833)
-	public int field269;
+@ObfInfo(name = "bl")
+public class Class38 extends Class72 {
+	@ObfInfo(name = "ap", desc = "Z")
+	public boolean field202;
+	@ObfInfo(name = "ad", desc = "[B")
+	public byte[] field198;
+	@ObfInfo(name = "ak", desc = "I")
+	public int field199;
+	@ObfInfo(name = "ag", desc = "I")
+	public int field200;
+	@ObfInfo(name = "aq", desc = "I")
+	public int field201;
 
-	public Class38(int var1, int var2) {
-		this.field268 = var1;
-		this.field269 = var2;
+	public Class38(int var1, byte[] var2, int var3, int var4) {
+		this.field201 = var1;
+		this.field198 = var2;
+		this.field200 = var3;
+		this.field199 = var4;
 	}
 
-	@ObfInfo(name = "ak", desc = "(Lbi;B)Z", opaque = "2")
-	public boolean method784(Class35 var1) {
-		if (var1 == null) {
-			return false;
+	public Class38(int var1, byte[] var2, int var3, int var4, boolean var5) {
+		this.field201 = var1;
+		this.field198 = var2;
+		this.field200 = var3;
+		this.field199 = var4;
+		this.field202 = var5;
+	}
+
+	@ObfInfo(name = "aq", desc = "(Lcu;)Lbl;")
+	public Class38 method549(Class73 var1) {
+		this.field198 = var1.method2133(this.field198);
+		this.field201 = var1.method2134(this.field201);
+		if (this.field200 == this.field199) {
+			this.field200 = this.field199 = var1.method2135(this.field200);
 		} else {
-			switch(this.field268) {
-			case 1:
-				return var1.method734(this.field269);
-			case 2:
-				return var1.method736(this.field269);
-			case 3:
-				return var1.method723((char)this.field269);
-			case 4:
-				return var1.method737(1 == this.field269);
-			default:
-				return false;
+			this.field200 = var1.method2135(this.field200);
+			this.field199 = var1.method2135(this.field199);
+			if (this.field200 == this.field199) {
+				--this.field200;
 			}
 		}
+
+		return this;
 	}
 }

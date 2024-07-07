@@ -1,14 +1,24 @@
 import io.runebox.ObfInfo;
 
-public abstract class Class190 {
-	@ObfInfo(name = "al", desc = "(IIB)I")
-	public abstract int method3557(int var1, int var2);
+@ObfInfo(name = "hh")
+public class Class190 {
+	@ObfInfo(name = "ap", desc = "Z")
+	public boolean field2090;
+	@ObfInfo(name = "ad", desc = "[I")
+	public int[] field2088;
+	@ObfInfo(name = "aq", desc = "J", longMultiplier = 270217235349849859L)
+	public long field2091;
+	@ObfInfo(name = "ag", desc = "[S")
+	public short[] field2089;
+	@ObfInfo(name = "ak", desc = "[S")
+	public short[] field2092;
 
-	@ObfInfo(name = "ak", desc = "(I)V")
-	public abstract void method3556();
-
-	@ObfInfo(name = "al", desc = "(J)Z")
-	public static boolean method3713(long var0) {
-		return Class274.method3001(var0) == 2;
+	public Class190(long var1, int[] var3, short[] var4, short[] var5, boolean var6) {
+		this.field2090 = false;
+		this.field2091 = var1;
+		this.field2088 = var3;
+		this.field2089 = var4;
+		this.field2092 = var5;
+		this.field2090 = var6;
 	}
 }

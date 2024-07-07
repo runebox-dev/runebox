@@ -1,34 +1,42 @@
 import io.runebox.ObfInfo;
 
-public class Class111 extends Class471 {
-	@ObfInfo(name = "ak", desc = "Z")
-	public final boolean field1416;
+@ObfInfo(name = "eg")
+public class Class111 {
+	@ObfInfo(name = "ag", desc = "Ljava/lang/String;")
+	public static String field1389;
+	@ObfInfo(name = "ak", desc = "Ljava/lang/String;")
+	public static String field1390;
+	@ObfInfo(name = "ap", desc = "Ljava/lang/String;")
+	public static String field1391;
+	@ObfInfo(name = "an", desc = "Ljava/lang/String;")
+	public static String field1392;
+	@ObfInfo(name = "aj", desc = "Ljava/lang/String;")
+	public static String field1393;
+	@ObfInfo(name = "av", desc = "Ljava/lang/String;")
+	public static String field1394;
+	@ObfInfo(name = "ad", desc = "Ljava/lang/String;")
+	public static String field1396;
+	@ObfInfo(name = "aq", desc = "Ljava/lang/String;")
+	public static String field1399;
 
-	public Class111(boolean var1) {
-		this.field1416 = var1;
+	static {
+		field1399 = "true";
+		field1396 = ",";
+		field1389 = "|";
+		field1390 = " (";
+		field1391 = ")";
+		field1392 = "->";
+		field1393 = "<br>";
+		field1394 = "</col>";
 	}
 
-	@ObfInfo(name = "ak", desc = "(Lso;Lso;I)I", opaque = "1604250082")
-	public int method2863(Class483 var1, Class483 var2) {
-		if (var2.field4961 != var1.field4961) {
-			return this.field1416 ? var1.field4961 - var2.field4961 : var2.field4961 - var1.field4961;
-		} else {
-			return this.method8640(var1, var2);
-		}
+	@ObfInfo(owner = "ol", name = "aq", desc = "(II)Ljava/lang/String;")
+	public static String method7220(int var0) {
+		return "<img=" + var0 + ">";
 	}
 
-	public int compare(Object var1, Object var2) {
-		return this.method2863((Class483)var1, (Class483)var2);
-	}
-
-	@ObfInfo(name = "az", desc = "(II)Lfk;", opaque = "664108")
-	public static Class141 method2869(int var0) {
-		Class141[] var2 = new Class141[]{Class141.field1613, Class141.field1609, Class141.field1616, Class141.field1611, Class141.field1612};
-		Class141 var3 = (Class141)Class62.method1112(var2, var0);
-		if (var3 == null) {
-			var3 = Class141.field1613;
-		}
-
-		return var3;
+	@ObfInfo(owner = "hh", name = "ad", desc = "(II)Ljava/lang/String;")
+	public static String method3839(int var0) {
+		return "<col=" + Integer.toHexString(var0) + ">";
 	}
 }

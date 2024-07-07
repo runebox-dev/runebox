@@ -1,31 +1,14 @@
 import io.runebox.ObfInfo;
-import java.util.Calendar;
-import java.util.HashMap;
-import java.util.TimeZone;
 
-public final class Class317 {
-	@ObfInfo(name = "aj", desc = "Ljava/util/HashMap;")
-	public static final HashMap field3384;
+@ObfInfo(name = "me")
+public class Class317 {
+	@ObfInfo(name = "ad", desc = "Lcv;")
+	public Class74 field3325;
+	@ObfInfo(name = "aq", desc = "I", intMultiplier = -322822689)
+	public int field3324;
 
-	static {
-		field3384 = new HashMap();
-		TimeZone var2;
-		synchronized(field3384) {
-			var2 = (TimeZone)field3384.get("Europe/London");
-			if (var2 == null) {
-				var2 = TimeZone.getTimeZone("Europe/London");
-				field3384.put("Europe/London", var2);
-			}
-		}
-
-		Calendar.getInstance(var2);
-	}
-
-	@ObfInfo(name = "nt", desc = "(Lnb;I)V", opaque = "9637510")
-	public static void method6187(Class340 var0) {
-		if (var0 != null && var0.field3762 == Client.field558) {
-			Client.field614[var0.field3821] = true;
-		}
-
+	public Class317(int var1, Class74 var2) {
+		this.field3324 = var1;
+		this.field3325 = var2;
 	}
 }

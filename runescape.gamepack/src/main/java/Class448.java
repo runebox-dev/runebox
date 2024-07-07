@@ -1,40 +1,29 @@
 import io.runebox.ObfInfo;
+import java.util.Comparator;
 
-public class Class448 extends Class483 {
-	@ObfInfo(name = "al", desc = "Z")
-	public boolean field4813;
-	@ObfInfo(name = "ak", desc = "Z")
-	public boolean field4814;
+@ObfInfo(name = "rf")
+class Class448 implements Comparator {
+	// $FF: synthetic field
+	public final Class444 this$0;
 
-	@ObfInfo(name = "ak", desc = "(Lrf;B)I", opaque = "0")
-	public int method8405(Class448 var1) {
-		if (super.field4959 == Client.field557 && var1.field4959 != Client.field557) {
-			return -1;
-		} else if (var1.field4959 == Client.field557 && Client.field557 != super.field4959) {
-			return 1;
-		} else if (0 != super.field4959 && 0 == var1.field4959) {
-			return -1;
-		} else if (0 != var1.field4959 && 0 == super.field4959) {
-			return 1;
-		} else if (this.field4814 && !var1.field4814) {
-			return -1;
-		} else if (!this.field4814 && var1.field4814) {
-			return 1;
-		} else if (this.field4813 && !var1.field4813) {
-			return -1;
-		} else if (!this.field4813 && var1.field4813) {
+	public Class448(Class444 var1) {
+		this.this$0 = var1;
+	}
+
+	@ObfInfo(name = "aq", desc = "(Lre;Lre;I)I", opaque = "526770924")
+	public int method8304(Class447 var1, Class447 var2) {
+		if (var1.field4836 > var2.field4836) {
 			return 1;
 		} else {
-			return 0 != super.field4959 ? super.field4960 - var1.field4960 : var1.field4960 - super.field4960;
+			return var1.field4836 < var2.field4836 ? -1 : 0;
 		}
 	}
 
-	@ObfInfo(name = "al", desc = "(Lsg;I)I")
-	public int method8409(Class475 var1) {
-		return this.method8405((Class448)var1);
+	public int compare(Object var1, Object var2) {
+		return this.method8304((Class447)var1, (Class447)var2);
 	}
 
-	public int compareTo(Object var1) {
-		return this.method8405((Class448)var1);
+	public boolean equals(Object var1) {
+		return super.equals(var1);
 	}
 }

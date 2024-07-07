@@ -1,42 +1,56 @@
 import io.runebox.ObfInfo;
+import java.util.Iterator;
 
-public class Class420 {
-	@ObfInfo(name = "al", desc = "Lqe;")
-	public Class421 field4674;
-	@ObfInfo(name = "aj", desc = "Lqe;")
-	public Class421 field4675;
-	@ObfInfo(name = "ak", desc = "Lqz;")
-	public Class442 field4673;
-
-	public Class420() {
-		this.field4673 = new Class442();
-		this.field4674 = new Class421();
-		this.field4675 = new Class421(1.0F, 1.0F, 1.0F);
+@ObfInfo(name = "qd")
+public class Class420 extends Class457 {
+	public Class420(Class457 var1) {
+		super(var1);
+		super.field4890 = "AddRequestTask";
 	}
 
-	public String toString() {
-		return "[" + this.field4673.toString() + "|" + this.field4674.toString() + "|" + this.field4675.toString() + "]";
-	}
-
-	public boolean equals(Object var1) {
-		if (var1 == null) {
-			return false;
-		} else if (var1 == this) {
-			return true;
-		} else if (!(var1 instanceof Class420)) {
-			return false;
-		} else {
-			Class420 var2 = (Class420)var1;
-			return this.field4673.equals(var2.field4673) && this.field4674.method7812(var2.field4674) && this.field4675.method7812(var2.field4675);
+	@ObfInfo(name = "aq", desc = "(S)Z")
+	public boolean method7710() {
+		while (!Class323.field3467.isEmpty()) {
+			Class351 var2 = (Class351)Class323.field3467.peek();
+			if (var2 == null) {
+				Class323.field3467.pop();
+			} else {
+				var2.field3761 = this.method7711();
+				Class323.field3464.add(var2);
+				Class323.field3467.pop();
+			}
 		}
+
+		return true;
 	}
 
-	public int hashCode() {
-		boolean var1 = true;
-		byte var2 = 1;
-		int var3 = var2 * 31 + this.field4673.hashCode();
-		var3 = var3 * 31 + this.field4674.hashCode();
-		var3 = var3 * 31 + this.field4675.hashCode();
-		return var3;
+	@ObfInfo(name = "ad", desc = "(B)Lmc;", opaque = "-1")
+	public Class315 method7711() {
+		Class315 var2 = null;
+		Iterator var3 = Class323.field3462.iterator();
+
+		while (true) {
+			Class315 var4;
+			do {
+				do {
+					if (!var3.hasNext()) {
+						if (var2 != null) {
+							++var2.field3309;
+							if (var2.method6091() == 0 && var2.method6097()) {
+								var2.method6129();
+								var2.method6094();
+								var2.method6090(0);
+							}
+						}
+
+						return var2;
+					}
+
+					var4 = (Class315)var3.next();
+				} while(var4 == null);
+			} while(var2 != null && var2.field3309 <= var4.field3309 && (var4.method6091() != 0 || !var4.method6097()));
+
+			var2 = var4;
+		}
 	}
 }

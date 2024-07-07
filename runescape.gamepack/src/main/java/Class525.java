@@ -1,98 +1,89 @@
 import io.runebox.ObfInfo;
-import java.io.EOFException;
-import java.io.File;
-import java.io.IOException;
-import java.io.RandomAccessFile;
-import java.io.SyncFailedException;
 
-public final class Class525 {
-	@ObfInfo(name = "ak", desc = "Ljava/io/RandomAccessFile;")
-	public RandomAccessFile field5229;
-	@ObfInfo(name = "aj", desc = "J", longMultiplier = 7464592388017412915L)
-	public long field5230;
-	@ObfInfo(name = "al", desc = "J", longMultiplier = -6654413090181825883L)
-	public final long field5231;
+@ObfInfo(name = "ue")
+public class Class525 implements Class393 {
+	@ObfInfo(name = "ad", desc = "Lue;")
+	public static final Class525 field5244;
+	@ObfInfo(name = "ag", desc = "Lue;")
+	public static final Class525 field5246;
+	@ObfInfo(name = "aq", desc = "Lue;")
+	public static final Class525 field5250;
+	@ObfInfo(name = "aj", desc = "Luc;")
+	public final Class523 field5249;
+	@ObfInfo(name = "ak", desc = "I", intMultiplier = 2037116603)
+	public final int field5247;
+	@ObfInfo(name = "ap", desc = "I", intMultiplier = 224872429)
+	public final int field5248;
+	@ObfInfo(name = "an", desc = "Ljava/lang/Class;")
+	public final Class field5251;
 
-	public Class525(File var1, String var2, long var3) throws IOException {
-		if (-1L == var3) {
-			var3 = Long.MAX_VALUE;
-		}
-
-		if (var1.length() > var3) {
-			var1.delete();
-		}
-
-		this.field5229 = new RandomAccessFile(var1, var2);
-		this.field5231 = var3;
-		this.field5230 = 0L;
-		int var5 = this.field5229.read();
-		if (var5 != -1 && !var2.equals("r")) {
-			this.field5229.seek(0L);
-			this.field5229.write(var5);
-		}
-
-		this.field5229.seek(0L);
+	static {
+		field5250 = new Class525(0, 0, Integer.class, new Class542());
+		field5244 = new Class525(2, 1, Long.class, new Class532());
+		field5246 = new Class525(1, 2, String.class, new Class544());
 	}
 
-	@ObfInfo(name = "ak", desc = "(J)V")
-	public final void method9667(long var1) throws IOException {
-		this.field5229.seek(var1);
-		this.field5230 = var1;
+	public Class525(int var1, int var2, Class var3, Class523 var4) {
+		this.field5247 = var1;
+		this.field5248 = var2;
+		this.field5251 = var3;
+		this.field5249 = var4;
 	}
 
-	@ObfInfo(name = "al", desc = "([BIII)V")
-	public final void method9668(byte[] var1, int var2, int var3) throws IOException {
-		if (this.field5230 + (long)var3 > this.field5231) {
-			this.field5229.seek(this.field5231);
-			this.field5229.write(1);
-			throw new EOFException();
-		} else {
-			this.field5229.write(var1, var2, var3);
-			this.field5230 += (long)var3;
-		}
+	@ObfInfo(name = "aq", desc = "(I)I")
+	public int method129() {
+		return this.field5248;
 	}
 
-	@ObfInfo(name = "aj", desc = "(B)V")
-	public final void method9672() throws IOException {
-		this.method9669(false);
+	@ObfInfo(name = "ap", desc = "(Lvp;B)Ljava/lang/Object;")
+	public Object method9298(Class562 var1) {
+		return this.field5249.method9289(var1);
 	}
 
-	@ObfInfo(name = "az", desc = "(ZI)V", opaque = "-1046803903")
-	public final void method9669(boolean var1) throws IOException {
-		if (this.field5229 != null) {
-			if (var1) {
-				try {
-					this.field5229.getFD().sync();
-				} catch (SyncFailedException var4) {
-				}
+	@ObfInfo(name = "ag", desc = "(I)[Lue;")
+	public static Class525[] method9304() {
+		return new Class525[]{field5246, field5250, field5244};
+	}
+
+	@ObfInfo(name = "ap", desc = "(II)V", opaque = "925637845")
+	public static void method9309(int var0) {
+		Class89 var2 = (Class89)Class89.field1120.method9439((long)var0);
+		if (var2 != null) {
+			for (int var3 = 0; var3 < var2.field1119.length; ++var3) {
+				var2.field1119[var3] = -1;
+				var2.field1118[var3] = 0;
 			}
 
-			this.field5229.close();
-			this.field5229 = null;
 		}
-
 	}
 
-	@ObfInfo(name = "af", desc = "(I)J")
-	public final long method9674() throws IOException {
-		return this.field5229.length();
-	}
+	@ObfInfo(name = "ak", desc = "(Ljava/lang/Object;Lvp;B)V", opaque = "13")
+	public static void method9296(Object var0, Class562 var1) {
+		Class var4 = var0.getClass();
+		Class525[] var6 = method9304();
+		int var7 = 0;
 
-	@ObfInfo(name = "aa", desc = "([BIIB)I", opaque = "4")
-	public final int method9682(byte[] var1, int var2, int var3) throws IOException {
-		int var5 = this.field5229.read(var1, var2, var3);
-		if (var5 > 0) {
-			this.field5230 += (long)var5;
+		Class525 var5;
+		while (true) {
+			if (var7 >= var6.length) {
+				var5 = null;
+				break;
+			}
+
+			Class525 var8 = var6[var7];
+			if (var8.field5251 == var4) {
+				var5 = var8;
+				break;
+			}
+
+			++var7;
 		}
 
-		return var5;
-	}
-
-	public void finalize() throws Throwable {
-		if (this.field5229 != null) {
-			System.out.println("");
-			this.method9672();
+		if (var5 == null) {
+			throw new IllegalArgumentException();
+		} else {
+			Class523 var3 = var5.field5249;
+			var3.method9290(var0, var1);
 		}
-
 	}
 }

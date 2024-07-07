@@ -1,35 +1,37 @@
 import io.runebox.ObfInfo;
-import java.util.zip.Inflater;
 
+@ObfInfo(name = "vt")
 public class Class566 {
-	@ObfInfo(name = "ak", desc = "Ljava/util/zip/Inflater;")
-	public Inflater field5476;
+	@ObfInfo(name = "ad", desc = "Ljava/lang/Object;")
+	public Object field5492;
+	@ObfInfo(name = "aq", desc = "I", intMultiplier = -1593412931)
+	public final int field5491;
 
-	public Class566() {
-		this(-1, 1000000, 1000000);
+	public Class566(int var1) {
+		this.field5491 = var1;
 	}
 
-	public Class566(int var1, int var2, int var3) {
+	public Class566(int var1, Object var2) {
+		this.field5491 = var1;
+		this.field5492 = var2;
 	}
 
-	@ObfInfo(name = "ak", desc = "(Lua;[BB)V", opaque = "1")
-	public void method10256(Class521 var1, byte[] var2) {
-		if (31 == var1.field5221[var1.field5219] && var1.field5221[var1.field5219 + 1] == -117) {
-			if (this.field5476 == null) {
-				this.field5476 = new Inflater(true);
-			}
+	public int hashCode() {
+		return super.hashCode();
+	}
 
-			try {
-				this.field5476.setInput(var1.field5221, 10 + var1.field5219, var1.field5221.length - (8 + 10 + var1.field5219));
-				this.field5476.inflate(var2);
-			} catch (Exception var5) {
-				this.field5476.reset();
-				throw new RuntimeException("");
-			}
-
-			this.field5476.reset();
+	public boolean equals(Object var1) {
+		if (!(var1 instanceof Class566)) {
+			return false;
 		} else {
-			throw new RuntimeException("");
+			Class566 var2 = (Class566)var1;
+			if (var2.field5492 == null && this.field5492 != null) {
+				return false;
+			} else if (this.field5492 == null && var2.field5492 != null) {
+				return false;
+			} else {
+				return this.field5491 == var2.field5491 && var2.field5492.equals(this.field5492);
+			}
 		}
 	}
 }

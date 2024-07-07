@@ -1,175 +1,282 @@
 import io.runebox.ObfInfo;
 
+@ObfInfo(name = "kn")
 public class Class274 {
-	@ObfInfo(name = "ak", desc = "Z")
-	public static boolean field3028;
-	@ObfInfo(name = "az", desc = "Z")
-	public static boolean field3033;
-	@ObfInfo(owner = "eq", name = "at", desc = "I", intMultiplier = -1608214613)
-	public static int field1489;
-	@ObfInfo(name = "ab", desc = "I", intMultiplier = -1637450235)
-	public static int field3023;
-	@ObfInfo(name = "al", desc = "I", intMultiplier = -2068561419)
-	public static int field3024;
-	@ObfInfo(name = "aj", desc = "I", intMultiplier = -291553027)
-	public static int field3025;
-	@ObfInfo(name = "af", desc = "I", intMultiplier = 1189565193)
-	public static int field3026;
-	@ObfInfo(name = "ao", desc = "I", intMultiplier = -801708007)
-	public static int field3029;
-	@ObfInfo(name = "ah", desc = "I", intMultiplier = 629882969)
-	public static int field3030;
-	@ObfInfo(name = "av", desc = "I", intMultiplier = -101648395)
-	public static int field3031;
-	@ObfInfo(name = "aq", desc = "I", intMultiplier = -369508143)
-	public static int field3032;
-	@ObfInfo(name = "ap", desc = "I", intMultiplier = 960707977)
-	public static int field3034;
-	@ObfInfo(owner = "nw", name = "ac", desc = "I", intMultiplier = -285362375)
-	public static int field3971;
-	@ObfInfo(owner = "nz", name = "aa", desc = "I", intMultiplier = -1008264913)
-	public static int field3983;
-	@ObfInfo(name = "ae", desc = "[J")
-	public static long[] field3027;
+	@ObfInfo(name = "aj", desc = "Lky;")
+	public static Class285 field2801;
+	@ObfInfo(name = "an", desc = "Llo;")
+	public static Class301 field2803;
+	@ObfInfo(name = "ad", desc = "[I")
+	public static int[] field2802;
+	@ObfInfo(name = "ak", desc = "[I")
+	public static int[] field2804;
+	@ObfInfo(name = "ap", desc = "[I")
+	public static int[] field2805;
+	@ObfInfo(name = "aq", desc = "[I")
+	public static int[] field2806;
+	@ObfInfo(name = "ag", desc = "[I")
+	public static int[] field2807;
+	@ObfInfo(name = "av", desc = "Lky;")
+	public static final Class285 field2808;
+	@ObfInfo(name = "ab", desc = "Lky;")
+	public static final Class285 field2809;
 
 	static {
-		field3028 = false;
-		field3024 = 0;
-		field3025 = 0;
-		field3033 = false;
-		field3034 = 0;
-		field3027 = new long[1000];
-	}
+		field2806 = new int[65536];
+		field2802 = new int[512];
+		field2807 = new int[2048];
+		field2804 = new int[2048];
+		field2805 = new int[2048];
 
-	@ObfInfo(name = "af", desc = "(II)Z", opaque = "474054299")
-	public static boolean method5518(int var0) {
-		return var0 >= Class373.field4065.field4068 && var0 <= Class373.field4066.field4068;
-	}
-
-	@ObfInfo(owner = "hk", name = "ak", desc = "(I)I")
-	public static int method3812() {
-		return field3034;
-	}
-
-	@ObfInfo(owner = "lr", name = "aj", desc = "(J)I")
-	public static int method6117(long var0) {
-		return (int)(var0 >>> 7 & 127L);
-	}
-
-	@ObfInfo(owner = "ev", name = "az", desc = "(J)I")
-	public static int method3001(long var0) {
-		return (int)(var0 >>> 14 & 3L);
-	}
-
-	@ObfInfo(owner = "cv", name = "af", desc = "(J)Z")
-	public static boolean method2085(long var0) {
-		return (int)(var0 >>> 16 & 1L) == 1;
-	}
-
-	@ObfInfo(owner = "en", name = "aa", desc = "(J)I")
-	public static int method2942(long var0) {
-		return (int)(var0 >>> 17 & 4294967295L);
-	}
-
-	@ObfInfo(owner = "lg", name = "at", desc = "(II)I")
-	public static int method5913(int var0) {
-		return method4073(field3027[var0]);
-	}
-
-	@ObfInfo(owner = "ih", name = "ab", desc = "(J)I")
-	public static int method4073(long var0) {
-		return (int)(var0 >>> 49 & 2047L);
-	}
-
-	@ObfInfo(owner = "ho", name = "ac", desc = "(IIIZIIB)J")
-	public static long method3872(int var0, int var1, int var2, boolean var3, int var4, int var5) {
-		long var7 = (long)((var0 & 127) << 0 | (var1 & 127) << 7 | (var2 & 3) << 14) | ((long)var4 & 4294967295L) << 17 | ((long)var5 & 2047L) << 49;
-		if (var3) {
-			var7 |= 65536L;
+		int var0;
+		for (var0 = 1; var0 < 512; ++var0) {
+			field2802[var0] = 32768 / var0;
 		}
 
-		return var7;
-	}
-
-	@ObfInfo(owner = "kl", name = "ao", desc = "(III)V")
-	public static void method5477(int var0, int var1) {
-		field3024 = var0;
-		field3025 = var1;
-		field3028 = true;
-		field3034 = 0;
-		field3033 = false;
-	}
-
-	@ObfInfo(owner = "fx", name = "ah", desc = "(I)V")
-	public static void method3295() {
-		field3028 = false;
-		field3034 = 0;
-	}
-
-	@ObfInfo(owner = "dx", name = "av", desc = "(B)Z")
-	public static boolean method2732() {
-		return field3028;
-	}
-
-	@ObfInfo(owner = "av", name = "aq", desc = "(IIIII)V", opaque = "846928200")
-	public static void method346(int var0, int var1, int var2, int var3) {
-		if (!field3033) {
-			byte var9 = 50;
-			int var10 = Class235.method4555();
-			int var11 = (field3024 - Class253.method4805()) * var9 / Class253.method4792();
-			int var12 = (field3025 - Class253.method4788()) * var9 / Class253.method4792();
-			int var13 = (field3024 - Class253.method4805()) * var10 / Class253.method4792();
-			int var14 = (field3025 - Class253.method4788()) * var10 / Class253.method4792();
-			int var15 = Class264.method3281(var12, var9, var1, var0);
-			int var16 = var9 * var1 - var12 * var0 >> 16;
-			var12 = var15;
-			var15 = Class264.method3281(var14, var10, var1, var0);
-			int var17 = var10 * var1 - var14 * var0 >> 16;
-			int var18 = var11 * var3 - var16 * var2 >> 16;
-			int var19 = var11 * var2 + var16 * var3 >> 16;
-			int var20 = var13 * var3 - var17 * var2 >> 16;
-			int var21 = var13 * var2 + var17 * var3 >> 16;
-			field3026 = (var20 + var18) / 2;
-			field3983 = (var15 + var12) / 2;
-			field1489 = (var21 + var19) / 2;
-			field3023 = (var20 - var18) / 2;
-			field3971 = (var15 - var12) / 2;
-			field3029 = (var21 - var19) / 2;
-			field3030 = Math.abs(field3023);
-			field3031 = Math.abs(field3971);
-			field3032 = Math.abs(field3029);
+		for (var0 = 1; var0 < 2048; ++var0) {
+			field2807[var0] = 65536 / var0;
 		}
+
+		for (var0 = 0; var0 < 2048; ++var0) {
+			field2804[var0] = (int)(65536.0D * Math.sin((double)var0 * 0.0030679615D));
+			field2805[var0] = (int)(65536.0D * Math.cos((double)var0 * 0.0030679615D));
+		}
+
+		field2803 = new Class301();
+		field2808 = new Class290(field2803);
+		field2809 = new Class312(field2803);
+		field2801 = field2808;
 	}
 
-	@ObfInfo(owner = "gx", name = "ap", desc = "(Lkb;IIIIIIIIB)Z", opaque = "26")
-	public static boolean method3632(Class262 var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
-		if (!method2732()) {
-			return false;
+	@ObfInfo(name = "aq", desc = "(Z)V")
+	public static void method5194(boolean var0) {
+		if (var0 && Class569.field5506 != null) {
+			field2801 = field2809;
 		} else {
-			method346(var5, var6, var7, var8);
-			Class249 var10 = (Class249)var0.field2888.get(var1);
-			int var11 = var2 + var10.field2669;
-			int var12 = var10.field2668 + var3;
-			int var13 = var4 + var10.field2667;
-			int var14 = var10.field2670;
-			int var15 = var10.field2666;
-			int var16 = var10.field2665;
-			int var17 = field3026 - var11;
-			int var18 = field3983 - var12;
-			int var19 = field1489 - var13;
-			if (Math.abs(var17) > field3030 + var14) {
-				return false;
-			} else if (Math.abs(var18) > var15 + field3031) {
-				return false;
-			} else if (Math.abs(var19) > var16 + field3032) {
-				return false;
-			} else if (Math.abs(var19 * field3971 - field3029 * var18) > var16 * field3031 + var15 * field3032) {
-				return false;
-			} else if (Math.abs(var17 * field3029 - field3023 * var19) > field3032 * var14 + var16 * field3030) {
-				return false;
-			} else {
-				return Math.abs(field3023 * var18 - field3971 * var17) <= var15 * field3030 + var14 * field3031;
+			field2801 = field2808;
+		}
+
+	}
+
+	@ObfInfo(name = "ad", desc = "(Llh;)V")
+	public static void method5178(Class294 var0) {
+		field2803.field3081 = var0;
+	}
+
+	@ObfInfo(name = "ag", desc = "(D)V")
+	public static void method5117(double var0) {
+		method5118(var0, 0, 512);
+	}
+
+	@ObfInfo(name = "ak", desc = "(DII)V")
+	public static void method5118(double var0, int var2, int var3) {
+		int var4 = var2 * 128;
+
+		for (int var5 = var2; var5 < var3; ++var5) {
+			double var6 = (double)(var5 >> 3) / 64.0D + 0.0078125D;
+			double var8 = (double)(var5 & 7) / 8.0D + 0.0625D;
+
+			for (int var10 = 0; var10 < 128; ++var10) {
+				double var11 = (double)var10 / 128.0D;
+				double var13 = var11;
+				double var15 = var11;
+				double var17 = var11;
+				if (var8 != 0.0D) {
+					double var19;
+					if (var11 < 0.5D) {
+						var19 = var11 * (1.0D + var8);
+					} else {
+						var19 = var11 + var8 - var11 * var8;
+					}
+
+					double var21 = 2.0D * var11 - var19;
+					double var23 = var6 + 0.3333333333333333D;
+					if (var23 > 1.0D) {
+						--var23;
+					}
+
+					double var27 = var6 - 0.3333333333333333D;
+					if (var27 < 0.0D) {
+						++var27;
+					}
+
+					if (6.0D * var23 < 1.0D) {
+						var13 = var21 + (var19 - var21) * 6.0D * var23;
+					} else if (2.0D * var23 < 1.0D) {
+						var13 = var19;
+					} else if (3.0D * var23 < 2.0D) {
+						var13 = var21 + (var19 - var21) * (0.6666666666666666D - var23) * 6.0D;
+					} else {
+						var13 = var21;
+					}
+
+					if (6.0D * var6 < 1.0D) {
+						var15 = var21 + (var19 - var21) * 6.0D * var6;
+					} else if (2.0D * var6 < 1.0D) {
+						var15 = var19;
+					} else if (3.0D * var6 < 2.0D) {
+						var15 = var21 + (var19 - var21) * (0.6666666666666666D - var6) * 6.0D;
+					} else {
+						var15 = var21;
+					}
+
+					if (6.0D * var27 < 1.0D) {
+						var17 = var21 + (var19 - var21) * 6.0D * var27;
+					} else if (2.0D * var27 < 1.0D) {
+						var17 = var19;
+					} else if (3.0D * var27 < 2.0D) {
+						var17 = var21 + (var19 - var21) * (0.6666666666666666D - var27) * 6.0D;
+					} else {
+						var17 = var21;
+					}
+				}
+
+				int var30 = (int)(var13 * 256.0D);
+				int var20 = (int)(var15 * 256.0D);
+				int var29 = (int)(var17 * 256.0D);
+				int var22 = (var30 << 16) + (var20 << 8) + var29;
+				var22 = method5119(var22, var0);
+				if (var22 == 0) {
+					var22 = 1;
+				}
+
+				field2806[var4++] = var22;
 			}
 		}
+
+	}
+
+	@ObfInfo(name = "ap", desc = "(ID)I")
+	public static int method5119(int var0, double var1) {
+		double var3 = (double)(var0 >> 16) / 256.0D;
+		double var5 = (double)(var0 >> 8 & 255) / 256.0D;
+		double var7 = (double)(var0 & 255) / 256.0D;
+		var3 = Math.pow(var3, var1);
+		var5 = Math.pow(var5, var1);
+		var7 = Math.pow(var7, var1);
+		int var9 = (int)(var3 * 256.0D);
+		int var10 = (int)(var5 * 256.0D);
+		int var11 = (int)(var7 * 256.0D);
+		return (var9 << 16) + (var10 << 8) + var11;
+	}
+
+	@ObfInfo(name = "an", desc = "()I")
+	public static int method5120() {
+		return field2803.field3083;
+	}
+
+	@ObfInfo(name = "aj", desc = "()I")
+	public static int method5115() {
+		return field2803.field3084;
+	}
+
+	@ObfInfo(name = "av", desc = "()I")
+	public static int method5121() {
+		return field2803.field3075;
+	}
+
+	@ObfInfo(name = "ab", desc = "()I")
+	public static int method5123() {
+		return field2803.field3088;
+	}
+
+	@ObfInfo(name = "ai", desc = "()I")
+	public static int method5124() {
+		return field2803.field3077;
+	}
+
+	@ObfInfo(name = "ae", desc = "()I")
+	public static int method5140() {
+		return field2803.field3076;
+	}
+
+	@ObfInfo(name = "au", desc = "()I")
+	public static int method5126() {
+		return field2803.field3071;
+	}
+
+	@ObfInfo(name = "ah", desc = "()I")
+	public static int method5127() {
+		return field2803.field3085;
+	}
+
+	@ObfInfo(name = "az", desc = "([III[F)V")
+	public static void method5128(int[] var0, int var1, int var2, float[] var3) {
+		if (var3 == null && field2801 == field2809) {
+			field2801 = field2808;
+		}
+
+		field2801.method5640(var0, var1, var2, var3);
+	}
+
+	@ObfInfo(name = "ax", desc = "()V")
+	public static void method5171() {
+		method5130(Class569.field5508, Class569.field5505, Class569.field5509, Class569.field5507);
+	}
+
+	@ObfInfo(name = "ac", desc = "(IIII)V")
+	public static void method5130(int var0, int var1, int var2, int var3) {
+		field2803.field3085 = var2 - var0;
+		field2803.field3086 = var3 - var1;
+		method5131();
+		if (field2803.field3091.length < field2803.field3086) {
+			field2803.field3091 = new int[Class337.method7475(field2803.field3086)];
+		}
+
+		int var4 = Class88.field5502 * var1 + var0;
+
+		for (int var5 = 0; var5 < field2803.field3086; ++var5) {
+			field2803.field3091[var5] = var4;
+			var4 += Class88.field5502;
+		}
+
+	}
+
+	@ObfInfo(name = "al", desc = "()V")
+	public static void method5131() {
+		field2803.method5835();
+	}
+
+	@ObfInfo(name = "ay", desc = "(II)V")
+	public static void method5176(int var0, int var1) {
+		int var2 = field2803.field3091[0];
+		int var3 = var2 / Class88.field5502;
+		int var4 = var2 - Class88.field5502 * var3;
+		field2803.method5836(var0, var4, var1, var3);
+	}
+
+	@ObfInfo(name = "ao", desc = "(III)V")
+	public static void method5195(int var0, int var1, int var2) {
+		field2803.method5837(var0, var1, var2);
+	}
+
+	@ObfInfo(name = "aa", desc = "(IIIIIIFFFIII)V")
+	public static void method5134(int var0, int var1, int var2, int var3, int var4, int var5, float var6, float var7, float var8, int var9, int var10, int var11) {
+		field2801.method5645(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9, var10, var11);
+	}
+
+	@ObfInfo(name = "as", desc = "(IIIIIIFFFI)V")
+	public static void method5135(int var0, int var1, int var2, int var3, int var4, int var5, float var6, float var7, float var8, int var9) {
+		field2801.method5646(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9);
+	}
+
+	@ObfInfo(name = "aw", desc = "(IIIIIIFFFIIIIIIIIIIIII)V")
+	public static void method5136(int var0, int var1, int var2, int var3, int var4, int var5, float var6, float var7, float var8, int var9, int var10, int var11, int var12, int var13, int var14, int var15, int var16, int var17, int var18, int var19, int var20, int var21) {
+		field2801.method5655(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9, var10, var11, var12, var13, var14, var15, var16, var17, var18, var19, var20, var21);
+	}
+
+	@ObfInfo(name = "at", desc = "(IIIIIIFFFIIIIIIIIIIIII)V")
+	public static void method5137(int var0, int var1, int var2, int var3, int var4, int var5, float var6, float var7, float var8, int var9, int var10, int var11, int var12, int var13, int var14, int var15, int var16, int var17, int var18, int var19, int var20, int var21) {
+		field2801.method5648(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9, var10, var11, var12, var13, var14, var15, var16, var17, var18, var19, var20, var21);
+	}
+
+	@ObfInfo(name = "af", desc = "(IIIIIIFFFIIIBBBB)V")
+	public static void method5138(int var0, int var1, int var2, int var3, int var4, int var5, float var6, float var7, float var8, int var9, int var10, int var11, byte var12, byte var13, byte var14, byte var15) {
+		field2801.method5643(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9, var10, var11, var12, var13, var14, var15);
+	}
+
+	@ObfInfo(name = "am", desc = "(IIIIIIFFFIBBBB)V")
+	public static void method5139(int var0, int var1, int var2, int var3, int var4, int var5, float var6, float var7, float var8, int var9, byte var10, byte var11, byte var12, byte var13) {
+		field2801.method5677(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9, var10, var11, var12, var13);
 	}
 }

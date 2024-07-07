@@ -1,57 +1,65 @@
 import io.runebox.ObfInfo;
+import java.util.concurrent.Future;
 
-public class Class15 implements Class393 {
-	@ObfInfo(name = "al", desc = "Lao;")
-	public static final Class15 field66;
-	@ObfInfo(name = "aj", desc = "Lao;")
-	public static final Class15 field67;
-	@ObfInfo(name = "ak", desc = "Lao;")
-	public static final Class15 field72;
-	@ObfInfo(name = "az", desc = "Lao;")
-	public static final Class15 field74;
-	@ObfInfo(name = "af", desc = "Lao;")
-	public static final Class15 field77;
-	@ObfInfo(name = "ab", desc = "Z")
-	public boolean field73;
-	@ObfInfo(name = "ac", desc = "Z")
-	public boolean field75;
-	@ObfInfo(name = "aa", desc = "I", intMultiplier = -683626941)
-	public int field70;
-	@ObfInfo(name = "at", desc = "Ljava/lang/String;")
+@ObfInfo(name = "ao")
+public class Class15 {
+	@ObfInfo(name = "ad", desc = "Ljava/lang/String;")
 	public String field71;
+	@ObfInfo(name = "aq", desc = "Ljava/util/concurrent/Future;")
+	public Future field73;
 
-	static {
-		field72 = new Class15(0, "POST", true, true);
-		field66 = new Class15(1, "GET", true, false);
-		field67 = new Class15(2, "PUT", false, true);
-		field74 = new Class15(3, "PATCH", false, true);
-		field77 = new Class15(4, "DELETE", false, true);
+	public Class15(Future var1) {
+		this.field73 = var1;
 	}
 
-	public Class15(int var1, String var2, boolean var3, boolean var4) {
-		this.field70 = var1;
-		this.field71 = var2;
-		this.field73 = var3;
-		this.field75 = var4;
+	public Class15(String var1) {
+		this.method199(var1);
 	}
 
-	@ObfInfo(name = "az", desc = "(I)Z")
-	public boolean method174() {
-		return this.field73;
+	@ObfInfo(name = "aq", desc = "(Ljava/lang/String;B)V")
+	public void method199(String var1) {
+		if (var1 == null) {
+			var1 = "";
+		}
+
+		this.field71 = var1;
+		if (this.field73 != null) {
+			this.field73.cancel(true);
+			this.field73 = null;
+		}
+
 	}
 
-	@ObfInfo(name = "af", desc = "(B)Ljava/lang/String;")
-	public String method173() {
+	@ObfInfo(name = "ad", desc = "(S)Ljava/lang/String;")
+	public final String method202() {
 		return this.field71;
 	}
 
-	@ObfInfo(name = "aa", desc = "(I)Z")
-	public boolean method183() {
-		return this.field75;
+	@ObfInfo(name = "ag", desc = "(I)Z", opaque = "882919522")
+	public boolean method197() {
+		return this.field71 != null || this.field73 == null;
 	}
 
-	@ObfInfo(name = "ak", desc = "(I)I")
-	public int method175() {
-		return this.field70;
+	@ObfInfo(name = "ak", desc = "(I)Z", opaque = "-772475586")
+	public final boolean method213() {
+		return this.method197() ? true : this.field73.isDone();
+	}
+
+	@ObfInfo(name = "ap", desc = "(I)Las;", opaque = "1341649557")
+	public final Class19 method204() {
+		if (this.method197()) {
+			return new Class19(this.field71);
+		} else if (!this.method213()) {
+			return null;
+		} else {
+			try {
+				return (Class19)this.field73.get();
+			} catch (Exception var4) {
+				String var3 = "Error retrieving REST request reply";
+				System.err.println(var3 + "\r\n" + var4);
+				this.method199(var3);
+				return new Class19(var3);
+			}
+		}
 	}
 }

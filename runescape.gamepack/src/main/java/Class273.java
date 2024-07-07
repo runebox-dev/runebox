@@ -1,22 +1,20 @@
 import io.runebox.ObfInfo;
 
+@ObfInfo(name = "km")
 public class Class273 {
-	@ObfInfo(name = "az", desc = "I", intMultiplier = 143754529)
-	public int field3019;
-	@ObfInfo(name = "al", desc = "I", intMultiplier = -516588001)
-	public int field3020;
-	@ObfInfo(name = "ak", desc = "I", intMultiplier = 1722409035)
-	public int field3021;
-	@ObfInfo(name = "aj", desc = "I", intMultiplier = 1419484021)
-	public int field3022;
+	@ObfInfo(name = "ak", desc = "Ljx;")
+	public Class258 field2800;
+	@ObfInfo(name = "ag", desc = "I", intMultiplier = -2136908715)
+	public int field2797;
+	@ObfInfo(name = "ad", desc = "I", intMultiplier = 265924559)
+	public int field2798;
+	@ObfInfo(name = "aq", desc = "Ljava/lang/String;")
+	public String field2799;
 
-	public Class273() {
-	}
-
-	public Class273(Class273 var1) {
-		this.field3021 = var1.field3021;
-		this.field3020 = var1.field3020;
-		this.field3022 = var1.field3022;
-		this.field3019 = var1.field3019;
+	public Class273(String var1, int var2, int var3, Class258 var4) {
+		this.field2799 = var1;
+		this.field2798 = var2;
+		this.field2797 = var3;
+		this.field2800 = var4;
 	}
 }

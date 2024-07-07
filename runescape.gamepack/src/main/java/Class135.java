@@ -1,25 +1,23 @@
 import io.runebox.ObfInfo;
+import java.util.concurrent.Callable;
 
-public class Class135 implements Class109 {
-	@ObfInfo(name = "ak", desc = "([BILjava/lang/CharSequence;I)I", opaque = "-375968051")
-	public static int method3085(byte[] var0, int var1, CharSequence var2) {
-		int var4 = var2.length();
-		int var5 = var1;
+@ObfInfo(name = "fe")
+class Class135 implements Callable {
+	// $FF: synthetic field
+	public final Class150 this$0;
+	// $FF: synthetic field
+	public final Class562 val$p;
+	// $FF: synthetic field
+	public final int val$version;
 
-		for (int var6 = 0; var6 < var4; ++var6) {
-			char var7 = var2.charAt(var6);
-			if (var7 <= 127) {
-				var0[var5++] = (byte)var7;
-			} else if (var7 <= 2047) {
-				var0[var5++] = (byte)(192 | var7 >> 6);
-				var0[var5++] = (byte)(128 | var7 & '?');
-			} else {
-				var0[var5++] = (byte)(224 | var7 >> '\f');
-				var0[var5++] = (byte)(128 | var7 >> 6 & 63);
-				var0[var5++] = (byte)(128 | var7 & '?');
-			}
-		}
+	public Class135(Class150 var1, Class562 var2, int var3) {
+		this.this$0 = var1;
+		this.val$p = var2;
+		this.val$version = var3;
+	}
 
-		return var5 - var1;
+	public Object call() {
+		this.this$0.method3215(this.val$p, this.val$version);
+		return null;
 	}
 }

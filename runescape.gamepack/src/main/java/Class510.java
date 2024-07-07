@@ -1,50 +1,109 @@
 import io.runebox.ObfInfo;
 
-public class Class510 extends Class514 {
-	@ObfInfo(name = "al", desc = "I", intMultiplier = -80254017)
-	public int field5177;
-	@ObfInfo(name = "ak", desc = "I", intMultiplier = 1187107183)
-	public int field5178;
-	@ObfInfo(name = "aj", desc = "I", intMultiplier = -297415589)
-	public int field5179;
-	@ObfInfo(name = "az", desc = "I", intMultiplier = -1375003211)
-	public int field5180;
-	@ObfInfo(name = "af", desc = "I", intMultiplier = 972883817)
-	public int field5181;
-	@ObfInfo(name = "aa", desc = "I", intMultiplier = -429974495)
-	public int field5182;
+@ObfInfo(name = "tp")
+public class Class510 {
+	@ObfInfo(name = "an", desc = "Lok;")
+	public Class375 field5103;
+	@ObfInfo(name = "av", desc = "Z")
+	public boolean field5099;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = -854808799)
+	public int field5104;
+	@ObfInfo(name = "ap", desc = "Ljava/lang/String;")
+	public String field5105;
 
-	public Class510(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
-		super(var7, var8);
-		this.field5178 = 0;
-		this.field5177 = 0;
-		this.field5179 = 0;
-		this.field5180 = 0;
-		this.field5181 = 0;
-		this.field5182 = 0;
-		this.field5178 = var1;
-		this.field5177 = var2;
-		this.field5179 = var3;
-		this.field5180 = var4;
-		this.field5181 = var5;
-		this.field5182 = var6;
+	public Class510(Class375 var1) {
+		this.field5104 = 0;
+		this.field5099 = false;
+		this.field5103 = var1;
 	}
 
-	@ObfInfo(name = "ak", desc = "(B)I")
-	public int method9228() {
-		double var2 = this.method9209();
-		return (int)Math.round((double)(this.field5180 - this.field5178) * var2 + (double)this.field5178);
+	@ObfInfo(name = "aq", desc = "(Ljava/lang/String;I)V", opaque = "-222891376")
+	public void method8990(String var1) {
+		if (var1 != null && !var1.isEmpty()) {
+			if (this.field5105 != var1) {
+				this.field5105 = var1;
+				this.field5104 = 0;
+				this.field5099 = false;
+				this.method8985();
+			}
+		}
 	}
 
-	@ObfInfo(name = "al", desc = "(I)I")
-	public int method9229() {
-		double var2 = this.method9209();
-		return (int)Math.round((double)this.field5177 + var2 * (double)(this.field5181 - this.field5177));
+	@ObfInfo(name = "ad", desc = "(B)I", opaque = "0")
+	public int method8985() {
+		if (this.field5105 == null) {
+			this.field5104 = 100;
+			this.field5099 = true;
+		} else {
+			if (this.field5104 < 33) {
+				if (!this.field5103.method7171(Class266.field2734.field2733, this.field5105)) {
+					return this.field5104;
+				}
+
+				this.field5104 = 33;
+			}
+
+			if (this.field5104 == 33) {
+				if (this.field5103.method7137(Class266.field2735.field2733, this.field5105) && !this.field5103.method7171(Class266.field2735.field2733, this.field5105)) {
+					return this.field5104;
+				}
+
+				this.field5104 = 66;
+			}
+
+			if (66 == this.field5104) {
+				if (!this.field5103.method7171(this.field5105, Class266.field2737.field2733)) {
+					return this.field5104;
+				}
+
+				this.field5104 = 100;
+				this.field5099 = true;
+			}
+		}
+
+		return this.field5104;
 	}
 
-	@ObfInfo(name = "aj", desc = "(I)I")
-	public int method9230() {
-		double var2 = this.method9209();
-		return (int)Math.round((double)this.field5179 + (double)(this.field5182 - this.field5179) * var2);
+	@ObfInfo(name = "ag", desc = "(I)Z")
+	public boolean method8994() {
+		return this.field5099;
+	}
+
+	@ObfInfo(name = "ak", desc = "(I)I")
+	public int method8999() {
+		return this.field5104;
+	}
+
+	@ObfInfo(name = "ap", desc = "(Lok;Ljava/lang/String;Ljava/lang/String;I)[Lvv;", opaque = "-639405455")
+	public static Class568[] method9001(Class375 var0, String var1, String var2) {
+		if (!var0.method7137(var1, var2)) {
+			return null;
+		} else {
+			int var4 = var0.method7150(var1);
+			int var5 = var0.method7209(var4, var2);
+			Class568[] var6;
+			if (!Class554.method3253(var0, var4, var5)) {
+				var6 = null;
+			} else {
+				Class568[] var8 = new Class568[Client.field5437];
+
+				for (int var9 = 0; var9 < Client.field5437; ++var9) {
+					Class568 var10 = var8[var9] = new Class568();
+					var10.field5499 = Client.field5433;
+					var10.field5498 = Client.field5438;
+					var10.field5494 = Client.field1454[var9];
+					var10.field5493 = Client.field1561[var9];
+					var10.field5495 = Client.field5435[var9];
+					var10.field5496 = Client.field3491[var9];
+					var10.field5500 = Client.field5432;
+					var10.field5497 = Client.field5434[var9];
+				}
+
+				Class554.method6571();
+				var6 = var8;
+			}
+
+			return var6;
+		}
 	}
 }

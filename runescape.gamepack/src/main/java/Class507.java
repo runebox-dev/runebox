@@ -1,20 +1,17 @@
 import io.runebox.ObfInfo;
 
-public class Class507 extends Class506 {
-	@ObfInfo(name = "es", desc = "Ltm;")
-	public Class507 field5172;
-	@ObfInfo(name = "ef", desc = "Ltm;")
-	public Class507 field5174;
-	@ObfInfo(name = "ed", desc = "J")
-	public long field5173;
-
-	@ObfInfo(name = "jz", desc = "()V")
-	public void method9280() {
-		if (this.field5174 != null) {
-			this.field5174.field5172 = this.field5172;
-			this.field5172.field5174 = this.field5174;
-			this.field5172 = null;
-			this.field5174 = null;
-		}
+@ObfInfo(name = "tm")
+public abstract class Class507 extends Class511 {
+	public Class507(int var1, int var2) {
+		super(var1, var2);
 	}
+
+	@ObfInfo(name = "ag", desc = "(I)I")
+	public abstract int method8956();
+
+	@ObfInfo(name = "aq", desc = "(I)I")
+	public abstract int method8957();
+
+	@ObfInfo(name = "ad", desc = "(I)I")
+	public abstract int method8958();
 }

@@ -1,73 +1,111 @@
 import io.runebox.ObfInfo;
-import java.awt.Component;
-import java.awt.Graphics;
-import java.awt.Image;
-import java.awt.Point;
-import java.awt.Shape;
-import java.awt.image.BufferedImage;
-import java.awt.image.DataBufferInt;
-import java.awt.image.DirectColorModel;
-import java.awt.image.Raster;
-import java.awt.image.WritableRaster;
-import java.util.Hashtable;
 
-public final class Class49 extends Class569 {
-	@ObfInfo(name = "ak", desc = "Ljava/awt/Component;")
-	public Component field337;
-	@ObfInfo(name = "al", desc = "Ljava/awt/Image;")
-	public Image field338;
+@ObfInfo(name = "bw")
+public class Class49 {
+	@ObfInfo(name = "ad", desc = "[Lch;")
+	public Class60[] field313;
+	@ObfInfo(name = "ak", desc = "I")
+	public int field314;
+	@ObfInfo(name = "ag", desc = "I")
+	public int field315;
 
-	public Class49(int var1, int var2, Component var3, boolean var4) {
-		super.field5484 = var1;
-		super.field5482 = var2;
-		super.field5480 = new int[1 + var2 * var1];
-		if (var4) {
-			super.field5483 = new float[var2 * var1 + 1];
+	public Class49(Class562 var1) {
+		this.field313 = new Class60[10];
+
+		for (int var2 = 0; var2 < 10; ++var2) {
+			int var3 = var1.method9902();
+			if (var3 != 0) {
+				--var1.field5471;
+				this.field313[var2] = new Class60();
+				this.field313[var2].method1197(var1);
+			}
 		}
 
-		DataBufferInt var5 = new DataBufferInt(super.field5480, super.field5480.length);
-		DirectColorModel var6 = new DirectColorModel(32, 16711680, 65280, 255);
-		WritableRaster var7 = Raster.createWritableRaster(var6.createCompatibleSampleModel(super.field5484, super.field5482), var5, (Point)null);
-		this.field338 = new BufferedImage(var6, var7, false, new Hashtable());
-		this.method889(var3);
-		this.method10286();
+		this.field315 = var1.method9997();
+		this.field314 = var1.method9997();
 	}
 
-	@ObfInfo(name = "ak", desc = "(Ljava/awt/Component;I)V")
-	public final void method889(Component var1) {
-		this.field337 = var1;
+	@ObfInfo(name = "ad", desc = "()Lbl;")
+	public Class38 method869() {
+		byte[] var1 = this.method879();
+		return new Class38(22050, var1, this.field315 * 22050 / 1000, this.field314 * 22050 / 1000);
 	}
 
-	@ObfInfo(name = "al", desc = "(III)V")
-	public final void method877(int var1, int var2) {
-		this.method879(this.field337.getGraphics(), var1, var2);
-	}
+	@ObfInfo(name = "ag", desc = "()I")
+	public final int method870() {
+		int var1 = 9999999;
 
-	@ObfInfo(name = "aj", desc = "(IIIII)V")
-	public final void method875(int var1, int var2, int var3, int var4) {
-		this.method891(this.field337.getGraphics(), var1, var2, var3, var4);
-	}
-
-	@ObfInfo(name = "az", desc = "(Ljava/awt/Graphics;III)V")
-	public final void method879(Graphics var1, int var2, int var3) {
-		try {
-			var1.drawImage(this.field338, var2, var3, this.field337);
-		} catch (Exception var6) {
-			this.field337.repaint();
+		int var2;
+		for (var2 = 0; var2 < 10; ++var2) {
+			if (this.field313[var2] != null && this.field313[var2].field448 / 20 < var1) {
+				var1 = this.field313[var2].field448 / 20;
+			}
 		}
 
-	}
-
-	@ObfInfo(name = "af", desc = "(Ljava/awt/Graphics;IIIIB)V")
-	public final void method891(Graphics var1, int var2, int var3, int var4, int var5) {
-		try {
-			Shape var7 = var1.getClip();
-			var1.clipRect(var2, var3, var4, var5);
-			var1.drawImage(this.field338, 0, 0, this.field337);
-			var1.setClip(var7);
-		} catch (Exception var8) {
-			this.field337.repaint();
+		if (this.field315 < this.field314 && this.field315 / 20 < var1) {
+			var1 = this.field315 / 20;
 		}
 
+		if (var1 != 9999999 && var1 != 0) {
+			for (var2 = 0; var2 < 10; ++var2) {
+				if (this.field313[var2] != null) {
+					Class60 var10000 = this.field313[var2];
+					var10000.field448 -= var1 * 20;
+				}
+			}
+
+			if (this.field315 < this.field314) {
+				this.field315 -= var1 * 20;
+				this.field314 -= var1 * 20;
+			}
+
+			return var1;
+		} else {
+			return 0;
+		}
+	}
+
+	@ObfInfo(name = "ak", desc = "()[B")
+	public final byte[] method879() {
+		int var1 = 0;
+
+		int var2;
+		for (var2 = 0; var2 < 10; ++var2) {
+			if (this.field313[var2] != null && this.field313[var2].field432 + this.field313[var2].field448 > var1) {
+				var1 = this.field313[var2].field432 + this.field313[var2].field448;
+			}
+		}
+
+		if (var1 == 0) {
+			return new byte[0];
+		} else {
+			var2 = var1 * 22050 / 1000;
+			byte[] var3 = new byte[var2];
+
+			for (int var4 = 0; var4 < 10; ++var4) {
+				if (this.field313[var4] != null) {
+					int var5 = this.field313[var4].field432 * 22050 / 1000;
+					int var6 = this.field313[var4].field448 * 22050 / 1000;
+					int[] var7 = this.field313[var4].method1198(var5, this.field313[var4].field432);
+
+					for (int var8 = 0; var8 < var5; ++var8) {
+						int var9 = var3[var8 + var6] + (var7[var8] >> 8);
+						if ((var9 + 128 & -256) != 0) {
+							var9 = var9 >> 31 ^ 127;
+						}
+
+						var3[var8 + var6] = (byte)var9;
+					}
+				}
+			}
+
+			return var3;
+		}
+	}
+
+	@ObfInfo(name = "aq", desc = "(Lok;II)Lbw;")
+	public static Class49 method880(Class375 var0, int var1, int var2) {
+		byte[] var3 = var0.method7132(var1, var2);
+		return var3 == null ? null : new Class49(new Class562(var3));
 	}
 }

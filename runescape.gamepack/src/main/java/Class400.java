@@ -1,44 +1,21 @@
 import io.runebox.ObfInfo;
-import java.util.Iterator;
+import java.util.Comparator;
 
-public class Class400 implements Iterator {
-	@ObfInfo(name = "ak", desc = "Lpb;")
-	public Class392 field4604;
-	@ObfInfo(name = "al", desc = "Ltm;")
-	public Class507 field4602;
-	@ObfInfo(name = "aj", desc = "Ltm;")
-	public Class507 field4603;
-
-	public Class400(Class392 var1) {
-		this.field4603 = null;
-		this.field4604 = var1;
-		this.field4602 = this.field4604.field4560.field5172;
-		this.field4603 = null;
+@ObfInfo(name = "pj")
+final class Class400 implements Comparator {
+	public Class400() {
 	}
 
-	public Object next() {
-		Class507 var1 = this.field4602;
-		if (this.field4604.field4560 == var1) {
-			var1 = null;
-			this.field4602 = null;
-		} else {
-			this.field4602 = var1.field5172;
-		}
-
-		this.field4603 = var1;
-		return var1;
+	@ObfInfo(name = "aq", desc = "(Lpm;Lpm;B)I", opaque = "2")
+	public int method7462(Class403 var1, Class403 var2) {
+		return var1.field4649.field4661 < var2.field4649.field4661 ? -1 : (var1.field4649.field4661 == var2.field4649.field4661 ? 0 : 1);
 	}
 
-	public boolean hasNext() {
-		return this.field4602 != this.field4604.field4560;
+	public int compare(Object var1, Object var2) {
+		return this.method7462((Class403)var1, (Class403)var2);
 	}
 
-	public void remove() {
-		if (this.field4603 == null) {
-			throw new IllegalStateException();
-		} else {
-			this.field4603.method9280();
-			this.field4603 = null;
-		}
+	public boolean equals(Object var1) {
+		return super.equals(var1);
 	}
 }

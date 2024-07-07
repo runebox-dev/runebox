@@ -1,43 +1,27 @@
 import io.runebox.ObfInfo;
 
+@ObfInfo(name = "fq")
 public class Class147 extends Class149 {
-	@ObfInfo(name = "al", desc = "B")
-	public byte field1668;
-	@ObfInfo(name = "ak", desc = "I", intMultiplier = 302747029)
-	public int field1666;
+	@ObfInfo(name = "ad", desc = "B")
+	public byte field1667;
+	@ObfInfo(name = "aq", desc = "I", intMultiplier = 278243013)
+	public int field1663;
 	// $FF: synthetic field
-	public final Class151 this$0;
+	public final Class144 this$0;
 
-	public Class147(Class151 var1) {
+	public Class147(Class144 var1) {
 		this.this$0 = var1;
-		this.field1666 = -1;
+		this.field1663 = -1;
 	}
 
-	@ObfInfo(name = "ak", desc = "(Lua;I)V")
-	public void method3066(Class521 var1) {
-		this.field1666 = var1.method9407();
-		this.field1668 = var1.method9406();
+	@ObfInfo(name = "aq", desc = "(Lvp;B)V")
+	public void method3079(Class562 var1) {
+		this.field1663 = var1.method9997();
+		this.field1667 = var1.method9955();
 	}
 
-	@ObfInfo(name = "al", desc = "(Lgc;B)V")
-	public void method3067(Class159 var1) {
-		var1.method3344(this.field1666, this.field1668);
-	}
-
-	@ObfInfo(name = "ak", desc = "(B)V", opaque = "33")
-	public static void method3246() {
-		for (Class77 var1 = (Class77)Class77.field976.method7482(); var1 != null; var1 = (Class77)Class77.field976.method7490()) {
-			if (var1.field958 != null) {
-				Client.field3984.method755(var1.field958);
-				var1.field958 = null;
-			}
-
-			if (var1.field972 != null) {
-				Client.field3984.method755(var1.field972);
-				var1.field972 = null;
-			}
-		}
-
-		Class77.field976.method7476();
+	@ObfInfo(name = "ad", desc = "(Lgk;B)V")
+	public void method3080(Class167 var1) {
+		var1.method3465(this.field1663, this.field1667);
 	}
 }

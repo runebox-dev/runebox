@@ -23,6 +23,15 @@ tasks {
         args = listOf("build/runebox/gamepack.jar", "--revision", "latest")
     }
 
+    register("downloadPrevGamepack", JavaExec::class) {
+        dependsOn(named("jar"))
+        group = "revision"
+        mainClass.set("io.runebox.deobfuscator.GamepackDownloader")
+        workingDir = rootProject.projectDir
+        classpath = sourceSets["main"].runtimeClasspath
+        args = listOf("build/runebox/gamepack.jar", "--revision", "prev")
+    }
+
     register("deobfuscate", JavaExec::class) {
         dependsOn(named("jar"))
         group = "revision"

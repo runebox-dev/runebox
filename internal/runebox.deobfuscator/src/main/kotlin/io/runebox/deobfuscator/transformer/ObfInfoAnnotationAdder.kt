@@ -36,9 +36,9 @@ class ObfInfoAnnotationAdder : Transformer {
 
     private fun ClassNode.addObfInfo() {
         if(!name.isObfuscatedName() && name != "Client") return
-        val anno = AnnotationNode("io/runebox/ObfInfo").apply {
+        val anno = AnnotationNode("Lio/runebox/ObfInfo;").apply {
             values = mutableListOf<Any>()
-            if(this@addObfInfo.name != origName) values.add("name", origName)
+            values.add("name", origName)
         }
         if(anno.values.isEmpty()) return
         visibleAnnotations = visibleAnnotations ?: mutableListOf()
@@ -48,7 +48,7 @@ class ObfInfoAnnotationAdder : Transformer {
     private fun MethodNode.addObfInfo() {
         if(!name.isObfuscatedName()) return
         if(isConstructor || isInitializer) return
-        val anno = AnnotationNode("io/runebox/ObfInfo").apply {
+        val anno = AnnotationNode("Lio/runebox/ObfInfo;").apply {
             values = mutableListOf<Any>()
             if(cls.origName.lowercase() != origOwner.lowercase()) values.add("owner", origOwner)
             if(name != origName || desc != origDesc) {
@@ -64,7 +64,7 @@ class ObfInfoAnnotationAdder : Transformer {
 
     private fun FieldNode.addObfInfo() {
         if(!name.isObfuscatedName()) return
-        val anno = AnnotationNode("io/runebox/ObfInfo").apply {
+        val anno = AnnotationNode("Lio/runebox/ObfInfo;").apply {
             values = mutableListOf<Any>()
             if(cls.origName.lowercase() != origOwner.lowercase()) values.add("owner", origOwner)
             if(name != origName || desc != origDesc) {

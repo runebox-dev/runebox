@@ -1,24 +1,16 @@
 import io.runebox.ObfInfo;
 
-public class Class195 extends Class202 {
-	@ObfInfo(name = "ak", desc = "Ljava/lang/String;")
-	public String field2009;
-	// $FF: synthetic field
-	public final Class192 this$0;
+@ObfInfo(name = "hm")
+public class Class195 extends Class516 {
+	@ObfInfo(name = "aq", desc = "Lmo;")
+	public static Class327 field2118;
 
-	public Class195(Class192 var1, String var2, String var3) {
-		super(var1, var2);
-		this.this$0 = var1;
-		this.field2009 = var3;
+	static {
+		field2118 = new Class327(64);
 	}
 
-	@ObfInfo(name = "ak", desc = "(I)I")
-	public int method3591() {
-		return 1;
-	}
-
-	@ObfInfo(name = "aa", desc = "(I)Ljava/lang/String;")
-	public String method3835() {
-		return this.field2009;
+	@ObfInfo(owner = "hw", name = "aq", desc = "(B)V")
+	public static void method4015() {
+		field2118.method6332();
 	}
 }

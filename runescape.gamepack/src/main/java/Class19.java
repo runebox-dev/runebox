@@ -1,77 +1,59 @@
 import io.runebox.ObfInfo;
-import java.util.concurrent.Future;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.util.Map;
 
+@ObfInfo(name = "as")
 public class Class19 {
-	@ObfInfo(name = "al", desc = "Ljava/lang/String;")
-	public String field94;
-	@ObfInfo(name = "ak", desc = "Ljava/util/concurrent/Future;")
-	public Future field93;
+	@ObfInfo(name = "aq", desc = "I", intMultiplier = 1477351693)
+	public final int field91;
+	@ObfInfo(name = "ag", desc = "Ljava/lang/String;")
+	public final String field93;
+	@ObfInfo(name = "ad", desc = "Ljava/util/Map;")
+	public final Map field92;
 
-	public Class19(Future var1) {
-		this.field93 = var1;
+	public Class19(HttpURLConnection var1) throws IOException {
+		this.field91 = var1.getResponseCode();
+		var1.getResponseMessage();
+		this.field92 = var1.getHeaderFields();
+		StringBuilder var2 = new StringBuilder();
+		InputStream var3 = this.field91 >= 300 ? var1.getErrorStream() : var1.getInputStream();
+		if (var3 != null) {
+			InputStreamReader var4 = new InputStreamReader(var3);
+			BufferedReader var5 = new BufferedReader(var4);
+
+			String var6;
+			while ((var6 = var5.readLine()) != null) {
+				var2.append(var6);
+			}
+
+			var3.close();
+		}
+
+		this.field93 = var2.toString();
 	}
 
 	public Class19(String var1) {
-		this.method277(var1);
+		this.field91 = 400;
+		this.field92 = null;
+		this.field93 = "";
 	}
 
-	@ObfInfo(name = "ak", desc = "(Ljava/lang/String;I)V", opaque = "-1339869163")
-	public void method277(String var1) {
-		if (var1 == null) {
-			var1 = "";
-		}
-
-		this.field94 = var1;
-		if (this.field93 != null) {
-			this.field93.cancel(true);
-			this.field93 = null;
-		}
-
+	@ObfInfo(name = "aq", desc = "(I)I")
+	public int method265() {
+		return this.field91;
 	}
 
-	@ObfInfo(name = "al", desc = "(I)Ljava/lang/String;")
-	public final String method281() {
-		return this.field94;
+	@ObfInfo(name = "ad", desc = "(I)Ljava/util/Map;")
+	public Map method273() {
+		return this.field92;
 	}
 
-	@ObfInfo(name = "aj", desc = "(I)Z", opaque = "137471638")
-	public boolean method278() {
-		return this.field94 != null || this.field93 == null;
-	}
-
-	@ObfInfo(name = "az", desc = "(S)Z")
-	public final boolean method279() {
-		return this.method278() ? true : this.field93.isDone();
-	}
-
-	@ObfInfo(name = "af", desc = "(I)Lad;", opaque = "32769")
-	public final Class4 method285() {
-		if (this.method278()) {
-			return new Class4(this.field94);
-		} else if (!this.method279()) {
-			return null;
-		} else {
-			try {
-				return (Class4)this.field93.get();
-			} catch (Exception var4) {
-				String var3 = "Error retrieving REST request reply";
-				System.err.println(var3 + "\r\n" + var4);
-				this.method277(var3);
-				return new Class4(var3);
-			}
-		}
-	}
-
-	@ObfInfo(name = "af", desc = "(I)V", opaque = "1857648377")
-	public static void method276() {
-		if (Class76.field955 == null || Class76.field955.length() <= 0) {
-			if (Client.field4851.method2629() != null) {
-				Class76.field955 = Client.field4851.method2629();
-				Client.field540 = true;
-			} else {
-				Client.field540 = false;
-			}
-
-		}
+	@ObfInfo(name = "ag", desc = "(I)Ljava/lang/String;")
+	public String method264() {
+		return this.field93;
 	}
 }

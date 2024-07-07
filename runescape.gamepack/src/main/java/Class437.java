@@ -1,39 +1,25 @@
 import io.runebox.ObfInfo;
-import java.util.Iterator;
 
-public class Class437 extends Class447 {
-	public Class437(Class447 var1) {
-		super(var1);
-		super.field4807 = "StartSongTask";
+@ObfInfo(name = "qu")
+public class Class437 {
+	@ObfInfo(name = "aq", desc = "[F")
+	public float[] field4759;
+	@ObfInfo(name = "ad", desc = "I", intMultiplier = 1741438289)
+	public int field4760;
+
+	public Class437(float[] var1, int var2) {
+		this.field4759 = var1;
+		this.field4760 = var2;
 	}
 
-	@ObfInfo(name = "ak", desc = "(I)Z", opaque = "709593494")
-	public boolean method7832() {
-		Iterator var2 = Class332.field3455.iterator();
+	@ObfInfo(owner = "km", name = "ad", desc = "([FIFI)F")
+	public static float method5112(float[] var0, int var1, float var2) {
+		float var4 = var0[var1];
 
-		while (var2.hasNext()) {
-			Class357 var3 = (Class357)var2.next();
-			if (var3 != null && !var3.field3941 && var3.field3940 != null) {
-				try {
-					var3.field3940.method6316();
-					var3.field3940.method6400(0);
-					if (var3.field3932 != null) {
-						var3.field3940.method6318(var3.field3932, var3.field3936);
-					}
-
-					var3.field3932 = null;
-					var3.field3942 = null;
-					var3.field3938 = null;
-					var3.field3941 = true;
-				} catch (Exception var5) {
-					Class548.method8904((String)null, var5);
-					this.method8379(var5.getMessage());
-					return true;
-				}
-			}
+		for (int var5 = var1 - 1; var5 >= 0; --var5) {
+			var4 = var4 * var2 + var0[var5];
 		}
 
-		super.field4812 = true;
-		return true;
+		return var4;
 	}
 }

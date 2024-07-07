@@ -18,6 +18,8 @@ object GamepackDownloader {
                 revision = args[2]
                 if(revision.isBlank() || revision == "latest") {
                     revision = params["25"]!!
+                } else if(revision == "prev" || revision == "last") {
+                    revision = "${params["25"]!!.toInt() - 1}"
                 }
             }
         }

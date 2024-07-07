@@ -26,9 +26,17 @@ tasks {
         archiveClassifier.set("")
         archiveVersion.set("")
         from(gamepack.map { if(it.isDirectory) it else zipTree(it) }) {
-            exclude("META-INF/*")
+            exclude("META-INF/**")
         }
         with(named("jar", Jar::class).get())
+    }
 
+    register("rev-update [runescape]") {
+        group = "runebox"
+        project(":deobfuscator").tasks.named("downloadGamepack", JavaExec::class).get().exec()
+        project(":deobfuscator").tasks.named("deobfuscate", JavaExec::class).get().exec()
+        project(":updater").tasks.named("updateGamepack", JavaExec::class).get().exec()
+        project(":decompiler").tasks.named("decompileUpdated", JavaExec::class).get().exec()
+        project(":decompiler").tasks.named("copyDecompSources", JavaExec::class).get().exec()
     }
 }

@@ -1,63 +1,20 @@
 import io.runebox.ObfInfo;
 
+@ObfInfo(name = "ns")
 public class Class357 {
-	@ObfInfo(name = "ah", desc = "Lmw;")
-	public Class335 field3940;
-	@ObfInfo(name = "aq", desc = "Lno;")
-	public Class353 field3932;
-	@ObfInfo(name = "ak", desc = "Lor;")
-	public Class382 field3938;
-	@ObfInfo(name = "av", desc = "Lbq;")
-	public Class43 field3942;
-	@ObfInfo(name = "at", desc = "Z")
-	public boolean field3934;
-	@ObfInfo(name = "aa", desc = "Z")
-	public boolean field3936;
-	@ObfInfo(name = "ao", desc = "Z")
-	public boolean field3939;
-	@ObfInfo(name = "ab", desc = "Z")
-	public boolean field3941;
-	@ObfInfo(name = "ac", desc = "Z")
-	public boolean field3943;
-	@ObfInfo(name = "af", desc = "F")
-	public float field3935;
-	@ObfInfo(name = "az", desc = "I", intMultiplier = -1287935663)
-	public int field3931;
-	@ObfInfo(name = "aj", desc = "I", intMultiplier = -239630077)
-	public int field3933;
-	@ObfInfo(name = "al", desc = "I", intMultiplier = 1516252477)
-	public int field3937;
+	@ObfInfo(name = "aq", desc = "[S")
+	public static final short[] field3779;
+	@ObfInfo(name = "ag", desc = "[S")
+	public static final short[] field3781;
+	@ObfInfo(name = "ak", desc = "[[S")
+	public static final short[][] field3777;
+	@ObfInfo(name = "ad", desc = "[[S")
+	public static final short[][] field3780;
 
-	public Class357(Class382 var1, String var2, String var3, int var4, boolean var5) {
-		this.field3937 = -1;
-		this.field3933 = -1;
-		this.field3931 = 0;
-		this.field3935 = 0.0F;
-		this.field3936 = false;
-		this.field3943 = false;
-		this.field3939 = false;
-		this.field3937 = var1.method7233(var2);
-		this.field3933 = var1.method7299(this.field3937, var3);
-		this.method7040(var1, this.field3937, this.field3933, var4, var5);
-	}
-
-	public Class357(Class382 var1, int var2, int var3, int var4, boolean var5) {
-		this.field3937 = -1;
-		this.field3933 = -1;
-		this.field3931 = 0;
-		this.field3935 = 0.0F;
-		this.field3936 = false;
-		this.field3943 = false;
-		this.field3939 = false;
-		this.method7040(var1, var2, var3, var4, var5);
-	}
-
-	@ObfInfo(name = "ak", desc = "(Lor;IIIZB)V")
-	public void method7040(Class382 var1, int var2, int var3, int var4, boolean var5) {
-		this.field3938 = var1;
-		this.field3937 = var2;
-		this.field3933 = var3;
-		this.field3931 = var4;
-		this.field3936 = var5;
+	static {
+		field3779 = new short[]{6798, 8741, 25238, 4626, 4550};
+		field3780 = new short[][]{{6798, 107, 10283, 16, 4797, 7744, 5799, 4634, -31839, 22433, 2983, -11343, 8, 5281, 10438, 3650, -27322, -21845, 200, 571, 908, 21830, 28946, -15701, -14010, -22122, 937, 8130, -13422, 30385}, {8741, 12, -1506, -22374, 7735, 8404, 1701, -27106, 24094, 10153, -8915, 4783, 1341, 16578, -30533, 25239, 8, 5281, 10438, 3650, -27322, -21845, 200, 571, 908, 21830, 28946, -15701, -14010}, {25238, 8742, 12, -1506, -22374, 7735, 8404, 1701, -27106, 24094, 10153, -8915, 4783, 1341, 16578, -30533, 8, 5281, 10438, 3650, -27322, -21845, 200, 571, 908, 21830, 28946, -15701, -14010}, {4626, 11146, 6439, 12, 4758, 10270}, {4550, 4537, 5681, 5673, 5790, 6806, 8076, 4574, 17050, 0, 127, -31821, -17991}};
+		field3781 = new short[]{-10304, 9104, -1, -1, -1};
+		field3777 = new short[][]{{6554, 115, 10304, 28, 5702, 7756, 5681, 4510, -31835, 22437, 2859, -11339, 16, 5157, 10446, 3658, -27314, -21965, 472, 580, 784, 21966, 28950, -15697, -14002, -22116, 945, 8144, -13414, 30389}, {9104, 10275, 7595, 3610, 7975, 8526, 918, -26734, 24466, 10145, -6882, 5027, 1457, 16565, -30545, 25486, 24, 5392, 10429, 3673, -27335, -21957, 192, 687, 412, 21821, 28835, -15460, -14019}, new short[0], new short[0], new short[0]};
 	}
 }

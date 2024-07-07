@@ -1,357 +1,128 @@
 import io.runebox.ObfInfo;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
 
-public final class Class269 {
-	@ObfInfo(name = "aa", desc = "[[Lks;")
-	public Class279[][] field2995;
-	@ObfInfo(name = "aj", desc = "Llt;")
-	public Class306 field2986;
-	@ObfInfo(name = "az", desc = "Lvc;")
-	public Class549 field2989;
-	@ObfInfo(name = "ab", desc = "[Lvl;")
-	public Class557[] field2993;
+@ObfInfo(name = "ki")
+public final class Class269 extends Class520 {
+	@ObfInfo(name = "ai", desc = "Lkb;")
+	public Class262 field2763;
+	@ObfInfo(name = "at", desc = "Lki;")
+	public Class269 field2776;
+	@ObfInfo(name = "ab", desc = "Lkk;")
+	public Class271 field2762;
+	@ObfInfo(name = "aj", desc = "Lla;")
+	public Class287 field2760;
+	@ObfInfo(name = "au", desc = "[Llp;")
+	public Class302[] field2765;
+	@ObfInfo(name = "ap", desc = "Llt;")
+	public Class306 field2768;
+	@ObfInfo(name = "av", desc = "Llu;")
+	public Class307 field2761;
+	@ObfInfo(name = "an", desc = "Llw;")
+	public Class309 field2759;
+	@ObfInfo(name = "ac", desc = "Z")
+	public boolean field2769;
 	@ObfInfo(name = "al", desc = "Z")
-	public boolean field2987;
-	@ObfInfo(name = "ak", desc = "Z")
-	public boolean field2991;
-	@ObfInfo(name = "aq", desc = "I", intMultiplier = -155132435)
-	public int field2996;
-	@ObfInfo(name = "av", desc = "I", intMultiplier = -1327051579)
-	public int field2998;
-	@ObfInfo(name = "ap", desc = "I", intMultiplier = -1439239097)
-	public int field2999;
-	@ObfInfo(name = "ae", desc = "I", intMultiplier = 738540273)
-	public int field3000;
-	@ObfInfo(name = "ax", desc = "I", intMultiplier = 442127569)
-	public int field3001;
-	@ObfInfo(name = "af", desc = "Ljava/util/HashMap;")
-	public HashMap field2990;
-	@ObfInfo(name = "at", desc = "Ljava/util/HashMap;")
-	public HashMap field3002;
-	@ObfInfo(name = "ao", desc = "Lor;")
-	public final Class382 field2992;
-	@ObfInfo(name = "ac", desc = "Lor;")
-	public final Class382 field2994;
-	@ObfInfo(name = "ah", desc = "Ljava/util/HashMap;")
-	public final HashMap field2988;
+	public boolean field2770;
+	@ObfInfo(name = "ay", desc = "Z")
+	public boolean field2771;
+	@ObfInfo(name = "as", desc = "I", intMultiplier = 1384418897)
+	public int field2754;
+	@ObfInfo(name = "ax", desc = "I", intMultiplier = 336523667)
+	public int field2755;
+	@ObfInfo(name = "ad", desc = "I", intMultiplier = -720986189)
+	public int field2756;
+	@ObfInfo(name = "ak", desc = "I", intMultiplier = -608515825)
+	public int field2757;
+	@ObfInfo(name = "aq", desc = "I", intMultiplier = 608241537)
+	public int field2758;
+	@ObfInfo(name = "ae", desc = "I", intMultiplier = -1837845291)
+	public int field2764;
+	@ObfInfo(name = "ag", desc = "I", intMultiplier = -2079615869)
+	public int field2766;
+	@ObfInfo(name = "az", desc = "I", intMultiplier = 1687914105)
+	public int field2767;
+	@ObfInfo(name = "ao", desc = "I", intMultiplier = 690710773)
+	public int field2772;
+	@ObfInfo(name = "aw", desc = "I", intMultiplier = -1923980729)
+	public int field2775;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = -1732174243)
+	public int field2778;
+	@ObfInfo(name = "ah", desc = "[I")
+	public int[] field2774;
 
-	public Class269(Class557[] var1, HashMap var2, Class382 var3, Class382 var4) {
-		this.field2991 = false;
-		this.field2987 = false;
-		this.field3002 = new HashMap();
-		this.field3001 = 0;
-		this.field2993 = var1;
-		this.field2988 = var2;
-		this.field2994 = var3;
-		this.field2992 = var4;
+	public Class269(int var1, int var2, int var3) {
+		this.field2765 = new Class302[5];
+		this.field2774 = new int[5];
+		this.field2767 = 0;
+		this.field2757 = this.field2758 = var1;
+		this.field2756 = var2;
+		this.field2766 = var3;
 	}
 
-	@ObfInfo(name = "ak", desc = "(Lor;Ljava/lang/String;ZI)V", opaque = "-84597132")
-	public void method5362(Class382 var1, String var2, boolean var3) {
-		if (!this.field2987) {
-			this.field2991 = false;
-			this.field2987 = true;
-			System.nanoTime();
-			int var5 = var1.method7233(Class308.field3249.field3251);
-			int var6 = var1.method7299(var5, var2);
-			Class521 var7 = new Class521(var1.method7271(Class308.field3249.field3251, var2));
-			Class521 var8 = new Class521(var1.method7271(Class308.field3246.field3251, var2));
-			System.nanoTime();
-			System.nanoTime();
-			this.field2986 = new Class306();
-
-			try {
-				this.field2986.method6147(var7, var8, var6, var3);
-			} catch (IllegalStateException var17) {
-				return;
+	@ObfInfo(name = "aq", desc = "(CI)B", opaque = "1638822604")
+	public static byte method5083(char var0) {
+		byte var2;
+		if ((var0 <= 0 || var0 >= 128) && (var0 < 160 || var0 > 255)) {
+			if (var0 == 8364) {
+				var2 = -128;
+			} else if (var0 == 8218) {
+				var2 = -126;
+			} else if (var0 == 402) {
+				var2 = -125;
+			} else if (var0 == 8222) {
+				var2 = -124;
+			} else if (var0 == 8230) {
+				var2 = -123;
+			} else if (var0 == 8224) {
+				var2 = -122;
+			} else if (var0 == 8225) {
+				var2 = -121;
+			} else if (var0 == 710) {
+				var2 = -120;
+			} else if (var0 == 8240) {
+				var2 = -119;
+			} else if (var0 == 352) {
+				var2 = -118;
+			} else if (var0 == 8249) {
+				var2 = -117;
+			} else if (var0 == 338) {
+				var2 = -116;
+			} else if (var0 == 381) {
+				var2 = -114;
+			} else if (var0 == 8216) {
+				var2 = -111;
+			} else if (var0 == 8217) {
+				var2 = -110;
+			} else if (var0 == 8220) {
+				var2 = -109;
+			} else if (var0 == 8221) {
+				var2 = -108;
+			} else if (var0 == 8226) {
+				var2 = -107;
+			} else if (var0 == 8211) {
+				var2 = -106;
+			} else if (var0 == 8212) {
+				var2 = -105;
+			} else if (var0 == 732) {
+				var2 = -104;
+			} else if (var0 == 8482) {
+				var2 = -103;
+			} else if (var0 == 353) {
+				var2 = -102;
+			} else if (var0 == 8250) {
+				var2 = -101;
+			} else if (var0 == 339) {
+				var2 = -100;
+			} else if (var0 == 382) {
+				var2 = -98;
+			} else if (var0 == 376) {
+				var2 = -97;
+			} else {
+				var2 = 63;
 			}
-
-			this.field2986.method5815();
-			this.field2986.method5804();
-			this.field2986.method5805();
-			this.field2998 = this.field2986.method5799() * 64;
-			this.field2996 = this.field2986.method5801() * 64;
-			this.field2999 = (this.field2986.method5800() - this.field2986.method5799() + 1) * 64;
-			this.field3000 = (this.field2986.method5824() - this.field2986.method5801() + 1) * 64;
-			int var9 = this.field2986.method5800() - this.field2986.method5799() + 1;
-			int var10 = this.field2986.method5824() - this.field2986.method5801() + 1;
-			System.nanoTime();
-			System.nanoTime();
-			Class279.field3086.method5894();
-			this.field2995 = new Class279[var9][var10];
-			Iterator var11 = this.field2986.field3240.iterator();
-
-			while (var11.hasNext()) {
-				Class282 var12 = (Class282)var11.next();
-				int var13 = var12.field3223;
-				int var14 = var12.field3213;
-				int var15 = var13 - this.field2986.method5799();
-				int var16 = var14 - this.field2986.method5801();
-				this.field2995[var15][var16] = new Class279(var13, var14, this.field2986.method5796(), this.field2988);
-				this.field2995[var15][var16].method5573(var12, this.field2986.field3239);
-			}
-
-			for (int var18 = 0; var18 < var9; ++var18) {
-				for (int var20 = 0; var20 < var10; ++var20) {
-					if (this.field2995[var18][var20] == null) {
-						this.field2995[var18][var20] = new Class279(this.field2986.method5799() + var18, this.field2986.method5801() + var20, this.field2986.method5796(), this.field2988);
-						this.field2995[var18][var20].method5574(this.field2986.field3238, this.field2986.field3239);
-					}
-				}
-			}
-
-			System.nanoTime();
-			System.nanoTime();
-			if (var1.method7235(Class308.field3247.field3251, var2)) {
-				byte[] var19 = var1.method7271(Class308.field3247.field3251, var2);
-				this.field2989 = Class46.method8418(var19);
-			}
-
-			System.nanoTime();
-			var1.method7229();
-			var1.method7231();
-			this.field2991 = true;
-		}
-	}
-
-	@ObfInfo(name = "al", desc = "(I)V")
-	public final void method5359() {
-		this.field2990 = null;
-	}
-
-	@ObfInfo(name = "aj", desc = "(IIIIIIIIB)V", opaque = "5")
-	public final void method5360(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
-		int[] var10 = Class561.field5418;
-		int var11 = Class87.field5423;
-		int var12 = Class561.field5420;
-		float[] var13 = Class561.field5421;
-		int[] var14 = new int[4];
-		Class561.method10195(var14);
-		Class311 var15 = this.method5364(var1, var2, var3, var4);
-		float var16 = this.method5369(var7 - var5, var3 - var1);
-		int var17 = (int)Math.ceil((double)var16);
-		this.field3001 = var17;
-		if (!this.field3002.containsKey(var17)) {
-			Class304 var18 = new Class304(var17);
-			var18.method6087();
-			this.field3002.put(var17, var18);
-		}
-
-		int var25 = var15.field3261 + var15.field3262 - 1;
-		int var19 = var15.field3263 + var15.field3265 - 1;
-
-		int var20;
-		int var21;
-		for (var20 = var15.field3262; var20 <= var25; ++var20) {
-			for (var21 = var15.field3263; var21 <= var19; ++var21) {
-				this.field2995[var20][var21].method5672(var17, (Class304)this.field3002.get(var17), this.field2993, this.field2994, this.field2992);
-			}
-		}
-
-		Class253.method4794(var10, var11, var12, var13);
-		Class561.method10147(var14);
-		var20 = (int)(var16 * 64.0F);
-		var21 = this.field2998 + var1;
-		int var22 = this.field2996 + var2;
-
-		for (int var23 = var15.field3262; var23 < var15.field3261 + var15.field3262; ++var23) {
-			for (int var24 = var15.field3263; var24 < var15.field3263 + var15.field3265; ++var24) {
-				this.field2995[var23][var24].method5572(var5 + (this.field2995[var23][var24].field3077 * 64 - var21) * var20 / 64, var8 - var20 * (this.field2995[var23][var24].field3078 * 64 - var22 + 64) / 64, var20);
-			}
-		}
-
-	}
-
-	@ObfInfo(name = "az", desc = "(IIIIIIIILjava/util/HashSet;Ljava/util/HashSet;IIZB)V", opaque = "125")
-	public final void method5393(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, HashSet var9, HashSet var10, int var11, int var12, boolean var13) {
-		Class311 var15 = this.method5364(var1, var2, var3, var4);
-		float var16 = this.method5369(var7 - var5, var3 - var1);
-		int var17 = (int)(64.0F * var16);
-		int var18 = this.field2998 + var1;
-		int var19 = var2 + this.field2996;
-
-		int var20;
-		int var21;
-		for (var20 = var15.field3262; var20 < var15.field3262 + var15.field3261; ++var20) {
-			for (var21 = var15.field3263; var21 < var15.field3265 + var15.field3263; ++var21) {
-				if (var13) {
-					this.field2995[var20][var21].method5618();
-				}
-
-				this.field2995[var20][var21].method5622(var5 + var17 * (this.field2995[var20][var21].field3077 * 64 - var18) / 64, var8 - (this.field2995[var20][var21].field3078 * 64 - var19 + 64) * var17 / 64, var17, var9);
-			}
-		}
-
-		if (var10 != null && var11 > 0) {
-			for (var20 = var15.field3262; var20 < var15.field3261 + var15.field3262; ++var20) {
-				for (var21 = var15.field3263; var21 < var15.field3263 + var15.field3265; ++var21) {
-					this.field2995[var20][var21].method5583(var10, var11, var12);
-				}
-			}
-		}
-
-	}
-
-	@ObfInfo(name = "af", desc = "(IIIILjava/util/HashSet;III)V", opaque = "362467928")
-	public void method5361(int var1, int var2, int var3, int var4, HashSet var5, int var6, int var7) {
-		if (this.field2989 != null) {
-			this.field2989.method9947(var1, var2, var3, var4);
-			if (var6 > 0 && var6 % var7 < var7 / 2) {
-				if (this.field2990 == null) {
-					this.method5368();
-				}
-
-				Iterator var9 = var5.iterator();
-
-				while (true) {
-					List var11;
-					do {
-						if (!var9.hasNext()) {
-							return;
-						}
-
-						int var10 = (Integer)var9.next();
-						var11 = (List)this.field2990.get(var10);
-					} while(var11 == null);
-
-					Iterator var12 = var11.iterator();
-
-					while (var12.hasNext()) {
-						Class305 var13 = (Class305)var12.next();
-						int var14 = var3 * (var13.field3235.field3869 - this.field2998) / this.field2999;
-						int var15 = var4 - var4 * (var13.field3235.field3868 - this.field2996) / this.field3000;
-						Class561.method10150(var14 + var1, var15 + var2, 2, 16776960, 256);
-					}
-				}
-			}
-		}
-	}
-
-	@ObfInfo(name = "aa", desc = "(IIIIIIIIIII)Ljava/util/List;", opaque = "1794948610")
-	public List method5358(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10) {
-		LinkedList var12 = new LinkedList();
-		if (!this.field2991) {
-			return var12;
 		} else {
-			Class311 var13 = this.method5364(var1, var2, var3, var4);
-			float var14 = this.method5369(var7, var3 - var1);
-			int var15 = (int)(var14 * 64.0F);
-			int var16 = var1 + this.field2998;
-			int var17 = var2 + this.field2996;
-
-			for (int var18 = var13.field3262; var18 < var13.field3261 + var13.field3262; ++var18) {
-				for (int var19 = var13.field3263; var19 < var13.field3265 + var13.field3263; ++var19) {
-					List var20 = this.field2995[var18][var19].method5603((this.field2995[var18][var19].field3077 * 64 - var16) * var15 / 64 + var5, var8 + var6 - var15 * (64 + (this.field2995[var18][var19].field3078 * 64 - var17)) / 64, var15, var9, var10);
-					if (!var20.isEmpty()) {
-						var12.addAll(var20);
-					}
-				}
-			}
-
-			return var12;
-		}
-	}
-
-	@ObfInfo(name = "at", desc = "(IIIII)Lly;", opaque = "-1009378092")
-	public Class311 method5364(int var1, int var2, int var3, int var4) {
-		Class311 var6 = new Class311(this);
-		int var7 = var1 + this.field2998;
-		int var8 = var2 + this.field2996;
-		int var9 = var3 + this.field2998;
-		int var10 = var4 + this.field2996;
-		int var11 = var7 / 64;
-		int var12 = var8 / 64;
-		int var13 = var9 / 64;
-		int var14 = var10 / 64;
-		var6.field3261 = 1 + (var13 - var11);
-		var6.field3265 = var14 - var12 + 1;
-		var6.field3262 = var11 - this.field2986.method5799();
-		var6.field3263 = var12 - this.field2986.method5801();
-		if (var6.field3262 < 0) {
-			var6.field3261 += var6.field3262;
-			var6.field3262 = 0;
+			var2 = (byte)var0;
 		}
 
-		if (var6.field3262 > this.field2995.length - var6.field3261) {
-			var6.field3261 = this.field2995.length - var6.field3262;
-		}
-
-		if (var6.field3263 < 0) {
-			var6.field3265 += var6.field3263;
-			var6.field3263 = 0;
-		}
-
-		if (var6.field3263 > this.field2995[0].length - var6.field3265) {
-			var6.field3265 = this.field2995[0].length - var6.field3263;
-		}
-
-		var6.field3261 = Math.min(var6.field3261, this.field2995.length);
-		var6.field3265 = Math.min(var6.field3265, this.field2995[0].length);
-		return var6;
-	}
-
-	@ObfInfo(name = "ab", desc = "(B)Z")
-	public boolean method5365() {
-		return this.field2991;
-	}
-
-	@ObfInfo(name = "ac", desc = "(I)I")
-	public int method5366() {
-		return this.field2986.method5787();
-	}
-
-	@ObfInfo(name = "ao", desc = "(B)Ljava/util/HashMap;")
-	public HashMap method5363() {
-		this.method5368();
-		return this.field2990;
-	}
-
-	@ObfInfo(name = "ah", desc = "(B)V", opaque = "1")
-	public void method5368() {
-		if (this.field2990 == null) {
-			this.field2990 = new HashMap();
-		}
-
-		this.field2990.clear();
-
-		for (int var2 = 0; var2 < this.field2995.length; ++var2) {
-			for (int var3 = 0; var3 < this.field2995[var2].length; ++var3) {
-				List var4 = this.field2995[var2][var3].method5604();
-				Iterator var5 = var4.iterator();
-
-				while (var5.hasNext()) {
-					Class305 var6 = (Class305)var5.next();
-					if (var6.method6119()) {
-						int var7 = var6.method5728();
-						if (!this.field2990.containsKey(var7)) {
-							LinkedList var8 = new LinkedList();
-							var8.add(var6);
-							this.field2990.put(var7, var8);
-						} else {
-							List var9 = (List)this.field2990.get(var7);
-							var9.add(var6);
-						}
-					}
-				}
-			}
-		}
-
-	}
-
-	@ObfInfo(name = "av", desc = "(IIB)F", opaque = "6")
-	public float method5369(int var1, int var2) {
-		float var4 = (float)var1 / (float)var2;
-		if (var4 > 8.0F) {
-			return 8.0F;
-		} else if (var4 < 1.0F) {
-			return 1.0F;
-		} else {
-			int var5 = Math.round(var4);
-			return Math.abs((float)var5 - var4) < 0.05F ? (float)var5 : var4;
-		}
+		return var2;
 	}
 }

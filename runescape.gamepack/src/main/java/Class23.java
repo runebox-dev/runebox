@@ -1,27 +1,35 @@
 import io.runebox.ObfInfo;
-import java.io.IOException;
-import java.util.concurrent.Callable;
+import java.awt.Component;
+import java.awt.event.MouseWheelEvent;
+import java.awt.event.MouseWheelListener;
 
-public class Class23 implements Callable {
-	// $FF: synthetic field
-	public final Class5 this$0;
-	@ObfInfo(name = "ak", desc = "Lah;")
-	public final Class8 field123;
+@ObfInfo(name = "aw")
+public final class Class23 implements Class230, MouseWheelListener {
+	@ObfInfo(name = "aq", desc = "I", intMultiplier = 747311249)
+	public int field113;
 
-	public Class23(Class5 var1, Class8 var2) {
-		this.this$0 = var1;
-		this.field123 = var2;
+	public Class23() {
+		this.field113 = 0;
 	}
 
-	public Object call() throws Exception {
-		try {
-			while (this.field123.method128()) {
-				Class493.method8960(10L);
-			}
-		} catch (IOException var2) {
-			return new Class4("Error servicing REST query: " + var2.getMessage());
-		}
+	@ObfInfo(name = "aq", desc = "(Ljava/awt/Component;B)V")
+	public void method307(Component var1) {
+		var1.addMouseWheelListener(this);
+	}
 
-		return this.field123.method115();
+	@ObfInfo(name = "ad", desc = "(Ljava/awt/Component;I)V")
+	public void method308(Component var1) {
+		var1.removeMouseWheelListener(this);
+	}
+
+	public synchronized void mouseWheelMoved(MouseWheelEvent var1) {
+		this.field113 += var1.getWheelRotation();
+	}
+
+	@ObfInfo(name = "ag", desc = "(I)I")
+	public synchronized int method310() {
+		int var2 = this.field113;
+		this.field113 = 0;
+		return var2;
 	}
 }
