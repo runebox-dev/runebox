@@ -1,36 +1,36 @@
 import io.runebox.ObfInfo;
+import java.util.zip.Inflater;
 
-@ObfInfo(name = "vm")
-public class Class558 implements Class393 {
-	@ObfInfo(name = "ak", desc = "Lvm;")
-	public static final Class558 field5400;
-	@ObfInfo(name = "al", desc = "Lvm;")
-	public static final Class558 field5401;
-	@ObfInfo(name = "aj", desc = "Lvm;")
-	public static final Class558 field5402;
-	@ObfInfo(name = "af", desc = "I", intMultiplier = -906848393)
-	public final int field5403;
-	@ObfInfo(name = "az", desc = "I", intMultiplier = -1771953401)
-	public final int field5404;
+@ObfInfo(name = "vl")
+public class Class558 {
+	@ObfInfo(name = "aq", desc = "Ljava/util/zip/Inflater;")
+	public Inflater field5449;
 
-	static {
-		field5400 = new Class558(0, 0);
-		field5401 = new Class558(1, 1);
-		field5402 = new Class558(2, 2);
+	public Class558() {
+		this(-1, 1000000, 1000000);
 	}
 
-	public Class558(int var1, int var2) {
-		this.field5404 = var1;
-		this.field5403 = var2;
+	public Class558(int var1, int var2, int var3) {
 	}
 
-	@ObfInfo(name = "ak", desc = "(I)I")
-	public int method175() {
-		return this.field5403;
-	}
+	@ObfInfo(name = "aq", desc = "(Lvp;[BI)V", opaque = "1659372412")
+	public void method9768(Class562 var1, byte[] var2) {
+		if (31 == var1.field5472[var1.field5471] && -117 == var1.field5472[var1.field5471 + 1]) {
+			if (this.field5449 == null) {
+				this.field5449 = new Inflater(true);
+			}
 
-	@ObfInfo(owner = "om", name = "az", desc = "(B)[Lvm;")
-	public static Class558[] method7193() {
-		return new Class558[]{field5400, field5402, field5401};
+			try {
+				this.field5449.setInput(var1.field5472, 10 + var1.field5471, var1.field5472.length - (8 + var1.field5471 + 10));
+				this.field5449.inflate(var2);
+			} catch (Exception var5) {
+				this.field5449.reset();
+				throw new RuntimeException("");
+			}
+
+			this.field5449.reset();
+		} else {
+			throw new RuntimeException("");
+		}
 	}
 }

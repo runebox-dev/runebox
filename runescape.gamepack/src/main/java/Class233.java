@@ -1,20 +1,34 @@
 import io.runebox.ObfInfo;
 
 @ObfInfo(name = "iy")
-public class Class233 extends Class507 {
-	@ObfInfo(name = "ak", desc = "Llm;")
-	public static Class299 field2501;
+public class Class233 extends Class221 {
+	@ObfInfo(name = "aq", desc = "Ljava/lang/String;")
+	public String field2473;
+	// $FF: synthetic field
+	public final Class214 this$0;
 
-	static {
-		field2501 = new Class299(64);
+	public Class233(Class214 var1, String var2, String var3) {
+		super(var1, var2);
+		this.this$0 = var1;
+		this.field2473 = var3;
 	}
 
-	@ObfInfo(owner = "jh", name = "ak", desc = "(Lor;I)V")
-	public static void method4674(Class382 var0) {
+	@ObfInfo(name = "aq", desc = "(B)I")
+	public int method4255() {
+		return 1;
 	}
 
-	@ObfInfo(owner = "ev", name = "al", desc = "(I)V")
-	public static void method2997() {
-		field2501.method5995();
+	@ObfInfo(name = "ab", desc = "(B)Ljava/lang/String;")
+	public String method4253() {
+		return this.field2473;
+	}
+
+	@ObfInfo(name = "au", desc = "(Ljava/lang/String;B)I", opaque = "-1")
+	public static int method4448(String var0) {
+		if (var0.equals("centre")) {
+			return 1;
+		} else {
+			return !var0.equals("bottom") && !var0.equals("right") ? 0 : 2;
+		}
 	}
 }

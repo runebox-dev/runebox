@@ -1,115 +1,609 @@
 import io.runebox.ObfInfo;
-import java.applet.Applet;
-import java.io.BufferedReader;
-import java.io.DataInputStream;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.StringReader;
-import java.io.StringWriter;
-import java.net.URL;
 
 @ObfInfo(name = "vb")
-public class Class548 extends RuntimeException {
-	@ObfInfo(owner = "uc", name = "aj", desc = "I", intMultiplier = -2084016401)
-	public static int field5223;
-	@ObfInfo(name = "az", desc = "I", intMultiplier = 1257272621)
-	public static int field5348;
-	@ObfInfo(name = "ak", desc = "Ljava/applet/Applet;")
-	public static Applet field5351;
-	@ObfInfo(owner = "gz", name = "al", desc = "Ljava/lang/String;")
-	public static String field1900;
-	@ObfInfo(owner = "gz", name = "ak", desc = "Ljava/lang/String;")
-	public static String field1908;
-	@ObfInfo(name = "aa", desc = "Ljava/lang/String;")
-	public String field5350;
-	@ObfInfo(name = "at", desc = "Ljava/lang/Throwable;")
-	public Throwable field5349;
+public final class Class548 {
+	@ObfInfo(name = "av", desc = "Lve;")
+	public static Class551 field5366;
+	@ObfInfo(owner = "ve", name = "am", desc = "[I")
+	public static int[] field5401;
 
-	public Class548(Throwable var1, String var2) {
-		this.field5350 = var2;
-		this.field5349 = var1;
+	static {
+		field5366 = new Class551();
 	}
 
-	@ObfInfo(owner = "sr", name = "ak", desc = "(Ljava/lang/String;Ljava/lang/Throwable;I)V", opaque = "902127395")
-	public static void method8904(String var0, Throwable var1) {
-		try {
-			String var3 = "";
-			if (var1 != null) {
-				var3 = method3057(var1);
-			}
-
-			if (var0 != null) {
-				if (var1 != null) {
-					var3 = var3 + " | ";
-				}
-
-				var3 = var3 + var0;
-			}
-
-			System.out.println("Error: " + var3);
-			var3 = var3.replace(':', '.');
-			var3 = var3.replace('@', '_');
-			var3 = var3.replace('&', '_');
-			var3 = var3.replace('#', '_');
-			if (field5351 == null) {
-				return;
-			}
-
-			URL var4 = new URL(field5351.getCodeBase(), "clienterror.ws?cv=" + field5223 + "&cs=" + field5348 + "&u=" + Class83.field5475 + "&v1=" + field1908 + "&v2=" + field1900 + "&ct=" + Client.field3152 + "&e=" + var3);
-			DataInputStream var5 = new DataInputStream(var4.openStream());
-			var5.read();
-			var5.close();
-		} catch (Exception var6) {
+	@ObfInfo(name = "aq", desc = "([BI[BII)I")
+	public static int method9558(byte[] var0, int var1, byte[] var2, int var3, int var4) {
+		synchronized(field5366) {
+			field5366.field5395 = var2;
+			field5366.field5384 = var4;
+			field5366.field5408 = var0;
+			field5366.field5387 = 0;
+			field5366.field5404 = var1;
+			field5366.field5393 = 0;
+			field5366.field5381 = 0;
+			field5366.field5385 = 0;
+			field5366.field5389 = 0;
+			method9552(field5366);
+			var1 -= field5366.field5404;
+			field5366.field5395 = null;
+			field5366.field5408 = null;
+			return var1;
 		}
-
 	}
 
-	@ObfInfo(owner = "fa", name = "aj", desc = "(Ljava/lang/Throwable;I)Ljava/lang/String;", opaque = "-2131269456")
-	public static String method3057(Throwable var0) throws IOException {
-		String var2;
-		if (var0 instanceof Class548) {
-			Class548 var3 = (Class548)var0;
-			var2 = var3.field5350 + " | ";
-			var0 = var3.field5349;
-		} else {
-			var2 = "";
-		}
+	@ObfInfo(name = "ad", desc = "(Lve;)V")
+	public static void method9551(Class551 var0) {
+		byte var2 = var0.field5403;
+		int var3 = var0.field5391;
+		int var4 = var0.field5400;
+		int var5 = var0.field5409;
+		int[] var6 = field5401;
+		int var7 = var0.field5396;
+		byte[] var8 = var0.field5408;
+		int var9 = var0.field5387;
+		int var10 = var0.field5404;
+		int var12 = var0.field5415 + 1;
 
-		StringWriter var13 = new StringWriter();
-		PrintWriter var4 = new PrintWriter(var13);
-		var0.printStackTrace(var4);
-		var4.close();
-		String var5 = var13.toString();
-		BufferedReader var6 = new BufferedReader(new StringReader(var5));
-		String var7 = var6.readLine();
-
+		label67:
 		while (true) {
-			while (true) {
-				String var8 = var6.readLine();
-				if (var8 == null) {
-					var2 = var2 + "| " + var7;
-					return var2;
-				}
-
-				int var9 = var8.indexOf(40);
-				int var10 = var8.indexOf(41, var9 + 1);
-				if (var9 >= 0 && var10 >= 0) {
-					String var11 = var8.substring(var9 + 1, var10);
-					int var12 = var11.indexOf(".java:");
-					if (var12 >= 0) {
-						var11 = var11.substring(0, var12) + var11.substring(var12 + 5);
-						var2 = var2 + var11 + ' ';
-						continue;
+			if (var3 > 0) {
+				while (true) {
+					if (var10 == 0) {
+						break label67;
 					}
 
-					var8 = var8.substring(0, var9);
+					if (var3 == 1) {
+						if (var10 == 0) {
+							var3 = 1;
+							break label67;
+						}
+
+						var8[var9] = var2;
+						++var9;
+						--var10;
+						break;
+					}
+
+					var8[var9] = var2;
+					--var3;
+					++var9;
+					--var10;
+				}
+			}
+
+			while (var12 != var4) {
+				var2 = (byte)var5;
+				var7 = var6[var7];
+				byte var1 = (byte)var7;
+				var7 >>= 8;
+				++var4;
+				if (var5 != var1) {
+					var5 = var1;
+					if (var10 == 0) {
+						var3 = 1;
+						break label67;
+					}
+
+					var8[var9] = var2;
+					++var9;
+					--var10;
+				} else {
+					if (var12 != var4) {
+						var3 = 2;
+						var7 = var6[var7];
+						var1 = (byte)var7;
+						var7 >>= 8;
+						++var4;
+						if (var12 != var4) {
+							if (var5 != var1) {
+								var5 = var1;
+							} else {
+								var3 = 3;
+								var7 = var6[var7];
+								var1 = (byte)var7;
+								var7 >>= 8;
+								++var4;
+								if (var12 != var4) {
+									if (var5 != var1) {
+										var5 = var1;
+									} else {
+										var7 = var6[var7];
+										var1 = (byte)var7;
+										var7 >>= 8;
+										++var4;
+										var3 = (var1 & 255) + 4;
+										var7 = var6[var7];
+										var5 = (byte)var7;
+										var7 >>= 8;
+										++var4;
+									}
+								}
+							}
+						}
+						continue label67;
+					}
+
+					if (var10 == 0) {
+						var3 = 1;
+						break label67;
+					}
+
+					var8[var9] = var2;
+					++var9;
+					--var10;
+				}
+			}
+
+			var3 = 0;
+			break;
+		}
+
+		int var13 = var0.field5389;
+		var0.field5389 += var10 - var10;
+		if (var0.field5389 < var13) {
+		}
+
+		var0.field5403 = var2;
+		var0.field5391 = var3;
+		var0.field5400 = var4;
+		var0.field5409 = var5;
+		field5401 = var6;
+		var0.field5396 = var7;
+		var0.field5408 = var8;
+		var0.field5387 = var9;
+		var0.field5404 = var10;
+	}
+
+	@ObfInfo(name = "ag", desc = "(Lve;)V")
+	public static void method9552(Class551 var0) {
+		boolean var4 = false;
+		boolean var5 = false;
+		boolean var6 = false;
+		boolean var7 = false;
+		boolean var8 = false;
+		boolean var9 = false;
+		boolean var10 = false;
+		boolean var11 = false;
+		boolean var12 = false;
+		boolean var13 = false;
+		boolean var14 = false;
+		boolean var15 = false;
+		boolean var16 = false;
+		boolean var17 = false;
+		boolean var18 = false;
+		boolean var19 = false;
+		boolean var20 = false;
+		boolean var21 = false;
+		int var22 = 0;
+		int[] var23 = null;
+		int[] var24 = null;
+		int[] var25 = null;
+		var0.field5388 = -2038632395;
+		if (field5401 == null) {
+			field5401 = new int[var0.field5388 * 1380286496];
+		}
+
+		boolean var26 = true;
+
+		while (true) {
+			while (var26) {
+				byte var1 = method9571(var0);
+				if (var1 == 23) {
+					return;
 				}
 
-				var8 = var8.trim();
-				var8 = var8.substring(var8.lastIndexOf(32) + 1);
-				var8 = var8.substring(var8.lastIndexOf(9) + 1);
-				var2 = var2 + var8 + ' ';
+				var1 = method9571(var0);
+				var1 = method9571(var0);
+				var1 = method9571(var0);
+				var1 = method9571(var0);
+				var1 = method9571(var0);
+				var1 = method9571(var0);
+				var1 = method9571(var0);
+				var1 = method9571(var0);
+				var1 = method9571(var0);
+				var1 = method9554(var0);
+				if (var1 != 0) {
+				}
+
+				var0.field5394 = 0;
+				var1 = method9571(var0);
+				var0.field5394 = var0.field5394 << 8 | var1 & 255;
+				var1 = method9571(var0);
+				var0.field5394 = var0.field5394 << 8 | var1 & 255;
+				var1 = method9571(var0);
+				var0.field5394 = var0.field5394 << 8 | var1 & 255;
+
+				int var35;
+				for (var35 = 0; var35 < 16; ++var35) {
+					var1 = method9554(var0);
+					if (var1 == 1) {
+						var0.field5406[var35] = true;
+					} else {
+						var0.field5406[var35] = false;
+					}
+				}
+
+				for (var35 = 0; var35 < 256; ++var35) {
+					var0.field5407[var35] = false;
+				}
+
+				int var36;
+				for (var35 = 0; var35 < 16; ++var35) {
+					if (var0.field5406[var35]) {
+						for (var36 = 0; var36 < 16; ++var36) {
+							var1 = method9554(var0);
+							if (var1 == 1) {
+								var0.field5407[var35 * 16 + var36] = true;
+							}
+						}
+					}
+				}
+
+				method9556(var0);
+				int var38 = var0.field5402 + 2;
+				int var39 = method9549(3, var0);
+				int var40 = method9549(15, var0);
+
+				for (var35 = 0; var35 < var40; ++var35) {
+					var36 = 0;
+
+					while (true) {
+						var1 = method9554(var0);
+						if (var1 == 0) {
+							var0.field5390[var35] = (byte)var36;
+							break;
+						}
+
+						++var36;
+					}
+				}
+
+				byte[] var27 = new byte[6];
+
+				byte var29;
+				for (var29 = 0; var29 < var39; var27[var29] = var29++) {
+				}
+
+				for (var35 = 0; var35 < var40; ++var35) {
+					var29 = var0.field5390[var35];
+
+					byte var28;
+					for (var28 = var27[var29]; var29 > 0; --var29) {
+						var27[var29] = var27[var29 - 1];
+					}
+
+					var27[0] = var28;
+					var0.field5377[var35] = var28;
+				}
+
+				int var37;
+				for (var37 = 0; var37 < var39; ++var37) {
+					int var49 = method9549(5, var0);
+
+					for (var35 = 0; var35 < var38; ++var35) {
+						while (true) {
+							var1 = method9554(var0);
+							if (var1 == 0) {
+								var0.field5410[var37][var35] = (byte)var49;
+								break;
+							}
+
+							var1 = method9554(var0);
+							if (var1 == 0) {
+								++var49;
+							} else {
+								--var49;
+							}
+						}
+					}
+				}
+
+				for (var37 = 0; var37 < var39; ++var37) {
+					byte var2 = 32;
+					byte var3 = 0;
+
+					for (var35 = 0; var35 < var38; ++var35) {
+						if (var0.field5410[var37][var35] > var3) {
+							var3 = var0.field5410[var37][var35];
+						}
+
+						if (var0.field5410[var37][var35] < var2) {
+							var2 = var0.field5410[var37][var35];
+						}
+					}
+
+					method9557(var0.field5411[var37], var0.field5412[var37], var0.field5413[var37], var0.field5410[var37], var2, var3, var38);
+					var0.field5414[var37] = var2;
+				}
+
+				int var41 = var0.field5402 + 1;
+				int var42 = -1;
+				byte var43 = 0;
+
+				for (var35 = 0; var35 <= 255; ++var35) {
+					var0.field5398[var35] = 0;
+				}
+
+				int var56 = 4095;
+
+				int var54;
+				int var55;
+				for (var54 = 15; var54 >= 0; --var54) {
+					for (var55 = 15; var55 >= 0; --var55) {
+						var0.field5386[var56] = (byte)(var54 * 16 + var55);
+						--var56;
+					}
+
+					var0.field5397[var54] = var56 + 1;
+				}
+
+				int var46 = 0;
+				byte var53;
+				if (var43 == 0) {
+					++var42;
+					var43 = 50;
+					var53 = var0.field5377[var42];
+					var22 = var0.field5414[var53];
+					var23 = var0.field5411[var53];
+					var25 = var0.field5413[var53];
+					var24 = var0.field5412[var53];
+				}
+
+				int var44 = var43 - 1;
+				int var50 = var22;
+
+				int var51;
+				byte var52;
+				for (var51 = method9549(var22, var0); var51 > var23[var50]; var51 = var51 << 1 | var52) {
+					++var50;
+					var52 = method9554(var0);
+				}
+
+				int var45 = var25[var51 - var24[var50]];
+
+				while (true) {
+					int[] var10000;
+					int var10002;
+					while (var45 != var41) {
+						if (var45 != 0 && var45 != 1) {
+							int var33 = var45 - 1;
+							int var30;
+							if (var33 < 16) {
+								var30 = var0.field5397[0];
+
+								for (var1 = var0.field5386[var33 + var30]; var33 > 3; var33 -= 4) {
+									int var34 = var33 + var30;
+									var0.field5386[var34] = var0.field5386[var34 - 1];
+									var0.field5386[var34 - 1] = var0.field5386[var34 - 2];
+									var0.field5386[var34 - 2] = var0.field5386[var34 - 3];
+									var0.field5386[var34 - 3] = var0.field5386[var34 - 4];
+								}
+
+								while (var33 > 0) {
+									var0.field5386[var33 + var30] = var0.field5386[var33 + var30 - 1];
+									--var33;
+								}
+
+								var0.field5386[var30] = var1;
+							} else {
+								int var31 = var33 / 16;
+								int var32 = var33 % 16;
+								var30 = var0.field5397[var31] + var32;
+
+								for (var1 = var0.field5386[var30]; var30 > var0.field5397[var31]; --var30) {
+									var0.field5386[var30] = var0.field5386[var30 - 1];
+								}
+
+								for (var10002 = var0.field5397[var31]++; var31 > 0; --var31) {
+									var10002 = var0.field5397[var31]--;
+									var0.field5386[var0.field5397[var31]] = var0.field5386[var0.field5397[var31 - 1] + 16 - 1];
+								}
+
+								var10002 = var0.field5397[0]--;
+								var0.field5386[var0.field5397[0]] = var1;
+								if (var0.field5397[0] == 0) {
+									var56 = 4095;
+
+									for (var54 = 15; var54 >= 0; --var54) {
+										for (var55 = 15; var55 >= 0; --var55) {
+											var0.field5386[var56] = var0.field5386[var0.field5397[var54] + var55];
+											--var56;
+										}
+
+										var0.field5397[var54] = var56 + 1;
+									}
+								}
+							}
+
+							var10002 = var0.field5398[var0.field5405[var1 & 255] & 255]++;
+							field5401[var46] = var0.field5405[var1 & 255] & 255;
+							++var46;
+							if (var44 == 0) {
+								++var42;
+								var44 = 50;
+								var53 = var0.field5377[var42];
+								var22 = var0.field5414[var53];
+								var23 = var0.field5411[var53];
+								var25 = var0.field5413[var53];
+								var24 = var0.field5412[var53];
+							}
+
+							--var44;
+							var50 = var22;
+
+							for (var51 = method9549(var22, var0); var51 > var23[var50]; var51 = var51 << 1 | var52) {
+								++var50;
+								var52 = method9554(var0);
+							}
+
+							var45 = var25[var51 - var24[var50]];
+						} else {
+							int var47 = -1;
+							int var48 = 1;
+
+							do {
+								if (var45 == 0) {
+									var47 += var48;
+								} else if (var45 == 1) {
+									var47 += var48 * 2;
+								}
+
+								var48 *= 2;
+								if (var44 == 0) {
+									++var42;
+									var44 = 50;
+									var53 = var0.field5377[var42];
+									var22 = var0.field5414[var53];
+									var23 = var0.field5411[var53];
+									var25 = var0.field5413[var53];
+									var24 = var0.field5412[var53];
+								}
+
+								--var44;
+								var50 = var22;
+
+								for (var51 = method9549(var22, var0); var51 > var23[var50]; var51 = var51 << 1 | var52) {
+									++var50;
+									var52 = method9554(var0);
+								}
+
+								var45 = var25[var51 - var24[var50]];
+							} while(var45 == 0 || var45 == 1);
+
+							++var47;
+							var1 = var0.field5405[var0.field5386[var0.field5397[0]] & 255];
+							var10000 = var0.field5398;
+
+							for (var10000[var1 & 255] += var47; var47 > 0; --var47) {
+								field5401[var46] = var1 & 255;
+								++var46;
+							}
+						}
+					}
+
+					var0.field5391 = 0;
+					var0.field5403 = 0;
+					var0.field5399[0] = 0;
+
+					for (var35 = 1; var35 <= 256; ++var35) {
+						var0.field5399[var35] = var0.field5398[var35 - 1];
+					}
+
+					for (var35 = 1; var35 <= 256; ++var35) {
+						var10000 = var0.field5399;
+						var10000[var35] += var0.field5399[var35 - 1];
+					}
+
+					for (var35 = 0; var35 < var46; ++var35) {
+						var1 = (byte)(field5401[var35] & 255);
+						var10000 = field5401;
+						int var10001 = var0.field5399[var1 & 255];
+						var10000[var10001] |= var35 << 8;
+						var10002 = var0.field5399[var1 & 255]++;
+					}
+
+					var0.field5396 = field5401[var0.field5394] >> 8;
+					var0.field5400 = 0;
+					var0.field5396 = field5401[var0.field5396];
+					var0.field5409 = (byte)(var0.field5396 & 255);
+					var0.field5396 >>= 8;
+					++var0.field5400;
+					var0.field5415 = var46;
+					method9551(var0);
+					if (var0.field5400 == var0.field5415 + 1 && var0.field5391 == 0) {
+						var26 = true;
+						break;
+					}
+
+					var26 = false;
+					break;
+				}
+			}
+
+			return;
+		}
+	}
+
+	@ObfInfo(name = "ak", desc = "(Lve;)B")
+	public static byte method9571(Class551 var0) {
+		return (byte)method9549(8, var0);
+	}
+
+	@ObfInfo(name = "ap", desc = "(Lve;)B")
+	public static byte method9554(Class551 var0) {
+		return (byte)method9549(1, var0);
+	}
+
+	@ObfInfo(name = "an", desc = "(ILve;)I")
+	public static int method9549(int var0, Class551 var1) {
+		while (var1.field5393 < var0) {
+			var1.field5381 = var1.field5381 << 8 | var1.field5395[var1.field5384] & 255;
+			var1.field5393 += 8;
+			++var1.field5384;
+			++var1.field5385;
+			if (var1.field5385 == 0) {
 			}
 		}
+
+		int var2 = var1.field5381 >> var1.field5393 - var0 & (1 << var0) - 1;
+		var1.field5393 -= var0;
+		return var2;
+	}
+
+	@ObfInfo(name = "aj", desc = "(Lve;)V")
+	public static void method9556(Class551 var0) {
+		var0.field5402 = 0;
+
+		for (int var1 = 0; var1 < 256; ++var1) {
+			if (var0.field5407[var1]) {
+				var0.field5405[var0.field5402] = (byte)var1;
+				++var0.field5402;
+			}
+		}
+
+	}
+
+	@ObfInfo(name = "av", desc = "([I[I[I[BIII)V")
+	public static void method9557(int[] var0, int[] var1, int[] var2, byte[] var3, int var4, int var5, int var6) {
+		int var7 = 0;
+
+		int var8;
+		for (var8 = var4; var8 <= var5; ++var8) {
+			for (int var9 = 0; var9 < var6; ++var9) {
+				if (var3[var9] == var8) {
+					var2[var7] = var9;
+					++var7;
+				}
+			}
+		}
+
+		for (var8 = 0; var8 < 23; ++var8) {
+			var1[var8] = 0;
+		}
+
+		for (var8 = 0; var8 < var6; ++var8) {
+			++var1[var3[var8] + 1];
+		}
+
+		for (var8 = 1; var8 < 23; ++var8) {
+			var1[var8] += var1[var8 - 1];
+		}
+
+		for (var8 = 0; var8 < 23; ++var8) {
+			var0[var8] = 0;
+		}
+
+		int var10 = 0;
+
+		for (var8 = var4; var8 <= var5; ++var8) {
+			var10 += var1[var8 + 1] - var1[var8];
+			var0[var8] = var10 - 1;
+			var10 <<= 1;
+		}
+
+		for (var8 = var4 + 1; var8 <= var5; ++var8) {
+			var1[var8] = (var0[var8 - 1] + 1 << 1) - var1[var8];
+		}
+
 	}
 }

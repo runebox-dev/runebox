@@ -33,13 +33,21 @@ tasks {
 
     register("rev-update [runebox]") {
         group = "runebox"
-        doLast {
+        listOf(
+            ":deobfuscator",
+            ":updater",
+            ":decompiler",
+            ":gamepack"
+        ).map { project(it).tasks.build.get() }.forEach {
+            dependsOn(it)
+        }
+        doFirst {
             project(":deobfuscator").tasks.named("downloadGamepack", JavaExec::class).get().exec()
             project(":deobfuscator").tasks.named("deobfuscate", JavaExec::class).get().exec()
             project(":updater").tasks.named("updateGamepack", JavaExec::class).get().exec()
             project(":decompiler").tasks.named("decompileUpdated", JavaExec::class).get().exec()
         }
         finalizedBy(project(":decompiler").tasks.named("copyDecompSources", Copy::class).get())
-        finalizedBy(rootProject.tasks.build.get())
+        finalizedBy(project(":gamepack").tasks.named("jar.named", Jar::class).get())
     }
 }

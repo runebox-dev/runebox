@@ -1,191 +1,121 @@
 import io.runebox.ObfInfo;
-import java.awt.Component;
-import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-import java.awt.event.MouseMotionListener;
 
 @ObfInfo(name = "bg")
-public class Class33 implements MouseListener, MouseMotionListener, FocusListener {
-	@ObfInfo(name = "az", desc = "Lbg;")
-	public static Class33 field223;
-	@ObfInfo(name = "av", desc = "I", intMultiplier = -423215907)
-	public static int field220;
-	@ObfInfo(name = "ao", desc = "I", intMultiplier = 648460905)
-	public static int field227;
-	@ObfInfo(name = "ah", desc = "I", intMultiplier = 1924775019)
-	public static int field229;
-	@ObfInfo(name = "au", desc = "I", intMultiplier = -808968321)
-	public static int field237;
-	@ObfInfo(name = "as", desc = "I", intMultiplier = -1689524785)
-	public static int field238;
-	@ObfInfo(name = "aw", desc = "I", intMultiplier = 836550005)
-	public static int field239;
-	@ObfInfo(name = "aq", desc = "J", longMultiplier = -2316088996274707615L)
-	public static long field232;
-	@ObfInfo(name = "ad", desc = "J", longMultiplier = 7688200359304513325L)
-	public static long field240;
-	@ObfInfo(name = "ap", desc = "I", intMultiplier = -23818427)
-	public static volatile int field224;
-	@ObfInfo(name = "aa", desc = "I", intMultiplier = 1982863033)
-	public static volatile int field225;
-	@ObfInfo(name = "at", desc = "I", intMultiplier = -1281806781)
-	public static volatile int field226;
-	@ObfInfo(name = "ab", desc = "I", intMultiplier = -655854391)
-	public static volatile int field233;
-	@ObfInfo(name = "ax", desc = "I", intMultiplier = -2076335465)
-	public static volatile int field234;
-	@ObfInfo(name = "af", desc = "I", intMultiplier = -790745065)
-	public static volatile int field241;
-	@ObfInfo(name = "ae", desc = "I", intMultiplier = 2076661571)
-	public static volatile int field244;
-	@ObfInfo(name = "ac", desc = "J", longMultiplier = -6905195731352535155L)
-	public static volatile long field228;
-	@ObfInfo(name = "ay", desc = "J", longMultiplier = -9146466446811248275L)
-	public static volatile long field236;
+public class Class33 {
+	@ObfInfo(name = "av", desc = "I", intMultiplier = -1667996831)
+	public int field165;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = 677815153)
+	public int field166;
 
-	static {
-		field223 = new Class33();
-		field241 = 0;
-		field225 = 0;
-		field226 = -1;
-		field233 = -1;
-		field228 = -1L;
-		field227 = 0;
-		field229 = 0;
-		field220 = 0;
-		field232 = 0L;
-		field224 = 0;
-		field244 = 0;
-		field234 = 0;
-		field236 = 0L;
-		field237 = 0;
-		field238 = 0;
-		field239 = 0;
-		field240 = 0L;
+	public Class33(int var1, int var2) {
+		this.field166 = var1;
+		this.field165 = var2;
 	}
 
-	@ObfInfo(name = "af", desc = "(Ljava/awt/event/MouseEvent;I)I", opaque = "1843712670")
-	public final int method678(MouseEvent var1) {
-		int var3 = var1.getButton();
-		if (!var1.isAltDown() && var3 != 2) {
-			return !var1.isMetaDown() && var3 != 3 ? 1 : 2;
+	@ObfInfo(name = "aq", desc = "(Lbm;I)Z", opaque = "-268771015")
+	public boolean method445(Class39 var1) {
+		if (var1 == null) {
+			return false;
 		} else {
-			return 4;
+			switch(this.field166) {
+			case 1:
+				return var1.method562(this.field165);
+			case 2:
+				return var1.method564(this.field165);
+			case 3:
+				return var1.method556((char)this.field165);
+			case 4:
+				return var1.method557(this.field165 == 1);
+			default:
+				return false;
+			}
 		}
 	}
 
-	public final synchronized void mousePressed(MouseEvent var1) {
-		if (field223 != null) {
-			field241 = 0;
-			field244 = var1.getX();
-			field234 = var1.getY();
-			field236 = Class130.method3047();
-			field224 = this.method678(var1);
-			if (field224 != 0) {
-				field225 = field224;
+	@ObfInfo(name = "aq", desc = "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lpe;I)I", opaque = "-1386147656")
+	public static int method449(CharSequence var0, CharSequence var1, Class395 var2) {
+		int var4 = var0.length();
+		int var5 = var1.length();
+		int var6 = 0;
+		int var7 = 0;
+		char var8 = 0;
+		char var9 = 0;
+
+		while (var6 - var8 < var4 || var7 - var9 < var5) {
+			if (var6 - var8 >= var4) {
+				return -1;
+			}
+
+			if (var7 - var9 >= var5) {
+				return 1;
+			}
+
+			char var10;
+			if (var8 != 0) {
+				var10 = var8;
+				boolean var15 = false;
+			} else {
+				var10 = var0.charAt(var6++);
+			}
+
+			char var11;
+			if (var9 != 0) {
+				var11 = var9;
+				boolean var16 = false;
+			} else {
+				var11 = var1.charAt(var7++);
+			}
+
+			var8 = Class418.method2631(var10);
+			var9 = Class418.method2631(var11);
+			var10 = Class418.method3336(var10, var2);
+			var11 = Class418.method3336(var11, var2);
+			if (var11 != var10 && Character.toUpperCase(var10) != Character.toUpperCase(var11)) {
+				var10 = Character.toLowerCase(var10);
+				var11 = Character.toLowerCase(var11);
+				if (var11 != var10) {
+					return Class418.method7616(var10, var2) - Class418.method7616(var11, var2);
+				}
 			}
 		}
 
-		if (var1.isPopupTrigger()) {
-			var1.consume();
-		}
+		int var17 = Math.min(var4, var5);
 
-	}
+		char var13;
+		int var18;
+		for (var18 = 0; var18 < var17; ++var18) {
+			if (Class395.field4607 == var2) {
+				var6 = var4 - 1 - var18;
+				var7 = var5 - 1 - var18;
+			} else {
+				var7 = var18;
+				var6 = var18;
+			}
 
-	public final synchronized void mouseReleased(MouseEvent var1) {
-		if (field223 != null) {
-			field241 = 0;
-			field225 = 0;
-		}
-
-		if (var1.isPopupTrigger()) {
-			var1.consume();
-		}
-
-	}
-
-	public final void mouseClicked(MouseEvent var1) {
-		if (var1.isPopupTrigger()) {
-			var1.consume();
-		}
-
-	}
-
-	public final synchronized void mouseEntered(MouseEvent var1) {
-		this.mouseMoved(var1);
-	}
-
-	public final synchronized void mouseExited(MouseEvent var1) {
-		if (field223 != null) {
-			field241 = 0;
-			field226 = -1;
-			field233 = -1;
-			field228 = var1.getWhen();
-		}
-
-	}
-
-	public final synchronized void mouseDragged(MouseEvent var1) {
-		this.mouseMoved(var1);
-	}
-
-	public final synchronized void mouseMoved(MouseEvent var1) {
-		if (field223 != null) {
-			field241 = 0;
-			field226 = var1.getX();
-			field233 = var1.getY();
-			field228 = var1.getWhen();
-		}
-
-	}
-
-	public final void focusGained(FocusEvent var1) {
-	}
-
-	public final synchronized void focusLost(FocusEvent var1) {
-		if (field223 != null) {
-			field225 = 0;
-		}
-
-	}
-
-	@ObfInfo(owner = "jp", name = "ak", desc = "(Ljava/awt/Component;I)V")
-	public static void method4769(Component var0) {
-		var0.removeMouseListener(field223);
-		var0.removeMouseMotionListener(field223);
-		var0.removeFocusListener(field223);
-		field225 = 0;
-	}
-
-	@ObfInfo(owner = "ck", name = "al", desc = "(I)V", opaque = "-789155837")
-	public static void method1133() {
-		if (field223 != null) {
-			synchronized(field223) {
-				field223 = null;
+			char var12 = var0.charAt(var6);
+			var13 = var1.charAt(var7);
+			if (var13 != var12 && Character.toUpperCase(var12) != Character.toUpperCase(var13)) {
+				var12 = Character.toLowerCase(var12);
+				var13 = Character.toLowerCase(var13);
+				if (var13 != var12) {
+					return Class418.method7616(var12, var2) - Class418.method7616(var13, var2);
+				}
 			}
 		}
 
-	}
+		var18 = var4 - var5;
+		if (var18 != 0) {
+			return var18;
+		} else {
+			for (int var19 = 0; var19 < var17; ++var19) {
+				var13 = var0.charAt(var19);
+				char var14 = var1.charAt(var19);
+				if (var14 != var13) {
+					return Class418.method7616(var13, var2) - Class418.method7616(var14, var2);
+				}
+			}
 
-	@ObfInfo(owner = "pi", name = "aj", desc = "(B)V")
-	public static void method7462() {
-		synchronized(field223) {
-			field227 = field225;
-			field229 = field226;
-			field220 = field233;
-			field232 = field228;
-			field237 = field224;
-			field238 = field244;
-			field239 = field234;
-			field240 = field236;
-			field224 = 0;
+			return 0;
 		}
-	}
-
-	@ObfInfo(owner = "ka", name = "az", desc = "(I)I")
-	public static int method5159() {
-		return ++field241 - 1;
 	}
 }

@@ -1,22 +1,29 @@
 import io.runebox.ObfInfo;
 
 @ObfInfo(name = "uo")
-final class Class535 implements Class529 {
-	public Class535() {
+public class Class535 {
+	@ObfInfo(name = "ag", desc = "I", intMultiplier = -951641387)
+	public static final int field5293;
+	@ObfInfo(name = "ak", desc = "I", intMultiplier = -2006265865)
+	public static final int field5294;
+
+	static {
+		field5293 = (int)(Math.pow(2.0D, 4.0D) - 1.0D);
+		field5294 = (int)(Math.pow(2.0D, 8.0D) - 1.0D);
 	}
 
-	@ObfInfo(name = "ab", desc = "(Ljava/lang/Long;Lua;S)V")
-	public void method9827(Long var1, Class521 var2) {
-		var2.method9393(var1);
+	@ObfInfo(owner = "gc", name = "aq", desc = "(II)I")
+	public static int method3352(int var0) {
+		return var0 >>> 12;
 	}
 
-	@ObfInfo(name = "al", desc = "(Lua;B)Ljava/lang/Object;")
-	public Object method9644(Class521 var1) {
-		return var1.method9411();
+	@ObfInfo(owner = "pa", name = "ad", desc = "(IB)I")
+	public static int method7324(int var0) {
+		return var0 >>> 4 & field5294;
 	}
 
-	@ObfInfo(name = "ak", desc = "(Ljava/lang/Object;Lua;S)V")
-	public void method9645(Object var1, Class521 var2) {
-		this.method9827((Long)var1, var2);
+	@ObfInfo(owner = "oj", name = "ag", desc = "(II)I")
+	public static int method7128(int var0) {
+		return (var0 & field5293) - 1;
 	}
 }

@@ -1,66 +1,65 @@
 import io.runebox.ObfInfo;
 
 @ObfInfo(name = "hk")
-public class Class193 extends Class507 {
-	@ObfInfo(name = "al", desc = "Llm;")
-	public static Class299 field1986;
-	@ObfInfo(name = "ak", desc = "Lor;")
-	public static Class382 field1988;
-	@ObfInfo(name = "aj", desc = "Z")
-	public boolean field1987;
+public class Class193 extends Class516 {
+	@ObfInfo(name = "ad", desc = "Lmo;")
+	public static Class327 field2110;
+	@ObfInfo(name = "ag", desc = "Lth;")
+	public Class502 field2112;
 
 	static {
-		field1986 = new Class299(64);
+		field2110 = new Class327(64);
 	}
 
-	public Class193() {
-		this.field1987 = false;
+	@ObfInfo(name = "ad", desc = "(I)V")
+	public void method3862() {
 	}
 
-	@ObfInfo(name = "aj", desc = "(Lua;B)V", opaque = "3")
-	public void method3796(Class521 var1) {
+	@ObfInfo(name = "ag", desc = "(Lvp;I)V", opaque = "1414638907")
+	public void method3863(Class562 var1) {
 		while (true) {
-			int var3 = var1.method9405();
+			int var3 = var1.method9902();
 			if (var3 == 0) {
 				return;
 			}
 
-			this.method3806(var1, var3);
+			this.method3864(var1, var3);
 		}
 	}
 
-	@ObfInfo(name = "az", desc = "(Lua;II)V", opaque = "-530566730")
-	public void method3806(Class521 var1, int var2) {
-		if (var2 == 2) {
-			this.field1987 = true;
+	@ObfInfo(name = "ak", desc = "(Lvp;II)V", opaque = "1820430825")
+	public void method3864(Class562 var1, int var2) {
+		if (var2 == 249) {
+			this.field2112 = Class113.method2910(var1, this.field2112);
 		}
 
 	}
 
-	@ObfInfo(owner = "ad", name = "ak", desc = "(Lor;S)V")
-	public static void method49(Class382 var0) {
-		field1988 = var0;
+	@ObfInfo(name = "ap", desc = "(IIB)I")
+	public int method3865(int var1, int var2) {
+		return Class208.method4938(this.field2112, var1, var2);
 	}
 
-	@ObfInfo(owner = "fb", name = "al", desc = "(II)Lhk;", opaque = "-242223001")
-	public static Class193 method3071(int var0) {
-		Class193 var2 = (Class193)field1986.method5993((long)var0);
+	@ObfInfo(name = "an", desc = "(ILjava/lang/String;I)Ljava/lang/String;")
+	public String method3866(int var1, String var2) {
+		return Class208.method2917(this.field2112, var1, var2);
+	}
+
+	@ObfInfo(owner = "client", name = "aq", desc = "(II)Lhk;", opaque = "2012555847")
+	public static Class193 method1910(int var0) {
+		Class193 var2 = (Class193)field2110.method6327((long)var0);
 		if (var2 != null) {
 			return var2;
 		} else {
-			byte[] var3 = field1988.method7216(19, var0);
+			byte[] var3 = Client.field2111.method7132(34, var0);
 			var2 = new Class193();
 			if (var3 != null) {
-				var2.method3796(new Class521(var3));
+				var2.method3863(new Class562(var3));
 			}
 
-			field1986.method5987(var2, (long)var0);
+			var2.method3862();
+			field2110.method6330(var2, (long)var0);
 			return var2;
 		}
-	}
-
-	@ObfInfo(owner = "et", name = "af", desc = "(I)V")
-	public static void method2983() {
-		field1986.method5995();
 	}
 }

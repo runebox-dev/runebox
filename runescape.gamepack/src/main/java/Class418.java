@@ -1,94 +1,115 @@
 import io.runebox.ObfInfo;
 
 @ObfInfo(name = "qb")
-public final class Class418 extends Class436 {
-	public Class418(byte[] var1, int[] var2, int[] var3, int[] var4, int[] var5, int[] var6, byte[][] var7) {
-		super(var1, var2, var3, var4, var5, var6, var7);
+public class Class418 {
+	@ObfInfo(owner = "fz", name = "ad", desc = "(CLpe;I)C", opaque = "878993948")
+	public static char method3336(char var0, Class395 var1) {
+		if (var0 >= 192 && var0 <= 255) {
+			if (var0 >= 192 && var0 <= 198) {
+				return 'A';
+			}
+
+			if (var0 == 199) {
+				return 'C';
+			}
+
+			if (var0 >= 200 && var0 <= 203) {
+				return 'E';
+			}
+
+			if (var0 >= 204 && var0 <= 207) {
+				return 'I';
+			}
+
+			if (var0 == 209 && Class395.field4595 != var1) {
+				return 'N';
+			}
+
+			if (var0 >= 210 && var0 <= 214) {
+				return 'O';
+			}
+
+			if (var0 >= 217 && var0 <= 220) {
+				return 'U';
+			}
+
+			if (var0 == 221) {
+				return 'Y';
+			}
+
+			if (var0 == 223) {
+				return 's';
+			}
+
+			if (var0 >= 224 && var0 <= 230) {
+				return 'a';
+			}
+
+			if (var0 == 231) {
+				return 'c';
+			}
+
+			if (var0 >= 232 && var0 <= 235) {
+				return 'e';
+			}
+
+			if (var0 >= 236 && var0 <= 239) {
+				return 'i';
+			}
+
+			if (var0 == 241 && Class395.field4595 != var1) {
+				return 'n';
+			}
+
+			if (var0 >= 242 && var0 <= 246) {
+				return 'o';
+			}
+
+			if (var0 >= 249 && var0 <= 252) {
+				return 'u';
+			}
+
+			if (var0 == 253 || var0 == 255) {
+				return 'y';
+			}
+		}
+
+		if (var0 == 338) {
+			return 'O';
+		} else if (var0 == 339) {
+			return 'o';
+		} else {
+			return var0 == 376 ? 'Y' : var0;
+		}
 	}
 
-	public Class418(byte[] var1) {
-		super(var1);
-	}
-
-	@ObfInfo(name = "ak", desc = "([BIIIII)V")
-	public final void method7772(byte[] var1, int var2, int var3, int var4, int var5, int var6) {
-		int var7 = var2 + Class87.field5423 * var3;
-		int var8 = Class87.field5423 - var4;
-		int var9 = 0;
-		int var10 = 0;
-		int var11;
-		if (var3 < Class561.field5422) {
-			var11 = Class561.field5422 - var3;
-			var5 -= var11;
-			var3 = Class561.field5422;
-			var10 += var11 * var4;
-			var7 += Class87.field5423 * var11;
-		}
-
-		if (var5 + var3 > Class561.field5419) {
-			var5 -= var5 + var3 - Class561.field5419;
-		}
-
-		if (var2 < Class561.field5424) {
-			var11 = Class561.field5424 - var2;
-			var4 -= var11;
-			var2 = Class561.field5424;
-			var10 += var11;
-			var7 += var11;
-			var9 += var11;
-			var8 += var11;
-		}
-
-		if (var4 + var2 > Class561.field5425) {
-			var11 = var4 + var2 - Class561.field5425;
-			var4 -= var11;
-			var9 += var11;
-			var8 += var11;
-		}
-
-		if (var4 > 0 && var5 > 0) {
-			method8031(Class561.field5418, var1, var6, var10, var7, var4, var5, var8, var9);
+	@ObfInfo(owner = "dt", name = "ag", desc = "(CI)C", opaque = "1340757897")
+	public static char method2631(char var0) {
+		if (var0 == 198) {
+			return 'E';
+		} else if (var0 == 230) {
+			return 'e';
+		} else if (var0 == 223) {
+			return 's';
+		} else if (var0 == 338) {
+			return 'E';
+		} else {
+			return (char)(var0 == 339 ? 'e' : '\u0000');
 		}
 	}
 
-	@ObfInfo(name = "al", desc = "([BIIIIII)V")
-	public final void method7775(byte[] var1, int var2, int var3, int var4, int var5, int var6, int var7) {
-		int var8 = var2 + Class87.field5423 * var3;
-		int var9 = Class87.field5423 - var4;
-		int var10 = 0;
-		int var11 = 0;
-		int var12;
-		if (var3 < Class561.field5422) {
-			var12 = Class561.field5422 - var3;
-			var5 -= var12;
-			var3 = Class561.field5422;
-			var11 += var12 * var4;
-			var8 += Class87.field5423 * var12;
+	@ObfInfo(owner = "pw", name = "ak", desc = "(CLpe;I)I", opaque = "-1132619760")
+	public static int method7616(char var0, Class395 var1) {
+		int var3 = var0 << 4;
+		if (Character.isUpperCase(var0) || Character.isTitleCase(var0)) {
+			var0 = Character.toLowerCase(var0);
+			var3 = 1 + (var0 << 4);
 		}
 
-		if (var5 + var3 > Class561.field5419) {
-			var5 -= var5 + var3 - Class561.field5419;
+		if (var0 == 241 && Class395.field4595 == var1) {
+			var3 = 1762;
 		}
 
-		if (var2 < Class561.field5424) {
-			var12 = Class561.field5424 - var2;
-			var4 -= var12;
-			var2 = Class561.field5424;
-			var11 += var12;
-			var8 += var12;
-			var10 += var12;
-			var9 += var12;
-		}
-
-		if (var4 + var2 > Class561.field5425) {
-			var12 = var4 + var2 - Class561.field5425;
-			var4 -= var12;
-			var10 += var12;
-			var9 += var12;
-		}
-
-		if (var4 > 0 && var5 > 0) {
-			method8062(Class561.field5418, var1, var6, var11, var8, var4, var5, var9, var10, var7);
-		}
+		return var3;
 	}
 }

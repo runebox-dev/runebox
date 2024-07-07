@@ -1,53 +1,34 @@
 import io.runebox.ObfInfo;
+import java.util.PriorityQueue;
+import java.util.concurrent.Callable;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 @ObfInfo(name = "mf")
-public class Class318 {
-	@ObfInfo(name = "jv", desc = "(IIB)V", opaque = "-1")
-	public static void method6188(int var0, int var1) {
-		if (var0 < 128) {
-			var0 = 128;
-		} else if (var0 > 383) {
-			var0 = 383;
-		}
+class Class318 implements Callable {
+	// $FF: synthetic field
+	public final Class315 this$0;
+	// $FF: synthetic field
+	public final AtomicBoolean val$cancelled;
 
-		if (Client.field1105 < var0) {
-			Client.field1105 += Client.field2960 * (var0 - Client.field1105) / 1000 + Client.field1408;
-			if (Client.field1105 > var0) {
-				Client.field1105 = var0;
+	public Class318(Class315 var1, AtomicBoolean var2) {
+		this.this$0 = var1;
+		this.val$cancelled = var2;
+	}
+
+	public Object call() {
+		PriorityQueue var1 = this.this$0.field3306;
+
+		while (true) {
+			Class317 var2 = null;
+			synchronized(var1) {
+				if (var1.isEmpty() || this.val$cancelled.get()) {
+					return null;
+				}
+
+				var2 = (Class317)var1.remove();
 			}
-		} else if (Client.field1105 > var0) {
-			Client.field1105 -= Client.field1408 + Client.field2960 * (Client.field1105 - var0) / 1000;
-			if (Client.field1105 < var0) {
-				Client.field1105 = var0;
-			}
-		}
 
-		var1 &= 2047;
-		int var3 = var1 - Client.field2029;
-		if (var3 > 1024) {
-			var3 -= 2048;
-		} else if (var3 < -1024) {
-			var3 += 2048;
+			var2.field3325.method2152();
 		}
-
-		if (var3 > 0) {
-			Client.field2029 += Client.field1408 + var3 * Client.field2960 / 1000;
-			Client.field2029 &= 2047;
-		} else if (var3 < 0) {
-			Client.field2029 -= Client.field1408 + -var3 * Client.field2960 / 1000;
-			Client.field2029 &= 2047;
-		}
-
-		int var4 = var1 - Client.field2029;
-		if (var4 > 1024) {
-			var4 -= 2048;
-		} else if (var4 < -1024) {
-			var4 += 2048;
-		}
-
-		if (var4 < 0 && var3 > 0 || var4 > 0 && var3 < 0) {
-			Client.field2029 = var1;
-		}
-
 	}
 }

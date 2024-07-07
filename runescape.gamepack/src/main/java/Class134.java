@@ -1,106 +1,177 @@
 import io.runebox.ObfInfo;
 
 @ObfInfo(name = "fd")
-public class Class134 extends Class149 {
-	@ObfInfo(name = "aj", desc = "I", intMultiplier = 1260301427)
-	public int field1559;
-	@ObfInfo(name = "az", desc = "I", intMultiplier = 764459969)
-	public int field1560;
-	@ObfInfo(name = "al", desc = "I", intMultiplier = -867688869)
-	public int field1561;
-	@ObfInfo(name = "ak", desc = "I", intMultiplier = -1645465563)
-	public int field1562;
-	// $FF: synthetic field
-	public final Class151 this$0;
+public class Class134 {
+	@ObfInfo(name = "ap", desc = "[Lff;")
+	public Class136[] field1566;
+	@ObfInfo(name = "ag", desc = "Lfh;")
+	public Class138 field1567;
+	@ObfInfo(name = "ak", desc = "Lfh;")
+	public Class138 field1570;
+	@ObfInfo(name = "aq", desc = "Z")
+	public boolean field1562;
+	@ObfInfo(name = "ad", desc = "Z")
+	public boolean field1563;
+	@ObfInfo(name = "al", desc = "Z")
+	public boolean field1565;
+	@ObfInfo(name = "an", desc = "Z")
+	public boolean field1581;
+	@ObfInfo(name = "ab", desc = "F")
+	public float field1568;
+	@ObfInfo(name = "ac", desc = "F")
+	public float field1569;
+	@ObfInfo(name = "ae", desc = "F")
+	public float field1572;
+	@ObfInfo(name = "au", desc = "F")
+	public float field1573;
+	@ObfInfo(name = "ah", desc = "F")
+	public float field1574;
+	@ObfInfo(name = "az", desc = "F")
+	public float field1575;
+	@ObfInfo(name = "ax", desc = "F")
+	public float field1576;
+	@ObfInfo(name = "ai", desc = "F")
+	public float field1577;
+	@ObfInfo(name = "av", desc = "F")
+	public float field1578;
+	@ObfInfo(name = "aj", desc = "F")
+	public float field1579;
+	@ObfInfo(name = "aw", desc = "F")
+	public float field1583;
+	@ObfInfo(name = "at", desc = "F")
+	public float field1584;
+	@ObfInfo(name = "ao", desc = "[F")
+	public float[] field1580;
+	@ObfInfo(name = "ay", desc = "I", intMultiplier = -1309993249)
+	public int field1564;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = -1857339093)
+	public int field1571;
+	@ObfInfo(name = "as", desc = "I", intMultiplier = -988948789)
+	public int field1582;
 
-	public Class134(Class151 var1) {
-		this.this$0 = var1;
+	public Class134() {
+		this.field1565 = true;
+		this.field1564 = 0;
 	}
 
-	@ObfInfo(name = "ak", desc = "(Lua;I)V")
-	public void method3066(Class521 var1) {
-		this.field1562 = var1.method9410();
-		this.field1560 = var1.method9410();
-		this.field1561 = var1.method9405();
-		this.field1559 = var1.method9405();
-	}
+	@ObfInfo(name = "aq", desc = "(Lvp;II)I", opaque = "14314088")
+	public int method3086(Class562 var1, int var2) {
+		int var4 = var1.method9997();
+		Class148.method3617(var1.method9902());
+		this.field1567 = Class138.method463(var1.method9902());
+		this.field1570 = Class138.method463(var1.method9902());
+		this.field1562 = var1.method9902() != 0;
+		this.field1566 = new Class136[var4];
+		Class136 var5 = null;
 
-	@ObfInfo(name = "al", desc = "(Lgc;B)V")
-	public void method3067(Class159 var1) {
-		var1.method3360(this.field1562, this.field1560, this.field1561, this.field1559);
-	}
-
-	@ObfInfo(name = "ak", desc = "(Lua;Ljava/lang/String;I)I", opaque = "-507500306")
-	public static int method3084(Class521 var0, String var1) {
-		int var3 = var0.field5219;
-		int var5 = var1.length();
-		byte[] var6 = new byte[var5];
-
-		for (int var7 = 0; var7 < var5; ++var7) {
-			char var8 = var1.charAt(var7);
-			if (var8 > 0 && var8 < 128 || var8 >= 160 && var8 <= 255) {
-				var6[var7] = (byte)var8;
-			} else if (var8 == 8364) {
-				var6[var7] = -128;
-			} else if (var8 == 8218) {
-				var6[var7] = -126;
-			} else if (var8 == 402) {
-				var6[var7] = -125;
-			} else if (var8 == 8222) {
-				var6[var7] = -124;
-			} else if (var8 == 8230) {
-				var6[var7] = -123;
-			} else if (var8 == 8224) {
-				var6[var7] = -122;
-			} else if (var8 == 8225) {
-				var6[var7] = -121;
-			} else if (var8 == 710) {
-				var6[var7] = -120;
-			} else if (var8 == 8240) {
-				var6[var7] = -119;
-			} else if (var8 == 352) {
-				var6[var7] = -118;
-			} else if (var8 == 8249) {
-				var6[var7] = -117;
-			} else if (var8 == 338) {
-				var6[var7] = -116;
-			} else if (var8 == 381) {
-				var6[var7] = -114;
-			} else if (var8 == 8216) {
-				var6[var7] = -111;
-			} else if (var8 == 8217) {
-				var6[var7] = -110;
-			} else if (var8 == 8220) {
-				var6[var7] = -109;
-			} else if (var8 == 8221) {
-				var6[var7] = -108;
-			} else if (var8 == 8226) {
-				var6[var7] = -107;
-			} else if (var8 == 8211) {
-				var6[var7] = -106;
-			} else if (var8 == 8212) {
-				var6[var7] = -105;
-			} else if (var8 == 732) {
-				var6[var7] = -104;
-			} else if (var8 == 8482) {
-				var6[var7] = -103;
-			} else if (var8 == 353) {
-				var6[var7] = -102;
-			} else if (var8 == 8250) {
-				var6[var7] = -101;
-			} else if (var8 == 339) {
-				var6[var7] = -100;
-			} else if (var8 == 382) {
-				var6[var7] = -98;
-			} else if (var8 == 376) {
-				var6[var7] = -97;
-			} else {
-				var6[var7] = 63;
+		for (int var6 = 0; var6 < var4; ++var6) {
+			Class136 var7 = new Class136();
+			var7.method3123(var1, var2);
+			this.field1566[var6] = var7;
+			if (var5 != null) {
+				var5.field1596 = var7;
 			}
+
+			var5 = var7;
 		}
 
-		var0.method9403(var6.length);
-		var0.field5219 += Client.field3661.method6663(var6, 0, var6.length, var0.field5221, var0.field5219);
-		return var0.field5219 - var3;
+		return var4;
+	}
+
+	@ObfInfo(name = "ad", desc = "(I)V", opaque = "1160509687")
+	public void method3090() {
+		this.field1571 = this.field1566[0].field1590;
+		this.field1582 = this.field1566[this.method3101() - 1].field1590;
+		this.field1580 = new float[this.method3104() + 1];
+
+		for (int var2 = this.method3089(); var2 <= this.method3085(); ++var2) {
+			this.field1580[var2 - this.method3089()] = Class110.method2870(this, (float)var2);
+		}
+
+		this.field1566 = null;
+		this.field1583 = Class110.method2870(this, (float)(this.method3089() - 1));
+		this.field1584 = Class110.method2870(this, (float)(this.method3085() + 1));
+	}
+
+	@ObfInfo(name = "ag", desc = "(II)F", opaque = "139404465")
+	public float method3088(int var1) {
+		if (var1 < this.method3089()) {
+			return this.field1583;
+		} else {
+			return var1 > this.method3085() ? this.field1584 : this.field1580[var1 - this.method3089()];
+		}
+	}
+
+	@ObfInfo(name = "ak", desc = "(I)I")
+	public int method3089() {
+		return this.field1571;
+	}
+
+	@ObfInfo(name = "ap", desc = "(I)I")
+	public int method3085() {
+		return this.field1582;
+	}
+
+	@ObfInfo(name = "an", desc = "(B)I")
+	public int method3104() {
+		return this.method3085() - this.method3089();
+	}
+
+	@ObfInfo(name = "aj", desc = "(FI)I", opaque = "-1013815814")
+	public int method3091(float var1) {
+		if (this.field1564 >= 0 && (float)this.field1566[this.field1564].field1590 <= var1 && (this.field1566[this.field1564].field1596 == null || (float)this.field1566[this.field1564].field1596.field1590 > var1)) {
+			return this.field1564;
+		} else if (var1 >= (float)this.method3089() && var1 <= (float)this.method3085()) {
+			int var3 = this.method3101();
+			int var4 = this.field1564;
+			if (var3 > 0) {
+				int var5 = 0;
+				int var6 = var3 - 1;
+
+				do {
+					int var7 = var6 + var5 >> 1;
+					if (var1 < (float)this.field1566[var7].field1590) {
+						if (var1 > (float)this.field1566[var7 - 1].field1590) {
+							var4 = var7 - 1;
+							break;
+						}
+
+						var6 = var7 - 1;
+					} else {
+						if (var1 <= (float)this.field1566[var7].field1590) {
+							var4 = var7;
+							break;
+						}
+
+						if (var1 < (float)this.field1566[var7 + 1].field1590) {
+							var4 = var7;
+							break;
+						}
+
+						var5 = var7 + 1;
+					}
+				} while(var5 <= var6);
+			}
+
+			if (this.field1564 != var4) {
+				this.field1564 = var4;
+				this.field1565 = true;
+			}
+
+			return this.field1564;
+		} else {
+			return -1;
+		}
+	}
+
+	@ObfInfo(name = "av", desc = "(FI)Lff;", opaque = "1239401619")
+	public Class136 method3110(float var1) {
+		int var3 = this.method3091(var1);
+		return var3 >= 0 && var3 < this.field1566.length ? this.field1566[var3] : null;
+	}
+
+	@ObfInfo(name = "ab", desc = "(B)I")
+	public int method3101() {
+		return this.field1566 == null ? 0 : this.field1566.length;
 	}
 }

@@ -1,41 +1,27 @@
 import io.runebox.ObfInfo;
 
 @ObfInfo(name = "ow")
-public class Class387 implements Class393 {
-	@ObfInfo(name = "aj", desc = "Low;")
-	public static final Class387 field4522;
-	@ObfInfo(name = "ak", desc = "Low;")
-	public static final Class387 field4523;
-	@ObfInfo(name = "al", desc = "Low;")
-	public static final Class387 field4524;
-	@ObfInfo(name = "az", desc = "Low;")
-	public static final Class387 field4525;
-	@ObfInfo(name = "af", desc = "I", intMultiplier = -1328107157)
-	public final int field4526;
+public class Class387 extends Class520 {
+	@ObfInfo(name = "ak", desc = "Loz;")
+	public Class390 field4549;
+	@ObfInfo(name = "ag", desc = "Lsq;")
+	public Class485 field4548;
+	@ObfInfo(name = "ad", desc = "[B")
+	public byte[] field4546;
+	@ObfInfo(name = "aq", desc = "I", intMultiplier = -311695871)
+	public int field4547;
 
-	static {
-		field4523 = new Class387(-1);
-		field4524 = new Class387(0);
-		field4522 = new Class387(1);
-		field4525 = new Class387(2);
-	}
-
-	public Class387(int var1) {
-		this.field4526 = var1;
-	}
-
-	@ObfInfo(name = "ak", desc = "(I)I")
-	public int method175() {
-		return this.field4526;
-	}
-
-	@ObfInfo(name = "ak", desc = "(Lat;S)Laz;")
-	public static Class26 method7379(Class20 var0) {
-		switch(var0.field99) {
-		case 0:
-			return new Class11();
-		default:
-			throw new IllegalArgumentException();
+	@ObfInfo(name = "ad", desc = "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V", opaque = "-680497403")
+	public static void method7265(int var0, String var1, String var2, String var3) {
+		Class92 var5 = (Class92)Class115.field1432.get(var0);
+		if (var5 == null) {
+			var5 = new Class92();
+			Class115.field1432.put(var0, var5);
 		}
+
+		Class63 var6 = var5.method2440(var0, var1, var2, var3);
+		Class115.field1428.method8902(var6, (long)var6.field481);
+		Class115.field1429.method7558(var6);
+		Client.field673 = Client.field721;
 	}
 }

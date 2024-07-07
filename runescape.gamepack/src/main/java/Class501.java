@@ -1,74 +1,176 @@
 import io.runebox.ObfInfo;
 
 @ObfInfo(name = "tg")
-public class Class501 extends Class514 {
-	@ObfInfo(name = "az", desc = "D")
-	public double field5133;
-	@ObfInfo(name = "aj", desc = "D")
-	public double field5135;
-	@ObfInfo(name = "at", desc = "D")
-	public double field5136;
-	@ObfInfo(name = "af", desc = "D")
-	public double field5137;
-	@ObfInfo(name = "aa", desc = "D")
-	public double field5139;
-	@ObfInfo(name = "al", desc = "I", intMultiplier = -1961828697)
-	public int field5134;
-	@ObfInfo(name = "ak", desc = "I", intMultiplier = 306022681)
-	public int field5138;
+public class Class501 {
+	@ObfInfo(name = "aj", desc = "[I")
+	public static int[] field5065;
+	@ObfInfo(name = "an", desc = "[I")
+	public static int[] field5068;
 
-	public Class501(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10) {
-		super(var9, var10);
-		this.field5138 = 0;
-		this.field5134 = 0;
-		this.field5135 = 0.0D;
-		this.field5133 = 0.0D;
-		this.field5137 = 0.0D;
-		this.field5139 = 0.0D;
-		this.field5136 = 0.0D;
-		this.field5138 = var3;
-		this.field5134 = var6;
-		if ((var4 - var7) * (var8 - var2) == (var7 - var1) * (var5 - var8)) {
-			this.field5135 = (double)var4;
-			this.field5133 = (double)var5;
-		} else {
-			double var11 = (double)((float)(var7 + var1)) / 2.0D;
-			double var13 = (double)((float)(var8 + var2)) / 2.0D;
-			double var15 = (double)((float)(var7 + var4)) / 2.0D;
-			double var17 = (double)((float)(var8 + var5)) / 2.0D;
-			double var19 = -1.0D * (double)(var7 - var1) / (double)(var8 - var2);
-			double var21 = (double)(var4 - var7) * -1.0D / (double)(var5 - var8);
-			this.field5135 = (var17 + (var19 * var11 - var21 * var15) - var13) / (var19 - var21);
-			this.field5133 = var19 * (this.field5135 - var11) + var13;
-			this.field5137 = Math.sqrt(Math.pow(this.field5135 - (double)var1, 2.0D) + Math.pow(this.field5133 - (double)var2, 2.0D));
-			this.field5139 = Math.atan2((double)var2 - this.field5133, (double)var1 - this.field5135);
-			double var23 = Math.atan2((double)var8 - this.field5133, (double)var7 - this.field5135);
-			this.field5136 = Math.atan2((double)var5 - this.field5133, (double)var4 - this.field5135);
-			boolean var25 = this.field5139 <= var23 && var23 <= this.field5136 || this.field5136 <= var23 && var23 <= this.field5139;
-			if (!var25) {
-				this.field5136 += (double)(this.field5139 - this.field5136 > 0.0D ? 2 : -2) * 3.141592653589793D;
+	static {
+		field5068 = new int[32768];
+
+		for (int var0 = 0; var0 < 32768; ++var0) {
+			field5068[var0] = method8887(var0);
+		}
+
+		if (field5065 == null) {
+			field5065 = new int[65536];
+			double var25 = 0.949999988079071D;
+
+			for (int var2 = 0; var2 < 65536; ++var2) {
+				double var3 = 0.0078125D + (double)(var2 >> 10 & 63) / 64.0D;
+				double var5 = (double)(var2 >> 7 & 7) / 8.0D + 0.0625D;
+				double var7 = (double)(var2 & 127) / 128.0D;
+				double var9 = var7;
+				double var11 = var7;
+				double var13 = var7;
+				if (0.0D != var5) {
+					double var15;
+					if (var7 < 0.5D) {
+						var15 = var7 * (1.0D + var5);
+					} else {
+						var15 = var5 + var7 - var5 * var7;
+					}
+
+					double var17 = var7 * 2.0D - var15;
+					double var19 = var3 + 0.3333333333333333D;
+					if (var19 > 1.0D) {
+						--var19;
+					}
+
+					double var23 = var3 - 0.3333333333333333D;
+					if (var23 < 0.0D) {
+						++var23;
+					}
+
+					if (var19 * 6.0D < 1.0D) {
+						var9 = var17 + 6.0D * (var15 - var17) * var19;
+					} else if (2.0D * var19 < 1.0D) {
+						var9 = var15;
+					} else if (var19 * 3.0D < 2.0D) {
+						var9 = var17 + (var15 - var17) * (0.6666666666666666D - var19) * 6.0D;
+					} else {
+						var9 = var17;
+					}
+
+					if (var3 * 6.0D < 1.0D) {
+						var11 = var17 + var3 * 6.0D * (var15 - var17);
+					} else if (var3 * 2.0D < 1.0D) {
+						var11 = var15;
+					} else if (var3 * 3.0D < 2.0D) {
+						var11 = var17 + 6.0D * (var15 - var17) * (0.6666666666666666D - var3);
+					} else {
+						var11 = var17;
+					}
+
+					if (var23 * 6.0D < 1.0D) {
+						var13 = var23 * 6.0D * (var15 - var17) + var17;
+					} else if (2.0D * var23 < 1.0D) {
+						var13 = var15;
+					} else if (var23 * 3.0D < 2.0D) {
+						var13 = (var15 - var17) * (0.6666666666666666D - var23) * 6.0D + var17;
+					} else {
+						var13 = var17;
+					}
+				}
+
+				var9 = Math.pow(var9, var25);
+				var11 = Math.pow(var11, var25);
+				var13 = Math.pow(var13, var25);
+				int var26 = (int)(256.0D * var9);
+				int var16 = (int)(var11 * 256.0D);
+				int var27 = (int)(256.0D * var13);
+				int var18 = var27 + (var26 << 16) + (var16 << 8);
+				field5065[var2] = var18 & 16777215;
+			}
+		}
+
+	}
+
+	@ObfInfo(name = "aq", desc = "(II)I", opaque = "1046258857")
+	public static int method8887(int var0) {
+		double var2 = (double)(var0 >> 10 & 31) / 31.0D;
+		double var4 = (double)(var0 >> 5 & 31) / 31.0D;
+		double var6 = (double)(var0 & 31) / 31.0D;
+		double var8 = var2;
+		if (var4 < var2) {
+			var8 = var4;
+		}
+
+		if (var6 < var8) {
+			var8 = var6;
+		}
+
+		double var10 = var2;
+		if (var4 > var2) {
+			var10 = var4;
+		}
+
+		if (var6 > var10) {
+			var10 = var6;
+		}
+
+		double var12 = 0.0D;
+		double var14 = 0.0D;
+		double var16 = (var8 + var10) / 2.0D;
+		if (var10 != var8) {
+			if (var16 < 0.5D) {
+				var14 = (var10 - var8) / (var8 + var10);
 			}
 
+			if (var16 >= 0.5D) {
+				var14 = (var10 - var8) / (2.0D - var10 - var8);
+			}
+
+			if (var10 == var2) {
+				var12 = (var4 - var6) / (var10 - var8);
+			} else if (var4 == var10) {
+				var12 = (var6 - var2) / (var10 - var8) + 2.0D;
+			} else if (var6 == var10) {
+				var12 = (var2 - var4) / (var10 - var8) + 4.0D;
+			}
 		}
+
+		int var18 = (int)(var12 * 256.0D / 6.0D);
+		var18 &= 255;
+		double var19 = 256.0D * var14;
+		if (var19 < 0.0D) {
+			var19 = 0.0D;
+		} else if (var19 > 255.0D) {
+			var19 = 255.0D;
+		}
+
+		if (var16 > 0.7D) {
+			var19 /= 2.0D;
+			var19 = Math.floor(var19);
+		}
+
+		if (var16 > 0.75D) {
+			var19 /= 2.0D;
+			var19 = Math.floor(var19);
+		}
+
+		if (var16 > 0.85D) {
+			var19 /= 2.0D;
+			var19 = Math.floor(var19);
+		}
+
+		if (var16 > 0.95D) {
+			var19 /= 2.0D;
+			var19 = Math.floor(var19);
+		}
+
+		if (var16 > 0.995D) {
+			var16 = 0.995D;
+		}
+
+		int var21 = (int)(var19 / 32.0D + (double)(var18 / 4 * 8));
+		return (int)(128.0D * var16) + (var21 << 7);
 	}
 
-	@ObfInfo(name = "ak", desc = "(B)I")
-	public int method9228() {
-		double var2 = this.method9209();
-		double var4 = this.field5139 + var2 * (this.field5136 - this.field5139);
-		return (int)Math.round(this.field5135 + this.field5137 * Math.cos(var4));
-	}
-
-	@ObfInfo(name = "al", desc = "(I)I")
-	public int method9229() {
-		double var2 = this.method9209();
-		double var4 = var2 * (this.field5136 - this.field5139) + this.field5139;
-		return (int)Math.round(this.field5133 + this.field5137 * Math.sin(var4));
-	}
-
-	@ObfInfo(name = "aj", desc = "(I)I")
-	public int method9230() {
-		double var2 = this.method9209();
-		return (int)Math.round(var2 * (double)(this.field5134 - this.field5138) + (double)this.field5138);
+	@ObfInfo(name = "ad", desc = "(II)I")
+	public static int method8891(int var0) {
+		return 255 - (var0 & 255);
 	}
 }

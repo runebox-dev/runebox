@@ -1,45 +1,48 @@
 import io.runebox.ObfInfo;
 
-@ObfInfo(name = "vj")
-public class Class555 implements Class393 {
-	@ObfInfo(name = "al", desc = "Lvj;")
-	public static final Class555 field5382;
-	@ObfInfo(name = "az", desc = "Lvj;")
-	public static final Class555 field5384;
-	@ObfInfo(name = "af", desc = "Lvj;")
-	public static final Class555 field5385;
-	@ObfInfo(name = "aa", desc = "Lvj;")
-	public static final Class555 field5386;
-	@ObfInfo(name = "aj", desc = "Lvj;")
-	public static final Class555 field5388;
-	@ObfInfo(name = "ak", desc = "Lvj;")
-	public static final Class555 field5389;
-	@ObfInfo(name = "ab", desc = "I", intMultiplier = -652509963)
-	public final int field5383;
-	@ObfInfo(name = "at", desc = "I", intMultiplier = -1018796563)
-	public final int field5387;
+@ObfInfo(name = "vi")
+public class Class555 {
+	@ObfInfo(name = "aq", desc = "[I")
+	public int[] field5440;
+	@ObfInfo(name = "ad", desc = "[S")
+	public short[] field5439;
 
-	static {
-		field5389 = new Class555(5, 0);
-		field5382 = new Class555(4, 2);
-		field5388 = new Class555(1, 5);
-		field5384 = new Class555(3, 6);
-		field5385 = new Class555(2, 7);
-		field5386 = new Class555(0, 8);
+	public Class555(Class184 var1) {
+		this.field5440 = new int[8];
+		this.field5439 = new short[8];
+		int var2 = 0;
+		if (var1.method3665()) {
+			var2 = var1.method3666().length;
+			System.arraycopy(var1.method3666(), 0, this.field5440, 0, var2);
+			System.arraycopy(var1.method3668(), 0, this.field5439, 0, var2);
+		}
+
+		for (int var3 = var2; var3 < 8; ++var3) {
+			this.field5440[var3] = -1;
+			this.field5439[var3] = -1;
+		}
+
 	}
 
-	public Class555(int var1, int var2) {
-		this.field5387 = var1;
-		this.field5383 = var2;
+	@ObfInfo(name = "aq", desc = "(B)[I")
+	public int[] method9743() {
+		return this.field5440;
 	}
 
-	@ObfInfo(name = "ak", desc = "(I)I")
-	public int method175() {
-		return this.field5383;
+	@ObfInfo(name = "ad", desc = "(I)[S")
+	public short[] method9752() {
+		return this.field5439;
 	}
 
-	@ObfInfo(name = "az", desc = "(I)Z", opaque = "143509423")
-	public boolean method10080() {
-		return field5382 == this;
+	@ObfInfo(name = "ag", desc = "(IISB)V")
+	public void method9745(int var1, int var2, short var3) {
+		this.field5440[var1] = var2;
+		this.field5439[var1] = var3;
+	}
+
+	@ObfInfo(name = "ak", desc = "([I[SB)V")
+	public void method9746(int[] var1, short[] var2) {
+		this.field5440 = var1;
+		this.field5439 = var2;
 	}
 }

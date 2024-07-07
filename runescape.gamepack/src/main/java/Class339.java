@@ -1,88 +1,55 @@
 import io.runebox.ObfInfo;
 
 @ObfInfo(name = "na")
-public class Class339 {
-	@ObfInfo(name = "ak", desc = "(DDD)I")
-	public static int method6490(double var0, double var2, double var4) {
-		double var6 = var4;
-		double var8 = var4;
-		double var10 = var4;
-		if (var2 != 0.0D) {
-			double var12;
-			if (var4 < 0.5D) {
-				var12 = var4 * (var2 + 1.0D);
-			} else {
-				var12 = var2 + var4 - var2 * var4;
-			}
+public class Class339 extends Class520 {
+	@ObfInfo(name = "ak", desc = "Lml;")
+	public Class324 field3684;
+	@ObfInfo(name = "ad", desc = "Lmv;")
+	public Class334 field3670;
+	@ObfInfo(name = "ag", desc = "Lbl;")
+	public Class38 field3671;
+	@ObfInfo(name = "ao", desc = "Lbz;")
+	public Class52 field3687;
+	@ObfInfo(name = "an", desc = "I", intMultiplier = -868790673)
+	public int field3669;
+	@ObfInfo(name = "ae", desc = "I", intMultiplier = 1724018517)
+	public int field3672;
+	@ObfInfo(name = "ap", desc = "I", intMultiplier = 1005303001)
+	public int field3673;
+	@ObfInfo(name = "ax", desc = "I", intMultiplier = -156080559)
+	public int field3674;
+	@ObfInfo(name = "aj", desc = "I", intMultiplier = -517826237)
+	public int field3675;
+	@ObfInfo(name = "av", desc = "I", intMultiplier = -1043375921)
+	public int field3676;
+	@ObfInfo(name = "ab", desc = "I", intMultiplier = 706498263)
+	public int field3677;
+	@ObfInfo(name = "ai", desc = "I", intMultiplier = -2119889119)
+	public int field3678;
+	@ObfInfo(name = "aq", desc = "I", intMultiplier = -729100137)
+	public int field3679;
+	@ObfInfo(name = "ah", desc = "I", intMultiplier = 1147391719)
+	public int field3680;
+	@ObfInfo(name = "al", desc = "I", intMultiplier = -1558729485)
+	public int field3681;
+	@ObfInfo(name = "ac", desc = "I", intMultiplier = -271653801)
+	public int field3682;
+	@ObfInfo(name = "au", desc = "I", intMultiplier = -348267781)
+	public int field3683;
+	@ObfInfo(name = "aa", desc = "I", intMultiplier = -1146890015)
+	public int field3685;
+	@ObfInfo(name = "ay", desc = "I", intMultiplier = 1991784073)
+	public int field3686;
+	@ObfInfo(name = "az", desc = "I", intMultiplier = 1168553427)
+	public int field3688;
+	@ObfInfo(name = "aw", desc = "I", intMultiplier = 1037298513)
+	public int field3689;
 
-			double var14 = var4 * 2.0D - var12;
-			double var16 = var0 + 0.3333333333333333D;
-			if (var16 > 1.0D) {
-				--var16;
-			}
-
-			double var20 = var0 - 0.3333333333333333D;
-			if (var20 < 0.0D) {
-				++var20;
-			}
-
-			if (var16 * 6.0D < 1.0D) {
-				var6 = var16 * 6.0D * (var12 - var14) + var14;
-			} else if (var16 * 2.0D < 1.0D) {
-				var6 = var12;
-			} else if (var16 * 3.0D < 2.0D) {
-				var6 = (0.6666666666666666D - var16) * (var12 - var14) * 6.0D + var14;
-			} else {
-				var6 = var14;
-			}
-
-			if (var0 * 6.0D < 1.0D) {
-				var8 = var14 + var0 * (var12 - var14) * 6.0D;
-			} else if (2.0D * var0 < 1.0D) {
-				var8 = var12;
-			} else if (var0 * 3.0D < 2.0D) {
-				var8 = var14 + 6.0D * (0.6666666666666666D - var0) * (var12 - var14);
-			} else {
-				var8 = var14;
-			}
-
-			if (6.0D * var20 < 1.0D) {
-				var10 = var14 + 6.0D * (var12 - var14) * var20;
-			} else if (var20 * 2.0D < 1.0D) {
-				var10 = var12;
-			} else if (3.0D * var20 < 2.0D) {
-				var10 = 6.0D * (0.6666666666666666D - var20) * (var12 - var14) + var14;
-			} else {
-				var10 = var14;
-			}
-		}
-
-		int var22 = (int)(var6 * 256.0D);
-		int var13 = (int)(256.0D * var8);
-		int var23 = (int)(256.0D * var10);
-		int var15 = var23 + (var13 << 8) + (var22 << 16);
-		return var15;
-	}
-
-	@ObfInfo(owner = "mp", name = "al", desc = "(Lua;I)Ljava/lang/String;")
-	public static String method6268(Class521 var0) {
-		return method828(var0, 32767);
-	}
-
-	@ObfInfo(owner = "bq", name = "aj", desc = "(Lua;II)Ljava/lang/String;", opaque = "1500452705")
-	public static String method828(Class521 var0, int var1) {
-		try {
-			int var3 = var0.method9419();
-			if (var3 > var1) {
-				var3 = var1;
-			}
-
-			byte[] var4 = new byte[var3];
-			var0.field5219 += Client.field3661.method6656(var0.field5221, var0.field5219, var4, 0, var3);
-			String var5 = Class363.method7119(var4, 0, var3);
-			return var5;
-		} catch (Exception var6) {
-			return "Cabbage";
-		}
+	@ObfInfo(name = "aq", desc = "(I)V")
+	public void method6399() {
+		this.field3670 = null;
+		this.field3671 = null;
+		this.field3684 = null;
+		this.field3687 = null;
 	}
 }

@@ -2,114 +2,49 @@ import io.runebox.ObfInfo;
 
 @ObfInfo(name = "jd")
 public class Class238 {
-	@ObfInfo(name = "aj", desc = "[I")
-	public static int[] field2571;
-	@ObfInfo(name = "al", desc = "[I")
-	public static int[] field2572;
-	@ObfInfo(name = "az", desc = "[I")
-	public static int[] field2575;
-	@ObfInfo(name = "ak", desc = "[I")
-	public static int[] field2576;
-	@ObfInfo(name = "af", desc = "Ljn;")
-	public Class248 field2573;
-	@ObfInfo(name = "ah", desc = "Z")
-	public boolean field2579;
-	@ObfInfo(name = "aa", desc = "I")
-	public int field2574;
-	@ObfInfo(name = "at", desc = "[I")
-	public int[] field2569;
-	@ObfInfo(name = "ab", desc = "[I")
-	public int[] field2570;
-	@ObfInfo(name = "ac", desc = "[I")
-	public int[] field2577;
-	@ObfInfo(name = "ao", desc = "[I")
-	public int[] field2578;
-
-	static {
-		field2576 = new int[500];
-		field2572 = new int[500];
-		field2571 = new int[500];
-		field2575 = new int[500];
-	}
-
-	public Class238(byte[] var1, Class248 var2) {
-		this.field2573 = null;
-		this.field2574 = -1;
-		this.field2579 = false;
-		this.field2573 = var2;
-		Class521 var3 = new Class521(var1);
-		Class521 var4 = new Class521(var1);
-		var3.field5219 = 2;
-		int var5 = var3.method9405();
+	@ObfInfo(name = "ab", desc = "(Lde;[BIII)V", opaque = "855566441")
+	public static void method4605(Class83 var0, byte[] var1, int var2, int var3) {
+		Class562 var5 = new Class562(var1);
 		int var6 = -1;
-		int var7 = 0;
-		var4.field5219 = var3.field5219 + var5;
 
-		int var8;
-		for (var8 = 0; var8 < var5; ++var8) {
-			int var9 = var3.method9405();
-			if (var9 > 0) {
-				if (this.field2573.field2661[var8] != 0) {
-					for (int var10 = var8 - 1; var10 > var6; --var10) {
-						if (this.field2573.field2661[var10] == 0) {
-							field2576[var7] = var10;
-							field2572[var7] = 0;
-							field2571[var7] = 0;
-							field2575[var7] = 0;
-							++var7;
-							break;
-						}
+		while (true) {
+			int var7 = var5.method9844();
+			if (var7 == 0) {
+				return;
+			}
+
+			var6 += var7;
+			int var8 = 0;
+
+			while (true) {
+				int var9 = var5.method9842();
+				if (var9 == 0) {
+					break;
+				}
+
+				var8 += var9 - 1;
+				int var10 = var8 & 63;
+				int var11 = var8 >> 6 & 63;
+				int var12 = var8 >> 12;
+				int var13 = var5.method9902();
+				int var14 = var13 >> 2;
+				int var15 = var13 & 3;
+				int var16 = var11 + var2;
+				int var17 = var10 + var3;
+				if (var16 > 0 && var17 > 0 && var16 < var0.field1025[0].length - 2 && var17 < var0.field1025[0][0].length - 2) {
+					int var18 = var12;
+					if ((var0.field1023[1][var16][var17] & 2) == 2) {
+						var18 = var12 - 1;
 					}
-				}
 
-				field2576[var7] = var8;
-				short var11 = 0;
-				if (this.field2573.field2661[var8] == 3) {
-					var11 = 128;
-				}
+					Class224 var19 = null;
+					if (var18 >= 0 && var0.field1015 != null) {
+						var19 = var0.field1015[var18];
+					}
 
-				if ((var9 & 1) != 0) {
-					field2572[var7] = var4.method9457();
-				} else {
-					field2572[var7] = var11;
-				}
-
-				if ((var9 & 2) != 0) {
-					field2571[var7] = var4.method9457();
-				} else {
-					field2571[var7] = var11;
-				}
-
-				if ((var9 & 4) != 0) {
-					field2575[var7] = var4.method9457();
-				} else {
-					field2575[var7] = var11;
-				}
-
-				var6 = var8;
-				++var7;
-				if (this.field2573.field2661[var8] == 5) {
-					this.field2579 = true;
+					Class97.method246(var0, var12, var16, var17, var6, var15, var14, var19);
 				}
 			}
-		}
-
-		if (var4.field5219 != var1.length) {
-			throw new RuntimeException();
-		} else {
-			this.field2574 = var7;
-			this.field2569 = new int[var7];
-			this.field2570 = new int[var7];
-			this.field2577 = new int[var7];
-			this.field2578 = new int[var7];
-
-			for (var8 = 0; var8 < var7; ++var8) {
-				this.field2569[var8] = field2576[var8];
-				this.field2570[var8] = field2572[var8];
-				this.field2577[var8] = field2571[var8];
-				this.field2578[var8] = field2575[var8];
-			}
-
 		}
 	}
 }

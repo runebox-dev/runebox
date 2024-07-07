@@ -1,21 +1,31 @@
 import io.runebox.ObfInfo;
-import java.util.Comparator;
 
 @ObfInfo(name = "os")
-final class Class383 implements Comparator {
-	public Class383() {
+public class Class383 implements Class393 {
+	@ObfInfo(name = "aq", desc = "Los;")
+	public static final Class383 field4516;
+	@ObfInfo(name = "ad", desc = "Los;")
+	public static final Class383 field4517;
+	@ObfInfo(name = "ag", desc = "Los;")
+	public static final Class383 field4518;
+	@ObfInfo(name = "ak", desc = "Los;")
+	public static final Class383 field4519;
+	@ObfInfo(name = "ap", desc = "I", intMultiplier = 1933661759)
+	public final int field4520;
+
+	static {
+		field4516 = new Class383(-1);
+		field4517 = new Class383(0);
+		field4518 = new Class383(1);
+		field4519 = new Class383(2);
 	}
 
-	@ObfInfo(name = "ak", desc = "(Lpm;Lpm;I)I", opaque = "934387916")
-	public int method7309(Class403 var1, Class403 var2) {
-		return var1.field4622.field4591 < var2.field4622.field4591 ? -1 : (var2.field4622.field4591 == var1.field4622.field4591 ? 0 : 1);
+	public Class383(int var1) {
+		this.field4520 = var1;
 	}
 
-	public int compare(Object var1, Object var2) {
-		return this.method7309((Class403)var1, (Class403)var2);
-	}
-
-	public boolean equals(Object var1) {
-		return super.equals(var1);
+	@ObfInfo(name = "aq", desc = "(I)I")
+	public int method129() {
+		return this.field4520;
 	}
 }

@@ -1,56 +1,81 @@
 import io.runebox.ObfInfo;
+import java.util.Iterator;
 
 @ObfInfo(name = "to")
-public class Class509 {
-	@ObfInfo(name = "al", desc = "Ljava/lang/Object;")
-	public final Object field5175;
-	@ObfInfo(name = "ak", desc = "Ljava/lang/Object;")
-	public final Object field5176;
+public class Class509 implements Iterator {
+	@ObfInfo(name = "aq", desc = "Lth;")
+	public Class502 field5098;
+	@ObfInfo(name = "ad", desc = "Ltz;")
+	public Class520 field5096;
+	@ObfInfo(name = "ak", desc = "Ltz;")
+	public Class520 field5097;
+	@ObfInfo(name = "ag", desc = "I")
+	public int field5095;
 
-	public Class509(Object var1, Object var2) {
-		this.field5176 = var1;
-		this.field5175 = var2;
+	public Class509(Class502 var1) {
+		this.field5097 = null;
+		this.field5098 = var1;
+		this.method8975();
 	}
 
-	public String toString() {
-		return this.field5176 + ", " + this.field5175;
+	@ObfInfo(name = "aq", desc = "()V")
+	public void method8975() {
+		this.field5096 = this.field5098.field5074[0].field5235;
+		this.field5095 = 1;
+		this.field5097 = null;
 	}
 
-	public boolean equals(Object var1) {
-		if (var1 != null && var1 instanceof Class509) {
-			Class509 var2 = (Class509)var1;
-			if (this.field5176 == null) {
-				if (var2.field5176 != null) {
-					return false;
-				}
-			} else if (!this.field5176.equals(var2.field5176)) {
-				return false;
-			}
+	@ObfInfo(name = "ad", desc = "()Ltz;")
+	public Class520 method8974() {
+		this.method8975();
+		return (Class520)this.next();
+	}
 
-			if (this.field5175 == null) {
-				if (var2.field5175 != null) {
-					return false;
+	public Object next() {
+		Class520 var1;
+		if (this.field5096 != this.field5098.field5074[this.field5095 - 1]) {
+			var1 = this.field5096;
+			this.field5096 = var1.field5235;
+			this.field5097 = var1;
+			return var1;
+		} else {
+			do {
+				if (this.field5095 >= this.field5098.field5076) {
+					return null;
 				}
-			} else if (!this.field5175.equals(var2.field5175)) {
-				return false;
-			}
 
+				var1 = this.field5098.field5074[this.field5095++].field5235;
+			} while(var1 == this.field5098.field5074[this.field5095 - 1]);
+
+			this.field5096 = var1.field5235;
+			this.field5097 = var1;
+			return var1;
+		}
+	}
+
+	public boolean hasNext() {
+		if (this.field5096 != this.field5098.field5074[this.field5095 - 1]) {
 			return true;
 		} else {
+			while (this.field5095 < this.field5098.field5076) {
+				if (this.field5098.field5074[this.field5095++].field5235 != this.field5098.field5074[this.field5095 - 1]) {
+					this.field5096 = this.field5098.field5074[this.field5095 - 1].field5235;
+					return true;
+				}
+
+				this.field5096 = this.field5098.field5074[this.field5095 - 1];
+			}
+
 			return false;
 		}
 	}
 
-	public int hashCode() {
-		int var1 = 0;
-		if (this.field5176 != null) {
-			var1 += this.field5176.hashCode();
+	public void remove() {
+		if (this.field5097 == null) {
+			throw new IllegalStateException();
+		} else {
+			this.field5097.method9267();
+			this.field5097 = null;
 		}
-
-		if (this.field5175 != null) {
-			var1 += this.field5175.hashCode() * 31;
-		}
-
-		return var1;
 	}
 }

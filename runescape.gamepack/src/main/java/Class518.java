@@ -1,100 +1,21 @@
 import io.runebox.ObfInfo;
 
 @ObfInfo(name = "tx")
-public final class Class518 {
-	@ObfInfo(name = "aj", desc = "Ltl;")
-	public Class506 field5202;
-	@ObfInfo(name = "az", desc = "Ltl;")
-	public Class506 field5205;
-	@ObfInfo(name = "al", desc = "[Ltl;")
-	public Class506[] field5203;
-	@ObfInfo(name = "ak", desc = "I")
-	public int field5204;
-	@ObfInfo(name = "af", desc = "I")
-	public int field5206;
+public class Class518 {
+	@ObfInfo(name = "ax", desc = "[I")
+	public static final int[] field5218;
+	@ObfInfo(name = "az", desc = "[I")
+	public static final int[] field5224;
 
-	public Class518(int var1) {
-		this.field5206 = 0;
-		this.field5204 = var1;
-		this.field5203 = new Class506[var1];
+	static {
+		field5224 = new int[2048];
+		field5218 = new int[2048];
+		double var0 = 0.0030679615757712823D;
 
-		for (int var2 = 0; var2 < var1; ++var2) {
-			Class506 var3 = this.field5203[var2] = new Class506();
-			var3.field5169 = var3;
-			var3.field5171 = var3;
+		for (int var2 = 0; var2 < 2048; ++var2) {
+			field5224[var2] = (int)(65536.0D * Math.sin((double)var2 * var0));
+			field5218[var2] = (int)(65536.0D * Math.cos(var0 * (double)var2));
 		}
 
-	}
-
-	@ObfInfo(name = "ak", desc = "(J)Ltl;")
-	public Class506 method9361(long var1) {
-		Class506 var3 = this.field5203[(int)(var1 & (long)(this.field5204 - 1))];
-
-		for (this.field5202 = var3.field5169; this.field5202 != var3; this.field5202 = this.field5202.field5169) {
-			if (this.field5202.field5170 == var1) {
-				Class506 var4 = this.field5202;
-				this.field5202 = this.field5202.field5169;
-				return var4;
-			}
-		}
-
-		this.field5202 = null;
-		return null;
-	}
-
-	@ObfInfo(name = "al", desc = "()I")
-	public int method9362() {
-		int var1 = 0;
-
-		for (int var2 = 0; var2 < this.field5204; ++var2) {
-			Class506 var3 = this.field5203[var2];
-
-			for (Class506 var4 = var3.field5169; var4 != var3; var4 = var4.field5169) {
-				++var1;
-			}
-		}
-
-		return var1;
-	}
-
-	@ObfInfo(name = "aj", desc = "(Ltl;J)V")
-	public void method9360(Class506 var1, long var2) {
-		if (var1.field5171 != null) {
-			var1.method9277();
-		}
-
-		Class506 var4 = this.field5203[(int)(var2 & (long)(this.field5204 - 1))];
-		var1.field5171 = var4.field5171;
-		var1.field5169 = var4;
-		var1.field5171.field5169 = var1;
-		var1.field5169.field5171 = var1;
-		var1.field5170 = var2;
-	}
-
-	@ObfInfo(name = "az", desc = "()Ltl;")
-	public Class506 method9363() {
-		this.field5206 = 0;
-		return this.method9364();
-	}
-
-	@ObfInfo(name = "af", desc = "()Ltl;")
-	public Class506 method9364() {
-		Class506 var1;
-		if (this.field5206 > 0 && this.field5205 != this.field5203[this.field5206 - 1]) {
-			var1 = this.field5205;
-			this.field5205 = var1.field5169;
-			return var1;
-		} else {
-			do {
-				if (this.field5206 >= this.field5204) {
-					return null;
-				}
-
-				var1 = this.field5203[this.field5206++].field5169;
-			} while(var1 == this.field5203[this.field5206 - 1]);
-
-			this.field5205 = var1.field5169;
-			return var1;
-		}
 	}
 }

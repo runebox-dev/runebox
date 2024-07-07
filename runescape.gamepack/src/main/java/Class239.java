@@ -2,70 +2,65 @@ import io.runebox.ObfInfo;
 
 @ObfInfo(name = "je")
 public class Class239 {
-	@ObfInfo(name = "al", desc = "[Lfh;")
-	public Class138[] field2580;
-	@ObfInfo(name = "aj", desc = "I", intMultiplier = -2019764053)
-	public int field2582;
+	@ObfInfo(owner = "mq", name = "aq", desc = "(DDD)I")
+	public static int method6346(double var0, double var2, double var4) {
+		double var6 = var4;
+		double var8 = var4;
+		double var10 = var4;
+		if (var2 != 0.0D) {
+			double var12;
+			if (var4 < 0.5D) {
+				var12 = (var2 + 1.0D) * var4;
+			} else {
+				var12 = var2 + var4 - var2 * var4;
+			}
 
-	public Class239(Class521 var1, int var2) {
-		this.field2580 = new Class138[var2];
-		this.field2582 = var1.method9405();
+			double var14 = 2.0D * var4 - var12;
+			double var16 = var0 + 0.3333333333333333D;
+			if (var16 > 1.0D) {
+				--var16;
+			}
 
-		for (int var3 = 0; var3 < this.field2580.length; ++var3) {
-			Class138 var4 = new Class138(this.field2582, var1, false);
-			this.field2580[var3] = var4;
-		}
+			double var20 = var0 - 0.3333333333333333D;
+			if (var20 < 0.0D) {
+				++var20;
+			}
 
-		this.method4639();
-	}
+			if (var16 * 6.0D < 1.0D) {
+				var6 = var16 * (var12 - var14) * 6.0D + var14;
+			} else if (2.0D * var16 < 1.0D) {
+				var6 = var12;
+			} else if (3.0D * var16 < 2.0D) {
+				var6 = var14 + 6.0D * (var12 - var14) * (0.6666666666666666D - var16);
+			} else {
+				var6 = var14;
+			}
 
-	@ObfInfo(name = "ak", desc = "(I)V", opaque = "-16711937")
-	public void method4639() {
-		Class138[] var2 = this.field2580;
+			if (6.0D * var0 < 1.0D) {
+				var8 = var14 + var0 * 6.0D * (var12 - var14);
+			} else if (2.0D * var0 < 1.0D) {
+				var8 = var12;
+			} else if (3.0D * var0 < 2.0D) {
+				var8 = var14 + 6.0D * (var12 - var14) * (0.6666666666666666D - var0);
+			} else {
+				var8 = var14;
+			}
 
-		for (int var3 = 0; var3 < var2.length; ++var3) {
-			Class138 var4 = var2[var3];
-			if (var4.field1584 >= 0) {
-				var4.field1585 = this.field2580[var4.field1584];
+			if (var20 * 6.0D < 1.0D) {
+				var10 = var14 + 6.0D * (var12 - var14) * var20;
+			} else if (2.0D * var20 < 1.0D) {
+				var10 = var12;
+			} else if (var20 * 3.0D < 2.0D) {
+				var10 = var14 + 6.0D * (var12 - var14) * (0.6666666666666666D - var20);
+			} else {
+				var10 = var14;
 			}
 		}
 
-	}
-
-	@ObfInfo(name = "al", desc = "(B)I")
-	public int method4640() {
-		return this.field2580.length;
-	}
-
-	@ObfInfo(name = "aj", desc = "(II)Lfh;", opaque = "-672411917")
-	public Class138 method4641(int var1) {
-		return var1 >= this.method4640() ? null : this.field2580[var1];
-	}
-
-	@ObfInfo(name = "az", desc = "(I)[Lfh;")
-	public Class138[] method4660() {
-		return this.field2580;
-	}
-
-	@ObfInfo(name = "af", desc = "(Lfo;II)V")
-	public void method4638(Class145 var1, int var2) {
-		this.method4642(var1, var2, (boolean[])null, false);
-	}
-
-	@ObfInfo(name = "aa", desc = "(Lfo;I[ZZI)V", opaque = "88109315")
-	public void method4642(Class145 var1, int var2, boolean[] var3, boolean var4) {
-		int var6 = var1.method3191();
-		int var7 = 0;
-		Class138[] var8 = this.method4660();
-
-		for (int var9 = 0; var9 < var8.length; ++var9) {
-			Class138 var10 = var8[var9];
-			if (var3 == null || var3[var7] == var4) {
-				var1.method3193(var2, var10, var7, var6);
-			}
-
-			++var7;
-		}
-
+		int var22 = (int)(256.0D * var6);
+		int var13 = (int)(var8 * 256.0D);
+		int var23 = (int)(256.0D * var10);
+		int var15 = var23 + (var13 << 8) + (var22 << 16);
+		return var15;
 	}
 }

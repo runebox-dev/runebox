@@ -1,16 +1,16 @@
 import io.runebox.ObfInfo;
 
 @ObfInfo(name = "jp")
-public abstract class Class250 {
-	@ObfInfo(name = "aj", desc = "I", intMultiplier = -887277437)
-	public int field2671;
-	@ObfInfo(name = "al", desc = "I", intMultiplier = -883055079)
-	public int field2672;
-	@ObfInfo(name = "ak", desc = "I", intMultiplier = 938256667)
-	public int field2673;
-	@ObfInfo(name = "az", desc = "I", intMultiplier = -731135151)
-	public int field2674;
+public class Class250 {
+	@ObfInfo(name = "aq", desc = "I", intMultiplier = 464194777)
+	public int field2628;
 
-	@ObfInfo(name = "ak", desc = "(IIILir;I)Z")
-	public abstract boolean method1088(int var1, int var2, int var3, Class226 var4);
+	public Class250(Class255 var1, int var2) {
+		this.field2628 = var2;
+	}
+
+	@ObfInfo(name = "aq", desc = "(I)I")
+	public int method4870() {
+		return this.field2628;
+	}
 }

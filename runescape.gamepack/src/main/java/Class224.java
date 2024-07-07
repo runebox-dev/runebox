@@ -1,186 +1,420 @@
 import io.runebox.ObfInfo;
 
 @ObfInfo(name = "ip")
-public class Class224 extends Class507 {
-	@ObfInfo(name = "aj", desc = "Llm;")
-	public static Class299 field2297;
-	@ObfInfo(name = "az", desc = "Llm;")
-	public static Class299 field2298;
-	@ObfInfo(name = "aa", desc = "I", intMultiplier = 831089047)
-	public int field2300;
-	@ObfInfo(name = "at", desc = "I", intMultiplier = 107112977)
-	public int field2301;
-	@ObfInfo(name = "ax", desc = "I", intMultiplier = 1931691159)
-	public int field2304;
-	@ObfInfo(name = "av", desc = "I", intMultiplier = -2123612661)
-	public int field2306;
-	@ObfInfo(name = "ap", desc = "I", intMultiplier = 800719853)
-	public int field2308;
-	@ObfInfo(name = "ae", desc = "I", intMultiplier = -2134366815)
-	public int field2309;
-	@ObfInfo(name = "af", desc = "I", intMultiplier = -880763715)
-	public int field2311;
-	@ObfInfo(name = "aq", desc = "I", intMultiplier = 2139694611)
-	public int field2312;
-	@ObfInfo(name = "ao", desc = "[S")
-	public short[] field2296;
-	@ObfInfo(name = "ab", desc = "[S")
-	public short[] field2302;
-	@ObfInfo(name = "ac", desc = "[S")
-	public short[] field2303;
-	@ObfInfo(name = "ah", desc = "[S")
-	public short[] field2305;
+public class Class224 {
+	@ObfInfo(name = "bs", desc = "I", intMultiplier = -270571109)
+	public int field2424;
+	@ObfInfo(name = "bp", desc = "I", intMultiplier = -883837443)
+	public int field2432;
+	@ObfInfo(name = "bx", desc = "I", intMultiplier = 1510995225)
+	public int field2433;
+	@ObfInfo(name = "bu", desc = "I", intMultiplier = 928232177)
+	public int field2434;
+	@ObfInfo(name = "by", desc = "[[I")
+	public int[][] field2435;
 
-	static {
-		field2297 = new Class299(64);
-		field2298 = new Class299(30);
+	public Class224(int var1, int var2) {
+		this.field2424 = 0;
+		this.field2432 = 0;
+		this.field2433 = var1;
+		this.field2434 = var2;
+		this.field2435 = new int[this.field2433][this.field2434];
+		this.method4304();
 	}
 
-	public Class224() {
-		this.field2301 = -1;
-		this.field2306 = 128;
-		this.field2312 = 128;
-		this.field2308 = 0;
-		this.field2309 = 0;
-		this.field2304 = 0;
+	@ObfInfo(name = "aq", desc = "(I)V", opaque = "1490249924")
+	public void method4304() {
+		for (int var2 = 0; var2 < this.field2433; ++var2) {
+			for (int var3 = 0; var3 < this.field2434; ++var3) {
+				if (var2 != 0 && var3 != 0 && var2 < this.field2433 - 5 && var3 < this.field2434 - 5) {
+					this.field2435[var2][var3] = 1073741824;
+				} else {
+					this.field2435[var2][var3] = 16777215;
+				}
+			}
+		}
+
 	}
 
-	@ObfInfo(name = "al", desc = "(Lua;B)V", opaque = "-1")
-	public void method4224(Class521 var1) {
-		while (true) {
-			int var3 = var1.method9405();
+	@ObfInfo(name = "ad", desc = "(IIIIZI)V", opaque = "-1514398241")
+	public void method4305(int var1, int var2, int var3, int var4, boolean var5) {
+		var1 -= this.field2424;
+		var2 -= this.field2432;
+		if (var3 == 0) {
+			if (var4 == 0) {
+				this.method4331(var1, var2, 128);
+				this.method4331(var1 - 1, var2, 8);
+			}
+
+			if (var4 == 1) {
+				this.method4331(var1, var2, 2);
+				this.method4331(var1, var2 + 1, 32);
+			}
+
+			if (var4 == 2) {
+				this.method4331(var1, var2, 8);
+				this.method4331(var1 + 1, var2, 128);
+			}
+
+			if (var4 == 3) {
+				this.method4331(var1, var2, 32);
+				this.method4331(var1, var2 - 1, 2);
+			}
+		}
+
+		if (var3 == 1 || var3 == 3) {
+			if (var4 == 0) {
+				this.method4331(var1, var2, 1);
+				this.method4331(var1 - 1, var2 + 1, 16);
+			}
+
+			if (var4 == 1) {
+				this.method4331(var1, var2, 4);
+				this.method4331(var1 + 1, var2 + 1, 64);
+			}
+
+			if (var4 == 2) {
+				this.method4331(var1, var2, 16);
+				this.method4331(var1 + 1, var2 - 1, 1);
+			}
+
+			if (var4 == 3) {
+				this.method4331(var1, var2, 64);
+				this.method4331(var1 - 1, var2 - 1, 4);
+			}
+		}
+
+		if (var3 == 2) {
+			if (var4 == 0) {
+				this.method4331(var1, var2, 130);
+				this.method4331(var1 - 1, var2, 8);
+				this.method4331(var1, var2 + 1, 32);
+			}
+
+			if (var4 == 1) {
+				this.method4331(var1, var2, 10);
+				this.method4331(var1, var2 + 1, 32);
+				this.method4331(var1 + 1, var2, 128);
+			}
+
+			if (var4 == 2) {
+				this.method4331(var1, var2, 40);
+				this.method4331(var1 + 1, var2, 128);
+				this.method4331(var1, var2 - 1, 2);
+			}
+
+			if (var4 == 3) {
+				this.method4331(var1, var2, 160);
+				this.method4331(var1, var2 - 1, 2);
+				this.method4331(var1 - 1, var2, 8);
+			}
+		}
+
+		if (var5) {
 			if (var3 == 0) {
-				return;
+				if (var4 == 0) {
+					this.method4331(var1, var2, 65536);
+					this.method4331(var1 - 1, var2, 4096);
+				}
+
+				if (var4 == 1) {
+					this.method4331(var1, var2, 1024);
+					this.method4331(var1, var2 + 1, 16384);
+				}
+
+				if (var4 == 2) {
+					this.method4331(var1, var2, 4096);
+					this.method4331(var1 + 1, var2, 65536);
+				}
+
+				if (var4 == 3) {
+					this.method4331(var1, var2, 16384);
+					this.method4331(var1, var2 - 1, 1024);
+				}
 			}
 
-			this.method4226(var1, var3);
+			if (var3 == 1 || var3 == 3) {
+				if (var4 == 0) {
+					this.method4331(var1, var2, 512);
+					this.method4331(var1 - 1, var2 + 1, 8192);
+				}
+
+				if (var4 == 1) {
+					this.method4331(var1, var2, 2048);
+					this.method4331(var1 + 1, var2 + 1, 32768);
+				}
+
+				if (var4 == 2) {
+					this.method4331(var1, var2, 8192);
+					this.method4331(var1 + 1, var2 - 1, 512);
+				}
+
+				if (var4 == 3) {
+					this.method4331(var1, var2, 32768);
+					this.method4331(var1 - 1, var2 - 1, 2048);
+				}
+			}
+
+			if (var3 == 2) {
+				if (var4 == 0) {
+					this.method4331(var1, var2, 66560);
+					this.method4331(var1 - 1, var2, 4096);
+					this.method4331(var1, var2 + 1, 16384);
+				}
+
+				if (var4 == 1) {
+					this.method4331(var1, var2, 5120);
+					this.method4331(var1, var2 + 1, 16384);
+					this.method4331(var1 + 1, var2, 65536);
+				}
+
+				if (var4 == 2) {
+					this.method4331(var1, var2, 20480);
+					this.method4331(var1 + 1, var2, 65536);
+					this.method4331(var1, var2 - 1, 1024);
+				}
+
+				if (var4 == 3) {
+					this.method4331(var1, var2, 81920);
+					this.method4331(var1, var2 - 1, 1024);
+					this.method4331(var1 - 1, var2, 4096);
+				}
+			}
 		}
+
 	}
 
-	@ObfInfo(name = "aj", desc = "(Lua;IB)V", opaque = "4")
-	public void method4226(Class521 var1, int var2) {
-		if (var2 == 1) {
-			this.field2300 = var1.method9407();
-		} else if (var2 == 2) {
-			this.field2301 = var1.method9407();
-		} else if (var2 == 4) {
-			this.field2306 = var1.method9407();
-		} else if (var2 == 5) {
-			this.field2312 = var1.method9407();
-		} else if (var2 == 6) {
-			this.field2308 = var1.method9407();
-		} else if (var2 == 7) {
-			this.field2309 = var1.method9405();
-		} else if (var2 == 8) {
-			this.field2304 = var1.method9405();
-		} else {
-			int var4;
-			int var5;
-			if (var2 == 40) {
-				var4 = var1.method9405();
-				this.field2302 = new short[var4];
-				this.field2303 = new short[var4];
+	@ObfInfo(name = "ag", desc = "(IIIIZI)V", opaque = "1592901653")
+	public void method4306(int var1, int var2, int var3, int var4, boolean var5) {
+		int var7 = 256;
+		if (var5) {
+			var7 += 131072;
+		}
 
-				for (var5 = 0; var5 < var4; ++var5) {
-					this.field2302[var5] = (short)var1.method9407();
-					this.field2303[var5] = (short)var1.method9407();
-				}
-			} else if (var2 == 41) {
-				var4 = var1.method9405();
-				this.field2296 = new short[var4];
-				this.field2305 = new short[var4];
+		var1 -= this.field2424;
+		var2 -= this.field2432;
 
-				for (var5 = 0; var5 < var4; ++var5) {
-					this.field2296[var5] = (short)var1.method9407();
-					this.field2305[var5] = (short)var1.method9407();
+		for (int var8 = var1; var8 < var3 + var1; ++var8) {
+			if (var8 >= 0 && var8 < this.field2433) {
+				for (int var9 = var2; var9 < var4 + var2; ++var9) {
+					if (var9 >= 0 && var9 < this.field2434) {
+						this.method4331(var8, var9, var7);
+					}
 				}
 			}
 		}
 
 	}
 
-	@ObfInfo(name = "az", desc = "(IS)Lkb;", opaque = "1208")
-	public final Class262 method4227(int var1) {
-		Class262 var3 = this.method4228();
-		if (var3 == null) {
-			return null;
-		} else {
-			Class262 var4;
-			if (-1 != this.field2301 && var1 != -1) {
-				var4 = Class211.method4637(this.field2301).method4001(var3, var1);
-			} else {
-				var4 = var3.method5170(true);
-			}
-
-			if (128 != this.field2306 || 128 != this.field2312) {
-				var4.method5190(this.field2306, this.field2312, this.field2306);
-			}
-
-			if (this.field2308 != 0) {
-				if (90 == this.field2308) {
-					var4.method5243();
-				}
-
-				if (this.field2308 == 180) {
-					var4.method5243();
-					var4.method5243();
-				}
-
-				if (this.field2308 == 270) {
-					var4.method5243();
-					var4.method5243();
-					var4.method5243();
-				}
-			}
-
-			return var4;
-		}
+	@ObfInfo(name = "ak", desc = "(III)V")
+	public void method4321(int var1, int var2) {
+		var1 -= this.field2424;
+		var2 -= this.field2432;
+		int[] var10000 = this.field2435[var1];
+		var10000[var2] |= 2097152;
 	}
 
-	@ObfInfo(name = "af", desc = "(I)Lkb;", opaque = "310369198")
-	public final Class262 method4228() {
-		Class262 var2 = (Class262)field2298.method5993((long)this.field2311);
-		if (var2 == null) {
-			Class236 var3 = Class236.method4594(Client.field2313, this.field2300, 0);
-			if (var3 == null) {
-				return null;
-			}
-
-			int var4;
-			if (this.field2302 != null) {
-				for (var4 = 0; var4 < this.field2302.length; ++var4) {
-					var3.method4573(this.field2302[var4], this.field2303[var4]);
-				}
-			}
-
-			if (this.field2296 != null) {
-				for (var4 = 0; var4 < this.field2296.length; ++var4) {
-					var3.method4600(this.field2296[var4], this.field2305[var4]);
-				}
-			}
-
-			var2 = var3.method4572(64 + this.field2309, this.field2304 + 850, -30, -50, -30);
-			field2298.method5987(var2, (long)this.field2311);
-		}
-
-		return var2;
+	@ObfInfo(name = "ap", desc = "(III)V")
+	public void method4308(int var1, int var2) {
+		var1 -= this.field2424;
+		var2 -= this.field2432;
+		int[] var10000 = this.field2435[var1];
+		var10000[var2] |= 262144;
 	}
 
-	@ObfInfo(owner = "ik", name = "ak", desc = "(II)Lip;", opaque = "1440698018")
-	public static Class224 method4163(int var0) {
-		Class224 var2 = (Class224)field2297.method5993((long)var0);
-		if (var2 != null) {
-			return var2;
-		} else {
-			byte[] var3 = Client.field1937.method7216(13, var0);
-			var2 = new Class224();
-			var2.field2311 = var0;
-			if (var3 != null) {
-				var2.method4224(new Class521(var3));
+	@ObfInfo(name = "an", desc = "(IIII)V")
+	public void method4331(int var1, int var2, int var3) {
+		int[] var10000 = this.field2435[var1];
+		var10000[var2] |= var3;
+	}
+
+	@ObfInfo(name = "aj", desc = "(IIIIZI)V", opaque = "2147483646")
+	public void method4333(int var1, int var2, int var3, int var4, boolean var5) {
+		var1 -= this.field2424;
+		var2 -= this.field2432;
+		if (var3 == 0) {
+			if (var4 == 0) {
+				this.method4311(var1, var2, 128);
+				this.method4311(var1 - 1, var2, 8);
 			}
 
-			field2297.method5987(var2, (long)var0);
-			return var2;
+			if (var4 == 1) {
+				this.method4311(var1, var2, 2);
+				this.method4311(var1, var2 + 1, 32);
+			}
+
+			if (var4 == 2) {
+				this.method4311(var1, var2, 8);
+				this.method4311(var1 + 1, var2, 128);
+			}
+
+			if (var4 == 3) {
+				this.method4311(var1, var2, 32);
+				this.method4311(var1, var2 - 1, 2);
+			}
 		}
+
+		if (var3 == 1 || var3 == 3) {
+			if (var4 == 0) {
+				this.method4311(var1, var2, 1);
+				this.method4311(var1 - 1, var2 + 1, 16);
+			}
+
+			if (var4 == 1) {
+				this.method4311(var1, var2, 4);
+				this.method4311(var1 + 1, var2 + 1, 64);
+			}
+
+			if (var4 == 2) {
+				this.method4311(var1, var2, 16);
+				this.method4311(var1 + 1, var2 - 1, 1);
+			}
+
+			if (var4 == 3) {
+				this.method4311(var1, var2, 64);
+				this.method4311(var1 - 1, var2 - 1, 4);
+			}
+		}
+
+		if (var3 == 2) {
+			if (var4 == 0) {
+				this.method4311(var1, var2, 130);
+				this.method4311(var1 - 1, var2, 8);
+				this.method4311(var1, var2 + 1, 32);
+			}
+
+			if (var4 == 1) {
+				this.method4311(var1, var2, 10);
+				this.method4311(var1, var2 + 1, 32);
+				this.method4311(var1 + 1, var2, 128);
+			}
+
+			if (var4 == 2) {
+				this.method4311(var1, var2, 40);
+				this.method4311(var1 + 1, var2, 128);
+				this.method4311(var1, var2 - 1, 2);
+			}
+
+			if (var4 == 3) {
+				this.method4311(var1, var2, 160);
+				this.method4311(var1, var2 - 1, 2);
+				this.method4311(var1 - 1, var2, 8);
+			}
+		}
+
+		if (var5) {
+			if (var3 == 0) {
+				if (var4 == 0) {
+					this.method4311(var1, var2, 65536);
+					this.method4311(var1 - 1, var2, 4096);
+				}
+
+				if (var4 == 1) {
+					this.method4311(var1, var2, 1024);
+					this.method4311(var1, var2 + 1, 16384);
+				}
+
+				if (var4 == 2) {
+					this.method4311(var1, var2, 4096);
+					this.method4311(var1 + 1, var2, 65536);
+				}
+
+				if (var4 == 3) {
+					this.method4311(var1, var2, 16384);
+					this.method4311(var1, var2 - 1, 1024);
+				}
+			}
+
+			if (var3 == 1 || var3 == 3) {
+				if (var4 == 0) {
+					this.method4311(var1, var2, 512);
+					this.method4311(var1 - 1, var2 + 1, 8192);
+				}
+
+				if (var4 == 1) {
+					this.method4311(var1, var2, 2048);
+					this.method4311(var1 + 1, var2 + 1, 32768);
+				}
+
+				if (var4 == 2) {
+					this.method4311(var1, var2, 8192);
+					this.method4311(var1 + 1, var2 - 1, 512);
+				}
+
+				if (var4 == 3) {
+					this.method4311(var1, var2, 32768);
+					this.method4311(var1 - 1, var2 - 1, 2048);
+				}
+			}
+
+			if (var3 == 2) {
+				if (var4 == 0) {
+					this.method4311(var1, var2, 66560);
+					this.method4311(var1 - 1, var2, 4096);
+					this.method4311(var1, var2 + 1, 16384);
+				}
+
+				if (var4 == 1) {
+					this.method4311(var1, var2, 5120);
+					this.method4311(var1, var2 + 1, 16384);
+					this.method4311(var1 + 1, var2, 65536);
+				}
+
+				if (var4 == 2) {
+					this.method4311(var1, var2, 20480);
+					this.method4311(var1 + 1, var2, 65536);
+					this.method4311(var1, var2 - 1, 1024);
+				}
+
+				if (var4 == 3) {
+					this.method4311(var1, var2, 81920);
+					this.method4311(var1, var2 - 1, 1024);
+					this.method4311(var1 - 1, var2, 4096);
+				}
+			}
+		}
+
+	}
+
+	@ObfInfo(name = "av", desc = "(IIIIIZI)V", opaque = "704924458")
+	public void method4310(int var1, int var2, int var3, int var4, int var5, boolean var6) {
+		int var8 = 33554688;
+		if (var6) {
+			var8 += 131072;
+		}
+
+		var1 -= this.field2424;
+		var2 -= this.field2432;
+		int var9;
+		if (var5 == 1 || var5 == 3) {
+			var9 = var3;
+			var3 = var4;
+			var4 = var9;
+		}
+
+		for (var9 = var1; var9 < var3 + var1; ++var9) {
+			if (var9 >= 0 && var9 < this.field2433) {
+				for (int var10 = var2; var10 < var4 + var2; ++var10) {
+					if (var10 >= 0 && var10 < this.field2434) {
+						this.method4311(var9, var10, var8);
+					}
+				}
+			}
+		}
+
+	}
+
+	@ObfInfo(name = "ab", desc = "(IIII)V")
+	public void method4311(int var1, int var2, int var3) {
+		int[] var10000 = this.field2435[var1];
+		var10000[var2] &= ~var3;
+	}
+
+	@ObfInfo(name = "ai", desc = "(III)V")
+	public void method4312(int var1, int var2) {
+		var1 -= this.field2424;
+		var2 -= this.field2432;
+		int[] var10000 = this.field2435[var1];
+		var10000[var2] &= -262145;
 	}
 }

@@ -2,61 +2,48 @@ import io.runebox.ObfInfo;
 
 @ObfInfo(name = "dn")
 public class Class92 {
-	@ObfInfo(name = "ac", desc = "Ldn;")
-	public static final Class92 field1217;
-	@ObfInfo(name = "al", desc = "Ldn;")
-	public static final Class92 field1218;
-	@ObfInfo(name = "ak", desc = "Ldn;")
-	public static final Class92 field1219;
-	@ObfInfo(name = "ax", desc = "Ldn;")
-	public static final Class92 field1221;
-	@ObfInfo(name = "aj", desc = "Ldn;")
-	public static final Class92 field1222;
-	@ObfInfo(name = "at", desc = "Ldn;")
-	public static final Class92 field1223;
-	@ObfInfo(name = "ab", desc = "Ldn;")
-	public static final Class92 field1224;
-	@ObfInfo(name = "af", desc = "Ldn;")
-	public static final Class92 field1225;
-	@ObfInfo(name = "ao", desc = "Ldn;")
-	public static final Class92 field1226;
-	@ObfInfo(name = "ah", desc = "Ldn;")
-	public static final Class92 field1227;
-	@ObfInfo(name = "av", desc = "Ldn;")
-	public static final Class92 field1228;
-	@ObfInfo(name = "aq", desc = "Ldn;")
-	public static final Class92 field1229;
-	@ObfInfo(name = "ap", desc = "Ldn;")
-	public static final Class92 field1230;
-	@ObfInfo(name = "ae", desc = "Ldn;")
-	public static final Class92 field1231;
-	@ObfInfo(name = "ay", desc = "Ldn;")
-	public static final Class92 field1232;
-	@ObfInfo(name = "az", desc = "Ldn;")
-	public static final Class92 field1233;
-	@ObfInfo(name = "au", desc = "Ldn;")
-	public static final Class92 field1234;
-	@ObfInfo(name = "aa", desc = "Ldn;")
-	public static final Class92 field1235;
+	@ObfInfo(name = "ad", desc = "[Lck;")
+	public Class63[] field1136;
+	@ObfInfo(name = "ag", desc = "I", intMultiplier = -89644527)
+	public int field1135;
 
-	static {
-		field1219 = new Class92();
-		field1218 = new Class92();
-		field1222 = new Class92();
-		field1233 = new Class92();
-		field1225 = new Class92();
-		field1235 = new Class92();
-		field1223 = new Class92();
-		field1224 = new Class92();
-		field1217 = new Class92();
-		field1226 = new Class92();
-		field1227 = new Class92();
-		field1228 = new Class92();
-		field1229 = new Class92();
-		field1230 = new Class92();
-		field1231 = new Class92();
-		field1221 = new Class92();
-		field1232 = new Class92();
-		field1234 = new Class92();
+	public Class92() {
+		this.field1136 = new Class63[100];
+	}
+
+	@ObfInfo(name = "aq", desc = "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;S)Lck;", opaque = "-16256")
+	public Class63 method2440(int var1, String var2, String var3, String var4) {
+		Class63 var6 = this.field1136[99];
+
+		for (int var7 = this.field1135; var7 > 0; --var7) {
+			if (var7 != 100) {
+				this.field1136[var7] = this.field1136[var7 - 1];
+			}
+		}
+
+		if (var6 == null) {
+			var6 = new Class63(var1, var2, var4, var3);
+		} else {
+			var6.method9267();
+			var6.method9044();
+			var6.method1293(var1, var2, var4, var3);
+		}
+
+		this.field1136[0] = var6;
+		if (this.field1135 < 100) {
+			++this.field1135;
+		}
+
+		return var6;
+	}
+
+	@ObfInfo(name = "ad", desc = "(II)Lck;", opaque = "650895180")
+	public Class63 method2436(int var1) {
+		return var1 >= 0 && var1 < this.field1135 ? this.field1136[var1] : null;
+	}
+
+	@ObfInfo(name = "ag", desc = "(B)I")
+	public int method2437() {
+		return this.field1135;
 	}
 }

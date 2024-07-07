@@ -1,91 +1,98 @@
 import io.runebox.ObfInfo;
-import java.util.Locale;
+import java.util.HashSet;
+import java.util.Set;
 
 @ObfInfo(name = "pl")
 public class Class402 implements Class393 {
-	@ObfInfo(name = "al", desc = "Lpl;")
-	public static final Class402 field4608;
-	@ObfInfo(name = "aa", desc = "Lpl;")
-	public static final Class402 field4609;
-	@ObfInfo(name = "aj", desc = "Lpl;")
-	public static final Class402 field4610;
-	@ObfInfo(name = "az", desc = "Lpl;")
-	public static final Class402 field4611;
-	@ObfInfo(name = "af", desc = "Lpl;")
-	public static final Class402 field4612;
-	@ObfInfo(name = "at", desc = "Lpl;")
-	public static final Class402 field4613;
+	@ObfInfo(name = "ap", desc = "Lpl;")
+	public static final Class402 field4627;
+	@ObfInfo(name = "aq", desc = "Lpl;")
+	public static final Class402 field4628;
+	@ObfInfo(name = "ag", desc = "Lpl;")
+	public static final Class402 field4629;
 	@ObfInfo(name = "ak", desc = "Lpl;")
-	public static final Class402 field4616;
-	@ObfInfo(name = "ah", desc = "[Lpl;")
-	public static final Class402[] field4617;
-	@ObfInfo(name = "ao", desc = "I", intMultiplier = -120687081)
-	public final int field4618;
-	@ObfInfo(name = "ab", desc = "Ljava/lang/String;")
-	public final String field4614;
-	@ObfInfo(name = "ac", desc = "Ljava/lang/String;")
-	public final String field4615;
+	public static final Class402 field4630;
+	@ObfInfo(name = "ad", desc = "Lpl;")
+	public static final Class402 field4631;
+	@ObfInfo(name = "an", desc = "Lpl;")
+	public static final Class402 field4632;
+	@ObfInfo(name = "ab", desc = "Lpl;")
+	public static final Class402 field4634;
+	@ObfInfo(name = "ai", desc = "Lpl;")
+	public static final Class402 field4636;
+	@ObfInfo(name = "ae", desc = "Lpl;")
+	public static final Class402 field4637;
+	@ObfInfo(name = "au", desc = "Lpl;")
+	public static final Class402 field4638;
+	@ObfInfo(name = "ah", desc = "Lpl;")
+	public static final Class402 field4639;
+	@ObfInfo(name = "av", desc = "Lpl;")
+	public static final Class402 field4642;
+	@ObfInfo(name = "aj", desc = "Lpl;")
+	public static final Class402 field4643;
+	@ObfInfo(name = "az", desc = "I", intMultiplier = -855908523)
+	public final int field4640;
+	@ObfInfo(name = "ax", desc = "Ljava/util/Set;")
+	public final Set field4641;
 
 	static {
-		field4616 = new Class402("EN", "en", "English", Class395.field4567, 0, "GB");
-		field4608 = new Class402("DE", "de", "German", Class395.field4567, 1, "DE");
-		field4610 = new Class402("FR", "fr", "French", Class395.field4567, 2, "FR");
-		field4611 = new Class402("PT", "pt", "Portuguese", Class395.field4567, 3, "BR");
-		field4612 = new Class402("NL", "nl", "Dutch", Class395.field4570, 4, "NL");
-		field4609 = new Class402("ES", "es", "Spanish", Class395.field4570, 5, "ES");
-		field4613 = new Class402("ES_MX", "es-mx", "Spanish (Latin American)", Class395.field4567, 6, "MX");
-		Class402[] var0 = method7528();
-		field4617 = new Class402[var0.length];
+		field4628 = new Class402("", 0, new Class398[]{Class398.field4615, Class398.field4617});
+		field4631 = new Class402("", 1, new Class398[]{Class398.field4616, Class398.field4615, Class398.field4617});
+		field4629 = new Class402("", 2, new Class398[]{Class398.field4616, Class398.field4614, Class398.field4615});
+		field4630 = new Class402("", 3, new Class398[]{Class398.field4616});
+		field4627 = new Class402("", 4);
+		field4632 = new Class402("", 5, new Class398[]{Class398.field4616, Class398.field4615});
+		field4643 = new Class402("", 6, new Class398[]{Class398.field4615});
+		field4642 = new Class402("", 8, new Class398[]{Class398.field4616, Class398.field4615});
+		field4634 = new Class402("", 9, new Class398[]{Class398.field4616, Class398.field4614});
+		field4636 = new Class402("", 10, new Class398[]{Class398.field4616});
+		field4637 = new Class402("", 11, new Class398[]{Class398.field4616});
+		field4638 = new Class402("", 12, new Class398[]{Class398.field4616, Class398.field4615});
+		field4639 = new Class402("", 13, new Class398[]{Class398.field4616});
+		method7470();
+	}
 
-		for (int var2 = 0; var2 < var0.length; ++var2) {
-			Class402 var3 = var0[var2];
-			if (null != field4617[var3.field4618]) {
-				throw new IllegalStateException();
+	public Class402(String var1, int var2) {
+		this.field4641 = new HashSet();
+		this.field4640 = var2;
+	}
+
+	public Class402(String var1, int var2, Class398[] var3) {
+		this.field4641 = new HashSet();
+		this.field4640 = var2;
+
+		for (int var5 = 0; var5 < var3.length; ++var5) {
+			Class398 var6 = var3[var5];
+			this.field4641.add(var6);
+		}
+
+	}
+
+	@ObfInfo(name = "aq", desc = "(I)I")
+	public int method129() {
+		return this.field4640;
+	}
+
+	@ObfInfo(name = "ag", desc = "(B)[Lpl;")
+	public static Class402[] method7470() {
+		return new Class402[]{field4636, field4643, field4634, field4642, field4637, field4628, field4631, field4630, field4632, field4629, field4639, field4627, field4638};
+	}
+
+	@ObfInfo(name = "an", desc = "(Lok;Ljava/lang/String;Ljava/lang/String;I)Lvv;", opaque = "1458197717")
+	public static Class568 method7469(Class375 var0, String var1, String var2) {
+		if (!var0.method7137(var1, var2)) {
+			return null;
+		} else {
+			int var4 = var0.method7150(var1);
+			int var5 = var0.method7209(var4, var2);
+			Class568 var6;
+			if (!Class554.method3253(var0, var4, var5)) {
+				var6 = null;
+			} else {
+				var6 = Class554.method3374();
 			}
 
-			field4617[var3.field4618] = var3;
+			return var6;
 		}
-
-	}
-
-	public Class402(String var1, String var2, String var3, Class395 var4, int var5, String var6) {
-		this.field4614 = var1;
-		this.field4615 = var2;
-		this.field4618 = var5;
-		if (var6 != null) {
-			new Locale(var2.substring(0, 2), var6);
-		} else {
-			new Locale(var2.substring(0, 2));
-		}
-
-	}
-
-	@ObfInfo(name = "af", desc = "(I)Ljava/lang/String;")
-	public String method7521() {
-		return this.field4615;
-	}
-
-	@ObfInfo(name = "ak", desc = "(I)I")
-	public int method175() {
-		return this.field4618;
-	}
-
-	public String toString() {
-		return this.method7521().toLowerCase(Locale.ENGLISH);
-	}
-
-	@ObfInfo(name = "ak", desc = "(IIIII)I")
-	public static int method7534(int var0, int var1, int var2, int var3) {
-		return var2 * var1 - var3 * var0 >> 16;
-	}
-
-	@ObfInfo(name = "az", desc = "(B)[Lpl;")
-	public static Class402[] method7528() {
-		return new Class402[]{field4608, field4613, field4611, field4616, field4612, field4609, field4610};
-	}
-
-	@ObfInfo(name = "aa", desc = "(II)Lpl;", opaque = "-968330042")
-	public static Class402 method7514(int var0) {
-		return var0 >= 0 && var0 < field4617.length ? field4617[var0] : null;
 	}
 }

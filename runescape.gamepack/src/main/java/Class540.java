@@ -1,103 +1,103 @@
 import io.runebox.ObfInfo;
 
 @ObfInfo(name = "ut")
-public class Class540 extends Class507 {
-	@ObfInfo(name = "al", desc = "Llm;")
-	public static Class299 field5314;
-	@ObfInfo(name = "ak", desc = "Lor;")
-	public static Class382 field5316;
-	@ObfInfo(name = "aj", desc = "[[I")
-	public int[][] field5315;
-	@ObfInfo(name = "az", desc = "[[Ljava/lang/Object;")
-	public Object[][] field5313;
+public class Class540 extends Class516 {
+	@ObfInfo(name = "ad", desc = "Lmo;")
+	public static Class327 field5307;
+	@ObfInfo(name = "ap", desc = "I", intMultiplier = -258897133)
+	public int field5308;
+	@ObfInfo(name = "ak", desc = "[[I")
+	public int[][] field5310;
+	@ObfInfo(name = "ag", desc = "[[Ljava/lang/Object;")
+	public Object[][] field5311;
 
 	static {
-		field5314 = new Class299(64);
+		field5307 = new Class327(64);
 	}
 
-	@ObfInfo(name = "aj", desc = "(Lua;I)V", opaque = "209942218")
-	public void method9849(Class521 var1) {
+	public Class540() {
+		this.field5308 = -1;
+	}
+
+	@ObfInfo(name = "ad", desc = "(Lvp;I)V", opaque = "-2023984015")
+	public void method9503(Class562 var1) {
 		while (true) {
-			int var3 = var1.method9405();
+			int var3 = var1.method9902();
 			if (var3 == 0) {
 				return;
 			}
 
-			this.method9854(var1, var3);
+			this.method9505(var1, var3);
 		}
 	}
 
-	@ObfInfo(name = "az", desc = "(Lua;II)V", opaque = "1779160877")
-	public void method9854(Class521 var1, int var2) {
-		if (var2 == 1) {
-			int var4 = var1.method9405();
-			if (this.field5315 == null) {
-				this.field5315 = new int[var4][];
+	@ObfInfo(name = "ag", desc = "(II)[Ljava/lang/Object;")
+	public Object[] method9504(int var1) {
+		return this.field5311 == null ? null : this.field5311[var1];
+	}
+
+	@ObfInfo(name = "ak", desc = "(Lvp;IB)V", opaque = "6")
+	public void method9505(Class562 var1, int var2) {
+		if (var2 == 3) {
+			int var4 = var1.method9902();
+			if (this.field5311 == null) {
+				this.field5311 = new Object[var4][];
+				this.field5310 = new int[var4][];
 			}
 
-			for (int var5 = var1.method9405(); var5 != 255; var5 = var1.method9405()) {
-				int var6 = var5 & 127;
-				boolean var7 = 0 != (var5 & 128);
-				int[] var8 = new int[var1.method9405()];
+			for (int var5 = var1.method9902(); var5 != 255; var5 = var1.method9902()) {
+				int var6 = var1.method9902();
+				int[] var7 = new int[var6];
 
-				for (int var9 = 0; var9 < var8.length; ++var9) {
-					var8[var9] = var1.method9419();
+				for (int var8 = 0; var8 < var6; ++var8) {
+					var7[var8] = var1.method9842();
 				}
 
-				this.field5315[var6] = var8;
-				if (var7) {
-					if (this.field5313 == null) {
-						this.field5313 = new Object[this.field5315.length][];
+				Object[][] var17 = this.field5311;
+				int var11 = var1.method9842();
+				Object[] var12 = new Object[var11 * var7.length];
+
+				for (int var13 = 0; var13 < var11; ++var13) {
+					for (int var14 = 0; var14 < var7.length; ++var14) {
+						int var15 = var13 * var7.length + var14;
+						Class525 var16 = Class522.method2912(var7[var14]);
+						var12[var15] = var16.method9298(var1);
 					}
-
-					Object[][] var18 = this.field5313;
-					int var12 = var1.method9419();
-					Object[] var13 = new Object[var8.length * var12];
-
-					for (int var14 = 0; var14 < var12; ++var14) {
-						for (int var15 = 0; var15 < var8.length; ++var15) {
-							int var16 = var14 * var8.length + var15;
-							Class545 var17 = Class283.method5727(var8[var15]);
-							var13[var16] = var17.method9893(var1);
-						}
-					}
-
-					var18[var6] = var13;
 				}
+
+				var17[var5] = var12;
+				this.field5310[var5] = var7;
 			}
+		} else if (var2 == 4) {
+			this.field5308 = var1.method9848();
 		}
 
 	}
 
-	@ObfInfo(name = "af", desc = "(I)V")
-	public void method9851() {
+	@ObfInfo(name = "ap", desc = "(I)V")
+	public void method9502() {
 	}
 
-	@ObfInfo(owner = "lr", name = "ak", desc = "(Lor;B)V")
-	public static void method6072(Class382 var0) {
-		field5316 = var0;
-	}
-
-	@ObfInfo(owner = "hi", name = "al", desc = "(II)Lut;", opaque = "-1367335013")
-	public static Class540 method3721(int var0) {
-		Class540 var2 = (Class540)field5314.method5993((long)var0);
+	@ObfInfo(owner = "jt", name = "aq", desc = "(II)Lut;", opaque = "-408274121")
+	public static Class540 method4943(int var0) {
+		Class540 var2 = (Class540)field5307.method6327((long)var0);
 		if (var2 != null) {
 			return var2;
 		} else {
-			byte[] var3 = field5316.method7216(39, var0);
+			byte[] var3 = Client.field5309.method7132(38, var0);
 			var2 = new Class540();
 			if (var3 != null) {
-				var2.method9849(new Class521(var3));
+				var2.method9503(new Class562(var3));
 			}
 
-			var2.method9851();
-			field5314.method5987(var2, (long)var0);
+			var2.method9502();
+			field5307.method6330(var2, (long)var0);
 			return var2;
 		}
 	}
 
-	@ObfInfo(owner = "ge", name = "aa", desc = "(B)V")
-	public static void method3407() {
-		field5314.method5995();
+	@ObfInfo(owner = "lp", name = "an", desc = "(I)V")
+	public static void method5844() {
+		field5307.method6332();
 	}
 }

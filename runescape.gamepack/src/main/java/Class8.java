@@ -1,166 +1,103 @@
 import io.runebox.ObfInfo;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.net.ProtocolException;
-import java.net.URL;
-import javax.net.ssl.HttpsURLConnection;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.security.cert.Certificate;
+import javax.net.ssl.HandshakeCompletedListener;
+import javax.net.ssl.SSLSession;
+import javax.net.ssl.SSLSocket;
+import org.bouncycastle.crypto.tls.TlsClientProtocol;
 
 @ObfInfo(name = "ah")
-public class Class8 {
-	@ObfInfo(name = "az", desc = "Lsh;")
-	public Class476 field46;
-	@ObfInfo(name = "af", desc = "Z")
-	public boolean field43;
-	@ObfInfo(name = "aa", desc = "Z")
-	public boolean field44;
-	@ObfInfo(name = "at", desc = "I", intMultiplier = 1512635903)
-	public int field45;
-	@ObfInfo(name = "aj", desc = "Lao;")
-	public final Class15 field40;
-	@ObfInfo(name = "al", desc = "Lrt;")
-	public final Class462 field39;
-	@ObfInfo(name = "ak", desc = "Ljavax/net/ssl/HttpsURLConnection;")
-	public final HttpsURLConnection field41;
+class Class8 extends SSLSocket {
+	@ObfInfo(name = "aq", desc = "[Ljava/security/cert/Certificate;")
+	public Certificate[] field35;
+	// $FF: synthetic field
+	public final Class3 this$0;
+	// $FF: synthetic field
+	public final String val$host;
+	// $FF: synthetic field
+	public final TlsClientProtocol val$tlsClientProtocol;
 
-	public Class8(URL var1, Class15 var2, boolean var3) throws IOException {
-		this(var1, var2, new Class462(), var3);
+	public Class8(Class3 var1, TlsClientProtocol var2, String var3) {
+		this.this$0 = var1;
+		this.val$tlsClientProtocol = var2;
+		this.val$host = var3;
 	}
 
-	public Class8(URL var1, Class15 var2, Class462 var3, boolean var4) throws IOException {
-		this.field43 = false;
-		this.field44 = false;
-		this.field45 = 300000;
-		if (!var2.method174()) {
-			throw new UnsupportedEncodingException("Unsupported request method used " + var2.method173());
-		} else {
-			this.field41 = (HttpsURLConnection)var1.openConnection();
-			if (!var4) {
-				this.field41.setSSLSocketFactory(Class24.method354());
-			}
-
-			this.field40 = var2;
-			this.field39 = var3 != null ? var3 : new Class462();
-		}
+	public InputStream getInputStream() throws IOException {
+		return this.val$tlsClientProtocol.getInputStream();
 	}
 
-	@ObfInfo(name = "ak", desc = "(B)Lrt;")
-	public Class462 method112() {
-		return this.field39;
+	public OutputStream getOutputStream() throws IOException {
+		return this.val$tlsClientProtocol.getOutputStream();
 	}
 
-	@ObfInfo(name = "al", desc = "(Lsh;I)V", opaque = "1144432187")
-	public void method125(Class476 var1) {
-		if (!this.field43) {
-			if (var1 == null) {
-				this.field39.method8511("Content-Type");
-				this.field46 = null;
-			} else {
-				this.field46 = var1;
-				if (this.field46.method8712() != null) {
-					this.field39.method8515(this.field46.method8712());
-				} else {
-					this.field39.method8516();
-				}
-
-			}
-		}
+	public synchronized void close() throws IOException {
+		this.val$tlsClientProtocol.close();
 	}
 
-	@ObfInfo(name = "aj", desc = "(B)V", opaque = "-1")
-	public void method113() throws ProtocolException {
-		if (!this.field43) {
-			this.field41.setRequestMethod(this.field40.method173());
-			this.field39.method8508(this.field41);
-			if (this.field40.method183() && this.field46 != null) {
-				this.field41.setDoOutput(true);
-				ByteArrayOutputStream var2 = new ByteArrayOutputStream();
-
-				try {
-					var2.write(this.field46.method8711());
-					var2.writeTo(this.field41.getOutputStream());
-				} catch (IOException var12) {
-					var12.printStackTrace();
-				} finally {
-					try {
-						var2.close();
-					} catch (IOException var11) {
-						var11.printStackTrace();
-					}
-
-				}
-			}
-
-			this.field41.setConnectTimeout(this.field45);
-			this.field41.setInstanceFollowRedirects(this.field44);
-			this.field43 = true;
-		}
+	public void addHandshakeCompletedListener(HandshakeCompletedListener var1) {
 	}
 
-	@ObfInfo(name = "az", desc = "(I)Z", opaque = "812163548")
-	public boolean method128() throws IOException {
-		if (!this.field43) {
-			this.method113();
-		}
-
-		this.field41.connect();
-		return this.field41.getResponseCode() == -1;
+	public boolean getEnableSessionCreation() {
+		return false;
 	}
 
-	@ObfInfo(name = "af", desc = "(B)Lad;", opaque = "15")
-	public Class4 method115() {
-		try {
-			if (!this.field43 || this.field41.getResponseCode() == -1) {
-				return new Class4("No REST response has been received yet.");
-			}
-		} catch (IOException var11) {
-			this.field41.disconnect();
-			return new Class4("Error decoding REST response code: " + var11.getMessage());
-		}
-
-		Class4 var4;
-		try {
-			Class4 var2 = new Class4(this.field41);
-			return var2;
-		} catch (IOException var9) {
-			var4 = new Class4("Error decoding REST response: " + var9.getMessage());
-		} finally {
-			this.field41.disconnect();
-		}
-
-		return var4;
+	public String[] getEnabledCipherSuites() {
+		return null;
 	}
 
-	@ObfInfo(name = "ah", desc = "(Ljava/lang/String;I)Ljava/lang/String;", opaque = "-1828047230")
-	public static String method127(String var0) {
-		StringBuilder var2 = new StringBuilder(var0.length());
-		int var3 = 0;
-		int var4 = -1;
+	public String[] getEnabledProtocols() {
+		return null;
+	}
 
-		for (int var5 = 0; var5 < var0.length(); ++var5) {
-			char var6 = var0.charAt(var5);
-			if (var6 == '<') {
-				var2.append(var0.substring(var3, var5));
-				var4 = var5;
-			} else if (var6 == '>' && var4 != -1) {
-				String var7 = var0.substring(var4 + 1, var5);
-				var4 = -1;
-				if (var7.equals("lt")) {
-					var2.append("<");
-				} else if (var7.equals("gt")) {
-					var2.append(">");
-				} else if (var7.equals("br")) {
-					var2.append("\n");
-				}
+	public boolean getNeedClientAuth() {
+		return false;
+	}
 
-				var3 = var5 + 1;
-			}
-		}
+	public SSLSession getSession() {
+		return new Class25(this);
+	}
 
-		if (var3 < var0.length()) {
-			var2.append(var0.substring(var3, var0.length()));
-		}
+	public String[] getSupportedProtocols() {
+		return null;
+	}
 
-		return var2.toString();
+	public String[] getSupportedCipherSuites() {
+		return null;
+	}
+
+	public boolean getUseClientMode() {
+		return false;
+	}
+
+	public boolean getWantClientAuth() {
+		return false;
+	}
+
+	public void removeHandshakeCompletedListener(HandshakeCompletedListener var1) {
+	}
+
+	public void setEnableSessionCreation(boolean var1) {
+	}
+
+	public void setEnabledCipherSuites(String[] var1) {
+	}
+
+	public void setEnabledProtocols(String[] var1) {
+	}
+
+	public void setNeedClientAuth(boolean var1) {
+	}
+
+	public void setUseClientMode(boolean var1) {
+	}
+
+	public void setWantClientAuth(boolean var1) {
+	}
+
+	public void startHandshake() throws IOException {
+		this.val$tlsClientProtocol.connect(new Class26(this));
 	}
 }

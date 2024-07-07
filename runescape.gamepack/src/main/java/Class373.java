@@ -1,93 +1,48 @@
 import io.runebox.ObfInfo;
 
 @ObfInfo(name = "oi")
-public class Class373 implements Class393 {
-	@ObfInfo(name = "ah", desc = "Loi;")
-	public static final Class373 field4045;
-	@ObfInfo(name = "al", desc = "Loi;")
-	public static final Class373 field4046;
-	@ObfInfo(name = "aj", desc = "Loi;")
-	public static final Class373 field4047;
-	@ObfInfo(name = "ao", desc = "Loi;")
-	public static final Class373 field4048;
-	@ObfInfo(name = "af", desc = "Loi;")
-	public static final Class373 field4049;
-	@ObfInfo(name = "ac", desc = "Loi;")
-	public static final Class373 field4050;
-	@ObfInfo(name = "ax", desc = "Loi;")
-	public static final Class373 field4051;
-	@ObfInfo(name = "ab", desc = "Loi;")
-	public static final Class373 field4052;
-	@ObfInfo(name = "aq", desc = "Loi;")
-	public static final Class373 field4053;
-	@ObfInfo(name = "at", desc = "Loi;")
-	public static final Class373 field4054;
-	@ObfInfo(name = "av", desc = "Loi;")
-	public static final Class373 field4055;
-	@ObfInfo(name = "aa", desc = "Loi;")
-	public static final Class373 field4056;
-	@ObfInfo(name = "au", desc = "Loi;")
-	public static final Class373 field4057;
-	@ObfInfo(name = "ap", desc = "Loi;")
-	public static final Class373 field4058;
-	@ObfInfo(name = "ae", desc = "Loi;")
-	public static final Class373 field4059;
-	@ObfInfo(name = "az", desc = "Loi;")
-	public static final Class373 field4060;
-	@ObfInfo(name = "ay", desc = "Loi;")
-	public static final Class373 field4061;
+public class Class373 {
 	@ObfInfo(name = "ak", desc = "Loi;")
-	public static final Class373 field4062;
-	@ObfInfo(name = "as", desc = "Loi;")
-	public static final Class373 field4063;
-	@ObfInfo(name = "aw", desc = "Loi;")
-	public static final Class373 field4064;
+	public static final Class373 field4433;
 	@ObfInfo(name = "ad", desc = "Loi;")
-	public static final Class373 field4065;
-	@ObfInfo(name = "ai", desc = "Loi;")
-	public static final Class373 field4066;
-	@ObfInfo(name = "an", desc = "Loi;")
-	public static final Class373 field4067;
-	@ObfInfo(name = "am", desc = "I", intMultiplier = -1516079251)
-	public final int field4068;
+	public static final Class373 field4434;
+	@ObfInfo(name = "ag", desc = "Loi;")
+	public static final Class373 field4435;
+	@ObfInfo(name = "aq", desc = "Loi;")
+	public static final Class373 field4436;
+	@ObfInfo(name = "an", desc = "I", intMultiplier = 43822321)
+	public final int field4438;
+	@ObfInfo(name = "ap", desc = "Ljava/lang/String;")
+	public final String field4437;
 
 	static {
-		field4062 = new Class373(0, 0);
-		field4046 = new Class373(1, 0);
-		field4047 = new Class373(2, 0);
-		field4060 = new Class373(3, 0);
-		field4049 = new Class373(9, 2);
-		field4056 = new Class373(4, 1);
-		field4054 = new Class373(5, 1);
-		field4052 = new Class373(6, 1);
-		field4050 = new Class373(7, 1);
-		field4048 = new Class373(8, 1);
-		field4045 = new Class373(12, 2);
-		field4055 = new Class373(13, 2);
-		field4053 = new Class373(14, 2);
-		field4058 = new Class373(15, 2);
-		field4059 = new Class373(16, 2);
-		field4051 = new Class373(17, 2);
-		field4061 = new Class373(18, 2);
-		field4057 = new Class373(19, 2);
-		field4063 = new Class373(20, 2);
-		field4064 = new Class373(21, 2);
-		field4065 = new Class373(10, 2);
-		field4066 = new Class373(11, 2);
-		field4067 = new Class373(22, 3);
+		field4436 = new Class373("LIVE", 0);
+		field4434 = new Class373("BUILDLIVE", 3);
+		field4435 = new Class373("RC", 1);
+		field4433 = new Class373("WIP", 2);
 	}
 
-	public Class373(int var1, int var2) {
-		this.field4068 = var1;
+	public Class373(String var1, int var2) {
+		this.field4437 = var1;
+		this.field4438 = var2;
 	}
 
-	@ObfInfo(name = "ak", desc = "(I)I")
-	public int method175() {
-		return this.field4068;
+	@ObfInfo(owner = "lu", name = "aq", desc = "(I)[Loi;")
+	public static Class373[] method5853() {
+		return new Class373[]{field4433, field4435, field4434, field4436};
 	}
 
-	@ObfInfo(owner = "jv", name = "az", desc = "(II)Z", opaque = "793456589")
-	public static boolean method4909(int var0) {
-		return var0 >= field4062.field4068 && var0 <= field4060.field4068 || var0 == field4049.field4068;
+	@ObfInfo(owner = "mi", name = "ad", desc = "(IB)Loi;")
+	public static Class373 method6284(int var0) {
+		Class373[] var2 = method5853();
+
+		for (int var3 = 0; var3 < var2.length; ++var3) {
+			Class373 var4 = var2[var3];
+			if (var4.field4438 == var0) {
+				return var4;
+			}
+		}
+
+		return null;
 	}
 }
