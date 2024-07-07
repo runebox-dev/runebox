@@ -2523,14 +2523,14 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 						var3.field5219 = 0;
 					}
 
-					Class338[] var37 = Class46.method855();
+					ServerPacket[] var37 = Class46.method855();
 					var29 = var3.method9791();
 					if (var29 < 0 || var29 >= var37.length) {
 						throw new IOException("Invalid ServerProt: " + var29 + " at " + var3.field5219);
 					}
 
 					field548.field1449 = var37[var29];
-					field548.field1444 = field548.field1449.field3536;
+					field548.field1444 = field548.field1449.length;
 					var2.method8624(var3.field5221, 0, 2);
 					var3.field5219 = 0;
 					field548.field1444 = var3.method9407();
@@ -2633,7 +2633,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 							}
 
 							if (field548 != null && field548.field1446 != null) {
-								var27 = Class316.method3908(Class315.field3365, field548.field1446);
+								var27 = Class316.method3908(ClientPacket.field3365, field548.field1446);
 								var27.field3374.method9388(method9643());
 								var27.field3374.method9389(field182);
 								var27.field3374.method9389(field5261);
@@ -2702,7 +2702,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 						Class316 var21;
 						int var22;
 						if (field551.field4799) {
-							var21 = Class316.method3908(Class315.field3286, field548.field1446);
+							var21 = Class316.method3908(ClientPacket.field3286, field548.field1446);
 							var21.field3374.method9388(0);
 							var22 = var21.field3374.field5219;
 							field551.method8365(var21.field3374);
@@ -2748,7 +2748,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 									if (field709 != var10 || var9 != field504) {
 										if (var20 == null) {
-											var20 = Class316.method3908(Class315.field3315, field548.field1446);
+											var20 = Class316.method3908(ClientPacket.field3315, field548.field1446);
 											var20.field3374.method9388(0);
 											var4 = var20.field3374.field5219;
 											Class531 var10000 = var20.field3374;
@@ -2844,7 +2844,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 							}
 
 							var6 = (int)var23;
-							Class316 var29 = Class316.method3908(Class315.field3319, field548.field1446);
+							Class316 var29 = Class316.method3908(ClientPacket.field3319, field548.field1446);
 							var29.field3374.method9389((Class33.field237 == 2 ? 1 : 0) + (var6 << 1));
 							var29.field3374.method9389(var5);
 							var29.field3374.method9389(var4);
@@ -2852,13 +2852,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 						}
 
 						if (0 != field694) {
-							var21 = Class316.method3908(Class315.field3361, field548.field1446);
+							var21 = Class316.method3908(ClientPacket.field3361, field548.field1446);
 							var21.field3374.method9389(field694);
 							field548.method2897(var21);
 						}
 
 						if (field721.field2380 > 0) {
-							var21 = Class316.method3908(Class315.field3359, field548.field1446);
+							var21 = Class316.method3908(ClientPacket.field3359, field548.field1446);
 							var21.field3374.method9389(0);
 							var22 = var21.field3374.field5219;
 							long var24 = Class130.method3047();
@@ -2889,7 +2889,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 						if (field587 && field586 <= 0) {
 							field586 = 20;
 							field587 = false;
-							var21 = Class316.method3908(Class315.field3302, field548.field1446);
+							var21 = Class316.method3908(ClientPacket.field3302, field548.field1446);
 							var21.field3374.method9476(field571);
 							var21.field3374.method9443(field572);
 							field548.method2897(var21);
@@ -2897,14 +2897,14 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 						if (field4885 && !field506) {
 							field506 = true;
-							var21 = Class316.method3908(Class315.field3273, field548.field1446);
+							var21 = Class316.method3908(ClientPacket.packet2, field548.field1446);
 							var21.field3374.method9388(1);
 							field548.method2897(var21);
 						}
 
 						if (!field4885 && field506) {
 							field506 = false;
-							var21 = Class316.method3908(Class315.field3273, field548.field1446);
+							var21 = Class316.method3908(ClientPacket.packet2, field548.field1446);
 							var21.field3374.method9388(0);
 							field548.method2897(var21);
 						}
@@ -3077,7 +3077,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 							if (field107.field1023 != var6) {
 								var7 = field3857.field1289 + field107.field1080[0];
 								var8 = field107.field1127[0] + field3857.field1285;
-								Class316 var42 = Class316.method3908(Class315.field3333, field548.field1446);
+								Class316 var42 = Class316.method3908(ClientPacket.field3333, field548.field1446);
 								var42.field3374.method9496(var6);
 								var42.field3374.method9443(var8);
 								var42.field3374.method9459(0);
@@ -3138,7 +3138,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 																			if (!var51) {
 																				var12 = var50.field2763;
 																				var13 = var50.field2764;
-																				Class316 var14 = Class316.method3908(Class315.field3295, field548.field1446);
+																				Class316 var14 = Class316.method3908(ClientPacket.field3295, field548.field1446);
 																				var14.field3374.method9388(5);
 																				var14.field3374.method9443(var44.field1285 + var13);
 																				var14.field3374.method9476(var44.field1289 + var12);
@@ -3160,7 +3160,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 																	if (!var51 && field3857.field1283.method5089()) {
 																		var8 = field3857.field1283.field2763;
 																		var9 = field3857.field1283.field2764;
-																		Class316 var46 = Class316.method3908(Class315.field3295, field548.field1446);
+																		Class316 var46 = Class316.method3908(ClientPacket.field3295, field548.field1446);
 																		var46.field3374.method9388(5);
 																		var46.field3374.method9443(var9 + field3857.field1285);
 																		var46.field3374.method9476(field3857.field1289 + var8);
@@ -3267,7 +3267,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 																	if (var8 > 15000 && var9 > 15000) {
 																		field549 = 250;
 																		Class33.field241 = 14500;
-																		var52 = Class316.method3908(Class315.field3324, field548.field1446);
+																		var52 = Class316.method3908(ClientPacket.field3324, field548.field1446);
 																		field548.method2897(var52);
 																	}
 
@@ -3275,7 +3275,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 																	method9271();
 																	++field548.field1443;
 																	if (field548.field1443 > 50) {
-																		var52 = Class316.method3908(Class315.field3354, field548.field1446);
+																		var52 = Class316.method3908(ClientPacket.field3354, field548.field1446);
 																		field548.method2897(var52);
 																	}
 
@@ -3333,7 +3333,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 						}
 					}
 
-					var20 = Class316.method3908(Class315.field3283, field548.field1446);
+					var20 = Class316.method3908(ClientPacket.field3283, field548.field1446);
 					var20.field3374.method9388(0);
 					var4 = var20.field3374.field5219;
 					Class201.method3922(var20.field3374);
@@ -3348,7 +3348,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 	public void method1208(int var1, int var2) {
 		if (field548 != null && field548.field1446 != null) {
 			if (var1 > -1 && field4851.method2637() > 0 && !field737) {
-				Class316 var4 = Class316.method3908(Class315.field3274, field548.field1446);
+				Class316 var4 = Class316.method3908(ClientPacket.packet3, field548.field1446);
 				var4.field3374.method9590(var1);
 				field548.method2897(var4);
 			}
@@ -3648,14 +3648,14 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					}
 
 					var1.field1451 = true;
-					Class338[] var5 = Class46.method855();
+					ServerPacket[] var5 = Class46.method855();
 					var24 = var4.method9791();
 					if (var24 < 0 || var24 >= var5.length) {
 						throw new IOException(var24 + " " + var4.field5219);
 					}
 
 					var1.field1449 = var5[var24];
-					var1.field1444 = var1.field1449.field3536;
+					var1.field1444 = var1.field1449.length;
 				}
 
 				if (-1 == var1.field1444) {
@@ -3690,7 +3690,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				var1.field1454 = var1.field1449;
 				int var23;
 				Class340 var53;
-				if (Class338.field3564 == var1.field1449) {
+				if (ServerPacket.field3564 == var1.field1449) {
 					var23 = var4.method9445();
 					var24 = var4.method9460();
 					var53 = field25.method6718(var24);
@@ -3704,7 +3704,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3595 == var1.field1449) {
+				if (ServerPacket.field3595 == var1.field1449) {
 					field752 = false;
 					field496 = false;
 					field746 = false;
@@ -3732,7 +3732,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3559 == var1.field1449) {
+				if (ServerPacket.field3559 == var1.field1449) {
 					if (field740 != -1) {
 						method2961(field740, 0);
 					}
@@ -3741,7 +3741,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3650 == var1.field1449) {
+				if (ServerPacket.field3650 == var1.field1449) {
 					var23 = var4.method9405();
 					var24 = var4.method9407();
 					this.method480(false);
@@ -3763,7 +3763,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				}
 
 				boolean var84;
-				if (Class338.field3611 == var1.field1449) {
+				if (ServerPacket.field3611 == var1.field1449) {
 					var84 = var4.method9438() == 1;
 					var24 = var4.method9555();
 					var53 = field25.method6718(var24);
@@ -3773,7 +3773,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3622 == var1.field1449) {
+				if (ServerPacket.field3622 == var1.field1449) {
 					var23 = var4.method9410();
 					if (var23 != field763) {
 						field763 = var23;
@@ -3786,7 +3786,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 				int var9;
 				int var27;
-				if (Class338.field3615 == var1.field1449) {
+				if (ServerPacket.field3615 == var1.field1449) {
 					var24 = var4.method9446();
 					var7 = var4.method9407();
 					var9 = var4.method9407();
@@ -3809,7 +3809,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				int var48;
 				boolean var51;
 				boolean var60;
-				if (Class338.field3618 == var1.field1449) {
+				if (ServerPacket.field3618 == var1.field1449) {
 					field496 = true;
 					field752 = false;
 					field746 = true;
@@ -3838,7 +3838,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3605 == var1.field1449) {
+				if (ServerPacket.field3605 == var1.field1449) {
 					field274.method1873();
 					field687 = field677;
 					var1.field1449 = null;
@@ -3854,7 +3854,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				byte var70;
 				byte var71;
 				int var74;
-				if (Class338.field3531 == var1.field1449) {
+				if (ServerPacket.packet2 == var1.field1449) {
 					var18 = var4.method9405();
 					var67 = var4.method9438() * 4;
 					var13 = var4.method9446();
@@ -3886,7 +3886,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3630 == var1.field1449) {
+				if (ServerPacket.field3630 == var1.field1449) {
 					var23 = var4.method9405();
 					var24 = var4.method9405();
 					var7 = var4.method9405();
@@ -3900,7 +3900,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3608 == var1.field1449) {
+				if (ServerPacket.field3608 == var1.field1449) {
 					var24 = var4.method9445();
 					var23 = var4.method9407();
 					var7 = var4.method9446();
@@ -3910,7 +3910,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3624 == var1.field1449) {
+				if (ServerPacket.field3624 == var1.field1449) {
 					var23 = var4.method9407();
 					var7 = var4.method9405();
 					var24 = var4.method9446();
@@ -3945,7 +3945,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				}
 
 				String var69;
-				if (Class338.field3547 == var1.field1449) {
+				if (ServerPacket.field3547 == var1.field1449) {
 					var69 = var4.method9415();
 					var6 = Class436.method7992(Class412.method7137(Class339.method6268(var4)));
 					Class128.method2747(6, var69, var6);
@@ -3953,7 +3953,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3647 == var1.field1449) {
+				if (ServerPacket.field3647 == var1.field1449) {
 					var84 = var4.method9405() == 1;
 					if (var84) {
 						field1985 = Class130.method3047() - var4.method9411();
@@ -3968,7 +3968,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				}
 
 				Class340 var45;
-				if (Class338.field3588 == var1.field1449) {
+				if (ServerPacket.field3588 == var1.field1449) {
 					var23 = var4.method9462();
 					var24 = var4.method9410();
 					var7 = var4.method9445();
@@ -4021,7 +4021,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3584 == var1.field1449) {
+				if (ServerPacket.field3584 == var1.field1449) {
 					field496 = true;
 					field752 = false;
 					field747 = true;
@@ -4039,7 +4039,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 				Class104 var8;
 				long var52;
-				if (Class338.field3574 == var1.field1449) {
+				if (ServerPacket.field3574 == var1.field1449) {
 					var23 = var1.field1444 + var4.field5219;
 					var24 = var4.method9407();
 					if (var24 == 65535) {
@@ -4101,7 +4101,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				}
 
 				String var46;
-				if (Class338.field3653 == var1.field1449) {
+				if (ServerPacket.field3653 == var1.field1449) {
 					var23 = var4.method9437();
 					var24 = var4.method9522();
 					var46 = var4.method9415();
@@ -4119,7 +4119,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				}
 
 				byte var26;
-				if (Class338.field3625 == var1.field1449) {
+				if (ServerPacket.field3625 == var1.field1449) {
 					method7124();
 					var26 = var4.method9406();
 					if (1 == var1.field1444) {
@@ -4143,7 +4143,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3599 == var1.field1449) {
+				if (ServerPacket.field3599 == var1.field1449) {
 					var84 = var4.method9413();
 					if (var84) {
 						if (field422 == null) {
@@ -4157,7 +4157,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3589 == var1.field1449) {
+				if (ServerPacket.field3589 == var1.field1449) {
 					field742 = var4.method9405();
 					if (1 == field742) {
 						field568 = var4.method9407();
@@ -4203,7 +4203,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3532 == var1.field1449) {
+				if (ServerPacket.field3532 == var1.field1449) {
 					var48 = var4.method9454();
 					var13 = var4.method9446();
 					var70 = var4.method9439();
@@ -4235,7 +4235,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3593 == var1.field1449) {
+				if (ServerPacket.field3593 == var1.field1449) {
 					var23 = var4.method9505();
 					if (var23 == 65535) {
 						var23 = -1;
@@ -4254,13 +4254,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3609 == var1.field1449) {
+				if (ServerPacket.field3609 == var1.field1449) {
 					Class197.method3871(Class326.field3425);
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3607 == var1.field1449) {
+				if (ServerPacket.field3607 == var1.field1449) {
 					var23 = var4.method9555();
 					var24 = var4.method9535();
 					var7 = var4.method9448();
@@ -4281,20 +4281,20 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3573 == var1.field1449) {
+				if (ServerPacket.field3573 == var1.field1449) {
 					field242 = null;
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3553 == var1.field1449) {
+				if (ServerPacket.field3553 == var1.field1449) {
 					field649 = var4.method9505() * 30;
 					field693 = field677;
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3538 == var1.field1449) {
+				if (ServerPacket.field3538 == var1.field1449) {
 					if (field242 == null) {
 						field242 = new Class494(field431);
 					}
@@ -4306,13 +4306,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3556 == var1.field1449) {
+				if (ServerPacket.field3556 == var1.field1449) {
 					Class197.method3871(Class326.field3426);
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3572 == var1.field1449) {
+				if (ServerPacket.field3572 == var1.field1449) {
 					for (var23 = 0; var23 < field2083; ++var23) {
 						Class205 var88 = Class205.method4659(var23);
 						if (var88 != null) {
@@ -4327,7 +4327,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3636 == var1.field1449) {
+				if (ServerPacket.field3636 == var1.field1449) {
 					var23 = var4.method9555();
 					var24 = var4.method9522();
 					var53 = field25.method6718(var23);
@@ -4337,7 +4337,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3635 == var1.field1449) {
+				if (ServerPacket.field3635 == var1.field1449) {
 					field496 = true;
 					field752 = false;
 					field746 = false;
@@ -4356,11 +4356,11 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3651 == var1.field1449) {
+				if (ServerPacket.field3651 == var1.field1449) {
 					return this.method1256(var1, 2);
 				}
 
-				if (Class338.field3623 == var1.field1449) {
+				if (ServerPacket.field3623 == var1.field1449) {
 					var23 = var4.method9555();
 					var24 = var4.method9461();
 					var53 = field25.method6718(var23);
@@ -4375,26 +4375,26 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3557 == var1.field1449) {
+				if (ServerPacket.field3557 == var1.field1449) {
 					method3869();
 					var1.field1449 = null;
 					return false;
 				}
 
-				if (Class338.field3566 == var1.field1449) {
+				if (ServerPacket.field3566 == var1.field1449) {
 					field4582.field1288.method2786(var4, var1.field1444);
 					method3662();
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3596 == var1.field1449) {
+				if (ServerPacket.field3596 == var1.field1449) {
 					Class197.method3871(Class326.field3421);
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3586 == var1.field1449) {
+				if (ServerPacket.field3586 == var1.field1449) {
 					var23 = var4.method9460();
 					var24 = var4.method9462();
 					var53 = field25.method6718(var24);
@@ -4404,7 +4404,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3563 == var1.field1449) {
+				if (ServerPacket.field3563 == var1.field1449) {
 					var7 = var4.method9569();
 					var23 = var7 >> 16;
 					var24 = var7 >> 8 & 255;
@@ -4424,7 +4424,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3638 == var1.field1449) {
+				if (ServerPacket.field3638 == var1.field1449) {
 					field496 = true;
 					field752 = false;
 					field746 = true;
@@ -4451,7 +4451,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3617 == var1.field1449) {
+				if (ServerPacket.field3617 == var1.field1449) {
 					var23 = var4.method9405();
 					if (var4.method9405() == 0) {
 						field531[var23] = new Class397();
@@ -4466,7 +4466,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3549 == var1.field1449) {
+				if (ServerPacket.field3549 == var1.field1449) {
 					method2384();
 					var23 = var4.method9405();
 					var24 = var4.method9555();
@@ -4488,7 +4488,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3657 == var1.field1449) {
+				if (ServerPacket.field3657 == var1.field1449) {
 					field4582.field1296 = 0;
 					field4582.field1286 = 0;
 
@@ -4506,7 +4506,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				}
 
 				Class340 var33;
-				if (Class338.field3546 == var1.field1449) {
+				if (ServerPacket.field3546 == var1.field1449) {
 					var23 = var4.method9410();
 					var24 = var4.method9460();
 					Class104 var82 = (Class104)field654.method9361((long)var24);
@@ -4539,7 +4539,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3634 == var1.field1449) {
+				if (ServerPacket.field3634 == var1.field1449) {
 					for (var23 = 0; var23 < Class351.field3889.length; ++var23) {
 						if (Class351.field3888[var23] != Class351.field3889[var23]) {
 							Class351.field3889[var23] = Class351.field3888[var23];
@@ -4555,7 +4555,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				long var57;
 				String var73;
 				long var79;
-				if (Class338.field3552 == var1.field1449) {
+				if (ServerPacket.field3552 == var1.field1449) {
 					var69 = var4.method9415();
 					var79 = (long)var4.method9407();
 					var57 = (long)var4.method9399();
@@ -4596,7 +4596,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3544 == var1.field1449) {
+				if (ServerPacket.field3544 == var1.field1449) {
 					field496 = true;
 					field752 = false;
 					field747 = true;
@@ -4620,7 +4620,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3621 == var1.field1449) {
+				if (ServerPacket.field3621 == var1.field1449) {
 					var23 = var4.method9410();
 					Class104 var86 = (Class104)field654.method9361((long)var23);
 					if (var86 != null) {
@@ -4636,14 +4636,14 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3654 == var1.field1449) {
+				if (ServerPacket.field3654 == var1.field1449) {
 					field172 = var4.method9405();
 					field1589 = var4.method9405();
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3658 == var1.field1449) {
+				if (ServerPacket.field3658 == var1.field1449) {
 					var23 = var4.method9505();
 					Class83 var54;
 					if (var23 == field646) {
@@ -4663,7 +4663,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3539 == var1.field1449) {
+				if (ServerPacket.field3539 == var1.field1449) {
 					method7124();
 					var26 = var4.method9406();
 					Class151 var85 = new Class151(var4);
@@ -4697,7 +4697,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				}
 
 				long var32;
-				if (Class338.field3550 == var1.field1449) {
+				if (ServerPacket.field3550 == var1.field1449) {
 					var26 = var4.method9406();
 					var79 = (long)var4.method9407();
 					var57 = (long)var4.method9399();
@@ -4727,11 +4727,11 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3643 == var1.field1449) {
+				if (ServerPacket.field3643 == var1.field1449) {
 					return this.method1256(var1, 1);
 				}
 
-				if (Class338.field3529 == var1.field1449) {
+				if (ServerPacket.field3529 == var1.field1449) {
 					byte[] var87 = new byte[var1.field1444];
 					var4.method9759(var87, 0, var87.length);
 					Class521 var83 = new Class521(var87);
@@ -4741,14 +4741,14 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3578 == var1.field1449) {
+				if (ServerPacket.field3578 == var1.field1449) {
 					var23 = var4.method9405();
 					method8883(var23);
 					var1.field1449 = null;
 					return false;
 				}
 
-				if (Class338.field3597 == var1.field1449) {
+				if (ServerPacket.field3597 == var1.field1449) {
 					var23 = var4.method9438();
 					var24 = var4.method9555();
 					var7 = var4.method9437();
@@ -4759,14 +4759,14 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3602 == var1.field1449) {
+				if (ServerPacket.field3602 == var1.field1449) {
 					field274.method1881(var4, var1.field1444);
 					field687 = field677;
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3565 == var1.field1449) {
+				if (ServerPacket.field3565 == var1.field1449) {
 					field496 = true;
 					field752 = false;
 					field747 = true;
@@ -4780,20 +4780,20 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3614 == var1.field1449) {
+				if (ServerPacket.field3614 == var1.field1449) {
 					field597 = var4.method9522();
 					field716 = var4.method9522();
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3592 == var1.field1449) {
+				if (ServerPacket.field3592 == var1.field1449) {
 					field5081 = Class113.method2877(var4.method9405());
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3579 == var1.field1449) {
+				if (ServerPacket.field3579 == var1.field1449) {
 					var26 = var4.method9406();
 					var24 = var4.method9407();
 					Class351.field3888[var24] = var26;
@@ -4807,7 +4807,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3570 == var1.field1449) {
+				if (ServerPacket.field3570 == var1.field1449) {
 					var23 = var4.method9410();
 					var24 = var4.method9407();
 					if (var23 < -70000) {
@@ -4855,7 +4855,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3542 == var1.field1449) {
+				if (ServerPacket.field3542 == var1.field1449) {
 					var23 = var4.method9407();
 					var24 = var4.method9405();
 					var7 = var4.method9407();
@@ -4865,7 +4865,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				}
 
 				String var72;
-				if (Class338.field3581 == var1.field1449) {
+				if (ServerPacket.packet3 == var1.field1449) {
 					var69 = var4.method9415();
 					var79 = var4.method9411();
 					var57 = (long)var4.method9407();
@@ -4900,20 +4900,20 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3637 == var1.field1449) {
+				if (ServerPacket.field3637 == var1.field1449) {
 					Class197.method3871(Class326.field3428);
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3540 == var1.field1449) {
+				if (ServerPacket.field3540 == var1.field1449) {
 					var23 = var4.method9405();
 					Class281.method5712(var23);
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3558 == var1.field1449) {
+				if (ServerPacket.field3558 == var1.field1449) {
 					var23 = var4.method9410();
 					var24 = var4.method9407();
 					if (var23 < -70000) {
@@ -4953,7 +4953,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3646 == var1.field1449) {
+				if (ServerPacket.field3646 == var1.field1449) {
 					var10 = var4.method9405();
 					var11 = var10 >> 2;
 					var48 = var10 & 3;
@@ -4972,7 +4972,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3616 == var1.field1449) {
+				if (ServerPacket.field3616 == var1.field1449) {
 					var23 = var4.method9446();
 					var24 = var4.method9410();
 					var53 = field25.method6718(var24);
@@ -4987,7 +4987,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				}
 
 				Class100 var31;
-				if (Class338.field3644 == var1.field1449) {
+				if (ServerPacket.field3644 == var1.field1449) {
 					var24 = var4.method9460();
 					var27 = var4.method9437();
 					var23 = var4.method9505();
@@ -5001,13 +5001,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3626 == var1.field1449) {
+				if (ServerPacket.field3626 == var1.field1449) {
 					method8270(false, var1.field1447);
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3541 == var1.field1449) {
+				if (ServerPacket.field3541 == var1.field1449) {
 					var84 = var4.method9437() == 1;
 					var24 = var4.method9410();
 					var53 = field25.method6718(var24);
@@ -5020,7 +5020,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3613 == var1.field1449) {
+				if (ServerPacket.field3613 == var1.field1449) {
 					var23 = var4.method9445();
 					if (var23 == 65535) {
 						var23 = -1;
@@ -5031,7 +5031,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3640 == var1.field1449) {
+				if (ServerPacket.field3640 == var1.field1449) {
 					var23 = var4.method9446();
 					if (var23 == 65535) {
 						var23 = -1;
@@ -5043,7 +5043,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3628 == var1.field1449) {
+				if (ServerPacket.field3628 == var1.field1449) {
 					var23 = var4.method9505();
 					var24 = var4.method9460();
 					var53 = field25.method6718(var24);
@@ -5058,7 +5058,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				}
 
 				Class340 var30;
-				if (Class338.field3620 == var1.field1449) {
+				if (ServerPacket.field3620 == var1.field1449) {
 					var23 = var4.method9555();
 					var30 = field25.method6718(var23);
 					var30.field3792 = 3;
@@ -5068,23 +5068,23 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3568 == var1.field1449) {
+				if (ServerPacket.field3568 == var1.field1449) {
 					method2648(field4582, false, var4);
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3639 == var1.field1449) {
+				if (ServerPacket.field3639 == var1.field1449) {
 					Class47.method2812(var4, var1.field1444);
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3580 == var1.field1449) {
+				if (ServerPacket.field3580 == var1.field1449) {
 					var23 = var4.method9410();
 					var24 = var4.method9410();
 					var7 = Class31.method3811();
-					Class316 var49 = Class316.method3908(Class315.field3282, field548.field1446);
+					Class316 var49 = Class316.method3908(ClientPacket.field3282, field548.field1446);
 					var49.field3374.method9496(Class31.field187);
 					var49.field3374.method9590(var23);
 					var49.field3374.method9458(var24);
@@ -5094,7 +5094,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3571 == var1.field1449) {
+				if (ServerPacket.field3571 == var1.field1449) {
 					var4.field5219 += 28;
 					if (var4.method9545()) {
 						method2417(var4, var4.field5219 - 28);
@@ -5104,13 +5104,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3575 == var1.field1449) {
+				if (ServerPacket.field3575 == var1.field1449) {
 					Class197.method3871(Class326.field3418);
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3548 == var1.field1449) {
+				if (ServerPacket.field3548 == var1.field1449) {
 					method2384();
 					field660 = var4.method9535();
 					field693 = field677;
@@ -5118,7 +5118,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3645 == var1.field1449) {
+				if (ServerPacket.field3645 == var1.field1449) {
 					var69 = var4.method9415();
 					Object[] var68 = new Object[var69.length() + 1];
 
@@ -5138,13 +5138,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3590 == var1.field1449) {
+				if (ServerPacket.field3590 == var1.field1449) {
 					method8270(true, var1.field1447);
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3656 == var1.field1449) {
+				if (ServerPacket.field3656 == var1.field1449) {
 					var23 = var4.method9446();
 					var24 = var4.method9460();
 					var7 = var4.method9407();
@@ -5154,7 +5154,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3569 == var1.field1449) {
+				if (ServerPacket.field3569 == var1.field1449) {
 					var23 = var4.method9446();
 					Class79.method8489(var23);
 					field755[++field681 - 1 & 31] = var23 & 32767;
@@ -5162,7 +5162,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3619 == var1.field1449) {
+				if (ServerPacket.field3619 == var1.field1449) {
 					var23 = var4.method9405();
 					var24 = var4.method9407();
 					var7 = var4.method9405();
@@ -5183,13 +5183,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3567 == var1.field1449) {
+				if (ServerPacket.field3567 == var1.field1449) {
 					Class197.method3871(Class326.field3420);
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3648 == var1.field1449 && field496) {
+				if (ServerPacket.field3648 == var1.field1449 && field496) {
 					field752 = true;
 					field747 = false;
 					field746 = false;
@@ -5202,13 +5202,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3537 == var1.field1449) {
+				if (ServerPacket.field3537 == var1.field1449) {
 					Class197.method3871(Class326.field3423);
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3604 == var1.field1449) {
+				if (ServerPacket.field3604 == var1.field1449) {
 					var23 = var4.method9445();
 					var24 = var4.method9410();
 					var53 = field25.method6718(var24);
@@ -5231,7 +5231,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3660 == var1.field1449) {
+				if (ServerPacket.field3660 == var1.field1449) {
 					var69 = var4.method9415();
 					var24 = var4.method9462();
 					var53 = field25.method6718(var24);
@@ -5244,7 +5244,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3601 == var1.field1449) {
+				if (ServerPacket.field3601 == var1.field1449) {
 					var23 = var4.method9407();
 					var24 = var4.method9438();
 					if (var23 == 65535) {
@@ -5256,13 +5256,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3632 == var1.field1449) {
+				if (ServerPacket.field3632 == var1.field1449) {
 					++field501;
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3655 == var1.field1449) {
+				if (ServerPacket.field3655 == var1.field1449) {
 					var23 = var4.method9419();
 					boolean var58 = var4.method9405() == 1;
 					var46 = "";
@@ -5283,7 +5283,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3587 == var1.field1449) {
+				if (ServerPacket.field3587 == var1.field1449) {
 					var23 = var4.method9462();
 					var24 = var4.method9445();
 					var7 = var24 >> 10 & 31;
@@ -5300,7 +5300,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3649 == var1.field1449) {
+				if (ServerPacket.field3649 == var1.field1449) {
 					var26 = var4.method9406();
 					var6 = var4.method9415();
 					long var40 = (long)var4.method9407();
@@ -5348,7 +5348,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3585 == var1.field1449) {
+				if (ServerPacket.field3585 == var1.field1449) {
 					var23 = var4.method9445();
 					var24 = var4.method9505();
 					var7 = var4.method9407();
@@ -5365,7 +5365,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3631 == var1.field1449) {
+				if (ServerPacket.field3631 == var1.field1449) {
 					var9 = var4.method9505();
 					var7 = var4.method9445();
 					var10 = var4.method9445();
@@ -5388,13 +5388,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3582 == var1.field1449) {
+				if (ServerPacket.field3582 == var1.field1449) {
 					method7873(field4582, var4);
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3600 == var1.field1449) {
+				if (ServerPacket.field3600 == var1.field1449) {
 					field121 = var4.method9522();
 					field711 = var4.method9438();
 					field3436 = var4.method9405();
@@ -5418,19 +5418,19 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3603 == var1.field1449) {
+				if (ServerPacket.field3603 == var1.field1449) {
 					field736 = var4.method9405();
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3551 == var1.field1449) {
+				if (ServerPacket.field3551 == var1.field1449) {
 					field242 = new Class494(field431);
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3533 == var1.field1449) {
+				if (ServerPacket.field3533 == var1.field1449) {
 					var23 = var4.method9505();
 					var24 = var4.method9522();
 					short var34 = (short)var4.method9461();
@@ -5444,7 +5444,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3554 == var1.field1449) {
+				if (ServerPacket.field3554 == var1.field1449) {
 					field121 = var4.method9438();
 					field3436 = var4.method9437();
 					field711 = var4.method9522();
@@ -5459,13 +5459,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3642 == var1.field1449) {
+				if (ServerPacket.field3642 == var1.field1449) {
 					method2648(field4582, true, var4);
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3598 == var1.field1449) {
+				if (ServerPacket.field3598 == var1.field1449) {
 					field274.field850.method8556(var4, var1.field1444);
 					Class79.method2220();
 					field687 = field677;
@@ -5473,7 +5473,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3561 == var1.field1449) {
+				if (ServerPacket.field3561 == var1.field1449) {
 					var23 = var4.method9446();
 					if (var23 == 65535) {
 						var23 = -1;
@@ -5501,11 +5501,11 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3543 == var1.field1449) {
+				if (ServerPacket.field3543 == var1.field1449) {
 					return this.method1244(var1);
 				}
 
-				if (Class338.field3659 == var1.field1449) {
+				if (ServerPacket.field3659 == var1.field1449) {
 					field703 = field677;
 					var26 = var4.method9406();
 					if (1 == var1.field1444) {
@@ -5529,13 +5529,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3562 == var1.field1449) {
+				if (ServerPacket.field3562 == var1.field1449) {
 					Class197.method3871(Class326.field3430);
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3530 == var1.field1449) {
+				if (ServerPacket.packet1 == var1.field1449) {
 					var23 = var4.method9462();
 					var30 = field25.method6718(var23);
 
@@ -5549,7 +5549,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3594 == var1.field1449) {
+				if (ServerPacket.field3594 == var1.field1449) {
 					method2384();
 					field659 = var4.method9407();
 					field693 = field677;
@@ -5557,7 +5557,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3591 == var1.field1449) {
+				if (ServerPacket.field3591 == var1.field1449) {
 					var24 = var4.method9505();
 					var23 = var4.method9446();
 					Class380.method7208(var23, var24);
@@ -5565,19 +5565,19 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3560 == var1.field1449) {
+				if (ServerPacket.field3560 == var1.field1449) {
 					Class197.method3871(Class326.field3431);
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3577 == var1.field1449) {
+				if (ServerPacket.field3577 == var1.field1449) {
 					method3033(var4.method9415());
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3535 == var1.field1449) {
+				if (ServerPacket.field3535 == var1.field1449) {
 					field703 = field677;
 					var26 = var4.method9406();
 					Class180 var28 = new Class180(var4);
@@ -5610,7 +5610,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3610 == var1.field1449) {
+				if (ServerPacket.packet0 == var1.field1449) {
 					field496 = true;
 					field752 = false;
 					field747 = false;
@@ -5642,13 +5642,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3641 == var1.field1449) {
+				if (ServerPacket.field3641 == var1.field1449) {
 					Class65.method1806(field4582, var4);
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3633 == var1.field1449) {
+				if (ServerPacket.field3633 == var1.field1449) {
 					field121 = var4.method9522();
 					field711 = var4.method9438();
 					field3436 = var4.method9405();
@@ -5656,13 +5656,13 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3652 == var1.field1449) {
+				if (ServerPacket.field3652 == var1.field1449) {
 					Class197.method3871(Class326.field3422);
 					var1.field1449 = null;
 					return true;
 				}
 
-				if (Class338.field3627 == var1.field1449) {
+				if (ServerPacket.field3627 == var1.field1449) {
 					method2384();
 					var23 = var4.method9522();
 					var24 = var4.method9437();
@@ -5683,7 +5683,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3583 == var1.field1449) {
+				if (ServerPacket.field3583 == var1.field1449) {
 					Class64 var25 = new Class64();
 					var25.field476 = var4.method9415();
 					var25.field473 = var4.method9407();
@@ -5704,7 +5704,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return false;
 				}
 
-				if (Class338.field3576 == var1.field1449) {
+				if (ServerPacket.field3576 == var1.field1449) {
 					field734 = var4.method9405();
 					if (255 == field734) {
 						field734 = 0;
@@ -5719,7 +5719,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3606 == var1.field1449) {
+				if (ServerPacket.field3606 == var1.field1449) {
 					var23 = var4.method9437();
 					var24 = var4.method9446();
 					var7 = var4.method9555();
@@ -5733,7 +5733,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3545 == var1.field1449) {
+				if (ServerPacket.field3545 == var1.field1449) {
 					for (var23 = 0; var23 < field4582.field1293.length; ++var23) {
 						if (null != field4582.field1293[var23]) {
 							field4582.field1293[var23].field1074 = -1;
@@ -5750,7 +5750,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				if (Class338.field3612 == var1.field1449) {
+				if (ServerPacket.field3612 == var1.field1449) {
 					var23 = var4.method9446();
 					var24 = var4.method9555();
 					Class351.field3888[var23] = var24;
@@ -5764,12 +5764,12 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					return true;
 				}
 
-				Class548.method8904("" + (var1.field1449 != null ? var1.field1449.field3555 : -1) + Class113.field1422 + (var1.field1455 != null ? var1.field1455.field3555 : -1) + Class113.field1422 + (var1.field1456 != null ? var1.field1456.field3555 : -1) + Class113.field1422 + var1.field1444, (Throwable)null);
+				Class548.method8904("" + (var1.field1449 != null ? var1.field1449.opcode : -1) + Class113.field1422 + (var1.field1455 != null ? var1.field1455.opcode : -1) + Class113.field1422 + (var1.field1456 != null ? var1.field1456.opcode : -1) + Class113.field1422 + var1.field1444, (Throwable)null);
 				method3869();
 			} catch (IOException var21) {
 				method6176();
 			} catch (Exception var22) {
-				var6 = "" + (var1.field1449 != null ? var1.field1449.field3555 : -1) + Class113.field1422 + (var1.field1455 != null ? var1.field1455.field3555 : -1) + Class113.field1422 + (var1.field1456 != null ? var1.field1456.field3555 : -1) + Class113.field1422 + var1.field1444 + Class113.field1422 + (field107.field1080[0] + field3857.field1289) + Class113.field1422 + (field107.field1127[0] + field3857.field1285) + Class113.field1422;
+				var6 = "" + (var1.field1449 != null ? var1.field1449.opcode : -1) + Class113.field1422 + (var1.field1455 != null ? var1.field1455.opcode : -1) + Class113.field1422 + (var1.field1456 != null ? var1.field1456.opcode : -1) + Class113.field1422 + var1.field1444 + Class113.field1422 + (field107.field1080[0] + field3857.field1289) + Class113.field1422 + (field107.field1127[0] + field3857.field1285) + Class113.field1422;
 
 				for (var7 = 0; var7 < var1.field1444 && var7 < 50; ++var7) {
 					var6 = var6 + var4.field5221[var7] + Class113.field1422;
@@ -6006,7 +6006,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					}
 
 					if (field669 != null && Class16.method193(field665) != null) {
-						Class316 var10 = Class316.method3908(Class315.field3285, field548.field1446);
+						Class316 var10 = Class316.method3908(ClientPacket.field3285, field548.field1446);
 						var10.field3374.method9556(field665.field3676);
 						var10.field3374.method9443(field665.field3791);
 						var10.field3374.method9476(field665.field3810);
@@ -6043,14 +6043,14 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	@ObfInfo(name = "pi", desc = "(IB)V")
 	public void method1227(int var1) {
-		Class316 var3 = Class316.method3908(Class315.field3350, field548.field1446);
+		Class316 var3 = Class316.method3908(ClientPacket.field3350, field548.field1446);
 		var3.field3374.method9388(var1);
 		field548.method2897(var3);
 	}
 
 	@ObfInfo(name = "po", desc = "(II)V")
 	public void method1228(int var1) {
-		Class316 var3 = Class316.method3908(Class315.field3346, field548.field1446);
+		Class316 var3 = Class316.method3908(ClientPacket.field3346, field548.field1446);
 		var3.field3374.method9388(var1);
 		field548.method2897(var3);
 	}
@@ -6768,7 +6768,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 
 		if (field548 != null && field548.field1446 != null) {
-			Class316 var4 = Class316.method3908(Class315.field3365, field548.field1446);
+			Class316 var4 = Class316.method3908(ClientPacket.field3365, field548.field1446);
 			var4.field3374.method9388(method9643());
 			var4.field3374.method9389(field182);
 			var4.field3374.method9389(field5261);
@@ -7410,7 +7410,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					int var11 = var9 * var6 - var8 * var5 >> 11;
 					int var12 = field894.method2199() + var10 >> 7;
 					int var13 = field894.method2191() - var11 >> 7;
-					Class316 var14 = Class316.method3908(Class315.field3279, field548.field1446);
+					Class316 var14 = Class316.method3908(ClientPacket.field3279, field548.field1446);
 					var14.field3374.method9388(18);
 					var14.field3374.method9443(field3857.field1285 + var13);
 					var14.field3374.method9476(var12 + field3857.field1289);
@@ -7508,7 +7508,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 			}
 		}
 
-		Class316 var6 = Class316.method3908(Class315.field3327, field548.field1446);
+		Class316 var6 = Class316.method3908(ClientPacket.field3327, field548.field1446);
 		var6.field3374.method9388(var0.length() + 1);
 		var6.field3374.method9473(var0);
 		field548.method2897(var6);
@@ -8194,7 +8194,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		}
 
 		if (field555 >= 25 && field548 != null && field548.field1446 != null) {
-			Class316 var2 = Class316.method3908(Class315.field3365, field548.field1446);
+			Class316 var2 = Class316.method3908(ClientPacket.field3365, field548.field1446);
 			var2.field3374.method9388(method9643());
 			var2.field3374.method9389(field182);
 			var2.field3374.method9389(field5261);
@@ -8357,7 +8357,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 			var20 = field107.field1023;
 			var21 = field3857.field1289 + (field271 >> 7);
 			var22 = field3857.field1285 + (field897 >> 7);
-			Class316 var23 = Class316.method3908(Class315.field3333, field548.field1446);
+			Class316 var23 = Class316.method3908(ClientPacket.field3333, field548.field1446);
 			var23.field3374.method9496(var20);
 			var23.field3374.method9443(var22);
 			var23.field3374.method9459(field763);
@@ -9033,7 +9033,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 						if (var7) {
 							int[] var4 = var0.field2435.method6525();
 							if (var4 != null) {
-								Class316 var5 = Class316.method3908(Class315.field3339, field548.field1446);
+								Class316 var5 = Class316.method3908(ClientPacket.field3339, field548.field1446);
 								var5.field3374.method9458(var0.field2435.method6640());
 								var5.field3374.method9458(var4[1]);
 								var5.field3374.method9459(var4[2]);
@@ -9395,7 +9395,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		if (field548.field1443 >= 50 || var0) {
 			field548.field1443 = 0;
 			if (!field550 && field548.method2900() != null) {
-				Class316 var2 = Class316.method3908(Class315.field3354, field548.field1446);
+				Class316 var2 = Class316.method3908(ClientPacket.field3354, field548.field1446);
 				field548.method2897(var2);
 
 				try {
@@ -9624,7 +9624,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				Class222.field2276.method5995();
 				Class316 var20;
 				if (field2077.method502()) {
-					var20 = Class316.method3908(Class315.field3360, field548.field1446);
+					var20 = Class316.method3908(ClientPacket.field3360, field548.field1446);
 					var20.field3374.method9590(1057001181);
 					field548.method2897(var20);
 				}
@@ -9647,7 +9647,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 				method4066();
 				Class93.method2966();
-				var20 = Class316.method3908(Class315.field3289, field548.field1446);
+				var20 = Class316.method3908(ClientPacket.field3289, field548.field1446);
 				field548.method2897(var20);
 				Class31.method164();
 				field485 = false;
@@ -10732,7 +10732,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					field605 = 0;
 					field734 = var0;
 					field594 = var1;
-					var17 = Class316.method3908(Class315.field3306, field548.field1446);
+					var17 = Class316.method3908(ClientPacket.field3306, field548.field1446);
 					var17.field3374.method9433(field721.method4342(82) ? 1 : 0);
 					var17.field3374.method9590(field3090);
 					var17.field3374.method9443(field26);
@@ -10753,7 +10753,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					}
 
 					if (var22) {
-						var18 = Class316.method3908(Class315.field3284, field548.field1446);
+						var18 = Class316.method3908(ClientPacket.field3284, field548.field1446);
 						var18.field3374.method9590(var1);
 						field548.method2897(var18);
 					}
@@ -10770,7 +10770,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					field605 = 0;
 					field734 = var0;
 					field594 = var1;
-					var17 = Class316.method3908(Class315.field3331, field548.field1446);
+					var17 = Class316.method3908(ClientPacket.field3331, field548.field1446);
 					var17.field3374.method9443(var3);
 					var17.field3374.method9388(field721.method4342(82) ? 1 : 0);
 					field548.method2897(var17);
@@ -10785,7 +10785,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				field605 = 0;
 				field734 = var0;
 				field594 = var1;
-				var21 = Class316.method3908(Class315.field3300, field548.field1446);
+				var21 = Class316.method3908(ClientPacket.field3300, field548.field1446);
 				var21.field3374.method9389(var12 + var0);
 				var21.field3374.method9442(var3);
 				var21.field3374.method9443(var13 + var1);
@@ -10802,7 +10802,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					field605 = 0;
 					field734 = var0;
 					field594 = var1;
-					var17 = Class316.method3908(Class315.field3323, field548.field1446);
+					var17 = Class316.method3908(ClientPacket.field3323, field548.field1446);
 					var17.field3374.method9435(field721.method4342(82) ? 1 : 0);
 					var17.field3374.method9443(var3);
 					field548.method2897(var17);
@@ -10814,7 +10814,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				field604 = var9;
 				field735 = 2;
 				field605 = 0;
-				var21 = Class316.method3908(Class315.field3368, field548.field1446);
+				var21 = Class316.method3908(ClientPacket.packet0, field548.field1446);
 				var21.field3374.method9442(var3);
 				field548.method2897(var21);
 			}
@@ -10822,7 +10822,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 			int var23;
 			Class340 var24;
 			if (var2 == 29) {
-				var21 = Class316.method3908(Class315.field3284, field548.field1446);
+				var21 = Class316.method3908(ClientPacket.field3284, field548.field1446);
 				var21.field3374.method9590(var1);
 				field548.method2897(var21);
 				var24 = field25.method6718(var1);
@@ -10844,7 +10844,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					field605 = 0;
 					field734 = var0;
 					field594 = var1;
-					var17 = Class316.method3908(Class315.field3301, field548.field1446);
+					var17 = Class316.method3908(ClientPacket.field3301, field548.field1446);
 					var17.field3374.method9442(var3);
 					var17.field3374.method9496(field721.method4342(82) ? 1 : 0);
 					field548.method2897(var17);
@@ -10860,7 +10860,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					field605 = 0;
 					field734 = var0;
 					field594 = var1;
-					var17 = Class316.method3908(Class315.field3366, field548.field1446);
+					var17 = Class316.method3908(ClientPacket.field3366, field548.field1446);
 					var17.field3374.method9442(var3);
 					var17.field3374.method9496(field721.method4342(82) ? 1 : 0);
 					field548.method2897(var17);
@@ -10876,7 +10876,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					field605 = 0;
 					field734 = var0;
 					field594 = var1;
-					var17 = Class316.method3908(Class315.field3362, field548.field1446);
+					var17 = Class316.method3908(ClientPacket.field3362, field548.field1446);
 					var17.field3374.method9433(field721.method4342(82) ? 1 : 0);
 					var17.field3374.method9389(var3);
 					var17.field3374.method9459(field4348);
@@ -10895,7 +10895,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					field605 = 0;
 					field734 = var0;
 					field594 = var1;
-					var17 = Class316.method3908(Class315.field3334, field548.field1446);
+					var17 = Class316.method3908(ClientPacket.field3334, field548.field1446);
 					var17.field3374.method9442(field26);
 					var17.field3374.method9443(var3);
 					var17.field3374.method9435(field721.method4342(82) ? 1 : 0);
@@ -10914,7 +10914,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					field605 = 0;
 					field734 = var0;
 					field594 = var1;
-					var17 = Class316.method3908(Class315.field3290, field548.field1446);
+					var17 = Class316.method3908(ClientPacket.field3290, field548.field1446);
 					var17.field3374.method9443(var3);
 					var17.field3374.method9388(field721.method4342(82) ? 1 : 0);
 					field548.method2897(var17);
@@ -10928,7 +10928,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				field605 = 0;
 				field734 = var0;
 				field594 = var1;
-				var21 = Class316.method3908(Class315.field3356, field548.field1446);
+				var21 = Class316.method3908(ClientPacket.field3356, field548.field1446);
 				var21.field3374.method9442(var12 + var0);
 				var21.field3374.method9496(field721.method4342(82) ? 1 : 0);
 				var21.field3374.method9443(var13 + var1);
@@ -10945,7 +10945,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					field605 = 0;
 					field734 = var0;
 					field594 = var1;
-					var17 = Class316.method3908(Class315.field3294, field548.field1446);
+					var17 = Class316.method3908(ClientPacket.field3294, field548.field1446);
 					var17.field3374.method9388(field721.method4342(82) ? 1 : 0);
 					var17.field3374.method9476(var3);
 					field548.method2897(var17);
@@ -10959,7 +10959,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				field605 = 0;
 				field734 = var0;
 				field594 = var1;
-				var21 = Class316.method3908(Class315.field3310, field548.field1446);
+				var21 = Class316.method3908(ClientPacket.field3310, field548.field1446);
 				var21.field3374.method9476(var12 + var0);
 				var21.field3374.method9443(var3);
 				var21.field3374.method9476(var13 + var1);
@@ -10980,7 +10980,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					field605 = 0;
 					field734 = var0;
 					field594 = var1;
-					var17 = Class316.method3908(Class315.field3287, field548.field1446);
+					var17 = Class316.method3908(ClientPacket.field3287, field548.field1446);
 					var17.field3374.method9476(var3);
 					var17.field3374.method9388(field721.method4342(82) ? 1 : 0);
 					field548.method2897(var17);
@@ -10996,7 +10996,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					field605 = 0;
 					field734 = var0;
 					field594 = var1;
-					var17 = Class316.method3908(Class315.field3275, field548.field1446);
+					var17 = Class316.method3908(ClientPacket.field3275, field548.field1446);
 					var17.field3374.method9496(field721.method4342(82) ? 1 : 0);
 					var17.field3374.method9442(var3);
 					field548.method2897(var17);
@@ -11010,7 +11010,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				field605 = 0;
 				field734 = var0;
 				field594 = var1;
-				var21 = Class316.method3908(Class315.field3314, field548.field1446);
+				var21 = Class316.method3908(ClientPacket.field3314, field548.field1446);
 				var21.field3374.method9458(field3090);
 				var21.field3374.method9433(field721.method4342(82) ? 1 : 0);
 				var21.field3374.method9442(field1414);
@@ -11028,7 +11028,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				field605 = 0;
 				field734 = var0;
 				field594 = var1;
-				var21 = Class316.method3908(Class315.field3353, field548.field1446);
+				var21 = Class316.method3908(ClientPacket.field3353, field548.field1446);
 				var21.field3374.method9443(field487);
 				var21.field3374.method9556(field4348);
 				var21.field3374.method9388(field721.method4342(82) ? 1 : 0);
@@ -11048,7 +11048,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					field605 = 0;
 					field734 = var0;
 					field594 = var1;
-					var17 = Class316.method3908(Class315.field3288, field548.field1446);
+					var17 = Class316.method3908(ClientPacket.field3288, field548.field1446);
 					var17.field3374.method9433(field721.method4342(82) ? 1 : 0);
 					var17.field3374.method9442(field595);
 					var17.field3374.method9590(field4348);
@@ -11067,7 +11067,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					field605 = 0;
 					field734 = var0;
 					field594 = var1;
-					var17 = Class316.method3908(Class315.field3348, field548.field1446);
+					var17 = Class316.method3908(ClientPacket.field3348, field548.field1446);
 					var17.field3374.method9435(field721.method4342(82) ? 1 : 0);
 					var17.field3374.method9443(var3);
 					field548.method2897(var17);
@@ -11086,7 +11086,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 						Class72.method7210(var25);
 					}
 
-					var17 = Class316.method3908(Class315.field3351, field548.field1446);
+					var17 = Class316.method3908(ClientPacket.field3351, field548.field1446);
 					var17.field3374.method9556(var1);
 					var17.field3374.method9476(field595);
 					var17.field3374.method9476(var0);
@@ -11106,7 +11106,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					field605 = 0;
 					field734 = var0;
 					field594 = var1;
-					var17 = Class316.method3908(Class315.field3304, field548.field1446);
+					var17 = Class316.method3908(ClientPacket.field3304, field548.field1446);
 					var17.field3374.method9496(field721.method4342(82) ? 1 : 0);
 					var17.field3374.method9389(var3);
 					field548.method2897(var17);
@@ -11114,7 +11114,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 			}
 
 			if (var2 == 28) {
-				var21 = Class316.method3908(Class315.field3284, field548.field1446);
+				var21 = Class316.method3908(ClientPacket.field3284, field548.field1446);
 				var21.field3374.method9590(var1);
 				field548.method2897(var21);
 				var24 = field25.method6718(var1);
@@ -11132,7 +11132,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				field605 = 0;
 				field734 = var0;
 				field594 = var1;
-				var21 = Class316.method3908(Class315.field3272, field548.field1446);
+				var21 = Class316.method3908(ClientPacket.packet1, field548.field1446);
 				var21.field3374.method9443(var13 + var1);
 				var21.field3374.method9443(var3);
 				var21.field3374.method9388(field721.method4342(82) ? 1 : 0);
@@ -11149,7 +11149,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					field605 = 0;
 					field734 = var0;
 					field594 = var1;
-					var17 = Class316.method3908(Class315.field3271, field548.field1446);
+					var17 = Class316.method3908(ClientPacket.field3271, field548.field1446);
 					var17.field3374.method9435(field721.method4342(82) ? 1 : 0);
 					var17.field3374.method9443(var3);
 					field548.method2897(var17);
@@ -11176,7 +11176,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				field605 = 0;
 				field734 = var0;
 				field594 = var1;
-				var21 = Class316.method3908(Class315.field3345, field548.field1446);
+				var21 = Class316.method3908(ClientPacket.field3345, field548.field1446);
 				var21.field3374.method9443(var13 + var1);
 				var21.field3374.method9476(field1414);
 				var21.field3374.method9443(field26);
@@ -11194,7 +11194,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				field605 = 0;
 				field734 = var0;
 				field594 = var1;
-				var21 = Class316.method3908(Class315.field3325, field548.field1446);
+				var21 = Class316.method3908(ClientPacket.field3325, field548.field1446);
 				var21.field3374.method9433(field721.method4342(82) ? 1 : 0);
 				var21.field3374.method9442(var3);
 				var21.field3374.method9443(var12 + var0);
@@ -11247,7 +11247,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					field605 = 0;
 					field734 = var0;
 					field594 = var1;
-					var21 = Class316.method3908(Class315.field3276, field548.field1446);
+					var21 = Class316.method3908(ClientPacket.field3276, field548.field1446);
 					var21.field3374.method9433(field721.method4342(82) ? 1 : 0);
 					var21.field3374.method9442(var3);
 					var21.field3374.method9442(var12 + var0);
@@ -11262,7 +11262,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					field605 = 0;
 					field734 = var0;
 					field594 = var1;
-					var21 = Class316.method3908(Class315.field3367, field548.field1446);
+					var21 = Class316.method3908(ClientPacket.field3367, field548.field1446);
 					var21.field3374.method9442(field595);
 					var21.field3374.method9442(var3);
 					var21.field3374.method9443(var12 + var0);
@@ -11284,7 +11284,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					field605 = 0;
 					field734 = var0;
 					field594 = var1;
-					var21 = Class316.method3908(Class315.field3296, field548.field1446);
+					var21 = Class316.method3908(ClientPacket.field3296, field548.field1446);
 					var21.field3374.method9476(var3);
 					var21.field3374.method9476(var12 + var0);
 					var21.field3374.method9496(field721.method4342(82) ? 1 : 0);
@@ -11301,7 +11301,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 						field605 = 0;
 						field734 = var0;
 						field594 = var1;
-						var17 = Class316.method3908(Class315.field3358, field548.field1446);
+						var17 = Class316.method3908(ClientPacket.field3358, field548.field1446);
 						var17.field3374.method9435(field721.method4342(82) ? 1 : 0);
 						var17.field3374.method9443(var3);
 						field548.method2897(var17);
@@ -11315,7 +11315,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					field605 = 0;
 					field734 = var0;
 					field594 = var1;
-					var21 = Class316.method3908(Class315.field3297, field548.field1446);
+					var21 = Class316.method3908(ClientPacket.field3297, field548.field1446);
 					var21.field3374.method9389(var3);
 					var21.field3374.method9433(field721.method4342(82) ? 1 : 0);
 					var21.field3374.method9443(var12 + var0);
@@ -11330,7 +11330,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					field605 = 0;
 					field734 = var0;
 					field594 = var1;
-					var21 = Class316.method3908(Class315.field3363, field548.field1446);
+					var21 = Class316.method3908(ClientPacket.field3363, field548.field1446);
 					var21.field3374.method9496(field721.method4342(82) ? 1 : 0);
 					var21.field3374.method9476(var13 + var1);
 					var21.field3374.method9442(var12 + var0);
@@ -11343,7 +11343,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					field604 = var9;
 					field735 = 2;
 					field605 = 0;
-					var21 = Class316.method3908(Class315.field3299, field548.field1446);
+					var21 = Class316.method3908(ClientPacket.field3299, field548.field1446);
 					var21.field3374.method9476(var12 + var0);
 					var21.field3374.method9442(var13 + var1);
 					var21.field3374.method9389(var3);
@@ -11357,7 +11357,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					field605 = 0;
 					field734 = var0;
 					field594 = var1;
-					var21 = Class316.method3908(Class315.field3281, field548.field1446);
+					var21 = Class316.method3908(ClientPacket.field3281, field548.field1446);
 					var21.field3374.method9389(var12 + var0);
 					var21.field3374.method9388(field721.method4342(82) ? 1 : 0);
 					var21.field3374.method9442(var13 + var1);
@@ -11378,7 +11378,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 						}
 
 						if (var27 != null) {
-							var18 = Class316.method3908(Class315.field3338, field548.field1446);
+							var18 = Class316.method3908(ClientPacket.field3338, field548.field1446);
 							var18.field3374.method9443(var27.field2318);
 							field548.method2897(var18);
 						}
@@ -11394,7 +11394,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 						field605 = 0;
 						field734 = var0;
 						field594 = var1;
-						var17 = Class316.method3908(Class315.field3303, field548.field1446);
+						var17 = Class316.method3908(ClientPacket.field3303, field548.field1446);
 						var17.field3374.method9443(var3);
 						var17.field3374.method9496(field721.method4342(82) ? 1 : 0);
 						field548.method2897(var17);
@@ -11426,22 +11426,22 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 			if (var8 != null && field107 != var8 && var8.field1025 != null && var8.field1025.equals(var6)) {
 				Class316 var9;
 				if (var0 == 1) {
-					var9 = Class316.method3908(Class315.field3271, field548.field1446);
+					var9 = Class316.method3908(ClientPacket.field3271, field548.field1446);
 					var9.field3374.method9435(0);
 					var9.field3374.method9443(var4[var7]);
 					field548.method2897(var9);
 				} else if (var0 == 4) {
-					var9 = Class316.method3908(Class315.field3304, field548.field1446);
+					var9 = Class316.method3908(ClientPacket.field3304, field548.field1446);
 					var9.field3374.method9496(0);
 					var9.field3374.method9389(var4[var7]);
 					field548.method2897(var9);
 				} else if (var0 == 6) {
-					var9 = Class316.method3908(Class315.field3294, field548.field1446);
+					var9 = Class316.method3908(ClientPacket.field3294, field548.field1446);
 					var9.field3374.method9388(0);
 					var9.field3374.method9476(var4[var7]);
 					field548.method2897(var9);
 				} else if (var0 == 7) {
-					var9 = Class316.method3908(Class315.field3275, field548.field1446);
+					var9 = Class316.method3908(ClientPacket.field3275, field548.field1446);
 					var9.field3374.method9496(0);
 					var9.field3374.method9442(var4[var7]);
 					field548.method2897(var9);
@@ -11495,7 +11495,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	@ObfInfo(owner = "bq", name = "mf", desc = "(III)V")
 	public static void method844(int var0, int var1) {
-		Class316 var3 = Class316.method3908(Class315.field3321, field548.field1446);
+		Class316 var3 = Class316.method3908(ClientPacket.field3321, field548.field1446);
 		var3.field3374.method9459(var0);
 		var3.field3374.method9476(var1);
 		field548.method2897(var3);
@@ -11523,7 +11523,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 				if (Class344.method3212(method3511(var6), var0 - 1)) {
 					Class316 var8;
 					if (var0 == 1) {
-						var8 = Class316.method3908(Class315.field3349, field548.field1446);
+						var8 = Class316.method3908(ClientPacket.field3349, field548.field1446);
 						var8.field3374.method9590(var1);
 						var8.field3374.method9389(var2);
 						var8.field3374.method9389(var3);
@@ -11531,7 +11531,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					}
 
 					if (var0 == 2) {
-						var8 = Class316.method3908(Class315.field3277, field548.field1446);
+						var8 = Class316.method3908(ClientPacket.field3277, field548.field1446);
 						var8.field3374.method9590(var1);
 						var8.field3374.method9389(var2);
 						var8.field3374.method9389(var3);
@@ -11539,7 +11539,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					}
 
 					if (var0 == 3) {
-						var8 = Class316.method3908(Class315.field3357, field548.field1446);
+						var8 = Class316.method3908(ClientPacket.field3357, field548.field1446);
 						var8.field3374.method9590(var1);
 						var8.field3374.method9389(var2);
 						var8.field3374.method9389(var3);
@@ -11547,7 +11547,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					}
 
 					if (var0 == 4) {
-						var8 = Class316.method3908(Class315.field3336, field548.field1446);
+						var8 = Class316.method3908(ClientPacket.field3336, field548.field1446);
 						var8.field3374.method9590(var1);
 						var8.field3374.method9389(var2);
 						var8.field3374.method9389(var3);
@@ -11555,7 +11555,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					}
 
 					if (var0 == 5) {
-						var8 = Class316.method3908(Class315.field3340, field548.field1446);
+						var8 = Class316.method3908(ClientPacket.field3340, field548.field1446);
 						var8.field3374.method9590(var1);
 						var8.field3374.method9389(var2);
 						var8.field3374.method9389(var3);
@@ -11563,7 +11563,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					}
 
 					if (var0 == 6) {
-						var8 = Class316.method3908(Class315.field3364, field548.field1446);
+						var8 = Class316.method3908(ClientPacket.field3364, field548.field1446);
 						var8.field3374.method9590(var1);
 						var8.field3374.method9389(var2);
 						var8.field3374.method9389(var3);
@@ -11571,7 +11571,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					}
 
 					if (var0 == 7) {
-						var8 = Class316.method3908(Class315.field3317, field548.field1446);
+						var8 = Class316.method3908(ClientPacket.field3317, field548.field1446);
 						var8.field3374.method9590(var1);
 						var8.field3374.method9389(var2);
 						var8.field3374.method9389(var3);
@@ -11579,7 +11579,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					}
 
 					if (var0 == 8) {
-						var8 = Class316.method3908(Class315.field3322, field548.field1446);
+						var8 = Class316.method3908(ClientPacket.field3322, field548.field1446);
 						var8.field3374.method9590(var1);
 						var8.field3374.method9389(var2);
 						var8.field3374.method9389(var3);
@@ -11587,7 +11587,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					}
 
 					if (var0 == 9) {
-						var8 = Class316.method3908(Class315.field3341, field548.field1446);
+						var8 = Class316.method3908(ClientPacket.field3341, field548.field1446);
 						var8.field3374.method9590(var1);
 						var8.field3374.method9389(var2);
 						var8.field3374.method9389(var3);
@@ -11595,7 +11595,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 					}
 
 					if (var0 == 10) {
-						var8 = Class316.method3908(Class315.field3307, field548.field1446);
+						var8 = Class316.method3908(ClientPacket.field3307, field548.field1446);
 						var8.field3374.method9590(var1);
 						var8.field3374.method9389(var2);
 						var8.field3374.method9389(var3);
@@ -13990,7 +13990,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 			}
 
 			if (var2 == 326) {
-				Class316 var5 = Class316.method3908(Class315.field3355, field548.field1446);
+				Class316 var5 = Class316.method3908(ClientPacket.field3355, field548.field1446);
 				field771.method7050(var5.field3374);
 				field548.method2897(var5);
 				return true;
@@ -14207,7 +14207,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 	@ObfInfo(owner = "ck", name = "ow", desc = "(Ljava/lang/String;I)V", opaque = "-450354972")
 	public static void method1124(String var0) {
 		if (field1420 != null) {
-			Class316 var2 = Class316.method3908(Class315.field3320, field548.field1446);
+			Class316 var2 = Class316.method3908(ClientPacket.field3320, field548.field1446);
 			var2.field3374.method9388(Class521.method7983(var0));
 			var2.field3374.method9473(var0);
 			field548.method2897(var2);
@@ -14216,7 +14216,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	@ObfInfo(owner = "fu", name = "og", desc = "(I)V")
 	public static void method3270() {
-		Class316 var1 = Class316.method3908(Class315.field3344, field548.field1446);
+		Class316 var1 = Class316.method3908(ClientPacket.field3344, field548.field1446);
 		var1.field3374.method9388(0);
 		field548.method2897(var1);
 	}
@@ -14228,7 +14228,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 			Class140 var4 = (Class140)var3.field1854.get(var1);
 			if (var4.field1602 == -1) {
 				String var5 = var4.field1601.method10260();
-				Class316 var6 = Class316.method3908(Class315.field3347, field548.field1446);
+				Class316 var6 = Class316.method3908(ClientPacket.field3347, field548.field1446);
 				var6.field3374.method9388(Class521.method7983(var5) + 3);
 				var6.field3374.method9388(var0);
 				var6.field3374.method9389(var1);
@@ -14244,7 +14244,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 			if (var1 >= 0 && var1 < field684[var0].method3536()) {
 				Class140 var3 = (Class140)field684[var0].field1854.get(var1);
 				if (var3.field1602 == -1) {
-					Class316 var4 = Class316.method3908(Class315.field3308, field548.field1446);
+					Class316 var4 = Class316.method3908(ClientPacket.field3308, field548.field1446);
 					var4.field3374.method9388(Class521.method7983(var3.field1601.method10260()) + 3);
 					var4.field3374.method9388(var0);
 					var4.field3374.method9389(var1);
@@ -14260,7 +14260,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 		if (null != field684[var0]) {
 			if (var1 >= 0 && var1 < field684[var0].method3536()) {
 				Class140 var4 = (Class140)field684[var0].field1854.get(var1);
-				Class316 var5 = Class316.method3908(Class315.field3343, field548.field1446);
+				Class316 var5 = Class316.method3908(ClientPacket.field3343, field548.field1446);
 				var5.field3374.method9388(Class521.method7983(var4.field1601.method10260()) + 4);
 				var5.field3374.method9388(var0);
 				var5.field3374.method9389(var1);
@@ -14390,7 +14390,7 @@ public final class Client extends Class31 implements Class456, OAuthApi, Class33
 
 	@ObfInfo(owner = "ka", name = "pr", desc = "(I)V")
 	public static void method5162() {
-		field548.method2897(Class316.method3908(Class315.field3311, field548.field1446));
+		field548.method2897(Class316.method3908(ClientPacket.field3311, field548.field1446));
 		field577 = 0;
 	}
 

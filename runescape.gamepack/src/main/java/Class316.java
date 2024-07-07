@@ -7,7 +7,7 @@ public class Class316 extends Class506 {
 	@ObfInfo(name = "aa", desc = "I", intMultiplier = 1720291611)
 	public static int field3377;
 	@ObfInfo(name = "ak", desc = "Lmc;")
-	public Class315 field3379;
+	public ClientPacket field3379;
 	@ObfInfo(name = "aj", desc = "Luk;")
 	public Class531 field3374;
 	@ObfInfo(name = "al", desc = "I", intMultiplier = 674199947)
@@ -33,10 +33,10 @@ public class Class316 extends Class506 {
 	}
 
 	@ObfInfo(owner = "hr", name = "al", desc = "(Lmc;Lvr;I)Lmd;", opaque = "-1576354579")
-	public static Class316 method3908(Class315 var0, Class563 var1) {
+	public static Class316 method3908(ClientPacket var0, Class563 var1) {
 		Class316 var3 = method6159();
 		var3.field3379 = var0;
-		var3.field3373 = var0.field3292;
+		var3.field3373 = var0.length;
 		if (var3.field3373 == -1) {
 			var3.field3374 = new Class531(260);
 		} else if (-2 == var3.field3373) {
@@ -50,7 +50,7 @@ public class Class316 extends Class506 {
 		}
 
 		var3.field3374.method9777(var1);
-		var3.field3374.method9760(var3.field3379.field3369);
+		var3.field3374.method9760(var3.field3379.opcode);
 		var3.field3376 = 0;
 		return var3;
 	}

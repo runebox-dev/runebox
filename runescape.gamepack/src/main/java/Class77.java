@@ -101,7 +101,7 @@ public final class Class77 extends Class506 {
 
 	@ObfInfo(name = "oi", desc = "(B)V", opaque = "6")
 	public static void method2188() {
-		Class316 var1 = Class316.method3908(Class315.field3326, Client.field548.field1446);
+		Class316 var1 = Class316.method3908(ClientPacket.field3326, Client.field548.field1446);
 		Client.field548.method2897(var1);
 		Class72.field890 = true;
 

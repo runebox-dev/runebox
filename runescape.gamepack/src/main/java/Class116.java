@@ -4,13 +4,13 @@ import java.io.IOException;
 @ObfInfo(name = "el")
 public class Class116 {
 	@ObfInfo(name = "at", desc = "Lmz;")
-	public Class338 field1449;
+	public ServerPacket field1449;
 	@ObfInfo(name = "av", desc = "Lmz;")
-	public Class338 field1454;
+	public ServerPacket field1454;
 	@ObfInfo(name = "aq", desc = "Lmz;")
-	public Class338 field1455;
+	public ServerPacket field1455;
 	@ObfInfo(name = "ap", desc = "Lmz;")
-	public Class338 field1456;
+	public ServerPacket field1456;
 	@ObfInfo(name = "al", desc = "Lps;")
 	public Class409 field1453;
 	@ObfInfo(name = "ak", desc = "Lsm;")

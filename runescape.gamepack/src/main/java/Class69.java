@@ -97,7 +97,7 @@ public class Class69 {
 				} else if (this.method1878(var3)) {
 					method3705(var1);
 				} else {
-					Class316 var4 = Class316.method3908(Class315.field3278, Client.field548.field1446);
+					Class316 var4 = Class316.method3908(ClientPacket.field3278, Client.field548.field1446);
 					var4.field3374.method9388(Class521.method7983(var1));
 					var4.field3374.method9473(var1);
 					Client.field548.method2897(var4);
@@ -152,7 +152,7 @@ public class Class69 {
 			if (var3.method10262()) {
 				if (this.field849.method8737(var3)) {
 					Client.field687 = Client.field677;
-					Class316 var4 = Class316.method3908(Class315.field3298, Client.field548.field1446);
+					Class316 var4 = Class316.method3908(ClientPacket.field3298, Client.field548.field1446);
 					var4.field3374.method9388(Class521.method7983(var1));
 					var4.field3374.method9473(var1);
 					Client.field548.method2897(var4);
@@ -171,7 +171,7 @@ public class Class69 {
 				if (this.field850.method8737(var4)) {
 					Client.field687 = Client.field677;
 					if (var2) {
-						Class316 var5 = Class316.method3908(Class315.field3342, Client.field548.field1446);
+						Class316 var5 = Class316.method3908(ClientPacket.field3342, Client.field548.field1446);
 						var5.field3374.method9388(Class521.method7983(var1));
 						var5.field3374.method9473(var1);
 						Client.field548.method2897(var5);
@@ -218,7 +218,7 @@ public class Class69 {
 
 	@ObfInfo(owner = "ht", name = "ae", desc = "(Ljava/lang/String;I)V")
 	public static void method3933(String var0) {
-		Class316 var2 = Class316.method3908(Class315.field3305, Client.field548.field1446);
+		Class316 var2 = Class316.method3908(ClientPacket.field3305, Client.field548.field1446);
 		var2.field3374.method9388(Class521.method7983(var0));
 		var2.field3374.method9473(var0);
 		Client.field548.method2897(var2);
@@ -226,7 +226,7 @@ public class Class69 {
 
 	@ObfInfo(owner = "iv", name = "as", desc = "(Ljava/lang/String;II)V")
 	public static void method4403(String var0, int var1) {
-		Class316 var3 = Class316.method3908(Class315.field3332, Client.field548.field1446);
+		Class316 var3 = Class316.method3908(ClientPacket.field3332, Client.field548.field1446);
 		var3.field3374.method9388(Class521.method7983(var0) + 1);
 		var3.field3374.method9496(var1);
 		var3.field3374.method9473(var0);

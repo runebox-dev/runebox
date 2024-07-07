@@ -294,7 +294,7 @@ public class Class496 {
 					int var14 = this.field5074.field3869;
 					var11 = this.field5074.field3868;
 					var12 = this.field5074.field3870;
-					Class316 var13 = Class316.method3908(Class315.field3333, Client.field548.field1446);
+					Class316 var13 = Class316.method3908(ClientPacket.field3333, Client.field548.field1446);
 					var13.field3374.method9496(var12);
 					var13.field3374.method9443(var11);
 					var13.field3374.method9459(0);
@@ -311,7 +311,7 @@ public class Class496 {
 					}
 
 					if (var10) {
-						Class316 var15 = Class316.method3908(Class315.field3330, Client.field548.field1446);
+						Class316 var15 = Class316.method3908(ClientPacket.field3330, Client.field548.field1446);
 						var15.field3374.method9590(this.field5074.method6698());
 						Client.field548.method2897(var15);
 						this.field5060 = 0L;

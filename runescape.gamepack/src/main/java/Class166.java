@@ -39,7 +39,7 @@ public class Class166 extends Class181 {
 
 	@ObfInfo(name = "ak", desc = "(ILjava/lang/String;Lpl;II)Lmd;", opaque = "1664267168")
 	public static Class316 method3512(int var0, String var1, Class402 var2, int var3) {
-		Class316 var5 = Class316.method3908(Class315.field3352, Client.field548.field1446);
+		Class316 var5 = Class316.method3908(ClientPacket.field3352, Client.field548.field1446);
 		var5.field3374.method9388(0);
 		int var6 = var5.field3374.field5219;
 		var5.field3374.method9388(var0);

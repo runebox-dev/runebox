@@ -1803,7 +1803,7 @@ public class Class72 {
 					var11 = Class412.method3402(var14);
 				}
 
-				Class316 var15 = Class316.method3908(Class315.field3313, Client.field548.field1446);
+				Class316 var15 = Class316.method3908(ClientPacket.field3313, Client.field548.field1446);
 				var15.field3374.method9590(var11);
 				Client.field548.method2897(var15);
 				return 1;
@@ -1811,14 +1811,14 @@ public class Class72 {
 				Class316 var9;
 				if (var0 == 3105) {
 					var14 = field880[--Class85.field1806];
-					var9 = Class316.method3908(Class315.field3329, Client.field548.field1446);
+					var9 = Class316.method3908(ClientPacket.field3329, Client.field548.field1446);
 					var9.field3374.method9388(var14.length() + 1);
 					var9.field3374.method9473(var14);
 					Client.field548.method2897(var9);
 					return 1;
 				} else if (var0 == 3106) {
 					var14 = field880[--Class85.field1806];
-					var9 = Class316.method3908(Class315.field3370, Client.field548.field1446);
+					var9 = Class316.method3908(ClientPacket.field3370, Client.field548.field1446);
 					var9.field3374.method9388(var14.length() + 1);
 					var9.field3374.method9473(var14);
 					Client.field548.method2897(var9);
@@ -1862,7 +1862,7 @@ public class Class72 {
 						return 1;
 					} else if (var0 == 3115) {
 						var4 = field887[--Class85.field83];
-						var9 = Class316.method3908(Class315.field3309, Client.field548.field1446);
+						var9 = Class316.method3908(ClientPacket.field3309, Client.field548.field1446);
 						var9.field3374.method9389(var4);
 						Client.field548.method2897(var9);
 						return 1;
@@ -1876,7 +1876,7 @@ public class Class72 {
 						} else if (var6.length() > 500) {
 							return 1;
 						} else {
-							Class316 var7 = Class316.method3908(Class315.field3328, Client.field548.field1446);
+							Class316 var7 = Class316.method3908(ClientPacket.field3328, Client.field548.field1446);
 							var7.field3374.method9389(Class521.method7983(var5) + 1 + Class521.method7983(var6));
 							var7.field3374.method9473(var6);
 							var7.field3374.method9435(var4);
@@ -3631,7 +3631,7 @@ public class Class72 {
 			}
 
 			Client.field597 = field887[Class85.field83 + 2];
-			Class316 var14 = Class316.method3908(Class315.field3316, Client.field548.field1446);
+			Class316 var14 = Class316.method3908(ClientPacket.field3316, Client.field548.field1446);
 			var14.field3374.method9388(Client.field716);
 			var14.field3374.method9388(Client.field5081.field5370);
 			var14.field3374.method9388(Client.field597);
@@ -3647,7 +3647,7 @@ public class Class72 {
 				Class85.field83 -= 2;
 				var9 = field887[Class85.field83];
 				var11 = field887[1 + Class85.field83];
-				var7 = Class316.method3908(Class315.field3291, Client.field548.field1446);
+				var7 = Class316.method3908(ClientPacket.field3291, Client.field548.field1446);
 				var7.field3374.method9388(Class521.method7983(var4) + 2);
 				var7.field3374.method9473(var4);
 				var7.field3374.method9388(var9 - 1);
@@ -3721,7 +3721,7 @@ public class Class72 {
 							Class85.field1806 -= 2;
 							var4 = field880[Class85.field1806];
 							String var10 = field880[Class85.field1806 + 1];
-							var12 = Class316.method3908(Class315.field3318, Client.field548.field1446);
+							var12 = Class316.method3908(ClientPacket.field3318, Client.field548.field1446);
 							var12.field3374.method9389(0);
 							int var13 = var12.field3374.field5219;
 							var12.field3374.method9473(var4);
