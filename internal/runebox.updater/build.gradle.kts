@@ -3,9 +3,7 @@ plugins {
 }
 
 dependencies {
-    implementation(libs.bundles.asm)
-    implementation(libs.guava)
-    implementation(libs.ajavabeans)
+    implementation(project(":asm"))
     runtimeOnly(libs.bouncycastle)
     runtimeOnly(libs.json)
 }
@@ -18,7 +16,7 @@ tasks {
         classpath = sourceSets["main"].runtimeClasspath
         args = listOf(
             "runescape.gamepack/build/libs/gamepack.named.jar",
-            "build/runebox/gamepack221.deob.jar",
+            "build/runebox/gamepack.deob.jar",
             "build/runebox/gamepack.updated.jar"
         )
     }

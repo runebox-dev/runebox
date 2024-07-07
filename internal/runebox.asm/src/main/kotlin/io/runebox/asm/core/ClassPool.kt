@@ -56,7 +56,7 @@ class ClassPool {
     }
 
     fun findClass(name: String): ClassNode = classMap[name] ?: jvmClassMap.getOrPut(name) {
-        val input = ClassLoader.getSystemClassLoader().getResourceAsStream("$name.class")
+        val input = (this::class.java.getResourceAsStream("$name.class") ?: this.javaClass.getResourceAsStream("$name.class") ?: ClassLoader.getPlatformClassLoader().getResourceAsStream("$name.class") ?: ClassLoader.getSystemClassLoader().getResourceAsStream("$name.class"))
             ?: throw RuntimeException("Failed to find the class: $name in the runtime JVM classpath.")
         val cls = input.readBytes().toClassNode(ClassReader.SKIP_CODE)
         cls.isJvm = true
@@ -101,6 +101,15 @@ class ClassPool {
                 jos.closeEntry()
             }
         }
+    }
+
+    fun loadHierarchy() {
+        for(cls in allClasses) {
+            cls.superClass
+            cls.interfaceClasses
+        }
+        createMethodHierarchy()
+        createFieldHierarchy()
     }
 
     fun createMethodHierarchy() = createMemberHierarchy(ClassNode::methodDefs, ClassNode::methodAccess)

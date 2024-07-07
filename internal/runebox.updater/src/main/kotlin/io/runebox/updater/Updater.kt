@@ -1,75 +1,44 @@
 package io.runebox.updater
 
-import io.runebox.updater.asm.tree.ClassGroup
-import io.runebox.updater.merge.MergeEngine
-import io.runebox.updater.merge.MergeEngine.Companion.jumpTo
-import io.runebox.updater.merge.operation.MatchStringConstants
-import io.runebox.updater.merge.operation.VoteCollector
+import io.runebox.asm.core.ClassPool
+import io.runebox.asm.core.findMethod
+import io.runebox.asm.core.isIgnored
+import io.runebox.updater.asm.execution.Execution
+import io.runebox.updater.asm.execution.Frame
 import java.io.File
 
 class Updater(
     private val oldJar: File, // The old named deob jar (last version's updater output)
-    private val newJar: File // The new fresh deob jar (Has placeholder unique generated names)
+    private val newJar: File, // The new fresh deob jar (Has placeholder unique generated names)
+    private val outJar: File,
 ) {
 
-    private lateinit var oldGroup: ClassGroup
-    private lateinit var newGroup: ClassGroup
-
-    private lateinit var engine: MergeEngine
+    val oldPool = ClassPool()
+    val newPool = ClassPool()
 
     fun update() {
-        Logger.info("RuneBox updater.")
-
-        oldGroup = createGroup(oldJar)
-        newGroup = createGroup(newJar)
+        Logger.info("Preparing to update old-jar's name mappings. [${oldJar.name} -> ${newJar.name}].")
 
         /*
-         * Set up the mapping merge engine and the
-         * operations the engine will execute.
+         * Load classes from both old+new input jar files.
          */
-        engine = MergeEngine(oldGroup, newGroup)
+        Logger.info("Loading jar files...")
+        oldPool.init(oldJar)
+        newPool.init(newJar)
 
-        // Merge Operation Step Definitions
-        engine.addOperation(MatchStringConstants())
-        engine.addOperation(VoteCollector())
-        engine.addOperation(jumpTo(0) { e: MergeEngine ->
-            val ch = e.changesLastCycle
-            e.resetChanges()
-            return@jumpTo ch > 0
-        })
-
-        // Run the engine merging
-        engine.merge()
+        val execution = Execution(oldPool)
+        val frame = Frame(execution, oldPool.findClass("Client").findMethod("init", "()V")!!)
+        frame.initialize()
+        frame.execute()
+        println()
     }
 
-    fun save(outputJar: File) {
-        Logger.info("Saving updated jar: ${outputJar.name}.")
-
-
-    }
-
-    private fun createGroup(jar: File): ClassGroup {
-        Logger.info("Loading classes from jar: ${jar.name}...")
-
-        val group = ClassGroup()
-        group.read(jar)
-
-        /*
-         * Ignore gamepack dependency classes
-         */
-        group.ignoreBouncyCastle()
-        group.ignoreJson()
-
-        /*
-         * Build the class inheritance and resolve instruction targets.
-         */
-        group.buildInheritance()
-        group.resolveInstructions()
-        group.loadObfuscatedInfo()
-
-        Logger.info("Loaded ${group.classes.size} classes. (${group.ignoredClasses.size} ignored)")
-
-        return group
+    private fun ClassPool.init(file: File) {
+        clear()
+        loadJar(file)
+        classes.filter { it.name.startsWith("org/") || it.name.startsWith("module") }.forEach { it.isIgnored = true }
+        loadHierarchy()
+        Logger.info("Finished loading ${classes.size} classes into pool. [Ignored ${ignoredClasses.size}]")
     }
 
     companion object {
@@ -81,9 +50,8 @@ class Updater(
             val newJar = File(args[1])
             val outJar = File(args[2])
 
-            val update = Updater(oldJar, newJar)
-            update.update()
-            update.save(outJar)
+            val updater = Updater(oldJar, newJar, outJar)
+            updater.update()
         }
     }
 }
