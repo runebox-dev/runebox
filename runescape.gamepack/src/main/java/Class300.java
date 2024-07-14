@@ -40,8 +40,8 @@ public abstract class Class300 {
 				var1.field2876 = var4;
 			}
 
-			if (-1 == var2.field3133) {
-				if (12345678 != var2.field3131) {
+			if (var2.field3133 == -1) {
+				if (var2.field3131 != 12345678) {
 					Class274.method5134(var23, var25, var21, var22, var24, var20, var28, var29, var27, var2.field3131, var2.field3132, var2.field3136);
 				}
 			} else if (!Class277.field2827) {
@@ -56,7 +56,7 @@ public abstract class Class300 {
 			}
 		}
 
-		if ((var25 - var21) * (var18 - var20) - (var24 - var20) * (var19 - var21) > 0) {
+		if ((var18 - var20) * (var25 - var21) - (var19 - var21) * (var24 - var20) > 0) {
 			Class274.field2803.field3079 = false;
 			var30 = Class274.method5127();
 			if (var18 < 0 || var20 < 0 || var24 < 0 || var18 > var30 || var20 > var30 || var24 > var30) {
@@ -68,7 +68,7 @@ public abstract class Class300 {
 				var1.field2876 = var4;
 			}
 
-			if (-1 == var2.field3133) {
+			if (var2.field3133 == -1) {
 				if (var2.field3134 != 12345678) {
 					Class274.method5134(var19, var21, var25, var18, var20, var24, var26, var27, var29, var2.field3134, var2.field3136, var2.field3132);
 				}
@@ -100,7 +100,7 @@ public abstract class Class300 {
 			float var17 = Class309.field3245[var8];
 			float var18 = Class309.field3245[var9];
 			float var19 = Class309.field3245[var10];
-			if ((var11 - var12) * (var16 - var15) - (var14 - var15) * (var13 - var12) > 0) {
+			if ((var11 - var12) * (var16 - var15) - (var13 - var12) * (var14 - var15) > 0) {
 				Class274.field2803.field3079 = false;
 				int var20 = Class274.method5127();
 				if (var11 < 0 || var12 < 0 || var13 < 0 || var11 > var20 || var12 > var20 || var13 > var20) {
@@ -112,7 +112,7 @@ public abstract class Class300 {
 					var1.field2876 = var4;
 				}
 
-				if (var2.field3231 != null && -1 != var2.field3231[var7]) {
+				if (var2.field3231 != null && var2.field3231[var7] != -1) {
 					if (!Class277.field2827) {
 						if (var2.field3239) {
 							Class274.method5137(var14, var15, var16, var11, var12, var13, var17, var18, var19, var2.field3232[var7], var2.field3242[var7], var2.field3247[var7], Class309.field3236[0], Class309.field3236[1], Class309.field3236[3], Class309.field3248[0], Class309.field3248[1], Class309.field3248[3], Class309.field3249[0], Class309.field3249[1], Class309.field3249[3], var2.field3231[var7]);

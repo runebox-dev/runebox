@@ -73,7 +73,7 @@ public class Class169 extends Class149 {
 				var31.field1014.method5263(var31.field1016, var34.field4997, var34.field4999, var34.field5003, 60, var34.field5001.field1014, var34.field5000, 0L, false);
 				Class166.method3449(var34.field5001);
 				Class83 var11 = var34.field5001;
-				if (Client.field556 >= 0 && null != var11.field1024[Client.field556]) {
+				if (Client.field556 >= 0 && var11.field1024[Client.field556] != null) {
 					Client.method6615(var11, Client.field556, false);
 				}
 
@@ -83,7 +83,7 @@ public class Class169 extends Class149 {
 				int[] var14 = var12.field1017.field1407;
 
 				for (int var15 = 0; var15 < var13; ++var15) {
-					if (var14[var15] != Client.field556 && Client.field732 != var14[var15]) {
+					if (var14[var15] != Client.field556 && var14[var15] != Client.field732) {
 						Client.method6615(var12, var14[var15], true);
 					}
 				}
@@ -113,7 +113,7 @@ public class Class169 extends Class149 {
 		Class83 var33 = Client.field5093;
 
 		for (Class54 var35 = (Class54)var33.field1035.method7526(); var35 != null; var35 = (Class54)var33.field1035.method7511()) {
-			if (var35.field384 == var33.field1016 && !var35.field382) {
+			if (var33.field1016 == var35.field384 && !var35.field382) {
 				if (Client.field541 >= var35.field383) {
 					var35.method1139(Client.field831);
 					if (var35.field382) {
@@ -132,7 +132,7 @@ public class Class169 extends Class149 {
 		var1 = Client.field811;
 		var2 = Client.field812;
 		var3 = Client.field726;
-		Class569.method10183(var0, var1, var2 + var0, var3 + var1);
+		Class569.method10183(var0, var1, var0 + var2, var1 + var3);
 		Class274.method5171();
 		Class569.method10150();
 		var10 = Client.field657;
@@ -140,15 +140,15 @@ public class Class169 extends Class149 {
 			var10 = Client.field631 / 256;
 		}
 
-		if (Client.field797[4] && 128 + Client.field690[4] > var10) {
-			var10 = 128 + Client.field690[4];
+		if (Client.field797[4] && Client.field690[4] + 128 > var10) {
+			var10 = Client.field690[4] + 128;
 		}
 
 		int var36 = Client.field615 & 2047;
 		int var37 = Client.field4526;
 		var13 = Client.field3024;
 		int var40 = Client.field3275;
-		int var17 = 600 + var10 * 3;
+		int var17 = var10 * 3 + 600;
 		Class6.method70(var37, var13, var40, var10, var36, var17, var3);
 		int var18;
 		int var19;
@@ -166,13 +166,13 @@ public class Class169 extends Class149 {
 			if (Client.field1474.method2554()) {
 				var19 = Client.field5093.field1016;
 			} else {
-				label438: {
+				label439: {
 					var20 = 3;
 					var21 = Client.field4407.method1959() >> 7;
 					var22 = Client.field4407.method1966() >> 7;
 					if (Client.field4606 < 310) {
-						label433: {
-							if (1 == Client.field620) {
+						label434: {
+							if (Client.field620 == 1) {
 								var23 = Client.field4526 >> 7;
 								var24 = Client.field3275 >> 7;
 							} else {
@@ -184,7 +184,7 @@ public class Class169 extends Class149 {
 							var26 = Client.field850 >> 7;
 							if (var25 >= 0 && 104 > var25 && var26 >= 0 && 104 > var26) {
 								if (var23 >= 0 && 104 > var23 && var24 >= 0 && 104 > var24) {
-									if (0 != (Client.field5093.field1023[Client.field5093.field1016][var25][var26] & 4)) {
+									if ((Client.field5093.field1023[Client.field5093.field1016][var25][var26] & 4) != 0) {
 										var20 = Client.field5093.field1016;
 									}
 
@@ -206,8 +206,8 @@ public class Class169 extends Class149 {
 										var30 = 32768;
 
 										while (true) {
-											if (var25 == var23) {
-												break label433;
+											if (var23 == var25) {
+												break label434;
 											}
 
 											if (var25 < var23) {
@@ -229,7 +229,7 @@ public class Class169 extends Class149 {
 													--var26;
 												}
 
-												if (0 != (Client.field5093.field1023[Client.field5093.field1016][var25][var26] & 4)) {
+												if ((Client.field5093.field1023[Client.field5093.field1016][var25][var26] & 4) != 0) {
 													var20 = Client.field5093.field1016;
 												}
 											}
@@ -239,7 +239,7 @@ public class Class169 extends Class149 {
 											var29 = var27 * 65536 / var28;
 											var30 = 32768;
 
-											while (var26 != var24) {
+											while (var24 != var26) {
 												if (var26 < var24) {
 													++var26;
 												} else if (var26 > var24) {
@@ -265,16 +265,16 @@ public class Class169 extends Class149 {
 												}
 											}
 										}
-										break label433;
+										break label434;
 									}
 								}
 
 								var19 = Client.field5093.field1016;
-								break label438;
+								break label439;
 							}
 
 							var19 = Client.field5093.field1016;
-							break label438;
+							break label439;
 						}
 					}
 
@@ -296,7 +296,7 @@ public class Class169 extends Class149 {
 				var19 = Client.field5093.field1016;
 			} else {
 				var20 = Client.method3531(Client.field5093, Client.field144, Client.field850, Client.field5093.field1016);
-				if (var20 - Client.field3664 < 800 && 0 != (Client.field5093.field1023[Client.field5093.field1016][Client.field144 >> 7][Client.field850 >> 7] & 4)) {
+				if (var20 - Client.field3664 < 800 && (Client.field5093.field1023[Client.field5093.field1016][Client.field144 >> 7][Client.field850 >> 7] & 4) != 0) {
 					var19 = Client.field5093.field1016;
 				} else {
 					var19 = 3;
@@ -314,7 +314,7 @@ public class Class169 extends Class149 {
 
 		for (var24 = 0; var24 < 5; ++var24) {
 			if (Client.field797[var24]) {
-				var25 = (int)(Math.random() * (double)(2 * Client.field798[var24] + 1) - (double)Client.field798[var24] + Math.sin((double)Client.field800[var24] / 100.0D * (double)Client.field524[var24]) * (double)Client.field690[var24]);
+				var25 = (int)(Math.random() * (double)(Client.field798[var24] * 2 + 1) - (double)Client.field798[var24] + Math.sin((double)Client.field800[var24] / 100.0D * (double)Client.field524[var24]) * (double)Client.field690[var24]);
 				if (var24 == 0) {
 					Client.field144 += var25;
 				}
@@ -328,7 +328,7 @@ public class Class169 extends Class149 {
 				}
 
 				if (var24 == 3) {
-					Client.field3333 = var25 + Client.field3333 & 2047;
+					Client.field3333 = Client.field3333 + var25 & 2047;
 				}
 
 				if (var24 == 4) {
@@ -346,12 +346,12 @@ public class Class169 extends Class149 {
 
 		var24 = Class42.field231;
 		var25 = Class42.field221;
-		if (0 != Class42.field227) {
+		if (Class42.field227 != 0) {
 			var24 = Class42.field230;
 			var25 = Class42.field222;
 		}
 
-		if (var24 >= var0 && var24 < var2 + var0 && var25 >= var1 && var25 < var3 + var1) {
+		if (var24 >= var0 && var24 < var0 + var2 && var25 >= var1 && var25 < var1 + var3) {
 			var26 = var24 - var0;
 			var27 = var25 - var1;
 			Class296.field3047 = var26;
@@ -398,11 +398,11 @@ public class Class169 extends Class149 {
 
 		Class83 var42 = Client.field5093;
 		if (Client.field550 == 2) {
-			var28 = Client.field626 + (Client.field553 - var42.field1019 << 7);
+			var28 = (Client.field553 - var42.field1019 << 7) + Client.field626;
 			var29 = (Client.field813 - var42.field1021 << 7) + Client.field557;
 			Client.method8077(var42, var28, var29, var28, var29, Client.field569 * 2);
 			if (Client.field644 > -1 && Client.field541 % 20 < 10) {
-				Client.field3331[0].method9628(var0 + Client.field644 - 12, var1 + Client.field611 - 28);
+				Client.field3331[0].method9628(Client.field644 + var0 - 12, Client.field611 + var1 - 28);
 			}
 		}
 

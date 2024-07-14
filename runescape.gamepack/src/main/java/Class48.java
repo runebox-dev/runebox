@@ -60,7 +60,7 @@ public class Class48 {
 			long var2 = Class329.method4953();
 
 			try {
-				if (0L != this.field311) {
+				if (this.field311 != 0L) {
 					if (var2 < this.field311) {
 						return;
 					}
@@ -75,7 +75,7 @@ public class Class48 {
 					this.field303 = this.field305 - var4;
 				}
 
-				int var5 = this.field300 + this.field301;
+				int var5 = this.field301 + this.field300;
 				if (var5 + 256 > 16384) {
 					var5 = 16128;
 				}
@@ -104,9 +104,9 @@ public class Class48 {
 
 				if (var2 > this.field294) {
 					if (!this.field312) {
-						if (0 == this.field303 && this.field304 == 0) {
+						if (this.field303 == 0 && this.field304 == 0) {
 							this.method155();
-							this.field311 = 2000L + var2;
+							this.field311 = var2 + 2000L;
 							return;
 						}
 
@@ -123,7 +123,7 @@ public class Class48 {
 				this.field305 = var4;
 			} catch (Exception var7) {
 				this.method155();
-				this.field311 = 2000L + var2;
+				this.field311 = var2 + 2000L;
 			}
 
 			try {
@@ -131,7 +131,7 @@ public class Class48 {
 					var2 = this.field310;
 				}
 
-				while (var2 > 5000L + this.field310) {
+				while (var2 > this.field310 + 5000L) {
 					this.method810(256);
 					this.field310 += (long)(256000 / Client.field293);
 				}
@@ -166,11 +166,11 @@ public class Class48 {
 			boolean var2 = true;
 
 			for (int var3 = 0; var3 < 2; ++var3) {
-				if (this == Client.field291.field203[var3]) {
+				if (Client.field291.field203[var3] == this) {
 					Client.field291.field203[var3] = null;
 				}
 
-				if (null != Client.field291.field203[var3]) {
+				if (Client.field291.field203[var3] != null) {
 					var2 = false;
 				}
 			}

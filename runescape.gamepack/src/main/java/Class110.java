@@ -54,19 +54,19 @@ public class Class110 implements Class393 {
 					float var6;
 					float var7;
 					float var8;
-					if (0.0D == (double)var3.field1599 && 0.0D == (double)var3.field1595) {
+					if ((double)var3.field1599 == 0.0D && (double)var3.field1595 == 0.0D) {
 						var4 = true;
-					} else if (Float.MAX_VALUE == var3.field1599 && Float.MAX_VALUE == var3.field1595) {
+					} else if (var3.field1599 == Float.MAX_VALUE && var3.field1595 == Float.MAX_VALUE) {
 						var5 = true;
 					} else if (var3.field1596 != null) {
 						if (var0.field1565) {
 							var6 = (float)var3.field1590;
 							float var10 = var3.field1591;
-							var7 = var6 + var3.field1599 * 0.33333334F;
+							var7 = var3.field1599 * 0.33333334F + var6;
 							float var11 = var3.field1595 * 0.33333334F + var10;
 							float var9 = (float)var3.field1596.field1590;
 							float var13 = var3.field1596.field1591;
-							var8 = var9 - 0.33333334F * var3.field1596.field1592;
+							var8 = var9 - var3.field1596.field1592 * 0.33333334F;
 							float var12 = var13 - var3.field1596.field1593 * 0.33333334F;
 							if (var0.field1562) {
 								Class153.method448(var0, var6, var7, var8, var9, var10, var11, var12, var13);
@@ -77,7 +77,7 @@ public class Class110 implements Class393 {
 								float var16 = var7 - var6;
 								float var17 = 0.0F;
 								float var18 = 0.0F;
-								if (0.0D != (double)var16) {
+								if ((double)var16 != 0.0D) {
 									var17 = (var11 - var10) / var16;
 								}
 
@@ -87,9 +87,9 @@ public class Class110 implements Class393 {
 								}
 
 								float var19 = 1.0F / (var14 * var14);
-								float var20 = var17 * var14;
+								float var20 = var14 * var17;
 								float var21 = var14 * var18;
-								var0.field1568 = var19 * (var21 + var20 - var15 - var15) / var14;
+								var0.field1568 = (var20 + var21 - var15 - var15) * var19 / var14;
 								var0.field1577 = (var15 + var15 + var15 - var20 - var20 - var21) * var19;
 								var0.field1572 = var17;
 								var0.field1573 = var10;
@@ -104,14 +104,14 @@ public class Class110 implements Class393 {
 					if (var4) {
 						return var3.field1591;
 					} else if (var5) {
-						return var1 != (float)var3.field1590 && var3.field1596 != null ? var3.field1596.field1591 : var3.field1591;
+						return (float)var3.field1590 != var1 && var3.field1596 != null ? var3.field1596.field1591 : var3.field1591;
 					} else if (var0.field1562) {
 						if (var0 == null) {
 							var6 = 0.0F;
 						} else {
 							if (var0.field1579 == var1) {
 								var7 = 0.0F;
-							} else if (var1 == var0.field1578) {
+							} else if (var0.field1578 == var1) {
 								var7 = 1.0F;
 							} else {
 								var7 = (var1 - var0.field1579) / (var0.field1578 - var0.field1579);
@@ -137,7 +137,7 @@ public class Class110 implements Class393 {
 								}
 							}
 
-							var6 = var0.field1574 + (var8 * (var0.field1569 * var8 + var0.field1576) + var0.field1575) * var8;
+							var6 = ((var0.field1569 * var8 + var0.field1576) * var8 + var0.field1575) * var8 + var0.field1574;
 						}
 
 						return var6;
@@ -146,7 +146,7 @@ public class Class110 implements Class393 {
 							var6 = 0.0F;
 						} else {
 							var7 = var1 - var0.field1579;
-							var6 = var0.field1573 + var7 * (var0.field1572 + (var0.field1568 * var7 + var0.field1577) * var7);
+							var6 = ((var0.field1568 * var7 + var0.field1577) * var7 + var0.field1572) * var7 + var0.field1573;
 						}
 
 						return var6;

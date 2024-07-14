@@ -156,7 +156,7 @@ public class Class319 {
 				int var5 = this.field3334.method9830();
 				var4 -= 3;
 				int var6 = this.field3339[var1];
-				this.field3338 += (long)var6 * (long)(this.field3345 - var5);
+				this.field3338 += (long)(this.field3345 - var5) * (long)var6;
 				this.field3345 = var5;
 				var10000 = this.field3334;
 				var10000.field5471 += var4;
@@ -183,7 +183,7 @@ public class Class319 {
 
 	@ObfInfo(name = "au", desc = "(I)J")
 	public long method6242(int var1) {
-		return this.field3338 + (long)var1 * (long)this.field3345;
+		return (long)this.field3345 * (long)var1 + this.field3338;
 	}
 
 	@ObfInfo(name = "ah", desc = "()I")

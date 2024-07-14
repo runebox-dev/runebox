@@ -172,7 +172,7 @@ public abstract class Class45 extends Applet implements Runnable, FocusListener,
 
 	@ObfInfo(name = "aj", desc = "(III)V", opaque = "2094475893")
 	public final void method627(int var1, int var2) {
-		if (this.field262 != var1 || var2 != this.field258) {
+		if (this.field262 != var1 || this.field258 != var2) {
 			this.method650();
 		}
 
@@ -403,7 +403,7 @@ public abstract class Class45 extends Applet implements Runnable, FocusListener,
 		Insets var3;
 		if (this.field266 != null) {
 			var3 = this.field266.getInsets();
-			Client.field954 -= var3.left + var3.right;
+			Client.field954 -= var3.right + var3.left;
 			Client.field15 -= var3.top + var3.bottom;
 		}
 
@@ -416,7 +416,7 @@ public abstract class Class45 extends Applet implements Runnable, FocusListener,
 		this.field267.setBackground(Color.BLACK);
 		if (this.field266 == var2) {
 			var3 = this.field266.getInsets();
-			this.field267.setLocation(var3.left + this.field257, var3.top + this.field259);
+			this.field267.setLocation(this.field257 + var3.left, this.field259 + var3.top);
 		} else {
 			this.field267.setLocation(this.field257, this.field259);
 		}
@@ -527,8 +527,8 @@ public abstract class Class45 extends Applet implements Runnable, FocusListener,
 		long var2 = Class329.method4953();
 		long var4 = field255[field3656];
 		field255[field3656] = var2;
-		field3656 = 1 + field3656 & 31;
-		if (0L != var4 && var2 > var4) {
+		field3656 = field3656 + 1 & 31;
+		if (var4 != 0L && var2 > var4) {
 		}
 
 		synchronized(this) {
@@ -549,10 +549,10 @@ public abstract class Class45 extends Applet implements Runnable, FocusListener,
 		long var3 = Class329.method4953();
 		long var5 = field253[field245];
 		field253[field245] = var3;
-		field245 = 1 + field245 & 31;
-		if (0L != var5 && var3 > var5) {
+		field245 = field245 + 1 & 31;
+		if (var5 != 0L && var3 > var5) {
 			int var7 = (int)(var3 - var5);
-			field252 = (32000 + (var7 >> 1)) / var7;
+			field252 = ((var7 >> 1) + 32000) / var7;
 		}
 
 		if (++field269 - 1 > 50) {
@@ -562,7 +562,7 @@ public abstract class Class45 extends Applet implements Runnable, FocusListener,
 			this.field267.setVisible(true);
 			if (this.field266 == var2) {
 				Insets var8 = this.field266.getInsets();
-				this.field267.setLocation(var8.left + this.field257, var8.top + this.field259);
+				this.field267.setLocation(this.field257 + var8.left, this.field259 + var8.top);
 			} else {
 				this.field267.setLocation(this.field257, this.field259);
 			}
@@ -584,7 +584,7 @@ public abstract class Class45 extends Applet implements Runnable, FocusListener,
 	@ObfInfo(name = "bs", desc = "(I)V", opaque = "929999033")
 	public final void method649() {
 		Class417 var2 = this.method661();
-		if (var2.field4677 != this.field256 || this.field273 != var2.field4680 || this.field270) {
+		if (this.field256 != var2.field4677 || this.field273 != var2.field4680 || this.field270) {
 			this.method674();
 			this.field270 = false;
 		}
@@ -724,7 +724,7 @@ public abstract class Class45 extends Applet implements Runnable, FocusListener,
 				var8.fillRect(2, 2, var1 * 3, 30);
 				var8.setColor(Color.black);
 				var8.drawRect(1, 1, 301, 31);
-				var8.fillRect(2 + var1 * 3, 2, 300 - var1 * 3, 30);
+				var8.fillRect(var1 * 3 + 2, 2, 300 - var1 * 3, 30);
 				var8.setFont(field1331);
 				var8.setColor(Color.white);
 				var8.drawString(var2, (304 - field265.stringWidth(var2)) / 2, 22);
@@ -781,7 +781,7 @@ public abstract class Class45 extends Applet implements Runnable, FocusListener,
 		int var4 = Math.max(var2.getHeight(), this.field251);
 		if (this.field266 != null) {
 			Insets var5 = this.field266.getInsets();
-			var3 -= var5.left + var5.right;
+			var3 -= var5.right + var5.left;
 			var4 -= var5.top + var5.bottom;
 		}
 
@@ -839,7 +839,7 @@ public abstract class Class45 extends Applet implements Runnable, FocusListener,
 			if (field278 != -1L) {
 				long var6 = var4 - field278;
 				long var8 = var11 - field279;
-				if (0L != var8) {
+				if (var8 != 0L) {
 					var1 = (int)(var6 * 100L / var8);
 				}
 			}
@@ -867,7 +867,7 @@ public abstract class Class45 extends Applet implements Runnable, FocusListener,
 	@ObfInfo(name = "nn", desc = "(II)Z", opaque = "452126736")
 	public static boolean method798(int var0) {
 		for (int var2 = 0; var2 < Client.field767; ++var2) {
-			if (var0 == Client.field618[var2]) {
+			if (Client.field618[var2] == var0) {
 				return true;
 			}
 		}

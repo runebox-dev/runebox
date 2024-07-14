@@ -23,7 +23,7 @@ public class Class41 {
 
 			int var10 = var2.getWidth();
 			int var4 = var2.getHeight();
-			int[] var5 = new int[var4 * var10];
+			int[] var5 = new int[var10 * var4];
 			PixelGrabber var6 = new PixelGrabber(var2, 0, 0, var10, var4, var5, 0, var10);
 			var6.grabPixels();
 			return new Class553(var5, var10, var4);
@@ -39,7 +39,7 @@ public class Class41 {
 		Class408 var7 = Client.field94.field1032[var0][var1][var2];
 		if (var7 != null) {
 			for (Class119 var8 = (Class119)var7.method7526(); var8 != null; var8 = (Class119)var7.method7511()) {
-				if (var8.field1439 == (var3 & 32767) && var8.field1443 == var4) {
+				if ((var3 & 32767) == var8.field1439 && var8.field1443 == var4) {
 					var8.field1443 = var5;
 					break;
 				}
@@ -59,7 +59,7 @@ public class Class41 {
 				Client.field691 = var0.field3857;
 			}
 
-			if (1 == Client.field815.field3720) {
+			if (Client.field815.field3720 == 1) {
 				var0.field3848 = Client.field816;
 			} else {
 				var0.field3848 = Client.field691;

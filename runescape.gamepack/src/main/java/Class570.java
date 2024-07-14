@@ -24,6 +24,6 @@ public abstract class Class570 {
 
 	@ObfInfo(name = "ax", desc = "(ZI)V")
 	public final void method10207(boolean var1) {
-		this.field5510 = var1 ? new float[this.field5512 * this.field5513 + 1] : null;
+		this.field5510 = var1 ? new float[this.field5513 * this.field5512 + 1] : null;
 	}
 }

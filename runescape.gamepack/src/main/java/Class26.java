@@ -24,7 +24,7 @@ class Class26 extends DefaultTlsClient {
 		byte[] var2 = this.this$1.val$host.getBytes();
 		ByteArrayOutputStream var3 = new ByteArrayOutputStream();
 		DataOutputStream var4 = new DataOutputStream(var3);
-		var4.writeShort(3 + var2.length);
+		var4.writeShort(var2.length + 3);
 		var4.writeByte(0);
 		var4.writeShort(var2.length);
 		var4.write(var2);

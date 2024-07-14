@@ -44,7 +44,7 @@ public class Class454 extends Class471 {
 				Class482 var8 = (Class482)this.method8578(var6);
 				if (var5) {
 					Class482 var9 = (Class482)this.method8578(var7);
-					if (var9 != null && var9 != var8) {
+					if (var9 != null && var8 != var9) {
 						if (var8 != null) {
 							this.method8560(var9);
 						} else {

@@ -57,20 +57,20 @@ public class Class370 implements Class393 {
 		}
 
 		int var18 = (var16 >> 1) + var1;
-		int var19 = var1 + (var16 + 1 >> 1);
+		int var19 = (var16 + 1 >> 1) + var1;
 		int var20 = (var17 >> 1) + var2;
-		int var21 = var2 + (var17 + 1 >> 1);
+		int var21 = (var17 + 1 >> 1) + var2;
 		int[][] var22 = Client.field94.field1025[var0];
-		int var23 = var22[var19][var21] + var22[var18][var21] + var22[var19][var20] + var22[var18][var20] >> 2;
-		int var24 = (var16 << 6) + (var1 << 7);
+		int var23 = var22[var18][var20] + var22[var19][var20] + var22[var18][var21] + var22[var19][var21] >> 2;
+		int var24 = (var1 << 7) + (var16 << 6);
 		int var25 = (var2 << 7) + (var17 << 6);
 		Class308 var26 = var15.method3945(var3, var4, var22, var24, var23, var25);
 		if (var26 != null) {
 			Client.method438(Client.field94, var0, var1, var2, var5, -1, 0, 0, 31, var7 + 1, var8 + 1);
-			var13.field974 = var7 + Client.field541;
-			var13.field973 = var8 + Client.field541;
+			var13.field974 = Client.field541 + var7;
+			var13.field973 = Client.field541 + var8;
 			var13.field986 = var26;
-			var13.field983 = var16 * 64 + var1 * 128;
+			var13.field983 = var1 * 128 + var16 * 64;
 			var13.field985 = var2 * 128 + var17 * 64;
 			var13.field984 = var23;
 			int var27;
@@ -86,10 +86,10 @@ public class Class370 implements Class393 {
 				var12 = var27;
 			}
 
-			var13.field987 = var9 + var1;
-			var13.field989 = var11 + var1;
-			var13.field981 = var10 + var2;
-			var13.field994 = var12 + var2;
+			var13.field987 = var1 + var9;
+			var13.field989 = var1 + var11;
+			var13.field981 = var2 + var10;
+			var13.field994 = var2 + var12;
 		}
 
 	}

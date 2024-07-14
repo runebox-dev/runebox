@@ -54,7 +54,7 @@ public class Class455 extends Class471 {
 		String var6;
 		int var9;
 		if (var4 > 0L && var4 < 6582952005840035281L) {
-			if (0L == var4 % 37L) {
+			if (var4 % 37L == 0L) {
 				var6 = null;
 			} else {
 				var9 = 0;
@@ -65,7 +65,7 @@ public class Class455 extends Class471 {
 
 				StringBuilder var12 = new StringBuilder(var9);
 
-				while (0L != var7) {
+				while (var7 != 0L) {
 					long var13 = var7;
 					var7 /= 37L;
 					var12.append(Class426.field4711[(int)(var13 - var7 * 37L)]);
@@ -92,7 +92,7 @@ public class Class455 extends Class471 {
 			var15 = -1;
 		}
 
-		if (var15 != var9) {
+		if (var9 != var15) {
 			this.method8552();
 
 			for (int var16 = 0; var16 < var9; ++var16) {

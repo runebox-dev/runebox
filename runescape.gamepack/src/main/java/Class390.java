@@ -60,7 +60,7 @@ public class Class390 extends Class375 {
 
 	@ObfInfo(name = "ad", desc = "(I)I", opaque = "-1464451928")
 	public int method7276() {
-		if (this.field4567 != 1 && (!this.field4574 || 2 != this.field4567)) {
+		if (this.field4567 != 1 && (!this.field4574 || this.field4567 != 2)) {
 			if (super.field4451 != null) {
 				return 99;
 			} else {
@@ -135,7 +135,7 @@ public class Class390 extends Class375 {
 				}
 
 				synchronized(Class385.field4531) {
-					if (0 == Class385.field4527) {
+					if (Class385.field4527 == 0) {
 						field2747 = new Thread(new Class385());
 						field2747.setDaemon(true);
 						field2747.start();
@@ -164,7 +164,7 @@ public class Class390 extends Class375 {
 				}
 
 				synchronized(Class385.field4531) {
-					if (0 == Class385.field4527) {
+					if (Class385.field4527 == 0) {
 						field2747 = new Thread(new Class385());
 						field2747.setDaemon(true);
 						field2747.start();
@@ -189,7 +189,7 @@ public class Class390 extends Class375 {
 	public void method7313(Class485 var1, int var2, byte[] var3, boolean var4) {
 		int var6;
 		if (this.field4570 == var1) {
-			if (1 == this.field4567) {
+			if (this.field4567 == 1) {
 				throw new RuntimeException();
 			}
 
@@ -201,7 +201,7 @@ public class Class390 extends Class375 {
 			field4575.reset();
 			field4575.update(var3, 0, var3.length);
 			var6 = (int)field4575.getValue();
-			if (var6 != this.field4571) {
+			if (this.field4571 != var6) {
 				this.field4576.method7072(this, Class376.field4480.field4485, this.field4566, this.field4571, (byte)0, true);
 				return;
 			}
@@ -217,7 +217,7 @@ public class Class390 extends Class375 {
 				var9 = var10.method9832();
 			}
 
-			if (var9 != this.field4561) {
+			if (this.field4561 != var9) {
 				this.field4576.method7072(this, Class376.field4480.field4485, this.field4566, this.field4571, (byte)0, true);
 				return;
 			}
@@ -225,7 +225,7 @@ public class Class390 extends Class375 {
 			this.method7130(var3);
 			this.method7283();
 		} else {
-			if (!var4 && var2 == this.field4573) {
+			if (!var4 && this.field4573 == var2) {
 				this.field4567 = 1;
 			}
 

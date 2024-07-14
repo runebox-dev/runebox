@@ -87,8 +87,8 @@ public class Class272 extends Class247 {
 			}
 		}
 
-		if (1 == Class42.field227 || !Client.field911 && Class42.field227 == 4) {
-			int var4 = 280 + Class53.field341;
+		if (Class42.field227 == 1 || !Client.field911 && Class42.field227 == 4) {
+			int var4 = Class53.field341 + 280;
 			if (Class42.field230 >= var4 && Class42.field230 <= var4 + 14 && Class42.field222 >= 4 && Class42.field222 <= 18) {
 				Class90.method2423(0, 0);
 				return;
@@ -132,15 +132,15 @@ public class Class272 extends Class247 {
 				return;
 			}
 
-			if (Class42.field230 >= Class53.field341 + 708 && Class42.field222 >= 4 && Class42.field230 <= 708 + Class53.field341 + 50 && Class42.field222 <= 20) {
+			if (Class42.field230 >= Class53.field341 + 708 && Class42.field222 >= 4 && Class42.field230 <= Class53.field341 + 708 + 50 && Class42.field222 <= 20) {
 				Class53.field339 = false;
 				Class53.field343.method9636(Class53.field341, 0);
-				Class53.field2205.method9636(382 + Class53.field341, 0);
-				Class99.field4534.method10122(382 + Class53.field341 - Class99.field4534.field5495 / 2, 18);
+				Class53.field2205.method9636(Class53.field341 + 382, 0);
+				Class99.field4534.method10122(Class53.field341 + 382 - Class99.field4534.field5495 / 2, 18);
 				return;
 			}
 
-			if (-1 != Class53.field369) {
+			if (Class53.field369 != -1) {
 				Class75 var8 = Class90.field3782[Class53.field369];
 				boolean var9 = Class524.method3838(Client.field796, Class545.field5342);
 				boolean var10 = var8.method2188();
@@ -149,9 +149,9 @@ public class Class272 extends Class247 {
 				Class99.method2639(var8);
 				Class53.field339 = false;
 				Class53.field343.method9636(Class53.field341, 0);
-				Class53.field2205.method9636(382 + Class53.field341, 0);
+				Class53.field2205.method9636(Class53.field341 + 382, 0);
 				Class99.field4534.method10122(Class53.field341 + 382 - Class99.field4534.field5495 / 2, 18);
-				if (var10 != var9) {
+				if (var9 != var10) {
 					Client.method887();
 				}
 

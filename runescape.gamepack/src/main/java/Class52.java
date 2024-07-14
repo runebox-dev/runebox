@@ -60,7 +60,7 @@ public class Class52 extends Class37 {
 	@ObfInfo(name = "bv", desc = "()I")
 	public int method526() {
 		int var1 = this.field328 * 3 >> 6;
-		var1 = (var1 ^ var1 >> 31) + (var1 >>> 31);
+		var1 = (var1 >>> 31) + (var1 ^ var1 >> 31);
 		if (this.field338 == 0) {
 			var1 -= this.field330 * var1 / (((Class38)super.field197).field198.length << 8);
 		} else if (this.field338 >= 0) {
@@ -126,7 +126,7 @@ public class Class52 extends Class37 {
 
 	@ObfInfo(name = "ay", desc = "(Z)V")
 	public synchronized void method1012(boolean var1) {
-		this.field325 = (this.field325 ^ this.field325 >> 31) + (this.field325 >>> 31);
+		this.field325 = (this.field325 >>> 31) + (this.field325 ^ this.field325 >> 31);
 		if (var1) {
 			this.field325 = -this.field325;
 		}
@@ -360,7 +360,7 @@ public class Class52 extends Class37 {
 							return;
 						}
 
-						this.field330 = var5 + (this.field330 - var5) % var8;
+						this.field330 = (this.field330 - var5) % var8 + var5;
 					}
 				}
 			} else {
@@ -417,7 +417,7 @@ public class Class52 extends Class37 {
 									break;
 								}
 
-								this.field330 += var10 * var8;
+								this.field330 += var8 * var10;
 								this.field338 -= var10;
 							}
 						} else {
@@ -434,7 +434,7 @@ public class Class52 extends Class37 {
 									break;
 								}
 
-								this.field330 -= var10 * var8;
+								this.field330 -= var8 * var10;
 								this.field338 -= var10;
 							}
 						}
@@ -527,7 +527,7 @@ public class Class52 extends Class37 {
 						return;
 					}
 
-					this.field330 = var3 + (this.field330 - var3) % var6;
+					this.field330 = (this.field330 - var3) % var6 + var3;
 				}
 
 			} else {
@@ -596,7 +596,7 @@ public class Class52 extends Class37 {
 
 						var7 = (var4 - 1 - this.field330) / var6;
 						if (var7 < this.field338) {
-							this.field330 += var7 * var6;
+							this.field330 += var6 * var7;
 							this.field338 -= var7;
 							return;
 						}
@@ -610,7 +610,7 @@ public class Class52 extends Class37 {
 
 						var7 = (this.field330 - var3) / var6;
 						if (var7 < this.field338) {
-							this.field330 -= var7 * var6;
+							this.field330 -= var6 * var7;
 							this.field338 -= var7;
 							return;
 						}
@@ -830,7 +830,7 @@ public class Class52 extends Class37 {
 		var2 >>= 8;
 		var7 >>= 8;
 		var4 <<= 2;
-		if ((var5 = var7 + var3 - var2) > var6) {
+		if ((var5 = var3 + var7 - var2) > var6) {
 			var5 = var6;
 		}
 
@@ -859,7 +859,7 @@ public class Class52 extends Class37 {
 		var9 >>= 8;
 		var5 <<= 2;
 		var6 <<= 2;
-		if ((var7 = var9 + var4 - var3) > var8) {
+		if ((var7 = var4 + var9 - var3) > var8) {
 			var7 = var8;
 		}
 
@@ -868,32 +868,32 @@ public class Class52 extends Class37 {
 
 		int var10001;
 		byte var11;
-		for (var7 -= 6; var4 < var7; var2[var10001] += var6 * var11) {
+		for (var7 -= 6; var4 < var7; var2[var10001] += var11 * var6) {
 			var11 = var1[var3++];
 			var10001 = var4++;
-			var2[var10001] += var5 * var11;
+			var2[var10001] += var11 * var5;
 			var10001 = var4++;
-			var2[var10001] += var6 * var11;
+			var2[var10001] += var11 * var6;
 			var11 = var1[var3++];
 			var10001 = var4++;
-			var2[var10001] += var5 * var11;
+			var2[var10001] += var11 * var5;
 			var10001 = var4++;
-			var2[var10001] += var6 * var11;
+			var2[var10001] += var11 * var6;
 			var11 = var1[var3++];
 			var10001 = var4++;
-			var2[var10001] += var5 * var11;
+			var2[var10001] += var11 * var5;
 			var10001 = var4++;
-			var2[var10001] += var6 * var11;
+			var2[var10001] += var11 * var6;
 			var11 = var1[var3++];
 			var10001 = var4++;
-			var2[var10001] += var5 * var11;
+			var2[var10001] += var11 * var5;
 			var10001 = var4++;
 		}
 
-		for (var7 += 6; var4 < var7; var2[var10001] += var6 * var11) {
+		for (var7 += 6; var4 < var7; var2[var10001] += var11 * var6) {
 			var11 = var1[var3++];
 			var10001 = var4++;
-			var2[var10001] += var5 * var11;
+			var2[var10001] += var11 * var5;
 			var10001 = var4++;
 		}
 
@@ -906,7 +906,7 @@ public class Class52 extends Class37 {
 		var2 >>= 8;
 		var7 >>= 8;
 		var4 <<= 2;
-		if ((var5 = var3 + var2 - (var7 - 1)) > var6) {
+		if ((var5 = var2 + var3 - (var7 - 1)) > var6) {
 			var5 = var6;
 		}
 
@@ -935,7 +935,7 @@ public class Class52 extends Class37 {
 		var9 >>= 8;
 		var5 <<= 2;
 		var6 <<= 2;
-		if ((var7 = var4 + var3 - (var9 - 1)) > var8) {
+		if ((var7 = var3 + var4 - (var9 - 1)) > var8) {
 			var7 = var8;
 		}
 
@@ -944,32 +944,32 @@ public class Class52 extends Class37 {
 
 		int var10001;
 		byte var11;
-		for (var7 -= 6; var4 < var7; var2[var10001] += var6 * var11) {
+		for (var7 -= 6; var4 < var7; var2[var10001] += var11 * var6) {
 			var11 = var1[var3--];
 			var10001 = var4++;
-			var2[var10001] += var5 * var11;
+			var2[var10001] += var11 * var5;
 			var10001 = var4++;
-			var2[var10001] += var6 * var11;
+			var2[var10001] += var11 * var6;
 			var11 = var1[var3--];
 			var10001 = var4++;
-			var2[var10001] += var5 * var11;
+			var2[var10001] += var11 * var5;
 			var10001 = var4++;
-			var2[var10001] += var6 * var11;
+			var2[var10001] += var11 * var6;
 			var11 = var1[var3--];
 			var10001 = var4++;
-			var2[var10001] += var5 * var11;
+			var2[var10001] += var11 * var5;
 			var10001 = var4++;
-			var2[var10001] += var6 * var11;
+			var2[var10001] += var11 * var6;
 			var11 = var1[var3--];
 			var10001 = var4++;
-			var2[var10001] += var5 * var11;
+			var2[var10001] += var11 * var5;
 			var10001 = var4++;
 		}
 
-		for (var7 += 6; var4 < var7; var2[var10001] += var6 * var11) {
+		for (var7 += 6; var4 < var7; var2[var10001] += var11 * var6) {
 			var11 = var1[var3--];
 			var10001 = var4++;
-			var2[var10001] += var5 * var11;
+			var2[var10001] += var11 * var5;
 			var10001 = var4++;
 		}
 
@@ -979,7 +979,7 @@ public class Class52 extends Class37 {
 
 	@ObfInfo(name = "bz", desc = "(II[B[IIIIIIILbz;II)I")
 	public static int method967(int var0, int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, Class52 var10, int var11, int var12) {
-		if (var11 == 0 || (var7 = var5 + (var9 - var4 + var11 - 257) / var11) > var8) {
+		if (var11 == 0 || (var7 = (var9 - var4 + var11 - 257) / var11 + var5) > var8) {
 			var7 = var8;
 		}
 
@@ -989,18 +989,18 @@ public class Class52 extends Class37 {
 			var1 = var4 >> 8;
 			var13 = var2[var1];
 			var10001 = var5++;
-			var3[var10001] += ((var13 << 8) + (var2[var1 + 1] - var13) * (var4 & 255)) * var6 >> 6;
+			var3[var10001] += ((var13 << 8) + (var4 & 255) * (var2[var1 + 1] - var13)) * var6 >> 6;
 			var4 += var11;
 		}
 
-		if (var11 == 0 || (var7 = var5 + (var9 - var4 + var11 - 1) / var11) > var8) {
+		if (var11 == 0 || (var7 = (var9 - var4 + var11 - 1) / var11 + var5) > var8) {
 			var7 = var8;
 		}
 
 		while (var5 < var7) {
 			var13 = var2[var4 >> 8];
 			var10001 = var5++;
-			var3[var10001] += ((var13 << 8) + (var12 - var13) * (var4 & 255)) * var6 >> 6;
+			var3[var10001] += ((var13 << 8) + (var4 & 255) * (var12 - var13)) * var6 >> 6;
 			var4 += var11;
 		}
 
@@ -1010,7 +1010,7 @@ public class Class52 extends Class37 {
 
 	@ObfInfo(name = "bk", desc = "(II[B[IIIIIIIILbz;II)I")
 	public static int method1003(int var0, int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, Class52 var11, int var12, int var13) {
-		if (var12 == 0 || (var8 = var5 + (var10 - var4 + var12 - 257) / var12) > var9) {
+		if (var12 == 0 || (var8 = (var10 - var4 + var12 - 257) / var12 + var5) > var9) {
 			var8 = var9;
 		}
 
@@ -1021,11 +1021,11 @@ public class Class52 extends Class37 {
 		for (var8 <<= 1; var5 < var8; var4 += var12) {
 			var1 = var4 >> 8;
 			var14 = var2[var1];
-			var0 = (var14 << 8) + (var2[var1 + 1] - var14) * (var4 & 255);
+			var0 = (var14 << 8) + (var4 & 255) * (var2[var1 + 1] - var14);
 			var10001 = var5++;
-			var3[var10001] += var6 * var0 >> 6;
+			var3[var10001] += var0 * var6 >> 6;
 			var10001 = var5++;
-			var3[var10001] += var7 * var0 >> 6;
+			var3[var10001] += var0 * var7 >> 6;
 		}
 
 		if (var12 == 0 || (var8 = (var5 >> 1) + (var10 - var4 + var12 - 1) / var12) > var9) {
@@ -1034,11 +1034,11 @@ public class Class52 extends Class37 {
 
 		for (var8 <<= 1; var5 < var8; var4 += var12) {
 			var14 = var2[var4 >> 8];
-			var0 = (var14 << 8) + (var13 - var14) * (var4 & 255);
+			var0 = (var14 << 8) + (var4 & 255) * (var13 - var14);
 			var10001 = var5++;
-			var3[var10001] += var6 * var0 >> 6;
+			var3[var10001] += var0 * var6 >> 6;
 			var10001 = var5++;
-			var3[var10001] += var7 * var0 >> 6;
+			var3[var10001] += var0 * var7 >> 6;
 		}
 
 		var11.field330 = var4;
@@ -1047,7 +1047,7 @@ public class Class52 extends Class37 {
 
 	@ObfInfo(name = "br", desc = "(II[B[IIIIIIILbz;II)I")
 	public static int method969(int var0, int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, Class52 var10, int var11, int var12) {
-		if (var11 == 0 || (var7 = var5 + (var9 + 256 - var4 + var11) / var11) > var8) {
+		if (var11 == 0 || (var7 = (var9 + 256 - var4 + var11) / var11 + var5) > var8) {
 			var7 = var8;
 		}
 
@@ -1056,17 +1056,17 @@ public class Class52 extends Class37 {
 			var1 = var4 >> 8;
 			byte var13 = var2[var1 - 1];
 			var10001 = var5++;
-			var3[var10001] += ((var13 << 8) + (var2[var1] - var13) * (var4 & 255)) * var6 >> 6;
+			var3[var10001] += ((var13 << 8) + (var4 & 255) * (var2[var1] - var13)) * var6 >> 6;
 			var4 += var11;
 		}
 
-		if (var11 == 0 || (var7 = var5 + (var9 - var4 + var11) / var11) > var8) {
+		if (var11 == 0 || (var7 = (var9 - var4 + var11) / var11 + var5) > var8) {
 			var7 = var8;
 		}
 
 		while (var5 < var7) {
 			var10001 = var5++;
-			var3[var10001] += ((var12 << 8) + (var2[var4 >> 8] - var12) * (var4 & 255)) * var6 >> 6;
+			var3[var10001] += ((var12 << 8) + (var4 & 255) * (var2[var4 >> 8] - var12)) * var6 >> 6;
 			var4 += var11;
 		}
 
@@ -1076,7 +1076,7 @@ public class Class52 extends Class37 {
 
 	@ObfInfo(name = "bf", desc = "(II[B[IIIIIIIILbz;II)I")
 	public static int method984(int var0, int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, Class52 var11, int var12, int var13) {
-		if (var12 == 0 || (var8 = var5 + (var10 + 256 - var4 + var12) / var12) > var9) {
+		if (var12 == 0 || (var8 = (var10 + 256 - var4 + var12) / var12 + var5) > var9) {
 			var8 = var9;
 		}
 
@@ -1086,11 +1086,11 @@ public class Class52 extends Class37 {
 		for (var8 <<= 1; var5 < var8; var4 += var12) {
 			var1 = var4 >> 8;
 			byte var14 = var2[var1 - 1];
-			var0 = (var14 << 8) + (var2[var1] - var14) * (var4 & 255);
+			var0 = (var14 << 8) + (var4 & 255) * (var2[var1] - var14);
 			var10001 = var5++;
-			var3[var10001] += var6 * var0 >> 6;
+			var3[var10001] += var0 * var6 >> 6;
 			var10001 = var5++;
-			var3[var10001] += var7 * var0 >> 6;
+			var3[var10001] += var0 * var7 >> 6;
 		}
 
 		if (var12 == 0 || (var8 = (var5 >> 1) + (var10 - var4 + var12) / var12) > var9) {
@@ -1098,11 +1098,11 @@ public class Class52 extends Class37 {
 		}
 
 		for (var8 <<= 1; var5 < var8; var4 += var12) {
-			var0 = (var13 << 8) + (var2[var4 >> 8] - var13) * (var4 & 255);
+			var0 = (var13 << 8) + (var4 & 255) * (var2[var4 >> 8] - var13);
 			var10001 = var5++;
-			var3[var10001] += var6 * var0 >> 6;
+			var3[var10001] += var0 * var6 >> 6;
 			var10001 = var5++;
-			var3[var10001] += var7 * var0 >> 6;
+			var3[var10001] += var0 * var7 >> 6;
 		}
 
 		var11.field330 = var4;
@@ -1115,12 +1115,12 @@ public class Class52 extends Class37 {
 		var8 >>= 8;
 		var4 <<= 2;
 		var5 <<= 2;
-		if ((var6 = var8 + var3 - var2) > var7) {
+		if ((var6 = var3 + var8 - var2) > var7) {
 			var6 = var7;
 		}
 
-		var9.field329 += var9.field333 * (var6 - var3);
-		var9.field334 += var9.field337 * (var6 - var3);
+		var9.field329 += (var6 - var3) * var9.field333;
+		var9.field334 += (var6 - var3) * var9.field337;
 
 		int var10001;
 		for (var6 -= 3; var3 < var6; var4 += var5) {
@@ -1155,11 +1155,11 @@ public class Class52 extends Class37 {
 		var6 <<= 2;
 		var7 <<= 2;
 		var8 <<= 2;
-		if ((var9 = var11 + var4 - var3) > var10) {
+		if ((var9 = var4 + var11 - var3) > var10) {
 			var9 = var10;
 		}
 
-		var12.field328 += var12.field336 * (var9 - var4);
+		var12.field328 += (var9 - var4) * var12.field336;
 		var4 <<= 1;
 		var9 <<= 1;
 
@@ -1168,40 +1168,40 @@ public class Class52 extends Class37 {
 		for (var9 -= 6; var4 < var9; var6 += var8) {
 			var13 = var1[var3++];
 			var10001 = var4++;
-			var2[var10001] += var5 * var13;
+			var2[var10001] += var13 * var5;
 			var5 += var7;
 			var10001 = var4++;
-			var2[var10001] += var6 * var13;
+			var2[var10001] += var13 * var6;
 			var6 += var8;
 			var13 = var1[var3++];
 			var10001 = var4++;
-			var2[var10001] += var5 * var13;
+			var2[var10001] += var13 * var5;
 			var5 += var7;
 			var10001 = var4++;
-			var2[var10001] += var6 * var13;
+			var2[var10001] += var13 * var6;
 			var6 += var8;
 			var13 = var1[var3++];
 			var10001 = var4++;
-			var2[var10001] += var5 * var13;
+			var2[var10001] += var13 * var5;
 			var5 += var7;
 			var10001 = var4++;
-			var2[var10001] += var6 * var13;
+			var2[var10001] += var13 * var6;
 			var6 += var8;
 			var13 = var1[var3++];
 			var10001 = var4++;
-			var2[var10001] += var5 * var13;
+			var2[var10001] += var13 * var5;
 			var5 += var7;
 			var10001 = var4++;
-			var2[var10001] += var6 * var13;
+			var2[var10001] += var13 * var6;
 		}
 
 		for (var9 += 6; var4 < var9; var6 += var8) {
 			var13 = var1[var3++];
 			var10001 = var4++;
-			var2[var10001] += var5 * var13;
+			var2[var10001] += var13 * var5;
 			var5 += var7;
 			var10001 = var4++;
-			var2[var10001] += var6 * var13;
+			var2[var10001] += var13 * var6;
 		}
 
 		var12.field329 = var5 >> 2;
@@ -1216,12 +1216,12 @@ public class Class52 extends Class37 {
 		var8 >>= 8;
 		var4 <<= 2;
 		var5 <<= 2;
-		if ((var6 = var3 + var2 - (var8 - 1)) > var7) {
+		if ((var6 = var2 + var3 - (var8 - 1)) > var7) {
 			var6 = var7;
 		}
 
-		var9.field329 += var9.field333 * (var6 - var3);
-		var9.field334 += var9.field337 * (var6 - var3);
+		var9.field329 += (var6 - var3) * var9.field333;
+		var9.field334 += (var6 - var3) * var9.field337;
 
 		int var10001;
 		for (var6 -= 3; var3 < var6; var4 += var5) {
@@ -1256,11 +1256,11 @@ public class Class52 extends Class37 {
 		var6 <<= 2;
 		var7 <<= 2;
 		var8 <<= 2;
-		if ((var9 = var4 + var3 - (var11 - 1)) > var10) {
+		if ((var9 = var3 + var4 - (var11 - 1)) > var10) {
 			var9 = var10;
 		}
 
-		var12.field328 += var12.field336 * (var9 - var4);
+		var12.field328 += (var9 - var4) * var12.field336;
 		var4 <<= 1;
 		var9 <<= 1;
 
@@ -1269,40 +1269,40 @@ public class Class52 extends Class37 {
 		for (var9 -= 6; var4 < var9; var6 += var8) {
 			var13 = var1[var3--];
 			var10001 = var4++;
-			var2[var10001] += var5 * var13;
+			var2[var10001] += var13 * var5;
 			var5 += var7;
 			var10001 = var4++;
-			var2[var10001] += var6 * var13;
+			var2[var10001] += var13 * var6;
 			var6 += var8;
 			var13 = var1[var3--];
 			var10001 = var4++;
-			var2[var10001] += var5 * var13;
+			var2[var10001] += var13 * var5;
 			var5 += var7;
 			var10001 = var4++;
-			var2[var10001] += var6 * var13;
+			var2[var10001] += var13 * var6;
 			var6 += var8;
 			var13 = var1[var3--];
 			var10001 = var4++;
-			var2[var10001] += var5 * var13;
+			var2[var10001] += var13 * var5;
 			var5 += var7;
 			var10001 = var4++;
-			var2[var10001] += var6 * var13;
+			var2[var10001] += var13 * var6;
 			var6 += var8;
 			var13 = var1[var3--];
 			var10001 = var4++;
-			var2[var10001] += var5 * var13;
+			var2[var10001] += var13 * var5;
 			var5 += var7;
 			var10001 = var4++;
-			var2[var10001] += var6 * var13;
+			var2[var10001] += var13 * var6;
 		}
 
 		for (var9 += 6; var4 < var9; var6 += var8) {
 			var13 = var1[var3--];
 			var10001 = var4++;
-			var2[var10001] += var5 * var13;
+			var2[var10001] += var13 * var5;
 			var5 += var7;
 			var10001 = var4++;
-			var2[var10001] += var6 * var13;
+			var2[var10001] += var13 * var6;
 		}
 
 		var12.field329 = var5 >> 2;
@@ -1315,7 +1315,7 @@ public class Class52 extends Class37 {
 	public static int method975(int var0, int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, Class52 var11, int var12, int var13) {
 		var11.field329 -= var11.field333 * var5;
 		var11.field334 -= var11.field337 * var5;
-		if (var12 == 0 || (var8 = var5 + (var10 - var4 + var12 - 257) / var12) > var9) {
+		if (var12 == 0 || (var8 = (var10 - var4 + var12 - 257) / var12 + var5) > var9) {
 			var8 = var9;
 		}
 
@@ -1325,19 +1325,19 @@ public class Class52 extends Class37 {
 			var1 = var4 >> 8;
 			var14 = var2[var1];
 			var10001 = var5++;
-			var3[var10001] += ((var14 << 8) + (var2[var1 + 1] - var14) * (var4 & 255)) * var6 >> 6;
+			var3[var10001] += ((var14 << 8) + (var4 & 255) * (var2[var1 + 1] - var14)) * var6 >> 6;
 			var6 += var7;
 			var4 += var12;
 		}
 
-		if (var12 == 0 || (var8 = var5 + (var10 - var4 + var12 - 1) / var12) > var9) {
+		if (var12 == 0 || (var8 = (var10 - var4 + var12 - 1) / var12 + var5) > var9) {
 			var8 = var9;
 		}
 
 		while (var5 < var8) {
 			var14 = var2[var4 >> 8];
 			var10001 = var5++;
-			var3[var10001] += ((var14 << 8) + (var13 - var14) * (var4 & 255)) * var6 >> 6;
+			var3[var10001] += ((var14 << 8) + (var4 & 255) * (var13 - var14)) * var6 >> 6;
 			var6 += var7;
 			var4 += var12;
 		}
@@ -1352,7 +1352,7 @@ public class Class52 extends Class37 {
 	@ObfInfo(name = "cu", desc = "(II[B[IIIIIIIIIILbz;II)I")
 	public static int method976(int var0, int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12, Class52 var13, int var14, int var15) {
 		var13.field328 -= var13.field336 * var5;
-		if (var14 == 0 || (var10 = var5 + (var12 - var4 + var14 - 257) / var14) > var11) {
+		if (var14 == 0 || (var10 = (var12 - var4 + var14 - 257) / var14 + var5) > var11) {
 			var10 = var11;
 		}
 
@@ -1363,12 +1363,12 @@ public class Class52 extends Class37 {
 		for (var10 <<= 1; var5 < var10; var4 += var14) {
 			var1 = var4 >> 8;
 			var16 = var2[var1];
-			var0 = (var16 << 8) + (var2[var1 + 1] - var16) * (var4 & 255);
+			var0 = (var16 << 8) + (var4 & 255) * (var2[var1 + 1] - var16);
 			var10001 = var5++;
-			var3[var10001] += var6 * var0 >> 6;
+			var3[var10001] += var0 * var6 >> 6;
 			var6 += var8;
 			var10001 = var5++;
-			var3[var10001] += var7 * var0 >> 6;
+			var3[var10001] += var0 * var7 >> 6;
 			var7 += var9;
 		}
 
@@ -1378,12 +1378,12 @@ public class Class52 extends Class37 {
 
 		for (var10 <<= 1; var5 < var10; var4 += var14) {
 			var16 = var2[var4 >> 8];
-			var0 = (var16 << 8) + (var15 - var16) * (var4 & 255);
+			var0 = (var16 << 8) + (var4 & 255) * (var15 - var16);
 			var10001 = var5++;
-			var3[var10001] += var6 * var0 >> 6;
+			var3[var10001] += var0 * var6 >> 6;
 			var6 += var8;
 			var10001 = var5++;
-			var3[var10001] += var7 * var0 >> 6;
+			var3[var10001] += var0 * var7 >> 6;
 			var7 += var9;
 		}
 
@@ -1399,7 +1399,7 @@ public class Class52 extends Class37 {
 	public static int method977(int var0, int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, Class52 var11, int var12, int var13) {
 		var11.field329 -= var11.field333 * var5;
 		var11.field334 -= var11.field337 * var5;
-		if (var12 == 0 || (var8 = var5 + (var10 + 256 - var4 + var12) / var12) > var9) {
+		if (var12 == 0 || (var8 = (var10 + 256 - var4 + var12) / var12 + var5) > var9) {
 			var8 = var9;
 		}
 
@@ -1408,18 +1408,18 @@ public class Class52 extends Class37 {
 			var1 = var4 >> 8;
 			byte var14 = var2[var1 - 1];
 			var10001 = var5++;
-			var3[var10001] += ((var14 << 8) + (var2[var1] - var14) * (var4 & 255)) * var6 >> 6;
+			var3[var10001] += ((var14 << 8) + (var4 & 255) * (var2[var1] - var14)) * var6 >> 6;
 			var6 += var7;
 			var4 += var12;
 		}
 
-		if (var12 == 0 || (var8 = var5 + (var10 - var4 + var12) / var12) > var9) {
+		if (var12 == 0 || (var8 = (var10 - var4 + var12) / var12 + var5) > var9) {
 			var8 = var9;
 		}
 
 		while (var5 < var8) {
 			var10001 = var5++;
-			var3[var10001] += ((var13 << 8) + (var2[var4 >> 8] - var13) * (var4 & 255)) * var6 >> 6;
+			var3[var10001] += ((var13 << 8) + (var4 & 255) * (var2[var4 >> 8] - var13)) * var6 >> 6;
 			var6 += var7;
 			var4 += var12;
 		}
@@ -1434,7 +1434,7 @@ public class Class52 extends Class37 {
 	@ObfInfo(name = "ce", desc = "(II[B[IIIIIIIIIILbz;II)I")
 	public static int method978(int var0, int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12, Class52 var13, int var14, int var15) {
 		var13.field328 -= var13.field336 * var5;
-		if (var14 == 0 || (var10 = var5 + (var12 + 256 - var4 + var14) / var14) > var11) {
+		if (var14 == 0 || (var10 = (var12 + 256 - var4 + var14) / var14 + var5) > var11) {
 			var10 = var11;
 		}
 
@@ -1444,12 +1444,12 @@ public class Class52 extends Class37 {
 		for (var10 <<= 1; var5 < var10; var4 += var14) {
 			var1 = var4 >> 8;
 			byte var16 = var2[var1 - 1];
-			var0 = (var16 << 8) + (var2[var1] - var16) * (var4 & 255);
+			var0 = (var16 << 8) + (var4 & 255) * (var2[var1] - var16);
 			var10001 = var5++;
-			var3[var10001] += var6 * var0 >> 6;
+			var3[var10001] += var0 * var6 >> 6;
 			var6 += var8;
 			var10001 = var5++;
-			var3[var10001] += var7 * var0 >> 6;
+			var3[var10001] += var0 * var7 >> 6;
 			var7 += var9;
 		}
 
@@ -1458,12 +1458,12 @@ public class Class52 extends Class37 {
 		}
 
 		for (var10 <<= 1; var5 < var10; var4 += var14) {
-			var0 = (var15 << 8) + (var2[var4 >> 8] - var15) * (var4 & 255);
+			var0 = (var15 << 8) + (var4 & 255) * (var2[var4 >> 8] - var15);
 			var10001 = var5++;
-			var3[var10001] += var6 * var0 >> 6;
+			var3[var10001] += var0 * var6 >> 6;
 			var6 += var8;
 			var10001 = var5++;
-			var3[var10001] += var7 * var0 >> 6;
+			var3[var10001] += var0 * var7 >> 6;
 			var7 += var9;
 		}
 

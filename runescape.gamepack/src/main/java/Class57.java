@@ -48,9 +48,9 @@ public class Class57 {
 				var15[var8] = true;
 				this.field420[var7] = true;
 				if (var11 >= var14) {
-					this.field417[var7] = var12 > var10 ? var11 - var10 + var10 : var12 + (var10 - var11) - 1;
+					this.field417[var7] = var12 > var10 ? var11 - var10 + var10 : var10 - var11 + var12 - 1;
 				} else {
-					this.field417[var7] = 0 != (var11 & 1) ? var10 - (var11 + 1) / 2 : var11 / 2 + var10;
+					this.field417[var7] = (var11 & 1) != 0 ? var10 - (var11 + 1) / 2 : var11 / 2 + var10;
 				}
 			} else {
 				this.field420[var7] = false;

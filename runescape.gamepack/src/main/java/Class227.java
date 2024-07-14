@@ -163,7 +163,7 @@ public class Class227 {
 						if (!this.field2452.method4094(var5, this.field2454, var1)) {
 							this.field2453 = 6;
 						}
-					} else if (2 == this.field2454) {
+					} else if (this.field2454 == 2) {
 						Class220 var6 = Class220.field2395;
 						var6.method4247(var5, this.field2454, var1);
 						this.field2452 = var6.method4240(this.field2446);

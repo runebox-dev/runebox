@@ -33,7 +33,7 @@ public class Class509 implements Iterator {
 
 	public Object next() {
 		Class520 var1;
-		if (this.field5096 != this.field5098.field5074[this.field5095 - 1]) {
+		if (this.field5098.field5074[this.field5095 - 1] != this.field5096) {
 			var1 = this.field5096;
 			this.field5096 = var1.field5235;
 			this.field5097 = var1;
@@ -45,7 +45,7 @@ public class Class509 implements Iterator {
 				}
 
 				var1 = this.field5098.field5074[this.field5095++].field5235;
-			} while(var1 == this.field5098.field5074[this.field5095 - 1]);
+			} while(this.field5098.field5074[this.field5095 - 1] == var1);
 
 			this.field5096 = var1.field5235;
 			this.field5097 = var1;
@@ -54,7 +54,7 @@ public class Class509 implements Iterator {
 	}
 
 	public boolean hasNext() {
-		if (this.field5096 != this.field5098.field5074[this.field5095 - 1]) {
+		if (this.field5098.field5074[this.field5095 - 1] != this.field5096) {
 			return true;
 		} else {
 			while (this.field5095 < this.field5098.field5076) {

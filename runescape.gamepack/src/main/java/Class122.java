@@ -11,11 +11,11 @@ public class Class122 extends Class475 {
 
 	@ObfInfo(name = "aq", desc = "(Lsh;Lsh;I)I", opaque = "-1568307644")
 	public int method2988(Class476 var1, Class476 var2) {
-		if (var1.field4971 == Client.field525) {
+		if (Client.field525 == var1.field4971) {
 			if (Client.field525 != var2.field4971) {
 				return this.field1461 ? -1 : 1;
 			}
-		} else if (var2.field4971 == Client.field525) {
+		} else if (Client.field525 == var2.field4971) {
 			return this.field1461 ? 1 : -1;
 		}
 

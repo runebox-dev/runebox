@@ -112,8 +112,8 @@ public final class Class80 extends Class101 {
 				var6[var7] = 0;
 			} else {
 				var9 = var1.method9902();
-				var6[var7] = var9 + (var8 << 8);
-				if (var7 == 0 && 65535 == var6[0]) {
+				var6[var7] = (var8 << 8) + var9;
+				if (var7 == 0 && var6[0] == 65535) {
 					var5 = var1.method9997();
 					break;
 				}
@@ -135,7 +135,7 @@ public final class Class80 extends Class101 {
 				var15[var8] = 0;
 			} else {
 				var10 = var1.method9902();
-				var15[var8] = var10 + (var9 << 8);
+				var15[var8] = (var9 << 8) + var10;
 			}
 		}
 
@@ -151,28 +151,28 @@ public final class Class80 extends Class101 {
 		}
 
 		super.field1234 = var1.method9997();
-		if (65535 == super.field1234) {
+		if (super.field1234 == 65535) {
 			super.field1234 = -1;
 		}
 
 		super.field1235 = var1.method9997();
-		if (65535 == super.field1235) {
+		if (super.field1235 == 65535) {
 			super.field1235 = -1;
 		}
 
 		super.field1245 = super.field1235;
 		super.field1237 = var1.method9997();
-		if (65535 == super.field1237) {
+		if (super.field1237 == 65535) {
 			super.field1237 = -1;
 		}
 
 		super.field1238 = var1.method9997();
-		if (65535 == super.field1238) {
+		if (super.field1238 == 65535) {
 			super.field1238 = -1;
 		}
 
 		super.field1239 = var1.method9997();
-		if (65535 == super.field1239) {
+		if (super.field1239 == 65535) {
 			super.field1239 = -1;
 		}
 
@@ -182,7 +182,7 @@ public final class Class80 extends Class101 {
 		}
 
 		super.field1241 = var1.method9997();
-		if (65535 == super.field1241) {
+		if (super.field1241 == 65535) {
 			super.field1241 = -1;
 		}
 
@@ -197,7 +197,7 @@ public final class Class80 extends Class101 {
 		this.field976 = var1.method9902();
 		this.field979 = var1.method9997();
 		this.field993 = var1.method9902() == 1;
-		if (0 == Client.field527 && Client.field705 >= 2) {
+		if (Client.field527 == 0 && Client.field705 >= 2) {
 			this.field993 = false;
 		}
 
@@ -270,7 +270,7 @@ public final class Class80 extends Class101 {
 	@ObfInfo(name = "af", desc = "(I)V", opaque = "714579012")
 	public void method2293() {
 		for (int var2 = 0; var2 < 4; ++var2) {
-			if (null != Client.field771[var2] && Client.field771[var2].method3514(this.field991.method9789()) != -1 && var2 != 2) {
+			if (Client.field771[var2] != null && Client.field771[var2].method3514(this.field991.method9789()) != -1 && var2 != 2) {
 				this.field988 = Class490.field5015;
 				return;
 			}
@@ -295,7 +295,7 @@ public final class Class80 extends Class101 {
 
 	@ObfInfo(name = "bt", desc = "(I)I", opaque = "-1413696923")
 	public int method2249() {
-		return this.field1001 != null && -1 != this.field1001.field3721 ? Class184.method2222(this.field1001.field3721).field1943 : 1;
+		return this.field1001 != null && this.field1001.field3721 != -1 ? Class184.method2222(this.field1001.field3721).field1943 : 1;
 	}
 
 	@ObfInfo(name = "ah", desc = "(I)Llv;", opaque = "-1073372180")
@@ -304,7 +304,7 @@ public final class Class80 extends Class101 {
 			return null;
 		} else {
 			Class217 var2 = super.field1273 != -1 && super.field1276 == 0 ? Class344.method6474(super.field1273) : null;
-			Class217 var3 = -1 != super.field1236 && !this.field980 && (super.field1236 != super.field1234 || var2 == null) ? Class344.method6474(super.field1236) : null;
+			Class217 var3 = super.field1236 != -1 && !this.field980 && (super.field1236 != super.field1234 || var2 == null) ? Class344.method6474(super.field1236) : null;
 			Class308 var4 = this.field1001.method6434(var2, super.field1274, var3, super.field1270);
 			if (var4 == null) {
 				return null;
@@ -337,12 +337,12 @@ public final class Class80 extends Class101 {
 
 						Class308[] var7 = new Class308[]{var4, var6};
 						var4 = new Class308(var7, 2);
-						if (512 == super.field1295) {
+						if (super.field1295 == 512) {
 							var6.method5877();
 						} else if (super.field1295 == 1024) {
 							var6.method5877();
 							var6.method5877();
-						} else if (1536 == super.field1295) {
+						} else if (super.field1295 == 1536) {
 							var6.method5877();
 							var6.method5877();
 							var6.method5877();
@@ -410,8 +410,8 @@ public final class Class80 extends Class101 {
 		super.field1242[0] = var1;
 		super.field1284[0] = var2;
 		int var4 = this.method2249();
-		super.field1266 = var4 * 64 + 128 * super.field1242[0];
-		super.field1229 = 128 * super.field1284[0] + var4 * 64;
+		super.field1266 = super.field1242[0] * 128 + var4 * 64;
+		super.field1229 = super.field1284[0] * 128 + var4 * 64;
 	}
 
 	@ObfInfo(name = "bm", desc = "(IILjb;B)V", opaque = "10")
@@ -450,7 +450,7 @@ public final class Class80 extends Class101 {
 			var1 = 127 - var1;
 			return var1;
 		} else {
-			var1 = var1 * (var0 & 127) / 128;
+			var1 = (var0 & 127) * var1 / 128;
 			if (var1 < 2) {
 				var1 = 2;
 			} else if (var1 > 126) {

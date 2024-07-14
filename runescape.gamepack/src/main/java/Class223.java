@@ -16,7 +16,7 @@ public class Class223 extends Class232 {
 
 	@ObfInfo(name = "ad", desc = "(III)I", opaque = "-816382882")
 	public int method4048(int var1, int var2) {
-		long var4 = 1000000L * (long)var2;
+		long var4 = (long)var2 * 1000000L;
 		long var6 = this.field2423 - System.nanoTime();
 		if (var6 < var4) {
 			var6 = var4;
@@ -26,7 +26,7 @@ public class Class223 extends Class232 {
 		long var8 = System.nanoTime();
 
 		int var10;
-		for (var10 = 0; var10 < 10 && (var10 < 1 || this.field2423 < var8); this.field2423 += 1000000L * (long)var1) {
+		for (var10 = 0; var10 < 10 && (var10 < 1 || this.field2423 < var8); this.field2423 += (long)var1 * 1000000L) {
 			++var10;
 		}
 

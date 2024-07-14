@@ -33,14 +33,14 @@ public class Class66 {
 
 	@ObfInfo(name = "aq", desc = "(IIF)F")
 	public float method1918(int var1, int var2, float var3) {
-		float var4 = (float)this.field840[var1][0][var2] + var3 * (float)(this.field840[var1][1][var2] - this.field840[var1][0][var2]);
+		float var4 = (float)(this.field840[var1][1][var2] - this.field840[var1][0][var2]) * var3 + (float)this.field840[var1][0][var2];
 		var4 *= 0.0015258789F;
 		return 1.0F - (float)Math.pow(10.0D, (double)(-var4 / 20.0F));
 	}
 
 	@ObfInfo(name = "ag", desc = "(IIF)F")
 	public float method1924(int var1, int var2, float var3) {
-		float var4 = (float)this.field839[var1][0][var2] + var3 * (float)(this.field839[var1][1][var2] - this.field839[var1][0][var2]);
+		float var4 = (float)(this.field839[var1][1][var2] - this.field839[var1][0][var2]) * var3 + (float)this.field839[var1][0][var2];
 		var4 *= 1.2207031E-4F;
 		return method1919(var4);
 	}
@@ -49,7 +49,7 @@ public class Class66 {
 	public int method1920(int var1, float var2) {
 		float var3;
 		if (var1 == 0) {
-			var3 = (float)this.field841[0] + (float)(this.field841[1] - this.field841[0]) * var2;
+			var3 = (float)(this.field841[1] - this.field841[0]) * var2 + (float)this.field841[0];
 			var3 *= 0.0030517578F;
 			field844 = (float)Math.pow(0.1D, (double)(var3 / 20.0F));
 			field845 = (int)(field844 * 65536.0F);
@@ -59,14 +59,14 @@ public class Class66 {
 			return 0;
 		} else {
 			var3 = this.method1918(var1, 0, var2);
-			field847[var1][0] = -2.0F * var3 * (float)Math.cos((double)this.method1924(var1, 0, var2));
+			field847[var1][0] = var3 * -2.0F * (float)Math.cos((double)this.method1924(var1, 0, var2));
 			field847[var1][1] = var3 * var3;
 
 			float[] var10000;
 			int var4;
 			for (var4 = 1; var4 < this.field848[var1]; ++var4) {
 				var3 = this.method1918(var1, var4, var2);
-				float var5 = -2.0F * var3 * (float)Math.cos((double)this.method1924(var1, var4, var2));
+				float var5 = var3 * -2.0F * (float)Math.cos((double)this.method1924(var1, var4, var2));
 				float var6 = var3 * var3;
 				field847[var1][var4 * 2 + 1] = field847[var1][var4 * 2 - 1] * var6;
 				field847[var1][var4 * 2] = field847[var1][var4 * 2 - 1] * var5 + field847[var1][var4 * 2 - 2] * var6;

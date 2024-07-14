@@ -4,7 +4,7 @@ import io.runebox.ObfInfo;
 public class Class345 {
 	@ObfInfo(owner = "no", name = "aq", desc = "(IIB)Z", opaque = "2")
 	public static boolean method6550(int var0, int var1) {
-		return 0 != (var0 >> var1 + 1 & 1);
+		return (var0 >> var1 + 1 & 1) != 0;
 	}
 
 	@ObfInfo(owner = "la", name = "ad", desc = "(IB)I")
@@ -14,6 +14,6 @@ public class Class345 {
 
 	@ObfInfo(owner = "ed", name = "ag", desc = "(IB)Z", opaque = "0")
 	public static boolean method2855(int var0) {
-		return 0 != (var0 >> 20 & 1);
+		return (var0 >> 20 & 1) != 0;
 	}
 }

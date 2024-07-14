@@ -281,7 +281,7 @@ public class Class323 {
 
 		while (var3.hasNext()) {
 			Class351 var4 = (Class351)var3.next();
-			if (-1 != var4.field3764 && -1 != var4.field3753) {
+			if (var4.field3764 != -1 && var4.field3753 != -1) {
 				if (!var1) {
 					field3465.add(var4);
 				}

@@ -64,7 +64,7 @@ public class Class469 implements Runnable {
 					if (this.field4939 <= this.field4940) {
 						var1 = this.field4940 - this.field4939;
 					} else {
-						var1 = this.field4940 + (this.field4935 - this.field4939);
+						var1 = this.field4935 - this.field4939 + this.field4940;
 					}
 
 					if (var1 > 0) {
@@ -106,7 +106,7 @@ public class Class469 implements Runnable {
 			}
 
 			synchronized(this) {
-				this.field4939 = (var1 + this.field4939) % this.field4935;
+				this.field4939 = (this.field4939 + var1) % this.field4935;
 			}
 		} while(!this.method8536());
 
@@ -114,7 +114,7 @@ public class Class469 implements Runnable {
 
 	@ObfInfo(name = "ad", desc = "([BIII)V", opaque = "-1922659046")
 	public void method8537(byte[] var1, int var2, int var3) throws IOException {
-		if (var3 >= 0 && var2 >= 0 && var3 + var2 <= var1.length) {
+		if (var3 >= 0 && var2 >= 0 && var2 + var3 <= var1.length) {
 			synchronized(this) {
 				if (this.field4937 != null) {
 					throw new IOException(this.field4937.toString());
@@ -129,15 +129,15 @@ public class Class469 implements Runnable {
 					if (var6 < var3) {
 						throw new IOException("");
 					} else {
-						if (var3 + this.field4940 <= this.field4935) {
+						if (this.field4940 + var3 <= this.field4935) {
 							System.arraycopy(var1, var2, this.field4938, this.field4940, var3);
 						} else {
 							int var7 = this.field4935 - this.field4940;
 							System.arraycopy(var1, var2, this.field4938, this.field4940, var7);
-							System.arraycopy(var1, var7 + var2, this.field4938, 0, var3 - var7);
+							System.arraycopy(var1, var2 + var7, this.field4938, 0, var3 - var7);
 						}
 
-						this.field4940 = (var3 + this.field4940) % this.field4935;
+						this.field4940 = (this.field4940 + var3) % this.field4935;
 						this.notifyAll();
 					}
 				}

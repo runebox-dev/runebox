@@ -13,7 +13,7 @@ public class Class276 {
 
 	@ObfInfo(name = "aq", desc = "(IIIIIIIII)V", opaque = "1412617955")
 	public void method5207(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
-		if (var7 != 0 && 0 != this.field2823 && this.field2820 != null) {
+		if (var7 != 0 && this.field2823 != 0 && this.field2820 != null) {
 			var8 = this.method5246(var8, var7);
 			var7 = this.method5209(var7);
 			Class569.method10141(var1, var2, var5, var6, var3, var4, this.field2820[var7 - 1][var8], this.field2823, true);

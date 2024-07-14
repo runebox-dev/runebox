@@ -28,7 +28,7 @@ public class Class431 {
 
 	@ObfInfo(name = "aq", desc = "(Lqo;I)Z", opaque = "-1487373129")
 	public boolean method8027(Class431 var1) {
-		return this.field4746 == var1.field4746 && this.field4743 == var1.field4743 && var1.field4744 == this.field4744;
+		return this.field4746 == var1.field4746 && this.field4743 == var1.field4743 && this.field4744 == var1.field4744;
 	}
 
 	@ObfInfo(name = "ad", desc = "(I)F")

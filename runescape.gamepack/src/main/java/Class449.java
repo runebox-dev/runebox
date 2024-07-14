@@ -6,8 +6,8 @@ public class Class449 {
 	public static void method8306(Class362[] var0, int var1) {
 		for (int var3 = 0; var3 < var0.length; ++var3) {
 			Class362 var4 = var0[var3];
-			if (var4 != null && var1 == var4.field3832 && (!var4.field3896 || !Client.method3365(var4))) {
-				if (0 == var4.field3815) {
+			if (var4 != null && var4.field3832 == var1 && (!var4.field3896 || !Client.method3365(var4))) {
+				if (var4.field3815 == 0) {
 					if (!var4.field3896 && Client.method3365(var4) && Client.field1905 != var4) {
 						continue;
 					}
@@ -23,9 +23,9 @@ public class Class449 {
 					}
 				}
 
-				if (6 == var4.field3815) {
+				if (var4.field3815 == 6) {
 					int var6;
-					if (-1 != var4.field3861 || var4.field3918 != -1) {
+					if (var4.field3861 != -1 || var4.field3918 != -1) {
 						boolean var9 = Client.method9305(var4);
 						if (var9) {
 							var6 = var4.field3918;
@@ -64,10 +64,10 @@ public class Class449 {
 					if (var4.field3925 != 0 && !var4.field3896) {
 						int var10 = var4.field3925 >> 16;
 						var6 = var4.field3925 << 16 >> 16;
-						var10 *= Client.field831;
-						var6 *= Client.field831;
-						var4.field3865 = var10 + var4.field3865 & 2047;
-						var4.field3866 = var6 + var4.field3866 & 2047;
+						var10 = Client.field831 * var10;
+						var6 = Client.field831 * var6;
+						var4.field3865 = var4.field3865 + var10 & 2047;
+						var4.field3866 = var4.field3866 + var6 & 2047;
 						Class490.method8827(var4);
 					}
 				}

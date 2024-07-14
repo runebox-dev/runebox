@@ -14,7 +14,7 @@ public class Class561 implements Comparable {
 		if (var1 == null) {
 			var3 = null;
 		} else {
-			label155: {
+			label154: {
 				int var5 = 0;
 
 				int var6;
@@ -67,7 +67,7 @@ public class Class561 implements Comparable {
 								char[] var12 = Class543.field5326;
 								int var13 = 0;
 
-								label108:
+								label107:
 								while (true) {
 									char var14;
 									if (var13 >= var12.length) {
@@ -75,9 +75,9 @@ public class Class561 implements Comparable {
 
 										for (var13 = 0; var13 < var12.length; ++var13) {
 											var14 = var12[var13];
-											if (var14 == var10) {
+											if (var10 == var14) {
 												var11 = true;
-												break label108;
+												break label107;
 											}
 										}
 
@@ -86,7 +86,7 @@ public class Class561 implements Comparable {
 									}
 
 									var14 = var12[var13];
-									if (var14 == var10) {
+									if (var10 == var14) {
 										var11 = true;
 										break;
 									}
@@ -191,7 +191,7 @@ public class Class561 implements Comparable {
 						} else {
 							var3 = var16.toString();
 						}
-						break label155;
+						break label154;
 					}
 				}
 

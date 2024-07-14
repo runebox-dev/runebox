@@ -15,30 +15,30 @@ public class Class290 extends Class285 {
 		int var17 = var11 - var10;
 		int var18 = var12 - var10;
 		int var19;
-		if (var3 != var2) {
+		if (var2 != var3) {
 			var19 = (var6 - var5 << 14) / (var3 - var2);
 		} else {
 			var19 = 0;
 		}
 
 		int var20;
-		if (var2 != var1) {
+		if (var1 != var2) {
 			var20 = (var13 << 14) / var14;
 		} else {
 			var20 = 0;
 		}
 
 		int var21;
-		if (var3 != var1) {
+		if (var1 != var3) {
 			var21 = (var15 << 14) / var16;
 		} else {
 			var21 = 0;
 		}
 
-		int var22 = var16 * var13 - var15 * var14;
+		int var22 = var13 * var16 - var14 * var15;
 		if (var22 != 0) {
-			int var23 = (var17 * var16 - var18 * var14 << 8) / var22;
-			int var24 = (var18 * var13 - var17 * var15 << 8) / var22;
+			int var23 = (var16 * var17 - var14 * var18 << 8) / var22;
+			int var24 = (var13 * var18 - var15 * var17 << 8) / var22;
 			int[] var25 = super.field3000.field3091;
 			int var26 = super.field3000.field3086;
 			if (var1 <= var2 && var1 <= var3) {
@@ -51,23 +51,23 @@ public class Class290 extends Class285 {
 						var3 = var26;
 					}
 
-					var10 = (var10 << 8) - var23 * var4 + var23;
+					var10 = (var10 << 8) - var4 * var23 + var23;
 					if (var2 < var3) {
 						var6 = var4 <<= 14;
 						if (var1 < 0) {
-							var6 -= var21 * var1;
-							var4 -= var20 * var1;
-							var10 -= var24 * var1;
+							var6 -= var1 * var21;
+							var4 -= var1 * var20;
+							var10 -= var1 * var24;
 							var1 = 0;
 						}
 
 						var5 <<= 14;
 						if (var2 < 0) {
-							var5 -= var19 * var2;
+							var5 -= var2 * var19;
 							var2 = 0;
 						}
 
-						if (var2 != var1 && var21 < var20 || var2 == var1 && var21 > var19) {
+						if (var1 != var2 && var21 < var20 || var1 == var2 && var21 > var19) {
 							var3 -= var2;
 							var2 -= var1;
 							var1 = var25[var1];
@@ -127,19 +127,19 @@ public class Class290 extends Class285 {
 					} else {
 						var5 = var4 <<= 14;
 						if (var1 < 0) {
-							var5 -= var21 * var1;
-							var4 -= var20 * var1;
-							var10 -= var24 * var1;
+							var5 -= var1 * var21;
+							var4 -= var1 * var20;
+							var10 -= var1 * var24;
 							var1 = 0;
 						}
 
 						var6 <<= 14;
 						if (var3 < 0) {
-							var6 -= var19 * var3;
+							var6 -= var3 * var19;
 							var3 = 0;
 						}
 
-						if ((var3 == var1 || var21 >= var20) && (var3 != var1 || var19 <= var20)) {
+						if ((var1 == var3 || var21 >= var20) && (var1 != var3 || var19 <= var20)) {
 							var2 -= var3;
 							var3 -= var1;
 							var1 = var25[var1];
@@ -208,23 +208,23 @@ public class Class290 extends Class285 {
 						var1 = var26;
 					}
 
-					var11 = (var11 << 8) - var23 * var5 + var23;
+					var11 = (var11 << 8) - var5 * var23 + var23;
 					if (var3 < var1) {
 						var4 = var5 <<= 14;
 						if (var2 < 0) {
-							var4 -= var20 * var2;
-							var5 -= var19 * var2;
-							var11 -= var24 * var2;
+							var4 -= var2 * var20;
+							var5 -= var2 * var19;
+							var11 -= var2 * var24;
 							var2 = 0;
 						}
 
 						var6 <<= 14;
 						if (var3 < 0) {
-							var6 -= var21 * var3;
+							var6 -= var3 * var21;
 							var3 = 0;
 						}
 
-						if (var3 != var2 && var20 < var19 || var3 == var2 && var20 > var21) {
+						if (var2 != var3 && var20 < var19 || var2 == var3 && var20 > var21) {
 							var1 -= var3;
 							var3 -= var2;
 							var2 = var25[var2];
@@ -284,15 +284,15 @@ public class Class290 extends Class285 {
 					} else {
 						var6 = var5 <<= 14;
 						if (var2 < 0) {
-							var6 -= var20 * var2;
-							var5 -= var19 * var2;
-							var11 -= var24 * var2;
+							var6 -= var2 * var20;
+							var5 -= var2 * var19;
+							var11 -= var2 * var24;
 							var2 = 0;
 						}
 
 						var4 <<= 14;
 						if (var1 < 0) {
-							var4 -= var21 * var1;
+							var4 -= var1 * var21;
 							var1 = 0;
 						}
 
@@ -364,19 +364,19 @@ public class Class290 extends Class285 {
 					var2 = var26;
 				}
 
-				var12 = (var12 << 8) - var23 * var6 + var23;
+				var12 = (var12 << 8) - var6 * var23 + var23;
 				if (var1 < var2) {
 					var5 = var6 <<= 14;
 					if (var3 < 0) {
-						var5 -= var19 * var3;
-						var6 -= var21 * var3;
-						var12 -= var24 * var3;
+						var5 -= var3 * var19;
+						var6 -= var3 * var21;
+						var12 -= var3 * var24;
 						var3 = 0;
 					}
 
 					var4 <<= 14;
 					if (var1 < 0) {
-						var4 -= var20 * var1;
+						var4 -= var1 * var20;
 						var1 = 0;
 					}
 
@@ -440,15 +440,15 @@ public class Class290 extends Class285 {
 				} else {
 					var4 = var6 <<= 14;
 					if (var3 < 0) {
-						var4 -= var19 * var3;
-						var6 -= var21 * var3;
-						var12 -= var24 * var3;
+						var4 -= var3 * var19;
+						var6 -= var3 * var21;
+						var12 -= var3 * var24;
 						var3 = 0;
 					}
 
 					var5 <<= 14;
 					if (var2 < 0) {
-						var5 -= var20 * var2;
+						var5 -= var2 * var20;
 						var2 = 0;
 					}
 
@@ -528,7 +528,7 @@ public class Class290 extends Class285 {
 
 		if (var5 < var6) {
 			var2 += var5;
-			var7 += var8 * var5;
+			var7 += var5 * var8;
 			int var9;
 			int var10;
 			int var11;
@@ -570,13 +570,13 @@ public class Class290 extends Class285 {
 							var7 += var8;
 							var3 = ((var3 & 16711935) * var10 >> 8 & 16711935) + ((var3 & 65280) * var10 >> 8 & 65280);
 							var12 = var1[var2];
-							var1[var2++] = var3 + ((var12 & 16711935) * var9 >> 8 & 16711935) + ((var12 & 65280) * var9 >> 8 & 65280);
+							var1[var2++] = ((var12 & 65280) * var9 >> 8 & 65280) + ((var12 & 16711935) * var9 >> 8 & 16711935) + var3;
 							var12 = var1[var2];
-							var1[var2++] = var3 + ((var12 & 16711935) * var9 >> 8 & 16711935) + ((var12 & 65280) * var9 >> 8 & 65280);
+							var1[var2++] = ((var12 & 65280) * var9 >> 8 & 65280) + ((var12 & 16711935) * var9 >> 8 & 16711935) + var3;
 							var12 = var1[var2];
-							var1[var2++] = var3 + ((var12 & 16711935) * var9 >> 8 & 16711935) + ((var12 & 65280) * var9 >> 8 & 65280);
+							var1[var2++] = ((var12 & 65280) * var9 >> 8 & 65280) + ((var12 & 16711935) * var9 >> 8 & 16711935) + var3;
 							var12 = var1[var2];
-							var1[var2++] = var3 + ((var12 & 16711935) * var9 >> 8 & 16711935) + ((var12 & 65280) * var9 >> 8 & 65280);
+							var1[var2++] = ((var12 & 65280) * var9 >> 8 & 65280) + ((var12 & 16711935) * var9 >> 8 & 16711935) + var3;
 							--var4;
 						} while(var4 > 0);
 					}
@@ -589,7 +589,7 @@ public class Class290 extends Class285 {
 
 						do {
 							var12 = var1[var2];
-							var1[var2++] = var3 + ((var12 & 16711935) * var9 >> 8 & 16711935) + ((var12 & 65280) * var9 >> 8 & 65280);
+							var1[var2++] = ((var12 & 65280) * var9 >> 8 & 65280) + ((var12 & 16711935) * var9 >> 8 & 16711935) + var3;
 							--var4;
 						} while(var4 > 0);
 					}
@@ -614,7 +614,7 @@ public class Class290 extends Class285 {
 						var7 += var8;
 						var3 = ((var3 & 16711935) * var10 >> 8 & 16711935) + ((var3 & 65280) * var10 >> 8 & 65280);
 						var12 = var1[var2];
-						var1[var2++] = var3 + ((var12 & 16711935) * var9 >> 8 & 16711935) + ((var12 & 65280) * var9 >> 8 & 65280);
+						var1[var2++] = ((var12 & 65280) * var9 >> 8 & 65280) + ((var12 & 16711935) * var9 >> 8 & 16711935) + var3;
 						--var4;
 					} while(var4 > 0);
 				}
@@ -626,17 +626,17 @@ public class Class290 extends Class285 {
 	@ObfInfo(name = "aj", desc = "(IIIIIIFFFI)V")
 	public void method5646(int var1, int var2, int var3, int var4, int var5, int var6, float var7, float var8, float var9, int var10) {
 		int var11 = 0;
-		if (var2 != var1) {
+		if (var1 != var2) {
 			var11 = (var5 - var4 << 14) / (var2 - var1);
 		}
 
 		int var12 = 0;
-		if (var3 != var2) {
+		if (var2 != var3) {
 			var12 = (var6 - var5 << 14) / (var3 - var2);
 		}
 
 		int var13 = 0;
-		if (var3 != var1) {
+		if (var1 != var3) {
 			var13 = (var4 - var6 << 14) / (var1 - var3);
 		}
 
@@ -655,18 +655,18 @@ public class Class290 extends Class285 {
 				if (var2 < var3) {
 					var6 = var4 <<= 14;
 					if (var1 < 0) {
-						var6 -= var13 * var1;
-						var4 -= var11 * var1;
+						var6 -= var1 * var13;
+						var4 -= var1 * var11;
 						var1 = 0;
 					}
 
 					var5 <<= 14;
 					if (var2 < 0) {
-						var5 -= var12 * var2;
+						var5 -= var2 * var12;
 						var2 = 0;
 					}
 
-					if (var2 != var1 && var13 < var11 || var2 == var1 && var13 > var12) {
+					if (var1 != var2 && var13 < var11 || var1 == var2 && var13 > var12) {
 						var3 -= var2;
 						var2 -= var1;
 						var1 = var14[var1];
@@ -722,18 +722,18 @@ public class Class290 extends Class285 {
 				} else {
 					var5 = var4 <<= 14;
 					if (var1 < 0) {
-						var5 -= var13 * var1;
-						var4 -= var11 * var1;
+						var5 -= var1 * var13;
+						var4 -= var1 * var11;
 						var1 = 0;
 					}
 
 					var6 <<= 14;
 					if (var3 < 0) {
-						var6 -= var12 * var3;
+						var6 -= var3 * var12;
 						var3 = 0;
 					}
 
-					if (var3 != var1 && var13 < var11 || var3 == var1 && var12 > var11) {
+					if (var1 != var3 && var13 < var11 || var1 == var3 && var12 > var11) {
 						var2 -= var3;
 						var3 -= var1;
 						var1 = var14[var1];
@@ -801,18 +801,18 @@ public class Class290 extends Class285 {
 				if (var3 < var1) {
 					var4 = var5 <<= 14;
 					if (var2 < 0) {
-						var4 -= var11 * var2;
-						var5 -= var12 * var2;
+						var4 -= var2 * var11;
+						var5 -= var2 * var12;
 						var2 = 0;
 					}
 
 					var6 <<= 14;
 					if (var3 < 0) {
-						var6 -= var13 * var3;
+						var6 -= var3 * var13;
 						var3 = 0;
 					}
 
-					if (var3 != var2 && var11 < var12 || var3 == var2 && var11 > var13) {
+					if (var2 != var3 && var11 < var12 || var2 == var3 && var11 > var13) {
 						var1 -= var3;
 						var3 -= var2;
 						var2 = var14[var2];
@@ -868,14 +868,14 @@ public class Class290 extends Class285 {
 				} else {
 					var6 = var5 <<= 14;
 					if (var2 < 0) {
-						var6 -= var11 * var2;
-						var5 -= var12 * var2;
+						var6 -= var2 * var11;
+						var5 -= var2 * var12;
 						var2 = 0;
 					}
 
 					var4 <<= 14;
 					if (var1 < 0) {
-						var4 -= var13 * var1;
+						var4 -= var1 * var13;
 						var1 = 0;
 					}
 
@@ -946,14 +946,14 @@ public class Class290 extends Class285 {
 			if (var1 < var2) {
 				var5 = var6 <<= 14;
 				if (var3 < 0) {
-					var5 -= var12 * var3;
-					var6 -= var13 * var3;
+					var5 -= var3 * var12;
+					var6 -= var3 * var13;
 					var3 = 0;
 				}
 
 				var4 <<= 14;
 				if (var1 < 0) {
-					var4 -= var11 * var1;
+					var4 -= var1 * var11;
 					var1 = 0;
 				}
 
@@ -1013,14 +1013,14 @@ public class Class290 extends Class285 {
 			} else {
 				var4 = var6 <<= 14;
 				if (var3 < 0) {
-					var4 -= var12 * var3;
-					var6 -= var13 * var3;
+					var4 -= var3 * var12;
+					var6 -= var3 * var13;
 					var3 = 0;
 				}
 
 				var5 <<= 14;
 				if (var2 < 0) {
-					var5 -= var11 * var2;
+					var5 -= var2 * var11;
 					var2 = 0;
 				}
 
@@ -1136,18 +1136,18 @@ public class Class290 extends Class285 {
 								}
 
 								var9 = var1[var2];
-								var1[var2++] = var3 + ((var9 & 16711935) * var7 >> 8 & 16711935) + ((var9 & 65280) * var7 >> 8 & 65280);
+								var1[var2++] = ((var9 & 65280) * var7 >> 8 & 65280) + ((var9 & 16711935) * var7 >> 8 & 16711935) + var3;
 							}
 						}
 
 						var9 = var1[var2];
-						var1[var2++] = var3 + ((var9 & 16711935) * var7 >> 8 & 16711935) + ((var9 & 65280) * var7 >> 8 & 65280);
+						var1[var2++] = ((var9 & 65280) * var7 >> 8 & 65280) + ((var9 & 16711935) * var7 >> 8 & 16711935) + var3;
 						var9 = var1[var2];
-						var1[var2++] = var3 + ((var9 & 16711935) * var7 >> 8 & 16711935) + ((var9 & 65280) * var7 >> 8 & 65280);
+						var1[var2++] = ((var9 & 65280) * var7 >> 8 & 65280) + ((var9 & 16711935) * var7 >> 8 & 16711935) + var3;
 						var9 = var1[var2];
-						var1[var2++] = var3 + ((var9 & 16711935) * var7 >> 8 & 16711935) + ((var9 & 65280) * var7 >> 8 & 65280);
+						var1[var2++] = ((var9 & 65280) * var7 >> 8 & 65280) + ((var9 & 16711935) * var7 >> 8 & 16711935) + var3;
 						var9 = var1[var2];
-						var1[var2++] = var3 + ((var9 & 16711935) * var7 >> 8 & 16711935) + ((var9 & 65280) * var7 >> 8 & 65280);
+						var1[var2++] = ((var9 & 65280) * var7 >> 8 & 65280) + ((var9 & 16711935) * var7 >> 8 & 16711935) + var3;
 					}
 				}
 			} else {
@@ -1192,24 +1192,24 @@ public class Class290 extends Class285 {
 			int var28 = var11 - var10;
 			int var29 = var12 - var10;
 			int var30 = 0;
-			if (var2 != var1) {
+			if (var1 != var2) {
 				var30 = (var5 - var4 << 14) / (var2 - var1);
 			}
 
 			int var31 = 0;
-			if (var3 != var2) {
+			if (var2 != var3) {
 				var31 = (var6 - var5 << 14) / (var3 - var2);
 			}
 
 			int var32 = 0;
-			if (var3 != var1) {
+			if (var1 != var3) {
 				var32 = (var4 - var6 << 14) / (var1 - var3);
 			}
 
-			int var33 = var27 * var24 - var26 * var25;
+			int var33 = var24 * var27 - var25 * var26;
 			if (var33 != 0) {
-				int var34 = (var28 * var27 - var29 * var25 << 9) / var33;
-				int var35 = (var29 * var24 - var28 * var26 << 9) / var33;
+				int var34 = (var27 * var28 - var25 * var29 << 9) / var33;
+				int var35 = (var24 * var29 - var26 * var28 << 9) / var33;
 				int var36 = super.field3000.field3071;
 				var14 = var13 - var14;
 				var17 = var16 - var17;
@@ -1217,15 +1217,15 @@ public class Class290 extends Class285 {
 				var15 -= var13;
 				var18 -= var16;
 				var21 -= var19;
-				int var37 = var16 * var15 - var18 * var13 << 14;
-				int var38 = (int)(((long)(var19 * var18 - var21 * var16) << 3 << 14) / (long)var36);
-				int var39 = (int)(((long)(var21 * var13 - var19 * var15) << 14) / (long)var36);
-				int var40 = var16 * var14 - var17 * var13 << 14;
-				int var41 = (int)(((long)(var19 * var17 - var20 * var16) << 3 << 14) / (long)var36);
-				int var42 = (int)(((long)(var20 * var13 - var19 * var14) << 14) / (long)var36);
-				int var43 = var17 * var15 - var18 * var14 << 14;
-				int var44 = (int)(((long)(var20 * var18 - var21 * var17) << 3 << 14) / (long)var36);
-				int var45 = (int)(((long)(var21 * var14 - var20 * var15) << 14) / (long)var36);
+				int var37 = var15 * var16 - var13 * var18 << 14;
+				int var38 = (int)(((long)(var18 * var19 - var16 * var21) << 3 << 14) / (long)var36);
+				int var39 = (int)(((long)(var13 * var21 - var15 * var19) << 14) / (long)var36);
+				int var40 = var14 * var16 - var13 * var17 << 14;
+				int var41 = (int)(((long)(var17 * var19 - var16 * var20) << 3 << 14) / (long)var36);
+				int var42 = (int)(((long)(var13 * var20 - var14 * var19) << 14) / (long)var36);
+				int var43 = var15 * var17 - var14 * var18 << 14;
+				int var44 = (int)(((long)(var18 * var20 - var17 * var21) << 3 << 14) / (long)var36);
+				int var45 = (int)(((long)(var14 * var21 - var15 * var20) << 14) / (long)var36);
 				int[] var46 = super.field3000.field3091;
 				int var47 = super.field3000.field3086;
 				int var48;
@@ -1239,61 +1239,27 @@ public class Class290 extends Class285 {
 							var3 = var47;
 						}
 
-						var10 = (var10 << 9) - var34 * var4 + var34;
+						var10 = (var10 << 9) - var4 * var34 + var34;
 						if (var2 < var3) {
 							var6 = var4 <<= 14;
 							if (var1 < 0) {
-								var6 -= var32 * var1;
-								var4 -= var30 * var1;
-								var10 -= var35 * var1;
+								var6 -= var1 * var32;
+								var4 -= var1 * var30;
+								var10 -= var1 * var35;
 								var1 = 0;
 							}
 
 							var5 <<= 14;
 							if (var2 < 0) {
-								var5 -= var31 * var2;
+								var5 -= var2 * var31;
 								var2 = 0;
 							}
 
 							var48 = var1 - super.field3000.field3084;
-							var37 += var48 * var39;
-							var40 += var48 * var42;
-							var43 += var48 * var45;
-							if (var2 != var1 && var32 < var30 || var2 == var1 && var32 > var31) {
-								var3 -= var2;
-								var2 -= var1;
-								var1 = var46[var1];
-
-								while (true) {
-									--var2;
-									if (var2 < 0) {
-										while (true) {
-											--var3;
-											if (var3 < 0) {
-												return;
-											}
-
-											this.method5719(Class569.field5504, var23, 0, 0, var1, var6 >> 14, var5 >> 14, var10, var34, var37, var40, var43, var38, var41, var44);
-											var6 += var32;
-											var5 += var31;
-											var10 += var35;
-											var1 += Class88.field5502;
-											var37 += var39;
-											var40 += var42;
-											var43 += var45;
-										}
-									}
-
-									this.method5719(Class569.field5504, var23, 0, 0, var1, var6 >> 14, var4 >> 14, var10, var34, var37, var40, var43, var38, var41, var44);
-									var6 += var32;
-									var4 += var30;
-									var10 += var35;
-									var1 += Class88.field5502;
-									var37 += var39;
-									var40 += var42;
-									var43 += var45;
-								}
-							} else {
+							var37 += var39 * var48;
+							var40 += var42 * var48;
+							var43 += var45 * var48;
+							if ((var1 == var2 || var32 >= var30) && (var1 != var2 || var32 <= var31)) {
 								var3 -= var2;
 								var2 -= var1;
 								var1 = var46[var1];
@@ -1327,27 +1293,61 @@ public class Class290 extends Class285 {
 									var40 += var42;
 									var43 += var45;
 								}
+							} else {
+								var3 -= var2;
+								var2 -= var1;
+								var1 = var46[var1];
+
+								while (true) {
+									--var2;
+									if (var2 < 0) {
+										while (true) {
+											--var3;
+											if (var3 < 0) {
+												return;
+											}
+
+											this.method5719(Class569.field5504, var23, 0, 0, var1, var6 >> 14, var5 >> 14, var10, var34, var37, var40, var43, var38, var41, var44);
+											var6 += var32;
+											var5 += var31;
+											var10 += var35;
+											var1 += Class88.field5502;
+											var37 += var39;
+											var40 += var42;
+											var43 += var45;
+										}
+									}
+
+									this.method5719(Class569.field5504, var23, 0, 0, var1, var6 >> 14, var4 >> 14, var10, var34, var37, var40, var43, var38, var41, var44);
+									var6 += var32;
+									var4 += var30;
+									var10 += var35;
+									var1 += Class88.field5502;
+									var37 += var39;
+									var40 += var42;
+									var43 += var45;
+								}
 							}
 						} else {
 							var5 = var4 <<= 14;
 							if (var1 < 0) {
-								var5 -= var32 * var1;
-								var4 -= var30 * var1;
-								var10 -= var35 * var1;
+								var5 -= var1 * var32;
+								var4 -= var1 * var30;
+								var10 -= var1 * var35;
 								var1 = 0;
 							}
 
 							var6 <<= 14;
 							if (var3 < 0) {
-								var6 -= var31 * var3;
+								var6 -= var3 * var31;
 								var3 = 0;
 							}
 
 							var48 = var1 - super.field3000.field3084;
-							var37 += var48 * var39;
-							var40 += var48 * var42;
-							var43 += var48 * var45;
-							if (var3 != var1 && var32 < var30 || var3 == var1 && var31 > var30) {
+							var37 += var39 * var48;
+							var40 += var42 * var48;
+							var43 += var45 * var48;
+							if (var1 != var3 && var32 < var30 || var1 == var3 && var31 > var30) {
 								var2 -= var3;
 								var3 -= var1;
 								var1 = var46[var1];
@@ -1428,61 +1428,27 @@ public class Class290 extends Class285 {
 							var1 = var47;
 						}
 
-						var11 = (var11 << 9) - var34 * var5 + var34;
+						var11 = (var11 << 9) - var5 * var34 + var34;
 						if (var3 < var1) {
 							var4 = var5 <<= 14;
 							if (var2 < 0) {
-								var4 -= var30 * var2;
-								var5 -= var31 * var2;
-								var11 -= var35 * var2;
+								var4 -= var2 * var30;
+								var5 -= var2 * var31;
+								var11 -= var2 * var35;
 								var2 = 0;
 							}
 
 							var6 <<= 14;
 							if (var3 < 0) {
-								var6 -= var32 * var3;
+								var6 -= var3 * var32;
 								var3 = 0;
 							}
 
 							var48 = var2 - super.field3000.field3084;
-							var37 += var48 * var39;
-							var40 += var48 * var42;
-							var43 += var48 * var45;
-							if (var3 != var2 && var30 < var31 || var3 == var2 && var30 > var32) {
-								var1 -= var3;
-								var3 -= var2;
-								var2 = var46[var2];
-
-								while (true) {
-									--var3;
-									if (var3 < 0) {
-										while (true) {
-											--var1;
-											if (var1 < 0) {
-												return;
-											}
-
-											this.method5719(Class569.field5504, var23, 0, 0, var2, var4 >> 14, var6 >> 14, var11, var34, var37, var40, var43, var38, var41, var44);
-											var4 += var30;
-											var6 += var32;
-											var11 += var35;
-											var2 += Class88.field5502;
-											var37 += var39;
-											var40 += var42;
-											var43 += var45;
-										}
-									}
-
-									this.method5719(Class569.field5504, var23, 0, 0, var2, var4 >> 14, var5 >> 14, var11, var34, var37, var40, var43, var38, var41, var44);
-									var4 += var30;
-									var5 += var31;
-									var11 += var35;
-									var2 += Class88.field5502;
-									var37 += var39;
-									var40 += var42;
-									var43 += var45;
-								}
-							} else {
+							var37 += var39 * var48;
+							var40 += var42 * var48;
+							var43 += var45 * var48;
+							if ((var2 == var3 || var30 >= var31) && (var2 != var3 || var30 <= var32)) {
 								var1 -= var3;
 								var3 -= var2;
 								var2 = var46[var2];
@@ -1516,26 +1482,60 @@ public class Class290 extends Class285 {
 									var40 += var42;
 									var43 += var45;
 								}
+							} else {
+								var1 -= var3;
+								var3 -= var2;
+								var2 = var46[var2];
+
+								while (true) {
+									--var3;
+									if (var3 < 0) {
+										while (true) {
+											--var1;
+											if (var1 < 0) {
+												return;
+											}
+
+											this.method5719(Class569.field5504, var23, 0, 0, var2, var4 >> 14, var6 >> 14, var11, var34, var37, var40, var43, var38, var41, var44);
+											var4 += var30;
+											var6 += var32;
+											var11 += var35;
+											var2 += Class88.field5502;
+											var37 += var39;
+											var40 += var42;
+											var43 += var45;
+										}
+									}
+
+									this.method5719(Class569.field5504, var23, 0, 0, var2, var4 >> 14, var5 >> 14, var11, var34, var37, var40, var43, var38, var41, var44);
+									var4 += var30;
+									var5 += var31;
+									var11 += var35;
+									var2 += Class88.field5502;
+									var37 += var39;
+									var40 += var42;
+									var43 += var45;
+								}
 							}
 						} else {
 							var6 = var5 <<= 14;
 							if (var2 < 0) {
-								var6 -= var30 * var2;
-								var5 -= var31 * var2;
-								var11 -= var35 * var2;
+								var6 -= var2 * var30;
+								var5 -= var2 * var31;
+								var11 -= var2 * var35;
 								var2 = 0;
 							}
 
 							var4 <<= 14;
 							if (var1 < 0) {
-								var4 -= var32 * var1;
+								var4 -= var1 * var32;
 								var1 = 0;
 							}
 
 							var48 = var2 - super.field3000.field3084;
-							var37 += var48 * var39;
-							var40 += var48 * var42;
-							var43 += var48 * var45;
+							var37 += var39 * var48;
+							var40 += var42 * var48;
+							var43 += var45 * var48;
 							if (var30 < var31) {
 								var3 -= var1;
 								var1 -= var2;
@@ -1616,26 +1616,26 @@ public class Class290 extends Class285 {
 						var2 = var47;
 					}
 
-					var12 = (var12 << 9) - var34 * var6 + var34;
+					var12 = (var12 << 9) - var6 * var34 + var34;
 					if (var1 < var2) {
 						var5 = var6 <<= 14;
 						if (var3 < 0) {
-							var5 -= var31 * var3;
-							var6 -= var32 * var3;
-							var12 -= var35 * var3;
+							var5 -= var3 * var31;
+							var6 -= var3 * var32;
+							var12 -= var3 * var35;
 							var3 = 0;
 						}
 
 						var4 <<= 14;
 						if (var1 < 0) {
-							var4 -= var30 * var1;
+							var4 -= var1 * var30;
 							var1 = 0;
 						}
 
 						var48 = var3 - super.field3000.field3084;
-						var37 += var48 * var39;
-						var40 += var48 * var42;
-						var43 += var48 * var45;
+						var37 += var39 * var48;
+						var40 += var42 * var48;
+						var43 += var45 * var48;
 						if (var31 < var32) {
 							var2 -= var1;
 							var1 -= var3;
@@ -1708,22 +1708,22 @@ public class Class290 extends Class285 {
 					} else {
 						var4 = var6 <<= 14;
 						if (var3 < 0) {
-							var4 -= var31 * var3;
-							var6 -= var32 * var3;
-							var12 -= var35 * var3;
+							var4 -= var3 * var31;
+							var6 -= var3 * var32;
+							var12 -= var3 * var35;
 							var3 = 0;
 						}
 
 						var5 <<= 14;
 						if (var2 < 0) {
-							var5 -= var30 * var2;
+							var5 -= var2 * var30;
 							var2 = 0;
 						}
 
 						var48 = var3 - super.field3000.field3084;
-						var37 += var48 * var39;
-						var40 += var48 * var42;
-						var43 += var48 * var45;
+						var37 += var39 * var48;
+						var40 += var42 * var48;
+						var43 += var45 * var48;
 						if (var31 < var32) {
 							var1 -= var2;
 							var2 -= var3;
@@ -1813,7 +1813,7 @@ public class Class290 extends Class285 {
 
 		if (var6 < var7) {
 			var5 += var6;
-			var8 += var9 * var6;
+			var8 += var6 * var9;
 			int var18 = var7 - var6;
 			int var16;
 			int var10000;
@@ -1868,30 +1868,30 @@ public class Class290 extends Class285 {
 				if (super.field2995) {
 					if (var18 > 0) {
 						do {
-							var4 = var2[(var3 & 4032) + (var3 >>> 26)];
+							var4 = var2[(var3 >>> 26) + (var3 & 4032)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
-							var4 = var2[(var3 & 4032) + (var3 >>> 26)];
+							var4 = var2[(var3 >>> 26) + (var3 & 4032)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
-							var4 = var2[(var3 & 4032) + (var3 >>> 26)];
+							var4 = var2[(var3 >>> 26) + (var3 & 4032)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
-							var4 = var2[(var3 & 4032) + (var3 >>> 26)];
+							var4 = var2[(var3 >>> 26) + (var3 & 4032)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
-							var4 = var2[(var3 & 4032) + (var3 >>> 26)];
+							var4 = var2[(var3 >>> 26) + (var3 & 4032)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
-							var4 = var2[(var3 & 4032) + (var3 >>> 26)];
+							var4 = var2[(var3 >>> 26) + (var3 & 4032)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
-							var4 = var2[(var3 & 4032) + (var3 >>> 26)];
+							var4 = var2[(var3 >>> 26) + (var3 & 4032)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
-							var4 = var2[(var3 & 4032) + (var3 >>> 26)];
+							var4 = var2[(var3 >>> 26) + (var3 & 4032)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
-							var10000 = var17 + var3;
+							var10000 = var3 + var17;
 							var19 = var21;
 							var20 = var22;
 							var10 += var13;
@@ -1922,7 +1922,7 @@ public class Class290 extends Class285 {
 					var18 = var7 - var6 & 7;
 					if (var18 > 0) {
 						do {
-							var4 = var2[(var3 & 4032) + (var3 >>> 26)];
+							var4 = var2[(var3 >>> 26) + (var3 & 4032)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
 							--var18;
@@ -1931,54 +1931,54 @@ public class Class290 extends Class285 {
 				} else {
 					if (var18 > 0) {
 						do {
-							if ((var4 = var2[(var3 & 4032) + (var3 >>> 26)]) != 0) {
+							if ((var4 = var2[(var3 >>> 26) + (var3 & 4032)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
 							var3 += var17;
-							if ((var4 = var2[(var3 & 4032) + (var3 >>> 26)]) != 0) {
+							if ((var4 = var2[(var3 >>> 26) + (var3 & 4032)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
 							var3 += var17;
-							if ((var4 = var2[(var3 & 4032) + (var3 >>> 26)]) != 0) {
+							if ((var4 = var2[(var3 >>> 26) + (var3 & 4032)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
 							var3 += var17;
-							if ((var4 = var2[(var3 & 4032) + (var3 >>> 26)]) != 0) {
+							if ((var4 = var2[(var3 >>> 26) + (var3 & 4032)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
 							var3 += var17;
-							if ((var4 = var2[(var3 & 4032) + (var3 >>> 26)]) != 0) {
+							if ((var4 = var2[(var3 >>> 26) + (var3 & 4032)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
 							var3 += var17;
-							if ((var4 = var2[(var3 & 4032) + (var3 >>> 26)]) != 0) {
+							if ((var4 = var2[(var3 >>> 26) + (var3 & 4032)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
 							var3 += var17;
-							if ((var4 = var2[(var3 & 4032) + (var3 >>> 26)]) != 0) {
+							if ((var4 = var2[(var3 >>> 26) + (var3 & 4032)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
 							var3 += var17;
-							if ((var4 = var2[(var3 & 4032) + (var3 >>> 26)]) != 0) {
+							if ((var4 = var2[(var3 >>> 26) + (var3 & 4032)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
-							var10000 = var17 + var3;
+							var10000 = var3 + var17;
 							var19 = var21;
 							var20 = var22;
 							var10 += var13;
@@ -2009,7 +2009,7 @@ public class Class290 extends Class285 {
 					var18 = var7 - var6 & 7;
 					if (var18 > 0) {
 						do {
-							if ((var4 = var2[(var3 & 4032) + (var3 >>> 26)]) != 0) {
+							if ((var4 = var2[(var3 >>> 26) + (var3 & 4032)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
@@ -2063,30 +2063,30 @@ public class Class290 extends Class285 {
 				if (super.field2995) {
 					if (var18 > 0) {
 						do {
-							var4 = var2[(var3 & 16256) + (var3 >>> 25)];
+							var4 = var2[(var3 >>> 25) + (var3 & 16256)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
-							var4 = var2[(var3 & 16256) + (var3 >>> 25)];
+							var4 = var2[(var3 >>> 25) + (var3 & 16256)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
-							var4 = var2[(var3 & 16256) + (var3 >>> 25)];
+							var4 = var2[(var3 >>> 25) + (var3 & 16256)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
-							var4 = var2[(var3 & 16256) + (var3 >>> 25)];
+							var4 = var2[(var3 >>> 25) + (var3 & 16256)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
-							var4 = var2[(var3 & 16256) + (var3 >>> 25)];
+							var4 = var2[(var3 >>> 25) + (var3 & 16256)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
-							var4 = var2[(var3 & 16256) + (var3 >>> 25)];
+							var4 = var2[(var3 >>> 25) + (var3 & 16256)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
-							var4 = var2[(var3 & 16256) + (var3 >>> 25)];
+							var4 = var2[(var3 >>> 25) + (var3 & 16256)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
-							var4 = var2[(var3 & 16256) + (var3 >>> 25)];
+							var4 = var2[(var3 >>> 25) + (var3 & 16256)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
-							var10000 = var17 + var3;
+							var10000 = var3 + var17;
 							var19 = var21;
 							var20 = var22;
 							var10 += var13;
@@ -2117,7 +2117,7 @@ public class Class290 extends Class285 {
 					var18 = var7 - var6 & 7;
 					if (var18 > 0) {
 						do {
-							var4 = var2[(var3 & 16256) + (var3 >>> 25)];
+							var4 = var2[(var3 >>> 25) + (var3 & 16256)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
 							--var18;
@@ -2126,54 +2126,54 @@ public class Class290 extends Class285 {
 				} else {
 					if (var18 > 0) {
 						do {
-							if ((var4 = var2[(var3 & 16256) + (var3 >>> 25)]) != 0) {
+							if ((var4 = var2[(var3 >>> 25) + (var3 & 16256)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
 							var3 += var17;
-							if ((var4 = var2[(var3 & 16256) + (var3 >>> 25)]) != 0) {
+							if ((var4 = var2[(var3 >>> 25) + (var3 & 16256)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
 							var3 += var17;
-							if ((var4 = var2[(var3 & 16256) + (var3 >>> 25)]) != 0) {
+							if ((var4 = var2[(var3 >>> 25) + (var3 & 16256)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
 							var3 += var17;
-							if ((var4 = var2[(var3 & 16256) + (var3 >>> 25)]) != 0) {
+							if ((var4 = var2[(var3 >>> 25) + (var3 & 16256)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
 							var3 += var17;
-							if ((var4 = var2[(var3 & 16256) + (var3 >>> 25)]) != 0) {
+							if ((var4 = var2[(var3 >>> 25) + (var3 & 16256)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
 							var3 += var17;
-							if ((var4 = var2[(var3 & 16256) + (var3 >>> 25)]) != 0) {
+							if ((var4 = var2[(var3 >>> 25) + (var3 & 16256)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
 							var3 += var17;
-							if ((var4 = var2[(var3 & 16256) + (var3 >>> 25)]) != 0) {
+							if ((var4 = var2[(var3 >>> 25) + (var3 & 16256)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
 							var3 += var17;
-							if ((var4 = var2[(var3 & 16256) + (var3 >>> 25)]) != 0) {
+							if ((var4 = var2[(var3 >>> 25) + (var3 & 16256)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
-							var10000 = var17 + var3;
+							var10000 = var3 + var17;
 							var19 = var21;
 							var20 = var22;
 							var10 += var13;
@@ -2204,7 +2204,7 @@ public class Class290 extends Class285 {
 					var18 = var7 - var6 & 7;
 					if (var18 > 0) {
 						do {
-							if ((var4 = var2[(var3 & 16256) + (var3 >>> 25)]) != 0) {
+							if ((var4 = var2[(var3 >>> 25) + (var3 & 16256)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
@@ -2236,24 +2236,24 @@ public class Class290 extends Class285 {
 			int var28 = var11 - var10;
 			int var29 = var12 - var10;
 			int var30 = 0;
-			if (var2 != var1) {
+			if (var1 != var2) {
 				var30 = (var5 - var4 << 14) / (var2 - var1);
 			}
 
 			int var31 = 0;
-			if (var3 != var2) {
+			if (var2 != var3) {
 				var31 = (var6 - var5 << 14) / (var3 - var2);
 			}
 
 			int var32 = 0;
-			if (var3 != var1) {
+			if (var1 != var3) {
 				var32 = (var4 - var6 << 14) / (var1 - var3);
 			}
 
-			int var33 = var27 * var24 - var26 * var25;
+			int var33 = var24 * var27 - var25 * var26;
 			if (var33 != 0) {
-				int var34 = (var28 * var27 - var29 * var25 << 9) / var33;
-				int var35 = (var29 * var24 - var28 * var26 << 9) / var33;
+				int var34 = (var27 * var28 - var25 * var29 << 9) / var33;
+				int var35 = (var24 * var29 - var26 * var28 << 9) / var33;
 				int var36 = super.field3000.field3071;
 				var14 = var13 - var14;
 				var17 = var16 - var17;
@@ -2261,15 +2261,15 @@ public class Class290 extends Class285 {
 				var15 -= var13;
 				var18 -= var16;
 				var21 -= var19;
-				int var37 = var16 * var15 - var18 * var13 << 14;
-				int var38 = (int)(((long)(var19 * var18 - var21 * var16) << 14) / (long)var36);
-				int var39 = (int)(((long)(var21 * var13 - var19 * var15) << 14) / (long)var36);
-				int var40 = var16 * var14 - var17 * var13 << 14;
-				int var41 = (int)(((long)(var19 * var17 - var20 * var16) << 14) / (long)var36);
-				int var42 = (int)(((long)(var20 * var13 - var19 * var14) << 14) / (long)var36);
-				int var43 = var17 * var15 - var18 * var14 << 14;
-				int var44 = (int)(((long)(var20 * var18 - var21 * var17) << 14) / (long)var36);
-				int var45 = (int)(((long)(var21 * var14 - var20 * var15) << 14) / (long)var36);
+				int var37 = var15 * var16 - var13 * var18 << 14;
+				int var38 = (int)(((long)(var18 * var19 - var16 * var21) << 14) / (long)var36);
+				int var39 = (int)(((long)(var13 * var21 - var15 * var19) << 14) / (long)var36);
+				int var40 = var14 * var16 - var13 * var17 << 14;
+				int var41 = (int)(((long)(var17 * var19 - var16 * var20) << 14) / (long)var36);
+				int var42 = (int)(((long)(var13 * var20 - var14 * var19) << 14) / (long)var36);
+				int var43 = var15 * var17 - var14 * var18 << 14;
+				int var44 = (int)(((long)(var18 * var20 - var17 * var21) << 14) / (long)var36);
+				int var45 = (int)(((long)(var14 * var21 - var15 * var20) << 14) / (long)var36);
 				int[] var46 = super.field3000.field3091;
 				int var47 = super.field3000.field3086;
 				int var48 = super.field3000.field3084;
@@ -2284,61 +2284,27 @@ public class Class290 extends Class285 {
 							var3 = var47;
 						}
 
-						var10 = (var10 << 9) - var34 * var4 + var34;
+						var10 = (var10 << 9) - var4 * var34 + var34;
 						if (var2 < var3) {
 							var6 = var4 <<= 14;
 							if (var1 < 0) {
-								var6 -= var32 * var1;
-								var4 -= var30 * var1;
-								var10 -= var35 * var1;
+								var6 -= var1 * var32;
+								var4 -= var1 * var30;
+								var10 -= var1 * var35;
 								var1 = 0;
 							}
 
 							var5 <<= 14;
 							if (var2 < 0) {
-								var5 -= var31 * var2;
+								var5 -= var2 * var31;
 								var2 = 0;
 							}
 
 							var49 = var1 - var48;
-							var37 += var49 * var39;
-							var40 += var49 * var42;
-							var43 += var49 * var45;
-							if ((var2 == var1 || var32 >= var30) && (var2 != var1 || var32 <= var31)) {
-								var3 -= var2;
-								var2 -= var1;
-								var1 = var46[var1];
-
-								while (true) {
-									--var2;
-									if (var2 < 0) {
-										while (true) {
-											--var3;
-											if (var3 < 0) {
-												return;
-											}
-
-											this.method5707(Class569.field5504, var23, 0, 0, var1, var5 >> 14, var6 >> 14, var10, var34, var37, var40, var43, var38, var41, var44);
-											var6 += var32;
-											var5 += var31;
-											var10 += var35;
-											var1 += Class88.field5502;
-											var37 += var39;
-											var40 += var42;
-											var43 += var45;
-										}
-									}
-
-									this.method5707(Class569.field5504, var23, 0, 0, var1, var4 >> 14, var6 >> 14, var10, var34, var37, var40, var43, var38, var41, var44);
-									var6 += var32;
-									var4 += var30;
-									var10 += var35;
-									var1 += Class88.field5502;
-									var37 += var39;
-									var40 += var42;
-									var43 += var45;
-								}
-							} else {
+							var37 += var39 * var49;
+							var40 += var42 * var49;
+							var43 += var45 * var49;
+							if (var1 != var2 && var32 < var30 || var1 == var2 && var32 > var31) {
 								var3 -= var2;
 								var2 -= var1;
 								var1 = var46[var1];
@@ -2372,43 +2338,23 @@ public class Class290 extends Class285 {
 									var40 += var42;
 									var43 += var45;
 								}
-							}
-						} else {
-							var5 = var4 <<= 14;
-							if (var1 < 0) {
-								var5 -= var32 * var1;
-								var4 -= var30 * var1;
-								var10 -= var35 * var1;
-								var1 = 0;
-							}
-
-							var6 <<= 14;
-							if (var3 < 0) {
-								var6 -= var31 * var3;
-								var3 = 0;
-							}
-
-							var49 = var1 - var48;
-							var37 += var49 * var39;
-							var40 += var49 * var42;
-							var43 += var49 * var45;
-							if ((var3 == var1 || var32 >= var30) && (var3 != var1 || var31 <= var30)) {
-								var2 -= var3;
-								var3 -= var1;
+							} else {
+								var3 -= var2;
+								var2 -= var1;
 								var1 = var46[var1];
 
 								while (true) {
-									--var3;
-									if (var3 < 0) {
+									--var2;
+									if (var2 < 0) {
 										while (true) {
-											--var2;
-											if (var2 < 0) {
+											--var3;
+											if (var3 < 0) {
 												return;
 											}
 
-											this.method5707(Class569.field5504, var23, 0, 0, var1, var4 >> 14, var6 >> 14, var10, var34, var37, var40, var43, var38, var41, var44);
-											var6 += var31;
-											var4 += var30;
+											this.method5707(Class569.field5504, var23, 0, 0, var1, var5 >> 14, var6 >> 14, var10, var34, var37, var40, var43, var38, var41, var44);
+											var6 += var32;
+											var5 += var31;
 											var10 += var35;
 											var1 += Class88.field5502;
 											var37 += var39;
@@ -2417,8 +2363,8 @@ public class Class290 extends Class285 {
 										}
 									}
 
-									this.method5707(Class569.field5504, var23, 0, 0, var1, var4 >> 14, var5 >> 14, var10, var34, var37, var40, var43, var38, var41, var44);
-									var5 += var32;
+									this.method5707(Class569.field5504, var23, 0, 0, var1, var4 >> 14, var6 >> 14, var10, var34, var37, var40, var43, var38, var41, var44);
+									var6 += var32;
 									var4 += var30;
 									var10 += var35;
 									var1 += Class88.field5502;
@@ -2426,7 +2372,27 @@ public class Class290 extends Class285 {
 									var40 += var42;
 									var43 += var45;
 								}
-							} else {
+							}
+						} else {
+							var5 = var4 <<= 14;
+							if (var1 < 0) {
+								var5 -= var1 * var32;
+								var4 -= var1 * var30;
+								var10 -= var1 * var35;
+								var1 = 0;
+							}
+
+							var6 <<= 14;
+							if (var3 < 0) {
+								var6 -= var3 * var31;
+								var3 = 0;
+							}
+
+							var49 = var1 - var48;
+							var37 += var39 * var49;
+							var40 += var42 * var49;
+							var43 += var45 * var49;
+							if (var1 != var3 && var32 < var30 || var1 == var3 && var31 > var30) {
 								var2 -= var3;
 								var3 -= var1;
 								var1 = var46[var1];
@@ -2460,6 +2426,40 @@ public class Class290 extends Class285 {
 									var40 += var42;
 									var43 += var45;
 								}
+							} else {
+								var2 -= var3;
+								var3 -= var1;
+								var1 = var46[var1];
+
+								while (true) {
+									--var3;
+									if (var3 < 0) {
+										while (true) {
+											--var2;
+											if (var2 < 0) {
+												return;
+											}
+
+											this.method5707(Class569.field5504, var23, 0, 0, var1, var4 >> 14, var6 >> 14, var10, var34, var37, var40, var43, var38, var41, var44);
+											var6 += var31;
+											var4 += var30;
+											var10 += var35;
+											var1 += Class88.field5502;
+											var37 += var39;
+											var40 += var42;
+											var43 += var45;
+										}
+									}
+
+									this.method5707(Class569.field5504, var23, 0, 0, var1, var4 >> 14, var5 >> 14, var10, var34, var37, var40, var43, var38, var41, var44);
+									var5 += var32;
+									var4 += var30;
+									var10 += var35;
+									var1 += Class88.field5502;
+									var37 += var39;
+									var40 += var42;
+									var43 += var45;
+								}
 							}
 						}
 					}
@@ -2473,61 +2473,27 @@ public class Class290 extends Class285 {
 							var1 = var47;
 						}
 
-						var11 = (var11 << 9) - var34 * var5 + var34;
+						var11 = (var11 << 9) - var5 * var34 + var34;
 						if (var3 < var1) {
 							var4 = var5 <<= 14;
 							if (var2 < 0) {
-								var4 -= var30 * var2;
-								var5 -= var31 * var2;
-								var11 -= var35 * var2;
+								var4 -= var2 * var30;
+								var5 -= var2 * var31;
+								var11 -= var2 * var35;
 								var2 = 0;
 							}
 
 							var6 <<= 14;
 							if (var3 < 0) {
-								var6 -= var32 * var3;
+								var6 -= var3 * var32;
 								var3 = 0;
 							}
 
 							var49 = var2 - var48;
-							var37 += var49 * var39;
-							var40 += var49 * var42;
-							var43 += var49 * var45;
-							if (var3 != var2 && var30 < var31 || var3 == var2 && var30 > var32) {
-								var1 -= var3;
-								var3 -= var2;
-								var2 = var46[var2];
-
-								while (true) {
-									--var3;
-									if (var3 < 0) {
-										while (true) {
-											--var1;
-											if (var1 < 0) {
-												return;
-											}
-
-											this.method5707(Class569.field5504, var23, 0, 0, var2, var4 >> 14, var6 >> 14, var11, var34, var37, var40, var43, var38, var41, var44);
-											var4 += var30;
-											var6 += var32;
-											var11 += var35;
-											var2 += Class88.field5502;
-											var37 += var39;
-											var40 += var42;
-											var43 += var45;
-										}
-									}
-
-									this.method5707(Class569.field5504, var23, 0, 0, var2, var4 >> 14, var5 >> 14, var11, var34, var37, var40, var43, var38, var41, var44);
-									var4 += var30;
-									var5 += var31;
-									var11 += var35;
-									var2 += Class88.field5502;
-									var37 += var39;
-									var40 += var42;
-									var43 += var45;
-								}
-							} else {
+							var37 += var39 * var49;
+							var40 += var42 * var49;
+							var43 += var45 * var49;
+							if ((var2 == var3 || var30 >= var31) && (var2 != var3 || var30 <= var32)) {
 								var1 -= var3;
 								var3 -= var2;
 								var2 = var46[var2];
@@ -2561,26 +2527,60 @@ public class Class290 extends Class285 {
 									var40 += var42;
 									var43 += var45;
 								}
+							} else {
+								var1 -= var3;
+								var3 -= var2;
+								var2 = var46[var2];
+
+								while (true) {
+									--var3;
+									if (var3 < 0) {
+										while (true) {
+											--var1;
+											if (var1 < 0) {
+												return;
+											}
+
+											this.method5707(Class569.field5504, var23, 0, 0, var2, var4 >> 14, var6 >> 14, var11, var34, var37, var40, var43, var38, var41, var44);
+											var4 += var30;
+											var6 += var32;
+											var11 += var35;
+											var2 += Class88.field5502;
+											var37 += var39;
+											var40 += var42;
+											var43 += var45;
+										}
+									}
+
+									this.method5707(Class569.field5504, var23, 0, 0, var2, var4 >> 14, var5 >> 14, var11, var34, var37, var40, var43, var38, var41, var44);
+									var4 += var30;
+									var5 += var31;
+									var11 += var35;
+									var2 += Class88.field5502;
+									var37 += var39;
+									var40 += var42;
+									var43 += var45;
+								}
 							}
 						} else {
 							var6 = var5 <<= 14;
 							if (var2 < 0) {
-								var6 -= var30 * var2;
-								var5 -= var31 * var2;
-								var11 -= var35 * var2;
+								var6 -= var2 * var30;
+								var5 -= var2 * var31;
+								var11 -= var2 * var35;
 								var2 = 0;
 							}
 
 							var4 <<= 14;
 							if (var1 < 0) {
-								var4 -= var32 * var1;
+								var4 -= var1 * var32;
 								var1 = 0;
 							}
 
 							var49 = var2 - var48;
-							var37 += var49 * var39;
-							var40 += var49 * var42;
-							var43 += var49 * var45;
+							var37 += var39 * var49;
+							var40 += var42 * var49;
+							var43 += var45 * var49;
 							if (var30 < var31) {
 								var3 -= var1;
 								var1 -= var2;
@@ -2661,26 +2661,26 @@ public class Class290 extends Class285 {
 						var2 = var47;
 					}
 
-					var12 = (var12 << 9) - var34 * var6 + var34;
+					var12 = (var12 << 9) - var6 * var34 + var34;
 					if (var1 < var2) {
 						var5 = var6 <<= 14;
 						if (var3 < 0) {
-							var5 -= var31 * var3;
-							var6 -= var32 * var3;
-							var12 -= var35 * var3;
+							var5 -= var3 * var31;
+							var6 -= var3 * var32;
+							var12 -= var3 * var35;
 							var3 = 0;
 						}
 
 						var4 <<= 14;
 						if (var1 < 0) {
-							var4 -= var30 * var1;
+							var4 -= var1 * var30;
 							var1 = 0;
 						}
 
 						var49 = var3 - var48;
-						var37 += var49 * var39;
-						var40 += var49 * var42;
-						var43 += var49 * var45;
+						var37 += var39 * var49;
+						var40 += var42 * var49;
+						var43 += var45 * var49;
 						if (var31 < var32) {
 							var2 -= var1;
 							var1 -= var3;
@@ -2753,22 +2753,22 @@ public class Class290 extends Class285 {
 					} else {
 						var4 = var6 <<= 14;
 						if (var3 < 0) {
-							var4 -= var31 * var3;
-							var6 -= var32 * var3;
-							var12 -= var35 * var3;
+							var4 -= var3 * var31;
+							var6 -= var3 * var32;
+							var12 -= var3 * var35;
 							var3 = 0;
 						}
 
 						var5 <<= 14;
 						if (var2 < 0) {
-							var5 -= var30 * var2;
+							var5 -= var2 * var30;
 							var2 = 0;
 						}
 
 						var49 = var3 - var48;
-						var37 += var49 * var39;
-						var40 += var49 * var42;
-						var43 += var49 * var45;
+						var37 += var39 * var49;
+						var40 += var42 * var49;
+						var43 += var45 * var49;
 						if (var31 < var32) {
 							var1 -= var2;
 							var2 -= var3;
@@ -2858,7 +2858,7 @@ public class Class290 extends Class285 {
 
 		if (var6 < var7) {
 			var5 += var6;
-			var8 += var9 * var6;
+			var8 += var6 * var9;
 			int var18 = var7 - var6;
 			int var16;
 			int var17;
@@ -2870,9 +2870,9 @@ public class Class290 extends Class285 {
 			int var24;
 			if (super.field2992) {
 				var24 = var6 - super.field3000.field3083;
-				var10 += var24 * var13;
-				var11 += var24 * var14;
-				var12 += var24 * var15;
+				var10 += var13 * var24;
+				var11 += var14 * var24;
+				var12 += var15 * var24;
 				var23 = var12 >> 12;
 				if (var23 != 0) {
 					var19 = var10 / var23;
@@ -2882,9 +2882,9 @@ public class Class290 extends Class285 {
 					var20 = 0;
 				}
 
-				var10 += var18 * var13;
-				var11 += var18 * var14;
-				var12 += var18 * var15;
+				var10 += var13 * var18;
+				var11 += var14 * var18;
+				var12 += var15 * var18;
 				var23 = var12 >> 12;
 				if (var23 != 0) {
 					var21 = var10 / var23;
@@ -2902,28 +2902,28 @@ public class Class290 extends Class285 {
 				if (super.field2995) {
 					if (var18 > 0) {
 						do {
-							var4 = var2[(var3 & 4032) + (var3 >>> 26)];
+							var4 = var2[(var3 >>> 26) + (var3 & 4032)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
-							var4 = var2[(var3 & 4032) + (var3 >>> 26)];
+							var4 = var2[(var3 >>> 26) + (var3 & 4032)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
-							var4 = var2[(var3 & 4032) + (var3 >>> 26)];
+							var4 = var2[(var3 >>> 26) + (var3 & 4032)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
-							var4 = var2[(var3 & 4032) + (var3 >>> 26)];
+							var4 = var2[(var3 >>> 26) + (var3 & 4032)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
-							var4 = var2[(var3 & 4032) + (var3 >>> 26)];
+							var4 = var2[(var3 >>> 26) + (var3 & 4032)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
-							var4 = var2[(var3 & 4032) + (var3 >>> 26)];
+							var4 = var2[(var3 >>> 26) + (var3 & 4032)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
-							var4 = var2[(var3 & 4032) + (var3 >>> 26)];
+							var4 = var2[(var3 >>> 26) + (var3 & 4032)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
-							var4 = var2[(var3 & 4032) + (var3 >>> 26)];
+							var4 = var2[(var3 >>> 26) + (var3 & 4032)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
 							var8 += var9;
@@ -2935,7 +2935,7 @@ public class Class290 extends Class285 {
 					var18 = var7 - var6 & 7;
 					if (var18 > 0) {
 						do {
-							var4 = var2[(var3 & 4032) + (var3 >>> 26)];
+							var4 = var2[(var3 >>> 26) + (var3 & 4032)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
 							--var18;
@@ -2944,49 +2944,49 @@ public class Class290 extends Class285 {
 				} else {
 					if (var18 > 0) {
 						do {
-							if ((var4 = var2[(var3 & 4032) + (var3 >>> 26)]) != 0) {
+							if ((var4 = var2[(var3 >>> 26) + (var3 & 4032)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
 							var3 += var17;
-							if ((var4 = var2[(var3 & 4032) + (var3 >>> 26)]) != 0) {
+							if ((var4 = var2[(var3 >>> 26) + (var3 & 4032)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
 							var3 += var17;
-							if ((var4 = var2[(var3 & 4032) + (var3 >>> 26)]) != 0) {
+							if ((var4 = var2[(var3 >>> 26) + (var3 & 4032)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
 							var3 += var17;
-							if ((var4 = var2[(var3 & 4032) + (var3 >>> 26)]) != 0) {
+							if ((var4 = var2[(var3 >>> 26) + (var3 & 4032)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
 							var3 += var17;
-							if ((var4 = var2[(var3 & 4032) + (var3 >>> 26)]) != 0) {
+							if ((var4 = var2[(var3 >>> 26) + (var3 & 4032)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
 							var3 += var17;
-							if ((var4 = var2[(var3 & 4032) + (var3 >>> 26)]) != 0) {
+							if ((var4 = var2[(var3 >>> 26) + (var3 & 4032)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
 							var3 += var17;
-							if ((var4 = var2[(var3 & 4032) + (var3 >>> 26)]) != 0) {
+							if ((var4 = var2[(var3 >>> 26) + (var3 & 4032)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
 							var3 += var17;
-							if ((var4 = var2[(var3 & 4032) + (var3 >>> 26)]) != 0) {
+							if ((var4 = var2[(var3 >>> 26) + (var3 & 4032)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
@@ -3001,7 +3001,7 @@ public class Class290 extends Class285 {
 					var18 = var7 - var6 & 7;
 					if (var18 > 0) {
 						do {
-							if ((var4 = var2[(var3 & 4032) + (var3 >>> 26)]) != 0) {
+							if ((var4 = var2[(var3 >>> 26) + (var3 & 4032)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
@@ -3013,9 +3013,9 @@ public class Class290 extends Class285 {
 				}
 			} else {
 				var24 = var6 - super.field3000.field3083;
-				var10 += var24 * var13;
-				var11 += var24 * var14;
-				var12 += var24 * var15;
+				var10 += var13 * var24;
+				var11 += var14 * var24;
+				var12 += var15 * var24;
 				var23 = var12 >> 14;
 				if (var23 != 0) {
 					var19 = var10 / var23;
@@ -3025,9 +3025,9 @@ public class Class290 extends Class285 {
 					var20 = 0;
 				}
 
-				var10 += var18 * var13;
-				var11 += var18 * var14;
-				var12 += var18 * var15;
+				var10 += var13 * var18;
+				var11 += var14 * var18;
+				var12 += var15 * var18;
 				var23 = var12 >> 14;
 				if (var23 != 0) {
 					var21 = var10 / var23;
@@ -3045,28 +3045,28 @@ public class Class290 extends Class285 {
 				if (super.field2995) {
 					if (var18 > 0) {
 						do {
-							var4 = var2[(var3 & 16256) + (var3 >>> 25)];
+							var4 = var2[(var3 >>> 25) + (var3 & 16256)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
-							var4 = var2[(var3 & 16256) + (var3 >>> 25)];
+							var4 = var2[(var3 >>> 25) + (var3 & 16256)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
-							var4 = var2[(var3 & 16256) + (var3 >>> 25)];
+							var4 = var2[(var3 >>> 25) + (var3 & 16256)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
-							var4 = var2[(var3 & 16256) + (var3 >>> 25)];
+							var4 = var2[(var3 >>> 25) + (var3 & 16256)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
-							var4 = var2[(var3 & 16256) + (var3 >>> 25)];
+							var4 = var2[(var3 >>> 25) + (var3 & 16256)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
-							var4 = var2[(var3 & 16256) + (var3 >>> 25)];
+							var4 = var2[(var3 >>> 25) + (var3 & 16256)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
-							var4 = var2[(var3 & 16256) + (var3 >>> 25)];
+							var4 = var2[(var3 >>> 25) + (var3 & 16256)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
-							var4 = var2[(var3 & 16256) + (var3 >>> 25)];
+							var4 = var2[(var3 >>> 25) + (var3 & 16256)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
 							var8 += var9;
@@ -3078,7 +3078,7 @@ public class Class290 extends Class285 {
 					var18 = var7 - var6 & 7;
 					if (var18 > 0) {
 						do {
-							var4 = var2[(var3 & 16256) + (var3 >>> 25)];
+							var4 = var2[(var3 >>> 25) + (var3 & 16256)];
 							var1[var5++] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							var3 += var17;
 							--var18;
@@ -3087,49 +3087,49 @@ public class Class290 extends Class285 {
 				} else {
 					if (var18 > 0) {
 						do {
-							if ((var4 = var2[(var3 & 16256) + (var3 >>> 25)]) != 0) {
+							if ((var4 = var2[(var3 >>> 25) + (var3 & 16256)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
 							var3 += var17;
-							if ((var4 = var2[(var3 & 16256) + (var3 >>> 25)]) != 0) {
+							if ((var4 = var2[(var3 >>> 25) + (var3 & 16256)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
 							var3 += var17;
-							if ((var4 = var2[(var3 & 16256) + (var3 >>> 25)]) != 0) {
+							if ((var4 = var2[(var3 >>> 25) + (var3 & 16256)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
 							var3 += var17;
-							if ((var4 = var2[(var3 & 16256) + (var3 >>> 25)]) != 0) {
+							if ((var4 = var2[(var3 >>> 25) + (var3 & 16256)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
 							var3 += var17;
-							if ((var4 = var2[(var3 & 16256) + (var3 >>> 25)]) != 0) {
+							if ((var4 = var2[(var3 >>> 25) + (var3 & 16256)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
 							var3 += var17;
-							if ((var4 = var2[(var3 & 16256) + (var3 >>> 25)]) != 0) {
+							if ((var4 = var2[(var3 >>> 25) + (var3 & 16256)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
 							var3 += var17;
-							if ((var4 = var2[(var3 & 16256) + (var3 >>> 25)]) != 0) {
+							if ((var4 = var2[(var3 >>> 25) + (var3 & 16256)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
 							++var5;
 							var3 += var17;
-							if ((var4 = var2[(var3 & 16256) + (var3 >>> 25)]) != 0) {
+							if ((var4 = var2[(var3 >>> 25) + (var3 & 16256)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 
@@ -3144,7 +3144,7 @@ public class Class290 extends Class285 {
 					var18 = var7 - var6 & 7;
 					if (var18 > 0) {
 						do {
-							if ((var4 = var2[(var3 & 16256) + (var3 >>> 25)]) != 0) {
+							if ((var4 = var2[(var3 >>> 25) + (var3 & 16256)]) != 0) {
 								var1[var5] = ((var4 & 16711935) * var16 & -16711936) + ((var4 & 65280) * var16 & 16711680) >> 8;
 							}
 

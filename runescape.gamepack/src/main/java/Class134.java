@@ -129,7 +129,7 @@ public class Class134 {
 				int var6 = var3 - 1;
 
 				do {
-					int var7 = var6 + var5 >> 1;
+					int var7 = var5 + var6 >> 1;
 					if (var1 < (float)this.field1566[var7].field1590) {
 						if (var1 > (float)this.field1566[var7 - 1].field1590) {
 							var4 = var7 - 1;

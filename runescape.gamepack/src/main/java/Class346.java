@@ -35,7 +35,7 @@ public class Class346 {
 		} else {
 			int var5 = Class70.field865[--Class80.field1598];
 			--var5;
-			if (var4.field3909 != null && var5 < var4.field3909.length && null != var4.field3909[var5]) {
+			if (var4.field3909 != null && var5 < var4.field3909.length && var4.field3909[var5] != null) {
 				Class70.field860[++Class80.field3328 - 1] = var4.field3909[var5];
 			} else {
 				Class70.field860[++Class80.field3328 - 1] = "";

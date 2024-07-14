@@ -194,9 +194,9 @@ public class Class224 {
 		var1 -= this.field2424;
 		var2 -= this.field2432;
 
-		for (int var8 = var1; var8 < var3 + var1; ++var8) {
+		for (int var8 = var1; var8 < var1 + var3; ++var8) {
 			if (var8 >= 0 && var8 < this.field2433) {
-				for (int var9 = var2; var9 < var4 + var2; ++var9) {
+				for (int var9 = var2; var9 < var2 + var4; ++var9) {
 					if (var9 >= 0 && var9 < this.field2434) {
 						this.method4331(var8, var9, var7);
 					}
@@ -392,9 +392,9 @@ public class Class224 {
 			var4 = var9;
 		}
 
-		for (var9 = var1; var9 < var3 + var1; ++var9) {
+		for (var9 = var1; var9 < var1 + var3; ++var9) {
 			if (var9 >= 0 && var9 < this.field2433) {
-				for (int var10 = var2; var10 < var4 + var2; ++var10) {
+				for (int var10 = var2; var10 < var2 + var4; ++var10) {
 					if (var10 >= 0 && var10 < this.field2434) {
 						this.method4311(var9, var10, var8);
 					}

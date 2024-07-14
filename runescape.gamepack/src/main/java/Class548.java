@@ -71,13 +71,13 @@ public final class Class548 {
 				}
 			}
 
-			while (var12 != var4) {
+			while (var4 != var12) {
 				var2 = (byte)var5;
 				var7 = var6[var7];
 				byte var1 = (byte)var7;
 				var7 >>= 8;
 				++var4;
-				if (var5 != var1) {
+				if (var1 != var5) {
 					var5 = var1;
 					if (var10 == 0) {
 						var3 = 1;
@@ -88,14 +88,14 @@ public final class Class548 {
 					++var9;
 					--var10;
 				} else {
-					if (var12 != var4) {
+					if (var4 != var12) {
 						var3 = 2;
 						var7 = var6[var7];
 						var1 = (byte)var7;
 						var7 >>= 8;
 						++var4;
-						if (var12 != var4) {
-							if (var5 != var1) {
+						if (var4 != var12) {
+							if (var1 != var5) {
 								var5 = var1;
 							} else {
 								var3 = 3;
@@ -103,8 +103,8 @@ public final class Class548 {
 								var1 = (byte)var7;
 								var7 >>= 8;
 								++var4;
-								if (var12 != var4) {
-									if (var5 != var1) {
+								if (var4 != var12) {
+									if (var1 != var5) {
 										var5 = var1;
 									} else {
 										var7 = var6[var7];
@@ -364,15 +364,15 @@ public final class Class548 {
 				while (true) {
 					int[] var10000;
 					int var10002;
-					while (var45 != var41) {
+					while (var41 != var45) {
 						if (var45 != 0 && var45 != 1) {
 							int var33 = var45 - 1;
 							int var30;
 							if (var33 < 16) {
 								var30 = var0.field5397[0];
 
-								for (var1 = var0.field5386[var33 + var30]; var33 > 3; var33 -= 4) {
-									int var34 = var33 + var30;
+								for (var1 = var0.field5386[var30 + var33]; var33 > 3; var33 -= 4) {
+									int var34 = var30 + var33;
 									var0.field5386[var34] = var0.field5386[var34 - 1];
 									var0.field5386[var34 - 1] = var0.field5386[var34 - 2];
 									var0.field5386[var34 - 2] = var0.field5386[var34 - 3];
@@ -380,7 +380,7 @@ public final class Class548 {
 								}
 
 								while (var33 > 0) {
-									var0.field5386[var33 + var30] = var0.field5386[var33 + var30 - 1];
+									var0.field5386[var30 + var33] = var0.field5386[var30 + var33 - 1];
 									--var33;
 								}
 
@@ -510,7 +510,7 @@ public final class Class548 {
 					++var0.field5400;
 					var0.field5415 = var46;
 					method9551(var0);
-					if (var0.field5400 == var0.field5415 + 1 && var0.field5391 == 0) {
+					if (var0.field5415 + 1 == var0.field5400 && var0.field5391 == 0) {
 						var26 = true;
 						break;
 					}

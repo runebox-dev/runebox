@@ -24,8 +24,8 @@ public class Class182 {
 	@ObfInfo(owner = "iw", name = "aq", desc = "(ILvp;B)Lgz;", opaque = "16")
 	public static Class182 method4430(int var0, Class562 var1) {
 		int var3 = var1.method9902();
-		boolean var4 = 0 != (var3 & 1);
-		boolean var5 = 0 != (var3 & 2);
+		boolean var4 = (var3 & 1) != 0;
+		boolean var5 = (var3 & 2) != 0;
 		Class182 var6 = new Class182(var0);
 		int var7;
 		int[] var8;
@@ -35,7 +35,7 @@ public class Class182 {
 		if (var4) {
 			var7 = var1.method9902();
 			var8 = new int[]{var7 & 15, var7 >> 4 & 15};
-			var9 = var6.field1909 != null && var8.length == var6.field1909.length;
+			var9 = var6.field1909 != null && var6.field1909.length == var8.length;
 
 			for (var10 = 0; var10 < 2; ++var10) {
 				if (var8[var10] != 15) {
@@ -53,7 +53,7 @@ public class Class182 {
 			var9 = var6.field1910 != null && var6.field1910.length == var8.length;
 
 			for (var10 = 0; var10 < 2; ++var10) {
-				if (15 != var8[var10]) {
+				if (var8[var10] != 15) {
 					var11 = (short)var1.method9997();
 					if (var9) {
 						var6.field1910[var8[var10]] = var11;

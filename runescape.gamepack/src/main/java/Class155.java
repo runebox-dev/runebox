@@ -52,16 +52,16 @@ public class Class155 extends Class157 {
 			var4 = var2.method9861() & 31;
 			var5 = var2.method9861();
 			var6 = var2.method9859();
-			var7 = Client.field1556 + (var6 >> 4 & 7);
-			var8 = Client.field1312 + (var6 & 7);
+			var7 = (var6 >> 4 & 7) + Client.field1556;
+			var8 = (var6 & 7) + Client.field1312;
 			var9 = var2.method9859();
 			var10 = var2.method9868();
 			if (var7 >= 0 && var8 >= 0 && var7 < Client.field94.field1030 && var8 < Client.field94.field1018) {
 				var11 = var4 + 1;
-				if (Client.field170.field1242[0] >= var7 - var11 && Client.field170.field1242[0] <= var11 + var7 && Client.field170.field1284[0] >= var8 - var11 && Client.field170.field1284[0] <= var11 + var8 && Client.field1474.method2508() != 0 && var3 > 0 && Client.field782 < 50) {
+				if (Client.field170.field1242[0] >= var7 - var11 && Client.field170.field1242[0] <= var7 + var11 && Client.field170.field1284[0] >= var8 - var11 && Client.field170.field1284[0] <= var8 + var11 && Client.field1474.method2508() != 0 && var3 > 0 && Client.field782 < 50) {
 					Client.field574[Client.field782] = var10;
 					Client.field788[Client.field782] = null;
-					Client.field786[Client.field782] = var4 + (var8 << 8) + (var7 << 16);
+					Client.field786[Client.field782] = (var7 << 16) + (var8 << 8) + var4;
 					Client.field784[Client.field782] = var3;
 					Client.field785[Client.field782] = var5;
 					Client.field694[Client.field782] = var9;
@@ -73,8 +73,8 @@ public class Class155 extends Class157 {
 			if (Class316.field3315 == var0) {
 				var3 = var2.method9860();
 				var4 = var2.method9860();
-				var5 = Client.field1556 + (var4 >> 4 & 7);
-				var6 = Client.field1312 + (var4 & 7);
+				var5 = (var4 >> 4 & 7) + Client.field1556;
+				var6 = (var4 & 7) + Client.field1312;
 				var7 = var2.method9997();
 				var8 = Client.field94.field1016;
 				if (var5 >= 0 && var6 >= 0 && var5 < Client.field94.field1030 && var6 < Client.field94.field1018) {
@@ -99,7 +99,7 @@ public class Class155 extends Class157 {
 
 			if (Class316.field3311 == var0) {
 				var3 = var2.method9902();
-				var4 = Client.field1556 + (var3 >> 4 & 7);
+				var4 = (var3 >> 4 & 7) + Client.field1556;
 				var5 = (var3 & 7) + Client.field1312;
 				var6 = var2.method9860();
 				var7 = var6 >> 2;
@@ -112,7 +112,7 @@ public class Class155 extends Class157 {
 
 			} else if (Class316.field3318 == var0) {
 				var3 = var2.method9859();
-				var4 = Client.field1556 + (var3 >> 4 & 7);
+				var4 = (var3 >> 4 & 7) + Client.field1556;
 				var5 = (var3 & 7) + Client.field1312;
 				var6 = var2.method9860();
 				var7 = var2.method9869();
@@ -120,7 +120,7 @@ public class Class155 extends Class157 {
 				if (var4 >= 0 && var5 >= 0 && var4 < Client.field94.field1030 && var5 < Client.field94.field1018) {
 					var4 = Class371.method7108(var4);
 					var5 = Class371.method7108(var5);
-					var9 = -1 == Client.field606 ? Client.field94.field1016 : Client.field606;
+					var9 = Client.field606 == -1 ? Client.field94.field1016 : Client.field606;
 					Class54 var27 = new Class54(var8, var9, var4, var5, Client.method3531(Client.field94, var4, var5, var9) - var6, var7, Client.field541);
 					Client.field94.field1035.method7506(var27);
 				}
@@ -130,10 +130,10 @@ public class Class155 extends Class157 {
 				var4 = var2.method9997();
 				var5 = var2.method9832();
 				var6 = var2.method9860();
-				var7 = Client.field1556 + (var6 >> 4 & 7);
+				var7 = (var6 >> 4 & 7) + Client.field1556;
 				var8 = (var6 & 7) + Client.field1312;
 				if (var7 >= 0 && var8 >= 0 && var7 < Client.field94.field1030 && var8 < Client.field94.field1018) {
-					var9 = -1 == Client.field606 ? Client.field94.field1016 : Client.field606;
+					var9 = Client.field606 == -1 ? Client.field94.field1016 : Client.field606;
 					Class41.method573(var9, var7, var8, var4, var5, var3);
 				}
 
@@ -151,16 +151,16 @@ public class Class155 extends Class157 {
 					var6 = var2.method9831();
 					var7 = var2.method9902();
 					var8 = var2.method9861();
-					var9 = Client.field1556 + (var8 >> 4 & 7);
-					var10 = Client.field1312 + (var8 & 7);
+					var9 = (var8 >> 4 & 7) + Client.field1556;
+					var10 = (var8 & 7) + Client.field1312;
 					var11 = var2.method9902() * 4;
 					var12 = var2.method9981();
 					var13 = var2.method9869();
 					var14 = var2.method9997();
 					var15 = var2.method9860() * 4;
 					var16 = var2.method9876();
-					var3 = var9 + var22;
-					var5 = var10 + var24;
+					var3 = var22 + var9;
+					var5 = var24 + var10;
 					if (var9 >= 0 && var10 >= 0 && var9 < Client.field94.field1030 && var10 < Client.field94.field1018 && var3 >= 0 && var5 >= 0 && var3 < Client.field94.field1030 && var5 < Client.field94.field1018 && var12 != 65535) {
 						var17 = Client.field606 == -1 ? Client.field94.field1016 : Client.field606;
 						Client.method4248(var17, var9, var10, var3, var5, var6, var12, var11, var15, var13, var4, var7, var14, var16);
@@ -173,18 +173,18 @@ public class Class155 extends Class157 {
 					var6 = Client.field605[var4];
 					var7 = var2.method9861();
 					var8 = var2.method9861();
-					var9 = Client.field1556 + (var8 >> 4 & 7);
+					var9 = (var8 >> 4 & 7) + Client.field1556;
 					var10 = (var8 & 7) + Client.field1312;
 					var11 = var2.method9869();
 					if (var9 >= 0 && var10 >= 0 && var9 < Client.field94.field1030 && var10 < Client.field94.field1018) {
-						var12 = -1 == Client.field606 ? Client.field94.field1016 : Client.field606;
+						var12 = Client.field606 == -1 ? Client.field94.field1016 : Client.field606;
 						Client.method438(Client.field94, var12, var9, var10, var6, var11, var4, var5, var7, 0, -1);
 					}
 
 				} else if (Class316.field3321 == var0) {
 					var3 = var2.method9860();
-					var4 = Client.field1556 + (var3 >> 4 & 7);
-					var5 = Client.field1312 + (var3 & 7);
+					var4 = (var3 >> 4 & 7) + Client.field1556;
+					var5 = (var3 & 7) + Client.field1312;
 					var6 = var2.method9855();
 					var7 = var2.method9981();
 					var8 = Client.field94.field1016;
@@ -203,7 +203,7 @@ public class Class155 extends Class157 {
 						byte var26 = var2.method9863();
 						var9 = var2.method9861();
 						var10 = (var9 >> 4 & 7) + Client.field1556;
-						var11 = Client.field1312 + (var9 & 7);
+						var11 = (var9 & 7) + Client.field1312;
 						var12 = var2.method9861();
 						var13 = var12 >> 2;
 						var14 = var12 & 3;
@@ -218,7 +218,7 @@ public class Class155 extends Class157 {
 						}
 
 						if (var18 != null) {
-							int var19 = -1 == Client.field606 ? Client.field94.field1016 : Client.field606;
+							int var19 = Client.field606 == -1 ? Client.field94.field1016 : Client.field606;
 							Class370.method7105(var19, var10, var11, var13, var14, var15, var3, var16, var5, var23, var26, var20, var25, var18);
 						}
 					}
@@ -263,9 +263,9 @@ public class Class155 extends Class157 {
 						var9 = var2.method9883();
 						var10 = var2.method9902();
 						var11 = (var10 >> 4 & 7) + Client.field1556;
-						var12 = Client.field1312 + (var10 & 7);
+						var12 = (var10 & 7) + Client.field1312;
 						if (var11 >= 0 && var12 >= 0 && var11 < Client.field94.field1030 && var12 < Client.field94.field1018) {
-							var13 = -1 == Client.field606 ? Client.field94.field1016 : Client.field606;
+							var13 = Client.field606 == -1 ? Client.field94.field1016 : Client.field606;
 							Client.method804(var13, var11, var12, var5, var9, var6, var8, var3, var7, var21);
 						}
 

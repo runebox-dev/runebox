@@ -129,7 +129,7 @@ public class Class64 extends Class520 {
 		int var11;
 		if (var4 && !var6) {
 			var9 = (var5 >> 2) - (field499 >> 2);
-			var10 = (var5 >> 2) + (field499 >> 2);
+			var10 = (field499 >> 2) + (var5 >> 2);
 			var11 = field499 >> 1;
 		} else {
 			var9 = 0;
@@ -142,7 +142,7 @@ public class Class64 extends Class520 {
 		int var14;
 		if (var4 && !var7) {
 			var12 = var5 - (var5 >> 2) - (field499 >> 2);
-			var13 = var5 - (var5 >> 2) + (field499 >> 2);
+			var13 = (field499 >> 2) + (var5 - (var5 >> 2));
 			var14 = field499 >> 1;
 		} else {
 			var12 = var8;
@@ -212,16 +212,16 @@ public class Class64 extends Class520 {
 			float var33;
 			float var34;
 			for (var28 = 0; var28 < var46; ++var28) {
-				var29 = var23[var20 + 3 + var28 * 4];
-				var30 = var23[var20 + 1 + var28 * 4];
+				var29 = var23[var28 * 4 + var20 + 3];
+				var30 = var23[var28 * 4 + var20 + 1];
 				var31 = var23[var28 * 4 + 3];
 				var32 = var23[var28 * 4 + 1];
-				var23[var20 + 3 + var28 * 4] = var29 + var31;
-				var23[var20 + 1 + var28 * 4] = var30 + var32;
+				var23[var28 * 4 + var20 + 3] = var29 + var31;
+				var23[var28 * 4 + var20 + 1] = var30 + var32;
 				var33 = var48[var20 - 4 - var28 * 4];
 				var34 = var48[var20 - 3 - var28 * 4];
 				var23[var28 * 4 + 3] = (var29 - var31) * var33 - (var30 - var32) * var34;
-				var23[var28 * 4 + 1] = (var30 - var32) * var33 + (var29 - var31) * var34;
+				var23[var28 * 4 + 1] = (var29 - var31) * var34 + (var30 - var32) * var33;
 			}
 
 			var28 = Class337.method3414(var5 - 1);
@@ -236,7 +236,7 @@ public class Class64 extends Class520 {
 
 				for (var52 = 0; var52 < 2 << var49; ++var52) {
 					int var53 = var5 - var50 * 2 * var52;
-					int var54 = var5 - var50 * (var52 * 2 + 1);
+					int var54 = var5 - (var52 * 2 + 1) * var50;
 
 					for (int var35 = 0; var35 < var5 >> var49 + 4; ++var35) {
 						int var36 = var35 * 4;
@@ -246,10 +246,10 @@ public class Class64 extends Class520 {
 						float var40 = var23[var54 - 3 - var36];
 						var23[var53 - 1 - var36] = var37 + var39;
 						var23[var53 - 3 - var36] = var38 + var40;
-						float var41 = var48[var35 * var51];
-						float var42 = var48[var35 * var51 + 1];
+						float var41 = var48[var51 * var35];
+						float var42 = var48[var51 * var35 + 1];
 						var23[var54 - 1 - var36] = (var37 - var39) * var41 - (var38 - var40) * var42;
-						var23[var54 - 3 - var36] = (var38 - var40) * var41 + (var37 - var39) * var42;
+						var23[var54 - 3 - var36] = (var37 - var39) * var42 + (var38 - var40) * var41;
 					}
 				}
 			}
@@ -288,21 +288,21 @@ public class Class64 extends Class520 {
 			for (var49 = 0; var49 < var46; ++var49) {
 				var30 = var26[var49 * 2];
 				var31 = var26[var49 * 2 + 1];
-				var32 = var23[var20 + var49 * 2];
-				var33 = var23[var20 + var49 * 2 + 1];
+				var32 = var23[var49 * 2 + var20];
+				var33 = var23[var49 * 2 + var20 + 1];
 				var34 = var23[var5 - 2 - var49 * 2];
 				float var55 = var23[var5 - 1 - var49 * 2];
-				float var56 = var31 * (var32 - var34) + var30 * (var33 + var55);
-				var23[var20 + var49 * 2] = (var32 + var34 + var56) * 0.5F;
+				float var56 = (var32 - var34) * var31 + (var33 + var55) * var30;
+				var23[var49 * 2 + var20] = (var32 + var34 + var56) * 0.5F;
 				var23[var5 - 2 - var49 * 2] = (var32 + var34 - var56) * 0.5F;
-				var56 = var31 * (var33 + var55) - var30 * (var32 - var34);
-				var23[var20 + var49 * 2 + 1] = (var33 - var55 + var56) * 0.5F;
+				var56 = (var33 + var55) * var31 - (var32 - var34) * var30;
+				var23[var49 * 2 + var20 + 1] = (var33 - var55 + var56) * 0.5F;
 				var23[var5 - 1 - var49 * 2] = (-var33 + var55 + var56) * 0.5F;
 			}
 
 			for (var49 = 0; var49 < var43; ++var49) {
-				var23[var49] = var23[var49 * 2 + var20] * var25[var49 * 2] + var23[var49 * 2 + 1 + var20] * var25[var49 * 2 + 1];
-				var23[var20 - 1 - var49] = var23[var49 * 2 + var20] * var25[var49 * 2 + 1] - var23[var49 * 2 + 1 + var20] * var25[var49 * 2];
+				var23[var49] = var25[var49 * 2] * var23[var49 * 2 + var20] + var25[var49 * 2 + 1] * var23[var49 * 2 + 1 + var20];
+				var23[var20 - 1 - var49] = var23[var49 * 2 + var20] * var25[var49 * 2 + 1] - var25[var49 * 2] * var23[var49 * 2 + 1 + var20];
 			}
 
 			for (var49 = 0; var49 < var43; ++var49) {
@@ -310,28 +310,28 @@ public class Class64 extends Class520 {
 			}
 
 			for (var49 = 0; var49 < var43; ++var49) {
-				var23[var49] = var23[var49 + var43];
+				var23[var49] = var23[var43 + var49];
 			}
 
 			for (var49 = 0; var49 < var43; ++var49) {
-				var23[var49 + var43] = -var23[var43 - var49 - 1];
+				var23[var43 + var49] = -var23[var43 - var49 - 1];
 			}
 
 			for (var49 = 0; var49 < var43; ++var49) {
-				var23[var49 + var20] = var23[var5 - var49 - 1];
+				var23[var20 + var49] = var23[var5 - var49 - 1];
 			}
 
 			float[] var57;
 			for (var49 = var9; var49 < var10; ++var49) {
 				var30 = (float)Math.sin(((double)(var49 - var9) + 0.5D) / (double)var11 * 0.5D * 3.141592653589793D);
 				var57 = this.field512;
-				var57[var49] *= (float)Math.sin(1.5707963267948966D * (double)var30 * (double)var30);
+				var57[var49] *= (float)Math.sin((double)var30 * 1.5707963267948966D * (double)var30);
 			}
 
 			for (var49 = var12; var49 < var13; ++var49) {
 				var30 = (float)Math.sin(((double)(var49 - var12) + 0.5D) / (double)var14 * 0.5D * 3.141592653589793D + 1.5707963267948966D);
 				var57 = this.field512;
-				var57[var49] *= (float)Math.sin(1.5707963267948966D * (double)var30 * (double)var30);
+				var57[var49] *= (float)Math.sin((double)var30 * 1.5707963267948966D * (double)var30);
 			}
 		}
 
@@ -391,7 +391,7 @@ public class Class64 extends Class520 {
 					}
 
 					for (int var5 = 0; var5 < var4; ++var5) {
-						int var6 = (int)(128.0F + var2[var5] * 128.0F);
+						int var6 = (int)(var2[var5] * 128.0F + 128.0F);
 						if ((var6 & -256) != 0) {
 							var6 = ~var6 >> 31;
 						}

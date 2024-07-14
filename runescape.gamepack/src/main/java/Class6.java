@@ -54,8 +54,8 @@ public final class Class6 extends Canvas {
 			var9 = 100;
 		}
 
-		int var10 = Client.field675 + (Client.field805 - Client.field675) * var9 / 100;
-		int var8 = var10 * var5 / 256;
+		int var10 = (Client.field805 - Client.field675) * var9 / 100 + Client.field675;
+		int var8 = var5 * var10 / 256;
 		var9 = 2048 - var3 & 2047;
 		var10 = 2048 - var4 & 2047;
 		int var11 = 0;
@@ -67,16 +67,16 @@ public final class Class6 extends Canvas {
 		if (var9 != 0) {
 			var14 = Class274.field2804[var9];
 			var15 = Class274.field2805[var9];
-			var16 = var15 * var12 - var14 * var8 >> 16;
-			var13 = var15 * var8 + var14 * var12 >> 16;
+			var16 = var12 * var15 - var8 * var14 >> 16;
+			var13 = var8 * var15 + var12 * var14 >> 16;
 			var12 = var16;
 		}
 
 		if (var10 != 0) {
 			var14 = Class274.field2804[var10];
 			var15 = Class274.field2805[var10];
-			var16 = var14 * var13 + var15 * var11 >> 16;
-			var13 = var15 * var13 - var14 * var11 >> 16;
+			var16 = var11 * var15 + var13 * var14 >> 16;
+			var13 = var13 * var15 - var11 * var14 >> 16;
 			var11 = var16;
 		}
 
@@ -94,10 +94,10 @@ public final class Class6 extends Canvas {
 			Client.field3333 = var4;
 		}
 
-		if (Client.field620 == 1 && Client.field705 >= 2 && Client.field541 % 50 == 0 && (Client.field4526 >> 7 != Client.field170.field1266 >> 7 || Client.field170.field1229 >> 7 != Client.field3275 >> 7)) {
+		if (Client.field620 == 1 && Client.field705 >= 2 && Client.field541 % 50 == 0 && (Client.field4526 >> 7 != Client.field170.field1266 >> 7 || Client.field3275 >> 7 != Client.field170.field1229 >> 7)) {
 			var14 = Client.field170.field982;
-			var15 = Client.field5093.field1019 + (Client.field4526 >> 7);
-			var16 = Client.field5093.field1021 + (Client.field3275 >> 7);
+			var15 = (Client.field4526 >> 7) + Client.field5093.field1019;
+			var16 = (Client.field3275 >> 7) + Client.field5093.field1021;
 			Client.method2715(var15, var16, var14, true);
 		}
 

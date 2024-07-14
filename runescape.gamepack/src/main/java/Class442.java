@@ -165,7 +165,7 @@ public abstract class Class442 extends Class569 {
 				}
 			}
 
-			this.field4784 = var4[32] + var10[32];
+			this.field4784 = var10[32] + var4[32];
 		}
 
 	}
@@ -360,12 +360,12 @@ public abstract class Class442 extends Class569 {
 
 	@ObfInfo(name = "al", desc = "(IILjava/lang/String;II)Lqa;")
 	public Class417 method8143(int var1, int var2, String var3, int var4, int var5) {
-		if (var3 != null && var3.length() >= var2 + var1) {
+		if (var3 != null && var3.length() >= var1 + var2) {
 			int var6 = var4 - this.method8139(var3) / 2;
 			var6 += this.method8139(var3.substring(0, var1));
 			int var7 = var5 - this.field4792;
-			int var8 = this.method8139(var3.substring(var1, var2 + var1));
-			int var9 = this.field4792 + this.field4793;
+			int var8 = this.method8139(var3.substring(var1, var1 + var2));
+			int var9 = this.field4793 + this.field4792;
 			return new Class417(var6, var7, var8, var9);
 		} else {
 			return new Class417(var4, var5, 0, 0);
@@ -426,7 +426,7 @@ public abstract class Class442 extends Class569 {
 			}
 
 			int[] var12 = new int[]{var4};
-			if (var5 < this.field4792 + this.field4793 + var11 && var5 < var11 + var11) {
+			if (var5 < this.field4793 + this.field4792 + var11 && var5 < var11 + var11) {
 				var12 = null;
 			}
 
@@ -440,9 +440,9 @@ public abstract class Class442 extends Class569 {
 			if (var10 == 0) {
 				var14 = this.field4792 + var3;
 			} else if (var10 == 1) {
-				var14 = this.field4792 + var3 + (var5 - this.field4792 - this.field4793 - (var13 - 1) * var11) / 2;
+				var14 = (var5 - this.field4792 - this.field4793 - (var13 - 1) * var11) / 2 + this.field4792 + var3;
 			} else if (var10 == 2) {
-				var14 = var5 + var3 - this.field4793 - (var13 - 1) * var11;
+				var14 = var3 + var5 - this.field4793 - (var13 - 1) * var11;
 			} else {
 				var15 = (var5 - this.field4792 - this.field4793 - (var13 - 1) * var11) / (var13 + 1);
 				if (var15 < 0) {
@@ -459,8 +459,8 @@ public abstract class Class442 extends Class569 {
 				} else if (var9 == 1) {
 					this.method8161(field4806[var15], var2 + (var4 - this.method8139(field4806[var15])) / 2, var14);
 				} else if (var9 == 2) {
-					this.method8161(field4806[var15], var4 + var2 - this.method8139(field4806[var15]), var14);
-				} else if (var15 == var13 - 1) {
+					this.method8161(field4806[var15], var2 + var4 - this.method8139(field4806[var15]), var14);
+				} else if (var13 - 1 == var15) {
 					this.method8161(field4806[var15], var2, var14);
 				} else {
 					this.method8160(field4806[var15], var4);
@@ -498,15 +498,15 @@ public abstract class Class442 extends Class569 {
 							var9 = ' ';
 						}
 
-						int var10 = var2 + var8.field4696;
-						int var11 = var3 + var8.field4694;
+						int var10 = var8.field4696 + var2;
+						int var11 = var8.field4694 + var3;
 						int var12 = this.field4787[var9];
 						int var13 = this.field4788[var9];
 						if (field4802 != -1) {
-							this.method7813(this.field4785[var9], var10 + this.field4789[var9] + 1, var11 + this.field4790[var9] + 1, var12, var13, field4802);
+							this.method7813(this.field4785[var9], this.field4789[var9] + var10 + 1, this.field4790[var9] + var11 + 1, var12, var13, field4802);
 						}
 
-						this.method7813(this.field4785[var9], var10 + this.field4789[var9], var11 + this.field4790[var9], var12, var13, field4801);
+						this.method7813(this.field4785[var9], this.field4789[var9] + var10, this.field4790[var9] + var11, var12, var13, field4801);
 					}
 				}
 			}
@@ -527,7 +527,7 @@ public abstract class Class442 extends Class569 {
 			int[] var9 = new int[var1.length()];
 
 			for (int var10 = 0; var10 < var1.length(); ++var10) {
-				var9[var10] = (int)(Math.sin((double)var10 / 2.0D + (double)var6 / 5.0D) * 5.0D);
+				var9[var10] = (int)(Math.sin((double)var6 / 5.0D + (double)var10 / 2.0D) * 5.0D);
 			}
 
 			this.method8166(var1, var2 - this.method8139(var1) / 2, var3, var8, (int[])null, var9);
@@ -547,8 +547,8 @@ public abstract class Class442 extends Class569 {
 			int[] var10 = new int[var1.length()];
 
 			for (int var11 = 0; var11 < var1.length(); ++var11) {
-				var9[var11] = (int)(Math.sin((double)var11 / 5.0D + (double)var6 / 5.0D) * 5.0D);
-				var10[var11] = (int)(Math.sin((double)var11 / 3.0D + (double)var6 / 5.0D) * 5.0D);
+				var9[var11] = (int)(Math.sin((double)var6 / 5.0D + (double)var11 / 5.0D) * 5.0D);
+				var10[var11] = (int)(Math.sin((double)var6 / 5.0D + (double)var11 / 3.0D) * 5.0D);
 			}
 
 			this.method8166(var1, var2 - this.method8139(var1) / 2, var3, var8, var9, var10);
@@ -572,7 +572,7 @@ public abstract class Class442 extends Class569 {
 			int[] var12 = new int[var1.length()];
 
 			for (int var13 = 0; var13 < var1.length(); ++var13) {
-				var12[var13] = (int)(Math.sin((double)var13 / 1.5D + (double)var6 / 1.0D) * var10);
+				var12[var13] = (int)(Math.sin((double)var6 / 1.0D + (double)var13 / 1.5D) * var10);
 			}
 
 			this.method8166(var1, var2 - this.method8139(var1) / 2, var3, var9, (int[])null, var12);
@@ -772,16 +772,16 @@ public abstract class Class442 extends Class569 {
 						if (var7 != ' ') {
 							if (field4805 == 256) {
 								if (field4802 != -1) {
-									method8165(this.field4785[var7], var2 + this.field4789[var7] + 1, var3 + this.field4790[var7] + 1, var12, var9, field4802);
+									method8165(this.field4785[var7], this.field4789[var7] + var2 + 1, this.field4790[var7] + var3 + 1, var12, var9, field4802);
 								}
 
-								this.method7813(this.field4785[var7], var2 + this.field4789[var7], var3 + this.field4790[var7], var12, var9, field4801);
+								this.method7813(this.field4785[var7], this.field4789[var7] + var2, this.field4790[var7] + var3, var12, var9, field4801);
 							} else {
 								if (field4802 != -1) {
-									method8216(this.field4785[var7], var2 + this.field4789[var7] + 1, var3 + this.field4790[var7] + 1, var12, var9, field4802, field4805);
+									method8216(this.field4785[var7], this.field4789[var7] + var2 + 1, this.field4790[var7] + var3 + 1, var12, var9, field4802, field4805);
 								}
 
-								this.method7811(this.field4785[var7], var2 + this.field4789[var7], var3 + this.field4790[var7], var12, var9, field4801, field4805);
+								this.method7811(this.field4785[var7], this.field4789[var7] + var2, this.field4790[var7] + var3, var12, var9, field4801, field4805);
 							}
 						} else if (field4803 > 0) {
 							field4794 += field4803;
@@ -791,7 +791,7 @@ public abstract class Class442 extends Class569 {
 
 						int var10 = this.field4786[var7];
 						if (field4796 != -1) {
-							method10128(var2, var3 + (int)((double)this.field4784 * 0.7D), var10, field4796);
+							method10128(var2, (int)((double)this.field4784 * 0.7D) + var3, var10, field4796);
 						}
 
 						if (field4804 != -1) {
@@ -847,7 +847,7 @@ public abstract class Class442 extends Class569 {
 										++var9;
 										var15 = Class413.method7482(var12.substring(4));
 										Class568 var20 = Client.field4791[var15];
-										var20.method10122(var13 + var2, this.field4784 + var3 - var20.field5498 + var14);
+										var20.method10122(var2 + var13, this.field4784 + var3 - var20.field5498 + var14);
 										var2 += var20.field5499;
 										var8 = -1;
 									} catch (Exception var18) {
@@ -896,16 +896,16 @@ public abstract class Class442 extends Class569 {
 						if (var11 != ' ') {
 							if (field4805 == 256) {
 								if (field4802 != -1) {
-									method8165(this.field4785[var11], var2 + this.field4789[var11] + 1 + var14, var3 + this.field4790[var11] + 1 + var15, var19, var13, field4802);
+									method8165(this.field4785[var11], this.field4789[var11] + var2 + 1 + var14, this.field4790[var11] + var3 + 1 + var15, var19, var13, field4802);
 								}
 
-								this.method7813(this.field4785[var11], var2 + this.field4789[var11] + var14, var3 + this.field4790[var11] + var15, var19, var13, var16);
+								this.method7813(this.field4785[var11], this.field4789[var11] + var2 + var14, this.field4790[var11] + var3 + var15, var19, var13, var16);
 							} else {
 								if (field4802 != -1) {
-									method8216(this.field4785[var11], var2 + this.field4789[var11] + 1 + var14, var3 + this.field4790[var11] + 1 + var15, var19, var13, field4802, field4805);
+									method8216(this.field4785[var11], this.field4789[var11] + var2 + 1 + var14, this.field4790[var11] + var3 + 1 + var15, var19, var13, field4802, field4805);
 								}
 
-								this.method7811(this.field4785[var11], var2 + this.field4789[var11] + var14, var3 + this.field4790[var11] + var15, var19, var13, var16, field4805);
+								this.method7811(this.field4785[var11], this.field4789[var11] + var2 + var14, this.field4790[var11] + var3 + var15, var19, var13, var16, field4805);
 							}
 						} else if (field4803 > 0) {
 							field4794 += field4803;
@@ -915,7 +915,7 @@ public abstract class Class442 extends Class569 {
 
 						int var17 = this.field4786[var11];
 						if (field4796 != -1) {
-							method10128(var2, var3 + (int)((double)this.field4784 * 0.7D), var17, field4796);
+							method10128(var2, (int)((double)this.field4784 * 0.7D) + var3, var17, field4796);
 						}
 
 						if (field4804 != -1) {
@@ -934,9 +934,9 @@ public abstract class Class442 extends Class569 {
 	@ObfInfo(name = "ai", desc = "([[B[[B[I[I[III)I")
 	public static int method8137(byte[][] var0, byte[][] var1, int[] var2, int[] var3, int[] var4, int var5, int var6) {
 		int var7 = var2[var5];
-		int var8 = var7 + var4[var5];
+		int var8 = var4[var5] + var7;
 		int var9 = var2[var6];
-		int var10 = var9 + var4[var6];
+		int var10 = var4[var6] + var9;
 		int var11 = var7;
 		if (var9 > var7) {
 			var11 = var9;
@@ -979,7 +979,7 @@ public abstract class Class442 extends Class569 {
 			}
 		}
 
-		StringBuilder var6 = new StringBuilder(var2 + var1);
+		StringBuilder var6 = new StringBuilder(var1 + var2);
 
 		for (int var7 = 0; var7 < var1; ++var7) {
 			char var5 = var0.charAt(var7);
@@ -997,7 +997,7 @@ public abstract class Class442 extends Class569 {
 
 	@ObfInfo(name = "bx", desc = "([BIIIII)V")
 	public static void method8165(byte[] var0, int var1, int var2, int var3, int var4, int var5) {
-		int var6 = var1 + Class88.field5502 * var2;
+		int var6 = Class88.field5502 * var2 + var1;
 		int var7 = Class88.field5502 - var3;
 		int var8 = 0;
 		int var9 = 0;
@@ -1006,12 +1006,12 @@ public abstract class Class442 extends Class569 {
 			var10 = Class569.field5505 - var2;
 			var4 -= var10;
 			var2 = Class569.field5505;
-			var9 += var10 * var3;
+			var9 += var3 * var10;
 			var6 += Class88.field5502 * var10;
 		}
 
-		if (var4 + var2 > Class569.field5507) {
-			var4 -= var4 + var2 - Class569.field5507;
+		if (var2 + var4 > Class569.field5507) {
+			var4 -= var2 + var4 - Class569.field5507;
 		}
 
 		if (var1 < Class569.field5508) {
@@ -1024,8 +1024,8 @@ public abstract class Class442 extends Class569 {
 			var7 += var10;
 		}
 
-		if (var3 + var1 > Class569.field5509) {
-			var10 = var3 + var1 - Class569.field5509;
+		if (var1 + var3 > Class569.field5509) {
+			var10 = var1 + var3 - Class569.field5509;
 			var3 -= var10;
 			var8 += var10;
 			var7 += var10;
@@ -1085,7 +1085,7 @@ public abstract class Class442 extends Class569 {
 
 	@ObfInfo(name = "by", desc = "([BIIIIII)V")
 	public static void method8216(byte[] var0, int var1, int var2, int var3, int var4, int var5, int var6) {
-		int var7 = var1 + Class88.field5502 * var2;
+		int var7 = Class88.field5502 * var2 + var1;
 		int var8 = Class88.field5502 - var3;
 		int var9 = 0;
 		int var10 = 0;
@@ -1094,12 +1094,12 @@ public abstract class Class442 extends Class569 {
 			var11 = Class569.field5505 - var2;
 			var4 -= var11;
 			var2 = Class569.field5505;
-			var10 += var11 * var3;
+			var10 += var3 * var11;
 			var7 += Class88.field5502 * var11;
 		}
 
-		if (var4 + var2 > Class569.field5507) {
-			var4 -= var4 + var2 - Class569.field5507;
+		if (var2 + var4 > Class569.field5507) {
+			var4 -= var2 + var4 - Class569.field5507;
 		}
 
 		if (var1 < Class569.field5508) {
@@ -1112,8 +1112,8 @@ public abstract class Class442 extends Class569 {
 			var8 += var11;
 		}
 
-		if (var3 + var1 > Class569.field5509) {
-			var11 = var3 + var1 - Class569.field5509;
+		if (var1 + var3 > Class569.field5509) {
+			var11 = var1 + var3 - Class569.field5509;
 			var3 -= var11;
 			var9 += var11;
 			var8 += var11;

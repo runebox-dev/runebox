@@ -8,7 +8,7 @@ final class Class404 implements Comparator {
 
 	@ObfInfo(name = "aq", desc = "(Lpm;Lpm;B)I", opaque = "4")
 	public int method7483(Class403 var1, Class403 var2) {
-		return var1.field4648 < var2.field4648 ? -1 : (var2.field4648 == var1.field4648 ? 0 : 1);
+		return var1.field4648 < var2.field4648 ? -1 : (var1.field4648 == var2.field4648 ? 0 : 1);
 	}
 
 	public int compare(Object var1, Object var2) {
@@ -21,7 +21,7 @@ final class Class404 implements Comparator {
 
 	@ObfInfo(name = "mi", desc = "(IIIIB)V", opaque = "0")
 	public static void method7493(int var0, int var1, int var2, int var3) {
-		if (0 == Client.field614 && !Client.field692) {
+		if (Client.field614 == 0 && !Client.field692) {
 			Client.method2780(Class367.field4204, "", 23, 0, var0 - var2, var1 - var3);
 		}
 
@@ -80,7 +80,7 @@ final class Class404 implements Comparator {
 							Class103 var27 = null;
 
 							for (Class103 var28 = (Class103)var24.field1033.method7526(); var28 != null; var28 = (Class103)var24.field1033.method7511()) {
-								if (var25 == var28.field1318 && var28.field1322 == var17 && var19 == var28.field1321 && var33 == var28.field1319) {
+								if (var28.field1318 == var25 && var28.field1322 == var17 && var28.field1321 == var19 && var28.field1319 == var33) {
 									var27 = var28;
 									break;
 								}
@@ -89,7 +89,7 @@ final class Class404 implements Comparator {
 							if (!Client.field4580 && Client.field614 == 1) {
 								Class247.method4829(Class367.field4035, Client.field668 + " " + Class111.field1392 + " " + Class111.method3839(65535) + var26.field2175, 1, var33, var17, var19, -1, false, var23);
 							} else if (Client.field692) {
-								if (!Client.field4580 && 4 == (Client.field969 & 4)) {
+								if (!Client.field4580 && (Client.field969 & 4) == 4) {
 									Class247.method4829(Client.field695, Client.field696 + " " + Class111.field1392 + " " + Class111.method3839(65535) + var26.field2175, 2, var33, var17, var19, -1, false, var23);
 								}
 							} else {
@@ -140,7 +140,7 @@ final class Class404 implements Comparator {
 							if (var34.field1309.field1943 == 1 && (var34.field1266 & 127) == 64 && (var34.field1229 & 127) == 64) {
 								for (var37 = 0; var37 < var24.field1027; ++var37) {
 									var39 = var24.field1013[var24.field1028[var37]];
-									if (var39 != null && var39 != var34 && 1 == var39.field1309.field1943 && var39.field1266 == var34.field1266 && var39.field1229 == var34.field1229) {
+									if (var39 != null && var34 != var39 && var39.field1309.field1943 == 1 && var34.field1266 == var39.field1266 && var34.field1229 == var39.field1229) {
 										Client.method5047(var39, var24.field1028[var37], var17, var19, var23);
 									}
 								}
@@ -165,7 +165,7 @@ final class Class404 implements Comparator {
 								break label382;
 							}
 
-							if (64 == (var35.field1266 & 127) && 64 == (var35.field1229 & 127)) {
+							if ((var35.field1266 & 127) == 64 && (var35.field1229 & 127) == 64) {
 								for (var37 = 0; var37 < var24.field1027; ++var37) {
 									var39 = var24.field1013[var24.field1028[var37]];
 									if (var39 != null && var39.field1309.field1943 == 1 && var35.field1266 == var39.field1266 && var35.field1229 == var39.field1229) {
@@ -178,7 +178,7 @@ final class Class404 implements Comparator {
 
 								for (var29 = 0; var29 < var37; ++var29) {
 									var44 = var24.field1024[var40[var29]];
-									if (var44 != null && var44 != var35 && var44.field1266 == var35.field1266 && var44.field1229 == var35.field1229) {
+									if (var44 != null && var35 != var44 && var35.field1266 == var44.field1266 && var35.field1229 == var44.field1229) {
 										Class96.method2565(var44, var40[var29], var17, var19, var23);
 									}
 								}
@@ -197,7 +197,7 @@ final class Class404 implements Comparator {
 							if (var36 != null) {
 								for (Class119 var41 = (Class119)var36.method7510(); var41 != null; var41 = (Class119)var36.method7512()) {
 									Class187 var42 = Class187.method3421(var41.field1439);
-									if (!Client.field1660 && 1 == Client.field614) {
+									if (!Client.field1660 && Client.field614 == 1) {
 										Class247.method4829(Class367.field4035, Client.field668 + " " + Class111.field1392 + " " + Class111.method3839(16748608) + var42.field2013, 16, var41.field1439, var17, var19, -1, false, var23);
 									} else if (Client.field692) {
 										if (!Client.field1660 && (Client.field969 & 1) == 1) {
@@ -208,7 +208,7 @@ final class Class404 implements Comparator {
 
 										for (int var45 = 4; var45 >= 0; --var45) {
 											if (!Client.field1660 && var41.method2965(var45)) {
-												if (var43 != null && null != var43[var45]) {
+												if (var43 != null && var43[var45] != null) {
 													byte var31 = 0;
 													if (var45 == 0) {
 														var31 = 18;

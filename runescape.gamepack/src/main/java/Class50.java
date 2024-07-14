@@ -171,11 +171,11 @@ public class Class50 {
 							Method var17 = var14[var16];
 							if (var17.getName().equals(var7)) {
 								Class[] var18 = var17.getParameterTypes();
-								if (var18.length == var27.length) {
+								if (var27.length == var18.length) {
 									boolean var19 = true;
 
 									for (int var20 = 0; var20 < var27.length; ++var20) {
-										if (var18[var20] != var27[var20]) {
+										if (var27[var20] != var18[var20]) {
 											var19 = false;
 											break;
 										}

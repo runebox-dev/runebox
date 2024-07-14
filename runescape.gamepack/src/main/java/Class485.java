@@ -34,15 +34,15 @@ public final class Class485 {
 		synchronized(this.field5010) {
 			Object var10000;
 			try {
-				if (this.field5013.method9327() < (long)(6 + var1 * 6)) {
+				if (this.field5013.method9327() < (long)(var1 * 6 + 6)) {
 					var10000 = null;
 					return (byte[])var10000;
 				}
 
 				this.field5013.method9313((long)(var1 * 6));
 				this.field5013.method9316(field5009, 0, 6);
-				int var4 = ((field5009[1] & 255) << 8) + ((field5009[0] & 255) << 16) + (field5009[2] & 255);
-				int var5 = ((field5009[3] & 255) << 16) + ((field5009[4] & 255) << 8) + (field5009[5] & 255);
+				int var4 = (field5009[2] & 255) + ((field5009[1] & 255) << 8) + ((field5009[0] & 255) << 16);
+				int var5 = (field5009[5] & 255) + ((field5009[3] & 255) << 16) + ((field5009[4] & 255) << 8);
 				if (var4 < 0 || var4 > this.field5011) {
 					var10000 = null;
 					return (byte[])var10000;
@@ -72,9 +72,9 @@ public final class Class485 {
 							}
 
 							var14 = 10;
-							this.field5010.method9316(field5009, 0, var14 + var9);
-							var10 = ((field5009[2] & 255) << 8) + ((field5009[1] & 255) << 16) + ((field5009[0] & 255) << 24) + (field5009[3] & 255);
-							var11 = (field5009[5] & 255) + ((field5009[4] & 255) << 8);
+							this.field5010.method9316(field5009, 0, var9 + var14);
+							var10 = (field5009[3] & 255) + ((field5009[2] & 255) << 8) + ((field5009[1] & 255) << 16) + ((field5009[0] & 255) << 24);
+							var11 = ((field5009[4] & 255) << 8) + (field5009[5] & 255);
 							var12 = (field5009[8] & 255) + ((field5009[6] & 255) << 16) + ((field5009[7] & 255) << 8);
 							var13 = field5009[9] & 255;
 						} else {
@@ -83,16 +83,16 @@ public final class Class485 {
 							}
 
 							var14 = 8;
-							this.field5010.method9316(field5009, 0, var14 + var9);
-							var10 = (field5009[1] & 255) + ((field5009[0] & 255) << 8);
+							this.field5010.method9316(field5009, 0, var9 + var14);
+							var10 = ((field5009[0] & 255) << 8) + (field5009[1] & 255);
 							var11 = ((field5009[2] & 255) << 8) + (field5009[3] & 255);
-							var12 = ((field5009[4] & 255) << 16) + ((field5009[5] & 255) << 8) + (field5009[6] & 255);
+							var12 = (field5009[6] & 255) + ((field5009[4] & 255) << 16) + ((field5009[5] & 255) << 8);
 							var13 = field5009[7] & 255;
 						}
 
-						if (var10 == var1 && var11 == var8 && this.field5012 == var13) {
+						if (var1 == var10 && var8 == var11 && this.field5012 == var13) {
 							if (var12 >= 0 && (long)var12 <= this.field5010.method9327() / 520L) {
-								int var15 = var14 + var9;
+								int var15 = var9 + var14;
 
 								for (int var16 = var14; var16 < var15; ++var16) {
 									var6[var7++] = field5009[var16];
@@ -147,14 +147,14 @@ public final class Class485 {
 				int var7;
 				boolean var10000;
 				if (var4) {
-					if (this.field5013.method9327() < (long)(6 + var1 * 6)) {
+					if (this.field5013.method9327() < (long)(var1 * 6 + 6)) {
 						var10000 = false;
 						return var10000;
 					}
 
 					this.field5013.method9313((long)(var1 * 6));
 					this.field5013.method9316(field5009, 0, 6);
-					var7 = ((field5009[3] & 255) << 16) + ((field5009[4] & 255) << 8) + (field5009[5] & 255);
+					var7 = (field5009[5] & 255) + ((field5009[3] & 255) << 16) + ((field5009[4] & 255) << 8);
 					if (var7 <= 0 || (long)var7 > this.field5010.method9327() / 520L) {
 						var10000 = false;
 						return var10000;
@@ -183,7 +183,7 @@ public final class Class485 {
 							int var10 = 0;
 							int var11;
 							if (var4) {
-								this.field5010.method9313(520L * (long)var7);
+								this.field5010.method9313((long)var7 * 520L);
 								int var12;
 								int var13;
 								if (var1 > 65535) {
@@ -193,9 +193,9 @@ public final class Class485 {
 										break label154;
 									}
 
-									var11 = ((field5009[0] & 255) << 24) + ((field5009[1] & 255) << 16) + ((field5009[2] & 255) << 8) + (field5009[3] & 255);
+									var11 = (field5009[3] & 255) + ((field5009[2] & 255) << 8) + ((field5009[0] & 255) << 24) + ((field5009[1] & 255) << 16);
 									var12 = ((field5009[4] & 255) << 8) + (field5009[5] & 255);
-									var10 = ((field5009[6] & 255) << 16) + ((field5009[7] & 255) << 8) + (field5009[8] & 255);
+									var10 = (field5009[8] & 255) + ((field5009[6] & 255) << 16) + ((field5009[7] & 255) << 8);
 									var13 = field5009[9] & 255;
 								} else {
 									try {
@@ -204,13 +204,13 @@ public final class Class485 {
 										break label154;
 									}
 
-									var11 = (field5009[1] & 255) + ((field5009[0] & 255) << 8);
+									var11 = ((field5009[0] & 255) << 8) + (field5009[1] & 255);
 									var12 = ((field5009[2] & 255) << 8) + (field5009[3] & 255);
-									var10 = ((field5009[5] & 255) << 8) + ((field5009[4] & 255) << 16) + (field5009[6] & 255);
+									var10 = (field5009[6] & 255) + ((field5009[5] & 255) << 8) + ((field5009[4] & 255) << 16);
 									var13 = field5009[7] & 255;
 								}
 
-								if (var11 != var1 || var12 != var9 || this.field5012 != var13) {
+								if (var1 != var11 || var9 != var12 || this.field5012 != var13) {
 									var10000 = false;
 									return var10000;
 								}
@@ -228,7 +228,7 @@ public final class Class485 {
 									++var10;
 								}
 
-								if (var10 == var7) {
+								if (var7 == var10) {
 									++var10;
 								}
 							}

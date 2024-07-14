@@ -26,7 +26,7 @@ public class Class130 {
 
 	@ObfInfo(name = "aq", desc = "(S)Z", opaque = "1338")
 	public boolean method3050() {
-		return this.field1522 != field1519;
+		return field1519 != this.field1522;
 	}
 
 	@ObfInfo(name = "ad", desc = "(I)[B")

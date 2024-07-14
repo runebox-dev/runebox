@@ -19,16 +19,16 @@ public class Class501 {
 			double var25 = 0.949999988079071D;
 
 			for (int var2 = 0; var2 < 65536; ++var2) {
-				double var3 = 0.0078125D + (double)(var2 >> 10 & 63) / 64.0D;
+				double var3 = (double)(var2 >> 10 & 63) / 64.0D + 0.0078125D;
 				double var5 = (double)(var2 >> 7 & 7) / 8.0D + 0.0625D;
 				double var7 = (double)(var2 & 127) / 128.0D;
 				double var9 = var7;
 				double var11 = var7;
 				double var13 = var7;
-				if (0.0D != var5) {
+				if (var5 != 0.0D) {
 					double var15;
 					if (var7 < 0.5D) {
-						var15 = var7 * (1.0D + var5);
+						var15 = (var5 + 1.0D) * var7;
 					} else {
 						var15 = var5 + var7 - var5 * var7;
 					}
@@ -45,28 +45,28 @@ public class Class501 {
 					}
 
 					if (var19 * 6.0D < 1.0D) {
-						var9 = var17 + 6.0D * (var15 - var17) * var19;
-					} else if (2.0D * var19 < 1.0D) {
+						var9 = (var15 - var17) * 6.0D * var19 + var17;
+					} else if (var19 * 2.0D < 1.0D) {
 						var9 = var15;
 					} else if (var19 * 3.0D < 2.0D) {
-						var9 = var17 + (var15 - var17) * (0.6666666666666666D - var19) * 6.0D;
+						var9 = (var15 - var17) * (0.6666666666666666D - var19) * 6.0D + var17;
 					} else {
 						var9 = var17;
 					}
 
 					if (var3 * 6.0D < 1.0D) {
-						var11 = var17 + var3 * 6.0D * (var15 - var17);
+						var11 = (var15 - var17) * 6.0D * var3 + var17;
 					} else if (var3 * 2.0D < 1.0D) {
 						var11 = var15;
 					} else if (var3 * 3.0D < 2.0D) {
-						var11 = var17 + 6.0D * (var15 - var17) * (0.6666666666666666D - var3);
+						var11 = (0.6666666666666666D - var3) * (var15 - var17) * 6.0D + var17;
 					} else {
 						var11 = var17;
 					}
 
 					if (var23 * 6.0D < 1.0D) {
-						var13 = var23 * 6.0D * (var15 - var17) + var17;
-					} else if (2.0D * var23 < 1.0D) {
+						var13 = (var15 - var17) * 6.0D * var23 + var17;
+					} else if (var23 * 2.0D < 1.0D) {
 						var13 = var15;
 					} else if (var23 * 3.0D < 2.0D) {
 						var13 = (var15 - var17) * (0.6666666666666666D - var23) * 6.0D + var17;
@@ -78,10 +78,10 @@ public class Class501 {
 				var9 = Math.pow(var9, var25);
 				var11 = Math.pow(var11, var25);
 				var13 = Math.pow(var13, var25);
-				int var26 = (int)(256.0D * var9);
+				int var26 = (int)(var9 * 256.0D);
 				int var16 = (int)(var11 * 256.0D);
-				int var27 = (int)(256.0D * var13);
-				int var18 = var27 + (var26 << 16) + (var16 << 8);
+				int var27 = (int)(var13 * 256.0D);
+				int var18 = (var26 << 16) + (var16 << 8) + var27;
 				field5065[var2] = var18 & 16777215;
 			}
 		}
@@ -114,7 +114,7 @@ public class Class501 {
 		double var12 = 0.0D;
 		double var14 = 0.0D;
 		double var16 = (var8 + var10) / 2.0D;
-		if (var10 != var8) {
+		if (var8 != var10) {
 			if (var16 < 0.5D) {
 				var14 = (var10 - var8) / (var8 + var10);
 			}
@@ -123,7 +123,7 @@ public class Class501 {
 				var14 = (var10 - var8) / (2.0D - var10 - var8);
 			}
 
-			if (var10 == var2) {
+			if (var2 == var10) {
 				var12 = (var4 - var6) / (var10 - var8);
 			} else if (var4 == var10) {
 				var12 = (var6 - var2) / (var10 - var8) + 2.0D;
@@ -134,7 +134,7 @@ public class Class501 {
 
 		int var18 = (int)(var12 * 256.0D / 6.0D);
 		var18 &= 255;
-		double var19 = 256.0D * var14;
+		double var19 = var14 * 256.0D;
 		if (var19 < 0.0D) {
 			var19 = 0.0D;
 		} else if (var19 > 255.0D) {
@@ -166,7 +166,7 @@ public class Class501 {
 		}
 
 		int var21 = (int)(var19 / 32.0D + (double)(var18 / 4 * 8));
-		return (int)(128.0D * var16) + (var21 << 7);
+		return (var21 << 7) + (int)(var16 * 128.0D);
 	}
 
 	@ObfInfo(name = "ad", desc = "(II)I")

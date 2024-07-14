@@ -18,6 +18,6 @@ public class Class514 extends Class511 {
 	@ObfInfo(name = "aq", desc = "(I)I")
 	public int method9032() {
 		double var2 = this.method9003();
-		return (int)Math.round((double)this.field5149 + var2 * (double)(this.field5150 - this.field5149));
+		return (int)Math.round((double)(this.field5150 - this.field5149) * var2 + (double)this.field5149);
 	}
 }

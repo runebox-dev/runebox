@@ -101,7 +101,7 @@ public class Class428 {
 
 	@ObfInfo(name = "ab", desc = "(II)V", opaque = "161057042")
 	public void method7879(int var1) {
-		if (var1 != this.field4723) {
+		if (this.field4723 != var1) {
 			this.field4723 = var1;
 			this.method7904();
 		}
@@ -113,7 +113,7 @@ public class Class428 {
 		if (this.field4719 != var1) {
 			this.field4719 = var1;
 			if (this.field4719 != null) {
-				if (0 == this.field4735) {
+				if (this.field4735 == 0) {
 					this.field4735 = this.field4719.field4784;
 				}
 
@@ -136,7 +136,7 @@ public class Class428 {
 
 	@ObfInfo(name = "au", desc = "(III)Z", opaque = "1099939946")
 	public boolean method7981(int var1, int var2) {
-		if (var1 != this.field4730 || this.field4732 != var2) {
+		if (this.field4730 != var1 || this.field4732 != var2) {
 			this.field4730 = var1;
 			this.field4732 = var2;
 			this.method7904();
@@ -147,7 +147,7 @@ public class Class428 {
 
 	@ObfInfo(name = "ah", desc = "(IB)V", opaque = "94")
 	public void method7883(int var1) {
-		if (var1 != this.field4735) {
+		if (this.field4735 != var1) {
 			this.field4735 = var1;
 			this.method7904();
 		}
@@ -156,7 +156,7 @@ public class Class428 {
 
 	@ObfInfo(name = "az", desc = "(IIB)Lqw;", opaque = "-1")
 	public Class439 method7884(int var1, int var2) {
-		if (var2 == var1) {
+		if (var1 == var2) {
 			return new Class439(this, 0, 0);
 		} else if (var1 <= this.field4733.size() && var2 <= this.field4733.size()) {
 			return var2 < var1 ? new Class439(this, var2, var1) : new Class439(this, var1, var2);
@@ -191,8 +191,8 @@ public class Class428 {
 			}
 
 			this.method7905(var2, var5);
-			if (0 != this.field4727 && this.method7987() > this.field4727) {
-				while (var5 != var2) {
+			if (this.field4727 != 0 && this.method7987() > this.field4727) {
+				while (var2 != var5) {
 					--var5;
 					this.method7933(var5);
 					if (this.method7987() <= this.field4727) {
@@ -239,7 +239,7 @@ public class Class428 {
 
 		this.field4733.subList(var1, var2).clear();
 		var4 = var1;
-		if (this.method7874() && 1 == this.field4734) {
+		if (this.method7874() && this.field4734 == 1) {
 			while (var4 > 0) {
 				--var4;
 				char var5 = ((Class422)this.field4733.get(var4)).field4693;
@@ -274,7 +274,7 @@ public class Class428 {
 
 						if (var4 + 1 != this.field4733.size() && ((Class422)this.field4733.get(var4 + 1)).field4694 != var5.field4694) {
 							int var6 = this.method7907((Class422)this.field4733.get(var4), false);
-							if (var1 < var6 + var5.field4696) {
+							if (var1 < var5.field4696 + var6) {
 								return var4;
 							}
 
@@ -322,9 +322,9 @@ public class Class428 {
 			int var10 = 16777215;
 			int var11 = var4 == 1 ? this.field4733.size() + 1 : 0;
 
-			for (int var12 = var4 + var1; var12 != var11; var12 += var4) {
+			for (int var12 = var1 + var4; var11 != var12; var12 += var4) {
 				Class422 var13 = (Class422)this.field4733.get(var12 - 1);
-				if (var6 != var13.field4694) {
+				if (var13.field4694 != var6) {
 					++var8;
 					var6 = var13.field4694;
 					if (var8 > var2) {
@@ -332,7 +332,7 @@ public class Class428 {
 					}
 				}
 
-				if (var8 == var2) {
+				if (var2 == var8) {
 					int var14 = Math.abs(var13.field4696 + this.method7995(var12 - 1) - var5);
 					if (var14 >= var10) {
 						return var9;
@@ -350,7 +350,7 @@ public class Class428 {
 					++var8;
 				}
 
-				return var10 == 16777215 || var8 == var2 && var5 < var10 ? 0 : var9;
+				return var10 == 16777215 || var2 == var8 && var5 < var10 ? 0 : var9;
 			}
 		} else {
 			return 0;
@@ -367,7 +367,7 @@ public class Class428 {
 
 			for (int var4 = this.field4733.size() - 1; var4 >= 0; --var4) {
 				Class422 var5 = (Class422)this.field4733.get(var4);
-				if (var2 != var5.field4694) {
+				if (var5.field4694 != var2) {
 					int var6 = this.method7907(var5, false) + var5.field4696;
 					var3 = Math.max(var6, var3);
 					var2 = var5.field4694;
@@ -467,7 +467,7 @@ public class Class428 {
 				Class422 var12 = (Class422)this.field4733.get(!var11 ? var10 : this.field4733.size() - 1);
 				int var13 = !var11 ? this.method7907(var12, false) : 0;
 				boolean var14 = !var11 && var12.field4693 == '\n';
-				boolean var15 = !var11 && this.method7874() && var13 + var7 > this.field4726;
+				boolean var15 = !var11 && this.method7874() && var7 + var13 > this.field4726;
 				if (var14 || var15 || var11) {
 					int var16 = var10;
 					int var17 = 0;
@@ -531,7 +531,7 @@ public class Class428 {
 	public int method7907(Class422 var1, boolean var2) {
 		if (var1.field4693 == '\n') {
 			return 0;
-		} else if (!var2 && 0 != this.field4723) {
+		} else if (!var2 && this.field4723 != 0) {
 			return this.field4719.field4786[42];
 		} else {
 			int var4 = this.field4719.field4786[var1.field4693];
@@ -548,7 +548,7 @@ public class Class428 {
 		int var4 = Math.min(var1, var2);
 		int var5 = Math.max(var1, var2);
 		int var6 = this.field4733.size();
-		if (var4 == 0 && var6 == var5) {
+		if (var4 == 0 && var5 == var6) {
 			return new Class515(0, var6);
 		} else {
 			int var7 = this.method7909(var4, false);
@@ -565,7 +565,7 @@ public class Class428 {
 			case 1:
 				return new Class515(0, var6);
 			case 2:
-				if (2 == this.field4730) {
+				if (this.field4730 == 2) {
 					return new Class515(0, var8);
 				}
 

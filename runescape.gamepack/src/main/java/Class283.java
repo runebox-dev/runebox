@@ -38,7 +38,7 @@ public class Class283 implements Class264 {
 	@ObfInfo(name = "ad", desc = "(IIIB)Z", opaque = "-1")
 	public boolean method4459(int var1, int var2, int var3) {
 		if (var1 >= this.field2978 && var1 < this.field2981 + this.field2978) {
-			return var2 >> 6 == this.field2979 && this.field2980 == var3 >> 6;
+			return var2 >> 6 == this.field2979 && var3 >> 6 == this.field2980;
 		} else {
 			return false;
 		}
@@ -54,7 +54,7 @@ public class Class283 implements Class264 {
 		if (!this.method4459(var1, var2, var3)) {
 			return null;
 		} else {
-			int[] var5 = new int[]{var2 + (this.field2977 * 64 - this.field2979 * 64), var3 + (this.field2982 * 64 - this.field2980 * 64)};
+			int[] var5 = new int[]{this.field2977 * 64 - this.field2979 * 64 + var2, this.field2982 * 64 - this.field2980 * 64 + var3};
 			return var5;
 		}
 	}
@@ -65,7 +65,7 @@ public class Class283 implements Class264 {
 			return null;
 		} else {
 			int var4 = this.field2979 * 64 - this.field2977 * 64 + var1;
-			int var5 = var2 + (this.field2980 * 64 - this.field2982 * 64);
+			int var5 = this.field2980 * 64 - this.field2982 * 64 + var2;
 			return new Class350(this.field2978, var4, var5);
 		}
 	}
@@ -111,7 +111,7 @@ public class Class283 implements Class264 {
 					}
 
 					if (var2 == 0) {
-						var9[0][var3][var4] = 8 * -var12;
+						var9[0][var3][var4] = -var12 * 8;
 					} else {
 						var9[var2][var3][var4] = var9[var2 - 1][var3][var4] - var12 * 8;
 					}
@@ -121,7 +121,7 @@ public class Class283 implements Class264 {
 				if (var11 <= 49) {
 					Class97.field1187[var2][var3][var4] = (short)var1.method9829();
 					Class97.field1188[var2][var3][var4] = (byte)((var11 - 2) / 4);
-					Class97.field3989[var2][var3][var4] = (byte)(var7 + (var11 - 2) & 3);
+					Class97.field3989[var2][var3][var4] = (byte)(var11 - 2 + var7 & 3);
 				} else if (var11 <= 81) {
 					var10[var2][var3][var4] = (byte)(var11 - 49);
 				} else {

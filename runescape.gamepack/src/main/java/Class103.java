@@ -45,7 +45,7 @@ public final class Class103 extends Class520 {
 	@ObfInfo(name = "ad", desc = "(IB)Z", opaque = "0")
 	public boolean method2769(int var1) {
 		if (var1 >= 0 && var1 <= 4) {
-			return 0 != (this.field1327 & 1 << var1);
+			return (this.field1327 & 1 << var1) != 0;
 		} else {
 			return true;
 		}

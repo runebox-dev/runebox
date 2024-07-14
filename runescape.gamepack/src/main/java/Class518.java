@@ -14,7 +14,7 @@ public class Class518 {
 
 		for (int var2 = 0; var2 < 2048; ++var2) {
 			field5224[var2] = (int)(65536.0D * Math.sin((double)var2 * var0));
-			field5218[var2] = (int)(65536.0D * Math.cos(var0 * (double)var2));
+			field5218[var2] = (int)(65536.0D * Math.cos((double)var2 * var0));
 		}
 
 	}

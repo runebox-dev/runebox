@@ -29,7 +29,7 @@ public final class Class444 {
 		this.field4807 = var1;
 		this.field4813 = var3;
 		this.field4812 = var4;
-		if (-1 == this.field4813) {
+		if (this.field4813 == -1) {
 			this.field4808 = new HashMap(64);
 			this.field4809 = new Class433(64, this.field4811);
 			this.field4810 = null;
@@ -47,7 +47,7 @@ public final class Class444 {
 
 	@ObfInfo(name = "aq", desc = "(I)Z", opaque = "-1543734160")
 	public boolean method8272() {
-		return -1 != this.field4813;
+		return this.field4813 != -1;
 	}
 
 	@ObfInfo(name = "ad", desc = "(Ljava/lang/Object;B)Ljava/lang/Object;", opaque = "6")
@@ -70,7 +70,7 @@ public final class Class444 {
 	@ObfInfo(name = "ag", desc = "(Ljava/lang/Object;Ljava/lang/Object;B)Ljava/lang/Object;", opaque = "1")
 	public Object method8262(Object var1, Object var2) {
 		synchronized(this) {
-			if (-1L != this.field4807) {
+			if (this.field4807 != -1L) {
 				this.method8276();
 			}
 
@@ -123,7 +123,7 @@ public final class Class444 {
 
 	@ObfInfo(name = "ap", desc = "(B)V", opaque = "8")
 	public void method8276() {
-		if (-1L == this.field4807) {
+		if (this.field4807 == -1L) {
 			throw new IllegalStateException("");
 		} else {
 			long var2 = System.currentTimeMillis() - this.field4807;

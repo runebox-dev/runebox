@@ -20,7 +20,7 @@ public class Class279 {
 			var1 /= 2;
 		}
 
-		int var4 = (var1 / 32 << 7) + (var0 / 4 << 10) + var2 / 2;
+		int var4 = var2 / 2 + (var0 / 4 << 10) + (var1 / 32 << 7);
 		return var4;
 	}
 
@@ -44,7 +44,7 @@ public class Class279 {
 			var0.field3897 = false;
 
 			for (int var5 = 0; var5 < var0.field3889.length; ++var5) {
-				if (null != var0.field3889[var5]) {
+				if (var0.field3889[var5] != null) {
 					var0.field3897 = true;
 					break;
 				}

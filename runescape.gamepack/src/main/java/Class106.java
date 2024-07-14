@@ -201,68 +201,84 @@ public class Class106 {
 	public void method2809() {
 		Class539 var2 = this.method2834(false);
 
-		try {
-			byte[] var3 = new byte[(int)var2.method9483()];
-
-			int var5;
-			for (int var4 = 0; var4 < var3.length; var4 += var5) {
-				var5 = var2.method9499(var3, var4, var3.length - var4);
-				if (var5 == -1) {
-					throw new EOFException();
-				}
-			}
-
-			Class562 var25 = new Class562(var3);
-			if (var25.field5472.length - var25.field5471 < 1) {
-				return;
-			}
-
-			int var6 = var25.method9902();
-			if (var6 < 0 || var6 > 2) {
-				return;
-			}
-
-			int var7;
-			int var8;
-			int var9;
-			int var10;
-			if (var6 >= 2) {
-				var7 = var25.method9997();
-
-				for (var8 = 0; var8 < var7; ++var8) {
-					var9 = var25.method9997();
-					var10 = var25.method9902();
-					Class525 var11 = (Class525)Class406.method4071(Class525.method9304(), var10);
-					Object var12 = var11.method9298(var25);
-					if (var9 >= 0 && var9 < this.field1367.length && this.field1367[var9]) {
-						this.field1363.put(var9, var12);
-					}
-				}
-			} else {
-				var7 = var25.method9997();
-
-				for (var8 = 0; var8 < var7; ++var8) {
-					var9 = var25.method9997();
-					var10 = var25.method9832();
-					if (var9 >= 0 && var9 < this.field1367.length && this.field1367[var9]) {
-						this.field1363.put(var9, var10);
-					}
-				}
-
-				var8 = var25.method9997();
-
-				for (var9 = 0; var9 < var8; ++var9) {
-					var25.method9997();
-					var25.method9837();
-				}
-			}
-		} catch (Exception var23) {
-		} finally {
+		label220: {
 			try {
-				var2.method9481();
-			} catch (Exception var22) {
+				byte[] var3 = new byte[(int)var2.method9483()];
+
+				int var5;
+				for (int var4 = 0; var4 < var3.length; var4 += var5) {
+					var5 = var2.method9499(var3, var4, var3.length - var4);
+					if (var5 == -1) {
+						throw new EOFException();
+					}
+				}
+
+				Class562 var25 = new Class562(var3);
+				if (var25.field5472.length - var25.field5471 >= 1) {
+					int var6 = var25.method9902();
+					if (var6 < 0 || var6 > 2) {
+						return;
+					}
+
+					int var7;
+					int var8;
+					int var9;
+					int var10;
+					if (var6 >= 2) {
+						var7 = var25.method9997();
+						var8 = 0;
+
+						while (true) {
+							if (var8 >= var7) {
+								break label220;
+							}
+
+							var9 = var25.method9997();
+							var10 = var25.method9902();
+							Class525 var11 = (Class525)Class406.method4071(Class525.method9304(), var10);
+							Object var12 = var11.method9298(var25);
+							if (var9 >= 0 && var9 < this.field1367.length && this.field1367[var9]) {
+								this.field1363.put(var9, var12);
+							}
+
+							++var8;
+						}
+					} else {
+						var7 = var25.method9997();
+
+						for (var8 = 0; var8 < var7; ++var8) {
+							var9 = var25.method9997();
+							var10 = var25.method9832();
+							if (var9 >= 0 && var9 < this.field1367.length && this.field1367[var9]) {
+								this.field1363.put(var9, var10);
+							}
+						}
+
+						var8 = var25.method9997();
+						var9 = 0;
+
+						while (true) {
+							if (var9 >= var8) {
+								break label220;
+							}
+
+							var25.method9997();
+							var25.method9837();
+							++var9;
+						}
+					}
+				}
+			} catch (Exception var23) {
+				break label220;
+			} finally {
+				try {
+					var2.method9481();
+				} catch (Exception var22) {
+				}
+
 			}
 
+			return;
 		}
 
 		this.field1365 = false;

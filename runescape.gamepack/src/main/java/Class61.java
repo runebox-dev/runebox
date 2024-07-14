@@ -20,7 +20,7 @@ public class Class61 {
 
 	@ObfInfo(name = "aq", desc = "(I)Z")
 	public boolean method1209() {
-		return 2 == this.field464;
+		return this.field464 == 2;
 	}
 
 	@ObfInfo(name = "ad", desc = "(I)V")

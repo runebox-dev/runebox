@@ -62,9 +62,9 @@ public class Class560 {
 			int var5 = Math.min(this.field5456, (int)((float)var4 * 0.9F));
 			int var6 = var1.method8011(this.field5453);
 			int var7 = var1.method7880(this.field5456);
-			int var8 = var6 + (this.field5459 - this.field5457);
-			int var9 = var4 + var7 + (this.field5454 - this.field5452);
-			Class569.method10183(this.field5459, this.field5454, this.field5453 + this.field5459, this.field5454 + this.field5456);
+			int var8 = this.field5459 - this.field5457 + var6;
+			int var9 = this.field5454 - this.field5452 + var7 + var4;
+			Class569.method10183(this.field5459, this.field5454, this.field5459 + this.field5453, this.field5456 + this.field5454);
 			int var10 = this.field5458;
 			int var11 = this.field5460;
 			if (var10 > var11) {

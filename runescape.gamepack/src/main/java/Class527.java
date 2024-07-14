@@ -52,7 +52,7 @@ public class Class527 extends Class562 {
 	@ObfInfo(name = "aj", desc = "([BIII)V", opaque = "-221009433")
 	public void method9345(byte[] var1, int var2, int var3) {
 		for (int var5 = 0; var5 < var3; ++var5) {
-			var1[var5 + var2] = (byte)(super.field5472[++super.field5471 - 1] - this.field5266.method10084());
+			var1[var2 + var5] = (byte)(super.field5472[++super.field5471 - 1] - this.field5266.method10084());
 		}
 
 	}
@@ -73,7 +73,7 @@ public class Class527 extends Class562 {
 			var1 -= var4;
 		}
 
-		if (var4 == var1) {
+		if (var1 == var4) {
 			var5 += super.field5472[var3] & field5267[var4];
 		} else {
 			var5 += super.field5472[var3] >> var4 - var1 & field5267[var1];
@@ -84,7 +84,7 @@ public class Class527 extends Class562 {
 
 	@ObfInfo(name = "ai", desc = "(I)V")
 	public void method9348() {
-		super.field5471 = (7 + this.field5268) / 8;
+		super.field5471 = (this.field5268 + 7) / 8;
 	}
 
 	@ObfInfo(name = "ae", desc = "(II)I")

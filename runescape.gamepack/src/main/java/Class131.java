@@ -11,12 +11,12 @@ public class Class131 {
 
 	@ObfInfo(name = "hm", desc = "(IB)V", opaque = "27")
 	public static void method3063(int var0) {
-		if (var0 != Client.field537) {
+		if (Client.field537 != var0) {
 			if (Client.field537 == 30) {
 				Client.field766.method4400();
 			}
 
-			if (0 == Client.field537) {
+			if (Client.field537 == 0) {
 				Client.field4671.method737();
 			}
 
@@ -35,7 +35,7 @@ public class Class131 {
 				Client.field4428 = null;
 			}
 
-			if (25 == Client.field537) {
+			if (Client.field537 == 25) {
 				Client.field601 = 0;
 				Client.field804 = 0;
 				Client.field781 = 1;

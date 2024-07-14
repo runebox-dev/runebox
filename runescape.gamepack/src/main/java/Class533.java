@@ -52,11 +52,11 @@ public class Class533 extends Class516 {
 
 					Object[][] var18 = this.field5289;
 					int var12 = var1.method9842();
-					Object[] var13 = new Object[var12 * var8.length];
+					Object[] var13 = new Object[var8.length * var12];
 
 					for (int var14 = 0; var14 < var12; ++var14) {
 						for (int var15 = 0; var15 < var8.length; ++var15) {
-							int var16 = var15 + var14 * var8.length;
+							int var16 = var8.length * var14 + var15;
 							Class525 var17 = Class522.method2912(var8[var15]);
 							var13[var16] = var17.method9298(var1);
 						}

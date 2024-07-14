@@ -157,21 +157,21 @@ public class Class197 extends Class516 {
 
 	@ObfInfo(name = "ad", desc = "(I)V", opaque = "106774653")
 	public void method3926() {
-		if (-1 == this.field2144) {
+		if (this.field2144 == -1) {
 			this.field2144 = 0;
-			if (this.field2127 != null && (this.field2167 == null || 10 == this.field2167[0])) {
+			if (this.field2127 != null && (this.field2167 == null || this.field2167[0] == 10)) {
 				this.field2144 = 1;
 			}
 
 			for (int var2 = 0; var2 < 5; ++var2) {
-				if (null != this.field2168[var2]) {
+				if (this.field2168[var2] != null) {
 					this.field2144 = 1;
 				}
 			}
 		}
 
-		if (-1 == this.field2165) {
-			this.field2165 = 0 != this.field2126 ? 1 : 0;
+		if (this.field2165 == -1) {
+			this.field2165 = this.field2126 != 0 ? 1 : 0;
 		}
 
 	}
@@ -242,7 +242,7 @@ public class Class197 extends Class516 {
 			this.field2133 = true;
 		} else if (var2 == 24) {
 			this.field2148 = var1.method9997();
-			if (65535 == this.field2148) {
+			if (this.field2148 == 65535) {
 				this.field2148 = -1;
 			}
 		} else if (var2 == 27) {
@@ -338,7 +338,7 @@ public class Class197 extends Class516 {
 			}
 
 			this.field2154 = var1.method9997();
-			if (65535 == this.field2154) {
+			if (this.field2154 == 65535) {
 				this.field2154 = -1;
 			}
 
@@ -355,7 +355,7 @@ public class Class197 extends Class516 {
 
 			for (int var6 = 0; var6 <= var5; ++var6) {
 				this.field2166[var6] = var1.method9997();
-				if (65535 == this.field2166[var6]) {
+				if (this.field2166[var6] == 65535) {
 					this.field2166[var6] = -1;
 				}
 			}
@@ -411,7 +411,7 @@ public class Class197 extends Class516 {
 		if (this.field2167 == null) {
 			var8 = (long)((this.field2132 << 10) + var2);
 		} else {
-			var8 = (long)(var2 + (var1 << 3) + (this.field2132 << 10));
+			var8 = (long)((this.field2132 << 10) + (var1 << 3) + var2);
 		}
 
 		Object var10 = (Class280)field2129.method6327(var8);
@@ -422,10 +422,10 @@ public class Class197 extends Class516 {
 			}
 
 			if (!this.field2146) {
-				var10 = var11.method5517(64 + this.field2147, 768 + this.field2124, -50, -10, -50);
+				var10 = var11.method5517(this.field2147 + 64, this.field2124 + 768, -50, -10, -50);
 			} else {
-				var11.field2942 = (short)(64 + this.field2147);
-				var11.field2943 = (short)(768 + this.field2124);
+				var11.field2942 = (short)(this.field2147 + 64);
+				var11.field2943 = (short)(this.field2124 + 768);
 				var11.method5521();
 				var10 = var11;
 			}
@@ -454,7 +454,7 @@ public class Class197 extends Class516 {
 		if (this.field2167 == null) {
 			var8 = (long)((this.field2132 << 10) + var2);
 		} else {
-			var8 = (long)(var2 + (var1 << 3) + (this.field2132 << 10));
+			var8 = (long)((this.field2132 << 10) + (var1 << 3) + var2);
 		}
 
 		Class308 var10 = (Class308)field2163.method6327(var8);
@@ -464,7 +464,7 @@ public class Class197 extends Class516 {
 				return null;
 			}
 
-			var10 = var11.method5517(64 + this.field2147, this.field2124 + 768, -50, -10, -50);
+			var10 = var11.method5517(this.field2147 + 64, this.field2124 + 768, -50, -10, -50);
 			field2163.method6330(var10, var8);
 		}
 
@@ -481,7 +481,7 @@ public class Class197 extends Class516 {
 		if (this.field2167 == null) {
 			var10 = (long)((this.field2132 << 10) + var2);
 		} else {
-			var10 = (long)((var1 << 3) + (this.field2132 << 10) + var2);
+			var10 = (long)((this.field2132 << 10) + (var1 << 3) + var2);
 		}
 
 		Class308 var12 = (Class308)field2163.method6327(var10);
@@ -495,7 +495,7 @@ public class Class197 extends Class516 {
 			field2163.method6330(var12, var10);
 		}
 
-		if (var7 == null && -1 == this.field2145) {
+		if (var7 == null && this.field2145 == -1) {
 			return var12;
 		} else {
 			if (var7 != null) {
@@ -604,7 +604,7 @@ public class Class197 extends Class516 {
 		}
 
 		boolean var11;
-		if (0 == this.field2155 && this.field2138 == 0 && 0 == this.field2162) {
+		if (this.field2155 == 0 && this.field2138 == 0 && this.field2162 == 0) {
 			var11 = false;
 		} else {
 			var11 = true;
@@ -651,7 +651,7 @@ public class Class197 extends Class516 {
 	@ObfInfo(name = "ae", desc = "(I)Lho;", opaque = "1767325763")
 	public final Class197 method3905() {
 		int var2 = -1;
-		if (-1 != this.field2161) {
+		if (this.field2161 != -1) {
 			var2 = Class353.method3359(this.field2161);
 		} else if (this.field2154 != -1) {
 			var2 = Class353.field3769[this.field2154];

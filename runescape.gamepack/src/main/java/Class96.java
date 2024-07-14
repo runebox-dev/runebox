@@ -35,7 +35,7 @@ public class Class96 extends Class280 {
 			this.field1179 = Class344.method6474(var8);
 			this.field1181 = 0;
 			this.field1182 = Client.field541 - 1;
-			if (0 == this.field1179.field2370 && var10 instanceof Class96) {
+			if (this.field1179.field2370 == 0 && var10 instanceof Class96) {
 				Class96 var11 = (Class96)var10;
 				if (this.field1179 == var11.field1179) {
 					this.field1181 = var11.field1181;
@@ -44,7 +44,7 @@ public class Class96 extends Class280 {
 				}
 			}
 
-			if (var9 && -1 != this.field1179.field2359) {
+			if (var9 && this.field1179.field2359 != -1) {
 				if (!this.field1179.method4132()) {
 					this.field1181 = (int)(Math.random() * (double)this.field1179.field2355.length);
 					this.field1182 -= (int)(Math.random() * (double)this.field1179.field2349[this.field1181]);
@@ -68,7 +68,7 @@ public class Class96 extends Class280 {
 		} else {
 			int var3;
 			int var4;
-			if (this.field1176 != 1 && 3 != this.field1176) {
+			if (this.field1176 != 1 && this.field1176 != 3) {
 				var3 = var2.field2140;
 				var4 = var2.field2141;
 			} else {
@@ -76,14 +76,14 @@ public class Class96 extends Class280 {
 				var4 = var2.field2140;
 			}
 
-			int var5 = this.field1178 + (var3 >> 1);
-			int var6 = this.field1178 + (var3 + 1 >> 1);
-			int var7 = this.field1173 + (var4 >> 1);
-			int var8 = this.field1173 + (var4 + 1 >> 1);
+			int var5 = (var3 >> 1) + this.field1178;
+			int var6 = (var3 + 1 >> 1) + this.field1178;
+			int var7 = (var4 >> 1) + this.field1173;
+			int var8 = (var4 + 1 >> 1) + this.field1173;
 			int[][] var9 = this.field1184.field1025[this.field1177];
-			int var10 = var9[var6][var8] + var9[var5][var8] + var9[var6][var7] + var9[var5][var7] >> 2;
-			int var11 = (var3 << 6) + (this.field1178 << 7);
-			int var12 = (var4 << 6) + (this.field1173 << 7);
+			int var10 = var9[var5][var7] + var9[var6][var7] + var9[var5][var8] + var9[var6][var8] >> 2;
+			int var11 = (this.field1178 << 7) + (var3 << 6);
+			int var12 = (this.field1173 << 7) + (var4 << 6);
 			if (this.field1179 != null) {
 				int var13 = Client.field541 - this.field1182;
 				if (var13 > 100 && this.field1179.field2359 > 0) {
@@ -139,7 +139,7 @@ public class Class96 extends Class280 {
 		if (Client.field732 != var0.field995) {
 			if (Client.field602 < 400) {
 				String var6;
-				if (0 == var0.field979) {
+				if (var0.field979 == 0) {
 					var6 = var0.field977[0] + var0.field991 + var0.field977[1] + Client.method3836(var0.field976, Client.field170.field976) + " " + Class111.field1390 + Class367.field4205 + var0.field976 + Class111.field1391 + var0.field977[2];
 				} else {
 					var6 = var0.field977[0] + var0.field991 + var0.field977[1] + " " + Class111.field1390 + Class367.field4206 + var0.field979 + Class111.field1391 + var0.field977[2];
@@ -161,17 +161,17 @@ public class Class96 extends Class280 {
 									continue;
 								}
 
-								if (Class113.field1419 == Client.field818 || Class113.field1418 == Client.field818 && var0.field976 > Client.field170.field976) {
+								if (Client.field818 == Class113.field1419 || Client.field818 == Class113.field1418 && var0.field976 > Client.field170.field976) {
 									var8 = 2000;
 								}
 
-								if (Client.field170.field998 != 0 && 0 != var0.field998) {
+								if (Client.field170.field998 != 0 && var0.field998 != 0) {
 									if (Client.field170.field998 == var0.field998) {
 										var8 = 2000;
 									} else {
 										var8 = 0;
 									}
-								} else if (Class113.field1422 == Client.field818 && var0.method2248()) {
+								} else if (Client.field818 == Class113.field1422 && var0.method2248()) {
 									var8 = 2000;
 								}
 							} else if (Client.field664[var7]) {
@@ -179,14 +179,14 @@ public class Class96 extends Class280 {
 							}
 
 							boolean var9 = false;
-							int var10 = var8 + Client.field662[var7];
+							int var10 = Client.field662[var7] + var8;
 							Class247.method4829(Client.field712[var7], Class111.method3839(16777215) + var6, var10, var1, var2, var3, -1, false, var4);
 						}
 					}
 				}
 
 				for (var7 = 0; var7 < Client.field602; ++var7) {
-					if (23 == Client.field783[var7]) {
+					if (Client.field783[var7] == 23) {
 						Client.field681[var7] = Class111.method3839(16777215) + var6;
 						break;
 					}

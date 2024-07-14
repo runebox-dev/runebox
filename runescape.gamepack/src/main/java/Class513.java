@@ -34,13 +34,13 @@ public class Class513 extends Class507 {
 	@ObfInfo(name = "aq", desc = "(I)I")
 	public int method8957() {
 		double var2 = this.method9003();
-		return (int)Math.round(var2 * (double)(this.field5145 - this.field5146) + (double)this.field5146);
+		return (int)Math.round((double)(this.field5145 - this.field5146) * var2 + (double)this.field5146);
 	}
 
 	@ObfInfo(name = "ad", desc = "(I)I")
 	public int method8958() {
 		double var2 = this.method9003();
-		return (int)Math.round((double)this.field5144 + var2 * (double)(this.field5147 - this.field5144));
+		return (int)Math.round((double)(this.field5147 - this.field5144) * var2 + (double)this.field5144);
 	}
 
 	@ObfInfo(name = "ag", desc = "(I)I")

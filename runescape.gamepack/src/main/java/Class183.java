@@ -120,7 +120,7 @@ public class Class183 extends Class516 {
 			}
 
 			this.field1933 = var1.method9997();
-			if (65535 == this.field1933) {
+			if (this.field1933 == 65535) {
 				this.field1933 = -1;
 			}
 
@@ -137,7 +137,7 @@ public class Class183 extends Class516 {
 
 			for (int var6 = 0; var6 <= var5; ++var6) {
 				this.field1924[var6] = var1.method9997();
-				if (65535 == this.field1924[var6]) {
+				if (this.field1924[var6] == 65535) {
 					this.field1924[var6] = -1;
 				}
 			}
@@ -150,7 +150,7 @@ public class Class183 extends Class516 {
 	@ObfInfo(name = "ap", desc = "(B)Lha;", opaque = "2")
 	public final Class183 method3646() {
 		int var2 = -1;
-		if (-1 != this.field1935) {
+		if (this.field1935 != -1) {
 			var2 = Class353.method3359(this.field1935);
 		} else if (this.field1933 != -1) {
 			var2 = Class353.field3769[this.field1933];
@@ -258,7 +258,7 @@ public class Class183 extends Class516 {
 
 	@ObfInfo(name = "ae", desc = "(B)Lqh;", opaque = "1")
 	public Class424 method3629() {
-		if (-1 == this.field1920) {
+		if (this.field1920 == -1) {
 			return null;
 		} else {
 			Class424 var2 = (Class424)field1918.method6327((long)this.field1920);
@@ -319,7 +319,7 @@ public class Class183 extends Class516 {
 			return null;
 		} else {
 			Class553 var22 = null;
-			if (-1 != var10.field2049) {
+			if (var10.field2049 != -1) {
 				var22 = method3653(var10.field2048, 10, 1, 0, 0, true);
 				if (var22 == null) {
 					return null;
@@ -354,7 +354,7 @@ public class Class183 extends Class516 {
 
 			int var18 = var10.field2019;
 			if (var5) {
-				var18 = (int)(1.5D * (double)var18);
+				var18 = (int)((double)var18 * 1.5D);
 			} else if (var2 == 2) {
 				var18 = (int)((double)var18 * 1.04D);
 			}
@@ -362,7 +362,7 @@ public class Class183 extends Class516 {
 			int var19 = Class274.field2804[var10.field2031] * var18 >> 16;
 			int var20 = Class274.field2805[var10.field2031] * var18 >> 16;
 			var21.method5865();
-			var21.method5883(0, var10.field2042, var10.field2022, var10.field2031, var10.field2023, var10.field2024 + var19 + var21.field2960 / 2, var10.field2024 + var20);
+			var21.method5883(0, var10.field2042, var10.field2022, var10.field2031, var10.field2023, var21.field2960 / 2 + var19 + var10.field2024, var10.field2024 + var20);
 			if (var10.field2040 != -1) {
 				var22.method9628(0, 0);
 			}

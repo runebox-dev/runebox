@@ -78,7 +78,7 @@ public abstract class Class245 {
 	public void method4696(int var1, int var2, Class562 var3) {
 		int var5 = var3.method9902();
 		if (var5 != 0) {
-			if (0 != (var5 & 1)) {
+			if ((var5 & 1) != 0) {
 				this.method4697(var1, var2, var3, var5);
 			} else {
 				this.method4698(var1, var2, var3, var5);
@@ -99,8 +99,8 @@ public abstract class Class245 {
 
 	@ObfInfo(name = "bt", desc = "(IILvp;IB)V", opaque = "0")
 	public void method4698(int var1, int var2, Class562 var3, int var4) {
-		int var6 = 1 + ((var4 & 24) >> 3);
-		boolean var7 = 0 != (var4 & 2);
+		int var6 = ((var4 & 24) >> 3) + 1;
+		boolean var7 = (var4 & 2) != 0;
 		boolean var8 = (var4 & 4) != 0;
 		this.field2571[0][var1][var2] = (short)var3.method9997();
 		int var9;
@@ -152,7 +152,7 @@ public abstract class Class245 {
 		if (var1 < var2) {
 			int var6 = var1 - 1;
 			int var7 = var2 + 1;
-			int var8 = (var2 + var1) / 2;
+			int var8 = (var1 + var2) / 2;
 			Class75 var9 = var0[var8];
 			var0[var8] = var0[var1];
 			var0[var1] = var9;
@@ -170,7 +170,7 @@ public abstract class Class245 {
 						if (var3[var11] == 2) {
 							var12 = var0[var7].field908;
 							var13 = var9.field908;
-						} else if (1 == var3[var11]) {
+						} else if (var3[var11] == 1) {
 							var12 = var0[var7].field904;
 							var13 = var9.field904;
 							if (var12 == -1 && var4[var11] == 1) {
@@ -188,8 +188,8 @@ public abstract class Class245 {
 							var13 = var9.field902;
 						}
 
-						if (var13 != var12) {
-							if ((1 != var4[var11] || var12 <= var13) && (var4[var11] != 0 || var12 >= var13)) {
+						if (var12 != var13) {
+							if ((var4[var11] != 1 || var12 <= var13) && (var4[var11] != 0 || var12 >= var13)) {
 								var10 = false;
 							}
 							break;
@@ -207,20 +207,20 @@ public abstract class Class245 {
 					++var6;
 
 					for (var11 = 0; var11 < 4; ++var11) {
-						if (2 == var3[var11]) {
+						if (var3[var11] == 2) {
 							var12 = var0[var6].field908;
 							var13 = var9.field908;
 						} else if (var3[var11] == 1) {
 							var12 = var0[var6].field904;
 							var13 = var9.field904;
-							if (var12 == -1 && 1 == var4[var11]) {
+							if (var12 == -1 && var4[var11] == 1) {
 								var12 = 2001;
 							}
 
-							if (var13 == -1 && 1 == var4[var11]) {
+							if (var13 == -1 && var4[var11] == 1) {
 								var13 = 2001;
 							}
-						} else if (3 == var3[var11]) {
+						} else if (var3[var11] == 3) {
 							var12 = var0[var6].method2157() ? 1 : 0;
 							var13 = var9.method2157() ? 1 : 0;
 						} else {
@@ -228,8 +228,8 @@ public abstract class Class245 {
 							var13 = var9.field902;
 						}
 
-						if (var13 != var12) {
-							if ((1 != var4[var11] || var12 >= var13) && (var4[var11] != 0 || var12 <= var13)) {
+						if (var12 != var13) {
+							if ((var4[var11] != 1 || var12 >= var13) && (var4[var11] != 0 || var12 <= var13)) {
 								var10 = false;
 							}
 							break;

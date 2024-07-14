@@ -77,7 +77,7 @@ public class Class86 extends Class520 {
 					var10 = -var10;
 				}
 
-				int var9 = var10 + var5 * 10;
+				int var9 = var5 * 10 + var10;
 				if (var9 / 10 != var5) {
 					var2 = false;
 					break;

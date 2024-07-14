@@ -302,7 +302,7 @@ public abstract class Class101 extends Class280 implements Class68 {
 			this.field1258[var10] = var2;
 			this.field1299[var10] = var3;
 			this.field1269[var10] = var4;
-			this.field1259[var10] = var6 + var12 + var5;
+			this.field1259[var10] = var5 + var12 + var6;
 		}
 	}
 
@@ -333,7 +333,7 @@ public abstract class Class101 extends Class280 implements Class68 {
 		for (var14 = (Class90)this.field1262.method7401(); var14 != null; var14 = (Class90)this.field1262.method7403()) {
 			++var13;
 			if (var14.field1125.field2261 == var8.field2261) {
-				var14.method2419(var4 + var2, var5, var6, var3);
+				var14.method2419(var2 + var4, var5, var6, var3);
 				return;
 			}
 
@@ -355,7 +355,7 @@ public abstract class Class101 extends Class280 implements Class68 {
 				Class399.method7428(var14, var15);
 			}
 
-			var14.method2419(var4 + var2, var5, var6, var3);
+			var14.method2419(var2 + var4, var5, var6, var3);
 			if (var13 >= 4) {
 				var11.method9267();
 			}
@@ -392,7 +392,7 @@ public abstract class Class101 extends Class280 implements Class68 {
 
 	@ObfInfo(name = "cz", desc = "(IIIII)V", opaque = "707574187")
 	public void method2654(int var1, int var2, int var3, int var4) {
-		int var6 = var4 + Client.field541;
+		int var6 = Client.field541 + var4;
 		Class480 var7 = (Class480)this.field1285.method8901((long)var1);
 		if (var7 != null) {
 			var7.method9267();
@@ -502,8 +502,8 @@ public abstract class Class101 extends Class280 implements Class68 {
 				double var11 = (double)(-var3.field5000) * 3.141592653589793D / 1024.0D;
 				double var13 = Math.cos(var11);
 				double var15 = Math.sin(var11);
-				int var17 = (int)((double)var9 * var13 - var15 * (double)var10) + var4;
-				int var18 = (int)(var15 * (double)var9 + (double)var10 * var13) + var5;
+				int var17 = (int)((double)var9 * var13 - (double)var10 * var15) + var4;
+				int var18 = (int)((double)var9 * var15 + (double)var10 * var13) + var5;
 				return new Class350(var6, var17, var18);
 			}
 		}

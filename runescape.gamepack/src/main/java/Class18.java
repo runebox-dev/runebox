@@ -80,7 +80,7 @@ public class Class18 implements KeyListener, FocusListener {
 				if (var2 < var4) {
 					int var5 = Class31.field155[var2];
 					var2 = var5;
-					boolean var6 = 0 != (var5 & 128);
+					boolean var6 = (var5 & 128) != 0;
 					if (var6) {
 						var2 = -1;
 					}

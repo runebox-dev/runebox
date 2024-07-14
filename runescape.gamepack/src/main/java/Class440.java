@@ -59,14 +59,14 @@ public class Class440 {
 		float var6 = this.field4775;
 		float var7 = this.field4778;
 		float var8 = this.field4779;
-		this.field4771 = var3 * var5 - var4 * this.field4773;
-		this.field4773 = var4 * var5 + this.field4773 * var3;
-		this.field4775 = var6 * var3 - var4 * this.field4776;
-		this.field4776 = var3 * this.field4776 + var6 * var4;
-		this.field4778 = var7 * var3 - var4 * this.field4777;
-		this.field4777 = var4 * var7 + this.field4777 * var3;
-		this.field4779 = var8 * var3 - var4 * this.field4782;
-		this.field4782 = var3 * this.field4782 + var8 * var4;
+		this.field4771 = var3 * var5 - this.field4773 * var4;
+		this.field4773 = this.field4773 * var3 + var4 * var5;
+		this.field4775 = var3 * var6 - this.field4776 * var4;
+		this.field4776 = this.field4776 * var3 + var4 * var6;
+		this.field4778 = var3 * var7 - this.field4777 * var4;
+		this.field4777 = this.field4777 * var3 + var4 * var7;
+		this.field4779 = var3 * var8 - this.field4782 * var4;
+		this.field4782 = this.field4782 * var3 + var4 * var8;
 	}
 
 	@ObfInfo(name = "ag", desc = "(FI)V")
@@ -77,14 +77,14 @@ public class Class440 {
 		float var6 = this.field4774;
 		float var7 = this.field4780;
 		float var8 = this.field4781;
-		this.field4772 = var4 * this.field4773 + var5 * var3;
-		this.field4773 = var3 * this.field4773 - var5 * var4;
-		this.field4774 = var3 * var6 + var4 * this.field4776;
-		this.field4776 = this.field4776 * var3 - var6 * var4;
-		this.field4780 = this.field4777 * var4 + var7 * var3;
-		this.field4777 = var3 * this.field4777 - var7 * var4;
-		this.field4781 = var8 * var3 + var4 * this.field4782;
-		this.field4782 = this.field4782 * var3 - var8 * var4;
+		this.field4772 = this.field4773 * var4 + var3 * var5;
+		this.field4773 = this.field4773 * var3 - var4 * var5;
+		this.field4774 = this.field4776 * var4 + var3 * var6;
+		this.field4776 = this.field4776 * var3 - var4 * var6;
+		this.field4780 = this.field4777 * var4 + var3 * var7;
+		this.field4777 = this.field4777 * var3 - var4 * var7;
+		this.field4781 = this.field4782 * var4 + var3 * var8;
+		this.field4782 = this.field4782 * var3 - var4 * var8;
 	}
 
 	@ObfInfo(name = "ak", desc = "(FI)V")
@@ -96,13 +96,13 @@ public class Class440 {
 		float var7 = this.field4780;
 		float var8 = this.field4781;
 		this.field4772 = var3 * var5 - this.field4771 * var4;
-		this.field4771 = var4 * var5 + this.field4771 * var3;
-		this.field4774 = var3 * var6 - var4 * this.field4775;
-		this.field4775 = this.field4775 * var3 + var6 * var4;
-		this.field4780 = var7 * var3 - this.field4778 * var4;
-		this.field4778 = var7 * var4 + this.field4778 * var3;
+		this.field4771 = this.field4771 * var3 + var4 * var5;
+		this.field4774 = var3 * var6 - this.field4775 * var4;
+		this.field4775 = this.field4775 * var3 + var4 * var6;
+		this.field4780 = var3 * var7 - this.field4778 * var4;
+		this.field4778 = this.field4778 * var3 + var4 * var7;
 		this.field4781 = var3 * var8 - this.field4779 * var4;
-		this.field4779 = var8 * var4 + this.field4779 * var3;
+		this.field4779 = this.field4779 * var3 + var4 * var8;
 	}
 
 	@ObfInfo(name = "ap", desc = "(FFFB)V")

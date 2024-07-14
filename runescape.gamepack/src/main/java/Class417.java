@@ -87,7 +87,7 @@ public class Class417 {
 
 	@ObfInfo(name = "aj", desc = "(B)I")
 	public int method7673() {
-		return this.field4677 + this.field4679;
+		return this.field4679 + this.field4677;
 	}
 
 	@ObfInfo(name = "av", desc = "(B)I")

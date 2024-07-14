@@ -38,7 +38,7 @@ public class Class350 {
 	}
 
 	public boolean equals(Object var1) {
-		if (var1 == this) {
+		if (this == var1) {
 			return true;
 		} else {
 			return !(var1 instanceof Class350) ? false : this.method6513((Class350)var1);
@@ -52,7 +52,7 @@ public class Class350 {
 		} else if (this.field3748 != var1.field3748) {
 			return false;
 		} else {
-			return var1.field3750 == this.field3750;
+			return this.field3750 == var1.field3750;
 		}
 	}
 

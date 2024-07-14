@@ -116,11 +116,11 @@ public class Class188 extends Class516 {
 				var4 = var3.method5916(true);
 			}
 
-			if (128 != this.field2075 || this.field2064 != 128) {
+			if (this.field2075 != 128 || this.field2064 != 128) {
 				var4.method5882(this.field2075, this.field2064, this.field2075);
 			}
 
-			if (0 != this.field2070) {
+			if (this.field2070 != 0) {
 				if (this.field2070 == 90) {
 					var4.method5877();
 				}
@@ -130,7 +130,7 @@ public class Class188 extends Class516 {
 					var4.method5877();
 				}
 
-				if (270 == this.field2070) {
+				if (this.field2070 == 270) {
 					var4.method5877();
 					var4.method5877();
 					var4.method5877();

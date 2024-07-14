@@ -76,7 +76,7 @@ public class Class139 implements Class393 {
 			Class102 var5 = var0.field1013[var6];
 			if (var5 != null && var5.field1244 > 0) {
 				--var5.field1244;
-				if (0 == var5.field1244) {
+				if (var5.field1244 == 0) {
 					var5.field1249 = null;
 				}
 			}

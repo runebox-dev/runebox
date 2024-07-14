@@ -8,15 +8,15 @@ public class Class71 implements Comparator {
 
 	@ObfInfo(name = "aq", desc = "(Lpm;Lpm;I)I", opaque = "-1263083412")
 	public int method2122(Class403 var1, Class403 var2) {
-		if (var2.field4650 == var1.field4650) {
+		if (var1.field4650 == var2.field4650) {
 			return 0;
 		} else {
 			if (this.field878) {
-				if (var1.field4650 == Client.field525) {
+				if (Client.field525 == var1.field4650) {
 					return -1;
 				}
 
-				if (var2.field4650 == Client.field525) {
+				if (Client.field525 == var2.field4650) {
 					return 1;
 				}
 			}

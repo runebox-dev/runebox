@@ -49,7 +49,7 @@ public final class Class536 {
 		for (int var2 = 0; var2 < this.field5298; ++var2) {
 			Class520 var3 = this.field5295[var2];
 
-			for (Class520 var4 = var3.field5235; var4 != var3; var4 = var4.field5235) {
+			for (Class520 var4 = var3.field5235; var3 != var4; var4 = var4.field5235) {
 				++var1;
 			}
 		}
@@ -80,7 +80,7 @@ public final class Class536 {
 	@ObfInfo(name = "ap", desc = "()Ltz;")
 	public Class520 method9446() {
 		Class520 var1;
-		if (this.field5299 > 0 && this.field5297 != this.field5295[this.field5299 - 1]) {
+		if (this.field5299 > 0 && this.field5295[this.field5299 - 1] != this.field5297) {
 			var1 = this.field5297;
 			this.field5297 = var1.field5235;
 			return var1;
@@ -91,7 +91,7 @@ public final class Class536 {
 				}
 
 				var1 = this.field5295[this.field5299++].field5235;
-			} while(var1 == this.field5295[this.field5299 - 1]);
+			} while(this.field5295[this.field5299 - 1] == var1);
 
 			this.field5297 = var1.field5235;
 			return var1;

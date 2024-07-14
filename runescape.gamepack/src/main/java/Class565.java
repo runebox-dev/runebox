@@ -28,7 +28,7 @@ public final class Class565 {
 
 	@ObfInfo(name = "aq", desc = "(B)I", opaque = "16")
 	public final int method10084() {
-		if (0 == this.field5485) {
+		if (this.field5485 == 0) {
 			this.method10086();
 			this.field5485 = 256;
 		}
@@ -52,13 +52,13 @@ public final class Class565 {
 
 		for (int var2 = 0; var2 < 256; ++var2) {
 			int var3 = this.field5486[var2];
-			if (0 == (var2 & 2)) {
-				if (0 == (var2 & 1)) {
+			if ((var2 & 2) == 0) {
+				if ((var2 & 1) == 0) {
 					this.field5488 ^= this.field5488 << 13;
 				} else {
 					this.field5488 ^= this.field5488 >>> 6;
 				}
-			} else if (0 == (var2 & 1)) {
+			} else if ((var2 & 1) == 0) {
 				this.field5488 ^= this.field5488 << 2;
 			} else {
 				this.field5488 ^= this.field5488 >>> 16;
@@ -66,8 +66,8 @@ public final class Class565 {
 
 			this.field5488 += this.field5486[var2 + 128 & 255];
 			int var4;
-			this.field5486[var2] = var4 = this.field5489 + this.field5488 + this.field5486[(var3 & 1020) >> 2];
-			this.field5483[var2] = this.field5489 = var3 + this.field5486[(var4 >> 8 & 1020) >> 2];
+			this.field5486[var2] = var4 = this.field5486[(var3 & 1020) >> 2] + this.field5488 + this.field5489;
+			this.field5483[var2] = this.field5489 = this.field5486[(var4 >> 8 & 1020) >> 2] + var3;
 		}
 
 	}

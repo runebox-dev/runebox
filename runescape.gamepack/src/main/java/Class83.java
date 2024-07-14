@@ -77,7 +77,7 @@ public class Class83 {
 
 	@ObfInfo(name = "aq", desc = "(B)Z", opaque = "74")
 	public boolean method2315() {
-		return -1 == this.field1026;
+		return this.field1026 == -1;
 	}
 
 	@ObfInfo(name = "ad", desc = "(I)V", opaque = "967155447")

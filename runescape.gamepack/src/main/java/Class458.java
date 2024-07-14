@@ -5,12 +5,12 @@ import java.util.Random;
 public class Class458 {
 	@ObfInfo(name = "aq", desc = "([BI[BII)V")
 	public static void method8430(byte[] var0, int var1, byte[] var2, int var3, int var4) {
-		if (var2 == var0) {
-			if (var3 == var1) {
+		if (var0 == var2) {
+			if (var1 == var3) {
 				return;
 			}
 
-			if (var3 > var1 && var3 < var4 + var1) {
+			if (var3 > var1 && var3 < var1 + var4) {
 				--var4;
 				var1 += var4;
 				var3 += var4;
@@ -52,7 +52,7 @@ public class Class458 {
 
 	@ObfInfo(name = "ai", desc = "([III)V")
 	public static void method8428(int[] var0, int var1, int var2) {
-		for (var2 = var2 + var1 - 7; var1 < var2; var0[var1++] = 0) {
+		for (var2 = var1 + var2 - 7; var1 < var2; var0[var1++] = 0) {
 			var0[var1++] = 0;
 			var0[var1++] = 0;
 			var0[var1++] = 0;
@@ -79,7 +79,7 @@ public class Class458 {
 
 		for (int var7 = var1 - 1; var7 > 0; --var7) {
 			int var8 = var6.nextInt(var7 + 1);
-			if (var8 != var7) {
+			if (var7 != var8) {
 				int var9 = var0[var7];
 				var0[var7] = var0[var8];
 				var0[var8] = var9;

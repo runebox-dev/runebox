@@ -128,7 +128,7 @@ public class Class512 extends Class520 implements Class125 {
 		byte var2 = 39;
 		String var5 = this.field5129;
 		int var4 = var5.length() + 2;
-		int var27 = var4 + var2;
+		int var27 = var2 + var4;
 		String var8 = this.field5126;
 		int var7 = var8.length() + 2;
 		var27 += var7;
@@ -210,7 +210,7 @@ public class Class512 extends Class520 implements Class125 {
 	@ObfInfo(name = "ap", desc = "(IIIZIZS)V", opaque = "256")
 	public static void method9022(int var0, int var1, int var2, boolean var3, int var4, boolean var5) {
 		if (var0 < var1) {
-			int var7 = (var1 + var0) / 2;
+			int var7 = (var0 + var1) / 2;
 			int var8 = var0;
 			Class75 var9 = Class90.field3782[var7];
 			Class90.field3782[var7] = Class90.field3782[var1];

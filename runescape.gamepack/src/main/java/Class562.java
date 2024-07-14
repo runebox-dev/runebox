@@ -20,7 +20,7 @@ public class Class562 extends Class520 {
 			int var0 = var1;
 
 			for (var2 = 0; var2 < 8; ++var2) {
-				if (1 == (var0 & 1)) {
+				if ((var0 & 1) == 1) {
 					var0 = var0 >>> 1 ^ -306674912;
 				} else {
 					var0 >>>= 1;
@@ -171,7 +171,7 @@ public class Class562 extends Class520 {
 
 	@ObfInfo(name = "cv", desc = "([BIII)V", opaque = "-1615638403")
 	public void method9819(byte[] var1, int var2, int var3) {
-		for (int var5 = var2; var5 < var3 + var2; ++var5) {
+		for (int var5 = var2; var5 < var2 + var3; ++var5) {
 			this.field5472[++this.field5471 - 1] = var1[var5];
 		}
 
@@ -228,7 +228,7 @@ public class Class562 extends Class520 {
 	public void method9825(int var1) {
 		if ((var1 & -128) != 0) {
 			if ((var1 & -16384) != 0) {
-				if (0 != (var1 & -2097152)) {
+				if ((var1 & -2097152) != 0) {
 					if ((var1 & -268435456) != 0) {
 						this.method9809(var1 >>> 28 | 128);
 					}
@@ -264,7 +264,7 @@ public class Class562 extends Class520 {
 	@ObfInfo(name = "cd", desc = "(I)I", opaque = "-1158917113")
 	public int method9829() {
 		this.field5471 += 2;
-		int var2 = (this.field5472[this.field5471 - 1] & 255) + ((this.field5472[this.field5471 - 2] & 255) << 8);
+		int var2 = ((this.field5472[this.field5471 - 2] & 255) << 8) + (this.field5472[this.field5471 - 1] & 255);
 		if (var2 > 32767) {
 			var2 -= 65536;
 		}
@@ -275,7 +275,7 @@ public class Class562 extends Class520 {
 	@ObfInfo(name = "ck", desc = "(I)I")
 	public int method9830() {
 		this.field5471 += 3;
-		return ((this.field5472[this.field5471 - 3] & 255) << 16) + ((this.field5472[this.field5471 - 2] & 255) << 8) + (this.field5472[this.field5471 - 1] & 255);
+		return (this.field5472[this.field5471 - 1] & 255) + ((this.field5472[this.field5471 - 3] & 255) << 16) + ((this.field5472[this.field5471 - 2] & 255) << 8);
 	}
 
 	@ObfInfo(name = "cq", desc = "(I)I", opaque = "821641961")
@@ -292,14 +292,14 @@ public class Class562 extends Class520 {
 	@ObfInfo(name = "cs", desc = "(I)I")
 	public int method9832() {
 		this.field5471 += 4;
-		return ((this.field5472[this.field5471 - 2] & 255) << 8) + ((this.field5472[this.field5471 - 4] & 255) << 24) + ((this.field5472[this.field5471 - 3] & 255) << 16) + (this.field5472[this.field5471 - 1] & 255);
+		return (this.field5472[this.field5471 - 1] & 255) + ((this.field5472[this.field5471 - 2] & 255) << 8) + ((this.field5472[this.field5471 - 4] & 255) << 24) + ((this.field5472[this.field5471 - 3] & 255) << 16);
 	}
 
 	@ObfInfo(name = "cp", desc = "(I)J")
 	public long method9833() {
 		long var2 = (long)this.method9832() & 4294967295L;
 		long var4 = (long)this.method9832() & 4294967295L;
-		return var4 + (var2 << 32);
+		return (var2 << 32) + var4;
 	}
 
 	@ObfInfo(name = "cy", desc = "(I)F")
@@ -366,7 +366,7 @@ public class Class562 extends Class520 {
 				int var9 = var6;
 
 				int var12;
-				for (int var10 = var6 + var3; var9 < var10; var7[var8++] = (char)var12) {
+				for (int var10 = var3 + var6; var9 < var10; var7[var8++] = (char)var12) {
 					int var11 = var5[var9++] & 255;
 					if (var11 < 128) {
 						if (var11 == 0) {
@@ -377,7 +377,7 @@ public class Class562 extends Class520 {
 					} else if (var11 < 192) {
 						var12 = 65533;
 					} else if (var11 < 224) {
-						if (var9 < var10 && 128 == (var5[var9] & 192)) {
+						if (var9 < var10 && (var5[var9] & 192) == 128) {
 							var12 = (var11 & 31) << 6 | var5[var9++] & 63;
 							if (var12 < 128) {
 								var12 = 65533;
@@ -386,7 +386,7 @@ public class Class562 extends Class520 {
 							var12 = 65533;
 						}
 					} else if (var11 < 240) {
-						if (var9 + 1 < var10 && (var5[var9] & 192) == 128 && 128 == (var5[var9 + 1] & 192)) {
+						if (var9 + 1 < var10 && (var5[var9] & 192) == 128 && (var5[var9 + 1] & 192) == 128) {
 							var12 = (var11 & 15) << 12 | (var5[var9++] & 63) << 6 | var5[var9++] & 63;
 							if (var12 < 2048) {
 								var12 = 65533;
@@ -395,7 +395,7 @@ public class Class562 extends Class520 {
 							var12 = 65533;
 						}
 					} else if (var11 < 248) {
-						if (var9 + 2 < var10 && (var5[var9] & 192) == 128 && 128 == (var5[var9 + 1] & 192) && (var5[var9 + 2] & 192) == 128) {
+						if (var9 + 2 < var10 && (var5[var9] & 192) == 128 && (var5[var9 + 1] & 192) == 128 && (var5[var9 + 2] & 192) == 128) {
 							var12 = (var11 & 7) << 18 | (var5[var9++] & 63) << 12 | (var5[var9++] & 63) << 6 | var5[var9++] & 63;
 							if (var12 >= 65536 && var12 <= 1114111) {
 								var12 = 65533;
@@ -419,7 +419,7 @@ public class Class562 extends Class520 {
 
 	@ObfInfo(name = "cz", desc = "([BIIB)V", opaque = "6")
 	public void method9840(byte[] var1, int var2, int var3) {
-		for (int var5 = var2; var5 < var3 + var2; ++var5) {
+		for (int var5 = var2; var5 < var2 + var3; ++var5) {
 			var1[var5] = this.field5472[++this.field5471 - 1];
 		}
 
@@ -509,7 +509,7 @@ public class Class562 extends Class520 {
 			int var7 = 0;
 			int var8 = -1640531527;
 
-			for (int var9 = 32; var9-- > 0; var6 += var5 + (var5 << 4 ^ var5 >>> 5) ^ var7 + var1[var7 >>> 11 & 3]) {
+			for (int var9 = 32; var9-- > 0; var6 += (var5 << 4 ^ var5 >>> 5) + var5 ^ var1[var7 >>> 11 & 3] + var7) {
 				var5 += (var6 << 4 ^ var6 >>> 5) + var6 ^ var1[var7 & 3] + var7;
 				var7 += var8;
 			}
@@ -533,7 +533,7 @@ public class Class562 extends Class520 {
 			int var8 = -1640531527;
 
 			for (int var9 = 32; var9-- > 0; var5 -= (var6 << 4 ^ var6 >>> 5) + var6 ^ var1[var7 & 3] + var7) {
-				var6 -= (var5 << 4 ^ var5 >>> 5) + var5 ^ var7 + var1[var7 >>> 11 & 3];
+				var6 -= (var5 << 4 ^ var5 >>> 5) + var5 ^ var1[var7 >>> 11 & 3] + var7;
 				var7 -= var8;
 			}
 
@@ -556,8 +556,8 @@ public class Class562 extends Class520 {
 			int var10 = 0;
 			int var11 = -1640531527;
 
-			for (int var12 = 32; var12-- > 0; var9 += var8 + (var8 << 4 ^ var8 >>> 5) ^ var10 + var1[var10 >>> 11 & 3]) {
-				var8 += (var9 << 4 ^ var9 >>> 5) + var9 ^ var10 + var1[var10 & 3];
+			for (int var12 = 32; var12-- > 0; var9 += (var8 << 4 ^ var8 >>> 5) + var8 ^ var1[var10 >>> 11 & 3] + var10) {
+				var8 += (var9 << 4 ^ var9 >>> 5) + var9 ^ var1[var10 & 3] + var10;
 				var10 += var11;
 			}
 
@@ -581,8 +581,8 @@ public class Class562 extends Class520 {
 			int var10 = -957401312;
 			int var11 = -1640531527;
 
-			for (int var12 = 32; var12-- > 0; var8 -= var9 + (var9 << 4 ^ var9 >>> 5) ^ var1[var10 & 3] + var10) {
-				var9 -= var8 + (var8 << 4 ^ var8 >>> 5) ^ var10 + var1[var10 >>> 11 & 3];
+			for (int var12 = 32; var12-- > 0; var8 -= (var9 << 4 ^ var9 >>> 5) + var9 ^ var1[var10 & 3] + var10) {
+				var9 -= (var8 << 4 ^ var8 >>> 5) + var8 ^ var1[var10 >>> 11 & 3] + var10;
 				var10 -= var11;
 			}
 
@@ -620,7 +620,7 @@ public class Class562 extends Class520 {
 		this.field5471 -= 4;
 		int var2 = Class260.method5011(this.field5472, 0, this.field5471);
 		int var3 = this.method9832();
-		return var3 == var2;
+		return var2 == var3;
 	}
 
 	@ObfInfo(name = "di", desc = "(II)V")
@@ -689,7 +689,7 @@ public class Class562 extends Class520 {
 	@ObfInfo(name = "dl", desc = "(I)I")
 	public int method9868() {
 		this.field5471 += 2;
-		return (this.field5472[this.field5471 - 2] & 255) + ((this.field5472[this.field5471 - 1] & 255) << 8);
+		return ((this.field5472[this.field5471 - 1] & 255) << 8) + (this.field5472[this.field5471 - 2] & 255);
 	}
 
 	@ObfInfo(name = "dx", desc = "(I)I")
@@ -701,7 +701,7 @@ public class Class562 extends Class520 {
 	@ObfInfo(name = "eg", desc = "(B)I")
 	public int method9981() {
 		this.field5471 += 2;
-		return (this.field5472[this.field5471 - 2] - 128 & 255) + ((this.field5472[this.field5471 - 1] & 255) << 8);
+		return ((this.field5472[this.field5471 - 1] & 255) << 8) + (this.field5472[this.field5471 - 2] - 128 & 255);
 	}
 
 	@ObfInfo(name = "es", desc = "(I)I", opaque = "894362040")
@@ -729,7 +729,7 @@ public class Class562 extends Class520 {
 	@ObfInfo(name = "eo", desc = "(S)I")
 	public int method10054() {
 		this.field5471 += 3;
-		return ((this.field5472[this.field5471 - 1] & 255) << 16) + ((this.field5472[this.field5471 - 2] & 255) << 8) + (this.field5472[this.field5471 - 3] & 255);
+		return (this.field5472[this.field5471 - 3] & 255) + ((this.field5472[this.field5471 - 1] & 255) << 16) + ((this.field5472[this.field5471 - 2] & 255) << 8);
 	}
 
 	@ObfInfo(name = "ex", desc = "(I)I")
@@ -793,24 +793,24 @@ public class Class562 extends Class520 {
 	@ObfInfo(name = "eu", desc = "(B)I")
 	public int method9855() {
 		this.field5471 += 4;
-		return ((this.field5472[this.field5471 - 1] & 255) << 24) + ((this.field5472[this.field5471 - 2] & 255) << 16) + ((this.field5472[this.field5471 - 3] & 255) << 8) + (this.field5472[this.field5471 - 4] & 255);
+		return (this.field5472[this.field5471 - 4] & 255) + ((this.field5472[this.field5471 - 3] & 255) << 8) + ((this.field5472[this.field5471 - 1] & 255) << 24) + ((this.field5472[this.field5471 - 2] & 255) << 16);
 	}
 
 	@ObfInfo(name = "ea", desc = "(I)I")
 	public int method9882() {
 		this.field5471 += 4;
-		return ((this.field5472[this.field5471 - 4] & 255) << 8) + ((this.field5472[this.field5471 - 1] & 255) << 16) + ((this.field5472[this.field5471 - 2] & 255) << 24) + (this.field5472[this.field5471 - 3] & 255);
+		return (this.field5472[this.field5471 - 3] & 255) + ((this.field5472[this.field5471 - 4] & 255) << 8) + ((this.field5472[this.field5471 - 1] & 255) << 16) + ((this.field5472[this.field5471 - 2] & 255) << 24);
 	}
 
 	@ObfInfo(name = "en", desc = "(I)I")
 	public int method9883() {
 		this.field5471 += 4;
-		return ((this.field5472[this.field5471 - 4] & 255) << 16) + ((this.field5472[this.field5471 - 3] & 255) << 24) + ((this.field5472[this.field5471 - 1] & 255) << 8) + (this.field5472[this.field5471 - 2] & 255);
+		return (this.field5472[this.field5471 - 2] & 255) + ((this.field5472[this.field5471 - 1] & 255) << 8) + ((this.field5472[this.field5471 - 4] & 255) << 16) + ((this.field5472[this.field5471 - 3] & 255) << 24);
 	}
 
 	@ObfInfo(name = "ez", desc = "([BIII)V", opaque = "-1351488164")
 	public void method9884(byte[] var1, int var2, int var3) {
-		for (int var5 = var3 + var2 - 1; var5 >= var2; --var5) {
+		for (int var5 = var2 + var3 - 1; var5 >= var2; --var5) {
 			var1[var5] = this.field5472[++this.field5471 - 1];
 		}
 
@@ -818,7 +818,7 @@ public class Class562 extends Class520 {
 
 	@ObfInfo(name = "eq", desc = "([BIII)V")
 	public void method9828(byte[] var1, int var2, int var3) {
-		for (int var5 = var2; var5 < var3 + var2; ++var5) {
+		for (int var5 = var2; var5 < var2 + var3; ++var5) {
 			var1[var5] = (byte)(this.field5472[++this.field5471 - 1] - 128);
 		}
 

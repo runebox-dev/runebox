@@ -60,7 +60,7 @@ public class Class270 {
 
 		for (int var9 = 0; var9 < var8.length; ++var9) {
 			Class152 var10 = var8[var9];
-			if (var3 == null || var4 == var3[var7]) {
+			if (var3 == null || var3[var7] == var4) {
 				var1.method3222(var2, var10, var7, var6);
 			}
 

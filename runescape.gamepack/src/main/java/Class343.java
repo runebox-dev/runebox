@@ -146,7 +146,7 @@ public class Class343 {
 
 	@ObfInfo(name = "aj", desc = "(II)V", opaque = "-771169671")
 	public void method6431(int var1) {
-		if (var1 != this.field3720) {
+		if (this.field3720 != var1) {
 			this.method6428((int[])null, (int[])null, this.field3718, var1, -1);
 		}
 	}
@@ -205,7 +205,7 @@ public class Class343 {
 		this.field3724 += (long)this.field3720;
 		this.field3717[5] = var4;
 		this.field3717[9] = var5;
-		if (0L != var2 && this.field3724 != var2 || this.field3725) {
+		if (var2 != 0L && this.field3724 != var2 || this.field3725) {
 			field3727.method6335(var2);
 		}
 
@@ -213,7 +213,7 @@ public class Class343 {
 
 	@ObfInfo(name = "ai", desc = "(Lii;ILii;II)Llv;", opaque = "626505664")
 	public Class308 method6434(Class217 var1, int var2, Class217 var3, int var4) {
-		if (-1 != this.field3721) {
+		if (this.field3721 != -1) {
 			return Class184.method2222(this.field3721).method3703(var1, var2, var3, var4, (Class190)null);
 		} else {
 			long var6 = this.field3724;
@@ -347,7 +347,7 @@ public class Class343 {
 
 	@ObfInfo(name = "ae", desc = "(B)Lkr;", opaque = "1")
 	public Class278 method6435() {
-		if (-1 != this.field3721) {
+		if (this.field3721 != -1) {
 			return Class184.method2222(this.field3721).method3659((Class190)null);
 		} else {
 			boolean var2 = false;

@@ -13,7 +13,7 @@ public class Class153 {
 
 	static {
 		field1728 = Math.ulp(1.0F);
-		field1723 = 2.0F * field1728;
+		field1723 = field1728 * 2.0F;
 		field1724 = new float[4];
 		field1726 = new float[5];
 	}
@@ -25,7 +25,7 @@ public class Class153 {
 			float var5 = (float)var0.field1566[0].field1590;
 			float var6 = (float)var0.field1566[var0.method3101() - 1].field1590;
 			float var7 = var6 - var5;
-			if (0.0D == (double)var7) {
+			if ((double)var7 == 0.0D) {
 				return var0.field1566[0].field1591;
 			} else {
 				float var8 = 0.0F;
@@ -38,7 +38,7 @@ public class Class153 {
 				double var9 = (double)((int)var8);
 				float var11 = Math.abs((float)((double)var8 - var9));
 				float var12 = var7 * var11;
-				var9 = Math.abs(1.0D + var9);
+				var9 = Math.abs(var9 + 1.0D);
 				double var13 = var9 / 2.0D;
 				double var15 = (double)((int)var13);
 				var11 = (float)(var13 - var15);
@@ -67,7 +67,7 @@ public class Class153 {
 						var12 = var6 - var12;
 					}
 				} else if (Class138.field1610 == var0.field1570) {
-					if (0.0D != (double)var11) {
+					if ((double)var11 != 0.0D) {
 						var12 = var6 - var12;
 					} else {
 						var12 += var5;
@@ -92,10 +92,10 @@ public class Class153 {
 				float var19;
 				if (var2 && Class138.field1609 == var0.field1567) {
 					var19 = var0.field1566[var0.method3101() - 1].field1591 - var0.field1566[0].field1591;
-					var4 = (float)((double)var4 - var9 * (double)var19);
+					var4 = (float)((double)var4 - (double)var19 * var9);
 				} else if (!var2 && Class138.field1609 == var0.field1570) {
 					var19 = var0.field1566[var0.method3101() - 1].field1591 - var0.field1566[0].field1591;
-					var4 = (float)((double)var4 + var9 * (double)var19);
+					var4 = (float)((double)var19 * var9 + (double)var4);
 				}
 
 				return var4;
@@ -113,7 +113,7 @@ public class Class153 {
 				float var11 = var2 - var1;
 				float var12 = var3 - var1;
 				float[] var13 = new float[]{var11 / var10, var12 / var10};
-				var0.field1581 = var13[0] == 0.33333334F && 0.6666667F == var13[1];
+				var0.field1581 = var13[0] == 0.33333334F && var13[1] == 0.6666667F;
 				float var14 = var13[0];
 				float var15 = var13[1];
 				if ((double)var13[0] < 0.0D) {
@@ -136,8 +136,8 @@ public class Class153 {
 					}
 
 					if (var13[0] > 1.0F || var13[1] > 1.0F) {
-						var16 = (float)((double)(var13[0] * (var13[0] - 2.0F + var13[1])) + ((double)var13[1] - 2.0D) * (double)var13[1] + 1.0D);
-						if (var16 + field1728 > 0.0F) {
+						var16 = (float)(((double)var13[1] - 2.0D) * (double)var13[1] + (double)((var13[0] - 2.0F + var13[1]) * var13[0]) + 1.0D);
+						if (field1728 + var16 > 0.0F) {
 							method2857(var13);
 						}
 					}
@@ -145,16 +145,16 @@ public class Class153 {
 					var13[1] = 1.0F - var13[1];
 				}
 
-				if (var14 != var13[0]) {
-					var2 = var10 * var13[0] + var1;
+				if (var13[0] != var14) {
+					var2 = var13[0] * var10 + var1;
 					if ((double)var14 != 0.0D) {
 						var6 = (var6 - var5) * var13[0] / var14 + var5;
 					}
 				}
 
-				if (var15 != var13[1]) {
-					float var10000 = var1 + var13[1] * var10;
-					if (1.0D != (double)var15) {
+				if (var13[1] != var15) {
+					var3 = var13[1] * var10 + var1;
+					if ((double)var15 != 1.0D) {
 						var7 = (float)((double)var8 - (1.0D - (double)var13[1]) * (double)(var8 - var7) / (1.0D - (double)var15));
 					}
 				}
@@ -176,11 +176,11 @@ public class Class153 {
 
 	@ObfInfo(owner = "ee", name = "ak", desc = "([FI)V", opaque = "-443491666")
 	public static void method2857(float[] var0) {
-		if (field1728 + var0[0] < 1.3333334F) {
+		if (var0[0] + field1728 < 1.3333334F) {
 			float var2 = var0[0] - 2.0F;
 			float var3 = var0[0] - 1.0F;
-			float var4 = (float)Math.sqrt((double)(var2 * var2 - var3 * var3 * 4.0F));
-			float var5 = 0.5F * (var4 + -var2);
+			float var4 = (float)Math.sqrt((double)(var2 * var2 - var3 * 4.0F * var3));
+			float var5 = (-var2 + var4) * 0.5F;
 			if (var0[1] + field1728 > var5) {
 				var0[1] = var5 - field1728;
 			} else {

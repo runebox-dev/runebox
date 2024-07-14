@@ -88,7 +88,7 @@ public class Class368 implements Class393 {
 
 	@ObfInfo(owner = "me", name = "ag", desc = "(IB)Z", opaque = "-1")
 	public static boolean method6225(int var0) {
-		return var0 >= field4348.field4347 && var0 <= field4369.field4347 || var0 == field4350.field4347;
+		return var0 >= field4348.field4347 && var0 <= field4369.field4347 || field4350.field4347 == var0;
 	}
 
 	@ObfInfo(owner = "mn", name = "ak", desc = "(IB)Z", opaque = "0")
@@ -98,6 +98,6 @@ public class Class368 implements Class393 {
 
 	@ObfInfo(owner = "dt", name = "ap", desc = "(IB)Z", opaque = "11")
 	public static boolean method2637(int var0) {
-		return var0 == field4368.field4347;
+		return field4368.field4347 == var0;
 	}
 }

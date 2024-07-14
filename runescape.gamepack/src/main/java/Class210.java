@@ -64,7 +64,7 @@ public class Class210 extends Class232 {
 		}
 
 		this.field2274[this.field2279] = this.field2278;
-		this.field2279 = (1 + this.field2279) % 10;
+		this.field2279 = (this.field2279 + 1) % 10;
 		int var6;
 		if (this.field2276 > 1) {
 			for (var6 = 0; var6 < 10; ++var6) {

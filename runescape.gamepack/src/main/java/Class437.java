@@ -17,7 +17,7 @@ public class Class437 {
 		float var4 = var0[var1];
 
 		for (int var5 = var1 - 1; var5 >= 0; --var5) {
-			var4 = var4 * var2 + var0[var5];
+			var4 = var2 * var4 + var0[var5];
 		}
 
 		return var4;

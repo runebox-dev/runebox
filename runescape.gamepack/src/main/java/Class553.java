@@ -21,7 +21,7 @@ public final class Class553 extends Class569 {
 	}
 
 	public Class553(int var1, int var2) {
-		this(new int[var2 * var1], var1, var2);
+		this(new int[var1 * var2], var1, var2);
 	}
 
 	public Class553(int[] var1, int var2, int var3) {
@@ -85,8 +85,8 @@ public final class Class553 extends Class569 {
 
 	@ObfInfo(name = "ap", desc = "()V")
 	public void method9598() {
-		if (this.field5421 != this.field5425 || this.field5424 != this.field5426) {
-			int[] var1 = new int[this.field5425 * this.field5426];
+		if (this.field5425 != this.field5421 || this.field5426 != this.field5424) {
+			int[] var1 = new int[this.field5426 * this.field5425];
 
 			for (int var2 = 0; var2 < this.field5424; ++var2) {
 				for (int var3 = 0; var3 < this.field5421; ++var3) {
@@ -104,7 +104,7 @@ public final class Class553 extends Class569 {
 
 	@ObfInfo(name = "an", desc = "(I)V")
 	public void method9599(int var1) {
-		if (this.field5421 != this.field5425 || this.field5424 != this.field5426) {
+		if (this.field5425 != this.field5421 || this.field5426 != this.field5424) {
 			int var2 = var1;
 			if (var1 > this.field5423) {
 				var2 = this.field5423;
@@ -127,11 +127,11 @@ public final class Class553 extends Class569 {
 
 			int var6 = this.field5421 + var2 + var3;
 			int var7 = this.field5424 + var4 + var5;
-			int[] var8 = new int[var7 * var6];
+			int[] var8 = new int[var6 * var7];
 
 			for (int var9 = 0; var9 < this.field5424; ++var9) {
 				for (int var10 = 0; var10 < this.field5421; ++var10) {
-					var8[(var9 + var4) * var6 + var10 + var2] = this.field5429[this.field5421 * var9 + var10];
+					var8[(var4 + var9) * var6 + var2 + var10] = this.field5429[this.field5421 * var9 + var10];
 				}
 			}
 
@@ -145,12 +145,12 @@ public final class Class553 extends Class569 {
 
 	@ObfInfo(name = "aj", desc = "()V")
 	public void method9600() {
-		int[] var1 = new int[this.field5421 * this.field5424];
+		int[] var1 = new int[this.field5424 * this.field5421];
 		int var2 = 0;
 
 		for (int var3 = 0; var3 < this.field5424; ++var3) {
 			for (int var4 = this.field5421 - 1; var4 >= 0; --var4) {
-				var1[var2++] = this.field5429[var4 + this.field5421 * var3];
+				var1[var2++] = this.field5429[this.field5421 * var3 + var4];
 			}
 		}
 
@@ -160,12 +160,12 @@ public final class Class553 extends Class569 {
 
 	@ObfInfo(name = "av", desc = "()V")
 	public void method9601() {
-		int[] var1 = new int[this.field5421 * this.field5424];
+		int[] var1 = new int[this.field5424 * this.field5421];
 		int var2 = 0;
 
 		for (int var3 = this.field5424 - 1; var3 >= 0; --var3) {
 			for (int var4 = 0; var4 < this.field5421; ++var4) {
-				var1[var2++] = this.field5429[var4 + this.field5421 * var3];
+				var1[var2++] = this.field5429[this.field5421 * var3 + var4];
 			}
 		}
 
@@ -175,7 +175,7 @@ public final class Class553 extends Class569 {
 
 	@ObfInfo(name = "ab", desc = "(I)V")
 	public void method9657(int var1) {
-		int[] var2 = new int[this.field5421 * this.field5424];
+		int[] var2 = new int[this.field5424 * this.field5421];
 		int var3 = 0;
 
 		for (int var4 = 0; var4 < this.field5424; ++var4) {
@@ -206,8 +206,8 @@ public final class Class553 extends Class569 {
 			int var3 = this.field5421 * var2;
 
 			for (int var4 = this.field5421 - 1; var4 > 0; --var4) {
-				if (this.field5429[var4 + var3] == 0 && this.field5429[var4 + var3 - 1 - this.field5421] != 0) {
-					this.field5429[var4 + var3] = var1;
+				if (this.field5429[var3 + var4] == 0 && this.field5429[var3 + var4 - 1 - this.field5421] != 0) {
+					this.field5429[var3 + var4] = var1;
 				}
 			}
 		}
@@ -218,7 +218,7 @@ public final class Class553 extends Class569 {
 	public void method9636(int var1, int var2) {
 		var1 += this.field5423;
 		var2 += this.field5420;
-		int var3 = var1 + Class88.field5502 * var2;
+		int var3 = Class88.field5502 * var2 + var1;
 		int var4 = 0;
 		int var5 = this.field5424;
 		int var6 = this.field5421;
@@ -229,12 +229,12 @@ public final class Class553 extends Class569 {
 			var9 = Class569.field5505 - var2;
 			var5 -= var9;
 			var2 = Class569.field5505;
-			var4 += var9 * var6;
+			var4 += var6 * var9;
 			var3 += Class88.field5502 * var9;
 		}
 
-		if (var5 + var2 > Class569.field5507) {
-			var5 -= var5 + var2 - Class569.field5507;
+		if (var2 + var5 > Class569.field5507) {
+			var5 -= var2 + var5 - Class569.field5507;
 		}
 
 		if (var1 < Class569.field5508) {
@@ -247,8 +247,8 @@ public final class Class553 extends Class569 {
 			var7 += var9;
 		}
 
-		if (var6 + var1 > Class569.field5509) {
-			var9 = var6 + var1 - Class569.field5509;
+		if (var1 + var6 > Class569.field5509) {
+			var9 = var1 + var6 - Class569.field5509;
 			var6 -= var9;
 			var8 += var9;
 			var7 += var9;
@@ -263,7 +263,7 @@ public final class Class553 extends Class569 {
 	public void method9628(int var1, int var2) {
 		var1 += this.field5423;
 		var2 += this.field5420;
-		int var3 = var1 + Class88.field5502 * var2;
+		int var3 = Class88.field5502 * var2 + var1;
 		int var4 = 0;
 		int var5 = this.field5424;
 		int var6 = this.field5421;
@@ -274,12 +274,12 @@ public final class Class553 extends Class569 {
 			var9 = Class569.field5505 - var2;
 			var5 -= var9;
 			var2 = Class569.field5505;
-			var4 += var9 * var6;
+			var4 += var6 * var9;
 			var3 += Class88.field5502 * var9;
 		}
 
-		if (var5 + var2 > Class569.field5507) {
-			var5 -= var5 + var2 - Class569.field5507;
+		if (var2 + var5 > Class569.field5507) {
+			var5 -= var2 + var5 - Class569.field5507;
 		}
 
 		if (var1 < Class569.field5508) {
@@ -292,8 +292,8 @@ public final class Class553 extends Class569 {
 			var7 += var9;
 		}
 
-		if (var6 + var1 > Class569.field5509) {
-			var9 = var6 + var1 - Class569.field5509;
+		if (var1 + var6 > Class569.field5509) {
+			var9 = var1 + var6 - Class569.field5509;
 			var6 -= var9;
 			var8 += var9;
 			var7 += var9;
@@ -319,13 +319,13 @@ public final class Class553 extends Class569 {
 			if (this.field5423 > 0) {
 				var13 = ((this.field5423 << 16) + var11 - 1) / var11;
 				var1 += var13;
-				var7 += var13 * var11 - (this.field5423 << 16);
+				var7 += var11 * var13 - (this.field5423 << 16);
 			}
 
 			if (this.field5420 > 0) {
 				var13 = ((this.field5420 << 16) + var12 - 1) / var12;
 				var2 += var13;
-				var8 += var13 * var12 - (this.field5420 << 16);
+				var8 += var12 * var13 - (this.field5420 << 16);
 			}
 
 			if (var5 < var9) {
@@ -336,10 +336,10 @@ public final class Class553 extends Class569 {
 				var4 = ((var6 << 16) - var8 + var12 - 1) / var12;
 			}
 
-			var13 = var1 + Class88.field5502 * var2;
+			var13 = Class88.field5502 * var2 + var1;
 			int var14 = Class88.field5502 - var3;
-			if (var4 + var2 > Class569.field5507) {
-				var4 -= var4 + var2 - Class569.field5507;
+			if (var2 + var4 > Class569.field5507) {
+				var4 -= var2 + var4 - Class569.field5507;
 			}
 
 			int var15;
@@ -347,11 +347,11 @@ public final class Class553 extends Class569 {
 				var15 = Class569.field5505 - var2;
 				var4 -= var15;
 				var13 += Class88.field5502 * var15;
-				var8 += var15 * var12;
+				var8 += var12 * var15;
 			}
 
-			if (var3 + var1 > Class569.field5509) {
-				var15 = var3 + var1 - Class569.field5509;
+			if (var1 + var3 > Class569.field5509) {
+				var15 = var1 + var3 - Class569.field5509;
 				var3 -= var15;
 				var14 += var15;
 			}
@@ -360,7 +360,7 @@ public final class Class553 extends Class569 {
 				var15 = Class569.field5508 - var1;
 				var3 -= var15;
 				var13 += var15;
-				var7 += var15 * var11;
+				var7 += var11 * var15;
 				var14 += var15;
 			}
 
@@ -375,7 +375,7 @@ public final class Class553 extends Class569 {
 		} else {
 			var1 += this.field5423;
 			var2 += this.field5420;
-			int var5 = var1 + Class88.field5502 * var2;
+			int var5 = Class88.field5502 * var2 + var1;
 			int var6 = 0;
 			int var7 = this.field5424;
 			int var8 = this.field5421;
@@ -386,12 +386,12 @@ public final class Class553 extends Class569 {
 				var11 = Class569.field5505 - var2;
 				var7 -= var11;
 				var2 = Class569.field5505;
-				var6 += var11 * var8;
+				var6 += var8 * var11;
 				var5 += Class88.field5502 * var11;
 			}
 
-			if (var7 + var2 > Class569.field5507) {
-				var7 -= var7 + var2 - Class569.field5507;
+			if (var2 + var7 > Class569.field5507) {
+				var7 -= var2 + var7 - Class569.field5507;
 			}
 
 			if (var1 < Class569.field5508) {
@@ -404,8 +404,8 @@ public final class Class553 extends Class569 {
 				var9 += var11;
 			}
 
-			if (var8 + var1 > Class569.field5509) {
-				var11 = var8 + var1 - Class569.field5509;
+			if (var1 + var8 > Class569.field5509) {
+				var11 = var1 + var8 - Class569.field5509;
 				var8 -= var11;
 				var10 += var11;
 				var9 += var11;
@@ -421,7 +421,7 @@ public final class Class553 extends Class569 {
 	public void method9625(int var1, int var2, int var3) {
 		var1 += this.field5423;
 		var2 += this.field5420;
-		int var4 = var1 + Class88.field5502 * var2;
+		int var4 = Class88.field5502 * var2 + var1;
 		int var5 = 0;
 		int var6 = this.field5424;
 		int var7 = this.field5421;
@@ -432,12 +432,12 @@ public final class Class553 extends Class569 {
 			var10 = Class569.field5505 - var2;
 			var6 -= var10;
 			var2 = Class569.field5505;
-			var5 += var10 * var7;
+			var5 += var7 * var10;
 			var4 += Class88.field5502 * var10;
 		}
 
-		if (var6 + var2 > Class569.field5507) {
-			var6 -= var6 + var2 - Class569.field5507;
+		if (var2 + var6 > Class569.field5507) {
+			var6 -= var2 + var6 - Class569.field5507;
 		}
 
 		if (var1 < Class569.field5508) {
@@ -450,8 +450,8 @@ public final class Class553 extends Class569 {
 			var8 += var10;
 		}
 
-		if (var7 + var1 > Class569.field5509) {
-			var10 = var7 + var1 - Class569.field5509;
+		if (var1 + var7 > Class569.field5509) {
+			var10 = var1 + var7 - Class569.field5509;
 			var7 -= var10;
 			var9 += var10;
 			var8 += var10;
@@ -477,13 +477,13 @@ public final class Class553 extends Class569 {
 			if (this.field5423 > 0) {
 				var14 = ((this.field5423 << 16) + var12 - 1) / var12;
 				var1 += var14;
-				var8 += var14 * var12 - (this.field5423 << 16);
+				var8 += var12 * var14 - (this.field5423 << 16);
 			}
 
 			if (this.field5420 > 0) {
 				var14 = ((this.field5420 << 16) + var13 - 1) / var13;
 				var2 += var14;
-				var9 += var14 * var13 - (this.field5420 << 16);
+				var9 += var13 * var14 - (this.field5420 << 16);
 			}
 
 			if (var6 < var10) {
@@ -494,10 +494,10 @@ public final class Class553 extends Class569 {
 				var4 = ((var7 << 16) - var9 + var13 - 1) / var13;
 			}
 
-			var14 = var1 + Class88.field5502 * var2;
+			var14 = Class88.field5502 * var2 + var1;
 			int var15 = Class88.field5502 - var3;
-			if (var4 + var2 > Class569.field5507) {
-				var4 -= var4 + var2 - Class569.field5507;
+			if (var2 + var4 > Class569.field5507) {
+				var4 -= var2 + var4 - Class569.field5507;
 			}
 
 			int var16;
@@ -505,11 +505,11 @@ public final class Class553 extends Class569 {
 				var16 = Class569.field5505 - var2;
 				var4 -= var16;
 				var14 += Class88.field5502 * var16;
-				var9 += var16 * var13;
+				var9 += var13 * var16;
 			}
 
-			if (var3 + var1 > Class569.field5509) {
-				var16 = var3 + var1 - Class569.field5509;
+			if (var1 + var3 > Class569.field5509) {
+				var16 = var1 + var3 - Class569.field5509;
 				var3 -= var16;
 				var15 += var16;
 			}
@@ -518,7 +518,7 @@ public final class Class553 extends Class569 {
 				var16 = Class569.field5508 - var1;
 				var3 -= var16;
 				var14 += var16;
-				var8 += var16 * var12;
+				var8 += var12 * var16;
 				var15 += var16;
 			}
 
@@ -530,7 +530,7 @@ public final class Class553 extends Class569 {
 	public void method9617(int var1, int var2, int var3) {
 		var1 += this.field5423;
 		var2 += this.field5420;
-		int var4 = var1 + Class88.field5502 * var2;
+		int var4 = Class88.field5502 * var2 + var1;
 		int var5 = 0;
 		int var6 = this.field5424;
 		int var7 = this.field5421;
@@ -541,12 +541,12 @@ public final class Class553 extends Class569 {
 			var10 = Class569.field5505 - var2;
 			var6 -= var10;
 			var2 = Class569.field5505;
-			var5 += var10 * var7;
+			var5 += var7 * var10;
 			var4 += Class88.field5502 * var10;
 		}
 
-		if (var6 + var2 > Class569.field5507) {
-			var6 -= var6 + var2 - Class569.field5507;
+		if (var2 + var6 > Class569.field5507) {
+			var6 -= var2 + var6 - Class569.field5507;
 		}
 
 		if (var1 < Class569.field5508) {
@@ -559,8 +559,8 @@ public final class Class553 extends Class569 {
 			var8 += var10;
 		}
 
-		if (var7 + var1 > Class569.field5509) {
-			var10 = var7 + var1 - Class569.field5509;
+		if (var1 + var7 > Class569.field5509) {
+			var10 = var1 + var7 - Class569.field5509;
 			var7 -= var10;
 			var9 += var10;
 			var8 += var10;
@@ -591,13 +591,13 @@ public final class Class553 extends Class569 {
 			if (this.field5423 > 0) {
 				var14 = ((this.field5423 << 16) + var12 - 1) / var12;
 				var1 += var14;
-				var8 += var14 * var12 - (this.field5423 << 16);
+				var8 += var12 * var14 - (this.field5423 << 16);
 			}
 
 			if (this.field5420 > 0) {
 				var14 = ((this.field5420 << 16) + var13 - 1) / var13;
 				var2 += var14;
-				var9 += var14 * var13 - (this.field5420 << 16);
+				var9 += var13 * var14 - (this.field5420 << 16);
 			}
 
 			if (var6 < var10) {
@@ -608,10 +608,10 @@ public final class Class553 extends Class569 {
 				var4 = ((var7 << 16) - var9 + var13 - 1) / var13;
 			}
 
-			var14 = var1 + Class88.field5502 * var2;
+			var14 = Class88.field5502 * var2 + var1;
 			int var15 = Class88.field5502 - var3;
-			if (var4 + var2 > Class569.field5507) {
-				var4 -= var4 + var2 - Class569.field5507;
+			if (var2 + var4 > Class569.field5507) {
+				var4 -= var2 + var4 - Class569.field5507;
 			}
 
 			int var16;
@@ -619,11 +619,11 @@ public final class Class553 extends Class569 {
 				var16 = Class569.field5505 - var2;
 				var4 -= var16;
 				var14 += Class88.field5502 * var16;
-				var9 += var16 * var13;
+				var9 += var13 * var16;
 			}
 
-			if (var3 + var1 > Class569.field5509) {
-				var16 = var3 + var1 - Class569.field5509;
+			if (var1 + var3 > Class569.field5509) {
+				var16 = var1 + var3 - Class569.field5509;
 				var3 -= var16;
 				var15 += var16;
 			}
@@ -632,7 +632,7 @@ public final class Class553 extends Class569 {
 				var16 = Class569.field5508 - var1;
 				var3 -= var16;
 				var14 += var16;
-				var8 += var16 * var12;
+				var8 += var12 * var16;
 				var15 += var16;
 			}
 
@@ -657,8 +657,8 @@ public final class Class553 extends Class569 {
 			var10000 = var5 - var1;
 		}
 
-		int var13 = var3 + var1 + var11 + (var4 + var2 + var9) * Class88.field5502;
-		int var14 = var9 + var2;
+		int var13 = (var2 + var4 + var9) * Class88.field5502 + var1 + var3 + var11;
+		int var14 = var2 + var9;
 
 		for (int var15 = var9; var15 < var10; ++var15) {
 			int var16 = var7[var14];
@@ -667,20 +667,20 @@ public final class Class553 extends Class569 {
 			int var19;
 			if (var1 < var16) {
 				var19 = var16 - var1;
-				var18 = var13 + (var19 - var11);
+				var18 = var19 - var11 + var13;
 			} else {
 				var19 = var11;
 			}
 
 			int var12;
-			if (this.field5421 + var1 <= var17 + var16) {
+			if (this.field5421 + var1 <= var16 + var17) {
 				var12 = this.field5421;
 			} else {
-				var12 = var17 + var16 - var1;
+				var12 = var16 + var17 - var1;
 			}
 
 			for (int var20 = var19; var20 < var12; ++var20) {
-				int var21 = this.field5429[var20 + this.field5421 * var15];
+				int var21 = this.field5429[this.field5421 * var15 + var20];
 				if (var21 != 0) {
 					Class569.field5504[var18++] = var21;
 				} else {
@@ -700,17 +700,17 @@ public final class Class553 extends Class569 {
 			int var12 = -var4 / 2;
 			int var13 = (int)(Math.sin((double)var7 / 326.11D) * 65536.0D);
 			int var14 = (int)(Math.cos((double)var7 / 326.11D) * 65536.0D);
-			var13 = var13 * var8 >> 8;
-			var14 = var14 * var8 >> 8;
-			int var15 = (var5 << 16) + var13 * var12 + var14 * var11;
-			int var16 = (var6 << 16) + (var14 * var12 - var13 * var11);
-			int var17 = var1 + Class88.field5502 * var2;
+			var13 = var8 * var13 >> 8;
+			var14 = var8 * var14 >> 8;
+			int var15 = (var5 << 16) + var11 * var14 + var12 * var13;
+			int var16 = (var6 << 16) + (var12 * var14 - var11 * var13);
+			int var17 = Class88.field5502 * var2 + var1;
 
 			for (var2 = 0; var2 < var4; ++var2) {
 				int var18 = var9[var2];
-				int var19 = var18 + var17;
-				int var20 = var15 + var18 * var14;
-				int var21 = var16 - var18 * var13;
+				int var19 = var17 + var18;
+				int var20 = var14 * var18 + var15;
+				int var21 = var16 - var13 * var18;
 
 				for (var1 = -var10[var2]; var1 < 0; ++var1) {
 					Class569.field5504[var19++] = this.field5429[(var20 >> 16) + (var21 >> 16) * this.field5421];
@@ -734,11 +734,11 @@ public final class Class553 extends Class569 {
 			int var11 = -var4 / 2;
 			int var12 = (int)(Math.sin(var7) * 65536.0D);
 			int var13 = (int)(Math.cos(var7) * 65536.0D);
-			var12 = var12 * var9 >> 8;
-			var13 = var13 * var9 >> 8;
-			int var14 = (var5 << 16) + var12 * var11 + var13 * var10;
-			int var15 = (var6 << 16) + (var13 * var11 - var12 * var10);
-			int var16 = var1 + Class88.field5502 * var2;
+			var12 = var9 * var12 >> 8;
+			var13 = var9 * var13 >> 8;
+			int var14 = (var5 << 16) + var10 * var13 + var11 * var12;
+			int var15 = (var6 << 16) + (var11 * var13 - var10 * var12);
+			int var16 = Class88.field5502 * var2 + var1;
 
 			for (var2 = 0; var2 < var4; ++var2) {
 				int var17 = var16;
@@ -783,10 +783,10 @@ public final class Class553 extends Class569 {
 			int var12 = -(-var1) * var9 + -var2 * var10;
 			int var13 = ((this.field5421 << 4) - var1) * var10 + -var2 * var9;
 			int var14 = -((this.field5421 << 4) - var1) * var9 + -var2 * var10;
-			int var15 = -var1 * var10 + ((this.field5424 << 4) - var2) * var9;
-			int var16 = -(-var1) * var9 + ((this.field5424 << 4) - var2) * var10;
-			int var17 = ((this.field5421 << 4) - var1) * var10 + ((this.field5424 << 4) - var2) * var9;
-			int var18 = -((this.field5421 << 4) - var1) * var9 + ((this.field5424 << 4) - var2) * var10;
+			int var15 = ((this.field5424 << 4) - var2) * var9 + -var1 * var10;
+			int var16 = ((this.field5424 << 4) - var2) * var10 + -(-var1) * var9;
+			int var17 = ((this.field5424 << 4) - var2) * var9 + ((this.field5421 << 4) - var1) * var10;
+			int var18 = ((this.field5424 << 4) - var2) * var10 + -((this.field5421 << 4) - var1) * var9;
 			int var19;
 			int var20;
 			if (var11 < var13) {
@@ -877,8 +877,8 @@ public final class Class553 extends Class569 {
 					int var27 = (int)Math.floor(Math.cos(var7) * var24 + 0.5D);
 					int var28 = (var19 << 4) + 8 - var3;
 					int var29 = (var21 << 4) + 8 - var4;
-					int var30 = (var1 << 8) - (var29 * var26 >> 4);
-					int var31 = (var2 << 8) + (var29 * var27 >> 4);
+					int var30 = (var1 << 8) - (var26 * var29 >> 4);
+					int var31 = (var2 << 8) + (var27 * var29 >> 4);
 					int var32;
 					int var33;
 					int var34;
@@ -892,7 +892,7 @@ public final class Class553 extends Class569 {
 								var37 = var20;
 								if (var30 >= 0 && var31 >= 0 && var30 - (this.field5421 << 12) < 0 && var31 - (this.field5424 << 12) < 0) {
 									for (; var37 < 0; ++var37) {
-										var38 = this.field5429[(var31 >> 12) * this.field5421 + (var30 >> 12)];
+										var38 = this.field5429[(var30 >> 12) + (var31 >> 12) * this.field5421];
 										if (var38 != 0) {
 											Class569.field5504[var34++] = var38;
 										} else {
@@ -906,13 +906,13 @@ public final class Class553 extends Class569 {
 						} else if (var26 < 0) {
 							for (var33 = var22; var33 < 0; var23 += Class88.field5502) {
 								var34 = var23;
-								var36 = var31 + (var28 * var26 >> 4);
+								var36 = (var26 * var28 >> 4) + var31;
 								var37 = var20;
 								if (var30 >= 0 && var30 - (this.field5421 << 12) < 0) {
 									if ((var32 = var36 - (this.field5424 << 12)) >= 0) {
 										var32 = (var26 - var32) / var26;
 										var37 = var20 + var32;
-										var36 += var32 * var26;
+										var36 += var26 * var32;
 										var34 = var23 + var32;
 									}
 
@@ -921,7 +921,7 @@ public final class Class553 extends Class569 {
 									}
 
 									while (var37 < 0) {
-										var38 = this.field5429[(var36 >> 12) * this.field5421 + (var30 >> 12)];
+										var38 = this.field5429[(var30 >> 12) + (var36 >> 12) * this.field5421];
 										if (var38 != 0) {
 											Class569.field5504[var34++] = var38;
 										} else {
@@ -939,13 +939,13 @@ public final class Class553 extends Class569 {
 						} else {
 							for (var33 = var22; var33 < 0; var23 += Class88.field5502) {
 								var34 = var23;
-								var36 = var31 + (var28 * var26 >> 4);
+								var36 = (var26 * var28 >> 4) + var31;
 								var37 = var20;
 								if (var30 >= 0 && var30 - (this.field5421 << 12) < 0) {
 									if (var36 < 0) {
 										var32 = (var26 - 1 - var36) / var26;
 										var37 = var20 + var32;
-										var36 += var32 * var26;
+										var36 += var26 * var32;
 										var34 = var23 + var32;
 									}
 
@@ -954,7 +954,7 @@ public final class Class553 extends Class569 {
 									}
 
 									while (var37 < 0) {
-										var38 = this.field5429[(var36 >> 12) * this.field5421 + (var30 >> 12)];
+										var38 = this.field5429[(var30 >> 12) + (var36 >> 12) * this.field5421];
 										if (var38 != 0) {
 											Class569.field5504[var34++] = var38;
 										} else {
@@ -976,13 +976,13 @@ public final class Class553 extends Class569 {
 							if (var26 == 0) {
 								for (var33 = var22; var33 < 0; var23 += Class88.field5502) {
 									var34 = var23;
-									var35 = var30 + (var28 * var27 >> 4);
+									var35 = (var27 * var28 >> 4) + var30;
 									var37 = var20;
 									if (var31 >= 0 && var31 - (this.field5424 << 12) < 0) {
 										if ((var32 = var35 - (this.field5421 << 12)) >= 0) {
 											var32 = (var27 - var32) / var27;
 											var37 = var20 + var32;
-											var35 += var32 * var27;
+											var35 += var27 * var32;
 											var34 = var23 + var32;
 										}
 
@@ -991,7 +991,7 @@ public final class Class553 extends Class569 {
 										}
 
 										while (var37 < 0) {
-											var38 = this.field5429[(var31 >> 12) * this.field5421 + (var35 >> 12)];
+											var38 = this.field5429[(var35 >> 12) + (var31 >> 12) * this.field5421];
 											if (var38 != 0) {
 												Class569.field5504[var34++] = var38;
 											} else {
@@ -1009,14 +1009,14 @@ public final class Class553 extends Class569 {
 							} else if (var26 < 0) {
 								for (var33 = var22; var33 < 0; var23 += Class88.field5502) {
 									var34 = var23;
-									var35 = var30 + (var28 * var27 >> 4);
-									var36 = var31 + (var28 * var26 >> 4);
+									var35 = (var27 * var28 >> 4) + var30;
+									var36 = (var26 * var28 >> 4) + var31;
 									var37 = var20;
 									if ((var32 = var35 - (this.field5421 << 12)) >= 0) {
 										var32 = (var27 - var32) / var27;
 										var37 = var20 + var32;
-										var35 += var32 * var27;
-										var36 += var32 * var26;
+										var35 += var27 * var32;
+										var36 += var26 * var32;
 										var34 = var23 + var32;
 									}
 
@@ -1027,8 +1027,8 @@ public final class Class553 extends Class569 {
 									if ((var32 = var36 - (this.field5424 << 12)) >= 0) {
 										var32 = (var26 - var32) / var26;
 										var37 += var32;
-										var35 += var32 * var27;
-										var36 += var32 * var26;
+										var35 += var27 * var32;
+										var36 += var26 * var32;
 										var34 += var32;
 									}
 
@@ -1037,7 +1037,7 @@ public final class Class553 extends Class569 {
 									}
 
 									while (var37 < 0) {
-										var38 = this.field5429[(var36 >> 12) * this.field5421 + (var35 >> 12)];
+										var38 = this.field5429[(var35 >> 12) + (var36 >> 12) * this.field5421];
 										if (var38 != 0) {
 											Class569.field5504[var34++] = var38;
 										} else {
@@ -1056,14 +1056,14 @@ public final class Class553 extends Class569 {
 							} else {
 								for (var33 = var22; var33 < 0; var23 += Class88.field5502) {
 									var34 = var23;
-									var35 = var30 + (var28 * var27 >> 4);
-									var36 = var31 + (var28 * var26 >> 4);
+									var35 = (var27 * var28 >> 4) + var30;
+									var36 = (var26 * var28 >> 4) + var31;
 									var37 = var20;
 									if ((var32 = var35 - (this.field5421 << 12)) >= 0) {
 										var32 = (var27 - var32) / var27;
 										var37 = var20 + var32;
-										var35 += var32 * var27;
-										var36 += var32 * var26;
+										var35 += var27 * var32;
+										var36 += var26 * var32;
 										var34 = var23 + var32;
 									}
 
@@ -1074,8 +1074,8 @@ public final class Class553 extends Class569 {
 									if (var36 < 0) {
 										var32 = (var26 - 1 - var36) / var26;
 										var37 += var32;
-										var35 += var32 * var27;
-										var36 += var32 * var26;
+										var35 += var27 * var32;
+										var36 += var26 * var32;
 										var34 += var32;
 									}
 
@@ -1084,7 +1084,7 @@ public final class Class553 extends Class569 {
 									}
 
 									while (var37 < 0) {
-										var38 = this.field5429[(var36 >> 12) * this.field5421 + (var35 >> 12)];
+										var38 = this.field5429[(var35 >> 12) + (var36 >> 12) * this.field5421];
 										if (var38 != 0) {
 											Class569.field5504[var34++] = var38;
 										} else {
@@ -1104,13 +1104,13 @@ public final class Class553 extends Class569 {
 						} else if (var26 == 0) {
 							for (var33 = var22; var33 < 0; var23 += Class88.field5502) {
 								var34 = var23;
-								var35 = var30 + (var28 * var27 >> 4);
+								var35 = (var27 * var28 >> 4) + var30;
 								var37 = var20;
 								if (var31 >= 0 && var31 - (this.field5424 << 12) < 0) {
 									if (var35 < 0) {
 										var32 = (var27 - 1 - var35) / var27;
 										var37 = var20 + var32;
-										var35 += var32 * var27;
+										var35 += var27 * var32;
 										var34 = var23 + var32;
 									}
 
@@ -1119,7 +1119,7 @@ public final class Class553 extends Class569 {
 									}
 
 									while (var37 < 0) {
-										var38 = this.field5429[(var31 >> 12) * this.field5421 + (var35 >> 12)];
+										var38 = this.field5429[(var35 >> 12) + (var31 >> 12) * this.field5421];
 										if (var38 != 0) {
 											Class569.field5504[var34++] = var38;
 										} else {
@@ -1137,14 +1137,14 @@ public final class Class553 extends Class569 {
 						} else if (var26 < 0) {
 							for (var33 = var22; var33 < 0; var23 += Class88.field5502) {
 								var34 = var23;
-								var35 = var30 + (var28 * var27 >> 4);
-								var36 = var31 + (var28 * var26 >> 4);
+								var35 = (var27 * var28 >> 4) + var30;
+								var36 = (var26 * var28 >> 4) + var31;
 								var37 = var20;
 								if (var35 < 0) {
 									var32 = (var27 - 1 - var35) / var27;
 									var37 = var20 + var32;
-									var35 += var32 * var27;
-									var36 += var32 * var26;
+									var35 += var27 * var32;
+									var36 += var26 * var32;
 									var34 = var23 + var32;
 								}
 
@@ -1155,8 +1155,8 @@ public final class Class553 extends Class569 {
 								if ((var32 = var36 - (this.field5424 << 12)) >= 0) {
 									var32 = (var26 - var32) / var26;
 									var37 += var32;
-									var35 += var32 * var27;
-									var36 += var32 * var26;
+									var35 += var27 * var32;
+									var36 += var26 * var32;
 									var34 += var32;
 								}
 
@@ -1165,7 +1165,7 @@ public final class Class553 extends Class569 {
 								}
 
 								while (var37 < 0) {
-									var38 = this.field5429[(var36 >> 12) * this.field5421 + (var35 >> 12)];
+									var38 = this.field5429[(var35 >> 12) + (var36 >> 12) * this.field5421];
 									if (var38 != 0) {
 										Class569.field5504[var34++] = var38;
 									} else {
@@ -1184,14 +1184,14 @@ public final class Class553 extends Class569 {
 						} else {
 							for (var33 = var22; var33 < 0; var23 += Class88.field5502) {
 								var34 = var23;
-								var35 = var30 + (var28 * var27 >> 4);
-								var36 = var31 + (var28 * var26 >> 4);
+								var35 = (var27 * var28 >> 4) + var30;
+								var36 = (var26 * var28 >> 4) + var31;
 								var37 = var20;
 								if (var35 < 0) {
 									var32 = (var27 - 1 - var35) / var27;
 									var37 = var20 + var32;
-									var35 += var32 * var27;
-									var36 += var32 * var26;
+									var35 += var27 * var32;
+									var36 += var26 * var32;
 									var34 = var23 + var32;
 								}
 
@@ -1202,8 +1202,8 @@ public final class Class553 extends Class569 {
 								if (var36 < 0) {
 									var32 = (var26 - 1 - var36) / var26;
 									var37 += var32;
-									var35 += var32 * var27;
-									var36 += var32 * var26;
+									var35 += var27 * var32;
+									var36 += var26 * var32;
 									var34 += var32;
 								}
 
@@ -1212,7 +1212,7 @@ public final class Class553 extends Class569 {
 								}
 
 								while (var37 < 0) {
-									var38 = this.field5429[(var36 >> 12) * this.field5421 + (var35 >> 12)];
+									var38 = this.field5429[(var35 >> 12) + (var36 >> 12) * this.field5421];
 									if (var38 != 0) {
 										Class569.field5504[var34++] = var38;
 									} else {
@@ -1239,10 +1239,10 @@ public final class Class553 extends Class569 {
 	@ObfInfo(name = "bg", desc = "(IIII)V")
 	public void method9627(int var1, int var2, int var3, int var4) {
 		if (var3 <= this.field5425 && var4 <= this.field5426) {
-			int var5 = var1 + this.field5423 * var3 / this.field5425;
-			int var6 = var1 + ((this.field5423 + this.field5421) * var3 + this.field5425 - 1) / this.field5425;
-			int var7 = var2 + this.field5420 * var4 / this.field5426;
-			int var8 = var2 + ((this.field5420 + this.field5424) * var4 + this.field5426 - 1) / this.field5426;
+			int var5 = this.field5423 * var3 / this.field5425 + var1;
+			int var6 = ((this.field5423 + this.field5421) * var3 + this.field5425 - 1) / this.field5425 + var1;
+			int var7 = this.field5420 * var4 / this.field5426 + var2;
+			int var8 = ((this.field5424 + this.field5420) * var4 + this.field5426 - 1) / this.field5426 + var2;
 			if (var5 < Class569.field5508) {
 				var5 = Class569.field5508;
 			}
@@ -1307,11 +1307,11 @@ public final class Class553 extends Class569 {
 								int var28;
 								for (var28 = var17; var28 <= var18; ++var28) {
 									int var29 = 16;
-									if (var28 == var17) {
+									if (var17 == var28) {
 										var29 = var22;
 									}
 
-									if (var28 == var18) {
+									if (var18 == var28) {
 										var29 = var23;
 									}
 
@@ -1319,10 +1319,10 @@ public final class Class553 extends Class569 {
 										int var31 = this.field5429[this.field5421 * var28 + var30];
 										if (var31 != 0) {
 											int var32;
-											if (var30 == var15) {
-												var32 = var29 * var20;
-											} else if (var30 == var16) {
-												var32 = var29 * var21;
+											if (var15 == var30) {
+												var32 = var20 * var29;
+											} else if (var16 == var30) {
+												var32 = var21 * var29;
 											} else {
 												var32 = var29 << 4;
 											}
@@ -1336,7 +1336,7 @@ public final class Class553 extends Class569 {
 								}
 
 								if (var27 >= var19) {
-									var28 = (var24 / var27 << 16) + (var25 / var27 << 8) + var26 / var27;
+									var28 = var26 / var27 + (var24 / var27 << 16) + (var25 / var27 << 8);
 									if (var28 == 0) {
 										var28 = 1;
 									}
@@ -1362,7 +1362,7 @@ public final class Class553 extends Class569 {
 	public static void method9605(int[] var0, int[] var1, int var2, int var3, int var4, int var5, int var6, int var7) {
 		for (int var8 = -var5; var8 < 0; ++var8) {
 			int var9;
-			for (var9 = var4 + var3 - 3; var3 < var9; var0[var3++] = var1[var2++]) {
+			for (var9 = var3 + var4 - 3; var3 < var9; var0[var3++] = var1[var2++]) {
 				var0[var3++] = var1[var2++];
 				var0[var3++] = var1[var2++];
 				var0[var3++] = var1[var2++];
@@ -1534,9 +1534,9 @@ public final class Class553 extends Class569 {
 				var0 = var4[var5++];
 				if (var0 != 0) {
 					var1 = var3[var7];
-					var2 = var1 + var0;
+					var2 = var0 + var1;
 					var0 = (var0 & 16711935) + (var1 & 16711935);
-					var1 = (var0 & 16777472) + (var2 - var0 & 65536);
+					var1 = (var2 - var0 & 65536) + (var0 & 16777472);
 					var3[var7++] = var2 - var1 | var1 - (var1 >>> 8);
 				} else {
 					++var7;
@@ -1556,11 +1556,11 @@ public final class Class553 extends Class569 {
 				var0 = var4[var5++];
 				if (var0 != 0) {
 					var1 = (var0 & 16711935) * var13;
-					var0 = (var1 & -16711936) + (var13 * var0 - var1 & 16711680) >>> 8;
+					var0 = (var0 * var13 - var1 & 16711680) + (var1 & -16711936) >>> 8;
 					var1 = var3[var7];
-					var2 = var1 + var0;
+					var2 = var0 + var1;
 					var0 = (var0 & 16711935) + (var1 & 16711935);
-					var1 = (var0 & 16777472) + (var2 - var0 & 65536);
+					var1 = (var2 - var0 & 65536) + (var0 & 16777472);
 					var3[var7++] = var2 - var1 | var1 - (var1 >>> 8);
 				} else {
 					++var7;
@@ -1582,9 +1582,9 @@ public final class Class553 extends Class569 {
 				var0 = var4[(var3 >> 16) + var7];
 				if (var0 != 0) {
 					var1 = var5[var10];
-					var2 = var1 + var0;
+					var2 = var0 + var1;
 					var0 = (var0 & 16711935) + (var1 & 16711935);
-					var1 = (var0 & 16777472) + (var2 - var0 & 65536);
+					var1 = (var2 - var0 & 65536) + (var0 & 16777472);
 					var5[var10++] = var2 - var1 | var1 - (var1 >>> 8);
 				} else {
 					++var10;
@@ -1609,11 +1609,11 @@ public final class Class553 extends Class569 {
 				var0 = var4[(var3 >> 16) + var7];
 				if (var0 != 0) {
 					var1 = (var0 & 16711935) * var16;
-					var0 = (var1 & -16711936) + (var16 * var0 - var1 & 16711680) >>> 8;
+					var0 = (var0 * var16 - var1 & 16711680) + (var1 & -16711936) >>> 8;
 					var1 = var5[var10];
-					var2 = var1 + var0;
+					var2 = var0 + var1;
 					var0 = (var0 & 16711935) + (var1 & 16711935);
-					var1 = (var0 & 16777472) + (var2 - var0 & 65536);
+					var1 = (var2 - var0 & 65536) + (var0 & 16777472);
 					var5[var10++] = var2 - var1 | var1 - (var1 >>> 8);
 				} else {
 					++var10;

@@ -51,8 +51,8 @@ public final class Class425 {
 
 	@ObfInfo(name = "ap", desc = "(FFFFI)V")
 	public void method7820(float var1, float var2, float var3, float var4) {
-		float var6 = (float)Math.sin((double)(0.5F * var4));
-		float var7 = (float)Math.cos((double)(0.5F * var4));
+		float var6 = (float)Math.sin((double)(var4 * 0.5F));
+		float var7 = (float)Math.cos((double)(var4 * 0.5F));
 		this.field4707 = var1 * var6;
 		this.field4708 = var2 * var6;
 		this.field4704 = var3 * var6;
@@ -80,7 +80,7 @@ public final class Class425 {
 
 	@ObfInfo(name = "av", desc = "(Lqi;B)V")
 	public final void method7823(Class425 var1) {
-		this.method7846(var1.field4710 * this.field4707 + this.field4710 * var1.field4707 + var1.field4708 * this.field4704 - var1.field4704 * this.field4708, var1.field4704 * this.field4707 + var1.field4710 * this.field4708 - var1.field4707 * this.field4704 + this.field4710 * var1.field4708, var1.field4707 * this.field4708 + this.field4704 * var1.field4710 - var1.field4708 * this.field4707 + var1.field4704 * this.field4710, this.field4710 * var1.field4710 - var1.field4707 * this.field4707 - var1.field4708 * this.field4708 - var1.field4704 * this.field4704);
+		this.method7846(this.field4704 * var1.field4708 + this.field4710 * var1.field4707 + this.field4707 * var1.field4710 - this.field4708 * var1.field4704, this.field4707 * var1.field4704 + this.field4710 * var1.field4708 + (this.field4708 * var1.field4710 - this.field4704 * var1.field4707), this.field4710 * var1.field4704 + (this.field4708 * var1.field4707 + this.field4704 * var1.field4710 - this.field4707 * var1.field4708), this.field4710 * var1.field4710 - this.field4707 * var1.field4707 - this.field4708 * var1.field4708 - this.field4704 * var1.field4704);
 	}
 
 	public boolean equals(Object var1) {
@@ -88,17 +88,17 @@ public final class Class425 {
 			return false;
 		} else {
 			Class425 var2 = (Class425)var1;
-			return this.field4707 == var2.field4707 && this.field4708 == var2.field4708 && var2.field4704 == this.field4704 && var2.field4710 == this.field4710;
+			return this.field4707 == var2.field4707 && this.field4708 == var2.field4708 && this.field4704 == var2.field4704 && this.field4710 == var2.field4710;
 		}
 	}
 
 	public int hashCode() {
 		boolean var1 = true;
 		float var2 = 1.0F;
-		var2 = 31.0F * var2 + this.field4707;
-		var2 = this.field4708 + 31.0F * var2;
-		var2 = this.field4704 + var2 * 31.0F;
-		var2 = this.field4710 + 31.0F * var2;
+		var2 = var2 * 31.0F + this.field4707;
+		var2 = var2 * 31.0F + this.field4708;
+		var2 = var2 * 31.0F + this.field4704;
+		var2 = var2 * 31.0F + this.field4710;
 		return (int)var2;
 	}
 
@@ -116,7 +116,7 @@ public final class Class425 {
 	@ObfInfo(owner = "dr", name = "ad", desc = "(B)Lqi;", opaque = "-1")
 	public static Class425 method2569() {
 		synchronized(field4709) {
-			if (0 == field4706) {
+			if (field4706 == 0) {
 				return new Class425();
 			} else {
 				field4709[--field4706].method7848();

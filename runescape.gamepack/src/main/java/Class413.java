@@ -15,7 +15,7 @@ public final class Class413 {
 			CharSequence var9 = var0[var1];
 			return var9 == null ? "null" : var9.toString();
 		} else {
-			int var4 = var2 + var1;
+			int var4 = var1 + var2;
 			int var5 = 0;
 
 			for (int var6 = var1; var6 < var4; ++var6) {
@@ -89,7 +89,7 @@ public final class Class413 {
 					var11 = -var11;
 				}
 
-				int var10 = var6 * var1 + var11;
+				int var10 = var1 * var6 + var11;
 				if (var10 / var1 != var6) {
 					throw new NumberFormatException();
 				}

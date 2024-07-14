@@ -58,7 +58,7 @@ public class Class58 {
 			if (var3 == 1) {
 				var8 = method1182(this.field426, this.field428);
 			} else {
-				var8 = this.field426 * this.field428;
+				var8 = this.field428 * this.field426;
 			}
 
 			this.field425 = new int[var8];
@@ -85,7 +85,7 @@ public class Class58 {
 							var10 = var14;
 						}
 
-						var11 *= var8;
+						var11 = var8 * var11;
 					}
 				}
 			} else {
@@ -134,7 +134,7 @@ public class Class58 {
 
 					for (var8 = var4 - 1; var8 >= 1; --var8) {
 						var9 = var2[var8];
-						if (var9 != var6) {
+						if (var6 != var9) {
 							break;
 						}
 
@@ -152,7 +152,7 @@ public class Class58 {
 
 				for (var8 = var4 + 1; var8 <= 32; ++var8) {
 					var9 = var2[var8];
-					if (var9 == var6) {
+					if (var6 == var9) {
 						var2[var8] = var7;
 					}
 				}
@@ -226,8 +226,8 @@ public class Class58 {
 
 			int var6;
 			for (var6 = 1; var5 > 1; var5 >>= 1) {
-				if (0 != (var5 & 1)) {
-					var6 *= var4;
+				if ((var5 & 1) != 0) {
+					var6 = var4 * var6;
 				}
 
 				var4 *= var4;
@@ -235,7 +235,7 @@ public class Class58 {
 
 			int var3;
 			if (var5 == 1) {
-				var3 = var6 * var4;
+				var3 = var4 * var6;
 			} else {
 				var3 = var6;
 			}

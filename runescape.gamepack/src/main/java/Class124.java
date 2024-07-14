@@ -11,8 +11,8 @@ public class Class124 extends Class475 {
 
 	@ObfInfo(name = "aq", desc = "(Lsh;Lsh;I)I", opaque = "-1860179608")
 	public int method3007(Class476 var1, Class476 var2) {
-		if (0 != var1.field4971) {
-			if (0 == var2.field4971) {
+		if (var1.field4971 != 0) {
+			if (var2.field4971 == 0) {
 				return this.field1477 ? -1 : 1;
 			}
 		} else if (var2.field4971 != 0) {

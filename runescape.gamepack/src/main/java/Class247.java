@@ -267,7 +267,7 @@ public class Class247 {
 				var13 = var14;
 			}
 
-			boolean var10 = var13 || var8 == -1 || var8 == Client.field170.field1002.field1026;
+			boolean var10 = var13 || var8 == -1 || Client.field170.field1002.field1026 == var8;
 			if (var10) {
 				if (Client.field602 < 500) {
 					Client.field680[Client.field602] = var0;

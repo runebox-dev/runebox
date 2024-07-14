@@ -68,7 +68,7 @@ public class Class218 implements Class39 {
 
 	@ObfInfo(name = "ag", desc = "(CI)Z", opaque = "-327979221")
 	public boolean method556(char var1) {
-		int var3 = 1 + this.field2380 & 127;
+		int var3 = this.field2380 + 1 & 127;
 		if (this.field2377 != var3) {
 			this.field2372[this.field2380] = -1;
 			this.field2385[this.field2380] = var1;
@@ -81,7 +81,7 @@ public class Class218 implements Class39 {
 	@ObfInfo(name = "au", desc = "(II)V", opaque = "-1195175196")
 	public void method4186(int var1) {
 		int var3 = this.field2380 + 1 & 127;
-		if (var3 != this.field2377) {
+		if (this.field2377 != var3) {
 			this.field2372[this.field2380] = var1;
 			this.field2385[this.field2380] = 0;
 			this.field2380 = var3;
@@ -106,7 +106,7 @@ public class Class218 implements Class39 {
 
 	@ObfInfo(name = "az", desc = "(B)Z", opaque = "32")
 	public final boolean method4189() {
-		if (this.field2377 == this.field2379) {
+		if (this.field2379 == this.field2377) {
 			return false;
 		} else {
 			this.field2384 = this.field2372[this.field2377];
@@ -165,7 +165,7 @@ public class Class218 implements Class39 {
 				var1 = 126;
 			}
 
-			return var1 + (var0 & 65408);
+			return (var0 & 65408) + var1;
 		}
 	}
 }

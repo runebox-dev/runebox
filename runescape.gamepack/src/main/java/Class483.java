@@ -86,7 +86,7 @@ public class Class483 implements Class68 {
 		this.field4995[0] = var2;
 		byte var4 = 1;
 		this.field4997 = this.field5004[0] * 128 + var4 * 64;
-		this.field4999 = var4 * 64 + this.field4995[0] * 128;
+		this.field4999 = this.field4995[0] * 128 + var4 * 64;
 	}
 
 	@ObfInfo(name = "ac", desc = "(IILjb;I)V", opaque = "45610452")
@@ -113,7 +113,7 @@ public class Class483 implements Class68 {
 			boolean var3 = true;
 			boolean var4 = true;
 			int var5 = var2 > 1024 ? -1 : 1;
-			this.field5000 += var5 * (this.field4998 > 0 ? 1 + this.field4993 : this.field4993);
+			this.field5000 += var5 * (this.field4998 > 0 ? this.field4993 + 1 : this.field4993);
 			--this.field4998;
 			if (var2 < this.field4993 || var2 > 2048 - this.field4993) {
 				this.field5000 = this.field4994;
@@ -122,14 +122,14 @@ public class Class483 implements Class68 {
 			this.field5000 &= 2047;
 		}
 
-		if (0 == this.field5002) {
+		if (this.field5002 == 0) {
 			this.method8751(this.field5004[0], this.field4995[0]);
 		} else {
 			int var11 = this.field4997;
 			int var12 = this.field4999;
 			byte var13 = 1;
-			int var6 = 128 * this.field5004[this.field5002 - 1] + var13 * 128 / 2;
-			int var7 = 128 * this.field4995[this.field5002 - 1] + var13 * 128 / 2;
+			int var6 = var13 * 128 / 2 + this.field5004[this.field5002 - 1] * 128;
+			int var7 = var13 * 128 / 2 + this.field4995[this.field5002 - 1] * 128;
 			Class236 var8 = this.field5005[this.field5002 - 1];
 			int var9 = (int)(Math.ceil((double)var8.field2509) * 128.0D);
 			if (var6 - var11 <= var9 && var6 - var11 >= -var9 && var7 - var12 <= var9 && var7 - var12 >= -var9) {
@@ -142,8 +142,8 @@ public class Class483 implements Class68 {
 					var10 = 8;
 				}
 
-				int var14 = (int)(var8.field2509 * (float)var10);
-				if (var6 != var11 || var7 != var12) {
+				int var14 = (int)((float)var10 * var8.field2509);
+				if (var11 != var6 || var12 != var7) {
 					if (var11 < var6) {
 						this.field4997 += var14;
 						if (this.field4997 > var6) {
@@ -169,7 +169,7 @@ public class Class483 implements Class68 {
 					}
 				}
 
-				if (var6 == this.field4997 && var7 == this.field4999) {
+				if (this.field4997 == var6 && this.field4999 == var7) {
 					--this.field5002;
 				}
 

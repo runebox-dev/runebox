@@ -35,7 +35,7 @@ class Updater(
         Logger.info("Loading jar files...")
         
         val oldGroup = JarUtil.load(oldJar, true).init()
-        val newGroup = JarUtil.load(newJar,).init()
+        val newGroup = JarUtil.load(newJar).init()
 
         Logger.info("Mapping entries from old -> new... This may take a while.")
         

@@ -51,7 +51,7 @@ public class Class510 {
 				this.field5104 = 66;
 			}
 
-			if (66 == this.field5104) {
+			if (this.field5104 == 66) {
 				if (!this.field5103.method7171(this.field5105, Class266.field2737.field2733)) {
 					return this.field5104;
 				}

@@ -76,7 +76,7 @@ public class Class391 {
 		}
 
 		for (var0 = 48; var0 <= 57; ++var0) {
-			field4582[var0] = 52 + (var0 - 48);
+			field4582[var0] = var0 - 48 + 52;
 		}
 
 		int[] var2 = field4582;

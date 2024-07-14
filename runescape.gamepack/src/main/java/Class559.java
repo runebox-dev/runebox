@@ -7,7 +7,7 @@ public class Class559 {
 
 	public Class559(int[] var1) {
 		int var2;
-		for (var2 = 1; var2 <= var1.length + (var1.length >> 1); var2 <<= 1) {
+		for (var2 = 1; var2 <= (var1.length >> 1) + var1.length; var2 <<= 1) {
 		}
 
 		this.field5450 = new int[var2 + var2];
@@ -33,12 +33,12 @@ public class Class559 {
 		int var4 = var1 & var3;
 
 		while (true) {
-			int var5 = this.field5450[1 + var4 + var4];
+			int var5 = this.field5450[var4 + var4 + 1];
 			if (var5 == -1) {
 				return -1;
 			}
 
-			if (var1 == this.field5450[var4 + var4]) {
+			if (this.field5450[var4 + var4] == var1) {
 				return var5;
 			}
 

@@ -139,24 +139,24 @@ public class Class60 {
 					var14 = this.field434.method408(var1);
 					var15 = this.field435.method408(var1);
 					var12 += this.method1207(var7, var15, this.field434.field125) >> 1;
-					var7 += (var14 * var5 >> 16) + var6;
+					var7 += (var5 * var14 >> 16) + var6;
 				}
 
 				if (this.field447 != null) {
 					var14 = this.field447.method408(var1);
 					var15 = this.field437.method408(var1);
 					var13 = var13 * ((this.method1207(var10, var15, this.field447.field125) >> 1) + 32768) >> 15;
-					var10 += (var14 * var8 >> 16) + var9;
+					var10 += (var8 * var14 >> 16) + var9;
 				}
 
 				for (var14 = 0; var14 < 5; ++var14) {
 					if (this.field440[var14] != 0) {
-						var15 = var11 + field454[var14];
+						var15 = field454[var14] + var11;
 						if (var15 < var1) {
 							var10000 = field449;
-							var10000[var15] += this.method1207(field436[var14], var13 * field452[var14] >> 15, this.field441.field125);
+							var10000[var15] += this.method1207(field436[var14], field452[var14] * var13 >> 15, this.field441.field125);
 							var10000 = field436;
-							var10000[var14] += (var12 * field456[var14] >> 16) + field457[var14];
+							var10000[var14] += (field456[var14] * var12 >> 16) + field457[var14];
 						}
 					}
 				}
@@ -174,9 +174,9 @@ public class Class60 {
 					var15 = this.field438.method408(var1);
 					var16 = this.field455.method408(var1);
 					if (var20) {
-						var12 = this.field438.field127 + ((this.field438.field126 - this.field438.field127) * var15 >> 8);
+						var12 = ((this.field438.field126 - this.field438.field127) * var15 >> 8) + this.field438.field127;
 					} else {
-						var12 = this.field438.field127 + ((this.field438.field126 - this.field438.field127) * var16 >> 8);
+						var12 = ((this.field438.field126 - this.field438.field127) * var16 >> 8) + this.field438.field127;
 					}
 
 					var11 += 256;
@@ -205,7 +205,7 @@ public class Class60 {
 				var11 = this.field446.method408(var1 + 1);
 				var12 = this.field453.method1920(0, (float)var11 / 65536.0F);
 				var13 = this.field453.method1920(1, (float)var11 / 65536.0F);
-				if (var1 >= var13 + var12) {
+				if (var1 >= var12 + var13) {
 					var14 = 0;
 					var15 = var13;
 					if (var13 > var1 - var12) {
@@ -214,10 +214,10 @@ public class Class60 {
 
 					int var17;
 					while (var14 < var15) {
-						var16 = (int)((long)field449[var14 + var12] * (long)Class66.field845 >> 16);
+						var16 = (int)((long)field449[var12 + var14] * (long)Class66.field845 >> 16);
 
 						for (var17 = 0; var17 < var12; ++var17) {
-							var16 += (int)((long)field449[var14 + var12 - 1 - var17] * (long)Class66.field843[0][var17] >> 16);
+							var16 += (int)((long)field449[var12 + var14 - 1 - var17] * (long)Class66.field843[0][var17] >> 16);
 						}
 
 						for (var17 = 0; var17 < var14; ++var17) {
@@ -239,10 +239,10 @@ public class Class60 {
 
 						int var18;
 						while (var14 < var15) {
-							var17 = (int)((long)field449[var14 + var12] * (long)Class66.field845 >> 16);
+							var17 = (int)((long)field449[var12 + var14] * (long)Class66.field845 >> 16);
 
 							for (var18 = 0; var18 < var12; ++var18) {
-								var17 += (int)((long)field449[var14 + var12 - 1 - var18] * (long)Class66.field843[0][var18] >> 16);
+								var17 += (int)((long)field449[var12 + var14 - 1 - var18] * (long)Class66.field843[0][var18] >> 16);
 							}
 
 							for (var18 = 0; var18 < var13; ++var18) {
@@ -258,8 +258,8 @@ public class Class60 {
 							while (var14 < var1) {
 								var17 = 0;
 
-								for (var18 = var14 + var12 - var1; var18 < var12; ++var18) {
-									var17 += (int)((long)field449[var14 + var12 - 1 - var18] * (long)Class66.field843[0][var18] >> 16);
+								for (var18 = var12 + var14 - var1; var18 < var12; ++var18) {
+									var17 += (int)((long)field449[var12 + var14 - 1 - var18] * (long)Class66.field843[0][var18] >> 16);
 								}
 
 								for (var18 = 0; var18 < var13; ++var18) {

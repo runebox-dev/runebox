@@ -27,19 +27,19 @@ public class Class378 {
 				int var10;
 				int var11;
 				int var12;
-				if (0 != (var8 & var7)) {
+				if ((var8 & var7) != 0) {
 					var9 = var3[var6 - 1];
 				} else {
 					var9 = var8 | var7;
 
 					for (var10 = var6 - 1; var10 >= 1; --var10) {
 						var11 = var3[var10];
-						if (var11 != var8) {
+						if (var8 != var11) {
 							break;
 						}
 
 						var12 = 1 << 32 - var10;
-						if (0 != (var11 & var12)) {
+						if ((var11 & var12) != 0) {
 							var3[var10] = var3[var10 - 1];
 							break;
 						}
@@ -51,7 +51,7 @@ public class Class378 {
 				var3[var6] = var9;
 
 				for (var10 = var6 + 1; var10 <= 32; ++var10) {
-					if (var8 == var3[var10]) {
+					if (var3[var10] == var8) {
 						var3[var10] = var9;
 					}
 				}
@@ -108,7 +108,7 @@ public class Class378 {
 			int var12 = var8 >> 3;
 			int var13 = var8 & 7;
 			var7 &= -var13 >> 31;
-			int var14 = (var13 + var11 - 1 >> 3) + var12;
+			int var14 = (var11 + var13 - 1 >> 3) + var12;
 			var13 += 24;
 			var4[var12] = (byte)(var7 |= var10 >>> var13);
 			if (var12 < var14) {
@@ -165,7 +165,7 @@ public class Class378 {
 					var7 = 0;
 				}
 
-				if (0 != (var9 & 64)) {
+				if ((var9 & 64) != 0) {
 					var7 = this.field4494[var7];
 				} else {
 					++var7;
@@ -180,7 +180,7 @@ public class Class378 {
 					var7 = 0;
 				}
 
-				if (0 != (var9 & 32)) {
+				if ((var9 & 32) != 0) {
 					var7 = this.field4494[var7];
 				} else {
 					++var7;
@@ -210,7 +210,7 @@ public class Class378 {
 					var7 = 0;
 				}
 
-				if (0 != (var9 & 8)) {
+				if ((var9 & 8) != 0) {
 					var7 = this.field4494[var7];
 				} else {
 					++var7;
@@ -255,7 +255,7 @@ public class Class378 {
 					var7 = 0;
 				}
 
-				if (0 != (var9 & 1)) {
+				if ((var9 & 1) != 0) {
 					var7 = this.field4494[var7];
 				} else {
 					++var7;

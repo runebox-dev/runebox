@@ -55,27 +55,27 @@ public class Class260 {
 			int var27 = var4.field2672;
 			int var28 = var4.field2670;
 
-			for (int var29 = var25 - var24; var29 <= var25 + var24; ++var29) {
-				for (int var30 = var26 - var24; var30 <= var26 + var24; ++var30) {
+			for (int var29 = var25 - var24; var29 <= var24 + var25; ++var29) {
+				for (int var30 = var26 - var24; var30 <= var24 + var26; ++var30) {
 					int var31 = var29 - var18;
 					int var32 = var30 - var19;
 					if (var31 >= 0 && var32 >= 0 && var31 < var11 && var32 < var12 && var13[var31][var32] < 100) {
 						int var33 = 0;
 						if (var29 < var25) {
 							var33 = var25 - var29;
-						} else if (var29 > var27 + var25 - 1) {
-							var33 = var29 - (var27 + var25 - 1);
+						} else if (var29 > var25 + var27 - 1) {
+							var33 = var29 - (var25 + var27 - 1);
 						}
 
 						int var34 = 0;
 						if (var30 < var26) {
 							var34 = var26 - var30;
-						} else if (var30 > var28 + var26 - 1) {
-							var34 = var30 - (var28 + var26 - 1);
+						} else if (var30 > var26 + var28 - 1) {
+							var34 = var30 - (var26 + var28 - 1);
 						}
 
-						int var35 = var34 * var34 + var33 * var33;
-						if (var35 < var22 || var35 == var22 && var13[var31][var32] < var23) {
+						int var35 = var33 * var33 + var34 * var34;
+						if (var35 < var22 || var22 == var35 && var13[var31][var32] < var23) {
 							var22 = var35;
 							var23 = var13[var31][var32];
 							var20 = var29;
@@ -90,7 +90,7 @@ public class Class260 {
 			}
 		}
 
-		if (var20 == var1 && var21 == var2) {
+		if (var1 == var20 && var2 == var21) {
 			var7[0] = var20;
 			var8[0] = var21;
 			return 0;
@@ -101,14 +101,14 @@ public class Class260 {
 			var16[var37] = var21;
 
 			int var38;
-			for (var23 = var38 = var14[var20 - var18][var21 - var19]; var20 != var1 || var21 != var2; var23 = var14[var20 - var18][var21 - var19]) {
-				if (var38 != var23) {
+			for (var23 = var38 = var14[var20 - var18][var21 - var19]; var1 != var20 || var2 != var21; var23 = var14[var20 - var18][var21 - var19]) {
+				if (var23 != var38) {
 					var38 = var23;
 					var15[var22] = var20;
 					var16[var22++] = var21;
 				}
 
-				if (0 != (var23 & 2)) {
+				if ((var23 & 2) != 0) {
 					++var20;
 				} else if ((var23 & 8) != 0) {
 					--var20;
@@ -160,7 +160,7 @@ public class Class260 {
 		var12[var10001] = var2;
 		int[][] var22 = var4.field2435;
 
-		while (var21 != var26) {
+		while (var26 != var21) {
 			var14 = var11[var21];
 			var15 = var12[var21];
 			var21 = var21 + 1 & var13;
@@ -173,8 +173,8 @@ public class Class260 {
 				return true;
 			}
 
-			int var25 = 1 + var9[var16][var17];
-			if (var16 > 0 && 0 == var10[var16 - 1][var17] && (var22[var23 - 1][var24] & 1076101384) == 0) {
+			int var25 = var9[var16][var17] + 1;
+			if (var16 > 0 && var10[var16 - 1][var17] == 0 && (var22[var23 - 1][var24] & 1076101384) == 0) {
 				var11[var26] = var14 - 1;
 				var12[var26] = var15;
 				var26 = var26 + 1 & var13;
@@ -182,7 +182,7 @@ public class Class260 {
 				var9[var16 - 1][var17] = var25;
 			}
 
-			if (var16 < var7 - 1 && 0 == var10[var16 + 1][var17] && 0 == (var22[var23 + 1][var24] & 1076101504)) {
+			if (var16 < var7 - 1 && var10[var16 + 1][var17] == 0 && (var22[var23 + 1][var24] & 1076101504) == 0) {
 				var11[var26] = var14 + 1;
 				var12[var26] = var15;
 				var26 = var26 + 1 & var13;
@@ -190,7 +190,7 @@ public class Class260 {
 				var9[var16 + 1][var17] = var25;
 			}
 
-			if (var17 > 0 && var10[var16][var17 - 1] == 0 && 0 == (var22[var23][var24 - 1] & 1076101378)) {
+			if (var17 > 0 && var10[var16][var17 - 1] == 0 && (var22[var23][var24 - 1] & 1076101378) == 0) {
 				var11[var26] = var14;
 				var12[var26] = var15 - 1;
 				var26 = var26 + 1 & var13;
@@ -198,7 +198,7 @@ public class Class260 {
 				var9[var16][var17 - 1] = var25;
 			}
 
-			if (var17 < var8 - 1 && var10[var16][var17 + 1] == 0 && 0 == (var22[var23][var24 + 1] & 1076101408)) {
+			if (var17 < var8 - 1 && var10[var16][var17 + 1] == 0 && (var22[var23][var24 + 1] & 1076101408) == 0) {
 				var11[var26] = var14;
 				var12[var26] = var15 + 1;
 				var26 = var26 + 1 & var13;
@@ -206,7 +206,7 @@ public class Class260 {
 				var9[var16][var17 + 1] = var25;
 			}
 
-			if (var16 > 0 && var17 > 0 && var10[var16 - 1][var17 - 1] == 0 && (var22[var23 - 1][var24 - 1] & 1076101390) == 0 && (var22[var23 - 1][var24] & 1076101384) == 0 && 0 == (var22[var23][var24 - 1] & 1076101378)) {
+			if (var16 > 0 && var17 > 0 && var10[var16 - 1][var17 - 1] == 0 && (var22[var23 - 1][var24 - 1] & 1076101390) == 0 && (var22[var23 - 1][var24] & 1076101384) == 0 && (var22[var23][var24 - 1] & 1076101378) == 0) {
 				var11[var26] = var14 - 1;
 				var12[var26] = var15 - 1;
 				var26 = var26 + 1 & var13;
@@ -214,7 +214,7 @@ public class Class260 {
 				var9[var16 - 1][var17 - 1] = var25;
 			}
 
-			if (var16 < var7 - 1 && var17 > 0 && var10[var16 + 1][var17 - 1] == 0 && 0 == (var22[var23 + 1][var24 - 1] & 1076101507) && (var22[var23 + 1][var24] & 1076101504) == 0 && 0 == (var22[var23][var24 - 1] & 1076101378)) {
+			if (var16 < var7 - 1 && var17 > 0 && var10[var16 + 1][var17 - 1] == 0 && (var22[var23 + 1][var24 - 1] & 1076101507) == 0 && (var22[var23 + 1][var24] & 1076101504) == 0 && (var22[var23][var24 - 1] & 1076101378) == 0) {
 				var11[var26] = var14 + 1;
 				var12[var26] = var15 - 1;
 				var26 = var26 + 1 & var13;
@@ -222,7 +222,7 @@ public class Class260 {
 				var9[var16 + 1][var17 - 1] = var25;
 			}
 
-			if (var16 > 0 && var17 < var8 - 1 && 0 == var10[var16 - 1][var17 + 1] && 0 == (var22[var23 - 1][var24 + 1] & 1076101432) && (var22[var23 - 1][var24] & 1076101384) == 0 && 0 == (var22[var23][var24 + 1] & 1076101408)) {
+			if (var16 > 0 && var17 < var8 - 1 && var10[var16 - 1][var17 + 1] == 0 && (var22[var23 - 1][var24 + 1] & 1076101432) == 0 && (var22[var23 - 1][var24] & 1076101384) == 0 && (var22[var23][var24 + 1] & 1076101408) == 0) {
 				var11[var26] = var14 - 1;
 				var12[var26] = var15 + 1;
 				var26 = var26 + 1 & var13;
@@ -230,7 +230,7 @@ public class Class260 {
 				var9[var16 - 1][var17 + 1] = var25;
 			}
 
-			if (var16 < var7 - 1 && var17 < var8 - 1 && 0 == var10[var16 + 1][var17 + 1] && 0 == (var22[var23 + 1][var24 + 1] & 1076101600) && 0 == (var22[var23 + 1][var24] & 1076101504) && 0 == (var22[var23][var24 + 1] & 1076101408)) {
+			if (var16 < var7 - 1 && var17 < var8 - 1 && var10[var16 + 1][var17 + 1] == 0 && (var22[var23 + 1][var24 + 1] & 1076101600) == 0 && (var22[var23 + 1][var24] & 1076101504) == 0 && (var22[var23][var24 + 1] & 1076101408) == 0) {
 				var11[var26] = var14 + 1;
 				var12[var26] = var15 + 1;
 				var26 = var26 + 1 & var13;
@@ -268,7 +268,7 @@ public class Class260 {
 		var12[var10001] = var2;
 		int[][] var22 = var4.field2435;
 
-		while (var21 != var26) {
+		while (var26 != var21) {
 			var14 = var11[var21];
 			var15 = var12[var21];
 			var21 = var21 + 1 & var13;
@@ -282,7 +282,7 @@ public class Class260 {
 			}
 
 			int var25 = var9[var16][var17] + 1;
-			if (var16 > 0 && var10[var16 - 1][var17] == 0 && 0 == (var22[var23 - 1][var24] & 1076101390) && 0 == (var22[var23 - 1][var24 + 1] & 1076101432)) {
+			if (var16 > 0 && var10[var16 - 1][var17] == 0 && (var22[var23 - 1][var24] & 1076101390) == 0 && (var22[var23 - 1][var24 + 1] & 1076101432) == 0) {
 				var11[var26] = var14 - 1;
 				var12[var26] = var15;
 				var26 = var26 + 1 & var13;
@@ -290,7 +290,7 @@ public class Class260 {
 				var9[var16 - 1][var17] = var25;
 			}
 
-			if (var16 < var7 - 2 && 0 == var10[var16 + 1][var17] && 0 == (var22[var23 + 2][var24] & 1076101507) && 0 == (var22[var23 + 2][var24 + 1] & 1076101600)) {
+			if (var16 < var7 - 2 && var10[var16 + 1][var17] == 0 && (var22[var23 + 2][var24] & 1076101507) == 0 && (var22[var23 + 2][var24 + 1] & 1076101600) == 0) {
 				var11[var26] = var14 + 1;
 				var12[var26] = var15;
 				var26 = var26 + 1 & var13;
@@ -306,7 +306,7 @@ public class Class260 {
 				var9[var16][var17 - 1] = var25;
 			}
 
-			if (var17 < var8 - 2 && 0 == var10[var16][var17 + 1] && 0 == (var22[var23][var24 + 2] & 1076101432) && 0 == (var22[var23 + 1][var24 + 2] & 1076101600)) {
+			if (var17 < var8 - 2 && var10[var16][var17 + 1] == 0 && (var22[var23][var24 + 2] & 1076101432) == 0 && (var22[var23 + 1][var24 + 2] & 1076101600) == 0) {
 				var11[var26] = var14;
 				var12[var26] = var15 + 1;
 				var26 = var26 + 1 & var13;
@@ -314,7 +314,7 @@ public class Class260 {
 				var9[var16][var17 + 1] = var25;
 			}
 
-			if (var16 > 0 && var17 > 0 && var10[var16 - 1][var17 - 1] == 0 && 0 == (var22[var23 - 1][var24] & 1076101438) && (var22[var23 - 1][var24 - 1] & 1076101390) == 0 && 0 == (var22[var23][var24 - 1] & 1076101519)) {
+			if (var16 > 0 && var17 > 0 && var10[var16 - 1][var17 - 1] == 0 && (var22[var23 - 1][var24] & 1076101438) == 0 && (var22[var23 - 1][var24 - 1] & 1076101390) == 0 && (var22[var23][var24 - 1] & 1076101519) == 0) {
 				var11[var26] = var14 - 1;
 				var12[var26] = var15 - 1;
 				var26 = var26 + 1 & var13;
@@ -322,7 +322,7 @@ public class Class260 {
 				var9[var16 - 1][var17 - 1] = var25;
 			}
 
-			if (var16 < var7 - 2 && var17 > 0 && var10[var16 + 1][var17 - 1] == 0 && (var22[var23 + 1][var24 - 1] & 1076101519) == 0 && 0 == (var22[var23 + 2][var24 - 1] & 1076101507) && 0 == (var22[var23 + 2][var24] & 1076101603)) {
+			if (var16 < var7 - 2 && var17 > 0 && var10[var16 + 1][var17 - 1] == 0 && (var22[var23 + 1][var24 - 1] & 1076101519) == 0 && (var22[var23 + 2][var24 - 1] & 1076101507) == 0 && (var22[var23 + 2][var24] & 1076101603) == 0) {
 				var11[var26] = var14 + 1;
 				var12[var26] = var15 - 1;
 				var26 = var26 + 1 & var13;
@@ -330,7 +330,7 @@ public class Class260 {
 				var9[var16 + 1][var17 - 1] = var25;
 			}
 
-			if (var16 > 0 && var17 < var8 - 2 && 0 == var10[var16 - 1][var17 + 1] && 0 == (var22[var23 - 1][var24 + 1] & 1076101438) && 0 == (var22[var23 - 1][var24 + 2] & 1076101432) && 0 == (var22[var23][var24 + 2] & 1076101624)) {
+			if (var16 > 0 && var17 < var8 - 2 && var10[var16 - 1][var17 + 1] == 0 && (var22[var23 - 1][var24 + 1] & 1076101438) == 0 && (var22[var23 - 1][var24 + 2] & 1076101432) == 0 && (var22[var23][var24 + 2] & 1076101624) == 0) {
 				var11[var26] = var14 - 1;
 				var12[var26] = var15 + 1;
 				var26 = var26 + 1 & var13;
@@ -338,7 +338,7 @@ public class Class260 {
 				var9[var16 - 1][var17 + 1] = var25;
 			}
 
-			if (var16 < var7 - 2 && var17 < var8 - 2 && 0 == var10[var16 + 1][var17 + 1] && (var22[var23 + 1][var24 + 2] & 1076101624) == 0 && 0 == (var22[var23 + 2][var24 + 2] & 1076101600) && 0 == (var22[var23 + 2][var24 + 1] & 1076101603)) {
+			if (var16 < var7 - 2 && var17 < var8 - 2 && var10[var16 + 1][var17 + 1] == 0 && (var22[var23 + 1][var24 + 2] & 1076101624) == 0 && (var22[var23 + 2][var24 + 2] & 1076101600) == 0 && (var22[var23 + 2][var24 + 1] & 1076101603) == 0) {
 				var11[var26] = var14 + 1;
 				var12[var26] = var15 + 1;
 				var26 = var26 + 1 & var13;
@@ -387,7 +387,7 @@ public class Class260 {
 						do {
 							label273:
 							do {
-								if (var22 == var28) {
+								if (var28 == var22) {
 									var6.method4636(var15, var16);
 									return false;
 								}
@@ -405,7 +405,7 @@ public class Class260 {
 								}
 
 								var26 = var10[var17][var18] + 1;
-								if (var17 > 0 && 0 == var11[var17 - 1][var18] && (var23[var24 - 1][var25] & 1076101390) == 0 && 0 == (var23[var24 - 1][var25 + var3 - 1] & 1076101432)) {
+								if (var17 > 0 && var11[var17 - 1][var18] == 0 && (var23[var24 - 1][var25] & 1076101390) == 0 && (var23[var24 - 1][var3 + var25 - 1] & 1076101432) == 0) {
 									var27 = 1;
 
 									while (true) {
@@ -418,7 +418,7 @@ public class Class260 {
 											break;
 										}
 
-										if ((var23[var24 - 1][var27 + var25] & 1076101438) != 0) {
+										if ((var23[var24 - 1][var25 + var27] & 1076101438) != 0) {
 											break;
 										}
 
@@ -426,7 +426,7 @@ public class Class260 {
 									}
 								}
 
-								if (var17 < var8 - var3 && 0 == var11[var17 + 1][var18] && 0 == (var23[var24 + var3][var25] & 1076101507) && (var23[var24 + var3][var25 + var3 - 1] & 1076101600) == 0) {
+								if (var17 < var8 - var3 && var11[var17 + 1][var18] == 0 && (var23[var3 + var24][var25] & 1076101507) == 0 && (var23[var3 + var24][var3 + var25 - 1] & 1076101600) == 0) {
 									var27 = 1;
 
 									while (true) {
@@ -439,7 +439,7 @@ public class Class260 {
 											break;
 										}
 
-										if ((var23[var24 + var3][var27 + var25] & 1076101603) != 0) {
+										if ((var23[var3 + var24][var25 + var27] & 1076101603) != 0) {
 											break;
 										}
 
@@ -447,7 +447,7 @@ public class Class260 {
 									}
 								}
 
-								if (var18 > 0 && 0 == var11[var17][var18 - 1] && 0 == (var23[var24][var25 - 1] & 1076101390) && 0 == (var23[var24 + var3 - 1][var25 - 1] & 1076101507)) {
+								if (var18 > 0 && var11[var17][var18 - 1] == 0 && (var23[var24][var25 - 1] & 1076101390) == 0 && (var23[var3 + var24 - 1][var25 - 1] & 1076101507) == 0) {
 									var27 = 1;
 
 									while (true) {
@@ -460,7 +460,7 @@ public class Class260 {
 											break;
 										}
 
-										if (0 != (var23[var27 + var24][var25 - 1] & 1076101519)) {
+										if ((var23[var24 + var27][var25 - 1] & 1076101519) != 0) {
 											break;
 										}
 
@@ -468,7 +468,7 @@ public class Class260 {
 									}
 								}
 
-								if (var18 < var9 - var3 && 0 == var11[var17][var18 + 1] && 0 == (var23[var24][var25 + var3] & 1076101432) && (var23[var24 + var3 - 1][var25 + var3] & 1076101600) == 0) {
+								if (var18 < var9 - var3 && var11[var17][var18 + 1] == 0 && (var23[var24][var3 + var25] & 1076101432) == 0 && (var23[var3 + var24 - 1][var3 + var25] & 1076101600) == 0) {
 									var27 = 1;
 
 									while (true) {
@@ -481,7 +481,7 @@ public class Class260 {
 											break;
 										}
 
-										if (0 != (var23[var27 + var24][var25 + var3] & 1076101624)) {
+										if ((var23[var24 + var27][var3 + var25] & 1076101624) != 0) {
 											break;
 										}
 
@@ -489,7 +489,7 @@ public class Class260 {
 									}
 								}
 
-								if (var17 > 0 && var18 > 0 && 0 == var11[var17 - 1][var18 - 1] && 0 == (var23[var24 - 1][var25 - 1] & 1076101390)) {
+								if (var17 > 0 && var18 > 0 && var11[var17 - 1][var18 - 1] == 0 && (var23[var24 - 1][var25 - 1] & 1076101390) == 0) {
 									var27 = 1;
 
 									while (true) {
@@ -502,7 +502,7 @@ public class Class260 {
 											break;
 										}
 
-										if (0 != (var23[var24 - 1][var25 - 1 + var27] & 1076101438) || 0 != (var23[var24 - 1 + var27][var25 - 1] & 1076101519)) {
+										if ((var23[var24 - 1][var25 - 1 + var27] & 1076101438) != 0 || (var23[var24 - 1 + var27][var25 - 1] & 1076101519) != 0) {
 											break;
 										}
 
@@ -510,7 +510,7 @@ public class Class260 {
 									}
 								}
 
-								if (var17 < var8 - var3 && var18 > 0 && var11[var17 + 1][var18 - 1] == 0 && (var23[var24 + var3][var25 - 1] & 1076101507) == 0) {
+								if (var17 < var8 - var3 && var18 > 0 && var11[var17 + 1][var18 - 1] == 0 && (var23[var3 + var24][var25 - 1] & 1076101507) == 0) {
 									var27 = 1;
 
 									while (true) {
@@ -523,7 +523,7 @@ public class Class260 {
 											break;
 										}
 
-										if (0 != (var23[var24 + var3][var27 + (var25 - 1)] & 1076101603) || (var23[var27 + var24][var25 - 1] & 1076101519) != 0) {
+										if ((var23[var3 + var24][var25 - 1 + var27] & 1076101603) != 0 || (var23[var24 + var27][var25 - 1] & 1076101519) != 0) {
 											break;
 										}
 
@@ -531,9 +531,9 @@ public class Class260 {
 									}
 								}
 
-								if (var17 > 0 && var18 < var9 - var3 && var11[var17 - 1][var18 + 1] == 0 && (var23[var24 - 1][var25 + var3] & 1076101432) == 0) {
+								if (var17 > 0 && var18 < var9 - var3 && var11[var17 - 1][var18 + 1] == 0 && (var23[var24 - 1][var3 + var25] & 1076101432) == 0) {
 									for (var27 = 1; var27 < var3; ++var27) {
-										if (0 != (var23[var24 - 1][var27 + var25] & 1076101438) || 0 != (var23[var27 + (var24 - 1)][var25 + var3] & 1076101624)) {
+										if ((var23[var24 - 1][var25 + var27] & 1076101438) != 0 || (var23[var24 - 1 + var27][var3 + var25] & 1076101624) != 0) {
 											continue label273;
 										}
 									}
@@ -546,11 +546,11 @@ public class Class260 {
 								}
 							} while(var17 >= var8 - var3);
 						} while(var18 >= var9 - var3);
-					} while(0 != var11[var17 + 1][var18 + 1]);
-				} while((var23[var24 + var3][var25 + var3] & 1076101600) != 0);
+					} while(var11[var17 + 1][var18 + 1] != 0);
+				} while((var23[var3 + var24][var3 + var25] & 1076101600) != 0);
 
 				for (var27 = 1; var27 < var3; ++var27) {
-					if (0 != (var23[var27 + var24][var25 + var3] & 1076101624) || 0 != (var23[var24 + var3][var27 + var25] & 1076101603)) {
+					if ((var23[var24 + var27][var3 + var25] & 1076101624) != 0 || (var23[var3 + var24][var25 + var27] & 1076101603) != 0) {
 						continue label296;
 					}
 				}

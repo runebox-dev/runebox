@@ -20,16 +20,16 @@ public class Class194 extends Class516 {
 
 		int var5;
 		for (var5 = 0; var5 < Client.field4946.length; ++var5) {
-			if (-1 != Client.field209[var5] && Client.field4946[var5] == null) {
+			if (Client.field209[var5] != -1 && Client.field4946[var5] == null) {
 				Client.field4946[var5] = Client.field1869.method7132(Client.field209[var5], 0);
 				if (Client.field4946[var5] == null) {
 					var4 = false;
 				}
 			}
 
-			if (-1 != Client.field1684[var5] && null == Client.field4542[var5]) {
+			if (Client.field1684[var5] != -1 && Client.field4542[var5] == null) {
 				Client.field4542[var5] = Client.field1869.method7170(Client.field1684[var5], 0, Client.field856[var5]);
-				if (null == Client.field4542[var5]) {
+				if (Client.field4542[var5] == null) {
 					var4 = false;
 				}
 			}
@@ -80,13 +80,13 @@ public class Class194 extends Class516 {
 								var11 = var9 >> 1 & 3;
 								var12 = var9 >> 14 & 1023;
 								var13 = var9 >> 3 & 2047;
-								var14 = var13 / 8 + (var12 / 8 << 8);
+								var14 = (var12 / 8 << 8) + var13 / 8;
 
 								for (int var15 = 0; var15 < Client.field2708.length; ++var15) {
-									if (var14 == Client.field2708[var15] && Client.field4946[var15] != null) {
-										int var16 = 8 * (var12 - var18);
-										int var17 = 8 * (var13 - var19);
-										Class97.method4130(var0, Client.field4946[var15], var5, var18 * 8, var19 * 8, var10, (var12 & 7) * 8, 8 * (var13 & 7), var11, var16, var17);
+									if (Client.field2708[var15] == var14 && Client.field4946[var15] != null) {
+										int var16 = (var12 - var18) * 8;
+										int var17 = (var13 - var19) * 8;
+										Class97.method4130(var0, Client.field4946[var15], var5, var18 * 8, var19 * 8, var10, (var12 & 7) * 8, (var13 & 7) * 8, var11, var16, var17);
 										var20 = true;
 										break;
 									}
@@ -122,11 +122,11 @@ public class Class194 extends Class516 {
 								var10 = var21 >> 1 & 3;
 								var11 = var21 >> 14 & 1023;
 								var12 = var21 >> 3 & 2047;
-								var13 = var12 / 8 + (var11 / 8 << 8);
+								var13 = (var11 / 8 << 8) + var12 / 8;
 
 								for (var14 = 0; var14 < Client.field2708.length; ++var14) {
-									if (Client.field2708[var14] == var13 && null != Client.field4542[var14]) {
-										Class97.method2572(var0, Client.field4542[var14], var5, var18 * 8, var19 * 8, var9, 8 * (var11 & 7), 8 * (var12 & 7), var10);
+									if (Client.field2708[var14] == var13 && Client.field4542[var14] != null) {
+										Class97.method2572(var0, Client.field4542[var14], var5, var18 * 8, var19 * 8, var9, (var11 & 7) * 8, (var12 & 7) * 8, var10);
 										break;
 									}
 								}

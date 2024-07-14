@@ -323,9 +323,9 @@ public class ClientPacket implements Class331 {
 		}
 
 		var3 += 8;
-		var4 = 22 + Client.field602 * 15;
+		var4 = Client.field602 * 15 + 22;
 		var5 = var0 - var3 / 2;
-		if (var5 + var3 > Client.field954) {
+		if (var3 + var5 > Client.field954) {
 			var5 = Client.field954 - var3;
 		}
 
@@ -345,6 +345,6 @@ public class ClientPacket implements Class331 {
 		Client.field1473 = var5;
 		Client.field1453 = var6;
 		Client.field3474 = var3;
-		Client.field2727 = 22 + Client.field602 * 15;
+		Client.field2727 = Client.field602 * 15 + 22;
 	}
 }

@@ -52,32 +52,32 @@ public class Class263 extends Class300 {
 		int var16 = var1.field2881[var3][var4 + 1][var5] - this.field2719;
 		int var17 = var1.field2881[var3][var4 + 1][var5 + 1] - this.field2719;
 		int var18 = var1.field2881[var3][var4][var5 + 1] - this.field2719;
-		int var19 = this.field2723 * var8 + var10 * this.field2725 >> 16;
-		var10 = this.field2723 * var10 - var8 * this.field2725 >> 16;
+		int var19 = this.field2725 * var10 + this.field2723 * var8 >> 16;
+		var10 = this.field2723 * var10 - this.field2725 * var8 >> 16;
 		var8 = var19;
 		var19 = this.field2724 * var15 - this.field2718 * var10 >> 16;
-		var10 = var15 * this.field2718 + this.field2724 * var10 >> 16;
+		var10 = this.field2724 * var10 + this.field2718 * var15 >> 16;
 		var15 = var19;
 		if (var10 >= 50) {
-			var19 = var12 * this.field2723 + this.field2725 * var9 >> 16;
+			var19 = this.field2725 * var9 + this.field2723 * var12 >> 16;
 			var9 = this.field2723 * var9 - this.field2725 * var12 >> 16;
 			var12 = var19;
-			var19 = this.field2724 * var16 - var9 * this.field2718 >> 16;
-			var9 = this.field2724 * var9 + var16 * this.field2718 >> 16;
+			var19 = this.field2724 * var16 - this.field2718 * var9 >> 16;
+			var9 = this.field2724 * var9 + this.field2718 * var16 >> 16;
 			var16 = var19;
 			if (var9 >= 50) {
 				var19 = this.field2725 * var14 + this.field2723 * var11 >> 16;
 				var14 = this.field2723 * var14 - this.field2725 * var11 >> 16;
 				var11 = var19;
 				var19 = this.field2724 * var17 - this.field2718 * var14 >> 16;
-				var14 = var14 * this.field2724 + this.field2718 * var17 >> 16;
+				var14 = this.field2724 * var14 + this.field2718 * var17 >> 16;
 				var17 = var19;
 				if (var14 >= 50) {
-					var19 = this.field2725 * var13 + var7 * this.field2723 >> 16;
-					var13 = var13 * this.field2723 - var7 * this.field2725 >> 16;
+					var19 = this.field2725 * var13 + this.field2723 * var7 >> 16;
+					var13 = this.field2723 * var13 - this.field2725 * var7 >> 16;
 					var7 = var19;
 					var19 = this.field2724 * var18 - this.field2718 * var13 >> 16;
-					var13 = this.field2718 * var18 + var13 * this.field2724 >> 16;
+					var13 = this.field2724 * var13 + this.field2718 * var18 >> 16;
 					if (var13 >= 50) {
 						this.method5814(var1, var2, var4, var5, var8, var12, var11, var7, var15, var16, var17, var19, var10, var9, var14, var13);
 					}
@@ -95,10 +95,10 @@ public class Class263 extends Class300 {
 			int var9 = var2.field3230[var7] - this.field2719;
 			int var10 = var2.field3229[var7] - this.field2720;
 			int var11 = this.field2725 * var10 + this.field2723 * var8 >> 16;
-			var10 = var10 * this.field2723 - this.field2725 * var8 >> 16;
+			var10 = this.field2723 * var10 - this.field2725 * var8 >> 16;
 			var8 = var11;
 			var11 = this.field2724 * var9 - this.field2718 * var10 >> 16;
-			var10 = this.field2718 * var9 + this.field2724 * var10 >> 16;
+			var10 = this.field2724 * var10 + this.field2718 * var9 >> 16;
 			if (var10 < 50) {
 				return;
 			}

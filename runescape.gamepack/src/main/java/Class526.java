@@ -66,11 +66,11 @@ public class Class526 {
 	@ObfInfo(name = "ap", desc = "([BIII)V", opaque = "1049335052")
 	public void method9316(byte[] var1, int var2, int var3) throws IOException {
 		try {
-			if (var3 + var2 > var1.length) {
-				throw new ArrayIndexOutOfBoundsException(var3 + var2 - var1.length);
+			if (var2 + var3 > var1.length) {
+				throw new ArrayIndexOutOfBoundsException(var2 + var3 - var1.length);
 			}
 
-			if (-1L != this.field5260 && this.field5262 >= this.field5260 && this.field5262 + (long)var3 <= this.field5260 + (long)this.field5261) {
+			if (this.field5260 != -1L && this.field5262 >= this.field5260 && (long)var3 + this.field5262 <= (long)this.field5261 + this.field5260) {
 				System.arraycopy(this.field5259, (int)(this.field5262 - this.field5260), var1, var2, var3);
 				this.field5262 += (long)var3;
 				return;
@@ -79,7 +79,7 @@ public class Class526 {
 			long var5 = this.field5262;
 			int var8 = var3;
 			int var9;
-			if (this.field5262 >= this.field5263 && this.field5262 < this.field5263 + (long)this.field5258) {
+			if (this.field5262 >= this.field5263 && this.field5262 < (long)this.field5258 + this.field5263) {
 				var9 = (int)((long)this.field5258 - (this.field5262 - this.field5263));
 				if (var9 > var3) {
 					var9 = var3;
@@ -117,11 +117,11 @@ public class Class526 {
 				this.field5262 += (long)var9;
 			}
 
-			if (-1L != this.field5260) {
+			if (this.field5260 != -1L) {
 				if (this.field5260 > this.field5262 && var3 > 0) {
-					var9 = var2 + (int)(this.field5260 - this.field5262);
-					if (var9 > var3 + var2) {
-						var9 = var3 + var2;
+					var9 = (int)(this.field5260 - this.field5262) + var2;
+					if (var9 > var2 + var3) {
+						var9 = var2 + var3;
 					}
 
 					while (var2 < var9) {
@@ -133,15 +133,15 @@ public class Class526 {
 
 				long var15 = -1L;
 				long var11 = -1L;
-				if (this.field5260 >= var5 && this.field5260 < var5 + (long)var8) {
+				if (this.field5260 >= var5 && this.field5260 < (long)var8 + var5) {
 					var15 = this.field5260;
-				} else if (var5 >= this.field5260 && var5 < this.field5260 + (long)this.field5261) {
+				} else if (var5 >= this.field5260 && var5 < (long)this.field5261 + this.field5260) {
 					var15 = var5;
 				}
 
-				if (this.field5260 + (long)this.field5261 > var5 && this.field5260 + (long)this.field5261 <= (long)var8 + var5) {
+				if ((long)this.field5261 + this.field5260 > var5 && (long)this.field5261 + this.field5260 <= (long)var8 + var5) {
 					var11 = (long)this.field5261 + this.field5260;
-				} else if (var5 + (long)var8 > this.field5260 && (long)var8 + var5 <= this.field5260 + (long)this.field5261) {
+				} else if ((long)var8 + var5 > this.field5260 && (long)var8 + var5 <= (long)this.field5261 + this.field5260) {
 					var11 = (long)var8 + var5;
 				}
 
@@ -167,7 +167,7 @@ public class Class526 {
 	@ObfInfo(name = "an", desc = "(I)V", opaque = "1039285770")
 	public void method9317() throws IOException {
 		this.field5258 = 0;
-		if (this.field5257 != this.field5262) {
+		if (this.field5262 != this.field5257) {
 			this.field5255.method9479(this.field5262);
 			this.field5257 = this.field5262;
 		}
@@ -196,7 +196,7 @@ public class Class526 {
 				this.field5265 = (long)var3 + this.field5262;
 			}
 
-			if (this.field5260 != -1L && (this.field5262 < this.field5260 || this.field5262 > this.field5260 + (long)this.field5261)) {
+			if (this.field5260 != -1L && (this.field5262 < this.field5260 || this.field5262 > (long)this.field5261 + this.field5260)) {
 				this.method9319();
 			}
 
@@ -224,7 +224,7 @@ public class Class526 {
 
 				}
 			} else {
-				if (this.field5257 != this.field5262) {
+				if (this.field5262 != this.field5257) {
 					this.field5255.method9479(this.field5262);
 					this.field5257 = this.field5262;
 				}
@@ -237,13 +237,13 @@ public class Class526 {
 
 				long var11 = -1L;
 				long var7 = -1L;
-				if (this.field5262 >= this.field5263 && this.field5262 < this.field5263 + (long)this.field5258) {
+				if (this.field5262 >= this.field5263 && this.field5262 < (long)this.field5258 + this.field5263) {
 					var11 = this.field5262;
 				} else if (this.field5263 >= this.field5262 && this.field5263 < (long)var3 + this.field5262) {
 					var11 = this.field5263;
 				}
 
-				if (this.field5262 + (long)var3 > this.field5263 && this.field5262 + (long)var3 <= this.field5263 + (long)this.field5258) {
+				if ((long)var3 + this.field5262 > this.field5263 && (long)var3 + this.field5262 <= (long)this.field5258 + this.field5263) {
 					var7 = (long)var3 + this.field5262;
 				} else if ((long)this.field5258 + this.field5263 > this.field5262 && (long)this.field5258 + this.field5263 <= (long)var3 + this.field5262) {
 					var7 = (long)this.field5258 + this.field5263;
@@ -280,14 +280,14 @@ public class Class526 {
 			long var4 = -1L;
 			if (this.field5260 >= this.field5263 && this.field5260 < (long)this.field5258 + this.field5263) {
 				var2 = this.field5260;
-			} else if (this.field5263 >= this.field5260 && this.field5263 < this.field5260 + (long)this.field5261) {
+			} else if (this.field5263 >= this.field5260 && this.field5263 < (long)this.field5261 + this.field5260) {
 				var2 = this.field5263;
 			}
 
-			if ((long)this.field5261 + this.field5260 > this.field5263 && this.field5260 + (long)this.field5261 <= (long)this.field5258 + this.field5263) {
+			if ((long)this.field5261 + this.field5260 > this.field5263 && (long)this.field5261 + this.field5260 <= (long)this.field5258 + this.field5263) {
 				var4 = (long)this.field5261 + this.field5260;
 			} else if ((long)this.field5258 + this.field5263 > this.field5260 && (long)this.field5258 + this.field5263 <= (long)this.field5261 + this.field5260) {
-				var4 = this.field5263 + (long)this.field5258;
+				var4 = (long)this.field5258 + this.field5263;
 			}
 
 			if (var2 > -1L && var4 > var2) {

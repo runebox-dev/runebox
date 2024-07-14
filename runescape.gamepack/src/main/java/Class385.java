@@ -35,7 +35,7 @@ public class Class385 implements Runnable {
 						synchronized(field4533) {
 							var1.method9267();
 						}
-					} else if (1 == var1.field4547) {
+					} else if (var1.field4547 == 1) {
 						var1.field4546 = var1.field4548.method8790((int)var1.field5234);
 						synchronized(field4533) {
 							field4528.method7506(var1);
@@ -98,7 +98,7 @@ public class Class385 implements Runnable {
 		byte[] var4 = null;
 		synchronized(field4533) {
 			for (Class387 var6 = (Class387)field4533.method7526(); var6 != null; var6 = (Class387)field4533.method7511()) {
-				if ((long)var0 == var6.field5234 && var6.field4548 == var1 && 0 == var6.field4547) {
+				if ((long)var0 == var6.field5234 && var6.field4548 == var1 && var6.field4547 == 0) {
 					var4 = var6.field4546;
 					break;
 				}

@@ -204,7 +204,7 @@ public class Class517 {
 			if (var3) {
 				int var9 = (int)Math.ceil((double)((float)var6 / this.field5180));
 				int var10 = (int)Math.ceil((double)((float)var7 / this.field5180));
-				List var11 = this.field5193.method4912(this.field5176 - var9 / 2 - 1, this.field5177 - var10 / 2 - 1, 1 + this.field5176 + var9 / 2, 1 + var10 / 2 + this.field5177, var4, var5, var6, var7, var1, var2);
+				List var11 = this.field5193.method4912(this.field5176 - var9 / 2 - 1, this.field5177 - var10 / 2 - 1, var9 / 2 + this.field5176 + 1, var10 / 2 + this.field5177 + 1, var4, var5, var6, var7, var1, var2);
 				HashSet var12 = new HashSet();
 
 				Iterator var13;
@@ -245,7 +245,7 @@ public class Class517 {
 	@ObfInfo(name = "ak", desc = "(IIZZI)V", opaque = "-167777456")
 	public void method9052(int var1, int var2, boolean var3, boolean var4) {
 		long var6;
-		label38: {
+		label37: {
 			var6 = Class329.method4953();
 			this.method9248(var1, var2, var4, var6);
 			if (!this.method9058() && (var4 || var3)) {
@@ -261,9 +261,9 @@ public class Class517 {
 					if (this.field5192 != -1) {
 						int var9 = var1 - this.field5216;
 						int var10 = var2 - this.field5195;
-						this.method9068(this.field5192 - (int)((float)var9 / this.field5181), this.field5213 + (int)((float)var10 / this.field5181), false);
+						this.method9068(this.field5192 - (int)((float)var9 / this.field5181), (int)((float)var10 / this.field5181) + this.field5213, false);
 					}
-					break label38;
+					break label37;
 				}
 			}
 
@@ -318,7 +318,7 @@ public class Class517 {
 			this.field5180 = this.field5181;
 		} else {
 			if (this.field5180 < this.field5181) {
-				this.field5180 = Math.min(this.field5181, this.field5180 + this.field5180 / 30.0F);
+				this.field5180 = Math.min(this.field5181, this.field5180 / 30.0F + this.field5180);
 			}
 
 			if (this.field5180 > this.field5181) {
@@ -341,8 +341,8 @@ public class Class517 {
 				var3 /= Math.min(8, Math.abs(var3));
 			}
 
-			this.method9068(var2 + this.field5176, this.field5177 + var3, true);
-			if (this.field5176 == this.field5178 && this.field5177 == this.field5179) {
+			this.method9068(this.field5176 + var2, this.field5177 + var3, true);
+			if (this.field5178 == this.field5176 && this.field5179 == this.field5177) {
 				this.field5178 = -1;
 				this.field5179 = -1;
 			}
@@ -487,7 +487,7 @@ public class Class517 {
 	public void method9165(int var1, int var2, int var3, int var4, int var5, double var6) {
 		int[] var8 = new int[4];
 		Class569.method10132(var8);
-		Class569.method10183(var1, var2, var3 + var1, var4 + var2);
+		Class569.method10183(var1, var2, var1 + var3, var2 + var4);
 		int var9 = this.field5175.method8999();
 		if (var9 < 100) {
 			this.method9074(var1, var2, var3, var4, var9);
@@ -509,11 +509,11 @@ public class Class517 {
 			int var18 = (int)(var12 * 256.0D);
 			int var19 = (int)(var14 * 256.0D);
 			int var20 = (int)(var16 * 256.0D);
-			int var10 = -16777216 + (var18 << 16) + (var19 << 8) + var20;
+			int var10 = (var19 << 8) + (var18 << 16) + -16777216 + var20;
 			Class569.method10138(var1, var2, var3, var4, var10);
 			if (this.field5189 != null) {
 				++this.field5186;
-				if (0 == this.field5186 % this.field5187) {
+				if (this.field5186 % this.field5187 == 0) {
 					this.field5186 = 0;
 					++this.field5190;
 				}
@@ -525,7 +525,7 @@ public class Class517 {
 
 			int var13 = (int)Math.ceil((double)((float)var3 / this.field5180));
 			int var21 = (int)Math.ceil((double)((float)var4 / this.field5180));
-			this.field5193.method4875(this.field5176 - var13 / 2, this.field5177 - var21 / 2, this.field5176 + var13 / 2, this.field5177 + var21 / 2, var1, var2, var3 + var1, var4 + var2);
+			this.field5193.method4875(this.field5176 - var13 / 2, this.field5177 - var21 / 2, var13 / 2 + this.field5176, var21 / 2 + this.field5177, var1, var2, var1 + var3, var2 + var4);
 			if (!this.field5204) {
 				boolean var15 = false;
 				if (var5 - this.field5165 > 100) {
@@ -533,7 +533,7 @@ public class Class517 {
 					var15 = true;
 				}
 
-				this.field5193.method4876(this.field5176 - var13 / 2, this.field5177 - var21 / 2, this.field5176 + var13 / 2, this.field5177 + var21 / 2, var1, var2, var3 + var1, var4 + var2, this.field5203, this.field5189, this.field5186, this.field5187, var15);
+				this.field5193.method4876(this.field5176 - var13 / 2, this.field5177 - var21 / 2, var13 / 2 + this.field5176, var21 / 2 + this.field5177, var1, var2, var1 + var3, var2 + var4, this.field5203, this.field5189, this.field5186, this.field5187, var15);
 			}
 
 			this.method9062(var1, var2, var3, var4, var13, var21);
@@ -559,12 +559,12 @@ public class Class517 {
 		if (this.field5212 == null) {
 			return true;
 		} else if (this.field5212.field5421 == var1 && this.field5212.field5424 == var2) {
-			if (this.field5169 != this.field5193.field2644) {
+			if (this.field5193.field2644 != this.field5169) {
 				return true;
 			} else if (Client.field825 != this.field5199) {
 				return true;
 			} else if (var3 <= 0 && var4 <= 0) {
-				return var3 + var1 < var5 || var4 + var2 < var6;
+				return var1 + var3 < var5 || var2 + var4 < var6;
 			} else {
 				return true;
 			}
@@ -584,8 +584,8 @@ public class Class517 {
 			var10 = (int)((float)var10 / var11);
 			int var12 = this.method9084() - var5 / 2 - var8;
 			int var13 = this.method9085() - var6 / 2 - var8;
-			int var14 = var1 - (var12 + var8 - this.field5211) * this.field5193.field2644;
-			int var15 = var2 - this.field5193.field2644 * (var8 - (var13 - this.field5215));
+			int var14 = var1 - (var8 + var12 - this.field5211) * this.field5193.field2644;
+			int var15 = var2 - (var8 - (var13 - this.field5215)) * this.field5193.field2644;
 			if (this.method9132(var9, var10, var14, var15, var3, var4)) {
 				if (this.field5212 != null && this.field5212.field5421 == var9 && this.field5212.field5424 == var10) {
 					Arrays.fill(this.field5212.field5429, 0);
@@ -598,15 +598,15 @@ public class Class517 {
 				this.field5169 = this.field5193.field2644;
 				Client.field4980.method7334(this.field5211, this.field5215, this.field5212, (float)this.field5169 / var11);
 				this.field5199 = Client.field825;
-				var14 = var1 - this.field5193.field2644 * (var12 + var8 - this.field5211);
-				var15 = var2 - this.field5193.field2644 * (var8 - (var13 - this.field5215));
+				var14 = var1 - (var8 + var12 - this.field5211) * this.field5193.field2644;
+				var15 = var2 - (var8 - (var13 - this.field5215)) * this.field5193.field2644;
 			}
 
 			Class569.method10157(var1, var2, var3, var4, 0, 128);
 			if (var11 == 1.0F) {
 				this.field5212.method9617(var14, var15, 192);
 			} else {
-				this.field5212.method9619(var14, var15, (int)(var11 * (float)var9), (int)(var11 * (float)var10), 192);
+				this.field5212.method9619(var14, var15, (int)((float)var9 * var11), (int)((float)var10 * var11), 192);
 			}
 		}
 
@@ -635,11 +635,11 @@ public class Class517 {
 	public void method9074(int var1, int var2, int var3, int var4, int var5) {
 		byte var7 = 20;
 		int var8 = var3 / 2 + var1;
-		int var9 = var2 + var4 / 2 - 18 - var7;
+		int var9 = var4 / 2 + var2 - 18 - var7;
 		Class569.method10138(var1, var2, var3, var4, -16777216);
 		Class569.method10142(var8 - 152, var9, 304, 34, -65536);
 		Class569.method10138(var8 - 150, var9 + 2, var5 * 3, 30, -65536);
-		this.field5200.method8147(Class367.field4083, var8, var9 + var7, -1, -1);
+		this.field5200.method8147(Class367.field4083, var8, var7 + var9, -1, -1);
 	}
 
 	@ObfInfo(name = "bt", desc = "(IB)F", opaque = "0")
@@ -668,7 +668,7 @@ public class Class517 {
 		} else if ((double)this.field5181 == 3.0D) {
 			return 75;
 		} else {
-			return 4.0D == (double)this.field5181 ? 100 : 200;
+			return (double)this.field5181 == 4.0D ? 100 : 200;
 		}
 	}
 
@@ -885,7 +885,7 @@ public class Class517 {
 		if (this.field5175.method8994()) {
 			int var8 = (int)Math.ceil((double)((float)var3 / this.field5180));
 			int var9 = (int)Math.ceil((double)((float)var4 / this.field5180));
-			List var10 = this.field5193.method4912(this.field5176 - var8 / 2 - 1, this.field5177 - var9 / 2 - 1, var8 / 2 + this.field5176 + 1, this.field5177 + var9 / 2 + 1, var1, var2, var3, var4, var5, var6);
+			List var10 = this.field5193.method4912(this.field5176 - var8 / 2 - 1, this.field5177 - var9 / 2 - 1, var8 / 2 + this.field5176 + 1, var9 / 2 + this.field5177 + 1, var1, var2, var3, var4, var5, var6);
 			if (!var10.isEmpty()) {
 				Iterator var11 = var10.iterator();
 
@@ -900,7 +900,7 @@ public class Class517 {
 					var14 = false;
 
 					for (int var15 = this.field5206.length - 1; var15 >= 0; --var15) {
-						if (null != var13.field1784[var15]) {
+						if (var13.field1784[var15] != null) {
 							Client.method2780(var13.field1784[var15], var13.field1785, this.field5206[var15], var12.method4659(), var12.field2749.method6506(), var12.field2748.method6506());
 							var14 = true;
 						}
@@ -938,7 +938,7 @@ public class Class517 {
 						var9 = (Class268)var8.next();
 						int var10 = var9.field2748.field3748 - var2.field3748;
 						int var11 = var9.field2748.field3750 - var2.field3750;
-						var12 = var11 * var11 + var10 * var10;
+						var12 = var10 * var10 + var11 * var11;
 						if (var12 == 0) {
 							return var9.field2748;
 						}

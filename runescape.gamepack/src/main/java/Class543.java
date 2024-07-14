@@ -69,7 +69,7 @@ public class Class543 {
 							char[] var10 = field5326;
 							int var11 = 0;
 
-							label109:
+							label108:
 							while (true) {
 								char var12;
 								if (var11 >= var10.length) {
@@ -77,9 +77,9 @@ public class Class543 {
 
 									for (var11 = 0; var11 < var10.length; ++var11) {
 										var12 = var10[var11];
-										if (var12 == var8) {
+										if (var8 == var12) {
 											var9 = true;
-											break label109;
+											break label108;
 										}
 									}
 
@@ -88,7 +88,7 @@ public class Class543 {
 								}
 
 								var12 = var10[var11];
-								if (var12 == var8) {
+								if (var8 == var12) {
 									var9 = true;
 									break;
 								}

@@ -102,11 +102,11 @@ public final class Class84 extends Class280 {
 			double var8 = (double)(this.field1060 - this.field1040);
 			double var10 = Math.sqrt(var6 * var6 + var8 * var8);
 			this.field1053 = (double)this.field1049 * var6 / var10 + (double)this.field1039;
-			this.field1054 = var8 * (double)this.field1049 / var10 + (double)this.field1040;
+			this.field1054 = (double)this.field1049 * var8 / var10 + (double)this.field1040;
 			this.field1055 = (double)this.field1041;
 		}
 
-		var6 = (double)(1 + this.field1047 - var4);
+		var6 = (double)(this.field1047 + 1 - var4);
 		this.field1056 = ((double)this.field1043 - this.field1053) / var6;
 		this.field1057 = ((double)this.field1060 - this.field1054) / var6;
 		this.field1059 = Math.sqrt(this.field1057 * this.field1057 + this.field1056 * this.field1056);
@@ -114,15 +114,15 @@ public final class Class84 extends Class280 {
 			this.field1062 = -this.field1059 * Math.tan((double)this.field1048 * 0.02454369D);
 		}
 
-		this.field1038 = 2.0D * ((double)this.field1045 - this.field1055 - this.field1062 * var6) / (var6 * var6);
+		this.field1038 = ((double)this.field1045 - this.field1055 - this.field1062 * var6) * 2.0D / (var6 * var6);
 	}
 
 	@ObfInfo(name = "ad", desc = "(II)V", opaque = "-1976950767")
 	public final void method2330(int var1) {
 		this.field1067 = true;
-		this.field1053 += this.field1056 * (double)var1;
+		this.field1053 += (double)var1 * this.field1056;
 		this.field1054 += (double)var1 * this.field1057;
-		this.field1055 += (double)var1 * this.field1062 + (double)var1 * 0.5D * this.field1038 * (double)var1;
+		this.field1055 += this.field1038 * 0.5D * (double)var1 * (double)var1 + (double)var1 * this.field1062;
 		this.field1062 += (double)var1 * this.field1038;
 		this.field1061 = (int)(Math.atan2(this.field1056, this.field1057) * 325.949D) + 1024 & 2047;
 		this.field1058 = (int)(Math.atan2(this.field1062, this.field1059) * 325.949D) & 2047;

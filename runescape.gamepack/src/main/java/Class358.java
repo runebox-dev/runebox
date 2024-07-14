@@ -54,12 +54,12 @@ public class Class358 extends Class37 {
 
 				do {
 					if (var5 <= var6.field3685) {
-						this.method6587(var6, var1, var4, var5, var5 + var4);
+						this.method6587(var6, var1, var4, var5, var4 + var5);
 						var6.field3685 -= var5;
 						break;
 					}
 
-					this.method6587(var6, var1, var4, var6.field3685, var5 + var4);
+					this.method6587(var6, var1, var4, var6.field3685, var4 + var5);
 					var4 += var6.field3685;
 					var5 -= var6.field3685;
 				} while(!this.field3786.method6182(var6, var1, var4, var5));
@@ -93,20 +93,20 @@ public class Class358 extends Class37 {
 
 	@ObfInfo(name = "aq", desc = "(Lna;[IIIII)V", opaque = "-575337720")
 	public void method6587(Class339 var1, int[] var2, int var3, int var4, int var5) {
-		if (0 != (this.field3786.field3290[var1.field3679] & 4) && var1.field3674 < 0) {
+		if ((this.field3786.field3290[var1.field3679] & 4) != 0 && var1.field3674 < 0) {
 			int var7 = this.field3786.field3295[var1.field3679] / Client.field293;
 
 			while (true) {
 				int var8 = (var7 + 1048575 - var1.field3689) / var7;
 				if (var8 > var4) {
-					var1.field3689 += var7 * var4;
+					var1.field3689 += var4 * var7;
 					break;
 				}
 
 				var1.field3687.method531(var2, var3, var8);
 				var3 += var8;
 				var4 -= var8;
-				var1.field3689 += var8 * var7 - 1048576;
+				var1.field3689 += var7 * var8 - 1048576;
 				int var9 = Client.field293 / 100;
 				int var10 = 262144 / var7;
 				if (var10 < var9) {
@@ -142,7 +142,7 @@ public class Class358 extends Class37 {
 		if ((this.field3786.field3290[var1.field3679] & 4) != 0 && var1.field3674 < 0) {
 			int var4 = this.field3786.field3295[var1.field3679] / Client.field293;
 			int var5 = (var4 + 1048575 - var1.field3689) / var4;
-			var1.field3689 = var1.field3689 + var4 * var2 & 1048575;
+			var1.field3689 = var2 * var4 + var1.field3689 & 1048575;
 			if (var5 <= var2) {
 				if (this.field3786.field3293[var1.field3679] == 0) {
 					var1.field3687 = Class52.method937(var1.field3671, var1.field3687.method952(), var1.field3687.method943(), var1.field3687.method1039());

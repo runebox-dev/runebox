@@ -98,7 +98,7 @@ public final class Class251 {
 
 			for (int var18 = 0; var18 < var9; ++var18) {
 				for (int var20 = 0; var20 < var10; ++var20) {
-					if (null == this.field2630[var18][var20]) {
+					if (this.field2630[var18][var20] == null) {
 						this.field2630[var18][var20] = new Class237(this.field2635.method4771() + var18, this.field2635.method4768() + var20, this.field2635.method4809(), this.field2629);
 						this.field2630[var18][var20].method4533(this.field2635.field2795, this.field2635.field2796);
 					}
@@ -143,7 +143,7 @@ public final class Class251 {
 		}
 
 		int var25 = var15.field2654 + var15.field2652 - 1;
-		int var19 = var15.field2653 + var15.field2655 - 1;
+		int var19 = var15.field2655 + var15.field2653 - 1;
 
 		int var20;
 		int var21;
@@ -156,12 +156,12 @@ public final class Class251 {
 		Class274.method5128(var10, var11, var12, var13);
 		Class569.method10133(var14);
 		var20 = (int)(var16 * 64.0F);
-		var21 = var1 + this.field2634;
+		var21 = this.field2634 + var1;
 		int var22 = this.field2631 + var2;
 
-		for (int var23 = var15.field2652; var23 < var15.field2652 + var15.field2654; ++var23) {
-			for (int var24 = var15.field2655; var24 < var15.field2653 + var15.field2655; ++var24) {
-				this.field2630[var23][var24].method4495((this.field2630[var23][var24].field2525 * 64 - var21) * var20 / 64 + var5, var8 - var20 * (64 + (this.field2630[var23][var24].field2514 * 64 - var22)) / 64, var20);
+		for (int var23 = var15.field2652; var23 < var15.field2654 + var15.field2652; ++var23) {
+			for (int var24 = var15.field2655; var24 < var15.field2655 + var15.field2653; ++var24) {
+				this.field2630[var23][var24].method4495((this.field2630[var23][var24].field2525 * 64 - var21) * var20 / 64 + var5, var8 - (this.field2630[var23][var24].field2514 * 64 - var22 + 64) * var20 / 64, var20);
 			}
 		}
 
@@ -171,8 +171,8 @@ public final class Class251 {
 	public final void method4876(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, HashSet var9, HashSet var10, int var11, int var12, boolean var13) {
 		Class253 var15 = this.method4879(var1, var2, var3, var4);
 		float var16 = this.method4884(var7 - var5, var3 - var1);
-		int var17 = (int)(64.0F * var16);
-		int var18 = var1 + this.field2634;
+		int var17 = (int)(var16 * 64.0F);
+		int var18 = this.field2634 + var1;
 		int var19 = this.field2631 + var2;
 
 		int var20;
@@ -183,13 +183,13 @@ public final class Class251 {
 					this.field2630[var20][var21].method4500();
 				}
 
-				this.field2630[var20][var21].method4505((this.field2630[var20][var21].field2525 * 64 - var18) * var17 / 64 + var5, var8 - (64 + (this.field2630[var20][var21].field2514 * 64 - var19)) * var17 / 64, var17, var9);
+				this.field2630[var20][var21].method4505((this.field2630[var20][var21].field2525 * 64 - var18) * var17 / 64 + var5, var8 - (this.field2630[var20][var21].field2514 * 64 - var19 + 64) * var17 / 64, var17, var9);
 			}
 		}
 
 		if (var10 != null && var11 > 0) {
-			for (var20 = var15.field2652; var20 < var15.field2652 + var15.field2654; ++var20) {
-				for (var21 = var15.field2655; var21 < var15.field2653 + var15.field2655; ++var21) {
+			for (var20 = var15.field2652; var20 < var15.field2654 + var15.field2652; ++var20) {
+				for (var21 = var15.field2655; var21 < var15.field2655 + var15.field2653; ++var21) {
 					this.field2630[var20][var21].method4506(var10, var11, var12);
 				}
 			}
@@ -225,7 +225,7 @@ public final class Class251 {
 						Class268 var13 = (Class268)var12.next();
 						int var14 = (var13.field2748.field3748 - this.field2634) * var3 / this.field2642;
 						int var15 = var4 - (var13.field2748.field3750 - this.field2631) * var4 / this.field2643;
-						Class569.method10131(var14 + var1, var15 + var2, 2, 16776960, 256);
+						Class569.method10131(var1 + var14, var2 + var15, 2, 16776960, 256);
 					}
 				}
 			}
@@ -241,12 +241,12 @@ public final class Class251 {
 			Class253 var13 = this.method4879(var1, var2, var3, var4);
 			float var14 = this.method4884(var7, var3 - var1);
 			int var15 = (int)(var14 * 64.0F);
-			int var16 = var1 + this.field2634;
-			int var17 = var2 + this.field2631;
+			int var16 = this.field2634 + var1;
+			int var17 = this.field2631 + var2;
 
 			for (int var18 = var13.field2652; var18 < var13.field2654 + var13.field2652; ++var18) {
 				for (int var19 = var13.field2655; var19 < var13.field2655 + var13.field2653; ++var19) {
-					List var20 = this.field2630[var18][var19].method4526(var15 * (this.field2630[var18][var19].field2525 * 64 - var16) / 64 + var5, var8 + var6 - (this.field2630[var18][var19].field2514 * 64 - var17 + 64) * var15 / 64, var15, var9, var10);
+					List var20 = this.field2630[var18][var19].method4526((this.field2630[var18][var19].field2525 * 64 - var16) * var15 / 64 + var5, var6 + var8 - (this.field2630[var18][var19].field2514 * 64 - var17 + 64) * var15 / 64, var15, var9, var10);
 					if (!var20.isEmpty()) {
 						var12.addAll(var20);
 					}
@@ -261,15 +261,15 @@ public final class Class251 {
 	public Class253 method4879(int var1, int var2, int var3, int var4) {
 		Class253 var6 = new Class253(this);
 		int var7 = this.field2634 + var1;
-		int var8 = var2 + this.field2631;
-		int var9 = var3 + this.field2634;
-		int var10 = var4 + this.field2631;
+		int var8 = this.field2631 + var2;
+		int var9 = this.field2634 + var3;
+		int var10 = this.field2631 + var4;
 		int var11 = var7 / 64;
 		int var12 = var8 / 64;
 		int var13 = var9 / 64;
 		int var14 = var10 / 64;
 		var6.field2654 = var13 - var11 + 1;
-		var6.field2653 = 1 + (var14 - var12);
+		var6.field2653 = var14 - var12 + 1;
 		var6.field2652 = var11 - this.field2635.method4771();
 		var6.field2655 = var12 - this.field2635.method4768();
 		if (var6.field2652 < 0) {

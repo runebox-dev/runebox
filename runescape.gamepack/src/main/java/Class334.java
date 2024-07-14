@@ -35,7 +35,7 @@ public class Class334 extends Class520 {
 		Class562 var2 = new Class562(var1);
 
 		int var3;
-		for (var3 = 0; var2.field5472[var3 + var2.field5471] != 0; ++var3) {
+		for (var3 = 0; var2.field5472[var2.field5471 + var3] != 0; ++var3) {
 		}
 
 		byte[] var4 = new byte[var3];
@@ -67,7 +67,7 @@ public class Class334 extends Class520 {
 		var2.field5471 += var6;
 
 		int var9;
-		for (var9 = 0; 0 != var2.field5472[var2.field5471 + var9]; ++var9) {
+		for (var9 = 0; var2.field5472[var2.field5471 + var9] != 0; ++var9) {
 		}
 
 		byte[] var10 = new byte[var9];
@@ -127,7 +127,7 @@ public class Class334 extends Class520 {
 		byte[] var40 = var14 > 0 ? new byte[var14 * 2] : null;
 
 		int var17;
-		for (var17 = 0; 0 != var2.field5472[var17 + var2.field5471]; ++var17) {
+		for (var17 = 0; var2.field5472[var2.field5471 + var17] != 0; ++var17) {
 		}
 
 		byte[] var18 = new byte[var17];
@@ -184,7 +184,7 @@ public class Class334 extends Class520 {
 
 		int var24;
 		for (var24 = 0; var24 < 128; ++var24) {
-			if (0 != this.field3654[var24]) {
+			if (this.field3654[var24] != 0) {
 				if (var20 == 0) {
 					if (var21 < var4.length) {
 						var20 = var4[var21++];
@@ -205,7 +205,7 @@ public class Class334 extends Class520 {
 		var24 = 0;
 
 		for (int var25 = 0; var25 < 128; ++var25) {
-			if (0 != this.field3654[var25]) {
+			if (this.field3654[var25] != 0) {
 				if (var20 == 0) {
 					if (var21 < var7.length) {
 						var20 = var7[var21++];
@@ -338,7 +338,7 @@ public class Class334 extends Class520 {
 			byte var43 = var39[1];
 
 			for (var29 = 0; var29 < var47; ++var29) {
-				this.field3649[var29] = (byte)(32 + this.field3649[var29] * var43 >> 6);
+				this.field3649[var29] = (byte)(this.field3649[var29] * var43 + 32 >> 6);
 			}
 
 			for (var29 = 2; var29 < var39.length; var29 += 2) {
@@ -348,7 +348,7 @@ public class Class334 extends Class520 {
 
 				for (var33 = var47; var33 < var30; ++var33) {
 					var34 = Class337.method4003(var32, var30 - var47);
-					this.field3649[var33] = (byte)(32 + this.field3649[var33] * var34 >> 6);
+					this.field3649[var33] = (byte)(this.field3649[var33] * var34 + 32 >> 6);
 					var32 += var31 - var43;
 				}
 
@@ -357,7 +357,7 @@ public class Class334 extends Class520 {
 			}
 
 			for (var45 = var47; var45 < 128; ++var45) {
-				this.field3649[var45] = (byte)(32 + var43 * this.field3649[var45] >> 6);
+				this.field3649[var45] = (byte)(this.field3649[var45] * var43 + 32 >> 6);
 			}
 
 			var38 = null;
@@ -392,7 +392,7 @@ public class Class334 extends Class520 {
 			for (var29 = 2; var29 < var40.length; var29 += 2) {
 				var30 = var40[var29];
 				var46 = var40[var29 + 1] << 1;
-				var32 = (var30 - var47) * var44 + (var30 - var47) / 2;
+				var32 = (var30 - var47) / 2 + (var30 - var47) * var44;
 
 				for (var33 = var47; var33 < var30; ++var33) {
 					var34 = Class337.method4003(var32, var30 - var47);
@@ -482,9 +482,9 @@ public class Class334 extends Class520 {
 				if (var2.get(var9)) {
 					int var10 = this.field3654[var9];
 					if (var10 != 0) {
-						if (var10 != var5) {
+						if (var5 != var10) {
 							var5 = var10--;
-							if (0 == (var10 & 1)) {
+							if ((var10 & 1) == 0) {
 								var6 = new Class74(var1.method452(var10 >> 2));
 							} else {
 								var6 = var1.method456(var10 >> 2);

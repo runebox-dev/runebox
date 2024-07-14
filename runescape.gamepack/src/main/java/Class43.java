@@ -70,8 +70,8 @@ public class Class43 {
 						var11 = Class64.field492[this.field233].method1181(var4);
 
 						for (var12 = var5 - 1; var12 >= 0; --var12) {
-							if (var12 + var10 < var7) {
-								var8[var12 + var10] = var11 % this.field237;
+							if (var10 + var12 < var7) {
+								var8[var10 + var12] = var11 % this.field237;
 							}
 
 							var11 /= this.field237;
@@ -82,7 +82,7 @@ public class Class43 {
 						var12 = var8[var10];
 						int var13 = this.field239[var12 * 8 + var9];
 						if (var13 >= 0) {
-							int var14 = this.field234 + this.field238 * var10;
+							int var14 = this.field238 * var10 + this.field234;
 							Class58 var15 = Class64.field492[var13];
 							int var16;
 							if (this.field236 == 0) {
@@ -92,7 +92,7 @@ public class Class43 {
 									float[] var21 = var15.method1192(var4);
 
 									for (int var19 = 0; var19 < var15.field428; ++var19) {
-										var1[var20 + var14 + var19 * var16] += var21[var19];
+										var1[var16 * var19 + var14 + var20] += var21[var19];
 									}
 								}
 							} else {
@@ -102,7 +102,7 @@ public class Class43 {
 									float[] var17 = var15.method1192(var4);
 
 									for (int var18 = 0; var18 < var15.field428; ++var18) {
-										var1[var16 + var14] += var17[var18];
+										var1[var14 + var16] += var17[var18];
 										++var16;
 									}
 								}

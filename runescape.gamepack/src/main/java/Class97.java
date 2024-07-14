@@ -82,23 +82,23 @@ public final class Class97 {
 		int var7 = var0.field1030 - 1;
 		int var8 = var0.field1018 - 1;
 
-		for (int var9 = var2; var9 <= var4 + var2; ++var9) {
-			for (int var10 = var1; var10 <= var3 + var1; ++var10) {
+		for (int var9 = var2; var9 <= var2 + var4; ++var9) {
+			for (int var10 = var1; var10 <= var1 + var3; ++var10) {
 				if (var10 >= 0 && var10 < var6[0].length - 1 && var9 >= 0 && var9 < var6[0][0].length - 1) {
 					field2822[0][var10][var9] = 127;
-					if (var10 == var1 && var10 > 0) {
+					if (var1 == var10 && var10 > 0) {
 						var6[0][var10][var9] = var6[0][var10 - 1][var9];
 					}
 
-					if (var3 + var1 == var10 && var10 < var7) {
+					if (var1 + var3 == var10 && var10 < var7) {
 						var6[0][var10][var9] = var6[0][var10 + 1][var9];
 					}
 
-					if (var9 == var2 && var9 > 0) {
+					if (var2 == var9 && var9 > 0) {
 						var6[0][var10][var9] = var6[0][var10][var9 - 1];
 					}
 
-					if (var4 + var2 == var9 && var9 < var8) {
+					if (var2 + var4 == var9 && var9 < var8) {
 						var6[0][var10][var9] = var6[0][var10][var9 + 1];
 					}
 				}
@@ -115,9 +115,9 @@ public final class Class97 {
 			for (int var7 = 0; var7 < 4; ++var7) {
 				for (var8 = 0; var8 < 64; ++var8) {
 					for (var9 = 0; var9 < 64; ++var9) {
-						if (var8 + var2 > 0 && var8 + var2 < var0.field1015[var7].field2435.length && var9 + var3 > 0 && var9 + var3 < var0.field1015[var7].field2435[var8 + var2].length) {
-							int[] var10000 = var0.field1015[var7].field2435[var8 + var2];
-							var10000[var9 + var3] &= -1073741825;
+						if (var2 + var8 > 0 && var2 + var8 < var0.field1015[var7].field2435.length && var3 + var9 > 0 && var3 + var9 < var0.field1015[var7].field2435[var2 + var8].length) {
+							int[] var10000 = var0.field1015[var7].field2435[var2 + var8];
+							var10000[var3 + var9] &= -1073741825;
 						}
 					}
 				}
@@ -129,9 +129,9 @@ public final class Class97 {
 		for (var8 = 0; var8 < 4; ++var8) {
 			for (var9 = 0; var9 < 64; ++var9) {
 				for (int var10 = 0; var10 < 64; ++var10) {
-					int var11 = var9 + var2;
-					int var12 = var10 + var3;
-					Class283.method5628(var0, var13, var8, var11, var12, var11 + var4, var12 + var5, 0);
+					int var11 = var2 + var9;
+					int var12 = var3 + var10;
+					Class283.method5628(var0, var13, var8, var11, var12, var4 + var11, var5 + var12, 0);
 				}
 			}
 		}
@@ -145,9 +145,9 @@ public final class Class97 {
 		if (var12 != null) {
 			for (int var13 = 0; var13 < 8; ++var13) {
 				for (var14 = 0; var14 < 8; ++var14) {
-					if (var13 + var3 > 0 && var13 + var3 < var12[var2].field2435.length && var14 + var4 > 0 && var14 + var4 < var12[var2].field2435[var13 + var3].length) {
-						int[] var10000 = var12[var2].field2435[var13 + var3];
-						var10000[var14 + var4] &= -1073741825;
+					if (var3 + var13 > 0 && var3 + var13 < var12[var2].field2435.length && var4 + var14 > 0 && var4 + var14 < var12[var2].field2435[var3 + var13].length) {
+						int[] var10000 = var12[var2].field2435[var3 + var13];
+						var10000[var4 + var14] &= -1073741825;
 					}
 				}
 			}
@@ -158,7 +158,7 @@ public final class Class97 {
 		for (var14 = 0; var14 < 4; ++var14) {
 			for (int var15 = 0; var15 < 64; ++var15) {
 				for (int var16 = 0; var16 < 64; ++var16) {
-					if (var14 == var5 && var15 >= var6 && var15 < var6 + 8 && var16 >= var7 && var16 < var7 + 8) {
+					if (var5 == var14 && var15 >= var6 && var15 < var6 + 8 && var16 >= var7 && var16 < var7 + 8) {
 						int var17 = Class346.method6604(var15 & 7, var16 & 7, var8) + var3;
 						int var20 = var15 & 7;
 						int var21 = var16 & 7;
@@ -174,9 +174,9 @@ public final class Class97 {
 							var19 = var20;
 						}
 
-						int var23 = var19 + var4;
-						int var24 = (var15 & 7) + var9 + var3;
-						int var25 = var10 + var4 + (var16 & 7);
+						int var23 = var4 + var19;
+						int var24 = (var15 & 7) + var3 + var9;
+						int var25 = (var16 & 7) + var4 + var10;
 						Class283.method5628(var0, var26, var2, var17, var23, var24, var25, var8);
 					} else {
 						Class283.method5628(var0, var26, 0, -1, -1, 0, 0, 0);
@@ -192,19 +192,19 @@ public final class Class97 {
 		int var5;
 		for (var5 = 0; var5 < 8; ++var5) {
 			for (int var6 = 0; var6 < 8; ++var6) {
-				var0[var1][var5 + var2][var6 + var3] = 0;
+				var0[var1][var2 + var5][var3 + var6] = 0;
 			}
 		}
 
 		if (var2 > 0) {
 			for (var5 = 1; var5 < 8; ++var5) {
-				var0[var1][var2][var5 + var3] = var0[var1][var2 - 1][var5 + var3];
+				var0[var1][var2][var3 + var5] = var0[var1][var2 - 1][var3 + var5];
 			}
 		}
 
 		if (var3 > 0) {
 			for (var5 = 1; var5 < 8; ++var5) {
-				var0[var1][var5 + var2][var3] = var0[var1][var5 + var2][var3 - 1];
+				var0[var1][var2 + var5][var3] = var0[var1][var2 + var5][var3 - 1];
 			}
 		}
 
@@ -245,7 +245,7 @@ public final class Class97 {
 				int var17 = var9.method9902();
 				int var18 = var17 >> 2;
 				int var19 = var17 & 3;
-				if (var16 == var5 && var15 >= var6 && var15 < var6 + 8 && var14 >= var7 && var14 < var7 + 8) {
+				if (var5 == var16 && var15 >= var6 && var15 < var6 + 8 && var14 >= var7 && var14 < var7 + 8) {
 					Class197 var20 = Class197.method61(var10);
 					int var21 = Class232.method4438(var15 & 7, var14 & 7, var8, var20.field2140, var20.field2141, var19) + var3;
 					int var24 = var15 & 7;
@@ -253,7 +253,7 @@ public final class Class97 {
 					int var27 = var20.field2140;
 					int var28 = var20.field2141;
 					int var29;
-					if (1 == (var19 & 1)) {
+					if ((var19 & 1) == 1) {
 						var29 = var27;
 						var27 = var28;
 						var28 = var29;
@@ -271,7 +271,7 @@ public final class Class97 {
 						var23 = var24;
 					}
 
-					var29 = var23 + var4;
+					var29 = var4 + var23;
 					if (var21 > 0 && var29 > 0 && var21 < var0.field1030 - 1 && var29 < var0.field1018 - 1) {
 						int var30 = var2;
 						if ((var0.field1023[1][var21][var29] & 2) == 2) {
@@ -283,7 +283,7 @@ public final class Class97 {
 							var31 = var0.field1015[var30];
 						}
 
-						method246(var0, var2, var21, var29, var10, var19 + var8 & 3, var18, var31);
+						method246(var0, var2, var21, var29, var10, var8 + var19 & 3, var18, var31);
 					}
 				}
 			}
@@ -292,7 +292,7 @@ public final class Class97 {
 
 	@ObfInfo(owner = "ar", name = "ae", desc = "(Lde;IIIIIILip;I)V", opaque = "793708325")
 	public static void method246(Class83 var0, int var1, int var2, int var3, int var4, int var5, int var6, Class224 var7) {
-		if (!Client.field687 || 0 != (var0.field1023[0][var2][var3] & 2) || (var0.field1023[var1][var2][var3] & 16) == 0) {
+		if (!Client.field687 || (var0.field1023[0][var2][var3] & 2) != 0 || (var0.field1023[var1][var2][var3] & 16) == 0) {
 			if (var1 < field1197) {
 				field1197 = var1;
 			}
@@ -310,7 +310,7 @@ public final class Class97 {
 
 			int var12;
 			int var13;
-			if (var10 + var2 <= var0.field1030) {
+			if (var2 + var10 <= var0.field1030) {
 				var12 = (var10 >> 1) + var2;
 				var13 = (var10 + 1 >> 1) + var2;
 			} else {
@@ -320,21 +320,21 @@ public final class Class97 {
 
 			int var14;
 			int var15;
-			if (var11 + var3 <= var0.field1018) {
+			if (var3 + var11 <= var0.field1018) {
 				var14 = (var11 >> 1) + var3;
-				var15 = var3 + (var11 + 1 >> 1);
+				var15 = (var11 + 1 >> 1) + var3;
 			} else {
 				var14 = var3;
 				var15 = var3 + 1;
 			}
 
 			int[][] var16 = var0.field1025[var1];
-			int var17 = var16[var13][var15] + var16[var12][var14] + var16[var13][var14] + var16[var12][var15] >> 2;
-			int var18 = (var10 << 6) + (var2 << 7);
+			int var17 = var16[var12][var14] + var16[var13][var14] + var16[var12][var15] + var16[var13][var15] >> 2;
+			int var18 = (var2 << 7) + (var10 << 6);
 			int var19 = (var3 << 7) + (var11 << 6);
-			long var20 = Class296.method4129(var2, var3, 2, 0 == var9.field2144, var4, var0.field1026);
-			int var22 = var6 + (var5 << 6);
-			if (1 == var9.field2165) {
+			long var20 = Class296.method4129(var2, var3, 2, var9.field2144 == 0, var4, var0.field1026);
+			int var22 = (var5 << 6) + var6;
+			if (var9.field2165 == 1) {
 				var22 += 256;
 			}
 
@@ -345,8 +345,8 @@ public final class Class97 {
 			Class277 var23 = var0.field1014;
 			Object var24;
 			if (var6 == 22) {
-				if (!Client.field687 || 0 != var9.field2144 || var9.field2126 == 1 || var9.field2134) {
-					if (-1 == var9.field2148 && var9.field2166 == null) {
+				if (!Client.field687 || var9.field2144 != 0 || var9.field2126 == 1 || var9.field2134) {
+					if (var9.field2148 == -1 && var9.field2166 == null) {
 						var24 = var9.method3902(22, var5, var16, var18, var17, var19);
 					} else {
 						var24 = new Class96(var0, var4, 22, var5, var1, var2, var3, var9.field2148, var9.field2160, (Class280)null);
@@ -363,7 +363,7 @@ public final class Class97 {
 				if (var6 != 10 && var6 != 11) {
 					int[] var10000;
 					if (var6 >= 12) {
-						if (-1 == var9.field2148 && var9.field2166 == null) {
+						if (var9.field2148 == -1 && var9.field2166 == null) {
 							var24 = var9.method3902(var6, var5, var16, var18, var17, var19);
 						} else {
 							var24 = new Class96(var0, var4, var6, var5, var1, var2, var3, var9.field2148, var9.field2160, (Class280)null);
@@ -429,11 +429,11 @@ public final class Class97 {
 							}
 						}
 
-						if (0 != var9.field2126 && var7 != null) {
+						if (var9.field2126 != 0 && var7 != null) {
 							var7.method4305(var2, var3, var6, var5, var9.field2143);
 						}
 
-						if (16 != var9.field2149) {
+						if (var9.field2149 != 16) {
 							var23.method5353(var1, var2, var3, var9.field2149);
 						}
 
@@ -457,7 +457,7 @@ public final class Class97 {
 							}
 						}
 
-						if (0 != var9.field2126 && var7 != null) {
+						if (var9.field2126 != 0 && var7 != null) {
 							var7.method4305(var2, var3, var6, var5, var9.field2143);
 						}
 
@@ -467,7 +467,7 @@ public final class Class97 {
 							var30 = var5 + 1 & 3;
 							Object var32;
 							Object var33;
-							if (-1 == var9.field2148 && var9.field2166 == null) {
+							if (var9.field2148 == -1 && var9.field2166 == null) {
 								var33 = var9.method3902(2, var5 + 4, var16, var18, var17, var19);
 								var32 = var9.method3902(2, var30, var16, var18, var17, var19);
 							} else {
@@ -500,7 +500,7 @@ public final class Class97 {
 								}
 							}
 
-							if (0 != var9.field2126 && var7 != null) {
+							if (var9.field2126 != 0 && var7 != null) {
 								var7.method4305(var2, var3, var6, var5, var9.field2143);
 							}
 
@@ -528,12 +528,12 @@ public final class Class97 {
 								}
 							}
 
-							if (0 != var9.field2126 && var7 != null) {
+							if (var9.field2126 != 0 && var7 != null) {
 								var7.method4305(var2, var3, var6, var5, var9.field2143);
 							}
 
 						} else if (var6 == 9) {
-							if (-1 == var9.field2148 && var9.field2166 == null) {
+							if (var9.field2148 == -1 && var9.field2166 == null) {
 								var24 = var9.method3902(var6, var5, var16, var18, var17, var19);
 							} else {
 								var24 = new Class96(var0, var4, var6, var5, var1, var2, var3, var9.field2148, var9.field2160, (Class280)null);
@@ -544,7 +544,7 @@ public final class Class97 {
 								var7.method4306(var2, var3, var10, var11, var9.field2143);
 							}
 
-							if (16 != var9.field2149) {
+							if (var9.field2149 != 16) {
 								var23.method5353(var1, var2, var3, var9.field2149);
 							}
 
@@ -572,7 +572,7 @@ public final class Class97 {
 									var34 = new Class96(var0, var4, 4, var5, var1, var2, var3, var9.field2148, var9.field2160, (Class280)null);
 								}
 
-								var23.method5350(var1, var2, var3, var17, (Class280)var34, (Class280)null, field1193[var5], 0, field1195[var5] * var30, var30 * field1196[var5], var20, var22);
+								var23.method5350(var1, var2, var3, var17, (Class280)var34, (Class280)null, field1193[var5], 0, field1195[var5] * var30, field1196[var5] * var30, var20, var22);
 							} else if (var6 == 6) {
 								var30 = 8;
 								var31 = var23.method5278(var1, var2, var3);
@@ -589,7 +589,7 @@ public final class Class97 {
 								var23.method5350(var1, var2, var3, var17, (Class280)var34, (Class280)null, 256, var5, field1185[var5] * var30, field1198[var5] * var30, var20, var22);
 							} else if (var6 == 7) {
 								var25 = var5 + 2 & 3;
-								if (-1 == var9.field2148 && var9.field2166 == null) {
+								if (var9.field2148 == -1 && var9.field2166 == null) {
 									var24 = var9.method3902(4, var25 + 4, var16, var18, var17, var19);
 								} else {
 									var24 = new Class96(var0, var4, 4, var25 + 4, var1, var2, var3, var9.field2148, var9.field2160, (Class280)null);
@@ -613,12 +613,12 @@ public final class Class97 {
 									var28 = new Class96(var0, var4, 4, var29 + 4, var1, var2, var3, var9.field2148, var9.field2160, (Class280)null);
 								}
 
-								var23.method5350(var1, var2, var3, var17, (Class280)var34, (Class280)var28, 256, var5, field1185[var5] * var30, var30 * field1198[var5], var20, var22);
+								var23.method5350(var1, var2, var3, var17, (Class280)var34, (Class280)var28, 256, var5, field1185[var5] * var30, field1198[var5] * var30, var20, var22);
 							}
 						}
 					}
 				} else {
-					if (-1 == var9.field2148 && var9.field2166 == null) {
+					if (var9.field2148 == -1 && var9.field2166 == null) {
 						var24 = var9.method3902(10, var5, var16, var18, var17, var19);
 					} else {
 						var24 = new Class96(var0, var4, 10, var5, var1, var2, var3, var9.field2148, var9.field2160, (Class280)null);
@@ -635,14 +635,14 @@ public final class Class97 {
 
 						for (int var26 = 0; var26 <= var10; ++var26) {
 							for (int var27 = 0; var27 <= var11; ++var27) {
-								if (var25 > field2822[var1][var26 + var2][var27 + var3]) {
-									field2822[var1][var26 + var2][var27 + var3] = (byte)var25;
+								if (var25 > field2822[var1][var2 + var26][var3 + var27]) {
+									field2822[var1][var2 + var26][var3 + var27] = (byte)var25;
 								}
 							}
 						}
 					}
 
-					if (0 != var9.field2126 && var7 != null) {
+					if (var9.field2126 != 0 && var7 != null) {
 						var7.method4306(var2, var3, var10, var11, var9.field2143);
 					}
 
@@ -669,7 +669,7 @@ public final class Class97 {
 				for (var10 = 0; var10 < var3; ++var10) {
 					if ((var0.field1023[var8][var9][var10] & 1) == 1) {
 						var11 = var8;
-						if (2 == (var0.field1023[1][var9][var10] & 2)) {
+						if ((var0.field1023[1][var9][var10] & 2) == 2) {
 							var11 = var8 - 1;
 						}
 
@@ -730,8 +730,8 @@ public final class Class97 {
 					var22 = (var19 << 8) / var21;
 					var23 = 65536 / var21;
 					var24 = (var20 << 8) / var21;
-					var25 = (var22 * -50 + var23 * -10 + var24 * -50) / var16 + 96;
-					var26 = (var51[var18][var17 + 1] >> 3) + (var51[var18][var17 - 1] >> 2) + (var51[var18 - 1][var17] >> 2) + (var51[var18 + 1][var17] >> 3) + (var51[var18][var17] >> 1);
+					var25 = (var24 * -50 + var22 * -50 + var23 * -10) / var16 + 96;
+					var26 = (var51[var18][var17] >> 1) + (var51[var18][var17 + 1] >> 3) + (var51[var18][var17 - 1] >> 2) + (var51[var18 - 1][var17] >> 2) + (var51[var18 + 1][var17] >> 3);
 					field1192[var18][var17] = var25 - var26;
 				}
 			}
@@ -844,7 +844,7 @@ public final class Class97 {
 							var22 -= field5252[var25];
 						}
 
-						if (var23 >= 1 && var23 < var3 - 1 && (!Client.field687 || 0 != (var5[0][var17][var23] & 2) || 0 == (var5[var8][var17][var23] & 16))) {
+						if (var23 >= 1 && var23 < var3 - 1 && (!Client.field687 || (var5[0][var17][var23] & 2) != 0 || (var5[var8][var17][var23] & 16) == 0)) {
 							if (var8 < field1197) {
 								field1197 = var8;
 							}
@@ -884,7 +884,7 @@ public final class Class97 {
 
 								if (var8 > 0) {
 									boolean var66 = true;
-									if (var29 == 0 && 0 != field1188[var8][var17][var23]) {
+									if (var29 == 0 && field1188[var8][var17][var23] != 0) {
 										var66 = false;
 									}
 
@@ -892,7 +892,7 @@ public final class Class97 {
 										var66 = false;
 									}
 
-									if (var66 && var32 == var31 && var33 == var31 && var34 == var31) {
+									if (var66 && var31 == var32 && var31 == var33 && var31 == var34) {
 										var10000 = field82[var8][var17];
 										var10000[var23] |= 2340;
 									}
@@ -924,7 +924,7 @@ public final class Class97 {
 									} else {
 										var46 = method2367(var44.field2311, var44.field2310, var44.field2314);
 										var48 = field1199 + var44.field2311 & 255;
-										var49 = var44.field2314 + field1200;
+										var49 = field1200 + var44.field2314;
 										if (var49 < 0) {
 											var49 = 0;
 										} else if (var49 > 255) {
@@ -939,9 +939,9 @@ public final class Class97 {
 										var48 = Class274.field2806[method1229(var47, 96)];
 									}
 
-									if (-1 != var44.field2313) {
+									if (var44.field2313 != -1) {
 										var49 = field1199 + var44.field2316 & 255;
-										int var50 = var44.field2308 + field1200;
+										int var50 = field1200 + var44.field2308;
 										if (var50 < 0) {
 											var50 = 0;
 										} else if (var50 > 255) {
@@ -962,9 +962,9 @@ public final class Class97 {
 
 			for (var17 = 1; var17 < var3 - 1; ++var17) {
 				for (var18 = 1; var18 < var2 - 1; ++var18) {
-					if (0 != (var0.field1023[var8][var18][var17] & 8)) {
+					if ((var0.field1023[var8][var18][var17] & 8) != 0) {
 						var23 = 0;
-					} else if (var8 > 0 && 0 != (var0.field1023[1][var18][var17] & 2)) {
+					} else if (var8 > 0 && (var0.field1023[1][var18][var17] & 2) != 0) {
 						var23 = var8 - 1;
 					} else {
 						var23 = var8;
@@ -1011,41 +1011,41 @@ public final class Class97 {
 							var16 = var55;
 							var17 = var54;
 
-							for (var18 = var54; var15 > 0 && 0 != (field82[var54][var56][var15 - 1] & var8); --var15) {
+							for (var18 = var54; var15 > 0 && (field82[var54][var56][var15 - 1] & var8) != 0; --var15) {
 							}
 
-							while (var16 < var3 && 0 != (field82[var54][var56][var16 + 1] & var8)) {
+							while (var16 < var3 && (field82[var54][var56][var16 + 1] & var8) != 0) {
 								++var16;
 							}
 
-							label417:
+							label414:
 							while (var17 > 0) {
 								for (var19 = var15; var19 <= var16; ++var19) {
-									if (0 == (field82[var17 - 1][var56][var19] & var8)) {
-										break label417;
+									if ((field82[var17 - 1][var56][var19] & var8) == 0) {
+										break label414;
 									}
 								}
 
 								--var17;
 							}
 
-							label406:
+							label403:
 							while (var18 < var11) {
 								for (var19 = var15; var19 <= var16; ++var19) {
 									if ((field82[var18 + 1][var56][var19] & var8) == 0) {
-										break label406;
+										break label403;
 									}
 								}
 
 								++var18;
 							}
 
-							var19 = (var16 - var15 + 1) * (var18 + 1 - var17);
+							var19 = (var18 + 1 - var17) * (var16 - var15 + 1);
 							if (var19 >= 8) {
 								var59 = 240;
 								var21 = var4[var18][var56][var15] - var59;
 								var22 = var4[var17][var56][var15];
-								var6.method5255(var11, 1, var56 * 128, var56 * 128, var15 * 128, 128 + var16 * 128, var21, var22);
+								var6.method5255(var11, 1, var56 * 128, var56 * 128, var15 * 128, var16 * 128 + 128, var21, var22);
 
 								for (var23 = var17; var23 <= var18; ++var23) {
 									for (var24 = var15; var24 <= var16; ++var24) {
@@ -1061,36 +1061,36 @@ public final class Class97 {
 							var16 = var56;
 							var17 = var54;
 
-							for (var18 = var54; var15 > 0 && 0 != (field82[var54][var15 - 1][var55] & var9); --var15) {
+							for (var18 = var54; var15 > 0 && (field82[var54][var15 - 1][var55] & var9) != 0; --var15) {
 							}
 
 							while (var16 < var2 && (field82[var54][var16 + 1][var55] & var9) != 0) {
 								++var16;
 							}
 
-							label470:
+							label467:
 							while (var17 > 0) {
 								for (var19 = var15; var19 <= var16; ++var19) {
 									if ((field82[var17 - 1][var19][var55] & var9) == 0) {
-										break label470;
+										break label467;
 									}
 								}
 
 								--var17;
 							}
 
-							label459:
+							label456:
 							while (var18 < var11) {
 								for (var19 = var15; var19 <= var16; ++var19) {
 									if ((field82[var18 + 1][var19][var55] & var9) == 0) {
-										break label459;
+										break label456;
 									}
 								}
 
 								++var18;
 							}
 
-							var19 = (1 + (var16 - var15)) * (var18 + 1 - var17);
+							var19 = (var18 + 1 - var17) * (var16 - var15 + 1);
 							if (var19 >= 8) {
 								var59 = 240;
 								var21 = var4[var18][var15][var55] - var59;
@@ -1111,38 +1111,38 @@ public final class Class97 {
 							var16 = var56;
 							var17 = var55;
 
-							for (var18 = var55; var17 > 0 && 0 != (field82[var54][var56][var17 - 1] & var10); --var17) {
+							for (var18 = var55; var17 > 0 && (field82[var54][var56][var17 - 1] & var10) != 0; --var17) {
 							}
 
 							while (var18 < var3 && (field82[var54][var56][var18 + 1] & var10) != 0) {
 								++var18;
 							}
 
-							label523:
+							label520:
 							while (var15 > 0) {
 								for (var19 = var17; var19 <= var18; ++var19) {
-									if (0 == (field82[var54][var15 - 1][var19] & var10)) {
-										break label523;
+									if ((field82[var54][var15 - 1][var19] & var10) == 0) {
+										break label520;
 									}
 								}
 
 								--var15;
 							}
 
-							label512:
+							label509:
 							while (var16 < var2) {
 								for (var19 = var17; var19 <= var18; ++var19) {
 									if ((field82[var54][var16 + 1][var19] & var10) == 0) {
-										break label512;
+										break label509;
 									}
 								}
 
 								++var16;
 							}
 
-							if ((1 + (var16 - var15)) * (1 + (var18 - var17)) >= 4) {
+							if ((var16 - var15 + 1) * (var18 - var17 + 1) >= 4) {
 								var19 = var4[var54][var15][var17];
-								var6.method5255(var11, 4, var15 * 128, 128 + var16 * 128, var17 * 128, 128 + var18 * 128, var19, var19);
+								var6.method5255(var11, 4, var15 * 128, var16 * 128 + 128, var17 * 128, var18 * 128 + 128, var19, var19);
 
 								for (var20 = var15; var20 <= var16; ++var20) {
 									for (var21 = var17; var21 <= var18; ++var21) {
@@ -1162,7 +1162,7 @@ public final class Class97 {
 	@ObfInfo(owner = "gb", name = "ah", desc = "(IIB)I", opaque = "13")
 	public static int method3351(int var0, int var1) {
 		int var3 = method6475(var0 + 45365, var1 + 91923, 4) - 128 + (method6475(var0 + 10294, var1 + 37821, 2) - 128 >> 1) + (method6475(var0, var1, 1) - 128 >> 2);
-		var3 = 35 + (int)((double)var3 * 0.3D);
+		var3 = (int)((double)var3 * 0.3D) + 35;
 		if (var3 < 10) {
 			var3 = 10;
 		} else if (var3 > 60) {
@@ -1190,7 +1190,7 @@ public final class Class97 {
 	@ObfInfo(owner = "mh", name = "ax", desc = "(IIIII)I")
 	public static int method6281(int var0, int var1, int var2, int var3) {
 		int var5 = 65536 - Class274.field2805[var2 * 1024 / var3] >> 1;
-		return (var5 * var1 >> 16) + ((65536 - var5) * var0 >> 16);
+		return ((65536 - var5) * var0 >> 16) + (var1 * var5 >> 16);
 	}
 
 	@ObfInfo(owner = "ca", name = "ac", desc = "(III)I")
@@ -1198,14 +1198,14 @@ public final class Class97 {
 		int var3 = method3597(var0 - 1, var1 - 1) + method3597(var0 + 1, var1 - 1) + method3597(var0 - 1, var1 + 1) + method3597(var0 + 1, var1 + 1);
 		int var4 = method3597(var0 - 1, var1) + method3597(var0 + 1, var1) + method3597(var0, var1 - 1) + method3597(var0, var1 + 1);
 		int var5 = method3597(var0, var1);
-		return var5 / 4 + var4 / 8 + var3 / 16;
+		return var5 / 4 + var3 / 16 + var4 / 8;
 	}
 
 	@ObfInfo(owner = "gv", name = "al", desc = "(III)I")
 	public static int method3597(int var0, int var1) {
-		int var3 = var0 + var1 * 57;
+		int var3 = var1 * 57 + var0;
 		var3 ^= var3 << 13;
-		int var4 = 1376312589 + (var3 * var3 * 15731 + 789221) * var3 & Integer.MAX_VALUE;
+		int var4 = (var3 * var3 * 15731 + 789221) * var3 + 1376312589 & Integer.MAX_VALUE;
 		return var4 >> 19 & 255;
 	}
 

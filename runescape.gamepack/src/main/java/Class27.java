@@ -21,9 +21,9 @@ public final class Class27 extends Class570 {
 	public Class27(int var1, int var2, Component var3, boolean var4) {
 		super.field5513 = var1;
 		super.field5512 = var2;
-		super.field5511 = new int[var2 * var1 + 1];
+		super.field5511 = new int[var1 * var2 + 1];
 		if (var4) {
-			super.field5510 = new float[var2 * var1 + 1];
+			super.field5510 = new float[var1 * var2 + 1];
 		}
 
 		DataBufferInt var5 = new DataBufferInt(super.field5511, super.field5511.length);

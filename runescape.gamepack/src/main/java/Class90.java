@@ -54,7 +54,7 @@ public class Class90 extends Class520 {
 				var3 = var4;
 			}
 
-			if (var3.field1083 + var3.field1088 + this.field1125.field2257 > var1) {
+			if (var3.field1088 + var3.field1083 + this.field1125.field2257 > var1) {
 				return var3;
 			} else {
 				var3.method9267();
@@ -79,7 +79,7 @@ public class Class90 extends Class520 {
 		int var5 = 1;
 
 		for (int var6 = 0; var6 < 4; ++var6) {
-			if (var0 != Class75.field901[var6]) {
+			if (Class75.field901[var6] != var0) {
 				var3[var5] = Class75.field901[var6];
 				var4[var5] = Class75.field900[var6];
 				++var5;

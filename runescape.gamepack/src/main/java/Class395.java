@@ -39,7 +39,7 @@ public class Class395 implements Class393 {
 
 		for (int var2 = 0; var2 < var0.length; ++var2) {
 			Class395 var3 = var0[var2];
-			if (null != field4605[var3.field4604]) {
+			if (field4605[var3.field4604] != null) {
 				throw new IllegalStateException();
 			}
 

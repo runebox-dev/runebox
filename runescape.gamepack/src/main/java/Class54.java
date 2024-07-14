@@ -32,7 +32,7 @@ public final class Class54 extends Class280 {
 		this.field390 = var3;
 		this.field386 = var4;
 		this.field387 = var5;
-		this.field383 = var7 + var6;
+		this.field383 = var6 + var7;
 		int var8 = Class188.method3600(this.field389).field2077;
 		if (var8 != -1) {
 			this.field382 = false;

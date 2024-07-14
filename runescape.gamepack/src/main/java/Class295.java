@@ -44,7 +44,7 @@ public class Class295 implements Class294 {
 
 	@ObfInfo(name = "aq", desc = "(I)I", opaque = "1461773364")
 	public int method5753() {
-		if (0 == this.field3044.length) {
+		if (this.field3044.length == 0) {
 			return 100;
 		} else {
 			int var2 = 0;

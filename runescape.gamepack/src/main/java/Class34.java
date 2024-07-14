@@ -102,8 +102,8 @@ public class Class34 {
 				var7 = var3.field2140;
 			}
 
-			int var8 = 128 * (var6 + var1);
-			int var9 = (var7 + var2) * 128;
+			int var8 = (var1 + var6) * 128;
+			int var9 = (var2 + var7) * 128;
 			var1 *= 128;
 			var2 *= 128;
 			int var10 = var3.field2169;
@@ -119,7 +119,7 @@ public class Class34 {
 			}
 
 			for (Class55 var14 = (Class55)Class55.field409.method7526(); var14 != null; var14 = (Class55)Class55.field409.method7511()) {
-				if (var0 == var14.field398 && var1 == var14.field395 && var14.field396 == var2 && var8 == var14.field397 && var9 == var14.field405 && var14.field401 == var10 && var11 == var14.field399 && var14.field400 == var12) {
+				if (var14.field398 == var0 && var14.field395 == var1 && var14.field396 == var2 && var14.field397 == var8 && var14.field405 == var9 && var14.field401 == var10 && var14.field399 == var11 && var14.field400 == var12) {
 					if (var14.field402 != null) {
 						Client.field2506.method925(var14.field402);
 						var14.field402 = null;

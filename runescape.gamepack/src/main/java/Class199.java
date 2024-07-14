@@ -113,7 +113,7 @@ public class Class199 extends Class516 {
 			}
 
 			Class278 var5;
-			if (1 == var2.length) {
+			if (var2.length == 1) {
 				var5 = var2[0];
 			} else {
 				var5 = new Class278(var2, var2.length);
@@ -141,7 +141,7 @@ public class Class199 extends Class516 {
 		boolean var2 = true;
 
 		for (int var3 = 0; var3 < 5; ++var3) {
-			if (-1 != this.field2197[var3] && !Client.field2189.method7134(this.field2197[var3], 0)) {
+			if (this.field2197[var3] != -1 && !Client.field2189.method7134(this.field2197[var3], 0)) {
 				var2 = false;
 			}
 		}

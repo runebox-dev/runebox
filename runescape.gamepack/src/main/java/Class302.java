@@ -65,7 +65,7 @@ public final class Class302 {
 					var6.field4993 = var12 / Client.field758;
 					var6.field4998 = var12 % Client.field758;
 					if (var8 != 0 || var9 != 0) {
-						var6.method8756(var8 + var6.field5004[0], var9 + var6.field4995[0], var10);
+						var6.method8756(var6.field5004[0] + var8, var6.field4995[0] + var9, var10);
 					}
 				}
 			}

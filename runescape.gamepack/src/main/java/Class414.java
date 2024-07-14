@@ -8,7 +8,7 @@ final class Class414 implements Comparator {
 
 	@ObfInfo(name = "aq", desc = "(Lpm;Lpm;I)I", opaque = "-1719899561")
 	public int method7641(Class403 var1, Class403 var2) {
-		return var1.field4649.field4662 < var2.field4649.field4662 ? -1 : (var2.field4649.field4662 == var1.field4649.field4662 ? 0 : 1);
+		return var1.field4649.field4662 < var2.field4649.field4662 ? -1 : (var1.field4649.field4662 == var2.field4649.field4662 ? 0 : 1);
 	}
 
 	public int compare(Object var1, Object var2) {

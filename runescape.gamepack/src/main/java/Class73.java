@@ -10,7 +10,7 @@ public class Class73 {
 	public int[][] field887;
 
 	public Class73(int var1, int var2) {
-		if (var2 != var1) {
+		if (var1 != var2) {
 			int var4 = var1;
 			int var5 = var2;
 			if (var2 > var1) {
@@ -32,13 +32,13 @@ public class Class73 {
 
 			for (int var7 = 0; var7 < var1; ++var7) {
 				int[] var8 = this.field887[var7];
-				double var9 = 6.0D + (double)var7 / (double)var1;
-				int var11 = (int)Math.floor(1.0D + (var9 - 7.0D));
+				double var9 = (double)var7 / (double)var1 + 6.0D;
+				int var11 = (int)Math.floor(var9 - 7.0D + 1.0D);
 				if (var11 < 0) {
 					var11 = 0;
 				}
 
-				int var12 = (int)Math.ceil(7.0D + var9);
+				int var12 = (int)Math.ceil(var9 + 7.0D);
 				if (var12 > 14) {
 					var12 = 14;
 				}
@@ -61,7 +61,7 @@ public class Class73 {
 	@ObfInfo(name = "aq", desc = "([BI)[B", opaque = "106816908")
 	public byte[] method2133(byte[] var1) {
 		if (this.field887 != null) {
-			int var3 = 14 + (int)((long)var1.length * (long)this.field886 / (long)this.field889);
+			int var3 = (int)((long)var1.length * (long)this.field886 / (long)this.field889) + 14;
 			int[] var4 = new int[var3];
 			int var5 = 0;
 			int var6 = 0;
@@ -73,19 +73,19 @@ public class Class73 {
 
 				int var10;
 				for (var10 = 0; var10 < 14; ++var10) {
-					var4[var10 + var5] += var9[var10] * var8;
+					var4[var5 + var10] += var9[var10] * var8;
 				}
 
 				var6 += this.field886;
 				var10 = var6 / this.field889;
 				var5 += var10;
-				var6 -= var10 * this.field889;
+				var6 -= this.field889 * var10;
 			}
 
 			var1 = new byte[var3];
 
 			for (var7 = 0; var7 < var3; ++var7) {
-				int var11 = 32768 + var4[var7] >> 16;
+				int var11 = var4[var7] + 32768 >> 16;
 				if (var11 < -128) {
 					var1[var7] = -128;
 				} else if (var11 > 127) {
@@ -111,7 +111,7 @@ public class Class73 {
 	@ObfInfo(name = "ag", desc = "(II)I", opaque = "-1471944245")
 	public int method2135(int var1) {
 		if (this.field887 != null) {
-			var1 = (int)((long)var1 * (long)this.field886 / (long)this.field889) + 6;
+			var1 = (int)((long)this.field886 * (long)var1 / (long)this.field889) + 6;
 		}
 
 		return var1;

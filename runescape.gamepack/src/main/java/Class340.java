@@ -37,7 +37,7 @@ public class Class340 extends Class354 {
 
 			int var11;
 			for (var11 = 0; var11 < var1 + 1; ++var11) {
-				var10[var11] = var0[var11] * (1.0F / var8);
+				var10[var11] = 1.0F / var8 * var0[var11];
 			}
 
 			while (Math.abs(var10[var1]) < var22) {
@@ -49,7 +49,7 @@ public class Class340 extends Class354 {
 				return var11;
 			} else if (var1 == 1) {
 				var6[0] = -var10[0] / var10[1];
-				boolean var23 = var3 ? var2 < var22 + var6[0] : var2 < var6[0] - var22;
+				boolean var23 = var3 ? var2 < var6[0] + var22 : var2 < var6[0] - var22;
 				boolean var24 = var5 ? var4 > var6[0] - var22 : var4 > var6[0] + var22;
 				var11 = var23 && var24 ? 1 : 0;
 				if (var11 > 0) {
@@ -66,7 +66,7 @@ public class Class340 extends Class354 {
 				float[] var13 = new float[var1 + 1];
 
 				for (int var14 = 1; var14 <= var1; ++var14) {
-					var13[var14 - 1] = (float)var14 * var10[var14];
+					var13[var14 - 1] = var10[var14] * (float)var14;
 				}
 
 				float[] var25 = new float[var1 + 1];
@@ -96,7 +96,7 @@ public class Class340 extends Class354 {
 							var19 = var18;
 						}
 
-						if (var21 == var15) {
+						if (var15 == var21) {
 							var20 = var4;
 							var16 = false;
 						} else {
@@ -107,14 +107,14 @@ public class Class340 extends Class354 {
 						if (var16) {
 							var16 = false;
 						} else if (Math.abs(var18) < var22) {
-							if (var21 != var15 || var5) {
+							if (var15 != var21 || var5) {
 								var6[var11++] = var20;
 								var16 = true;
 							}
 						} else if (var19 < 0.0F && var18 > 0.0F || var19 > 0.0F && var18 < 0.0F) {
 							var6[var11++] = Class77.method2226(var12, var17, var20, 0.0F);
 							if (var11 > 1 && var6[var11 - 2] >= var6[var11 - 1] - var22) {
-								var6[var11 - 2] = 0.5F * (var6[var11 - 1] + var6[var11 - 2]);
+								var6[var11 - 2] = (var6[var11 - 1] + var6[var11 - 2]) * 0.5F;
 								--var11;
 							}
 						}

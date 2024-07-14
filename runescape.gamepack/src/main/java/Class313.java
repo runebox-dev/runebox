@@ -63,7 +63,7 @@ public class Class313 implements Class331 {
 			} else if (var3.field2307 >= 0) {
 				var4 = Class80.method2297(Class274.field2803.field3081.method5739(var3.field2307), 96);
 				return Class274.field2806[var4] | -16777216;
-			} else if (16711935 == var3.field2309) {
+			} else if (var3.field2309 == 16711935) {
 				return var1;
 			} else {
 				var4 = Class279.method3837(var3.field2311, var3.field2310, var3.field2314);

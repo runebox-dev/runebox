@@ -143,18 +143,18 @@ public class Class445 {
 	@ObfInfo(owner = "db", name = "ak", desc = "([BB)V", opaque = "105")
 	public static void method2280(byte[] var0) {
 		synchronized(field4817) {
-			if (100 == var0.length && field4819 < field4831) {
+			if (var0.length == 100 && field4819 < field4831) {
 				field4827[++field4819 - 1] = var0;
-			} else if (5000 == var0.length && field4820 < field4824) {
+			} else if (var0.length == 5000 && field4820 < field4824) {
 				field4828[++field4820 - 1] = var0;
-			} else if (10000 == var0.length && field4821 < field4815) {
+			} else if (var0.length == 10000 && field4821 < field4815) {
 				field4818[++field4821 - 1] = var0;
 			} else if (var0.length == 30000 && field4822 < field4826) {
 				field4830[++field4822 - 1] = var0;
 			} else {
 				if (field1 != null) {
 					for (int var3 = 0; var3 < field1743.length; ++var3) {
-						if (var0.length == field1743[var3] && field4899[var3] < field1[var3].length) {
+						if (field1743[var3] == var0.length && field4899[var3] < field1[var3].length) {
 							field1[var3][field4899[var3]++] = var0;
 							return;
 						}

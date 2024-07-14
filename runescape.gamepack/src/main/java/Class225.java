@@ -31,7 +31,7 @@ public class Class225 extends Class221 {
 
 				for (int var3 = 0; var3 < var2.length; ++var3) {
 					char var4 = var2[var3];
-					if (var4 == var0) {
+					if (var0 == var4) {
 						return true;
 					}
 				}

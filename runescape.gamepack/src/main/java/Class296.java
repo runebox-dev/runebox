@@ -109,17 +109,17 @@ public class Class296 {
 				var18 = (field3046 - Class274.method5115()) * var15 / Class274.method5126();
 				var19 = (field3047 - Class274.method5120()) * var16 / Class274.method5126();
 				var20 = (field3046 - Class274.method5115()) * var16 / Class274.method5126();
-				int var22 = var18 * var6 + var15 * var5 >> 16;
+				int var22 = var5 * var15 + var6 * var18 >> 16;
 				var28 = Class304.method5080(var18, var15, var6, var5);
-				int var23 = var20 * var6 + var16 * var5 >> 16;
+				int var23 = var5 * var16 + var6 * var20 >> 16;
 				var16 = Class304.method5080(var20, var16, var6, var5);
-				int var24 = var17 * var8 - var28 * var7 >> 16;
-				int var25 = var17 * var7 + var28 * var8 >> 16;
-				int var26 = var19 * var8 - var16 * var7 >> 16;
-				int var27 = var16 * var8 + var19 * var7 >> 16;
-				field3049 = (var26 + var24) / 2;
-				field1642 = (var23 + var22) / 2;
-				field3051 = (var27 + var25) / 2;
+				int var24 = var8 * var17 - var7 * var28 >> 16;
+				int var25 = var7 * var17 + var8 * var28 >> 16;
+				int var26 = var8 * var19 - var7 * var16 >> 16;
+				int var27 = var7 * var19 + var8 * var16 >> 16;
+				field3049 = (var24 + var26) / 2;
+				field1642 = (var22 + var23) / 2;
+				field3051 = (var25 + var27) / 2;
 				field3738 = (var26 - var24) / 2;
 				field4853 = (var23 - var22) / 2;
 				field1378 = (var27 - var25) / 2;
@@ -130,7 +130,7 @@ public class Class296 {
 
 			Class261 var11 = (Class261)var0.field3188.get(var1);
 			int var12 = var11.field2706 + var2;
-			int var13 = var3 + var11.field2702;
+			int var13 = var11.field2702 + var3;
 			int var14 = var11.field2701 + var4;
 			var28 = var11.field2704;
 			var16 = var11.field2705;
@@ -140,23 +140,23 @@ public class Class296 {
 			var20 = field3051 - var14;
 			if (Math.abs(var18) > field3787 + var28) {
 				return false;
-			} else if (Math.abs(var19) > var16 + field2656) {
+			} else if (Math.abs(var19) > field2656 + var16) {
 				return false;
-			} else if (Math.abs(var20) > var17 + field4973) {
+			} else if (Math.abs(var20) > field4973 + var17) {
 				return false;
-			} else if (Math.abs(var20 * field4853 - var19 * field1378) > var16 * field4973 + field2656 * var17) {
+			} else if (Math.abs(field4853 * var20 - field1378 * var19) > field4973 * var16 + field2656 * var17) {
 				return false;
-			} else if (Math.abs(field1378 * var18 - var20 * field3738) > var28 * field4973 + field3787 * var17) {
+			} else if (Math.abs(field1378 * var18 - field3738 * var20) > field4973 * var28 + field3787 * var17) {
 				return false;
 			} else {
-				return Math.abs(var19 * field3738 - var18 * field4853) <= field2656 * var28 + field3787 * var16;
+				return Math.abs(field3738 * var19 - field4853 * var18) <= field3787 * var16 + field2656 * var28;
 			}
 		}
 	}
 
 	@ObfInfo(owner = "bd", name = "ae", desc = "(IIIIIIII)Z", opaque = "-1775223703")
 	public static boolean method435(int var0, int var1, int var2, int var3, int var4, int var5, int var6) {
-		int var8 = var6 + field3046;
+		int var8 = field3046 + var6;
 		if (var8 < var0 && var8 < var1 && var8 < var2) {
 			return false;
 		} else {

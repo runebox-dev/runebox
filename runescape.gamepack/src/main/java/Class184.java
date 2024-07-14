@@ -257,7 +257,7 @@ public class Class184 extends Class516 {
 				this.field1962 = new short[var5];
 
 				for (int var7 = 0; var7 < var5; ++var7) {
-					if (0 == (var4 & 1 << var7)) {
+					if ((var4 & 1 << var7) == 0) {
 						this.field1981[var7] = -1;
 						this.field1962[var7] = -1;
 					} else {
@@ -302,7 +302,7 @@ public class Class184 extends Class516 {
 				}
 
 				this.field1976 = var1.method9997();
-				if (65535 == this.field1976) {
+				if (this.field1976 == 65535) {
 					this.field1976 = -1;
 				}
 
@@ -319,7 +319,7 @@ public class Class184 extends Class516 {
 
 				for (var6 = 0; var6 <= var5; ++var6) {
 					this.field1966[var6] = var1.method9997();
-					if (65535 == this.field1966[var6]) {
+					if (this.field1966[var6] == 65535) {
 						this.field1966[var6] = -1;
 					}
 				}
@@ -348,7 +348,7 @@ public class Class184 extends Class516 {
 					return null;
 				}
 
-				var9 = var10.method5517(this.field1971 + 64, 850 + this.field1961, -30, -50, -30);
+				var9 = var10.method5517(this.field1971 + 64, this.field1961 + 850, -30, -50, -30);
 				field1940.method6330(var9, var7);
 			}
 
@@ -363,7 +363,7 @@ public class Class184 extends Class516 {
 				var11 = var9.method5933(true);
 			}
 
-			if (128 != this.field1968 || 128 != this.field1987) {
+			if (this.field1968 != 128 || this.field1987 != 128) {
 				var11.method5882(this.field1968, this.field1987, this.field1968);
 			}
 
@@ -394,7 +394,7 @@ public class Class184 extends Class516 {
 			boolean var5 = false;
 
 			for (int var6 = 0; var6 < var4.length; ++var6) {
-				if (-1 != var4[var6] && !Client.field1938.method7134(var4[var6], 0)) {
+				if (var4[var6] != -1 && !Client.field1938.method7134(var4[var6], 0)) {
 					var5 = true;
 				}
 			}
@@ -452,7 +452,7 @@ public class Class184 extends Class516 {
 		int var2 = -1;
 		if (this.field1975 != -1) {
 			var2 = Class353.method3359(this.field1975);
-		} else if (-1 != this.field1976) {
+		} else if (this.field1976 != -1) {
 			var2 = Class353.field3769[this.field1976];
 		}
 
@@ -491,7 +491,7 @@ public class Class184 extends Class516 {
 			}
 
 			if (var2 >= 0 && var2 < this.field1966.length) {
-				return -1 != this.field1966[var2];
+				return this.field1966[var2] != -1;
 			} else {
 				return this.field1966[this.field1966.length - 1] != -1;
 			}

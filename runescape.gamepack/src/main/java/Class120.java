@@ -11,7 +11,7 @@ public class Class120 extends Class475 {
 
 	@ObfInfo(name = "aq", desc = "(Lsh;Lsh;I)I", opaque = "1637037113")
 	public int method2973(Class476 var1, Class476 var2) {
-		if (var1.field4971 == Client.field525 && Client.field525 == var2.field4971) {
+		if (Client.field525 == var1.field4971 && Client.field525 == var2.field4971) {
 			return this.field1450 ? var1.method8693().method9799(var2.method8693()) : var2.method8693().method9799(var1.method8693());
 		} else {
 			return this.method8667(var1, var2);

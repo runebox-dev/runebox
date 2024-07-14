@@ -119,20 +119,20 @@ public class Class77 {
 
 					float var17 = Class153.field1723 * Math.abs(var2) + var3 * 0.5F;
 					float var18 = (var7 - var2) * 0.5F;
-					boolean var19 = Math.abs(var18) > var17 && 0.0F != var6;
+					boolean var19 = Math.abs(var18) > var17 && var6 != 0.0F;
 					if (var19) {
 						if (Math.abs(var9) >= var17 && Math.abs(var5) > Math.abs(var6)) {
 							float var13 = var6 / var5;
 							float var10;
 							float var11;
 							if (var1 == var7) {
-								var10 = var13 * var18 * 2.0F;
+								var10 = var18 * 2.0F * var13;
 								var11 = 1.0F - var13;
 							} else {
 								var11 = var5 / var14;
 								float var12 = var6 / var14;
-								var10 = var13 * ((var11 - var12) * 2.0F * var18 * var11 - (var2 - var1) * (var12 - 1.0F));
-								var11 = (var13 - 1.0F) * (var11 - 1.0F) * (var12 - 1.0F);
+								var10 = (var18 * 2.0F * var11 * (var11 - var12) - (var2 - var1) * (var12 - 1.0F)) * var13;
+								var11 = (var11 - 1.0F) * (var12 - 1.0F) * (var13 - 1.0F);
 							}
 
 							if ((double)var10 > 0.0D) {
@@ -143,7 +143,7 @@ public class Class77 {
 
 							var13 = var9;
 							var9 = var8;
-							if (var10 * 2.0F < 3.0F * var18 * var11 - Math.abs(var17 * var11) && var10 < Math.abs(var11 * 0.5F * var13)) {
+							if (var10 * 2.0F < var18 * 3.0F * var11 - Math.abs(var11 * var17) && var10 < Math.abs(var13 * 0.5F * var11)) {
 								var8 = var10 / var11;
 							} else {
 								var8 = var18;
@@ -182,7 +182,7 @@ public class Class77 {
 	@ObfInfo(name = "ok", desc = "(Ljava/lang/String;ZB)Ljava/lang/String;", opaque = "-2")
 	public static String method2225(String var0, boolean var1) {
 		String var3 = var1 ? "https://" : "http://";
-		if (1 == Client.field527) {
+		if (Client.field527 == 1) {
 			var0 = var0 + "-wtrc";
 		} else if (Client.field527 == 2) {
 			var0 = var0 + "-wtqa";

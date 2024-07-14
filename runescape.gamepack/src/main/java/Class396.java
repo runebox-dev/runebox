@@ -31,7 +31,7 @@ public class Class396 implements Iterator {
 	}
 
 	public boolean hasNext() {
-		return this.field4609 != this.field4608.field4667;
+		return this.field4608.field4667 != this.field4609;
 	}
 
 	public void remove() {

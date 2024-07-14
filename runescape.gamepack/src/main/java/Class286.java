@@ -102,9 +102,9 @@ public class Class286 extends Class520 {
 
 				for (var13 = 0; var13 < var9.length; ++var13) {
 					var14 = var9[var13];
-					if ((var14 & 65535) == var14 >> 8) {
+					if (var14 >> 8 == (var14 & 65535)) {
 						var14 &= 255;
-						var9[var13] = var14 * var11 >> 8 & 16711935 | var14 * var12 & 65280;
+						var9[var13] = var11 * var14 >> 8 & 16711935 | var12 * var14 & 65280;
 					}
 				}
 			}
@@ -129,7 +129,7 @@ public class Class286 extends Class520 {
 
 					for (var13 = 0; var13 < var3; ++var13) {
 						for (var14 = 0; var14 < var3; ++var14) {
-							this.field3014[var12++] = var9[var8[(var14 >> 1) + (var13 >> 1 << 6)] & 255];
+							this.field3014[var12++] = var9[var8[(var13 >> 1 << 6) + (var14 >> 1)] & 255];
 						}
 					}
 				} else {
@@ -141,7 +141,7 @@ public class Class286 extends Class520 {
 
 					for (var13 = 0; var13 < var3; ++var13) {
 						for (var14 = 0; var14 < var3; ++var14) {
-							this.field3014[var12++] = var9[var8[(var14 << 1) + (var13 << 1 << 7)] & 255];
+							this.field3014[var12++] = var9[var8[(var13 << 1 << 7) + (var14 << 1)] & 255];
 						}
 					}
 				}
@@ -187,14 +187,14 @@ public class Class286 extends Class520 {
 				}
 
 				var3 = this.field3014.length;
-				var4 = var2 * var1 * this.field3013;
+				var4 = var1 * var2 * this.field3013;
 				var5 = var3 - 1;
 				if (this.field3012 == 1) {
 					var4 = -var4;
 				}
 
 				for (var6 = 0; var6 < var3; ++var6) {
-					var7 = var6 + var4 & var5;
+					var7 = var4 + var6 & var5;
 					field3016[var6] = this.field3014[var7];
 				}
 
@@ -223,8 +223,8 @@ public class Class286 extends Class520 {
 
 				for (var6 = 0; var6 < var3; var6 += var2) {
 					for (var7 = 0; var7 < var2; ++var7) {
-						int var8 = var7 + var6;
-						int var9 = var6 + (var7 + var4 & var5);
+						int var8 = var6 + var7;
+						int var9 = (var4 + var7 & var5) + var6;
 						field3016[var8] = this.field3014[var9];
 					}
 				}

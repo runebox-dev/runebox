@@ -40,7 +40,7 @@ public class Class494 implements Runnable {
 						return;
 					}
 
-					if (0 == this.field5042) {
+					if (this.field5042 == 0) {
 						var1 = this.field5045 - this.field5043 - 1;
 					} else if (this.field5042 <= this.field5043) {
 						var1 = this.field5045 - this.field5043;
@@ -74,7 +74,7 @@ public class Class494 implements Runnable {
 			}
 
 			synchronized(this) {
-				this.field5043 = (var2 + this.field5043) % this.field5045;
+				this.field5043 = (this.field5043 + var2) % this.field5045;
 			}
 		}
 	}
@@ -89,7 +89,7 @@ public class Class494 implements Runnable {
 				if (this.field5042 <= this.field5043) {
 					var4 = this.field5043 - this.field5042;
 				} else {
-					var4 = this.field5043 + (this.field5045 - this.field5042);
+					var4 = this.field5045 - this.field5042 + this.field5043;
 				}
 
 				if (var4 < var1) {
@@ -115,7 +115,7 @@ public class Class494 implements Runnable {
 			if (this.field5042 <= this.field5043) {
 				var3 = this.field5043 - this.field5042;
 			} else {
-				var3 = this.field5043 + (this.field5045 - this.field5042);
+				var3 = this.field5045 - this.field5042 + this.field5043;
 			}
 
 			if (var3 <= 0 && this.field5044 != null) {
@@ -130,7 +130,7 @@ public class Class494 implements Runnable {
 	@ObfInfo(name = "ag", desc = "(I)I", opaque = "1875502007")
 	public int method8850() throws IOException {
 		synchronized(this) {
-			if (this.field5042 == this.field5043) {
+			if (this.field5043 == this.field5042) {
 				if (this.field5044 != null) {
 					throw new IOException(this.field5044.toString());
 				} else {
@@ -138,7 +138,7 @@ public class Class494 implements Runnable {
 				}
 			} else {
 				int var3 = this.field5040[this.field5042] & 255;
-				this.field5042 = (1 + this.field5042) % this.field5045;
+				this.field5042 = (this.field5042 + 1) % this.field5045;
 				this.notifyAll();
 				return var3;
 			}
@@ -147,13 +147,13 @@ public class Class494 implements Runnable {
 
 	@ObfInfo(name = "ak", desc = "([BIII)I", opaque = "-484263670")
 	public int method8853(byte[] var1, int var2, int var3) throws IOException {
-		if (var3 >= 0 && var2 >= 0 && var3 + var2 <= var1.length) {
+		if (var3 >= 0 && var2 >= 0 && var2 + var3 <= var1.length) {
 			synchronized(this) {
 				int var6;
 				if (this.field5042 <= this.field5043) {
 					var6 = this.field5043 - this.field5042;
 				} else {
-					var6 = this.field5043 + (this.field5045 - this.field5042);
+					var6 = this.field5045 - this.field5042 + this.field5043;
 				}
 
 				if (var3 > var6) {
@@ -163,12 +163,12 @@ public class Class494 implements Runnable {
 				if (var3 == 0 && this.field5044 != null) {
 					throw new IOException(this.field5044.toString());
 				} else {
-					if (var3 + this.field5042 <= this.field5045) {
+					if (this.field5042 + var3 <= this.field5045) {
 						System.arraycopy(this.field5040, this.field5042, var1, var2, var3);
 					} else {
 						int var7 = this.field5045 - this.field5042;
 						System.arraycopy(this.field5040, this.field5042, var1, var2, var7);
-						System.arraycopy(this.field5040, 0, var1, var7 + var2, var3 - var7);
+						System.arraycopy(this.field5040, 0, var1, var2 + var7, var3 - var7);
 					}
 
 					this.field5042 = (this.field5042 + var3) % this.field5045;

@@ -50,19 +50,19 @@ public class Class24 {
 
 	@ObfInfo(name = "ob", desc = "(IIIILvg;Lnw;I)V", opaque = "296381346")
 	public static void method323(int var0, int var1, int var2, int var3, Class553 var4, Class361 var5) {
-		int var7 = var3 * var3 + var2 * var2;
+		int var7 = var2 * var2 + var3 * var3;
 		if (var7 > 4225 && var7 < 90000) {
 			int var8 = Client.field615 & 2047;
 			int var9 = Class274.field2804[var8];
 			int var10 = Class274.field2805[var8];
-			int var11 = var10 * var2 + var9 * var3 >> 16;
-			int var12 = var10 * var3 - var9 * var2 >> 16;
+			int var11 = var2 * var10 + var3 * var9 >> 16;
+			int var12 = var3 * var10 - var2 * var9 >> 16;
 			double var13 = Math.atan2((double)var11, (double)var12);
 			int var15 = var5.field3798 / 2 - 25;
 			int var16 = (int)(Math.sin(var13) * (double)var15);
 			int var17 = (int)(Math.cos(var13) * (double)var15);
 			byte var18 = 20;
-			Client.field961.method9624(var16 + (var5.field3798 / 2 + var0 - var18 / 2), var1 + var5.field3799 / 2 - var18 / 2 - var17 - 10, var18, var18, 15, 15, var13, 256);
+			Client.field961.method9624(var5.field3798 / 2 + var0 - var18 / 2 + var16, var5.field3799 / 2 + var1 - var18 / 2 - var17 - 10, var18, var18, 15, 15, var13, 256);
 		} else {
 			Client.method7321(var0, var1, var2, var3, var4, var5);
 		}

@@ -59,7 +59,7 @@ public final class Class55 extends Class520 {
 			this.field406 = null;
 		}
 
-		if (var2 != this.field401 && this.field402 != null) {
+		if (this.field401 != var2 && this.field402 != null) {
 			Client.field2506.method925(this.field402);
 			this.field402 = null;
 		}
@@ -106,8 +106,8 @@ public final class Class55 extends Class520 {
 			var8 = var3.field2140;
 		}
 
-		var6.field397 = 128 * (var7 + var1);
-		var6.field405 = 128 * (var8 + var2);
+		var6.field397 = (var1 + var7) * 128;
+		var6.field405 = (var2 + var8) * 128;
 		var6.field401 = var3.field2169;
 		var6.field399 = var3.field2170 * 128;
 		var6.field400 = Math.max(var3.field2171 * 128 - 128, 0);
@@ -144,7 +144,7 @@ public final class Class55 extends Class520 {
 				}
 
 				var6 = Math.max(var6 - 64, 0);
-				if (var6 < var5.field399 && Client.field1474.method2508() != 0 && var0 == var5.field398) {
+				if (var6 < var5.field399 && Client.field1474.method2508() != 0 && var5.field398 == var0) {
 					float var7 = var5.field400 < var5.field399 ? Math.min(Math.max((float)(var5.field399 - var6) / (float)(var5.field399 - var5.field400), 0.0F), 1.0F) : 1.0F;
 					int var8 = (int)(var7 * (float)Client.field1474.method2508());
 					if (var5.field402 == null) {

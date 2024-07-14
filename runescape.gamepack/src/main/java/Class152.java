@@ -60,7 +60,7 @@ public class Class152 {
 		this.field1718 = new float[this.field1716.length][3];
 		Class423 var2;
 		synchronized(Class423.field4698) {
-			if (0 == Class423.field4700) {
+			if (Class423.field4700 == 0) {
 				var2 = new Class423();
 			} else {
 				Class423.field4698[--Class423.field4700].method7740();
@@ -89,7 +89,7 @@ public class Class152 {
 
 	@ObfInfo(name = "ag", desc = "(II)Lqg;", opaque = "829200770")
 	public Class423 method3297(int var1) {
-		if (null == this.field1709[var1]) {
+		if (this.field1709[var1] == null) {
 			this.field1709[var1] = new Class423(this.method3256(var1));
 			if (this.field1714 != null) {
 				this.field1709[var1].method7736(this.field1714.method3297(var1));
@@ -103,7 +103,7 @@ public class Class152 {
 
 	@ObfInfo(name = "ak", desc = "(IB)Lqg;", opaque = "0")
 	public Class423 method3260(int var1) {
-		if (null == this.field1710[var1]) {
+		if (this.field1710[var1] == null) {
 			this.field1710[var1] = new Class423(this.method3297(var1));
 			this.field1710[var1].method7741();
 		}

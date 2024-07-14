@@ -112,7 +112,7 @@ public class Class220 {
 		Class562 var2 = new Class562(var0);
 		int var3 = var2.method9902();
 		int var4 = var2.method9832();
-		if (var4 < 0 || 0 != Class375.field4461 && var4 > Class375.field4461) {
+		if (var4 < 0 || Class375.field4461 != 0 && var4 > Class375.field4461) {
 			throw new RuntimeException();
 		} else if (var3 == 0) {
 			byte[] var7 = new byte[var4];

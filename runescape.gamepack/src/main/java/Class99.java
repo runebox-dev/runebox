@@ -82,7 +82,7 @@ public class Class99 extends Class520 {
 		Client.field796 = var0.field912;
 		Client.field4657 = var0.field903;
 		Client.field1939 = Client.field527 == 0 ? 43594 : var0.field902 + 40000;
-		Client.field159 = 0 == Client.field527 ? 443 : 50000 + var0.field902;
+		Client.field159 = Client.field527 == 0 ? 443 : var0.field902 + 50000;
 		Client.field1853 = Client.field1939;
 	}
 }

@@ -64,7 +64,7 @@ public class Class222 {
 
 	@ObfInfo(name = "ak", desc = "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V", opaque = "1216623612")
 	public void method4289(String var1, String var2, String var3) {
-		if (2 != this.field2419) {
+		if (this.field2419 != 2) {
 			this.field2416 = var1;
 			this.field2422 = var2;
 			this.field2409 = var3;
@@ -96,7 +96,7 @@ public class Class222 {
 	@ObfInfo(name = "ap", desc = "(B)V", opaque = "6")
 	public void method4271() {
 		if (this.field2413 == null) {
-			if (!this.field2410.isEmpty() && 1 == this.field2419) {
+			if (!this.field2410.isEmpty() && this.field2419 == 1) {
 				long var2 = Class329.method4953();
 				long var4 = var2 - this.field2411;
 				String var6 = this.field2416;

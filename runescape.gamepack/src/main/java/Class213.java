@@ -38,7 +38,7 @@ public class Class213 extends Class516 {
 
 	@ObfInfo(name = "ad", desc = "(I)V", opaque = "2009375911")
 	public void method4073() {
-		if (-1 != this.field2313) {
+		if (this.field2313 != -1) {
 			this.method4083(this.field2313);
 			this.field2316 = this.field2311;
 			this.field2317 = this.field2310;
@@ -103,7 +103,7 @@ public class Class213 extends Class516 {
 		double var17 = (var9 + var11) / 2.0D;
 		if (var9 != var11) {
 			if (var17 < 0.5D) {
-				var15 = (var11 - var9) / (var11 + var9);
+				var15 = (var11 - var9) / (var9 + var11);
 			}
 
 			if (var17 >= 0.5D) {
@@ -112,16 +112,16 @@ public class Class213 extends Class516 {
 
 			if (var3 == var11) {
 				var13 = (var5 - var7) / (var11 - var9);
-			} else if (var11 == var5) {
+			} else if (var5 == var11) {
 				var13 = (var7 - var3) / (var11 - var9) + 2.0D;
 			} else if (var7 == var11) {
-				var13 = 4.0D + (var3 - var5) / (var11 - var9);
+				var13 = (var3 - var5) / (var11 - var9) + 4.0D;
 			}
 		}
 
 		var13 /= 6.0D;
-		this.field2311 = (int)(256.0D * var13);
-		this.field2310 = (int)(256.0D * var15);
+		this.field2311 = (int)(var13 * 256.0D);
+		this.field2310 = (int)(var15 * 256.0D);
 		this.field2314 = (int)(var17 * 256.0D);
 		if (this.field2310 < 0) {
 			this.field2310 = 0;

@@ -94,7 +94,7 @@ public class Class282 {
 			}
 		}
 
-		if (var4.field5471 != var1.length) {
+		if (var1.length != var4.field5471) {
 			throw new RuntimeException();
 		} else {
 			this.field2973 = var7;

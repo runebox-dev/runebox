@@ -15,7 +15,7 @@ public final class Class539 {
 	public final long field5304;
 
 	public Class539(File var1, String var2, long var3) throws IOException {
-		if (-1L == var3) {
+		if (var3 == -1L) {
 			var3 = Long.MAX_VALUE;
 		}
 
@@ -43,7 +43,7 @@ public final class Class539 {
 
 	@ObfInfo(name = "ad", desc = "([BIII)V", opaque = "-961764304")
 	public final void method9486(byte[] var1, int var2, int var3) throws IOException {
-		if (this.field5303 + (long)var3 > this.field5304) {
+		if ((long)var3 + this.field5303 > this.field5304) {
 			this.field5305.seek(this.field5304);
 			this.field5305.write(1);
 			throw new EOFException();

@@ -31,12 +31,12 @@ public class Class209 {
 	@ObfInfo(name = "bc", desc = "(Lnx;IIB)V", opaque = "0")
 	public static void method4041(Class362 var0, int var1, int var2) {
 		Class343 var4 = var0.field3820;
-		boolean var5 = var2 != var4.field3720;
+		boolean var5 = var4.field3720 != var2;
 		var4.field3720 = var2;
 		if (var5) {
 			int var6;
 			int var7;
-			if (var1 == var4.field3720) {
+			if (var4.field3720 == var1) {
 				for (var6 = 0; var6 < Class343.field3722.length; ++var6) {
 					var7 = Class343.field3722[var6];
 					if (var4.field3717[var7] > 0 && var4.field3717[var7] < 512) {
@@ -44,18 +44,18 @@ public class Class209 {
 					}
 				}
 			} else {
-				label67: {
+				label68: {
 					if (var4.field3717[0] >= 512) {
 						boolean var8;
 						if (var4.field3717[0] < 512) {
 							var8 = false;
 						} else {
 							Class187 var9 = Class187.method3421(var4.field3717[0] - 512);
-							var8 = var9.field2021 != Class212.field2292.field2296 && Class212.field2292.field2296 != var9.field2029;
+							var8 = Class212.field2292.field2296 != var9.field2021 && Class212.field2292.field2296 != var9.field2029;
 						}
 
 						if (!var8) {
-							break label67;
+							break label68;
 						}
 					}
 

@@ -14,7 +14,7 @@ public class Class257 extends Class245 {
 	@ObfInfo(name = "aq", desc = "(Lvp;I)V", opaque = "1851595354")
 	public void method4950(Class562 var1) {
 		int var3 = var1.method9902();
-		if (var3 != Class265.field2730.field2728) {
+		if (Class265.field2730.field2728 != var3) {
 			throw new IllegalStateException("");
 		} else {
 			super.field2570 = var1.method9902();
@@ -48,7 +48,7 @@ public class Class257 extends Class245 {
 			int var5 = var1.method9902();
 			int var6 = var1.method9902();
 			int var7 = var1.method9902();
-			if (super.field2568 == var4 && var5 == super.field2569 && var6 == this.field2678 && this.field2677 == var7) {
+			if (super.field2568 == var4 && super.field2569 == var5 && this.field2678 == var6 && this.field2677 == var7) {
 				for (int var8 = 0; var8 < 8; ++var8) {
 					for (int var9 = 0; var9 < 8; ++var9) {
 						this.method4696(this.field2678 * 8 + var8, this.field2677 * 8 + var9, var1);
@@ -67,7 +67,7 @@ public class Class257 extends Class245 {
 		} else {
 			Class257 var2 = (Class257)var1;
 			if (super.field2568 == var2.field2568 && super.field2569 == var2.field2569) {
-				return var2.field2678 == this.field2678 && this.field2677 == var2.field2677;
+				return this.field2678 == var2.field2678 && this.field2677 == var2.field2677;
 			} else {
 				return false;
 			}

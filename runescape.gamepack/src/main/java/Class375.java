@@ -189,7 +189,7 @@ public abstract class Class375 {
 	@ObfInfo(name = "bk", desc = "(II[II)[B", opaque = "297029910")
 	public byte[] method7170(int var1, int var2, int[] var3) {
 		if (var1 >= 0 && var1 < this.field4456.length && this.field4456[var1] != null && var2 >= 0 && var2 < this.field4456[var1].length) {
-			if (null == this.field4456[var1][var2]) {
+			if (this.field4456[var1][var2] == null) {
 				boolean var5 = this.method7149(var1, var3);
 				if (!var5) {
 					this.method7142(var1);
@@ -229,7 +229,7 @@ public abstract class Class375 {
 
 	@ObfInfo(name = "bf", desc = "(II)Z", opaque = "-1123318939")
 	public boolean method7135(int var1) {
-		if (1 == this.field4456.length) {
+		if (this.field4456.length == 1) {
 			return this.method7134(0, var1);
 		} else if (this.field4456[var1].length == 1) {
 			return this.method7134(var1, 0);
@@ -244,7 +244,7 @@ public abstract class Class375 {
 			return true;
 		} else {
 			this.method7142(var1);
-			return null != this.field4451[var1];
+			return this.field4451[var1] != null;
 		}
 	}
 
@@ -254,7 +254,7 @@ public abstract class Class375 {
 
 		for (int var3 = 0; var3 < this.field4446.length; ++var3) {
 			int var4 = this.field4446[var3];
-			if (null == this.field4451[var4]) {
+			if (this.field4451[var4] == null) {
 				this.method7142(var4);
 				if (this.field4451[var4] == null) {
 					var2 = false;
@@ -267,14 +267,14 @@ public abstract class Class375 {
 
 	@ObfInfo(name = "ai", desc = "(II)I", opaque = "1114547636")
 	public int method7138(int var1) {
-		return null != this.field4451[var1] ? 100 : 0;
+		return this.field4451[var1] != null ? 100 : 0;
 	}
 
 	@ObfInfo(name = "cl", desc = "(IB)[B", opaque = "2")
 	public byte[] method7139(int var1) {
 		if (this.field4456.length == 1) {
 			return this.method7132(0, var1);
-		} else if (1 == this.field4456[var1].length) {
+		} else if (this.field4456[var1].length == 1) {
 			return this.method7132(var1, 0);
 		} else {
 			throw new RuntimeException();
@@ -283,7 +283,7 @@ public abstract class Class375 {
 
 	@ObfInfo(name = "cm", desc = "(III)[B", opaque = "-704664860")
 	public byte[] method7140(int var1, int var2) {
-		if (var1 >= 0 && var1 < this.field4456.length && null != this.field4456[var1] && var2 >= 0 && var2 < this.field4456[var1].length) {
+		if (var1 >= 0 && var1 < this.field4456.length && this.field4456[var1] != null && var2 >= 0 && var2 < this.field4456[var1].length) {
 			if (this.field4456[var1][var2] == null) {
 				boolean var4 = this.method7149(var1, (int[])null);
 				if (!var4) {
@@ -306,7 +306,7 @@ public abstract class Class375 {
 	public byte[] method7157(int var1) {
 		if (this.field4456.length == 1) {
 			return this.method7140(0, var1);
-		} else if (1 == this.field4456[var1].length) {
+		} else if (this.field4456[var1].length == 1) {
 			return this.method7140(var1, 0);
 		} else {
 			throw new RuntimeException();
@@ -351,7 +351,7 @@ public abstract class Class375 {
 	@ObfInfo(name = "ct", desc = "(B)V", opaque = "0")
 	public void method7194() {
 		for (int var2 = 0; var2 < this.field4456.length; ++var2) {
-			if (null != this.field4456[var2]) {
+			if (this.field4456[var2] != null) {
 				for (int var3 = 0; var3 < this.field4456[var2].length; ++var3) {
 					this.field4456[var2][var3] = null;
 				}
@@ -362,7 +362,7 @@ public abstract class Class375 {
 
 	@ObfInfo(name = "cd", desc = "(I[IB)Z", opaque = "30")
 	public boolean method7149(int var1, int[] var2) {
-		if (null == this.field4451[var1]) {
+		if (this.field4451[var1] == null) {
 			return false;
 		} else {
 			int var4 = this.field4459[var1];
@@ -371,7 +371,7 @@ public abstract class Class375 {
 			boolean var7 = true;
 
 			for (int var8 = 0; var8 < var4; ++var8) {
-				if (null == var6[var5[var8]]) {
+				if (var6[var5[var8]] == null) {
 					var7 = false;
 					break;
 				}
@@ -381,7 +381,7 @@ public abstract class Class375 {
 				return true;
 			} else {
 				byte[] var19;
-				if (var2 == null || 0 == var2[0] && 0 == var2[1] && var2[2] == 0 && 0 == var2[3]) {
+				if (var2 == null || var2[0] == 0 && var2[1] == 0 && var2[2] == 0 && var2[3] == 0) {
 					var19 = Class354.method5832(this.field4451[var1], false);
 				} else {
 					var19 = Class354.method5832(this.field4451[var1], true);
@@ -398,7 +398,7 @@ public abstract class Class375 {
 					int var10 = var20.length;
 					--var10;
 					int var11 = var20[var10] & 255;
-					var10 -= var11 * var4 * 4;
+					var10 -= var4 * var11 * 4;
 					Class562 var12 = new Class562(var20);
 					int[] var13 = new int[var4];
 					var12.field5471 = var10;

@@ -79,7 +79,7 @@ public abstract class Class285 extends Class569 {
 
 	@ObfInfo(name = "ag", desc = "(II)I")
 	public static int method5683(int var0, int var1) {
-		var1 = var1 * (var0 & 127) >> 7;
+		var1 = (var0 & 127) * var1 >> 7;
 		if (var1 < 2) {
 			var1 = 2;
 		} else if (var1 > 126) {

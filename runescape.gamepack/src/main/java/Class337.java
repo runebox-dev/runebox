@@ -25,8 +25,8 @@ public class Class337 {
 
 	@ObfInfo(owner = "cw", name = "ad", desc = "(II)I")
 	public static int method2219(int var0) {
-		var0 = (var0 & 1431655765) + (var0 >>> 1 & 1431655765);
-		var0 = (var0 & 858993459) + (var0 >>> 2 & 858993459);
+		var0 = (var0 >>> 1 & 1431655765) + (var0 & 1431655765);
+		var0 = (var0 >>> 2 & 858993459) + (var0 & 858993459);
 		var0 = (var0 >>> 4) + var0 & 252645135;
 		var0 += var0 >>> 8;
 		var0 += var0 >>> 16;
@@ -42,7 +42,7 @@ public class Class337 {
 
 	@ObfInfo(owner = "gp", name = "ak", desc = "(IIIS)I")
 	public static int method3554(int var0, int var1, int var2) {
-		int var4 = method1146(1 + (var2 - var1));
+		int var4 = method1146(var2 - var1 + 1);
 		var4 <<= var1;
 		var0 |= var4;
 		return var0;
@@ -103,7 +103,7 @@ public class Class337 {
 			++var2;
 		}
 
-		return var2 + var0;
+		return var0 + var2;
 	}
 
 	@ObfInfo(owner = "ds", name = "aj", desc = "(III)I", opaque = "-760747244")
@@ -120,7 +120,7 @@ public class Class337 {
 	@ObfInfo(owner = "hv", name = "av", desc = "(III)I")
 	public static int method4003(int var0, int var1) {
 		int var3 = var0 >>> 31;
-		return (var3 + var0) / var1 - var3;
+		return (var0 + var3) / var1 - var3;
 	}
 
 	@ObfInfo(owner = "fx", name = "ab", desc = "(IIII)I", opaque = "747669371")

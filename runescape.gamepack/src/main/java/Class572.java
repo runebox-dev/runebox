@@ -66,7 +66,7 @@ public class Class572 {
 
 			byte[] var10;
 			while (true) {
-				int var16 = var14 + var13;
+				int var16 = var13 + var14;
 				if (var16 >= var7.length()) {
 					var10 = null;
 					break;

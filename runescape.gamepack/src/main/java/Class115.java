@@ -67,7 +67,7 @@ public class Class115 {
 		if (var2 == null) {
 			return -1;
 		} else {
-			return var2.field5158 == field1429.field4667 ? -1 : ((Class63)var2.field5158).field481;
+			return field1429.field4667 == var2.field5158 ? -1 : ((Class63)var2.field5158).field481;
 		}
 	}
 

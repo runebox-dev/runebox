@@ -649,7 +649,7 @@ public class Class217 extends Class516 {
 				} else {
 					if (field1692 == null) {
 						field1686 = Runtime.getRuntime().availableProcessors();
-						field1692 = new ThreadPoolExecutor(0, field1686, 0L, TimeUnit.MILLISECONDS, new ArrayBlockingQueue(100 + field1686 * 100), new Class171());
+						field1692 = new ThreadPoolExecutor(0, field1686, 0L, TimeUnit.MILLISECONDS, new ArrayBlockingQueue(field1686 * 100 + 100), new Class171());
 					}
 
 					try {

@@ -55,11 +55,11 @@ public final class Class423 {
 			var4.method8116(var6);
 			int var10 = var1.method9829();
 			var10 &= 16383;
-			float var9 = (float)(6.283185307179586D * (double)((float)var10 / 16384.0F));
+			float var9 = (float)((double)((float)var10 / 16384.0F) * 6.283185307179586D);
 			var4.method8126(var9);
 			int var13 = var1.method9829();
 			var13 &= 16383;
-			float var12 = (float)(6.283185307179586D * (double)((float)var13 / 16384.0F));
+			float var12 = (float)((double)((float)var13 / 16384.0F) * 6.283185307179586D);
 			var4.method8118(var12);
 			var4.method8119((float)var1.method9829(), (float)var1.method9829(), (float)var1.method9829());
 			this.method7739(var4);
@@ -185,22 +185,22 @@ public final class Class423 {
 
 	@ObfInfo(name = "ah", desc = "(Lqg;I)V")
 	public void method7736(Class423 var1) {
-		float var3 = this.field4703[0] * var1.field4703[0] + this.field4703[1] * var1.field4703[4] + var1.field4703[8] * this.field4703[2] + this.field4703[3] * var1.field4703[12];
-		float var4 = this.field4703[3] * var1.field4703[13] + var1.field4703[5] * this.field4703[1] + var1.field4703[1] * this.field4703[0] + var1.field4703[9] * this.field4703[2];
-		float var5 = var1.field4703[2] * this.field4703[0] + this.field4703[1] * var1.field4703[6] + this.field4703[2] * var1.field4703[10] + var1.field4703[14] * this.field4703[3];
-		float var6 = var1.field4703[3] * this.field4703[0] + var1.field4703[7] * this.field4703[1] + var1.field4703[11] * this.field4703[2] + var1.field4703[15] * this.field4703[3];
-		float var7 = this.field4703[6] * var1.field4703[8] + var1.field4703[0] * this.field4703[4] + var1.field4703[4] * this.field4703[5] + this.field4703[7] * var1.field4703[12];
-		float var8 = var1.field4703[13] * this.field4703[7] + this.field4703[6] * var1.field4703[9] + var1.field4703[5] * this.field4703[5] + var1.field4703[1] * this.field4703[4];
-		float var9 = this.field4703[7] * var1.field4703[14] + var1.field4703[10] * this.field4703[6] + this.field4703[5] * var1.field4703[6] + this.field4703[4] * var1.field4703[2];
-		float var10 = this.field4703[7] * var1.field4703[15] + this.field4703[5] * var1.field4703[7] + var1.field4703[3] * this.field4703[4] + var1.field4703[11] * this.field4703[6];
-		float var11 = this.field4703[10] * var1.field4703[8] + var1.field4703[0] * this.field4703[8] + var1.field4703[4] * this.field4703[9] + var1.field4703[12] * this.field4703[11];
-		float var12 = var1.field4703[9] * this.field4703[10] + this.field4703[8] * var1.field4703[1] + var1.field4703[5] * this.field4703[9] + this.field4703[11] * var1.field4703[13];
-		float var13 = var1.field4703[10] * this.field4703[10] + var1.field4703[6] * this.field4703[9] + this.field4703[8] * var1.field4703[2] + var1.field4703[14] * this.field4703[11];
-		float var14 = this.field4703[11] * var1.field4703[15] + var1.field4703[7] * this.field4703[9] + var1.field4703[3] * this.field4703[8] + var1.field4703[11] * this.field4703[10];
-		float var15 = var1.field4703[8] * this.field4703[14] + var1.field4703[0] * this.field4703[12] + var1.field4703[4] * this.field4703[13] + this.field4703[15] * var1.field4703[12];
-		float var16 = this.field4703[14] * var1.field4703[9] + var1.field4703[1] * this.field4703[12] + var1.field4703[5] * this.field4703[13] + this.field4703[15] * var1.field4703[13];
-		float var17 = var1.field4703[14] * this.field4703[15] + this.field4703[14] * var1.field4703[10] + this.field4703[13] * var1.field4703[6] + this.field4703[12] * var1.field4703[2];
-		float var18 = var1.field4703[15] * this.field4703[15] + this.field4703[14] * var1.field4703[11] + var1.field4703[7] * this.field4703[13] + this.field4703[12] * var1.field4703[3];
+		float var3 = this.field4703[3] * var1.field4703[12] + this.field4703[2] * var1.field4703[8] + this.field4703[0] * var1.field4703[0] + this.field4703[1] * var1.field4703[4];
+		float var4 = this.field4703[3] * var1.field4703[13] + this.field4703[2] * var1.field4703[9] + this.field4703[1] * var1.field4703[5] + this.field4703[0] * var1.field4703[1];
+		float var5 = this.field4703[3] * var1.field4703[14] + this.field4703[2] * var1.field4703[10] + this.field4703[0] * var1.field4703[2] + this.field4703[1] * var1.field4703[6];
+		float var6 = this.field4703[3] * var1.field4703[15] + this.field4703[2] * var1.field4703[11] + this.field4703[0] * var1.field4703[3] + this.field4703[1] * var1.field4703[7];
+		float var7 = this.field4703[7] * var1.field4703[12] + this.field4703[6] * var1.field4703[8] + this.field4703[4] * var1.field4703[0] + this.field4703[5] * var1.field4703[4];
+		float var8 = this.field4703[7] * var1.field4703[13] + this.field4703[6] * var1.field4703[9] + this.field4703[5] * var1.field4703[5] + this.field4703[4] * var1.field4703[1];
+		float var9 = this.field4703[7] * var1.field4703[14] + this.field4703[6] * var1.field4703[10] + this.field4703[5] * var1.field4703[6] + this.field4703[4] * var1.field4703[2];
+		float var10 = this.field4703[7] * var1.field4703[15] + this.field4703[6] * var1.field4703[11] + this.field4703[5] * var1.field4703[7] + this.field4703[4] * var1.field4703[3];
+		float var11 = this.field4703[11] * var1.field4703[12] + this.field4703[10] * var1.field4703[8] + this.field4703[8] * var1.field4703[0] + this.field4703[9] * var1.field4703[4];
+		float var12 = this.field4703[11] * var1.field4703[13] + this.field4703[10] * var1.field4703[9] + this.field4703[8] * var1.field4703[1] + this.field4703[9] * var1.field4703[5];
+		float var13 = this.field4703[11] * var1.field4703[14] + this.field4703[10] * var1.field4703[10] + this.field4703[9] * var1.field4703[6] + this.field4703[8] * var1.field4703[2];
+		float var14 = this.field4703[11] * var1.field4703[15] + this.field4703[10] * var1.field4703[11] + this.field4703[9] * var1.field4703[7] + this.field4703[8] * var1.field4703[3];
+		float var15 = this.field4703[15] * var1.field4703[12] + this.field4703[14] * var1.field4703[8] + this.field4703[12] * var1.field4703[0] + this.field4703[13] * var1.field4703[4];
+		float var16 = this.field4703[15] * var1.field4703[13] + this.field4703[14] * var1.field4703[9] + this.field4703[12] * var1.field4703[1] + this.field4703[13] * var1.field4703[5];
+		float var17 = this.field4703[15] * var1.field4703[14] + this.field4703[14] * var1.field4703[10] + this.field4703[13] * var1.field4703[6] + this.field4703[12] * var1.field4703[2];
+		float var18 = this.field4703[15] * var1.field4703[15] + this.field4703[14] * var1.field4703[11] + this.field4703[13] * var1.field4703[7] + this.field4703[12] * var1.field4703[3];
 		this.field4703[0] = var3;
 		this.field4703[1] = var4;
 		this.field4703[2] = var5;
@@ -223,23 +223,23 @@ public final class Class423 {
 	public void method7737(Class421 var1) {
 		float var3 = var1.field4688.field4710 * var1.field4688.field4710;
 		float var4 = var1.field4688.field4710 * var1.field4688.field4707;
-		float var5 = var1.field4688.field4708 * var1.field4688.field4710;
+		float var5 = var1.field4688.field4710 * var1.field4688.field4708;
 		float var6 = var1.field4688.field4710 * var1.field4688.field4704;
 		float var7 = var1.field4688.field4707 * var1.field4688.field4707;
 		float var8 = var1.field4688.field4708 * var1.field4688.field4707;
-		float var9 = var1.field4688.field4704 * var1.field4688.field4707;
+		float var9 = var1.field4688.field4707 * var1.field4688.field4704;
 		float var10 = var1.field4688.field4708 * var1.field4688.field4708;
-		float var11 = var1.field4688.field4704 * var1.field4688.field4708;
+		float var11 = var1.field4688.field4708 * var1.field4688.field4704;
 		float var12 = var1.field4688.field4704 * var1.field4688.field4704;
-		this.field4703[0] = var7 + var3 - var12 - var10;
-		this.field4703[1] = var6 + var8 + var6 + var8;
+		this.field4703[0] = var3 + var7 - var12 - var10;
+		this.field4703[1] = var6 + var8 + var8 + var6;
 		this.field4703[2] = var9 - var5 - var5 + var9;
-		this.field4703[4] = var8 + (var8 - var6 - var6);
-		this.field4703[5] = var10 + var3 - var7 - var12;
+		this.field4703[4] = var8 - var6 - var6 + var8;
+		this.field4703[5] = var3 + var10 - var7 - var12;
 		this.field4703[6] = var4 + var11 + var11 + var4;
-		this.field4703[8] = var5 + var5 + var9 + var9;
+		this.field4703[8] = var5 + var9 + var9 + var5;
 		this.field4703[9] = var11 - var4 - var4 + var11;
-		this.field4703[10] = var12 + var3 - var10 - var7;
+		this.field4703[10] = var3 + var12 - var10 - var7;
 		float[] var13 = this.field4703;
 		float[] var14 = this.field4703;
 		this.field4703[11] = 0.0F;
@@ -255,21 +255,21 @@ public final class Class423 {
 	public void method7748(Class425 var1) {
 		float var3 = var1.field4710 * var1.field4710;
 		float var4 = var1.field4710 * var1.field4707;
-		float var5 = var1.field4708 * var1.field4710;
-		float var6 = var1.field4704 * var1.field4710;
+		float var5 = var1.field4710 * var1.field4708;
+		float var6 = var1.field4710 * var1.field4704;
 		float var7 = var1.field4707 * var1.field4707;
-		float var8 = var1.field4707 * var1.field4708;
+		float var8 = var1.field4708 * var1.field4707;
 		float var9 = var1.field4707 * var1.field4704;
 		float var10 = var1.field4708 * var1.field4708;
-		float var11 = var1.field4704 * var1.field4708;
+		float var11 = var1.field4708 * var1.field4704;
 		float var12 = var1.field4704 * var1.field4704;
 		this.field4703[0] = var3 + var7 - var12 - var10;
-		this.field4703[1] = var8 + var8 + var6 + var6;
-		this.field4703[2] = var9 + (var9 - var5 - var5);
-		this.field4703[4] = var8 + (var8 - var6 - var6);
-		this.field4703[5] = var10 + var3 - var7 - var12;
-		this.field4703[6] = var4 + var11 + var4 + var11;
-		this.field4703[8] = var9 + var9 + var5 + var5;
+		this.field4703[1] = var6 + var8 + var8 + var6;
+		this.field4703[2] = var9 - var5 - var5 + var9;
+		this.field4703[4] = var8 - var6 - var6 + var8;
+		this.field4703[5] = var3 + var10 - var7 - var12;
+		this.field4703[6] = var4 + var11 + var11 + var4;
+		this.field4703[8] = var5 + var9 + var9 + var5;
 		this.field4703[9] = var11 - var4 - var4 + var11;
 		this.field4703[10] = var3 + var12 - var10 - var7;
 	}
@@ -296,28 +296,28 @@ public final class Class423 {
 
 	@ObfInfo(name = "al", desc = "(I)F")
 	public float method7790() {
-		return this.field4703[14] * this.field4703[8] * this.field4703[5] * this.field4703[3] + this.field4703[7] * this.field4703[2] * this.field4703[8] * this.field4703[13] + this.field4703[12] * this.field4703[2] * this.field4703[5] * this.field4703[11] + (this.field4703[4] * this.field4703[2] * this.field4703[9] * this.field4703[15] + this.field4703[12] * this.field4703[10] * this.field4703[1] * this.field4703[7] + (this.field4703[14] * this.field4703[9] * this.field4703[7] * this.field4703[0] + this.field4703[0] * this.field4703[5] * this.field4703[10] * this.field4703[15] - this.field4703[14] * this.field4703[11] * this.field4703[0] * this.field4703[5] - this.field4703[15] * this.field4703[9] * this.field4703[6] * this.field4703[0] + this.field4703[6] * this.field4703[0] * this.field4703[11] * this.field4703[13] - this.field4703[13] * this.field4703[10] * this.field4703[0] * this.field4703[7] - this.field4703[15] * this.field4703[4] * this.field4703[1] * this.field4703[10] + this.field4703[4] * this.field4703[1] * this.field4703[11] * this.field4703[14] + this.field4703[15] * this.field4703[8] * this.field4703[6] * this.field4703[1] - this.field4703[12] * this.field4703[11] * this.field4703[1] * this.field4703[6] - this.field4703[1] * this.field4703[7] * this.field4703[8] * this.field4703[14]) - this.field4703[13] * this.field4703[11] * this.field4703[2] * this.field4703[4] - this.field4703[15] * this.field4703[5] * this.field4703[2] * this.field4703[8]) - this.field4703[12] * this.field4703[2] * this.field4703[7] * this.field4703[9] - this.field4703[4] * this.field4703[3] * this.field4703[9] * this.field4703[14] + this.field4703[4] * this.field4703[3] * this.field4703[10] * this.field4703[13] - this.field4703[10] * this.field4703[3] * this.field4703[5] * this.field4703[12] - this.field4703[3] * this.field4703[6] * this.field4703[8] * this.field4703[13] + this.field4703[12] * this.field4703[6] * this.field4703[3] * this.field4703[9];
+		return this.field4703[6] * this.field4703[3] * this.field4703[9] * this.field4703[12] + (this.field4703[5] * this.field4703[3] * this.field4703[8] * this.field4703[14] + this.field4703[4] * this.field4703[3] * this.field4703[10] * this.field4703[13] + (this.field4703[7] * this.field4703[2] * this.field4703[8] * this.field4703[13] + this.field4703[2] * this.field4703[5] * this.field4703[11] * this.field4703[12] + (this.field4703[4] * this.field4703[2] * this.field4703[9] * this.field4703[15] + this.field4703[1] * this.field4703[7] * this.field4703[10] * this.field4703[12] + (this.field4703[6] * this.field4703[1] * this.field4703[8] * this.field4703[15] + this.field4703[4] * this.field4703[1] * this.field4703[11] * this.field4703[14] + (this.field4703[7] * this.field4703[0] * this.field4703[9] * this.field4703[14] + this.field4703[6] * this.field4703[0] * this.field4703[11] * this.field4703[13] + (this.field4703[0] * this.field4703[5] * this.field4703[10] * this.field4703[15] - this.field4703[0] * this.field4703[5] * this.field4703[11] * this.field4703[14] - this.field4703[6] * this.field4703[0] * this.field4703[9] * this.field4703[15]) - this.field4703[0] * this.field4703[7] * this.field4703[10] * this.field4703[13] - this.field4703[4] * this.field4703[1] * this.field4703[10] * this.field4703[15]) - this.field4703[1] * this.field4703[6] * this.field4703[11] * this.field4703[12] - this.field4703[1] * this.field4703[7] * this.field4703[8] * this.field4703[14]) - this.field4703[2] * this.field4703[4] * this.field4703[11] * this.field4703[13] - this.field4703[5] * this.field4703[2] * this.field4703[8] * this.field4703[15]) - this.field4703[2] * this.field4703[7] * this.field4703[9] * this.field4703[12] - this.field4703[4] * this.field4703[3] * this.field4703[9] * this.field4703[14]) - this.field4703[3] * this.field4703[5] * this.field4703[10] * this.field4703[12] - this.field4703[3] * this.field4703[6] * this.field4703[8] * this.field4703[13]);
 	}
 
 	@ObfInfo(name = "ay", desc = "(I)V")
 	public void method7741() {
 		float var2 = 1.0F / this.method7790();
-		float var3 = var2 * (this.field4703[7] * this.field4703[9] * this.field4703[14] + this.field4703[15] * this.field4703[5] * this.field4703[10] - this.field4703[11] * this.field4703[5] * this.field4703[14] - this.field4703[9] * this.field4703[6] * this.field4703[15] + this.field4703[11] * this.field4703[6] * this.field4703[13] - this.field4703[13] * this.field4703[10] * this.field4703[7]);
-		float var4 = (this.field4703[15] * this.field4703[2] * this.field4703[9] + this.field4703[11] * this.field4703[1] * this.field4703[14] + this.field4703[15] * this.field4703[10] * -this.field4703[1] - this.field4703[13] * this.field4703[2] * this.field4703[11] - this.field4703[14] * this.field4703[9] * this.field4703[3] + this.field4703[3] * this.field4703[10] * this.field4703[13]) * var2;
-		float var5 = var2 * (this.field4703[13] * this.field4703[2] * this.field4703[7] + (this.field4703[1] * this.field4703[6] * this.field4703[15] - this.field4703[14] * this.field4703[1] * this.field4703[7] - this.field4703[15] * this.field4703[5] * this.field4703[2]) + this.field4703[3] * this.field4703[5] * this.field4703[14] - this.field4703[13] * this.field4703[6] * this.field4703[3]);
-		float var6 = (this.field4703[3] * this.field4703[6] * this.field4703[9] + (this.field4703[7] * this.field4703[1] * this.field4703[10] + this.field4703[6] * -this.field4703[1] * this.field4703[11] + this.field4703[2] * this.field4703[5] * this.field4703[11] - this.field4703[9] * this.field4703[7] * this.field4703[2] - this.field4703[5] * this.field4703[3] * this.field4703[10])) * var2;
-		float var7 = (this.field4703[10] * -this.field4703[4] * this.field4703[15] + this.field4703[4] * this.field4703[11] * this.field4703[14] + this.field4703[15] * this.field4703[6] * this.field4703[8] - this.field4703[11] * this.field4703[6] * this.field4703[12] - this.field4703[7] * this.field4703[8] * this.field4703[14] + this.field4703[12] * this.field4703[10] * this.field4703[7]) * var2;
-		float var8 = var2 * (this.field4703[14] * this.field4703[8] * this.field4703[3] + this.field4703[15] * this.field4703[0] * this.field4703[10] - this.field4703[14] * this.field4703[0] * this.field4703[11] - this.field4703[15] * this.field4703[8] * this.field4703[2] + this.field4703[12] * this.field4703[11] * this.field4703[2] - this.field4703[10] * this.field4703[3] * this.field4703[12]);
-		float var9 = (this.field4703[14] * this.field4703[0] * this.field4703[7] + -this.field4703[0] * this.field4703[6] * this.field4703[15] + this.field4703[4] * this.field4703[2] * this.field4703[15] - this.field4703[12] * this.field4703[7] * this.field4703[2] - this.field4703[4] * this.field4703[3] * this.field4703[14] + this.field4703[6] * this.field4703[3] * this.field4703[12]) * var2;
-		float var10 = var2 * (this.field4703[4] * this.field4703[3] * this.field4703[10] + this.field4703[8] * this.field4703[7] * this.field4703[2] + (this.field4703[11] * this.field4703[0] * this.field4703[6] - this.field4703[7] * this.field4703[0] * this.field4703[10] - this.field4703[11] * this.field4703[4] * this.field4703[2]) - this.field4703[8] * this.field4703[3] * this.field4703[6]);
-		float var11 = var2 * (this.field4703[13] * this.field4703[7] * this.field4703[8] + this.field4703[12] * this.field4703[11] * this.field4703[5] + (this.field4703[9] * this.field4703[4] * this.field4703[15] - this.field4703[11] * this.field4703[4] * this.field4703[13] - this.field4703[8] * this.field4703[5] * this.field4703[15]) - this.field4703[12] * this.field4703[9] * this.field4703[7]);
-		float var12 = (this.field4703[13] * this.field4703[0] * this.field4703[11] + this.field4703[15] * -this.field4703[0] * this.field4703[9] + this.field4703[15] * this.field4703[1] * this.field4703[8] - this.field4703[12] * this.field4703[11] * this.field4703[1] - this.field4703[13] * this.field4703[3] * this.field4703[8] + this.field4703[12] * this.field4703[3] * this.field4703[9]) * var2;
-		float var13 = var2 * (this.field4703[3] * this.field4703[4] * this.field4703[13] + this.field4703[12] * this.field4703[1] * this.field4703[7] + (this.field4703[5] * this.field4703[0] * this.field4703[15] - this.field4703[7] * this.field4703[0] * this.field4703[13] - this.field4703[4] * this.field4703[1] * this.field4703[15]) - this.field4703[12] * this.field4703[3] * this.field4703[5]);
-		float var14 = (this.field4703[5] * this.field4703[3] * this.field4703[8] + (this.field4703[11] * this.field4703[5] * -this.field4703[0] + this.field4703[7] * this.field4703[0] * this.field4703[9] + this.field4703[11] * this.field4703[1] * this.field4703[4] - this.field4703[1] * this.field4703[7] * this.field4703[8] - this.field4703[4] * this.field4703[3] * this.field4703[9])) * var2;
-		float var15 = (this.field4703[12] * this.field4703[9] * this.field4703[6] + (this.field4703[14] * this.field4703[9] * -this.field4703[4] + this.field4703[4] * this.field4703[10] * this.field4703[13] + this.field4703[5] * this.field4703[8] * this.field4703[14] - this.field4703[12] * this.field4703[5] * this.field4703[10] - this.field4703[6] * this.field4703[8] * this.field4703[13])) * var2;
-		float var16 = (this.field4703[0] * this.field4703[9] * this.field4703[14] - this.field4703[13] * this.field4703[0] * this.field4703[10] - this.field4703[8] * this.field4703[1] * this.field4703[14] + this.field4703[12] * this.field4703[1] * this.field4703[10] + this.field4703[13] * this.field4703[2] * this.field4703[8] - this.field4703[12] * this.field4703[2] * this.field4703[9]) * var2;
-		float var17 = (this.field4703[14] * this.field4703[4] * this.field4703[1] + this.field4703[13] * this.field4703[6] * this.field4703[0] + this.field4703[14] * this.field4703[5] * -this.field4703[0] - this.field4703[1] * this.field4703[6] * this.field4703[12] - this.field4703[13] * this.field4703[4] * this.field4703[2] + this.field4703[2] * this.field4703[5] * this.field4703[12]) * var2;
-		float var18 = var2 * (this.field4703[0] * this.field4703[5] * this.field4703[10] - this.field4703[6] * this.field4703[0] * this.field4703[9] - this.field4703[4] * this.field4703[1] * this.field4703[10] + this.field4703[8] * this.field4703[6] * this.field4703[1] + this.field4703[4] * this.field4703[2] * this.field4703[9] - this.field4703[8] * this.field4703[5] * this.field4703[2]);
+		float var3 = (this.field4703[7] * this.field4703[9] * this.field4703[14] + this.field4703[11] * this.field4703[6] * this.field4703[13] + (this.field4703[5] * this.field4703[10] * this.field4703[15] - this.field4703[11] * this.field4703[5] * this.field4703[14] - this.field4703[9] * this.field4703[6] * this.field4703[15]) - this.field4703[10] * this.field4703[7] * this.field4703[13]) * var2;
+		float var4 = (this.field4703[3] * this.field4703[10] * this.field4703[13] + (this.field4703[2] * this.field4703[9] * this.field4703[15] + this.field4703[11] * this.field4703[1] * this.field4703[14] + this.field4703[10] * -this.field4703[1] * this.field4703[15] - this.field4703[2] * this.field4703[11] * this.field4703[13] - this.field4703[9] * this.field4703[3] * this.field4703[14])) * var2;
+		float var5 = (this.field4703[3] * this.field4703[5] * this.field4703[14] + this.field4703[2] * this.field4703[7] * this.field4703[13] + (this.field4703[1] * this.field4703[6] * this.field4703[15] - this.field4703[1] * this.field4703[7] * this.field4703[14] - this.field4703[5] * this.field4703[2] * this.field4703[15]) - this.field4703[6] * this.field4703[3] * this.field4703[13]) * var2;
+		float var6 = (this.field4703[3] * this.field4703[6] * this.field4703[9] + (this.field4703[2] * this.field4703[5] * this.field4703[11] + this.field4703[7] * this.field4703[1] * this.field4703[10] + this.field4703[6] * -this.field4703[1] * this.field4703[11] - this.field4703[7] * this.field4703[2] * this.field4703[9] - this.field4703[5] * this.field4703[3] * this.field4703[10])) * var2;
+		float var7 = (this.field4703[10] * this.field4703[7] * this.field4703[12] + (this.field4703[6] * this.field4703[8] * this.field4703[15] + this.field4703[10] * -this.field4703[4] * this.field4703[15] + this.field4703[4] * this.field4703[11] * this.field4703[14] - this.field4703[11] * this.field4703[6] * this.field4703[12] - this.field4703[7] * this.field4703[8] * this.field4703[14])) * var2;
+		float var8 = (this.field4703[8] * this.field4703[3] * this.field4703[14] + this.field4703[11] * this.field4703[2] * this.field4703[12] + (this.field4703[0] * this.field4703[10] * this.field4703[15] - this.field4703[0] * this.field4703[11] * this.field4703[14] - this.field4703[8] * this.field4703[2] * this.field4703[15]) - this.field4703[10] * this.field4703[3] * this.field4703[12]) * var2;
+		float var9 = (this.field4703[6] * this.field4703[3] * this.field4703[12] + (this.field4703[4] * this.field4703[2] * this.field4703[15] + this.field4703[0] * this.field4703[7] * this.field4703[14] + this.field4703[6] * -this.field4703[0] * this.field4703[15] - this.field4703[7] * this.field4703[2] * this.field4703[12] - this.field4703[4] * this.field4703[3] * this.field4703[14])) * var2;
+		float var10 = (this.field4703[4] * this.field4703[3] * this.field4703[10] + this.field4703[7] * this.field4703[2] * this.field4703[8] + (this.field4703[0] * this.field4703[6] * this.field4703[11] - this.field4703[7] * this.field4703[0] * this.field4703[10] - this.field4703[4] * this.field4703[2] * this.field4703[11]) - this.field4703[3] * this.field4703[6] * this.field4703[8]) * var2;
+		float var11 = (this.field4703[7] * this.field4703[8] * this.field4703[13] + this.field4703[11] * this.field4703[5] * this.field4703[12] + (this.field4703[9] * this.field4703[4] * this.field4703[15] - this.field4703[11] * this.field4703[4] * this.field4703[13] - this.field4703[8] * this.field4703[5] * this.field4703[15]) - this.field4703[9] * this.field4703[7] * this.field4703[12]) * var2;
+		float var12 = (this.field4703[3] * this.field4703[9] * this.field4703[12] + (this.field4703[1] * this.field4703[8] * this.field4703[15] + this.field4703[0] * this.field4703[11] * this.field4703[13] + this.field4703[9] * -this.field4703[0] * this.field4703[15] - this.field4703[11] * this.field4703[1] * this.field4703[12] - this.field4703[3] * this.field4703[8] * this.field4703[13])) * var2;
+		float var13 = (this.field4703[3] * this.field4703[4] * this.field4703[13] + this.field4703[1] * this.field4703[7] * this.field4703[12] + (this.field4703[5] * this.field4703[0] * this.field4703[15] - this.field4703[7] * this.field4703[0] * this.field4703[13] - this.field4703[4] * this.field4703[1] * this.field4703[15]) - this.field4703[3] * this.field4703[5] * this.field4703[12]) * var2;
+		float var14 = (this.field4703[5] * this.field4703[3] * this.field4703[8] + (this.field4703[1] * this.field4703[4] * this.field4703[11] + this.field4703[5] * -this.field4703[0] * this.field4703[11] + this.field4703[7] * this.field4703[0] * this.field4703[9] - this.field4703[1] * this.field4703[7] * this.field4703[8] - this.field4703[4] * this.field4703[3] * this.field4703[9])) * var2;
+		float var15 = (this.field4703[9] * this.field4703[6] * this.field4703[12] + (this.field4703[5] * this.field4703[8] * this.field4703[14] + this.field4703[9] * -this.field4703[4] * this.field4703[14] + this.field4703[4] * this.field4703[10] * this.field4703[13] - this.field4703[5] * this.field4703[10] * this.field4703[12] - this.field4703[6] * this.field4703[8] * this.field4703[13])) * var2;
+		float var16 = (this.field4703[2] * this.field4703[8] * this.field4703[13] + this.field4703[1] * this.field4703[10] * this.field4703[12] + (this.field4703[0] * this.field4703[9] * this.field4703[14] - this.field4703[0] * this.field4703[10] * this.field4703[13] - this.field4703[8] * this.field4703[1] * this.field4703[14]) - this.field4703[2] * this.field4703[9] * this.field4703[12]) * var2;
+		float var17 = (this.field4703[2] * this.field4703[5] * this.field4703[12] + (this.field4703[4] * this.field4703[1] * this.field4703[14] + this.field4703[6] * this.field4703[0] * this.field4703[13] + this.field4703[5] * -this.field4703[0] * this.field4703[14] - this.field4703[1] * this.field4703[6] * this.field4703[12] - this.field4703[4] * this.field4703[2] * this.field4703[13])) * var2;
+		float var18 = (this.field4703[4] * this.field4703[2] * this.field4703[9] + this.field4703[6] * this.field4703[1] * this.field4703[8] + (this.field4703[0] * this.field4703[5] * this.field4703[10] - this.field4703[6] * this.field4703[0] * this.field4703[9] - this.field4703[4] * this.field4703[1] * this.field4703[10]) - this.field4703[5] * this.field4703[2] * this.field4703[8]) * var2;
 		this.field4703[0] = var3;
 		this.field4703[1] = var4;
 		this.field4703[2] = var5;
@@ -358,28 +358,28 @@ public final class Class423 {
 
 	@ObfInfo(name = "aa", desc = "(FFF[FB)V", opaque = "17")
 	public void method7743(float var1, float var2, float var3, float[] var4) {
-		var4[0] = this.field4703[12] + var3 * this.field4703[8] + var1 * this.field4703[0] + this.field4703[4] * var2;
-		var4[1] = this.field4703[13] + this.field4703[9] * var3 + this.field4703[5] * var2 + var1 * this.field4703[1];
-		var4[2] = this.field4703[14] + var3 * this.field4703[10] + var2 * this.field4703[6] + this.field4703[2] * var1;
+		var4[0] = this.field4703[8] * var3 + this.field4703[0] * var1 + this.field4703[4] * var2 + this.field4703[12];
+		var4[1] = this.field4703[9] * var3 + this.field4703[5] * var2 + this.field4703[1] * var1 + this.field4703[13];
+		var4[2] = this.field4703[10] * var3 + this.field4703[6] * var2 + this.field4703[2] * var1 + this.field4703[14];
 		if (var4.length > 3) {
-			var4[3] = this.field4703[15] + var2 * this.field4703[7] + this.field4703[3] * var1 + this.field4703[11] * var3;
+			var4[3] = this.field4703[11] * var3 + this.field4703[7] * var2 + this.field4703[3] * var1 + this.field4703[15];
 		}
 
 	}
 
 	@ObfInfo(name = "as", desc = "(FFFI)F")
 	public float method7735(float var1, float var2, float var3) {
-		return this.field4703[4] * var2 + var1 * this.field4703[0] + this.field4703[8] * var3 + this.field4703[12];
+		return this.field4703[8] * var3 + this.field4703[4] * var2 + this.field4703[0] * var1 + this.field4703[12];
 	}
 
 	@ObfInfo(name = "aw", desc = "(FFFB)F")
 	public float method7804(float var1, float var2, float var3) {
-		return this.field4703[1] * var1 + this.field4703[5] * var2 + var3 * this.field4703[9] + this.field4703[13];
+		return this.field4703[9] * var3 + this.field4703[1] * var1 + this.field4703[5] * var2 + this.field4703[13];
 	}
 
 	@ObfInfo(name = "at", desc = "(FFFB)F")
 	public float method7746(float var1, float var2, float var3) {
-		return this.field4703[2] * var1 + this.field4703[6] * var2 + var3 * this.field4703[10] + this.field4703[14];
+		return this.field4703[10] * var3 + this.field4703[2] * var1 + this.field4703[6] * var2 + this.field4703[14];
 	}
 
 	public String toString() {
@@ -393,7 +393,7 @@ public final class Class423 {
 					var1.append("\t");
 				}
 
-				float var4 = this.field4703[var3 + var2 * 4];
+				float var4 = this.field4703[var2 * 4 + var3];
 				if (Math.sqrt((double)(var4 * var4)) < 9.999999747378752E-5D) {
 					var4 = 0.0F;
 				}
@@ -452,7 +452,7 @@ public final class Class423 {
 	@ObfInfo(owner = "gd", name = "ad", desc = "(I)Lqg;", opaque = "603613830")
 	public static Class423 method3364() {
 		synchronized(field4698) {
-			if (0 == field4700) {
+			if (field4700 == 0) {
 				return new Class423();
 			} else {
 				field4698[--field4700].method7740();

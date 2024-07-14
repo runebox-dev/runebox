@@ -48,7 +48,7 @@ public class Class36 {
 
 	@ObfInfo(name = "an", desc = "(CI)Z", opaque = "65534")
 	public boolean method490(char var1) {
-		return this.method494(var1) && (1 == this.field190[var1] || this.field190[var1] == 3);
+		return this.method494(var1) && (this.field190[var1] == 1 || this.field190[var1] == 3);
 	}
 
 	@ObfInfo(name = "aj", desc = "(II)Z")
@@ -98,7 +98,7 @@ public class Class36 {
 			int var5 = 1 << var4;
 			if (var2.method9342(Client.field678.field1485) >= var4 + 12) {
 				int var6 = var2.method9347(var4);
-				if (var6 != var5 - 1) {
+				if (var5 - 1 != var6) {
 					boolean var7 = false;
 					if (var0.field1013[var6] == null) {
 						var0.field1013[var6] = new Class102();
@@ -152,12 +152,12 @@ public class Class36 {
 					int var9 = var2.method9347(1);
 					var8.field1309 = Class184.method2222(var2.method9347(14));
 					Client.method8727(var8);
-					if (0 == var8.field1297) {
+					if (var8.field1297 == 0) {
 						var8.field1230 = 0;
 					}
 
 					if (Client.field534 >= 222) {
-						var8.method2706(var10 + Client.field146, Client.field4 + var11, var9 == 1);
+						var8.method2706(Client.field146 + var10, Client.field4 + var11, var9 == 1);
 						continue;
 					}
 

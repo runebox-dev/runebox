@@ -106,7 +106,7 @@ public final class Class320 {
 						if (var10 != -1) {
 							int var11 = var10 >> 14 & 1023;
 							int var12 = var10 >> 3 & 2047;
-							int var13 = var12 / 8 + (var11 / 8 << 8);
+							int var13 = (var11 / 8 << 8) + var12 / 8;
 
 							int var14;
 							for (var14 = 0; var14 < var6; ++var14) {

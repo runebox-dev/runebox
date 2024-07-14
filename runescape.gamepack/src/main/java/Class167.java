@@ -199,7 +199,7 @@ public class Class167 {
 				this.field1839[this.field1828] = var3;
 			}
 
-			if (-1 == this.field1833) {
+			if (this.field1833 == -1) {
 				this.field1833 = this.field1828;
 				this.field1830[this.field1828] = 126;
 			} else {
@@ -251,7 +251,7 @@ public class Class167 {
 
 	@ObfInfo(name = "ab", desc = "(I)V", opaque = "1422529734")
 	public void method3462() {
-		if (0 == this.field1828) {
+		if (this.field1828 == 0) {
 			this.field1833 = -1;
 			this.field1842 = -1;
 		} else {
@@ -268,7 +268,7 @@ public class Class167 {
 
 					var2 = var4;
 					var3 = this.field1830[var4];
-				} else if (-1 == this.field1842 && this.field1830[var4] == 125) {
+				} else if (this.field1842 == -1 && this.field1830[var4] == 125) {
 					this.field1842 = var4;
 				}
 			}
@@ -293,7 +293,7 @@ public class Class167 {
 			throw new RuntimeException("");
 		} else {
 			if (var1 > 0L && (this.field1831 == null || this.field1837 >= this.field1831.length) || var3 != null && (this.field1840 == null || this.field1837 >= this.field1840.length)) {
-				this.method3505(5 + this.field1837);
+				this.method3505(this.field1837 + 5);
 			}
 
 			if (this.field1831 != null) {
@@ -311,7 +311,7 @@ public class Class167 {
 	@ObfInfo(name = "ae", desc = "(II)V", opaque = "-1361843074")
 	public void method3464(int var1) {
 		--this.field1837;
-		if (0 == this.field1837) {
+		if (this.field1837 == 0) {
 			this.field1831 = null;
 			this.field1840 = null;
 		} else {
@@ -329,9 +329,9 @@ public class Class167 {
 	@ObfInfo(name = "au", desc = "(IBB)I", opaque = "0")
 	public int method3465(int var1, byte var2) {
 		if (var2 != 126 && var2 != 127) {
-			if (var1 == this.field1833 && (this.field1842 == -1 || this.field1830[this.field1842] < 125)) {
+			if (this.field1833 == var1 && (this.field1842 == -1 || this.field1830[this.field1842] < 125)) {
 				return -1;
-			} else if (var2 == this.field1830[var1]) {
+			} else if (this.field1830[var1] == var2) {
 				return -1;
 			} else {
 				this.field1830[var1] = var2;
@@ -345,7 +345,7 @@ public class Class167 {
 
 	@ObfInfo(name = "ah", desc = "(II)Z", opaque = "-1361976444")
 	public boolean method3474(int var1) {
-		if (this.field1833 != var1 && 126 != this.field1830[var1]) {
+		if (this.field1833 != var1 && this.field1830[var1] != 126) {
 			this.field1830[this.field1833] = 125;
 			this.field1842 = this.field1833;
 			this.field1830[var1] = 126;
@@ -374,7 +374,7 @@ public class Class167 {
 		var2 <<= var3;
 		var2 &= var8;
 		int var9 = this.field1841[var1];
-		if (var2 == (var9 & var8)) {
+		if ((var9 & var8) == var2) {
 			return -1;
 		} else {
 			var9 &= ~var8;
@@ -420,7 +420,7 @@ public class Class167 {
 			if (var9 != null) {
 				if (var9 instanceof Class508) {
 					Class508 var10 = (Class508)var9;
-					if (var2 == (var10.field5094 & var8)) {
+					if ((var10.field5094 & var8) == var2) {
 						return false;
 					}
 
@@ -503,7 +503,7 @@ public class Class167 {
 		int var3 = var1.method9902();
 		if (var3 >= 1 && var3 <= 6) {
 			int var4 = var1.method9902();
-			if (0 != (var4 & 1)) {
+			if ((var4 & 1) != 0) {
 				this.field1817 = true;
 			}
 

@@ -32,7 +32,7 @@ public class Class468 extends Class457 {
 				if (this.field4933.field3752 < (float)this.field4933.field3754 && this.field4933.field3761.method6097()) {
 					float var2 = this.field4932 == 0 ? (float)this.field4932 : (float)this.field4933.field3754 / (float)this.field4932;
 					Class351 var10000 = this.field4933;
-					var10000.field3752 += 0.0F == var2 ? (float)this.field4933.field3754 : var2;
+					var10000.field3752 += var2 == 0.0F ? (float)this.field4933.field3754 : var2;
 					if (this.field4933.field3752 > (float)this.field4933.field3754) {
 						this.field4933.field3752 = (float)this.field4933.field3754;
 					}

@@ -55,7 +55,7 @@ public class Class491 {
 
 		for (var4 = 1; var4 < var3; ++var4) {
 			Client.field5432[var4] = var2.method9830();
-			if (0 == Client.field5432[var4]) {
+			if (Client.field5432[var4] == 0) {
 				Client.field5432[var4] = 1;
 			}
 		}
@@ -65,7 +65,7 @@ public class Class491 {
 		for (var4 = 0; var4 < Client.field5437; ++var4) {
 			int var5 = Client.field5435[var4];
 			int var6 = Client.field3491[var4];
-			int var7 = var6 * var5;
+			int var7 = var5 * var6;
 			byte[] var8 = new byte[var7];
 			Client.field5434[var4] = var8;
 			int var9 = var2.method9902();
@@ -77,7 +77,7 @@ public class Class491 {
 			} else if (var9 == 1) {
 				for (var10 = 0; var10 < var5; ++var10) {
 					for (int var11 = 0; var11 < var6; ++var11) {
-						var8[var11 * var5 + var10] = var2.method9955();
+						var8[var5 * var11 + var10] = var2.method9955();
 					}
 				}
 			}

@@ -43,7 +43,7 @@ public class Class451 {
 
 	@ObfInfo(name = "ad", desc = "(I)V", opaque = "-1871405839")
 	public void method8321() {
-		if (-1L != this.field4858) {
+		if (this.field4858 != -1L) {
 			this.field4859 = Class329.method4953() - this.field4858;
 			this.field4858 = -1L;
 		}

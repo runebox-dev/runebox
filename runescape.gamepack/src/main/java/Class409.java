@@ -42,7 +42,7 @@ public class Class409 {
 
 	@ObfInfo(name = "ak", desc = "(I)I", opaque = "-1747235122")
 	public int method7541() {
-		return 8 == (this.field4660 & 8) ? 1 : 0;
+		return (this.field4660 & 8) == 8 ? 1 : 0;
 	}
 
 	@ObfInfo(name = "ap", desc = "(IB)V")

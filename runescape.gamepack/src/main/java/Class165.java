@@ -46,7 +46,7 @@ public class Class165 {
 
 	@ObfInfo(name = "ad", desc = "(Lgj;I)V", opaque = "1710439935")
 	public void method3417(Class166 var1) {
-		if (var1.field5234 == this.field1804 && var1.field1810 == this.field1801) {
+		if (this.field1804 == var1.field5234 && this.field1801 == var1.field1810) {
 			for (Class157 var3 = (Class157)this.field1802.method7401(); var3 != null; var3 = (Class157)this.field1802.method7403()) {
 				var3.method3149(var1);
 			}

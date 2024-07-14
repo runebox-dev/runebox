@@ -48,7 +48,7 @@ public abstract class Class471 {
 
 	@ObfInfo(name = "bw", desc = "(I)Z", opaque = "-743118512")
 	public boolean method8554() {
-		return this.field4950 == this.field4955;
+		return this.field4955 == this.field4950;
 	}
 
 	@ObfInfo(name = "bl", desc = "(Lvo;B)Z", opaque = "1")
@@ -143,7 +143,7 @@ public abstract class Class471 {
 	@ObfInfo(name = "bf", desc = "(Lsk;I)I", opaque = "172274532")
 	public final int method8566(Class479 var1) {
 		for (int var3 = 0; var3 < this.field4950; ++var3) {
-			if (var1 == this.field4953[var3]) {
+			if (this.field4953[var3] == var1) {
 				return var3;
 			}
 		}
@@ -173,7 +173,7 @@ public abstract class Class471 {
 		this.field4951.put(var1.field4983, var1);
 		if (var1.field4982 != null) {
 			Class479 var3 = (Class479)this.field4954.put(var1.field4982, var1);
-			if (var3 != null && var3 != var1) {
+			if (var3 != null && var1 != var3) {
 				var3.field4982 = null;
 			}
 		}

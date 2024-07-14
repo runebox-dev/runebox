@@ -36,11 +36,11 @@ public final class Class16 {
 					int var11 = var8 & 63;
 					int var12 = var8 >> 6 & 63;
 					int var13 = var5.method9902() >> 2;
-					int var14 = var12 + var1;
-					int var15 = var11 + var2;
+					int var14 = var1 + var12;
+					int var15 = var2 + var11;
 					if (var14 > 0 && var15 > 0 && var14 < 103 && var15 < 103) {
 						Class197 var16 = Class197.method61(var6);
-						if (var13 != 22 || !Client.field687 || var16.field2144 != 0 || 1 == var16.field2126 || var16.field2134) {
+						if (var13 != 22 || !Client.field687 || var16.field2144 != 0 || var16.field2126 == 1 || var16.field2134) {
 							if (!var16.method3901()) {
 								++Client.field599;
 								var4 = false;

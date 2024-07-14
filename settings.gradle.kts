@@ -6,8 +6,16 @@ module(":asm", "internal/")
 module(":deobfuscator", "internal/")
 module(":decompiler", "internal/")
 module(":updater", "internal/")
+module(":mixins")
+module(":mixins.annotations", directory = "runebox.mixins/", title = "")
+includeBuild("runebox.injector")
 
-fun module(name: String, directory: String = "", title: String = "runebox") {
+fun module(module: String, directory: String = "", title: String = "runebox") {
+    var name = module
+    if(module.lastIndexOf('.') > 0) {
+        name = ":"+name.substring(1).replace(".", "-")
+    }
     include(name)
-    project(name).projectDir = file(directory+"$title."+name.substringAfter(":")+"/")
+    @Suppress("RemoveSingleExpressionStringTemplate")
+    project(name).projectDir = file(directory+"${if(title.isNotBlank())"$title." else ""}"+module.substringAfter(":")+"/")
 }

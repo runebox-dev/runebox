@@ -70,10 +70,10 @@ public class Class33 {
 			var9 = Class418.method2631(var11);
 			var10 = Class418.method3336(var10, var2);
 			var11 = Class418.method3336(var11, var2);
-			if (var11 != var10 && Character.toUpperCase(var10) != Character.toUpperCase(var11)) {
+			if (var10 != var11 && Character.toUpperCase(var10) != Character.toUpperCase(var11)) {
 				var10 = Character.toLowerCase(var10);
 				var11 = Character.toLowerCase(var11);
-				if (var11 != var10) {
+				if (var10 != var11) {
 					return Class418.method7616(var10, var2) - Class418.method7616(var11, var2);
 				}
 			}
@@ -94,10 +94,10 @@ public class Class33 {
 
 			char var12 = var0.charAt(var6);
 			var13 = var1.charAt(var7);
-			if (var13 != var12 && Character.toUpperCase(var12) != Character.toUpperCase(var13)) {
+			if (var12 != var13 && Character.toUpperCase(var12) != Character.toUpperCase(var13)) {
 				var12 = Character.toLowerCase(var12);
 				var13 = Character.toLowerCase(var13);
-				if (var13 != var12) {
+				if (var12 != var13) {
 					return Class418.method7616(var12, var2) - Class418.method7616(var13, var2);
 				}
 			}
@@ -110,7 +110,7 @@ public class Class33 {
 			for (int var19 = 0; var19 < var17; ++var19) {
 				var13 = var0.charAt(var19);
 				char var14 = var1.charAt(var19);
-				if (var14 != var13) {
+				if (var13 != var14) {
 					return Class418.method7616(var13, var2) - Class418.method7616(var14, var2);
 				}
 			}

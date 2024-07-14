@@ -432,7 +432,7 @@ public class Class362 extends Class520 {
 		}
 
 		this.field3941 = var1.method9997();
-		if (65535 == this.field3941) {
+		if (this.field3941 == 65535) {
 			this.field3941 = -1;
 		}
 
@@ -459,7 +459,7 @@ public class Class362 extends Class520 {
 
 				for (int var7 = 0; var7 < var6; ++var7) {
 					this.field3938[var5][var7] = var1.method9997();
-					if (65535 == this.field3938[var5][var7]) {
+					if (this.field3938[var5][var7] == 65535) {
 						this.field3938[var5][var7] = -1;
 					}
 				}
@@ -471,16 +471,16 @@ public class Class362 extends Class520 {
 			this.field3833 = var1.method9902() == 1;
 		}
 
-		if (1 == this.field3815) {
+		if (this.field3815 == 1) {
 			var1.method9997();
 			var1.method9902();
 		}
 
-		if (3 == this.field3815) {
+		if (this.field3815 == 3) {
 			this.field3842 = var1.method9902() == 1;
 		}
 
-		if (4 == this.field3815 || this.field3815 == 1) {
+		if (this.field3815 == 4 || this.field3815 == 1) {
 			this.field3879 = var1.method9902();
 			this.field3880 = var1.method9902();
 			this.field3843 = var1.method9902();
@@ -497,17 +497,17 @@ public class Class362 extends Class520 {
 			this.field3877 = var1.method9837();
 		}
 
-		if (this.field3815 == 1 || 3 == this.field3815 || 4 == this.field3815) {
+		if (this.field3815 == 1 || this.field3815 == 3 || this.field3815 == 4) {
 			this.field3894 = var1.method9832();
 		}
 
-		if (this.field3815 == 3 || 4 == this.field3815) {
+		if (this.field3815 == 3 || this.field3815 == 4) {
 			this.field3839 = var1.method9832();
 			this.field3840 = var1.method9832();
 			this.field3841 = var1.method9832();
 		}
 
-		if (5 == this.field3815) {
+		if (this.field3815 == 5) {
 			this.field3848 = var1.method9832();
 			this.field3857 = var1.method9832();
 		}
@@ -515,7 +515,7 @@ public class Class362 extends Class520 {
 		if (this.field3815 == 6) {
 			this.field3891 = 1;
 			this.field3858 = var1.method9997();
-			if (65535 == this.field3858) {
+			if (this.field3858 == 65535) {
 				this.field3858 = -1;
 			}
 
@@ -526,7 +526,7 @@ public class Class362 extends Class520 {
 			}
 
 			this.field3861 = var1.method9997();
-			if (65535 == this.field3861) {
+			if (this.field3861 == 65535) {
 				this.field3861 = -1;
 			}
 
@@ -544,7 +544,7 @@ public class Class362 extends Class520 {
 			this.field3876 = var1.method9837();
 		}
 
-		if (2 == this.field3816) {
+		if (this.field3816 == 2) {
 			this.field3899 = var1.method9837();
 			this.field3942 = var1.method9837();
 			var5 = var1.method9997() & 63;
@@ -554,7 +554,7 @@ public class Class362 extends Class520 {
 		if (this.field3816 == 1 || this.field3816 == 4 || this.field3816 == 5 || this.field3816 == 6) {
 			this.field3952 = var1.method9837();
 			if (this.field3952.length() == 0) {
-				if (1 == this.field3816) {
+				if (this.field3816 == 1) {
 					this.field3952 = Class367.field4034;
 				}
 
@@ -562,7 +562,7 @@ public class Class362 extends Class520 {
 					this.field3952 = Class367.field4122;
 				}
 
-				if (5 == this.field3816) {
+				if (this.field3816 == 5) {
 					this.field3952 = Class367.field4122;
 				}
 
@@ -572,11 +572,11 @@ public class Class362 extends Class520 {
 			}
 		}
 
-		if (1 == this.field3816 || this.field3816 == 4 || 5 == this.field3816) {
+		if (this.field3816 == 1 || this.field3816 == 4 || this.field3816 == 5) {
 			this.field3887 |= 4194304;
 		}
 
-		if (6 == this.field3816) {
+		if (this.field3816 == 6) {
 			this.field3887 |= 1;
 		}
 
@@ -602,7 +602,7 @@ public class Class362 extends Class520 {
 		this.field3818 = var1.method9955();
 		this.field3878 = var1.method9955();
 		this.field3832 = var1.method9997();
-		if (65535 == this.field3832) {
+		if (this.field3832 == 65535) {
 			this.field3832 = -1;
 		} else {
 			this.field3832 += this.field3812 & -65536;
@@ -615,7 +615,7 @@ public class Class362 extends Class520 {
 			this.field3960 = var1.method9902() == 1;
 		}
 
-		if (5 == this.field3815) {
+		if (this.field3815 == 5) {
 			this.field3848 = var1.method9832();
 			this.field3802 = var1.method9997();
 			this.field3821 = var1.method9902() == 1;
@@ -629,7 +629,7 @@ public class Class362 extends Class520 {
 		if (this.field3815 == 6) {
 			this.field3891 = 1;
 			this.field3858 = var1.method9997();
-			if (65535 == this.field3858) {
+			if (this.field3858 == 65535) {
 				this.field3858 = -1;
 			}
 
@@ -640,24 +640,24 @@ public class Class362 extends Class520 {
 			this.field3867 = var1.method9997();
 			this.field3868 = var1.method9997();
 			this.field3861 = var1.method9997();
-			if (65535 == this.field3861) {
+			if (this.field3861 == 65535) {
 				this.field3861 = -1;
 			}
 
 			this.field3872 = var1.method9902() == 1;
 			var1.method9997();
-			if (0 != this.field3898) {
+			if (this.field3898 != 0) {
 				this.field3869 = var1.method9997();
 			}
 
-			if (0 != this.field3902) {
+			if (this.field3902 != 0) {
 				var1.method9997();
 			}
 		}
 
 		if (this.field3815 == 4) {
 			this.field3875 = var1.method9997();
-			if (65535 == this.field3875) {
+			if (this.field3875 == 65535) {
 				this.field3875 = -1;
 			}
 
@@ -669,13 +669,13 @@ public class Class362 extends Class520 {
 			this.field3894 = var1.method9832();
 		}
 
-		if (3 == this.field3815) {
+		if (this.field3815 == 3) {
 			this.field3894 = var1.method9832();
 			this.field3842 = var1.method9902() == 1;
 			this.field3844 = var1.method9902();
 		}
 
-		if (9 == this.field3815) {
+		if (this.field3815 == 9) {
 			this.field3846 = var1.method9902();
 			this.field3894 = var1.method9832();
 			this.field3862 = var1.method9902() == 1;
@@ -782,7 +782,7 @@ public class Class362 extends Class520 {
 		if (var9 == -1) {
 			return null;
 		} else {
-			long var6 = ((this.field3856 ? 1L : 0L) << 39) + (long)var9 + ((long)this.field3924 << 36) + ((this.field3855 ? 1L : 0L) << 38) + ((long)this.field3854 << 40);
+			long var6 = ((this.field3856 ? 1L : 0L) << 39) + ((long)this.field3924 << 36) + (long)var9 + ((this.field3855 ? 1L : 0L) << 38) + ((long)this.field3854 << 40);
 			Class553 var8 = (Class553)var1.field3697.method6327(var6);
 			if (var8 != null) {
 				return var8;
@@ -837,7 +837,7 @@ public class Class362 extends Class520 {
 
 	@ObfInfo(name = "ab", desc = "(B)Z", opaque = "0")
 	public boolean method6629() {
-		return this.field3855 || this.field3856 || this.field3924 != 0 || 0 != this.field3854;
+		return this.field3855 || this.field3856 || this.field3924 != 0 || this.field3854 != 0;
 	}
 
 	@ObfInfo(name = "ai", desc = "(Lvg;B)V", opaque = "7")
@@ -862,7 +862,7 @@ public class Class362 extends Class520 {
 			var1.method9657(16777215);
 		}
 
-		if (0 != this.field3854) {
+		if (this.field3854 != 0) {
 			var1.method9603(this.field3854);
 		}
 
@@ -871,7 +871,7 @@ public class Class362 extends Class520 {
 	@ObfInfo(name = "ae", desc = "(Lnc;B)Lqh;", opaque = "7")
 	public Class424 method6631(Class341 var1) {
 		field3810 = false;
-		if (-1 == this.field3875) {
+		if (this.field3875 == -1) {
 			return null;
 		} else {
 			Class424 var3 = (Class424)var1.field3695.method6327((long)this.field3875);
@@ -963,7 +963,7 @@ public class Class362 extends Class520 {
 
 	@ObfInfo(name = "ah", desc = "(Lnc;ZI)Lnw;", opaque = "-624927998")
 	public Class361 method6708(Class341 var1, boolean var2) {
-		if (-1 == this.field3857) {
+		if (this.field3857 == -1) {
 			var2 = false;
 		}
 
@@ -990,14 +990,14 @@ public class Class362 extends Class520 {
 
 						int var15;
 						for (var15 = 0; var15 < var9.field5421; ++var15) {
-							if (0 == var9.field5429[var15 + var9.field5421 * var12]) {
+							if (var9.field5429[var9.field5421 * var12 + var15] == 0) {
 								var13 = var15;
 								break;
 							}
 						}
 
 						for (var15 = var9.field5421 - 1; var15 >= var13; --var15) {
-							if (0 == var9.field5429[var15 + var9.field5421 * var12]) {
+							if (var9.field5429[var9.field5421 * var12 + var15] == 0) {
 								var14 = var15 + 1;
 								break;
 							}
@@ -1033,7 +1033,7 @@ public class Class362 extends Class520 {
 
 	@ObfInfo(name = "ax", desc = "(I)Z", opaque = "1383716532")
 	public boolean method6635() {
-		return !this.field3896 || 0 == this.field3815 || this.field3815 == 11 || this.field3900 || this.field3817 == 1338 || this.field3815 == 12;
+		return !this.field3896 || this.field3815 == 0 || this.field3815 == 11 || this.field3900 || this.field3817 == 1338 || this.field3815 == 12;
 	}
 
 	@ObfInfo(name = "ac", desc = "(I)Z", opaque = "65534")
@@ -1043,7 +1043,7 @@ public class Class362 extends Class520 {
 
 	@ObfInfo(name = "al", desc = "(Ljava/lang/String;Ljava/lang/String;Lea;J)V")
 	public void method6637(String var1, String var2, Class105 var3, long var4) {
-		if (this.field3815 == 11 && -1L != var4) {
+		if (this.field3815 == 11 && var4 != -1L) {
 			var1 = var1.replaceAll("%userid%", Long.toString(var4));
 			this.field3882 = new Class227();
 			if (!this.field3882.method4349(var1, var2, var3)) {
@@ -1098,7 +1098,7 @@ public class Class362 extends Class520 {
 
 	@ObfInfo(name = "aw", desc = "(Ljava/lang/String;II)V", opaque = "-1751243979")
 	public void method6746(String var1, int var2) {
-		if (11 == this.field3815) {
+		if (this.field3815 == 11) {
 			if (this.field3907 == null) {
 				this.method6640();
 			}
@@ -1124,7 +1124,7 @@ public class Class362 extends Class520 {
 
 	@ObfInfo(name = "af", desc = "(I)Z", opaque = "791682246")
 	public boolean method6714() {
-		return 2 == this.field3883;
+		return this.field3883 == 2;
 	}
 
 	@ObfInfo(name = "am", desc = "(Ljava/lang/String;I)I", opaque = "976132433")
@@ -1144,7 +1144,7 @@ public class Class362 extends Class520 {
 
 	@ObfInfo(name = "bj", desc = "(I)I", opaque = "1305925346")
 	public int method6647() {
-		if (11 == this.field3815 && this.field3882 != null && this.field3907 != null && !this.field3907.isEmpty()) {
+		if (this.field3815 == 11 && this.field3882 != null && this.field3907 != null && !this.field3907.isEmpty()) {
 			String var2 = this.field3882.method4358();
 			return var2 != null && this.field3907.containsKey(this.field3882.method4358()) ? (Integer)this.field3907.get(var2) : -1;
 		} else {
@@ -1351,10 +1351,10 @@ public class Class362 extends Class520 {
 		var9.field3878 = var4;
 		var9.field3898 = var5;
 		var9.field3902 = var6;
-		var9.field3888 = (int)((float)var1.field3828 * var7[0]);
+		var9.field3888 = (int)(var7[0] * (float)var1.field3828);
 		var9.field3823 = (int)(var7[1] * (float)var1.field3829);
 		var9.field3928 = (int)(var7[2] * (float)var1.field3828);
-		var9.field3825 = (int)((float)var1.field3829 * var7[3]);
+		var9.field3825 = (int)(var7[3] * (float)var1.field3829);
 		return var9;
 	}
 

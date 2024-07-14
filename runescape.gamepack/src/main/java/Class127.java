@@ -64,11 +64,11 @@ public class Class127 {
 	public static boolean method3033(int var0, int var1, int var2, int var3, int var4, int var5, int var6) {
 		Class277 var8 = Client.field94.field1014;
 		int var10;
-		if (var5 == Class388.field4550.field4554) {
+		if (Class388.field4550.field4554 == var5) {
 			Class287 var9 = var8.method5366(var0, var1, var2);
 			if (var9 != null) {
 				var10 = Class296.method4404(var9.field3023);
-				if (var3 == Class368.field4364.field4347) {
+				if (Class368.field4364.field4347 == var3) {
 					var9.field3022 = new Class96(Client.field94, var10, 2, var4 + 4, var0, var1, var2, var6, false, var9.field3022);
 					var9.field3017 = new Class96(Client.field94, var10, 2, var4 + 1 & 3, var0, var1, var2, var6, false, var9.field3017);
 				} else {
@@ -77,18 +77,18 @@ public class Class127 {
 
 				return true;
 			}
-		} else if (var5 == Class388.field4551.field4554) {
+		} else if (Class388.field4551.field4554 == var5) {
 			Class307 var11 = var8.method5275(var0, var1, var2);
 			if (var11 != null) {
 				var10 = Class296.method4404(var11.field3139);
 				if (Class368.field4351.field4347 != var3 && Class368.field4363.field4347 != var3) {
-					if (var3 == Class368.field4353.field4347) {
+					if (Class368.field4353.field4347 == var3) {
 						var11.field3138 = new Class96(Client.field94, var10, 4, var4 + 4, var0, var1, var2, var6, false, var11.field3138);
-					} else if (var3 == Class368.field4354.field4347) {
+					} else if (Class368.field4354.field4347 == var3) {
 						var11.field3138 = new Class96(Client.field94, var10, 4, (var4 + 2 & 3) + 4, var0, var1, var2, var6, false, var11.field3138);
-					} else if (var3 == Class368.field4355.field4347) {
+					} else if (Class368.field4355.field4347 == var3) {
 						var11.field3138 = new Class96(Client.field94, var10, 4, var4 + 4, var0, var1, var2, var6, false, var11.field3138);
-						var11.field3146 = new Class96(Client.field94, var10, 4, 4 + (var4 + 2 & 3), var0, var1, var2, var6, false, var11.field3146);
+						var11.field3146 = new Class96(Client.field94, var10, 4, (var4 + 2 & 3) + 4, var0, var1, var2, var6, false, var11.field3146);
 					}
 				} else {
 					var11.field3138 = new Class96(Client.field94, var10, 4, var4, var0, var1, var2, var6, false, var11.field3138);
@@ -96,7 +96,7 @@ public class Class127 {
 
 				return true;
 			}
-		} else if (var5 == Class388.field4552.field4554) {
+		} else if (Class388.field4552.field4554 == var5) {
 			Class302 var12 = var8.method5276(var0, var1, var2);
 			if (Class368.field4367.field4347 == var3) {
 				var3 = Class368.field4366.field4347;
@@ -106,7 +106,7 @@ public class Class127 {
 				var12.field3096 = new Class96(Client.field94, Class296.method4404(var12.field3104), var3, var4, var0, var1, var2, var6, false, var12.field3096);
 				return true;
 			}
-		} else if (var5 == Class388.field4553.field4554) {
+		} else if (Class388.field4553.field4554 == var5) {
 			Class271 var13 = var8.method5387(var0, var1, var2);
 			if (var13 != null) {
 				var13.field2788 = new Class96(Client.field94, Class296.method4404(var13.field2787), 22, var4, var0, var1, var2, var6, false, var13.field2788);

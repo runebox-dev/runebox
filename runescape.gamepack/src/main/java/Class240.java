@@ -20,7 +20,7 @@ public class Class240 {
 	public Class240(int var1, int var2) {
 		this.field2540 = new int[var1][var2];
 		this.field2541 = new int[var1][var2];
-		int var3 = var2 * var1;
+		int var3 = var1 * var2;
 		int var4 = Class337.method7475(var3 / 4);
 		this.field2538 = new int[var4];
 		this.field2539 = new int[var4];
@@ -103,10 +103,10 @@ public class Class240 {
 
 				StringBuilder var5;
 				char var8;
-				for (var5 = new StringBuilder(var2); 0L != var0; var5.append(var8)) {
+				for (var5 = new StringBuilder(var2); var0 != 0L; var5.append(var8)) {
 					long var6 = var0;
 					var0 /= 37L;
-					var8 = Class426.field4711[(int)(var6 - 37L * var0)];
+					var8 = Class426.field4711[(int)(var6 - var0 * 37L)];
 					if (var8 == '_') {
 						int var9 = var5.length() - 1;
 						var5.setCharAt(var9, Character.toUpperCase(var5.charAt(var9)));
@@ -130,7 +130,7 @@ public class Class240 {
 			Client.field4980.method7325();
 
 			for (int var1 = 0; var1 < Client.field5093.field1024.length; ++var1) {
-				if (null != Client.field5093.field1024[var1]) {
+				if (Client.field5093.field1024[var1] != null) {
 					Client.field4980.method7328((Client.field5093.field1024[var1].field1266 >> 7) + Client.field5093.field1019, (Client.field5093.field1024[var1].field1229 >> 7) + Client.field5093.field1021);
 				}
 			}

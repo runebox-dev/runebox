@@ -64,7 +64,7 @@ public final class Class502 implements Iterable {
 
 			while (true) {
 				Class520 var3 = var2.field5235;
-				if (var3 == var2) {
+				if (var2 == var3) {
 					break;
 				}
 
@@ -85,7 +85,7 @@ public final class Class502 implements Iterable {
 	@ObfInfo(name = "ap", desc = "()Ltz;")
 	public Class520 method8905() {
 		Class520 var1;
-		if (this.field5077 > 0 && this.field5073 != this.field5074[this.field5077 - 1]) {
+		if (this.field5077 > 0 && this.field5074[this.field5077 - 1] != this.field5073) {
 			var1 = this.field5073;
 			this.field5073 = var1.field5235;
 			return var1;
@@ -96,7 +96,7 @@ public final class Class502 implements Iterable {
 				}
 
 				var1 = this.field5074[this.field5077++].field5235;
-			} while(var1 == this.field5074[this.field5077 - 1]);
+			} while(this.field5074[this.field5077 - 1] == var1);
 
 			this.field5073 = var1.field5235;
 			return var1;

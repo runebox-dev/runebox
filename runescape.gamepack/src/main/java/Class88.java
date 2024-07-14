@@ -65,7 +65,7 @@ public class Class88 {
 		}
 
 		for (var2 = 0; var2 < 64; ++var2) {
-			this.field1110[var2 + 128] = 16776960 + var2 * 4;
+			this.field1110[var2 + 128] = var2 * 4 + 16776960;
 		}
 
 		for (var2 = 0; var2 < 64; ++var2) {
@@ -97,11 +97,11 @@ public class Class88 {
 		}
 
 		for (var2 = 0; var2 < 64; ++var2) {
-			this.field1109[var2 + 64] = 255 + var2 * 262144;
+			this.field1109[var2 + 64] = var2 * 262144 + 255;
 		}
 
 		for (var2 = 0; var2 < 64; ++var2) {
-			this.field1109[var2 + 128] = 16711935 + var2 * 1024;
+			this.field1109[var2 + 128] = var2 * 1024 + 16711935;
 		}
 
 		for (var2 = 0; var2 < 64; ++var2) {
@@ -166,11 +166,11 @@ public class Class88 {
 
 		var3 = 0;
 		int var4 = var1 * 128;
-		int var5 = 128 * (256 - var1);
+		int var5 = (256 - var1) * 128;
 
 		int var7;
 		for (int var6 = 0; var6 < var5; ++var6) {
-			var7 = this.field1099[var4 + var3] - var1 * this.field1111[var3 + this.field1113 & this.field1111.length - 1] / 6;
+			var7 = this.field1099[var3 + var4] - this.field1111[this.field1113 + var3 & this.field1111.length - 1] * var1 / 6;
 			if (var7 < 0) {
 				var7 = 0;
 			}
@@ -189,9 +189,9 @@ public class Class88 {
 			for (int var10 = 0; var10 < 128; ++var10) {
 				var11 = (int)(Math.random() * 100.0D);
 				if (var11 < 50 && var10 > var16 && var10 < var7) {
-					this.field1099[var10 + var9] = 255;
+					this.field1099[var9 + var10] = 255;
 				} else {
-					this.field1099[var10 + var9] = 0;
+					this.field1099[var9 + var10] = 0;
 				}
 			}
 		}
@@ -204,7 +204,7 @@ public class Class88 {
 			this.field1108 -= var1 * 4;
 		}
 
-		if (0 == this.field1107 && 0 == this.field1108) {
+		if (this.field1107 == 0 && this.field1108 == 0) {
 			var8 = (int)(Math.random() * (double)(2000 / var1));
 			if (var8 == 0) {
 				this.field1107 = 1024;
@@ -216,7 +216,7 @@ public class Class88 {
 		}
 
 		for (var8 = 0; var8 < 256 - var1; ++var8) {
-			this.field1101[var8] = this.field1101[var8 + var1];
+			this.field1101[var8] = this.field1101[var1 + var8];
 		}
 
 		for (var8 = 256 - var1; var8 < 256; ++var8) {
@@ -225,7 +225,7 @@ public class Class88 {
 		}
 
 		this.field1106 += var1;
-		var8 = (var1 + (Client.field541 & 1)) / 2;
+		var8 = ((Client.field541 & 1) + var1) / 2;
 		if (var8 > 0) {
 			short var17 = 128;
 			byte var18 = 2;
@@ -237,7 +237,7 @@ public class Class88 {
 			for (var12 = 0; var12 < this.field1106 * 100; ++var12) {
 				var13 = (int)(Math.random() * (double)var11) + var18;
 				var14 = (int)(Math.random() * (double)var17) + var17;
-				this.field1099[var13 + (var14 << 7)] = 192;
+				this.field1099[(var14 << 7) + var13] = 192;
 			}
 
 			this.field1106 = 0;
@@ -248,16 +248,16 @@ public class Class88 {
 				var14 = var12 * 128;
 
 				for (var15 = -var8; var15 < 128; ++var15) {
-					if (var15 + var8 < 128) {
-						var13 += this.field1099[var15 + var14 + var8];
+					if (var8 + var15 < 128) {
+						var13 += this.field1099[var14 + var15 + var8];
 					}
 
 					if (var15 - (var8 + 1) >= 0) {
-						var13 -= this.field1099[var15 + var14 - (var8 + 1)];
+						var13 -= this.field1099[var14 + var15 - (var8 + 1)];
 					}
 
 					if (var15 >= 0) {
-						this.field1104[var15 + var14] = var13 / (var8 * 2 + 1);
+						this.field1104[var14 + var15] = var13 / (var8 * 2 + 1);
 					}
 				}
 			}
@@ -267,16 +267,16 @@ public class Class88 {
 
 				for (var14 = -var8; var14 < 256; ++var14) {
 					var15 = var14 * 128;
-					if (var14 + var8 < 256) {
-						var13 += this.field1104[var8 * 128 + var15 + var12];
+					if (var8 + var14 < 256) {
+						var13 += this.field1104[var8 * 128 + var12 + var15];
 					}
 
 					if (var14 - (var8 + 1) >= 0) {
-						var13 -= this.field1104[var15 + var12 - (var8 + 1) * 128];
+						var13 -= this.field1104[var12 + var15 - (var8 + 1) * 128];
 					}
 
 					if (var14 >= 0) {
-						this.field1099[var15 + var12] = var13 / (1 + var8 * 2);
+						this.field1099[var12 + var15] = var13 / (var8 * 2 + 1);
 					}
 				}
 			}
@@ -287,7 +287,7 @@ public class Class88 {
 	@ObfInfo(name = "ap", desc = "(IIII)I")
 	public final int method2377(int var1, int var2, int var3) {
 		int var5 = 256 - var3;
-		return (var3 * (var2 & 16711935) + var5 * (var1 & 16711935) & -16711936) + ((var2 & 65280) * var3 + (var1 & 65280) * var5 & 16711680) >> 8;
+		return ((var1 & 16711935) * var5 + (var2 & 16711935) * var3 & -16711936) + ((var1 & 65280) * var5 + (var2 & 65280) * var3 & 16711680) >> 8;
 	}
 
 	@ObfInfo(name = "an", desc = "(II)V", opaque = "1146996789")
@@ -327,8 +327,8 @@ public class Class88 {
 		int var3 = 0;
 
 		for (int var4 = 1; var4 < 255; ++var4) {
-			int var5 = this.field1101[var4] * (256 - var4) / 256;
-			int var6 = var5 + var1;
+			int var5 = (256 - var4) * this.field1101[var4] / 256;
+			int var6 = var1 + var5;
 			int var7 = 0;
 			int var8 = 128;
 			if (var6 < 0) {
@@ -340,7 +340,7 @@ public class Class88 {
 				var8 = Client.field4695.field5513 - var6;
 			}
 
-			int var9 = Client.field4695.field5513 * (var4 + 8) + var6;
+			int var9 = (var4 + 8) * Client.field4695.field5513 + var6;
 			var3 += var7;
 
 			for (int var10 = var7; var10 < var8; ++var10) {
@@ -351,7 +351,7 @@ public class Class88 {
 					int var14 = 256 - var11;
 					var11 = this.field1103[var11];
 					int var15 = Client.field4695.field5511[var9];
-					Client.field4695.field5511[var9++] = -16777216 | (var14 * (var15 & 16711935) + var13 * (var11 & 16711935) & -16711936) + (var13 * (var11 & 65280) + var14 * (var15 & 65280) & 16711680) >> 8;
+					Client.field4695.field5511[var9++] = -16777216 | ((var11 & 16711935) * var13 + (var15 & 16711935) * var14 & -16711936) + ((var11 & 65280) * var13 + (var15 & 65280) * var14 & 16711680) >> 8;
 				} else {
 					++var9;
 				}
@@ -381,7 +381,7 @@ public class Class88 {
 			for (var4 = 1; var4 < 255; ++var4) {
 				for (var5 = 1; var5 < 127; ++var5) {
 					var6 = (var4 << 7) + var5;
-					this.field1096[var6] = (this.field1111[var6 + 128] + this.field1111[var6 - 1] + this.field1111[var6 + 1] + this.field1111[var6 - 128]) / 4;
+					this.field1096[var6] = (this.field1111[var6 - 1] + this.field1111[var6 + 1] + this.field1111[var6 - 128] + this.field1111[var6 + 128]) / 4;
 				}
 			}
 
@@ -397,7 +397,7 @@ public class Class88 {
 				for (var5 = 0; var5 < var1.field5495; ++var5) {
 					if (var1.field5497[var3++] != 0) {
 						var6 = var5 + 16 + var1.field5494;
-						int var7 = var1.field5493 + var4 + 16;
+						int var7 = var4 + 16 + var1.field5493;
 						int var8 = (var7 << 7) + var6;
 						this.field1111[var8] = 0;
 					}

@@ -70,7 +70,7 @@ public class Class150 extends Class516 {
 				var12 = this.field1691;
 			}
 
-			if (null == var12[var8]) {
+			if (var12[var8] == null) {
 				var12[var8] = new Class134[var11];
 			}
 
@@ -91,7 +91,7 @@ public class Class150 extends Class516 {
 				--var13;
 			}
 
-			if (var14 == var8) {
+			if (var8 == var14) {
 				break;
 			}
 
@@ -159,7 +159,7 @@ public class Class150 extends Class516 {
 		float var7 = var6[0];
 		float var8 = var6[1];
 		float var9 = var6[2];
-		if (null != this.field1687[var2]) {
+		if (this.field1687[var2] != null) {
 			Class134 var10 = this.field1687[var2][0];
 			Class134 var11 = this.field1687[var2][1];
 			Class134 var12 = this.field1687[var2][2];
@@ -188,7 +188,7 @@ public class Class150 extends Class516 {
 		var13.method7823(var19);
 		Class423 var14;
 		synchronized(Class423.field4698) {
-			if (0 == Class423.field4700) {
+			if (Class423.field4700 == 0) {
 				var14 = new Class423();
 			} else {
 				Class423.field4698[--Class423.field4700].method7740();
@@ -211,7 +211,7 @@ public class Class150 extends Class516 {
 		float var7 = var6[0];
 		float var8 = var6[1];
 		float var9 = var6[2];
-		if (null != this.field1687[var2]) {
+		if (this.field1687[var2] != null) {
 			Class134 var10 = this.field1687[var2][3];
 			Class134 var11 = this.field1687[var2][4];
 			Class134 var12 = this.field1687[var2][5];
@@ -239,7 +239,7 @@ public class Class150 extends Class516 {
 		float var7 = var6[0];
 		float var8 = var6[1];
 		float var9 = var6[2];
-		if (null != this.field1687[var2]) {
+		if (this.field1687[var2] != null) {
 			Class134 var10 = this.field1687[var2][6];
 			Class134 var11 = this.field1687[var2][7];
 			Class134 var12 = this.field1687[var2][8];

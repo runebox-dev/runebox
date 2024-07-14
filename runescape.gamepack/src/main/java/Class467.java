@@ -32,7 +32,7 @@ public class Class467 extends Class471 {
 		if (var4 == null) {
 			return false;
 		} else {
-			return !var2 || 0 != var4.field4971;
+			return !var2 || var4.field4971 != 0;
 		}
 	}
 
@@ -46,8 +46,8 @@ public class Class467 extends Class471 {
 				int var7 = var1.method9997();
 				int var8 = var1.method9902();
 				int var9 = var1.method9902();
-				boolean var10 = 0 != (var9 & 2);
-				boolean var11 = 0 != (var9 & 1);
+				boolean var10 = (var9 & 2) != 0;
+				boolean var11 = (var9 & 1) != 0;
 				if (var7 > 0) {
 					var1.method9837();
 					var1.method9902();
@@ -59,7 +59,7 @@ public class Class467 extends Class471 {
 					Class456 var12 = (Class456)this.method8578(var5);
 					if (var4) {
 						Class456 var13 = (Class456)this.method8578(var6);
-						if (var13 != null && var13 != var12) {
+						if (var13 != null && var12 != var13) {
 							if (var12 != null) {
 								this.method8560(var13);
 							} else {
@@ -99,7 +99,7 @@ public class Class467 extends Class471 {
 
 					if (var12.field4971 != var7) {
 						var12.field4970 = ++this.field4928 - 1;
-						if (-1 == var12.field4971 && var7 == 0) {
+						if (var12.field4971 == -1 && var7 == 0) {
 							var12.field4970 = -(var12.field4970 * 415892275) * 1329967099;
 						}
 

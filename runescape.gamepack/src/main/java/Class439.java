@@ -35,12 +35,12 @@ public class Class439 {
 
 	@ObfInfo(name = "ad", desc = "(II)Z", opaque = "-1686655956")
 	public boolean method8099(int var1) {
-		return this.field4770.method7901() == 2 || this.field4770.method7901() == 1 && (!this.field4770.field4731 || var1 != this.field4769 - 1);
+		return this.field4770.method7901() == 2 || this.field4770.method7901() == 1 && (!this.field4770.field4731 || this.field4769 - 1 != var1);
 	}
 
 	@ObfInfo(name = "ag", desc = "(I)Z", opaque = "129521341")
 	public boolean method8089() {
-		return this.field4766 == this.field4769;
+		return this.field4769 == this.field4766;
 	}
 
 	@ObfInfo(name = "ak", desc = "(S)I")
@@ -52,7 +52,7 @@ public class Class439 {
 	public boolean method8091(Class422 var1) {
 		if (this.field4770.field4723 == 2) {
 			return true;
-		} else if (0 == this.field4770.field4723) {
+		} else if (this.field4770.field4723 == 0) {
 			return false;
 		} else {
 			return this.field4770.method7951() != var1;
@@ -92,6 +92,6 @@ public class Class439 {
 
 	@ObfInfo(name = "av", desc = "(II)Lqf;", opaque = "1462344718")
 	public Class422 method8098(int var1) {
-		return var1 >= 0 && var1 < this.method8090() ? this.field4770.method7871(var1 + this.field4766) : null;
+		return var1 >= 0 && var1 < this.method8090() ? this.field4770.method7871(this.field4766 + var1) : null;
 	}
 }

@@ -19,7 +19,7 @@ public class Class411 {
 
 				for (int var3 = 0; var3 < var2.length; ++var3) {
 					char var4 = var2[var3];
-					if (var4 == var0) {
+					if (var0 == var4) {
 						return true;
 					}
 				}
@@ -58,65 +58,65 @@ public class Class411 {
 		int var6 = var2 - var1;
 
 		for (int var7 = 0; var7 < var6; ++var7) {
-			char var8 = var0.charAt(var7 + var1);
+			char var8 = var0.charAt(var1 + var7);
 			if (var8 > 0 && var8 < 128 || var8 >= 160 && var8 <= 255) {
-				var3[var7 + var4] = (byte)var8;
+				var3[var4 + var7] = (byte)var8;
 			} else if (var8 == 8364) {
-				var3[var7 + var4] = -128;
+				var3[var4 + var7] = -128;
 			} else if (var8 == 8218) {
-				var3[var7 + var4] = -126;
+				var3[var4 + var7] = -126;
 			} else if (var8 == 402) {
-				var3[var7 + var4] = -125;
+				var3[var4 + var7] = -125;
 			} else if (var8 == 8222) {
-				var3[var7 + var4] = -124;
+				var3[var4 + var7] = -124;
 			} else if (var8 == 8230) {
-				var3[var7 + var4] = -123;
+				var3[var4 + var7] = -123;
 			} else if (var8 == 8224) {
-				var3[var7 + var4] = -122;
+				var3[var4 + var7] = -122;
 			} else if (var8 == 8225) {
-				var3[var7 + var4] = -121;
+				var3[var4 + var7] = -121;
 			} else if (var8 == 710) {
-				var3[var7 + var4] = -120;
+				var3[var4 + var7] = -120;
 			} else if (var8 == 8240) {
-				var3[var7 + var4] = -119;
+				var3[var4 + var7] = -119;
 			} else if (var8 == 352) {
-				var3[var7 + var4] = -118;
+				var3[var4 + var7] = -118;
 			} else if (var8 == 8249) {
-				var3[var7 + var4] = -117;
+				var3[var4 + var7] = -117;
 			} else if (var8 == 338) {
-				var3[var7 + var4] = -116;
+				var3[var4 + var7] = -116;
 			} else if (var8 == 381) {
-				var3[var7 + var4] = -114;
+				var3[var4 + var7] = -114;
 			} else if (var8 == 8216) {
-				var3[var7 + var4] = -111;
+				var3[var4 + var7] = -111;
 			} else if (var8 == 8217) {
-				var3[var7 + var4] = -110;
+				var3[var4 + var7] = -110;
 			} else if (var8 == 8220) {
-				var3[var7 + var4] = -109;
+				var3[var4 + var7] = -109;
 			} else if (var8 == 8221) {
-				var3[var7 + var4] = -108;
+				var3[var4 + var7] = -108;
 			} else if (var8 == 8226) {
-				var3[var7 + var4] = -107;
+				var3[var4 + var7] = -107;
 			} else if (var8 == 8211) {
-				var3[var7 + var4] = -106;
+				var3[var4 + var7] = -106;
 			} else if (var8 == 8212) {
-				var3[var7 + var4] = -105;
+				var3[var4 + var7] = -105;
 			} else if (var8 == 732) {
-				var3[var7 + var4] = -104;
+				var3[var4 + var7] = -104;
 			} else if (var8 == 8482) {
-				var3[var7 + var4] = -103;
+				var3[var4 + var7] = -103;
 			} else if (var8 == 353) {
-				var3[var7 + var4] = -102;
+				var3[var4 + var7] = -102;
 			} else if (var8 == 8250) {
-				var3[var7 + var4] = -101;
+				var3[var4 + var7] = -101;
 			} else if (var8 == 339) {
-				var3[var7 + var4] = -100;
+				var3[var4 + var7] = -100;
 			} else if (var8 == 382) {
-				var3[var7 + var4] = -98;
+				var3[var4 + var7] = -98;
 			} else if (var8 == 376) {
-				var3[var7 + var4] = -97;
+				var3[var4 + var7] = -97;
 			} else {
-				var3[var7 + var4] = 63;
+				var3[var4 + var7] = 63;
 			}
 		}
 
@@ -129,7 +129,7 @@ public class Class411 {
 		int var5 = 0;
 
 		for (int var6 = 0; var6 < var2; ++var6) {
-			int var7 = var0[var6 + var1] & 255;
+			int var7 = var0[var1 + var6] & 255;
 			if (var7 != 0) {
 				if (var7 >= 128 && var7 < 160) {
 					char var8 = field4669[var7 - 128];

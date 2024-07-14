@@ -45,8 +45,8 @@ public class Class235 implements Class264 {
 
 	@ObfInfo(name = "ad", desc = "(IIIB)Z", opaque = "-1")
 	public boolean method4459(int var1, int var2, int var3) {
-		if (var1 >= this.field2492 && var1 < this.field2489 + this.field2492) {
-			return var2 >= (this.field2490 << 6) + (this.field2488 << 3) && var2 <= 7 + (this.field2488 << 3) + (this.field2490 << 6) && var3 >= (this.field2495 << 3) + (this.field2494 << 6) && var3 <= 7 + (this.field2494 << 6) + (this.field2495 << 3);
+		if (var1 >= this.field2492 && var1 < this.field2492 + this.field2489) {
+			return var2 >= (this.field2490 << 6) + (this.field2488 << 3) && var2 <= (this.field2490 << 6) + (this.field2488 << 3) + 7 && var3 >= (this.field2495 << 3) + (this.field2494 << 6) && var3 <= (this.field2495 << 3) + (this.field2494 << 6) + 7;
 		} else {
 			return false;
 		}
@@ -54,7 +54,7 @@ public class Class235 implements Class264 {
 
 	@ObfInfo(name = "ag", desc = "(III)Z", opaque = "-889269986")
 	public boolean method4480(int var1, int var2) {
-		return var1 >= (this.field2491 << 3) + (this.field2496 << 6) && var1 <= 7 + (this.field2496 << 6) + (this.field2491 << 3) && var2 >= (this.field2497 << 3) + (this.field2493 << 6) && var2 <= 7 + (this.field2493 << 6) + (this.field2497 << 3);
+		return var1 >= (this.field2496 << 6) + (this.field2491 << 3) && var1 <= (this.field2496 << 6) + (this.field2491 << 3) + 7 && var2 >= (this.field2497 << 3) + (this.field2493 << 6) && var2 <= (this.field2497 << 3) + (this.field2493 << 6) + 7;
 	}
 
 	@ObfInfo(name = "ak", desc = "(IIIB)[I", opaque = "7")
@@ -62,7 +62,7 @@ public class Class235 implements Class264 {
 		if (!this.method4459(var1, var2, var3)) {
 			return null;
 		} else {
-			int[] var5 = new int[]{this.field2491 * 8 - this.field2488 * 8 + var2 + (this.field2496 * 64 - this.field2490 * 64), this.field2497 * 8 - this.field2495 * 8 + var3 + (this.field2493 * 64 - this.field2494 * 64)};
+			int[] var5 = new int[]{this.field2491 * 8 - this.field2488 * 8 + this.field2496 * 64 - this.field2490 * 64 + var2, this.field2497 * 8 - this.field2495 * 8 + this.field2493 * 64 - this.field2494 * 64 + var3};
 			return var5;
 		}
 	}
@@ -72,8 +72,8 @@ public class Class235 implements Class264 {
 		if (!this.method4480(var1, var2)) {
 			return null;
 		} else {
-			int var4 = this.field2490 * 64 - this.field2496 * 64 + var1 + (this.field2488 * 8 - this.field2491 * 8);
-			int var5 = this.field2494 * 64 - this.field2493 * 64 + var2 + (this.field2495 * 8 - this.field2497 * 8);
+			int var4 = this.field2488 * 8 - this.field2491 * 8 + this.field2490 * 64 - this.field2496 * 64 + var1;
+			int var5 = this.field2495 * 8 - this.field2497 * 8 + this.field2494 * 64 - this.field2493 * 64 + var2;
 			return new Class350(this.field2492, var4, var5);
 		}
 	}

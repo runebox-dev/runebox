@@ -33,7 +33,7 @@ public class Class453 extends Class457 {
 
 				if (var4 != null && !var4.field3757) {
 					try {
-						if (var4.field3756 != null && var4.field3764 != -1 && -1 != var4.field3753) {
+						if (var4.field3756 != null && var4.field3764 != -1 && var4.field3753 != -1) {
 							if (var4.field3751 == null) {
 								var4.field3751 = Class364.method7045(var4.field3756, var4.field3764, var4.field3753);
 								if (var4.field3751 == null) {

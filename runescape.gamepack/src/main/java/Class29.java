@@ -132,9 +132,9 @@ public class Class29 {
 		int var6 = var4 - var2;
 		int var7 = var3 - var1;
 		int var8 = var6 < 0 ? -var6 : var6;
-		int var9 = var8 * (var5 - var1);
+		int var9 = (var5 - var1) * var8;
 		int var10 = var9 / var7;
-		return var6 < 0 ? var2 - var10 : var10 + var2;
+		return var6 < 0 ? var2 - var10 : var2 + var10;
 	}
 
 	@ObfInfo(name = "ak", desc = "(IIII[FI)V")

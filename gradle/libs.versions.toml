@@ -11,6 +11,7 @@ fernflower = "1.0.1"
 bouncycastle = "1.64"
 json = "20220320"
 ajavabeans = "1.0.4"
+gradle-plugin-publish = "0.21.0"
 
 [libraries]
 kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
@@ -37,3 +38,4 @@ asm = ["asm", "asm-commons", "asm-util", "asm-tree"]
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+gradle-plugin-publish = { id = "com.gradle.plugin-publish", version.ref = "gradle-plugin-publish" }

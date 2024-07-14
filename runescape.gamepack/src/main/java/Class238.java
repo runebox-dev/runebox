@@ -29,8 +29,8 @@ public class Class238 {
 				int var13 = var5.method9902();
 				int var14 = var13 >> 2;
 				int var15 = var13 & 3;
-				int var16 = var11 + var2;
-				int var17 = var10 + var3;
+				int var16 = var2 + var11;
+				int var17 = var3 + var10;
 				if (var16 > 0 && var17 > 0 && var16 < var0.field1025[0].length - 2 && var17 < var0.field1025[0][0].length - 2) {
 					int var18 = var12;
 					if ((var0.field1023[1][var16][var17] & 2) == 2) {

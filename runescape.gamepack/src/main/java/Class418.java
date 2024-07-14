@@ -103,7 +103,7 @@ public class Class418 {
 		int var3 = var0 << 4;
 		if (Character.isUpperCase(var0) || Character.isTitleCase(var0)) {
 			var0 = Character.toLowerCase(var0);
-			var3 = 1 + (var0 << 4);
+			var3 = (var0 << 4) + 1;
 		}
 
 		if (var0 == 241 && Class395.field4595 == var1) {

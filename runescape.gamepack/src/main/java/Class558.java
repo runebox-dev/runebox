@@ -15,13 +15,13 @@ public class Class558 {
 
 	@ObfInfo(name = "aq", desc = "(Lvp;[BI)V", opaque = "1659372412")
 	public void method9768(Class562 var1, byte[] var2) {
-		if (31 == var1.field5472[var1.field5471] && -117 == var1.field5472[var1.field5471 + 1]) {
+		if (var1.field5472[var1.field5471] == 31 && var1.field5472[var1.field5471 + 1] == -117) {
 			if (this.field5449 == null) {
 				this.field5449 = new Inflater(true);
 			}
 
 			try {
-				this.field5449.setInput(var1.field5472, 10 + var1.field5471, var1.field5472.length - (8 + var1.field5471 + 10));
+				this.field5449.setInput(var1.field5472, var1.field5471 + 10, var1.field5472.length - (var1.field5471 + 10 + 8));
 				this.field5449.inflate(var2);
 			} catch (Exception var5) {
 				this.field5449.reset();

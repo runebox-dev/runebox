@@ -83,7 +83,7 @@ public class Class166 extends Class520 {
 	@ObfInfo(name = "an", desc = "(Lvp;I)V", opaque = "-15655574")
 	public void method3429(Class562 var1) {
 		int var3 = var1.method9902();
-		if (0 != (var3 & 1)) {
+		if ((var3 & 1) != 0) {
 			this.field1815 = true;
 		}
 

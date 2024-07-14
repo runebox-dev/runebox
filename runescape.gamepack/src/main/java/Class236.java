@@ -65,7 +65,7 @@ public class Class236 implements Class393 {
 				int var6 = var4.field1229 >> 7;
 				if (var5 >= 0 && var5 < var0.field1030 && var6 >= 0 && var6 < var0.field1018) {
 					if (var4.field1232 == 1 && (var4.field1266 & 127) == 64 && (var4.field1229 & 127) == 64) {
-						if (Client.field643 == var0.field1036[var5][var6]) {
+						if (var0.field1036[var5][var6] == Client.field643) {
 							continue;
 						}
 
@@ -74,7 +74,7 @@ public class Class236 implements Class393 {
 
 					long var7 = Class296.method4129(0, 0, 1, !var4.field1309.field1974, var0.field1028[var3], var0.field1026);
 					var4.field1233 = Client.field541;
-					var0.field1014.method5263(var0.field1016, var4.field1266, var4.field1229, Client.method3531(var0, var4.field1232 * 64 - 64 + var4.field1266, var4.field1229 + (var4.field1232 * 64 - 64), var0.field1016), var4.field1232 * 64 - 64 + 60, var4, var4.field1230, var7, var4.field1231);
+					var0.field1014.method5263(var0.field1016, var4.field1266, var4.field1229, Client.method3531(var0, var4.field1232 * 64 - 64 + var4.field1266, var4.field1232 * 64 - 64 + var4.field1229, var0.field1016), var4.field1232 * 64 - 64 + 60, var4, var4.field1230, var7, var4.field1231);
 				}
 			}
 		}

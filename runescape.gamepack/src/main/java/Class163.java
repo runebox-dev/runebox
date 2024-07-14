@@ -215,7 +215,7 @@ public class Class163 extends Class516 {
 
 	@ObfInfo(owner = "gn", name = "aq", desc = "(II)Lgg;", opaque = "-810303386")
 	public static Class163 method3540(int var0) {
-		return var0 >= 0 && var0 < Client.field1771.length && null != Client.field1771[var0] ? Client.field1771[var0] : new Class163(var0);
+		return var0 >= 0 && var0 < Client.field1771.length && Client.field1771[var0] != null ? Client.field1771[var0] : new Class163(var0);
 	}
 
 	@ObfInfo(owner = "aa", name = "av", desc = "(I)V")

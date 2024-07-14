@@ -28,7 +28,7 @@ public class Class392 {
 
 		int var4;
 		for (byte var3 = 12; var1 < 16; var2 -= var3) {
-			var4 = Class239.method6346((double)((float)var2 / 360.0F), 0.9998999834060669D, (double)(0.075F + (float)var1 * 0.425F / 16.0F));
+			var4 = Class239.method6346((double)((float)var2 / 360.0F), 0.9998999834060669D, (double)((float)var1 * 0.425F / 16.0F + 0.075F));
 			field176[var1] = var4;
 			++var1;
 		}
@@ -55,7 +55,7 @@ public class Class392 {
 
 		for (int var9 = 0; var9 < var3; ++var9) {
 			for (int var10 = 0; var10 < var3; ++var10) {
-				int var11 = var7[var9 * var3 + var10] = (int)(256.0D * (var4[var10] * var4[var9] / var5));
+				int var11 = var7[var3 * var9 + var10] = (int)(var4[var9] * var4[var10] / var5 * 256.0D);
 				if (!var8 && var11 > 0) {
 					var8 = true;
 				}
@@ -91,7 +91,7 @@ public class Class392 {
 
 	@ObfInfo(name = "ap", desc = "(IILvg;FB)V", opaque = "-1")
 	public final void method7334(int var1, int var2, Class553 var3, float var4) {
-		int var6 = (int)(18.0F * var4);
+		int var6 = (int)(var4 * 18.0F);
 		Class553 var7 = this.method7327(var6);
 		int var8 = var6 * 2 + 1;
 		Class417 var9 = new Class417(0, 0, var3.field5421, var3.field5424);
@@ -116,7 +116,7 @@ public class Class392 {
 		System.nanoTime();
 
 		for (var11 = 0; var11 < var3.field5429.length; ++var11) {
-			if (0 == var3.field5429[var11]) {
+			if (var3.field5429[var11] == 0) {
 				var3.field5429[var11] = -16777216;
 			} else {
 				var12 = (var3.field5429[var11] + 64 - 1) / 256;
@@ -138,7 +138,7 @@ public class Class392 {
 
 	@ObfInfo(name = "an", desc = "(Lvg;Lvg;Lqa;I)V", opaque = "1934834752")
 	public void method7340(Class553 var1, Class553 var2, Class417 var3) {
-		if (var3.field4677 != 0 && 0 != var3.field4680) {
+		if (var3.field4677 != 0 && var3.field4680 != 0) {
 			int var5 = 0;
 			int var6 = 0;
 			if (var3.field4679 == 0) {

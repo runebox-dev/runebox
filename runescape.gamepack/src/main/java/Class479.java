@@ -51,11 +51,11 @@ public class Class479 implements Comparable {
 		int[] var10 = var0.field1017.field1407;
 
 		int var11;
-		for (var11 = 0; var11 < var9 + var0.field1027; ++var11) {
+		for (var11 = 0; var11 < var0.field1027 + var9; ++var11) {
 			Object var12;
 			if (var11 < var9) {
 				var12 = var0.field1024[var10[var11]];
-				if (Client.field556 == var10[var11]) {
+				if (var10[var11] == Client.field556) {
 					var6 = true;
 					var7 = var11;
 					continue;
@@ -91,7 +91,7 @@ public class Class479 implements Comparable {
 				var16 = false;
 
 				for (int var17 = 0; var17 < var11; ++var17) {
-					if (var13 + 2 > Client.field635[var17] - Client.field636[var17] && var13 - var15 < 2 + Client.field635[var17] && var23 - var14 < Client.field634[var17] + Client.field693[var17] && var14 + var23 > Client.field634[var17] - Client.field693[var17] && Client.field635[var17] - Client.field636[var17] < var13) {
+					if (var13 + 2 > Client.field635[var17] - Client.field636[var17] && var13 - var15 < Client.field635[var17] + 2 && var23 - var14 < Client.field693[var17] + Client.field634[var17] && var23 + var14 > Client.field634[var17] - Client.field693[var17] && Client.field635[var17] - Client.field636[var17] < var13) {
 						var13 = Client.field635[var17] - Client.field636[var17];
 						var16 = true;
 					}
@@ -101,13 +101,13 @@ public class Class479 implements Comparable {
 			Client.field644 = Client.field634[var11];
 			Client.field611 = Client.field635[var11] = var13;
 			String var24 = Client.field642[var11];
-			if (0 == Client.field637) {
+			if (Client.field637 == 0) {
 				int var18 = 16776960;
 				if (Client.field638[var11] < 6) {
 					var18 = Client.field759[Client.field638[var11]];
 				}
 
-				if (6 == Client.field638[var11]) {
+				if (Client.field638[var11] == 6) {
 					var18 = Client.field643 % 20 < 10 ? 16711680 : 16776960;
 				}
 
@@ -120,14 +120,14 @@ public class Class479 implements Comparable {
 				}
 
 				int var19;
-				if (9 == Client.field638[var11]) {
+				if (Client.field638[var11] == 9) {
 					var19 = 150 - Client.field641[var11];
 					if (var19 < 50) {
 						var18 = var19 * 1280 + 16711680;
 					} else if (var19 < 100) {
-						var18 = 16776960 - 327680 * (var19 - 50);
+						var18 = 16776960 - (var19 - 50) * 327680;
 					} else if (var19 < 150) {
-						var18 = 65280 + (var19 - 100) * 5;
+						var18 = (var19 - 100) * 5 + 65280;
 					}
 				}
 
@@ -138,7 +138,7 @@ public class Class479 implements Comparable {
 					} else if (var19 < 100) {
 						var18 = 16711935 - (var19 - 50) * 327680;
 					} else if (var19 < 150) {
-						var18 = 255 + 327680 * (var19 - 100) - 5 * (var19 - 100);
+						var18 = (var19 - 100) * 327680 + 255 - (var19 - 100) * 5;
 					}
 				}
 
@@ -147,14 +147,14 @@ public class Class479 implements Comparable {
 					if (var19 < 50) {
 						var18 = 16777215 - var19 * 327685;
 					} else if (var19 < 100) {
-						var18 = 327685 * (var19 - 50) + 65280;
+						var18 = (var19 - 50) * 327685 + 65280;
 					} else if (var19 < 150) {
 						var18 = 16777215 - (var19 - 100) * 327680;
 					}
 				}
 
 				int var20;
-				if (12 == Client.field638[var11] && Client.field566[var11] == null) {
+				if (Client.field638[var11] == 12 && Client.field566[var11] == null) {
 					var19 = var24.length();
 					Client.field566[var11] = new int[var19];
 
@@ -166,26 +166,26 @@ public class Class479 implements Comparable {
 				}
 
 				if (Client.field639[var11] == 0) {
-					Client.field2002.method8138(var24, var1 + Client.field644, Client.field611 + var2, var18, 0, Client.field566[var11]);
+					Client.field2002.method8138(var24, Client.field644 + var1, Client.field611 + var2, var18, 0, Client.field566[var11]);
 				}
 
 				if (Client.field639[var11] == 1) {
-					Client.field2002.method8151(var24, var1 + Client.field644, var2 + Client.field611, var18, 0, Client.field643, Client.field566[var11]);
+					Client.field2002.method8151(var24, Client.field644 + var1, Client.field611 + var2, var18, 0, Client.field643, Client.field566[var11]);
 				}
 
-				if (2 == Client.field639[var11]) {
-					Client.field2002.method8152(var24, var1 + Client.field644, var2 + Client.field611, var18, 0, Client.field643, Client.field566[var11]);
+				if (Client.field639[var11] == 2) {
+					Client.field2002.method8152(var24, Client.field644 + var1, Client.field611 + var2, var18, 0, Client.field643, Client.field566[var11]);
 				}
 
-				if (3 == Client.field639[var11]) {
+				if (Client.field639[var11] == 3) {
 					Client.field2002.method8153(var24, Client.field644 + var1, Client.field611 + var2, var18, 0, Client.field643, 150 - Client.field641[var11], Client.field566[var11]);
 				}
 
 				if (Client.field639[var11] == 4) {
 					var19 = (150 - Client.field641[var11]) * (Client.field2002.method8139(var24) + 100) / 150;
-					Class569.method10137(var1 + Client.field644 - 50, var2, var1 + Client.field644 + 50, var4 + var2);
-					Client.field2002.method8155(var24, 50 + Client.field644 + var1 - var19, Client.field611 + var2, var18, 0, Client.field566[var11]);
-					Class569.method10183(var1, var2, var3 + var1, var4 + var2);
+					Class569.method10137(Client.field644 + var1 - 50, var2, Client.field644 + var1 + 50, var2 + var4);
+					Client.field2002.method8155(var24, Client.field644 + var1 + 50 - var19, Client.field611 + var2, var18, 0, Client.field566[var11]);
+					Class569.method10183(var1, var2, var1 + var3, var2 + var4);
 				}
 
 				if (Client.field639[var11] == 5) {
@@ -197,12 +197,12 @@ public class Class479 implements Comparable {
 						var20 = var19 - 125;
 					}
 
-					Class569.method10137(var1, Client.field611 + var2 - Client.field2002.field4784 - 1, var3 + var1, 5 + Client.field611 + var2);
+					Class569.method10137(var1, Client.field611 + var2 - Client.field2002.field4784 - 1, var1 + var3, Client.field611 + var2 + 5);
 					Client.field2002.method8138(var24, Client.field644 + var1, Client.field611 + var2 + var20, var18, 0, Client.field566[var11]);
-					Class569.method10183(var1, var2, var3 + var1, var4 + var2);
+					Class569.method10183(var1, var2, var1 + var3, var2 + var4);
 				}
 			} else {
-				Client.field2002.method8147(var24, var1 + Client.field644, var2 + Client.field611, 16776960, 0);
+				Client.field2002.method8147(var24, Client.field644 + var1, Client.field611 + var2, 16776960, 0);
 			}
 		}
 

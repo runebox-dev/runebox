@@ -15,6 +15,6 @@ public final class Class329 {
 		}
 
 		field3639 = var1;
-		return var1 + field3638;
+		return field3638 + var1;
 	}
 }

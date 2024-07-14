@@ -71,8 +71,8 @@ public class Class49 {
 
 		int var2;
 		for (var2 = 0; var2 < 10; ++var2) {
-			if (this.field313[var2] != null && this.field313[var2].field432 + this.field313[var2].field448 > var1) {
-				var1 = this.field313[var2].field432 + this.field313[var2].field448;
+			if (this.field313[var2] != null && this.field313[var2].field448 + this.field313[var2].field432 > var1) {
+				var1 = this.field313[var2].field448 + this.field313[var2].field432;
 			}
 		}
 
@@ -89,12 +89,12 @@ public class Class49 {
 					int[] var7 = this.field313[var4].method1198(var5, this.field313[var4].field432);
 
 					for (int var8 = 0; var8 < var5; ++var8) {
-						int var9 = var3[var8 + var6] + (var7[var8] >> 8);
+						int var9 = (var7[var8] >> 8) + var3[var6 + var8];
 						if ((var9 + 128 & -256) != 0) {
 							var9 = var9 >> 31 ^ 127;
 						}
 
-						var3[var8 + var6] = (byte)var9;
+						var3[var6 + var8] = (byte)var9;
 					}
 				}
 			}

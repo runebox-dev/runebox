@@ -84,12 +84,12 @@ public class Class274 {
 				if (var8 != 0.0D) {
 					double var19;
 					if (var11 < 0.5D) {
-						var19 = var11 * (1.0D + var8);
+						var19 = (var8 + 1.0D) * var11;
 					} else {
-						var19 = var11 + var8 - var11 * var8;
+						var19 = var8 + var11 - var8 * var11;
 					}
 
-					double var21 = 2.0D * var11 - var19;
+					double var21 = var11 * 2.0D - var19;
 					double var23 = var6 + 0.3333333333333333D;
 					if (var23 > 1.0D) {
 						--var23;
@@ -100,32 +100,32 @@ public class Class274 {
 						++var27;
 					}
 
-					if (6.0D * var23 < 1.0D) {
-						var13 = var21 + (var19 - var21) * 6.0D * var23;
-					} else if (2.0D * var23 < 1.0D) {
+					if (var23 * 6.0D < 1.0D) {
+						var13 = (var19 - var21) * 6.0D * var23 + var21;
+					} else if (var23 * 2.0D < 1.0D) {
 						var13 = var19;
-					} else if (3.0D * var23 < 2.0D) {
-						var13 = var21 + (var19 - var21) * (0.6666666666666666D - var23) * 6.0D;
+					} else if (var23 * 3.0D < 2.0D) {
+						var13 = (var19 - var21) * (0.6666666666666666D - var23) * 6.0D + var21;
 					} else {
 						var13 = var21;
 					}
 
-					if (6.0D * var6 < 1.0D) {
-						var15 = var21 + (var19 - var21) * 6.0D * var6;
-					} else if (2.0D * var6 < 1.0D) {
+					if (var6 * 6.0D < 1.0D) {
+						var15 = (var19 - var21) * 6.0D * var6 + var21;
+					} else if (var6 * 2.0D < 1.0D) {
 						var15 = var19;
-					} else if (3.0D * var6 < 2.0D) {
-						var15 = var21 + (var19 - var21) * (0.6666666666666666D - var6) * 6.0D;
+					} else if (var6 * 3.0D < 2.0D) {
+						var15 = (0.6666666666666666D - var6) * (var19 - var21) * 6.0D + var21;
 					} else {
 						var15 = var21;
 					}
 
-					if (6.0D * var27 < 1.0D) {
-						var17 = var21 + (var19 - var21) * 6.0D * var27;
-					} else if (2.0D * var27 < 1.0D) {
+					if (var27 * 6.0D < 1.0D) {
+						var17 = (var19 - var21) * 6.0D * var27 + var21;
+					} else if (var27 * 2.0D < 1.0D) {
 						var17 = var19;
-					} else if (3.0D * var27 < 2.0D) {
-						var17 = var21 + (var19 - var21) * (0.6666666666666666D - var27) * 6.0D;
+					} else if (var27 * 3.0D < 2.0D) {
+						var17 = (var19 - var21) * (0.6666666666666666D - var27) * 6.0D + var21;
 					} else {
 						var17 = var21;
 					}
@@ -202,7 +202,7 @@ public class Class274 {
 
 	@ObfInfo(name = "az", desc = "([III[F)V")
 	public static void method5128(int[] var0, int var1, int var2, float[] var3) {
-		if (var3 == null && field2801 == field2809) {
+		if (var3 == null && field2809 == field2801) {
 			field2801 = field2808;
 		}
 

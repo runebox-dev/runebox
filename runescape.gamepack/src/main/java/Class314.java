@@ -29,7 +29,7 @@ public class Class314 extends Class520 {
 
 	@ObfInfo(owner = "ma", name = "aq", desc = "(B)Lmb;", opaque = "1")
 	public static Class314 method6078() {
-		return 0 == field3268 ? new Class314() : field3274[--field3268];
+		return field3268 == 0 ? new Class314() : field3274[--field3268];
 	}
 
 	@ObfInfo(owner = "js", name = "ag", desc = "(B)Lmb;")

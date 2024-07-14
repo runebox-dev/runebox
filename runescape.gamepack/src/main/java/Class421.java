@@ -22,7 +22,7 @@ public class Class421 {
 	public boolean equals(Object var1) {
 		if (var1 == null) {
 			return false;
-		} else if (var1 == this) {
+		} else if (this == var1) {
 			return true;
 		} else if (!(var1 instanceof Class421)) {
 			return false;

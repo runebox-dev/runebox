@@ -32,7 +32,7 @@ public class Class433 extends AbstractQueue {
 
 	@ObfInfo(name = "aq", desc = "(I)V")
 	public void method8041() {
-		int var2 = 1 + (this.field4749.length << 1);
+		int var2 = (this.field4749.length << 1) + 1;
 		this.field4749 = (Class430[])((Class430[])Arrays.copyOf(this.field4749, var2));
 	}
 
@@ -65,18 +65,18 @@ public class Class433 extends AbstractQueue {
 	}
 
 	public Object peek() {
-		return 0 == this.field4751 ? null : this.field4749[0].field4741;
+		return this.field4751 == 0 ? null : this.field4749[0].field4741;
 	}
 
 	public Object poll() {
-		if (0 == this.field4751) {
+		if (this.field4751 == 0) {
 			return null;
 		} else {
 			++this.field4753;
 			Object var1 = this.field4749[0].field4741;
 			this.field4750.remove(var1);
 			--this.field4751;
-			if (0 == this.field4751) {
+			if (this.field4751 == 0) {
 				this.field4749[this.field4751] = null;
 			} else {
 				this.field4749[0] = this.field4749[this.field4751];

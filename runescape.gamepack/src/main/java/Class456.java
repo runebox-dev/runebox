@@ -11,9 +11,9 @@ public class Class456 extends Class476 {
 	public int method8392(Class456 var1) {
 		if (Client.field525 == super.field4971 && Client.field525 != var1.field4971) {
 			return -1;
-		} else if (var1.field4971 == Client.field525 && Client.field525 != super.field4971) {
+		} else if (Client.field525 == var1.field4971 && Client.field525 != super.field4971) {
 			return 1;
-		} else if (0 != super.field4971 && 0 == var1.field4971) {
+		} else if (super.field4971 != 0 && var1.field4971 == 0) {
 			return -1;
 		} else if (var1.field4971 != 0 && super.field4971 == 0) {
 			return 1;

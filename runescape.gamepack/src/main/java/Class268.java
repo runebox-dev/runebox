@@ -52,13 +52,13 @@ public abstract class Class268 {
 			int var6 = this.method4674();
 			switch(var4.field1791.field2181) {
 			case 0:
-				if (var1 >= this.field2750 - var5 / 2 && var1 <= this.field2750 + var5 / 2) {
+				if (var1 >= this.field2750 - var5 / 2 && var1 <= var5 / 2 + this.field2750) {
 					break;
 				}
 
 				return false;
 			case 1:
-				if (var1 >= this.field2750 && var1 < var5 + this.field2750) {
+				if (var1 >= this.field2750 && var1 < this.field2750 + var5) {
 					break;
 				}
 
@@ -76,7 +76,7 @@ public abstract class Class268 {
 				}
 				break;
 			case 1:
-				if (var2 < this.field2751 || var2 >= var6 + this.field2751) {
+				if (var2 < this.field2751 || var2 >= this.field2751 + var6) {
 					return false;
 				}
 				break;

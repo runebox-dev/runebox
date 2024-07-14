@@ -12,7 +12,7 @@ public class Class364 extends Class520 {
 		var1.field5471 = var1.field5472.length - 3;
 		int var2 = var1.method9902();
 		int var3 = var1.method9997();
-		int var4 = 14 + var2 * 10;
+		int var4 = var2 * 10 + 14;
 		var1.field5471 = 0;
 		int var5 = 0;
 		int var6 = 0;
@@ -31,7 +31,7 @@ public class Class364 extends Class520 {
 
 			while (true) {
 				var15 = var1.method9902();
-				if (var15 != var14) {
+				if (var14 != var15) {
 					++var4;
 				}
 
@@ -65,10 +65,10 @@ public class Class364 extends Class520 {
 		}
 
 		var4 += var5 * 5;
-		var4 += 2 * (var8 + var7 + var6 + var9 + var11);
-		var4 += var12 + var10;
+		var4 += (var7 + var8 + var6 + var9 + var11) * 2;
+		var4 += var10 + var12;
 		var13 = var1.field5471;
-		var14 = var5 + var2 + var6 + var7 + var8 + var9 + var10 + var11 + var12;
+		var14 = var2 + var5 + var6 + var7 + var8 + var9 + var10 + var11 + var12;
 
 		for (var15 = 0; var15 < var14; ++var15) {
 			var1.method9948();
@@ -140,7 +140,7 @@ public class Class364 extends Class520 {
 		int var36 = var1.field5471;
 		var1.field5471 += var20;
 		int var37 = var1.field5471;
-		var1.field5471 += var8 + var7 + var11;
+		var1.field5471 += var7 + var8 + var11;
 		int var38 = var1.field5471;
 		var1.field5471 += var7;
 		int var39 = var1.field5471;
@@ -189,7 +189,7 @@ public class Class364 extends Class520 {
 		var61[9] = 128;
 		var60[9] = 128;
 
-		label267:
+		label266:
 		for (int var63 = 0; var63 < var2; ++var63) {
 			var51.method9812(1297379947);
 			var51.field5471 += 4;
@@ -203,7 +203,7 @@ public class Class364 extends Class520 {
 					var51.method9825(var67);
 					var65 += var67;
 					int var68 = var1.field5472[var29++] & 255;
-					boolean var69 = var68 != var66;
+					boolean var69 = var66 != var68;
 					var66 = var68 & 15;
 					if (var68 == 7) {
 						if (var69) {
@@ -213,7 +213,7 @@ public class Class364 extends Class520 {
 						var51.method9809(47);
 						var51.method9809(0);
 						var51.method9974(var51.field5471 - var64);
-						continue label267;
+						continue label266;
 					}
 
 					if (var68 == 23) {
@@ -299,16 +299,16 @@ public class Class364 extends Class520 {
 									var70 = var1.field5472[var44++];
 								}
 
-								var74 = var70 + var59[var28];
+								var74 = var59[var28] + var70;
 								var59[var28] = var74;
 								var71 = var74 & 127;
 								var51.method9809(var71);
 								if (var28 == 0) {
-									var60[var52] = (var60[var52] & -2080769) + (var71 << 14);
+									var60[var52] = (var71 << 14) + (var60[var52] & -2080769);
 								}
 
 								if (var28 == 32) {
-									var60[var52] = (var60[var52] & -16257) + (var71 << 7);
+									var60[var52] = (var71 << 7) + (var60[var52] & -16257);
 								}
 							} else if (var66 == 3) {
 								if (var69) {

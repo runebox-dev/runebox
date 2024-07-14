@@ -19,6 +19,7 @@ var ClassNode.isJvm: Boolean by field { false }
 var ClassNode.jarIndex: Int by field { -1 }
 
 val ClassNode.superClass get() = superName?.let { pool.findClass(it) }
+
 val ClassNode.interfaceClasses get() = interfaces.map { pool.findClass(it) }.toSet()
 val ClassNode.parentClasses get() = listOfNotNull(superClass).plus(interfaceClasses)
 

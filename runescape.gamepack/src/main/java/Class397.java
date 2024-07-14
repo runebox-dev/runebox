@@ -41,7 +41,7 @@ public class Class397 implements Iterator {
 	}
 
 	public boolean hasNext() {
-		return this.field4613 != this.field4612.field4620 && this.field4613 != null;
+		return this.field4612.field4620 != this.field4613 && this.field4613 != null;
 	}
 
 	public void remove() {

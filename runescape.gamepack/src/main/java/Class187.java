@@ -171,7 +171,7 @@ public class Class187 extends Class516 {
 
 	@ObfInfo(name = "ag", desc = "(B)V", opaque = "1")
 	public void method3756() {
-		if (1 == this.field2025) {
+		if (this.field2025 == 1) {
 			this.field2056 = 0;
 		}
 
@@ -418,7 +418,7 @@ public class Class187 extends Class516 {
 			int var3 = -1;
 
 			for (var4 = 0; var4 < 10; ++var4) {
-				if (var1 >= this.field2047[var4] && 0 != this.field2047[var4]) {
+				if (var1 >= this.field2047[var4] && this.field2047[var4] != 0) {
 					var3 = this.field2036[var4];
 				}
 			}
@@ -458,7 +458,7 @@ public class Class187 extends Class516 {
 			int var3 = -1;
 
 			for (int var4 = 0; var4 < 10; ++var4) {
-				if (var1 >= this.field2047[var4] && 0 != this.field2047[var4]) {
+				if (var1 >= this.field2047[var4] && this.field2047[var4] != 0) {
 					var3 = this.field2036[var4];
 				}
 			}
@@ -476,7 +476,7 @@ public class Class187 extends Class516 {
 			if (var7 == null) {
 				return null;
 			} else {
-				if (128 != this.field2050 || 128 != this.field2051 || this.field2063 != 128) {
+				if (this.field2050 != 128 || this.field2051 != 128 || this.field2063 != 128) {
 					var7.method5513(this.field2050, this.field2051, this.field2063);
 				}
 
@@ -493,7 +493,7 @@ public class Class187 extends Class516 {
 					}
 				}
 
-				var6 = var7.method5517(this.field2053 + 64, 768 + this.field2008, -50, -10, -50);
+				var6 = var7.method5517(this.field2053 + 64, this.field2008 + 768, -50, -10, -50);
 				var6.field3219 = true;
 				field2016.method6330(var6, (long)this.field2020);
 				return var6;
@@ -507,7 +507,7 @@ public class Class187 extends Class516 {
 			int var3 = -1;
 
 			for (int var4 = 0; var4 < 10; ++var4) {
-				if (var1 >= this.field2047[var4] && 0 != this.field2047[var4]) {
+				if (var1 >= this.field2047[var4] && this.field2047[var4] != 0) {
 					var3 = this.field2036[var4];
 				}
 			}
@@ -582,7 +582,7 @@ public class Class187 extends Class516 {
 				var6.method5544(0, this.field2060, 0);
 			}
 
-			if (var1 == 1 && 0 != this.field2039) {
+			if (var1 == 1 && this.field2039 != 0) {
 				var6.method5544(0, this.field2039, 0);
 			}
 
@@ -676,9 +676,9 @@ public class Class187 extends Class516 {
 
 	@ObfInfo(name = "aa", desc = "(S)I", opaque = "4017")
 	public int method3757() {
-		if (-1 != this.field2007 && this.field2034 != null) {
+		if (this.field2007 != -1 && this.field2034 != null) {
 			if (this.field2007 >= 0) {
-				return null != this.field2034[this.field2007] ? this.field2007 : -1;
+				return this.field2034[this.field2007] != null ? this.field2007 : -1;
 			} else {
 				return Class367.field4187.equalsIgnoreCase(this.field2034[4]) ? 4 : -1;
 			}
@@ -711,7 +711,7 @@ public class Class187 extends Class516 {
 			}
 
 			var2.method3756();
-			if (-1 != var2.field2049) {
+			if (var2.field2049 != -1) {
 				var2.method3744(method3421(var2.field2049), method3421(var2.field2048));
 			}
 
@@ -719,12 +719,12 @@ public class Class187 extends Class516 {
 				var2.method3765(method3421(var2.field2040), method3421(var2.field2059));
 			}
 
-			if (-1 != var2.field2062) {
+			if (var2.field2062 != -1) {
 				var2.method3749(method3421(var2.field2062), method3421(var2.field2061));
 			}
 
 			if (!Class99.field2009 && var2.field2030) {
-				if (-1 == var2.field2049 && var2.field2040 == -1 && -1 == var2.field2062) {
+				if (var2.field2049 == -1 && var2.field2040 == -1 && var2.field2062 == -1) {
 					var2.field2013 = var2.field2013 + Class367.field4225;
 				}
 

@@ -35,7 +35,7 @@ public class Class170 extends Class149 {
 			int var4 = 0;
 
 			for (int var5 = 0; var5 < var3.field1118.length; ++var5) {
-				if (var1 == var3.field1119[var5]) {
+				if (var3.field1119[var5] == var1) {
 					var4 += var3.field1118[var5];
 				}
 			}

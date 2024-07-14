@@ -56,8 +56,8 @@ public class Class466 {
 
 	@ObfInfo(name = "il", desc = "(Lnx;IIB)V", opaque = "-49")
 	public static void method8515(Class362 var0, int var1, int var2) {
-		if (0 == Client.field780 || Client.field780 == 3) {
-			if (!Client.field672 && (1 == Class42.field227 || !Client.field911 && Class42.field227 == 4)) {
+		if (Client.field780 == 0 || Client.field780 == 3) {
+			if (!Client.field672 && (Class42.field227 == 1 || !Client.field911 && Class42.field227 == 4)) {
 				Class361 var4 = var0.method6708(Client.field4644, true);
 				if (var4 == null) {
 					return;
@@ -71,15 +71,15 @@ public class Class466 {
 					int var7 = Client.field615 & 2047;
 					int var8 = Class274.field2804[var7];
 					int var9 = Class274.field2805[var7];
-					int var10 = var8 * var6 + var9 * var5 >> 11;
-					int var11 = var9 * var6 - var8 * var5 >> 11;
+					int var10 = var5 * var9 + var6 * var8 >> 11;
+					int var11 = var6 * var9 - var5 * var8 >> 11;
 					int var12 = Client.field4407.method1959() + var10 >> 7;
 					int var13 = Client.field4407.method1966() - var11 >> 7;
 					Class314 var14 = Class168.method3523(ClientPacket.field3415, Client.field678.field1482);
 					var14.field3270.method9809(18);
-					var14.field3270.method10010(var13 + Client.field5093.field1021);
+					var14.field3270.method10010(Client.field5093.field1021 + var13);
 					var14.field3270.method9809(Client.field754.method4191(82) ? (Client.field754.method4191(81) ? 2 : 1) : 0);
-					var14.field3270.method9866(var12 + Client.field5093.field1019);
+					var14.field3270.method9866(Client.field5093.field1019 + var12);
 					var14.field3270.method9809(var5);
 					var14.field3270.method9809(var6);
 					var14.field3270.method9810(Client.field615);

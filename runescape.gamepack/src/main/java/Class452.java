@@ -30,7 +30,7 @@ public class Class452 extends Class457 {
 
 			try {
 				if (this.field4867.field3752 > 0.0F && this.field4867.field3761.method6097()) {
-					float var2 = 0 == this.field4865 ? (float)this.field4865 : (float)this.field4867.field3754 / (float)this.field4865;
+					float var2 = this.field4865 == 0 ? (float)this.field4865 : (float)this.field4867.field3754 / (float)this.field4865;
 					Class351 var10000 = this.field4867;
 					var10000.field3752 -= var2 == 0.0F ? (float)this.field4867.field3754 : var2;
 					if (this.field4867.field3752 < 0.0F) {

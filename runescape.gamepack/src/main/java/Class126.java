@@ -122,24 +122,24 @@ public class Class126 {
 		} else if (var6 >= 100) {
 			var7 = Client.field803;
 		} else {
-			var7 = var6 * (Client.field803 - Client.field802) / 100 + Client.field802;
+			var7 = (Client.field803 - Client.field802) * var6 / 100 + Client.field802;
 		}
 
-		int var8 = 512 * var7 * var3 / (var2 * 334);
+		int var8 = var3 * var7 * 512 / (var2 * 334);
 		int var9;
 		int var10;
 		short var11;
 		if (var8 < Client.field808) {
 			var11 = Client.field808;
-			var7 = 334 * var11 * var2 / (var3 * 512);
+			var7 = var2 * var11 * 334 / (var3 * 512);
 			if (var7 > Client.field807) {
 				var7 = Client.field807;
-				var9 = 512 * var7 * var3 / (var11 * 334);
+				var9 = var3 * var7 * 512 / (var11 * 334);
 				var10 = (var2 - var9) / 2;
 				if (var4) {
 					Class569.method10129();
 					Class569.method10138(var0, var1, var10, var3, -16777216);
-					Class569.method10138(var2 + var0 - var10, var1, var10, var3, -16777216);
+					Class569.method10138(var0 + var2 - var10, var1, var10, var3, -16777216);
 				}
 
 				var0 += var10;
@@ -147,15 +147,15 @@ public class Class126 {
 			}
 		} else if (var8 > Client.field809) {
 			var11 = Client.field809;
-			var7 = var11 * var2 * 334 / (var3 * 512);
+			var7 = var2 * var11 * 334 / (var3 * 512);
 			if (var7 < Client.field777) {
 				var7 = Client.field777;
-				var9 = 334 * var11 * var2 / (var7 * 512);
+				var9 = var2 * var11 * 334 / (var7 * 512);
 				var10 = (var3 - var9) / 2;
 				if (var4) {
 					Class569.method10129();
 					Class569.method10138(var0, var1, var2, var10, -16777216);
-					Class569.method10138(var0, var3 + var1 - var10, var2, var10, -16777216);
+					Class569.method10138(var0, var1 + var3 - var10, var2, var10, -16777216);
 				}
 
 				var1 += var10;
@@ -163,7 +163,7 @@ public class Class126 {
 			}
 		}
 
-		Client.field814 = var7 * var3 / 334;
+		Client.field814 = var3 * var7 / 334;
 		if (Client.field812 != var2 || Client.field726 != var3) {
 			Client.method4004(var2, var3);
 		}

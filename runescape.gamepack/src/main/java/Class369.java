@@ -87,7 +87,7 @@ public class Class369 {
 		}
 
 		this.field4394 += var4;
-		if (this.field4384 == 0 && 0 == this.field4379 && this.field4382 == 0 && this.field4377 == 0) {
+		if (this.field4384 == 0 && this.field4379 == 0 && this.field4382 == 0 && this.field4377 == 0) {
 			return true;
 		} else if (this.field4374 == null) {
 			return false;
@@ -172,7 +172,7 @@ public class Class369 {
 								var10 = this.field4387.method9997();
 								int var11 = this.field4387.method9902();
 								int var12 = this.field4387.method9832();
-								long var13 = (long)(var10 + (var9 << 16));
+								long var13 = (long)((var9 << 16) + var10);
 								Class372 var15 = (Class372)this.field4378.method9439(var13);
 								this.field4385 = true;
 								if (var15 == null) {
@@ -186,13 +186,13 @@ public class Class369 {
 
 								int var16 = var11 == 0 ? 5 : 9;
 								this.field4370 = var15;
-								this.field4388 = new Class562(var16 + var12 + this.field4370.field4429);
+								this.field4388 = new Class562(var12 + var16 + this.field4370.field4429);
 								this.field4388.method9809(var11);
 								this.field4388.method9812(var12);
 								this.field4373 = 8;
 								this.field4387.field5471 = 0;
-							} else if (0 == this.field4373) {
-								if (-1 == this.field4387.field5472[0]) {
+							} else if (this.field4373 == 0) {
+								if (this.field4387.field5472[0] == -1) {
 									this.field4373 = 1;
 									this.field4387.field5471 = 0;
 								} else {
@@ -222,8 +222,8 @@ public class Class369 {
 							var23 = this.field4388;
 							var23.field5471 += var9;
 							this.field4373 += var9;
-							if (var8 == this.field4388.field5471) {
-								if (16711935L == this.field4370.field5234) {
+							if (this.field4388.field5471 == var8) {
+								if (this.field4370.field5234 == 16711935L) {
 									this.field4391 = this.field4388;
 
 									for (var10 = 0; var10 < 256; ++var10) {
@@ -236,7 +236,7 @@ public class Class369 {
 									this.field4398.reset();
 									this.field4398.update(this.field4388.field5472, 0, var8);
 									var10 = (int)this.field4398.getValue();
-									if (var10 != this.field4370.field4431) {
+									if (this.field4370.field4431 != var10) {
 										try {
 											this.field4374.method8644();
 										} catch (Exception var18) {
@@ -250,7 +250,7 @@ public class Class369 {
 
 									this.field4396 = 0;
 									this.field4397 = 0;
-									this.field4370.field4430.method7302((int)(this.field4370.field5234 & 65535L), this.field4388.field5472, 16711680L == (this.field4370.field5234 & 16711680L), this.field4385);
+									this.field4370.field4430.method7302((int)(this.field4370.field5234 & 65535L), this.field4388.field5472, (this.field4370.field5234 & 16711680L) == 16711680L, this.field4385);
 								}
 
 								this.field4370.method9267();
@@ -264,7 +264,7 @@ public class Class369 {
 								this.field4370 = null;
 								this.field4388 = null;
 							} else {
-								if (512 != this.field4373) {
+								if (this.field4373 != 512) {
 									break;
 								}
 
@@ -457,7 +457,7 @@ public class Class369 {
 
 	@ObfInfo(name = "aj", desc = "(IIB)V")
 	public void method7076(int var1, int var2) {
-		long var4 = (long)(var2 + (var1 << 16));
+		long var4 = (long)((var1 << 16) + var2);
 		Class372 var6 = (Class372)this.field4389.method9439(var4);
 		if (var6 != null) {
 			this.field4380.method7657(var6);
@@ -466,7 +466,7 @@ public class Class369 {
 
 	@ObfInfo(name = "av", desc = "(III)I", opaque = "-1494814597")
 	public int method7082(int var1, int var2) {
-		long var4 = (long)(var2 + (var1 << 16));
+		long var4 = (long)((var1 << 16) + var2);
 		return this.field4370 != null && this.field4370.field5234 == var4 ? this.field4388.field5471 * 99 / (this.field4388.field5472.length - this.field4370.field4429) + 1 : 0;
 	}
 
@@ -474,11 +474,11 @@ public class Class369 {
 	public int method7075(boolean var1, boolean var2) {
 		int var4 = 0;
 		if (var1) {
-			var4 += this.field4377 + this.field4379;
+			var4 += this.field4379 + this.field4377;
 		}
 
 		if (var2) {
-			var4 += this.field4382 + this.field4384;
+			var4 += this.field4384 + this.field4382;
 		}
 
 		return var4;

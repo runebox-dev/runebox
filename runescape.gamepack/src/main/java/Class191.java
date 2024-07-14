@@ -86,15 +86,15 @@ public class Class191 extends Class516 {
 			if (var3 == var11) {
 				var13 = (var5 - var7) / (var11 - var9);
 			} else if (var5 == var11) {
-				var13 = 2.0D + (var7 - var3) / (var11 - var9);
-			} else if (var11 == var7) {
-				var13 = 4.0D + (var3 - var5) / (var11 - var9);
+				var13 = (var7 - var3) / (var11 - var9) + 2.0D;
+			} else if (var7 == var11) {
+				var13 = (var3 - var5) / (var11 - var9) + 4.0D;
 			}
 		}
 
 		var13 /= 6.0D;
 		this.field2098 = (int)(var15 * 256.0D);
-		this.field2095 = (int)(256.0D * var17);
+		this.field2095 = (int)(var17 * 256.0D);
 		if (this.field2098 < 0) {
 			this.field2098 = 0;
 		} else if (this.field2098 > 255) {
@@ -108,9 +108,9 @@ public class Class191 extends Class516 {
 		}
 
 		if (var17 > 0.5D) {
-			this.field2104 = (int)(512.0D * (1.0D - var17) * var15);
+			this.field2104 = (int)((1.0D - var17) * var15 * 512.0D);
 		} else {
-			this.field2104 = (int)(512.0D * var17 * var15);
+			this.field2104 = (int)(var15 * var17 * 512.0D);
 		}
 
 		if (this.field2104 < 1) {

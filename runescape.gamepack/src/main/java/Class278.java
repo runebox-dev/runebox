@@ -412,7 +412,7 @@ public class Class278 extends Class280 {
 			}
 		}
 
-		var28 = var11 + var9;
+		var28 = var9 + var11;
 		int var30 = var28;
 		if (var12 == 1) {
 			var28 += var10;
@@ -548,9 +548,9 @@ public class Class278 extends Class280 {
 				var57 = var5.method9841();
 			}
 
-			this.field2914[var53] = var55 + var50;
-			this.field2915[var53] = var56 + var51;
-			this.field2910[var53] = var57 + var52;
+			this.field2914[var53] = var50 + var55;
+			this.field2915[var53] = var51 + var56;
+			this.field2910[var53] = var52 + var57;
 			var50 = this.field2914[var53];
 			var51 = this.field2915[var53];
 			var52 = this.field2910[var53];
@@ -710,7 +710,7 @@ public class Class278 extends Class280 {
 		int var21 = var4.method9997();
 		int var22 = var4.method9997();
 		byte var23 = 0;
-		int var47 = var23 + var9;
+		int var47 = var9 + var23;
 		int var25 = var47;
 		var47 += var10;
 		int var26 = var47;
@@ -745,7 +745,7 @@ public class Class278 extends Class280 {
 		var47 += var18;
 		int var35 = var47;
 		var47 += var19;
-		int var10000 = var47 + var20;
+		int var10000 = var20 + var47;
 		this.field2913 = var9;
 		this.field2917 = var10;
 		this.field2928 = var11;
@@ -823,9 +823,9 @@ public class Class278 extends Class280 {
 				var44 = var7.method9841();
 			}
 
-			this.field2914[var40] = var42 + var37;
-			this.field2915[var40] = var43 + var38;
-			this.field2910[var40] = var44 + var39;
+			this.field2914[var40] = var37 + var42;
+			this.field2915[var40] = var38 + var43;
+			this.field2910[var40] = var39 + var44;
 			var37 = this.field2914[var40];
 			var38 = this.field2915[var40];
 			var39 = this.field2910[var40];
@@ -1027,7 +1027,7 @@ public class Class278 extends Class280 {
 			}
 		}
 
-		var26 = var11 + var9;
+		var26 = var9 + var11;
 		int var28 = var26;
 		if (var12 == 1) {
 			var26 += var10;
@@ -1161,9 +1161,9 @@ public class Class278 extends Class280 {
 				var55 = var5.method9841();
 			}
 
-			this.field2914[var51] = var53 + var48;
-			this.field2915[var51] = var54 + var49;
-			this.field2910[var51] = var55 + var50;
+			this.field2914[var51] = var48 + var53;
+			this.field2915[var51] = var49 + var54;
+			this.field2910[var51] = var50 + var55;
 			var48 = this.field2914[var51];
 			var49 = this.field2915[var51];
 			var50 = this.field2910[var51];
@@ -1308,7 +1308,7 @@ public class Class278 extends Class280 {
 		int var19 = var4.method9997();
 		int var20 = var4.method9997();
 		byte var21 = 0;
-		int var45 = var21 + var9;
+		int var45 = var9 + var21;
 		int var23 = var45;
 		var45 += var10;
 		int var24 = var45;
@@ -1346,7 +1346,7 @@ public class Class278 extends Class280 {
 		var45 += var17;
 		int var33 = var45;
 		var45 += var18;
-		int var10000 = var45 + var19;
+		int var10000 = var19 + var45;
 		this.field2913 = var9;
 		this.field2917 = var10;
 		this.field2928 = var11;
@@ -1419,9 +1419,9 @@ public class Class278 extends Class280 {
 				var42 = var7.method9841();
 			}
 
-			this.field2914[var38] = var40 + var35;
-			this.field2915[var38] = var41 + var36;
-			this.field2910[var38] = var42 + var37;
+			this.field2914[var38] = var35 + var40;
+			this.field2915[var38] = var36 + var41;
+			this.field2910[var38] = var37 + var42;
 			var35 = this.field2914[var38];
 			var36 = this.field2915[var38];
 			var37 = this.field2910[var38];
@@ -1570,7 +1570,7 @@ public class Class278 extends Class280 {
 		int var6 = var1.field2910[var2];
 
 		for (int var7 = 0; var7 < this.field2913; ++var7) {
-			if (var4 == this.field2914[var7] && var5 == this.field2915[var7] && var6 == this.field2910[var7]) {
+			if (this.field2914[var7] == var4 && this.field2915[var7] == var5 && this.field2910[var7] == var6) {
 				var3 = var7;
 				break;
 			}
@@ -1702,9 +1702,9 @@ public class Class278 extends Class280 {
 						var16 = var14 & 127;
 						var17 = var13 >> 7;
 						var18 = var14 >> 7;
-						var19 = var1[var17][var18] * (128 - var15) + var1[var17 + 1][var18] * var15 >> 7;
-						var20 = var1[var17][var18 + 1] * (128 - var15) + var1[var17 + 1][var18 + 1] * var15 >> 7;
-						var21 = var19 * (128 - var16) + var20 * var16 >> 7;
+						var19 = (128 - var15) * var1[var17][var18] + var1[var17 + 1][var18] * var15 >> 7;
+						var20 = (128 - var15) * var1[var17][var18 + 1] + var1[var17 + 1][var18 + 1] * var15 >> 7;
+						var21 = (128 - var16) * var19 + var16 * var20 >> 7;
 						var11.field2915[var12] = this.field2915[var12] + var21 - var3;
 					}
 				} else {
@@ -1717,10 +1717,10 @@ public class Class278 extends Class280 {
 							var17 = var15 & 127;
 							var18 = var14 >> 7;
 							var19 = var15 >> 7;
-							var20 = var1[var18][var19] * (128 - var16) + var1[var18 + 1][var19] * var16 >> 7;
-							var21 = var1[var18][var19 + 1] * (128 - var16) + var1[var18 + 1][var19 + 1] * var16 >> 7;
-							int var22 = var20 * (128 - var17) + var21 * var17 >> 7;
-							var11.field2915[var12] = this.field2915[var12] + (var22 - var3) * (var6 - var13) / var6;
+							var20 = (128 - var16) * var1[var18][var19] + var1[var18 + 1][var19] * var16 >> 7;
+							var21 = (128 - var16) * var1[var18][var19 + 1] + var1[var18 + 1][var19 + 1] * var16 >> 7;
+							int var22 = (128 - var17) * var20 + var17 * var21 >> 7;
+							var11.field2915[var12] = (var22 - var3) * (var6 - var13) / var6 + this.field2915[var12];
 						}
 					}
 				}
@@ -1832,7 +1832,7 @@ public class Class278 extends Class280 {
 		int var3 = field2954[var1];
 
 		for (int var4 = 0; var4 < this.field2913; ++var4) {
-			int var5 = this.field2910[var4] * var2 + this.field2914[var4] * var3 >> 16;
+			int var5 = this.field2914[var4] * var3 + this.field2910[var4] * var2 >> 16;
 			this.field2910[var4] = this.field2910[var4] * var3 - this.field2914[var4] * var2 >> 16;
 			this.field2914[var4] = var5;
 		}
@@ -1923,16 +1923,16 @@ public class Class278 extends Class280 {
 				int var8 = this.field2914[var4] - this.field2914[var2];
 				int var9 = this.field2915[var4] - this.field2915[var2];
 				int var10 = this.field2910[var4] - this.field2910[var2];
-				int var11 = var10 * var6 - var9 * var7;
-				int var12 = var8 * var7 - var10 * var5;
+				int var11 = var6 * var10 - var7 * var9;
+				int var12 = var7 * var8 - var5 * var10;
 
 				int var13;
-				for (var13 = var9 * var5 - var8 * var6; var11 > 8192 || var12 > 8192 || var13 > 8192 || var11 < -8192 || var12 < -8192 || var13 < -8192; var13 >>= 1) {
+				for (var13 = var5 * var9 - var6 * var8; var11 > 8192 || var12 > 8192 || var13 > 8192 || var11 < -8192 || var12 < -8192 || var13 < -8192; var13 >>= 1) {
 					var11 >>= 1;
 					var12 >>= 1;
 				}
 
-				int var14 = (int)Math.sqrt((double)(var11 * var11 + var12 * var12 + var13 * var13));
+				int var14 = (int)Math.sqrt((double)(var13 * var13 + var11 * var11 + var12 * var12));
 				if (var14 <= 0) {
 					var14 = 1;
 				}
@@ -2032,8 +2032,8 @@ public class Class278 extends Class280 {
 	@ObfInfo(name = "bt", desc = "(IIIII)Llv;")
 	public final Class308 method5517(int var1, int var2, int var3, int var4, int var5) {
 		this.method5521();
-		int var6 = (int)Math.sqrt((double)(var3 * var3 + var4 * var4 + var5 * var5));
-		int var7 = var6 * var2 >> 8;
+		int var6 = (int)Math.sqrt((double)(var5 * var5 + var3 * var3 + var4 * var4));
+		int var7 = var2 * var6 >> 8;
 		Class308 var8 = new Class308();
 		var8.field3166 = new int[this.field2917];
 		var8.field3200 = new int[this.field2917];
@@ -2121,7 +2121,7 @@ public class Class278 extends Class280 {
 				if (var17 != 0) {
 					if (var17 == 1) {
 						var19 = this.field2918[var16];
-						var14 = var1 + (var3 * var19.field3062 + var4 * var19.field3057 + var5 * var19.field3056) / (var7 + var7 / 2);
+						var14 = (var19.field3056 * var5 + var19.field3062 * var3 + var19.field3057 * var4) / (var7 / 2 + var7) + var1;
 						var8.field3166[var16] = method5561(this.field2925[var16] & '\uffff', var14);
 						var8.field3168[var16] = -1;
 					} else if (var17 == 3) {
@@ -2138,7 +2138,7 @@ public class Class278 extends Class280 {
 						var13 = this.field2940[this.field2921[var16]];
 					}
 
-					var14 = var1 + (var3 * var13.field3068 + var4 * var13.field3064 + var5 * var13.field3063) / (var7 * var13.field3066);
+					var14 = (var13.field3063 * var5 + var13.field3068 * var3 + var13.field3064 * var4) / (var13.field3066 * var7) + var1;
 					var8.field3166[var16] = method5561(var15, var14);
 					if (this.field2941 != null && this.field2941[this.field2916[var16]] != null) {
 						var13 = this.field2941[this.field2916[var16]];
@@ -2146,7 +2146,7 @@ public class Class278 extends Class280 {
 						var13 = this.field2940[this.field2916[var16]];
 					}
 
-					var14 = var1 + (var3 * var13.field3068 + var4 * var13.field3064 + var5 * var13.field3063) / (var7 * var13.field3066);
+					var14 = (var13.field3063 * var5 + var13.field3068 * var3 + var13.field3064 * var4) / (var13.field3066 * var7) + var1;
 					var8.field3200[var16] = method5561(var15, var14);
 					if (this.field2941 != null && this.field2941[this.field2952[var16]] != null) {
 						var13 = this.field2941[this.field2952[var16]];
@@ -2154,13 +2154,13 @@ public class Class278 extends Class280 {
 						var13 = this.field2940[this.field2952[var16]];
 					}
 
-					var14 = var1 + (var3 * var13.field3068 + var4 * var13.field3064 + var5 * var13.field3063) / (var7 * var13.field3066);
+					var14 = (var13.field3063 * var5 + var13.field3068 * var3 + var13.field3064 * var4) / (var13.field3066 * var7) + var1;
 					var8.field3168[var16] = method5561(var15, var14);
 				}
 			} else if (var17 != 0) {
 				if (var17 == 1) {
 					var19 = this.field2918[var16];
-					var14 = var1 + (var3 * var19.field3062 + var4 * var19.field3057 + var5 * var19.field3056) / (var7 + var7 / 2);
+					var14 = (var19.field3056 * var5 + var19.field3062 * var3 + var19.field3057 * var4) / (var7 / 2 + var7) + var1;
 					var8.field3166[var16] = method5516(var14);
 					var8.field3168[var16] = -1;
 				} else {
@@ -2173,7 +2173,7 @@ public class Class278 extends Class280 {
 					var13 = this.field2940[this.field2921[var16]];
 				}
 
-				var14 = var1 + (var3 * var13.field3068 + var4 * var13.field3064 + var5 * var13.field3063) / (var7 * var13.field3066);
+				var14 = (var13.field3063 * var5 + var13.field3068 * var3 + var13.field3064 * var4) / (var13.field3066 * var7) + var1;
 				var8.field3166[var16] = method5516(var14);
 				if (this.field2941 != null && this.field2941[this.field2916[var16]] != null) {
 					var13 = this.field2941[this.field2916[var16]];
@@ -2181,7 +2181,7 @@ public class Class278 extends Class280 {
 					var13 = this.field2940[this.field2916[var16]];
 				}
 
-				var14 = var1 + (var3 * var13.field3068 + var4 * var13.field3064 + var5 * var13.field3063) / (var7 * var13.field3066);
+				var14 = (var13.field3063 * var5 + var13.field3068 * var3 + var13.field3064 * var4) / (var13.field3066 * var7) + var1;
 				var8.field3200[var16] = method5516(var14);
 				if (this.field2941 != null && this.field2941[this.field2952[var16]] != null) {
 					var13 = this.field2941[this.field2952[var16]];
@@ -2189,7 +2189,7 @@ public class Class278 extends Class280 {
 					var13 = this.field2940[this.field2952[var16]];
 				}
 
-				var14 = var1 + (var3 * var13.field3068 + var4 * var13.field3064 + var5 * var13.field3063) / (var7 * var13.field3066);
+				var14 = (var13.field3063 * var5 + var13.field3068 * var3 + var13.field3064 * var4) / (var13.field3066 * var7) + var1;
 				var8.field3168[var16] = method5516(var14);
 			}
 		}
@@ -2243,7 +2243,7 @@ public class Class278 extends Class280 {
 						if (var13 >= var1.field2919 && var13 <= var1.field2948) {
 							for (int var14 = 0; var14 < var8; ++var14) {
 								Class299 var15 = var1.field2940[var14];
-								if (var12 == var7[var14] && var13 == var1.field2910[var14] && var11 == var1.field2915[var14] && var15.field3066 != 0) {
+								if (var7[var14] == var12 && var1.field2910[var14] == var13 && var1.field2915[var14] == var11 && var15.field3066 != 0) {
 									if (var0.field2941 == null) {
 										var0.field2941 = new Class299[var0.field2913];
 									}
@@ -2307,7 +2307,7 @@ public class Class278 extends Class280 {
 
 	@ObfInfo(name = "bj", desc = "(II)I")
 	public static int method5561(int var0, int var1) {
-		var1 = var1 * (var0 & 127) >> 7;
+		var1 = (var0 & 127) * var1 >> 7;
 		if (var1 < 2) {
 			var1 = 2;
 		} else if (var1 > 126) {

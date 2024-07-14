@@ -45,7 +45,7 @@ public class Class249 implements Class264 {
 
 	@ObfInfo(name = "ad", desc = "(IIIB)Z", opaque = "-1")
 	public boolean method4459(int var1, int var2, int var3) {
-		if (var1 >= this.field2626 && var1 < this.field2616 + this.field2626) {
+		if (var1 >= this.field2626 && var1 < this.field2626 + this.field2616) {
 			return var2 >> 6 >= this.field2615 && var2 >> 6 <= this.field2619 && var3 >> 6 >= this.field2623 && var3 >> 6 <= this.field2617;
 		} else {
 			return false;
@@ -62,7 +62,7 @@ public class Class249 implements Class264 {
 		if (!this.method4459(var1, var2, var3)) {
 			return null;
 		} else {
-			int[] var5 = new int[]{var2 + (this.field2621 * 64 - this.field2615 * 64), this.field2622 * 64 - this.field2623 * 64 + var3};
+			int[] var5 = new int[]{this.field2621 * 64 - this.field2615 * 64 + var2, this.field2622 * 64 - this.field2623 * 64 + var3};
 			return var5;
 		}
 	}
@@ -72,7 +72,7 @@ public class Class249 implements Class264 {
 		if (!this.method4480(var1, var2)) {
 			return null;
 		} else {
-			int var4 = var1 + (this.field2615 * 64 - this.field2621 * 64);
+			int var4 = this.field2615 * 64 - this.field2621 * 64 + var1;
 			int var5 = this.field2623 * 64 - this.field2622 * 64 + var2;
 			return new Class350(this.field2626, var4, var5);
 		}

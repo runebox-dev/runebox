@@ -59,7 +59,7 @@ public class Class341 {
 	public Class362 method6417(int var1) {
 		int var3 = var1 >> 16;
 		int var4 = var1 & 65535;
-		if (null == this.field3698[var3] || null == this.field3698[var3][var4]) {
+		if (this.field3698[var3] == null || this.field3698[var3][var4] == null) {
 			boolean var5 = this.method6412(var3);
 			if (!var5) {
 				return null;
@@ -101,7 +101,7 @@ public class Class341 {
 						if (var5 != null) {
 							this.field3698[var1][var4] = new Class362();
 							this.field3698[var1][var4].field3812 = (var1 << 16) + var4;
-							if (-1 == var5[0]) {
+							if (var5[0] == -1) {
 								this.field3698[var1][var4].method6622(new Class562(var5));
 							} else {
 								this.field3698[var1][var4].method6665(new Class562(var5));
@@ -129,9 +129,9 @@ public class Class341 {
 		if (var1 != -1) {
 			if (field3699[var1]) {
 				this.field3702.method7147(var1);
-				if (null != this.field3698[var1]) {
+				if (this.field3698[var1] != null) {
 					for (int var3 = 0; var3 < this.field3698[var1].length; ++var3) {
-						if (null != this.field3698[var1][var3]) {
+						if (this.field3698[var1][var3] != null) {
 							this.field3698[var1][var3] = null;
 						}
 					}

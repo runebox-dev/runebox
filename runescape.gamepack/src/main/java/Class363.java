@@ -141,7 +141,7 @@ public class Class363 {
 
 	@ObfInfo(name = "aj", desc = "(III)Z", opaque = "-382329429")
 	public boolean method6827(int var1, int var2) {
-		boolean var4 = var1 != this.field3986 || var2 != this.field3987;
+		boolean var4 = this.field3986 != var1 || this.field3987 != var2;
 		this.field3986 = var1;
 		this.field3987 = var2;
 		var4 |= this.method6920(this.field3965, this.field3991);
@@ -349,7 +349,7 @@ public class Class363 {
 
 			boolean var4 = this.field3988 != var1 || this.field3978 != var2;
 			this.field3988 = var1;
-			if (var2 != this.field3978) {
+			if (this.field3978 != var2) {
 				this.field3978 = var2;
 				this.field3975 = 0;
 				this.method7042();
@@ -400,7 +400,7 @@ public class Class363 {
 		if (this.method6841() && !var1) {
 			this.method6818(Math.max(this.field3988, this.field3978), var1);
 		} else if (this.field3978 < this.field3971.method7936()) {
-			this.method6818(1 + this.field3978, var1);
+			this.method6818(this.field3978 + 1, var1);
 		}
 
 	}
@@ -499,7 +499,7 @@ public class Class363 {
 			this.method6798(this.field3973, var9);
 		} else {
 			if (this.field3983 > 0 && this.field3973 == var9) {
-				if (this.field3978 == this.field3988) {
+				if (this.field3988 == this.field3978) {
 					this.field3982 = 1;
 					var7 = this.method6936(var9);
 					this.method6798((Integer)var7.field5155, (Integer)var7.field5152);
@@ -842,7 +842,7 @@ public class Class363 {
 		int var9 = this.field3965;
 		int var10 = this.field3986 + var9;
 		int var11 = this.field3991;
-		int var12 = var11 + this.field3987;
+		int var12 = this.field3987 + var11;
 		int var13 = this.field3965;
 		int var14 = this.field3991;
 		if (var5 < var9) {
